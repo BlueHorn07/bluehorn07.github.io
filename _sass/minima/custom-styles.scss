@@ -4,3 +4,19 @@
 main {
   font-family: D2Coding, "D2 coding", monosapce;
 }
+
+span.tag {
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 0.75rem;
+  color: white;
+  background-color: #be085c;
+  opacity: 0.6;
+  cursor: pointer;
+  line-height: 2;
+  transition: 0.5s;
+}
+
+span.selected {
+  background-color: gray !important;
+}
