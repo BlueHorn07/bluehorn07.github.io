@@ -1,7 +1,7 @@
 ---
 layout: post
 use_math: true
-tags: [CMST499, test]
+tags: [CMST499]
 ---
 
 ## 서론
