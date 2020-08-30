@@ -10,7 +10,7 @@ span.tag {
   padding: 5px;
   font-size: 0.75rem;
   color: white;
-  background-color: #be085c;
+  background-color: #ef6faa;
   opacity: 0.6;
   cursor: pointer;
   line-height: 2;
@@ -18,5 +18,9 @@ span.tag {
 }
 
 span.selected {
-  background-color: gray !important;
+  background-color: #b90659 !important;
+}
+
+li.hidden {
+  display: none;
 }
