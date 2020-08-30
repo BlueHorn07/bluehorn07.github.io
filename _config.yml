@@ -41,3 +41,8 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+
+markdown: kramdown # kramdown is advanced version of markdown
+
+highlighter: rouge # Jekyll only support 'rouge' syntax highlighter

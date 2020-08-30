@@ -1,10 +1,12 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 
+// font style
 main {
   font-family: D2Coding, "D2 coding", monosapce;
 }
 
+// tag style
 span.tag {
   border-radius: 5px;
   padding: 5px;
@@ -23,4 +25,19 @@ span.selected {
 
 li.hidden {
   display: none;
+}
+
+// code style
+code.highlighter-rouge {
+  color: #c7254e !important;
+  background-color: #f9f2f4 !important;
+}
+
+// code block style
+.highlight {
+  background-color: #272822 !important;
+}
+
+code {
+  background-color: #272822 !important;
 }
