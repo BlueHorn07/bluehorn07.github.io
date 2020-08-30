@@ -22,7 +22,7 @@ layout: default
     <!-- tag lists -->
     {% for tag in site.tags %}
       {% capture tag_name %}{{ tag | first }}{% endcapture %}
-        <span class="tag">{{tag_name}} | {{site.tags[tag_name].size}}</span>
+        <span class="tag" data-tag="{{tag_name}}">{{tag_name}} | {{site.tags[tag_name].size}}</span>
     {% endfor %}
 
     <hr>
@@ -33,7 +33,7 @@ layout: default
     <ul class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
-      <li>
+      <li class="post-wrapper">
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
@@ -43,7 +43,7 @@ layout: default
         <!-- post tag list -->
         {% if post.tags%}
           {% for tag in post.tags %}
-            <span class="tag">{{tag}}</span>
+            <span class="tag" data-tag="{{tag}}">{{tag}}</span>
           {% endfor %}
         {% endif %}
         
