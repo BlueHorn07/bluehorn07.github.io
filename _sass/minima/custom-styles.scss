@@ -41,3 +41,16 @@ code.highlighter-rouge {
 code {
   background-color: #272822 !important;
 }
+
+// code label
+.codeblock-label {
+  display: inline-block;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  padding: .10rem .70rem;
+  background-color: #9999dc;
+  color: white;
+  text-align: center;
+  margin-bottom: 0;
+  margin-left: 1px;
+}
