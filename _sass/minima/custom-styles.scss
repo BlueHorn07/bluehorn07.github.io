@@ -54,3 +54,15 @@ code {
   margin-bottom: 0;
   margin-left: 1px;
 }
+
+// equation box
+div.eq-box {
+  background-color: #fff3e0;
+  padding: .50rem .70rem;
+  margin: .10rem .30rem;
+}
+
+// fitting mathjax equation font-size
+.mjx-char {
+  font-size: 16px;
+}
