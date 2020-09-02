@@ -46,3 +46,7 @@ plugins:
 markdown: kramdown # kramdown is advanced version of markdown
 
 highlighter: rouge # Jekyll only support 'rouge' syntax highlighter
+
+
+plugins:
+  - jemoji
