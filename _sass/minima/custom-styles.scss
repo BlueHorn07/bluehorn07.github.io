@@ -67,13 +67,27 @@ div.eq-box {
   font-size: 16px;
 }
 
-.mjx-sub{
+.mjx-sub {
   .mjx-char {
     font-size: 70%;
   }
 }
 
-.mjx-sup{
+.mjx-sup {
+  .mjx-char {
+    font-size: 70%;
+  }
+}
+
+.mjx-under {
+  text-align: center;
+  .mjx-char {
+    font-size: 70%;
+  }
+}
+
+.mjx-over {
+  text-align: center;
   .mjx-char {
     font-size: 70%;
   }
