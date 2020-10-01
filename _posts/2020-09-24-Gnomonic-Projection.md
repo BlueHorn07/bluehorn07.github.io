@@ -1,5 +1,5 @@
 ---
-title: "Gnomonic Projection & NFOV"
+title: "Gnomonic Projection & FOV"
 layout: post
 use_math: true
 tags: ["3D Vision"]
