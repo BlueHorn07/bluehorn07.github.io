@@ -5,11 +5,13 @@ tags: ["develop"]
 ---
 
 ### 서론
-이 글은 제가 SSH 키를 생성하고 등록하는 방법을 정리하기 위해 작성한 글입니다. 지적과 조언은 언제나 환영입니다 ㅎㅎ
+이 글은 제가 SSH 키를 생성하고 등록한 방법을 정리하기 위해 작성한 글입니다. 지적과 조언은 언제나 환영입니다 ㅎㅎ
+
+- [퀴즈 링크](https://github.com/BlueHorn07/bluehorn07.github.io/tree/master/assets/files/quiz/SSH-tutorial-quiz.pdf)
 
 **<u>Note</u>**<br>
 - 클라이언트 환경은 **<u>Windows</u>**입니다.
-- 서버 환경은 vultr[^1]의 **<u>Ubuntu</u>**입니다.
+- 서버 환경은 [vultr](https://www.vultr.com/)[^1]의 **<u>Ubuntu</u>**입니다.
 
 <hr>
 
@@ -189,6 +191,7 @@ $ ssh root@123.456.789.0
 - 서버의 유저 이름을 정확히 알고 있는지
   - 유저 이름은 서버에서 `whoami` 명령어로 얻을 수 있다.
 - public key 등록 없이 처음 SSH 접속할 때, 내가 비밀번호를 맞게 입력했는지
+- 클라이언트에서 접속하려는 **port**가 ssh 전용으로 열려있는지 확인한다. 만약 ssh가 아닌 다른 프로그램이 해당 port를 점유하고 있다면, 해당 port로는 ssh 접속을 할 수 없다!
 
 **<u>그 외 기타 등등</u>**<br>
 - 서버에서 `who` 명령어를 입력하면 서버에 접속하고 있는 모든 접속에 대한 정보를 얻을 수 있다!
@@ -196,7 +199,7 @@ $ ssh root@123.456.789.0
 <hr>
 
 ### 참고자료
-- [생활코딩/egoing - SH Key - 비밀번호 없이 로그인](https://opentutorials.org/module/432/3742)
+- [생활코딩/egoing - SSH Key - 비밀번호 없이 로그인](https://opentutorials.org/module/432/3742)
   - 2013년도 자료이지만, 여전히 잘 된다!
 
 <hr>
