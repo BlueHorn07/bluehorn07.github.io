@@ -104,7 +104,7 @@ ILSVRC 대회를 통해 기라성 같은 모델들이 쏟아져 나왔다. 우�
 
 [MS COCO 공식 사이트](https://cocodataset.org/)
 
-데이터셋의 크기가 Trian은 ≥13GB, Val과 Test도 6GB 정도의 거대한 데이터셋이다.
+데이터셋의 크기가 Train은 ≥13GB, Val과 Test도 6GB 정도의 거대한 데이터셋이다.
 
 <hr>
 
