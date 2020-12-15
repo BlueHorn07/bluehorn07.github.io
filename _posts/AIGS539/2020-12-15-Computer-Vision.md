@@ -8,7 +8,5 @@ hidden: true
 
 <br>
 
-- [Bayes Theorem]({{"2020/12/15/Bayes-thm.html" | relative_url}})
-
 #### Visual Tracking
-
+- [Sequential Density Estimation]({{"2020/12/15/Sequential-Density-Estimation.html" | relative_url}})
