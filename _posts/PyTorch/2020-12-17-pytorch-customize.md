@@ -19,6 +19,11 @@ tags: [PyTorch]
 - ROI pooler 커스텀
 - `torchvision` 모델 vs. 커스텀 모델
 
+<br>
+
+전체 코드는 [이곳](https://gist.github.com/BlueHorn07/2871c7ccb6a848918fb478ceaefbb955)에서 확인할 수 있다.
+
+<br>
 <hr>
 
 ### 커스텀 데이터셋을 사용할 때
@@ -167,3 +172,8 @@ model = FasterRCNN(
   box_roi_pool=roi_pooler
   )
 ```
+
+<br>
+<hr>
+
+전체 코드는 [이곳](https://gist.github.com/BlueHorn07/2871c7ccb6a848918fb478ceaefbb955)에서 확인할 수 있다.
