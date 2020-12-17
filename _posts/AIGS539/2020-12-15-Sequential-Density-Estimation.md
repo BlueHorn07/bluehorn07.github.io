@@ -39,7 +39,7 @@ $$
 
 **<u>마르코프 가정</u>**; Markov Assumption은 복잡한 확률의 과정을 단순하게 만들어 준다.
 
-<div class="math-statement">
+<div class="statement">
 
   The current state $x_{t+1}$ only depends on the previous state $x_{t}$. <br>
   So, $x_{t+1}$ is independent to other past states $x_{1:t-1}$

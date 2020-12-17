@@ -13,11 +13,11 @@ tags: [AIGS539]
 ### Particle Filtering
 
 **<u>Definition.</u>**<br>
-<div class="math-statement">
+<div class="statement">
   Tool for tracking the state of a dynamic system(= change in time) modeled by a Bayesian network.
 </div>
 
-<div class="math-statement">
+<div class="statement">
   if you have a model of how the system changes in time, possibly in response to inputs, and a model of what observations you should see in particular states, you can use <b><u>particle filters</u></b> to track your belief state. 
 </div>
 
@@ -25,7 +25,7 @@ tags: [AIGS539]
 
 우리는 Particle Filter를 BBox prediction에 사용할 것이다. 그래서 
 
-<div class="math-statement" style="text-align: center;">
+<div class="statement" style="text-align: center;">
 "Particle" = BBox
 </div>
 
@@ -38,7 +38,7 @@ tags: [AIGS539]
 **<u>Particle Filter</u>**는 사실 **<u>Bayes Filter</u>**의 일종이다.
 
 **<u>Definition.</u>**<br>
-<div class="math-statement">
+<div class="statement">
   Used for estimating the state of a dynamical system from sensor measurements. <br>
   "Bayes Filter" works under the process of Predict/update cycle.
 </div>

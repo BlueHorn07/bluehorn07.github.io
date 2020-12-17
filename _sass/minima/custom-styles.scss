@@ -111,8 +111,13 @@ div.eq-box {
 }
 
 // mathematical statement
-.math-statement {
+.statement {
   margin: 1rem;
   padding: 0.5rem;
   background-color: whitesmoke;
+}
+
+.statement-title {
+  font-weight: bold;
+  text-decoration: underline;
 }
