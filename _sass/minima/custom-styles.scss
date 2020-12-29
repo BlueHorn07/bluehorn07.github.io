@@ -111,13 +111,41 @@ div.eq-box {
 }
 
 // mathematical statement
+.math-statement {
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: rgb(230, 230, 230);
+}
+
+// statement
 .statement {
   margin: 1rem;
   padding: 0.5rem;
-  background-color: whitesmoke;
+  background-color: #ffece9;
 }
 
 .statement-title {
   font-weight: bold;
   text-decoration: underline;
+}
+
+// Markdown post headder anchors
+
+.header-link {
+  // position: absolute;
+  font-size: 1.2rem;
+  margin-left: 0.5em;
+  opacity: 0;
+
+  \-webkit-transition: opacity 0.2s ease-in-out 0.1s;
+  \-moz-transition: opacity 0.2s ease-in-out 0.1s;
+  \-ms-transition: opacity 0.2s ease-in-out 0.1s;
+}
+
+h2:hover .header-link,
+h3:hover .header-link,
+h4:hover .header-link,
+h5:hover .header-link,
+h6:hover .header-link {
+  opacity: 1;
 }
