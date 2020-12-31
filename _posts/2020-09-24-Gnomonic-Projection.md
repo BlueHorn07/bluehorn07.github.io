@@ -6,7 +6,7 @@ tags: ["3D Vision"]
 ---
 
 ## 서론
-본 글은 360 이미지를 2차원에 매핑하는 방식인 **Gnomonic Projection**<sub>심사도법</sub>에 대해 정리한 글 입니다. 지적은 언제나 환영입니다 :)
+본 글은 360 이미지를 2차원에 매핑하는 방식인 **Gnomonic Projection**<small>(심사도법)</small>에 대해 정리한 글 입니다. 지적은 언제나 환영입니다 :)
 
 **표기**: longitude는 $\theta \in [-\pi, \pi]$로, latitude는 $\phi \in [-\pi/2, \pi/2]$로 표기하겠습니다.
 
@@ -26,7 +26,7 @@ Gnomonic Projection에서 주의할 점은 **반구 하나의 범위만을 매�
 ### Azimuthal projection
 surface의 기준점에 tangent한 평면을 잡아 projection 하는 방법을 **Azimuthal projection**이라고 한다. 그래서 Gonomonic projection은 Azimuthal projection의 방법 중 하나이다.
 
-또다른 Azimuthal projection의 예로는 Stereographic projection과 Fisheye porjection이 있다.
+또다른 Azimuthal projection의 예로는 [Stereographic projection](https://en.wikipedia.org/wiki/Stereographic_projection)과 [Fisheye projection](https://wiki.panotools.org/Fisheye_Projection)이 있다.
 
 <hr>
 
@@ -42,6 +42,7 @@ surface의 기준점에 tangent한 평면을 잡아 projection 하는 방법을 
 $$
 \begin{aligned}
   x &= \frac{\cos{\phi} \sin{(\theta - \theta_0)}}{\sin{\phi_0}\sin{\phi} + \cos{\phi_0}\cos{\phi}\cos(\theta-\theta_0)} \\
+  \\
   y &= \frac{\cos{\phi_0}\sin{\phi} - \sin{\phi_0}\cos{\phi}\cos{(\theta-\theta_0)}}{\sin{\phi_0}\sin{\phi} + \cos{\phi_0}\cos{\phi}\cos(\theta-\theta_0)}
 \end{aligned}
 $$
@@ -55,7 +56,7 @@ $$\cos{c} = \sin{\phi_0}\sin{\phi} + \cos{\phi_0}\cos{\phi}\cos(\theta-\theta_0)
 
 $\cos{c}$에서 $c$는 매핑된 평면에서 원점과 $(x, y)$이 이루는 각을 말한다.
 
-공식에서 볼 수 있듯 longitutde는 $\theta - \theta_0$를 통해 그 값을 보정하는 반면, latitude $\phi$에는 longitutde 같은 보정이 없다. 또한 매핑으로 얻은 $x$와 $y$는 $x^2 + y^2 \le 1$의 unit disk를 내부의 점이다.
+공식에서 볼 수 있듯 longitutde는 $\theta - \theta_0$를 통해 그 값을 보정하는 반면, latitude $\phi$에는 longitutde 같은 보정이 없다. 또한 매핑으로 얻은 $x$와 $y$는 $x^2 + y^2 \le 1$의 unit disk 내부의 점이다.
 
 #### Inverse mapping
 
@@ -75,7 +76,7 @@ $$
 
 <hr>
 
-### Field of View<sub>FOV</sub> & Rectilinear projection
+### Field of View<small>(FOV)</small> & Rectilinear projection
 
 <div style="text-align: center;">
 <a href="https://commons.wikimedia.org/wiki/File:FOV_in_video_games.svg#/media/File:FOV_in_video_games.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/FOV_in_video_games.svg/1200px-FOV_in_video_games.svg.png" alt="FOV in video games.svg" style="width: 30%;"></a><br>
