@@ -13,7 +13,12 @@ use_math: true
 
 **SphereNet**: Learning Spherical Representations for Detection and Classification in Omnidirectional Images (ECCV 2018) [pdf](https://openaccess.thecvf.com/content_ECCV_2018/papers/Benjamin_Coors_SphereNet_Learning_Spherical_ECCV_2018_paper.pdf)
 
-- unofficial [github](https://github.com/ChiWeiHsiao/SphereNet-pytorch): 공식 구현은 아니고 다른 사람이 직접 구현한 모델이다. 
+- Unofficial [github](https://github.com/ChiWeiHsiao/SphereNet-pytorch): 공식 구현은 아니고 다른 사람이 직접 구현한 모델이다.
+  - [x] SphereConv2D & SphereMaxPool2D
+    - [x] Kernel Pattern Look-up Table
+  - [ ] Uniform sampling
+  - [x] OmniMNIST
+  - [ ] Spherical Object Detection
 
 ### Kernel Sampling Method
 
