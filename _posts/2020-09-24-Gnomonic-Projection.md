@@ -24,9 +24,9 @@ tags: ["3D Vision"]
 Gnomonic Projection에서 주의할 점은 **반구 하나의 범위만을 매핑할 수 있다**는 것이다. 즉, 반구 이상의 범위는 Gnomonic Projection으로 매핑할 수 없다.
 
 ### Azimuthal projection
-surface의 기준점에 tangent한 평면을 잡아 proejction 하는 방법을 **Azimuthal projection**이라고 한다. 그래서 Gonomonic proejction은 Azimuthal projection의 방법 중 하나이다.
+surface의 기준점에 tangent한 평면을 잡아 projection 하는 방법을 **Azimuthal projection**이라고 한다. 그래서 Gonomonic projection은 Azimuthal projection의 방법 중 하나이다.
 
-또다른 Azimuthal proejction의 예로는 Stereographic projection과 Fisheye porjection이 있다.
+또다른 Azimuthal projection의 예로는 Stereographic projection과 Fisheye porjection이 있다.
 
 <hr>
 
@@ -86,7 +86,7 @@ $$
 
 Field of View, 줄여서 **FOV**[^2]는 구의 표면을 Gnomonic projection으로 매핑한 범위를 말한다. 통상 FOV는 radian 단위가 아닌 degree 단위로 표기한다. 
 
-Gnomonic proejction에서 FOV는 최대 180°의 범위를 가질 수 있다. 왜냐하면 Gnomonic projection은 반구 하나 만큼의 영역만 매핑할 수 있기 때문이다.
+Gnomonic projection에서 FOV는 최대 180°의 범위를 가질 수 있다. 왜냐하면 Gnomonic projection은 반구 하나 만큼의 영역만 매핑할 수 있기 때문이다.
 
 몇몇 경우에서는 FOV 방식으로 Gnomonic projection을 할 때, Rectilinear projection이라는 표현을 쓴다. 그러나 매핑이 이루어지는 원리 자체는 동일하다. 일반적으로 전체가 아닌 120° 이하의 FOV를 가질 때 Rectilinear projeection이라는 표현을 선호하는 것 같다. 본 글에서는 `FOV<=120°`인 경우를 특별히 Rectilinear projection으로 지칭하겠다!
 
@@ -129,7 +129,7 @@ Cubmap mapping은 구를 6개의 90° FOV 이미지로 매핑하는 방식이다
 
 ## 맺음말
 
-구의 표면을 2D로 매핑하는 방식은 소개한 Gnomonic proejction 외에도 다양한 방법이 존재한다. 하지만 Gnomonic projection의 가장 기본이 되면서 널리 쓰이는 매핑 방식이므로 반드시 숙지해야 한다고 생각한다. 
+구의 표면을 2D로 매핑하는 방식은 소개한 Gnomonic projection 외에도 다양한 방법이 존재한다. 하지만 Gnomonic projection의 가장 기본이 되면서 널리 쓰이는 매핑 방식이므로 반드시 숙지해야 한다고 생각한다. 
 
 
 <hr>
