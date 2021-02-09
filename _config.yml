@@ -33,6 +33,7 @@ minima:
 header_pages:
   - search.md
   - topic.md
+  - project.md
   - about.md
 
 # Build settings
@@ -50,3 +51,8 @@ highlighter: rouge # Jekyll only support 'rouge' syntax highlighter
 
 plugins:
   - jemoji
+
+# build option
+# ref: https://yangeok.github.io/blog/2019/05/21/jekyll-caching.html
+# incremental: true
+# limit_posts: 5
