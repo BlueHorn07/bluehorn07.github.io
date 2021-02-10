@@ -16,12 +16,13 @@ permalink: /about/
 - Mathematics
 - Computational Geometry
 
-### Skills
-- C / C++
-- Python
-- Java
-- HTML / CSS / Javascript
-- NestJS
+### Abilities
+
+<div style="width: 80%;">
+<a frameborder="0" data-theme="light" data-layers="1,2,3,4" data-stack-embed="true" href="https://embed.stackshare.io/stacks/embed/77ec0fff9a6ea55db935708e583d7c"/></a><script async src="https://cdn1.stackshare.io/javascripts/client-code.js" charset="utf-8"></script>
+</div>
+
+<br/>
 
 ### SNS
 - [BAEKJOON](https://www.acmicpc.net/user/bluehorn07)
