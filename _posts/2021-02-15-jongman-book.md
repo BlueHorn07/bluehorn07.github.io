@@ -1,5 +1,5 @@
 ---
-title: ""종만북 1" 리딩"
+title: "종만북 리딩 - 1"
 layout: post
 tags: []
 use_math: true
@@ -28,7 +28,9 @@ use_math: true
 
 "Off-by-One"과 관련된 실수...
 
+ALGOSPOT에서 `#include<bits/stdc++.h>`는 잘 인식하지만, `#include <bits/stdc++.h>`는 **컴파일 에러가 남**;;;;
 
-#### BOGGLE
 
-`y`, `x` index가 board 위에 존재하는지 확인하게 위해 `inRange(y, x)` 함수를 만들어서 확인!!
+- BOGGLE
+  - `y`, `x` index가 board 위에 존재하는지 확인하게 위해 `inRange(y, x)` 함수를 만들어서 확인!!
+
