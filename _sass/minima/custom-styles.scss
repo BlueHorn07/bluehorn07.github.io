@@ -156,3 +156,9 @@ h5:hover .header-link,
 h6:hover .header-link {
   opacity: 1;
 }
+
+// 형광펜
+.half_HL {
+  // background-color: #fdd1a6;
+  background: linear-gradient(to top, #fdd1a6 60%, transparent 50%);
+}
