@@ -1,5 +1,5 @@
 ---
-title: "내가 보려고 만든 R Cheat Sheat"
+title: "내가 보려고 만든 R Cheat Sheet"
 layout: post
 tags: []
 use_math: true
