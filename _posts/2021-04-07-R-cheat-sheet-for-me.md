@@ -45,6 +45,18 @@ model <- lm(dist ~ speed, cars.train)
 predict(model, newdata=cars.test)
 ```
 
+- 데이터프레임에서 `X`, `y` 분리
+
+``` R
+X <- subset(data, select=-Salary)
+y <- subset(data, select=Salary)
+```
+
+이때, 대상이 되는 열에 대해 따옴표("")를 붙이지 않아야 한다. 또한, `subset` 함수의 출력은 항상 DataFrame이다!
+
+👉 ['훈데이텀'님의 포스트](https://vvwwvw.tistory.com/27)
+
+
 ## Regression
 
 `lm(formula, data, ...)`
