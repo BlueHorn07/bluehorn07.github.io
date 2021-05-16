@@ -9,8 +9,7 @@ tags: ["develop"]
 
 - [Figma](https://www.figma.com) 🔥
 
-- [unDraw](https://undraw.co/illustrationㅈ듀
-- s) 🔥
+- [unDraw](https://undraw.co/illustrations) 🔥
   - 깔끔한 이미지
   - 색감 변경 가능
 
