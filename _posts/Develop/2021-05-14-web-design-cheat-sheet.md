@@ -6,6 +6,9 @@ tags: ["develop"]
 
 <br/>
 
+<div class="img-wrapper">
+  <img src="{{ "/images/others/layout.png" | relative_url }}" width="600px">
+</div>
 
 - [Figma](https://www.figma.com) 🔥
 
