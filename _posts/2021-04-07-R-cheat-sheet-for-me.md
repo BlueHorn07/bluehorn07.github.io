@@ -21,6 +21,11 @@ use_math: true
   - `dim(data)`: 데이터프레임의 차원을 리턴; `[# rows] [# columns]`
   - `table(data$y)`: 값의 분포를 테이블의 형태로 보여준다.
 
+- R 데이터 타입
+  - `class(obj)`로 데이터 타입 확인 가능!
+  - `factor`는 카테고리형 변수
+  - `charactor`는 문자형 변수 // `factor`랑 다름!
+
 ``` R
 > table(vowel.train$y)
 
@@ -71,3 +76,6 @@ vowel.fit <- lm(y ~., vowel.train)
   - `R`을 사용한 여러 통계 접근을 친절하게 설명해줌.
 - [RPubs](https://rpubs.com/)
   - R 생태계의 github 같은 느낌.
+- [rdrr.io](https://rdrr.io/)
+  - R pakage documentation
+  - 새로운 R 패키지를 익힐 때 유용!!
