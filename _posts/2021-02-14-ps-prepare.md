@@ -1,7 +1,7 @@
 ---
 title: "PS를 위한 준비"
 layout: post
-tags: []
+tags: ["Cheat Sheet"]
 use_math: true
 ---
 
