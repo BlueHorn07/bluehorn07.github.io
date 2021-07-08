@@ -1,7 +1,7 @@
 ---
 title: "내가 보려고 만든 'Web Design' Cheat Sheet"
 layout: post
-tags: ["develop"]
+tags: ["develop", "Cheat Sheet"]
 ---
 
 <br/>

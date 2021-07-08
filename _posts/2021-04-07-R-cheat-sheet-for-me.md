@@ -1,7 +1,7 @@
 ---
 title: "내가 보려고 만든 R Cheat Sheet"
 layout: post
-tags: []
+tags: ["Cheat Sheet"]
 use_math: true
 ---
 
