@@ -26,6 +26,7 @@ permalink: /about/
 
 ### SNS
 
+- [Personal Homepage](https://bluehorn07.dev/)
 - [BAEKJOON](https://www.acmicpc.net/user/bluehorn07)
 - [CodeForce](http://codeforces.com/profile/BlueHorn07)
 - [Naver Blog](https://blog.naver.com/bluehorn07)
@@ -36,6 +37,6 @@ permalink: /about/
   - 대학에서 공부한 수학적 내용들을 정리한 블로그이자 수학자로서의 저를 대표하는 블로그입니다.
   - Modern Algebra, Applied Complex Variable, Probability & Statistics, Linear Algebra 등에 대한 내용이 담겨있습니다.
 
-- [Blue-Screen](https://bluehorn07.github.io/mathematics/)
+- [Blue-Screen](https://bluehorn07.github.io/computer_science/)
   - 대학에서 공부한 컴퓨터 과학의 내용들을 담고 있습니다.
   - Algorithm, Statistical Data Mining, Data Mining, Computer Vision에 대한 내용이 담겨 있습니다.
