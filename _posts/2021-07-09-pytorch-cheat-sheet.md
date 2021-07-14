@@ -12,8 +12,12 @@ use_math: true
 
 - `tensor.unsqueeze(0)`
   - 배치 차원을 추가해줌
-  - shape: (2, 4) → shape: (1, 2, 4)
-  - 반대로 배치 차원을 제거하고 싶다면, `tensor.view(-1, ...)`
+    - shape: (2, 4) → (1, 2, 4)
+  - 넘겨주는 인자에 따라서 원하는 곳에 배치 차원을 추가할 수 있음.
+    - `tensor.unsqueeze(1)`: (2, 4) → (2, 1, 4)
+  - 반대로 배치 차원을 제거하고 싶다면, `tensor.squeeze()`
+    - shape: (2, 1, 4) → (2, 4)
+  - 또는 `tensor.view(-1, ...)`를 쓸 수도 있음.
 
 - `torch.Tensor` ≡ `torch.FloatTensor`
   - 👉 [참고](https://newpower.tistory.com/199)
@@ -22,7 +26,7 @@ use_math: true
 
 ``` py
 USE_CUDA = torch.cuda.is_available()
-DIVICE = torch.device("cuda" if UES_CUDA else "cpu")
+DEVICE = torch.device("cuda" if USE_CUDA else "cpu")
 ```
 
 <hr/>
