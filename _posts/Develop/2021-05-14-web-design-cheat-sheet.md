@@ -10,6 +10,42 @@ tags: ["develop", "Cheat Sheet"]
   <img src="{{ "/images/others/layout.png" | relative_url }}" width="600px">
 </div>
 
+<hr/>
+
+<span class="statement-title">styled-component.</span><br>
+
+
+**styled-component**는 CSS가 이미 있는 컴포넌트를 사용하는 것임 😲
+
+styled-component를 사용하면, sass를 설치하거나 webpack 작업을 할 필요도 없음! (개꿀이라는 말)
+
+컴포넌트에 스타일을 적용하기 위해 별도의 css 파일을 운용하지 않아도 됨!
+
+styled-component는 `props`를 받아서 동적으로 CSS 값을 바꿔줄 수도 있음!!
+
+``` js
+...
+  <Button danger />
+...
+const Button = styled.button`
+  background-color: ${props => (props.danger ? "red" : "green")}
+`
+```
+
+styled-component 재활용
+
+``` js
+const AnchorButton = Button.withComponent("a").extend`
+  text-decoration: none;
+`
+```
+
+👉 [노마드 코더 - React Styled Components 강좌](https://youtu.be/HqIFTMvtVgc)
+
+
+<hr/>
+
+
 - [Figma](https://www.figma.com) 🔥
 
 - [unDraw](https://undraw.co/illustrations) 🔥
