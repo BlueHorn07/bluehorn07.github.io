@@ -51,6 +51,7 @@ highlighter: rouge # Jekyll only support 'rouge' syntax highlighter
 
 plugins:
   - jemoji
+  - jekyll-feed
 
 # build option
 # ref: https://yangeok.github.io/blog/2019/05/21/jekyll-caching.html
