@@ -6,37 +6,17 @@ permalink: /about/
 
 ![logo](/assets/img/logo/logo.png)
 
-- POSTECH 컴퓨터공학과 학부생
-- POSTECH 수학과 복수전공
+안녕하세요, [BlueHorn07](https://github.com/BlueHorn07) 입니다 🐚
 
-### Interests
+이 블로그는 개발을 공부하고 문제를 해결하며 모은 자료를 정리한 블로그입니다. 백엔드 & AI 개발자로서 겪은 문제들과 해결방법을 자신의 말로 다시 표현해보기도 하고, 스스로 공부한 주제들을 정돈하기 위해 블로그를 통해 정리하고 있습니다 📚 현재는 [Bagelcode](https://site.bagelcode.com/)에서 데이터 사이언티스트로 활동하고 있습니다 👨‍🚀
 
-- BackEnd
-- ML / DL
-- Computer Vision
-- Mathematics
+주로 NestJS의 백엔드 개발과 PyTorch의 딥러닝 개발의 내용들을 폭넓게 다루고 있으며, 실제 코드까지 깊게 다루려고 노력하고 있습니다 💪
 
-### Abilities
+스스로 운영하는 블로그이기 때문에 놓치거나 부족한 부분이 있을 수 있습니다. 질문과 지적은 언제나 환영이며, 블로그에 방문하신 여러분께 검수를 부탁드립니다 🙏
 
-<div style="width: 80%;">
-<a frameborder="0" data-theme="light" data-layers="1,2,3,4" data-stack-embed="true" href="https://embed.stackshare.io/stacks/embed/77ec0fff9a6ea55db935708e583d7c"/></a><script async src="https://cdn1.stackshare.io/javascripts/client-code.js" charset="utf-8"></script>
-</div>
-
-<br/>
-
-### SNS
-
-- [Personal Homepage](https://bluehorn07.dev/)
-- [BAEKJOON](https://www.acmicpc.net/user/bluehorn07)
-- [CodeForce](http://codeforces.com/profile/BlueHorn07)
-- [Naver Blog](https://blog.naver.com/bluehorn07)
-
-<hr>
+이 블로그 외에도 수학과 컴퓨터과학을 주제로도 블로그를 운영하고 있으니 많은 관심 부탁드립니다 👋
 
 - [Blue-Math](https://bluehorn07.github.io/mathematics/)
-  - 대학에서 공부한 수학적 내용들을 정리한 블로그이자 수학자로서의 저를 대표하는 블로그입니다.
-  - Modern Algebra, Applied Complex Variable, Probability & Statistics, Linear Algebra 등에 대한 내용이 담겨있습니다.
-
 - [Blue-Screen](https://bluehorn07.github.io/computer_science/)
-  - 대학에서 공부한 컴퓨터 과학의 내용들을 담고 있습니다.
-  - Algorithm, Statistical Data Mining, Data Mining, Computer Vision에 대한 내용이 담겨 있습니다.
+
+since. 2019.06.
