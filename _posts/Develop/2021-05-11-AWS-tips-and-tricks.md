@@ -1,7 +1,7 @@
 ---
-title: "내가 보려고 만든 'AWS' Cheat Sheet"
+title: "AWS Tips & Tricks"
 layout: post
-tags: ["develop", "Cheat Sheet"]
+tags: ["develop", "Tips & Tricks"]
 ---
 
 ### 서론

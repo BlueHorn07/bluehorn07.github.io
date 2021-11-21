@@ -1,7 +1,7 @@
 ---
-title: "내가 보려고 만든 '웹보안' Cheat Sheet"
+title: "웹보안 Tips & Tricks"
 layout: post
-tags: ["develop", "security", "Cheat Sheet"]
+tags: ["develop", "security", "Tips & Tricks"]
 ---
 
 ### 서론

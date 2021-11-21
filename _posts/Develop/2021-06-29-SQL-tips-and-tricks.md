@@ -1,7 +1,7 @@
 ---
-title: "내가 보려고 만든 'SQL' Cheat Sheet"
+title: "SQL Tips & Tricks"
 layout: post
-tags: ["develop", "Cheat Sheet"]
+tags: ["develop", "Tips & Tricks"]
 ---
 
 <br/>

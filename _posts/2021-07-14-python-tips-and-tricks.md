@@ -1,7 +1,7 @@
 ---
-title: "내가 보려고 만든 'Python' Cheat Sheet"
+title: "Python Tips & Tricks"
 layout: post
-tags: ["Cheat Sheet"]
+tags: ["Tips & Tricks"]
 use_math: true
 ---
 

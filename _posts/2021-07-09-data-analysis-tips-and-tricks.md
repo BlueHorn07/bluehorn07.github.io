@@ -1,7 +1,7 @@
 ---
-title: "내가 보려고 만든 'Data Analysis' Cheat Sheet"
+title: "Data Analysis Tips & Tricks"
 layout: post
-tags: ["Cheat Sheet"]
+tags: ["Tips & Tricks"]
 use_math: true
 ---
 
@@ -51,7 +51,7 @@ use_math: true
 
 <br/>
 
-<span class="statement-title">LVT.</span><br>
+<span class="statement-title">LTV.</span><br>
 
 - LTV = Life-Time Value
   - 고객 평생 가치
@@ -64,8 +64,8 @@ use_math: true
 <span class="statement-title">ROAS.</span><br>
 
 - Return On Ad Spend
-  - 광고 캠페인에서 1달러랑 발생하는 수익을 측정하는 지표
-  - 광고비 대비 매출 %
+  - 광고 캠페인에서 **1달러랑 발생하는 수익**을 측정하는 지표
+  - **광고비 대비 매출 %**
   - 광고를 했을 때 몇 % 정도를 회수할 수 있는지 알기 위해 사용함
 
 👉 [참고](https://www.hellodigital.kr/blog/dmkt-general-plain-guide-roas/)
