@@ -33,7 +33,6 @@ minima:
 header_pages:
   - search.md
   - topic.md
-  - project.md
   - about.md
 
 # Build settings
