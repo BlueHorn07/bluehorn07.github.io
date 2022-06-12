@@ -40,7 +40,7 @@ use_math: true
 
 ### R로 추리 통계!!
 
-\<기술 통계\>가 \<평균\>, \<표준편차\>과 같은 기초적인 통계량에 대한 접근이라면, \<**추리 통계**\>는 추출한 표본에서 좀더 각 요소들 사이 관계; Correlation를 살펴보거나, 모집단의 특징을 추론하는 통계다. `R` 강좌에서는 자동차 연비를 중심으로 거리-연비 관계에 대한 \<산점도 scatter plot\>를 확인해보았다.
+\<기술 통계\>가 \<평균\>, \<표준편차\> 같은 기초적인 통계량에 대한 접근이라면, \<**추리 통계**\>는 추출한 표본에서 각 요소들 사이 관계; Correlation를 살펴보거나, 모집단의 특징을 추론하는 통계다. `R` 강좌에서는 자동차 연비를 중심으로 거리-연비 관계에 대한 \<산점도 scatter plot\>를 확인해보았다.
 
 <div class="img-wrapper" style="display:flex; justify-content:center; align-items:center;">
   <img src="{{ "/images/r-tutorial/r-tutorial-1.jpg" | relative_url }}"  style="float:left; width:48%;"> <img src="{{ "/images/r-tutorial/r-tutorial-5.jpg" | relative_url }}" style="float:left; width:48%;">
