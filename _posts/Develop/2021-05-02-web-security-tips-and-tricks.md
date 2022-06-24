@@ -4,7 +4,7 @@ layout: post
 tags: ["develop", "security", "Tips & Tricks"]
 ---
 
-### 서론
+
 이 글은 **웹보안**를 공부하면서 개인적으로 정리한 글입니다. 지적과 조언은 언제나 환영입니다 ㅎㅎ
 
 <hr/>

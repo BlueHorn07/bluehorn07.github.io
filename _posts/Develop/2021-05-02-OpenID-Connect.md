@@ -4,7 +4,7 @@ layout: post
 tags: ["develop", "security"]
 ---
 
-### 서론
+
 이 글은 **OpenID Connect**를 공부하면서 개인적으로 정리한 글입니다. 지적과 조언은 언제나 환영입니다 ㅎㅎ
 
 <hr/>

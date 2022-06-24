@@ -5,7 +5,7 @@ tags: ["research"]
 use_math: true
 ---
 
-### 서론
+
 이 포스트는 제가 개인적인 용도로 정리한 글 입니다. 
 
 - "[Attention is all you need](https://arxiv.org/abs/1706.03762)"

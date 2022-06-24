@@ -5,7 +5,7 @@ use_math: true
 tags: [PyTorch]
 ---
 
-## 서론
+
 본 글은 제가 [PyTorch Turotial](https://pytorch.org/tutorials/)의 [torchvision object detection 부분](https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html)을 읽고 개인적으로 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
 <span class="statement-title">keyword</span>

@@ -4,7 +4,7 @@ layout: post
 tags: ["develop"]
 ---
 
-### 서론
+
 이 글은 제가 SSH 키를 생성하고 등록한 방법을 정리하기 위해 작성한 글입니다. 지적과 조언은 언제나 환영입니다 ㅎㅎ
 
 - [퀴즈 링크](https://github.com/BlueHorn07/bluehorn07.github.io/tree/master/assets/files/quiz/SSH-tutorial-quiz.pdf)

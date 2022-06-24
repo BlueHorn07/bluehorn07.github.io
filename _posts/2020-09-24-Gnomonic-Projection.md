@@ -5,7 +5,7 @@ use_math: true
 tags: ["3D Vision"]
 ---
 
-## 서론
+
 본 글은 360 이미지를 2차원에 매핑하는 방식인 **Gnomonic Projection**<small>(심사도법)</small>에 대해 정리한 글 입니다. 지적은 언제나 환영입니다 :)
 
 **표기**: longitude는 $\theta \in [-\pi, \pi]$로, latitude는 $\phi \in [-\pi/2, \pi/2]$로 표기하겠습니다.

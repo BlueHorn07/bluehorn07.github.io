@@ -4,7 +4,7 @@ layout: post
 tags: ["Computer Vision"]
 ---
 
-### 서론
+
 
 이 글은 제가 [『CenterNet: Objects as Points』](https://github.com/xingyizhou/CenterNet)의 코드를 직접 실습해본 과정을 기록한 포스트 입니다.
 
