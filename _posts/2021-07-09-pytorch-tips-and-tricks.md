@@ -5,7 +5,7 @@ tags: ["Tips & Tricks"]
 use_math: true
 ---
 
-### 서론
+
 이 글은 정리를 위해 개인적인 용도로 작성된 포스트입니다. 지적과 조언은 언제나 환영입니다 ㅎㅎ
 
 <hr/>
@@ -36,4 +36,5 @@ DEVICE = torch.device("cuda" if USE_CUDA else "cpu")
     - 단어장의 크기
     - 임베딩 벡터의 차원
 
-
+- [PyTorch 텐서 Contiguous](https://inhyeokyoo.github.io/pytorch/contiguous/)
+  - `tensor.is_contiguous()`

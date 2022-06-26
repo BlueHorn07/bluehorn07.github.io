@@ -5,7 +5,7 @@ tags: ["research"]
 use_math: true
 ---
 
-### 서론
+
 이 포스트는 제가 개인적인 용도로 정리한 글 입니다. 
 
 `mmdetection`을 CPU에서 테스트해 볼 일이 있는데, `mmdetection` 공식 doc에 설명이 부족해서 이곳에 별도로 정리해둡니다!
