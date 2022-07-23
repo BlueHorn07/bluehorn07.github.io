@@ -13,11 +13,16 @@ layout: default
         {{ page.date | date: date_format }}
       </time>
       {%- if page.modified_date -%}
-        ~ 
+        | modified at 
         {%- assign mdate = page.modified_date | date_to_xmlschema -%}
         <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
           {{ mdate | date: date_format }}
         </time>
+      {%- endif -%}
+      {%- if page.readtime -%}
+      {%- assign readtime = page.readtime -%}
+        <br/>
+        <span class="p-author h-card" itemprop="readtime">READ: {{ readtime }}</span>
       {%- endif -%}
       {%- if page.author -%}
         • {% for author in page.author %}
@@ -25,16 +30,21 @@ layout: default
             <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
             {%- if forloop.last == false %}, {% endif -%}
         {% endfor %}
-      {%- endif -%}</p>
+      {%- endif -%}
+      
+      <!-- tag -->
+      {% if page.tags %}
+        <div class="tag-wrapper">
+          {% for tag in page.tags %}
+            <div class="tag">{{ tag }}</div>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+    </p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <!-- tag -->
-    {% if page.tags %}
-      {% for tag in page.tags %}
-        <span class="tag">{{ tag }}</span>
-      {% endfor %}
-    {% endif %}
     <!-- page content -->
     {{ content }}
   </div>

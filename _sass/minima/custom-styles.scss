@@ -7,16 +7,21 @@ main {
 }
 
 // tag style
-span.tag {
+.tag-wrapper {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.tag {
   border-radius: 5px;
-  padding: 5px;
+  padding: 3px 6px;
   font-size: 0.75rem;
   color: white;
   background-color: #ef6faa;
   opacity: 0.6;
   cursor: pointer;
-  line-height: 2;
-  transition: 0.5s;
 }
 
 span.selected {
@@ -108,27 +113,28 @@ div.eq-box {
 // image wrapper
 .img-wrapper {
   text-align: center;
-  margin-bottom: 10px;
+  margin: 8px;
 }
 
 // mathematical statement
-.math-statement {
+.math-statement, .proof {
   margin: 1rem;
   padding: 0.5rem;
   background-color: rgb(230, 230, 230);
 }
 
 // statement
-.statement {
+.statement, .theorem {
   margin: 1rem;
   padding: 0.5rem;
   background-color: #ffece9;
 }
 
-.quote {
+// example & problem
+.example {
   margin: 1rem;
   padding: 0.5rem;
-  background-color: #f8facd;
+  background-color: rgb(183, 226, 255);
 }
 
 .statement-title {
@@ -136,7 +142,15 @@ div.eq-box {
   text-decoration: underline;
 }
 
-// Markdown post headder anchors
+// definition
+.definition {
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: #f7e9ff;
+}
+
+
+// Markdown post header anchors
 
 .header-link {
   // position: absolute;
@@ -158,7 +172,13 @@ h6:hover .header-link {
 }
 
 // 형광펜
-.half_HL {
+
+mark, .half_HL {
   // background-color: #fdd1a6;
   background: linear-gradient(to top, #fdd1a6 60%, transparent 50%);
+}
+
+.light-margin {
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
