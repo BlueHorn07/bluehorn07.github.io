@@ -2,8 +2,8 @@ title: BlueHorn 🐚
 author:
   name: bluehorn07
   email: bluehornblues@gmail.com
-description: > # this means to ignore newlines until "show_excerpts:"
-  “Talk is cheap. Show me the code.”
+# description: > # this means to ignore newlines until "show_excerpts:"
+#   “Talk is cheap. Show me the code.”
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
