@@ -16,7 +16,7 @@ def evaluation(model, criterion, ...):
     ...
 ```
 
-무슨 의미인지 궁금해서 이번에 찾아보니, `nn.Module`에서 train time과 eval time에서 수행하는 다른 작업을 수행할 수 있도록 switching 하는 함수라고 한다. [stackoverflow](https://stackoverflow.com/a/60018731)
+무슨 의미인지 궁금해서 찾아보니, `nn.Module`에서 train time과 eval time에서 수행하는 다른 작업을 수행할 수 있도록 switching 하는 함수라고 한다. [stackoverflow](https://stackoverflow.com/a/60018731)
 
 train time과 eval time에서 다르게 동작해야 하는 대표적인 예들은 
 

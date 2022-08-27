@@ -23,9 +23,11 @@ layout: default
     <div class="tag-wrapper">
       {% for tag in site.tags %}
         {% capture tag_name %}{{ tag | first }}{% endcapture %}
-          <div class="tag" data-tag="{{tag_name}}">
-            {{tag_name}} | {{site.tags[tag_name].size}}
-          </div>
+          {% if site.tags[tag_name].size > 10 %}
+            <div class="tag" data-tag="{{tag_name}}">
+              {{tag_name}} | {{site.tags[tag_name].size}}
+            </div>
+          {% endif %}
       {% endfor %}
     </div>
 

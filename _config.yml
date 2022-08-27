@@ -35,6 +35,7 @@ header_pages:
   - search.md
   - topics/development.md
   - topics/mathematics.md
+  - topics/computer-science.md
   - about.md
 
 # Build settings

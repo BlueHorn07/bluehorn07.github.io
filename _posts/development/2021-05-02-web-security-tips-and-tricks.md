@@ -1,7 +1,7 @@
 ---
 title: "웹보안 Tips & Tricks"
 layout: post
-tags: ["develop", "security", "Tips & Tricks"]
+tags: ["develop", "security", ]
 ---
 
 
@@ -55,7 +55,7 @@ JWT의 단점을 극복하기 위한 전략으로는 **Refresh Token**이 등장
 <span class="statement-title">Serialize vs. Deserialize</span><br>
 
 - **직렬화(serialize)**: 프로그램의 object 데이터를 외부 파일 또는 DB에 write 하거나 전송하는 것
-- **역직력화(deserialize)**: 외부 파일 또는 DB의 데이터를 프로그램 내의 object로 read 하는 것
+- **역직렬화(deserialize)**: 외부 파일 또는 DB의 데이터를 프로그램 내의 object로 read 하는 것
 
 <hr/>
 

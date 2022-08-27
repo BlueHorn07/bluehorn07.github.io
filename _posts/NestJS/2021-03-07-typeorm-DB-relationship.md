@@ -1,7 +1,7 @@
 ---
 title: "TypeORM - DB Relationship"
 layout: post
-tags: ["NestJS", "TypeORM"]
+tags: [NestJS]
 use_math: true
 ---
 

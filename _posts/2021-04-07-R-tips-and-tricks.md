@@ -1,7 +1,7 @@
 ---
 title: "R Tips & Tricks"
 layout: post
-tags: ["Tips & Tricks"]
+tags: []
 use_math: true
 ---
 

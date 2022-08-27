@@ -17,6 +17,7 @@ use_math: true
 <div class="img-wrapper" style="float:left; margin-right:12px;">
 <img src="https://w.namu.la/s/afb4e324aefb780bdfd6121feec59092f85ac76ef8637364629a13b59381a80babe1be4d9d24501eb9e2f069682fb98d62d2ef97efd84724970712b22553d717bc1cddc7190c9eb827dee637f22016fd819c405a03a133a66293c7fa5a28ffee" style="width:180px;">
 </div>
+
 <div markdown="1">
 **<u>Aliasing</u>**은 컴퓨터 그래픽에서 물체의 가장자리 부분이 매끄럽지 않고 계단처럼 보이는 현상을 말한다.
 

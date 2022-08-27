@@ -1,7 +1,7 @@
 ---
 title: "How to save JSON array in MySQL with TypeORM"
 layout: post
-tags: [TypeORM, MySQL, NestJS]
+tags: [NestJS]
 ---
 
 
