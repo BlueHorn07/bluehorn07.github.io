@@ -45,7 +45,7 @@ tags: [CMST499]
 <hr>
 
 **상황**: 우주선의 양쪽 끝에서 빛을 쏨.<br>
-<br>![Minkowski_at_rest](/assets/img/CMST499/special_relativity/minkowski_rest.jpg){: width="300px"}<br>
+<br>![Minkowski_at_rest](/images/CMST499/special_relativity/minkowski_rest.jpg){: width="300px"}<br>
 
 **결과**: 우주선의 중간지점인 $M$에서 빛이 **동시에** 인식됨.<br>
 
@@ -58,7 +58,7 @@ tags: [CMST499]
 <hr>
 
 **상황**: $v$ 속도로 철수에게서 멀어지는 우주선의 양쪽 끝에서 빛을 쏨.<br>
-<br>![Minkowski_motion](/assets/img/CMST499/special_relativity/minkowski_motion.jpg){: width="400px"}<br>
+<br>![Minkowski_motion](/images/CMST499/special_relativity/minkowski_motion.jpg){: width="400px"}<br>
 
 **결과**: 철수는 양끝에서 쏜 빛이 민수에게 동시에 도달하지 않는다고 주장!<br>
 (그런데 민수는 동시에 도달한다고 주장!) ⇒ **동시성이 깨짐**!<br>
@@ -67,7 +67,7 @@ tags: [CMST499]
 
 **상황**:  $v$ 속도로 철수에게서 멀어지는 우주선의 가운데서 양끝으로 빛을 쏨. <br>
 우주선 양끝에는 **거울**이 달려있음.<br>
-<br>![Minkowski_mirror](/assets/img/CMST499/special_relativity/minkowski_mirror.jpg){: width="400px"}<br>
+<br>![Minkowski_mirror](/images/CMST499/special_relativity/minkowski_mirror.jpg){: width="400px"}<br>
 
 **결과**: 철수는 빛이 우주선의 양끝에 도달하는 시점이 다르다고 주장! 그리고 $M$으로 돌아올 때는 동시에 도달!<br>
 ⇒ 동시성이 깨졌다가 다시 맞게 되는 상황<br>
@@ -83,7 +83,7 @@ tags: [CMST499]
 
 먼저 갈릴레이 변환<small>*Galilean Transformation*</small>이라는 상황을 이해해야 한다.<br>
 
-<br>![Galilean_transform](/assets/img/CMST499/special_relativity/Galilean_transform.jpg){: width="500px"}<br>
+<br>![Galilean_transform](/images/CMST499/special_relativity/Galilean_transform.jpg){: width="500px"}<br>
 
 등속 운동하는 관찰하는 정지한 관찰자처럼 자기가 등속 운동한다는 사실을 알 방법이 전혀 없다!!<br>
 
@@ -146,7 +146,7 @@ tags: [CMST499]
 나아가 속도 $v$가 광속 $c$보다 현저히 느리다면, 우리가 평소에 쓰는 갈릴레이 변환과 동일한 결과를 도출하도록 설계하였다!!<br>
 
 그래서 로렌츠 변환은<br>
-![Lorentz_transformation](/assets/img/CMST499/special_relativity/Lorentz_transformation.jpg){: width="350px"}<br>
+![Lorentz_transformation](/images/CMST499/special_relativity/Lorentz_transformation.jpg){: width="350px"}<br>
 
 주목할 점은 갈릴레이 변환 때랑은 다르게 시간 $t'$의 값이 변한다는 것이다!! $t \neq t'$<br>
 그러니까 정지상태의 계가 인지하는 시간 $t$와 운동상태의 계가 인지하는 시간 $t'$가 다르게 되어버린 것이다! 게다가 이 변형된 시간 $t'$는 위치 $x$ 값의 영향도 받는다!<br>
@@ -155,7 +155,7 @@ tags: [CMST499]
 
 만약 속도 $v$가 광속에 비해 무시할 정도로 작다면, 로렌츠 변환은 갈릴레이 변환과 동일한 결과를 도출한다.
 
-![Lorentz_transformation](/assets/img/CMST499/special_relativity/Lorentz_transform_matrix.jpg){: width="300px"}[^4]<br>
+![Lorentz_transformation](/images/CMST499/special_relativity/Lorentz_transform_matrix.jpg){: width="300px"}[^4]<br>
 
 로렌츠 변환을 행렬곱으로 표현하기도 하는데 원래 엥간한 변환은 좌표에 '변환'이라는 이름의 행렬을 곱해주는 거라 그냥 그러려니 하고 넘어가면 된다 ㅎㅎ<br><br>
 

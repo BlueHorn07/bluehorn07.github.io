@@ -11,7 +11,7 @@ tags: [AIGS539]
 <hr>
 
 <div>
-  <img src="/assets/img/AIGS539/gradient-filter-1.png">
+  <img src="/images/AIGS539/gradient-filter-1.png">
 </div>
 
 <br>
@@ -87,8 +87,8 @@ if __name__ == "__main__":
 `sobelX`는 수평 성분을 제거한 이미지로, 수직 Edge를 검출한다. 반대로 `sobelY`는 수직 성분을 제거한 이미지로, 수평 Edge를 검출한다.
 
 <div style="text-align: center;">
-  <img src="/assets/img/AIGS539/gradient-filter-sobelX.png" style="width: 45%; padding-right: 5px">
-  <img src="/assets/img/AIGS539/gradient-filter-sobelY.png" style="width: 45%; padding-left: 5px">
+  <img src="/images/AIGS539/gradient-filter-sobelX.png" style="width: 45%; padding-right: 5px">
+  <img src="/images/AIGS539/gradient-filter-sobelY.png" style="width: 45%; padding-left: 5px">
 </div>
 
 <br>
@@ -101,7 +101,7 @@ if __name__ == "__main__":
 ```
 
 <div style="text-align: center;">
-  <img src="/assets/img/AIGS539/gradient-filter-gradient-result.png" style="width: 60%;">
+  <img src="/images/AIGS539/gradient-filter-gradient-result.png" style="width: 60%;">
 </div>
 
 <hr>
@@ -115,5 +115,5 @@ if __name__ == "__main__":
 심심해서 본인 로고에도 적용해봤다 ㅎㅎ
 
 <div style="text-align: center;">
-  <img src="/assets/img/AIGS539/gradient-filter-logo-gradient.png">
+  <img src="/images/AIGS539/gradient-filter-logo-gradient.png">
 </div>

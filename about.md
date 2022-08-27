@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![logo](/assets/img/logo/logo.png)
+![logo](/assets/img/logo.png)
 
 안녕하세요, [BlueHorn07](https://github.com/BlueHorn07) 입니다 🐚
 

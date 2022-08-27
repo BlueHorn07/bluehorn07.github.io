@@ -121,7 +121,7 @@ inverse mapping에서도 마찬가지로 $x$, $y$의 범위를 제한한 후 매
 Cubmap mapping은 구를 6개의 90° FOV 이미지로 매핑하는 방식이다. 
 
 <div style="text-align: center;">
-<img src="/assets/img/cubemap_globe.png"  style="width: 50%;">
+<img src="/images/others/cubemap_globe.png"  style="width: 50%;">
 </div>
 
 매핑의 방식은 Rectilinear projection을 `FOV=90°`으로 두고 6번을 진행하는 것이기 때문에 자세한 설명을 생략하겠다.

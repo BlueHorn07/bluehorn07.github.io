@@ -177,7 +177,7 @@ $$
 
 - [Euler's Theorem]({{"2020/12/26/Euler-Thm.html" | relative_url}}) 🔥
   - [Euler phi function]({{"2020/12/26/Euler-Thm.html#euler-phi-function" | relative_url}})
-  - [Application: solve module equation]({{"2020/12/26/Euler-Thm.html#application-solve-modulo-equation" | relative_url}}) $ax \equiv b$ (mod $n$)
+  - [Application: solve modulo equation]({{"2020/12/26/Euler-Thm.html#application-solve-modulo-equation" | relative_url}}) $ax \equiv b$ (mod $n$)
 <hr>
 
 - [Quotient Field]({{"2020/12/19/Qutient-Field.html" | relative_url}}) (= Field of Qutients; 분수체)

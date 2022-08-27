@@ -29,7 +29,7 @@ Are There Really Instantaneous Velocities?, Arntzenius, 2000<br>
 
 어떤 상황인지 잘 이해가 안 된다면, 아래의 그림에서 어떤 상황인지 한번 생각해보자!<br>
 (1)과 (2)를 적용하여 자기장과 전류의 방향을 반전시켜도 전자기학을 위배하지 않는다!<br>
-![Right_Hand](/assets/img/CMST499/Right_hand_grip_rule.png){: width="200px"}<br><br>
+![Right_Hand](/images/CMST499/Right_hand_grip_rule.png){: width="200px"}<br><br>
 
 뉴턴 역학에서는 `time-reversal`에 따른 역과정을 얻기 위해 `velocity`에 `time-reversal operation`을 적용했다. 하지만 (우리가 (2)에서 뒤집은) magnetic field는 어떤 것의 `velocity`도 아닌 그 무엇이다! 그래서 우리는 (2)가 가능하다고 쉽사리 보장할 수가 없다.<br>
 
