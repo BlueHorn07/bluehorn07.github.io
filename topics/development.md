@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Topics
-permalink: /topic/
+title: Development
+permalink: /topic/development
 ---
 
 Computer Science와 관련된 내용은 [Blue-Screen](https://bluehorn07.github.io/computer_science/) 블로그에서 확인하실 수 있습니다.

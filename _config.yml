@@ -33,25 +33,21 @@ minima:
 # this and add the path to the pages in order as they should show up
 header_pages:
   - search.md
-  - topic.md
+  - topics/development.md
+  - topics/mathematics.md
   - about.md
 
 # Build settings
 theme: minima
 
 plugins:
+  - jemoji
   - jekyll-feed
   - jekyll-seo-tag
-
 
 markdown: kramdown # kramdown is advanced version of markdown
 
 highlighter: rouge # Jekyll only support 'rouge' syntax highlighter
-
-
-plugins:
-  - jemoji
-  - jekyll-feed
 
 # build option
 # ref: https://yangeok.github.io/blog/2019/05/21/jekyll-caching.html
