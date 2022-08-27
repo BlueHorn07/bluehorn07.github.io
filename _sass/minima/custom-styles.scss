@@ -24,6 +24,30 @@ main {
   cursor: pointer;
 }
 
+.dev-tag {
+  border-radius: 4px;
+  padding: 2px 6px;
+  color: white;
+  background-color: #844fb6;
+  opacity: 0.6;
+}
+
+.math-tag {
+  border-radius: 4px;
+  padding: 2px 6px;
+  color: white;
+  background-color: #58b3b9;
+  opacity: 0.6;
+}
+
+.cs-tag {
+  border-radius: 4px;
+  padding: 2px 6px;
+  color: white;
+  background-color: #b95858;
+  opacity: 0.6;
+}
+
 span.selected {
   background-color: #b90659 !important;
 }

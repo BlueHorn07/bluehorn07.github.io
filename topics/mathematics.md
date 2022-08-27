@@ -7,7 +7,7 @@ use_math: true
 
 <div class="statement">
 
-&nbsp; "Fire at once represents Hephaistos, the Greek god of fire and blacksmiths, as well as Zeus’s power, and the spark of human intellect and knowledge given to humankind by Prometheus in the form of reason."
+"The essence of mathematics lies in its freedom" - Cantor
 
 </div>
 

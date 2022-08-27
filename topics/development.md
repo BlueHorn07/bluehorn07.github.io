@@ -4,11 +4,11 @@ title: Development
 permalink: /topic/development
 ---
 
-Computer Science와 관련된 내용은 [Blue-Screen](https://bluehorn07.github.io/computer_science/) 블로그에서 확인하실 수 있습니다.
+<div class="statement">
 
-Mathematics와 관련된 내용은 [Blue-Math](https://bluehorn07.github.io/mathematics/)에서 확인하실 수 있습니다.
+“Talk is cheap. Show me the code.” - Linus Torvalds
 
-<hr/>
+</div>
 
 ## [Development & Programming]({{"2020/12/01/development-and-programming.html" | relative_url}})
 
