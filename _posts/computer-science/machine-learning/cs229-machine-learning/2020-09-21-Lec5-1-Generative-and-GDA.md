@@ -69,7 +69,7 @@ Bayes Rule의 용어를 정리해보자.
 
 GDA는 이름에 'Discriminant'가 들어가지만, Generative Model이다. GDA에서는 $p(x \vert y)$가 **multivariate normal distribution**을 만족한다고 '가정'한다. GDA에 대해 본격적으로 다루기 전에 multivariate normal distribution을 가볍게 살펴보자.
 
-#### (사전지식) Multivaraite normal distribution
+#### (사전지식) Multi-variate normal distribution
 
 바탕이 되는 **uni-variate Gaussian 분포**를 먼저 살펴보자.
 

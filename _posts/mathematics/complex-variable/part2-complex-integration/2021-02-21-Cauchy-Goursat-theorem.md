@@ -151,5 +151,5 @@ $$
 
 증명이 너무 길어서 파일로 대체합니다!!
 
-[Goursat proof](https://github.com/BlueHorn07/mathematics/tree/master/_posts/complex_varaible/part2-complex-integration/Goursat-proof.pdf)
+[Goursat proof](https://github.com/BlueHorn07/mathematics/tree/master/_posts/complex_variable/part2-complex-integration/Goursat-proof.pdf)
 

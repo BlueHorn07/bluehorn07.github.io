@@ -39,7 +39,7 @@ tags: ["Algorithm"]
 
 <br/>
 
-위의 문제의 경우 variable이 $x_1$, $x_2$ 2개 이기 때문에 feasible region이 2차원에서 그려졌다. 만약 varaible이 3개라면 어떻게 될까? 이때도 똑같이 *feasible polyhedron*을 그려서 *hill-climbing*을 하면 된다 👏
+위의 문제의 경우 variable이 $x_1$, $x_2$ 2개 이기 때문에 feasible region이 2차원에서 그려졌다. 만약 variable이 3개라면 어떻게 될까? 이때도 똑같이 *feasible polyhedron*을 그려서 *hill-climbing*을 하면 된다 👏
 
 <div class="img-wrapper">
   <img src="{{ "/images/algorithm/simplex-method-3.png" | relative_url }}" width="300px">

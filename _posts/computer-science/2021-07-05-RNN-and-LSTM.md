@@ -74,7 +74,7 @@ $$
 
 <br/>
 
-\<RNN\>에서의 Back-propagatoin은 기존의 \<Feed Forward Network\>의 방식과는 조금 다르다. \<RNN\>에서는 time-step으로 \<Cell\>을 펼친 후에 Back-prop을 적용한다. 이를 \<**Backprop Through Time; BPTT**\>라고 한다.
+\<RNN\>에서의 Back-propagation은 기존의 \<Feed Forward Network\>의 방식과는 조금 다르다. \<RNN\>에서는 time-step으로 \<Cell\>을 펼친 후에 Back-prop을 적용한다. 이를 \<**Backprop Through Time; BPTT**\>라고 한다.
 
 <div class="img-wrapper">
   <img src="{{ "/images/natural-language-process/RNN-2.png" | relative_url }}" width="600px">

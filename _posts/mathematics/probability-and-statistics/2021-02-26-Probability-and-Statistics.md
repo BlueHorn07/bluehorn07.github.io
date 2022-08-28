@@ -123,7 +123,7 @@ hidden: true
   - Single Sample Estimation: Proportion Estimation
   - Two Samples Estimation: Diff Btw Two Proportions
 - [Variance Estimation]({{"/2021/05/16/variance-estimation.html" | relative_url}})
-  - Single Sample Estimation: Varaicen Estimation
+  - Single Sample Estimation: Variance Estimation
   - Two Samples Estimation: The ratio of two variances
 
 - [Maximum Likelihood Estimation]({{"/2021/05/17/maximum-likelihood-estimation.html" | relative_url}})

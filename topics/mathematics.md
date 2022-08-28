@@ -7,11 +7,11 @@ use_math: true
 
 <div class="statement">
 
-"The essence of mathematics lies in its freedom" - Cantor
+"The essence of mathematics lies in its freedom" - Georg Cantor
 
 </div>
 
-🔥가 표시된 부분은 다른 주제에 비해 더 큰 중요성을 갖습니다. 해당 주제들을 통해 더 자유롭고 창조적인 생각들을 가질 수 있습니다. 😇
+🔥가 표시된 부분은 다른 주제에 비해 더 큰 중요성을 갖습니다. 해당 주제들을 통해 더 자유롭고 창조적인 생각을 촉진합니다. 😇
 
 
 #### [MATH200] Differential Equations
@@ -20,7 +20,7 @@ use_math: true
 - Basic Set Theory
   - Partially Ordered Set
   - Totally Ordered Set
-  - Equivalent Replation
+  - Equivalent Relation
 - Cardinal Number
   - Countable Sets
   - Cantor's Diagonal Argument 🔥🔥🔥
@@ -70,7 +70,7 @@ use_math: true
   - Maximum Likelihood Estimation
   - Hypothesis Tests
     - confidence level
-    - p-value
+    - p-value 🔥
   - Simple Linear Regression
 
 <hr/>
@@ -79,7 +79,7 @@ use_math: true
 - **Part Ⅰ.**
   - Group
     - Fundamental Theorem of Finitely Generated Abelian Group 🔥
-  - Factor Group & Homorphism
+  - Factor Group & Homomorphism
     - Cayley’s Theorem
     - Fundamental Homomorphism Theorem(FHT) 🔥🔥
     - index-2 group is normal

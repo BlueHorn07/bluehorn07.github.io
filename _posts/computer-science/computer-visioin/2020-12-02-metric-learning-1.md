@@ -125,7 +125,7 @@ $$
 
 **<u>Mahalanobis distance</u>** $D_M$에서 주목할 점은 행렬 $M$을 학습시킬 수 있다<small>**learnable**</small>는 것이다!
 
-우리는 주어진 데이터셋으로부터 $M$을 학습시키게 되는데,[^1] 가장 직관적이고 unsupervised 방법은 데이터셋의 covaraince matrix $\Sigma$를 구해 그것의 역행렬을 $M$으로 삼는 것이다. $M={\Sigma}^{-1}$
+우리는 주어진 데이터셋으로부터 $M$을 학습시키게 되는데,[^1] 가장 직관적이고 unsupervised 방법은 데이터셋의 covariance matrix $\Sigma$를 구해 그것의 역행렬을 $M$으로 삼는 것이다. $M={\Sigma}^{-1}$
 
 <hr>
 

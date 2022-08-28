@@ -124,7 +124,7 @@ Let $X_1, \dots, X_n$ be a random sample.
 
 $\overline{X} = \dfrac{X_1 + \cdots + X_n}{n}$ is called a \<sample mean\>.
 
-(1) $\overline{X}$ is also a random varaible!
+(1) $\overline{X}$ is also a random variable!
 
 (2) If $E(X_1) = \mu$ and $\text{Var}(X_1) = \sigma^2$, then  <span class="half_HL">$E(\overline{X}) = \dfrac{n\mu}{n} = \mu$ and $\text{Var}(\overline{X}) = \dfrac{\sigma^2}{n}$</span>
 

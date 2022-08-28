@@ -314,5 +314,5 @@ the error is $\left\| \bar{x} - \mu \right\| \le z_{\alpha/2} \cdot \frac{\sigma
   - Single Sample Estimation: Proportion Estimation
   - Two Samples Estimation: Diff btw Two Proportions
 - [Variance Estimation]({{"/2021/05/16/variance-estimation.html" | relative_url}})
-  - Single Sample Estimation: Varaicen Estimation
+  - Single Sample Estimation: Variance Estimation
   - Two Samples Estimation: The Ratio of Two Variances
