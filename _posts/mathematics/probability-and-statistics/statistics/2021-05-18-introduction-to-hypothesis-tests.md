@@ -22,6 +22,8 @@ tags: ["Statistics"]
 
 <hr/>
 
+# Statistical Hypothesis
+
 <div class="definition" markdown="1">
 
 <span class="statement-title">Definition.</span> Statistical Hypothesis<br>
@@ -56,7 +58,7 @@ A. First, we should set a \<Test Statistics\>!
 
 Let's toss a coin $n$-times independently. For each toss, let $X_i$ are $1$ for head and $0$ for otherwise.
 
-Then, $X := \sum X_i$, the num. of heads in $n$ tosses be $X \sim \text{BIN}(n, p)$.
+Then, $X := \sum X_i$, the (# of heads in $n$ tosses) be $X \sim \text{BIN}(n, p)$.
 
 Then, we can use $X$ as a \<Test Statistics\>!
 
@@ -70,7 +72,7 @@ Then, we can use $X$ as a \<Test Statistics\>!
 
 <hr/>
 
-### T1 Erorr & T2 Error
+# T1 Erorr & T2 Error
 
 <big>Q. How to choose $C$?</big>
 
@@ -180,7 +182,7 @@ $$
 
 <hr/>
 
-#### Significance Level; $\alpha$
+## Significance Level; $\alpha$
 
 <div class="definition" markdown="1">
 
@@ -197,6 +199,10 @@ $$
 💥 [Interval Estimation](https://bluehorn07.github.io/mathematics/2021/05/06/interval-estimation.html#introduction-to-interval-estimation)을 수행할 때, 비슷한 것을 봤었다! 바로 \<Confidence Level\> $1-\alpha$다!
 
 </div>
+
+$\alpha$는 1종 오류의 가능성이다. Critical Value $C$에 의존하는 값으로 $C$가 엄격해질 수록 1종 오류의 가능성인 $\alpha(C)$의 값은 줄어들 것이다.
+
+보통은 1종 오류의 상한선은 $0.1$, $0.05$, $0.01$ 정도로 설정하고, 이것을 \<p-value\>와 비교한다. \<p-value\>는 아래에서 곧 다룰 것이다.
 
 <hr/>
 
@@ -228,7 +234,7 @@ $$
 
 Therefore, $C = 14$.
 
-We will reject $H_0$ if num. of heads in 20 tosses is $\ge 14$.
+We will reject $H_0$ if (# of heads in 20 tosses) is $\ge 14$.
 
 Since $x=14$, we reject $H_0$ at $\alpha = 0.0577$. $\blacksquare$
 
@@ -281,7 +287,7 @@ In this time, if we fail to reject $H_0$, then we can accept $H_0$!!
 
 <hr/>
 
-#### Power of Test; $\gamma(\theta)$
+## Power of Test; $\gamma(\theta)$
 
 <div class="definition" markdown="1">
 
@@ -309,9 +315,9 @@ $$
 
 <hr/>
 
-#### p-value
+## p-value
 
-지금까지 우리는 \<significance level\> $\alpha$ 값에 따라서, \<critical value\> $C$를 구하고, 또 \<critical region\>을 구했다. 그런데 <span style="color: red">만약 $\alpha$ 값이 주어지지 않았다면, 어떻게 할까??</span>
+지금까지 우리는 \<significance level\> $\alpha$ 값을 $0.1$, $0.05$ 등으로 설정하고, 이에 따른 \<critical value\> $C$를 구하고, 이걸 Test Statitics $X$와 비교해서 $H_0$를 기각할지 결정했다. 그런데 $\alpha$ 값을 설정하지 않고, reject이 가능한 그 경계인 $C = X$로 설정하고 $\alpha$을 역으로 구할 수 있지 않을까? \<p-value\>가 바로 딱 그런 녀석이다!
 
 <div class="definition" markdown="1">
 
@@ -321,7 +327,11 @@ The \<p-value\> of a test is <span class="half_HL">the lowest significance level
 
 </div>
 
-주어진 데이터를 기준으로 $H_0$를 reject 할 수 있는 가장 작은 $\alpha$ 값이 바로 \<p-value\>이다!
+주어진 데이터의 Test Statistics $X$를 기준으로 $H_0$를 reject 할 수 있는 가장 작은 $\alpha$ 값이 바로 \<p-value\>이다!
+
+Q. 왜 '가장 작은' $\alpha$ 값일까?
+
+A. T1 Error에 대해 얘기할 때, Critical Value $C$를 빡세게 잡을 수록 T1 Error가 일어날 가능성이 줄어든다고 했다. 즉, $C$가 빡셀 수록 $\alpha$ 값이 작아진다. 보통은 $X > C$이기에 $H_0$를 reject 하는데, 이걸 경계인 $C = X$까지 $C$ 값을 끌어올림으로써 $\alpha$ 값을 최대한 낮춘 것이다. 이런 이유 때문에 \<p-value\>가 $\alpha$보다 작을 수록 지금 정한 $C$ 값보다 더 빡센 조건에서도 $H_0$가 reject 됨을 말한다.
 
 예를 통해 제대로 이해해보자!
 
@@ -356,15 +366,26 @@ $$
 
 우리는 "p-value"를 지표로 삼아 $H_0$를 기각할지 결정할 수 있다.
 
-만약, confidence level $\alpha$와 비교했을 때, "p-value"의 값이 더 작다면, 즉 $\alpha$가 생성하는 넓이가 "p-value"가 생성하는 넓이를 포함한다면, 이것은 주어진 데이터가 $\alpha$의 critical region에 속한다는 말이기 때문에, $H_0$를 기각한다!
+만약, significance level $\alpha$와 비교했을 때, "p-value"의 값이 더 작다면, 즉 $\alpha$가 생성하는 넓이가 "p-value"가 생성하는 넓이를 포함한다면, 이것은 주어진 데이터가 $\alpha$의 critical region에 속한다는 말이기 때문에, $H_0$를 기각한다!
 
-반대로 "p-value"의 값이 더 크다면, $H_0$를 기각할 수 없다.
+반대로 "p-value"의 값이 크다면, $H_0$를 기각할 수 없다.
 
 <br/>
 
-보통 p-value가 5%(=0.05)보다 다면 유의한 차이가 있다고 얘기한다. 이때 '유의한 차이'의 의미는 기존 이론인 $H_0$과 실험 결과를 비교했을 때, $H_0$를 reject 해야 한다는 것을 의미한다.
+보통 p-value가 5%(=0.05)보다 작다면 "유의한 차이가 있다"고 얘기한다. 이때 '유의한 차이'는 기존 이론인 $H_0$과 실험 결과를 비교했을 때, $H_0$를 reject 해야 한다는 것을 의미한다.
+
+개인적으로 \<p-value\>는 그 의미가 자주 헷갈려서 여러 의미와 해석을 함께 보면 도움이 될 것 같다.
+
+- $H_0$를 reject 할 수 있는 가장 작은 $\alpha$ 값
+- 가설 $H_0$가 맞다는 가정 하에, 얻어진 Test Statistics $X$가 얼마나 자주 나올 것인가
+- 관찰된 데이터가 $H_0$와 양립하는 정도를 $[0, 1]$의 수치로 표현할 것.
+  - \<p-value\> 값이 작을수록 데이터와 $H_0$는 양립 불가능
+- 우연성의 정도
+  - \<p-value\>가 낮을 수록, 실험 결과가 우연이 아닐 거라는 말
 
 <hr/>
+
+# 맺음말
 
 이제 "통계적 검정(Statistical Test)"를 수행하기 위해 필요한 기본적인 내용은 다 살펴봤다. 다음 포스트부터 상황에 따라 어떻게 통계적 검정을 수행하는지 살펴볼 예정이다. 사실 그렇게 어렵진 않고, 요구하는 것들을 잘 파악해서 순서에 맞게 계산하기만 하면 된다.
 

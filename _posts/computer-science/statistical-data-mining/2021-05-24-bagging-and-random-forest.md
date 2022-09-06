@@ -50,7 +50,7 @@ $$
 
 \<Bagging\>으로 classification을 수행할 때는 두 가지 접근법이 있다: "consensus votes" & "averaging the probability"
 
-"consensus votes"는 $\hat{f}^{(b)}(x)$에서 "num. of 1"과 "num. of 0"의 수를 비교해 많은 것을 취하는 접근이다.
+"consensus votes"는 $\hat{f}^{(b)}(x)$에서 "# of 1"과 "# of 0"의 수를 비교해 많은 것을 취하는 접근이다.
 
 "averaging the probability"는 개별 estimator가 확률을 predict하며, 전체 bagging estimator의 결과에 평균을 내는 방법이다.
 
