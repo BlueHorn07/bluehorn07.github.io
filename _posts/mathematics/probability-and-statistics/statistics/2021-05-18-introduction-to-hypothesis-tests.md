@@ -317,7 +317,7 @@ $$
 
 ## p-value
 
-지금까지 우리는 \<significance level\> $\alpha$ 값을 $0.1$, $0.05$ 등으로 설정하고, 이에 따른 \<critical value\> $C$를 구하고, 이걸 Test Statitics $X$와 비교해서 $H_0$를 기각할지 결정했다. 그런데 $\alpha$ 값을 설정하지 않고, reject이 가능한 그 경계인 $C = X$로 설정하고 $\alpha$을 역으로 구할 수 있지 않을까? \<p-value\>가 바로 딱 그런 녀석이다!
+지금까지 우리는 \<significance level\> $\alpha$ 값을 $0.1$, $0.05$ 등으로 설정하고, 이에 따른 \<critical value\> $C$를 구하고, 이걸 Test Statitics $X$와 비교해서 $H_0$를 기각할지 결정했다. 그런데 $\alpha$ 값을 설정하지 않고, Critical Value $C$를 reject이 가능한 경계인 $C = X$로 설정한 후, $\alpha$을 역으로 구할 수 있지 않을까? \<p-value\>가 딱 그런 녀석이다!
 
 <div class="definition" markdown="1">
 
@@ -331,7 +331,7 @@ The \<p-value\> of a test is <span class="half_HL">the lowest significance level
 
 Q. 왜 '가장 작은' $\alpha$ 값일까?
 
-A. T1 Error에 대해 얘기할 때, Critical Value $C$를 빡세게 잡을 수록 T1 Error가 일어날 가능성이 줄어든다고 했다. 즉, $C$가 빡셀 수록 $\alpha$ 값이 작아진다. 보통은 $X > C$이기에 $H_0$를 reject 하는데, 이걸 경계인 $C = X$까지 $C$ 값을 끌어올림으로써 $\alpha$ 값을 최대한 낮춘 것이다. 이런 이유 때문에 \<p-value\>가 $\alpha$보다 작을 수록 지금 정한 $C$ 값보다 더 빡센 조건에서도 $H_0$가 reject 됨을 말한다.
+A. T1 Error에 대해 얘기할 때, Critical Value $C$를 빡세게 잡을 수록 T1 Error의 가능성이 줄어든다고 했다. 즉, $C$가 빡셀 수록 $\alpha$ 값이 작아진다. 보통은 $X > C$이기에 $H_0$를 reject 하는데, 이걸 경계인 $C = X$까지 $C$ 값을 끌어올림으로써 $\alpha$ 값을 최대한 낮춘 것이다. 이런 이유 때문에 \<p-value\>가 작을 수록 정해둔 $C_{0.1}$, $C_{0.05}$ 값보다 더 빡센 조건에서도 $H_0$가 reject 됨을 말한다.
 
 예를 통해 제대로 이해해보자!
 
