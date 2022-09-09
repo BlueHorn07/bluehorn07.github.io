@@ -257,4 +257,4 @@ Partialling Out, Regression Fitting을 통해 다른 RV의 영향력을 없애�
 # References
 
 - [Statistics 101: Model Building, A Visual Guide to Partial Correlation](https://youtu.be/UyyWsctkXaw)
-- [Wikimedia: Partiall Correlation](https://en.wikipedia.org/wiki/Partial_correlation)
+- [Wikipedia: Partiall Correlation](https://en.wikipedia.org/wiki/Partial_correlation)

@@ -19,7 +19,7 @@ tags: ["Time Series Analysis"]
   - Multiplicative Decomposition
 - Stationarity
 - Difference
-- Auto-Correlation
+- [Auto-Correlation]({{"/2022/09/08/auto-correlation.html" | relative_url}})
   - ACF: Auto-Correlation Function
   - PACF: Partial ACF
 - Moving Average Model
