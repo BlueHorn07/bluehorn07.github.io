@@ -360,7 +360,7 @@ $$
 0.0577 = P(\text{BIN(20, 0.5)} \ge 14)
 $$
 
-즉, significance level $\alpha=0.0577$가 $H_0$를 기각하는 가장 작은 값이다. 이 $0.0577$이 바로 이 검정(Test)의 "p-value"다!!
+즉, significance level $\alpha=0.0577$가 $H_0$를 기각하는 가장 작은 값이다. $0.0577$이 이번 검정(Test)의 "p-value"다!!
 
 </div>
 
