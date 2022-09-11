@@ -23,7 +23,7 @@ tags: ["Time Series Analysis"]
   - Additive Decomposition
   - Multiplicative Decomposition
 - [Stationarity]({{"/2022/09/09/stationarity.html" | relative_url}})
-- Differencing
+- [Differencing]({{"/2022/09/10/differencing.html" | relative_url}})
 - [Auto-Correlation]({{"/2022/09/08/auto-correlation.html" | relative_url}})
   - ACF: Auto-Correlation Function
   - PACF: Partial ACF
