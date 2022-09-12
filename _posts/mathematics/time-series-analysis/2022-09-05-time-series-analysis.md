@@ -29,7 +29,7 @@ tags: ["Time Series Analysis"]
   - ACF: Auto-Correlation Function
   - PACF: Partial ACF
 - [Auto-regressive Model]({{"/2022/09/11/auto-regressive-model.html" | relative_url}})
-- Moving Average Model
+- [Moving-Average Model]({{"/2022/09/11/moving-average-model.html" | relative_url}})
 
 
 ## 참고 자료

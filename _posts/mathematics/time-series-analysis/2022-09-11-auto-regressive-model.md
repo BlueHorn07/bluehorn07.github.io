@@ -164,3 +164,9 @@ $$
   - $-1 < \phi_2 < 1$
   - $\phi_1 + \phi_2 < 1$
   - $\phi_2 - \phi_1 < 1$
+
+# Reference
+
+- [Wikipedia: Auto-regressive Model](https://en.wikipedia.org/wiki/Autoregressive_model)
+- [Forecasting: Principles and Practices: 자귀회귀 모델](https://otexts.com/fppkr/AR.html)
+
