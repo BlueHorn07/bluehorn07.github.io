@@ -30,7 +30,7 @@ tags: ["Time Series Analysis"]
   - PACF: Partial ACF
 - [Auto-regressive Model]({{"/2022/09/11/auto-regressive-model.html" | relative_url}})
 - [Moving-Average Model]({{"/2022/09/11/moving-average-model.html" | relative_url}})
-
+- [ARMA & ARIMA Model]({{"/2022/09/12/arma-and-arima-model.html" | relative_url}})
 
 ## 참고 자료
 
