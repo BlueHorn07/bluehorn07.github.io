@@ -23,6 +23,18 @@ $$
 (1 - \phi_1 B) (1 - \Phi_1 B^4) (1 - B) (1  - B^4) Z(t) = (1 + \theta_1 B)(1 + \Theta_1 B^4) \epsilon(t)
 $$
 
+## Example: Datadog Anomaly Detection
+
+인프라 리소스 모니터링 서비스인 ![Datadog](https://img.shields.io/badge/datadog-%23632CA6.svg?style=for-the-badge&logo=datadog&logoColor=white)은 SARIMA 모델을 통해 Anomaly Detection을 수행한다고 한다.
+
+<div class="img-wrapper">
+  <a href="https://www.datadoghq.com/blog/introducing-anomaly-detection-datadog/" target="_blank">
+  <img src="{{ "/images/time-series-analysis/datadog-anomaly-detection.png" | relative_url }}" width="100%">
+  </a>
+</div>
+
+자세한 내용이 궁금하다면, 위의 캡쳐를 클릭해보자. 👏
+
 # SARIMAX Model
 
 SARIMAX는 SARIMA 모델에 **"외생변수(eXogenous variable)"**을 추가로 고려하는 모델이다. 외생변수란 실험 대상이 되는 변수 이외의 기타 부수적인 변수를 말한다.
