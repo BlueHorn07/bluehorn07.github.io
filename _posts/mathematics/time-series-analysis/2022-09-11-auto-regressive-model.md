@@ -168,5 +168,5 @@ $$
 # Reference
 
 - [Wikipedia: Auto-regressive Model](https://en.wikipedia.org/wiki/Autoregressive_model)
-- [Forecasting: Principles and Practices: 자귀회귀 모델](https://otexts.com/fppkr/AR.html)
+- [Forecasting: Principles and Practices: 자기회귀 모델](https://otexts.com/fppkr/AR.html)
 
