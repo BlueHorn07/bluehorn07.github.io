@@ -169,7 +169,7 @@ A sequence of Gaussian distribution으로, multi-variate Gaussian distribution�
 
 ### Markov Process
 
-👉 [Markov Process]({{"/2021/07/03/Markov-process.html" | relative_url}})
+👉 [Markov Process]({{"/2021/07/03/markov-process.html" | relative_url}})
 
 <hr/>
 

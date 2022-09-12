@@ -11,6 +11,7 @@ tags: ["Time Series Analysis"]
 
 - [Covariate]({{"/2022/09/06/basic-statistical-concepts.html" | relative_url}})
 - [Partial Correlation]({{"/2022/09/07/partial-correlation.html" | relative_url}})
+- Back-shift Operator
 
 ## Basic Time Series Concepts
 
@@ -27,8 +28,8 @@ tags: ["Time Series Analysis"]
 - [Auto-Correlation]({{"/2022/09/08/auto-correlation.html" | relative_url}})
   - ACF: Auto-Correlation Function
   - PACF: Partial ACF
+- [Auto-regressive Model]({{"/2022/09/11/auto-regressive-model.html" | relative_url}})
 - Moving Average Model
-- Auto-regressive Model
 
 
 ## 참고 자료
