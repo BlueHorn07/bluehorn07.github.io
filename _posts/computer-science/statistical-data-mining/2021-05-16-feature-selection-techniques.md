@@ -21,7 +21,7 @@ tags: ["Statistical Data Mining"]
 
 <hr/>
 
-### Best Subset Selection
+# Best Subset Selection
 
 For given $k \le p$, choose $k$ input variables. This makes $\binom{n}{k}$ number of models. Find a model with which <span class="half_HL">the residual mean square error is minimized</span> among all models having $k$ input variables. Denote the model as $M_k$.
 
@@ -60,19 +60,19 @@ $$
 
 <hr/>
 
-### Forward Stepwise Selection
+# Forward Stepwise Selection
 
 Start with the model $M_0$ containing the intercept only.
 
-Construct a sequence of models $M_1, \dots, M_p$ by sequentially adding into the model the predictor that most improves the fit.
+Construct a sequence of models $M_1, \dots, M_p$ by sequentially adding the predictor that most improves the fit .
 
 Choose the best model among $M_0, \dots, M_p$.
 
-즉, input variable을 하나 넣었을 때 Test Err가 가장 크게 낮아지는 녀석을 하나 넣겠다는 말이다!
+즉, input variable을 하나 추가할 때, Test Err가 가장 크게 낮아지는 녀석을 하나 넣겠다는 말이다!
 
 <hr/>
 
-### Backward Stepwise Selection
+# Backward Stepwise Selection
 
 Start with the full model $M_p$.
 
@@ -80,25 +80,25 @@ Construct a sequence of models $M_{p-1}, \dots, M_0$ by sequentially deleting th
 
 Choose the best model among $M_p, \dots, M_0$.
 
-즉, input variable을 하나 뺐을 때 Test Err가 제일 적게 나오는 녀석을 뺀다는 말이다!
+즉, input variable을 하나 제거할 때, Test Err가 제일 적게 나오는 녀석을 뺀다는 말이다!
 
 <hr/>
 
-### Mallow's $C_p$
+# Mallow's $C_p$
 
-\<Mallow's $C_p$\> 이하 $C_p$는 어떤 model $M$를 평가하는 지표 중 하나다.
+\<Mallow's $C_p$\> 이하 $C_p$는 어떤 통계 모델 $M$를 평가하는 지표 중 하나다.
 
 $$
 C_p (M) = \frac{1}{n} \cdot \left( \sum^n_{i=1} (y_i - \hat{y})^2 + 2d \hat{\sigma}^2 \right)
 $$
 
-즉, $C_p$는 Test Err와 함께 모델의 parameter 수 $d$를 고려한다는 말이다!
+즉, $C_p$는 Test Err와 함께 모델 피처 수 $d$를 고려한다는 말이다!
 
-그래서 모델을 선택할 때, 이 $C_p$가 가장 낮은 모델을 선택하면 된다.
+그래서 모델을 선택할 때, <span style="color: red">$C_p$가 가장 낮은 모델을 선택하면 된다.</span>
 
 <hr/>
 
-### AIC & BIC
+# AIC & BIC
 
 \<**AIC**; Akaike Information Criterion\>과 \<**BIC**; Bayesian Information Criterion\>은 좀더 general한 model selection 지표이다.
 
@@ -110,15 +110,17 @@ $$
 
 이때, $\text{loglik}$는 "log-likelihood"의 약자로,\<AIC\>가 MLE에 의해 최대화된 "log-likelihood" 텀에 변수의 갯수 $d$에 따른 패널티를 추가한 지표를 확인할 수 있다.
 
+피처를 많이 쓰는 모델이라면($d$가 큰) RSS는 작아지게 된다. 그러나 AIC와 BIC는 피처 수 $d$를 포함하기 때문에 <span style="color: red">AIC/BIC가 가장 작은 모델을 쓴다</span>는 것은 우도(likelihood)를 가장 크게 하는(explainable) 동시에 피처 갯수는 가장 적은(parsimonious) 최적의 모델을 쓴다는 의미이다.
+
 $$
 \text{BIC}(M) = - \frac{2}{n} \cdot \text{loglik} + \frac{d \cdot \log(n)}{n}
 $$
 
-\<AIC\>의 경우 \<Mallow's $C_p$\>와 동치라고 하며, \<BIC\>가 \<AIC\>보다 더 simple한 모델을 선호한다고 한다.
+\<AIC\>의 경우 \<Mallow's $C_p$\>와 동치라고 하며, <span style="color: red">\<BIC\>가 \<AIC\>보다 더 심플한 모델을 선호한다</span>고 한다.
 
 <hr/>
 
-### Instability of Variable Selection
+# Instability of Variable Selection
 
 <div class="statement" markdown="1">
 
