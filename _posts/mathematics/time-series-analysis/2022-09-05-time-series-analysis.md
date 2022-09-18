@@ -11,9 +11,8 @@ tags: ["Time Series Analysis"]
 
 - [Covariate]({{"/2022/09/06/basic-statistical-concepts.html" | relative_url}})
 - [Partial Correlation]({{"/2022/09/07/partial-correlation.html" | relative_url}})
-- Back-shift Operator
 
-## Basic Time Series Concepts
+## Classical Time Series Approach
 
 - [Time-Series Components]({{"/2022/09/06/time-series-components.html" | relative_url}})
   - Trend
@@ -31,6 +30,20 @@ tags: ["Time Series Analysis"]
 - [Auto-regressive Model]({{"/2022/09/11/auto-regressive-model.html" | relative_url}})
 - [Moving-Average Model]({{"/2022/09/11/moving-average-model.html" | relative_url}})
 - [ARMA & ARIMA Model]({{"/2022/09/12/arma-and-arima-model.html" | relative_url}})
+- [SARIMA & SARIMAX Model]({{"/2022/09/12/sarima-and-sarimax-model.html" | relative_url}})
+- [Backshift Operator]({{"/2022/09/18/backshift-operator.html" | relative_url}})
+
+## Model-based Time Series Approach
+
+- [Gaussian Process]({{"/2021/07/01/Gaussian-process.html" | relative_url}})
+- [Gaussian Process Regression]({{"/2021/09/21/Gaussian-Process-Regression.html" | relative_url}})
+
+
+## DL-based Time Series Approach
+
+- [RNN & LSTM]({{"/2021/07/05/RNN-and-LSTM.html" | relative_url}})
+
+
 
 ## 참고 자료
 
