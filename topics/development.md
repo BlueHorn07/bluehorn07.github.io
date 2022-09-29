@@ -12,11 +12,19 @@ permalink: /topic/development
 
 - [CORS]({{"/2020/12/16/cors.html" | relative_url}})
 - [좋은 REST API]({{"/2020/12/24/good-rest-api.html" | relative_url}})
-- [OAuth]({{"/2021/05/01/OAuth.html" | relative_url}})
 - [Proxy]({{"/2021/05/01/proxy.html" | relative_url}})
-- [OpenID-Connect]({{"/2021/05/02/OpenID-Connect.html" | relative_url}})
-- [SAML]({{"/2021/05/02/SAML.html" | relative_url}})
-- [SSO]({{"/2021/05/02/SSO.html" | relative_url}})
+
+<div class="proof" markdown="1">
+
+**기획 시리즈: Web Authentication**
+
+1. Cookie & Session & JWT
+2. [OAuth]({{"/2021/05/01/OAuth.html" | relative_url}})
+3. [OpenID Connect(OIDC)]({{"/2021/05/02/OpenID-Connect.html" | relative_url}}) 
+4. [SSO]({{"/2021/05/02/SSO.html" | relative_url}}) 👈
+5. [SAML]({{"/2021/05/02/SAML.html" | relative_url}}) 
+
+</div>
 
 # 독서
 
