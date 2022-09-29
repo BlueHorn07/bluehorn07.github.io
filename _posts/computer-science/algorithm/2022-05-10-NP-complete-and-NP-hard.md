@@ -2,7 +2,7 @@
 title: "NP-hard and NP-complete"
 layout: post
 use_math: true
-tags: ["Algorithm"]
+tags: ["algorithm"]
 ---
 
 

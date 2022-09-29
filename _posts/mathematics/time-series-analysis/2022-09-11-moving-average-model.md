@@ -2,7 +2,7 @@
 title: "Moving-Average Model"
 layout: post
 use_math: true
-tags: ["Time Series Analysis"]
+tags: ["time_series_analysis"]
 ---
 
 # 오차로 미래를 예측한다

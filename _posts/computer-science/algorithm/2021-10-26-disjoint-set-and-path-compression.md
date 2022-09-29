@@ -2,7 +2,7 @@
 title: "Disjoint Set & Path Compression"
 layout: post
 use_math: true
-tags: ["Algorithm"]
+tags: ["algorithm"]
 ---
 
 

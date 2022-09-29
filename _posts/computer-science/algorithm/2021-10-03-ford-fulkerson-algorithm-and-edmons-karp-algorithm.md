@@ -2,7 +2,7 @@
 title: "Ford-Fulkerson Algorithm & Edmons-Karp Algorithm"
 layout: post
 use_math: true
-tags: ["Algorithm"]
+tags: ["algorithm"]
 ---
 
 

@@ -2,7 +2,7 @@
 title: "Time Series Component: Trend, Seasonality, Cycle"
 layout: post
 use_math: true
-tags: ["Time Series Analysis"]
+tags: ["time_series_analysis"]
 ---
 
 # Time Series Component

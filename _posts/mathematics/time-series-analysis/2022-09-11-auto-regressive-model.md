@@ -2,7 +2,7 @@
 title: "Auto-Regressive Model"
 layout: post
 use_math: true
-tags: ["Time Series Analysis"]
+tags: ["time_series_analysis"]
 ---
 
 # 과거가 미래를 예측한다

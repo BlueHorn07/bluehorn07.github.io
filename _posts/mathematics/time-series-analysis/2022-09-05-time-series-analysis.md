@@ -1,8 +1,8 @@
 ---
-title: "Time Series Analysis"
+title: "time_series_analysis"
 layout: post
 use_math: true
-tags: ["Time Series Analysis"]
+tags: ["time_series_analysis"]
 ---
 
 <br/>

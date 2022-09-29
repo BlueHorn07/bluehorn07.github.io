@@ -2,7 +2,7 @@
 title: "Edit Distance"
 layout: post
 use_math: true
-tags: ["Algorithm"]
+tags: ["algorithm"]
 ---
 
 

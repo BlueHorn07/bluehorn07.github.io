@@ -2,7 +2,7 @@
 title: "All Pairs Shortest Paths; Floyd-Warshall"
 layout: post
 use_math: true
-tags: ["Algorithm"]
+tags: ["algorithm"]
 ---
 
 

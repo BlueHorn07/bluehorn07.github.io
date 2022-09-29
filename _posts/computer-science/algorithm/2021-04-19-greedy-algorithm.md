@@ -2,7 +2,7 @@
 title: "Greedy Algorithm"
 layout: post
 use_math: true
-tags: ["Algorithm"]
+tags: ["algorithm"]
 ---
 
 

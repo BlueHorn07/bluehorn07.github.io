@@ -2,7 +2,7 @@
 title: "Traveling Salesman Problem"
 layout: post
 use_math: true
-tags: ["Algorithm"]
+tags: ["algorithm"]
 ---
 
 

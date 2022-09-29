@@ -2,7 +2,7 @@
 title: "Distribution over functions & Gaussian Process"
 layout: post
 use_math: true
-tags: ["Machine Learning", "Time Series Analysis"]
+tags: ["machine_learning", "time_series_analysis"]
 modified_date: 2021.09.21
 readtime: 30 Minutes
 ---

@@ -2,7 +2,7 @@
 title: "ARMA & ARIMA Model"
 layout: post
 use_math: true
-tags: ["Time Series Analysis"]
+tags: ["time_series_analysis"]
 ---
 
 # ARMA Model

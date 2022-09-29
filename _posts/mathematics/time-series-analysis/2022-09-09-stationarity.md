@@ -2,7 +2,7 @@
 title: "Stationarity"
 layout: post
 use_math: true
-tags: ["Time Series Analysis"]
+tags: ["time_series_analysis"]
 ---
 
 # 정상성 = 특징 없음

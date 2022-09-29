@@ -2,7 +2,7 @@
 title: "Divide and Conquer"
 layout: post
 use_math: true
-tags: ["Algorithm"]
+tags: ["algorithm"]
 ---
 
 

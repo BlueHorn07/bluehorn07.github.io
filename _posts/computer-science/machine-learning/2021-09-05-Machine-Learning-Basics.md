@@ -2,7 +2,7 @@
 title: "Machine Learning Basics"
 layout: post
 use_math: true
-tags: ["Machine Learning"]
+tags: ["machine_learning"]
 ---
 
 

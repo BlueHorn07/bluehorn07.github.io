@@ -2,7 +2,7 @@
 title: "Independent Set, Vertex Cover, and Clique"
 layout: post
 use_math: true
-tags: ["Algorithm"]
+tags: ["algorithm"]
 ---
 
 

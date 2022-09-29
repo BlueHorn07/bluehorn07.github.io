@@ -2,7 +2,7 @@
 title: "Differencing"
 layout: post
 use_math: true
-tags: ["Time Series Analysis"]
+tags: ["time_series_analysis"]
 ---
 
 # 차분(Differencing)이란?

@@ -2,7 +2,7 @@
 title: "Linear Programming"
 layout: post
 use_math: true
-tags: ["Algorithm"]
+tags: ["algorithm"]
 ---
 
 

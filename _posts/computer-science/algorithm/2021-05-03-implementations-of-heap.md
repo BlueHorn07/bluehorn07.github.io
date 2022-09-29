@@ -2,7 +2,7 @@
 title: "Implementations of Heap"
 layout: post
 use_math: true
-tags: ["Algorithm"]
+tags: ["algorithm"]
 modified_date: 2021.09.20
 readtime: 1 Hour
 ---

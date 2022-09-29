@@ -2,7 +2,7 @@
 title: "Shortest Path Case Study"
 layout: post
 use_math: true
-tags: ["Algorithm"]
+tags: ["algorithm"]
 ---
 
 

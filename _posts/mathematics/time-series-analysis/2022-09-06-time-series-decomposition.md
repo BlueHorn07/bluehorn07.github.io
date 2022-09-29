@@ -2,7 +2,7 @@
 title: "Time Series Decomposition"
 layout: post
 use_math: true
-tags: ["Time Series Analysis"]
+tags: ["time_series_analysis"]
 ---
 
 시계열 데이터를 성분별: 추세(T), 계절성(S), 주기(C)로 분해함으로써 분석하려는 시계열 데이터의 특징을 이해할 수 있다.

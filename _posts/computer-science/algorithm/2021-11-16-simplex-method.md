@@ -2,7 +2,7 @@
 title: "Simplex Method"
 layout: post
 use_math: true
-tags: ["Algorithm"]
+tags: ["algorithm"]
 ---
 
 

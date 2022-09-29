@@ -2,7 +2,7 @@
 title: "Predictive Distribution"
 layout: post
 use_math: true
-tags: ["Machine Learning"]
+tags: ["machine_learning"]
 modified_date: 2021.09.20
 readtime: 30 Minutes
 ---

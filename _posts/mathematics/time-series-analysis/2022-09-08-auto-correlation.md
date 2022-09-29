@@ -2,7 +2,7 @@
 title: "Auto-Correlation: ACF & PACF"
 layout: post
 use_math: true
-tags: ["Time Series Analysis"]
+tags: ["time_series_analysis"]
 ---
 
 # 선행 개념

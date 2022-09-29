@@ -2,7 +2,7 @@
 title: "Algorithm 수업과 나를 돌아보며"
 layout: post
 use_math: true
-tags: ["Algorithm"]
+tags: ["algorithm"]
 ---
 
 <br/>

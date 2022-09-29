@@ -2,7 +2,7 @@
 title: "Closest pair of points"
 layout: post
 use_math: true
-tags: ["Algorithm"]
+tags: ["algorithm"]
 ---
 
 

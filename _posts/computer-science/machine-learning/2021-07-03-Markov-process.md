@@ -2,7 +2,7 @@
 title: "Markov Process & Markov Chain"
 layout: post
 use_math: true
-tags: ["Machine Learning"]
+tags: ["machine_learning"]
 ---
 
 

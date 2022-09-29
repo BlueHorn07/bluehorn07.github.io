@@ -2,7 +2,7 @@
 title: "Hamilton Cycle Problem"
 layout: post
 use_math: true
-tags: ["Algorithm"]
+tags: ["algorithm"]
 ---
 
 

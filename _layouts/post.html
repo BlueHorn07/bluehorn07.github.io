@@ -36,7 +36,11 @@ layout: default
       {% if page.tags %}
         <div class="tag-wrapper">
           {% for tag in page.tags %}
-            <div class="tag">{{ tag }}</div>
+            {% if site.data.tags contains tag %}
+              <span class="tag" data-tag="{{tag}}">
+                {{site.data.format[tag]}}
+              </span>
+            {% endif %}
           {% endfor %}
         </div>
       {% endif %}

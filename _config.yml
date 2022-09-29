@@ -57,5 +57,5 @@ paginate_path: "/page/:num/"
 
 # build option
 # ref: https://yangeok.github.io/blog/2019/05/21/jekyll-caching.html
-# incremental: true
-# limit_posts: 5
+incremental: true
+# limit_posts: 100
