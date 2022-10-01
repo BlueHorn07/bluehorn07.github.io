@@ -2,7 +2,7 @@
 title: "Overview of Supervised Learning - 1"
 layout: post
 use_math: true
-tags: ["Statistical Data Mining"]
+tags: [applied_statistics]
 ---
 
 

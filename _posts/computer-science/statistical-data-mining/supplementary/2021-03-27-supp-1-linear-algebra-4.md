@@ -2,7 +2,7 @@
 title: "Supp-1: Linear Algebra - 4"
 layout: post
 use_math: true
-tags: ["Statistical Data Mining"]
+tags: [linear_algebra, applied_statistics]
 ---
 
 

@@ -2,7 +2,7 @@
 title: "Interpretation of Decision Boundary with Learning"
 layout: post
 use_math: true
-tags: [CS229, Machine Learning]
+tags: [machine_learning]
 ---
 
 

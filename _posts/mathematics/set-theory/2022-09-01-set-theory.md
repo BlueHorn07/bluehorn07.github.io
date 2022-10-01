@@ -2,7 +2,7 @@
 title: "Set Theory"
 layout: post
 use_math: true
-tags: ["Set Theory"]
+tags: [set_theory]
 ---
 
 <br>

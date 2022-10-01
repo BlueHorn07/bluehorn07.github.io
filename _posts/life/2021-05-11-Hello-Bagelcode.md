@@ -1,7 +1,7 @@
 ---
 title: "Hello, Bagelcode! 🥯"
 layout: post
-tags: []
+tags: [life]
 use_math: true
 ---
 

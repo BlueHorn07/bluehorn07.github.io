@@ -2,7 +2,7 @@
 title: "Rank-Nullity Theorem"
 layout: post
 use_math: true
-tags: ["Linear Algebra"]
+tags: [set_theory]
 ---
 
 

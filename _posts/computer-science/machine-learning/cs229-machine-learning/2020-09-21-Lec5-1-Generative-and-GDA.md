@@ -2,7 +2,7 @@
 title: "Generative Learning Algorithm, and GDA"
 layout: post
 use_math: true
-tags: [CS229, Machine Learning]
+tags: [machine_learning]
 ---
 
 

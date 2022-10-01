@@ -2,7 +2,7 @@
 title: "Feature Selection Techniques"
 layout: post
 use_math: true
-tags: ["Statistical Data Mining"]
+tags: [applied_statistics]
 ---
 
 

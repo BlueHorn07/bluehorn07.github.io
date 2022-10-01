@@ -2,7 +2,7 @@
 title: "Linear Regression - 1-1"
 layout: post
 use_math: true
-tags: ["Statistical Data Mining"]
+tags: [applied_statistics]
 ---
 
 

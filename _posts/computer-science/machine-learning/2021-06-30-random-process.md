@@ -7,8 +7,6 @@ modified_date: 2021.09.21
 readtime: 20 minutes
 ---
 
-
-
 "Machine Learning"을 공부하면서 개인적인 용도로 정리한 포스트입니다. 지적은 언제나 환영입니다 :)
 
 <hr/>

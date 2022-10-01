@@ -2,7 +2,7 @@
 title: "Linear Algebra"
 layout: post
 use_math: true
-tags: ["Linear Algebra"]
+tags: [linear_algebra]
 ---
 
 <br>

@@ -1,7 +1,7 @@
 ---
 title: "『오늘 밤은 굶고 자야지』 박상영"
 layout: post
-tags: ["독서"]
+tags: [reading]
 ---
 
 <div class="img-wrapper" markdown="1">
