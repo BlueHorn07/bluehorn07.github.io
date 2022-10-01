@@ -50,35 +50,6 @@
   });
 </script>
 
-<!-- tag select -->
-<script>
-  $().ready(function() {  
-    $("[data-tag]").click((e) => {
-      currentTag = e.target.dataset.tag;
-      filterByTagName(currentTag);
-    })
-
-    function filterByTagName(tagName) {
-      $('.hidden').removeClass('hidden'); // remove all hidden tag
-      $('.post-wrapper').each((index, elem) => {
-        const tag_children = elem.querySelectorAll('.tag');
-        let hasTag = false;
-        for(let i=0; i < tag_children.length; i++){
-          if(tag_children[i].textContent == tagName) {
-            hasTag = true;
-            break;
-          }
-        }
-        if(!hasTag){
-          $(elem).addClass('hidden');
-        }
-       });
-      $(`.tag`).removeClass('selected');
-      $(`.tag[data-tag="${tagName}"]`).addClass('selected');
-    }
-  })
-</script>
-
 <!-- naver web-master -->
 <meta name="naver-site-verification" content="e15eb928b18319c5dce61949c46f7a16060920e2" />
 
