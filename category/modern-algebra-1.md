@@ -1,12 +1,10 @@
 ---
-title: "MATH301 - Modern Algebra 1"
+title: "Modern Algebra 1"
 layout: post
 use_math: true
 tags: ["Modern Algebra1"]
 hidden: true
 ---
-
-<br>
 
 <div class="img-wrapper">
   <img src="{{ "/images/modern-algebra-1/group_meme.jpg" | relative_url }}">

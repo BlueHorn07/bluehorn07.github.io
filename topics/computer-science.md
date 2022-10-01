@@ -45,6 +45,6 @@ use_math: true
 
 <hr/>
 
-# [Time Series Analysis]({{"/2022/09/05/time-series-analysis.html" | relative_url}})
+# [Time Series Analysis]({{"/category/time-series-analysis.html" | relative_url}})
 
 회사에서 시계열 데이터를 분석하고 ML/DL 모델을 만들고 있습니다. 시계열 데이터 분석과 관련해 공부한 내용을 정리하고 있습니다 ⏰

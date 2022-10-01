@@ -11,24 +11,24 @@ use_math: true
 
 </div>
 
-# [Linear Algebra]({{"/2021/03/01/linear-algebra.html" | relative_url}})
+# [Linear Algebra]({{"/category/linear-algebra.html" | relative_url}})
 
 <hr/>
 
-# [Differential Equations]({{"/2021/03/01/differential-equations.html" | relative_url}})
+# [Differential Equations]({{"/category/differential-equations.html" | relative_url}})
 
 <hr/>
 
-# [Complex Variables]({{"2020/12/15/complex-variable.html" | relative_url}})
+# [Complex Variables]({{"category/complex-variable.html" | relative_url}})
 
 <hr>
 
-# [Probability and Statistics]({{"2021/02/26/Probability-and-Statistics.html" | relative_url}})
+# [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})
 
 <hr/>
 
-# [Modern Algebra]({{"2020/12/15/Modern-algebra-1.html" | relative_url}})
+# [Modern Algebra]({{"/category/modern-algebra-1.html" | relative_url}})
 
 <hr>
 
-# [Set Theory]({{"/2022/09/01/set-theory.html" | relative_url}})
+# [Set Theory]({{"/category/set-theory" | relative_url}})

@@ -1,12 +1,12 @@
 ---
-title: "MATH230 - Probability and Statistics"
+title: "Probability and Statistics"
 layout: post
 use_math: true
 tags: ["Probability", "Statistics"]
 hidden: true
 ---
 
-2021-1학기에 수강한 POSTECH 김건우 교수님의 **"확률과 통계(MATH230)"** 수업에서 배운 것과 공부한 것을 정리한 지킬 블로그입니다. 현실을 적당한 형태의 확률 분포로 모델링 하고, 또 확률을 기반으로 검정을 진행해 의사 결정을 수행하는 접근법을 배울 수 있었습니다 😁
+2021-1학기에 수강한 POSTECH 김건우 교수님의 **"확률과 통계(MATH230)"** 수업에서 배운 것과 공부한 것을 정리한 지킬 블로그입니다. 현실을 적당한 확률 분포로 모델링 하고, 또 확률을 기반으로 검정을 진행해 의사 결정을 수행하는 접근법을 배울 수 있었습니다 😁
 
 #### 참고 교재
 - 『Probability & Statistics for Engineers & Scientists』 Walpole·Myers·Myers·Ye, 9th ed. 
