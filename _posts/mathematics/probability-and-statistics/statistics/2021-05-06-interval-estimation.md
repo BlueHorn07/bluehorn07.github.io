@@ -11,15 +11,15 @@ tags: ["Statistics"]
 <br><span class="statement-title">TOC.</span><br>
 
 - [Interval Estimation](#interval-estimation)
-  - [Estimate $\mu$ when $\sigma^2$ is known](#estimate-mu-when-sigma2-is-known)
+  - [Z-Test: Estimate $\mu$ when $\sigma^2$ is known](#z-test-estimate-mu-when-sigma2-is-known)
     - [Error of Interval Estimation](#error-of-interval-estimation)
     - [one-sided confidence bounds](#one-sided-confidence-bounds)
-  - [Estimate $\mu$ when $\sigma^2$ is unknown](#estimate-mu-when-sigma2-is-unknown)
+  - [t-Test: Estimate $\mu$ when $\sigma^2$ is unknown](#t-test-estimate-mu-when-sigma2-is-unknown)
 - [Compare Point Estimator and Interval Estimator](#compare-point-estimator-and-interval-estimator)
 
 <hr/>
 
-## Introduction to Interval Estimation
+# Introduction to Interval Estimation
 
 Let $X_1, X_2, \dots, X_n$ be a random sample with $X_i \sim f(x; \theta)$, and $x_1, x_2, \dots, x_n$ be the values of the sample.
 
@@ -43,7 +43,7 @@ We usually take $\alpha = 0.01, \; 0.05, \; 0.1$.
 
 <hr/>
 
-## Interval Estimation
+# Interval Estimation
 
 이제 상황에 따른 \<Interval Estimation\> 방법을 살펴보겠다!
 
@@ -52,7 +52,7 @@ We usually take $\alpha = 0.01, \; 0.05, \; 0.1$.
 
 <hr/>
 
-### Estimate $\mu$ when $\sigma^2$ is known
+## Z-Test: Estimate $\mu$ when $\sigma^2$ is known
 
 <span class="statement-title">Example.</span><br>
 
@@ -91,7 +91,7 @@ $\therefore$ A 95% confidence interval would be $(170 - 3.92, 170 + 3.92)$.
 
 <div class="statement" markdown="1">
 
-<span class="statement-title">Remark.</span> Confidence Interval on $\mu$ when $\sigma^2$ is knonw<br>
+<span class="statement-title">Remark.</span> Confidence Interval on $\mu$ when $\sigma^2$ is known<br>
 
 Let $x_1, \dots, x_n$ be given data points from a random sample $X_1, \dots, X_n$ with known population variance $\sigma^2$ and unknown population mean $\mu$.
 
@@ -135,7 +135,7 @@ $\vdots$
 
 <hr/>
 
-#### Error of Interval Estimation
+### Error of Interval Estimation
 
 <div class="definition" markdown="1">
 
@@ -183,15 +183,15 @@ $$
 
 <hr/>
 
-#### One-sided Confidence Bounds
+### One-sided Confidence Bounds
 
-지금까지 우리는 양 끝의 상황을 살펴보는 Two-sided Confidence Interval을 살펴보았다. 그러나 때로는 한쪽의 상황만 관심이 대상이 될 수도 있다! 그래서 아래와 같이 One-side에 대한 Confidence Interval을 구해야 할 수도 있다.
+지금까지 우리는 양 끝의 상황을 살펴보는 Two-sided Confidence Interval을 살펴보았다. 그러나 때로는 한쪽의 상황만 관심의 대상이 될 수도 있다! 그래서 아래와 같이 One-side에 대한 Confidence Interval을 구해야 할 수도 있다.
 
 $$
 P(\hat{\theta}_L \le \mu) = 1 - \alpha
 $$
 
-사실 two-sided의 경우에서 약간만 수정해주면 된다! two-sided에서의 Confidence Interval이 아래와 같다면,
+사실 two-sided에서 약간만 수정해주면 된다. two-sided에서의 Confidence Interval이 아래와 같다면,
 
 $$
 \bar{x} - z_{\alpha/2} \frac{\sigma}{\sqrt{n}} \; \le \; \mu \; \le \; \bar{x} + z_{\alpha/2} \frac{\sigma}{\sqrt{n}}
@@ -213,17 +213,15 @@ $$
 
 <hr/>
 
-### Estimate $\mu$ when $\sigma^2$ is unknown
+## t-Test: Estimate $\mu$ when $\sigma^2$ is unknown
 
-앞에서 진행했던 과정을 다시 살펴보자. 우리는 CLT를 사용해 $\bar{X}$를 Normal 분포로 근사했다.
+앞에서 진행했던 과정을 다시 살펴보자. 우리는 CLT를 사용해 sample mean $\bar{X}$를 Normal 분포로 근사했다.
 
 $$
 Z = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}}
 $$
 
-그 이후에는 추정하려는 정도에 따라서 적당히 $z_{\alpha/2}$를 사용해 식을 완성했다.
-
-그런데! 지금 상황에서는 위와 같이 접근할 수 없다!! 😲 <span class="half_HL">우린 더이상 $\sigma$를 모르기 때문에 CLT 근사식에서 분모 부분에 $\sigma$를 쓸 수 없다!</span>
+그런데! population variance $\sigma$를 모르는 지금 상황에서는 위와 같이 접근할 수 없다!! 😲 <span class="half_HL">$\sigma$를 모르기 때문에 CLT 근사식에서 분모 부분에 $\sigma$를 쓸 수 없기 때문이다!</span>
 
 우리가 그나마 $\sigma^2$와 비슷하다고 생각하는 것이 있다. 바로 "sample variance" $S^2$! 이 녀석으로 $\sigma$를 대체해 식을 다시 써보자.
 
@@ -231,13 +229,13 @@ $$
 \frac{\bar{X} - \mu}{S / \sqrt{n}}
 $$
 
-이 식은 우리가 [student's t-distribution]({{"https://bluehorn07.github.io/mathematics/2021/04/27/student-t-distribution.html" | relative_url}})에서 이미 살펴보았다!
+어라! 이 식은 [student's t-distribution]({{"/2021/04/27/student-t-distribution.html" | relative_url}})에서 이미 살펴보았다.
 
 $$
 \frac{\bar{X} - \mu}{S / \sqrt{n}} \; \overset{D}{\sim} \; t(n-1)
 $$
 
-그래서 $t(n-1)$ distribution에서 $(1-\alpha)\%$ confidence interval을 구한다면,
+그래서 $t(n-1)$ distribution에서 $100(1-\alpha)\%$ confidence interval을 구하면,
 
 $$
 P \left( -t_{\alpha/2} (n-1) < \frac{\bar{X} - \mu}{S / \sqrt{n}} < t_{\alpha/2}(n-1) \right) = 1 - \alpha
@@ -247,7 +245,7 @@ $$
 
 <div class="statement" markdown="1">
 
-<span class="statement-title">Remark.</span> Confidence Interval on $\mu$ when $\sigma^2$ is unknonw<br>
+<span class="statement-title">Remark.</span> Confidence Interval on $\mu$ when $\sigma^2$ is unknown<br>
 
 Let $x_1, \dots, x_n$ be given data points from a <span class="half_HL"><u>normal random sample</u></span> $X_1, \dots, X_n$ with mean $\mu$ and variance $\sigma^2$.
 
@@ -273,7 +271,7 @@ $$
 
 <hr/>
 
-## Compare Point Estimator and Interval Estimator
+# Compare Point Estimator and Interval Estimator
 
 Q. Does confidence interval give us more information about $\mu$ than a point estimator $\bar{x}$?
 
@@ -305,7 +303,7 @@ the error is $\left\| \bar{x} - \mu \right\| \le z_{\alpha/2} \cdot \frac{\sigma
 
 <hr/>
 
-이어지는 포스트들에서는 좀더 구체적인 상황에서 어떻게 \<Interval Estimation\>을 할 수 있는지 살펴볼 예정이다! 🤩
+이어지는 포스트들에서는 상황별로 \<Interval Estimation\>을 수행하는 방법을 살펴볼 예정이다! 🤩
 
 - [Prediction & Tolerance Estimation]({{"/2021/05/13/prediction-and-tolerance-interval.html" | relative_url}})
 - [Two Samples Estimation: Diff Btw Two Means]({{"/2021/05/13/two-samples-estimation-diff-btw-two-means.html" | relative_url}})

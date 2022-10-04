@@ -114,6 +114,8 @@ hidden: true
   - the most efficient estimator
   - Mean Squared Error of estimator
 - [Interval Estimation]({{"/2021/05/06/interval-estimation.html" | relative_url}})
+  - Z-Test: Estimate $\mu$ when $\sigma^2$ is known
+  - t-Test: Estimate $\mu$ when $\sigma^2$ is unknown
 - [Prediction & Tolerance Estimation]({{"/2021/05/13/prediction-and-tolerance-interval.html" | relative_url}})
 - [Two Samples Estimation: Diff Btw Two Means]({{"/2021/05/13/two-samples-estimation-diff-btw-two-means.html" | relative_url}})
 - [Two Samples Estimation: Paired Observations]({{"/2021/05/13/two-samples-estimation-paired-observations.html" | relative_url}})
