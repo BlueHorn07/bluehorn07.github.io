@@ -5,7 +5,6 @@ use_math: true
 tags: ["Statistics"]
 ---
 
-
 2021-1학기, 대학에서 '확률과 통계' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
 <br><span class="statement-title">TOC.</span><br>
@@ -159,9 +158,9 @@ Q. Why $(n-1)$ in the bottom??
 
 A. 왜냐하면,  <span class="half_HL">$(n-1)$로 나눠줘야 $E[S^2]$이 $\sigma^2$이 되기 때문!!!</span>
 
-<span class="statement-title">*Proof*.</span><br>
-
 <div class="math-statement" markdown="1">
+
+<span class="statement-title">*Proof*.</span><br>
 
 w.l.o.g. we can assume that $E[X_i] = 0$. (그냥 편의를 위해 $X_i$를 적당히 표준화 했다고 보면 된다.)
 

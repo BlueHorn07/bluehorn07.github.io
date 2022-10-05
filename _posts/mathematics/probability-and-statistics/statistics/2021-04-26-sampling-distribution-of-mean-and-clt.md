@@ -17,7 +17,7 @@ tags: ["Statistics"]
 
 <hr/>
 
-### Sampling Distribution of Means
+# Sampling Distribution of Means
 
 Let $X_1, \dots, X_n$ be a random sample with $E[X_i] = \mu$ and $\text{Var}(X_i) = \sigma^2$.
 
@@ -26,11 +26,11 @@ Then,
 - $E[\overline{X}] = \mu$
 - $\text{Var}(\overline{X}) = E\left[\left(\overline{X} - E[\overline{X}]\right)^2 \right] = \dfrac{\sigma^2}{n}$
 
-이때, \<LLN; Law of Large Numbers\>은 $n$이 무한으로 갈때, $\text{Var}(\overline{X}) = \sigma^2/n$이 0으로 수렴함을 기술한다. 이에 따라, $\overline{X} \rightarrow \mu$가 된다.
+\<LLN; Law of Large Numbers\>에 따르면, $n$이 무한으로 갈때, 분산 $\text{Var}(\overline{X}) = \sigma^2/n$가 0으로 수렴한다. 따라서 $\overline{X} \rightarrow \mu$가 된다!
 
 <hr/>
 
-### Weak Law of Large Numbers
+# Weak Law of Large Numbers
 
 <span class="statement-title">Theorem.</span> WLLN<br>
 
@@ -44,9 +44,9 @@ $$
 \lim_{n\rightarrow\infty} P\left(\left| \overline{X} - \mu \right| > \epsilon\right) = 0
 $$
 
-<span class="statement-title">*Proof*.</span><br>
-
 <div class="math-statement" markdown="1">
+
+<span class="statement-title">*Proof*.</span><br>
 
 [\<Chebyshev's Inequality\>]({{"/2021/03/17/chebyshev's-inequality.html" | relative_url}})를 사용하면 아주 쉽게 증명할 수 있다!
 
@@ -73,7 +73,7 @@ $$
 
 <hr/>
 
-### CLT; Central Limit Theorem
+# CLT; Central Limit Theorem
 
 <div class="example" markdown="1">
 
@@ -146,7 +146,7 @@ where $Z \sim N(0, 1)$.
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/The_Normal_Distribution.svg" height="400px">
 </div>
 
-#### Proof of CLT
+## Proof of CLT
 
 <div class="proof" markdown="1">
 
