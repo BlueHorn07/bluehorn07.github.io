@@ -8,8 +8,6 @@ tags: ["Statistics"]
 
 2021-1학기, 대학에서 '확률과 통계' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
-\<t-distribution\>으로부터 유도하는 \<t-value\>는 두 분포의 평균에 대한 유의도를 평가하는 "검정 통계량"이다.
-
 <hr/>
 
 Consider a random sample of size 100 from $N(1, \sigma^2)$ and $\sigma$ is <u>unknown</u>!

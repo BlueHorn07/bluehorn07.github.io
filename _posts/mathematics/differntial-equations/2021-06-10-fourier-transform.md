@@ -32,7 +32,7 @@ tags: ["Data Mining"]
 
 ### Fourier Trasnform
 
-주기가 $2L$인 주기함수 $x(t)$를 아래와 같이 [\<푸리에 급수\>](https://bluehorn07.github.io/mathematics/2021/06/08/fourier-series.html) 형태로 표현할 수 있다.
+주기가 $2L$인 주기함수 $x(t)$를 아래와 같이 [\<푸리에 급수\>]({{"/2021/06/08/fourier-series.html" | relative_url}}) 형태로 표현할 수 있다.
 
 $$
 \begin{aligned}

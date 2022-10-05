@@ -27,7 +27,7 @@ p-value 값이 **0.05**보다 작으면, 유의한 차이가 있다고 해석한
 
 </div>
 
-\<p-value\>에 대한 개념적인 내용이 알고싶다면, 이 포스트 👉[Introduction to Hypothesis Tests](https://bluehorn07.github.io/mathematics/2021/05/18/introduction-to-hypothesis-tests.html) 를 정독하길 바란다!
+\<p-value\>에 대한 개념적인 내용이 알고싶다면, 이 포스트 👉[Introduction to Hypothesis Tests]({{"/2021/05/18/introduction-to-hypothesis-tests.html" | relative_url}})를 정독하길 바란다.
 
 <br/>
 

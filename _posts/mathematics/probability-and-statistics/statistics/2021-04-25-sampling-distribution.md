@@ -24,9 +24,11 @@ tags: ["Statistics"]
 
 <hr/>
 
+# Introduction
+
 확통 수업을 듣는 전체 학생을 대상으로, 확통 수업을 선호하는 학생의 비율을 구하고자 한다. 그런데, 확통 수업을 듣는 학생 수가 너무 많아서 전체를 조사할 순 없고, 전체 중 $n$명 학생을 대상으로 설문조사를 시행한다고 하자.
 
-$X$가 "$n$명의 학생 중에 확통 수업을 선호한다고 응답한 학생 수"라는 RV라면, $X$는 HyperGeo의 분포를 따를 것이다.
+$X$가 "$n$명의 학생 중에 확통 수업을 선호한다고 응답한 학생 수"라는 RV라면, $X$는 [HyperGeo]({{"/2021/03/24/discrete-probability-distributions-2.html#hypergeometric-distribution" | relative_url}})의 분포를 따를 것이다.
 
 또, 만약 전체 학생 수가 충분히 크다면, HyperGeo를 BIN으로 근사할 수도 있을 것이다.
 
@@ -47,6 +49,8 @@ $$
 
 우리는 이 $\overline{X}$를 \<**sample mean**\>이라고 한다!
 
+<br/>
+
 위의 예시를 좀더 구체화 해서 생각해보자.
 
 $n=100$, and 60 students said they like lecture. Then, $\overline{x} = \frac{60}{100} = 0.6$
@@ -63,24 +67,33 @@ $$
 P(\left| \overline{x} - \mu_0 \right| < \epsilon)
 $$
 
-의 확률을 구하여, 제시한 $\mu_0$와 우리가 얻은 sample mean이 얼마나 차이 나는지를 확인하고, 이것을 활용해 $\mu = \mu_0$라는 가설(Hypothesis)를 검정(Test)할 수 있기 때문이다. 이 내용은 뒤의 \<가설 검정; Hypothesis Test\> 부분에서 좀더 자세히 다룬다.
+의 확률을 구하여, 제시한 $\mu_0$와 우리가 얻은 sample mean이 얼마나 차이 나는지를 확인하고, 이것을 활용해 $\mu = \mu_0$라는 가설(Hypothesis)를 검정(Test)할 수 있기 때문이다. 이 내용은 뒤의 [\<가설 검정; Hypothesis Test\>]({{"/2021/05/18/introduction-to-hypothesis-tests.html" | relative_url}}) 부분에서 좀더 자세히 다룬다.
 
-$P(\left\| \overline{x} - \mu_0 \right\| < \epsilon)$, 이것을 구하기 위해서는 $\overline{x}$에 대한 분포를 알아야 하며, 우리는 이것을 \<**sampling distribution**\>이라고 한다!
+$P(\left\| \overline{x} - \mu_0 \right\| < \epsilon)$, 이것을 구하기 위해서는 $\overline{x}$에 대한 분포를 알아야 하며, 우리는 이것을 \<**sampling distribution**; 표본 분포\>이라고 한다! 표본 분포에 대한 정의는 아티클의 맨 마지막에 정리하였다.
 
 <hr/>
+
+<div class="definition" markdown="1">
 
 <span class="statement-title">Definition.</span> population<br>
 
 A \<population\> is the totality of observations.
 
+</div>
+
+<div class="definition" markdown="1">
+
 <span class="statement-title">Definition.</span> sample<br>
 
 A \<sample\> is a subset of population.
 
+</div>
+
+<div class="definition" markdown="1">
+
 <span class="statement-title">Definition.</span> random sample<br>
 
 RVs $X_1, \dots, X_n$ are said to be a \<random sample\> of size $n$, <span class="half_HL">if they are **independent and identically distributed** as pmf or pdf $f(x)$</span>.
-
 
 That is, 
 
@@ -90,13 +103,20 @@ $$
 
 The observed values $x_1, \dots, x_n$ of $X_1, \dots, X_n$ are called \<**sample points**\> or \<**observations**\>.
 
+</div>
+
 <hr/>
+
+<div class="definition" markdown="1">
 
 <span class="statement-title">Definition.</span> statistic; 통계량<br>
 
 A \<**statistic; 통계량**\> is a function of a random sample $X_1, \dots, X_n$, <span class="half_HL">not depending on unknown parameters</span>.
 
-즉, $f(X_1, \dots, X_n)$ 형태의 함수를 \<statistic\>이라고 함.
+</div>
+
+즉, $f(X_1, \dots, X_n)$ 형태의 함수를 \<statistic\>라고 한다. 이 \<Statistics\>는 해당 RV 집합의 대표값 역할을 한다.
+
 
 <span class="statement-title">Example.</span><br>
 
@@ -114,14 +134,17 @@ Then,
 
 <hr/>
 
-#### Location Measures of a Sample
+# Location Measures of a Sample
 
 Let $X_1, \dots, X_n$ be a random sample.
 
+<div class="definition" markdown="1">
+
 <span class="statement-title">Definition.</span> sample mean<br>
 
-
 $\overline{X} = \dfrac{X_1 + \cdots + X_n}{n}$ is called a \<sample mean\>.
+
+</div>
 
 (1) $\overline{X}$ is also a random variable!
 
@@ -129,40 +152,51 @@ $\overline{X} = \dfrac{X_1 + \cdots + X_n}{n}$ is called a \<sample mean\>.
 
 (3) $\overline{X}$ can be sensitive to outliers.
 
+
 <br/>
+
+<div class="definition" markdown="1">
 
 <span class="statement-title">Definition.</span> sample median<br>
 
 그냥 Sample에서의 중간값.
 
+</div>
+
+<div class="definition" markdown="1">
+
 <span class="statement-title">Definition.</span> sample mode<br>
 
 Sample에서의 최빈값.
 
+</div>
+
 
 <hr/>
 
-#### Variability Measures of a Sample
+# Variability Measures of a Sample
 
-Let $X_1, \dots, X_n$ be a random sample with $E[X_i] = \mu$ and $\text{Var}(X_i) = \sigma^2$.
-
+<div class="definition" markdown="1">
 
 <span class="statement-title">Definition.</span> sample variance<br>
 
+Let $X_1, \dots, X_n$ be a random sample with $E[X_i] = \mu$ and $\text{Var}(X_i) = \sigma^2$.
 
 $$
 S^2 := \frac{1}{n-1} \sum^n_{i=1} \left( X_i - \overline{X}\right)^2
 $$
 
+</div>
+
 Q. Why $(n-1)$ in the bottom??
 
-A. 왜냐하면,  <span class="half_HL">$(n-1)$로 나눠줘야 $E[S^2]$이 $\sigma^2$이 되기 때문!!!</span>
+A. 왜냐하면,  <span class="half_HL">$(n-1)$로 나눠줘야 표본 분산의 평균 $E[S^2]$이 $\sigma^2$이 되기 때문!!!</span>
 
 <div class="math-statement" markdown="1">
 
 <span class="statement-title">*Proof*.</span><br>
 
-w.l.o.g. we can assume that $E[X_i] = 0$. (그냥 편의를 위해 $X_i$를 적당히 표준화 했다고 보면 된다.)
+w.l.o.g. we can assume that $E[X_i] = 0$. (그냥 편의를 위해 $X_i$를 적당히 표준화 한 것이다.)
 
 $$
 \begin{aligned}
@@ -199,11 +233,17 @@ $\blacksquare$
 
 <br/>
 
+<div class="definition" markdown="1">
+
 <span class="statement-title">Definition.</span> sample standard deviation<br>
 
 $$
 S := \sqrt{S^2} = \sqrt{\frac{1}{n-1} \sum^n_{i=1}\left( X_i - \overline{X} \right)^2}
 $$
+
+</div>
+
+<div class="definition" markdown="1">
 
 <span class="statement-title">Definition.</span> range<br>
 
@@ -211,13 +251,21 @@ $$
 R := \max_{1 \le i \le n} X_i - \min_{1 \le i \le n} X_i
 $$
 
+</div>
+
 <hr/>
 
-<span class="statement-title">Definition.</span> sample distribution<br>
+<div class="definition" markdown="1">
 
-The <span class="half_HL">probability distribution of a statistic</span> is called a \<sample distribution\>.
+<span class="statement-title">Definition.</span> sampling distribution<br>
+
+The <span class="half_HL">probability distribution of a sample statistic</span> is called a \<sampling distribution\>.
 
 ex) distribution of sample mean, distribution of sample variance, ...
+
+</div>
+
+이때, 표본 통계량(sample statistics)는 sample mean, sample variance와 같이 표본의 특성을 나타내는 대표값이다.
 
 👉 [Sampling Distribution of Mean, and CLT]({{"/2021/04/26/sampling-distribution-of-mean-and-clt.html" | relative_url}})
 

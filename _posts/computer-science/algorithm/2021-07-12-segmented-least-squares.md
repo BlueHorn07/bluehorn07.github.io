@@ -20,7 +20,7 @@ tags: ["algorithm"]
   <p>Image from <a href="https://kartikkukreja.wordpress.com/2013/10/21/segmented-least-squares-problem/)">kartikkukreja' article</a></p>
 </div>
 
-\<LS Method\>에 대해 더 궁금하다면, "[Introduction to Linear Regression](https://bluehorn07.github.io/mathematics/2021/06/06/introduction-to-linear-regression.html)" 아티클을 읽을 것을 추천한다 😉
+\<LS Method\>에 대해 더 궁금하다면, "[Introduction to Linear Regression]({{"/2021/06/06/introduction-to-linear-regression.html" | relative_url}})" 아티클을 읽을 것을 추천한다 😉
 
 그.러.나. 때로는 주어진 데이터에 대한 regression 식을 하나의 선형 모델로 표현하기 어려운 경우가 많다. 이 경우는 차수(degree)를 높여 곡선으로 모델을 fitting 하거나 구간을 나누어 각 구간 별로 regression fitting을 하는 방법이 있다.
 

@@ -12,7 +12,9 @@ tags: ["Probability"]
 
 - Law of Total Probability
 - Bayes' Rule
+- Applications of Bayes Rule
   - 선별 검사(Screening Test)
+- 더 나아가기
 
 <hr/>
 
@@ -57,7 +59,7 @@ $$
 
 <span class="statement-title">Theorem.</span> Bayes' Rule<br>
 
-If the events $B_1$, $B_2$, ..., $B_k$ be a partition fo $S$,
+If the events $B_1$, $B_2$, ..., $B_k$ be a partition of event space $S$,
 
 then for any event $A$ with $P(A) > 0$
 
@@ -101,10 +103,28 @@ $$
 
 <hr/>
 
-\<베이즈 규칙\>은 예제를 확실히 아는 것이 중요하다. 그리고 \<베이즈 정리\>를 기계적으로 적용하는 것보단, 그 의미와 여기서 이런 수식적 추론을 하는 이유를 체득하는 게 중요하다.
+# Applications of Bayes Rule
 
-# 선별 검사 <small>Screening Test</small>
+\<Bayes Rule\> 자체는 어렵지 않다. 그러나 \<Bayes Rule\>은 예제와 언제/어떻게 이걸 써야 하는지를 확실히 아는게 중요하다. 👏
+
+## 선별 검사 <small>Screening Test</small>
 
 건강한 사람과 특정 질병이 있는 사람을 구별하기 위해 시행하는 검사를 \<선별 검사\>라고 한다. 선별 검사에서 이상이 나타나면, 정밀 검사를 통해 질병의 유무를 판단한다.
 
 [이곳](https://ratsgo.github.io/statistics/2017/07/01/bayes/)의 포스트에서 다양한 실제 예제를 다루고 있다. 이곳의 예제를 풀어 보길 바란다.
+
+
+
+
+
+# 더 살펴보기
+
+
+뭔가 예제를 다시 풀어보니 Bayesian은 어떤 문제(ex. failure, defective)가 발생했을 때, 그것의 실제 원인이 될 가능성이 제일 높은 원인을 찾는 것에 관점이 맞춰진 듯?
+
+729p의 Bayesian Statistics를 보고 오자.
+
+> 빈도주의 접근과 베이지안 접근의 차이점은 베이지안은 parameter를 하나의 RV로 본다는 것이다.
+> 빈도주의에서는 N(mu, sigma^2)의 parameter mu, sigma를 RV가 아닌 Deterministic Value로 본다.
+
+Subjective Probability? 이건 뭐야?

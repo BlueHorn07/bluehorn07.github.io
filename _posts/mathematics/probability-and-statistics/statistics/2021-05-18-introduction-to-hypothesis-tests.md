@@ -196,7 +196,7 @@ $$
 
 💥 commonly used values for $\alpha$ are $0.1$, $0.05$, $0.01$.
 
-💥 [Interval Estimation](https://bluehorn07.github.io/mathematics/2021/05/06/interval-estimation.html#introduction-to-interval-estimation)을 수행할 때, 비슷한 것을 봤었다! 바로 \<Confidence Level\> $1-\alpha$다!
+💥 [Interval Estimation]({{"/2021/05/06/interval-estimation.html#introduction-to-interval-estimation" | relative_url}})을 수행할 때, 비슷한 것을 봤었다! 바로 \<Confidence Level\> $1-\alpha$다!
 
 </div>
 
