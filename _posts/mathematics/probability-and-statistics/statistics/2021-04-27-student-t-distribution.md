@@ -12,7 +12,7 @@ tags: ["Statistics"]
 
 Consider a random sample of size 100 from $N(1, \sigma^2)$ and $\sigma$ is <u>unknown</u>!
 
-이전에는 population variance $\sigma^2$에 대한 값을 정확히 알았다면, 이번에는 $\sigma^2$를 모르는 상태에서 estimation을 진행한다!! 현재 $\sigma^2$에 대해 하는 정보는 $\sigma^2$가 $\chi^2(n)$을 따른다는 것이 전부다.
+이전에는 population variance $\sigma^2$에 대한 값을 정확히 알았다면, 이번에는 $\sigma^2$를 모르는 상태에서 estimation을 진행한다!! 현재 $\sigma^2$에 대해 아는 정보는 $\sigma^2$가 $\chi^2(n)$을 따른다는 것이 전부다.
 
 <div class="definition" markdown="1">
 

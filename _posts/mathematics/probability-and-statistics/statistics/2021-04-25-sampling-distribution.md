@@ -11,7 +11,7 @@ tags: ["Statistics"]
 
 - sample mean & sampling distribution
 - random sample
-- statistic; 통계량
+- Statistics; 통계량
 - location measures of a sample
   - sample mean
   - sample median
@@ -109,14 +109,15 @@ The observed values $x_1, \dots, x_n$ of $X_1, \dots, X_n$ are called \<**sample
 
 <div class="definition" markdown="1">
 
-<span class="statement-title">Definition.</span> statistic; 통계량<br>
+<span class="statement-title">Definition.</span> Statistics; 통계량<br>
 
-A \<**statistic; 통계량**\> is a function of a random sample $X_1, \dots, X_n$, <span class="half_HL">not depending on unknown parameters</span>.
+A \<**Statistics; 통계량**\> is a function of a random sample $X_1, \dots, X_n$, <span class="half_HL">not depending on unknown parameters</span>.
 
 </div>
 
-즉, $f(X_1, \dots, X_n)$ 형태의 함수를 \<statistic\>라고 한다. 이 \<Statistics\>는 해당 RV 집합의 대표값 역할을 한다.
+즉, $f(X_1, \dots, X_n)$ 형태의 함수를 \<Statistics\>라고 한다. 이 \<Statistics\>는 해당 RV 집합의 대표값 역할을 한다.
 
+<br/>
 
 <span class="statement-title">Example.</span><br>
 
@@ -124,13 +125,13 @@ Supp. $X_1, \dots, X_n$ is a random sample from $N(\mu, 1)$.
 
 Then, 
 
-1\. $\dfrac{X_1 + \cdots + X_n}{n}$ is a <u>statistic</u>!
+1\. $\dfrac{X_1 + \cdots + X_n}{n}$ is a <u>Statistics</u>!
 
-2\. $\max \\{ X_1, \dots, X_n \\}$ is a <u>statistic</u>!
+2\. $\max \\{ X_1, \dots, X_n \\}$ is a <u>Statistics</u>!
 
-3\. $\dfrac{X_1 + \cdots + X_n + \mu}{n}$ is <u>not a statistic</u>!
+3\. $\dfrac{X_1 + \cdots + X_n + \mu}{n}$ is <u>not a Statistics</u>!
 
-우리는 <span class="half_HL">오직 \<statistic\>을 통해서만 population에 대한 inference를 수행할 수 있다</span>.
+우리는 <span class="half_HL">오직 \<Statistics\>을 통해서만 population에 대한 inference를 수행할 수 있다</span>.
 
 <hr/>
 
@@ -259,13 +260,13 @@ $$
 
 <span class="statement-title">Definition.</span> sampling distribution<br>
 
-The <span class="half_HL">probability distribution of a sample statistic</span> is called a \<sampling distribution\>.
+The <span class="half_HL">probability distribution of a sample Statistics</span> is called a \<sampling distribution\>.
 
 ex) distribution of sample mean, distribution of sample variance, ...
 
 </div>
 
-이때, 표본 통계량(sample statistics)는 sample mean, sample variance와 같이 표본의 특성을 나타내는 대표값이다.
+이때, 표본 통계량(sample Statisticss)는 sample mean, sample variance와 같이 표본의 특성을 나타내는 대표값이다.
 
 👉 [Sampling Distribution of Mean, and CLT]({{"/2021/04/26/sampling-distribution-of-mean-and-clt.html" | relative_url}})
 
