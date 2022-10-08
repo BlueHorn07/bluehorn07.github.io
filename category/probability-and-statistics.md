@@ -38,8 +38,9 @@ hidden: true
   - Probability
   - Conditional Probability
     - Independent Events
-- [Bayes' Rule]({{"2021/03/02/Bayes'-Rule.html" | relative_url}})
+- [Bayes' Rule]({{"2021/03/02/Bayes-Rule.html" | relative_url}})
   - Law of Total Probability
+  - Meaning of Bayes Rule
 - [Monti Hall Problem]({{"2021/03/02/Monti-Hall-Problem.html" | relative_url}})[^1]
 
 <br/>

@@ -5,12 +5,11 @@ use_math: true
 tags: ["Probability"]
 ---
 
-
 2021-1학기, 대학에서 '확률과 통계' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
 <hr/>
 
-## Monti Hall Problem
+# Monti Hall Problem
 
 <div class="statement" markdown="1">
 
@@ -36,7 +35,7 @@ tags: ["Probability"]
 
 <hr/>
 
-### 해설 1
+## 해설 1
 
 먼저 내가 **염소**를 선택한 상황부터 따져보자.
 
@@ -67,9 +66,9 @@ tags: ["Probability"]
 
 <hr/>
 
-### 해설 2
+## 해설 2
 
-교수님 曰: 이건 \<베이즈 정리\>로 풀 수 있어요. ~~베이즈 마스터면 풀 수 있을 듯;;~~
+교수님 曰: 이건 [\<베이즈 정리\>]({{"/2021/03/02/Bayes-Rule.html" | relative_url}})로 풀 수 있어요. ~~베이즈 마스터면 풀 수 있을 듯;;~~
 
 참가자가 고른 문을 $\textsf{A}$, 나머지 두개 문을 $\textsf{B}$, $\textsf{C}$라고 하자. 
 
@@ -97,4 +96,4 @@ $$
 P(B \mid D) = \frac{P(D \mid B)}{P(D \mid A) + P(D \mid B) + P(D \mid C)} = \frac{1}{0.5 + 1 + 0} = \frac{2}{3}
 $$
 
-따라서, 선택을 바꿔서 $\textsf{A}$문에서 $\textsf{B}$문으로 선택을 바꾸는 전략이 더 이득이다. $\blacksquare$ [source](https://namu.wiki/w/%EB%AA%AC%ED%8B%B0%20%ED%99%80%20%EB%AC%B8%EC%A0%9C#s-3.3)
+따라서, 선택을 바꿔서 $\textsf{A}$문에서 $\textsf{B}$문으로 선택을 바꾸는 전략이 더 이득이다. $\blacksquare$ [출처](https://namu.wiki/w/%EB%AA%AC%ED%8B%B0%20%ED%99%80%20%EB%AC%B8%EC%A0%9C#s-3.3)
