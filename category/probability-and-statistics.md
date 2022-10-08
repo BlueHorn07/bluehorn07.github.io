@@ -8,9 +8,6 @@ hidden: true
 
 2021-1학기에 수강한 POSTECH 김건우 교수님의 **"확률과 통계(MATH230)"** 수업에서 배운 것과 공부한 것을 정리한 지킬 블로그입니다. 현실을 적당한 확률 분포로 모델링 하고, 또 확률을 기반으로 검정을 진행해 의사 결정을 수행하는 접근법을 배울 수 있었습니다 😁
 
-#### 참고 교재
-- 『Probability & Statistics for Engineers & Scientists』 Walpole·Myers·Myers·Ye, 9th ed. 
-
 <div class="math-statement" style="padding: 10px 20px" markdown="1">
 
 [목차]
@@ -32,7 +29,7 @@ hidden: true
 
 <hr/>
 
-## Probability Theory
+# Probability Theory
 
 - [Sample Space]({{"2021/02/27/sample-space.html" | relative_url}})
   - Sample Space & Event
@@ -89,7 +86,7 @@ hidden: true
 
 <hr/>
 
-## Statistics
+# Statistics
 
 - [Sampling Distribution]({{"/2021/04/25/sampling-distribution.html" | relative_url}})
   - statistic; 통계량
@@ -162,13 +159,13 @@ hidden: true
 
 <hr/>
 
-## Problem Solving
+# Problem Solving
 
-### Probability
+## Probability
 
 (준비중입니다! 😉)
 
-### Statistics
+## Statistics
 
 - [PS1]({{"/2021/06/06/statistics-ps1.html" | relative_url}})
   - sample variance $S^2$ is not the minimal variance estimator
@@ -184,6 +181,11 @@ hidden: true
   - (not yet) $s^2 \perp B_1$, and $s^2 \perp B_0$
   - (not yet) the distribution of $s^2$
 - [[칼럼] Values in Statistics]({{"/2021/06/05/values-in-statistics.html" | relative_url}})
+
+<hr/>
+
+# Study Materials
+- 『Probability & Statistics for Engineers & Scientists』 Walpole·Myers·Myers·Ye, 9th ed. 
 
 <hr/>
 

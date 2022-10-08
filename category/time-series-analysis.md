@@ -45,6 +45,6 @@ tags: ["time_series_analysis"]
 
 
 
-## 참고 자료
+## Study Materials
 
 - 『[Forecasting: Principles and Practice](https://otexts.com/fppkr/)』 Rob & George

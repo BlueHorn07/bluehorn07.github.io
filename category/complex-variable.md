@@ -12,7 +12,7 @@ hidden: true
 
 <hr/>
 
-### Part I - Complex Functions
+# Part I - Complex Functions
 
 - [Complex Variable - Basic]({{"2021/01/24/complex-variable-basic.html" | relative_url}})
   - Triangle inequality
@@ -70,7 +70,7 @@ $$
 
 <hr/>
 
-### Part II - Contour Integrals
+# Part II - Contour Integrals
 
 <div class="statement" markdown="1">
 
@@ -117,7 +117,7 @@ $$
 
 <hr/>
 
-### Part III - Power Series
+#Part III - Power Series
 
 <div class="statement" markdown="1">
 
@@ -173,7 +173,7 @@ $$
 
 <hr/>
 
-### Part IV - Residue
+# Part IV - Residue
 
 <div class="img-wrapper">
   <img src="https://mathworld.wolfram.com/images/eps-gif/Contour_750.gif">
@@ -186,7 +186,7 @@ $$
 
 <hr/>
 
-### Part V - Complex Transformation
+# Part V - Complex Transformation
 
 - [Linear Transformation]({{"2020/12/14/Linear-Transformation.html" | relative_url}})
 - [Linear Fractional Trnasformation]({{"2020/12/15/Linear-Fractional-Trenasformation.html" | relative_url}})
@@ -196,6 +196,6 @@ $$
 
 <hr/>
 
-### Review Problems
+# Review Problems
 
 - [Part I - Complex Functions](https://github.com/BlueHorn07/mathematics/blob/master/_posts/complex_variable/part1-basic-complex-theory/Review-Problems-Part-I.pdf)

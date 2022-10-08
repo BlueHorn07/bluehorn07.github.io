@@ -27,13 +27,9 @@ hidden: true
 
 </div>
 
-#### 참고 교재
-- 『A First Course in Abstract Algebra』 Fraleigh, 7th ed.
-- 『Abstract Algebra』 Dummit & Foote, 3rd ed.
-
 <hr>
 
-### Group
+# Group
 
 <div class="statement" markdown="1">
 
@@ -51,7 +47,7 @@ If $H$ is a subgrop of a group $G$, then $\lvert H \rvert \mid \lvert G \rvert$,
 - orbit; cycle; transposition
 - Alternating Group
 
-#### Fundamental Theorem of Finitely Generated Abelian Group
+## Fundamental Theorem of Finitely Generated Abelian Group
 
 <div class="statement" markdown="1">
 
@@ -72,7 +68,7 @@ Where $p_i$ are primes, not necessarily distinct, and $r_i$ are positive integer
 
 <hr>
 
-### Factor Group & Homomorphism
+## Factor Group & Homomorphism
 
 - [Homomorphism + 문풀]({{"2020/12/24/Group-Homo-Iso.html" | relative_url}})
 - [Cayley's Theorem]({{"2020/12/24/Cayley-Theorem.html" | relative_url}})
@@ -114,7 +110,7 @@ Let $\phi: G \longrightarrow G'$ be a group homomorphism, THEN
 - [Factor Group - Appliaction]({{"2020/12/25/Factor-Group-Application.html" | relative_url}}')
   - [Converse of Lagrange Thm]({{"2020/11/28/Converse-of-Lagrange-Thm.html" | relative_url}})
 
-### Advanced Group Theory
+## Advanced Group Theory
 
 - [Three Isomorphism Theorems]({{"2020/12/25/Isomorphism-Thm.html" | relative_url}}) 🔥
 - [Three Sylow Theorems]({{"2020/12/26/Sylow-thm.html" | relative_url}}) 🔥
@@ -127,7 +123,7 @@ Let $\phi: G \longrightarrow G'$ be a group homomorphism, THEN
     - [Type-1]({{"2020/12/26/Sylow-thm-Application-2.html#type-1" | relative_url}})
     - [Type-2]({{"2020/12/26/Sylow-thm-Application-2.html#type-2" | relative_url}})
 
-### Ring & Field
+# Ring & Field
 - Ring [1]({{"2020/12/05/Ring-1.html" | relative_url}}), [2]({{"2020/12/05/Ring-2.html" | relative_url}})
   - commutative ring
   - [Ring homormophism & isomorphism]({{"2020/12/05/Ring-1.html#ring-homomorphism" | relative_url}})
@@ -223,7 +219,7 @@ THEN, $f(x)$ is irreducible over $\mathbb{Q}$.
 
 <hr>
 
-### Factor Ring & Ideal
+## Factor Ring & Ideal
 
 - [Ring Homomorphism & Factor Ring]({{"2020/12/27/Factor-rings-Ideal.html" | relative_url}})
   - Factor Ring well-definedness
@@ -252,7 +248,7 @@ Prime ideals generalize the concept of primality to more general commutative rin
 
 <hr>
 
-### Advanced Ring & Field Theory
+## Advanced Ring & Field Theory
 
 - [Unique Factorization Domain]({{"2020/12/27/Unique-Factorization-Domain-1.html#unique-factorization-domain" | relative_url}}); UFD [1]({{"2020/12/27/Unique-Factorization-Domain-1.html" | relative_url}}), [2]({{"2020/12/27/Unique-Factorization-Domain-2.html" | relative_url}})
   - [Associate / Associated element]({{"2020/12/27/Unique-Factorization-Domain-1.html#associates--associated-element" | relative_url}}) 🔥
@@ -271,20 +267,20 @@ Prime ideals generalize the concept of primality to more general commutative rin
 
 <hr>
 
-### Galois Theory
+# Galois Theory
 
 🔥 Continued on *Morden Algebra II* ... 🔥
 
 <br>
 <hr>
 
-### Problem Solving Series
+# Problem Solving
 - [PS1]({{"2021/01/18/modern-algebra-1-ps1.html" | relative_url}})
 
 <br>
 <hr>
 
-### Appendix
+# Appendix
 
 <div class="statement" markdown="1">
 
@@ -293,8 +289,6 @@ For a homormophism $\phi$,
 if $\ker \phi = \\{ e \\}$, then $\phi$ is 1-1.
 
 </div>
-
-<br>
 
 <div class="statement" markdown="1">
 
@@ -346,8 +340,12 @@ if $\ker \phi = \\{ e \\}$, then $\phi$ is 1-1.
   - $\left< p(x) \right>$ is a Maximal Ideal $iff$ $p(x)$ is irreducible in $F[x]$.
 </div>
 
+<hr/>
 
-<br>
+# Study Materials
+- 『A First Course in Abstract Algebra』 Fraleigh, 7th ed.
+- 『Abstract Algebra』 Dummit & Foote, 3rd ed.
+
 <hr>
 
 [^1]: Sylow Theorem 할 때도 잠깐 나온다!
