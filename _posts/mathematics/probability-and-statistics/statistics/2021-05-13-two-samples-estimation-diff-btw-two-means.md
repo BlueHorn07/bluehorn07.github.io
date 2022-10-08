@@ -20,7 +20,7 @@ tags: ["Statistics"]
 
 <hr/>
 
-### Two Samples Estimation
+# Two Samples Estimation
 
 Supp. there are two populations and assume that both follow some random distributions with means $\mu_1$ and $\mu_2$ and variances $\sigma_1^2$, $\sigma_2^2$ respectively. 
 
@@ -36,7 +36,7 @@ Supp. that their observed sample means are $\bar{x}$ and $\bar{y}$, and their sa
 
 <hr/>
 
-#### $\sigma_1^2$ and $\sigma_2^2$ are known
+## $\sigma_1^2$ and $\sigma_2^2$ are known
 
 By CLT, $\bar{X} \overset{D}{\approx} N(\mu_1, \sigma_1^2 / n_1)$ and $\bar{Y} \overset{D}{\approx} N(\mu_2, \sigma_2^2 / n_2)$, in addition $\bar{X} \perp \bar{Y}$.
 
@@ -59,17 +59,17 @@ $$
 
 <hr/>
 
-#### $\sigma_1^2$ and $\sigma_2^2$ are unknown, but known that $\sigma_1^2 = \sigma_2^2$
+## $\sigma_1^2$ and $\sigma_2^2$ are unknown, but known that $\sigma_1^2 = \sigma_2^2$
 
 앞에서 우리는 CLT를 사용해 $\frac{\bar{X} - \mu}{\sigma / \sqrt{n}}$를 사용했었다. 하지만, 이번에는 정확한 $\sigma^2$의 값을 알지 못하기 때문에 $\sigma^2$ 대신 sample variance $s^2$을 사용한다!!
 
 [Previous]
 
 $$
-\frac{(\bar{X} - \bar{Y}) - (\mu_1 - \mu_2)}{\sqrt{\dfrac{\color{red}{\sigma_1}}{n_1} + \dfrac{\color{red}{\sigma_2}}{n_2}}} \;\overset{D}{\sim} \; N(0, 1)
+\frac{(\bar{X} - \bar{Y}) - (\mu_1 - \mu_2)}{\sqrt{\dfrac{\color{red}{\sigma_1^2}}{n_1} + \dfrac{\color{red}{\sigma_2^2}}{n_2}}} \;\overset{D}{\sim} \; N(0, 1)
 $$
 
-이때, 우리는 $\sigma^2$를 대체하기 위해 \<**pooled sample variance**\>라는 두 샘플의 sample variance를 종합한 녀석을 사용하게 된다!
+우리는 $\sigma^2$를 대체하기 위해 \<**pooled sample variance**\>라는 두 샘플의 sample variance를 종합한 녀석을 쓸 것이다.
 
 <div class="statement" markdown="1">
 
@@ -110,7 +110,7 @@ $$
 
 <hr/>
 
-#### $\sigma_1^2$ and $\sigma_2^2$ are unknown and unequal
+## $\sigma_1^2$ and $\sigma_2^2$ are unknown and not equal
 
 먼저 population parameter를 기준으로 식을 세워보자.
 
@@ -140,10 +140,18 @@ $$
 
 <hr/>
 
+# 맺음말
+
+<div class="img-wrapper">
+<img src= "{{"/images/probability-and-statistics/sampling-distribution-table-2.png" | relative_url }}" width=750>
+</div>
+
 이어지는 포스트에서는 또다른 Two Samples Estimation인 \<Paired Observation\>의 경우를 살펴본다! 😁
 
 👉 [Two Samples Estimation: Paired Observations]({{"/2021/05/13/two-samples-estimation-paired-observations.html" | relative_url}})
 
-지금까지 우리의 관심사가 주로 population mean $\mu$에 대해 추정하거나 그 차이값에 대해 추정했다. 그 다음 포스트에서는 population variance $\sigma_2$에 대해 추정한다. $\sigma_2$를 추정하기도 하며, 두 샘플의 populiation variance의 비율인 $\sigma_1^2 / \sigma_2^2$를 추정한다.
+<br/>
+
+지금까지의 관심사는 population mean $\mu$에 대한 추정이었다. population mean $\mu$를 추정하거나 두 population mean $\mu$의 차이값을 추정했다. 그 다음 포스트에서는 population variance $\sigma^2$를 추정한다. $\sigma^2$를 추정하거나, 두 샘플의 population variance의 비율 $\sigma_1^2 / \sigma_2^2$를 추정한다.
 
 👉 [Variance Estimation]({{"/2021/05/16/variance-estimation.html" | relative_url}})

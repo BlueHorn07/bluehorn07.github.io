@@ -17,7 +17,7 @@ tags: ["Statistics"]
 
 <hr/>
 
-# Sampling Distribution of Means
+# Sampling Distribution of Mean
 
 Let $X_1, \dots, X_n$ be a random sample with $E[X_i] = \mu$ and $\text{Var}(X_i) = \sigma^2$.
 

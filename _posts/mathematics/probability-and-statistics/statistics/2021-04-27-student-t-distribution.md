@@ -10,9 +10,14 @@ tags: ["Statistics"]
 
 <hr/>
 
-Consider a random sample of size 100 from $N(1, \sigma^2)$ and $\sigma$ is <u>unknown</u>!
+Sample Mean $\bar{X}$에 대한 분포를 계속 살펴보자. 이전의 "[Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt.html" | relative_url}})" 포스트에선 population variance $\sigma^2$에 대한 값을 정확히 알고 있었다. 
 
-이전에는 population variance $\sigma^2$에 대한 값을 정확히 알았다면, 이번에는 $\sigma^2$를 모르는 상태에서 estimation을 진행한다!! 현재 $\sigma^2$에 대해 아는 정보는 $\sigma^2$가 $\chi^2(n)$을 따른다는 것이 전부다.
+$$
+Z = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}} \sim N(0, 1)
+$$
+
+
+이번에는 $\sigma^2$를 모르는 상태에서 Sample Mean $\bar{X}$의 분포를 모델링 해보자.
 
 <div class="definition" markdown="1">
 
@@ -35,7 +40,8 @@ Then, the distribution of $T$ is called \<student's t-distribution of $n$ degree
 1\. The pdf is 
 
 $$
-f(x) = \frac{\Gamma\left(\dfrac{n+1}{2}\right)}{\sqrt{n\pi} \cdot \Gamma\left( \dfrac{n}{2} \right)} \left( 1 + \frac{x^2}{n} \right)^{-(n+1)/2} \quad \text{for} \quad x \in \mathbb{R}
+f(x) 
+= \frac{\Gamma\left(\dfrac{n+1}{2}\right)}{\sqrt{n\pi} \cdot \Gamma\left( \dfrac{n}{2} \right)} \left( 1 + \frac{x^2}{n} \right)^{-(n+1)/2} \quad \text{for} \quad x \in \mathbb{R}
 $$
 
 (걱정하지 마라, 우리가 \<t-distribution\>의 분포를 외워서 적용할 일은 절대 없다!)
@@ -43,7 +49,11 @@ $$
 2\. As $n \rightarrow \infty$, 
 
 $$
-f(x) = \cancelto{\frac{1}{\sqrt{2\pi}}}{\frac{\Gamma\left(\dfrac{n+1}{2}\right)}{\sqrt{n\pi} \cdot \Gamma\left( \dfrac{n}{2} \right)}} \cancelto{e^{-x^2/2}}{\left( 1 + \frac{x^2}{n} \right)^{-(n+1)/2}} \quad \text{for} \quad x \in \mathbb{R}
+\begin{aligned}
+f(x) 
+&= \cancelto{\frac{1}{\sqrt{2\pi}}}{\frac{\Gamma\left(\dfrac{n+1}{2}\right)}{\sqrt{n\pi} \cdot \Gamma\left( \dfrac{n}{2} \right)}} \cancelto{\; \exp(-x^2 / 2)}{\left( 1 + \frac{x^2}{n} \right)^{-(n+1)/2}} \\
+&= \frac{1}{\sqrt{2\pi}} \exp(-x^2 / 2)
+\end{aligned}
 $$
 
 <div class="img-wrapper" style="margin: 10px">
@@ -137,7 +147,7 @@ t-value가 $t_{0.05}$보다 크므로 유의하다. 그래서 population mean $\
 
 \<t-distribution\>은 뒤에 나오는 \<Interval Estimation\>에서 유용하게 사용된다. 
 
-👉 [Estimate $\mu$ when $\sigma^2$ is unknown]({{"/2021/05/06/interval-estimation.html#estimate-mu-when-sigma2-is-unknown" | relative_url}})
+👉 [t-test: Estimate $\mu$ when $\sigma^2$ is unknown]({{"/2021/05/06/interval-estimation.html#estimate-mu-when-sigma2-is-unknown" | relative_url}})
 
 <br/>
 

@@ -89,6 +89,10 @@ hidden: true
 
 # Statistics
 
+<div class="img-wrapper">
+<img src= "{{"/images/probability-and-statistics/sampling-distribution-table-1.png" | relative_url }}" width=550>
+</div>
+
 - [Sampling Distribution]({{"/2021/04/25/sampling-distribution.html" | relative_url}})
   - statistic; 통계량
     - sample distribution
@@ -97,10 +101,8 @@ hidden: true
   - CLT; Central Limit Theorem
     - *proof*
 - [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance.html" | relative_url}})
-
-<br/>
-
 - [Student's t-distribution]({{"/2021/04/27/student-t-distribution.html" | relative_url}})
+  - Population Variance $\sigma^2$ is unknown
 - [F-distribution]({{"/2021/05/04/F-distribution.html" | relative_url}})
 - [Quantile]({{"/2021/05/04/EDF-and-Quantile.html" | relative_url}})
 

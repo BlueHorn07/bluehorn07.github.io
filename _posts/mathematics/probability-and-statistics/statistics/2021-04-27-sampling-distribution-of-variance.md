@@ -30,7 +30,7 @@ $$
 \end{aligned}
 $$
 
-즉, $Y_1 = - Y_2$로 서로 dependent다! 그래서 $S^2$에 대해서는 CLT를 적용할 수가 없다 😥 그러나 아래의 정리를 잘 활용하면, $S^2$에 대한 Distribution을 유도할 수 있다!!
+즉, $Y_1 = - Y_2$로 서로 dependent다! 그래서 $S^2$에 대해서는 CLT를 적용할 수가 없다 😥 그러나 아래의 정리를 활용하면, $S^2$에 대한 Distribution을 유도할 수 있다!!
 
 <br/>
 
@@ -57,9 +57,22 @@ $$
 
 </div>
 
+와우! Sample Variance $S^2$과 Population Variance $\sigma^2$의 비율이 [Chi-square Distribution]({{"/2021/04/06/chi-and-beta-and-lognormal-distribution.html#chi-square-distribution" | relative_url}})을 따른다니! 
+
 <div class="math-statement" markdown="1">
 
 <span class="statement-title">*Proof*.</span><br>
+
+[Step 1]
+
+$$
+\frac{1}{\sigma^2} \sum^n_i \left( X_i - \mu \right)^2 \sim \chi^2(n)
+$$
+
+이건 간단하다. $(X_i - \mu) / \sigma \sim N(0, 1)$의 제곱이 $n$개 합이니 당연히 $\chi^2(n)$을 따른다.
+
+
+[Step 2]
 
 $$
 \begin{aligned}
@@ -68,7 +81,9 @@ $$
 \end{aligned}
 $$
 
-이때, 마지막 텀인 $\displaystyle \frac{1}{\sigma^2} \sum^n_i 2 (X_i - \bar{X})(\bar{X} - \mu)$를 살펴보자.
+[Step 3]
+
+마지막 텀인 $\displaystyle \frac{1}{\sigma^2} \sum^n_i 2 (X_i - \bar{X})(\bar{X} - \mu)$를 살펴보자.
 
 $$
 \begin{aligned}
@@ -78,7 +93,9 @@ $$
 \end{aligned}
 $$
 
-다시 원래의 식으로 돌아가서
+[Step 4]
+
+다시 원래 식으로 돌아가서
 
 $$
 \begin{aligned}
@@ -92,7 +109,7 @@ $$
 
 이때, 좌변의 $\displaystyle \frac{1}{\sigma^2} \sum^n_i \left( X_i - \mu \right)^2$는 $\chi^2(n)$의 분포를 따르고, 우변의 $\displaystyle \left( \frac{\bar{X} - \mu}{\sigma/\sqrt{n}}\right)^2$는 $\chi^2(1)$의 분포를 따른다.
 
-만약 $Z = X + Y$에서 $Z \sim \chi^2(n)$이고, $Y \sim \chi^2(1)$이고, 게다가 $X \perp Y$라면, $X \sim \chi^2(n-1)$가 된다. 그러나 우리는 아직 $X \perp Y$에 대해 언급하지 않았다. 그래서 아래의 Lemma를 통해 $X \perp Y$를 확인해보자.
+만약 $Z = X + Y$에서 $Z \sim \chi^2(n)$이고, $Y \sim \chi^2(1)$일 때 $X \perp Y$라면, $X \sim \chi^2(n-1)$가 된다. 그러나 아직 $X \perp Y$에 대해 확인하지 않았다. 아래의 Lemma를 통해 $X \perp Y$를 확인해보자.
 
 <div class="statement" markdown="1">
 
@@ -116,11 +133,15 @@ $\blacksquare$
 
 <hr/>
 
-이번 포스트에서는 population variance $\sigma^2$의 값을 알고 있을 때, sample mean $\bar{X}$, sample variance $S^2$의 분포를 구하는 상황이었다. 이어지는 포스트에서는 이 $\sigma^2$를 모르는 상황에서 $\bar{X}$와 $S^2$의 분포를 구하는 방법을 살펴볼 예정이다. 
+이번 포스트에서는 Sample Variance $S^2$과 Population Variance $\sigma^2$의 비율에 대한 분포를 구했다. 
 
-미리 스포하자면, sample mean은 \<Student's t-distribution\>, sample variance는 \<F-distribution\>을 써야 한다!
+$$
+\frac{(n-1) S^2}{\sigma^2} \sim \chi^2(n-1)
+$$
 
-👉 [Student's t-distribution]({{"/2021/04/27/student-t-distribution.html"}})
+이어지는 포스트에서는 Population Variance $\sigma^2$를 모르는 상황에서 $\bar{X}$와 $S^2$의 분포를 구하는 방법을 살펴볼 예정이다. 스포하자면, Sample Mean의 분포는 \<Student's t-distribution\>, Sample Variance에서는 \<F-distribution\>가 된다!
+
+👉 [Student's t-distribution]({{"/2021/04/27/student-t-distribution.html" | relative_url}})
 
 👉 [F-distribution]({{"/2021/05/04/F-distribution.html" | relative_url}})
 
