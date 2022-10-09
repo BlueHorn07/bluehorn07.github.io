@@ -49,17 +49,23 @@ ps) 일반적으로, $F(n_1, n_2) \ne F(n_2, n_1)$이다. <small>F-distribution�
 
 <br/>
 
+<div class="statement" markdown="1">
+
 <span class="statement-title">Remark.</span><br>
 
-1\. The order $n_1$ and $n_2$ is very important.
+1\. The order of $n_1$ and $n_2$ is very important.
 
 In fact we have $F(n_1, n_2) \overset{D}{=} \dfrac{1}{F(n_2, n_1)}$.
 
-<br/>
+</div>
+
+<div class="statement" markdown="1">
 
 2\. Let $f_\alpha (n_1, n_2)$ be the number $x$ such that $\alpha = P\left(F(n_1, n_2) \ge x\right)$.
 
 Here, we have $f_{1-\alpha}(n_1, n_2) = \dfrac{1}{f_{\alpha}(n_2, n_1)}$
+
+</div>
 
 <div class="math-statement" markdown="1">
 

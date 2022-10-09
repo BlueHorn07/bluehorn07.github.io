@@ -5,8 +5,21 @@ use_math: true
 tags: ["Probability"]
 ---
 
-
 2021-1학기, 대학에서 '확률과 통계' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
+
+<div class="proof" markdown="1">
+
+**시리즈: Continuous Probability Distributions**
+
+1. [Uniform and Normal Distribution]({{"/2021/03/29/uniform-and-normal-distribution.html" | relative_url}}) 👀
+2. [Exponential Distribution]({{"/2021/03/31/exponential-distribution.html" | relative_url}})
+3. [Gamma Distribution]({{"/2021/04/05/gamma-distribution.html" | relative_url}})
+4. [Chi-square Distribution]({{"/2021/04/06/chi-square-distribution.html" | relative_url}})
+5. [Beta Distribution]({{"/2021/04/07/beta-distribution.html" | relative_url}})
+6. [Log-normal Distribution]({{"/2021/04/08/log-normal-distribution.html" | relative_url}})
+7. [Weibull Distribution (optional)]({{"/2021/04/10/weibull-distribution.html" | relative_url}})
+
+</div>
 
 <br><span class="statement-title">TOC.</span><br>
 
