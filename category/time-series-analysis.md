@@ -1,7 +1,6 @@
 ---
 title: "time_series_analysis"
 layout: post
-use_math: true
 tags: ["time_series_analysis"]
 ---
 

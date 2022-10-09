@@ -1,7 +1,6 @@
 ---
 title: "Introduction to AI"
 layout: post
-use_math: true
 tags: ["Artificial Intelligence"]
 ---
 

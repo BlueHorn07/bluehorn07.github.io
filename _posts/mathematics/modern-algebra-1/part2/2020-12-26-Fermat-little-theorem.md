@@ -1,7 +1,6 @@
 ---
 title: "Fermat's Little Theorem"
 layout: post
-use_math: true
 tags: ["Modern Algebra1"]
 ---
 

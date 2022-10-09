@@ -1,7 +1,6 @@
 ---
 title: "Fundamental Theorem of Arithmetic"
 layout: post
-use_math: true
 tags: ["Modern Algebra1"]
 ---
 

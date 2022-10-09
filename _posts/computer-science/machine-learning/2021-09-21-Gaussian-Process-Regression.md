@@ -1,7 +1,6 @@
 ---
 title: "Gaussian Process Regression"
 layout: post
-use_math: true
 tags: ["machine_learning", "time_series_analysis"]
 readtime: 30 Minutes
 ---

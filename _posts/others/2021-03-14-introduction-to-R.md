@@ -2,7 +2,6 @@
 title: "R 입문"
 layout: post
 tags: []
-use_math: true
 ---
 
 

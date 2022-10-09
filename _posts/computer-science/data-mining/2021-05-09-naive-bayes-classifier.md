@@ -1,7 +1,6 @@
 ---
 title: "Naive Bayes Classifier"
 layout: post
-use_math: true
 tags: [applied_statistics]
 ---
 

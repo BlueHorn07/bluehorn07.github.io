@@ -1,7 +1,6 @@
 ---
 title: "Maudlin, Classical Accounts Of Space And Time"
 layout: post
-use_math: true
 tags: [Philosophy]
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "Test on Regression"
 layout: post
-use_math: true
 tags: ["statistics"]
 ---
 

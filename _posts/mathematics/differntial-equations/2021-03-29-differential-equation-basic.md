@@ -1,7 +1,6 @@
 ---
 title: "Differential Equation - Basic"
 layout: post
-use_math: true
 tags: ["Differntial Equation"]
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "Rank-Nullity Theorem"
 layout: post
-use_math: true
 tags: [set_theory]
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "Unique Factorization Domain - 2"
 layout: post
-use_math: true
 tags: ["Modern Algebra1"]
 ---
 

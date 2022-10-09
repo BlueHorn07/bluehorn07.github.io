@@ -1,7 +1,6 @@
 ---
 title: "Longest Path, Subset Sum"
 layout: post
-use_math: true
 tags: ["algorithm"]
 ---
 

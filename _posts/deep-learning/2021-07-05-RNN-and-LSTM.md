@@ -1,7 +1,6 @@
 ---
 title: "RNN & LSTM"
 layout: post
-use_math: true
 tags: ["Deep Learning", "NLP"]
 ---
 

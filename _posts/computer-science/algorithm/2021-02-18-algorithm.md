@@ -1,7 +1,6 @@
 ---
 title: "Algorithm"
 layout: post
-use_math: true
 tags: ["algorithm"]
 hidden: true
 ---

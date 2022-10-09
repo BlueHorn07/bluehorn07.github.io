@@ -1,7 +1,6 @@
 ---
 title: "Linear Regression, GD, and Normal Equation"
 layout: post
-use_math: true
 tags: [machine_learning]
 ---
 

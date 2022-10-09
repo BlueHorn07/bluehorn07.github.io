@@ -1,7 +1,6 @@
 ---
 title: "Complex Variable - Basic"
 layout: post
-use_math: true
 tags: ["Complex Variable"]
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "Fourier Series"
 layout: post
-use_math: true
 tags: ["Differntial Equation"]
 ---
 

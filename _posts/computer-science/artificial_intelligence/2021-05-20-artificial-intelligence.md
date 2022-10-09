@@ -1,7 +1,6 @@
 ---
 title: "Artificial Intelligence"
 layout: post
-use_math: true
 tags: ["Artificial Intelligence"]
 hidden: true
 ---

@@ -1,7 +1,6 @@
 ---
 title: "Density Estimation"
 layout: post
-use_math: true
 tags: [applied_statistics]
 ---
 

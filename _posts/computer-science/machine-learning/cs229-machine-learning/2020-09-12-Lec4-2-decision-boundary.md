@@ -1,7 +1,6 @@
 ---
 title: "Interpretation of Decision Boundary with Learning"
 layout: post
-use_math: true
 tags: [machine_learning]
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "Monti Hall Problem"
 layout: post
-use_math: true
 tags: ["probability"]
 ---
 

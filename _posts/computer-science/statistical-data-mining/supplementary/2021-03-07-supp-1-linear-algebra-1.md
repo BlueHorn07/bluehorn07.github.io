@@ -1,7 +1,6 @@
 ---
 title: "Supp-1: Linear Algebra - 1"
 layout: post
-use_math: true
 tags: [linear_algebra, applied_statistics]
 ---
 

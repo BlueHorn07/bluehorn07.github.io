@@ -1,7 +1,6 @@
 ---
 title: "ResNet (code)"
 layout: post
-use_math: true
 tags: [AIGS539]
 ---
 

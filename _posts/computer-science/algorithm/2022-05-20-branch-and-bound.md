@@ -1,7 +1,6 @@
 ---
 title: "Branch and Bound"
 layout: post
-use_math: true
 tags: ["algorithm"]
 ---
 

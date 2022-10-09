@@ -1,7 +1,6 @@
 ---
 title: "SARIMA & SARIMAX Model"
 layout: post
-use_math: true
 tags: ["time_series_analysis"]
 ---
 

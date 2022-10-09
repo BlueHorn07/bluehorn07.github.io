@@ -1,7 +1,6 @@
 ---
 title: "Test on Mean"
 layout: post
-use_math: true
 tags: ["statistics"]
 ---
 

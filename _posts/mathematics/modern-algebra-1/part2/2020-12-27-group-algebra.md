@@ -1,7 +1,6 @@
 ---
 title: "Group Rings & Group Algebras"
 layout: post
-use_math: true
 tags: ["Modern Algebra1"]
 ---
 

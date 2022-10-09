@@ -1,7 +1,6 @@
 ---
 title: "Converse of Lagrange Thm"
 layout: post
-use_math: true
 tags: ["Modern Algebra1"]
 ---
 

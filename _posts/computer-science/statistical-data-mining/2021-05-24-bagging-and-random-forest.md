@@ -1,7 +1,6 @@
 ---
 title: "Bagging & Random Forest"
 layout: post
-use_math: true
 tags: [applied_statistics]
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "Chain Matrix Multiplication"
 layout: post
-use_math: true
 tags: ["algorithm"]
 ---
 

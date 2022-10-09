@@ -1,7 +1,6 @@
 ---
 title: "Linear Fractional Transform"
 layout: post
-use_math: true
 tags: ["Complex Variable"]
 ---
 

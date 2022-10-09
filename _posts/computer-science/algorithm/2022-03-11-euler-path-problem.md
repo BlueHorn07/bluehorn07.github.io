@@ -1,7 +1,6 @@
 ---
 title: "Euler Path Problem"
 layout: post
-use_math: true
 tags: ["algorithm"]
 ---
 

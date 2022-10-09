@@ -1,7 +1,6 @@
 ---
 title: "Statistics - PS1"
 layout: post
-use_math: true
 tags: ["statistics", "Problem Solving"]
 ---
 

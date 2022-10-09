@@ -1,7 +1,6 @@
 ---
 title: "Fermat's Theorem on Sums of Two Squares"
 layout: post
-use_math: true
 tags: ["Modern Algebra1"]
 ---
 

@@ -2,7 +2,6 @@
 layout: page
 title: Math
 permalink: /topic/mathematics
-use_math: true
 ---
 
 <div class="statement">

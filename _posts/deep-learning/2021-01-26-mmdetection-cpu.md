@@ -2,7 +2,6 @@
 title: "mmdetection + CPU"
 layout: post
 tags: ["research"]
-use_math: true
 ---
 
 

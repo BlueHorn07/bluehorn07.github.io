@@ -1,7 +1,6 @@
 ---
 title: "Random Variables and Probability Distriubtions"
 layout: post
-use_math: true
 tags: ["probability"]
 ---
 

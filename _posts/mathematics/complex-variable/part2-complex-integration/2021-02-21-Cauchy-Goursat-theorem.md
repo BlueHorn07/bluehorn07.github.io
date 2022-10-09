@@ -1,7 +1,6 @@
 ---
 title: "Cauchy-Goursat Theorem"
 layout: post
-use_math: true
 tags: ["Complex Variable"]
 ---
 

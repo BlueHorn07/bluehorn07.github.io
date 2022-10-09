@@ -1,7 +1,6 @@
 ---
 title: "Discrete Probability Distributions - 2"
 layout: post
-use_math: true
 tags: ["probability"]
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "Random Process"
 layout: post
-use_math: true
 tags: ["machine_learning"]
 modified_date: 2021.09.21
 readtime: 20 minutes

@@ -1,7 +1,6 @@
 ---
 title: "Clustering of Maximum Spacing"
 layout: post
-use_math: true
 tags: ["algorithm"]
 ---
 

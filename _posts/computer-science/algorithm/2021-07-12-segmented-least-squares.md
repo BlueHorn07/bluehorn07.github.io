@@ -1,7 +1,6 @@
 ---
 title: "Segmented Least Squares"
 layout: post
-use_math: true
 tags: ["algorithm"]
 ---
 

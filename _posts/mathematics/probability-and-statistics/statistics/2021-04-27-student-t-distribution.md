@@ -1,7 +1,6 @@
 ---
 title: "Student's t-distribution"
 layout: post
-use_math: true
 tags: ["statistics"]
 ---
 

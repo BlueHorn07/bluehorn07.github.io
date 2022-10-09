@@ -2,7 +2,6 @@
 title: "[PyTorch] `model.eval()` 의미"
 layout: post
 tags: ["PyTorch"]
-use_math: true
 ---
 
 <br/>

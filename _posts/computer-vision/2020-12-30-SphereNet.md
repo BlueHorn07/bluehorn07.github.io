@@ -2,7 +2,6 @@
 title: "SphereNet(2018)"
 layout: post
 tags: ["Computer Vision", "research"]
-use_math: true
 ---
 
 

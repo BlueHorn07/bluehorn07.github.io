@@ -1,7 +1,6 @@
 ---
 title: "Chi-sqaure Distribution"
 layout: post
-use_math: true
 tags: ["probability"]
 ---
 

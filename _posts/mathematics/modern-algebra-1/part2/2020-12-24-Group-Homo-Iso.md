@@ -1,7 +1,6 @@
 ---
 title: "Group Homo/Iso-morphism + 문풀"
 layout: post
-use_math: true
 tags: ["Modern Algebra1"]
 ---
 

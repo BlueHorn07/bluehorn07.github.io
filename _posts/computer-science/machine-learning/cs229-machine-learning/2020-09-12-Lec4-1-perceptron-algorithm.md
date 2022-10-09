@@ -1,7 +1,6 @@
 ---
 title: "Perceptron Algorithm, and Newton's Method"
 layout: post
-use_math: true
 tags: [machine_learning]
 ---
 

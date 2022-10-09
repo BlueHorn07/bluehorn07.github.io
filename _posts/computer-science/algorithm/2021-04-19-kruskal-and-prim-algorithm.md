@@ -1,7 +1,6 @@
 ---
 title: "Kruskal's Algorithm & Prim's Algorithm"
 layout: post
-use_math: true
 tags: ["algorithm"]
 ---
 

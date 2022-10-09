@@ -1,7 +1,6 @@
 ---
 title: "Dijkstra's Algorithm"
 layout: post
-use_math: true
 tags: ["algorithm"]
 ---
 

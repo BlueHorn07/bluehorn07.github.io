@@ -1,7 +1,6 @@
 ---
 title: "Fourier Transform"
 layout: post
-use_math: true
 tags: ["Data Mining"]
 ---
 

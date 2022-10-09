@@ -1,7 +1,6 @@
 ---
 title: "complex primitive function & ML-ineqaulity"
 layout: post
-use_math: true
 tags: ["Complex Variable"]
 ---
 

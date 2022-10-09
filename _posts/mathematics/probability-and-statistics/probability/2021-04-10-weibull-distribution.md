@@ -1,7 +1,6 @@
 ---
 title: "Weibull Distribution (Optional)"
 layout: post
-use_math: true
 tags: ["probability"]
 ---
 

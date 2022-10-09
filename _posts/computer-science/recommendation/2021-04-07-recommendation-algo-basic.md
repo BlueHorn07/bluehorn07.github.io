@@ -1,7 +1,6 @@
 ---
 title: "Recommendation Algorithm - Basic"
 layout: post
-use_math: true
 tags: ["Recommendation Algorithm"]
 ---
 

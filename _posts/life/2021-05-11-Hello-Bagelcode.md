@@ -2,7 +2,6 @@
 title: "Hello, Bagelcode! 🥯"
 layout: post
 tags: [life]
-use_math: true
 ---
 
 <br/>

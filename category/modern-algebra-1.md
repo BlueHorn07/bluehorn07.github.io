@@ -1,7 +1,6 @@
 ---
 title: "Modern Algebra 1"
 layout: post
-use_math: true
 tags: ["Modern Algebra1"]
 hidden: true
 ---

@@ -1,7 +1,6 @@
 ---
 title: "Object Detection Datasets"
 layout: post
-use_math: true
 tags: ["Computer Vision"]
 ---
 

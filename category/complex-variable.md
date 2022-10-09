@@ -1,7 +1,6 @@
 ---
 title: "MATH210 - Applied Complex Variables"
 layout: post
-use_math: true
 tags: ["Complex Variable"]
 hidden: true
 ---

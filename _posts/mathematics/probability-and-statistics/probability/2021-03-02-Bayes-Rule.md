@@ -1,7 +1,6 @@
 ---
 title: "Bayes' Rule"
 layout: post
-use_math: true
 tags: ["probability"]
 ---
 

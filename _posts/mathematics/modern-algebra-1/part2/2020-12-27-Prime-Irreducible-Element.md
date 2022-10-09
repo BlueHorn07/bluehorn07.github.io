@@ -1,7 +1,6 @@
 ---
 title: "Prime & Irreducible element"
 layout: post
-use_math: true
 tags: ["Modern Algebra1"]
 ---
 

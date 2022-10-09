@@ -1,7 +1,6 @@
 ---
 title: "EDF and Quantile"
 layout: post
-use_math: true
 tags: ["statistics"]
 ---
 

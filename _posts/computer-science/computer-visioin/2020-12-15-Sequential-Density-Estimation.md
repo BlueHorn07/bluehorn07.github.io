@@ -1,7 +1,6 @@
 ---
 title: "Sequential Density Estimation"
 layout: post
-use_math: true
 tags: ["Computer Vision"]
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "Sampling Distribution of Mean, and CLT"
 layout: post
-use_math: true
 tags: ["statistics"]
 ---
 

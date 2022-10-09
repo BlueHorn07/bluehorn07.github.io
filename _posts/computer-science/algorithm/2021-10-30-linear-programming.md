@@ -1,7 +1,6 @@
 ---
 title: "Linear Programming"
 layout: post
-use_math: true
 tags: ["algorithm"]
 ---
 

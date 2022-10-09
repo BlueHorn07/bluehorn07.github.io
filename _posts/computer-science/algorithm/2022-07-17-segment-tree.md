@@ -1,7 +1,6 @@
 ---
 title: "Segment Tree"
 layout: post
-use_math: true
 tags: ["algorithm"]
 ---
 

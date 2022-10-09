@@ -1,7 +1,6 @@
 ---
 title: "Quick Selection"
 layout: post
-use_math: true
 tags: ["algorithm"]
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "Joint Probability Distribution"
 layout: post
-use_math: true
 tags: ["probability"]
 ---
 

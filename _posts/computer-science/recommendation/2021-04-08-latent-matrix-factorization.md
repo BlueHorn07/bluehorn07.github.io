@@ -1,7 +1,6 @@
 ---
 title: "Latent Matrix Factorization"
 layout: post
-use_math: true
 tags: ["Recommendation Algorithm"]
 ---
 

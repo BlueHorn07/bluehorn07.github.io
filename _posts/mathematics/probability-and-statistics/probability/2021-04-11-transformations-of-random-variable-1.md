@@ -1,7 +1,6 @@
 ---
 title: "Transformations of Random Variable - 1"
 layout: post
-use_math: true
 tags: ["probability"]
 ---
 

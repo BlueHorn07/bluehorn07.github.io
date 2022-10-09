@@ -2,7 +2,6 @@
 title: "`.env` 파일 사용하기"
 layout: post
 tags: ["NestJS"]
-use_math: true
 ---
 
 <br/>

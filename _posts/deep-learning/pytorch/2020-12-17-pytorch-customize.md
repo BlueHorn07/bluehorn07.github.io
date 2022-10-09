@@ -1,7 +1,6 @@
 ---
 title: "PyTorch - 모델 커스텀"
 layout: post
-use_math: true
 tags: [PyTorch]
 ---
 

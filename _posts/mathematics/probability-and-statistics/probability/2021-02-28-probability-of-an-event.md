@@ -1,7 +1,6 @@
 ---
 title: "Probability of an Event"
 layout: post
-use_math: true
 tags: ["probability"]
 ---
 

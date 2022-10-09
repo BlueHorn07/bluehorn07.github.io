@@ -1,7 +1,6 @@
 ---
 title: "Maximum Likelihood Estimation"
 layout: post
-use_math: true
 tags: ["statistics"]
 ---
 

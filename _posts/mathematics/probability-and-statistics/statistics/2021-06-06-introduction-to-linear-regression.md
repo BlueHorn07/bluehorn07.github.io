@@ -1,7 +1,6 @@
 ---
 title: "Regression Analysis and Simple Linear Regression"
 layout: post
-use_math: true
 tags: ["statistics"]
 ---
 

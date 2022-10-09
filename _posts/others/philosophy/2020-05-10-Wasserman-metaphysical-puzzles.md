@@ -1,7 +1,6 @@
 ---
 title: "Wasserman, Metaphysical Puzzles"
 layout: post
-use_math: true
 tags: [Philosophy]
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "Dynamic Programming"
 layout: post
-use_math: true
 tags: ["algorithm"]
 ---
 

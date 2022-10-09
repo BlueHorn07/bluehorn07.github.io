@@ -1,7 +1,6 @@
 ---
 title: "Bitmask Technique"
 layout: post
-use_math: true
 tags: ["algorithm", "problem_solving"]
 ---
 

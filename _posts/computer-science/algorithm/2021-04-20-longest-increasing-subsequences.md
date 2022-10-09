@@ -1,7 +1,6 @@
 ---
 title: "Longest Increasing Subsequences"
 layout: post
-use_math: true
 tags: ["algorithm"]
 ---
 

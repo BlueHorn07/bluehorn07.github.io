@@ -1,7 +1,6 @@
 ---
 title: "Values in Statistics"
 layout: post
-use_math: true
 tags: ["statistics"]
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "Formulas for residue"
 layout: post
-use_math: true
 tags: ["Complex Variable"]
 ---
 

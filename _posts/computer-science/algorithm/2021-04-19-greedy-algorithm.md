@@ -1,7 +1,6 @@
 ---
 title: "Greedy Algorithm"
 layout: post
-use_math: true
 tags: ["algorithm"]
 ---
 

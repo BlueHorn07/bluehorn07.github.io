@@ -1,7 +1,6 @@
 ---
 title: "Exponential Distribution"
 layout: post
-use_math: true
 tags: ["probability"]
 ---
 

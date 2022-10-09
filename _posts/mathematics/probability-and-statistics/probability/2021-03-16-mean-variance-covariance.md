@@ -1,7 +1,6 @@
 ---
 title: "Mean, Variance, and Covriance"
 layout: post
-use_math: true
 tags: ["probability"]
 ---
 

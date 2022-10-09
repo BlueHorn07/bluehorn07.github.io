@@ -2,7 +2,6 @@
 title: "TypeORM - DB Relationship"
 layout: post
 tags: [NestJS]
-use_math: true
 ---
 
 <br/>

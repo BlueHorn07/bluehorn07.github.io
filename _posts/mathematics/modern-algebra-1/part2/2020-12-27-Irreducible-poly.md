@@ -1,7 +1,6 @@
 ---
 title: "Irreducible Polynomial"
 layout: post
-use_math: true
 tags: ["Modern Algebra1"]
 ---
 

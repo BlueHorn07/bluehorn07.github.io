@@ -1,7 +1,6 @@
 ---
 title: "Polynomial over UFD"
 layout: post
-use_math: true
 tags: ["Modern Algebra1"]
 ---
 

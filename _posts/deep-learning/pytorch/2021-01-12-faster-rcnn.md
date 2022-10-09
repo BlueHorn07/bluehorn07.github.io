@@ -2,7 +2,6 @@
 title: "Faster R-CNN"
 layout: post
 tags: ["pytorch"]
-use_math: true
 ---
 
 

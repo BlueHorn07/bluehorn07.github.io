@@ -1,7 +1,6 @@
 ---
 title: "Traveling Salesman Problem"
 layout: post
-use_math: true
 tags: ["algorithm"]
 ---
 

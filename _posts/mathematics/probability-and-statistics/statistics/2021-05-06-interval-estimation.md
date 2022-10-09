@@ -1,7 +1,6 @@
 ---
 title: "Interval Estimation"
 layout: post
-use_math: true
 tags: ["statistics"]
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "Amortized Analysis"
 layout: post
-use_math: true
 tags: ["algorithm"]
 ---
 

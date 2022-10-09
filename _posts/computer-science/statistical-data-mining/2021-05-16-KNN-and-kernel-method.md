@@ -1,7 +1,6 @@
 ---
 title: "KNN & kernel method"
 layout: post
-use_math: true
 tags: [applied_statistics]
 ---
 

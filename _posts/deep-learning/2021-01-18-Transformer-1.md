@@ -2,7 +2,6 @@
 title: "Transformer(2017) - 1"
 layout: post
 tags: ["research"]
-use_math: true
 ---
 
 

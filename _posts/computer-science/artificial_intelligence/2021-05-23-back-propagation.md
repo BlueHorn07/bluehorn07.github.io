@@ -1,7 +1,6 @@
 ---
 title: "Back-propagation"
 layout: post
-use_math: true
 tags: ["Artificial Intelligence"]
 ---
 

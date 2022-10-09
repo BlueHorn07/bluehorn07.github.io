@@ -1,7 +1,6 @@
 ---
 title: "Machine Learning Basics"
 layout: post
-use_math: true
 tags: ["machine_learning"]
 ---
 

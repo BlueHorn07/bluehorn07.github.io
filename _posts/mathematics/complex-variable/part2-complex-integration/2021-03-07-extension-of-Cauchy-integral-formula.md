@@ -1,7 +1,6 @@
 ---
 title: "Extended Cauchy's Integral Formula"
 layout: post
-use_math: true
 tags: ["Complex Variable"]
 ---
 

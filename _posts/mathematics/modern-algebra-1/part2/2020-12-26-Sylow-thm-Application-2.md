@@ -1,7 +1,6 @@
 ---
 title: "Three Sylow Theorems - Application 2"
 layout: post
-use_math: true
 tags: ["Modern Algebra1"]
 ---
 

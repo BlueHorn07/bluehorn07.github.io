@@ -1,7 +1,6 @@
 ---
 title: "Sampling Distribution of Variance"
 layout: post
-use_math: true
 tags: ["statistics"]
 ---
 

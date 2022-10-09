@@ -1,7 +1,6 @@
 ---
 title: "Factor Group"
 layout: post
-use_math: true
 tags: ["Modern Algebra1"]
 ---
 

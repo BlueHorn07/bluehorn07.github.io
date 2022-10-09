@@ -1,7 +1,6 @@
 ---
 title: "Auto-Correlation: ACF & PACF"
 layout: post
-use_math: true
 tags: ["time_series_analysis"]
 ---
 

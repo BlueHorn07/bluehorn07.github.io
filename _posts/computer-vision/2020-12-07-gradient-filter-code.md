@@ -1,7 +1,6 @@
 ---
 title: "Gradient Filter (code)"
 layout: post
-use_math: true
 tags: [AIGS539]
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "『틀리지 않는 법』 조던 엘렌버그"
 layout: post
-use_math: true
 tags: [reading]
 ---
 

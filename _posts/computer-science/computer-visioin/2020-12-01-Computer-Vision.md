@@ -1,7 +1,6 @@
 ---
 title: "Computer Vision"
 layout: post
-use_math: true
 tags: ["Computer Vision"]
 hidden: true
 ---

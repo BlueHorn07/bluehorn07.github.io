@@ -1,7 +1,6 @@
 ---
 title: "Applications to real integrals"
 layout: post
-use_math: true
 tags: ["Complex Variable"]
 ---
 

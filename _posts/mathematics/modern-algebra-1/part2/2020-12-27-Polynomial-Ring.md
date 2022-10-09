@@ -1,7 +1,6 @@
 ---
 title: "Polynomial Ring"
 layout: post
-use_math: true
 tags: ["Modern Algebra1"]
 ---
 

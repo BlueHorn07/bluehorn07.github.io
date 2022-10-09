@@ -2,7 +2,6 @@
 title: "Dependency Injection"
 layout: post
 tags: [NestJS]
-use_math: True
 ---
 
 

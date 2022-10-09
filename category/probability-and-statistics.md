@@ -1,7 +1,6 @@
 ---
 title: "Probability and Statistics"
 layout: post
-use_math: true
 tags: ["probability", "statistics"]
 hidden: true
 ---

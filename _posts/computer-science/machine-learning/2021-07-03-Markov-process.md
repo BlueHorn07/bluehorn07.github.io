@@ -1,7 +1,6 @@
 ---
 title: "Markov Process & Markov Chain"
 layout: post
-use_math: true
 tags: ["machine_learning"]
 ---
 

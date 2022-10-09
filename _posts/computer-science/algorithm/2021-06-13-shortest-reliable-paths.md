@@ -1,7 +1,6 @@
 ---
 title: "Shortest Reliable Paths"
 layout: post
-use_math: true
 tags: ["algorithm"]
 ---
 

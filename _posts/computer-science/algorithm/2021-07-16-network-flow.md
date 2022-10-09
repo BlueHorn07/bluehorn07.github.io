@@ -1,7 +1,6 @@
 ---
 title: "Network Flow"
 layout: post
-use_math: true
 tags: ["algorithm"]
 ---
 

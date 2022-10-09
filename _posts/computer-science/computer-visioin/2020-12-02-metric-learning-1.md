@@ -1,7 +1,6 @@
 ---
 title: "Metric Learning 1"
 layout: post
-use_math: true
 tags: ["Computer Vision"]
 ---
 

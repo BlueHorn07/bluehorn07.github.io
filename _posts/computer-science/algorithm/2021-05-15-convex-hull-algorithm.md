@@ -1,7 +1,6 @@
 ---
 title: "Convex hull Algorithm"
 layout: post
-use_math: true
 tags: ["algorithm"]
 ---
 

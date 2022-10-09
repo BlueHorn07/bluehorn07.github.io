@@ -2,7 +2,6 @@
 layout: page
 title: CS
 permalink: /topic/computer-science
-use_math: true
 ---
 
 <div class="statement">

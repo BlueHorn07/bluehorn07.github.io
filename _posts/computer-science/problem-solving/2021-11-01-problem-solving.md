@@ -1,7 +1,6 @@
 ---
 title: "Problem Solving"
 layout: post
-use_math: true
 tags: ["algorithm", "problem_solving"]
 ---
 

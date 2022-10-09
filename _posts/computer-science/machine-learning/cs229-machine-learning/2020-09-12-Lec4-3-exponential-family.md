@@ -1,7 +1,6 @@
 ---
 title: "Exponential Family, and GLM"
 layout: post
-use_math: true
 tags: [machine_learning]
 ---
 

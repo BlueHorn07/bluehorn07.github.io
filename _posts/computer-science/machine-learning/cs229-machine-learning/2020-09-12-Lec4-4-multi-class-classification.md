@@ -1,7 +1,6 @@
 ---
 title: "Multi-class Classification"
 layout: post
-use_math: true
 tags: [machine_learning]
 ---
 

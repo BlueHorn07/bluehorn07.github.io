@@ -1,7 +1,6 @@
 ---
 title: "Residue Theorem"
 layout: post
-use_math: true
 tags: ["Complex Variable"]
 ---
 

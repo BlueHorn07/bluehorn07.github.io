@@ -2,7 +2,6 @@
 title: "Anti-Aliasing"
 layout: post
 tags: ["research"]
-use_math: true
 ---
 
 

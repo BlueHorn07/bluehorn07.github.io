@@ -1,7 +1,6 @@
 ---
 title: "Log-normal Distribution"
 layout: post
-use_math: true
 tags: ["probability"]
 ---
 

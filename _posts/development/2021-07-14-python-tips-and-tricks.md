@@ -2,7 +2,6 @@
 title: "Python Tips & Tricks"
 layout: post
 tags: []
-use_math: true
 ---
 
 

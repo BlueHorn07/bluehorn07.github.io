@@ -1,7 +1,6 @@
 ---
 title: "Sample Space"
 layout: post
-use_math: true
 tags: ["probability"]
 ---
 

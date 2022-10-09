@@ -1,7 +1,6 @@
 ---
 title: "Modern Algebra I - PS3"
 layout: post
-use_math: true
 tags: ["Modern Algebra1", "Problem Solving"]
 ---
 

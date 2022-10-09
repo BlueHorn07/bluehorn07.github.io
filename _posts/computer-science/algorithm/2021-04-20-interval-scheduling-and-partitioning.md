@@ -1,7 +1,6 @@
 ---
 title: "Interval Scheduling and Partitioning"
 layout: post
-use_math: true
 tags: ["algorithm"]
 ---
 

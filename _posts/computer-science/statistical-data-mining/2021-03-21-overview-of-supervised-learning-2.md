@@ -1,7 +1,6 @@
 ---
 title: "Overview of Supervised Learning - 2"
 layout: post
-use_math: true
 tags: [applied_statistics]
 ---
 

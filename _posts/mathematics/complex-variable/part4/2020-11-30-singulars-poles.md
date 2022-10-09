@@ -1,7 +1,6 @@
 ---
 title: "singular points & poles"
 layout: post
-use_math: true
 tags: ["Complex Variable"]
 ---
 

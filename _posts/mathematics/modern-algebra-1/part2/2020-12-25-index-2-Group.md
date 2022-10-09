@@ -1,7 +1,6 @@
 ---
 title: "index-2 Group is normal"
 layout: post
-use_math: true
 tags: ["Modern Algebra1"]
 ---
 

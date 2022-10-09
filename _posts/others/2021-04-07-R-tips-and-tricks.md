@@ -2,7 +2,6 @@
 title: "R Tips & Tricks"
 layout: post
 tags: []
-use_math: true
 ---
 
 

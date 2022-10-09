@@ -1,7 +1,6 @@
 ---
 title: "Feature Selection Techniques"
 layout: post
-use_math: true
 tags: [applied_statistics]
 ---
 

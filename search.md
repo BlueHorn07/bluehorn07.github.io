@@ -5,7 +5,6 @@ layout: page
 permalink: /search/
 tipue_search_active: true
 exclude_from_search: true
-use_math: true
 ---
 
 <div class="tipue_wrapper">

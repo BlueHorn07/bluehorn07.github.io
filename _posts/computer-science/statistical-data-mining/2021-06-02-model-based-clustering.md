@@ -1,7 +1,6 @@
 ---
 title: "Model-based Clustering"
 layout: post
-use_math: true
 tags: [applied_statistics]
 ---
 

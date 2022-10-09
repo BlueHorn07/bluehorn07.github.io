@@ -1,7 +1,6 @@
 ---
 title: "Satisfiability(SAT)"
 layout: post
-use_math: true
 tags: ["algorithm"]
 ---
 

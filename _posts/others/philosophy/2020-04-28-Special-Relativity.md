@@ -1,7 +1,6 @@
 ---
 title: "Background for discussion of 'Special Relativity'"
 layout: post
-use_math: true
 tags: [Philosophy]
 ---
 

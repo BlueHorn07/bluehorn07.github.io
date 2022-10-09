@@ -1,7 +1,6 @@
 ---
 title: "Particle Filtering"
 layout: post
-use_math: true
 tags: ["Computer Vision"]
 ---
 

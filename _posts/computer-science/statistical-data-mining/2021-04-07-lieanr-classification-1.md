@@ -1,7 +1,6 @@
 ---
 title: "Linear Classification - 1"
 layout: post
-use_math: true
 tags: [applied_statistics]
 ---
 

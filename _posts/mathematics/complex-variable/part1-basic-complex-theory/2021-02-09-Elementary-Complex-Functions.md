@@ -1,7 +1,6 @@
 ---
 title: "Elementary Complex Functions"
 layout: post
-use_math: true
 tags: ["Complex Variable"]
 ---
 

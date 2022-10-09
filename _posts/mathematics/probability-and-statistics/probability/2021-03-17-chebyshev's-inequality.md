@@ -1,7 +1,6 @@
 ---
 title: "Chebyshev's Inequality"
 layout: post
-use_math: true
 tags: ["probability"]
 ---
 

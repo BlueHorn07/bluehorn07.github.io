@@ -1,7 +1,6 @@
 ---
 title: "Statistical Data Mining"
 layout: post
-use_math: true
 tags: [applied_statistics]
 hidden: true
 ---

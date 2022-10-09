@@ -1,7 +1,6 @@
 ---
 title: "Generative Learning Algorithm, and GDA"
 layout: post
-use_math: true
 tags: [machine_learning]
 ---
 

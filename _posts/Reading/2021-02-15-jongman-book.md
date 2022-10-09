@@ -2,7 +2,6 @@
 title: "종만북 리딩 - 1"
 layout: post
 tags: [reading]
-use_math: true
 ---
 
 

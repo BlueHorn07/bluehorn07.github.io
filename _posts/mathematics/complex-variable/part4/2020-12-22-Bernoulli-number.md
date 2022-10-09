@@ -1,7 +1,6 @@
 ---
 title: "Bernoulli Number derived by Maclaurin series"
 layout: post
-use_math: true
 tags: ["Complex Variable"]
 ---
 

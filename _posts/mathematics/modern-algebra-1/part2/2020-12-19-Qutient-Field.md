@@ -1,7 +1,6 @@
 ---
 title: "Quotient Field"
 layout: post
-use_math: true
 tags: ["Modern Algebra1"]
 ---
 

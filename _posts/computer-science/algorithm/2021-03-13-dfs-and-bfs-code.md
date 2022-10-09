@@ -1,7 +1,6 @@
 ---
 title: "DFS and BFS - code"
 layout: post
-use_math: true
 tags: ["algorithm"]
 ---
 

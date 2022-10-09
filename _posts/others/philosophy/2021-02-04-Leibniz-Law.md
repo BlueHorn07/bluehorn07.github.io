@@ -1,7 +1,6 @@
 ---
 title: "Leibniz's Law: Identity of Indiscernibles"
 layout: post
-use_math: true
 tags: [Philosophy]
 ---
 

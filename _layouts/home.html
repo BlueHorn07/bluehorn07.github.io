@@ -52,11 +52,14 @@ layout: default
         {%- if post.hidden != true -%}
         <li class="post-wrapper">
           <span class="post-meta">{{ post.date | date: date_format }}</span>
-          <h3>
+          <h3 style="margin-bottom: 0">
             <a class="post-link" href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
             </a>
           </h3>
+          <p class="post-preview" markdown="1">
+            {{ post.preview }}
+          </p>
           <!-- post tag list -->
           {% if post.tags%}
             <div class="tag-wrapper">

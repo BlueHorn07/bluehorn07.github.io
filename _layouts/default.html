@@ -8,9 +8,7 @@
     {%- include header.html -%}
     
     <!-- mathjax -->
-    {% if page.use_math %}
-      {% include mathjax_support.html %}
-    {% endif %}
+    {% include mathjax_support.html %}
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}

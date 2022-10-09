@@ -1,7 +1,6 @@
 ---
 title: "Choice of Sample Size for Testing Mean"
 layout: post
-use_math: true
 tags: ["statistics"]
 ---
 
