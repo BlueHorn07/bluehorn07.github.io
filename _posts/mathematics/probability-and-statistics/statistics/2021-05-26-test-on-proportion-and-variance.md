@@ -2,7 +2,7 @@
 title: "Test on Proportion and Variance"
 layout: post
 use_math: true
-tags: ["Statistics"]
+tags: ["statistics"]
 ---
 
 

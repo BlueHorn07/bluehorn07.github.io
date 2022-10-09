@@ -2,7 +2,7 @@
 title: "Proportion Estimation on Bernoullid Distribution"
 layout: post
 use_math: true
-tags: ["Statistics"]
+tags: ["statistics"]
 ---
 
 

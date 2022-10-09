@@ -2,7 +2,7 @@
 title: "Regression Analysis and Simple Linear Regression"
 layout: post
 use_math: true
-tags: ["Statistics"]
+tags: ["statistics"]
 ---
 
 <!-- Least Square 방법을 별도의 포스트로 분리하는게 좋을 듯 -->

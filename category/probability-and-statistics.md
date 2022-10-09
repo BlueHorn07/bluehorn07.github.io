@@ -2,7 +2,7 @@
 title: "Probability and Statistics"
 layout: post
 use_math: true
-tags: ["Probability", "Statistics"]
+tags: ["probability", "statistics"]
 hidden: true
 ---
 

@@ -2,7 +2,7 @@
 title: "Introduction to Hypothesis Tests"
 layout: post
 use_math: true
-tags: ["Statistics"]
+tags: ["statistics"]
 ---
 
 

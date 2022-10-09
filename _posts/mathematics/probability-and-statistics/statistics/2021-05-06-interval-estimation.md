@@ -2,7 +2,7 @@
 title: "Interval Estimation"
 layout: post
 use_math: true
-tags: ["Statistics"]
+tags: ["statistics"]
 ---
 
 

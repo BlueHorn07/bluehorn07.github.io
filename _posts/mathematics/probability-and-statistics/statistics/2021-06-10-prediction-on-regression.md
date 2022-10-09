@@ -2,7 +2,7 @@
 title: "Prediction on Regression"
 layout: post
 use_math: true
-tags: ["Statistics"]
+tags: ["statistics"]
 ---
 
 

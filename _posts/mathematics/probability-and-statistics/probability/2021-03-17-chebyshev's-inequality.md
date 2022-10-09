@@ -2,7 +2,7 @@
 title: "Chebyshev's Inequality"
 layout: post
 use_math: true
-tags: ["Probability"]
+tags: ["probability"]
 ---
 
 

@@ -2,7 +2,7 @@
 title: "Poisson Distribution"
 layout: post
 use_math: true
-tags: ["Probability"]
+tags: ["probability"]
 ---
 
 

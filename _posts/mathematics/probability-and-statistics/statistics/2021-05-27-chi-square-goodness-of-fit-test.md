@@ -2,7 +2,7 @@
 title: "Chi-square Goodness-of-fit Test"
 layout: post
 use_math: true
-tags: ["Statistics"]
+tags: ["statistics"]
 ---
 
 

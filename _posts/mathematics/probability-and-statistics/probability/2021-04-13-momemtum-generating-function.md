@@ -2,7 +2,7 @@
 title: "Momemtum Generating Function"
 layout: post
 use_math: true
-tags: ["Probability"]
+tags: ["probability"]
 ---
 
 

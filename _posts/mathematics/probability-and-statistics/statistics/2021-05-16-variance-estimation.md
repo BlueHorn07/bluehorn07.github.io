@@ -2,7 +2,7 @@
 title: "Variance Estimation"
 layout: post
 use_math: true
-tags: ["Statistics"]
+tags: ["statistics"]
 ---
 
 

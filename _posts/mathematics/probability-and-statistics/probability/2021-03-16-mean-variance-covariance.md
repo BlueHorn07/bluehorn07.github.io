@@ -2,7 +2,7 @@
 title: "Mean, Variance, and Covriance"
 layout: post
 use_math: true
-tags: ["Probability"]
+tags: ["probability"]
 ---
 
 

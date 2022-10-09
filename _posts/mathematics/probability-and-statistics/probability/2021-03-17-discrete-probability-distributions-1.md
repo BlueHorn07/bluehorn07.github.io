@@ -2,7 +2,7 @@
 title: "Discrete Probability Distributions - 1"
 layout: post
 use_math: true
-tags: ["Probability"]
+tags: ["probability"]
 ---
 
 

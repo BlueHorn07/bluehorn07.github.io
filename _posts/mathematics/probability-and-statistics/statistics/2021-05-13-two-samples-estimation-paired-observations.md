@@ -2,7 +2,7 @@
 title: "Two Samples Estimation: Paired Observations"
 layout: post
 use_math: true
-tags: ["Statistics"]
+tags: ["statistics"]
 ---
 
 

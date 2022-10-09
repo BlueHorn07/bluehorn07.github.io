@@ -2,7 +2,7 @@
 title: "Statistics - PS2"
 layout: post
 use_math: true
-tags: ["Statistics", "Problem Solving"]
+tags: ["statistics", "Problem Solving"]
 ---
 
 

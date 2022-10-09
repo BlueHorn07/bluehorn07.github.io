@@ -2,7 +2,7 @@
 title: "Transformations of Random Variable - 2"
 layout: post
 use_math: true
-tags: ["Probability"]
+tags: ["probability"]
 ---
 
 

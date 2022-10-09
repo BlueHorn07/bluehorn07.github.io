@@ -2,7 +2,7 @@
 title: "Two Samples Estimation: Diff Btw Two Means"
 layout: post
 use_math: true
-tags: ["Statistics"]
+tags: ["statistics"]
 ---
 
 
