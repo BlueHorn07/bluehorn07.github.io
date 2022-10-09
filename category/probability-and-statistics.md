@@ -76,7 +76,9 @@ hidden: true
   - [Uniform and Normal Distribution]({{"/2021/03/29/uniform-and-normal-distribution.html" | relative_url}})
   - [Exponential Distribution]({{"/2021/03/31/exponential-distribution.html" | relative_url}})
   - [Gamma Distribution]({{"/2021/04/05/gamma-distribution.html" | relative_url}})
-  - [Chi-square, Beta and Log-normal Distribution]({{"/2021/04/06/chi-and-beta-and-lognormal-distribution.html" | relative_url}})
+  - [Chi-square Distribution]({{"/2021/04/06/chi-square-distribution.html" | relative_url}})
+  - [Beta Distribution]({{"/2021/04/07/beta-distribution.html" | relative_url}})
+  - [Log-normal Distribution]({{"/2021/04/08/log-normal-distribution.html" | relative_url}})
   - [Weibull Distribution (optional)]({{"/2021/04/10/weibull-distribution.html" | relative_url}})
 
 <br/>
@@ -104,7 +106,7 @@ hidden: true
 - [Student's t-distribution]({{"/2021/04/27/student-t-distribution.html" | relative_url}})
   - Population Variance $\sigma^2$ is unknown
 - [F-distribution]({{"/2021/05/04/F-distribution.html" | relative_url}})
-- [Quantile]({{"/2021/05/04/EDF-and-Quantile.html" | relative_url}})
+- [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile.html" | relative_url}})
 
 <br/>
 
@@ -143,6 +145,7 @@ hidden: true
 - [Choice of Sample Size for Testing Mean]({{"/2021/05/20/choice-of-sample-size-for-testing-mean.html" | relative_url}})
 - [Test on Proportion and Variance]({{"/2021/05/26/test-on-proportion-and-variance.html" | relative_url}})
 - [Chi-square Goodness-of-fit Test]({{"/2021/05/27/chi-square-goodness-of-fit-test.html" | relative_url}})
+  - Chi-square-Test; 카이제곱-검정
   - Test on Independence
   - Test on Homogeneity
 

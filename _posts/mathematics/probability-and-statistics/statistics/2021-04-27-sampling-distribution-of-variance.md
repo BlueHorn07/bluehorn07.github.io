@@ -5,8 +5,20 @@ use_math: true
 tags: ["Statistics"]
 ---
 
-
 2021-1학기, 대학에서 '확률과 통계' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
+
+<div class="proof" markdown="1">
+
+**시리즈: Sampling Distributions**
+
+1. [Sampling Distribution]({{"/2021/04/25/sampling-distribution.html" | relative_url}})
+2. [Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt.html" | relative_url}})
+3. [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance.html" | relative_url}}) 👀
+4. [Student's t-distribution]({{"/2021/04/27/student-t-distribution.html" | relative_url}})
+5. [F-distribution]({{"/2021/05/04/F-distribution.html" | relative_url}})
+6. [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile.html" | relative_url}})
+
+</div>
 
 <br><span class="statement-title">TOC.</span><br>
 
@@ -139,9 +151,23 @@ $$
 \frac{(n-1) S^2}{\sigma^2} \sim \chi^2(n-1)
 $$
 
-이어지는 포스트에서는 Population Variance $\sigma^2$를 모르는 상황에서 $\bar{X}$와 $S^2$의 분포를 구하는 방법을 살펴볼 예정이다. 스포하자면, Sample Mean의 분포는 \<Student's t-distribution\>, Sample Variance에서는 \<F-distribution\>가 된다!
+<br/>
+
+이어지는 포스트에선 Population Variance $\sigma^2$를 모르는 상황에서 $\bar{X}$의 분포를 모델링하는 방법을 살펴본다. 이 경우, \<Student's t-distribution\>를 사용한다.
+
+$$
+T := \dfrac{\overline{X} - \mu}{S / \sqrt{n}} = t(n-1)
+$$
 
 👉 [Student's t-distribution]({{"/2021/04/27/student-t-distribution.html" | relative_url}})
+
+<br/>
+
+만약 두 샘플 집단에 대해 Sample Variance 비율에 대한 분포를 모델링한다면, \<F-distribution\>가 된다!
+
+$$
+F := \frac{S_1^2 / \sigma_1^2}{S_2^2 / \sigma_2^2} = F(n_1 - 1, n_2 -1)
+$$
 
 👉 [F-distribution]({{"/2021/05/04/F-distribution.html" | relative_url}})
 

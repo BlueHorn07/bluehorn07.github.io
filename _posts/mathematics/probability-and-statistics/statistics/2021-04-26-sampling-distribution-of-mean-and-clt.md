@@ -5,8 +5,20 @@ use_math: true
 tags: ["Statistics"]
 ---
 
-
 2021-1학기, 대학에서 '확률과 통계' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
+
+<div class="proof" markdown="1">
+
+**시리즈: Sampling Distributions**
+
+1. [Sampling Distribution]({{"/2021/04/25/sampling-distribution.html" | relative_url}})
+2. [Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt.html" | relative_url}}) 👀
+3. [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance.html" | relative_url}})
+4. [Student's t-distribution]({{"/2021/04/27/student-t-distribution.html" | relative_url}})
+5. [F-distribution]({{"/2021/05/04/F-distribution.html" | relative_url}})
+6. [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile.html" | relative_url}})
+
+</div>
 
 <br><span class="statement-title">TOC.</span><br>
 
@@ -263,7 +275,7 @@ $\blacksquare$
 
 Let $X_1, \dots, X_{n_1}$, and $Y_1, \dots, Y_{n_2}$ be two independent random samples with $E[X_1] = \mu_1$, $\text{Var}(X_1) = \sigma_1^2$, and  $E[X_2] = \mu_2$, $\text{Var}(Y_2) = \sigma_2^2$.
 
-우리는 "두 샘플 평균의 차" $\mu_1 - \mu_2$에 대한 inference를 수행하고자 한다. 이때, $\overline{X} - \overline{Y}$를 사용하면 "두 샘플 평균의 차"에 대해 추론할 수 있다!!
+우리는 "두 샘플 평균의 차" $\mu_1 - \mu_2$에 대한 분포를 모델링하고자 한다. 이때, $\overline{X} - \overline{Y}$를 사용하면 "두 샘플 평균의 차"에 대해 추론할 수 있다!!
 
 By CLT,
 
@@ -284,6 +296,8 @@ $$
 
 <hr/>
 
+# 맺음말
+
 이번 포스트에서는 표본평균 $\bar{X}$에 대한 분포인 "Sampling Distribuion of Mean"을 보았다. 또, 표본평균 $\bar{X}$의 분포를 파악하고, 활용하는데 필요한 \<WLLN\>과 \<CLT\>를 살펴보았다.
 
 이어지는 포스트에서는 "평균"과 함께, 확률 분포의 특성을 결정하는 parameter인 **"분산(Variance)"**이 Random Sample에서 어떻게 유도되는지 살펴볼 예정이다.
@@ -292,6 +306,6 @@ $$
 
 <hr/>
 
-#### references
+# references
 
 - ['알토'님의 포스트](http://blog.naver.com/psggoma/220899911971)

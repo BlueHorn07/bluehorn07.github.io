@@ -5,8 +5,20 @@ use_math: true
 tags: ["Statistics"]
 ---
 
-
 2021-1학기, 대학에서 '확률과 통계' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
+
+<div class="proof" markdown="1">
+
+**시리즈: Sampling Distributions**
+
+1. [Sampling Distribution]({{"/2021/04/25/sampling-distribution.html" | relative_url}})
+2. [Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt.html" | relative_url}})
+3. [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance.html" | relative_url}})
+4. [Student's t-distribution]({{"/2021/04/27/student-t-distribution.html" | relative_url}}) 👀
+5. [F-distribution]({{"/2021/05/04/F-distribution.html" | relative_url}})
+6. [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile.html" | relative_url}})
+
+</div>
 
 <hr/>
 

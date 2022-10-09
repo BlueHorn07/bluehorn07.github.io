@@ -15,7 +15,7 @@ tags: ["Probability"]
   - Relation to Poisson Process; Generalization of \<Exponential Distribution\>
 <hr/>
 
-## Gamma Distribution
+# Gamma Function
 
 <div class="definition" markdown="1">
 
@@ -82,7 +82,9 @@ $$
 \end{aligned}
 $$
 
-<br/>
+<hr/>
+
+# Gamma Distribution
 
 <div class="definition" markdown="1">
 
@@ -91,7 +93,8 @@ $$
 Let $\alpha > 0$ and $\beta > 0$. We say that $X$ has a \<**Gamma Distribution**\> with a shape parameter $\alpha$ and a scale parameter $\beta$, if its pdf is given by
 
 $$
-f(x; \alpha, \beta) = \begin{cases}
+f(x; \alpha, \beta) 
+= \begin{cases}
     C_{\alpha, \beta} \cdot x^{\alpha-1} e^{-\frac{x}{\beta}} & \text{for } x > 0 \\
     \quad 0 & \text{else}
 \end{cases}
@@ -106,7 +109,9 @@ $$
 이 되도록 하는 $C_{\alpha, \beta}$를 선택한다. 이것을 잘 정리하면,
 
 $$
-C_{\alpha, \beta} = \frac{1}{\displaystyle \int^{\infty}_0 x^{\alpha - 1} e^{-\frac{x}{\beta}} \; dx} = \frac{1}{\Gamma(\alpha) \cdot \beta^{\alpha}}
+C_{\alpha, \beta} 
+= \frac{1}{\displaystyle \int^{\infty}_0 x^{\alpha - 1} e^{-\frac{x}{\beta}} \; dx} 
+= \frac{1}{\Gamma(\alpha) \cdot \beta^{\alpha}}
 $$
 
 (▲ 치환적분을 잘 쓰면 위와 같은 결과가 나온다 ㅎㅎ)
@@ -118,8 +123,6 @@ $$
 $$
 
 </div>
-
-<hr/>
 
 <span class="statement-title">Remarks.</span><br/>
 
@@ -214,7 +217,7 @@ $$
 
 <hr/>
 
-### Relation to a Poisson Process
+## Relation to Poisson Process
 
 Let $N(t)$ be a \<Poisson process\> with rate $\lambda$. Let $X$ be the time to the $n$-th event in the \<Poisson process\>.
 
