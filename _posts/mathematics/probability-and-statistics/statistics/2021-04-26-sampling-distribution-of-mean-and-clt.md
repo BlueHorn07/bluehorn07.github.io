@@ -43,6 +43,8 @@ Then,
 
 # Weak Law of Large Numbers
 
+<div class="statement" markdown="1">
+
 <span class="statement-title">Theorem.</span> WLLN<br>
 
 Let $X_1, \dots, X_n$ be a random sample with $E[X_i] = \mu$ and $\text{Var}(X_i) = \sigma^2$.
@@ -54,6 +56,8 @@ For any $\epsilon > 0$, we have
 $$
 \lim_{n\rightarrow\infty} P\left(\left| \overline{X} - \mu \right| > \epsilon\right) = 0
 $$
+
+</div>
 
 <div class="math-statement" markdown="1">
 
