@@ -115,8 +115,8 @@ hidden: true
   - the most efficient estimator
   - Mean Squared Error of estimator
 - [Interval Estimation]({{"/2021/05/06/interval-estimation.html" | relative_url}})
-  - Z-Test: Estimate $\mu$ when $\sigma^2$ is known
-  - t-Test: Estimate $\mu$ when $\sigma^2$ is unknown
+  - z-value: Estimate $\mu$ when $\sigma^2$ is known
+  - t-value: Estimate $\mu$ when $\sigma^2$ is unknown
 - [Prediction & Tolerance Estimation]({{"/2021/05/13/prediction-and-tolerance-interval.html" | relative_url}})
 - [Two Samples Estimation: Diff Btw Two Means]({{"/2021/05/13/two-samples-estimation-diff-btw-two-means.html" | relative_url}})
 - [Two Samples Estimation: Paired Observations]({{"/2021/05/13/two-samples-estimation-paired-observations.html" | relative_url}})
@@ -140,7 +140,7 @@ hidden: true
     - [Significance level; Size of Test; 유의 수준 $\alpha$]({{"/2021/05/18/introduction-to-hypothesis-tests.html#significance-level-alpha" | relative_url}}) 🔥
     - [Power of Test; 검정력 $\gamma(\theta)$]({{"/2021/05/18/introduction-to-hypothesis-tests.html#power-of-test-gammatheta" | relative_url}}) 🔥
     - [p-value; 유의 확률]({{"/2021/05/18/introduction-to-hypothesis-tests.html#p-value" | relative_url}}) 🔥🔥
-- [Test on Mean]({{"/2021/05/19/test-on-mean.html" | relative_url}})
+- [Sample Mean Test]({{"/2021/05/19/sample-mean-test.html" | relative_url}})
 - [Choice of Sample Size for Testing Mean]({{"/2021/05/20/choice-of-sample-size-for-testing-mean.html" | relative_url}})
 - [Test on Proportion and Variance]({{"/2021/05/26/test-on-proportion-and-variance.html" | relative_url}})
 - [Chi-square Goodness-of-fit Test]({{"/2021/05/27/chi-square-goodness-of-fit-test.html" | relative_url}})
@@ -185,7 +185,12 @@ hidden: true
   - unbiased estimator of $\sigma^2$ is $s^2$
   - (not yet) $s^2 \perp B_1$, and $s^2 \perp B_0$
   - (not yet) the distribution of $s^2$
-- [[칼럼] Values in Statistics]({{"/2021/06/05/values-in-statistics.html" | relative_url}})
+
+<hr/>
+
+# Eassays
+
+- [Degree of Freedom in Statistics]({{"/2022/10/09/degree-of-freedom-in-statistics.html" | relative_url}})
 
 <hr/>
 

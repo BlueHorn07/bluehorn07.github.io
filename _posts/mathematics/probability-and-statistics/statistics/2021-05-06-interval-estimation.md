@@ -10,10 +10,10 @@ tags: ["statistics"]
 <br><span class="statement-title">TOC.</span><br>
 
 - [Interval Estimation](#interval-estimation)
-  - [Z-Test: Estimate $\mu$ when $\sigma^2$ is known](#z-test-estimate-mu-when-sigma2-is-known)
+  - [z-value: Estimate $\mu$ when $\sigma^2$ is known](#z-value-estimate-mu-when-sigma2-is-known)
     - [Error of Interval Estimation](#error-of-interval-estimation)
     - [one-sided confidence bounds](#one-sided-confidence-bounds)
-  - [t-Test: Estimate $\mu$ when $\sigma^2$ is unknown](#t-test-estimate-mu-when-sigma2-is-unknown)
+  - [t-value: Estimate $\mu$ when $\sigma^2$ is unknown](#t-value-estimate-mu-when-sigma2-is-unknown)
 - [Compare Point Estimator and Interval Estimator](#compare-point-estimator-and-interval-estimator)
 
 <hr/>
@@ -51,7 +51,7 @@ We usually take $\alpha = 0.01, \; 0.05, \; 0.1$.
 
 <hr/>
 
-## Z-Test: Estimate $\mu$ when $\sigma^2$ is known
+## z-value: Estimate $\mu$ when $\sigma^2$ is known
 
 <span class="statement-title">Example.</span><br>
 
@@ -212,7 +212,7 @@ $$
 
 <hr/>
 
-## t-Test: Estimate $\mu$ when $\sigma^2$ is unknown
+## t-value: Estimate $\mu$ when $\sigma^2$ is unknown
 
 앞에서 진행했던 과정을 다시 살펴보자. 우리는 CLT를 사용해 sample mean $\bar{X}$를 Normal 분포로 근사했다.
 

@@ -9,7 +9,7 @@ tags: ["statistics"]
 
 <br><span class="statement-title">TOC.</span><br>
 
-- (prev) [Test on Mean]({{"/2021/05/19/test-on-mean.html" | relative_url}})
+- (prev) [Sample Mean Test]({{"/2021/05/19/sample-mean-test.html" | relative_url}})
 - [Choice of Sample Size](#choice-of-sample-size)
 
 <hr/>

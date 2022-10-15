@@ -393,5 +393,5 @@ $$
 
 우리가 추정(Estimation)에서 살펴본 순서와 동일하게 검정(Testing)을 살펴볼 것이다.
 
-- [Test on Mean]({{"/2021/05/19/test-on-mean.html" | relative_url}})
+- [Sample Mean Test]({{"/2021/05/19/sample-mean-test.html" | relative_url}})
 - [Test on Proportion and Variance]({{"/2021/05/26/test-on-proportion-and-variance.html" | relative_url}})

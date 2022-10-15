@@ -132,7 +132,7 @@ $S_1^2 / S_2^2$를 Test Statistics로 잡고 $\frac{S_1^2/\sigma_1^2}{S_2^2/\sig
 
 <div class="light-margin"></div>
 
-✨ [Variante Estimation]({{"/2021/05/16/variance-estimation.html" | relative_url}})
+✨ [variance Estimation]({{"/2021/05/16/variance-estimation.html" | relative_url}})
 
 <hr/>
 

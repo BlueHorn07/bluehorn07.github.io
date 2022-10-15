@@ -219,7 +219,7 @@ $$
 
 Let $X_1, \dots, X_n$ be a random sample from $N(\mu, \sigma^2)$[^1].
 
-Let $T := \dfrac{\overline{X} - \mu}{S / \sqrt{n}}$, then $T$ has a t-distribution with $(n-1)$ dof.
+Let $T := \dfrac{\bar{X} - \mu}{S / \sqrt{n}}$, then $T$ has a t-distribution with $(n-1)$ dof.
 
 </div>
 

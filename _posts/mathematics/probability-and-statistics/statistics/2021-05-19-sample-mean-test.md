@@ -1,5 +1,5 @@
 ---
-title: "Test on Mean"
+title: "Sample Mean Test"
 layout: post
 tags: ["statistics"]
 ---
@@ -9,15 +9,15 @@ tags: ["statistics"]
 
 <br><span class="statement-title">TOC.</span><br>
 
-- [Test on Mean](#test-on-mean)
-  - [When $\sigma$ is known](#sigma2-is-known)
-  - [When $\sigma$ is unknown](#sigma2-is-unknown)
-- [Test on Two Means](#test-on-two-means)
+- [Sample Mean Test](#sample-mean-test)
+  - [Z-Test: When $\sigma$ is known](#sigma2-is-known)
+  - [t-Test: When $\sigma$ is unknown](#sigma2-is-unknown)
+- [Two Samples Mean Test](#two-samples-mean-test)
 - (next) [Choice of Sample Size for testing mean]({{"/2021/05/20/choice-of-sample-size-for-testing-mean.html" | relative_url}})
 
 <hr/>
 
-### Test on Mean
+### Sample Mean Test
 
 평균(Mean)에 대한 검정은 추정에서와 비슷하게, $\sigma^2$을 아는지 여부에 따라 다르게 접근한다. 
 
@@ -26,7 +26,7 @@ tags: ["statistics"]
 #### $\sigma^2$ is known
 
 <div class="img-wrapper">
-<img src= "{{"/images/probability-and-statistics/test-on-mean-1.png" | relative_url }}" width=650>
+<img src= "{{"/images/probability-and-statistics/sample-mean-test-1.png" | relative_url }}" width=650>
 </div>
 
 <div class="math-statement" markdown="1">
@@ -66,7 +66,7 @@ $H_1: \mu < \mu_0$인 것도, $H_1: \mu \ne \mu_0$ 경우도 비슷하게, 식�
 정리하면 아래와 같다.
 
 <div class="img-wrapper">
-<img src= "{{"/images/probability-and-statistics/test-on-mean-2.png" | relative_url }}" width=650>
+<img src= "{{"/images/probability-and-statistics/sample-mean-test-2.png" | relative_url }}" width=650>
 </div>
 
 <div class="statement" markdown="1">
@@ -100,21 +100,21 @@ $$
 정리하면 아래와 같다.
 
 <div class="img-wrapper">
-<img src= "{{"/images/probability-and-statistics/test-on-mean-3.png" | relative_url }}" width=650>
+<img src= "{{"/images/probability-and-statistics/sample-mean-test-3.png" | relative_url }}" width=650>
 </div>
 
 💥 주의!! 샘플은 <span style="color: red">반.드.시.</span> Normal Distribution에서 추출되어야 한다!!
 
 <hr/>
 
-### Test on Two Means
+### Two Samples Mean Test
 
 이것도 사실 별거 없다. 그냥 추정해서 했던 것과 앞에서 했던 것을 잘 녹여서 검정을 수행하면 된다.
 
 정리하면 아래와 같다.
 
 <div class="img-wrapper">
-<img src= "{{"/images/probability-and-statistics/test-on-mean-4.png" | relative_url }}" width=650>
+<img src= "{{"/images/probability-and-statistics/sample-mean-test-4.png" | relative_url }}" width=650>
 </div>
 
 <hr/>
