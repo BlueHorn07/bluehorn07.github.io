@@ -6,8 +6,7 @@ tags: ["statistics"]
 
 <!-- Least Square 방법을 별도의 포스트로 분리하는게 좋을 듯 -->
 
-
-2021-1학기, 대학에서 '확률과 통계' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
+학교에서 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다🎲
 
 이번 포스트에선 \<Regression Analysis\>의 컨셉을 살펴봅니다. \<Regression\>이 deterministic relationship과 어떻게 다른지, 랜덤성을 포함하기 위해 어떤 가정을 하는지를 중점적으로 살펴봅시다.
 
