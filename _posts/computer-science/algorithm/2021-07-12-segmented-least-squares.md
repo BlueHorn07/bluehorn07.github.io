@@ -91,7 +91,7 @@ $$
 
 \<Segmented Least Squares\>는 정규 수업을 들을 떄 과제로 한번 구현해봤던 기억이 있는데, 구현이 그렇게 어렵지는 않았던 걸로 기억한다.
 
-\<Segmented Least Squares\> 알고리즘을 공부하면서 ["통계적 데이터마이닝(IMEN472)"](https://bluehorn07.github.io/computer_science/2021/02/24/statistical-data-mining.html)에서 들었던 [\<Regression Spline\>](https://bluehorn07.github.io/computer_science/2021/04/18/regression-spline.html)이 대해 떠올랐다. 이 알고리즘 역시 도메인을 분할해 regression fitting 하는 알고리즘이다.
+\<Segmented Least Squares\> 알고리즘을 공부하면서 ["통계적 데이터마이닝(IMEN472)"]({{"/category/statistical-data-mining" | relative_url}})에서 들었던 [\<Regression Spline\>](https://bluehorn07.github.io/computer_science/2021/04/18/regression-spline.html)이 대해 떠올랐다. 이 알고리즘 역시 도메인을 분할해 regression fitting 하는 알고리즘이다.
 
 다만 \<Regression Spline\>의 경우 곡률(curverture)까지 고려해 fitting을 진행하며, 구간을 얼마나 나눌지 선택하는 knot selection을 cross validation 과정을 통해 진행한다는 점이 \<Segmented Least Squares\> 알고리즘과 다르다! 🤩
 

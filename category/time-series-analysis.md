@@ -1,5 +1,5 @@
 ---
-title: "time_series_analysis"
+title: "Time Series Analysis"
 layout: post
 tags: ["time_series_analysis"]
 ---

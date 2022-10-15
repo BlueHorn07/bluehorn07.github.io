@@ -182,7 +182,7 @@ $$
 
 ### Insights
 
-이번 문단에서는 GP Regression에 대한 통찰들에 대해 살펴볼 것이다. locally-weighted linear regression처럼 GP Regression은 <span style="color: red"><b>non-parameteric regression model</b></span>이다. 이는 input data의 함수에 선형에 대한 가정이나 다항식에 대한 가정을 할 필요가 없으며 arbitrary function을 다루는 것이 가능하다는 것을 말한다! 🤩 대학에서 들었던 "통계적 데이터마이닝(IMEN472)" 수업에서 [non-parameteric model](https://bluehorn07.github.io/computer_science/2021/02/24/statistical-data-mining.html#non-parametric-method)에 대해 다루긴 했는데, \<GP Regression\>은 다루지 않았다.
+이번 문단에서는 GP Regression에 대한 통찰들에 대해 살펴볼 것이다. locally-weighted linear regression처럼 GP Regression은 <span style="color: red"><b>non-parameteric regression model</b></span>이다. 이는 input data의 함수에 선형에 대한 가정이나 다항식에 대한 가정을 할 필요가 없으며 arbitrary function을 다루는 것이 가능하다는 것을 말한다! 🤩 대학에서 들었던 "통계적 데이터마이닝(IMEN472)" 수업에서 [non-parameteric model]({{"/category/statistical-data-mining" | relative_url}})에 대해 다루긴 했는데, \<GP Regression\>은 다루지 않았다.
 
 <br/>
 

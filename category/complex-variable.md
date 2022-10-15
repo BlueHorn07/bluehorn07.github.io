@@ -1,9 +1,11 @@
 ---
-title: "MATH210 - Applied Complex Variables"
+title: "Applied Complex Variables"
 layout: post
 tags: ["Complex Variable"]
 hidden: true
 ---
+
+응용복소함수론(MATH210)
 
 <div class="img-wrapper">
 <img src="{{ "/images/complex-variable/complex-variable-meme.jpg" | relative_url}}" height="450px">
