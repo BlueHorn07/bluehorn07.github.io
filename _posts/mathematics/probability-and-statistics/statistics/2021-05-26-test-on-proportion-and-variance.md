@@ -4,7 +4,7 @@ layout: post
 tags: ["statistics"]
 ---
 
-학교에서 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다🎲
+“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
 <br><span class="statement-title">TOC.</span><br>
 
@@ -15,13 +15,13 @@ tags: ["statistics"]
 
 <hr/>
 
-### Test on Proportion
+# Test on Proportion
 
 Single Sample에서의 경우와 Two Sample에서의 경우를 모두 다룬다.
 
 <hr/>
 
-#### Test on One Proportion
+## Test on One Proportion
 
 Consider a p-coin, and $p$ is unknown.
 
@@ -34,10 +34,17 @@ We toss a coin $n$ times independently, and let $x$ be the #. of heads in theses
 
 Q1. What is the p-value?
 
-A1. $H_1$이 $p > 1/3$의 형태이므로 우리는 $X$가 특정값 $C$ 이상일 때, $H_0$를 reject 한다. 따라서, 이때 우리가 얻은 $x$값으로 p-value를 유도하려면, $C$에 $x$를 대입해 p-value를 유도하면 된다!
+A1. $H_1$이 $p > 1/3$의 형태이므로 $x$가 특정값 $C$ 이상일 때, $H_0$를 reject 한다. 
 
 $$
-P( X \ge C \mid p = 1/3) = P(X \ge x \mid p = 1/3)
+P( X \ge C \mid p = 1/3)
+$$
+
+
+그래서 p-value는 $C$ 자리에 $x$를 대입해 p-value를 유도하면 된다!
+
+$$
+P(X \ge x \mid p = 1/3) = \text{p-value}
 $$
 
 Q2. 만약 $H_1: p < 1/3$ 형태라면?
@@ -50,21 +57,21 @@ $$
 
 Q3. 만약 $H_1: p \ne 1/3$의 형태라면? (two-sided test)
 
-A3. 우리는 $X \le C_1$이거나 $X \ge C_2$라면, $H_0$를 기각할 것이다. 따라서
+A3. $X \le C_1$이거나 $X \ge C_2$일 때, $H_0$를 기각할 것이다. 따라서
 
 $$
 P(X \le C_1 \;\; \text{or} \;\; X \ge C_2 \mid p = 1/3)
 $$
 
-그런데 우리는 실험에서 하나의 $x$ 값만을 얻었고, 위의 과정에 따르면, 이 값을 $C$에 대입했다. 이것을 위 식에 적용하면,
+그런데 실험에서 하나의 $x$ 값만을 얻었고, 위의 과정에 따르면, 이 값을 $C$에 대입했다. 이것을 위 식에 적용하면,
 
 $$
 P(X \le x \;\; \text{or} \;\; X \ge x \mid p = 1/3) = 1
 $$
 
-가 되는데, 이 값은 1이다! 😲 그래서 우리는 오직 하나의 $x$ 값을 갖기 때문에, one-side test를 수행하는게 합리적이다.
+가 되는데, 이 값은 1이다! 😲 그래서 보통 하나의 $x$ 값만 있기 때문에, one-side test를 수행하는게 합리적이다.
 
-$X \le C_1$과 $X \ge C_2$ 중 어떤 방향을 취할지 결정하기 위해 expected value인 $E[X]$를 기준으로 삼자. 이 값은 $np$이다.
+$X \le C_1$과 $X \ge C_2$ 중 어떤 방향을 취할지 결정하기 위해, expected value $E[X]$를 기준으로 삼자. 이 값은 $np$이다.
 
 - If $x < np$, take $X \le C_1$
 - If $x > np$, take $X \ge C_2$
@@ -79,7 +86,7 @@ $$
 
 <hr/>
 
-#### Test on Two Proportions
+## Test on Two Proportions
 
 <div class="img-wrapper">
 <img src= "{{"/images/probability-and-statistics/test-on-proportion-1.png" | relative_url }}" width=650>
@@ -109,7 +116,7 @@ $$
 
 <hr/>
 
-### Test on Variance
+# Test on Variance
 
 Variance에 대한 검정은 추정에서 다뤘던 내용에서 크게 달라지지 않는다. \<significance interval\>을 벗어난다면, $H_0$를 기각한다.
 
