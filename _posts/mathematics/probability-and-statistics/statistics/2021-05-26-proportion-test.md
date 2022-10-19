@@ -117,6 +117,6 @@ $$
 
 # 맺음말
 
-이어지는 포스트에서는 \<**Chi-square Goodness-of-fit test**\>에 대해 살펴본다. \<chi-square distribution\> $\chi^2$를 사용해 검정을 수행하며, 이를 통해 표본의 독립(independence)와 동질성(homogeneity)에 대한 검정 할 수 있다!
+이어지는 포스트에서 \<proportion test\>을 일반화한 \<**Chi-square Goodness-of-fit test**\>를 살펴본다. \<chi-square distribution\> $\chi^2$를 사용해 검정을 수행하며, 이를 통해 표본의 독립(independence)와 동질성(homogeneity)에 대한 검정 할 수 있다!
 
 👉 [Chi-square Goodness-of-fit test]({{"/2021/05/27/chi-square-goodness-of-fit-test.html"}})

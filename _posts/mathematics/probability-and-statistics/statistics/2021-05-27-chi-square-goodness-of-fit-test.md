@@ -6,6 +6,8 @@ tags: ["statistics"]
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
+[\<Proportion Test\>]({{"/2021/05/26/proportion-test.html" | relative_url}})의 내용을 먼저 살펴보고 오는 것을 추천한다. \<Proportion Test\>를 일반화한 것이 \<Goodness-of-fit Test\>이기 때문이다!
+
 <br><span class="statement-title">TOC.</span><br>
 
 - [Introduction to Goodness-of-fit Test](#introduction-to-goodness-of-fit-test)
@@ -16,7 +18,7 @@ tags: ["statistics"]
 
 <hr/>
 
-### Introduction to Goodness-of-fit Test
+# Introduction to Goodness-of-fit Test
 
 \<**Goodness-of-fit Test; 적합도 검정**\>은 population distribution이 categorical variable을 가지는 경우, 예를 들어 Head-Tail의 동전 던지기, 주사위 던지기 등에서 사용하는 검정 기법이다. \<Goodness-of-fit Test\>는 카테고리 변수에 대한 Sample Distribution <small>(또는 Observed Distribution)</small>이 우리가 가정한 Expected Distribution과 일치하는지를 결정한다.
 
@@ -134,7 +136,7 @@ The degree of freedom $\nu$ = (#. of categories after pooling - 1) - #. of param
 
 <hr/>
 
-### Test for Independence
+## Test for Independence
 
 우리는 \<Chi-squared goodness-of-fit Test\>를 응용해 두 개의 카테고리가 서로 **독립(independent)**인지 검정할 수 있다!
 
@@ -202,7 +204,7 @@ Reject $H_0$ if $\chi^2 > \chi^2_{\alpha} ((r-c)(c-1))$.
 
 <hr/>
 
-### Test for Homogeneity
+## Test for Homogeneity
 
 이번에는 \<Goodness-of-fit Test\>를 응용해 각 카테고리에서의 분포가 **균일(homogenous)**한지 검정해보겠다.
 
@@ -279,6 +281,6 @@ Reject $H_0$ if $\chi^2 > \chi^2_{\alpha}((r-1)(c-1))$
 
 검정(Testing)에 대한 내용은 여기까지다!! 👏 이것으로 "통계학(Statistics)"의 기본적인 내용을 모두 살펴본 것이다!! 😆
 
-다음 포스트부터는 \<Simple Linear Regression\>이라는 새로운 챕터를 살펴본다. 주로 주어진 데이터에서 "Linear Regression"의 계수 $\beta_i$들을 어떻게 찾을 수 있을지를 다루는 챕터다!
+다음 포스트부터 \<Simple Linear Regression\>이라는 새로운 챕터를 살펴본다. 주로 주어진 데이터에서 "Linear Regression"의 계수 $\beta_i$들을 어떻게 찾을 수 있을지를 다루는 챕터다!
 
 👉 [Introduction to Linear Regression]({{"/2021/06/06/introduction-to-linear-regression.html" | relative_url}})
