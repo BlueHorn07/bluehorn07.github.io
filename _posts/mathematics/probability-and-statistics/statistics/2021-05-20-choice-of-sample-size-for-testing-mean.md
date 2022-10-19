@@ -124,4 +124,5 @@ $$
 
 이어지는 포스트에서는 \<Proportion\>과 \<Variance\>의 검정에 대해 살펴본다!! 😆
 
-👉 [Test on Proportion and Variance]({{"/2021/05/26/test-on-proportion-and-variance.html" | relative_url}})
+👉 [Proportion Test]({{"/2021/05/26/proportion-test.html" | relative_url}})
+👉 [Variance Test]({{"/2021/05/26/variance-test.html" | relative_url}})

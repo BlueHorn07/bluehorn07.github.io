@@ -388,9 +388,10 @@ $$
 
 # 맺음말
 
-이제 "통계적 검정(Statistical Test)"를 수행하기 위해 필요한 기본적인 내용은 다 살펴봤다. 다음 포스트부터 상황에 따라 어떻게 통계적 검정을 수행하는지 살펴볼 예정이다. 사실 그렇게 어렵진 않고, 요구하는 것들을 잘 파악해서 순서에 맞게 계산하기만 하면 된다.
+이제 "통계적 검정(Statistical Test)"를 수행하기 위해 필요한 기본적인 내용은 다 살펴봤다. 다음 포스트부터 상황에 따라 통계적 검정을 어떻게 수행하는지 살펴볼 예정이다. 그렇게 어렵진 않고, 요구하는 것들을 잘 파악해서 순서에 맞게 계산하기만 하면 된다.
 
-우리가 추정(Estimation)에서 살펴본 순서와 동일하게 검정(Testing)을 살펴볼 것이다.
+우리가 추정(Estimation)에서 살펴본 순서와 동일하게 검정(Testing)을 살펴보자.
 
 - [Sample Mean Test]({{"/2021/05/19/sample-mean-test.html" | relative_url}})
-- [Test on Proportion and Variance]({{"/2021/05/26/test-on-proportion-and-variance.html" | relative_url}})
+- [Proportion Test]({{"/2021/05/26/proportion-test.html" | relative_url}})
+- [Variance Test]({{"/2021/05/26/variance-test.html" | relative_url}})

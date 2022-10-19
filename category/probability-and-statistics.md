@@ -142,7 +142,9 @@ hidden: true
     - [p-value; 유의 확률]({{"/2021/05/18/introduction-to-hypothesis-tests.html#p-value" | relative_url}}) 🔥🔥
 - [Sample Mean Test]({{"/2021/05/19/sample-mean-test.html" | relative_url}})
 - [Choice of Sample Size for Testing Mean]({{"/2021/05/20/choice-of-sample-size-for-testing-mean.html" | relative_url}})
-- [Test on Proportion and Variance]({{"/2021/05/26/test-on-proportion-and-variance.html" | relative_url}})
+
+- [Proportion Test]({{"/2021/05/26/proportion-test.html" | relative_url}})
+- [Variance Test]({{"/2021/05/26/variance-test.html" | relative_url}})
 - [Chi-square Goodness-of-fit Test]({{"/2021/05/27/chi-square-goodness-of-fit-test.html" | relative_url}})
   - Chi-square-Test; 카이제곱-검정
   - Test on Independence
