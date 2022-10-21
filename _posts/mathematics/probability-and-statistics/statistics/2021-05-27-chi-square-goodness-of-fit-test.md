@@ -20,7 +20,9 @@ tags: ["statistics"]
 
 # Introduction to Goodness-of-fit Test
 
-\<**Goodness-of-fit Test; 적합도 검정**\>은 population distribution이 categorical variable을 가지는 경우, 예를 들어 Head-Tail의 동전 던지기, 주사위 던지기 등에서 사용하는 검정 기법이다. \<Goodness-of-fit Test\>는 카테고리 변수에 대한 Sample Distribution <small>(또는 Observed Distribution)</small>이 우리가 가정한 Expected Distribution과 일치하는지를 결정한다.
+
+
+\<**Goodness-of-fit Test; 적합도 검정**\>은 population distribution이 categorical variable을 가지는 경우, 예를 들어 Head-Tail의 동전 던지기, 주사위 던지기 등에서 사용하는 검정 기법이다. \<Goodness-of-fit Test\>는 <span class="red">카테고리 변수의 Sample Distribution <small>(또는 Observed Distribution)</small>이 가정한 Expected Distribution과 일치하는지</span>를 결정한다.
 
 먼저 아래의 예제를 풀면서, \<**Goodness-of-fit Test; 적합도 검정**\>에 대해 살펴보자.
 
@@ -51,25 +53,37 @@ $$
 \frac{\hat{p} - p}{\sqrt{p(1-p) / n}} \sim N(0, 1)
 $$
 
-이때, 우리는 이전의 \<Test on Proportion\>에서 수행한 것과 달리 아래의 기준으로 $H_0$를 reject 할 것이다.
+이전의 \<Test on Proportion\>에선 요 녀석을 그대로 사용한다.
 
 $$
-\text{reject} \; H_0 \quad \text{if} \quad \left| \frac{\hat{p} - p}{\sqrt{p(1-p) / n}}\right|^2 > \left| z_{\alpha/2}\right|^2 = \chi^2_{\alpha}(1)
+\text{reject} \; H_0, \quad \text{if} \quad \left| \frac{\hat{p} - p}{\sqrt{p(1-p) / n}} \right| > z_{\alpha/2}
 $$
 
-여기서 잠깐! 위의 식을 약간 변형해 \<Goodness-of-fit\>의 식을 유도해보자.
+chi-square test에선 z-value에 제곱을 취한다.
+
+$$
+\text{reject} \; H_0, \quad \text{if} \quad \left| \frac{\hat{p} - p}{\sqrt{p(1-p) / n}}\right|^2 > \left| z_{\alpha/2}\right|^2 = \chi^2_{\alpha}(1)
+$$
+
+<br>
+
+\<Goodness-of-fit Test\>를 소개할 때도 말했듯이 \<Goodness-of-fit Test\>는 <span class="red">카테고리 변수</span>에 대한 검정이다. 위의 식은 카테고리가 2개 뿐인 상황에서만 성립한다. 그래서 위의 식을 약간 변형해 \<Goodness-of-fit\>의 식을 유도해보자.
 
 <div class="math-statement" markdown="1">
+
+일단은 2개 카테고리에서 시작해보자.
 
 $$
 \begin{aligned}
 \left| \frac{\hat{p} - p}{\sqrt{p(1-p) / n}}\right|^2
-&= \frac{(\hat{p} - p)^2}{p(1-p)/n} = \frac{(x/n - p)^2}{p(1-p)/n} \\
-&= \frac{(x/n - p)^2 \times n^2}{p(1-p)/n \times n^2} = \frac{(x - np)^2}{np(1-p)}
+&= \frac{(\hat{p} - p)^2}{p(1-p)/n} \\
+&= \frac{(x/n - p)^2}{p(1-p)/n} \\
+&= \frac{(x/n - p)^2 \times n^2}{p(1-p)/n \times n^2} \\
+&= \frac{(x - np)^2}{np(1-p)}
 \end{aligned}
 $$
 
-여기서 우변의 식을 $\frac{1}{y(1-y)} = \frac{1}{y} + \frac{1}{1-y}$를 이용해 아래와 같이 분해한다.
+$\dfrac{1}{y(1-y)} = \dfrac{1}{y} + \dfrac{1}{1-y}$임을 이용해 식을 아래와 같이 분해한다.
 
 $$
 \begin{aligned}
@@ -78,27 +92,28 @@ $$
 \end{aligned}
 $$
 
-이때, $np$는 첫번째 expected value인 $e_1 = 80$이고, $n(1-p)$는 두번째인 $e_2 = 20$이다.
-
-마찬가지로, $(x-np)^2$는 observed value와 expected value의 차이로 표현할 수 있다.
+이때, $np$는 첫번째 카테고리에 대한 expected value인 $e_1 = 80$이고, $n(1-p)$는 두번째 카테고리에 대한 $e_2 = 20$이다. 
+마찬가지로, 분자의 $(x-np)^2$는 "observed value와 expected value의 차이 값"이다.
 
 $$
 (x-np)^2 = (o_1 - e_1)^2
 $$
 
-또, $(x-np)^2$의 경우, 아래와 같이 표현하면, 두번째 observed value와 expected value의 차이로 표현할 수 있다.
+그런데 $(x-np)^2$를 아래와 같이 표현하면, 두번째 observed value와 expected value의 차이 값으로 표현할 수도 있다!
 
 $$
-(x-np)^2 = (x-n + n-np)^2 = (o_2 - e_2)^2
+(x-np)^2 = \left( (x-n) + (n-np) \right)^2 = (o_2 - e_2)^2
 $$
 
-그래서 식을 종합하면 아래와 같다.
+<br/>
+
+식을 종합하면 아래와 같고,
 
 $$
 \left| \frac{\hat{p} - p}{\sqrt{p(1-p) / n}}\right|^2 = \frac{(o_1 - e_1)^2}{e_1} + \frac{(o_2 - e_2)^2}{e_2}
 $$
 
-그래서 rejection criterion을 다시 쓰면,
+rejection criterion을 다시 쓰면,
 
 $$
 \text{reject} \; H_0 \quad \text{if} \quad \sum_{i=1}^2 \frac{(o_i - e_i)^2}{e_i} > \chi^2_{\alpha}(1)
@@ -106,7 +121,7 @@ $$
 
 </div>
 
-위의 예제에서 살펴본 것을 다시 기술해보자.
+2개 카테고리 예제를, $k$개 카테고리로 일반화 하여 기술해보자.
 
 <div class="definition" markdown="1">
 

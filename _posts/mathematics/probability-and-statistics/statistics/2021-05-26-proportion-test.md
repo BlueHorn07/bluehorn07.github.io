@@ -33,12 +33,11 @@ We toss a coin $n$ times independently, and let $x$ be the #. of heads in theses
 
 Q1. What is the p-value?
 
-A1. $H_1$이 $p > 1/3$의 형태이므로 $x$가 특정값 $C$ 이상일 때, $H_0$를 reject 한다. 
+A1. $H_1$이 $p > 1/3$ 형태이므로 $x$가 특정값 $C$ 이상일 때, $H_0$를 reject 한다. 
 
 $$
 P( X \ge C \mid p = 1/3)
 $$
-
 
 그래서 p-value는 $C$ 자리에 $x$를 대입해 p-value를 유도하면 된다!
 
@@ -68,14 +67,14 @@ $$
 P(X \le x \;\; \text{or} \;\; X \ge x \mid p = 1/3) = 1
 $$
 
-가 되는데, 이 값은 1이다! 😲 그래서 보통 하나의 $x$ 값만 있기 때문에, one-side test를 수행하는게 합리적이다.
+가 되는데, 이 값은 1이다! 😲 보통 하나의 $x$ 값만 있기 때문에, one-side test를 수행하는게 합리적이다.
 
 $X \le C_1$과 $X \ge C_2$ 중 어떤 방향을 취할지 결정하기 위해, expected value $E[X]$를 기준으로 삼자. 이 값은 $np$이다.
 
 - If $x < np$, take $X \le C_1$
 - If $x > np$, take $X \ge C_2$
 
-지금의 예시에서는 $x < np$라고, 가정하고 $X \le C_1$를 취하면, p-value는 아래와 같다.
+만약 $x < np$라고, 가정하고 $X \le C_1$로 p-value를 구해야 한다. p-value는 아래와 같다. 양측 검정이기 때문에 $2$를 곱해준다.
 
 $$
 2 \cdot P(X \le x \mid p = 1/3)
