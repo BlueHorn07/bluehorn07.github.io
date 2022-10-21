@@ -30,7 +30,7 @@ tags: ["statistics"]
 <img src= "{{"/images/probability-and-statistics/goodness-of-fit-test-1.png" | relative_url }}" width=650>
 </div>
 
-1\. 문제 상황
+1\. 검정의 목표
 
 - $H_0: p=0.8$
 - $H_1: p \ne 0.8$
@@ -45,15 +45,15 @@ tags: ["statistics"]
 
 3\. Test Statistic
 
-이제 검정을 수행하기 위한 \<Test Statistics\>을 결정하자. 우리는 $\hat{p}$를 사용한다.
+이제 검정을 수행하기 위한 \<Test Statistic\>을 결정하자. sample proportion $\hat{p}$를 사용한다.
 
-그리고 CLT를 적용하면, 아래와 같다.
+$\hat{p}$에 CLT를 적용하면, 아래와 같다.
 
 $$
 \frac{\hat{p} - p}{\sqrt{p(1-p) / n}} \sim N(0, 1)
 $$
 
-이전의 \<Test on Proportion\>에선 요 녀석을 그대로 사용한다.
+이전의 [\<Proportion Test\>]({{"/2021/05/26/proportion-test.html" | relative_url}})에선 이걸 그대로 사용했다.
 
 $$
 \text{reject} \; H_0, \quad \text{if} \quad \left| \frac{\hat{p} - p}{\sqrt{p(1-p) / n}} \right| > z_{\alpha/2}
@@ -67,7 +67,7 @@ $$
 
 <br>
 
-\<Goodness-of-fit Test\>를 소개할 때도 말했듯이 \<Goodness-of-fit Test\>는 <span class="red">카테고리 변수</span>에 대한 검정이다. 위의 식은 카테고리가 2개 뿐인 상황에서만 성립한다. 그래서 위의 식을 약간 변형해 \<Goodness-of-fit\>의 식을 유도해보자.
+\<Goodness-of-fit Test\>를 소개할 때도 말했듯이 \<Goodness-of-fit Test\>는 <span class="red">카테고리 변수</span>에 대한 검정이다. 위의 식은 카테고리가 2개 뿐인 상황에서만 성립한다. 그래서 위의 식을 약간 변형해 \<GOF Test\>의 식을 유도해보자.
 
 <div class="math-statement" markdown="1">
 
@@ -116,16 +116,18 @@ $$
 rejection criterion을 다시 쓰면,
 
 $$
-\text{reject} \; H_0 \quad \text{if} \quad \sum_{i=1}^2 \frac{(o_i - e_i)^2}{e_i} > \chi^2_{\alpha}(1)
+\text{reject} \; H_0, \quad \text{if} \quad \sum_{i=1}^2 \frac{(o_i - e_i)^2}{e_i} > \chi^2_{\alpha}(1)
 $$
 
 </div>
+
+<br/>
 
 2개 카테고리 예제를, $k$개 카테고리로 일반화 하여 기술해보자.
 
 <div class="definition" markdown="1">
 
-<span class="statement-title">Definition.</span> Test Statistics for Goodness-of-fit<br>
+<span class="statement-title">Definition.</span> Test Statistic for Goodness-of-fit<br>
 
 \<Goodness-of-fit\>의 Test Statistic은 
 
@@ -133,9 +135,9 @@ $$
 \chi^2 := \sum_{i=1}^k \frac{(o_i - e_i)^2}{e_i}
 $$
 
-where $o_i$ and $e_i$ are the observed and expected frequencies respectively.
+where $o_i$ and $e_i$ are the observed and expected occurences respectively.
 
-💥 NOTE: <span style="color: red">all expected frequencies must be at least 5</span>. <small>만약, 5 이하의 빈도를 가지는 카테고리가 있다면, 우리는 그것을 다른 카테고리에 합치는 **pooling**을 수행할 것이다!</small>
+💥 NOTE: <span style="color: red">all expected occurences must be at least 5</span>. <small>만약, 5 이하의 빈도를 가지는 카테고리가 있다면, 그것을 다른 카테고리에 합치는 **pooling**을 수행하라!</small>
 
 </div>
 
@@ -153,24 +155,24 @@ The degree of freedom $\nu$ = (#. of categories after pooling - 1) - #. of param
 
 ## Test for Independence
 
-우리는 \<Chi-squared goodness-of-fit Test\>를 응용해 두 개의 카테고리가 서로 **독립(independent)**인지 검정할 수 있다!
+\<Chi-squared goodness-of-fit Test\>를 응용해 <span class="red">두 개의 카테고리가 서로 **독립(independent)**인지 검정</span>해보자.
 
 <div class="img-wrapper">
 <img src= "{{"/images/probability-and-statistics/goodness-of-fit-test-2.png" | relative_url }}" width=650>
 </div>
 
-우리는 'income'과 'political'이 서로 독립인지를 검정해야 한다. 이에 따라 우리는 아래와 같이 $H_0$와 $H_1$을 설정한다.
+'income'과 'political'이 서로 독립인지를 검정해보자. 아래와 같이 $H_0$와 $H_1$을 설정한다.
 
-- $H_0$: income-politicaa is independent
+- $H_0$: income-political is independent
 - $H_1$: they are not independent
 
 $H_0$를 수식으로 표현하면 아래와 같다.
 
 $$
-P(\text{party } 1 \; \And \; \text{low}) = P(\text{part } 1) P(\text{low})
+P(\text{party } 1 \; \And \; \text{low}) = P(\text{part } 1) \cdot P(\text{low})
 $$
 
-위의 공식을 통해 우리는 각 상황에 대한 expected value를 얻을 수 있다.
+위의 공식을 통해 각 상황에 대한 expected value를 얻을 수 있다.
 
 예를 들어 $e_{11}$에서는
 
@@ -193,8 +195,8 @@ $$
 $$
 \begin{aligned}
 \nu 
-&= (9-1) - ((3-1) + (3-1)) \\
-&= 9 - 1 - 4 = 4  
+&= (9-1) - \left((3-1) + (3-1)\right) \\
+&= 8 - (2 + 2) = 4  
 \end{aligned}
 $$
 
@@ -207,7 +209,7 @@ $$
 $$
 \begin{aligned}
 \nu
-&= r \cdot c - 1 - ((r -1) + (c-1)) \\
+&= r \cdot c - 1 - \left((r -1) + (c-1)\right) \\
 &= r(c-1) - (c-1) \\
 &= (r-1)(c-1)
 \end{aligned}
@@ -215,13 +217,13 @@ $$
 
 $\chi^2$-value와 DOF $\nu$를 구했으면 그 다음은 검정을 수행하면 된다.
 
-Reject $H_0$ if $\chi^2 > \chi^2_{\alpha} ((r-c)(c-1))$.
+Reject $H_0$, if $\chi^2 > \chi^2_{\alpha} (\nu)$.
 
 <hr/>
 
 ## Test for Homogeneity
 
-이번에는 \<Goodness-of-fit Test\>를 응용해 각 카테고리에서의 분포가 **균일(homogenous)**한지 검정해보겠다.
+이번에는 \<Goodness-of-fit Test\>를 응용해 <span class="red">각 카테고리에서의 분포가 **균일(homogenous)**한지 검정</span>해보자.
 
 <div class="img-wrapper">
 <img src= "{{"/images/probability-and-statistics/goodness-of-fit-test-3.png" | relative_url }}" width=650>
@@ -231,13 +233,13 @@ Reject $H_0$ if $\chi^2 > \chi^2_{\alpha} ((r-c)(c-1))$.
 
 "Is the party preference homogenous among various regions?"
 
-이것을 확인하려면, 'part i'을 선호나는 비율이 각 지역마다 모두 동일한지 확인해야 한다. 이것은 곧 아래의 등식 성립함을 말한다.
+이것을 확인하려면, 'part $i$'을 선호하는 비율이 각 지역마다 모두 동일한지 확인해야 한다. 이것은 곧 아래의 등식 성립함을 말한다.
 
 $$
 P(\text{party } i \mid \text{Seoul}) = P(\text{part } i \mid \text{Daejeon}) = P(\text{party } i \mid \text{Gwangju}) = P(\text{party } i \mid \text{Daegu})
 $$
 
-우리는 위의 등식을 null hypothesis $H_0$로 삼아 검정을 수행할 것이다!
+위의 등식을 null hypothesis $H_0$로 삼아 검정을 수행할 것이다!
 
 위의 표를 기준으로 $e_{11}$를 한번 구해보자. 먼저 'Seoul'의 총 인구는 500이다. 그리고 전체 사람 수 중 'party 1'을 선호하는 사람의 비율은 391/1000이다. 따라서, $e_{11}$은
 
@@ -247,7 +249,11 @@ $$
 
 마찬가지로 $e_{12}$의 경우는 $e_{12} = 100 \times 391 / 1000$로, $e_{21}$은 $e_{21} = 500 \times 537 / 1000$이다.
 
-✨ Homogeneity Test is Equivalent to Independence Test
+<div class="statement" style="text-align: center">
+
+✨ Homogeneity Test is Equivalent to Independence Test ✨
+
+</div>
 
 사실 Homogeneity Test는 앞에서 수행한 Independence Test와 완전 동일하다. Homogeneity Test의 경우 $H_0$의 형태가 직접적으로 Inpendence를 암시하고 있는 형태는 아니지만, 약간 변형하면 Independence로 유도할 수 있다.
 
@@ -290,12 +296,12 @@ $$
 
 그리고 검정을 수행하면,
 
-Reject $H_0$ if $\chi^2 > \chi^2_{\alpha}((r-1)(c-1))$
+Reject $H_0$, if $\chi^2 > \chi^2_{\alpha}(\nu)$
 
 <hr/>
 
 검정(Testing)에 대한 내용은 여기까지다!! 👏 이것으로 "통계학(Statistics)"의 기본적인 내용을 모두 살펴본 것이다!! 😆
 
-다음 포스트부터 \<Simple Linear Regression\>이라는 새로운 챕터를 살펴본다. 주로 주어진 데이터에서 "Linear Regression"의 계수 $\beta_i$들을 어떻게 찾을 수 있을지를 다루는 챕터다!
+다음 포스트부터 \<Simple Linear Regression\>이라는 새로운 챕터를 살펴본다. 주어진 데이터에서 "Linear Regression"의 계수 $\beta_i$들을 어떻게 찾을 수 있을지를 다루는 챕터다!
 
 👉 [Introduction to Linear Regression]({{"/2021/06/06/introduction-to-linear-regression.html" | relative_url}})
