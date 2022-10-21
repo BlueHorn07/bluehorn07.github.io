@@ -16,21 +16,13 @@ tags: ["statistics"]
 
 <hr/>
 
-### Review
-
-
-
-<hr/>
-
 이번 포스트에서는 아래의 두 질문에 대해 주요하게 살펴볼 예정이다.
 
 Q1. What are the distributions of $B_1$ and $B_0$?
 
 Q2. What can be an estimator for $\sigma^2$?
 
-<hr/>
-
-### Distribution of Regression Coefficients
+# Distribution of Regression Coefficients
 
 <div class="theorem" markdown="1">
 
@@ -115,7 +107,7 @@ $$
 
 <hr/>
 
-### Estimator of Error Variance
+# Estimator of Error Variance
 
 Recall that $\sigma^2 = \text{Var}(\epsilon_i)$, and the $\epsilon_i$ was the difference btw response $y_i$ and true regression $\beta_0 + \beta_1 x_i$; $\epsilon_i = y_i - (\beta_0 + \beta_1 x_i)$.
 
@@ -155,7 +147,7 @@ $$
 
 <hr/>
 
-### Inferences for Regression Coefficients
+# Inferences for Regression Coefficients
 
 Supp. we have sample points $(x_1, y_1), \dots, (x_n, y_n)$ from $Y_i = \beta_0 + \beta_1 x_i + \epsilon_i$ where $\epsilon_i$s are iid $N(0, \sigma^2)$. Here, $\beta_0$ and $\beta_1$ are unknown parameters.
 
@@ -211,10 +203,14 @@ $$
 
 <hr/>
 
+# 맺음말
+
 이어지는 포스트에선 Linear Regression 모델에서 수행하는 Prediction에서 수행하는 추정에 대해 살펴볼 예정이다. 이번 포스트에서 살펴봤던 $B_1$, $B_0$의 분포를 종합적으로 사용할 예정이며, 이 과정을 통해 Regression으로 얻은 결과(response)의 신뢰도와 그 오차에 대해 더 살펴볼 수 있다.
 
 👉 [Prediction on Regression]({{"/2021/06/10/prediction-on-regression.html" | relative_url}})
 
-이번 포스트에 제시 했던 HW 문제의 풀이는 아래의 포스트에 별도로 정리해두었다.
+<br/>
+
+이번 포스트에 제시 했던 HW 문제의 풀이는 아래의 포스트에 정리해두었다.
 
 👉 [Statistics - PS3]({{"/2021/06/10/statistics-ps3.html"}})

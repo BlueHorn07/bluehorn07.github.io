@@ -2,11 +2,12 @@
 title: "Chi-square Goodness-of-fit Test"
 layout: post
 tags: ["statistics"]
+preview: "\<proportion test\>의 일반화. 카레고리 변수에 대한 검정."
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
-[\<Proportion Test\>]({{"/2021/05/26/proportion-test.html" | relative_url}})의 내용을 먼저 살펴보고 오는 것을 추천한다. \<Proportion Test\>를 일반화한 것이 \<Goodness-of-fit Test\>이기 때문이다!
+[\<Proportion Test\>]({{"/2021/05/26/proportion-test.html" | relative_url}})의 내용을 먼저 살펴보고 오는 것을 추천한다. <span class="red">\<Proportion Test\>를 일반화한 것이 \<Goodness-of-fit Test\></span>이기 때문이다!
 
 <br><span class="statement-title">TOC.</span><br>
 
