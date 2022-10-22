@@ -22,13 +22,13 @@ Variance에 대한 검정은 추정에서 다뤘던 내용에서 크게 달라�
 
 ex: $H_0: \sigma^2 = \sigma_0^2$ vs. $H_1: \sigma^2 \ne \sigma_0^2$를
 
-$S^2$를 Test Statistics로 잡고 $(n-1)S^2 / \sigma^2 \sim \chi^2 (n-1)$를 이용해서 \<chi-suqare distribution\>으로 검정 수행
+$S^2$를 Test Statistic로 잡고 $(n-1)S^2 / \sigma^2 \sim \chi^2 (n-1)$를 이용해서 \<chi-suqare distribution\>으로 검정 수행
 
 ## Ratio of Two Variance Test
 
 ex: $H_0: \sigma_1^2 = \sigma_2^2$ vs. $H_1: \sigma_1^2 \ne \sigma_2^2$
 
-$S_1^2 / S_2^2$를 Test Statistics로 잡고 $\frac{S_1^2/\sigma_1^2}{S_2^2/\sigma_2^2} \sim F(n_1 - 1, n_2 - 2)$임을 이용해 \<F-test\>로 검정 수행
+$S_1^2 / S_2^2$를 Test Statistic로 잡고 $\frac{S_1^2/\sigma_1^2}{S_2^2/\sigma_2^2} \sim F(n_1 - 1, n_2 - 2)$임을 이용해 \<F-test\>로 검정 수행
 
 <hr/>
 

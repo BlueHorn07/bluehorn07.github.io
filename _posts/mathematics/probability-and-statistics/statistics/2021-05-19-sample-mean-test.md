@@ -37,9 +37,9 @@ tags: ["statistics"]
 
 $n=25$ and $\bar{x}=194$, and $\sigma^2 = 100$
 
-2\. Find a \<Test Statistics\>, and construct critical region
+2\. Find a \<Test Statistic\>, and construct critical region
 
-- Test Statistics: $\bar{x}$
+- Test Statistic: $\bar{x}$
 - critical region: $\\{ \bar{X} > C\\}$
 
 3\. $\alpha$가 주어지지 않았으니, p-value를 구하자!

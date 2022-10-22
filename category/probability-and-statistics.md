@@ -133,7 +133,7 @@ hidden: true
 
 - [Introduction to Hypothesis Tests]({{"/2021/05/18/introduction-to-hypothesis-tests.html" | relative_url}})
   - Null Hypothetsis $H_0$ & Alternative Hypothesis $H_1$
-  - Test Statistics
+  - Test Statistic
     - Rejection Region or Critical Region; $X \ge C$
     - Critical Value; $C$
   - [Type 1 Error & Type 2 Error]({{"/2021/05/18/introduction-to-hypothesis-tests.html#t1-erorr--t2-error" | relative_url}})

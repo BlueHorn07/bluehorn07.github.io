@@ -10,7 +10,7 @@ tags: ["statistics"]
 
 - Statistical Hypothesis
 - Null Hypothetsis $H_0$ & Alternative Hypothesis $H_1$
-- Test Statistics
+- Test Statistic
   - Rejection Region or Critical Region; $X \ge C$
   - Critical Value; $C$
 - [Type 1 Error & Type 2 Error](#t1-erorr--t2-error)
@@ -52,17 +52,17 @@ Supp. we have a p-coin, I belive that it is a fair coin, on the other hand, you 
 
 Q. How do we do \<Hypothesis Test\>?
 
-A. First, we should set a \<Test Statistics\>!
+A. First, we should set a \<Test Statistic\>!
 
 Let's toss a coin $n$-times independently. For each toss, let $X_i$ are $1$ for head and $0$ for otherwise.
 
 Then, $X := \sum X_i$, the (# of heads in $n$ tosses) be $X \sim \text{BIN}(n, p)$.
 
-Then, we can use $X$ as a \<Test Statistics\>!
+Then, we can use $X$ as a \<Test Statistic\>!
 
 </div>
 
-우리는 이 \<**Test Statistics**\>로 가설 $H_0$를 reject 하거나 reject 하지 않을 것이다!
+우리는 이 \<**Test Statistic**\>로 가설 $H_0$를 reject 하거나 reject 하지 않을 것이다!
 
 위의 $H_0: p=0.5$, $H_1: p=0.7$의 경우에서 생각해보자. 만약 $X$가 large enough, 즉 "$X \ge C$ for some $C$"라면, $H_0$를 reject 하는게 합리적이다.
 
@@ -325,7 +325,7 @@ The \<p-value\> of a test is <span class="half_HL">the lowest significance level
 
 </div>
 
-주어진 데이터의 Test Statistics $X$를 기준으로 $H_0$를 reject 할 수 있는 가장 작은 $\alpha$ 값이 바로 \<p-value\>이다!
+주어진 데이터의 Test Statistic $X$를 기준으로 $H_0$를 reject 할 수 있는 가장 작은 $\alpha$ 값이 바로 \<p-value\>이다!
 
 Q. 왜 '가장 작은' $\alpha$ 값일까?
 
@@ -377,7 +377,7 @@ $$
 개인적으로 \<p-value\>는 그 의미가 자주 헷갈려서 여러 의미와 해석을 함께 보면 도움이 될 것 같다.
 
 - $H_0$를 reject 할 수 있는 가장 작은 $\alpha$ 값
-- 기존 이론 $H_0$가 맞다는 가정 하에, 얻어진 Test Statistics $X$가 나올 확률.
+- 기존 이론 $H_0$가 맞다는 가정 하에, 얻어진 Test Statistic $X$가 나올 확률.
   - 이 확률이 낮다는 것은 기존 이론 $H_0$가 맞다는 가정이 틀린 것이 된다. (통게적 귀류법)
 - 실험 결과가 기존 이론 $H_0$와 양립하는 정도를 $[0, 1]$의 수치로 표현한 것.
   - \<p-value\> 값이 작을수록 데이터와 기존 이론 $H_0$는 양립 불가능

@@ -12,7 +12,7 @@ preview: "<proportion test>의 일반화. 카레고리 변수에 대한 검정."
 <br><span class="statement-title">TOC.</span><br>
 
 - [Introduction to Goodness-of-fit Test](#introduction-to-goodness-of-fit-test)
-  - Test statistics of Goodness-of-fit
+  - Test Statistic of Goodness-of-fit
   - DOF of Goodness-of-fit
 - [Test on Independence](#test-for-independence)
 - [Test on Homogeneity](#test-for-homogeneity)
@@ -232,7 +232,8 @@ Reject $H_0$, if $\chi^2 > \chi^2_{\alpha} (\nu)$.
 
 ## Test for Homogeneity
 
-이번에는 \<Goodness-of-fit Test\>를 응용해 <span class="red">각 카테고리에서의 분포가 **균일(homogenous)**한지 검정</span>해보자.
+이번에는 \<Goodness-of-fit Test\>를 응용해 <span class="red">각 카테고리에서의 분포가 **균일(homogenous)**한지 검정</span>해보자. 예를 들면, "인종 별로 흡연자와 비흡연자 비율이 동일한가?"와 같은 질문을 검증하는 것이다.
+
 
 <div class="img-wrapper">
 <img src= "{{"/images/probability-and-statistics/goodness-of-fit-test-3.png" | relative_url }}" width=650>
@@ -335,7 +336,9 @@ $$
 $$
 
 이것에 대입해 z-value를 계산하면, $z = 0.791$이다. Alternative Hypothesis $H_1$
-이 양측 검정의 형태이므로 p-value를 구하면, $0.428$이다.
+이 양측 검정의 형태이므로 p-value를 구하면, <span class="red">$0.428$</span>이다.
+
+<br/>
 
 이번에는 chi-square GOF test를 해보자. Test Statistic은 아래와 같다.
 
@@ -343,19 +346,39 @@ $$
 \sum^2_{i=1} \frac{(o_i - e_i)^2}{e_i}
 $$
 
-이것에 대입해 $\chi^2$-value를 계산하면, $\chi^2 = 0.625$이다. DOF $\nu = 1$이므로 p-value를 구하면, $0.429$이다.
+이것에 대입해 $\chi^2$-value를 계산하면, $\chi^2 = 0.625$이다. DOF $\nu = 1$이므로 p-value를 구하면, <span class="red">$0.429$</span>이다.
 
 와우! 두 가지 접근 모두 동일한 p-value를 얻었다!!
 
 ## Two Proportion Case
 
+두 집합의 비율이 동일한지, $p_1 = p_2$인지를 검정하고자 한다. Test Statistic은 아래와 같다.
 
+$$
+\frac{\hat{p}_1 - \hat{p}_2}{\sqrt{\hat{p}\hat{q}(1/n_1 + 1/n_2)}}
+$$
 
-do people of different races have the same proportion of smokers to non-smokers
+이때, $\hat{p}$은 pooled proportion이다.
 
-The test of homogeneity expands on the two-proportion z-test. The two proportion z-test is used when the response variable has only two categories as outcomes and we are comparing two groups. The homogeneity test is used if the response variable has several outcome categories, and we wish to compare two or more groups.
+$$
+\hat{p} = \frac{x_1 + x_2}{n_1 + n_2}
+$$
 
+z-value를 계산하기 위해 실험의 값을 임의의로 정해보면, $n_1 = 20$, $x_1 = 18$, $n_2 = 100$, $x_2 = 84$라고 해보자.
 
+이것에 대입해 z-value를 계산하면, $z = 0.686$이다. 양측 검정에 대한 p-value를 구하면, <span class="red">$0.493$</span>이다.
+
+<br/>
+
+이번에는 \<Homogeneity Test\>로 접근해보자. Test Statistic은 아래와 같다.
+
+$$
+\sum^2_{i=1} \sum^2_{j=1} \frac{(o_{ij} - e_{ij})^2}{e_{ij}}
+$$
+
+대입해서 $\chi^2$-value를 계산하면, $\chi^2 = 0.471$이다. 인터넷에 돌아다니는 [Independent Test Calculator](https://stats.libretexts.org/Learning_Objects/02%3A_Interactive_Statistics/37%3A__Chi-Square_Test_For_Independence_Calculator)를 쓰면 금방 계산할 수 있다! DOF $\nu = 1$이므로 p-value를 구하면, <span class="red">$0.493$</span>이다!
+
+와우! 이번에도 두 가지 접근 모두 동일한 p-value를 얻었다!
 
 <hr/>
 
