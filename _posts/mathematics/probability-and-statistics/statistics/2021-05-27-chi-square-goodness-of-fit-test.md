@@ -150,7 +150,7 @@ The degree of freedom $\nu$ = (#. of categories after pooling - 1) - #. of param
 
 </div>
 
-(#. of categories)에서 $-1$을 하는 이유는 Total value $n$이 주어졌기 때문이다. 그래서 마지막 카테고리의 값을 Deterministic하게 결정된다!
+(#. of categories)에서 $-1$을 하는 이유는 Total value $n$이 주어졌기 때문이다. 마지막 카테고리의 값은 Deterministic하게 결정된다!
 
 통계학에서의 DOF에 대해 궁금하다면, 아래의 포스트를 읽어보고 오자!
 
@@ -250,7 +250,7 @@ $$
 
 이 등식을 null hypothesis $H_0$로 삼아 검정을 수행하자!
 
-위의 표를 기준으로 $e_{11}$를 한번 구해보자. 먼저 'Seoul'의 총 인구는 500이다. 그리고 전체 사람 수 중 'party 1'을 선호하는 사람의 비율은 391/1000이다. 따라서, $e_{11}$은
+위의 표를 기준으로 $e_{11}$를 구해보자. 먼저 'Seoul'의 총 인구는 500이다. 그리고 전체 사람 수 중 'party 1'을 선호하는 사람의 비율은 391/1000이다. 따라서, $e_{11}$은
 
 $$
 e_{11} = 500 \times \frac{391}{1000}
@@ -266,7 +266,7 @@ $$
 
 </div>
 
-사실 Homogeneity Test는 앞에서 수행한 Independence Test와 완전 동일하다. Homogeneity Test의 $H_0$가 Inpendence를 직접적으로 표현하진 않았지만, 약간 변형하면 Independence로 유도할 수 있다.
+사실 Homogeneity Test는 앞에서 수행한 Independence Test와 동치이다. Homogeneity Test의 $H_0$가 Inpendence를 직접적으로 표현하진 않았지만, 약간 변형하면 Independence로 유도할 수 있다.
 
 <div class="math-statement" markdown="1">
 
@@ -315,6 +315,50 @@ Reject $H_0$, if $\chi^2 > \chi^2_{\alpha}(\nu)$
 
 <hr/>
 
+# Proportion Test and Chi-square Test
+
+\<chi-square test\>가 "[\<proportion test\>]({{"/2021/05/26/proportion-test.html" | relative_url}})의 일반화"라는 걸 실제 값과 함께 다뤄보고자 한다.
+
+## One Proportion Case
+
+앞면의 확률이 $p$인 p-coin이 있다. 아래의 가설을 검정하고자 한다.
+
+- $H_0$: $p = 1/3$
+- $H_1$: $p \ne 1/3$
+
+$20$번의 실험으로 얻은 sample proportion은 $\hat{p} = 1/4$였다.
+
+One Proportion Test의 Statistic은 아래와 같다.
+
+$$
+\frac{p - \hat{p}}{\sqrt{p(1-p) / n}}
+$$
+
+이것에 대입해 z-value를 계산하면, $z = 0.791$이다. Alternative Hypothesis $H_1$
+이 양측 검정의 형태이므로 p-value를 구하면, $0.428$이다.
+
+이번에는 chi-square GOF test를 해보자. Test Statistic은 아래와 같다.
+
+$$
+\sum^2_{i=1} \frac{(o_i - e_i)^2}{e_i}
+$$
+
+이것에 대입해 $\chi^2$-value를 계산하면, $\chi^2 = 0.625$이다. DOF $\nu = 1$이므로 p-value를 구하면, $0.429$이다.
+
+와우! 두 가지 접근 모두 동일한 p-value를 얻었다!!
+
+## Two Proportion Case
+
+
+
+do people of different races have the same proportion of smokers to non-smokers
+
+The test of homogeneity expands on the two-proportion z-test. The two proportion z-test is used when the response variable has only two categories as outcomes and we are comparing two groups. The homogeneity test is used if the response variable has several outcome categories, and we wish to compare two or more groups.
+
+
+
+<hr/>
+
 # 맺음말
 
 검정(Testing)에 대한 내용은 여기까지다!! 👏 이것으로 "통계학(Statistics)"의 기본적인 내용을 모두 살펴본 것이다!! 😆
@@ -322,3 +366,9 @@ Reject $H_0$, if $\chi^2 > \chi^2_{\alpha}(\nu)$
 다음 포스트부터 \<Simple Linear Regression\>이라는 새로운 챕터를 살펴본다. 주어진 데이터에서 "Linear Regression"의 계수 $\beta_i$들을 어떻게 찾을 수 있을지를 다루는 챕터다!
 
 👉 [Introduction to Linear Regression]({{"/2021/06/06/introduction-to-linear-regression.html" | relative_url}})
+
+<hr/>
+
+# References
+
+- [UCLA Statistics](http://inspire.stat.ucla.edu/unit_13/)

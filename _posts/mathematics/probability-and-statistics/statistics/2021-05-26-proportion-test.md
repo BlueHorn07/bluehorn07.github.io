@@ -90,13 +90,21 @@ $$
 <img src= "{{"/images/probability-and-statistics/test-on-proportion-1.png" | relative_url }}" width=650>
 </div>
 
-두 집합에서의 비율이 동일한지 검정하는 문제다. CLT를 적용하면 아래와 같다.
+<span class="red">두 집합의 비율이 동일한지, 즉 $p_1 = p_2$를 검정</span>하는 문제다. [\<Proportion Estimation\>]({{"/2021/05/14/proportion-estimation-on-bernoulli.html" | relative_url}})에서 한 것처럼 CLT를 적용해 Test Statistic을 구하면 아래와 같다.
 
 $$
 \frac{(\hat{p}_1 - \hat{p}_2) - (p_1 - p_2)}{\sqrt{\dfrac{p_1 q_1}{n_1} + \dfrac{p_2 q_2}{n_2}}} \sim N(0, 1)
 $$
 
-그런데, 이때 우리는 population의 $p_1$, $p_2$의 값을 모른다. 그래서, 아래와 같이 pooled proportion $\hat{p}$을 대신 사용해야 한다. 이것은 우리가 검정하고자 하는 것이 두 집단의 proportion이 동일하다는 것을 검정하는 것이기 때문에 null hypothesis $H_0$의 가정을 충족하는 자연스러운 접근이다.
+만약 "두 집단의 proportion이 동일하다"는 가정이 참이라면, $p = p_1 = p_2$이므로 식을 다시 쓰면,
+
+$$
+\frac{(\hat{p}_1 - \hat{p}_2)}{\sqrt{pq (1/n_1 + 1/n_2)}}
+$$
+
+그런데, 우리는 population proportion이 $p_1 = p_2$ 라는 것만 알지 $p_1$, $p_2$의 값을 모른다. 그래서, [\<Proportion Estimation\>]({{"/2021/05/14/proportion-estimation-on-bernoulli.html" | relative_url}})에서 한 것처럼 sample proportion $\hat{p}$을 사용해야 한다!
+
+그런데 sample proportion $\hat{p}_1$과 $\hat{p}_2$ 둘 중 뭘 써야할까? 둘을 종합한 pooled proportion $\hat{p}$을 사용하면 된다!
 
 $$
 \hat{p} = \frac{x_1 + x_2}{n_1 + n_2}
@@ -105,17 +113,15 @@ $$
 식을 다시 쓰면,
 
 $$
-\frac{(\hat{p}_1 - \hat{p}_2) - (p_1 - p_2)}{\sqrt{\hat{p}\hat{q} \left(\dfrac{1}{n_1} + \dfrac{1}{n_2}\right)}} \sim N(0, 1)
+\frac{(\hat{p}_1 - \hat{p}_2)}{\sqrt{\hat{p}\hat{q} \left(1/n_1 + 1/n_2\right)}}
 $$
 
 위의 공식을 통해 p-value를 구하고, p-value가 $\alpha$ 값보다 작다면, $H_0$를 기각한다!
-
-💥 주목할 점은 이전의 [\<Proportion Estimation\>]({{"/2021/05/14/proportion-estimation-on-bernoulli.html" | relative_url}})의 "Two Samples Estimation: Diff Btw Two Proportions"과 공식이 약간 다르다는 점이다. 위의 Estimation에서는 두 샘플의 sample proportion을 그대로 사용했고, 이번의 경우에는 pooled sample proportion $\hat{p}$을 사용했다.
 
 <hr/>
 
 # 맺음말
 
-이어지는 포스트에서 \<proportion test\>을 일반화한 \<**Chi-square Goodness-of-fit test**\>를 살펴본다. \<chi-square distribution\> $\chi^2$를 사용해 검정을 수행하며, 이를 통해 표본의 독립(independence)와 동질성(homogeneity)에 대한 검정 할 수 있다!
+이어지는 포스트에서 \<proportion test\>을 일반화한 \<**Chi-square Goodness-of-fit test**\>를 살펴본다. \<chi-square distribution\> $\chi^2$를 사용해 검정을 수행하며, 이를 통해 표본의 독립(independence)와 동질성(homogeneity)에 대한 검정을 할 수 있다!
 
 👉 [Chi-square Goodness-of-fit test]({{"/2021/05/27/chi-square-goodness-of-fit-test.html"}})
