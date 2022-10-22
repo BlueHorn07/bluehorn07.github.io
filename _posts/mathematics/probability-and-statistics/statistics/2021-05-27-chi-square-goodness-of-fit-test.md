@@ -2,7 +2,7 @@
 title: "Chi-square Goodness-of-fit Test"
 layout: post
 tags: ["statistics"]
-preview: "\<proportion test\>의 일반화. 카레고리 변수에 대한 검정."
+preview: "<proportion test>의 일반화. 카레고리 변수에 대한 검정."
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -20,8 +20,6 @@ preview: "\<proportion test\>의 일반화. 카레고리 변수에 대한 검정
 <hr/>
 
 # Introduction to Goodness-of-fit Test
-
-
 
 \<**Goodness-of-fit Test; 적합도 검정**\>은 population distribution이 categorical variable을 가지는 경우, 예를 들어 Head-Tail의 동전 던지기, 주사위 던지기 등에서 사용하는 검정 기법이다. \<Goodness-of-fit Test\>는 <span class="red">카테고리 변수의 Sample Distribution <small>(또는 Observed Distribution)</small>이 가정한 Expected Distribution과 일치하는지</span>를 결정한다.
 
@@ -124,7 +122,7 @@ $$
 
 <br/>
 
-2개 카테고리 예제를, $k$개 카테고리로 일반화 하여 기술해보자.
+2개 카테고리 예제를 $k$개 카테고리로 일반화 하여 기술해보자.
 
 <div class="definition" markdown="1">
 
@@ -142,7 +140,7 @@ where $o_i$ and $e_i$ are the observed and expected occurences respectively.
 
 </div>
 
-위의 예제에서는 카테고리가 단 2개인 상황이었다. 하지만, 주사위 굴리기와 같이 카테고리가 여러 개인 경우는 $\chi^2$의 DOF가 달라진다. 그 공식은 아래와 같다.
+위의 예제에서는 카테고리가 단 2개인 상황이었다. 하지만, 주사위 굴리기와 같이 카테고리가 여러 개인 경우는 $\chi^2$ 분포의 DOF가 달라진다. 그 공식은 아래와 같다.
 
 <div class="definition" markdown="1">
 
@@ -151,6 +149,12 @@ where $o_i$ and $e_i$ are the observed and expected occurences respectively.
 The degree of freedom $\nu$ = (#. of categories after pooling - 1) - #. of parameters estimated
 
 </div>
+
+(#. of categories)에서 $-1$을 하는 이유는 Total value $n$이 주어졌기 때문이다. 그래서 마지막 카테고리의 값을 Deterministic하게 결정된다!
+
+통계학에서의 DOF에 대해 궁금하다면, 아래의 포스트를 읽어보고 오자!
+
+👉 [Degree of Freedom in Statistics]({{"/2022/10/09/degree-of-freedom-in-statistics.html" | relative_url}})
 
 <hr/>
 
@@ -173,9 +177,9 @@ $$
 P(\text{party } 1 \; \And \; \text{low}) = P(\text{part } 1) \cdot P(\text{low})
 $$
 
-위의 공식을 통해 각 상황에 대한 expected value를 얻을 수 있다.
+두 카테고리가 독립이라는 가정 $H_0$에서 유래한 위의 공식을 활용하면, 각 상황의 expected value $e_{ij}$를 얻을 수 있다.
 
-예를 들어 $e_{11}$에서는
+예를 들어 $e_{11}$은
 
 $$
 \begin{aligned}
@@ -185,13 +189,15 @@ e_{11} &= 1500 \times P(\text{P1} \; \And \; \text{Low}) \\
 \end{aligned}
 $$
 
-이런 방식으로 각 entry에 대해 expected value를 구한후 $\chi^2$-value를 구한다.
+이런 방식으로 각 entry에 대한 expected value $e_{ij}$를 구한다.
+
+다음으론 chi-square test의 공식에 $o_{ij}$, $e_{ij}$를 대입해 $\chi^2$-value를 구한다.
 
 $$
 \chi^2 = \sum_{i=1}^3 \sum_{j=1}^3 \frac{(o_{ij} - e_{ij})^2}{e_{ij}}
 $$
 
-다음으로 DOF를 구해보면,
+$\chi^2$ 분포의 DOF도 구해보면,
 
 $$
 \begin{aligned}
@@ -201,9 +207,11 @@ $$
 \end{aligned}
 $$
 
-이때 (#. of parameters estimated) 부분이 4가 되는 이유는 다음과 같다.
+이때 "(#. of parameters estimated) = $4$"가 되는 이유는 다음과 같다.
 
-우리가 'party'에 대한 parameter를 구하려면, 세 가지 경우에 대한 확률을 구해야 한다. 그런데, 확률의 경우 合이 1이 되기 때문에 세가지 경우 중 두 가지 경우만 구하면 된다. 따라서, 'part'에 대해서 두 가지 parameter를 estimate 해야 하고, 마찬가지로 'inomce'에 대해서도 두 가지 parameter를 estimate 해야 한다. 따라서, (#. of parameters estimated)는 4개이다.
+우리가 'party'에 대한 parameter를 구하려면, 세 가지 경우에 대한 확률을 구해야 한다. 그런데, 확률의 경우 合이 1이 되기 때문에 세가지 경우 중 두 가지 경우만 구하면 된다. 따라서, 'party'에 대해서 두 가지 parameter를 estimate 해야 하고, 마찬가지로 'income'에 대해서도 두 가지 parameter를 estimate 해야 한다. 따라서, (#. of parameters estimated)는 4개이다.
+
+<br/>
 
 이것을 공식으로 작성하면 아래와 같다.
 
@@ -216,7 +224,7 @@ $$
 \end{aligned}
 $$
 
-$\chi^2$-value와 DOF $\nu$를 구했으면 그 다음은 검정을 수행하면 된다.
+$\chi^2$-value와 DOF $\nu$를 구했으면 검정을 수행하면 된다.
 
 Reject $H_0$, if $\chi^2 > \chi^2_{\alpha} (\nu)$.
 
@@ -234,13 +242,13 @@ Reject $H_0$, if $\chi^2 > \chi^2_{\alpha} (\nu)$.
 
 "Is the party preference homogenous among various regions?"
 
-이것을 확인하려면, 'part $i$'을 선호하는 비율이 각 지역마다 모두 동일한지 확인해야 한다. 이것은 곧 아래의 등식 성립함을 말한다.
+이것을 확인하려면, 'part $i$'을 선호하는 비율이 각 지역마다 모두 동일한지 확인해야 한다. 이것은 아래의 등식 성립함을 말한다.
 
 $$
 P(\text{party } i \mid \text{Seoul}) = P(\text{part } i \mid \text{Daejeon}) = P(\text{party } i \mid \text{Gwangju}) = P(\text{party } i \mid \text{Daegu})
 $$
 
-위의 등식을 null hypothesis $H_0$로 삼아 검정을 수행할 것이다!
+이 등식을 null hypothesis $H_0$로 삼아 검정을 수행하자!
 
 위의 표를 기준으로 $e_{11}$를 한번 구해보자. 먼저 'Seoul'의 총 인구는 500이다. 그리고 전체 사람 수 중 'party 1'을 선호하는 사람의 비율은 391/1000이다. 따라서, $e_{11}$은
 
@@ -250,49 +258,55 @@ $$
 
 마찬가지로 $e_{12}$의 경우는 $e_{12} = 100 \times 391 / 1000$로, $e_{21}$은 $e_{21} = 500 \times 537 / 1000$이다.
 
+<br/>
+
 <div class="statement" style="text-align: center">
 
 ✨ Homogeneity Test is Equivalent to Independence Test ✨
 
 </div>
 
-사실 Homogeneity Test는 앞에서 수행한 Independence Test와 완전 동일하다. Homogeneity Test의 경우 $H_0$의 형태가 직접적으로 Inpendence를 암시하고 있는 형태는 아니지만, 약간 변형하면 Independence로 유도할 수 있다.
+사실 Homogeneity Test는 앞에서 수행한 Independence Test와 완전 동일하다. Homogeneity Test의 $H_0$가 Inpendence를 직접적으로 표현하진 않았지만, 약간 변형하면 Independence로 유도할 수 있다.
 
 <div class="math-statement" markdown="1">
 
-편의를 위해 $\text{party } i = B_i$, $\textit{region } j = A_j$로 표시하겠다.
+편의를 위해 $\text{party } i = B_i$, $\text{region } j = A_j$로 표시하겠다.
 
 $$
 \begin{aligned}
-P(B_i \mid A_1) = P(B_i \mid A_2) 
-&= P(B_i \mid A_3) = P(B_i \mid A_4) \\
-\frac{P(B_i \cap A_1)}{P(A_1)} = \frac{P(B_i \cap A_2)}{P(A_2)} 
-&= \frac{P(B_i \cap A_3)}{P(A_3)} = \frac{P(B_i \cap A_4)}{P(A_4)} = x
+P(B_i \mid A_1) &= P(B_i \mid A_2) = x \\
+\frac{P(B_i \cap A_1)}{P(A_1)} &= \frac{P(B_i \cap A_2)}{P(A_2)}  = x
 \end{aligned}
 $$
 
-이때, 위의 식에서 정의한 값 $x$는 
+좌변의 분모를 우변으로 넘기면,
 
 $$
 P(B_i \cap A_j) = x P(A_j)
 $$
 
-임을 이용해 값을 유도할 수 있다.
-
-by "law of total probability",
+가 되는데, 이 $P(B_i \cap A_j)$를 전부 모으면 "Law of Total Probability"에 의해 
 
 $$
 P(B_i) = \sum_{j=1}^4 P(B_i \cap A_j) = x \cdot \cancelto{1}{\sum_{j=1}^4 P(A_j)} = x
 $$
 
-즉, $x = P(B_i)$인데, 이것은 $B_i$와 $A_j$가 서로 독립임을 의미한다!!! 😲 $\blacksquare$
+즉, $x = P(B_i)$이다. 이걸 처음의 수식에 대입하면,
+
+$$
+P(B_i \mid A_1) = x = P(B_i)
+$$
+
+이것은 $B_i$와 $A_j$가 서로 독립임을 의미한다!!! $\blacksquare$
 
 </div>
 
-다음으로 DOF 역시 \<Independence Test\> 때와 마찬가지로 구하면 된다.
+위의 증명을 통해 \<Homogeneity Test\>가 \<Independence Test\>와 동치임을 확인했다. 그래서 \<Indepdence Test\>에서 썼던 검정 방식을 그대로 쓰면 된다!!
+
+DOF도 \<Independence Test\>의 공식으로 구해보면,
 
 $$
-\nu = (r-1) (c-1)
+\nu = (r-1) (c-1) = (3 - 1) (4 - 1) = 6
 $$
 
 그리고 검정을 수행하면,
@@ -300,6 +314,8 @@ $$
 Reject $H_0$, if $\chi^2 > \chi^2_{\alpha}(\nu)$
 
 <hr/>
+
+# 맺음말
 
 검정(Testing)에 대한 내용은 여기까지다!! 👏 이것으로 "통계학(Statistics)"의 기본적인 내용을 모두 살펴본 것이다!! 😆
 

@@ -2,7 +2,6 @@
 title: "Applied Complex Variables"
 layout: post
 tags: ["Complex Variable"]
-hidden: true
 ---
 
 응용복소함수론(MATH210)
