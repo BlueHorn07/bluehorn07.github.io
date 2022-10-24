@@ -19,9 +19,11 @@ tags: ["probability"]
 
 <hr/>
 
-## Discrete Uniform Distriubtion
+# Discrete Uniform Distriubtion
 
 Discrete RV $X$에 대해 각 sample point $x$의 pmf $f(x)$의 값이 모두 동일한 경우를 대표한다.
+
+<div class="definition" markdown="1">
 
 <br><span class="statement-title">Definition.</span><br>
 
@@ -31,6 +33,8 @@ $$
 f(x) = P(X=x_i) = \frac{1}{N}
 $$
 
+</div>
+
 \<uniform distribution\>의 경우, 평균과 분산은 아래의 값을 갖는다.
 
 - $E[X]= \dfrac{\sum x_i}{N}$
@@ -38,9 +42,11 @@ $$
 
 <hr/>
 
-## Bernoulli Distribution
+# Bernoulli Distribution
 
 \<Bernolli Distribution\>은 동전 던지기에 대한 Distribution이다. 좀더 일반화해서 말하면, Sample space에서 단 두개의 sample point를 가질 때, Bernoulli Distribution이라고 한다.
+
+<div class="definition" markdown="1">
 
 <br><span class="statement-title">Definition.</span><br>
 
@@ -58,7 +64,11 @@ $$
 X \sim \text{Bernoulli}(p)
 $$
 
+</div>
+
 여기서 주의할 점은 \<Bernoulli Trial\>은 **단 한번만** 시행하는 것이다! Trial을 여러번 한다면, 뒤에 나올 \<Binomial Distribution\>이 된다.
+
+<div class="statement" markdown="1">
 
 <br><span class="statement-title">Theorem.</span><br>
 
@@ -67,11 +77,15 @@ If $X$ is a **Bernoulli RV**, then
 - $\displaystyle E[X] = \sum x f(x) = 1 f(1) = p$
 - $\displaystyle \text{Var}(X) = E[X^2] - (E[X])^2 = p - p^2 = p (1-p) = pq$
 
+</div>
+
 <hr/>
 
-## Binomial Distribution
+# Binomial Distribution
 
 \<Bernoulli Trial\>은 동전을 단 한번 던지는 시행이었다. 만약 동전을 $n$번 만큼 여러번 던진다면, 우리는 성공(success)을 몇번 했는지 세어 볼 수 있다. 만약 성공의 횟수를 RV $X$로 둔다면, 우리는 \<**Binomial Distribution**\>라는 새로운 분포를 얻게 된다.
+
+<div class="definition" markdown="1">
 
 <br><span class="statement-title">Definition.</span><br>
 
@@ -86,6 +100,8 @@ We call $X$ as a \<binomial random variable\> and denote it as
 $$
 X \sim \text{Binomial}(n, p) \quad \text{or} \quad X \sim \text{BIN}(n, p)
 $$
+
+</div>
 
 여기서 의문이 드는 점은 \<Binomial Distribution\>의 pmf $f(x)$가 정말로 pmf인지이다. 이것을 확인하기 위해선 pmf $f(x)$의 합이 1이 됨을 보이면 된다. 이것은 \<**이항 정리 Binomial Theorem**\>을 통해 쉽게 보일 수 있다. 이 분포가 \<**Binomial**\>라는 이름을 가지는 이유가 여기에서 비롯된다.
 
@@ -133,9 +149,11 @@ $\blacksquare$
 
 <hr/>
 
-## Multinomial Distribution
+# Multinomial Distribution
 
-지금까지 모두 동전 던지기에서 변주된 Distribution들을 살펴봤다. 그러나 현실의 모든 사건이 앞/뒤 두 결과만 있지 않듯이 \<Outcome\>이 여러 개인 경우의 분포도 생각해볼 수 있다! 우리는 이것을 \<**Multinomial Distribution**\>라고 한다.
+지금까지 모두 동전 던지기에서 변주된 Distribution들을 살펴봤다. 그러나 현실에선 앞/뒤 두 결과만 있지 않듯이 \<Outcome\>이 여러 개인 경우의 분포도 생각해볼 수 있다! 6면의 주사위 던지기가 그런 경우다! 우리는 이것을 \<**Multinomial Distribution**\>라고 한다.
+
+<div class="definition" markdown="1">
 
 <br><span class="statement-title">Definition.</span><br>
 
@@ -146,8 +164,11 @@ The \<**multinomial experiment**\> consists of independent repeated $n$ trials a
 Let $X_i$ be the number of $E_i$'s in $n$ trials, then
 
 $$
-P(X_1=x_1, \cdots, X_k = x_k) = \binom{n}{x_1 \cdots x_k} p_1^{x_1} \cdots p_k^{x_k} \quad \text{where} \quad x_1 + \cdots + x_k = n
+P(X_1=x_1, \cdots, X_k = x_k) 
+= \frac{n!}{x_1! x_2! \cdots x_k!} p_1^{x_1} \cdots p_k^{x_k} \quad \text{where} \quad x_1 + \cdots + x_k = n
 $$
+
+</div>
 
 \<Multinomail distribution\>의 pmf $f(x_1, \dots, x_k)$는 일종의 joint pmf로 해석할 수 있다. 그래서 \<Multinomail distribution\>에 대해 아래의 margnial distribution들을 생각해볼 수 있다.
 
