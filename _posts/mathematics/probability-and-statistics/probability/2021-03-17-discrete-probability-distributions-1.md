@@ -25,7 +25,7 @@ Discrete RV $X$에 대해 각 sample point $x$의 pmf $f(x)$의 값이 모두 �
 
 <div class="definition" markdown="1">
 
-<br><span class="statement-title">Definition.</span><br>
+<span class="statement-title">Definition.</span><br>
 
 Let $X$ takes values $x_1, \dots, x_N$. We say that $X$ has a \<**discrete uniform disctribution**\> if
 
@@ -48,7 +48,7 @@ $$
 
 <div class="definition" markdown="1">
 
-<br><span class="statement-title">Definition.</span><br>
+<span class="statement-title">Definition.</span><br>
 
 (1) A \<**Bernoulli trial**\> is an experiment whose outcomes are only **<u>success</u>** or **<u>failure</u>**.
 
@@ -87,7 +87,7 @@ If $X$ is a **Bernoulli RV**, then
 
 <div class="definition" markdown="1">
 
-<br><span class="statement-title">Definition.</span><br>
+<span class="statement-title">Definition.</span><br>
 
 When a RV $X$ has a pmf
 
@@ -103,7 +103,7 @@ $$
 
 </div>
 
-여기서 의문이 드는 점은 \<Binomial Distribution\>의 pmf $f(x)$가 정말로 pmf인지이다. 이것을 확인하기 위해선 pmf $f(x)$의 합이 1이 됨을 보이면 된다. 이것은 \<**이항 정리 Binomial Theorem**\>을 통해 쉽게 보일 수 있다. 이 분포가 \<**Binomial**\>라는 이름을 가지는 이유가 여기에서 비롯된다.
+확인할 점은 \<Binomial Distribution\>의 pmf $f(x)$가 정말로 pmf인지이다. 이것을 확인하려면 pmf $f(x)$의 합이 1이 됨을 보이면 된다. 이것은 \<**이항 정리 Binomial Theorem**\>을 통해 쉽게 보일 수 있다. 이 분포가 \<**Binomial**\>라는 이름인 이유가 이것 떄문이다.
 
 $$
 \sum_x f(x) = \sum^n_{k=0} \binom{n}{k} p^k (1-p)^{n-k} = \left(p + (1-p)\right)^n
@@ -155,7 +155,7 @@ $\blacksquare$
 
 <div class="definition" markdown="1">
 
-<br><span class="statement-title">Definition.</span><br>
+<span class="statement-title">Definition.</span><br>
 
 The \<**multinomial experiment**\> consists of independent repeated $n$ trials and each trial results in $k$ possible outcomes $E_1, \dots, E_k$.
 
@@ -165,7 +165,7 @@ Let $X_i$ be the number of $E_i$'s in $n$ trials, then
 
 $$
 P(X_1=x_1, \cdots, X_k = x_k) 
-= \frac{n!}{x_1! x_2! \cdots x_k!} p_1^{x_1} \cdots p_k^{x_k} \quad \text{where} \quad x_1 + \cdots + x_k = n
+= \frac{n!}{x_1! x_2! \cdots x_k!} \cdot p_1^{x_1}  p_2^{x_2} \cdots p_k^{x_k} \quad \text{where} \quad x_1 + \cdots + x_k = n
 $$
 
 </div>
