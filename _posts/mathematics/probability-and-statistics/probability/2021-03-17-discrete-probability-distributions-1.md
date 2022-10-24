@@ -66,7 +66,7 @@ $$
 
 </div>
 
-여기서 주의할 점은 \<Bernoulli Trial\>은 **단 한번만** 시행하는 것이다! Trial을 여러번 한다면, 뒤에 나올 \<Binomial Distribution\>이 된다.
+여기서 주의할 점은 \<Bernoulli Trial\>은 **딱 한번만** 시행하는 것이다! Trial을 여러번 한다면, 뒤에 나올 \<Binomial Distribution\>이 된다.
 
 <div class="statement" markdown="1">
 
@@ -83,7 +83,7 @@ If $X$ is a **Bernoulli RV**, then
 
 # Binomial Distribution
 
-\<Bernoulli Trial\>은 동전을 단 한번 던지는 시행이었다. 만약 동전을 $n$번 만큼 여러번 던진다면, 우리는 성공(success)을 몇번 했는지 세어 볼 수 있다. 만약 성공의 횟수를 RV $X$로 둔다면, 우리는 \<**Binomial Distribution**\>라는 새로운 분포를 얻게 된다.
+\<Bernoulli Trial\>은 동전을 딱 한번 던지는 시행이었다. 만약 동전을 $n$번 만큼 여러번 던진다면, 몇번 성공(success) 했는지 세어 볼 수 있다. 만약 성공의 횟수를 RV $X$로 둔다면, 우리는 \<**Binomial Distribution**\>라는 새로운 분포를 얻게 된다.
 
 <div class="definition" markdown="1">
 
