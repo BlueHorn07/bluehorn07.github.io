@@ -20,7 +20,7 @@ tags: ["probability"]
 
 <hr/>
 
-## HyperGeometric Distribution
+# HyperGeometric Distribution
 
 \<HyperGeometric Distribution\>은 앞에서 살펴본 \<Binomial Distribution\>과 상황이 정말 비슷하다. 하지만, **Sampling 방식**에서 \<Binomial Distribution\>은 각 trial이 독립적이고, **with replacement**인 반면에 <span class="half_HL">\<HyperGeometric Distribution\>은 각 trial이 dependent하고 **w/o replacement**로 진행</span>된다!
 
@@ -56,6 +56,8 @@ $$
 \therefore \max \{ 0, n-(N-K) \} \le x \le \min \{ K, n \}
 $$
 
+<div class="statement" markdown="1">
+
 <span class="statement-title">Theorem.</span><br>
 
 Let $X \sim \text{HyperGeo}(N, K, n)$, then
@@ -63,9 +65,13 @@ Let $X \sim \text{HyperGeo}(N, K, n)$, then
 - $\displaystyle E[X] = n \frac{K}{N}$
 - $\displaystyle \text{Var}(X) = n \frac{K}{N}\left( 1 - \frac{K}{N} \right) \cdot \frac{N-n}{N-1}$
 
+</div>
+
 지금 당장 \<HyperGeometric Distribution\>에 대한 평균과 분산에 대한 정리를 증명하지는 않을 것이다. 그러나 위의 식을 좀더 직관적으로 이해해보면, \<Binomial Distribution\>의 경우와 정말 유사함을 발견할 수 있다.
 
-HyperGeo의 $\dfrac{K}{N}$를 Binomial의 $p$로 해석한다면, Binomail의 평균인 $np$와 HpyerGeom의 $n\dfrac{K}{N}$는 그 형태가 꽤 비슷하다. 분산의 경우에도 HyperGeo의 경우 $n \dfrac{K}{N}\left( 1 - \dfrac{K}{N} \right) \cdot \dfrac{N-n}{N-1}$로 Binomial의 경우처럼 $npq$의 형태가 보이지만, 마지막 부분에 $\dfrac{N-n}{N-1}$에 대한 텀이 붙는다.
+HyperGeo의 $\dfrac{K}{N}$를 Binomial의 $p$로 해석한다면, Binomial의 평균인 $np$와 HpyerGeom의 $n\dfrac{K}{N}$는 그 형태가 꽤 비슷하다. 분산의 경우에도 HyperGeo의 경우 $n \dfrac{K}{N}\left( 1 - \dfrac{K}{N} \right) \cdot \dfrac{N-n}{N-1}$로 Binomial의 경우처럼 $npq$의 형태가 보이지만, 마지막 부분에 $\dfrac{N-n}{N-1}$에 대한 텀이 붙는다.
+
+<div class="statement" markdown="1">
 
 <span class="statement-title">Theorem.</span><br>
 
@@ -77,13 +83,17 @@ $$
 h(x; N, K, n) \approx \text{BIN}(x; n, \frac{K}{N})
 $$
 
+</div>
+
 위의 정리와 마찬가지로 증명은 뒤에서 따로 제시하겠다.
 
 <hr/>
 
-### Multivariate HyperGeometric Distribution
+## Multivariate HyperGeometric Distribution
 
-\<Multivariate HyperGeometric Distribution\>은 HyperGeo에서 가능한 outcome이 2개에서 여러개로 늘어난 상황이다. Multivariate HyperGeo의 pmf는 아래와 같이 기술할 수 있다.
+\<Multivariate HyperGeometric Distribution\>은 HyperGeo에서 가능한 outcome이 2개에서 여러 개로 늘어난 상황이다. Multivariate HyperGeo의 pmf는 아래와 같이 기술할 수 있다.
+
+<div class="definition" markdown="1">
 
 <span class="statement-title">Definition.</span> Mutlivariate HyperGeometric Distribution<br>
 
@@ -95,9 +105,11 @@ $$
 
 with $\displaystyle \sum^k_{i=1} x_i = n$ and $\displaystyle \sum^k_{i=1} a_i = N$.
 
+</div>
+
 <hr/>
 
-## Geometric Distribution
+# Geometric Distribution
 
 \<Geometric Distribution\>의 경우는 앞에서 제시된 Distribution들과 조금 상황이 다르다. 
 
@@ -127,6 +139,8 @@ $$
 
 위와 같이 확률 合이 1이 됨을 보이는 과정에서 "Geometric Series"가 등장하기 때문에 "Geometric" Distribution이라는 이름이 붙었다!!
 
+<div class="statement" markdown="1">
+
 <span class="statement-title">Property.</span> Memeryless property 🔥<br>
 
 Geometric Distribution의 경우, 재미있는 성질을 가지고 있다. 바로 \<Memoryless Property\>라는 건데, 수식으로 기술하면 아래와 같다.
@@ -141,7 +155,11 @@ $$
 P(X > k) = q^{k}
 $$
 
+</div>
+
 두번째 식을 잘 사용해보면, 첫번째 식을 쉽게 유도할 수 있다 😊
+
+<div class="statement" markdown="1">
 
 <span class="statement-title">Theorem.</span><br>
 
@@ -149,6 +167,8 @@ Let $X \sim \text{Geo}(p)$, then
 
 - $\displaystyle E[X] = \frac{1}{p}$
 - $\displaystyle \text{Var}(X) = \frac{1-p}{p^2}$
+
+</div>
 
 위의 식에 대한 증명은 간단하다. 지금 유도해보자.
 
@@ -221,7 +241,7 @@ $$
 
 <hr/>
 
-### Negative Binomial Distribution
+## Negative Binomial Distribution
 
 이번에는 Geo와 비슷한 상황이지만, <span class="half_HL">$k$개의 Head가 나올 때까지 동전을 던진다.</span> 이때 Tossing 횟수를 Random Variable $X$라고 하면, 이것은 \<Negative Binomial Distribution\>을 따른다.
 
@@ -267,12 +287,16 @@ $$
 
 즉, 유도 과정에서 Negative Binomial이 등장하기 때문에 지금의 Negative Binomial이라는 이름이 붙었다고 한다.
 
+<div class="statement" markdown="1">
+
 <span class="statement-title">Theorem.</span><br>
 
 If $X \sim \text{Neg BIN}(k, p)$, then
 
 - $\displaystyle E[X] = \frac{1}{p}k$
 - $\displaystyle \text{Var}(X) = \left(\frac{1-p}{p^2}\right) k$
+
+</div>
 
 위의 결과를 잘 살펴보면, Geometric Distribution과 연관성을 찾을 수 있다. Geo에서는 평균이 $E[X] = \dfrac{1}{p}$였는데, NegBIN를 $k$개의 Geo가 모인 것으로 해석한다면, Geo의 평균 $\dfrac{1}{p}$가 $k$개 모인 셈이니 $\dfrac{1}{p}k$가 된다. 마찬가지로 분산에 대해서도 동일한 시각으로 접근해볼 수 있다. 😎
 

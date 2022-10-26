@@ -16,9 +16,9 @@ tags: ["probability"]
 
 <hr/>
 
-## Poisson Distribution
+# Poisson Distribution
 
-\<푸아송 분포 Poisson Distribution\>는 앞에서 살펴본 이항 분포의 특수한 경우이다. $\text{BIN}(n, p)$에서 $n$이 무한대로 커지고, $p$가 아주아주 작아질 때, 분포는 푸아송 분포를 만족하게 된다!
+\<푸아송 분포 Poisson Distribution\>는 [이항 분포]({{"/2021/03/17/discrete-probability-distributions-1.html#binomial-distribution" | relaitve_url}}) $\text{BIN}(n, p)$의 특수한 경우이다. $\text{BIN}(n, p)$에서 $n$이 무한대로 커지고, $p$가 아주아주 작아질 때, 분포는 푸아송 분포를 만족하게 된다!
 
 그렇다면 본래 BIN이던걸 왜 푸아송 분포로 해석하는 걸까? 이 질문에 대한 답은 아래의 유튜브 영상에서 정말 잘 설명하고 있다. 한번 보고 오자.
 
@@ -103,9 +103,9 @@ $n$이 무한히 커지게 되면, 자연스럽게 확률 $p=\dfrac{\lambda}{n}$
 
 <hr/>
 
-## Bernoulli Process & Poisson Process
+# Bernoulli Process & Poisson Process
 
-### Bernoulli Process
+## Bernoulli Process
 
 \<Poission Process\>를 다루기 위해선 먼저 \<Bernoulli Process\>에 대해 알아야 한다.
 
@@ -135,7 +135,7 @@ $$
 
 <hr/>
 
-### Poisson Process
+## Poisson Process
 
 이번에는 <span class="half_HL">BP에서 극한을 취해 time intervel의 간격을 아주아주 줄인, 그래서 결국 continous한 시간축 위에서 시행되는 \<Poisson Process\></span>에 대해 살펴보자. 아래에 기술되는 내용은 아래의 유튜브 영상을 기준으로 작성하였다.
 
@@ -253,9 +253,13 @@ $$
 
 <hr/>
 
+<div class="example" markdown="1">
+
 <span class="statement-title">Example.</span><br>
 
 Let $T$ be the time that the **1st bus arrives**. What is the distribution of $T$? (We know that the average arrival time is $\lambda$)
+
+</div>
 
 주의할 점은 앞에서 살펴본 \<Geometric Distribution\>처럼 1st event case를 구하는 문제이지만, Sample Space가 이산이 아니라 연속인 time axis라는 점이다!!
 

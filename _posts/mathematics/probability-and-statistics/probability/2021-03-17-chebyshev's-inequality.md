@@ -8,7 +8,9 @@ tags: ["probability"]
 
 <hr/>
 
-\<체비쇼프의 부등식 Chebyshev's Inequality\>은 평균 $\mu$로부터 $\lambda$ 거리 이상 멀어진 경우, 즉 tail 상황에 대한 확률의 상한을 제시한다. 즉, "The upper bound of tail probability"인 셈이다. 식은 아래와 같이 정의되어 있다.
+\<체비쇼프의 부등식; Chebyshev's Inequality\>은 평균 $\mu$로부터 $\lambda$ 거리 이상 멀어진 경우, 즉 tail 상황에 대한 확률의 상한을 제시한다. 즉, "The upper bound of tail probability"인 셈이다. 식은 아래와 같이 정의되어 있다.
+
+<div class="statement" markdown="1">
 
 <span class="statement-title">Theorem.</span> Chebyshev's Theroem<br>
 
@@ -18,11 +20,17 @@ $$
 P \left( \left| X - \mu \right| \ge \lambda \right) \le \frac{\text{Var}(X)}{\lambda^2}
 $$
 
+</div>
+
 사실 \<Chebyshev's inequality\>는 평균으로부터 바깥쪽보다는 평균 안쪽에 대한 확률을 구할 때 주로 사용한다.
+
+<div class="example" markdown="1">
 
 <span class="statement-title">Example.</span><br>
 
 Supp. a RV $X$ has $\mu = 8$ and $\sigma^2 = 9$. Show that $P(0 < X < 16) \ge \dfrac{55}{64}$.
+
+</div>
 
 Sol. 
 
@@ -34,7 +42,11 @@ P(0 < X < 16) &= P(-8 < X -\mu <8) \\
 \end{aligned}
 $$
 
-사실 \<Chebyshev's Theorem\>의 증명은 생각보단 간단하다.
+<br/>
+
+\<Chebyshev's Theorem\>의 증명은 생각보단 간단하다.
+
+<div class="proof" markdown="1">
 
 <span class="statement-title">*Proof*.</span><br>
 
@@ -60,3 +72,10 @@ $$
 
 $\blacksquare$
 
+</div>
+
+<hr/>
+
+\<체비쇼프 부등식\>은 이후에 통계(Statistics) 파트에서 \<Weak Law of Large Numbers\>를 증명할 때, 활용한다. 자세한 내용은 아래의 포스트로 고고~
+
+👉 [Sampleing Distribution of Mean: Weak Law of Large Numbers]({{"/2021/04/26/sampling-distribution-of-mean-and-clt.html" | relative_url}})
