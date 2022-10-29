@@ -143,7 +143,7 @@ $$
 
 <span class="statement-title">Property.</span> Memeryless property 🔥<br>
 
-Geometric Distribution의 경우, 재미있는 성질을 가지고 있다. 바로 \<Memoryless Property\>라는 건데, 수식으로 기술하면 아래와 같다.
+\<Geometric Distribution\>은 \<Memoryless Property\>라는 재미있는 성질을 가지고 있다. 수식으로 기술하면 아래와 같다.
 
 $$
 P(X = x+k \mid x > k) = P(X = x)
@@ -159,6 +159,8 @@ $$
 
 두번째 식을 잘 사용해보면, 첫번째 식을 쉽게 유도할 수 있다 😊
 
+<br/>
+
 <div class="statement" markdown="1">
 
 <span class="statement-title">Theorem.</span><br>
@@ -172,10 +174,10 @@ Let $X \sim \text{Geo}(p)$, then
 
 위의 식에 대한 증명은 간단하다. 지금 유도해보자.
 
-<span class="statement-title">*Proof*.</span><br>
-
 <details class="math-statement" markdown="1">
 <summary>펼쳐보기</summary>
+
+<span class="statement-title">*Proof*.</span><br>
 
 1\. $E[X]$
 
@@ -243,13 +245,13 @@ $$
 
 ## Negative Binomial Distribution
 
-이번에는 Geo와 비슷한 상황이지만, <span class="half_HL">$k$개의 Head가 나올 때까지 동전을 던진다.</span> 이때 Tossing 횟수를 Random Variable $X$라고 하면, 이것은 \<Negative Binomial Distribution\>을 따른다.
+이번에는 \<Geometric Distribution\>과 비슷하지만, <span class="half_HL">$k$개의 Head가 나올 때까지 동전을 던진다.</span> 이때 Tossing 횟수를 Random Variable $X$라고 하면, 이것은 \<Negative Binomial Distribution\>을 따른다.
 
 <div class="definition" markdown="1">
 
 <span class="statement-title">Definition.</span> Negative Binomial Distribution<br>
 
-$p$-coin을 독립적으로 tossing 한다고 해보자. 이때 $k$개 Head가 나올 때까지 동전을 던진 횟수를 RV $X$로 잡자. 그러면 이것의 pmf는 아래와 같다.
+$p$-coin을 independently tossing 한다고 해보자. 이때 $k$개 Head가 나올 때까지 동전을 던진 횟수를 RV $X$로 잡자. 그러면 이것의 pmf는 아래와 같다.
 
 $$
 b^{*}(x; k,p) =\binom{x-1}{k-1} p^k q^{x-k} \quad \text{for} \quad x = k, k+1, \dots
@@ -257,13 +259,13 @@ $$
 
 </div>
 
-이것의 유도는 $(x-1)$ 시도까지 $(k-1)$번 만큼의 Head가 나와야 한다고 생각하면, $(x-1)$번의 시도는 \<Binomial Distribution\>을 따르게 된다. 
+이것의 유도는 $(x-1)$ 시도까지 $(k-1)$번 만큼의 Head가 나와야 한다고 생각하면, \<Binomial Distribution\>에서 $(x-1)$ 시도, $(k-1)$만큼 성공한 것과 같다.
 
 $$
 \binom{x-1}{k-1} p^{k-1} q^{x-k}
 $$
 
-마지막에는 반드시 Head가 나와야 하므로 위의 Binomial에 $p$를 곱해주면, Negative Binomial을 얻게 된다!
+마지막에는 반드시 Head가 나와야 하므로 위의 식에 $p$를 곱해주면, \<Negative Binomial Distribution\>을 얻게 된다!
 
 Negative Binomial은 서로 독립인 $n$개의 Geometric RV라고 생각해볼 수도 있다. 그래서 NegBIN $Y$는 Geo $X_i$에 대해
 
@@ -273,7 +275,7 @@ $$
 
 인 셈이다.
 
-그런데 왜 "Negative" Binomial이라는 이름이 붙었을까? 그것은 Geometric Distribution 때와 마찬가지로 확률의 合이 1이 됨을 보이는 과정에서 유래한다.
+그런데 왜 "Negative" Binomial이라는 이름이 붙었을까? 그것은 \<Geometric Distribution\> 때와 마찬가지로 확률의 合이 1이 됨을 보이는 과정에서 유래한다.
 
 $$
 \begin{aligned}
