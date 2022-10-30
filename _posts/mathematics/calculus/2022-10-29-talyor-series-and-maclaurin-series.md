@@ -2,6 +2,7 @@
 title: "Taylor Series & Macluarin Series"
 layout: post
 tags: ["calculus"]
+preview: "실변수 함수 $f(x)$를 다항 함수의 멱급수로 표현하기. $n$차 근사를 무한번 수행한 것과 같다."
 ---
 
 "미적분학” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Calculus]({{"/category/calculus" | relative_url}}) 페이지에서 확인하실 수 있습니다 📐

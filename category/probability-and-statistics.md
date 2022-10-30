@@ -65,6 +65,7 @@ hidden: true
     - Multivariate HyperGeometric Distribution
   - Geometric Distribution
     - Negative Binomial Distribution
+      - [Negative Binomial Theorem]({{"/2022/10/30/negative-binomial-theorem.html" | relative_url}}) 🎈
 - [Poisson Distribution]({{"/2021/03/25/poisson-distribution.html" | relative_url}})
   - Law of Rare Events
   - Bernoulli Process & Poisson Process

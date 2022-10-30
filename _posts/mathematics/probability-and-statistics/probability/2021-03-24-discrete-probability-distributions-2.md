@@ -277,17 +277,67 @@ $$
 
 그런데 왜 "Negative" Binomial이라는 이름이 붙었을까? 그것은 \<Geometric Distribution\> 때와 마찬가지로 확률의 合이 1이 됨을 보이는 과정에서 유래한다.
 
+<div class="proof" markdown="1">
+
+
 $$
 \begin{aligned}
 \sum f(x) &= \sum^{\infty}_{x=k} \binom{x-1}{k-1} p^k q^{x-k} \\
 &= p^k \sum^{\infty}_{x=k} \binom{x-1}{k-1}  q^{x-k} \\
-&= p^k \left( \sum^{\infty}_{y=0} \binom{y+k-1}{k-1} q^y \right) \quad \text{by} \; y = x-k \\
-&= p^k \cdot (1-q)^{-k} \quad \text{by general binomial theorem} \\
-&= p^k \cdot p^{-k} = 1
 \end{aligned}
 $$
 
-즉, 유도 과정에서 Negative Binomial이 등장하기 때문에 지금의 Negative Binomial이라는 이름이 붙었다고 한다.
+여기에서 $y = x - k$로 치환하자. 이때, $y$는 $k$번째 성공을 얻기 위해 걸린 실패 횟수 $Y$이다. 표기의 편의를 위해 지금부터는 멱급수 부분만 표현하겠다.
+
+$$
+\sum^{\infty}_{x=k} \binom{x-1}{k-1} q^{x-k} 
+= \sum^{\infty}_{y=0} \binom{y + k - 1}{k-1} q^{y}
+$$
+
+이때, 조합(combination)의 성질에 의해 아래가 성립한다.
+
+$$
+\binom{y + k - 1}{k-1} = \binom{y + k - 1}{y}
+$$
+
+따라서,
+
+$$
+\sum^{\infty}_{y=0} \binom{x-1}{k-1} q^{x-k} 
+= \sum^{\infty}_{y=0} \binom{k + y - 1}{y} q^{y}
+$$
+
+여기에 [\<Negative Binomial Theorem\>]({{"/2022/10/30/negative-binomial-theorem.html" | relative_url}})을 적용해보자. 
+
+$$
+(1 + x)^{-n} = \sum^{\infty}_{k = 0} \binom{-n}{k} x^k = \sum^{\infty}_{k = 0} \binom{n + k - 1}{k} (-1)^k x^k
+$$
+
+위의 정리에서 $x$에 $-q$를 대입하면,
+
+$$
+\sum^{\infty}_{y=0} \binom{k + y - 1}{y} q^{y}
+= (1 - q)^{-k}
+$$
+
+식을 정리하면,
+
+$$
+\begin{aligned}
+\sum f(x) &= \sum^{\infty}_{x=k} \binom{x-1}{k-1} p^k q^{x-k} \\
+&= p^k \sum^{\infty}_{x=k} \binom{x-1}{k-1}  q^{x-k} \\
+& p^k \sum^{\infty}_{y=0} \binom{k + y - 1}{y} q^{y} \\
+&= p^k \cdot (1 - q)^{-k} \\
+&= p^k \cdot p^{-k} \\
+&= 1
+\end{aligned}
+$$
+
+$\blacksquare$
+
+</div>
+
+즉, 유도 과정에서 Negative Binomial이 등장하기 때문에 지금의 Negative Binomial이라는 이름이 붙었다.
 
 <div class="statement" markdown="1">
 
