@@ -81,7 +81,7 @@ tags: ["probability"]
 
 반대로 "문 $\textsf{Y}$에 염소가 있는 사건"을 $G_{\textsf{Y}}$라고 하자.
 
-우리가 구하고자 하는 것은 사건 $G_{\textsf{Y}}$가 일어난 상태에서, $\textsf{A}$문에 자동차가 있는 사건 $C_{\textsf{A}}$의 조건부 확률, 즉 $P(C_{\textsf{A}} \mid G_{\textsf{Y}})$이다. 사회자의 공개로 염소가 있음을 확인하는 문은 $\textsf{B}$ 아님 $\textsf{C}$ 이므로 논의의 편의를 위해 $G_{\textsf{B}}$가 일어났다고 가정하자.
+우리가 구하고자 하는 것은 사건 $G_{\textsf{Y}}$가 일어난 상태에서, $\textsf{A}$문에 자동차가 있는 사건 $C_{\textsf{A}}$의 조건부 확률, 즉 $P(C_{\textsf{A}} \mid G_{\textsf{Y}})$이다. 사회자의 공개로 염소가 있음을 확인하는 문은 $\textsf{B}$ 아님 $\textsf{C}$ 이다. 논의의 편의를 위해 $G_{\textsf{B}}$가 일어났다고 가정하자.
 
 <br/>
 
@@ -92,8 +92,8 @@ tags: ["probability"]
 - 만약 자동차가 $\textsf{A}$에 있다면
   - 사회자는 $\textsf{B}$, $\textsf{C}$ 중 하나를 골라서 염소를 보여줄 것이다. 
   - 2가지 선택지 중 하나를 무작위로 고르는 확률이므로 
-    - $P(G_{\textsf{B}} \mid C_{\textsf{A}}) = \dfrac{1}{2}$
-    - $P(G_{\textsf{C}} \mid C_{\textsf{A}}) = \dfrac{1}{2}$
+    - $P(G_{\textsf{B}} \mid C_{\textsf{A}}) = 1/2$
+    - $P(G_{\textsf{C}} \mid C_{\textsf{A}}) = 1/2$
 - 만약 자동차가 $\textsf{B}$에 있다면
   - 사회자는 $\textsf{A}$, $\textsf{B}$문을 열 순 없으므로 $\textsf{C}$문을 열 수 밖에 없다. 
   - $P(G_{\textsf{C}} \mid C_{\textsf{B}}) = 1$
