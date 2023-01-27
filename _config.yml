@@ -55,7 +55,6 @@ highlighter: rouge # Jekyll only support 'rouge' syntax highlighter
 paginate : 10
 paginate_path: "/page/:num/"
 
-# build option
-# ref: https://yangeok.github.io/blog/2019/05/21/jekyll-caching.html
-incremental: true
+# (ONLY FOR LOCAL)
+# incremental: true
 # limit_posts: 100
