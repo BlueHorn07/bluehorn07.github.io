@@ -53,7 +53,7 @@ $$
 
 </div>
 
-위의 상황에선 $5$명의 학생의 시험점수라는 $5$개의 Variates가 있지만, 과목 평균 $80$점이라는 Constraint가 하나 있기 때문에 오직 $4$의 DOF만 가능했다. 즉, 제약(Constraint)가 \<Statistic\>의 자유도를 낮추는 것이다!
+위의 상황에선 $5$명의 학생의 시험점수라는 $5$개의 Variates가 있지만, 과목 평균 $80$점이라는 Constraint가 하나 있기 때문에 오직 $4$의 DOF만 가능했다. 즉, **제약(Constraint)이 \<Statistic\>의 자유도를 낮추는 것**이다!
 
 
 # 확률 분포의 자유도
@@ -62,7 +62,7 @@ $$
 
 <br/>
 
-자유도 개념이 들어간 확률 분포를 살펴보자.
+자유도를 인자로 받는 확률 분포를 살펴보자.
 
 - [Chi-square distribution $\chi^2(n)$]({{"/2021/04/06/chi-square-distribution.html" | relative_url}})
 
