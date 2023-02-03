@@ -58,8 +58,9 @@ spec:
 
 - `Retain`
   - 볼륨 사용이 끝나도 데이터가 유지되므로 수동 반환 해야 한다.
-- `Recycle`
+- ~~`Recycle`~~
   - 볼륨 사용이 끝나면, 데이터가 삭제된다.
+  - 더이상 사용되지 않는다!!!
 - `Delete`
   - 볼륨 사용이 끝나면, 관련 스토리지 자산이 삭제된다. (AWS EBS 볼륨이 삭제됨)
 
@@ -137,6 +138,45 @@ Pod는 PVC를 볼륨으로 인식하고 사용한다.
 - `accessMode: ReadWriteMany/ReadOnlyMany`
   - 여러 노드에 있는 Pod들도 해당 PVC를 쓸 수 있다.
 
+<hr/>
+
+# Persistent Volume Life Cycle
+
+PV와 PVC는 4단계의 생명 주기를 갖는다.
+
+1. Provisioning
+2. Binding
+3. Using
+4. Reclaiming
+
+## Provisioning
+
+PV 스토리지 리소스를 확보하는 단계이다. 사용자가 직접 하느냐, PV 프로비저너가 하느냐에 따라 "정적 프로비저닝"과 "동적 프로비저닝"으로 나뉜다.
+
+- 정적 프로비저닝
+  - 클러스터 관리자가 미리 PV 스토리지 리소스를 정의하고 확보하는 방식이다.
+- 동적 프로비저닝
+  - PV 프로비저너가 대신 PV를 프로비저닝 한다.
+  - 클러스터 관리자는 PV 프로비저너만 배포하면 된다!
+  - PVC의 `spec.storageClassName`에 Storage Class 리소스의 이름을 적어주면 된다.
+
+## Binding
+
+PVC에 PV가 할당 되는 것을 말함.
+
+정적 프로비저닝은 K8s가 가능한 PV 리소스 중에서 PVC를 바인딩 해주고,
+동적 프로비저닝은 Storage Class 리소스의 프로비저너가 PV를 동적으로 생성하고 PVC와 바인딩 해준다.
+
+## Using
+
+Pod에 PVC로 볼륨을 할당해, PV가 사용되는 시점을 말한다.
+Pod이 PV를 쓰고 있다면, PV와 PV의 데이터를 삭제할 수 없다.
+
+## Reclaiming
+
+PV 볼륨 사용이 종료된 후의 시점이다.
+
+PV 리소스를 정의할 때, 부여한 `spec.persistentVolumeReclaimPolicy` 속성에 따라 동작한다. `Retain`과 `Delete` 두 옵션만 가능하다.
 
 <hr/>
 
@@ -145,6 +185,15 @@ Pod는 PVC를 볼륨으로 인식하고 사용한다.
 1. PV를 생성하고, 상태 체크.
 2. PVC를 생성하고, 상태 체크.
 3. Pod의 볼륨으로 PVC를 연결한다.
+4. 볼륨 사용이 끝나면, PV의 정책에 따라 볼륨을 보존하거나 삭제.
+
+Storage Class를 사용한 동적 프로비저닝이라면,
+
+1. Storage Class를 생성한다.
+2. PVC를 생성한다.
+   1. Storage Class가 PV를 프로비저닝 해준다.
+3. Pod의 볼륨으로 PVC를 연결한다.
+4. 볼륨 사용이 끝나면, PV의 정책에 따라 볼륨을 보존하거나 삭제.
 
 <hr/>
 
@@ -152,4 +201,5 @@ Pod는 PVC를 볼륨으로 인식하고 사용한다.
 
 - [[kubernetes] 퍼시스턴트 볼륨](https://kubernetes.io/ko/docs/concepts/storage/persistent-volumes/)
 - [[kubernetes] 스토리지로 퍼시스턴트볼륨(PersistentVolume)을 사용하도록 파드 설정하기](https://kubernetes.io/ko/docs/tasks/configure-pod-container/configure-persistent-volume-storage/)
+- [[kubernetes] 스토리지 클래스](https://kubernetes.io/ko/docs/concepts/storage/storage-classes/)
 - [[stackoverflow] Can we connect multiple pods to the same PVC?](https://stackoverflow.com/a/67346964)
