@@ -91,7 +91,9 @@ spec:
 
 PVC는 스토리지 요구사항일 뿐이다. Pod 입장에서 필요로 하는 스펙을 적어주면 된다.
 
-K8s 컨트롤플레인은 PVC에 적힌 요구사항을 만족하는 PV를 찾아서 바인딩 해준다. 만족하는 PV가 없다면, `NOT BOUND` 상태로 남게 된다.
+K8s 컨트롤플레인은 PVC에 적힌 요구사항을 만족하는 PV를 찾아서 바인딩 해준다. 만족하는 PV가 없다면 PVC는 원하는 PV가 생길 때까지 대기하게 된다.
+
+유의할 점은 PV와 PVC가 1:1 관계라는 것이다. 하나의 PVC는 하나의 PV에만 바인딩 되며, 반대로 하나의 PV는 하나의 PVC에만 바인딩 된다.
 
 <br/>
 
@@ -112,11 +114,28 @@ spec:
 
 # Pod에 PVC 연결
 
+```yaml
+...
+spec:
+  volumes:
+    - name: pv-storage
+      persistentVolumeClaim:
+        claimName: my-pvc
+  containers:
+    ...
+```
 
+Pod는 PVC를 볼륨으로 인식하고 사용한다.
+이때, Pod에 할당된 PVC는 Pod과 연결되어 있는 동안 시스템에서 임의로 삭제할 수 없다. 이것을 "Storage Object in Use Protetion"라고 한다. 사용 중인 데이터 스토리지를 삭제하는 것은 치명적인 결과를 초래하기 떄문이다.
 
+이때, Pod과 PVC는 Many-to-Many 관계가 가능하다. 하나의 Pod이 여러 PVC를 쓸 수도 있고, 하나의 PVC가 여러 Pod에 연결될 수도 있다.
 
-Q. 하나의 PV는 하나의 PVC만 연결할 수 있는가?
+그러나 PVC를 여러 Pod에 연결하는 경우는 PVC 옵션을 조심해야 한다. [[stackoverflow]](https://stackoverflow.com/a/67346964)
 
+- `accessMode: ReadWriteOnce`
+  - 같은 노드에 있는 Pod들만 해당 PVC를 쓸 수 있다.
+- `accessMode: ReadWriteMany/ReadOnlyMany`
+  - 여러 노드에 있는 Pod들도 해당 PVC를 쓸 수 있다.
 
 
 <hr/>
@@ -133,3 +152,4 @@ Q. 하나의 PV는 하나의 PVC만 연결할 수 있는가?
 
 - [[kubernetes] 퍼시스턴트 볼륨](https://kubernetes.io/ko/docs/concepts/storage/persistent-volumes/)
 - [[kubernetes] 스토리지로 퍼시스턴트볼륨(PersistentVolume)을 사용하도록 파드 설정하기](https://kubernetes.io/ko/docs/tasks/configure-pod-container/configure-persistent-volume-storage/)
+- [[stackoverflow] Can we connect multiple pods to the same PVC?](https://stackoverflow.com/a/67346964)
