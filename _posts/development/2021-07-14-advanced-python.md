@@ -1,5 +1,5 @@
 ---
-title: "Python Tips & Tricks"
+title: "Advanced Python"
 layout: post
 tags: []
 ---
