@@ -36,6 +36,9 @@ https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s
 
 Network Policy 리소스 등을 기능을 제공하는 Network Plugin은 DaemonSet 리소스로 운영한다. weave net, calico, flannel 등이 CNI Network Plugin이다.
 
+(DaemonSet에 대한 내용은 아니지만) Service 검색 애드온인 "coreDNS"가 동작하려면 이런 네트워크 플러그인이 설치되어 있어야 한다.
+
+
 ## 모니터링 도구
 
 https://www.datadoghq.com/blog/monitoring-kubernetes-with-datadog/
@@ -43,10 +46,10 @@ https://www.datadoghq.com/blog/monitoring-kubernetes-with-datadog/
 Datadog과 같은 인프라 모니터링 도구 역시 DaemonSet 리소스로 운영한다.
 
 
+## kube-proxy
 
+https://github.com/openshift/cluster-network-operator/blob/master/bindata/kube-proxy/kube-proxy.yaml
 
+K8s 클러스터에서 Service 오브젝트가 동작하는 것을 가능케 하는 존재다. kube-proxy는 새로운 Service가 생길 때마다 해당 서비스에 바인딩된 Pod으로 트래픽이 갈 수 있도록 규칙을 만들어 저장한다.
 
-
-
-
-
+즉, Service 리소스가 정상 동작하려면, kube-proxy DaemonSet이 잘 구축되어 있어야 한다. Service 리소스는 실제로 존재해 노드의 자원을 점유하는 존재가 아니라 kube-proxy의 규칙일 뿐이기 때문이다!
