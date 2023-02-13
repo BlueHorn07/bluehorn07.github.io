@@ -48,8 +48,19 @@ Datadog과 같은 인프라 모니터링 도구 역시 DaemonSet 리소스로 �
 
 ## kube-proxy
 
+![K8s Cluster](https://i.stack.imgur.com/5LX2K.jpg)
+
 https://github.com/openshift/cluster-network-operator/blob/master/bindata/kube-proxy/kube-proxy.yaml
 
 K8s 클러스터에서 Service 오브젝트가 동작하는 것을 가능케 하는 존재다. kube-proxy는 새로운 Service가 생길 때마다 해당 서비스에 바인딩된 Pod으로 트래픽이 갈 수 있도록 규칙을 만들어 저장한다.
 
 즉, Service 리소스가 정상 동작하려면, kube-proxy DaemonSet이 잘 구축되어 있어야 한다. Service 리소스는 실제로 존재해 노드의 자원을 점유하는 존재가 아니라 kube-proxy의 규칙일 뿐이기 때문이다!
+
+
+## kubelet은 DaemonSet이 아니다
+
+[[stackoverflow] Is the kubernetes kubelet a DaemonSet?](https://stackoverflow.com/questions/60007041/is-the-kubernetes-kubelet-a-daemonset)
+
+K8s 클러스터에 대한 아키텍처 그림을 보면, 각 노드에 kubelet와 kube-proxy가 존재하는 것을 볼 수 있다. 앞에서 kube-proxy는 DaemonSet으로 동작한다는 것을 봤는데, kubelet도 그럴까? 답은 **"kubelet은 Pod이 아니다"**!
+
+kubelet은 Pod이 아니라 데몬 프로세스(daemon process)다. K8s 클러스터 동작할 수 있게 하는 프로세스로 (1) 노드를 클러스터에 등록하고 (2) controlplane으로 부터 요청 받은 리소스 생성 요청을 수행하는 역할을 한다.
