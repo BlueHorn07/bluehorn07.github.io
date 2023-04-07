@@ -1,12 +1,12 @@
 ---
 title: "Linux IP Commands"
 layout: post
-tags: ["develop"]
+tags: ["develop", "network"]
 ---
 
 <div class="statement" markdown="1">
 
-[Udemy - CKA 강좌](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/)의 Linux Network에 대한 부분을 듣고, 공부한 내용을 정리한 포스트입니다. CKA 시험을 합격하고 되돌아보니 CKA 시험에 이 부분은 너무 지엽적인 부분이었습니다. Linux Network의 `ip` 명령어들의 종류만 훑어 넘어갑시다!
+[Udemy - CKA 강좌](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/)의 Linux Network에 대한 부분을 듣고, 공부한 내용을 정리한 포스트입니다. CKA 시험을 합격하고 되돌아보니 CKA 시험에 이 부분은 너무 지엽적인 부분이었습니다. Linux Network의 `ip` 명령어들의 종류만 훑고 넘어갑시다!
 
 </div>
 
