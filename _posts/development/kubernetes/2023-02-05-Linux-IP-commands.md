@@ -4,12 +4,19 @@ layout: post
 tags: ["develop"]
 ---
 
+<div>
+
+[Udemy - CKA 강좌](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/)의 Linux Network에 대한 부분을 듣고, 공부한 내용을 정리한 포스트입니다. CKA 시험을 합격하고 되돌아보니 CKA 시험에 이 부분은 너무 지엽적인 부분이었습니다. Linux Network의 `ip` 명령어들의 종류만 훑어 넘어갑시다!
+
+</div>
+
+
 | 명령어 | 설명 |
 |--|--|
 | `link` | 네트워크 인터페이스 CRUD |
 | `addr` | 네트워크 IP 주소 CRUD |
-| `route` | |
-| `netns` | |
+| `route` | SKIP |
+| `netns` | SKIP |
 
 <hr/>
 
@@ -77,8 +84,6 @@ $ ip addr
 ```bash
 $ ip addr add 192.168.40.1/32 dev lo
 ```
-
-
 
 
 <hr/>
