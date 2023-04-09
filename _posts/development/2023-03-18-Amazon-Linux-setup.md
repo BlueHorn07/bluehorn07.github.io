@@ -1,7 +1,7 @@
 ---
 title: "AWS Amazon Linux 2 개발 셋업"
 layout: post
-tags: ["AWS"]
+tags: ["develop", "AWS"]
 ---
 
 이 글은 정리를 위해 개인적인 용도로 작성된 포스트입니다. 지적과 조언은 언제나 환영입니다 ㅎㅎ
