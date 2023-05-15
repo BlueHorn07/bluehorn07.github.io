@@ -62,7 +62,7 @@ long long shortestPath(vector<int> &path, vector<bool> &visited, long long curre
 }
 ```
 
-전체탐색으로 가능한 모든 방문 조합을 모두 탐색한다! 코드를 구성하는 과정에서 "조합"의 테크닉을 사용했다. `path`, `visited`를 인자로 넘겨야 한다는 생각을 하는게 어려운 것 같다 😲 이 코드는 buttom-up 재귀 방식으로 TSP를 구현했다.
+전체탐색으로 가능한 모든 방문 조합을 모두 탐색한다! 코드를 구성하는 과정에서 "조합"의 테크닉을 사용했다. `path`, `visited`를 인자로 넘겨야 한다는 생각을 하는게 어려운 것 같다 😲 이 코드는 bottom-up 재귀 방식으로 TSP를 구현했다.
 
 그러나 \<완전 탐색\>은 성능면에서 좋지 않다. 그래서 이 접근으로 [백준 2098번: 외판원 순회](https://www.acmicpc.net/problem/2098)를 풀게 되면 <span style="color: red">**시간 초과**</span>를 받게 된다 😥
 
