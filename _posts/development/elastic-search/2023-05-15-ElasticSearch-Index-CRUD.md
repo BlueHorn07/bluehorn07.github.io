@@ -8,7 +8,7 @@ Index는 ElasticSearch에서 테이블의 역할을 한다. 먼저 Index에 대�
 
 # Index 조회
 
-```http
+```
 GET _cat/indices
 
 # include column headings
@@ -25,7 +25,7 @@ ES 클러스터에 존재하는 모든 Index의 정보를 확인한다. (1) 샤�
 
 <br/>
 
-```http
+```
 GET _cat/indicies/<index-name>
 ```
 
@@ -36,17 +36,19 @@ GET _cat/indicies/<index-name>
 
 Index 생성하기 위해선 Index 명세를 함께 전달해야 한다. Index 명세에는 `settings`, `mappings` 정보가 포함된다.
 
-```http
+```
 PUT <index-name>
 ```
 
-Index 명세 없이도 바로 만들 수도 있다!
+참고로 Create/Update 둘다 `PUT`으로 해야 한다!
+
+Index는 명세 없이도 바로 만들 수도 있다!
 
 ## Index Settings
 
 Index를 처음 만들 때의 정보가 담긴다.
 
-```http
+```json
 PUT <index-name>
 {
   "settings": {
@@ -64,7 +66,7 @@ PUT <index-name>
 
 Index에 저장되는 Document의 구조에 대한 정보가 담긴다.
 
-```http
+```json
 PUT <index-name>
 {
   "mappings": {
@@ -94,7 +96,7 @@ Index에 입력되는 JSON 정보를 도큐먼트로 변환해 저장할 때 이
 
 생성한 Index의 상세 정보를 보는 방법이다.
 
-```http
+```
 GET <index-name>
 ```
 
@@ -121,7 +123,7 @@ GET <index-name>
 
 원한다면 `settings`, `mappings` 정보만 조회할 수도 있다.
 
-```http
+```
 GET <index-name>/_settings
 GET <index-name>/_mappings
 ```
@@ -130,7 +132,7 @@ GET <index-name>/_mappings
 
 변경하고자 하는 Index의 `settings`, `mappings`를 다시 적어주면 된다.
 
-```http
+```json
 PUT <index-name>/_settings
 {
   "index": {
@@ -147,7 +149,7 @@ PUT <index-name>/_settings
 
 삭제는 간단하다!
 
-```http
+```
 DELETE <index-name>
 ```
 
