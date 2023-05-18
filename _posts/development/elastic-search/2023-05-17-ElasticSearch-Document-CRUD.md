@@ -157,13 +157,52 @@ POST <index-name>/_search
 
 # Update
 
+```json
+POST <index-name>/_doc/<id>
+{
+  "id": 11,
+  "name": "foo"
+}
+```
+
+`id`를 지정해서 Document를 생성하는 걸 한번 더 하면, 기존 Document의 값이 갱신된다.
+
+단, 이것은 기존에 있던 Document가 삭제 되는 것은 아니다. 새로운 `Document`를 추가하고, 그것을 해당 `id`의 Document의 새로운 버전(`version`)으로 올리는 것이다. 즉, Overwrite가 아니라 Replace인 셈이다.
+
+그러나 이 방식은 Document 자체를 새로 만드는 것이다. 필드 하나의 값만 변경하고 싶다면, 어떻게 해야 할까?
+
+```json
+POST <index-name>/_doc/<id>/_update
+{
+  "doc": {
+    "id": 11,
+    "name": "foo"
+  }
+}
+```
+
+이렇게 하면, 기존 Document에 해당 필드가 있다면, 필드 값을 갱신하고, 없던 필드는 추가된다. 물론 이 경우에도 문서의 `version`은 올라간다.
+
 # Delete
+
+삭제는 간단하다.
+
+```json
+DELETE <index-name>/_doc/<id>
+```
 
 # Bulk API
 
-```
+여러 명령을 배치(batch)로 수행하는 방법이다. 각 명령을 따로 수행하는 것보다 훨씬 빠르고, 오버헤드가 적다. 대용량의 indexing, update, delete 작업이 필요할 때는 Bulk API를 사용하자.
+
+```json
 POST _bulk
-{}
-{}
+{"index": {"_index": "bluehorn-test", "_id": "1"}}
+{"title": "bulk test", "name": "haha"}
+
+{"update": {"_index": "bluehorn-test", "_id": "2"}}
+{"doc": {"title": "bulk test", "name": "haha"}}
+
+{"delete": {"_index": "bluehorn-test", "_id": "3"}}
 ```
 
