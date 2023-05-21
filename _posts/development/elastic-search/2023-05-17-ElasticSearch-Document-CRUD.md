@@ -206,3 +206,12 @@ POST _bulk
 {"delete": {"_index": "bluehorn-test", "_id": "3"}}
 ```
 
+만약 Bulk 작업하는 Index가 고정이라면 아래와 같이 쓸 수 있다.
+
+```json
+POST <index-name>/_doc/_bulk
+{"index": {}}
+{...}
+{"index": {}}
+{...}
+```
