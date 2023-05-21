@@ -4,7 +4,7 @@ layout: post
 tags: ["elastic-search"]
 ---
 
-ElasticSearch에서 샤드(Shard)를 구성하는 Lucene(Lucene) Index와 역색인(Inverted Index) 구조와 문서 검색 기능의 구현체인 Lucene Segment에 대해 살펴보자. Lucene Segment를 이해했다면, ElasticSearch 동작의 핵심을 이해한 것이다!
+ElasticSearch에서 샤드(Shard)를 구성하는 루씬(Lucene) Index와 역색인(Inverted Index) 구조와 문서 검색 기능의 구현체인 Lucene Segment에 대해 살펴보자. Lucene Segment를 이해했다면, ElasticSearch 동작의 핵심을 이해한 것이다!
 
 
 # ElasticSearch Index의 구조
@@ -21,13 +21,12 @@ ElasticSearch Inex는 여러 샤드(Shard)로 나눠진다. 샤드는 데이터�
 
 # Lucene Index와 Seegment
 
-Lucene은 이상적인 준-실시간(Near-realtime) 검색 기능을 제공하기 위해 Lucene Index와 Lucene Segment를 통해 데이터를 검색/생성/석제/변경한다. 각각의 로직을 살펴보자.
+Lucene은 이상적인 준-실시간(Near-realtime) 검색 기능을 제공하기 위해 Lucene Index와 Lucene Segment 자료구조를 사용한다. Luncene Index와 Segment에서의 데이터를 검색/생성/석제/변경 로직을 살펴보자.
 
 ```python
 class LuSegment:
   self.documents = [Document(1), Docuemtn(2), ...]
   self.inverted_index = InvertedIndex()
-
 
 class LuIndex:
   self.segments = [Segment(1), Segment(2), ...]
@@ -121,7 +120,7 @@ Lucene Index의 Segment 둘을 골라 새로운 Segment를 생성한다.
 
 # 문서 삭제
 
-Lucene Index에서 Document와 Lucene Segment는 불변성(immutability)를 가진다. 이것은 문서에 대한 삭제 요청이 발생해도 해당 Document를 실제로 물리적 공간에서 삭제하지는 않는다는 말이다! 다만, 유저(Client)는 문서가 삭제되었다는 응답은 정상적으로 받는다.
+Lucene Index에서 Document와 Lucene Segment는 불변성(immutability)를 가진다. 이것은 문서에 대한 삭제 요청이 발생해도 해당 Document를 실제로 물리적 공간에서 삭제하지는 않는다는 말이다! 다만, 유저(Client) 입장에선 문서가 삭제되었다는 응답은 정상적으로 받는다.
 
 대신 삭제 요청 온 문서의 `id`를 검색해서 해당 `id`를 가진 문서들에 `"삭제됨"`라는 표시만 해둔다. 그럼 물리적 삭제는 언제 일어나는가? 물리적 삭제는 Segment가 "머지"될 때, Segment의 문서 중에 `"삭제됨"` 표시가 있는 문서를 삭제하는 것이다.
 
@@ -138,7 +137,7 @@ class LuSegment:
   def __init__(self, seg1: Segment, seg2: Segment):
     self.documents = []
     for document in (seg1.documenets + seg2.documents):
-      if not document.is_delete:
+      if document.is_delete:
         continue
       self.documents.append(document)
 
