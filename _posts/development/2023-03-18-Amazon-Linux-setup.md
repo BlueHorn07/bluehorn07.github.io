@@ -6,12 +6,12 @@ tags: ["develop", "AWS"]
 
 이 글은 정리를 위해 개인적인 용도로 작성된 포스트입니다. 지적과 조언은 언제나 환영입니다 ㅎㅎ
 
-EC2 비용을 줄이기 위해 `t4g` 시리즈의 인스턴스를 사용했더니 Graviton이 `ARM` 아키텍처란 걸 뒤늦게 깨달았습니다 😭 
+EC2 비용을 줄이기 위해 `t4g` 시리즈의 인스턴스를 사용했더니 "Graviton"이 `ARM` 아키텍처란 걸 뒤늦게 깨달았습니다 😭 
 `x86` 기반에서 기존에 쓰던 설치 명령어로는 설치가 잘 안 되는 문제도 있었습니다. 그래서 AWS Graviton으로 인스턴스를 구성하면서 겪은 트러블 슈팅을 기록하고자 합니다.
 
 # amazon-linux-extras
 
-Amazon Linux 2에서는 `amazon-linux-extras` 명령어를 통해 서버를 운영하는데 필요한 도구들을 쉽게 설치할 수 있습니다! Amazon Linux가 처음이라면 요 명령어부터 익혀야 합니다!
+Amazon Linux 2에서는 `amazon-linux-extras` 명령어를 통해 서버를 운영하는데 필요한 도구들을 쉽게 설치할 수 있습니다! Amazon Linux가 처음이라면 요 명령어부터 익혀야 합니다! (2023.05 업데이트: "Amazon Linux 2023"에는 `amazon-linux-extras` 명령어가 빠졌다고 합니다 [stackoverflow](https://superuser.com/questions/1777045/amazon-linux-extras-command-not-found) 🥲 그래서 Amazon Linux 2023에서는 직접 `yum`으로 Docker를 설치해줘야 합니다!)
 
 ```bash
 $ sudo amazon-linux-extras list
