@@ -1,7 +1,8 @@
 ---
 title: "Modern Algebra I - PS1"
-layout: post
-tags: ["Modern Algebra1", "Problem Solving"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1", "Problem Solving"]
 ---
 
 
@@ -35,7 +36,7 @@ For $p = ab$, $p \mid ab$, and this mean $p \mid a$ or $p \mid b$.
 
 Let assume $p \mid a$, then $a = pr$ for some $r \in R$.
 
-Then 
+Then
 
 $$
 \begin{aligned}
@@ -128,7 +129,7 @@ However, there's no element in $\mathbb{Z}[\sqrt{-5}]$ with norm 3. Therefore $\
 
 <br>
 
-If PID, irreducible is equivalent to prime, but in $\mathbb{Z}[\sqrt{-5}]$, there exist counter-example of that statement. 
+If PID, irreducible is equivalent to prime, but in $\mathbb{Z}[\sqrt{-5}]$, there exist counter-example of that statement.
 
 Therefore, $\mathbb{Z}[-5]$ is not a PID.
 

@@ -1,7 +1,8 @@
 ---
 title: "Quotient Field"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -124,7 +125,7 @@ We will show $D \cong \\{[(d, 1)] \mid d \in D \\}$
 
 즉, $D$와 우항 사이에 Isomorphism $\phi$가 있음을 보일 것이다.
 
-Define $\phi$ as 
+Define $\phi$ as
 
 $$
 \begin{aligned}
@@ -137,7 +138,7 @@ $$
 
 <span class="statement-title">proof.</span>.<br>
 <div class="math-statement" markdown="1">
-  Check 
+  Check
 
   1. $\phi$ is additive homormophism
   2. $\phi$ is multiplicative homormophism
@@ -236,7 +237,7 @@ $$
 
 $\ker \psi = \\{ e \\}$인지 확인하자.
 
-Supp. $\psi \left( \frac{a}{b} \right) = 0_L$, then 
+Supp. $\psi \left( \frac{a}{b} \right) = 0_L$, then
 
 $$
 \begin{aligned}

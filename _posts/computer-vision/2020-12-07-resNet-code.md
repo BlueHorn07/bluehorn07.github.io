@@ -1,7 +1,8 @@
 ---
 title: "ResNet (code)"
-layout: post
-tags: [AIGS539]
+toc: true
+toc_sticky: true
+categories: ["Computer Vision"]
 ---
 
 
@@ -24,7 +25,7 @@ tags: [AIGS539]
 
 ``` python
 class ResNet(nn.Module):
-  ...  
+  ...
   self.layers1 = self._make_layer(n, 16, 16, 1)
   ...
 
@@ -72,7 +73,7 @@ def _make_layer(self, layer_count, channels, channels_in, stride):
 ``` python
 import torch.nn as nn
 net = nn
-layers = [nn.Linear(2, 2), nn.Linear(2, 2)]                                                  
+layers = [nn.Linear(2, 2), nn.Linear(2, 2)]
 net = nn.Sequential(*layers)
 print(net)
 ```
@@ -117,7 +118,7 @@ class ResNet(nn.Module):
     return out
 ```
 
-`ResNet`의 총 conv layer 수를 따지면, 
+`ResNet`의 총 conv layer 수를 따지면,
 
 1 + (10 + 10 + 10) + 1 = 32
 

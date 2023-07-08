@@ -1,7 +1,8 @@
 ---
 title: "Pod Internal Networking"
-layout: post
-tags: ["develop", "kubernetes"]
+toc: true
+toc_sticky: true
+categories: ["Develop", "Kubernetes"]
 ---
 
 K8s의 Pod에서 함께 돌아가는 container들을 서로 네트워크를 공유한다!

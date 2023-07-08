@@ -1,7 +1,8 @@
 ---
 title: "Formulas for residue"
-layout: post
-tags: ["Complex Variable"]
+toc: true
+toc_sticky: true
+categories: ["Complex Variable"]
 ---
 
 
@@ -9,7 +10,7 @@ tags: ["Complex Variable"]
 
 <hr>
 
-이전까지는 **residue**를 구하기 위해 함수 $f(z)$의 로랑 급수를 구해 $b_1$을 구하는 방법을 사용했다. 
+이전까지는 **residue**를 구하기 위해 함수 $f(z)$의 로랑 급수를 구해 $b_1$을 구하는 방법을 사용했다.
 
 그런데 만약 $f(z)$가 nice한 조건을 가지고 있음이 확인된다면, 로랑 급수를 구하지 않고도 손쉽게 **residue**를 구할 수 있다!!
 
@@ -24,7 +25,7 @@ $$
 <br>
 
 **<u>review.</u>**<br>
-Let $p(z)$ and $q(z)$ be **<u>analytic</u>** functions. Supp. that $q(z)$ has a **<u>zero</u>** of $m$-th order at $z=z_0$ and $p(z_0) \ne 0$. 
+Let $p(z)$ and $q(z)$ be **<u>analytic</u>** functions. Supp. that $q(z)$ has a **<u>zero</u>** of $m$-th order at $z=z_0$ and $p(z_0) \ne 0$.
 
 THEN
 
@@ -40,7 +41,7 @@ has a **<u>pole</u>** at $z=z_0$ of order $m$
 
 #### simple poles at $z_0$
 
-Consider 
+Consider
 
 $$
 f(z) = \frac{p(z)}{q(z)}
@@ -129,7 +130,7 @@ Find residues of $f(z)$.
 **<u>Sol.</u>**<br>
 $q(z) = z^3+z = z(z^2+1)$
 
-따라서 $f(z)$의 pole은 
+따라서 $f(z)$의 pole은
 
 $$
 z=0, \; +i, \; -i

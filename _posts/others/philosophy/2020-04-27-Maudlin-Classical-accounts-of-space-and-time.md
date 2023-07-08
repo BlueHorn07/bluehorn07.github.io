@@ -1,7 +1,8 @@
 ---
 title: "Maudlin, Classical Accounts Of Space And Time"
-layout: post
-tags: [Philosophy]
+toc: true
+toc_sticky: true
+categories: [Philosophy]
 ---
 
 
@@ -14,7 +15,7 @@ Ch.01: Classical Accounts of Space and Time, from Philosophy of Physics: Space a
 
 처음 부분에는 고대의 철학이 물리학을 어떻게 정의했는지에 대한 내용이 나온다. 굳이 정리하지 않아도 중학교 때부터 배운 내용이라 생략 or 간략화하겠다.<br>
 
-### 아리스토텔레스<small>*Aristotle*</small>의 물리학 
+### 아리스토텔레스<small>*Aristotle*</small>의 물리학
 *Aristotle defined the nature of an object as an internal source of motion and rest that belongs to an object primarily and properly and nonaccidentally.*<br>
 
 *Thus, for Aristotle, the nature of an object is revealed by how the object moves, and stops moving.*<br>

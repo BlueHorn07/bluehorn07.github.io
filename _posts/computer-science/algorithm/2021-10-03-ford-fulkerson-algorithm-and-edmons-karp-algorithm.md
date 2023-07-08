@@ -1,7 +1,8 @@
 ---
 title: "Ford-Fulkerson Algorithm & Edmons-Karp Algorithm"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -50,7 +51,7 @@ f(c, b) -= flow
 
 <br/>
 
-이제 코드로 살펴보자. 
+이제 코드로 살펴보자.
 
 ✨ Tip: 이 문제의 경우 그래프를 Adjacancy List 보다는 Adjacancy Matrix로 표현하는게 알고리즘을 짜기 훨씬 편해진다! 😉
 

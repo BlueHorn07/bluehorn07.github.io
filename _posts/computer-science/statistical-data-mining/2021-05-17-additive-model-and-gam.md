@@ -1,7 +1,8 @@
 ---
 title: "Additive Model & GAM"
-layout: post
-tags: [applied_statistics]
+toc: true
+toc_sticky: true
+categories: ["Applied Statsitcs"]
 ---
 
 
@@ -21,7 +22,7 @@ tags: [applied_statistics]
 
 <span class="statement-title">Definition.</span> Additive Model<br>
 
-The regression model 
+The regression model
 
 $$
 E (Y \mid X_1, \dots, X_p) = \alpha + f_1(X_1) + \cdots + f_p(X_p)
@@ -101,7 +102,7 @@ Relationships btw the individual predictors and the dependent variable follow <u
 
 <br/>
 
-'multithreaded'에 게시된 [포스트](https://multithreaded.stitchfix.com/blog/2015/07/30/gam/)에서는 GAM의 장점으로 
+'multithreaded'에 게시된 [포스트](https://multithreaded.stitchfix.com/blog/2015/07/30/gam/)에서는 GAM의 장점으로
 
 (1) Interpretability<br/>
 (2) Flexibility & Automation<br/>

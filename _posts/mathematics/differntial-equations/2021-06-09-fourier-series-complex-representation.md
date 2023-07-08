@@ -1,7 +1,8 @@
 ---
 title: "Fourier Series (Complex Representation)"
-layout: post
-tags: ["Differntial Equation"]
+toc: true
+toc_sticky: true
+categories: ["Differential Equations"]
 ---
 
 
@@ -60,7 +61,7 @@ $$
 <div class="math-statement" markdown="1">
 
 $$
-\begin{aligned}  
+\begin{aligned}
 &\frac{a_0}{2} + \sum_{m=1}^{\infty} \left( a_m \cos m \omega x + b_m \sin m \omega x \right) \\
 &= \frac{a_0}{2} + \sum_{m=1}^{\infty} \left( a_m \cdot \frac{1}{2} (e^{im\omega x} + e^{-im\omega x}) + b_m \cdot \frac{1}{2i} (e^{im\omega x} - e^{-im\omega x}) \right)
 \end{aligned}
@@ -96,7 +97,7 @@ $$
 
 $$
 \begin{aligned}
-a_n 
+a_n
 &= \frac{1}{L} \int_{-L}^L f(x) \cos m \omega x \; dx \\
 &= \frac{1}{L} \int_{-L}^L f(x) \frac{1}{2} (e^{im\omega x} + e^{-im\omega x}) \; dx \\
 &= \frac{1}{2L} \int_{-L}^L f(x) e^{im\omega x} \; dx + \frac{1}{2L} \int_{-L}^L f(x) e^{-im\omega x} \; dx
@@ -133,7 +134,7 @@ $$
 
 $$
 \begin{aligned}
-\frac{1}{2} \left( a_n - ib_n \right) 
+\frac{1}{2} \left( a_n - ib_n \right)
 &= \frac{1}{2} \cdot 2 \cdot \frac{1}{2L} \int_{-L}^L f(x) e^{-in\omega x} \; dx \\
 &= \frac{1}{2L} \int_{-L}^L f(x) e^{-in\omega x} \; dx
 \end{aligned}
@@ -143,7 +144,7 @@ $$
 
 $$
 \begin{aligned}
-\frac{1}{2} \left( a_n + ib_n \right) 
+\frac{1}{2} \left( a_n + ib_n \right)
 &= \frac{1}{2} \cdot 2 \cdot \frac{1}{2L} \int_{-L}^L f(x) e^{in\omega x} \; dx \\
 &= \frac{1}{2L} \int_{-L}^L f(x) e^{in\omega x} \; dx
 \end{aligned}
@@ -186,8 +187,8 @@ $$
 식에서 $A_n$에 대한 부분합은 $0$부터 $\infty$까지, $B_n$에 대한 부분합은 $1$부터 $\infty$까지 수행한다. 이때, $B_n$에 대한 부분을 $1$부터가 아니라 $-1$부터 $-\infty$까지 수행하도록 식을 바꿀 수 있다!
 
 $$
-\begin{aligned}  
-\sum_{m=1}^{\infty} B_m \cdot e^{-im\omega x} 
+\begin{aligned}
+\sum_{m=1}^{\infty} B_m \cdot e^{-im\omega x}
 &= \sum_{m=-1}^{-\infty} B_{-m} \cdot e^{-i(-m)\omega x} \\
 &= \sum_{m=-1}^{-\infty} B_{-m} \cdot e^{im\omega x}
 \end{aligned}
@@ -197,7 +198,7 @@ $$
 
 $$
 \begin{aligned}
-B_n 
+B_n
 &= \frac{1}{2L} \int_{-L}^L f(x) e^{in\omega x} \; dx \\
 B_{-n}
 &= \frac{1}{2L} \int_{-L}^L f(x) e^{i(-n)\omega x} \; dx \\
@@ -244,7 +245,7 @@ $$
 \begin{aligned}
 f(x) &= \sum_{-\infty}^{\infty} C_m \cdot e^{im\omega x} \\
 &\text{where} \\
-C_n &= \frac{1}{2L} \int_{-L}^L f(x) e^{-in\omega x} \; dx 
+C_n &= \frac{1}{2L} \int_{-L}^L f(x) e^{-in\omega x} \; dx
 \end{aligned}
 $$
 

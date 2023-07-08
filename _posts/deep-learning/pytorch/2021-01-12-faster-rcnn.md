@@ -1,11 +1,12 @@
 ---
 title: "Faster R-CNN"
-layout: post
-tags: ["pytorch"]
+toc: true
+toc_sticky: true
+categories: ["PyTorch"]
 ---
 
 
-이 포스트는 제가 개인적인 용도로 정리하는 용도의 글 입니다. 
+이 포스트는 제가 개인적인 용도로 정리하는 용도의 글 입니다.
 
 <hr>
 
@@ -53,7 +54,7 @@ Fast R-CNN Network는 "location"과 "classification"을 수행한다.
 
 우리는 50 x 50의 feature map의 각 픽셀을 중심으로 삼는 anchor box들을 생성하게 된다.
 
-이때, 크기와 종횡비가 각각 3개 있으므로 각 픽셀에 9개 모양의 anchor box가 생성된다. 
+이때, 크기와 종횡비가 각각 3개 있으므로 각 픽셀에 9개 모양의 anchor box가 생성된다.
 
 그리고 anchor box는 `[y1, x1, y2, x2]`의 값을 가지므로
 
@@ -167,7 +168,7 @@ and later convert to y1, x1, y2, x2 format
 
 그래서 Proposal은 anchor와 함께 움직이는 존재라는 거지!
 
-여기서 `predicted_loc`이 곧 Proposal이 되는 거지! 
+여기서 `predicted_loc`이 곧 Proposal이 되는 거지!
 
 `loc_layer`는 Anchor 박스 내부에 존재할 Proposal을 만든다.
 
@@ -178,7 +179,7 @@ and later convert to y1, x1, y2, x2 format
 <div class="math-statement" markdown="1">
 
 - while order_array.size > 0:
-  - take "the first element" in order_array and append that to keep  
+  - take "the first element" in order_array and append that to keep
   - Find the area with all other boxes
   - Find the index of all the boxes which have high overlap with "this box"
   - Remove them from order array
@@ -209,9 +210,9 @@ and later convert to y1, x1, y2, x2 format
 
 Note that "the dimension of the RoI pooling output" doesn’t actually depend on the size of the input feature map nor on the size of the region proposals. It’s determined solely by the number of sections we divide the proposal into.
 
-What’s the benefit of RoI pooling? One of them is **processing speed**. If there are multiple object proposals on the frame, we can still use the "same-size input feature map" for all of them. 
+What’s the benefit of RoI pooling? One of them is **processing speed**. If there are multiple object proposals on the frame, we can still use the "same-size input feature map" for all of them.
 
-From the previous sections we got `gt_roi_locs`, `gt_roi_labels` and `sample_rois`. We will use the `sample_rois` as the input to the RoI pooling layer. 
+From the previous sections we got `gt_roi_locs`, `gt_roi_labels` and `sample_rois`. We will use the `sample_rois` as the input to the RoI pooling layer.
 
 </div>
 

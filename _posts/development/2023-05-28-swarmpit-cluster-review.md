@@ -1,7 +1,9 @@
 ---
 title: "Swarmpit 클러스터 구축기"
-layout: post
-tags: ["develop", "docker"]
+toc: true
+toc_sticky: true
+categories: ["Develop"]
+tags: ["Docker"]
 ---
 
 Docker에서 제공하는 컨테이너 오케스트레이션 기능인 Docker Swarm, 그리고 Swarm Cluster를 관리하는 Web UI인 Swarmpit을 사용해보고 실험해본 걸 정리해보았다.
@@ -40,7 +42,7 @@ To add a manager to this swarm, run 'docker swarm join-token manager' and follow
 ```
 
 Docker Swarm 클러스터에 워커를 등록하기 위해선 이 토큰 정보가 필요하니 따로 메모해두자!
- 
+
 이제 [Swarmpit 홈페이지](https://swarmpit.io/)에서 Swarmpit 실행 명령어를 확인하고, 입력한다.
 
 ```bash
@@ -59,7 +61,7 @@ docker run -it --rm \
   <img src="{{ "/images/development/swarmpit-resource.png" | relative_url }}" width="100%">
 </div>
 
-요게 Swarmpit 만을 실행 했을 떄의 리소스 정보다! 요걸로 대략적인 스펙을 확인할 수 있는데, 
+요게 Swarmpit 만을 실행 했을 떄의 리소스 정보다! 요걸로 대략적인 스펙을 확인할 수 있는데,
 
 - CPU: 0.75
 - Mem: 530 Mb
@@ -74,10 +76,10 @@ ARM 기반의 AWS Gravition에서는 Swarmpit을 띄우려고 해도 뜨질 않�
 ```text
 [ec2-user@ip-xxxx]$ docker service ls
 ID             NAME                MODE         REPLICAS   IMAGE                      PORTS
-296nchia0reb   swarmpit_agent      global       1/1        swarmpit/agent:latest      
+296nchia0reb   swarmpit_agent      global       1/1        swarmpit/agent:latest
 aa124s3a8dvn   swarmpit_app        replicated   0/1        swarmpit/swarmpit:latest   *:888->8080/tcp
-ps4wx21usdrh   swarmpit_db         replicated   0/1        treehouses/couchdb:2.3.0   
-byy7k2bfjun7   swarmpit_influxdb   replicated   1/1        influxdb:1.7    
+ps4wx21usdrh   swarmpit_db         replicated   0/1        treehouses/couchdb:2.3.0
+byy7k2bfjun7   swarmpit_influxdb   replicated   1/1        influxdb:1.7
 ```
 
 확인 해보면 `couchdb:2.3.0`이 뜨질 않는데, 요게 ARM이랑 안 맞는 것 같다...

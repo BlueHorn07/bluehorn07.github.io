@@ -1,7 +1,8 @@
 ---
 title: "Model-based Clustering"
-layout: post
-tags: [applied_statistics]
+toc: true
+toc_sticky: true
+categories: ["Applied Statsitcs"]
 ---
 
 
@@ -33,7 +34,7 @@ tags: [applied_statistics]
 
 <br/>
 
-Let $P = \\{ f_{\phi}(\cdot) : \phi \in \mathcal{P} \\}$ be a parameteric model. 이때, $f_{\phi}(x)$는 어떤 pdf로 예를 들면, 이런 형태다: 
+Let $P = \\{ f_{\phi}(\cdot) : \phi \in \mathcal{P} \\}$ be a parameteric model. 이때, $f_{\phi}(x)$는 어떤 pdf로 예를 들면, 이런 형태다:
 
 $$
 f_{\phi}(x) = N(x \mid \mu, \sigma^2)
@@ -120,9 +121,9 @@ Let $\ell(\theta; X, Z) = \log p_{\theta}(Y)$ be the "**complete log-likelihood*
 
 <br/>
 
-2\. 만약 $\theta$의 값을 알고 있었다면, 
+2\. 만약 $\theta$의 값을 알고 있었다면,
 
-우리는 이걸로 확률분포를 완전히 특정할 수 있기 때문에, 관측되지 않은 $Z$의 분포도 알 수 있다. 
+우리는 이걸로 확률분포를 완전히 특정할 수 있기 때문에, 관측되지 않은 $Z$의 분포도 알 수 있다.
 
 그러나 parameter $\theta$는 unknown이기 때문에 $Z$의 분포 역시 알 수 없다.
 

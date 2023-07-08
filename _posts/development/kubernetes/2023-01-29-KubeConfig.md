@@ -1,7 +1,8 @@
 ---
 title: "KubeConfig"
-layout: post
-tags: ["develop", "kubernetes"]
+toc: true
+toc_sticky: true
+categories: ["Develop", "Kubernetes"]
 ---
 
 여러 Kubernetes 클러스터에 접속하기 위해 접속할 클러스터 정보를 KubeConfig에서 관리한다. Cluster와 User를 정의하고, 둘의 조합인 **Context**를 만든다.

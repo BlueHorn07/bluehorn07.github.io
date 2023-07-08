@@ -1,7 +1,8 @@
 ---
 title: "Probability of an Event"
-layout: post
-tags: ["probability"]
+toc: true
+toc_sticky: true
+categories: ["Probability"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -49,7 +50,7 @@ $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
 
 Exercise
 
-// 본인은 "probability"를 계산할 때, 그 event에 속한 sample point의 "probability"를 합한다고 생각함. 그런데 만약 $P(A) + P(B)$만 하게 되면, $A \cap B$에 속하는 sample point의 확률을 중복해서 더하는 꼴이 되기 때문에 이것을 제외해줘야 한다고 생각함.
+// 본인은 "Probability"를 계산할 때, 그 event에 속한 sample point의 "Probability"를 합한다고 생각함. 그런데 만약 $P(A) + P(B)$만 하게 되면, $A \cap B$에 속하는 sample point의 확률을 중복해서 더하는 꼴이 되기 때문에 이것을 제외해줘야 한다고 생각함.
 
 <br><span class="statement-title">Topic.</span> Matching Problem<br>
 
@@ -103,7 +104,7 @@ $$
 
 Codntional Probability와 함께 Product Rule의 의미를 곱씹어 보자.
 
-$P(A \cap B)$가 $P(A)$와 $P(B \mid A)$의 곱으로 표현된다고 한다. 즉, "$A$가 발생할 확률" $P(A)$에 "$A$가 발생했을 때, $B$가 발생할 확률 $P(B \mid A)$"를 곱해주는 거다. 
+$P(A \cap B)$가 $P(A)$와 $P(B \mid A)$의 곱으로 표현된다고 한다. 즉, "$A$가 발생할 확률" $P(A)$에 "$A$가 발생했을 때, $B$가 발생할 확률 $P(B \mid A)$"를 곱해주는 거다.
 
 다시 말하면, 두 사건 $A$, $B$에 대해, 그 둘이 동시에 발생하는 사건 $A \cap B$를 $A$ 발생 후 $B$가 발생한 사건으로 해석하는 셈이다. 이때, $A$가 발생했다면, 그 정보를 사건 $B$ 발생에 반영해야 하기 때문에 $P(B \mid A)$라는 conditional probability를 도입한 것이다.
 

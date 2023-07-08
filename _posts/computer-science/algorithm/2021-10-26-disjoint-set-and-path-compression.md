@@ -1,7 +1,8 @@
 ---
 title: "Disjoint Set & Path Compression"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -229,13 +230,13 @@ $$
 
 같은 interval에 속하는 $\text{rank}$는 모두 같은 $\log^{\*}$ 값을 가진다. 그럼 $n$개 노드를 가진 tree에서 같은 interval에 속하게 되는 노드의 갯수는 총 몇 개나 될까?
 
-\<disjoint set\>의 자료형의 성질 중 마지막 4번재 성질에서 $\text{rank}$가 $k$인 노드가 최대 $n/2^{k}$개 만큼 존재한다는 것을 안다. 그래서 한 interval 안에 속하는 노드의 총 갯수는 
+\<disjoint set\>의 자료형의 성질 중 마지막 4번재 성질에서 $\text{rank}$가 $k$인 노드가 최대 $n/2^{k}$개 만큼 존재한다는 것을 안다. 그래서 한 interval 안에 속하는 노드의 총 갯수는
 
 $$
 \frac{n}{2^{k+1}} + \frac{n}{2^{k+2}} + \cdots
 $$
 
-만큼 존재할 것이다. 그리고 이것은 
+만큼 존재할 것이다. 그리고 이것은
 
 $$
 \begin{aligned}
@@ -250,7 +251,7 @@ $$
 
 그럼 어떤 노드 $u$에서 $\text{find}$를 시작해서 다른 interval에 속하게 될 때까지 총 몇 번의 $\text{find}$ 함수 호출이 필요할까? $\text{find}$ 호출 1회당 하나씩 $\text{rank}$가 하나씩 줄어간다고 생각하면 $\le 2^{k}$번의 $\text{find}$ 호출로 다른 interval에 속하는 노드를 만나게 된다.
 
-그래서 interval $I_k$에 속하는 모든 노드들에 대해 이것들을 다른 interval에 속하게 하려면 총 $(\le 2^{k}) \times n/2^k = (\le n)$번 만큼의 $\text{find}$ 호출이 필요하다. 
+그래서 interval $I_k$에 속하는 모든 노드들에 대해 이것들을 다른 interval에 속하게 하려면 총 $(\le 2^{k}) \times n/2^k = (\le n)$번 만큼의 $\text{find}$ 호출이 필요하다.
 
 이것은 하나의 interval에 대해 필요 한 $\text{find}$ 호출의 총 횟수이다. Tree에 $\log^{\*} n$ 만큼의 interval이 있으므로 $(\le n) \times \log^{\*} n$ 만큼의 $\text{find}$ 호출이 필요하다.
 
@@ -260,13 +261,13 @@ $$
 
 </div>
 
-이제 $T_1$, $T_2$의 비용을 더해서 일련의 $\text{find}$,  $\text{union}$ 연산에 드는 비용을 구해보자. 전체 연산에 필요한 총 비용은 
+이제 $T_1$, $T_2$의 비용을 더해서 일련의 $\text{find}$,  $\text{union}$ 연산에 드는 비용을 구해보자. 전체 연산에 필요한 총 비용은
 
 $$
 O(m \cdot \log^{*} n) + O(n \cdot \log^{*} n) = O(m \cdot \log^{*} n)
 $$
 
-이다. 여기서 우리는 연산의 총 비용에 연산의 횟수 $m$을 나누어 **amortized cost**를 유도할 것이다. 따라서 $\text{find}$ 연산의 **amortize cost**는 
+이다. 여기서 우리는 연산의 총 비용에 연산의 횟수 $m$을 나누어 **amortized cost**를 유도할 것이다. 따라서 $\text{find}$ 연산의 **amortize cost**는
 
 $$
 O(m \cdot \log^{*} n) / m = O(\log^{*} n)

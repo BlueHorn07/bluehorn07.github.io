@@ -1,7 +1,8 @@
 ---
 title: "Proportion Test"
-layout: post
-tags: ["statistics"]
+toc: true
+toc_sticky: true
+categories: ["Statistics"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -33,7 +34,7 @@ We toss a coin $n$ times independently, and let $x$ be the #. of heads in theses
 
 Q1. What is the p-value?
 
-A1. $H_1$이 $p > 1/3$ 형태이므로 $x$가 특정값 $C$ 이상일 때, $H_0$를 reject 한다. 
+A1. $H_1$이 $p > 1/3$ 형태이므로 $x$가 특정값 $C$ 이상일 때, $H_0$를 reject 한다.
 
 $$
 P( X \ge C \mid p = 1/3)

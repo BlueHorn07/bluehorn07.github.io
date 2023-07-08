@@ -1,7 +1,8 @@
 ---
 title: "Complex Variable - Basic"
-layout: post
-tags: ["Complex Variable"]
+toc: true
+toc_sticky: true
+categories: ["Complex Variable"]
 ---
 
 
@@ -74,7 +75,7 @@ $$
 이때 $x$에 $i\theta$를 대입하면,
 
 $$
-e^{i\theta} = 1 + i\theta + \frac{(-1)\theta^2}{2!} + \frac{i \theta^3}{3!} + \frac{\theta^4}{4!} + \cdots + 
+e^{i\theta} = 1 + i\theta + \frac{(-1)\theta^2}{2!} + \frac{i \theta^3}{3!} + \frac{\theta^4}{4!} + \cdots +
 $$
 
 위의 식에서 홀수-번째 텀만 모은 것이 $\cos \theta$이고, 짝수-번재 텀만 모은 것이 $i \sin \theta$가 된다. $\blacksquare$
@@ -90,7 +91,7 @@ $$
 <div class="statement" markdown="1">
 
 $$
-e^{in\theta} = (\cos \theta + i \sin \theta)^n = \cos n\theta + i \sin n\theta 
+e^{in\theta} = (\cos \theta + i \sin \theta)^n = \cos n\theta + i \sin n\theta
 $$
 
 </div>

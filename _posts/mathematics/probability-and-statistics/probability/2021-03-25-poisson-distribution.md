@@ -1,7 +1,8 @@
 ---
 title: "Poisson Distribution"
-layout: post
-tags: ["probability"]
+toc: true
+toc_sticky: true
+categories: ["Probability"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -30,7 +31,7 @@ tags: ["probability"]
 
 <span class="statement-title">Definition.</span> Poisson Distribution<br>
 
-A Poisson random variable $X$ with parameter $\lambda > 0$, denoted as  $X \sim \text{POI}(\lambda)$, and it has a pmf $f(x)$ as 
+A Poisson random variable $X$ with parameter $\lambda > 0$, denoted as  $X \sim \text{POI}(\lambda)$, and it has a pmf $f(x)$ as
 
 $$
 f(x) = e^{-\lambda} \frac{\lambda^x}{x!} \quad \text{for} \quad x=0, 1, \dots
@@ -65,7 +66,7 @@ $$
 \begin{aligned}
 f_n (x) &= \binom{n}{x} \left( \frac{\lambda}{n}\right)^x \left( 1 - \frac{\lambda}{n}\right)^{n-x} \\
 &= \frac{n!}{x!(n-x)!} \frac{\lambda^x}{n^x} \left( 1 - \frac{\lambda}{n}\right)^n \left( 1 - \frac{\lambda}{n}\right)^{-x} \\
-&= \frac{\lambda^x}{x!} \cdot \left( 1 - \frac{\lambda}{n}\right)^n \cdot \frac{n!}{(n-x)!} \left(\frac{1}{n}\right)^x \left( 1 - \frac{\lambda}{n}\right)^{-x} 
+&= \frac{\lambda^x}{x!} \cdot \left( 1 - \frac{\lambda}{n}\right)^n \cdot \frac{n!}{(n-x)!} \left(\frac{1}{n}\right)^x \left( 1 - \frac{\lambda}{n}\right)^{-x}
 \end{aligned}
 $$
 
@@ -115,7 +116,7 @@ $n$이 무한히 커지게 되면, 자연스럽게 확률 $p=\dfrac{\lambda}{n}$
 
 The \<**Bernoulli process**\> is a **<u>sequence</u>** of independent Bernoulli trials.
 
-At each trial $X_i$, 
+At each trial $X_i$,
 
 - $P(H) = P(X_i = 1) = p$
 - $P(T) = P(X_i = 0) = 1-p$
@@ -128,7 +129,7 @@ $$
 
 </div>
 
-이런 베르누이 프로세스의 예로는 
+이런 베르누이 프로세스의 예로는
 
 - 매일 코스피 지수의 상승/하락에 대한 binary sequence
 - 주어진 time interval에 신호가 수신되는지 아닌지에 대한 binary seq.
@@ -207,7 +208,7 @@ $$
 
 <br/>
 
-잠깐 다시 \<Bernoulli Process\>의 시각으로 돌아와보자. $[0, t]$ 간격을 가지는 확률 변수 $X$가 있다고 하자. 그러면, 이것의 확률은 
+잠깐 다시 \<Bernoulli Process\>의 시각으로 돌아와보자. $[0, t]$ 간격을 가지는 확률 변수 $X$가 있다고 하자. 그러면, 이것의 확률은
 
 
 $$

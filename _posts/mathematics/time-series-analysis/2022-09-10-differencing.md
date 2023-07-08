@@ -1,7 +1,8 @@
 ---
 title: "Differencing"
-layout: post
-tags: ["time_series_analysis"]
+toc: true
+toc_sticky: true
+categories: ["Time Series Analysis"]
 ---
 
 # 차분(Differencing)이란?

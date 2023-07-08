@@ -1,7 +1,8 @@
 ---
 title: "Arntzenius, Instantaneous Veloctiy"
-layout: post
-tags: [Philosophy]
+toc: true
+toc_sticky: true
+categories: [Philosophy]
 ---
 
 

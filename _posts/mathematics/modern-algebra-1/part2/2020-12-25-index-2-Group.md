@@ -1,7 +1,8 @@
 ---
 title: "index-2 Group is normal"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -37,7 +38,7 @@ The set of left cosets of $H$ in $G$ froms a partition of $G$.
 
 $$
 \begin{equation}
-G = H {\cup\mkern-11.5mu\cdot\mkern5mu} {g_i H}    
+G = H {\cup\mkern-11.5mu\cdot\mkern5mu} {g_i H}
 \end{equation}
 $$
 
@@ -50,7 +51,7 @@ $$
 \end{aligned}
 $$
 
-또한, 정리에서 $\lvert G \rvert / \lvert H \rvert = 2$라고 했으므로 
+또한, 정리에서 $\lvert G \rvert / \lvert H \rvert = 2$라고 했으므로
 
 $$
 \lvert \Lambda \rvert = \lvert G \rvert / \lvert H \rvert = 2 = n
@@ -68,7 +69,7 @@ $$
 
 이때, Eq. (1)에서 left coset은 distjoint union으로 $G$를 분할한다.
 
-이 분할은 right coset에 대해서도 마찬가지 이므로 
+이 분할은 right coset에 대해서도 마찬가지 이므로
 
 $$
 \begin{equation}

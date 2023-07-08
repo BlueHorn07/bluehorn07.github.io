@@ -1,7 +1,8 @@
 ---
 title: "TypeORM - DB Relationship"
-layout: post
-tags: [NestJS]
+toc: true
+toc_sticky: true
+categories: [NestJS]
 ---
 
 <br/>

@@ -1,7 +1,8 @@
 ---
 title: "R 입문"
-layout: post
-tags: []
+toc: true
+toc_sticky: true
+categories: []
 ---
 
 
@@ -27,7 +28,7 @@ tags: []
 
 ### R을 배워보자!
 
-경희대 이상준 교수님의 유튜브 강좌을 보고 `R` 언어를 익혔다. 
+경희대 이상준 교수님의 유튜브 강좌을 보고 `R` 언어를 익혔다.
 
 👉 [YouTube 강좌 링크](https://youtube.com/playlist?list=PLaqQvlCBe8vL739pc-jESsucndheGmQIZ)
 
@@ -46,7 +47,7 @@ tags: []
 </div>
 
 <div class="img-wrapper">
-  
+
 </div>
 
 ### R로 텍스트 마이닝!

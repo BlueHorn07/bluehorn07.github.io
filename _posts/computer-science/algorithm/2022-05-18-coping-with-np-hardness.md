@@ -1,7 +1,8 @@
 ---
 title: "Coping with NP-hardness"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -18,7 +19,7 @@ tags: ["algorithm"]
 
 <br/>
 
-이번 챕터에서는 $\textbf{NP-hard}$ 문제를 다루는 몇 가지 방법을 알아본다. 
+이번 챕터에서는 $\textbf{NP-hard}$ 문제를 다루는 몇 가지 방법을 알아본다.
 
 1. Exhausitive Search (Exponential Search)
    1. [Backtracking]({{"/2022/05/19/bacaktracking.html" | relative_url}})

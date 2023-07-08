@@ -1,7 +1,8 @@
 ---
 title: "Kruskal's Algorithm & Prim's Algorithm"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -43,9 +44,9 @@ $$
   <img src="{{ "/images/algorithm/cut-property-1.png" | relative_url }}" width="200px">
 </div>
 
-Supp. edges in $X \subset E$ are part of a MST $T$ of $G = (V, E)$. 
+Supp. edges in $X \subset E$ are part of a MST $T$ of $G = (V, E)$.
 
-Pick any subset of nodes $S$ for which no edge in $X$ crosses btw $S$ and $V\setminus S$, 
+Pick any subset of nodes $S$ for which no edge in $X$ crosses btw $S$ and $V\setminus S$,
 
 and let $e$ be the lighstest edge across this partition.
 

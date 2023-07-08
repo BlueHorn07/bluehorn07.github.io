@@ -1,7 +1,8 @@
 ---
 title: "Shortest Reliable Paths"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -20,7 +21,7 @@ tags: ["algorithm"]
 
 <div class="math-statement" markdown="1">
 
-Let $\text{dist}(v, i)$ be the shortest path from $s$ to $v$ that uses $i$ edges. 
+Let $\text{dist}(v, i)$ be the shortest path from $s$ to $v$ that uses $i$ edges.
 
 (Initialize) set $\text{dist}(v, 0) = \infty$ and $\text{dist}(s, *) = 0$.
 
@@ -40,7 +41,7 @@ for a nodes $v$ with $(s, v) \in E$, $\text{dist}(v, 1) = \ell(s, v)$
 
 </div>
 
-다음은 $s$의 인접 노드였던 $v$ 노드들에 대해 그들의 인접 노드 $u$들의 $\text{dist}(u, 2)$ 값을 갱신한다. 
+다음은 $s$의 인접 노드였던 $v$ 노드들에 대해 그들의 인접 노드 $u$들의 $\text{dist}(u, 2)$ 값을 갱신한다.
 
 \<Dijkstra's Algorithm\>의 경우 몇 번 hop 했는지를 따로 기록하지 않고 `dist[v]`를 기준으로 답을 찾기 때문에 hop 정보를 알 수 없다. 물론 약간 수정하면 \<Dijkstra's Algorithm\>에서 `dist[v] = (cost, hop)`를 저장해서 hop 정보를 기록할 수 있다.
 

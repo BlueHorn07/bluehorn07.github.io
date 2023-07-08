@@ -1,7 +1,8 @@
 ---
 title: "Sample Space"
-layout: post
-tags: ["probability"]
+toc: true
+toc_sticky: true
+categories: ["Probability"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -95,7 +96,7 @@ $$
 
 <br><span class="statement-title">Theorem.</span> Combination $_nC_r$<br>
 
-The number of combinations of $n$ distinct objects taken $r$ at a time is 
+The number of combinations of $n$ distinct objects taken $r$ at a time is
 
 $$
 _nC_r = {n \choose k} = \frac{n!}{r!(n-r)!}
@@ -111,8 +112,8 @@ $$
 
 증명은 생각보다 간단한데, $n$ 원소 중에 특정 원소 $a$를 미리 뽑았느냐 안 뽑았느냐로 가짓수를 나누어 유도하면 된다.
 
-- $a$를 이미 선택한 경우, 남은 $n-1$개 원소 중 $k-1$개를 선택하면 된다. 
- 
+- $a$를 이미 선택한 경우, 남은 $n-1$개 원소 중 $k-1$개를 선택하면 된다.
+
 $$
 {n-1 \choose k-1}
 $$

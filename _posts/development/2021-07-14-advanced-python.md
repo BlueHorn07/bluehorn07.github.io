@@ -1,7 +1,8 @@
 ---
 title: "Advanced Python"
-layout: post
-tags: []
+toc: true
+toc_sticky: true
+categories: []
 ---
 
 

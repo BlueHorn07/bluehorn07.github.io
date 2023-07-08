@@ -1,7 +1,8 @@
 ---
 title: "Multi-class Classification"
-layout: post
-tags: [machine_learning]
+toc: true
+toc_sticky: true
+categories: ["Machine Learning"]
 ---
 
 
@@ -19,9 +20,9 @@ tags: [machine_learning]
 
 ### (사전지식) Multinomial Distribution
 
-이번 글을 이해하기 위해선 **Multinomial Distribution**를 먼저 이해할 필요가 있다. 
+이번 글을 이해하기 위해선 **Multinomial Distribution**를 먼저 이해할 필요가 있다.
 
-우리는 이미 '-nomial'이 붙은 단어를 하나 알고 있다. 바로 **Bi-nomial**이다. **Binomial Distribution**은 **이항분포**로, $N$번의 동전 던지기에서 앞/뒷면이 몇번 나올지에 대한 분포를 떠올리면 된다. 이항분포는 $B(n, p)$로 표현하며 $n$는 시행횟수, $p$는 기준이 되는 event의 확률이다. 
+우리는 이미 '-nomial'이 붙은 단어를 하나 알고 있다. 바로 **Bi-nomial**이다. **Binomial Distribution**은 **이항분포**로, $N$번의 동전 던지기에서 앞/뒷면이 몇번 나올지에 대한 분포를 떠올리면 된다. 이항분포는 $B(n, p)$로 표현하며 $n$는 시행횟수, $p$는 기준이 되는 event의 확률이다.
 
 이항분포에서 $n$번 시행 중 $k$번 성공할 확률은 다음과 같다.
 
@@ -60,7 +61,7 @@ $$\binom{n}{\vec{x}} = \binom{n}{x_1, \ldots, x_k} = \frac{n!}{x_1! x_2! \ldots 
 
 Multi-Class Classification Problem을 GLM의 꼴로 기술해보자.
 
-먼저 $T(y)$를 다음과 같이 정의할 것이다. 
+먼저 $T(y)$를 다음과 같이 정의할 것이다.
 
 <div>
 $$T(1) = \begin{bmatrix}1 \\ 0 \\ \vdots \\ 0 \end{bmatrix}, T(2) = \begin{bmatrix}0 \\ 1 \\ \vdots \\ 0 \end{bmatrix}, \ldots, T(k) = \begin{bmatrix}0 \\ 0 \\ \vdots \\ 1 \end{bmatrix}$$
@@ -96,7 +97,7 @@ $$
 \begin{split}
 p(y; \phi) &= \phi_1^{1 \{ y=1 \}} \phi_2^{1 \{ y=2 \}} \ldots \phi_k^{1 \{ y=k \}} \\
 &= \phi_1^{1 \{ y=1 \}} \phi_2^{1 \{ y=2 \}} \ldots \phi_k^{1 - \sum_{i=1}^{k-1} 1 \{ y=i \}} \\
-&= \phi_1^{(T(y))_1} \phi_2^{(T(y))_2} \ldots \phi_k^{1 - \sum_{i=1}^{k-1}(T(y))_i} 
+&= \phi_1^{(T(y))_1} \phi_2^{(T(y))_2} \ldots \phi_k^{1 - \sum_{i=1}^{k-1}(T(y))_i}
 \end{split}
 $$
 </div>
@@ -106,7 +107,7 @@ $$
 <div>
 $$
 \begin{split}
-p(y; \phi) &= \phi_1^{(T(y))_1} \phi_2^{(T(y))_2} \ldots \phi_k^{1 - \sum_{i=1}^{k-1}(T(y))_i} \\ 
+p(y; \phi) &= \phi_1^{(T(y))_1} \phi_2^{(T(y))_2} \ldots \phi_k^{1 - \sum_{i=1}^{k-1}(T(y))_i} \\
 &= \exp{\left[ ((T(y))_1 \log{(\phi_1)} + ((T(y))_2 \log{(\phi_2)} + \ldots + \left(1 - \sum_{i=1}^{k-1}(T(y))_i\right) \log{(\phi_k)} \right]} \\
 &= \exp{\left[ ((T(y))_1 \log{(\phi_1/\phi_k)} + ((T(y))_2 \log{(\phi_2/\phi_k)} + \ldots + \log{(\phi_k)} \right]} \\
 &= b(y) \exp {(\eta^{T} T(y) -a(\eta))}
@@ -157,7 +158,7 @@ $$
 \begin{split}
 p(y=i \vert x; \theta) &= \phi_i \\
 &= \frac{e^{\eta_i}}{\sum_{j=1}^{k}{e^{\eta_j}}} \\
-&= \frac{e^{\theta_i^T x}}{\sum_{j=1}^{k}{e^{\theta_i^T x}}} 
+&= \frac{e^{\theta_i^T x}}{\sum_{j=1}^{k}{e^{\theta_i^T x}}}
 \end{split}
 $$
 </div>
@@ -190,7 +191,7 @@ $$
 
 <br>
 
-우리는 $\theta$와 linearly related 된 $\eta$에 exponential과 normalize를 취하여 predicted probability인 $\hat{p}(y)$을 유도하였다. 
+우리는 $\theta$와 linearly related 된 $\eta$에 exponential과 normalize를 취하여 predicted probability인 $\hat{p}(y)$을 유도하였다.
 
 <div style="text-align: center;">
 <img src="{{ "/images/CS229/GLM4.png" | relative_url }}"  style="width: 90%;">
@@ -198,7 +199,7 @@ $$
 
 <br>
 
-하지만 $\hat{p}(y)$은 엄연히 predicted 값일 뿐! 우리는 $\hat{p}(y)$과 실제 값인 $p(y)$를 비교하여 둘 사이의 오차를 최소화 해야 한다. 이때 정답 레이블에 대해 $p(y)$는 $1$의 값을 가진다. 
+하지만 $\hat{p}(y)$은 엄연히 predicted 값일 뿐! 우리는 $\hat{p}(y)$과 실제 값인 $p(y)$를 비교하여 둘 사이의 오차를 최소화 해야 한다. 이때 정답 레이블에 대해 $p(y)$는 $1$의 값을 가진다.
 
 <div style="text-align: center;">
 <img src="{{ "/images/CS229/GLM5.png" | relative_url }}" style="width: 70%;">
@@ -215,7 +216,7 @@ $$\textrm{CrossEnt}(p, \hat{p}) = - \sum_{i \in \{1, \ldots, k\}} {\left(p(y_i) 
 <div>
 $$
 \begin{split}
-\textrm{CrossEnt}(p, \hat{p}) &= - \sum_{i \in \{1, \ldots, k\}} {\left(p(y_i) \log {\hat{p}(y_i)} \right)} \\ 
+\textrm{CrossEnt}(p, \hat{p}) &= - \sum_{i \in \{1, \ldots, k\}} {\left(p(y_i) \log {\hat{p}(y_i)} \right)} \\
 &= - p(y_z) \log {\hat{p}(y_z)}
 \end{split}
 $$
@@ -226,7 +227,7 @@ $$
 <div>
 $$
 \begin{split}
-\textrm{CrossEnt}(p, \hat{p}) &= - \sum_{i \in \{1, \ldots, k\}} {\left(p(y_i) \log {\hat{p}(y_i)} \right)} \\ 
+\textrm{CrossEnt}(p, \hat{p}) &= - \sum_{i \in \{1, \ldots, k\}} {\left(p(y_i) \log {\hat{p}(y_i)} \right)} \\
 &= - p(y_z) \log {\hat{p}(y_z)} \\
 &= - \log { \frac{\exp({\theta_{z}^T x})}{\sum_{i=1}^{k}{\exp({\theta_i^T x})}} }
 \end{split}

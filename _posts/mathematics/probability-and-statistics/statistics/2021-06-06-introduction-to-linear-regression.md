@@ -1,7 +1,8 @@
 ---
 title: "Regression Analysis and Simple Linear Regression"
-layout: post
-tags: ["statistics"]
+toc: true
+toc_sticky: true
+categories: ["Statistics"]
 ---
 
 <!-- Least Square 방법을 별도의 포스트로 분리하는게 좋을 듯 -->
@@ -20,7 +21,7 @@ tags: ["statistics"]
 
 ## Introduction to Regression
 
-우리가 $n$번의 실험을 통해 $n$개의 데이터 $\\{ (x_i, y_i) \\}_n$를 얻었다고 하자. 이 데이터를 유심히 살펴보니... $n$개 데이터에서 아래와 같은 관계를 발견했다. 
+우리가 $n$번의 실험을 통해 $n$개의 데이터 $\\{ (x_i, y_i) \\}_n$를 얻었다고 하자. 이 데이터를 유심히 살펴보니... $n$개 데이터에서 아래와 같은 관계를 발견했다.
 
 $$
 Y = \beta_0 + \beta_1 x
@@ -40,7 +41,7 @@ that is a close fit to the given data $\\{ (x_i, y_i) \\}_n$
 
 </div>
 
-위와 같은 모델링을 **\<Regression Analysis\>**라고 한다. 
+위와 같은 모델링을 **\<Regression Analysis\>**라고 한다.
 
 ### Multiple, Simple, Linear
 
@@ -54,7 +55,7 @@ that is a close fit to the given data $\\{ (x_i, y_i) \\}_n$
 
 ## Simple Linear Regression
 
-앞 문단에서 \<Regression Analysis\>가 두 변수의 non-deterministic relation을 모델링하는 과정이라고 정의했다. 이런 non-deterministic 경우를 "\<random component\>가 있다"라고 표현하기도 한다. 
+앞 문단에서 \<Regression Analysis\>가 두 변수의 non-deterministic relation을 모델링하는 과정이라고 정의했다. 이런 non-deterministic 경우를 "\<random component\>가 있다"라고 표현하기도 한다.
 
 동일한 $x$ 값으로 실험을 하더라도 여러 요인에 의해 $y$은 변할 수 있다. 따라서 response $y$에 랜덤성이 있다고 보는 것이 적절하다. 만약 $y$를 $Y$로 표현한다면, random variable로써 표현한 것이다. $y_i$는 데이터셋 $\\{ (x_i, y_i) \\}_n$의 한 값으로써 표현한 것이다. 둘을 구분해야 한다.
 
@@ -68,7 +69,7 @@ $$
 
 $\beta_0$와 $\beta_1$는 익숙하듯 regression parameter이다. 각각 intercept와 slope의 역할이다.
 
-$\epsilon$은 random variable이다. 실험과 데이터셋의 랜덤성, 불확실성을 표현하는 역할이다. 이때, random variable $\epsilon$은 평균과 분산이 $E(\epsilon) = 0$, $\text{Var}(\epsilon) = \sigma^2$으로 정의된다. 
+$\epsilon$은 random variable이다. 실험과 데이터셋의 랜덤성, 불확실성을 표현하는 역할이다. 이때, random variable $\epsilon$은 평균과 분산이 $E(\epsilon) = 0$, $\text{Var}(\epsilon) = \sigma^2$으로 정의된다.
 
 내용을 더 진행하기 전에 몇가지 사실들을 정리하고 가자.
 
@@ -122,7 +123,7 @@ Q. 우리는 주어진 data points에 맞는 line $y = \beta_0 + \beta_1 x$를 �
 
 <span class="statement-title">Definition.</span> residual<br>
 
-For a line $\hat{y} = b_0 + b_1 x$, the \<residual\> $e_i$  of a data point $(x_i, y_i)$ is defined to be 
+For a line $\hat{y} = b_0 + b_1 x$, the \<residual\> $e_i$  of a data point $(x_i, y_i)$ is defined to be
 
 $$
 e_i := y_i - \hat{y}_i
@@ -263,7 +264,7 @@ A. Yes!!
 $b_1$ and $b_0$ are unbiased for $\beta_1$ and $\beta_0$ respectively.
 
 $$
-E[b_1] = \beta_1 \quad \text{and} \quad E[b_0] = \beta_0 
+E[b_1] = \beta_1 \quad \text{and} \quad E[b_0] = \beta_0
 $$
 
 </div>
@@ -282,7 +283,7 @@ E[b_1]
 \end{aligned}
 $$
 
-식에서 위와 같이 $E[y_i]$가 가능한 이유는 <span style="color: red">$x_i$는 Random Variable이 아니기 때문</span>이다!! 
+식에서 위와 같이 $E[y_i]$가 가능한 이유는 <span style="color: red">$x_i$는 Random Variable이 아니기 때문</span>이다!!
 
 $$
 \begin{aligned}
@@ -293,7 +294,7 @@ $$
 &= \beta_1 \cdot \frac{\sum_{i=1}^n (x_i - \bar{x}) x_i }{S_{xx}} \\
 &= \beta_1 \cdot \cancelto{1}{\frac{\sum_{i=1}^n (x_i - \bar{x}) (x_i - \bar{x})}{S_{xx}}} \\
 &= \beta_1
-\end{aligned} 
+\end{aligned}
 $$
 
 $\blacksquare$

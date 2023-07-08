@@ -1,7 +1,8 @@
 ---
 title: "Sample Mean Test"
-layout: post
-tags: ["statistics"]
+toc: true
+toc_sticky: true
+categories: ["Statistics"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -18,7 +19,7 @@ tags: ["statistics"]
 
 ### Sample Mean Test
 
-평균(Mean)에 대한 검정은 추정에서와 비슷하게, $\sigma^2$을 아는지 여부에 따라 다르게 접근한다. 
+평균(Mean)에 대한 검정은 추정에서와 비슷하게, $\sigma^2$을 아는지 여부에 따라 다르게 접근한다.
 
 <hr/>
 
@@ -77,10 +78,10 @@ $H_1: \mu < \mu_0$인 것도, $H_1: \mu \ne \mu_0$ 경우도 비슷하게, 식�
 만약, 우리가 얻은 sample mean $\bar{x}$이 $H_0$에서 가정한 $\mu$의 confidence interval에 포함된다면,
 
 $$
-\bar{x} \in (\mu \pm z_{\alpha/2} \cdot \sigma/\sqrt{n}) 
-\quad \text{or} \quad 
+\bar{x} \in (\mu \pm z_{\alpha/2} \cdot \sigma/\sqrt{n})
+\quad \text{or} \quad
 \bar{x} < \mu + z_{\alpha} \cdot \sigma/\sqrt{n}
-\quad \text{or} \quad 
+\quad \text{or} \quad
 \bar{x} > \mu - z_{\alpha} \cdot \sigma/\sqrt{n}
 $$
 

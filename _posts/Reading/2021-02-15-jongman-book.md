@@ -1,7 +1,8 @@
 ---
 title: "종만북 리딩 - 1"
-layout: post
-tags: [reading]
+toc: true
+toc_sticky: true
+categories: ["Reading"]
 ---
 
 

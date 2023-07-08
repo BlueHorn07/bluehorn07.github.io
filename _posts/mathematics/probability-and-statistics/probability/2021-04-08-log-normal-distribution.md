@@ -1,7 +1,8 @@
 ---
 title: "Log-normal Distribution"
-layout: post
-tags: ["probability"]
+toc: true
+toc_sticky: true
+categories: ["Probability"]
 ---
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
@@ -22,7 +23,7 @@ tags: ["probability"]
 선행 개념으로 [Gamma Distribution]({{"/2021/04/05/gamma-distribution.html" | relative_url}})에 대해 알고 있어야 한다.
 
 $$
-f(x; \alpha, \beta) 
+f(x; \alpha, \beta)
 = \begin{cases}
     C_{\alpha, \beta} \cdot x^{\alpha-1} e^{-\frac{x}{\beta}} & \text{for } x > 0 \\
     \quad 0 & \text{else}
@@ -30,7 +31,7 @@ f(x; \alpha, \beta)
 $$
 
 $$
-C_{\alpha, \beta} 
+C_{\alpha, \beta}
 = \frac{1}{\Gamma(\alpha) \cdot \beta^{\alpha}}
 $$
 

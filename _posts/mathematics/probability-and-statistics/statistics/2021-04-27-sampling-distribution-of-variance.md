@@ -1,7 +1,8 @@
 ---
 title: "Sampling Distribution of Variance"
-layout: post
-tags: ["statistics"]
+toc: true
+toc_sticky: true
+categories: ["Statistics"]
 ---
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
@@ -67,7 +68,7 @@ $$
 
 </div>
 
-와우! Sample Variance $S^2$과 Population Variance $\sigma^2$의 비율이 [Chi-square Distribution]({{"/2021/04/06/chi-and-beta-and-lognormal-distribution.html#chi-square-distribution" | relative_url}})을 따른다니! 
+와우! Sample Variance $S^2$과 Population Variance $\sigma^2$의 비율이 [Chi-square Distribution]({{"/2021/04/06/chi-and-beta-and-lognormal-distribution.html#chi-square-distribution" | relative_url}})을 따른다니!
 
 <div class="math-statement" markdown="1">
 
@@ -109,7 +110,7 @@ $$
 
 $$
 \begin{aligned}
-\frac{1}{\sigma^2} \sum^n_i \left( X_i - \mu \right)^2 
+\frac{1}{\sigma^2} \sum^n_i \left( X_i - \mu \right)^2
 &= \frac{1}{\sigma^2} \sum^n_i (X_i - \bar{X})^2 + \frac{1}{\sigma^2} \sum^n_i (\bar{X} - \mu)^2 + \cancelto{0}{\frac{1}{\sigma^2} \sum^n_i (X_i - \bar{X})(\bar{X} - \mu)} \\
 &= \frac{1}{\sigma^2} \sum^n_i (X_i - \bar{X})^2 + \frac{1}{\sigma^2} \sum^n_i (\bar{X} - \mu)^2 \\
 &= \frac{1}{\sigma^2} \sum^n_i (X_i - \bar{X})^2 + \frac{n(\bar{X} - \mu)^2}{\sigma^2} \\
@@ -131,7 +132,7 @@ In fact, $\bar{X}$ and $(X_1 - \bar{X}, \; \dots, \; X_n - \bar{X})$ are indepen
 
 </div>
 
-따라서, 위의 Lemma에 의해 
+따라서, 위의 Lemma에 의해
 
 $$
 \frac{1}{\sigma^2} \sum^n_i (X_i - \bar{X})^2  = \frac{(n-1) S^2}{\sigma^2} \sim \chi^2(n-1)
@@ -143,7 +144,7 @@ $\blacksquare$
 
 <hr/>
 
-이번 포스트에서는 Sample Variance $S^2$과 Population Variance $\sigma^2$의 비율에 대한 분포를 구했다. 
+이번 포스트에서는 Sample Variance $S^2$과 Population Variance $\sigma^2$의 비율에 대한 분포를 구했다.
 
 $$
 \frac{(n-1) S^2}{\sigma^2} \sim \chi^2(n-1)

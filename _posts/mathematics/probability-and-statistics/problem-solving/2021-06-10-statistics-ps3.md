@@ -1,7 +1,8 @@
 ---
 title: "Statistics - PS3"
-layout: post
-tags: ["statistics", "Problem Solving"]
+toc: true
+toc_sticky: true
+categories: ["Statistics", "Problem Solving"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -39,9 +40,9 @@ $$
 
 $$
 \begin{aligned}
-\text{Var}(B_0) 
+\text{Var}(B_0)
 &= \text{Var}(\bar{y} - B_1 \bar{x}) \\
-&= \text{Var}(\bar{y}) + (\bar{x})^2 \cdot \text{Var}(B_1) - 2 \bar{x} \cdot \text{Cov}(\bar{y}, B_1)  
+&= \text{Var}(\bar{y}) + (\bar{x})^2 \cdot \text{Var}(B_1) - 2 \bar{x} \cdot \text{Cov}(\bar{y}, B_1)
 \end{aligned}
 $$
 
@@ -103,7 +104,7 @@ $\blacksquare$
 
 <span class="statement-title">Theorem.</span><br>
 
-The unbiased estimator of $\sigma^2$ is 
+The unbiased estimator of $\sigma^2$ is
 
 $$
 s^2 := \frac{\sum_{i=1}^n (y_i - \hat{y}_i)^2}{n-2} = \frac{\text{SSE}}{n-2}
@@ -126,7 +127,7 @@ Then, the residual squared sum is
 
 $$
 \begin{aligned}
-\sum_{i=1}^n (y_i - \hat{y}_i)^2 
+\sum_{i=1}^n (y_i - \hat{y}_i)^2
 &= \sum_{i=1}^n (y_i - b_0 - b_1 x_i)^2 \\
 &= \sum_{i=1}^n (y_i - (\bar{y} - b_1 \bar{x}) - b_1 x_i)^2 \\
 &= \sum_{i=1}^n ((y_i - \bar{y}) - b_1(x_i - \bar{x}))^2 \\
@@ -159,15 +160,15 @@ $$
 
 $$
 \begin{aligned}
-E[y_i^2] 
-&= \text{Var}(y_i) + (E[y_i])^2 \\  
+E[y_i^2]
+&= \text{Var}(y_i) + (E[y_i])^2 \\
 &= \sigma^2 + (\beta_0 + \beta_1 x_i)^2
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
-E[\bar{y}^2] 
+E[\bar{y}^2]
 &= \text{Var}(\bar{y}) + (E[\bar{y}])^2 \\
 &= \frac{\sigma^2}{n} + (\beta_0 + \beta_1 \bar{x})^2
 \end{aligned}
@@ -175,7 +176,7 @@ $$
 
 $$
 \begin{aligned}
-E[b_1^2] 
+E[b_1^2]
 &= \text{Var}(b_1) + (E[b_1])^2 \\
 &= \frac{\sigma^2}{S_{xx}} + \beta_1^2
 \end{aligned}

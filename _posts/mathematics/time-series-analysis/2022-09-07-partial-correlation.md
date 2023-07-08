@@ -1,7 +1,8 @@
 ---
 title: "Partial Correlation"
-layout: post
-tags: ["time_series_analysis"]
+toc: true
+toc_sticky: true
+categories: ["Time Series Analysis"]
 ---
 
 # Introduction
@@ -18,7 +19,7 @@ Partial Covariance/Correlation는 **여러 개의 독립변수(IV)와 하나의 
 
 ## 왜 독립변수 간의 상관성이 문제가 되는가?
 
-독립변수 간의 상관성이 있는 상황은 왜 문제가 되는 걸까?🤔 $\text{Cor}(\text{IV}_a, \text{DV})$의 값을 계산했다고 해보자. 그런데 <span class="half_HL">이것이 $\text{IV}_a$ 단독의 순수한 효과일까? 아니면 $\text{IV}_a$와 상관성이 있는 $\text{IV}_b$의 효과가 일부 반영된 결과일까?</span> 
+독립변수 간의 상관성이 있는 상황은 왜 문제가 되는 걸까?🤔 $\text{Cor}(\text{IV}_a, \text{DV})$의 값을 계산했다고 해보자. 그런데 <span class="half_HL">이것이 $\text{IV}_a$ 단독의 순수한 효과일까? 아니면 $\text{IV}_a$와 상관성이 있는 $\text{IV}_b$의 효과가 일부 반영된 결과일까?</span>
 
 실험자는 독립변수 $\text{IV}_a$ 하나만을 컨트롤 할 수 있어 $\text{IV}_a$ 단독의 영향력을 아는 것이 중요한 상황인 걸 수도 있다. 결국 독립변수 단독의 영향력/설명력을 알고 싶다면, $\text{Cor}(\text{IV}_a, \text{DV})$ 만으로는 부족하다.
 
@@ -38,7 +39,7 @@ $$
 \rho_{XY\cdot Z}
 $$
 
-Partial Correlation도 Correlation과 마찬가지로 $\left[-1, +1\right]$의 범위를 갖는다. 
+Partial Correlation도 Correlation과 마찬가지로 $\left[-1, +1\right]$의 범위를 갖는다.
 
 ## Exercise
 
@@ -59,7 +60,7 @@ Partial Correlation도 Correlation과 마찬가지로 $\left[-1, +1\right]$의 �
   <p>각 변수의 Correlation</p>
 </div>
 
-해석해보면, 
+해석해보면,
 
 - MPG와 DRAT는 `0.68`로 높은 상관관계를 보인다.
 - MPG와 HP는 `-0.78`로 높은 상관관계를 보인다.
@@ -122,9 +123,9 @@ Multiple Regression의 $R^2$ 값은 `0.74`이다.
 드이어...! 👏 Partial Corr $\rho$를 구해보자!
 
 $$
-\left(\rho_{X_1 Y \cdot X_2}\right)^2 
-= \frac{a}{a + d} 
-= \frac{0.14}{0.14 + 0.26} 
+\left(\rho_{X_1 Y \cdot X_2}\right)^2
+= \frac{a}{a + d}
+= \frac{0.14}{0.14 + 0.26}
 = 0.35
 $$
 
@@ -133,9 +134,9 @@ $$
 $$
 
 $$
-\left(\rho_{X_2 Y \cdot X_1}\right)^2 
-= \frac{c}{c + d} 
-= \frac{0.28}{0.28 + 0.26} 
+\left(\rho_{X_2 Y \cdot X_1}\right)^2
+= \frac{c}{c + d}
+= \frac{0.28}{0.28 + 0.26}
 = 0.52
 $$
 
@@ -167,15 +168,15 @@ Corr보다 Partial Corr일 때, **상관성의 크기가 더 작아진 것**을 
 먼저 $Z$를 $X$, $Y$에 대해 Linear Regression Fitting을 한다.
 
 $$
-w^{\ast}_X 
-= \underset{w}{\text{argmin}} \left\{ 
+w^{\ast}_X
+= \underset{w}{\text{argmin}} \left\{
   \sum^N_{i=1} = (x_i - w \cdot z_i)^2
 \right\}
 $$
 
 $$
-w^{\ast}_Y 
-= \underset{w}{\text{argmin}} \left\{ 
+w^{\ast}_Y
+= \underset{w}{\text{argmin}} \left\{
   \sum^N_{i=1} = (y_i - w \cdot z_i)^2
 \right\}
 $$
@@ -216,15 +217,15 @@ $$
 마지막으로 동일한 상황에서 Partialling Out하는 독립변수가 $n$개 인 $\mathbf{z} = \left\\{ z_i  \right\\}_n$ 상황만 살펴보자.
 
 $$
-\mathbf{w}^{\ast}_X 
-= \underset{\mathbf{w}}{\text{argmin}} \left\{ 
+\mathbf{w}^{\ast}_X
+= \underset{\mathbf{w}}{\text{argmin}} \left\{
   \sum^N_{i=1} = (x_i - \left< \mathbf{w}, \mathbf{z} \right>)^2
 \right\}
 $$
 
 $$
-\mathbf{w}^{\ast}_Y 
-= \underset{\mathbf{w}}{\text{argmin}} \left\{ 
+\mathbf{w}^{\ast}_Y
+= \underset{\mathbf{w}}{\text{argmin}} \left\{
   \sum^N_{i=1} = (y_i - \left< \mathbf{w}, \mathbf{z} \right>)^2
 \right\}
 $$

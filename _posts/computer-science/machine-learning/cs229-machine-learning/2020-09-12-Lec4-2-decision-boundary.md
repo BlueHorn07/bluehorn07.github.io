@@ -1,7 +1,8 @@
 ---
 title: "Interpretation of Decision Boundary with Learning"
-layout: post
-tags: [machine_learning]
+toc: true
+toc_sticky: true
+categories: ["Machine Learning"]
 ---
 
 
@@ -79,7 +80,7 @@ $\theta$를 $\theta'$으로 갱신한 결과, 새로운 Hyperplain이 정의되�
 
 ### 맺음말
 - Linear Classification은 Feacture Space를 Hyperplain으로 나눈다.
-  - 우리가 본 Logistic Regression도 결국은 Linear Classification에 속한다. 
+  - 우리가 본 Logistic Regression도 결국은 Linear Classification에 속한다.
   - Linear / non-Linear Classification 여부를 결정하는 것은 parameter $\theta$와 입력 $x$가 어떻게 엮여 있으냐 이다.
 - Linear Classification에서 parameter $\theta$는 Hyperplain의 normal vector이다.
 - Learning을 통해 $\theta$를 갱신하면 Hyperplain의 기울기가 변화한다.

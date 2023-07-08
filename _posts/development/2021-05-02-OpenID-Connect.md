@@ -1,7 +1,9 @@
 ---
 title: "OpenID Connect; OIDC"
-layout: post
-tags: ["develop", "security"]
+toc: true
+toc_sticky: true
+categories: ["Develop"]
+tags: ["Auth"]
 ---
 
 <div class="proof" markdown="1">
@@ -28,7 +30,7 @@ OIDC는 기본적으로 OAuth 프로토콜을 기반으로 동작하는 프로�
 |:---:|:---:|
 | 인가(Authorization)을 위해 사용 | 인증(Authentication)을 위해 사용 |
 | Resource Server에 저장된 사용자 데이터에 접근 | 사용자가 누구인지 확인하기 위해 사용  |
-| 다른 플랫폼의 API를 호출하기 위해 `acess_token`을 확보 | 사용자 개인을 식별하는 `id_token`을 확보 | 
+| 다른 플랫폼의 API를 호출하기 위해 `acess_token`을 확보 | 사용자 개인을 식별하는 `id_token`을 확보 |
 
 이때, OIDC에서 얻는 `id_token`은 보통 JWT 방식으로 인코딩 되어 있다.
 

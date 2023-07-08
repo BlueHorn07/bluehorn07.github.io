@@ -1,7 +1,8 @@
 ---
 title: "Chi-square Goodness-of-fit Test"
-layout: post
-tags: ["statistics"]
+toc: true
+toc_sticky: true
+categories: ["Statistics"]
 preview: "<proportion test>의 일반화. 카레고리 변수에 대한 검정."
 ---
 
@@ -39,7 +40,7 @@ preview: "<proportion test>의 일반화. 카레고리 변수에 대한 검정."
 
 |-|made|missed|total|
 |:---:|:---:|:---:|:---:|
-|observed|70|30| 100 | 
+|observed|70|30| 100 |
 |expected <br/>under $H_0$| 80 | 20 | 100 |
 
 3\. Test Statistic
@@ -91,7 +92,7 @@ $$
 \end{aligned}
 $$
 
-이때, $np$는 첫번째 카테고리에 대한 expected value인 $e_1 = 80$이고, $n(1-p)$는 두번째 카테고리에 대한 $e_2 = 20$이다. 
+이때, $np$는 첫번째 카테고리에 대한 expected value인 $e_1 = 80$이고, $n(1-p)$는 두번째 카테고리에 대한 $e_2 = 20$이다.
 마찬가지로, 분자의 $(x-np)^2$는 "observed value와 expected value의 차이 값"이다.
 
 $$
@@ -128,7 +129,7 @@ $$
 
 <span class="statement-title">Definition.</span> Test Statistic for Goodness-of-fit<br>
 
-\<Goodness-of-fit\>의 Test Statistic은 
+\<Goodness-of-fit\>의 Test Statistic은
 
 $$
 \chi^2 := \sum_{i=1}^k \frac{(o_i - e_i)^2}{e_i}
@@ -185,7 +186,7 @@ $$
 \begin{aligned}
 e_{11} &= 1500 \times P(\text{P1} \; \And \; \text{Low}) \\
 &= 1500 \times \frac{677}{1500} \times \frac{499}{1500} \\
-&= \frac{677 \cdot 499}{1500} = 225.21  
+&= \frac{677 \cdot 499}{1500} = 225.21
 \end{aligned}
 $$
 
@@ -201,9 +202,9 @@ $\chi^2$ 분포의 DOF도 구해보면,
 
 $$
 \begin{aligned}
-\nu 
+\nu
 &= (9-1) - \left((3-1) + (3-1)\right) \\
-&= 8 - (2 + 2) = 4  
+&= 8 - (2 + 2) = 4
 \end{aligned}
 $$
 
@@ -286,7 +287,7 @@ $$
 P(B_i \cap A_j) = x P(A_j)
 $$
 
-가 되는데, 이 $P(B_i \cap A_j)$를 전부 모으면 "Law of Total Probability"에 의해 
+가 되는데, 이 $P(B_i \cap A_j)$를 전부 모으면 "Law of Total Probability"에 의해
 
 $$
 P(B_i) = \sum_{j=1}^4 P(B_i \cap A_j) = x \cdot \cancelto{1}{\sum_{j=1}^4 P(A_j)} = x

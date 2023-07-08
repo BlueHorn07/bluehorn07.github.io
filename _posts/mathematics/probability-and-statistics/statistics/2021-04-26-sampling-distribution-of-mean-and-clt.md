@@ -1,7 +1,8 @@
 ---
 title: "Sampling Distribution of Mean, and CLT"
-layout: post
-tags: ["statistics"]
+toc: true
+toc_sticky: true
+categories: ["Statistics"]
 ---
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
@@ -95,7 +96,7 @@ $$
 
 Q. What is the probability of $P\left( \overline{X} > 7\right)$?
 
-Note that $X_1, \dots, X_n \sim \text{Ber}(p)$, and then $(X_1 + \cdots + X_n) \sim \text{BIN}(n, p)$. 
+Note that $X_1, \dots, X_n \sim \text{Ber}(p)$, and then $(X_1 + \cdots + X_n) \sim \text{BIN}(n, p)$.
 
 When $n$ is larget, then $(X_1 + \cdots + X_n) \rightarrow N(\mu, \sigma^2)$.
 
@@ -109,14 +110,14 @@ $$
 
 $$
 \begin{aligned}
-P\left( \frac{((X_1 + \cdots + X_n) - np)/n}{(\sqrt{npq})/n} \le z \right) 
+P\left( \frac{((X_1 + \cdots + X_n) - np)/n}{(\sqrt{npq})/n} \le z \right)
 &= P\left( \frac{(X_1 + \cdots + X_n)/n \; - \; p}{\sqrt{pq/n}} \le z \right) \\
 &= P\left( \frac{\overline{X} - E[\overline{X}]}{\sqrt{\text{Var}(\overline{X})}} \le z \right) \\
 &\approx P(Z \le z)
 \end{aligned}
 $$
 
-결론은, 원래 문제였던 $P\left(\overline{X} > 7\right)$을 잘 정규화해서 normal 분포로 근사하여 풀면 된다는 것이다. 
+결론은, 원래 문제였던 $P\left(\overline{X} > 7\right)$을 잘 정규화해서 normal 분포로 근사하여 풀면 된다는 것이다.
 
 </div>
 
@@ -200,8 +201,8 @@ The mgf of $W$ is
 
 $$
 \begin{aligned}
-M_W (t) 
-&= E [e^{tW}] 
+M_W (t)
+&= E [e^{tW}]
 = E\left[\exp \left( \frac{t}{\sqrt{n} \sigma}\sum^n_{i=1} X_i - n\mu \right) \right] \\
 &= E \left[ \exp \left( \frac{t}{\sqrt{n}} \cdot \frac{X_1 - \mu}{\sigma}\right) \cdot \exp \left( \frac{t}{\sqrt{n}} \cdot \frac{X_2 - \mu}{\sigma}\right) \cdots \exp \left( \frac{t}{\sqrt{n}} \cdot \frac{X_n - \mu}{\sigma}\right) \right] \\
 &= E \left[ \exp \left( \frac{t}{\sqrt{n}} \cdot \frac{X_1 - \mu}{\sigma}\right) \right] \cdots E \left[ \exp \left( \frac{t}{\sqrt{n}} \cdot \frac{X_n - \mu}{\sigma}\right) \right] \quad \text{iid} \\
@@ -223,7 +224,7 @@ $$
 여기서 $y = 1 / \sqrt{n}$로 치환해주면, 위의 극한식은 아래와 같다.
 
 $$
-\lim_{n\rightarrow \infty} n \cdot \log M_Z (t / \sqrt{n}) 
+\lim_{n\rightarrow \infty} n \cdot \log M_Z (t / \sqrt{n})
 = \lim_{y \rightarrow 0} \frac{\log M_Z (yt)}{y^2}
 $$
 
@@ -249,7 +250,7 @@ $$
 \end{aligned}
 $$
 
-따라서, 
+따라서,
 
 $$
 \lim_{n\rightarrow \infty} \log M_W(t) = \frac{t^2}{2}

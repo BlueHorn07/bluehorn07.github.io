@@ -1,7 +1,8 @@
 ---
 title: "Network Flow"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -132,7 +133,7 @@ Pick any $(s, t)$-cut $(L, R)$ and any flow $f$, then <mark>$\text{size}(f) \le 
 
 </div>
 
-우리는 아직 $G$를 어떻게 분할해야 할지 정하지 않았다. 위의 명제는 그래프를 어떻게 분할하는지에 상관 없이 네트워크에 흐르는 전체 유량은 $\text{capacity}(L, R)$ 넘지 못한다, 즉 upper bound로 가진다를 말할 뿐이다. 
+우리는 아직 $G$를 어떻게 분할해야 할지 정하지 않았다. 위의 명제는 그래프를 어떻게 분할하는지에 상관 없이 네트워크에 흐르는 전체 유량은 $\text{capacity}(L, R)$ 넘지 못한다, 즉 upper bound로 가진다를 말할 뿐이다.
 
 <br/>
 
@@ -264,7 +265,7 @@ Suppose $G^f$ has no augmenting paths. Then we can easily contruct a cut $(L, R)
 
 3\. $(3) \implies (1)$
 
-Let $(L, R)$ be a cut with $\text{capacity}(L, R) = \text{val}(f)$, and let $f'$ be a maximum flow in $G$, so $\text{val}(f) \le \text{val}(f')$. Since $\text{val}(f) = \text{capaicty}(L, R)$, then $\text{capacity}(L, R) \le \text{val}(f')$. However, by the **<span style="color:red">Lemma 1</span>** $\text{val}(f') \le \text{capacity}(L, R)$. 
+Let $(L, R)$ be a cut with $\text{capacity}(L, R) = \text{val}(f)$, and let $f'$ be a maximum flow in $G$, so $\text{val}(f) \le \text{val}(f')$. Since $\text{val}(f) = \text{capaicty}(L, R)$, then $\text{capacity}(L, R) \le \text{val}(f')$. However, by the **<span style="color:red">Lemma 1</span>** $\text{val}(f') \le \text{capacity}(L, R)$.
 
 $\therefore$ $\text{val}(f') = \text{capacity}(L, R) = \text{val}(f)$. This means the $f$ is the maximum flow!!
 

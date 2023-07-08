@@ -1,7 +1,8 @@
 ---
 title: "KNN & kernel method"
-layout: post
-tags: [applied_statistics]
+toc: true
+toc_sticky: true
+categories: ["Applied Statsitcs"]
 ---
 
 
@@ -83,7 +84,7 @@ A. 아무리 \<kernel method\>라고 해도 boundary problem에서 자유로울 
 
 #### Nadaraya-Watson Estimator
 
-For a given kernel $K_\lambda$, \<Nadaraya-Watson Estimator\> is 
+For a given kernel $K_\lambda$, \<Nadaraya-Watson Estimator\> is
 
 $$
 \hat{f}(x) = \frac{\displaystyle \sum^n_{i=1} K_{\lambda} (x, x_i) \cdot y_i}{\displaystyle\sum^n_{i=1} K_{\lambda} (x, x_i)}
@@ -119,7 +120,7 @@ D(t) = \begin{cases}
   \left( 1 - \left| t \right|^3 \right)^3 & \text{if } \left| t \right| \le 1 \\
   \qquad 0 & \text{else}
 \end{cases}
-$$ 
+$$
 
 - Gaussian kernel
 

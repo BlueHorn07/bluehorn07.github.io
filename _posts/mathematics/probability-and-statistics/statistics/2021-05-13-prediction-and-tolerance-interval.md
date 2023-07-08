@@ -1,7 +1,8 @@
 ---
 title: "Prediction & Tolerance Estimation"
-layout: post
-tags: ["statistics"]
+toc: true
+toc_sticky: true
+categories: ["Statistics"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -37,7 +38,7 @@ $$
 
 $$
 \begin{aligned}
-1 - \alpha 
+1 - \alpha
 &= P \left(-z_{\alpha/2} \le \frac{X_0 - \bar{x}}{\sqrt{\sigma^2 + \frac{\sigma^2}{n}}} \le z_{\alpha/2} \right) \\
 &= P \left(\bar{x} - z_{\alpha/2} \cdot \sqrt{\sigma^2 + \frac{\sigma^2}{n}} \le X_0  \le \bar{x} + z_{\alpha/2} \cdot \sqrt{\sigma^2 + \frac{\sigma^2}{n}} \right)
 \end{aligned}
@@ -111,7 +112,7 @@ where $F$ is the CDF of $N(0, 1)$.
 
 👉 [Tolerance Table](http://www.bessegato.com.br/UFJF/resources/tolerance_table.pdf)
 
-값은 아래의 3가지 파라미터로 구하면 된다. 
+값은 아래의 3가지 파라미터로 구하면 된다.
 
 - Confidence Level of interval: $1-\gamma$
 - Percent Coverage: $1-\alpha$

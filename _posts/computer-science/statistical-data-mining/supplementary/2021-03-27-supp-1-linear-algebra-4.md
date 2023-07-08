@@ -1,7 +1,8 @@
 ---
 title: "Supp-1: Linear Algebra - 4"
-layout: post
-tags: [linear_algebra, applied_statistics]
+toc: true
+toc_sticky: true
+categories: ["Linear Algebra", "Applied Statsitcs"]
 ---
 
 
@@ -19,7 +20,7 @@ tags: [linear_algebra, applied_statistics]
 
 ### Set-up
 
-어떤 행렬 $A$에 대해 그 행렬의 제곱근 행렬을 찾을 수 있을까? 그러니까 어떤 행렬 $B$가 있어 $B B = A$가 되는 그런 행렬을 찾을 수 있는지에 대한 질문이다. 
+어떤 행렬 $A$에 대해 그 행렬의 제곱근 행렬을 찾을 수 있을까? 그러니까 어떤 행렬 $B$가 있어 $B B = A$가 되는 그런 행렬을 찾을 수 있는지에 대한 질문이다.
 
 우선 행렬이 제곱근을 가지는 좋은 성질을 가지려면, 행렬 $A$가 **symmetric** matrix가 되어야 할 것이다; $A \in \mathbb{R}^{n\times n}$.
 
@@ -70,7 +71,7 @@ $$
 {\mathbf{u}_i}^T A \mathbf{u}_i = d_i ({\mathbf{u}_i}^T \mathbf{u}_i)^2 \ge 0
 $$
 
-위의 부등식을 만족하기 위해서는 $d_i \ge 0$이 되어야 한다. 
+위의 부등식을 만족하기 위해서는 $d_i \ge 0$이 되어야 한다.
 
 $\blacksquare$
 
@@ -134,7 +135,7 @@ Positive definite matrix $A$를 사용하면, \<convex function\>[^2] 하나를 
 
 <span class="statement-title">Definition.</span><br>
 
-A function $f: \mathbb{R}^n \rightarrow \mathbb{R}$ is called to be \<convex\> if 
+A function $f: \mathbb{R}^n \rightarrow \mathbb{R}$ is called to be \<convex\> if
 
 $$
 f(\lambda \mathbf{x} + (1-\lambda)\mathbf{y}) \le \lambda f(\mathbf{x}) + (1-\lambda) f(\mathbf{y})
@@ -151,7 +152,7 @@ for every $\mathbf{x}, \mathbf{y} \in \mathbb{R}^n$ and $0\le \lambda \le 1$.
 
 즉, 부등식이 의미하는 바는 내분점에서의 함수값은 직선 위의 값보다 항상 작다는 것을 의미한다!
 
-<br/> 
+<br/>
 
 \<convex\>에 대한 정리를 살펴보자.
 
@@ -173,7 +174,7 @@ $$
 
 A quadratic function $f(\mathbf{x}) = \mathbf{x}^T A \mathbf{x} + \mathbf{a}^T \mathbf{x}$ is **convex** if and only if $A \succeq 0$.
 
-위와 같이 함수 $f(x)$를 정의하면, 두 번 미분했을 때, 
+위와 같이 함수 $f(x)$를 정의하면, 두 번 미분했을 때,
 
 $$
 \frac{\partial^2 f}{\partial \mathbf{x} \partial \mathbf{x}^T} = A \succeq 0
@@ -297,7 +298,7 @@ $$
 H = X(X^TX)^{-1}X^T
 $$
 
-Then, $H$ is the **orthogonal projection** onto $C(X)$, that is 
+Then, $H$ is the **orthogonal projection** onto $C(X)$, that is
 
 (1) $H^2 = H$
 

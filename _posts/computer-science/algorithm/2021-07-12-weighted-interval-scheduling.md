@@ -1,7 +1,8 @@
 ---
 title: "Weighted Interval Scheduling"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -30,7 +31,7 @@ A set of $n$ jobs, job $j$ starts at $s_j$, finishes at $f_j$ and has weight $w_
 
 마지막으로 $DP[j]$를 "value of optimal solution to the problem consisting of jobs from $1$ tot $j$" 정의하면 문제를 해결할 준비가 끝났다! 😎
 
-$DP[j]$를 업데이트 하는 규칙에는 2가지가 있다. 
+$DP[j]$를 업데이트 하는 규칙에는 2가지가 있다.
 
 <div class="math-statement" markdown="1">
 

@@ -1,7 +1,8 @@
 ---
 title: "Cauchy-Riemann Equation & Harnomic function"
-layout: post
-tags: ["Complex Variable"]
+toc: true
+toc_sticky: true
+categories: ["Complex Variable"]
 ---
 
 
@@ -35,7 +36,7 @@ $\iff$ the first partial derivatives of $u$ and $v$ satisfy
 
 $f$ is differentiable $\implies$ $u$, $v$ satisfy the Cauchy-Riemann Equations.
 
-For 
+For
 
 $$
 f'(z) = \lim_{\Delta z \rightarrow 0} \frac{f(z+\Delta z) - f(z)}{\Delta z}
@@ -48,7 +49,7 @@ $$
 f'(z) &= \lim_{\Delta x \rightarrow 0} \frac{f(z+\Delta x) - f(z)}{\Delta x} \\
 &= \lim_{\Delta x \rightarrow 0} \frac{u(x+\Delta x, y) + v(x+\Delta x, y) i - u(x, y) - v(x, y) i}{\Delta x} \\
 &= \lim_{\Delta x \rightarrow 0} \frac{u(x+\Delta x, y) - u(x, y) + v(x+\Delta x, y) i - v(x, y) i}{\Delta x} \\
-&= u_x + v_x i 
+&= u_x + v_x i
 \end{aligned}
 $$
 
@@ -58,11 +59,11 @@ $$
 \begin{aligned}
 f'(z) &= \lim_{\Delta y \rightarrow 0} \frac{f(z+\Delta y) - f(z)}{\Delta y} \\
 &= \lim_{\Delta y \rightarrow 0} \frac{u(x, y+\Delta y) - u(x, y) + v(x, y+\Delta y) i - v(x, y) i}{i \Delta y} \\
-&= \frac{u_y}{i} + v_y 
+&= \frac{u_y}{i} + v_y
 \end{aligned}
 $$
 
-이때, differentiable하기 위해선 극한이 존재해야 하므로, 
+이때, differentiable하기 위해선 극한이 존재해야 하므로,
 
 $$
 u_x + u_y = \frac{u_y}{i} + v_y

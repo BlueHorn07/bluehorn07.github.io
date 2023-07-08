@@ -1,7 +1,8 @@
 ---
 title: "Back-propagation"
-layout: post
-tags: ["Artificial Intelligence"]
+toc: true
+toc_sticky: true
+categories: ["Artificial Intelligence"]
 ---
 
 
@@ -95,20 +96,20 @@ $$
 
   합성 함수의 경우도 \<back-propagation\>으로 쉽게 해결할 수 있다!
 
-  첫 block부터 살펴보자면, $\text{mid}$를 함수가 아니라 변수로 취급하면, 손쉽게 gradient를 구할 수 있다. 
-  
+  첫 block부터 살펴보자면, $\text{mid}$를 함수가 아니라 변수로 취급하면, 손쉽게 gradient를 구할 수 있다.
+
   $$
   \frac{\partial \text{out}}{\partial \text{mid}}
   $$
-  
-  여기에서 그 다음 block을 살펴보면, 이것도 그냥 편미분을 수행해주면 되는 것이다. 
-  
+
+  여기에서 그 다음 block을 살펴보면, 이것도 그냥 편미분을 수행해주면 되는 것이다.
+
   $$
   \frac{\partial \text{mid}}{\partial \text{in}}
   $$
 
   두 gradient 값을 다 구했다면, 구한 gradient를 모두 곱해서 우리가 원하는 gradient를 구한다! 😁
-  
+
   $$
   \frac{\text{out}}{\text{in}} = \frac{\partial \text{out}}{\partial \text{mid}} \cdot \frac{\partial \text{mid}}{\partial \text{in}}
   $$
@@ -129,7 +130,7 @@ $$
 함수값이 두 군데로 분기하는 경우의 gradient는 아래와 같이 구할 수 있다.
 
 $$
-\frac{\partial\text{out}}{\partial \text{mid}} 
+\frac{\partial\text{out}}{\partial \text{mid}}
 = \frac{\partial\text{out1}}{\partial \text{mid}} + \frac{\partial\text{out2}}{\partial \text{mid}}
 $$
 
@@ -144,7 +145,7 @@ $$
 <span class="statement-title">Example.</span> Binary Classification with Hinge Loss<br>
 
 $$
-\text{Loss}(x, y, \mathbf{w}) 
+\text{Loss}(x, y, \mathbf{w})
 = \max \left\{\, 0, \; 1 - (\mathbf{w} \cdot \phi(x)) y \, \right\}
 $$
 

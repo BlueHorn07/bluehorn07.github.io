@@ -1,7 +1,8 @@
 ---
 title: "Implementations of Heap"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 modified_date: 2021.09.20
 readtime: 1 Hour
 ---
@@ -50,7 +51,7 @@ min 또는 max에 빈번히 접근하는 priority queue를 배열로 naive 하�
 - $\texttt{getMin}$: $O(1)$
   - 맨 뒤에 있는 min 원소를 리턴
 - $\texttt{insert}$: $O(N)$
-  - 이진 탐색으로 자신의 위치를 찾음 $O(\log N)$. 
+  - 이진 탐색으로 자신의 위치를 찾음 $O(\log N)$.
   - 배열이므로 삽입에 $O(N)$ 소요.
 - $\texttt{deleteMin}$: $O(1)$
   - 맨 뒤에 있는 min 원소를 삭제. 맨 뒤의 원소를 없애므로, $O(1)$
@@ -59,7 +60,7 @@ min 또는 max에 빈번히 접근하는 priority queue를 배열로 naive 하�
 
 ### Binary Heap
 
-일반적으로 배우는 \<Heap\> 자료구조이다. \<완전 이진 트리; Complete Binary Tree\>라는 트리 구조로 구현된다. 사실 완전 이진 트리라고 별게 있는게 아니라 배열로 구현된 Binary Tree에서 부모-자식 사이의 관계가 
+일반적으로 배우는 \<Heap\> 자료구조이다. \<완전 이진 트리; Complete Binary Tree\>라는 트리 구조로 구현된다. 사실 완전 이진 트리라고 별게 있는게 아니라 배열로 구현된 Binary Tree에서 부모-자식 사이의 관계가
 
 - 부모 → 자식: $k$ → ($2k$ & $2k+1$)
 - 자식 → 부모: $k$ → $k/2$
@@ -140,7 +141,7 @@ ps) $d=3$인 d-ary Heap을 \<Ternary Heap\>이라고도 부른다.
 
 ### Binomial Heap
 
-\<Binomial Heap\>은 <span class="half_HL">서로 다른 두 Heap을 병합(merge)해 새로운 Heap을 구성하는 것에 특화된 Heap 구조</span>다. 
+\<Binomial Heap\>은 <span class="half_HL">서로 다른 두 Heap을 병합(merge)해 새로운 Heap을 구성하는 것에 특화된 Heap 구조</span>다.
 
 \<Binomial Heap\>은 **\<Binomial Tree\>**라는 특별한 형태의 트리의 집합으로 구성된다. 먼저 \<Binomial Tree\>에 대해 살펴본 후, \<Binomial Heap\>에 대해 살펴보겠다. 이번 포스트의 내용은 아래 유튜브 영상의 내용을 적절히 정리한 것임을 미리 밝힌다.
 
@@ -160,7 +161,7 @@ ps) $d=3$인 d-ary Heap을 \<Ternary Heap\>이라고도 부른다.
 (deg 0)   (deg 0)       (deg 1)       |    (deg 1)   (deg 1)       (deg 2)
    4    +    10     →       4         |       1    +    7     →       1
                             |         |       |         |           / |
-                            10        |       9         15         7  9 
+                            10        |       9         15         7  9
                                       |                            |
                                       |                           15
 </pre>
@@ -201,7 +202,7 @@ Binomial Heap은 $\texttt{Merge}$라는 연산이 추가되었다. 일반적인 
   </p>
 </div>
 
-위와 같이 두 Binomial Heap을 병합하는 경우를 살펴보자. 이때, 두 Heap의 노드 수가 $N$, $M$이라면, 두 Heap에 존재하는 Tree의 수는 $1 + \log N$, $1 + \log M$이 된다. 
+위와 같이 두 Binomial Heap을 병합하는 경우를 살펴보자. 이때, 두 Heap의 노드 수가 $N$, $M$이라면, 두 Heap에 존재하는 Tree의 수는 $1 + \log N$, $1 + \log M$이 된다.
 
 이때, 두 Binomial Heap을 병합하는 것은 같은 degree를 갖는 Binomial Tree를 병합하는 것 같다. 이 Tree 병합 연산은 $O(1)$에 수행되고, 또 이 과정이 최대 Tree의 갯수 만큼 필요하므로 총 $O(\log N + \log M)$ 만큼의 Time Complexity를 갖는다.
 
@@ -283,7 +284,7 @@ $\texttt{extracMin}$ 연산에 대해서는 그 시간 복잡도가 "**amortized
 
 먼저 \<Fibonacci Heap\>은 앞에서 다룬 \<Lazy-Binomial Heap\>보다 더 *Lazy* 한 녀석이다! \<Lazy-BIN Heap\>보다 $\texttt{decreaseKey}$ 연산을 Lazy 하게 처리해서 비용을 더 줄인다!
 
-사실 "Lazy decreaseKey" 연산의 아이디어 자체는 간단하다. <span class="half_HL">$\texttt{decreaseKey}$를 수행할 때, heap-order를 벗어나는 부분에 대해서는 잘라낸다</span>는 게 전부다. 
+사실 "Lazy decreaseKey" 연산의 아이디어 자체는 간단하다. <span class="half_HL">$\texttt{decreaseKey}$를 수행할 때, heap-order를 벗어나는 부분에 대해서는 잘라낸다</span>는 게 전부다.
 
 \<BIN Heap\>에서 $\texttt{decreaseKey}$ 연산을 수행하면 $\texttt{Heapify}$ 때문에 트리의 높이 만큼, 즉 $O(\log n)$의 비용이 들었다. 그러나 \<Fibonacci Heap\>은 대상이 되는 BIN tree를 잘라내기 때문에 $\texttt{Heapify}$ 연산 없이 $O(1)$의 비용만 든다.
 
@@ -302,7 +303,7 @@ $\texttt{extracMin}$ 연산에 대해서는 그 시간 복잡도가 "**amortized
 
 <br/>
 
-\<Fibonacci Heap\>에서 수행되는 $\texttt{extractMin}$을 좀더 살펴보자. $\texttt{extractMin}$ 이후 수행되는 $\texttt{consolidate}$ 연산은 Heap을 이루는 트리를 degree $k$에 따라 "Bucket Sort"로 정렬하여 차례로 새로운 트리를 만든다. 
+\<Fibonacci Heap\>에서 수행되는 $\texttt{extractMin}$을 좀더 살펴보자. $\texttt{extractMin}$ 이후 수행되는 $\texttt{consolidate}$ 연산은 Heap을 이루는 트리를 degree $k$에 따라 "Bucket Sort"로 정렬하여 차례로 새로운 트리를 만든다.
 
 하지만, <span class="half_HL">Lazy decreaseKey 연산을 수행하면 더이상 Heap에 존재하는 Tree는 BIN Tree의 조건을 만족하지 않게 된다.</span> 왜냐하면, BIN Tree가 되려면 degree $k$일 때, $2^k$ 개의 노드가 있어야 하기 때문이다. <small>(Fibo Heap에서는 $2^k$ 보다 적은 수의 노드가 트리에 남게 된다.)</small>
 
@@ -342,7 +343,7 @@ BIN tree를 기반으로 하는 \<BIN Heap\>과 \<Lazy-BIN Heap\>은 트리의 �
 
 <div class="statement" markdown="1" align="center">
 
-Paraents can lose at most one children. 
+Paraents can lose at most one children.
 
 If a parent loses two children, we also cut the parent off from the grand-parent.
 
@@ -350,7 +351,7 @@ If a parent loses two children, we also cut the parent off from the grand-parent
 
 위 규칙은 Heap을 엉성하게나마 "logarithmic"하도록 만든다. 이것에 대한 구현은 생각보다 간단하다. 그냥 부모 노드가 $\texttt{decreaseKey}$에 의해 자식 노드를 잃으면 그 부모 노드를 "마킹" 해둔다. 이후에 부모 노드가 또 한번 자식 노드를 잃는다면, 그때는 부모 노드를 조부모 노드로부터 분리시킨다! <small>// 영상에서 잘 설명하니 이 부분은 영상을 보자!</small>
 
-글로는 감이 안 잡히니, 그림으로 살펴보자! 
+글로는 감이 안 잡히니, 그림으로 살펴보자!
 
 <div class="img-wrapper">
   <img src="{{ "/images/algorithm/fibonacci-heap-4.png" | relative_url }}" width="500px">

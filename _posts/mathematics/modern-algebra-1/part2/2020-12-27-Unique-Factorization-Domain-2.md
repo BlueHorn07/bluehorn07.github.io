@@ -1,7 +1,8 @@
 ---
 title: "Unique Factorization Domain - 2"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -32,7 +33,7 @@ UFD에 대한 첫번째 포스트는 [이곳]({{"2020/12/27/Unique-Factorization
 
 증명은 두 가지 step으로 진행된다.
 
-먼저 PID가 UFD의 **첫번째 조건**인 
+먼저 PID가 UFD의 **첫번째 조건**인
 
 <div style="text-align:center">
 <big>“UFD의 모든 non-zero & non-unit 원소는 finite number of irreducibles로 factorization된다.”</big>
@@ -117,7 +118,7 @@ If $g(x)$ and $h(x)$ are irreducible, we stop here.
 
 If not, at least one of them factors into lower degress polno-s.
 
-Continuing this process, then we get 
+Continuing this process, then we get
 
 $$
 f(x) = p_1 (x) p_2 (x) \cdots p_r (x)
@@ -125,16 +126,16 @@ $$
 
 <br>
 
-(Uniqueness) 
+(Uniqueness)
 
 Supp. $f(x) = p_1 (x) \cdots p_r (x) = q_1 (x) \cdots q_s (x)$.
 
-$p_1(x)$는 $f(x)$를 divide 하므로 식의 우변을 divide한다. 따라서 $p_1 (x)$는 적어도 하나의 $q_i (x)$를 divide한다. 
+$p_1(x)$는 $f(x)$를 divide 하므로 식의 우변을 divide한다. 따라서 $p_1 (x)$는 적어도 하나의 $q_i (x)$를 divide한다.
 
 
 <div class="statement" markdown="1">
 
-사실 위의 사실은 irreducibility의 정의를 확장한 것이다. 
+사실 위의 사실은 irreducibility의 정의를 확장한 것이다.
 
 irreducible polyno- $f(x)$에 대해 $f(x) \mid r(x) s(x)$라면, $f(x) \mid r(x)$ 또는 $f(x) \mid s(x)$이다.
 
@@ -193,7 +194,7 @@ Then, $N = \cup_i N_i$ is an **<u>Ideal</u>** in $R$.
 <details>
 <div class="math-statement" markdown="1">
 
-Let $a, b \in N$. 
+Let $a, b \in N$.
 
 Then, there are ideals $N_i$ and $N_j$ in ideal chain, with $a \in N_i$ and $b \in N_j$.
 
@@ -306,12 +307,12 @@ Let $a$ be a non-zero & non-unit elt in $D$.
 
 If $a$ is already irreducible, we are done!
 
-If $a$ is not an irreducible, 
+If $a$ is not an irreducible,
 
 then $a = a_1 b_1$, where neither $a_1$ nor $b_1$ is a unit. <br>
 <small>(만약 $a_1$와 $b_1$이 둘다 unit이라면, $a$가 unit이 되기 때문이다.)</small>
 
-앞에서 보인 성질에 의해 
+앞에서 보인 성질에 의해
 
 $$
 \left< a \right> \subseteq \left< a_1 \right>
@@ -397,7 +398,7 @@ $\iff$ $p(x)$ is **<u>irreducible</u>** over $F$.
 
 <div class="statement" markdown="1">
 
-An ideal $\left< p \right>$ in a PID is **<u>maximal</u>** 
+An ideal $\left< p \right>$ in a PID is **<u>maximal</u>**
 
 $\iff$ $p$ is an **<u>irreducible</u>**.
 
@@ -461,7 +462,7 @@ Then $pu = a(bu) = a$, so $\left< a \right> \subseteq \left< p \right>$.
 
 정리하면, $\left< p \right> \subseteq \left< a \right>$는
 
-(Case 1) $\left< a \right> = D$ 또는 
+(Case 1) $\left< a \right> = D$ 또는
 
 (Case 2) $\left< p \right> = \left< a \right>$ and $\left< p \right> \ne D$ ($a$ is not unit) 또는
 
@@ -483,7 +484,7 @@ $p$ would be a unit ($a$, $b$ 모두 unit일 때)
 
 <div class="statement" markdown="1">
 
-Let $p(x)$ be an **irreducible polynomial** in $F[x]$. 
+Let $p(x)$ be an **irreducible polynomial** in $F[x]$.
 
 If $p(x)$ divides $r(x)s(x)$ for $r(x), s(x) \in F[x]$,
 
@@ -551,7 +552,7 @@ $$
 (x^3)(y^3) = (xy)(xy)(xy)
 $$
 
-Since $xy$ divides $x^3y^3$ but not $x^3$ or $y^3$, 
+Since $xy$ divides $x^3y^3$ but not $x^3$ or $y^3$,
 
 $xy$ is not a prime.
 

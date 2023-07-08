@@ -1,7 +1,8 @@
 ---
 title: "Distribution over functions & Gaussian Process"
-layout: post
-tags: ["machine_learning", "time_series_analysis"]
+toc: true
+toc_sticky: true
+categories: ["Machine Learning", "Time Series Analysis"]
 modified_date: 2021.09.21
 readtime: 30 Minutes
 ---
@@ -27,7 +28,9 @@ readtime: 30 Minutes
 - [Introduction to Gaussian Process](#introduction-to-gaussian-process)
 - [Probability distribution over functions with finite domains](#probability-distribution-over-functions-with-finite-domains)
 - [Probability distribution over functions with infinite domains](#probability-distribution-over-functions-with-infinite-domains)
+- [mean \& convariance function for GP](#mean--convariance-function-for-gp)
 - [zero-mean GP](#zero-mean-gp)
+- [references](#references)
 
 <hr/>
 
@@ -86,7 +89,7 @@ Once a random function $h(\cdot)$ is selected from $\mathcal{H}$ probabilistical
 
 </div>
 
-위에서 정의한 \<random function\>은 단순히 random number를 출력하는 함수가 아니다! 👊 
+위에서 정의한 \<random function\>은 단순히 random number를 출력하는 함수가 아니다! 👊
 
 <hr/>
 
@@ -134,7 +137,7 @@ $$
 따라서 collection of random variable $\\{ h(x) : x \in \mathcal{X}\\}_m$ 위에서의 multi-variate Gaussian distribution은 아래와 같다.
 
 $$
-\vec{h}_m = 
+\vec{h}_m =
 \begin{bmatrix}
 h(x_1) \\ \vdots \\ h(x_m)
 \end{bmatrix}
@@ -175,7 +178,7 @@ finite domain에서 $h(x)$를 finite random vector로 이해한 것처럼, infin
 
 이제 GP가 distribution over random function이라는 점, 그리고 distribution over infinite random vector라는 것을 이해했다. 우리의 다음 관심사는 GP를 an function $m(x)$과 covariance function $k(x, x')$이다 🙌 사실 앞의 문단에서 $m(x)$와 $k(x, x')$의 정의를 적긴 했다만, $h(\cdot)$가 random function이기 때문에 위의 정의를 가지고는 $m(x)$, $k(x, x')$가 정확히 어떤 함수인지 감을 잡을 순 없었을 것이다.
 
-일반적으로 <span class="half_HL">mean function $m(x)$는 어떤 real-valued function도 가능하다</span>. 그러나 covariance function $k(x, x')$는 GP를 marginalization 했을 때 유도되는 Covariance Matrix가 semi-positive definite 같은 covariance의 성질들을 만족해야 한다. 
+일반적으로 <span class="half_HL">mean function $m(x)$는 어떤 real-valued function도 가능하다</span>. 그러나 covariance function $k(x, x')$는 GP를 marginalization 했을 때 유도되는 Covariance Matrix가 semi-positive definite 같은 covariance의 성질들을 만족해야 한다.
 
 <div class="math-statement" markdown="1">
 
@@ -199,7 +202,7 @@ For example, all $k(x, x') \ge 0$ and $K$ is a non-negative definite matrix.
 
 ### zero-mean GP
 
-이제 GP에 친해지기 위해 mean function $m(x) = 0$인 **zero-mean Gaussian process**라는 간단한 예시를 살펴보자. 
+이제 GP에 친해지기 위해 mean function $m(x) = 0$인 **zero-mean Gaussian process**라는 간단한 예시를 살펴보자.
 
 $$
 h(\cdot) \sim \mathcal{GP}(0, \; k(\cdot, \cdot))
@@ -211,7 +214,7 @@ $$
 k_{SE}(x, x') = \exp \left( - \frac{1}{2\tau^2} (x - x')^2 \right) \quad (\tau > 0)
 $$
 
-이때, 위와 같은 GP에서 sample한 function $h(x)$는 어떻게 생겼을까? 먼저 함수값의 평균이 0이기 때문에 함수값이 0 주변에 분포할 것이라고 생각할 수 있다. 또, $x, x' \in \mathcal{X}$인 두 원소에 대한 함수값은 
+이때, 위와 같은 GP에서 sample한 function $h(x)$는 어떻게 생겼을까? 먼저 함수값의 평균이 0이기 때문에 함수값이 0 주변에 분포할 것이라고 생각할 수 있다. 또, $x, x' \in \mathcal{X}$인 두 원소에 대한 함수값은
 
 - $x$와 $x'$가 가깝다(nearby)면, $k_{SE}(x, x') \approx 1$이 되므로 $h(x)$와 $h(x')$는 high covariance를 가진다.
 - 반대로 $x$와 $x'$가 멀다(far apart)면, $k_{SE}(x, x') \approx 0$이 되므로 $h(x)$와 $h(x')$는 low covariance를 가진다.

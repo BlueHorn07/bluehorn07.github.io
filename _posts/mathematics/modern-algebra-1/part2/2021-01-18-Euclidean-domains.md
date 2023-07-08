@@ -1,7 +1,8 @@
 ---
 title: "Euclidean Domain"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -98,7 +99,7 @@ Then there exist some $b \ne 0$ in $N$ s.t. $\nu (b) \le \nu (n)$ for all $n \in
 
 Claim: $N = \left< b \right>$.
 
-Let $a \in N$, then by Condition 1 for E.D., 
+Let $a \in N$, then by Condition 1 for E.D.,
 
 there exist $q$ and $r$ in $D$ s.t.
 
@@ -144,8 +145,8 @@ PID가 E.D.가 되지 안는 경우를 찾는 것은 생각보다 쉽진 않다.
 For a E.D. with Euclidean norm $\nu$,
 
 1. $\nu(1)$ is minimal among all $\nu(a)$ for non-zero $a \in D$.
-   
-2. $u \in D$ is a unit $\iff$ $\nu(u) = \nu (1)$.   
+
+2. $u \in D$ is a unit $\iff$ $\nu(u) = \nu (1)$.
 
 </div>
 
@@ -167,7 +168,7 @@ $\blacksquare$
 
 (2번 명제에 대한 증명)
 
-if $u$ is a unit in $D$, then 
+if $u$ is a unit in $D$, then
 
 $$
 \nu (u) \le \nu (u u^{-1}) = \ne (1)
@@ -183,7 +184,7 @@ where either $r=0$ or $\nu(r) < \nu(u)$
 
 이때, $\nu(1)$은 E.D.의 모든 원소에 대해 minimal이고, $\nu(u) = \nu(1)$이므로 $\nu(r) < \nu(u)$인 경우는 불가능하다.
 
-따라서 $r=0$이 되고, $1 = uq$이므로 $u$는 unit이다. 
+따라서 $r=0$이 되고, $1 = uq$이므로 $u$는 unit이다.
 
 $\blacksquare$
 

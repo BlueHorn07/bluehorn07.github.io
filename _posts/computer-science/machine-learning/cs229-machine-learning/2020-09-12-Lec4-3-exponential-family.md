@@ -1,7 +1,8 @@
 ---
 title: "Exponential Family, and GLM"
-layout: post
-tags: [machine_learning]
+toc: true
+toc_sticky: true
+categories: ["Machine Learning"]
 ---
 
 
@@ -89,7 +90,7 @@ $$
 - $\eta$: $\log{(\phi / (1-\phi))}$
 - $T(y)$: $y$
 - $a(\eta)$: $-\log{(1-\phi)}$
-  - 이때 $\eta = \log{(\phi / (1-\phi))}$임을 이용해 $\eta$에 대한 식으로 다시 쓰면, 
+  - 이때 $\eta = \log{(\phi / (1-\phi))}$임을 이용해 $\eta$에 대한 식으로 다시 쓰면,
   - $\phi = 1/(1+e^{-\eta})$
   - $a(\eta) = \log{(1+e^{\eta})}$
 - $b(y)$: $1$
@@ -161,7 +162,7 @@ GLM을 모델링 할 때 우리는 다음의 3가지를 가정한다.
 </div>
 
 - 가정(2)에 따라 $\eta=\theta^{T}x$이므로 $\eta$는 Linear Model의 출력값이다.
-- 입력 데이터와 목적에 따라 적절한 Distribution을 디자인 한다. = 적절한 $a$, $b$, $T$를 정한다. 
+- 입력 데이터와 목적에 따라 적절한 Distribution을 디자인 한다. = 적절한 $a$, $b$, $T$를 정한다.
 
 이번엔 Training/Test Phase에서 모델이 어떻게 작동하는지를 살펴보자.
 

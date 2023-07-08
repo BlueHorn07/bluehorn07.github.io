@@ -1,7 +1,8 @@
 ---
 title: "Factor Rings & Ideals"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -65,7 +66,7 @@ Let $\phi$ be a homo- of a ring $R$ onto a ring $R'$.
 
 (1) Closure
 
-For $\phi(x), \phi(y) \in \phi(R)$, 
+For $\phi(x), \phi(y) \in \phi(R)$,
 
 $\phi(x) + \phi(y) = \phi(x+y)$
 
@@ -131,7 +132,7 @@ $\iff$ $aH \subseteq H$, $Hb \subseteq H$ for all $a, b \in R$.
 
 Let $h_1, h_2 \in H$ so that $a + h_1$, $b + h_2$ are **representatives** of cost $a+H$, $b+H$ containing $a$ and $b$.
 
-Then, 
+Then,
 
 $$
 (a+h_1)(b+h_2) = ab + ah_2 + h_1 b + h_1 h_2

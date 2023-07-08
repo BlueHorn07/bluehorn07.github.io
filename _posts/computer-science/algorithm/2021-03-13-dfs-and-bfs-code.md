@@ -1,7 +1,8 @@
 ---
 title: "DFS and BFS - code"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -43,7 +44,7 @@ for (int i = 0; i < M; i++) {
 void dfs(int v) {
   printf("%d ", v);
   isVisit[v] = true;
-  
+
   for (int i = 0; i < edges[v].size(); i++) {
     int adj = edges[v][i];
     if (!isVisit[adj]) {
@@ -59,15 +60,15 @@ void dfs(int v) {
 void dfs_stack(int s) {
   stack<int> st;
   st.push(s);
-  
+
   while (!st.empty()) {
     int top = st.top();
     st.pop();
-    
+
     if(!isVisit[top]){
       isVisit[top] = true;
       printf("%d ", top);
-  
+
       for (int i = 0; i < edges[top].size(); i++) {
         int adj = edges[top][i];
         if (!isVisit[adj]) {
@@ -89,12 +90,12 @@ void bfs(int s) {
   queue<int> q;
   isVisit[s] = true;
   q.push(s);
-  
+
   while (!q.empty()) {
     int front = q.front();
     printf("%d ", front, q.size());
     q.pop();
-    
+
     for (int i = 0; i < edges[front].size(); i++) {
       int adj = edges[front][i];
       if (!isVisit[adj]) {
@@ -118,15 +119,15 @@ void bfs(int s) {
 void dfs_stack(int s) {
   stack<int> st; // stack 사용
   st.push(s);
-  
+
   while (!st.empty()) {
     int top = st.top();
     st.pop();
-    
+
     if(!isVisit[top]){
       isVisit[top] = true;
       printf("%d ", top);
-  
+
       for (int i = 0; i < edges[top].size(); i++) {
         int adj = edges[top][i];
         if (!isVisit[adj]) {
@@ -144,15 +145,15 @@ void dfs_stack(int s) {
 void bfs_queue(int s) {
   queue<int> q; // queue를 사요!
   q.push(s);
-  
+
   while (!q.empty()) {
     int front = q.front();
     q.pop();
-    
+
     if(!isVisit[front]){
       isVisit[front] = true;
       printf("%d ", front, q.size());
-  
+
       for (int i = 0; i < edges[front].size(); i++) {
         int adj = edges[front][i];
         if (!isVisit[adj]) {

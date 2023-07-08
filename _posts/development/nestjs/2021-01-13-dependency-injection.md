@@ -1,7 +1,8 @@
 ---
 title: "Dependency Injection"
-layout: post
-tags: [NestJS]
+toc: true
+toc_sticky: true
+categories: [NestJS]
 ---
 
 
@@ -10,9 +11,9 @@ tags: [NestJS]
 <br>
 <hr>
 
-Dependency Injection은 `NestJS` 프레임워크에서 단골로 등장하는 용어다. 
+Dependency Injection은 `NestJS` 프레임워크에서 단골로 등장하는 용어다.
 
-Dependency Injection(DI)는 소프웨어 설계의 "Design Pattern" 중 하나다. 
+Dependency Injection(DI)는 소프웨어 설계의 "Design Pattern" 중 하나다.
 
 DI는 '의존성(Dependency)'과 '주입(Injection)'을 함께 사용하는 설계 방법이다. 그래서 두 개념에 대한 이해가 선행되어야 한다!
 
@@ -20,7 +21,7 @@ DI는 '의존성(Dependency)'과 '주입(Injection)'을 함께 사용하는 설�
 
 <div class="img-wrapper">
 <img src="https://i.imgur.com/QAxvQRr.png" width="600vw">
-<p>Material from <a href="https://www.slideshare.net/ThibaudDesodt/dependency-injection-the-right-way">here</a></p> 
+<p>Material from <a href="https://www.slideshare.net/ThibaudDesodt/dependency-injection-the-right-way">here</a></p>
 </div>
 
 <br>
@@ -64,7 +65,7 @@ public class PetOwner{
 
 이런 상황은 디자인 패러다임 중 하나인 "Low Coupling"에 부합하지 않는다.
 
-왜냐하면, Coupling이 존재한다면 어떤 모듈의 API나 행동이 바뀌다면, 그 모듈에 의존한 다른 모듈까지 코드를 변경해줘야 할 가능성이 생기기 때문이다. 
+왜냐하면, Coupling이 존재한다면 어떤 모듈의 API나 행동이 바뀌다면, 그 모듈에 의존한 다른 모듈까지 코드를 변경해줘야 할 가능성이 생기기 때문이다.
 
 즉, `Dog` 객체를 수정하면, `PetOwner`까지 덩달아 수정해야 할지도 모른다.
 
@@ -181,7 +182,7 @@ B. 추상은 상세를 의존해서는 안 된다. 상세는 추상을 의존해
 
 <div class="img-wrapper">
 <img src="https://i.imgur.com/QAxvQRr.png" width="600vw">
-<p>Material from <a href="https://www.slideshare.net/ThibaudDesodt/dependency-injection-the-right-way">here</a></p> 
+<p>Material from <a href="https://www.slideshare.net/ThibaudDesodt/dependency-injection-the-right-way">here</a></p>
 </div>
 
 

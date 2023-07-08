@@ -1,7 +1,8 @@
 ---
 title: "Linear Regression - 1-2"
-layout: post
-tags: [applied_statistics]
+toc: true
+toc_sticky: true
+categories: ["Applied Statsitcs"]
 ---
 
 
@@ -19,7 +20,7 @@ estimator에서 independent vector $\mathbf{x}$에서 어떤 feature가 response
 
 <span class="statement-title">Assumption.</span> Classical Assumption<br>
 
-Assume that the true distribution of the data is 
+Assume that the true distribution of the data is
 
 $$
 Y = X^T \beta + \epsilon, \quad \epsilon \sim N(0, \sigma^2)

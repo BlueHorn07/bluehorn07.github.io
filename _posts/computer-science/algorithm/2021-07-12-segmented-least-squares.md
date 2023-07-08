@@ -1,7 +1,8 @@
 ---
 title: "Segmented Least Squares"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -42,7 +43,7 @@ For the set of $n$ points in the plane $(x_1, y_1), ..., (x_n, y_n)$ with $x_1 \
 
 Let $S(a, b)$ the subset of points where $S(a, b) = \\{ (x_i, y_i) \mid a \le i < b \\}$, and then let $E(S(a, b))$ be the residual sum of the fitting for $S(a, b)$.
 
-Then, the total residual error is 
+Then, the total residual error is
 
 $$
 E = \sum_i E(S(t_i, t_{i+1})) \quad \text{where} \quad [t_i, t_{i+1}) \in [x_1, x_n]

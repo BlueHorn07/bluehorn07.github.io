@@ -1,7 +1,8 @@
 ---
 title: "Shortest Path Case Study"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 

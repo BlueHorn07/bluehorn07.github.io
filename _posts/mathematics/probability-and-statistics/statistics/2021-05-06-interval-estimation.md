@@ -1,7 +1,8 @@
 ---
 title: "Interval Estimation"
-layout: post
-tags: ["statistics"]
+toc: true
+toc_sticky: true
+categories: ["Statistics"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -291,7 +292,7 @@ And the variance $\text{Var}(\bar{x}) = \sigma^2/n$.
 
 [Interval Estimator]
 
-For an interval estimator $\left(\bar{x} - z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}, \; \bar{x} + z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}} \right)$, 
+For an interval estimator $\left(\bar{x} - z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}, \; \bar{x} + z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}} \right)$,
 
 the error is $\left\| \bar{x} - \mu \right\| \le z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}$.
 

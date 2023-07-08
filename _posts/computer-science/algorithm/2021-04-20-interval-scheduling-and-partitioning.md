@@ -1,7 +1,8 @@
 ---
 title: "Interval Scheduling and Partitioning"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -16,7 +17,7 @@ tags: ["algorithm"]
 
 ## Interval Scheduling
 
-각 Job $j$는 $[s_j, f_j]$의 start time, finish time을 가진다고 가자. 이때, 두 Job이 *compatible* 하다는 것은 두 Job이 서로 중첩되지 않는다는 말이다. \<Interval Scheduling\>은 전체 Job의 집합의 부분집합 중 포함된 모든 Job이 서로 compatible하면서 그 부분집합의 크기가 최대가 되는 집합을 찾는 것을 목표로 한다. 
+각 Job $j$는 $[s_j, f_j]$의 start time, finish time을 가진다고 가자. 이때, 두 Job이 *compatible* 하다는 것은 두 Job이 서로 중첩되지 않는다는 말이다. \<Interval Scheduling\>은 전체 Job의 집합의 부분집합 중 포함된 모든 Job이 서로 compatible하면서 그 부분집합의 크기가 최대가 되는 집합을 찾는 것을 목표로 한다.
 
 과연 위와 같은 Maximum compatible subset을 찾으려면 어떻게 해야할까?? Greedy Algorithm은 <span class="half_HL">모든 Job을 finish time으로 정렬한 후에 종료시간이 빠르면서 compatible 한 순서대로 고르는 방식</span>을 제안한다.
 
@@ -38,7 +39,7 @@ tags: ["algorithm"]
 
 (귀류법) Assume that the given greedy approach is not optimal.
 
-Let $i_1, i_2, \dots, i_n$ denote the set of jobs selected by greedy. 
+Let $i_1, i_2, \dots, i_n$ denote the set of jobs selected by greedy.
 
 Let $j_1, j_2, \dots, j_m$ denote the set of jobs in the optimal solution with $i_1 = j_1$, $i_2 = j_2$, ..., $i_r = j_r$ for the largest possible value of $r$.
 

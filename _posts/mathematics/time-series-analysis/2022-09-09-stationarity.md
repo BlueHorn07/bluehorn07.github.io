@@ -1,7 +1,8 @@
 ---
 title: "Stationarity"
-layout: post
-tags: ["time_series_analysis"]
+toc: true
+toc_sticky: true
+categories: ["Time Series Analysis"]
 ---
 
 # 정상성 = 특징 없음
@@ -39,7 +40,7 @@ tags: ["time_series_analysis"]
 joint CDF $F_X (x_{t_1}, ..., x_{t_n})$에 대해 아래가 성립한다.
 
 $$
-F_X (x_{t_1}, ..., x_{t_n}) 
+F_X (x_{t_1}, ..., x_{t_n})
 = F_X (x_{t_1 + \tau}, ..., x_{t_n + \tau})
 $$
 

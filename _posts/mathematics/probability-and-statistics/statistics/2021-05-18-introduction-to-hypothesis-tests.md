@@ -1,7 +1,8 @@
 ---
 title: "Introduction to Hypothesis Tests"
-layout: post
-tags: ["statistics"]
+toc: true
+toc_sticky: true
+categories: ["Statistics"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -140,7 +141,7 @@ $$
 
 </div>
 
-그럼 또다른 질문이 떠오른다. 
+그럼 또다른 질문이 떠오른다.
 
 <big>Q. $P(T1)$과 $P(T2)$ 중 어느 것을 줄여야 좋을까?</big>
 
@@ -160,7 +161,7 @@ $$
 
 <br/>
 
-"암 진단"이라는 다른 상황을 생각해본다면, 
+"암 진단"이라는 다른 상황을 생각해본다면,
 
 - $H_0$: 환자 B는 건강하다.
 - $H_1$: 환자 B는 암이 있다.
@@ -224,7 +225,7 @@ The critical region is $\\{ X \ge C \\}$.
 
 Here, $\alpha = P(X \ge C \mid p=0.5) = P(\text{BIN}(20, 0.5) \ge C)$.
 
-Then, by the cdf of $\text{BIN}(20, 0.5)$, 
+Then, by the cdf of $\text{BIN}(20, 0.5)$,
 
 $$
 P(\text{BIN}(20, 0.5) \le 13) = 0.9423

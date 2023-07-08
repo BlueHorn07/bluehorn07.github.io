@@ -1,7 +1,8 @@
 ---
 title: "Static Pod"
-layout: post
-tags: ["develop", "kubernetes"]
+toc: true
+toc_sticky: true
+categories: ["Develop", "Kubernetes"]
 ---
 
 노드의 kubelet 데몬에 의해 직접 관리되는 Pod으로, yaml 파일을 통해 생성/수정/삭제한다.

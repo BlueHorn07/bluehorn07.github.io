@@ -1,12 +1,13 @@
 ---
 title: "AWS Amazon Linux 2 개발 셋업"
-layout: post
-tags: ["develop", "AWS"]
+toc: true
+toc_sticky: true
+categories: ["Develop", "AWS"]
 ---
 
 이 글은 정리를 위해 개인적인 용도로 작성된 포스트입니다. 지적과 조언은 언제나 환영입니다 ㅎㅎ
 
-EC2 비용을 줄이기 위해 `t4g` 시리즈의 인스턴스를 사용했더니 "Graviton"이 `ARM` 아키텍처란 걸 뒤늦게 깨달았습니다 😭 
+EC2 비용을 줄이기 위해 `t4g` 시리즈의 인스턴스를 사용했더니 "Graviton"이 `ARM` 아키텍처란 걸 뒤늦게 깨달았습니다 😭
 `x86` 기반에서 기존에 쓰던 설치 명령어로는 설치가 잘 안 되는 문제도 있었습니다. 그래서 AWS Graviton으로 인스턴스를 구성하면서 겪은 트러블 슈팅을 기록하고자 합니다.
 
 # amazon-linux-extras

@@ -1,7 +1,8 @@
 ---
 title: "Markov Process & Markov Chain"
-layout: post
-tags: ["machine_learning"]
+toc: true
+toc_sticky: true
+categories: ["Machine Learning"]
 ---
 
 
@@ -23,7 +24,7 @@ tags: ["machine_learning"]
 
 A random process has the \<**Markov property**\> if the conditional probability distribution of future states of the process depends only upon the present state.
 
-For sequential states $S_i$, the conditional probability follows 
+For sequential states $S_i$, the conditional probability follows
 
 $$
 p(S_{t+1} \mid S_0, S_1, \dots, S_t) = p(S_{t+1} \mid S_t)

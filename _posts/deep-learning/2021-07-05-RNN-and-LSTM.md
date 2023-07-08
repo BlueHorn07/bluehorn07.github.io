@@ -1,7 +1,8 @@
 ---
 title: "RNN & LSTM"
-layout: post
-tags: ["Deep Learning", "NLP"]
+toc: true
+toc_sticky: true
+categories: ["Deep Learning", "NLP"]
 ---
 
 <br/>
@@ -85,7 +86,7 @@ $$
   <img src="{{ "/images/natural-language-process/RNN-3.png" | relative_url }}" width="550px">
 </div>
 
-또, \<RNN\>과 같은 \<Sequential Model\>은 입력과 출력의 대응에 따라 1-to-1, 1-to-many, many-to-1, many-to-many 등 다양한 형태로 존재한다. 
+또, \<RNN\>과 같은 \<Sequential Model\>은 입력과 출력의 대응에 따라 1-to-1, 1-to-many, many-to-1, many-to-many 등 다양한 형태로 존재한다.
 
 ![RNN structures](https://i.stack.imgur.com/b4sus.jpg)
 
@@ -99,7 +100,7 @@ $$
   <img src="{{ "/images/natural-language-process/RNN-4.png" | relative_url }}" width="750px">
 </div>
 
-\<**LSTM**\>은 \<장기 의존성 문제\>를 해결하기 위해 \<RNN\>의 구조에 Cell state $c_t$를 추가하고 여러 게이트(gate)를 추가한 모델이다. 
+\<**LSTM**\>은 \<장기 의존성 문제\>를 해결하기 위해 \<RNN\>의 구조에 Cell state $c_t$를 추가하고 여러 게이트(gate)를 추가한 모델이다.
 
 <div class="img-wrapper">
   <img src="{{ "/images/natural-language-process/LSTM-1.png" | relative_url }}" width="650px">

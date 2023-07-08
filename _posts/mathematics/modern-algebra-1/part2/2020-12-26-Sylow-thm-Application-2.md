@@ -1,7 +1,8 @@
 ---
 title: "Three Sylow Theorems - Application 2"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -21,7 +22,7 @@ Three Sylow Theorem은 [이곳]({{"2020/12/26/Sylow-thm.html" | relative_url}})�
 
 <div class="statement" markdown="1">
 
-For a group of order $pq$ ($p<q$ are prime) 
+For a group of order $pq$ ($p<q$ are prime)
 
 1\. is not simple.
 
@@ -92,7 +93,7 @@ By [3rd Sylow Theorem]({{"2020/12/26/Sylow-thm.html#3rd-sylow-theorem" | relativ
 - $m \mid (\lvert G \rvert = pq)$
 - $m \equiv 1$ (mod $p$)
 
-따라서 $m = kp + 1$이고, 첫번째 명제에서와 동일한 방법으로 
+따라서 $m = kp + 1$이고, 첫번째 명제에서와 동일한 방법으로
 
 $kp + 1 = 1$ 또는 $kp + 1 = q$이다.
 
@@ -122,7 +123,7 @@ $H \cap K$은 $H \cap K \le H$, $H \cap K \le K$이므로, **<u>Lagrange Thm</u>
 
 $H$, $K$가 cyclic group이므로 (위수가 소수 $p$이므로 cyclic이 보장된다.)
 
-$H \times K$ 역시 cyclic이다. 
+$H \times K$ 역시 cyclic이다.
 
 따라서 동형인 $G$ 역시 cyclic이다. $\blacksquare$
 
@@ -139,7 +140,7 @@ $H \times K$ 역시 cyclic이다.
 
 Let $H$, $K$ be finite subgroups of $G$.
 
-Then, 
+Then,
 
 $$
 \lvert HK \rvert = \dfrac{\lvert H \rvert \times \lvert K \rvert}{\lvert H \cap K \rvert}
@@ -179,7 +180,7 @@ Then, $h_2 = h_1x^{-1}$, $k_2 = x k_1$ for some $x \in H \cap K$가 될 것이�
 
 따라서 $HK$의 각 원소 $hk \in HK$는 $H \cap K$의 원소 갯수만큼 $hk = h_ik_i$인 $h_ik_i$를 만들 수 있다.
 
-즉, $HK$가 $\lvert H \cap K \rvert$ 만큼의 묶음으로 분할된다는 말이다. 
+즉, $HK$가 $\lvert H \cap K \rvert$ 만큼의 묶음으로 분할된다는 말이다.
 
 <br>
 
@@ -240,7 +241,7 @@ Then, $G$ is cyclic.
 
 <div class="math-statement" markdown="1">
 
-$15 = 3 \times 5$이다. 
+$15 = 3 \times 5$이다.
 
 
 - 위수가 두 소수 $3$, $5$의 곱으로 표현
@@ -272,7 +273,7 @@ $\lvert G \rvert = 20 = 2^2 \times 5$
 - $n$ := (# of Sylow 2-subgroup)
 - $m$ := (# of Sylow 5-subgroup)
 
-그러면, [3rd Sylow Theorem]({{"2020/12/26/Sylow-thm.html#3rd-sylow-theorem" | relative_url}})에 의해 
+그러면, [3rd Sylow Theorem]({{"2020/12/26/Sylow-thm.html#3rd-sylow-theorem" | relative_url}})에 의해
 
 - $n \mid 20$, and $n \equiv 1$ (mod 2) $\implies$ $2k + 1 \mid 20$
 - $m \mid 20$, and $m \equiv 1$ (mod 5) $\implies$ $5l + 1 \mid 20$
@@ -299,7 +300,7 @@ $5l + 1 \mid 20$이므로 $5l + 1$는 1, 2, 4, 5, 10, 20이 가능하다. <br>
 
 이 문제부터는 다른 방식으로 not simple을 판별한다!!
 
-<br>    
+<br>
 
 <span class="statement-title">Example 5.</span><br>
 
@@ -360,7 +361,7 @@ $48 = \lvert G \rvert$의 약수가 되어야 한다.
 게다가 $N_G(H \cap K)$는 $H$, $K$를 모두 포함하므로 $HK$도 포함해야 한다. <br>
 따라서 $\lvert N_G(H \cap K) \rvert > 32$
 
-따라서 
+따라서
 
 $$
 16 < 32 < \lvert N_G(H \cap K) \rvert \mid 48

@@ -1,7 +1,8 @@
 ---
 title: "Linear Programming"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -84,9 +85,9 @@ maximize project per day: $\max \; (x_1 + 6 x_2)$
 
 또 식단과 관련해 아래의 요소들이 있는데,
 
-- $a_ij$를 음식 $F_i$ 하나에 있는 영양소 $N_j$의 양이라고 하자. 
-- $r_j$를 하루에 섭취해야 하는 영양소 $N_j$의 양이라고 하자. 
-- $x_i$를 하루에 섭취하는 음식 $F_i$의 양이라고 하자. 
+- $a_ij$를 음식 $F_i$ 하나에 있는 영양소 $N_j$의 양이라고 하자.
+- $r_j$를 하루에 섭취해야 하는 영양소 $N_j$의 양이라고 하자.
+- $x_i$를 하루에 섭취하는 음식 $F_i$의 양이라고 하자.
 - $p_i$를 음식 $F_i$의 하나의 가격이라고 하자.
 
 하루 식단은 음식 조합을 어떻게 하느냐에 따라 달렸다. 우리는 가장 적은 비용으로 적절한 영양을 섭취하는 식단을 짜야 한다.
@@ -106,7 +107,7 @@ minimize cost: $p_1x_1 + p_2x_2 + \cdots + p_nx_n$
 **<u>Constraints</u>**
 
 - $x_i \ge 0$
-- $a_{1j}x_1 + a_{2j}x_2 + \cdots + a_{nj}x_n \ge r_j$ 
+- $a_{1j}x_1 + a_{2j}x_2 + \cdots + a_{nj}x_n \ge r_j$
 
 <hr/>
 
@@ -261,7 +262,7 @@ $$
 \begin{aligned}
 x_{AB} + x'_{AB} &\le 2 \\
 x_{BC} + x'_{BC} &\le 2 \\
-x_{CA} + x'_{CA} &\le 2 
+x_{CA} + x'_{CA} &\le 2
 \end{aligned}
 $$
 

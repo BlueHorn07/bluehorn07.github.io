@@ -1,7 +1,8 @@
 ---
 title: "Regression Spline"
-layout: post
-tags: [applied_statistics]
+toc: true
+toc_sticky: true
+categories: ["Applied Statsitcs"]
 ---
 
 
@@ -37,7 +38,7 @@ $$
 
 For $m=1, \dots, M$, let $h_m: \mathbb{R}^p \rightarrow \mathbb{R}$ be the $m$-th **transformation** of $X$.
 
-Then, we model as 
+Then, we model as
 
 $$
 f(X) = \sum^M_{m=1} \beta_m h_m (X)
@@ -200,7 +201,7 @@ and <span class="half_HL">has continuous derivatives up to order $(M-1)$</span>.
 
 오른쪽은 <span class="half_HL">knot에서 continuous해야 한다</span>는 제약을 준 모델이다.
 
-이는 $x \mapsto a_3 x^3 + a_x x^3 + a_1 x + a_0$인 각 $f_i\left((\xi_{i-1}, \xi_i]\right)$에 대해 
+이는 $x \mapsto a_3 x^3 + a_x x^3 + a_1 x + a_0$인 각 $f_i\left((\xi_{i-1}, \xi_i]\right)$에 대해
 
 $$
 f_i(\xi_i) = f_{i+1}(\xi_i)

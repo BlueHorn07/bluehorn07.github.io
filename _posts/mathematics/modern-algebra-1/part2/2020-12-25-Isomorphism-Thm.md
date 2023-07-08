@@ -1,7 +1,8 @@
 ---
 title: "Three Isomorphism Theorems"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -25,7 +26,7 @@ tags: ["Modern Algebra1"]
 
 Let $\phi: G \longrightarrow G'$ be a group homo-.
 
-Then, 
+Then,
 
 1. $\phi[G]$ is a group.
 2. $G / {\ker \phi} \cong \phi[G]$
@@ -69,7 +70,7 @@ Then,
 
 Let $h \in H$, $n \in N$.
 
-Then, 
+Then,
 
 $$
 \begin{aligned}
@@ -133,7 +134,7 @@ $$
 
 이때, intersection of subgps는 여전히 subgp이라는 것이 알려져 있다.
 
-즉, set $S$를 포함하는 subgroup 중 가장 작은 subgroup이 $< S >$이다. 
+즉, set $S$를 포함하는 subgroup 중 가장 작은 subgroup이 $< S >$이다.
 
 </div>
 
@@ -190,7 +191,7 @@ $$
 
 Let $H \le G$, $N \trianglelefteq G$.
 
-Then, 
+Then,
 
 $$
 HN / N \; \cong \; N / {(H \cap N)}
@@ -266,7 +267,7 @@ $$
 
 따라서 $h \in N$이고, $\ker \phi \subseteq H \cap N$이다.
 
-반대로, 
+반대로,
 
 $$
 x \in H \cap N \implies \phi(x) = xN = N
@@ -278,9 +279,9 @@ $$
 
 <br>
 
-FHT에 의해 $H / {\ker \phi} \cong \phi(H)$이다. 이때, $\phi$가 onto 였으므로 $\phi(H) = HN / N$이다. 
+FHT에 의해 $H / {\ker \phi} \cong \phi(H)$이다. 이때, $\phi$가 onto 였으므로 $\phi(H) = HN / N$이다.
 
-따라서 
+따라서
 
 $$
 H / (H \cap N) \cong HN / N
@@ -304,7 +305,7 @@ $$
 
 Let $H, K \trianglelefteq G$, $K \le H$
 
-Then, 
+Then,
 
 $$
 G / H \; \cong \; (G/K) / (H/K)
@@ -335,7 +336,7 @@ Then, check properties of $\phi$.
 
 (1) well-defined
 
-Supp. $gK = g'K$, then 
+Supp. $gK = g'K$, then
 
 $$
 \begin{aligned}
@@ -372,7 +373,7 @@ $$
 
 따라서 $gK = hK \in H/K$이고, $\ker \phi \subseteq H/K$가 된다.
 
-반대로 
+반대로
 
 $$
 hK \in H/K \implies \phi(hK) = hH = H

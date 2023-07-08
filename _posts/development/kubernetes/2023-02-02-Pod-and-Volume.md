@@ -1,7 +1,8 @@
 ---
 title: "Pod and Volume"
-layout: post
-tags: ["develop", "kubernetes"]
+toc: true
+toc_sticky: true
+categories: ["Develop", "Kubernetes"]
 ---
 
 컨테이너 내의 파일은 모두 일시적인 존재다. 컨테이너가 종료되면, 컨테이너에 기록된 데이터 모두 사라진다. 이것을 방지하기 위해 Docker와 K8s는 Volume 기능을 제공한다.

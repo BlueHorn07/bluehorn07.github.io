@@ -1,7 +1,8 @@
 ---
 title: "Converse of Lagrange Thm"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -17,7 +18,7 @@ For a group $G$, and subgroup $H \le G$, $\lvert H \rvert \mid \lvert G \rvert$
 
 </div>
 
-Lagrange 정리는 Group $G$와 subgroup $H$ 사이의 관계를 기술한 정리이다. 
+Lagrange 정리는 Group $G$와 subgroup $H$ 사이의 관계를 기술한 정리이다.
 
 하지만, 일반적으로 Lagrange 정리의 역은 성립하지 않는다. 이번 포스트에선 Lagrange 정리의 역에 대한 반례인 $A_4$에 대해 다룬다.
 
@@ -69,7 +70,7 @@ THEN, $A_4 = H {\cup\mkern-13mu\cdot\mkern5mu} \sigma H$이고, $\dfrac{A_4}{H} 
 
 즉, $\forall \sigma \notin H$, $\sigma^2 \in H$가 된다.
 
-이때, $\forall \sigma \in H$에 대해서도 $\sigma^2 \in H$가 되므로, 종합하면 
+이때, $\forall \sigma \in H$에 대해서도 $\sigma^2 \in H$가 되므로, 종합하면
 
 $$
 \forall \sigma \in A_4, \: \sigma^2 \in H

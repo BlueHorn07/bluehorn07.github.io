@@ -1,7 +1,8 @@
 ---
 title: "Applications to real integrals"
-layout: post
-tags: ["Complex Variable"]
+toc: true
+toc_sticky: true
+categories: ["Complex Variable"]
 ---
 
 
@@ -110,7 +111,7 @@ $$
 $$
 
 
-따라서 
+따라서
 
 $$
 \begin{aligned}

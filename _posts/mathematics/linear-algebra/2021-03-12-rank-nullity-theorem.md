@@ -1,7 +1,8 @@
 ---
 title: "Rank-Nullity Theorem"
-layout: post
-tags: [set_theory]
+toc: true
+toc_sticky: true
+categories: ["Linear Algebra"]
 ---
 
 
@@ -45,7 +46,7 @@ $$
 \sum^r_i {c_i A\mathbf{x}_i} = \sum^r_i {Ac_i \mathbf{x}_i} = 0
 $$
 
-Then, we build a vector $\mathbf{v} = c_1 \mathbf{x}_1, c_2 \mathbf{x}_2, \dots, c_r \mathbf{x}_r \in \mathcal{R}(A)$ and denote above situation as 
+Then, we build a vector $\mathbf{v} = c_1 \mathbf{x}_1, c_2 \mathbf{x}_2, \dots, c_r \mathbf{x}_r \in \mathcal{R}(A)$ and denote above situation as
 
 $$
 \sum^r_i {Ac_i \mathbf{x}_i} = A\mathbf{v} = 0
@@ -63,13 +64,13 @@ $$
 \dim (\mathcal{R}(A)) = r \le \dim (\mathcal{C}(A))
 $$
 
-By applying same argument to $A^T$, we get 
+By applying same argument to $A^T$, we get
 
 $$
 \dim (\mathcal{R}(A)) \ge \dim (\mathcal{C}(A))
 $$
 
-Therefore, 
+Therefore,
 
 $$
 \dim (\mathcal{R}(A)) = \dim (\mathcal{C}(A))

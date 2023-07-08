@@ -1,7 +1,8 @@
 ---
 title: "Uniform and Normal Distribution"
-layout: post
-tags: ["probability"]
+toc: true
+toc_sticky: true
+categories: ["Probability"]
 ---
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
@@ -199,7 +200,7 @@ $Z$의 pdf가 $N(0, 1)$이므로 $Z \sim N(0, 1)$이다. $\blacksquare$
 
 <span class="statement-title">Remark.</span><br>
 
-1\. If $Z \sim N(0, 1)$, the \<standard normal\>, then its **pdf** and **cdf** are commonly denoted by $\varphi(z)$ and $\Phi(z)$. 
+1\. If $Z \sim N(0, 1)$, the \<standard normal\>, then its **pdf** and **cdf** are commonly denoted by $\varphi(z)$ and $\Phi(z)$.
 
 2\. The value of $\Phi(z)$ is listed on the Appendix table.
 

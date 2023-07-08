@@ -1,7 +1,8 @@
 ---
 title: "『틀리지 않는 법』 조던 엘렌버그"
-layout: post
-tags: [reading]
+toc: true
+toc_sticky: true
+categories: ["Reading"]
 ---
 
 <br>

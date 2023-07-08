@@ -1,7 +1,8 @@
 ---
 title: "Network Devices"
-layout: post
-tags: ["develop", "network"]
+toc: true
+toc_sticky: true
+categories: ["Develop", "Network"]
 ---
 
 이 포스트는 [[Youtube] Hub, Bridge, Switch, Router - Network Devices](https://youtu.be/H7-NR3Q3BeI) 영상의 내용을 바탕으로 작성된 것임을 밝힘니다.

@@ -1,7 +1,8 @@
 ---
 title: "Recommendation Algorithm - Basic"
-layout: post
-tags: ["Recommendation Algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Recommendation Algorithm"]
 ---
 
 

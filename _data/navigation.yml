@@ -1,0 +1,10 @@
+# main links
+main:
+  - title: "About"
+    url: "/about/"
+  - title: "Develop"
+    url: "/topic/development"
+  - title: "Math"
+    url: "/topic/mathematics"
+  - title: "CS"
+    url: "/topic/computer-science"

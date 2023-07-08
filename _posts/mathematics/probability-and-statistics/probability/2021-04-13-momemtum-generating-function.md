@@ -1,7 +1,8 @@
 ---
 title: "Momemtum Generating Function"
-layout: post
-tags: ["probability"]
+toc: true
+toc_sticky: true
+categories: ["Probability"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -78,7 +79,7 @@ $$
 \left. \frac{d}{dt} M_X(t) \right|_{t=0} = \left. E \left[ X e^{tX}\right] \right|_{t=0} = E[X]
 $$
 
-마찬가지로 
+마찬가지로
 
 $$
 \frac{d^k}{dt^k} e^{tX} = \frac{d^{(k-1)}}{dt^{(k-1)}} X e^{tX} = X \frac{d^{(k-1)}}{dt^{(k-1)}} e^{tX} = \cdots = X^k e^{tX}
@@ -155,7 +156,7 @@ $$
 
 $$
 \begin{aligned}
-\left(\frac{p}{q}\right)^k \cdot \sum^{\infty}_{x=k} \binom{x-1}{k-1} \left( e^t q \right)^{x} &= 
+\left(\frac{p}{q}\right)^k \cdot \sum^{\infty}_{x=k} \binom{x-1}{k-1} \left( e^t q \right)^{x} &=
 \left(\frac{p}{q}\right)^k \cdot \sum^{\infty}_{y=0} \binom{y+k-1}{k-1} \left( e^t q \right)^{y+k} \\
 &= \left(\frac{p}{q}\right)^k \cdot \left( e^t q \right)^k \sum^{\infty}_{y=0} \binom{y+k-1}{k-1} \left( e^t q \right)^y \\
 &= (p \cdot e^t)^k \cdot \sum^{\infty}_{y=0} \binom{y+k-1}{k-1} \left( e^t q \right)^y
@@ -172,7 +173,7 @@ $$
 
 $$
 \begin{aligned}
-(p \cdot e^t)^k \cdot \sum^{\infty}_{y=0} \binom{y+k-1}{k-1} \left( e^t q \right)^y 
+(p \cdot e^t)^k \cdot \sum^{\infty}_{y=0} \binom{y+k-1}{k-1} \left( e^t q \right)^y
 &= (p \cdot e^t)^k \cdot \sum^{\infty}_{y=0}  \left( -1 \right)^y \cdot \binom{-k}{y} \left( e^t q \right)^y \\
 &= (p \cdot e^t)^k \cdot \left( 1 - q\cdot e^t \right)^{-k} \\
 &= \left( \frac{p \cdot e^t}{1 - q\cdot e^t} \right)^k \qquad \text{for} \quad 1 - q \cdot e^{t} > 0
@@ -204,7 +205,7 @@ $$
 
 $$
 \begin{aligned}
-\frac{1}{\Gamma(\alpha)} \cdot \int^{\infty}_0 x^{\alpha-1}\cdot e^{-(1-t)x} \; dx 
+\frac{1}{\Gamma(\alpha)} \cdot \int^{\infty}_0 x^{\alpha-1}\cdot e^{-(1-t)x} \; dx
 &= \frac{1}{\Gamma(\alpha)} \cdot \int^{\infty}_0 x^{\alpha-1}\cdot e^{-\frac{x}{1/(1-t)}} \; dx \\
 &= \frac{1}{(1-t)^{\alpha}} \cdot \cancelto{1}{\int^{\infty}_0 \frac{1}{\Gamma(\alpha) \cdot \frac{1}{(1-t)^{\alpha}}} \cdot x^{\alpha-1} \cdot e^{-\frac{x}{1/(1-t)}} \; dx} \\
 &= \frac{1}{(1-t)^{\alpha}} \qquad \text{for} \quad t < 1
@@ -255,7 +256,7 @@ $$
 
 <span class="statement-title">Remark.</span><br>
 
-If $X$ has the mgf $M_X(t)$, then $Y = aX + b$ has the mgf 
+If $X$ has the mgf $M_X(t)$, then $Y = aX + b$ has the mgf
 
 $$
 M_Y (t) = e^{bt} \cdot M_X(at)
@@ -293,7 +294,7 @@ A. $X \sim \text{Exp}(\lambda = 2)$
 
 Q. How about $M_X(t) = \dfrac{1}{2} e^t + \dfrac{1}{2} e^{-t}$ for $t \in \mathbb{R}$?
 
-A. 
+A.
 
 $$
 \begin{aligned}
@@ -328,13 +329,13 @@ $$
 
 ### MGF with Independence
 
-If $X \perp Y$, then 
+If $X \perp Y$, then
 
 $$
 M_{X+Y} (t) = M_X(t) \cdot M_Y(t)
 $$
 
-In general, if $X_1, X_2, \dots, X_n$ are independent,, then 
+In general, if $X_1, X_2, \dots, X_n$ are independent,, then
 
 $$
 M_{X_1 + \cdots + X_n}(t) = M_{X_1} (t) + \cdots + M_{X_n} (t) = \sum^n_{i=1} M_{X_i} (t)
@@ -346,7 +347,7 @@ $$
 
 Let $X \sim \text{BIN}(n, p)$ and $Y \sim \text{BIN}(m, p)$, and $X \perp Y$.
 
-Then, 
+Then,
 
 $$
 X+Y \sim \text{BIN}(n+m, p)
@@ -372,7 +373,7 @@ $$
 
 Let $X \sim \text{Poi}(\lambda)$ and $Y \sim \text{Poi}(\mu)$, and $X \perp Y$.
 
-Then, 
+Then,
 
 $$
 X+Y \sim \text{Poi}(\lambda + \mu)
@@ -398,7 +399,7 @@ $$
 
 Let $X \sim \text{NegBIN}(r_1, p)$ and $Y \sim \text{NegBIN}(r_2, p)$, and $X \perp Y$.
 
-Then, 
+Then,
 
 $$
 X+Y \sim \text{NegBIN}(r_1 + r_2, p)
@@ -411,7 +412,7 @@ $$
 
 Let $X \sim N(\mu_1, \sigma_1^2)$ and $Y \sim N(\mu_2, \sigma_2^2)$, and $X \perp Y$.
 
-Then, 
+Then,
 
 $$
 X+Y \sim N(\mu_1 + \mu_2, \sigma_1^2 + \sigma_2^2)
@@ -437,7 +438,7 @@ $$
 
 Let $X \sim \text{Gamma}(\alpha_1, \beta)$ and $Y \sim \text{Gamma}(\alpha_2, \beta)$, and $X \perp Y$.
 
-Then, 
+Then,
 
 $$
 X+Y \sim \text{Gamma}(\alpha_1 + \alpha_2, \beta)
@@ -469,12 +470,12 @@ $$
 
 Let $X \sim \text{Exp}(\lambda)$, $Y \sim \text{Exp}(\mu)$ and $X \perp Y$.
 
-Then, 
+Then,
 
 $$
 Z = \min(X, Y) \sim \text{Exp}(\lambda + \mu)
 $$
- 
+
 <hr/>
 
 여기까지가 정규수업의 중간고사 시험 범위이다. 개인적으로 논리를 전개하는 부분은 식을 잘 정리하고, 문제를 잘 모델링하는 부분을 충분히 연습하면 될 것 같다. 다만, 각 분포의 정의와 형태가 조금씩 헷갈려서 시험 전에 모든 분포를 빠짐없이 다 기술할 수 있는지 백지(白紙)에 체크해보면 좋을 것 같다.

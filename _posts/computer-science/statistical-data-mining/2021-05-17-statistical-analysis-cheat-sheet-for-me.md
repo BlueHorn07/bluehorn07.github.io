@@ -1,7 +1,8 @@
 ---
 title: "내가 보려고 만든 '통계 분석' Cheat Sheet"
-layout: post
-tags: [applied_statistics]
+toc: true
+toc_sticky: true
+categories: ["Applied Statsitcs"]
 ---
 
 <br/>

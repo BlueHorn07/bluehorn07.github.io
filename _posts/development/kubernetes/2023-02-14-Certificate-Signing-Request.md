@@ -1,7 +1,8 @@
 ---
 title: "Certificate Signing Request"
-layout: post
-tags: ["develop", "kubernetes"]
+toc: true
+toc_sticky: true
+categories: ["Develop", "Kubernetes"]
 ---
 
 K8s의 CertificateSigningRequest 리소스는 `.csr` 파일과 동일한 녀석이다!
@@ -67,7 +68,7 @@ roleRef:
 `k describe csr`을 해보면 아래와 같이 `CN`(Common Name)에 대한 항목이 있는데, 이게 User 리소스의 이름이다!
 
 ```bash
-$ k describe csr akshay 
+$ k describe csr akshay
 Name:                akshay
 Requesting User:     kubernetes-admin
 Signer:              kubernetes.io/kube-apiserver-client

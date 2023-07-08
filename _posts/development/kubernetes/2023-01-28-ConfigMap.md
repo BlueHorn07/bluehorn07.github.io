@@ -1,7 +1,8 @@
 ---
 title: "ConfigMap"
-layout: post
-tags: ["develop", "kubernetes"]
+toc: true
+toc_sticky: true
+categories: ["Kubernetes"]
 ---
 
 기밀이 아닌 데이터를 키-값의 쌍으로 저장하는데 쓰는 오브젝트. ConfigMap에 저장된 값은 Pod이 사용한다.

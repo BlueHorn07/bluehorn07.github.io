@@ -1,20 +1,22 @@
 ---
 title: "Transformer(2017) - 2"
-layout: post
-tags: ["research"]
+toc: true
+toc_sticky: true
+categories: ["Deep Learning"]
 ---
 
 
-이 포스트는 제가 개인적인 용도로 정리한 글 입니다. 
+이 포스트는 제가 개인적인 용도로 정리한 글 입니다.
 
 - "[Attention is all you need](https://arxiv.org/abs/1706.03762)"
   - 2017, Google
 
 Transformer에 대한 첫번째 포스트는 [이곳]({{"2021/01/18/Transformer-1.html" | relative_url}})에서 볼 수 있습니다.
 
-1. [Encoder in Transformer](#encoder-in-transformer)
-   1. Self-Attention
-   2. FFNN
+- [Encoder in Transformer](#encoder-in-transformer)
+  - [Self-Attention in Encoder Module](#self-attention-in-encoder-module)
+  - [FFNN](#ffnn)
+- [Reference](#reference)
 
 <br>
 <hr>

@@ -1,7 +1,8 @@
 ---
 title: "Machine Learning Basics"
-layout: post
-tags: ["machine_learning"]
+toc: true
+toc_sticky: true
+categories: ["Machine Learning"]
 ---
 
 

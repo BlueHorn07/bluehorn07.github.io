@@ -1,7 +1,8 @@
 ---
 title: "Divide and Conquer"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -46,7 +47,7 @@ $$
 \<Master Theorem\>은 분할 정복의 계산 복잡도가 $a$와 $b$, $c$의 관계에 따라 아래와 같이 유도됨을 기술한다.
 
 $$
-T(n) = \begin{cases} 
+T(n) = \begin{cases}
 O(n^c) &\mbox{if } c > \log_b {a} \\
 O(n^d \log {n}) & \mbox{if } c = \log_b {a} \\
 O(n^{\log_b {a}}) & \mbox{if } c < \log_b {a}
@@ -61,7 +62,7 @@ $a$, $b$, $c$에 대한 값만 안다면, 계산 복잡도를 바로 얻을 수 
 
 At $k$-th level, we get $a_k$ subproblems of size $n/b^k$. Also we should consider fixed cost $O(n^c)$ too. At $k$-th level, the size of problem is $n/b^k$, so fixed cost is $O\left(\left(n/b^k\right)^c\right)$.
 
-Then, the cost at $k$-th level is 
+Then, the cost at $k$-th level is
 
 $$
 a^k \cdot O\left(\left(n/b^k\right)^c\right)
@@ -95,10 +96,10 @@ The simple way to understand geometric series is watching the ratio!
 - In Case 2, take sum, $\implies$ $O(n^c) \cdot \log_b {n} = O(n^c \log_b {n}) = O(n^c \log n)$
 - In Case 3, take the last term, $\implies$ $O(n^c) \cdot \left(a/b^c\right)^{\log_b {n}} = O(n^c) \cdot \frac{a^{\log_b n}}{n^c} = O\left( n^{\log_b a} \right)$
 
-Therefore, 
+Therefore,
 
 $$
-T(n) = \begin{cases} 
+T(n) = \begin{cases}
 O(n^c) &\mbox{if } c > \log_b {a} \\
 O(n^d \log {n}) & \mbox{if } c = \log_b {a} \\
 O(n^{\log_b {a}}) & \mbox{if } c < \log_b {a}

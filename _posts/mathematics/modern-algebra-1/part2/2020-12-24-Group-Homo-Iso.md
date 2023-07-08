@@ -1,7 +1,8 @@
 ---
 title: "Group Homo/Iso-morphism + 문풀"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -28,7 +29,7 @@ THEN, there exist an elt $x \in \mathbb{C}^{\*}$ s.t. $\phi(x) = -1$.
 
 Because $x$ is complex number, there exist a  complex root of $x$, $\sqrt{x} \in \mathbb{C}^{\*}$.
 
-THEN, 
+THEN,
 
 $$
 \begin{aligned}
@@ -53,7 +54,7 @@ Supp. $\exists$ an iso- $\phi: \mathbb{R}^{\*} \longrightarrow \mathbb{C}^{\*}$.
 
 THEN, it is true that $\phi(1) = 1$; <small>identity maps to identitiy</small>
 
-THEN, 
+THEN,
 
 $$
 \begin{aligned}
@@ -66,7 +67,7 @@ $$
 
 만약 $\phi$가 iso- 라면 $\sqrt{-1} = i \in \mathbb{C}^{\*}$에 대해서도 대응하는 원소 $x$가 $\mathbb{R}^{\*}$에 존재할 것이다.
 
-그렇다면, 
+그렇다면,
 
 $$
 \begin{aligned}
@@ -133,9 +134,9 @@ Homo- 가 존재함을 보이는 건 머리를 잘 굴려서 생각해내면 되
 
 <div class="statement" markdown="1">
 
-Let $\phi$ be a group homo-, Show that 
+Let $\phi$ be a group homo-, Show that
 
-If $\lvert G \rvert < \infty$, then 
+If $\lvert G \rvert < \infty$, then
 
 1. $\lvert \phi[G] \rvert < \infty$
 2. $\lvert \phi[G] \rvert$ divides $\lvert G \rvert$
@@ -178,7 +179,7 @@ $$
 
 이 명제를 잘 조합해보면 되는데,
 
-$G \le G$이므로 $\phi[G] \le G'$이다. 
+$G \le G$이므로 $\phi[G] \le G'$이다.
 
 여기서 $\phi^{-1}$를 취하면, $\phi^{-1} \left[ \phi [G] \right] \le G$가 된다.
 
@@ -194,7 +195,7 @@ $G \le G$이므로 $\phi[G] \le G'$이다.
 
 <br>
 
-$\phi^{-1} \left[ \phi [G] \right] \le G$이므로 Lagrange Thm에 의해 $\lvert \phi^{-1} \left[ \phi [G] \right] \rvert \mid \lvert G \rvert$이다. 
+$\phi^{-1} \left[ \phi [G] \right] \le G$이므로 Lagrange Thm에 의해 $\lvert \phi^{-1} \left[ \phi [G] \right] \rvert \mid \lvert G \rvert$이다.
 
 이때, $\lvert \phi[G] \rvert = \lvert \phi^{-1} \left[ \phi [G] \right] \rvert$이므로 $\lvert \phi[G] \rvert \mid \lvert G \rvert$이다. $\blacksquare$
 

@@ -1,7 +1,8 @@
 ---
 title: "Maximal Ideal & Prime Ideal"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -15,8 +16,8 @@ tags: ["Modern Algebra1"]
 
 Let $R$ be a ring with unity.
 
-If 
-- $I \trianglelefteq R$ 
+If
+- $I \trianglelefteq R$
 - $1 \in I$
 
 then $I = R$.
@@ -249,7 +250,7 @@ $s \in R$이므로 $1 \in M + (r)$이 된다.
 
 $M$ is a Maximal Ideal $\implies$ $0 \in M$.
 
-$0 + r \cdot s = 1$ for some $s \in R$. 
+$0 + r \cdot s = 1$ for some $s \in R$.
 
 </div>
 
@@ -419,7 +420,7 @@ Any Maximal Ideal of commutative ring is also a Prime Ideal.
 
 Any Field is an Integral Domain.
 
-($N$ : Maximal Ideal) $\iff$ ($R/N$ : Field) 
+($N$ : Maximal Ideal) $\iff$ ($R/N$ : Field)
 
 $\implies$ ($R/N$ : Integral Domain) $\iff$ ($N$ : Prime Ideal)
 

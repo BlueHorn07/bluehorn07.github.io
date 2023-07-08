@@ -1,7 +1,8 @@
 ---
 title: "PyTorch - 모델 커스텀"
-layout: post
-tags: [PyTorch]
+toc: true
+toc_sticky: true
+categories: [PyTorch]
 ---
 
 
@@ -51,7 +52,7 @@ tags: [PyTorch]
   -  `iscrowd` (UInt8Tensor[N]): instances with iscrowd=True will be ignored during evaluation.
 </div><br>
 
-그래서 내가 내린 결론은, 
+그래서 내가 내린 결론은,
 
 - `__getitem__`을 구현할 때, 내가 쓰려는 모델이 어떤 형식의 학습데이터를 요구하는지 잘 파악해야 하고,
 - 그리고 어쩌면, 내가 가진 데이터셋을 `COCO` 형식에 맞게 변환하는 **<u>변환자</u>**가 필요할 수도 있다는 것이다.
@@ -61,7 +62,7 @@ tags: [PyTorch]
 
 ### `torchvision.models`
 
-pyTorch의 `torchvision`은 자체적으로 유명한 모델들을 내부적으로 가지고 있다!! 
+pyTorch의 `torchvision`은 자체적으로 유명한 모델들을 내부적으로 가지고 있다!!
 
 이 [링크](https://pytorch.org/docs/stable/torchvision/models.html)에서 `torchvision`에 어떤 모델들이 있는지 확인할 수 있다.
 
@@ -117,7 +118,7 @@ resnet3d_18 = models.video.r3d_18() # 18 layer ResNet3D model
 from torchvision.models.detection.rpn import AnchorGenerator
 
 custom_rpn = # 5x3 anchor patterns
-  AnchorGenerator(sizes=((32, 64, 128, 512)), aspect_ratios=((0.5, 1.0, 2.0))) 
+  AnchorGenerator(sizes=((32, 64, 128, 512)), aspect_ratios=((0.5, 1.0, 2.0)))
 ```
 
 ### ROI pooler 커스텀
@@ -129,7 +130,7 @@ custom_rpn = # 5x3 anchor patterns
 pytorch Tutorial의 [torchvision object detection](https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html)에선 `MultiScaleRoIAlign`를 roi pooler로 채용하였다.
 
 ``` python
-roi_pooler = 
+roi_pooler =
   torchvision.ops.MultiScaleRoIAlign(featmap_names=[0], output_size=7, sampling_ratio=2)
 ```
 
@@ -158,16 +159,16 @@ model.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes)
 backbone = torchvision.models.mobilenet_v2(pretrained=True).featres
 backbone.out_channels = 1280
 
-anchor_generator 
+anchor_generator
   = AnchorGenerator(sizes=((32, 64, 128, 256, 512)), aspect_ratios=((0.5, 1.0, 2.0)))
 
-roi_pooler 
+roi_pooler
   = torchvision.ops.MultiScaleRoIAlign(featmap_names=[0], output_size=7, sampling_ratio=2)
 
 model = FasterRCNN(
-  backbone, 
-  num_classes=2, 
-  rpn_anchor_generator=anchor_generator, 
+  backbone,
+  num_classes=2,
+  rpn_anchor_generator=anchor_generator,
   box_roi_pool=roi_pooler
   )
 ```

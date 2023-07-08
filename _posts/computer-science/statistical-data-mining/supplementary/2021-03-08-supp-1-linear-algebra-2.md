@@ -1,7 +1,8 @@
 ---
 title: "Supp-1: Linear Algebra - 2"
-layout: post
-tags: [linear_algebra, applied_statistics]
+toc: true
+toc_sticky: true
+categories: ["Linear Algebra", "Applied Statsitcs"]
 ---
 
 2021-1학기, 대학에서 '통계적 데이터마이닝' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
@@ -99,10 +100,10 @@ $$
 
 <br><span class="statement-title">Definition.</span> Matrix Calculus<br>
 
-Let $A \in \mathbb{R}^{n\times p}$ represents a mapping $f: \mathbb{R}^p \rightarrow \mathbb{R}^n$. Then 
+Let $A \in \mathbb{R}^{n\times p}$ represents a mapping $f: \mathbb{R}^p \rightarrow \mathbb{R}^n$. Then
 
 $$
-A \mathbf{x} = 
+A \mathbf{x} =
 \begin{pmatrix}
 a_{11} x_1 + a_{12} x_2 + \cdots a_{1p} x_p \\
 a_{21} x_1 + a_{22} x_2 + \cdots a_{2p} x_p \\
@@ -125,7 +126,7 @@ $$
 
 2\. \<**Quadratic Form**\> Calculus
 
-Let $A \in \mathbb{R}^{n \times n}$, then A \<Quadratic Form\> $\mathbf{x}^T A \mathbf{x}$ is 
+Let $A \in \mathbb{R}^{n \times n}$, then A \<Quadratic Form\> $\mathbf{x}^T A \mathbf{x}$ is
 
 $$
 \mathbf{x}^T A \mathbf{x} = \sum^n_{i=1} x_i \left( A \mathbf{x}\right)_i = \sum^n_{i=1} x_i \left( \sum^n_{j=1} a_{ij} x_j \right) = \sum^n_{i=1} \sum^n_{j=1} a_{ij} x_i x_j

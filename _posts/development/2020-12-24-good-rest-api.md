@@ -1,7 +1,8 @@
 ---
 title: "좋은 REST API"
-layout: post
-tags: ["develop"]
+toc: true
+toc_sticky: true
+categories: ["Develop"]
 ---
 
 
@@ -58,7 +59,7 @@ tags: ["develop"]
 
 <br>
 
-별 기대 없이 봤던 세미나였는데, 웹개발에 대한 정말 좋은 이야기를 들은 것 같아 기분이 좋다 ㅎㅎ 
+별 기대 없이 봤던 세미나였는데, 웹개발에 대한 정말 좋은 이야기를 들은 것 같아 기분이 좋다 ㅎㅎ
 
 
 #### Reference

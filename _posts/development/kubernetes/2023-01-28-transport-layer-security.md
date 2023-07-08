@@ -1,7 +1,8 @@
 ---
 title: "전송 계층 보안(TLS)"
-layout: post
-tags: ["develop"]
+toc: true
+toc_sticky: true
+categories: ["Develop"]
 ---
 
 데이터를 주고 받을 때, 암호화 하는 일반적인 방법에 대해. 과거에는 **SSL**(Secure Sockets Layer)라는 이름으로 불렸음.

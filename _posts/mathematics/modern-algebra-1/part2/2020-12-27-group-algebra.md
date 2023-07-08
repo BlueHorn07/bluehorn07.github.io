@@ -1,7 +1,8 @@
 ---
 title: "Group Rings & Group Algebras"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -15,7 +16,7 @@ tags: ["Modern Algebra1"]
 
 <div class="statement" markdown="1">
 
-Let $G = \\{ g_i \mid i \in I \\}$ be a **<u>group</u>** under multiplicity, and 
+Let $G = \\{ g_i \mid i \in I \\}$ be a **<u>group</u>** under multiplicity, and
 
 let $R$ be a **<u>commutative ring</u>** with non-zero unity.
 
@@ -40,7 +41,7 @@ $$
 - multiplicity is closed.
 
 $$
-\left( \sum_{i \in I} {a_i g_i} \right) \cdot \left( \sum_{i \in I} {b_i g_i} \right) = \sum_{i \in I} \left({ \sum_{g_j g_k = g_i} } {a_j b_k}\right) g_i 
+\left( \sum_{i \in I} {a_i g_i} \right) \cdot \left( \sum_{i \in I} {b_i g_i} \right) = \sum_{i \in I} \left({ \sum_{g_j g_k = g_i} } {a_j b_k}\right) g_i
 $$
 
 - Associativity
@@ -122,7 +123,7 @@ Every finite division ring is a field.
 <details markdown="1">
 <summary>Comment</summary>
 
-아무리 생각해봐도 Quaternions로 이루어진 finite division ring을 구상할 수가 없었다 ㅠㅠ ($\mathbb{R} \le \mathbb{H}$ 제외)  
+아무리 생각해봐도 Quaternions로 이루어진 finite division ring을 구상할 수가 없었다 ㅠㅠ ($\mathbb{R} \le \mathbb{H}$ 제외)
 
 추측하건데, Quaternion $H$로는 finite sub-ring을 만들 수 없는게 아닌가 생각하고 있다 ㅠㅠ
 

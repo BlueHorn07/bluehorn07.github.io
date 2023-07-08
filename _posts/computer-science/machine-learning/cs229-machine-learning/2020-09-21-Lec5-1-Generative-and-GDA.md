@@ -1,7 +1,8 @@
 ---
 title: "Generative Learning Algorithm, and GDA"
-layout: post
-tags: [machine_learning]
+toc: true
+toc_sticky: true
+categories: ["Machine Learning"]
 ---
 
 
@@ -19,7 +20,7 @@ GDA(Gaussian Discriminant Analysis)라는 기법이 등장한다. 이름이 후�
 
 Discriminative 모델에서는 $p(y \vert x)$를 학습하는 것을 목표로 한다. 반면에 **Generative 모델**은 $p(x \vert y)$와 $p(y)$를 학습하는 것을 목표로 한다.[^1]
 
-Generative Learning은 **Bayes Rule**을 바탕으로 하는 이론이다. 
+Generative Learning은 **Bayes Rule**을 바탕으로 하는 이론이다.
 
 <div>
 $$p(y \vert x) = \frac{p(x \vert y) p(y)}{p(x)}$$

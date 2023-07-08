@@ -1,7 +1,8 @@
 ---
 title: "Cauchy's Integral Formula"
-layout: post
-tags: ["Complex Variable"]
+toc: true
+toc_sticky: true
+categories: ["Complex Variable"]
 ---
 
 
@@ -39,7 +40,7 @@ $$
 
 <div class="statement" markdown="1">
 
-Let $f(z)$ be **<u>analytic</u>** in a disc $D$. 
+Let $f(z)$ be **<u>analytic</u>** in a disc $D$.
 
 Then there is an analytic function $F(z)$ in $D$ such that
 
@@ -75,7 +76,7 @@ $$
 F(z_0) = \int_{C} f(z) \; dz
 $$
 
-이제, 
+이제,
 
 $$
 \lim_{h \rightarrow 0} \frac{F(z_0 + h) - F(z_0)}{h} = f(z_0)
@@ -94,7 +95,7 @@ $$
 \end{aligned}
 $$
 
-Then, 
+Then,
 
 이때, $f(z_0)$에 대해 아래의 등식을 확인할 수 있다.
 
@@ -118,14 +119,14 @@ $$
 
 $$
 \begin{aligned}
-\left| \frac{1}{h} \int_{C_3} \left( f(z) - f(z_0) \right) \; dz \right| &= \frac{1}{\left| h \right|} \max_{z \in C_3} \left| f(z) - f(z_0) \right| \cdot \left| h \right| \\ 
+\left| \frac{1}{h} \int_{C_3} \left( f(z) - f(z_0) \right) \; dz \right| &= \frac{1}{\left| h \right|} \max_{z \in C_3} \left| f(z) - f(z_0) \right| \cdot \left| h \right| \\
 &= \max_{z \in C_3} \left| f(z) - f(z_0) \right|
 \end{aligned}
 $$
 
 이때, $z \rightarrow z_0$ 할수록 $(z - z_0) \rightarrow 0$ 이므로 우변은 0이 된다.
 
-즉, 
+즉,
 
 $$
 \lim_{h \rightarrow 0} \frac{F(z_0 + h) - F(z_0)}{h} = f(z_0)
@@ -157,7 +158,7 @@ curve $C_1$, $C_2$를 가로지르는 3개의 disc를 생각해보자.
 
 이미 앞에서 disc 내의 analytic function의 closed integral의 값은 0임을 확인했으므로, 3개의 disc로 적당히 나누어 curve $C_1$, $C_2$를 disc 내부의 closed curve 3개로 나눌 수 있다.
 
-이제 disc 위에서 three closed integral을 잘 정리하면, 
+이제 disc 위에서 three closed integral을 잘 정리하면,
 
 $$
 \int_{C_1} f(z) \; dz = \int_{C_2} f(z) \; dz
@@ -228,7 +229,7 @@ $$
 \oint_{A_1} f(z) \; dz = \oint_{A_2} f(z) \; dz = 0
 $$
 
-이 되고, 이에 따라 
+이 되고, 이에 따라
 
 $$
 \oint_{C_1} f(z) \; dz - \oint_{C_2} f(z) \; dz = 0
@@ -339,7 +340,7 @@ $$
 \oint_{C_{\rho}} \frac{1}{z-z_0}\;dz = 2\pi i
 $$
 
-따라서, 
+따라서,
 
 $$
 \oint_{C} \frac{f(z)}{z-z_0}\;dz = 2\pi i f(z_0)
@@ -349,11 +350,11 @@ $$
 
 <br/>
 
-하지만, 이 증명은 "만약 $\rho$가 충분히 작다면, $f(z) \sim f(z_0)$가 될 것이다."라는 부분이 명확히 증명되지 않았기 때문에 엄밀한 증명은 아니다. 
+하지만, 이 증명은 "만약 $\rho$가 충분히 작다면, $f(z) \sim f(z_0)$가 될 것이다."라는 부분이 명확히 증명되지 않았기 때문에 엄밀한 증명은 아니다.
 
 그래서 좀더 엄밀하고, <극한limit>을 사용해 증명해보자.
 
-우리가 증명하고자 하는 식은 
+우리가 증명하고자 하는 식은
 
 $$
 \oint_{C} \frac{f(z)}{z-z_0}\;dz = 2\pi i f(z_0)
@@ -383,7 +384,7 @@ $$
 $$
 \begin{aligned}
 \left| \oint_{C_{\rho}} \frac{f(z) - f(z_0)}{z-z_0}\;dz \right| &\le \left( \max_{z \in C_{\rho}} \; \left| f(z) - f(z_0) \right| \cdot \frac{1}{\rho}\right) \left(2\pi\rho \right) \\
-&= \max_{z \in C_{\rho}} \; \left| f(z) - f(z_0) \right| \cdot 2\pi    
+&= \max_{z \in C_{\rho}} \; \left| f(z) - f(z_0) \right| \cdot 2\pi
 \end{aligned}
 $$
 
@@ -391,7 +392,7 @@ $\rho$가 0에 가까워 질수록, $C_{\rho}: z = z_0 + \rho e^{it}$에서 $z \
 
 따라서 $\left\|f(z) - f(z_0)\right\| \rightarrow 0$이 된다!!
 
-즉, 
+즉,
 
 $$
 \oint_{C} \frac{f(z)}{z-z_0}\;dz = 2\pi i f(z_0)

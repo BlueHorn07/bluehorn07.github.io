@@ -1,7 +1,8 @@
 ---
 title: "Moving-Average Model"
-layout: post
-tags: ["time_series_analysis"]
+toc: true
+toc_sticky: true
+categories: ["Time Series Analysis"]
 ---
 
 # 오차로 미래를 예측한다
@@ -22,7 +23,7 @@ where all $\epsilon(t)$ are white noise.
 
 </div>
 
-\<MA Model\>의 수식을 보면, 현재와 과거의 오차 $\epsilon(t)$의 Multiple Regression으로 구성되어 있다. 
+\<MA Model\>의 수식을 보면, 현재와 과거의 오차 $\epsilon(t)$의 Multiple Regression으로 구성되어 있다.
 
 Hyper-parameter는 몇개의 Lagged Error를 쓸 것인지에 대한 $q$ 값이다. 이를 기준으로 $q$차 MA 모델은
 
@@ -72,7 +73,7 @@ $$
 - You would choose an AR model if you believe that "previous observations have a direct effect on the time series".
 - You would choose an MA model if you believe that "the weighted sum of lagged errors have a direct effect on the time series".
 
-사실 Lagged Error를 사용해 Fitting을 한다는게 잘 와닿지 않는다. 그러나 그것이 당연한 것이 뒤에서 살펴볼 것이지만, Lagged Error 하나만 고려해서는 시계열 데이터를 모델링하기 어렵기 때문이다! 
+사실 Lagged Error를 사용해 Fitting을 한다는게 잘 와닿지 않는다. 그러나 그것이 당연한 것이 뒤에서 살펴볼 것이지만, Lagged Error 하나만 고려해서는 시계열 데이터를 모델링하기 어렵기 때문이다!
 
 결국엔 AR과 MA을 함께 쓰는 \<ARMA 모델\>과 같이 MA 모델을 다른 기법과 함께 쓰게 된다. 그러니 지금은 MA 모델의 콘셉트만 확인하고 다음 모델로 얼른 넘어가자 👏
 

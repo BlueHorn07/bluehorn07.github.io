@@ -1,7 +1,8 @@
 ---
 title: "EDF and Quantile"
-layout: post
-tags: ["statistics"]
+toc: true
+toc_sticky: true
+categories: ["Statistics"]
 ---
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
@@ -42,7 +43,7 @@ For given samples $X_1, \dots, X_n$,
 
 <span class="statement-title">Definition.</span> EDF; Empirical Distribution Function<br>
 
-Let $X_1, \dots, X_n$ be a random sample, 
+Let $X_1, \dots, X_n$ be a random sample,
 
 Let's define $\hat{F}(x)$ as
 

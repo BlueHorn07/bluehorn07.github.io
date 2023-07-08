@@ -1,7 +1,8 @@
 ---
 title: "Negative Binomial Theorem"
-layout: post
-tags: ["probability"]
+toc: true
+toc_sticky: true
+categories: ["Probability"]
 preview: 조합에 음수 $n$이 들어간 $\binom{-n}{k}$를 어떻게 정의할까?
 ---
 
@@ -69,7 +70,7 @@ $$
 \<Macluarin Series\>는 $x = 0$ 주변에서 실변수 함수 $f(x)$를 아래와 같이 표현한 것이다.
 
 $$
-f(x) = f(0) + f'(0)x + \frac{f''(0)}{2!} x^2 + \cdots + \frac{f^{(k)}(0)}{k!} x^k + \cdots 
+f(x) = f(0) + f'(0)x + \frac{f''(0)}{2!} x^2 + \cdots + \frac{f^{(k)}(0)}{k!} x^k + \cdots
 $$
 
 $(1+x)^{-3}$의 미분값들을 계산해보자.
@@ -89,7 +90,7 @@ $$
 이제 함수 $f(x)$를 \<Macluarin Series\>로 표현하면
 
 $$
-1  -3 x + \frac{-3 \cdot -4}{2!} x^2 + \cdots + \frac{-3 \cdot -4 \cdots (-k - 2)}{k!} x^k + \cdots 
+1  -3 x + \frac{-3 \cdot -4}{2!} x^2 + \cdots + \frac{-3 \cdot -4 \cdots (-k - 2)}{k!} x^k + \cdots
 $$
 
 </div>
@@ -97,7 +98,7 @@ $$
 어라? 각 항의 계수를 잘 살펴보면, 앞에서 살펴본 \<Negative Combination\>의 형태가 엿보인다! 식을 바꿔보면,
 
 $$
-1 + \binom{-3}{1} x + \binom{-3}{2} x^2 + \cdots + \binom{-3}{k} x^k + \cdots 
+1 + \binom{-3}{1} x + \binom{-3}{2} x^2 + \cdots + \binom{-3}{k} x^k + \cdots
 $$
 
 와! 식을 더 깔끔하게 쓸 수 있다! 😀
@@ -138,7 +139,7 @@ $$
 \begin{aligned}
 &\frac{n \cdot (n+1) \cdots (n + (k - 1))}{k!} \cdot (-1)^{k} \\
 &= \frac{(n + (k - 1) \cdots n)}{k!} \cdot (-1)^{k} \\
-&= \binom{n + k - 1}{k} \cdot (-1)^k  
+&= \binom{n + k - 1}{k} \cdot (-1)^k
 \end{aligned}
 $$
 

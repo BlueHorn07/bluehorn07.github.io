@@ -1,7 +1,8 @@
 ---
 title: "Segment Tree"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 <br/>
@@ -28,18 +29,18 @@ tags: ["algorithm"]
 
 1번, 2번 연산을 각각 **구간합**, **점 갱신** 연산이라고 이름 붙이겠다.
 
-이 문제를 Brute Force로 접근해보자. 구간합은 한번 연산에 $O(N)$, 점 갱신은 $O(1)$의 시간이 걸린다. 연산을 $M$번 수행한다면, 최대 $O(NM)$의 비용이 든다. 
+이 문제를 Brute Force로 접근해보자. 구간합은 한번 연산에 $O(N)$, 점 갱신은 $O(1)$의 시간이 걸린다. 연산을 $M$번 수행한다면, 최대 $O(NM)$의 비용이 든다.
 
 그러나 $O(NM)$ 시간 복잡도는 $N$ 또는 $M$이 매우 큰 경우에는 시간이 너무 오래 걸린다. 그런데! 세그먼트 트리를 이용하면 구간합을 $O(\log N)$, 점 갱신을 $O(\log N)$에 수행할 수 있어 $O(M \log N)$의 비용으로 모든 연산을 처리할 수 있다!!
 
 # Segment Tree의 구조
 
-Segment Tree는 트리 형태의 자료구조이다. 구체적으론 Full Binary Tree이다. 모든 노드가 0개 혹은 2개의 자식 노드를 갖는 트리를 말한다. 그래서 부모-자식 노드 사이에 `node <-> node*2, node*2+1`의 관계가 성립한다. 
+Segment Tree는 트리 형태의 자료구조이다. 구체적으론 Full Binary Tree이다. 모든 노드가 0개 혹은 2개의 자식 노드를 갖는 트리를 말한다. 그래서 부모-자식 노드 사이에 `node <-> node*2, node*2+1`의 관계가 성립한다.
 
 세그먼트 트리에서 각 노드는 아래와 같은 의미를 갖는다.
 
 - 리프 노드
-  - 배열에서 그 수 자체다. 
+  - 배열에서 그 수 자체다.
   - `arr[i]`라는 말
 - 구간 노드
   - 왼쪽 자식과 오른쪽 자식의 합을 저장
@@ -78,12 +79,12 @@ init(arr, tree, 1, 0, N-1);
 llong init(vector<llong> &arr, vector<llong> &tree, int node, int start, int end) {
   if (start == end) // 리프 노드임.
     return tree[node] = arr[start];
-  
+
   int mid = (start + end) / 2;
-  
+
   llong left = init(arr, tree, node * 2, start, mid);
   llong right = init(arr, tree, node * 2 + 1, mid + 1, end);
-  
+
   tree[node] = left + right;
   return tree[node];
 }
@@ -102,20 +103,20 @@ llong init(vector<llong> &arr, vector<llong> &tree, int node, int start, int end
 ```cpp
 llong sum(vector<llong> &tree, int node, int start, int end, int left, int right) {
   // query하는 범위 (left, right)와 노드 범위 (start, end)가 겹치지 않음.
-  if (left > end || right < start) 
+  if (left > end || right < start)
     return 0;
-  
-  // 구해야하는 합의 범위는 [left, right]인데, 
+
+  // 구해야하는 합의 범위는 [left, right]인데,
   // [start, end]는 그 범위에 모두 포함된다.
-  // 그러면 node의 자식도 모두 포함되기 때문에 
+  // 그러면 node의 자식도 모두 포함되기 때문에
   // 더 이상 호출을 하는 것은 비효율적이다.
   if (left <= start && end <= right)
     return tree[node];
-  
+
   int mid = (start + end) / 2;
   llong leftSum = sum(tree, node * 2, start, mid, left, right);
   llong rightSum = sum(tree, node * 2 + 1, mid+1, end, left, right);
-  
+
   return leftSum + rightSum;
 }
 ```
@@ -136,11 +137,11 @@ update(tree, 1, 0, N-1, idx, diff);
 
 void update(vector<llong> &tree, int node, int start, int end, int index, llong diff) {
   // index가 노드 범위 (start, end)와 겹치지 않음.
-  if (index < start || end < index) 
+  if (index < start || end < index)
     return;
-  
+
   tree[node] += diff;
-  
+
   // 리프 노드는 start == end임.
   // 리프가 아니라면, 아래의 자식노드도 업데이트 해줘야 함.
   if (start != end) {

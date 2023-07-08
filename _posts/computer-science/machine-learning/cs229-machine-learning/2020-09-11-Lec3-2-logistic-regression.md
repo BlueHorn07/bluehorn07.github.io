@@ -1,7 +1,8 @@
 ---
 title: "Classification, Logistic Regression"
-layout: post
-tags: [machine_learning]
+toc: true
+toc_sticky: true
+categories: ["Machine Learning"]
 ---
 
 
@@ -121,7 +122,7 @@ $$
 $$\theta := \theta + \alpha (y-h_\theta(x))x_j$$
 </div>
 
-Gradient Ascent의 최종적인 형태를 보면, LMS에서의 GD와 상당히 닮아있다! 
+Gradient Ascent의 최종적인 형태를 보면, LMS에서의 GD와 상당히 닮아있다!
 
 <div>
 $$

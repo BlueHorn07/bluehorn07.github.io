@@ -1,7 +1,8 @@
 ---
 title: "Bitmask Technique"
-layout: post
-tags: ["algorithm", "problem_solving"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm", "Problem Solving"]
 ---
 
 
@@ -21,7 +22,7 @@ tags: ["algorithm", "problem_solving"]
 | 0 | 1 | 1 | 0 | 1 | ...
 ```
 
-그러나 이것을 Boolean Array 대신 Integer 하나로도 표현이 할 수 있다. 
+그러나 이것을 Boolean Array 대신 Integer 하나로도 표현이 할 수 있다.
 
 ```
 (Integer)

@@ -1,11 +1,12 @@
 ---
 title: "SphereNet(2018)"
-layout: post
-tags: ["Computer Vision", "research"]
+toc: true
+toc_sticky: true
+categories: ["Computer Vision", "Deep Learning"]
 ---
 
 
-이 포스트는 제가 개인적인 용도로 정리한 글 입니다. 
+이 포스트는 제가 개인적인 용도로 정리한 글 입니다.
 
 <br>
 <hr>
@@ -244,13 +245,13 @@ Equirectangular Image에서 row에 대한 정보가 같다면 모두 동일한 k
 
 #### Spherical Image Classification
 
-Conv layer와 Pool layer를 SphereConv와 SpherePool로 교체해주면 된다. 
+Conv layer와 Pool layer를 SphereConv와 SpherePool로 교체해주면 된다.
 
 평-범
 
 #### Spherical Object Detection
 
-***Spherical Single Shot MultiBox Detector***(Sphere-SSD)를 제시한다. 
+***Spherical Single Shot MultiBox Detector***(Sphere-SSD)를 제시한다.
 
 <div class="quote">
 &emsp; "in contrast to the original SSD, <b><u>anchor boxes are now placed on tangent planes of the sphere</u></b> and are defined in terms of spherical coordinates of their respective tangent plane."

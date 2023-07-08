@@ -1,7 +1,8 @@
 ---
 title: "Cauchy-Goursat Theorem"
-layout: post
-tags: ["Complex Variable"]
+toc: true
+toc_sticky: true
+categories: ["Complex Variable"]
 ---
 
 
@@ -50,7 +51,7 @@ doubly connected domain에서는 어떤 contour $C$에 대해, $\textrm{Int}\; C
 
 <div class="statement" markdown="1">
 
-If $f(z)$ is **<u>analytic</u>** in a **<u>simply connected domain</u>** $D$, and $f'(z)$ is **<u>continuous</u>** in $D$, 
+If $f(z)$ is **<u>analytic</u>** in a **<u>simply connected domain</u>** $D$, and $f'(z)$ is **<u>continuous</u>** in $D$,
 
 then for every simple closed contour $C$ in $D$
 
@@ -83,7 +84,7 @@ Green's Theorem을 이용해 Cauchy's Theorem을 증명해보자.
 $$
 \begin{aligned}
 f(z) &= f(x+iy) = u(x, y) + i v(x, y), \\
-z(t) &= x(t) + i y(t), \quad a \le t \le b    
+z(t) &= x(t) + i y(t), \quad a \le t \le b
 \end{aligned}
 $$
 
@@ -116,7 +117,7 @@ $$
 
 동일한 방식으로 허수부에 대해서도 "(준적분) = 0"이라는 결과를 얻는다.
 
-따라서 
+따라서
 
 $$
 \oint_{C} f(z) \; dz = 0
@@ -136,7 +137,7 @@ Cauchy's Thm은 analytic function의 적분에 대해 좋은 결과를 보여준
 
 <div class="statement" markdown="1">
 
-Let $D$ be an open set in $\mathbb{C}$. 
+Let $D$ be an open set in $\mathbb{C}$.
 
 Let $T$ be triangle such that $T$ and its interior lie in $D$.
 

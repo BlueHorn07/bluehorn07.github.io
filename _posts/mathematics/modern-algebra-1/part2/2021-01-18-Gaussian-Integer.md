@@ -1,7 +1,8 @@
 ---
 title: "Gaussian Integer"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -69,7 +70,7 @@ $\mathbb{Z}[i]$는 commutative ring with unity이다.
 
 $\mathbb{Z}[i]$가 Integral Domain임을 보이기 위해 zero-divisor가 존재하지 않음을 보여야 한다.
 
-"Lemma 47.2"에 의해 
+"Lemma 47.2"에 의해
 
 if $\alpha \beta = 0$, then
 
@@ -190,7 +191,7 @@ A **<u>multiplicative norm</u>** $N$ on $D$ is a function mapping $D$ into the i
 
 If $D$ is an integral domain with a multiplicative norm $N$,
 
-then 
+then
 
 1. $N(1) = 1$
 2. $\left\| N(u) \right\| = 1$ for every unit $u \in D$.
@@ -301,7 +302,7 @@ $$
 9 = N(3) = N(\alpha) N(\beta)
 $$
 
-$N(\alpha)$가 가질 수 있는 값은 1 또는 3 또는 9이다. 
+$N(\alpha)$가 가질 수 있는 값은 1 또는 3 또는 9이다.
 
 - If $N(\alpha) = 1$, then $\alpha$ is a unit.
 - $N(\alpha) = a^2 + 5 b^2$이므로 $N(\alpha) = 3$를 만족시킬 수 있는 $\alpha$는 존재하지 않는다.

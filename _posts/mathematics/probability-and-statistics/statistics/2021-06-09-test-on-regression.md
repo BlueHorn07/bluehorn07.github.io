@@ -1,12 +1,13 @@
 ---
 title: "Test on Regression"
-layout: post
-tags: ["statistics"]
+toc: true
+toc_sticky: true
+categories: ["Statistics"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
-[Introduction to Linear Regression]({{"/2021/06/06/introduction-to-linear-regression.html" | relative_url}}) 포스트에서 이어지는 포스트입니다. 
+[Introduction to Linear Regression]({{"/2021/06/06/introduction-to-linear-regression.html" | relative_url}}) 포스트에서 이어지는 포스트입니다.
 
 <br><span class="statement-title">TOC.</span><br>
 
@@ -48,7 +49,7 @@ $$
 
 $$
 \begin{aligned}
-B_1 
+B_1
 &:= \frac{\sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y})}{S_{xx}} \\
 &= \frac{\sum_{i=1}^n (x_i - \bar{x})y_i}{S_{xx}}
 \end{aligned}
@@ -72,7 +73,7 @@ $$
 
 $$
 \begin{aligned}
-\text{Var}(B_1) 
+\text{Var}(B_1)
 &= \text{Var}\left(\frac{\sum_{i=1}^n (x_i - \bar{x})y_i}{S_{xx}}\right)  \\
 &= \frac{1}{S_{xx}^2} \cdot \left( \cancelto{S_{xx}}{\sum_{i=1}^n (x_i - \bar{x})} \right)^2 \cdot \cancelto{\sigma^2}{\text{Var}(y_i)} \\
 &= \frac{\sigma^2}{S_{xx}}
@@ -115,7 +116,7 @@ Recall that $\sigma^2 = \text{Var}(\epsilon_i)$, and the $\epsilon_i$ was the di
 
 <span class="statement-title">Theorem.</span><br>
 
-The unbiased estimator of $\sigma^2$ is 
+The unbiased estimator of $\sigma^2$ is
 
 $$
 s^2 := \frac{\sum_{i=1}^n (y_i - \hat{y}_i)^2}{n-2} = \frac{\text{SSE}}{n-2}
@@ -127,7 +128,7 @@ $$
 
 <span class="statement-title">Theorem.</span><br>
 
-$s^2$ is independent of $B_1$ and $B_0$, and 
+$s^2$ is independent of $B_1$ and $B_0$, and
 
 $$
 \frac{(n-2)S^2}{\sigma^2} \sim \chi^2(n-2)

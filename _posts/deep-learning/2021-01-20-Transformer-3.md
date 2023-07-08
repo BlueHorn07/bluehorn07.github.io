@@ -1,11 +1,12 @@
 ---
 title: "Transformer(2017) - 3"
-layout: post
-tags: ["research"]
+toc: true
+toc_sticky: true
+categories: ["Deep Learning"]
 ---
 
 
-이 포스트는 제가 개인적인 용도로 정리한 글 입니다. 
+이 포스트는 제가 개인적인 용도로 정리한 글 입니다.
 
 - "[Attention is all you need](https://arxiv.org/abs/1706.03762)"
   - 2017, Google
@@ -15,10 +16,10 @@ tags: ["research"]
 - [Transformer - 1]({{"2021/01/18/Transformer-1.html" | relative_url}})
 - [Transformer - 2]({{"2021/01/18/Transformer-2.html" | relative_url}})
 
-1. [Decoder in Transformer](#decoder-in-transformer)
-   1. Self-Attention
-   2. Encoder-Decoder Attention
-   3. FFNN
+- [Decoder in Transformer](#decoder-in-transformer)
+  - [Self-Attention](#self-attention)
+  - [Encoder-Decoder Attention](#encoder-decoder-attention)
+- [Reference](#reference)
 
 <br>
 <hr>
@@ -72,7 +73,7 @@ Transformer의 디코더는 입력에 포함된, 나중에 예측해야 할 단�
 
 <br>
 
-마지막으로 디코더의 FFNN의 경우 인코더의 FFNN과 동일하니 생략하겠다. 
+마지막으로 디코더의 FFNN의 경우 인코더의 FFNN과 동일하니 생략하겠다.
 
 이후에는 인코더와 마찬가지로 디코더 모듈을 쌓아서 "Decoders"를 만든다.
 

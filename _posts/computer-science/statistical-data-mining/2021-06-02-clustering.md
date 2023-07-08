@@ -1,7 +1,8 @@
 ---
 title: "Clustering"
-layout: post
-tags: [applied_statistics]
+toc: true
+toc_sticky: true
+categories: ["Applied Statsitcs"]
 ---
 
 

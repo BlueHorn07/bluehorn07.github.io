@@ -1,7 +1,8 @@
 ---
 title: "Statistics - PS2"
-layout: post
-tags: ["statistics", "Problem Solving"]
+toc: true
+toc_sticky: true
+categories: ["Statistics", "Problem Solving"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -35,7 +36,7 @@ $$
 
 $$
 \begin{aligned}
-\sum_{i=1}^n e_i 
+\sum_{i=1}^n e_i
 &= \sum_{i=1}^n (y_i - \hat{y}_i) \\
 &= \sum_{i=1}^n (y_i - (b_0 + b_1 x_i)) \\
 &= \sum_{i=1}^n \left(y_i - (\bar{y} + b_1 (x_i - \bar{x})) \right) \\
@@ -70,7 +71,7 @@ $$
 
 $$
 \begin{aligned}
-\sum_{i=1}^n x_i e_i 
+\sum_{i=1}^n x_i e_i
 &= \sum_{i=1}^n x_i (y_i - \hat{y}_i) \\
 &= \sum_{i=1}^n x_i (y_i - \bar{y} - b_1 (x_i - \bar{x})) \\
 &= \sum_{i=1}^n x_i (y_i - \bar{y}) - b_1 \sum_{i=1}^n x_i (x_i - \bar{x}) \\
@@ -93,7 +94,7 @@ $\blacksquare$
 $$
 \begin{aligned}
 \sum_{i=1}^n (y_i - \bar{y})^2 &= \sum_{i=1}^n (\hat{y}_i - \bar{y})^2 + \sum_{i=1}^n (y_i - \hat{y}_i)^2 \\
-\text{SST} &= \text{SSR} + \text{SSE}   
+\text{SST} &= \text{SSR} + \text{SSE}
 \end{aligned}
 $$
 
@@ -107,7 +108,7 @@ $$
 
 $$
 \begin{aligned}
-\sum_{i=1}^n (y_i - \bar{y})^2 
+\sum_{i=1}^n (y_i - \bar{y})^2
 &= \sum_{i=1}^n (y_i - \hat{y}_i + \hat{y}_i - \bar{y})^2 \\
 &= \sum_{i=1}^n \left((y_i - \hat{y}_i) + (\hat{y}_i - \bar{y})\right)^2 \\
 &= \sum_{i=1}^n (y_i - \hat{y}_i)^2 + 2 \sum_{i=1}^n (y_i - \hat{y}_i)(\hat{y}_i - \bar{y}) + \sum_{i=1}^n (\hat{y}_i - \bar{y})^2 \\
@@ -118,7 +119,7 @@ $$
 
 $$
 \begin{aligned}
-\sum_{i=1}^n (y_i - \hat{y}_i)(\hat{y}_i - \bar{y})  
+\sum_{i=1}^n (y_i - \hat{y}_i)(\hat{y}_i - \bar{y})
 &= \sum_{i=1}^n (y_i - \hat{y}_i)(b_0 + b_1 x_i - \bar{y}) \\
 &= \sum_{i=1}^n (y_i - \hat{y}_i)((\cancel{\bar{y}} - b_1 \bar{x}) + b_1 x_i - \cancel{\bar{y}}) \\
 &= \sum_{i=1}^n (y_i - \hat{y}_i) \cdot b_1 (x_i - \bar{x}) \\

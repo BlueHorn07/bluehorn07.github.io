@@ -1,7 +1,8 @@
 ---
 title: "Linux IP Commands"
-layout: post
-tags: ["develop", "network"]
+toc: true
+toc_sticky: true
+categories: ["Develop", "Network"]
 ---
 
 <div class="statement" markdown="1">
@@ -26,7 +27,7 @@ tags: ["develop", "network"]
 
 ```bash
 # `ip link show`와 동일
-$ ip link 
+$ ip link
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
 ...
@@ -42,15 +43,15 @@ $ ip link
   - 인터페이스가 다음 패킷을 전송하는 정책을 말한다.
   - `noqueue`의 의미는 인터페이스가 아무런 큐도 사용하지 않음을 말한다.
 - `state UNKNOWN`
-  - 네트워크 인터페이스의 상태로는 `UP`, `DOWN`, `UNKNOWN`이 가능하다. `UP`이면 활성화, `DOWN`이면 비활성화 상태다. 
-- `mode DEFAULT` 
+  - 네트워크 인터페이스의 상태로는 `UP`, `DOWN`, `UNKNOWN`이 가능하다. `UP`이면 활성화, `DOWN`이면 비활성화 상태다.
+- `mode DEFAULT`
 - `group default`
 - `qlen 1000`
   - `qlen`은 Transimission Queue Lenght의 약자다
   - 1000개 패킷까지 큐에 저장되고, 1001개 패킷부터 드롭된다.
 
 - `link/loopback`
-  - 루프백 인터페이스를 말한다. 
+  - 루프백 인터페이스를 말한다.
 - `brd`
   - Broadcast를 의미한다.
   - 여기서는 네트워크 인터페이스 이므로 MAC 주소의 연결 정보가 담겨있다.
@@ -60,7 +61,7 @@ $ ip link
 # ip addr
 
 ```bash
-$ ip addr 
+$ ip addr
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
     inet 127.0.0.1/8 scope host lo

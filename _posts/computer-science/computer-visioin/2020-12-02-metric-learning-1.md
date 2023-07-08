@@ -1,7 +1,8 @@
 ---
 title: "Metric Learning 1"
-layout: post
-tags: ["Computer Vision"]
+toc: true
+toc_sticky: true
+categories: ["Computer Vision"]
 ---
 
 
@@ -190,7 +191,7 @@ $$
 \begin{aligned}
   M^{*} &= \underset{M}{\textrm{argmin}} \sum_{i, j} \eta_{ij} \cdot {D_M\left(\mathbf{x}_i, \mathbf{x}_j\right)}^2 \\
   & \textrm{where} \\
-  & \eta_{ij} = 
+  & \eta_{ij} =
   \begin{cases}
     1, \quad (\mathbf{x}_i, \mathbf{x}_j) \in S^{+}\\
     0, \quad (\mathbf{x}_i, \mathbf{x}_j) \in S^{-}
@@ -223,12 +224,12 @@ $$
 
 $$
 \begin{aligned}
-  1 + {D_M\left(\mathbf{x}_i, \mathbf{x}_j\right)}^2 - {D_M\left(\mathbf{x}_i, \mathbf{x}_k\right)}^2 & \le 0 \\  
+  1 + {D_M\left(\mathbf{x}_i, \mathbf{x}_j\right)}^2 - {D_M\left(\mathbf{x}_i, \mathbf{x}_k\right)}^2 & \le 0 \\
   1 + {D_M\left(\mathbf{x}_i, \mathbf{x}_j\right)}^2 & \le {D_M\left(\mathbf{x}_i, \mathbf{x}_k\right)}^2
 \end{aligned}
 $$
 
-의 조건을 만족해야 하는 것이 된다. 
+의 조건을 만족해야 하는 것이 된다.
 
 이것은 negative-pair dist가 positve-pair dist보다 Margin $1$ 만큼 더 멀리있도록 만든다. 즉,
 
@@ -245,7 +246,7 @@ $$
 M^{*} = \underset{M}{\textrm{argmin}} \left\{ \sum_{i, j} \eta_{ij} \cdot {D_M\left(\mathbf{x}_i, \mathbf{x}_j\right)}^2 \right\} + c \left\{ \sum_{i, j, k} \eta_{ij}(1-\eta_{ij}) \cdot h\left[ 1 + {D_M\left(\mathbf{x}_i, \mathbf{x}_j\right)}^2 - {D_M\left(\mathbf{x}_i, \mathbf{x}_k\right)}^2 \right] \right\}
 $$
 
-즉, 
+즉,
 
 1\. pair $(\mathbf{x}_i, \mathbf{x}_j)$가 postivie-pair라면, 두 점의 거리값을 줄여 서로 가까워지도록 끌어당긴다; **<u>Pull</u>**
 

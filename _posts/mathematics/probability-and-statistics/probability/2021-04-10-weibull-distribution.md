@@ -1,7 +1,8 @@
 ---
 title: "Weibull Distribution (Optional)"
-layout: post
-tags: ["probability"]
+toc: true
+toc_sticky: true
+categories: ["Probability"]
 ---
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
@@ -32,7 +33,7 @@ tags: ["probability"]
 
 <span class="statement-title">Definition.</span><br/>
 
-Let $\alpha > 0$ and $\beta > 0$. We say that a RV $X$ has a \<**Weibull distribution**\>, denoted as $X \sim \text{Weibull}(\alpha, \beta)$, 
+Let $\alpha > 0$ and $\beta > 0$. We say that a RV $X$ has a \<**Weibull distribution**\>, denoted as $X \sim \text{Weibull}(\alpha, \beta)$,
 if its pdf $f(x)$ is given by
 
 $$
@@ -51,7 +52,7 @@ if $\beta = 1$, then $\text{Weibull}(\alpha, 1) = \text{Exp}(\alpha)$.
 
 <br/>
 
-2\. cdf of $X$ is 
+2\. cdf of $X$ is
 
 $$
 F(x) = \int^x_0 f(y) \, dy = \begin{cases}

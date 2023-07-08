@@ -1,7 +1,8 @@
 ---
 title: "Traveling Salesman Problem"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -116,7 +117,7 @@ long long shortestPath(int curr, int visited) {
 
 사실 처음에 제시했던 완전탐색 코드와 크게 다르지는 않다. 그러나 함수의 인자로 `visited`를 비트마스크로 받는다는 점. 그리고 TSP의 결과를 얻기 위해서 구체적인 방문 순서가 담긴 경로 `path`가 필요없으니 마지막으로 방문한 노드인 `curr`만 받는다는 점이 주목할 만하다! 🤩
 
-여기에 \<DP\>를 얹으면 아래와 같다. 
+여기에 \<DP\>를 얹으면 아래와 같다.
 
 ``` cpp
 long long dp[MAX][1 << MAX];
@@ -172,7 +173,7 @@ If there's no such tour, then report 'no tour'."
 
 </div>
 
-우리가 맨 처음 살펴봤던 TSP 문제는 최적해를 찾는 optimization problem이었다. 그런데 이번에 정의한 TSP는 search problem이다. TSP(optimization)과 TSP(search)를 서로의 문제로 환원 될 수 있다. 
+우리가 맨 처음 살펴봤던 TSP 문제는 최적해를 찾는 optimization problem이었다. 그런데 이번에 정의한 TSP는 search problem이다. TSP(optimization)과 TSP(search)를 서로의 문제로 환원 될 수 있다.
 
 - TSP(optimization) 알고리즘을 통해 TSP(search) 문제에 답할 수 있다.
 - TSP(search) 알고리즘을 통해 tour가 존재하는 지점까지 budget $b$를 binary search 하면 TSP(optimization) 문제에 답할 수 있다.

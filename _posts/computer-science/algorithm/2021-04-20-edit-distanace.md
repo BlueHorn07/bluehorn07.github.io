@@ -1,7 +1,8 @@
 ---
 title: "Edit Distance"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 

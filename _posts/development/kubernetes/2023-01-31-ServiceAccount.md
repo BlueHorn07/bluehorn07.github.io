@@ -1,7 +1,8 @@
 ---
 title: "ServiceAccount"
-layout: post
-tags: ["develop", "kubernetes"]
+toc: true
+toc_sticky: true
+categories: ["Develop", "Kubernetes"]
 ---
 
 k8s의 Account는 api-server에 요청을 보내는 주체이다. UserAccount는 `kubectl`로 api-server에 요청을 보낸다. ServiceAccount는 Pod이 api-server에 요청을 보낼 때 사용한다. Pod이  보내는 요청의 예시로는 "ConfigMap의 값을 읽기", "실행 중인 Pod 목록과 성능 지표를 확인하고 모니터링 하기", "특정 Batch Job을 돌릴 목적으로 Pod 생성하기" 등이 있을 것이다.

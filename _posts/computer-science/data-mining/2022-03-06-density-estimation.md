@@ -1,7 +1,8 @@
 ---
 title: "Density Estimation"
-layout: post
-tags: [applied_statistics]
+toc: true
+toc_sticky: true
+categories: ["Applied Statsitcs"]
 ---
 
 2021-1학기, 대학에서 '데이터 마이닝' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
@@ -62,7 +63,7 @@ Histogram이 이산적인 경우라면, KDE는 연속적인 데이터에 적합�
 kernel function: parzen window
 
 $$
-k(u) = \begin{cases} 
+k(u) = \begin{cases}
 1 & \left| u \right| \le 1/2  \\
 0 & \text{otherwise}
 \end{cases}
@@ -101,17 +102,17 @@ $$
 $$
 \begin{aligned}
 p_i &= \frac{n_i}{N \Delta_i} \\
-p(x) &= \frac{K(x; h)}{N h} 
+p(x) &= \frac{K(x; h)}{N h}
 \end{aligned}
 $$
 
-어떤가? KDE 너무 쉽지 않은가? :) 
+어떤가? KDE 너무 쉽지 않은가? :)
 
 <div class="img-wrapper">
   <img src="{{ "/images/data-mining/density-estimation-2.png" | relative_url }}" width="100%">
 </div>
 
-Histogram과 KDE를 통해 구한 pmf, pdf를 비교한 그림이다. 마찬가지로 $h$ 값이 커질 수록 global trend, 작을수록 local trend를 반영한다. KDE에선 범위가 더 적은 범위를 쓰기에 $h=0.005$에서 0인 값이 꽤 된다. 
+Histogram과 KDE를 통해 구한 pmf, pdf를 비교한 그림이다. 마찬가지로 $h$ 값이 커질 수록 global trend, 작을수록 local trend를 반영한다. KDE에선 범위가 더 적은 범위를 쓰기에 $h=0.005$에서 0인 값이 꽤 된다.
 
 $\Delta$, $h$는 hyper parameter이기 때문에 어떤 값을 써야 하는지는 Domain Knowledge의 개입이 필요하다.
 
@@ -122,14 +123,14 @@ $\Delta$, $h$는 hyper parameter이기 때문에 어떤 값을 써야 하는지�
 <div class="statement" markdown="1">
 
 $$
-k(u) = \begin{cases} 
+k(u) = \begin{cases}
 1 & \left| u_i \right| \le 1/2 \quad (i = 1, ..., d) \\
 0 & \text{otherwise}
 \end{cases}
 $$
 
 $$
-p(x) = \frac{K(x; h)}{N h^d} 
+p(x) = \frac{K(x; h)}{N h^d}
 $$
 
 </div>

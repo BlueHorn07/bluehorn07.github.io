@@ -1,7 +1,8 @@
 ---
 title: "Prediction on Regression"
-layout: post
-tags: ["statistics"]
+toc: true
+toc_sticky: true
+categories: ["Statistics"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -47,7 +48,7 @@ $$
 
 $$
 \begin{aligned}
-E[\hat{Y}_0] 
+E[\hat{Y}_0]
 &= E[B_0 + B_1 x_0] \\
 &= \beta_0 + \beta_1 x_0 = \mu_{Y \mid x_0}
 \end{aligned}
@@ -63,13 +64,13 @@ $$
 
 $$
 \begin{aligned}
-\text{Var}(\hat{Y}_0) 
+\text{Var}(\hat{Y}_0)
 &= \text{Var}(\bar{y} + B_1 (x_0 - \bar{x})) \\
 &= \text{Var}(\bar{y}) + \text{Var}(B_1 (x_0 - \bar{x})) + \text{Cov}(\bar{y}, B_1)
 \end{aligned}
 $$
 
-이때, $\bar{y} \perp B_1$이므로, $\text{Cov}(\bar{y}, B_1) = 0$이 된다. (Homework 🎈) 
+이때, $\bar{y} \perp B_1$이므로, $\text{Cov}(\bar{y}, B_1) = 0$이 된다. (Homework 🎈)
 
 따라서,
 
@@ -140,7 +141,7 @@ $$
 
 <div class="statement" markdown="1">
 
-A **mean response interval** is a confidence interval for the mean of all Y’s at a given X value. 
+A **mean response interval** is a confidence interval for the mean of all Y’s at a given X value.
 
 A **prediction interval** is a prediction interval for one single Y at a given X value.
 

@@ -1,7 +1,8 @@
 ---
 title: "F-distribution"
-layout: post
-tags: ["statistics"]
+toc: true
+toc_sticky: true
+categories: ["Statistics"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -25,7 +26,7 @@ tags: ["statistics"]
 
 <span class="statement-title">Definition.</span> F-distribution<br>
 
-If $V_1 \sim \chi^2(n_1)$ and $V_2 \sim \chi^2(n_2)$ are independent, 
+If $V_1 \sim \chi^2(n_1)$ and $V_2 \sim \chi^2(n_2)$ are independent,
 
 then $F := \dfrac{V_1/n_1}{V_2/n_2}$ is called **\<Snedecor's F-distribution\>**[^1] with degrees of freedom $n_1$ and $n_2$, and denoted as
 
@@ -71,7 +72,7 @@ Here, we have $f_{1-\alpha}(n_1, n_2) = \dfrac{1}{f_{\alpha}(n_2, n_1)}$
 
 $$
 \begin{aligned}
-  1 - \alpha 
+  1 - \alpha
   &= P \left( F(n_1, n_2) \ge f_{1-\alpha}(n_1, n_2) \right) \\
   &= P \left( \frac{1}{f_{1-\alpha}(n_1, n_2)} \ge \frac{1}{F(n_1, n_2)}\right) \\
   &= P \left( \frac{1}{f_{1-\alpha}(n_1, n_2)} \ge F(n_2, n_1) \right) \\

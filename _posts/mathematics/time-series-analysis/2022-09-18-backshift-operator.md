@@ -1,7 +1,8 @@
 ---
 title: "Backshift Operator"
-layout: post
-tags: ["time_series_analysis"]
+toc: true
+toc_sticky: true
+categories: ["Time Series Analysis"]
 ---
 
 # 도입
@@ -23,10 +24,10 @@ $$
 
 $$
 \begin{aligned}
-y'_t 
+y'_t
 &= y_t - y_{t-1} \\
 &= y_t - By_t \\
-&= (1 - B)y_t  
+&= (1 - B)y_t
 \end{aligned}
 $$
 
@@ -36,11 +37,11 @@ $$
 
 $$
 \begin{aligned}
-y''_t 
+y''_t
 &= y'_t - y'_{t-1} \\
 &= (1-B)y_t - (1-B)y_{t-1} \\
 &= (1 - B) (y_t - y_{t-1}) \\
-&= (1 - B)^2 y_t  
+&= (1 - B)^2 y_t
 \end{aligned}
 $$
 
@@ -119,8 +120,8 @@ ARMA Model은 $y_t$가 AR Model와 MA Model의 합으로 구성된 형태이다.
 
 $$
 \begin{aligned}
-y_t 
-&= 
+y_t
+&=
 \left( \phi_0 + \phi_1 y_{t-1} + \phi_2 y_{t-2} + \cdots + \phi_p y_{t - p} + \epsilon_t \right) \\
 &+ \left( \epsilon_t + \phi_0 + \phi_1 \epsilon_{t-1} + \phi_2 \epsilon_{t-2} + \cdots + \phi_p \epsilon_{t - p} \right)
 \end{aligned}
@@ -142,8 +143,8 @@ $$
 ARIMA Model은 $d$차 차분한 시계열에 ARMA 모델링을 한 것이다. 따라서, ARMA 모델의 $y_t$를 $(1 - B)^d y_t$로 바꿔주면 된다.
 
 $$
-\underset{\text{AR}}{(1 - \phi_1 B - \cdots - \phi_p B^p)} 
-\underset{\text{difference}}{(1 - B)^d} y_t  
+\underset{\text{AR}}{(1 - \phi_1 B - \cdots - \phi_p B^p)}
+\underset{\text{difference}}{(1 - B)^d} y_t
 = \phi_0 +
 \underset{\text{MA}}{(1 + \phi_1 B + \cdots + \phi_q B^q)}\epsilon_t
 $$
@@ -160,15 +161,15 @@ SARIMA Model은 ARIMA 모델에 계절성 ARIMA 모델링을 추가한 것이다
 $$
 \begin{aligned}
 
-\underset{\text{non-seasonal AR}}{(1 - \phi_1 B - \cdots - \phi_p B^p)} 
+\underset{\text{non-seasonal AR}}{(1 - \phi_1 B - \cdots - \phi_p B^p)}
 &\cdot
 \underset{\text{seasonal AR}}{(1 - \Phi_1 B^s - \cdots - \Phi_{p_s} B^{s\cdot p_s})} \\
-\underset{\text{non-seasonal difference}}{(1 - B)^d} 
+\underset{\text{non-seasonal difference}}{(1 - B)^d}
 &\cdot
 \underset{\text{seasonal difference}}{(1 - B^s)^{d_s}}
 y_t  \\
-= \phi_0 + 
-\underset{\text{non-seasonal MA}}{(1 + \phi_1 B + \cdots + \phi_q B^q)} 
+= \phi_0 +
+\underset{\text{non-seasonal MA}}{(1 + \phi_1 B + \cdots + \phi_q B^q)}
 &\cdot
 \underset{\text{seasonal MA}}{(1 + \Phi_1 B^s + \cdots + \Phi_{q_s} B^{s \cdot q_s})}
 \epsilon_t

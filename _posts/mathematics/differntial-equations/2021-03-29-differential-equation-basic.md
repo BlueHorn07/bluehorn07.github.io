@@ -1,7 +1,8 @@
 ---
 title: "Differential Equation - Basic"
-layout: post
-tags: ["Differntial Equation"]
+toc: true
+toc_sticky: true
+categories: ["Differential Equations"]
 ---
 
 
@@ -9,7 +10,7 @@ tags: ["Differntial Equation"]
 
 <br><span class="statement-title">TOC.</span><br>
 
-- \<미분 방정식; Differntial Equation\>이란 무엇인가?
+- \<미분 방정식; Differential Equations\>이란 무엇인가?
 - Type I & Type II
 - Linear DE
   - Intergrating Factor Method
@@ -40,7 +41,7 @@ $$
 
 우리는 위의 두 방정식과 같이 방정식 안에 \<**derivative**\> 텀이 존재하는 것을 \<**미분 방정식 differntial equations**\>라고 부를 것이다.
 
-이때, 미분 방정식에서 가장 높은 derivative의 차수를 DE의 "**order**"라고 한다. 
+이때, 미분 방정식에서 가장 높은 derivative의 차수를 DE의 "**order**"라고 한다.
 
 마지막으로 DE를 만족할 수 있는 가능한 모든 $y(t)$를 찾는 것을 우리는 "**solve DE**"라고 한다.
 
@@ -95,7 +96,7 @@ $$
 이제 우변에서 y의 텀을 좌변으로 옮겨주자.
 
 $$
-\mu y' = \mu (ay + b) \iff \mu y' - \mu ay = \mu b 
+\mu y' = \mu (ay + b) \iff \mu y' - \mu ay = \mu b
 $$
 
 이제 $\mu$에 대해 $\mu' = - a \mu$라고 가정하자! (이 부분에서 잘 와닿지 않을 수도 있는데, 이렇게 해도 지금까지의 과정을 violate 하지 않음을 상기하라!)

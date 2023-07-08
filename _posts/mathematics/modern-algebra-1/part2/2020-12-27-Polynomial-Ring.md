@@ -1,7 +1,8 @@
 ---
 title: "Polynomial Ring"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -14,12 +15,12 @@ tags: ["Modern Algebra1"]
 
 <div class="statement" markdown="1">
 
-Let $R$ be a ring, 
+Let $R$ be a ring,
 
 a polynomial $f(x)$ with coefficients in $R$ is an infinite formal sum
 
 $$
-\sum^{\infty}_{i=0} {a_i x^i} = a_0 + a_1 x + a_2 x^2 + \cdots 
+\sum^{\infty}_{i=0} {a_i x^i} = a_0 + a_1 x + a_2 x^2 + \cdots
 $$
 
 where $a_i \in R$, and for finite number of $a_i \ne 0$.
@@ -78,7 +79,7 @@ $$
 
 then $\phi_\alpha$ is a **homomorphism**.
 
-또한 $\phi_\alpha(x) = \alpha$이며, 
+또한 $\phi_\alpha(x) = \alpha$이며,
 
 $\phi_\alpha$ maps $F$ isomorphically by the identity map; <br>
 for $a \in F$, $\phi_\alpha(a) = a$
@@ -142,7 +143,7 @@ Let's think of a set $S = \\{ f(x) - g(x)s(x) \mid s(x) \in F[x] \\}$.
 
 만약 $0 \notin S$라면, $S$의 원소 중 가장 차수가 작은 다항식 $r(x)$를 선택하자.
 
-그러면, $r(x) \in S$에 대응하는 적당한 $q(x) \in F[x]$가 존재하여 
+그러면, $r(x) \in S$에 대응하는 적당한 $q(x) \in F[x]$가 존재하여
 
 $$
 f(x) = q(x) \cdot g(x) + r(x)
@@ -164,13 +165,13 @@ $$
 
 $$
 \begin{equation}
-    \left(f(x) - q(x)g(x)\right) - (c_t / b_m) x^{t-m} g(x) = r(x) - (c_t / b_m) x^{t-m} g(x)    
+    \left(f(x) - q(x)g(x)\right) - (c_t / b_m) x^{t-m} g(x) = r(x) - (c_t / b_m) x^{t-m} g(x)
 \end{equation}
 $$
 
 이때 $(c_t / b_m) x^{t-m} g(x)$는 최고 차항이 $(c_t / b_m) x^{t-m} \cdot b_m x^m = c_t x^t$가 된다.
 
-즉, Eq.(1)은 $r(x) - (c_t x^t + \cdots)$가 되므로 
+즉, Eq.(1)은 $r(x) - (c_t x^t + \cdots)$가 되므로
 
 Eq.(1)은 차수가 $t$보다는 작으면서 $S$에 원소가 된다.
 
@@ -210,8 +211,8 @@ $$
 그런데, $r_1(x) - r_2(x)$는
 
 - $r_1(x) - r_2(x) = 0$이거나
-- $r_1(x) - r_2(x)$의 차수는 원래 $g(x)$의 차수 $m$보다 작았으므로 
- 
+- $r_1(x) - r_2(x)$의 차수는 원래 $g(x)$의 차수 $m$보다 작았으므로
+
 우변의 차수는 $m$보다 작게 된다.
 
 따라서 $q_1(x) - q_2(x) \ne 0$이 될 수 없으므로 $q_1(x) = q_2(x)$가 된다.
@@ -247,7 +248,7 @@ if $f(\alpha) = 0$, then $\alpha$ is a zero of $f(x)$.
 
 <div class="statement" markdown="1">
 
-For $a \in F$, 
+For $a \in F$,
 
 $a$ is zero of $f(x) \in F[x]$ $\iff$ $(x - a) \mid f(x)$ in $F[x]$.
 
@@ -260,7 +261,7 @@ $a$ is zero of $f(x) \in F[x]$ $\iff$ $f(x) = (x-a)g(x)$ for some $g(x) \in F[x]
 그리고
 
 
-For $f(x) \in F[x]$, 
+For $f(x) \in F[x]$,
 
 $f(a) = 0$ $\iff$ $(x - a) \mid f(x)$ in $F[x]$.
 
@@ -368,7 +369,7 @@ $(F^{*}, \cdot\;)$는 Field $F$에 대한 곱셈군이다.
 
 Let $G \le (F^{*}, \cdot\;)$.
 
-If $G$ is cylic, then $G$ is finite abelian. 
+If $G$ is cylic, then $G$ is finite abelian.
 
 따라서 F.T. of f.g. abelian에 의해 $G$를 적당한 finite cyclic group의 direct product로 표현할 수 있다.
 
@@ -415,7 +416,7 @@ For $\alpha \in G$, $\alpha^m = 1$
 
 이것이 성립한다는 것은 $d_i$들이 모두 서로소 라는 말이다.
 
-따라서 
+따라서
 
 $$
 \mathbb{Z}_{d_1} \times \mathbb{Z}_{d_2} \times \cdots \mathbb{Z}_{d_r} \cong \mathbb{Z}_m \cong G
@@ -448,7 +449,7 @@ $$
 \end{aligned}
 $$
 
-이것을 
+이것을
 
 "$\mathbb{Z}_4$ can be embedded into $(\mathbb{C}^{*}, \cdot \;)$."
 

@@ -1,7 +1,8 @@
 ---
 title: "Anti-Aliasing"
-layout: post
-tags: ["research"]
+toc: true
+toc_sticky: true
+categories: ["Computer Vision"]
 ---
 
 
@@ -20,7 +21,7 @@ tags: ["research"]
 <div markdown="1">
 **<u>Aliasing</u>**은 컴퓨터 그래픽에서 물체의 가장자리 부분이 매끄럽지 않고 계단처럼 보이는 현상을 말한다.
 
-Aliasing 현상은 그림의 가장자리에서 가장 심하게 부각된다. 
+Aliasing 현상은 그림의 가장자리에서 가장 심하게 부각된다.
 
 이런 Aliasing을 처리하기 위해 **<u>Anti-Aliasing</u>** 기법을 사용하게 된다.
 

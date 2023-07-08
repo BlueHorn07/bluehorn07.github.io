@@ -1,7 +1,8 @@
 ---
 title: "Choice of Sample Size for Testing Mean"
-layout: post
-tags: ["statistics"]
+toc: true
+toc_sticky: true
+categories: ["Statistics"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -73,16 +74,16 @@ Now, let's find $n$ which guarantees the eq. of (3) and (4).
 
 $$
 \begin{aligned}
-P \left( \frac{\bar{X} - \mu_0}{\sigma/\sqrt{n}} < z_{\alpha} \mid \mu = \mu_1 \right) 
+P \left( \frac{\bar{X} - \mu_0}{\sigma/\sqrt{n}} < z_{\alpha} \mid \mu = \mu_1 \right)
 &\le \beta \\
-P \left( \frac{\bar{X} - \mu_1 + \mu_1 - \mu_0}{\sigma/\sqrt{n}} < z_{\alpha} \mid \mu = \mu_1 \right) 
+P \left( \frac{\bar{X} - \mu_1 + \mu_1 - \mu_0}{\sigma/\sqrt{n}} < z_{\alpha} \mid \mu = \mu_1 \right)
 &\le \beta \\
-P \left( z < z_{\alpha} - \frac{\mu_1 - \mu_0}{\sigma/\sqrt{n}} \right) 
+P \left( z < z_{\alpha} - \frac{\mu_1 - \mu_0}{\sigma/\sqrt{n}} \right)
 &\le \beta
 \end{aligned}
 $$
 
-이때, $\mu_1 > \mu_0$ and $n$ is large, 
+이때, $\mu_1 > \mu_0$ and $n$ is large,
 
 $$
 z_{\alpha} - \frac{\mu_1 - \mu_0}{\sigma/\sqrt{n}} < 0

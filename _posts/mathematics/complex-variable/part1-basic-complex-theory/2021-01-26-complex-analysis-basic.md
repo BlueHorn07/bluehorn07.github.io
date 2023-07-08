@@ -1,7 +1,8 @@
 ---
 title: "Complex Analysis - Basic"
-layout: post
-tags: ["Complex Variable"]
+toc: true
+toc_sticky: true
+categories: ["Complex Variable"]
 ---
 
 
@@ -80,7 +81,7 @@ $f(z) = z^2$, $z = r e^{i\theta}$
 
 예를 들면,
 
-함수 $f(z)$가 $f(z) = z^{1/2}$라면, 
+함수 $f(z)$가 $f(z) = z^{1/2}$라면,
 
 $$
 z^{1/2} = \pm \sqrt{r} \exp {(i\theta / 2)}
@@ -124,7 +125,7 @@ $$
 
 "There exist a sequence $(z_n) \quad (z_n \ne z_0)$ s.t. $z_n \rightarrow z_0$ but $\left\| f(z_n) \rightarrow w_0 \right\| \ge \epsilon > 0$ for some $\epsilon$"
 
-즉, $z_n$이 아무리 $z_0$에 가깝게 다가가도 $f(z_n)$와 $w_0$ 사이에 적어도 $\epsilon$ 만큼의 간격이 존재하는 것이다! 
+즉, $z_n$이 아무리 $z_0$에 가깝게 다가가도 $f(z_n)$와 $w_0$ 사이에 적어도 $\epsilon$ 만큼의 간격이 존재하는 것이다!
 
 또 다르게 표현하자면, 극한이 존재할 때는 '모든' $\epsilon$에 대해 부등식을 만족하는 $\delta$를 찾을 수 있지만, 극한지 존재하지 않을 때는 '어떤' $\epsilon$에 대해선 부등식을 만족하는 $\delta$를 찾을 수 없다는 말이기도 하다!
 
@@ -151,7 +152,7 @@ So, $\left\| f(z) - f(i) \right\| < \epsilon$ whenevery $\left\| z - i \right\| 
 - (i) Let $z = x$, $f(z) = \frac{x}{x} = 1$
 - (ii) Let $z = iy$, $f(z) = \frac{iy}{-iy} = -1$
 
-서로 다른 방향에서의 얻는 극한값이 일치하지 않기 때문에 극한이 존재하지 않는다. 
+서로 다른 방향에서의 얻는 극한값이 일치하지 않기 때문에 극한이 존재하지 않는다.
 
 <br>
 

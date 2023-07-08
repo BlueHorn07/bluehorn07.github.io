@@ -1,7 +1,8 @@
 ---
 title: "Factor Group - Appliaction"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -17,7 +18,7 @@ Let $H \times K$ be a direct product of group $H$, $K$.
 
 Then, $\overline{H} = H \times \\{ e_K \\}$ is a normal subgroup of $H \times K$.
 
-이때, 
+이때,
 
 $$
 H \times K / {\overline{H}} = H \times K / H \times \{ e_K \} \cong K
@@ -31,7 +32,7 @@ $$
 
 2번째 명제만 증명하겠다.
 
-Homomorphism $\phi$를 하나 정의하자. 
+Homomorphism $\phi$를 하나 정의하자.
 
 $$
 \begin{aligned}
@@ -42,7 +43,7 @@ $$
 
 이때, homomorphism의 kernel을 생각해보자. 그러면, $\ker \phi = (H, e_K)$이다.
 
-FHT에 따르면, 
+FHT에 따르면,
 
 $$
 H \times K / {\ker \phi} \cong \phi[ H \times K ]
@@ -113,7 +114,7 @@ $$
 
 $(1, 0) + H \in \mathbb{Z}_4 \times \mathbb{Z}_6 / <(2, 3)>$
 
-$(1, 0) + H$의 위수는 
+$(1, 0) + H$의 위수는
 
 - $\left((1, 0) + H\right) + \left((1, 0) + H\right) = \left((2, 0) + H\right) \ne H$
 - $(3, 0) + H \ne H$
@@ -164,7 +165,7 @@ $<(1, 1)>$로 생성되는 left coset들을 생각해보자. 그러면
 
 그러면, 대략 이 묶음이 $\mathbb{Z}$ 만큼 존재하게 된다.
 
-따라서 
+따라서
 
 $$
 \mathbb{Z} \times \mathbb{Z} / <(1, 1)> \; \cong \; \mathbb{Z}

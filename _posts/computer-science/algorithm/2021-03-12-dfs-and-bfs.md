@@ -1,7 +1,8 @@
 ---
 title: "DFS and BFS"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -74,7 +75,7 @@ Let $\pi$ be any path from $v$ to $u$, and let $z \in \pi$ be the last vertex vi
 
 Let $w$ be the node immediately after $z$ on path $\pi$.
 
-When $z$ was visited, the procedure would have noticed $w$ and moved on to it. 
+When $z$ was visited, the procedure would have noticed $w$ and moved on to it.
 
 $z$에 방문했으면, **explore** 함수에서 인접한 모든 노드를 방문하기 때문에 반드시 $w$도 방문할 수 밖에 없다.
 
@@ -84,7 +85,7 @@ $z$에 방문했으면, **explore** 함수에서 인접한 모든 노드를 방�
 
 </div>
 
-이번에는 \<DFS\> 알고리즘의 시간 복잡도를 계산해보자! 그래프를 \<인접 행렬\>과 \<인접 리스트\>로 표현했느냐에 따라서 시간 복잡도가 다른데, 본인이 주로 \<인접 리스트\> 방식으로 그래프를 생각하기 때문에 여기서는 \<인접 리스트\>의 경우를 살펴보겠다. 
+이번에는 \<DFS\> 알고리즘의 시간 복잡도를 계산해보자! 그래프를 \<인접 행렬\>과 \<인접 리스트\>로 표현했느냐에 따라서 시간 복잡도가 다른데, 본인이 주로 \<인접 리스트\> 방식으로 그래프를 생각하기 때문에 여기서는 \<인접 리스트\>의 경우를 살펴보겠다.
 
 <div class="math-statement" markdown="1">
 

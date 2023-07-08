@@ -1,7 +1,8 @@
 ---
 title: "singular points & poles"
-layout: post
-tags: ["Complex Variable"]
+toc: true
+toc_sticky: true
+categories: ["Complex Variable"]
 ---
 
 
@@ -106,7 +107,7 @@ $$
 
 따라서 $z=0$는 order $2$의 pole이다.
 
-이때, $\underset{z \rightarrow 0}{\lim} {\lvert f(z) \rvert}$는 음수 차수 텀에 의해 
+이때, $\underset{z \rightarrow 0}{\lim} {\lvert f(z) \rvert}$는 음수 차수 텀에 의해
 
 $$
 \underset{z \rightarrow 0}{\lim} {\lvert f(z) \rvert} = \infty
@@ -204,7 +205,7 @@ THEN, the singular points of $f(z)$ are **<u>zeros</u>** of $h(z)$.
 <br>
 
 **<u>Definition.</u>**<br>
-Let $f$ be **<u>analytic</u>** at $z_0$. IF $f(z_0)=0$ and there is a positive integer $m$ such that 
+Let $f$ be **<u>analytic</u>** at $z_0$. IF $f(z_0)=0$ and there is a positive integer $m$ such that
 
 $$
 f'(z_0) = f''(z_0) = \cdots = f^{(m-1)}(z_0) = 0 \quad \textrm{and} \quad f^{(m)}(z_0) \ne 0
@@ -319,7 +320,7 @@ Find poles of $f(z)$
 $$
 \begin{aligned}
   z^4+4 &= 0 \\
-  z^4 &= -4 \\ 
+  z^4 &= -4 \\
   (re^{i\theta})^4 &= 4 e^{i(\pi + 2n\pi)} \\
   r^4 \cdot e^{i(4\theta)} &= 4 \cdot e^{i(\pi + 2n\pi)}
 \end{aligned}
