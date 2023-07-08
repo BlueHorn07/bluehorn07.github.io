@@ -1,7 +1,8 @@
 ---
 title: "Time Series Component: Trend, Seasonality, Cycle"
-layout: post
-tags: ["time_series_analysis"]
+toc: true
+toc_sticky: true
+categories: ["Time Series Analysis"]
 ---
 
 # Time Series Component

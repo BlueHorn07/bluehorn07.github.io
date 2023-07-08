@@ -1,7 +1,8 @@
 ---
 title: "CKA 시험 합격 후기"
-layout: post
-tags: ["develop", "kubernetes"]
+toc: true
+toc_sticky: true
+categories: ["Develop", "Kubernetes"]
 ---
 
 회사에서 쓰는 Kubernetes를 제대로 알고 쓰고 싶어서 CKA 시험을 준비해서 응시 했다. 시험 준비하고 응시 하기까지 우여곡절이 많았지만, 결국은 한번에 자격증을 딸 수 있었다!

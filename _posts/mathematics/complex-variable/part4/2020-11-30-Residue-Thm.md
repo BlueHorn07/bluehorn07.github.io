@@ -1,7 +1,8 @@
 ---
 title: "Residue Theorem"
-layout: post
-tags: ["Complex Variable"]
+toc: true
+toc_sticky: true
+categories: ["Complex Variable"]
 ---
 
 
@@ -14,7 +15,7 @@ tags: ["Complex Variable"]
 #### Singular point
 
 **<u>Definition.</u>** singular point<br>
-$z_0$ is called a **<u>singular point</u>** IF $f(z)$ is not analytic at $z_0$. 
+$z_0$ is called a **<u>singular point</u>** IF $f(z)$ is not analytic at $z_0$.
 
 **<u>Definition.</u>** isolated singular point<br>
 IF there is $r>0$ such that $f(z)$ is analytic on $0<\lvert z-z_0 \rvert < r$, THEN a singular point $z_0$ is said to be **<u>isolated</u>**.
@@ -29,7 +30,7 @@ f(z)=\frac{z-1}{z^5(z+9)}
 $$
 
 **<u>Sol.</u>**<br>
-분자, 분모가 polynomial이므로 분모가 0인 지점에서 singular point! 따라서 singular point is $z=0$ & $z=-9$ 
+분자, 분모가 polynomial이므로 분모가 0인 지점에서 singular point! 따라서 singular point is $z=0$ & $z=-9$
 
 <br>
 
@@ -109,7 +110,7 @@ $$
 <br>
 
 **<u>Definition.</u>** residue<br>
-$b_1$ is called the **<u>residue</u>** of $f(z)$ at the isolated singular point $z_0$. 
+$b_1$ is called the **<u>residue</u>** of $f(z)$ at the isolated singular point $z_0$.
 
 $$
 b_1 = \underset{z=z_0}{\textrm{Res}} f(z)
@@ -203,9 +204,9 @@ $$
 \end{aligned}
 $$
 
-THEN, $b_1=\frac{1}{2!}$. 
+THEN, $b_1=\frac{1}{2!}$.
 
-Therefore, by residue thm, 
+Therefore, by residue thm,
 
 $$
 \begin{aligned}

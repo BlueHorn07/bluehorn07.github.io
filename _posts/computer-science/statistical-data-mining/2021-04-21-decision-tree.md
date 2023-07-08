@@ -1,7 +1,8 @@
 ---
 title: "Decision Tree"
-layout: post
-tags: [applied_statistics]
+toc: true
+toc_sticky: true
+categories: ["Applied Statsitcs"]
 ---
 
 
@@ -31,7 +32,7 @@ $$
 \hat{f}(x) = \sum^M_{m=1} \hat{c}_m \cdot I(x\in R_m)
 $$
 
-where 
+where
 
 $$
 \hat{c}_m = \frac{1}{n_m} \sum_{x_i \in R_m} y_i
@@ -73,7 +74,7 @@ DT는 아래 4가지 과정을 통해 만들어진다.
 
 **1\. Growing**
 
-- Find an optimal <u>splitting rule</u> for each node and grow the tree. 
+- Find an optimal <u>splitting rule</u> for each node and grow the tree.
 - Stop growing if <u>stopping rule</u> is satisfied.
 
 **2\. Prunning**
@@ -166,7 +167,7 @@ A subtree $T \subset T_0$ is any tree that can be obtained by pruning.
 
 let $n_m = \left\| \\{ i : x_i \in R_m \\} \right\|$ and $$\displaystyle\hat{c}_m = \frac{1}{n_m} \sum_{x_i \in R_m} y_i$$.
 
-1\. In a regression, 
+1\. In a regression,
 
 $$
 Q_m (T) = \frac{1}{n_m} \sum_{x_i \in R_m} (y_i - \hat{c}_m)^2

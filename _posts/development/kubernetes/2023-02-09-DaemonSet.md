@@ -1,7 +1,8 @@
 ---
 title: "DaemonSet"
-layout: post
-tags: ["develop", "kubernetes"]
+toc: true
+toc_sticky: true
+categories: ["Develop", "Kubernetes"]
 ---
 
 K8s 클러스터의 노드 전체에 Pod을 띄울 때 사용하는 "컨트롤러"다.

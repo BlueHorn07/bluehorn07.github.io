@@ -1,7 +1,8 @@
 ---
 title: "EKS Cluster Setup 후기"
-layout: post
-tags: ["develop", "kubernetes"]
+toc: true
+toc_sticky: true
+categories: ["Kubernetes", "AWS"]
 ---
 
 AWS CLI를 통해 EKS 클러스터를 띄우고, AWS Access Key를 이용해 접속해보자! 처음에는 'EKS Cluster? 그거 그냥 띄우면 K8s 클러스터 띄우는 거 아닌가?'라고 만만하게 봤는데, 이런... EKS 클러스터를 띄우고 실제 접속까지 하는 과정이 순탄치 않았다. 이번에 예행 연습으로 경험해봤으니 이젠 자신있다!!

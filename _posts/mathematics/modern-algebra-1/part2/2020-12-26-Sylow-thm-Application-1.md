@@ -1,7 +1,8 @@
 ---
 title: "Three Sylow Theorems - Application 1"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -149,7 +150,7 @@ $\phi$는 homomorphism이다.
 
 <br>
 
-이제 $\phi$의 kernel에 대해 생각해보자. 
+이제 $\phi$의 kernel에 대해 생각해보자.
 
 만약 $\phi(h, k) = e$라면, $hk = e$인 원소가 $\ker \phi$에 속할 것이다.
 
@@ -202,7 +203,7 @@ $G$가 cyclic이면 당연히 가환이므로, $G$가 cyclic group이 아니라�
 
 Let $a$ be an elt of $G$ of order $p$. (Cauchy의 정리에 의해 존재성이 보장)
 
-그러면, 
+그러면,
 
 $$
 \left<a\right> = \{ e, a, a^2, \dots, a^{p-1} \} < G
@@ -210,7 +211,7 @@ $$
 
 $b \in G \; \setminus \left<a\right>$인 원소를 생각해보자.
 
-두 원소 $a$, $b$로 만든 순환군 $\left<a\right>$, $\left<b\right>$를 생각해보자. 
+두 원소 $a$, $b$로 만든 순환군 $\left<a\right>$, $\left<b\right>$를 생각해보자.
 
 이때, $\left<a\right> \cap \left<b\right> = \\{ e \\}$여야 한다.
 
@@ -224,7 +225,7 @@ $b \in G \; \setminus \left<a\right>$인 원소를 생각해보자.
 
 <br>
 
-이번에는 $\left<a\right> \lor \left<b\right>$를 생각해보자. 
+이번에는 $\left<a\right> \lor \left<b\right>$를 생각해보자.
 
 $\left<a\right> \lor \left<b\right>$에서 $\left<a\right>$는 proper subgroup이다.
 
@@ -240,7 +241,7 @@ $\left<a\right> \lor \left<b\right>$에서 $\left<a\right>$는 proper subgroup�
 - $\left<a\right> \cap \left<b\right> = \\{ e \\}$
 - $\left<a\right> \lor \left<b\right> = G$
 
-따라서 앞서 살펴본 Lemma에 따르면 
+따라서 앞서 살펴본 Lemma에 따르면
 
 $G \cong \left<a\right> \times \left<b\right> \cong \mathbb{Z}_p \times \mathbb{Z}_p$이다.
 

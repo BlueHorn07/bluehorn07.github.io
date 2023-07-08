@@ -1,7 +1,8 @@
 ---
 title: "Degree of Freedom in Statistics"
-layout: post
-tags: ["statistics"]
+toc: true
+toc_sticky: true
+categories: ["Statistics"]
 preview: "통계학에서 자유도(Degree of Freedom)란 무엇인가? 왜 보통 자유도로 $(n-1)$ 값을 쓰는가?"
 ---
 
@@ -43,7 +44,7 @@ $$
 
 <div class="example" markdown="1">
 
-포항공대의 확통 기말고사는 과목 평균이 $80$점이 되어야 한다는 규칙이 있다. 
+포항공대의 확통 기말고사는 과목 평균이 $80$점이 되어야 한다는 규칙이 있다.
 
 이번 학기 확통을 듣는 학생은 총 5명이다. 대머리 교수 블혼은 학생 4명의 기말고사 시험지를 채점했다.
 
@@ -73,9 +74,9 @@ $$
 - [Student's t-distribution $t(n)$]({{"/2021/04/27/student-t-distribution.html" | relative_url}})
 
 $$
-T := \frac{Z}{\sqrt{V / n}} \quad 
+T := \frac{Z}{\sqrt{V / n}} \quad
 (Z \sim N(0, 1), V \sim \chi^2(n), Z \perp V)
-$$ 
+$$
 
 - [F-distribution $F(n_1, n_2)$]({{"/2021/05/04/F-distribution.html" | relative_url}})
 
@@ -101,7 +102,7 @@ $$
 \begin{aligned}
 \chi^2 &:= \sum_{i=1}^k \frac{(o_i - e_i)^2}{e_i} \\
 t &:= \frac{\bar{x} - \mu}{s / \sqrt{n - 1}} \\
-f &:= \frac{s_1^2 / \sigma_1^2}{s_2^2 / \sigma_2^2} 
+f &:= \frac{s_1^2 / \sigma_1^2}{s_2^2 / \sigma_2^2}
 \end{aligned}
 $$
 
@@ -121,7 +122,7 @@ Sample Variance $S^2$에서 왜 분모에 $n$ 대신 $n-1$이 들어가는지 �
 
 $$
 \begin{aligned}
-\text{DOF} 
+\text{DOF}
 &= (\text{# of independent variates}) - (\text{# of constraints}) \\
 &= n - 1
 \end{aligned}

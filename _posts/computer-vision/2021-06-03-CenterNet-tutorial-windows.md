@@ -1,7 +1,8 @@
 ---
 title: "CenterNet 실습 (Windows)"
-layout: post
-tags: ["Computer Vision"]
+toc: true
+toc_sticky: true
+categories: ["Computer Vision"]
 ---
 
 
@@ -53,7 +54,7 @@ ModuleNotFoundError: No module named '_ext'
 ``` py
 extensions = [
     Extension(
-        "nms", 
+        "nms",
         ["nms.pyx"],
         # extra_compile_args=["-Wno-cpp", "-Wno-unused-function"]
     )

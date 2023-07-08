@@ -1,7 +1,8 @@
 ---
 title: "Two Samples Estimation: Diff Btw Two Means"
-layout: post
-tags: ["statistics"]
+toc: true
+toc_sticky: true
+categories: ["Statistics"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -20,7 +21,7 @@ tags: ["statistics"]
 
 # Two Samples Estimation
 
-Supp. there are two populations and assume that both follow some random distributions with means $\mu_1$ and $\mu_2$ and variances $\sigma_1^2$, $\sigma_2^2$ respectively. 
+Supp. there are two populations and assume that both follow some random distributions with means $\mu_1$ and $\mu_2$ and variances $\sigma_1^2$, $\sigma_2^2$ respectively.
 
 Take random samples $X_1, \dots, X_{n_1}$ and $Y_1, \dots, Y_{n_2}$, and assume that $X_i$s and $Y_j$s are independent.
 
@@ -128,7 +129,7 @@ $$
 \frac{(\bar{X} - \bar{Y}) - (\mu_1 - \mu_2)}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}} \; \overset{D}{\sim} \; t(d)
 $$
 
-where 
+where
 
 $$
 d = \frac{(s_1^2/n_1 + s_2^2/n_2)^2}{(s_1^2/n_1)^2 / (n_1-1) + (s_2^2/n_2)^2 / (n_2-1)}

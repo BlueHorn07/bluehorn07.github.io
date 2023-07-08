@@ -1,7 +1,8 @@
 ---
 title: "Local Search"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -16,7 +17,7 @@ tags: ["algorithm"]
   <img src="{{ "/images/algorithm/local-search-1.png" | relative_url }}" width="100%">
 </div>
 
-\<Local Search\>는 현재의 partial solution에서 가까운 이웃 solution을 탐색해 그 중 가장 좋은 녀석으로 partial solution을 갱신하는 기법이다. 
+\<Local Search\>는 현재의 partial solution에서 가까운 이웃 solution을 탐색해 그 중 가장 좋은 녀석으로 partial solution을 갱신하는 기법이다.
 
 > incremental process of introducing small mutations and keeping them if they work well!
 
@@ -60,7 +61,7 @@ return $s$.
 
 ### Dealing with local optima: Simulated Annealing
 
-\<Local Search\>는 solution의 optimality를 보장하지 못한다는 단점이 있다. 이를 해결하고 싶다면, 단순히 새로운 starting point에서 \<Local Search\>를 수행해 새로운 solution을 얻는 방법이 있을 것이다. 그러나 무식하게 Restart 하는 것은 탐색 공간이 무지무지 크다면, 정말 많은 staring point가 존재하기 때문에 좋은 solution을 찾을 가능성이 크게 줄어든다. 
+\<Local Search\>는 solution의 optimality를 보장하지 못한다는 단점이 있다. 이를 해결하고 싶다면, 단순히 새로운 starting point에서 \<Local Search\>를 수행해 새로운 solution을 얻는 방법이 있을 것이다. 그러나 무식하게 Restart 하는 것은 탐색 공간이 무지무지 크다면, 정말 많은 staring point가 존재하기 때문에 좋은 solution을 찾을 가능성이 크게 줄어든다.
 
 그래서 약간의 포용성을 가진 \<Local Search\> 방식이 제시되었다. <span style="color: red">여러번 Restart 하는 대신 확률적으로 bad solution을 탐색함으로써 Restart의 랜덤성을 확보</span>한다.
 
@@ -109,7 +110,7 @@ cost difference $\Delta$는 iteration을 돌면서 동적으로 정해지는 값
 
 만약 $T = 0$라면, $e^{-\Delta / T} \rightarrow e^{-\inf} = 0$이기 때문에 pure한 \<Local Search\>와 같다. 만약 $T > 0$라면, $0 < e^{-\Delta / T} < 1$로 가끔식 bad solution으로 탐색하게 된다.
 
-그런데 temperature $T$로 어떤 값을 설정해야 할까? 가장 간단한 방법은 처음엔 큰 값의 $T$로 시작해서 iteration을 돌 때마다 $T \leftarrow T - 1$을 해 $T$ 값을 점점 줄여 0으로 만드는 것이다. 이것은 \<Local Search\> 초기에는 자유롭게 search space를 돌아다니며 local optima에서 벗어나려고 한다. 그러나 $T$ 값이 0으로 수렴하기 때문에 점차 strict \<Local Search\>를 수행하게 된다. 
+그런데 temperature $T$로 어떤 값을 설정해야 할까? 가장 간단한 방법은 처음엔 큰 값의 $T$로 시작해서 iteration을 돌 때마다 $T \leftarrow T - 1$을 해 $T$ 값을 점점 줄여 0으로 만드는 것이다. 이것은 \<Local Search\> 초기에는 자유롭게 search space를 돌아다니며 local optima에서 벗어나려고 한다. 그러나 $T$ 값이 0으로 수렴하기 때문에 점차 strict \<Local Search\>를 수행하게 된다.
 
 위와 같은 방식을 \<Simulated Annealing; 담금질 기법\>라고 하는데, "Annealing"은 고온의 금속을 서서히 식히는 방식이라고 한다. 물리학(physics)의 콘셉트에서 영감을 받은 기법인데, 입자들이 고온에선 기체/액체 상태로 자유롭게 움직이지만, 열이 식으면서 고체의 형태로 규칙적이고 결정의 형태로 변하는 것을 모사한 것이다.
 

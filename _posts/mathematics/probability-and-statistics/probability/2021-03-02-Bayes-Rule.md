@@ -1,7 +1,8 @@
 ---
 title: "Bayes' Rule"
-layout: post
-tags: ["probability"]
+toc: true
+toc_sticky: true
+categories: ["Probability"]
 ---
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
@@ -21,7 +22,7 @@ tags: ["probability"]
 
 <span class="statement-title">Definition.</span> Partition<br>
 
-The events $\\{ B_1, \dots, B_n \\}$ form a partition of event space $S$ if 
+The events $\\{ B_1, \dots, B_n \\}$ form a partition of event space $S$ if
 
 1. $B_i \cap B_j = \emptyset$ for any $i \ne j$
 2. $\cup^n_{i=1} B_i = S$
@@ -32,7 +33,7 @@ The events $\\{ B_1, \dots, B_n \\}$ form a partition of event space $S$ if
 
 <span class="statement-title">Theorem.</span> Law of Total Probability<br>
 
-If the events $B_1$, ..., $B_n$ form a partition of $S$ such that $P(B_i) > 0$, 
+If the events $B_1$, ..., $B_n$ form a partition of $S$ such that $P(B_i) > 0$,
 
 then for any event $A$
 
@@ -70,7 +71,7 @@ $$
 
 <span class="statement-title">proof.</span><br>
 
-증명은 간단하다. 
+증명은 간단하다.
 
 [Step 1] Conditional Probability에 따라 아래의 식이 성립한다.
 
@@ -112,7 +113,7 @@ $$
 
 건강한 블혼은 아침부터 목이 아프기 시작했다. 혹시 코로나에 걸렸나 싶어서 아침에 자가검사키트를 사서 해봤더니 이럴수가! 양성(+)이 떴다!
 
-2022년 대한민국에서 코로나 걸릴 확률 $P(C)$는 $0.4$라고 하자. 그리고 자가검사키트의 정확도는 (1) 코로나에 걸린 사람이 양성일 확률 $P(+ \mid C)$은 $0.95$, (2) 코로나에 걸리지 않은 사람이 양성일 확률 $P(+ \mid \sim C)$은 $0.01$라고 하자. 
+2022년 대한민국에서 코로나 걸릴 확률 $P(C)$는 $0.4$라고 하자. 그리고 자가검사키트의 정확도는 (1) 코로나에 걸린 사람이 양성일 확률 $P(+ \mid C)$은 $0.95$, (2) 코로나에 걸리지 않은 사람이 양성일 확률 $P(+ \mid \sim C)$은 $0.01$라고 하자.
 
 블혼은 '사실 코로나에 걸리지 않은 건데 양성이 뜬 것일 수도 있다'고 생각하며' 자가검사키트의 정확도를 의심하고 있다. 블혼을 위해 자가검사 양성인데 코로나에 걸렸을 확률 $P(C \mid +)$를 구해보자.
 
@@ -124,7 +125,7 @@ By Bayes' Rule,
 
 $$
 \begin{aligned}
-P(C \mid +) 
+P(C \mid +)
 &= \frac{P(+ \mid C) P(C)}{P(+)} = \frac{P(+ \mid C) P(C)}{P(+ \mid C)P(C) + P(+ \mid \sim C)P(\sim C)} \\
 &= \frac{0.95 \cdot 0.4}{0.95 \cdot 0.4 + 0.01 \cdot 0.6} = \frac{0.38}{0.386} \\
 &= 0.98

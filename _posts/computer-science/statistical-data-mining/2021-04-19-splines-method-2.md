@@ -1,7 +1,8 @@
 ---
 title: "Splines Method (2)"
-layout: post
-tags: [applied_statistics]
+toc: true
+toc_sticky: true
+categories: ["Applied Statsitcs"]
 ---
 
 
@@ -41,7 +42,7 @@ $$
 정규 수업에서는 $f(\cdot)$를 추정하는 방식으로 아래의 "penalized log-likelihood function"을 Maximize 하는 것을 제시한다.
 
 $$
-\ell_\lambda (f) = \sum^n_{i=1} \left[ y_i f(x_i) - \log (1 + e^{f(x_i)}) \right] - \frac{\lambda}{2} \int \left\{ f''(t) \right\}^2 \; dt 
+\ell_\lambda (f) = \sum^n_{i=1} \left[ y_i f(x_i) - \log (1 + e^{f(x_i)}) \right] - \frac{\lambda}{2} \int \left\{ f''(t) \right\}^2 \; dt
 $$
 
 복잡하게 생각하기 보다는 [\<smoothing spline\>]({{"/2021/04/18/regression-spline.html#smoothing-splines" | relative_url}})과 비슷한 형태라고 인식 해두자!

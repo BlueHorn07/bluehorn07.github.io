@@ -1,7 +1,8 @@
 ---
 title: "Multiplication Algorithm"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -132,7 +133,7 @@ $$
 \sum^{\log_2 n}_{k=0} {3^k \cdot O(n/2^k)} &= \sum^{\log_2 n}_{k=0} {(3/2)^k \cdot O(n)} \\
 &= O(n) \cdot \sum^{\log_2 n}_{k=0} {(3/2)^k } \\
 &= O(n) \cdot \frac{(3/2)^{\log_2 {n} + 1} - 1}{3/2-1} \\
-&= O(n) \cdot O\left( (3/2)^{\log_2 {n}} \right) \\ 
+&= O(n) \cdot O\left( (3/2)^{\log_2 {n}} \right) \\
 &= O(n) \cdot O\left( \frac{3^{\log_2 {n}}}{2^{\log_2 {n}}} \right) \\
 &= O(n) \cdot O\left( \frac{n^{\log_2{3}}}{n} \right) \\
 &= O(n^{\log_2 {3}})

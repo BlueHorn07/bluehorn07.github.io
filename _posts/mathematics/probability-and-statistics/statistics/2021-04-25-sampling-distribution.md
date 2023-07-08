@@ -1,7 +1,8 @@
 ---
 title: "Sampling Distribution"
-layout: post
-tags: ["statistics"]
+toc: true
+toc_sticky: true
+categories: ["Statistics"]
 ---
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
@@ -72,7 +73,7 @@ $$
 P(\left| \overline{x} - 0.6 \right| < \epsilon)
 $$
 
-과 같은 확률을 어떻게 구하는지에 대한 것이다. 이것을 구하는 이유는 
+과 같은 확률을 어떻게 구하는지에 대한 것이다. 이것을 구하는 이유는
 
 $$
 P(\left| \overline{x} - \mu_0 \right| < \epsilon)
@@ -106,7 +107,7 @@ A \<sample\> is a subset of population.
 
 RVs $X_1, \dots, X_n$ are said to be a \<random sample\> of size $n$, <span class="half_HL">if they are **independent and identically distributed** as pmf or pdf $f(x)$</span>.
 
-That is, 
+That is,
 
 $$
 f_{(X_1, \dots, X_n)} (x_1, \dots, x_n) = f_{X_1} (x_1) \cdots f_{X_n} (x_n)
@@ -134,7 +135,7 @@ A \<**Statistics; 통계량**\> is a function of a random sample $X_1, \dots, X_
 
 Supp. $X_1, \dots, X_n$ is a random sample from $N(\mu, 1)$.
 
-Then, 
+Then,
 
 1\. $\dfrac{X_1 + \cdots + X_n}{n}$ is a <u>Statistics</u>!
 

@@ -1,7 +1,8 @@
 ---
 title: "Linear Classification - 2"
-layout: post
-tags: [applied_statistics]
+toc: true
+toc_sticky: true
+categories: ["Applied Statsitcs"]
 ---
 
 
@@ -51,7 +52,7 @@ $$
 
 <big><b>Q2. 왜 "<u>Logistic</u>" Regression인가?</b></big>
 
-Linear Regression과 LDA/QDA 모두 classification을 수행하기 위해 적절한 **decision boundary**를 찾는 것을 목표로 했다. 
+Linear Regression과 LDA/QDA 모두 classification을 수행하기 위해 적절한 **decision boundary**를 찾는 것을 목표로 했다.
 
 $$
 \left\{ x : \log \frac{P(Y=1\mid X=x)}{P(Y=0 \mid X = x)} \right\}
@@ -83,7 +84,7 @@ $$
 L(\beta) = \prod^n_{i=1} P(Y = y_i \mid X = x_i)
 $$
 
-$L(\beta)$가 왜 이렇게 정의되었는지 살펴보자. 
+$L(\beta)$가 왜 이렇게 정의되었는지 살펴보자.
 
 <div class="img-wrapper">
   <img src="https://raw.githubusercontent.com/angeloyeo/angeloyeo.github.io/master/pics/2020-07-17-MLE/pic2.png" width="600px">

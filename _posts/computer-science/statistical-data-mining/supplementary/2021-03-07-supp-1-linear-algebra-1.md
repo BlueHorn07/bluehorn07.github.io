@@ -1,7 +1,8 @@
 ---
 title: "Supp-1: Linear Algebra - 1"
-layout: post
-tags: [linear_algebra, applied_statistics]
+toc: true
+toc_sticky: true
+categories: ["Linear Algebra", "Applied Statsitcs"]
 ---
 
 
@@ -45,22 +46,22 @@ $$
   1 & 2 & 3 \\
   4 & 5 & 6 \\
   7 & 8 & 9 \\
-  10 & 11 & 12 
+  10 & 11 & 12
 \end{pmatrix}
 $$
 
 - $X_i$: $X$의 $i$번째 원소 = $\mathbf{x}_i$
 - $X_{ij}$: $X$의 $i$번째 원소 $\mathbf{x}_i$의 $j$번째 원소
 
-행렬을 열벡터로 해석하는 시야👀를 체득하는게 중요하다! 
+행렬을 열벡터로 해석하는 시야👀를 체득하는게 중요하다!
 
 ### Matrix Multiplication
 
 행렬 곱셈의 시작은 좌표 변환이다.
 
-$$ 
+$$
 \begin{pmatrix}
-c_1 & c_2 & c_3 & c_4  
+c_1 & c_2 & c_3 & c_4
 \end{pmatrix} \begin{pmatrix}
   x \\ y \\ z \\ t
 \end{pmatrix} = c_1 x + c_2 y + c_3 z + c_4 t
@@ -71,21 +72,21 @@ $$
 $$
 X \begin{pmatrix}
   x \\ y \\ z \\ t
-\end{pmatrix} = 
+\end{pmatrix} =
 \begin{pmatrix}
   \mathbf{x}_1^T \\ \mathbf{x}_2^T \\ \mathbf{x}_3^T \\ \mathbf{x}_4^T
 \end{pmatrix} \begin{pmatrix}
   x \\ y \\ z \\ t
-\end{pmatrix} = 
+\end{pmatrix} =
 \mathbf{x}_1^T \cdot \begin{pmatrix}
   x \\ y \\ z \\ t
-\end{pmatrix} + 
+\end{pmatrix} +
 \mathbf{x}_2^T \cdot \begin{pmatrix}
   x \\ y \\ z \\ t
-\end{pmatrix} + 
+\end{pmatrix} +
 \mathbf{x}_3^T \cdot \begin{pmatrix}
   x \\ y \\ z \\ t
-\end{pmatrix} + 
+\end{pmatrix} +
 \mathbf{x}_4^T \cdot \begin{pmatrix}
   x \\ y \\ z \\ t
 \end{pmatrix}
@@ -151,7 +152,7 @@ $$
 f_A (\mathbf{x}) = A\mathbf{x}
 $$
 
-보통 $n \times p$ 크기의 행렬에서 
+보통 $n \times p$ 크기의 행렬에서
 
 - $n$ = sample size
 - $p$ = # of input variables
@@ -246,7 +247,7 @@ A \in \mathbb{R}^{n \times p}
 $$
 
 $$
-A\mathbf{x} = 
+A\mathbf{x} =
 \begin{bmatrix}
 \mid & \cdots & \mid \\
 \mathbf{a}_1 & \cdots & \mathbf{a}_p \\
@@ -294,7 +295,7 @@ The \<**rank**\> of $A$ is the dimension of $\mathcal{C}(A)$.
 
 **Part 1**: (Rank-Nullity Theorem; Rank Theorem)
 
-The column and row spaces of an $m \times n$ matrix $A$ both have dimension $r$, the \<**rank**\> of the matrix. 
+The column and row spaces of an $m \times n$ matrix $A$ both have dimension $r$, the \<**rank**\> of the matrix.
 
 - the nullspace has dimension $n-r$
 - the left nullspace has dimension $m-r$
@@ -303,7 +304,7 @@ The column and row spaces of an $m \times n$ matrix $A$ both have dimension $r$,
 
 **Part 2**:
 
-The \<Null space\> and \<Row space\> are \<orthogonal\>. 
+The \<Null space\> and \<Row space\> are \<orthogonal\>.
 
 The \<Left Mull space\> and the \<Column space\> are also \<orthogonal\>.
 
@@ -311,13 +312,13 @@ The \<Left Mull space\> and the \<Column space\> are also \<orthogonal\>.
 
 **Part 3**:
 
-Any matrix $M$ can be written in the form 
+Any matrix $M$ can be written in the form
 
 $$
 U \Sigma V^T
 $$
 
-where 
+where
 
 - $U$ is an $m\times m$ [unitary matrix](https://en.wikipedia.org/wiki/Unitary_matrix).
 - $\Sigma$ is an $m\times n$ matrix with non-negative values on the diagonal.
@@ -329,7 +330,7 @@ where
 
 <span class="statement-title">Theorem.</span> Rank Theorem<br>
 
-For any $A \in \mathbb{R}^{n \times p}$, 
+For any $A \in \mathbb{R}^{n \times p}$,
 
 $$
 \dim (\mathcal{C}(A)) = \dim (\mathcal{R}(A))
@@ -377,7 +378,7 @@ $$
 
 <span class="statement-title">Definition.</span> Determinant<br>
 
-The \<**determinant**\> of a matrix $A \in \mathbb{R}^{n \times n}$ is 
+The \<**determinant**\> of a matrix $A \in \mathbb{R}^{n \times n}$ is
 
 $$
 \sum_{\pi} \text{sgn} (\pi) \cdot \left( a_{1\pi(1)} \cdots a_{n\pi(n)}\right)

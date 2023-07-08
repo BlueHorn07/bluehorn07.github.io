@@ -1,7 +1,8 @@
 ---
 title: "Longest Path, Subset Sum"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -31,7 +32,7 @@ Given a graph with non-negative edge weights and two vertices $s$ and $t$, along
 
 ## Subset Sum Problem
 
-[\<Knapsack Problem\>]({{"/2021/04/30/kanpsack.html" | relative_url}})을 기억하는가? 배당의 용량 $W$와 물건들 $(w_i, v_i)$가 있을 때 용량을 넘기지 않으면서 최대한의 가치를 담는 문제였다. 그러나 이번에는 정확히 용량 $W$ 만큼 물건을 담아서 최대한의 가치를 담으려 한다면 어떨까? \<Knapsack Problem\> 문제의 변형인 이 문제는 \<Subset Problem\>라는 이름의 문제로 주어진 집합의 부분집합(subset)을 선택해 원하는 용량 $W$와 동일한 값을 갖도록 하는 문제다. 
+[\<Knapsack Problem\>]({{"/2021/04/30/kanpsack.html" | relative_url}})을 기억하는가? 배당의 용량 $W$와 물건들 $(w_i, v_i)$가 있을 때 용량을 넘기지 않으면서 최대한의 가치를 담는 문제였다. 그러나 이번에는 정확히 용량 $W$ 만큼 물건을 담아서 최대한의 가치를 담으려 한다면 어떨까? \<Knapsack Problem\> 문제의 변형인 이 문제는 \<Subset Problem\>라는 이름의 문제로 주어진 집합의 부분집합(subset)을 선택해 원하는 용량 $W$와 동일한 값을 갖도록 하는 문제다.
 
 <div class="statement" markdown="1">
 

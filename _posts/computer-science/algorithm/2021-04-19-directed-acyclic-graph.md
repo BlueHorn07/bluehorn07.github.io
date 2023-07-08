@@ -1,7 +1,8 @@
 ---
 title: "DAG & Topological Sort"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -53,6 +54,6 @@ Linearize $G$
 
 <hr/>
 
-여기까지가 정규 수업에서 다룬 \<Graph Algorithm\>에 대한 내용이다. 그래프 이론은 PS의 기본이기 때문에 이곳에서 다룬 모든 내용을 완전히 이해하고 언제든지 쓸 수 있도록 하는게 중요한 것 같다. '알고리즘' 과목의 정규 수업에서 다루지는 않았지만, '인고지능' 과목에서는 다뤘던 heuristic path finding 기법인 \<A* Algorithm\>도 추후에 다뤄보도록 하겠다. 
+여기까지가 정규 수업에서 다룬 \<Graph Algorithm\>에 대한 내용이다. 그래프 이론은 PS의 기본이기 때문에 이곳에서 다룬 모든 내용을 완전히 이해하고 언제든지 쓸 수 있도록 하는게 중요한 것 같다. '알고리즘' 과목의 정규 수업에서 다루지는 않았지만, '인고지능' 과목에서는 다뤘던 heuristic path finding 기법인 \<A* Algorithm\>도 추후에 다뤄보도록 하겠다.
 
 그래프에 대한 내용은 나중에 \<Network Flow\> 부분에서 다시 등장한다! 😉

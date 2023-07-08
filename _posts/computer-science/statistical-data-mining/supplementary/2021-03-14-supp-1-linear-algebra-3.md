@@ -1,7 +1,8 @@
 ---
 title: "Supp-1: Linear Algebra - 3"
-layout: post
-tags: [linear_algebra, applied_statistics]
+toc: true
+toc_sticky: true
+categories: ["Linear Algebra", "Applied Statsitcs"]
 ---
 
 
@@ -72,7 +73,7 @@ $$
 U^T \mathbf{x} = \left(u_1, u_2 \right) \cdot \mathbf{x} = \begin{pmatrix}
     (\mathbf{x}^T u_1) \cdot u_1 \\
     (\mathbf{x}^T u_2) \cdot u_2
-\end{pmatrix} 
+\end{pmatrix}
 $$
 
 가 되고, 이것은 $\mathbf{x}$를 $u_1$, $u_2$ 축으로 \<projection\>한 것과 같다.
@@ -194,7 +195,7 @@ $$
 
 $$
 \begin{aligned}
-\| A - A_k \|^2_F &= \text{tr}\left( (A-A_k)^T (A-A_k) \right) \\  
+\| A - A_k \|^2_F &= \text{tr}\left( (A-A_k)^T (A-A_k) \right) \\
   &= d_{k+1}^2 + d_{k+2}^2 + \cdots + d_p^2
 \end{aligned}
 $$

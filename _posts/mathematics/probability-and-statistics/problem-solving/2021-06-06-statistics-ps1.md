@@ -1,7 +1,8 @@
 ---
 title: "Statistics - PS1"
-layout: post
-tags: ["statistics", "Problem Solving"]
+toc: true
+toc_sticky: true
+categories: ["Statistics", "Problem Solving"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -22,7 +23,7 @@ tags: ["statistics", "Problem Solving"]
 
 <span class="statement-title">Theorem.</span><br>
 
-The \<MSE; Mean Squared Error\> of an estimator is defined as 
+The \<MSE; Mean Squared Error\> of an estimator is defined as
 
 $$
 \text{MSE} := E \left[ \left( \hat{\Theta} - \theta \right)^2 \right] = \text{Var}(\hat{\Theta}) + \left[ \text{Bias} \right]^2
@@ -60,7 +61,7 @@ $$
 
 $$
 \begin{aligned}
-E \left[ \hat{\Theta} E[\hat{\Theta}] - \hat{\Theta} \theta - \theta E[\hat{\Theta}] + \theta^2\right] 
+E \left[ \hat{\Theta} E[\hat{\Theta}] - \hat{\Theta} \theta - \theta E[\hat{\Theta}] + \theta^2\right]
 &= E \left[ (\hat{\Theta} - \theta) E[\hat{\Theta}] - (\hat{\Theta} - \theta )\theta\right] \\
 &= E \left[ (\hat{\Theta} - \theta) (E[\hat{\Theta}] - \theta)\right] \\
 &= E \left[ (\hat{\Theta} - \theta) \cdot \cancelto{\text{bias}}{E[\hat{\Theta} - \theta]}\right] \\
@@ -125,7 +126,7 @@ $$
 
 $$
 \begin{aligned}
-\text{Var}(\hat{S}^2) 
+\text{Var}(\hat{S}^2)
 &= \text{Var} \left(\frac{n-1}{n}S^2\right) \\
 &= \frac{(n-1)^2}{n^2}\text{Var}(S^2) \\
 &= \frac{(n-1)^2}{n^2} \cdot \frac{2\sigma^4}{(n-1)} \\
@@ -167,10 +168,10 @@ $$
 \begin{aligned}
 \text{bias}(\hat{S}^2)
 &= E \left[ \hat{S}^2 - \sigma^2 \right] \\
-&= E \left[ \frac{1}{n} \sum_i^n (X_i - \bar{X})^2 - \sigma^2 \right] \\ 
+&= E \left[ \frac{1}{n} \sum_i^n (X_i - \bar{X})^2 - \sigma^2 \right] \\
 &= E \left[ \frac{n-1}{n} \cdot \frac{1}{n-1} \sum_i^n (X_i - \bar{X})^2 - \sigma^2 \right] \\
 &= \frac{n-1}{n} \cdot E \left[ \frac{1}{n-1} \sum_i^n (X_i - \bar{X})^2 \right] - \sigma^2 \\
-&= \frac{n-1}{n} \cdot \sigma^2 - \sigma^2 \\ 
+&= \frac{n-1}{n} \cdot \sigma^2 - \sigma^2 \\
 &= \frac{1}{n} \cdot \left( (n-1) \sigma^2 - n \sigma^2 \right) = - \frac{\sigma^2}{n}
 \end{aligned}
 $$

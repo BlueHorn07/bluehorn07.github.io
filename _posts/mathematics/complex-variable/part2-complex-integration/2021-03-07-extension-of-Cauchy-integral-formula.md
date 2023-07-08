@@ -1,7 +1,8 @@
 ---
 title: "Extended Cauchy's Integral Formula"
-layout: post
-tags: ["Complex Variable"]
+toc: true
+toc_sticky: true
+categories: ["Complex Variable"]
 ---
 
 
@@ -40,7 +41,7 @@ $$
 
 <span class="statement-title">Theorem.</span><br/>
 
-Let $f(z)$ be **<u>analytic</u>** in $D$. 
+Let $f(z)$ be **<u>analytic</u>** in $D$.
 
 Then it **<u>has derivatives of all orders</u>** in $D$, which **<u>are then also analytic</u>** in $D$.
 
@@ -101,7 +102,7 @@ Let assume $C$ a circle with radius $r$.
 
 $$
 \begin{equation}
-f'(z_0) = \frac{1}{2\pi i} \oint_{C} \frac{f(z)}{(z-z_0)^2} dz    
+f'(z_0) = \frac{1}{2\pi i} \oint_{C} \frac{f(z)}{(z-z_0)^2} dz
 \end{equation}
 $$
 
@@ -145,7 +146,7 @@ $$
     &= \frac{1}{2\pi i} \oint_C f(z) \left( \frac{(z-z_0)^2 - ((z-z_0) - h)(z-z_0)}{\left(z-(z_0+h)\right)(z-z_0)(z-z_0)^2} \right) dz \\
     &= \frac{1}{2\pi i} \oint_C f(z) \left( \frac{h\cancel{(z-z_0)}}{\left(z-(z_0+h)\right)\cancel{(z-z_0)}(z-z_0)^2} \right) dz \\
     &= \frac{1}{2\pi i} \oint_C \frac{f(z) \cdot h}{\left(z-(z_0+h)\right)(z-z_0)^2} dz
-    \end{aligned} 
+    \end{aligned}
 \end{equation}
 $$
 
@@ -155,7 +156,7 @@ $$
 
 $$
 \begin{equation}
-\left| \frac{1}{2\pi i} \oint_C \frac{f(z) \cdot h}{\left(z-(z_0+h)\right)(z-z_0)^2} dz \right| \le \left( \frac{1}{2\pi} \frac{M \cdot h}{(r/2) \; r^2}\right) \cdot \left( 2\pi r \right) = 2 \; \frac{M \cdot h}{r^2}    
+\left| \frac{1}{2\pi i} \oint_C \frac{f(z) \cdot h}{\left(z-(z_0+h)\right)(z-z_0)^2} dz \right| \le \left( \frac{1}{2\pi} \frac{M \cdot h}{(r/2) \; r^2}\right) \cdot \left( 2\pi r \right) = 2 \; \frac{M \cdot h}{r^2}
 \end{equation}
 $$
 
@@ -169,7 +170,7 @@ $h \rightarrow 0$일 때, 식 (5)가 0으로 수렴하므로 식 (1)이 성립�
 
 <span class="statement-title">Theorem.</span><br/>
 
-Let $f(z)$ be an analytic inside and on a positively oriented circle $C$ or radius $r$ and center $z_0$. 
+Let $f(z)$ be an analytic inside and on a positively oriented circle $C$ or radius $r$ and center $z_0$.
 
 If $\left\| f(z) \right\| \le M$ on $C$, then
 
@@ -201,7 +202,7 @@ If a function $f(z)$ is entire and bounded, then $f(z)$ is constant.
 
 Supp. $f(z)$ is bounded, then $\left\| f(z) \right\| \le M$ for all $z$.
 
-Consider a circle $C_R$ with radius $R$. Then, due to 
+Consider a circle $C_R$ with radius $R$. Then, due to
 
 $$
 \left| f'(z_0) \right| \le \frac{M}{R}
@@ -209,7 +210,7 @@ $$
 
 $\left\| f'(z_0) \right\| \le 0$ as $R \rightarrow \infty$
 
-Therefore, $f'(z_0) = 0$ for all $z_0 \in \mathbb{C}$. 
+Therefore, $f'(z_0) = 0$ for all $z_0 \in \mathbb{C}$.
 
 This means $f(z)$ is constant. $\blacksquare$
 

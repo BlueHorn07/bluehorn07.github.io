@@ -1,7 +1,8 @@
 ---
 title: "Persistent Volume & Persistent Volume Claim"
-layout: post
-tags: ["develop", "kubernetes"]
+toc: true
+toc_sticky: true
+categories: ["Develop", "Kubernetes"]
 ---
 
 Pod 컨테이너의 볼륨을 직접 정의할 수도 있다. 그러나 클러스터로 관리되는 K8s에선 이 방식을 권장하지 않는다. 대신, 컨테이너 볼륨 개념을 추상화하여 **클러스터 리소스**인 Persistent Volume을 통해 Pod 컨테이너가 쓸 수 있는 볼륨을 관리한다.

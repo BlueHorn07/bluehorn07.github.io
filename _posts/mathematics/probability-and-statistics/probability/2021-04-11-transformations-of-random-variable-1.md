@@ -1,7 +1,8 @@
 ---
 title: "Transformations of Random Variable - 1"
-layout: post
-tags: ["probability"]
+toc: true
+toc_sticky: true
+categories: ["Probability"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -67,7 +68,7 @@ $$
 
 1\. Supp. $X$ has pmf $f_X (x)$.
 
-Let $Y=g(X)$ where $g$ is 1-1 function with the inverse $x = g^{-1}(y)$. 
+Let $Y=g(X)$ where $g$ is 1-1 function with the inverse $x = g^{-1}(y)$.
 
 Then,
 
@@ -77,7 +78,7 @@ $$
 
 <br/>
 
-2\. Supp. $(X_1, X_2)$ has joint pmf $f_{X_1, X_2} (x_1, x_2)$. 
+2\. Supp. $(X_1, X_2)$ has joint pmf $f_{X_1, X_2} (x_1, x_2)$.
 
 Let $Y_1 := u_1 (X_1, X_2)$ and $Y_2 := u_2 (X_1, X_2)$, and $X_1 := w_1(Y_1, Y_2)$ and $X_2 := w_2 (Y_1, Y_2)$.
 
@@ -234,10 +235,10 @@ $$
 위의 규칙에 맞춰 $X$의 분포를 유도해보면,
 
 $$
-\begin{aligned}    
+\begin{aligned}
 f_X (x) &= f_\theta (h(x)) \cdot \left| h'(x) \right| \\
         &= \cancelto{\frac{1}{\pi}}{f_\theta (\arctan x)} \cdot \frac{1}{1+x^2} \quad (\text{Uniform distribution})\\
-        &= \frac{1}{\pi} \frac{1}{1+x^2} 
+        &= \frac{1}{\pi} \frac{1}{1+x^2}
 \end{aligned}
 $$
 
@@ -299,7 +300,7 @@ Let $X \sim \text{Exp}(\lambda)$, then cdf is $F_X(x) = 1 - e^{-\lambda x}$.
 
 그러면 우리는 $F_X^{-1}$와 $U$를 이용해 $X$의 분포를 갖는 RV를 유도할 수 있다!!
 
-By above theorem, 
+By above theorem,
 
 $$
 F_X^{-1}(U) = \frac{-\ln (1-U)}{\lambda} \sim X
@@ -365,7 +366,7 @@ $$
 
 $$
 \begin{aligned}
-f_{U, V}(u, v) &= f_{X, Y} \left( w_1(u, v), w_2(u, v) \right) \cdot 
+f_{U, V}(u, v) &= f_{X, Y} \left( w_1(u, v), w_2(u, v) \right) \cdot
 \cancelto{1/2}{\left| \begin{matrix}
   1/2 & 1/2 \\
   1/2 & -1/2
@@ -466,7 +467,7 @@ $$
 $$
 \begin{aligned}
 U &= X^2 \\
-V &= XY 
+V &= XY
 \end{aligned}
 $$
 
@@ -483,11 +484,11 @@ $$
 and *Jaccobian* is
 
 $$
-\left| J \right| = \left| 
+\left| J \right| = \left|
 \begin{matrix}
   \frac{1}{2\sqrt{u}} & 0 \\
   \cdot & \frac{1}{\sqrt{u}}
-\end{matrix} 
+\end{matrix}
 \right| = \frac{1}{2u}
 $$
 

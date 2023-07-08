@@ -1,7 +1,8 @@
 ---
 title: "Monti Hall Problem"
-layout: post
-tags: ["probability"]
+toc: true
+toc_sticky: true
+categories: ["Probability"]
 ---
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
@@ -22,7 +23,7 @@ tags: ["probability"]
 
 교수님께서 수업시간에 재미삼아 ~~이걸 재미로?~~ 내신 문제다. 처음에는 이 문제에 대해서 "선택을 바꾸지 않는다."는 답을 냈는데, 틀렸다 ㅠㅠ 아마 "선택을 바꾸면 더 아쉬워 할 것 같음."이라는 심리적 요인이 작용한 것 같다.
 
-문제의 정답은 "선택을 바꿔야 한다."이다. 좀더 정확하게는 
+문제의 정답은 "선택을 바꿔야 한다."이다. 좀더 정확하게는
 
 - P(선택을 바꾸지 않고, Win) = 1/3
 - P(선택을 바꾸고, Win) = 2/3
@@ -47,7 +48,7 @@ tags: ["probability"]
 
 [1st pick = car]
 
-반대로 내가 **자동차**를 선택한 상황을 따져보자. 
+반대로 내가 **자동차**를 선택한 상황을 따져보자.
 
 사회자는 남은 2개의 문 중 아무 문을 열어서 염소를 보여준다. 남은 문에는 당연히 염소가 있다. 만약 여기서 내가 선택을 바꾸면 나는 반드시 염소를 얻는다. 따라서 나의 선택을 바꾸지 않아야 한다.
 
@@ -85,17 +86,17 @@ tags: ["probability"]
 
 <br/>
 
-이 사건의 \<역사건\>, 즉 "어떤 문 $\textsf{X}$ 안에 자동차가 있을 때, 사회자가 그 $\textsf{Y}$문을 열어서 염소를 보여주는 사건" $G_{\textsf{Y}} \mid C_{\textsf{X}}$을 생각해보자. 
+이 사건의 \<역사건\>, 즉 "어떤 문 $\textsf{X}$ 안에 자동차가 있을 때, 사회자가 그 $\textsf{Y}$문을 열어서 염소를 보여주는 사건" $G_{\textsf{Y}} \mid C_{\textsf{X}}$을 생각해보자.
 
-규칙에 따라 **사회자는 $\textsf{A}$문을 열 수 없고**, $\textsf{B}$, $\textsf{C}$ 중 하나만 고를 수 있으며, **염소가 있는 문을 열어줘야 한다**. 따라서 
+규칙에 따라 **사회자는 $\textsf{A}$문을 열 수 없고**, $\textsf{B}$, $\textsf{C}$ 중 하나만 고를 수 있으며, **염소가 있는 문을 열어줘야 한다**. 따라서
 
 - 만약 자동차가 $\textsf{A}$에 있다면
-  - 사회자는 $\textsf{B}$, $\textsf{C}$ 중 하나를 골라서 염소를 보여줄 것이다. 
-  - 2가지 선택지 중 하나를 무작위로 고르는 확률이므로 
+  - 사회자는 $\textsf{B}$, $\textsf{C}$ 중 하나를 골라서 염소를 보여줄 것이다.
+  - 2가지 선택지 중 하나를 무작위로 고르는 확률이므로
     - $P(G_{\textsf{B}} \mid C_{\textsf{A}}) = 1/2$
     - $P(G_{\textsf{C}} \mid C_{\textsf{A}}) = 1/2$
 - 만약 자동차가 $\textsf{B}$에 있다면
-  - 사회자는 $\textsf{A}$, $\textsf{B}$문을 열 순 없으므로 $\textsf{C}$문을 열 수 밖에 없다. 
+  - 사회자는 $\textsf{A}$, $\textsf{B}$문을 열 순 없으므로 $\textsf{C}$문을 열 수 밖에 없다.
   - $P(G_{\textsf{C}} \mid C_{\textsf{B}}) = 1$
 - 만약 자동차가 $\textsf{C}$에 있다면
   - 사회자는 $\textsf{A}$, $\textsf{C}$문을 열 순 없으므로 $\textsf{C}$문을 여는 일을 일어날 수 없다.

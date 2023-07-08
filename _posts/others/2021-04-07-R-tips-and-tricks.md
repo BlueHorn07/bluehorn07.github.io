@@ -1,7 +1,8 @@
 ---
 title: "R Tips & Tricks"
-layout: post
-tags: []
+toc: true
+toc_sticky: true
+categories: []
 ---
 
 
@@ -28,8 +29,8 @@ tags: []
 ``` R
 > table(vowel.train$y)
 
- 1  2  3  4  5  6  7  8  9 10 11 
-48 48 48 48 48 48 48 48 48 48 48 
+ 1  2  3  4  5  6  7  8  9 10 11
+48 48 48 48 48 48 48 48 48 48 48
 ```
 
 - R에서의 `for`문

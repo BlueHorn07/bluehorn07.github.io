@@ -1,7 +1,8 @@
 ---
 title: "All Pairs Shortest Paths; Floyd-Warshall"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 

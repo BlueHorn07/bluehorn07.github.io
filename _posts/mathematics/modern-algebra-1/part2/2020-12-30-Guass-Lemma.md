@@ -1,7 +1,8 @@
 ---
 title: "Guass's Lemma"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -144,7 +145,7 @@ Let $f(x) = a_0 + a_1 x + \cdots a_n x^n$ and $g(x) = b_0 + b_1 x + \cdots b_m x
 
 and let $h(x) = f(x)g(x)$.
 
-Let $p$ be an irreducible in $D$. 
+Let $p$ be an irreducible in $D$.
 
 이미 $f(x)$, $g(x)$가 primitive이므로 $p$가 $a_i$ 전부를, 또 $b_j$ 전부를 나누지는 못 한다.
 
@@ -176,7 +177,7 @@ $p \mid a_i$ for $i < r$이므로 $p \mid (a_0 b_{r+s} + \cdots + a_{r-1} b_{s+1
 <br>
 <hr>
 
-이제 이 Guass's Lemma를 활용해 본래의 목적인 
+이제 이 Guass's Lemma를 활용해 본래의 목적인
 
 <div style="text-align:center">
 

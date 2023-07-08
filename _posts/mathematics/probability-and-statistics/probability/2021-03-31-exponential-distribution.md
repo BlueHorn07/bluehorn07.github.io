@@ -1,7 +1,8 @@
 ---
 title: "Exponential Distribution"
-layout: post
-tags: ["probability"]
+toc: true
+toc_sticky: true
+categories: ["Probability"]
 ---
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
@@ -105,7 +106,7 @@ $$
 X \sim \text{EXP}(\lambda) \iff f(x) = \lambda e^{-\lambda x}
 $$
 
-- <span class="half_HL">$\lambda$는 Unit time 동안 Event가 일어날 평균 **횟수**</span>를 의미한다. 
+- <span class="half_HL">$\lambda$는 Unit time 동안 Event가 일어날 평균 **횟수**</span>를 의미한다.
 
 $$
 X \sim \text{EXP}(\beta) \iff f(x) = \frac{1}{\beta} e^{-x/\beta}
@@ -162,7 +163,7 @@ $$
 
 또, Geometric Distribution을 따르는 $X_n$의 parameter를 $p$라고 하자; $X_n \sim \text{Geo}(p)$, 그러면 $E[X_n] = 1/p$가 된다. 즉, 평균적으로 $1/p$번 확인한다는 말이다. 이것을 다시 $X$의 관점에서 기술하면, 평균적으로 $1/np$초가 걸린다는 말이다. 즉, $\beta = 1/np$라는 말이고, $\lambda$로 표현하면, $\lambda = np$라는 말이다. 따라서, $X_n \sim \text{Geo}\left( \frac{\lambda}{n} \right)$가 된다.
 
-이에 따라, $X$의 tail probability $P(X > x)$는 
+이에 따라, $X$의 tail probability $P(X > x)$는
 
 $$
 \begin{aligned}
@@ -183,7 +184,7 @@ $$
 
 <span class="statement-title">Theorem.</span><br>
 
-Let $X \sim \text{EXP}(\lambda)$, then 
+Let $X \sim \text{EXP}(\lambda)$, then
 
 - $E[X] = \dfrac{1}{\lambda}$
 - $\text{Var}(X) = \dfrac{1}{\lambda^2}$
@@ -202,7 +203,7 @@ E[Y] &= \int^{\infty}_0 y \cdot e^{-y} \; dy = 1
 \end{aligned}
 $$
 
-Variance를 구해보면, 
+Variance를 구해보면,
 
 $$
 \begin{aligned}

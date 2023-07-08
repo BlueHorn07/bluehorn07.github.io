@@ -1,7 +1,8 @@
 ---
 title: "Mean, Variance, and Covriance"
-layout: post
-tags: ["probability"]
+toc: true
+toc_sticky: true
+categories: ["Probability"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -123,7 +124,7 @@ $$
 
 <br><span class="statement-title">Definition.</span><br>
 
-The \<**variance**\> of a RV $X$ is defined as 
+The \<**variance**\> of a RV $X$ is defined as
 
 $$
 \text{Var}(X) = E[(X-\mu)^2]
@@ -152,7 +153,7 @@ $$
 
 <span class="statement-title">Theorem.</span><br>
 
-For any $a, b \in \mathbb{R}$, 
+For any $a, b \in \mathbb{R}$,
 
 $$
 \text{Var}(aX + b) = a^2 \text{Var}(X)
@@ -170,7 +171,7 @@ The \<**covariane**\> of $X$ and $Y$ is defined as
 
 $$
 \begin{aligned}
-\sigma_{XY} := \text{Cov}(X, Y) &= E \left[ (X - \mu_X) (Y - \mu_Y) \right]  \\  
+\sigma_{XY} := \text{Cov}(X, Y) &= E \left[ (X - \mu_X) (Y - \mu_Y) \right]  \\
                                 &= E(XY) - E(X)E(Y)
 \end{aligned}
 $$
@@ -203,7 +204,7 @@ $$
 
 <span class="statement-title">Definition.</span><br>
 
-The \<**correlation**\> of $X$ and $Y$ is defined as 
+The \<**correlation**\> of $X$ and $Y$ is defined as
 
 $$
 \rho_{XY} := \text{Corr}(X, Y) = \frac{\text{Cov}(X, Y)}{\sqrt{\text{Var}(X)} \sqrt{\text{Var}(Y)}}
@@ -224,7 +225,7 @@ $$
 
 <div class="math-statement" markdown="1">
 
-**Cauchy-Schwarrtz inequality** : 
+**Cauchy-Schwarrtz inequality** :
 
 $$
 \left( \sum a_i b_i \right)^2 \le \sum a_i^2 \sum b_i^2
@@ -313,7 +314,7 @@ A3. & A4. Q3는 이미 위에서 증명을 했다. 그러나 다른 방식으로
 
 <hr/>
 
-이어지는 내용에서는 \<평균\>과 \<분산\>에 대한 약간의 추가적인 내용을 살펴본다. 
+이어지는 내용에서는 \<평균\>과 \<분산\>에 대한 약간의 추가적인 내용을 살펴본다.
 
 👉 [Chebyshev's Inequality]({{"/2021/03/17/chebyshev's-inequality.html" | relative_url}})
 

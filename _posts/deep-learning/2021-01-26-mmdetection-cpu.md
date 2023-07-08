@@ -1,11 +1,12 @@
 ---
 title: "mmdetection + CPU"
-layout: post
-tags: ["research"]
+toc: true
+toc_sticky: true
+categories: ["Deep Learning"]
 ---
 
 
-이 포스트는 제가 개인적인 용도로 정리한 글 입니다. 
+이 포스트는 제가 개인적인 용도로 정리한 글 입니다.
 
 `mmdetection`을 CPU에서 테스트해 볼 일이 있는데, `mmdetection` 공식 doc에 설명이 부족해서 이곳에 별도로 정리해둡니다!
 
@@ -28,7 +29,7 @@ tags: ["research"]
 
 이 [링크](https://github.com/open-mmlab/mmdetection/blob/master/docs/get_started.md)를 통해 들어가면 `mmdetection`을 시작하는 방법이 설명되어 있다.
 
-CPU로 `mmdetection`을 실행하기 위한 대부분의 과정은 동일하나, 몇몇 부분에서 조금 다르다. 
+CPU로 `mmdetection`을 실행하기 위한 대부분의 과정은 동일하나, 몇몇 부분에서 조금 다르다.
 
 <br>
 
@@ -100,7 +101,7 @@ inference_detector(model, 'demo/demo.jpg')
 
 검증 코드를 실행하기 위해선, **"반드시"** 코드에 제시된 [링크](http://download.openmmlab.com/mmdetection/v2.0/faster_rcnn/faster_rcnn_r50_fpn_1x_coco/faster_rcnn_r50_fpn_1x_coco_20200130-047c8118.pth)를 통해 학습된 모델을 다운 받아 `checkpoint/`  폴더에 넣어야 한다!!
 
-또한, `device` 설정을 `device='cpu'`로 바꿔줘야 한다! 
+또한, `device` 설정을 `device='cpu'`로 바꿔줘야 한다!
 
 <br>
 

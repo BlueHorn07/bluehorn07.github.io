@@ -1,7 +1,8 @@
 ---
 title: "Document CRUD"
-layout: post
-tags: ["elastic-search"]
+toc: true
+toc_sticky: true
+categories: ["Elastic Search"]
 ---
 
 ElasticSearch에서 레코드의 역할을 하는 Document의 CRUD에 대해 살펴본다. 테이블 역할을 하는 Index에 대한 CRUD는 [이전 포스트]({{"/2023/05/15/ElasticSearch-Index-CRUD.html" | relative_url}})에서 다뤘다.
@@ -97,7 +98,7 @@ Query DSL의 구조는 아래와 같다.
 {
   // 반환 결과 갯수
   "size": xx
-  
+
   // 문서의 시작 시점. 기본값은 0
   "from": xx
 

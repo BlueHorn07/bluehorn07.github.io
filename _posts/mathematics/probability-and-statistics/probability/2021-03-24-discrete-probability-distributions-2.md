@@ -1,7 +1,8 @@
 ---
 title: "Discrete Probability Distributions - 2"
-layout: post
-tags: ["probability"]
+toc: true
+toc_sticky: true
+categories: ["Probability"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -111,7 +112,7 @@ with $\displaystyle \sum^k_{i=1} x_i = n$ and $\displaystyle \sum^k_{i=1} a_i = 
 
 # Geometric Distribution
 
-\<Geometric Distribution\>의 경우는 앞에서 제시된 Distribution들과 조금 상황이 다르다. 
+\<Geometric Distribution\>의 경우는 앞에서 제시된 Distribution들과 조금 상황이 다르다.
 
 <div class="definition" markdown="1">
 
@@ -290,7 +291,7 @@ $$
 여기에서 $y = x - k$로 치환하자. 이때, $y$는 $k$번째 성공을 얻기 위해 걸린 실패 횟수 $Y$이다. 표기의 편의를 위해 지금부터는 멱급수 부분만 표현하겠다.
 
 $$
-\sum^{\infty}_{x=k} \binom{x-1}{k-1} q^{x-k} 
+\sum^{\infty}_{x=k} \binom{x-1}{k-1} q^{x-k}
 = \sum^{\infty}_{y=0} \binom{y + k - 1}{k-1} q^{y}
 $$
 
@@ -303,11 +304,11 @@ $$
 따라서,
 
 $$
-\sum^{\infty}_{y=0} \binom{x-1}{k-1} q^{x-k} 
+\sum^{\infty}_{y=0} \binom{x-1}{k-1} q^{x-k}
 = \sum^{\infty}_{y=0} \binom{k + y - 1}{y} q^{y}
 $$
 
-여기에 [\<Negative Binomial Theorem\>]({{"/2022/10/30/negative-binomial-theorem.html" | relative_url}})을 적용해보자. 
+여기에 [\<Negative Binomial Theorem\>]({{"/2022/10/30/negative-binomial-theorem.html" | relative_url}})을 적용해보자.
 
 $$
 (1 + x)^{-n} = \sum^{\infty}_{k = 0} \binom{-n}{k} x^k = \sum^{\infty}_{k = 0} \binom{n + k - 1}{k} (-1)^k x^k

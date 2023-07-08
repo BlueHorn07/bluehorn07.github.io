@@ -1,7 +1,8 @@
 ---
 title: "Asymptotic Analysis"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -130,9 +131,9 @@ A3. E-Z
 
 <span class="statement-title">Definition.</span> little-o notation<br>
 
-For every $\epsilon > 0$, 
+For every $\epsilon > 0$,
 
-there exists a constant $n_0$ s.t. $f(n) \le \epsilon \cdot g(n)$ for $n > n_0$, 
+there exists a constant $n_0$ s.t. $f(n) \le \epsilon \cdot g(n)$ for $n > n_0$,
 
 then $f(n) = o(g(n))$.
 
@@ -152,7 +153,7 @@ if $g(n) = o(f(n))$, then $f(n) = \omega(g(n))$.
 
 <div class="light-margin" markdown="1">
 
-[Trivial case] 
+[Trivial case]
 
 - $f(n) \ne o(f(n))$
 - $f(n) \ne \omega(f(n))$
@@ -179,7 +180,7 @@ A4. E-Z. 앞에서 언급한 극한으로 정의한 little-o notation을 쓰면 
 
 <div class="light-margin" markdown="1">
 
-Q5. Show that for any fixed but arbitrarily small real number $c > 0$, 
+Q5. Show that for any fixed but arbitrarily small real number $c > 0$,
 
 $$
 n \log n = o(n^{1+c})

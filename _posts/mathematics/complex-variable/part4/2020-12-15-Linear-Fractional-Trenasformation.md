@@ -1,7 +1,8 @@
 ---
 title: "Linear Fractional Transform"
-layout: post
-tags: ["Complex Variable"]
+toc: true
+toc_sticky: true
+categories: ["Complex Variable"]
 ---
 
 
@@ -159,7 +160,7 @@ $c {z_0}^2 + (d-a) z_0 - b = 0$는 2차 방정식으로 **<u>해가 많아야 2�
 (i) $c\ne0$ : <br>
 at most two fixed points
 
-(ii) $c = 0$: 
+(ii) $c = 0$:
 
 - $d-a \ne 0$ : $z_0 = -\frac{b}{d-a}$
 - $d-a = 0$, $b\ne0$ : no fixed point
@@ -176,7 +177,7 @@ Let $T_1(z) = \frac{az+b}{cz+d}$, and $T_2(z) = \frac{Az+B}{Cz+D}$ <br>
 
 Supp. that $T_1(z_1) = T_2(z_1)$, $T_1(z_2) = T_2(z_2)$, and $T_1(z_3) = T_2(z_3)$ <br>
 
-THEN, 
+THEN,
 
 $$
 T_1(z) = T_2(z)
@@ -192,7 +193,7 @@ $$
 
 $T^{-1}_1 \circ T_2$ is also a L.F. transform
 
-THEN, 
+THEN,
 
 $$
 \begin{aligned}
@@ -223,7 +224,7 @@ $$
 (IF one of these point is the point $\infty$, THEN 그 부분을 약분하여 1로 만들어라.)
 
 $$
-w_3 = \infty \implies \frac{w-w_1}{\cancel{w-w_3}} \cdot \frac{\cancel{w_2-w_3}}{w_2-w_1} = \frac{w-w_1}{w_2-w_1} 
+w_3 = \infty \implies \frac{w-w_1}{\cancel{w-w_3}} \cdot \frac{\cancel{w_2-w_3}}{w_2-w_1} = \frac{w-w_1}{w_2-w_1}
 $$
 
 </div>
@@ -237,7 +238,7 @@ $$
 F(w) := \frac{w-w_1}{w-w_3} \cdot \frac{w_2-w_3}{w_2-w_1}, \quad G(z) := \frac{z-z_1}{z-z_3} \cdot \frac{z_2-z_3}{z_2-w_1}
 $$
 
-THEN, 
+THEN,
 
 $$
 F(w_1) = 0, \quad F(w_2) = 1, \quad F(w_3) = \infty
@@ -249,7 +250,7 @@ $$
 
 Because $F(w)$, $G(z)$ are L.F. transform, $F^{-1} \circ G$ is also a L.F. transformation.
 
-THEN, 
+THEN,
 
 $$
 \begin{aligned}

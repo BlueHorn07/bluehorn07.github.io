@@ -1,7 +1,8 @@
 ---
 title: "Fourier Series"
-layout: post
-tags: ["Differntial Equation"]
+toc: true
+toc_sticky: true
+categories: ["Differential Equations"]
 ---
 
 

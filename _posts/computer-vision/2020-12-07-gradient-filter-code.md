@@ -1,7 +1,8 @@
 ---
 title: "Gradient Filter (code)"
-layout: post
-tags: [AIGS539]
+toc: true
+toc_sticky: true
+categories: ["Computer Vision"]
 ---
 
 
@@ -33,10 +34,10 @@ IMG_PATH = "origin.png"
 if __name__ == "__main__":
   # load image
   img = cv2.imread(IMG_PATH)
-  
+
   # make image gray
   img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-  
+
   # take gradient
   ## Gaussian blurring
   blured = cv2.GaussianBlur(img, (3, 3), 0)

@@ -1,7 +1,8 @@
 ---
 title: "Overview of Supervised Learning - 2"
-layout: post
-tags: [applied_statistics]
+toc: true
+toc_sticky: true
+categories: ["Applied Statsitcs"]
 ---
 
 
@@ -98,7 +99,7 @@ $$
 
 1\. $E[(Y - f(X))^2]$
 
-첫번째로 $E[(Y - f(X))^2]$텀은 $Y = f(X) + \epsilon$의 관계식을 이용하면, $E[\epsilon^2]$을 구하는 것과 같다. 이때, $E(\epsilon) = 0$, $\text{Var}(\epsilon) = \sigma^2$이므로 
+첫번째로 $E[(Y - f(X))^2]$텀은 $Y = f(X) + \epsilon$의 관계식을 이용하면, $E[\epsilon^2]$을 구하는 것과 같다. 이때, $E(\epsilon) = 0$, $\text{Var}(\epsilon) = \sigma^2$이므로
 
 $$
 E[\epsilon^2] = \sigma^2
@@ -112,7 +113,7 @@ $$
 f(x_0) = E[\hat{f}(x_0)]
 $$
 
-라면, 우리는 estimator $\hat{f}$를 ***unbaised*** 되었다고 말한다. 좀더 간단히 말하면, 실제값과 평균값의 차이를 \<bias\>라고 생각하면 된다. 따라서 두번째 텀은 
+라면, 우리는 estimator $\hat{f}$를 ***unbaised*** 되었다고 말한다. 좀더 간단히 말하면, 실제값과 평균값의 차이를 \<bias\>라고 생각하면 된다. 따라서 두번째 텀은
 
 $$
 E \left[ \left(f(x_0) - E[\hat{f}(x_0)] \right)^2 \right] = \left\{ \text{Bias}(\hat{f}(x_0)) \right\}^2

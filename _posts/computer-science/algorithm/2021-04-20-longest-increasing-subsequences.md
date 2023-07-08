@@ -1,7 +1,8 @@
 ---
 title: "Longest Increasing Subsequences"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 

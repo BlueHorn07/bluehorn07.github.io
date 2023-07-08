@@ -1,7 +1,8 @@
 ---
 title: "Matrix Multiplication: Strassen Algorithm"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -17,7 +18,7 @@ $n \times n$ 행렬 $X$와 행렬 $Y$를 곱하는 연산을 그냥 계산한다
 $$
 X = \begin{bmatrix}
  A & B \\
- C & D 
+ C & D
 \end{bmatrix}
 \qquad
 Y = \begin{bmatrix}

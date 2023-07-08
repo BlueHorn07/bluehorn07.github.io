@@ -1,7 +1,8 @@
 ---
 title: "Dijkstra's Algorithm"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -103,7 +104,7 @@ $R = \left\\{ \right\\}$ (the "known region")
 <span style="color: grey">// explore frontier!</span><br/>
 **while** $R \ne V$ **do**<br/>
 &emsp;&emsp; Pick the node $v \notin R$ with smallest $\texttt{dist}$ value<br/>
-&emsp;&emsp; Add $v$ to $R$ 
+&emsp;&emsp; Add $v$ to $R$
 
 &emsp;&emsp; **for** all edges $(v, z) \in E$ <br/>
 &emsp;&emsp;&emsp;&emsp; **if** $\texttt{dist}(z) > \texttt{dist}(v) + \ell(v, z)$ **then**<br/>
@@ -141,7 +142,7 @@ $$
 
 <br/>
 
-PQ 또는 Heap을 Binray Heap이 아닌 다른 방식들, 예를 들면, \<$d$-ary heap\>, \<Fibonacci heap\> 등으로 구현해 시간을 더 줄일 수도 있다고 한다. 
+PQ 또는 Heap을 Binray Heap이 아닌 다른 방식들, 예를 들면, \<$d$-ary heap\>, \<Fibonacci heap\> 등으로 구현해 시간을 더 줄일 수도 있다고 한다.
 
 \* 자세한 내용은 위키피디아의 해당 항목을 참고 👉 [link](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm#Running_time)
 
@@ -165,9 +166,9 @@ Q. UCS는 정말 minimum cost path를 보장하는가?
   <img src="{{ "/images/algorithm/dijkstra-algorithm-3.png" | relative_url }}" width="300px">
 </div>
 
-A. (귀류법) $s$가 PQ에서 $\texttt{pop}$될때, 그때의 $\texttt{PastCost}(s)$가 minimum cost가 아니라고 가정하자. 이것은 $s$ 이후에 $\texttt{pop}$되는 $u$라는 어떤 노드가 있고, $u \rightarrow s$로 가는 path가 minimum cost를 가짐을 의미한다. 
+A. (귀류법) $s$가 PQ에서 $\texttt{pop}$될때, 그때의 $\texttt{PastCost}(s)$가 minimum cost가 아니라고 가정하자. 이것은 $s$ 이후에 $\texttt{pop}$되는 $u$라는 어떤 노드가 있고, $u \rightarrow s$로 가는 path가 minimum cost를 가짐을 의미한다.
 
-하지만, <span class="half_HL">PQ는 $\texttt{PastCost}(\cdot)$이 작은 순서대로 정렬하기 때문에 이후에 $\texttt{pop}$되는 $u$의 $\texttt{PastCost}(u)$는 $\texttt{PastCost}(s)$보다 클 것이다.</span> 이것은 $\texttt{PastCost}(u) + \ell(u, s) < \texttt{PastCost}(s)$라는 $u$의 존재와 모순된다. 그래서 $u$를 거쳐 $s$로 가는 path는 절대 minimum cost path가 될 수 없다. 
+하지만, <span class="half_HL">PQ는 $\texttt{PastCost}(\cdot)$이 작은 순서대로 정렬하기 때문에 이후에 $\texttt{pop}$되는 $u$의 $\texttt{PastCost}(u)$는 $\texttt{PastCost}(s)$보다 클 것이다.</span> 이것은 $\texttt{PastCost}(u) + \ell(u, s) < \texttt{PastCost}(s)$라는 $u$의 존재와 모순된다. 그래서 $u$를 거쳐 $s$로 가는 path는 절대 minimum cost path가 될 수 없다.
 
 따라서 $s$가 $\texttt{pop}$된 때의 $\texttt{PastCost}(s)$보다 작은 minimum cost path는 존재할 수 없으므로 $s$가 $\texttt{pop}$될 때의 $\texttt{PastCost}(s)$가 minimum cost이다.
 

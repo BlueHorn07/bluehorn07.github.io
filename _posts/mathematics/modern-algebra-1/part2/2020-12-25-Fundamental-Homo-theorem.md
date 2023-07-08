@@ -1,7 +1,8 @@
 ---
 title: "Fundamental Homomorphism Theorem"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -17,7 +18,7 @@ FHT를 살펴보기 전에 간단한 Factor Group Homomorphism에 대해 살펴�
 
 <div class="statement" markdown="1">
 
-Let $H \trianglelefteq G$, and define a mapping $\gamma: G \longrightarrow G/H$ where $\gamma(x) = xH$. 
+Let $H \trianglelefteq G$, and define a mapping $\gamma: G \longrightarrow G/H$ where $\gamma(x) = xH$.
 
 Then, $\gamma$ is a group homormophism, with $\ker \gamma = H$.
 
@@ -25,7 +26,7 @@ Then, $\gamma$ is a group homormophism, with $\ker \gamma = H$.
 
 <span class="statement-title">proof.</span><br>
 
-증명은 정말 간단하다. 
+증명은 정말 간단하다.
 
 (1) $\gamma$가 homomorphism임을 보이고, (2) $\gamma$의 kernel이 $H$임을 보이면 된다.
 
@@ -48,7 +49,7 @@ Then, $\gamma$ is a group homormophism, with $\ker \gamma = H$.
 
 Let $\phi: G \longrightarrow G'$ be a group homo-.
 
-Then, 
+Then,
 
 1. $\phi[G]$ is a group.
 2. $G / {\ker \phi} \cong \phi[G]$

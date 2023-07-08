@@ -1,7 +1,8 @@
 ---
 title: "Object Detection Datasets"
-layout: post
-tags: ["Computer Vision"]
+toc: true
+toc_sticky: true
+categories: ["Computer Vision"]
 ---
 
 
@@ -62,7 +63,7 @@ ILSVRC 대회를 통해 기라성 같은 모델들이 쏟아져 나왔다. 우�
   <p>picture from <a href="https://medium.com/analytics-vidhya/cnns-architectures-lenet-alexnet-vgg-googlenet-resnet-and-more-666091488df5" target="_blank">Siddharth Das's blog</a></p>
 </div>
 
-**<u>AlexNet</u>**, **<u>VGG</u>**, **<u>ResNet</u>** 등등 정말 컴퓨터 비전 분야를 견인한 간판 모델들을 배출한 대회다. 
+**<u>AlexNet</u>**, **<u>VGG</u>**, **<u>ResNet</u>** 등등 정말 컴퓨터 비전 분야를 견인한 간판 모델들을 배출한 대회다.
 
 <br>
 

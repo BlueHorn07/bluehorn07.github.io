@@ -1,7 +1,8 @@
 ---
 title: "Basic Statistical Concepts"
-layout: post
-tags: ["time_series_analysis"]
+toc: true
+toc_sticky: true
+categories: ["Time Series Analysis"]
 ---
 
 ## Covariate

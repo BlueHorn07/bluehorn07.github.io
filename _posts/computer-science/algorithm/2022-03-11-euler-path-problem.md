@@ -1,7 +1,8 @@
 ---
 title: "Euler Path Problem"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -57,10 +58,10 @@ Euler cycle은 그래프의 모든 vertex를 지나게 된다. 그래서 Euler c
 
 <span class="statement-title">*Proof*.</span> $\impliedby$ <br>
 
-1. 한 vertex에서 시작해 인접한 vertex 중 하나를 방문한다. 이 과정을 유한번 반복하면, 언젠가 출발했던 vertex로 돌아오게 된다! (even degree graph의 성질에 의해 cycle이 반드시 존재함) 
+1. 한 vertex에서 시작해 인접한 vertex 중 하나를 방문한다. 이 과정을 유한번 반복하면, 언젠가 출발했던 vertex로 돌아오게 된다! (even degree graph의 성질에 의해 cycle이 반드시 존재함)
 
 2. 만약 우리가 시작 vertex로 돌아왔을 때 graph의 모든 정점을 방문한 것이라면, 그 cycle이 바로 Euler cycle이다!
-3. 만약 아직 방문하지 않은 edge가 남았다면, 직전의 cycle을 기존 그래프에서 지워준다. cycle을 지웠기 때문에 그래프의 간선도 짝수개 만큼 사라진다. 
+3. 만약 아직 방문하지 않은 edge가 남았다면, 직전의 cycle을 기존 그래프에서 지워준다. cycle을 지웠기 때문에 그래프의 간선도 짝수개 만큼 사라진다.
 4. 위의 과정을 모든 정점을 방문할 때까지 반복한다.
 
 $\blacksquare$

@@ -1,7 +1,8 @@
 ---
 title: "Linear Classification - 1"
-layout: post
-tags: [applied_statistics]
+toc: true
+toc_sticky: true
+categories: ["Applied Statsitcs"]
 ---
 
 
@@ -49,7 +50,7 @@ $$
 
 Assume that $\mathcal{Y}=\\{1, \dots, K\\}$, and let $\mathbf{Y}$ be the $n \times K$ binray matrix where the $(i, k)$ element is $1$ if $y_i = k$ and $0$ otherwise.
 
-Let 
+Let
 
 $$
 \hat{\mathbf{B}} = (\mathbf{X}^T\mathbf{X})^{-1} \mathbf{X}^T\mathbf{Y}
@@ -122,7 +123,7 @@ $$
 f_k(x) = \frac{1}{\left| 2\pi \Sigma_k \right|^{1/2}} \exp \left[ - \frac{(x-\mu_k)^T \Sigma_k^{-1} (x-\mu_k)}{2}\right]
 $$
 
-이때, 만약 각 $\Sigma_k$에 대해 
+이때, 만약 각 $\Sigma_k$에 대해
 
 $$
 \Sigma_k = \Sigma \quad \text{for all} \; k
@@ -178,7 +179,7 @@ $$
 \delta_k (x) = \log P(Y = k \mid X=x) = \log \pi_k + x^T \Sigma^{-1} \mu_k - \frac{1}{2} \mu_k^T \Sigma^{-1} \mu_k
 $$
 
-이때, $\log P(Y = k \mid X=x)$를 \<**linear discriminant function**\> $\delta_k (x)$라고 부른다. 우리는 $\\{\delta_k(x)\\}_{k \in \mathcal{Y}}$에 대해 $\text{argmax}$를 취해 
+이때, $\log P(Y = k \mid X=x)$를 \<**linear discriminant function**\> $\delta_k (x)$라고 부른다. 우리는 $\\{\delta_k(x)\\}_{k \in \mathcal{Y}}$에 대해 $\text{argmax}$를 취해
 
 $$
 \hat{y} = \underset{k \in \mathcal{Y}}{\text{argmax}} \; \delta_k (x)

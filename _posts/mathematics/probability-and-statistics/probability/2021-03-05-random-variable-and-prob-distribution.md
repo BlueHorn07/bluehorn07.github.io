@@ -1,7 +1,8 @@
 ---
 title: "Random Variables and Probability Distriubtions"
-layout: post
-tags: ["probability"]
+toc: true
+toc_sticky: true
+categories: ["Probability"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -69,7 +70,7 @@ A random variable is called a \<continuous random variable\>, if its set of poss
 
 정리하면, Discrete RV $X$가 가질 수 있는 어떤 값 $x$에 대해, 그것에 대응되는 확률 $P(X = x)$가 어떤 값으로 정해진다는 말임. 그리고 이걸 $f(x)$의 형태로 표현한 것이 바로 \<Probability Distribution\>임.
 
-<br><span class="statement-title">Definition.</span> Probability Mass Function; Probability Distribution<br> 
+<br><span class="statement-title">Definition.</span> Probability Mass Function; Probability Distribution<br>
 
 The set of ordered pairs $(x, f(x))$ is a \<**probability function**\>, \<**probability mass function**\>, or \<**probability distribution**\> of the discrete RV $X$, if for each possible outcome $x$,
 
@@ -83,7 +84,7 @@ The set of ordered pairs $(x, f(x))$ is a \<**probability function**\>, \<**prob
   <img src="{{ "/images/probability-and-statistics/pmf-1.jpg" | relative_url }}" width="320px">
 </div>
 
-<br><span class="statement-title">Definition.</span> Cumulative Distribution Function for Discrete RV<br> 
+<br><span class="statement-title">Definition.</span> Cumulative Distribution Function for Discrete RV<br>
 
 The \<**cumulative distribution function**\> $F(x)$ of a discrete RV $X$ with probability distribution $f(x)$ is
 
@@ -108,7 +109,7 @@ $$
 2\. CDF $F(x)$ of a **<u>continuous RV</u>** $X$ with **<u>density function</u>** $f(x)$
 
 $$
-F(x) = P(X \le x) = \int^{x}_{-\infty} f(t) \; dt 
+F(x) = P(X \le x) = \int^{x}_{-\infty} f(t) \; dt
 $$
 
 <hr/>

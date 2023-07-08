@@ -1,7 +1,8 @@
 ---
 title: "Sequential Density Estimation"
-layout: post
-tags: ["Computer Vision"]
+toc: true
+toc_sticky: true
+categories: ["Computer Vision"]
 ---
 
 
@@ -133,7 +134,7 @@ $$
 \end{aligned}
 $$
 
-이것은 $p(\\{ x_1, \cdots, x_{t_1}, x_t \\}, z_{1:t})$에서 $x_1$를 추출하는(marginalize out) 과정이다. 
+이것은 $p(\\{ x_1, \cdots, x_{t_1}, x_t \\}, z_{1:t})$에서 $x_1$를 추출하는(marginalize out) 과정이다.
 
 이때, $x_1$는 $\\{ x_2, \cdots, x_{t_1}, x_t \\}$와 $\\{ z_1, \cdots, z_t \\}$에 모두 indenpendent하므로
 - $x_1 \perp x_i \quad (2 \le i \le t)$
@@ -157,7 +158,7 @@ $$
 
 <br>
 
-이번에는 중첩된 적분식에서 적분되는 함수인 $p(x_{1:t}, z_{1:t})$를 살펴보자. 
+이번에는 중첩된 적분식에서 적분되는 함수인 $p(x_{1:t}, z_{1:t})$를 살펴보자.
 
 $p(x_{1:t}, z_{1:t})$는 베이즈 정리에 의해 아래와 같이 표현된다.
 
@@ -171,7 +172,7 @@ $$
 
 $$
 \begin{aligned}
-  & \int \cdots \int \int p(x_{1:t}, z_{1:t}) \; dx_1 dx_2 \cdots dx_{t-1} \\ 
+  & \int \cdots \int \int p(x_{1:t}, z_{1:t}) \; dx_1 dx_2 \cdots dx_{t-1} \\
   =& \int \cdots \int \int p(z_{1:t} \mid x_{1:t}) \cdot p(x_{1:t}) \; dx_1 dx_2 \cdots dx_{t-1}
 \end{aligned}
 $$

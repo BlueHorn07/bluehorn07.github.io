@@ -1,7 +1,8 @@
 ---
 title: "Latent Matrix Factorization"
-layout: post
-tags: ["Recommendation Algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Recommendation Algorithm"]
 ---
 
 
@@ -30,7 +31,7 @@ tags: ["Recommendation Algorithm"]
 
 행렬 $R \in \mathbb{R}^{N_u \times N_i}$은 평점 행렬로, 각 유저가 아이템에 대해 매긴 평점 정보가 들어있다. 이때, $N_u$는 총 유저의 수, $N_i$는 총 아이템의 수를 의미한다.
 
-이제 이 행렬 $R$를 \<latent factor matrix\> $X$, $Y$로 분해해보자! <span class="half_HL">이때 "**latent factor의 차원**"을 정해야 하는데, $N_f$라고 설정해두자!</span> 보통 50에서 200 사이로 설정한다고 한다. 그래서 MF를 진행하면, 행렬 $X$, $Y$는 각각 $X \in \mathbb{R}^{N_f \times N_u}$, $Y \in \mathbb{R}^{N_f \times N_i}$가 된다. 
+이제 이 행렬 $R$를 \<latent factor matrix\> $X$, $Y$로 분해해보자! <span class="half_HL">이때 "**latent factor의 차원**"을 정해야 하는데, $N_f$라고 설정해두자!</span> 보통 50에서 200 사이로 설정한다고 한다. 그래서 MF를 진행하면, 행렬 $X$, $Y$는 각각 $X \in \mathbb{R}^{N_f \times N_u}$, $Y \in \mathbb{R}^{N_f \times N_i}$가 된다.
 
 \<Latent factor matrix\> $X$, $Y$는 각각 우리가 학습시키고자 하는 대상이다. 이 행렬들은 처음에 아주 작은 랜덤값으로 초기화된다. <small>(💥 행렬 $R$의 값을 쪼개어 생성하는 것이 아니다!)</small>
 
@@ -47,7 +48,7 @@ $$
 \hat{R} = X^T \times Y
 $$
 
-이때, 행렬 $\hat{R}$의 원소인 $\hat{r}_{ui}$는 유저 $u$가 아이템 $i$에 대해 내리는 평점을 prediction한 것이다. 
+이때, 행렬 $\hat{R}$의 원소인 $\hat{r}_{ui}$는 유저 $u$가 아이템 $i$에 대해 내리는 평점을 prediction한 것이다.
 
 $$
 \hat{r}_{ui} = x_u^T \times y_i
@@ -165,7 +166,7 @@ $$
 
 $$
 \begin{aligned}
-\frac{\partial L(x_u)}{\partial x_u} 
+\frac{\partial L(x_u)}{\partial x_u}
 &= \frac{\partial }{\partial x_u} \left[ \sum_{i} c_{ui} \cdot \left(p_{ui} - x_u^T y_i \right)^2 + \lambda \left( \left| x_u \right|^2 + \sum_i \left| y_i \right|^2 \right) \right] \\
 &= \left[\sum_{i} c_{ui} \cdot 2 \left( p_{ui} - x^T_u y_i \right) ( -y_i)\right] + 2 \lambda x_u = 0
 \end{aligned}
@@ -187,7 +188,7 @@ $$
 
 $$
 \begin{aligned}
-\left(\sum_i c_{ui} \cdot y_i^T x_u \cdot y_i\right) + 2 \lambda x_u 
+\left(\sum_i c_{ui} \cdot y_i^T x_u \cdot y_i\right) + 2 \lambda x_u
 &= \left(\sum_i c_{ui} \cdot y_i \cdot y_i^T x_u \right) + 2 \lambda x_u \\
 &= \left(\sum_i c_{ui} \cdot y_i y_i^T \right) x_u + 2 \lambda x_u \\
 &= \left[ \left( \sum_i c_{ui} \cdot y_i y_i^T \right) + 2 \lambda I \right] x_u
@@ -199,7 +200,7 @@ $$
 아이템 행렬 $Y = [y_1, y_2, \cdots, y_i]$에 대해 $Y \times Y^T$는 아래와 같다.
 
 $$
-YY^T 
+YY^T
 = \left[ y_1 y_1^T + y_2 y_2^T + \cdots + y_i y_i^T \right] = \sum_i y_iy_i^T
 $$
 
@@ -227,7 +228,7 @@ $$
 
 $$
 \begin{aligned}
-Y^T C_u p_u 
+Y^T C_u p_u
 &= [y_1, \dots, y_i] \begin{pmatrix}
   c_{u1} & 0 & 0 & 0 \\
   0 & c_{u2} & 0 & 0 \\
@@ -251,7 +252,7 @@ $$
 
 $$
 \begin{aligned}
-\left[ \left( \sum_i c_{ui} \cdot y_i y_i^T \right) + \lambda I \right] x_u 
+\left[ \left( \sum_i c_{ui} \cdot y_i y_i^T \right) + \lambda I \right] x_u
 &= \sum_i c_{ui} \cdot p_{ui} \cdot y_i \\
 (YC_uY^T + \lambda I) x_u
 &= Y^T C_u p_u

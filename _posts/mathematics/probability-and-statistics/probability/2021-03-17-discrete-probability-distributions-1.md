@@ -1,7 +1,8 @@
 ---
 title: "Discrete Probability Distributions - 1"
-layout: post
-tags: ["probability"]
+toc: true
+toc_sticky: true
+categories: ["Probability"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -58,7 +59,7 @@ $$
 f(x) = p^x \cdot (1-p)^{1-x}
 $$
 
-We denote it as 
+We denote it as
 
 $$
 X \sim \text{Bernoulli}(p)
@@ -95,7 +96,7 @@ $$
 f(x) = b(x;n, p) = \binom{n}{x} p^x q^{n-x}
 $$
 
-We call $X$ as a \<binomial random variable\> and denote it as 
+We call $X$ as a \<binomial random variable\> and denote it as
 
 $$
 X \sim \text{Binomial}(n, p) \quad \text{or} \quad X \sim \text{BIN}(n, p)
@@ -120,7 +121,7 @@ $$
 X = X_1 + X_2 + \cdots + X_n
 $$
 
-이때, 개별 시행 $X_i$가 Bernoulli Distribution을 따르고, 서로가 독립으므로 \<expectation\>의 Linearity에 의해 
+이때, 개별 시행 $X_i$가 Bernoulli Distribution을 따르고, 서로가 독립으므로 \<expectation\>의 Linearity에 의해
 
 $$
 E[X] = E[X_1 + \cdots + X_n] = E[X_1] + \cdots + E[X_n]
@@ -164,7 +165,7 @@ The \<**multinomial experiment**\> consists of independent repeated $n$ trials a
 Let $X_i$ be the number of $E_i$'s in $n$ trials, then
 
 $$
-P(X_1=x_1, \cdots, X_k = x_k) 
+P(X_1=x_1, \cdots, X_k = x_k)
 = \frac{n!}{x_1! x_2! \cdots x_k!} \cdot p_1^{x_1}  p_2^{x_2} \cdots p_k^{x_k} \quad \text{where} \quad x_1 + \cdots + x_k = n
 $$
 

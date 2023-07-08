@@ -1,7 +1,8 @@
 ---
 title: "Fermat's Little Theorem"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -56,7 +57,7 @@ $$
 
 <div class="statement" markdown="1">
 
-Let $p$ be a prime, 
+Let $p$ be a prime,
 
 If $a \in \mathbb{Z}$, and $p \not\mid a$,
 

@@ -1,7 +1,8 @@
 ---
 title: "Transformations of Random Variable - 2"
-layout: post
-tags: ["probability"]
+toc: true
+toc_sticky: true
+categories: ["Probability"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -106,11 +107,11 @@ $$
 
 위의 예제를 활용하면, $\text{Gamma}(n, \beta)$가 $\text{Exp}(\beta)$의 generalization임을 쉽게 확인할 수 있다.
 
-Let $X_1, \dots, X_n$ follows $\text{Exp}(\beta)$ and they are mutually independent. 
+Let $X_1, \dots, X_n$ follows $\text{Exp}(\beta)$ and they are mutually independent.
 
 We know $\text{Gamma}(1, \beta) = \text{Exp}(\beta)$.
 
-Therefore, 
+Therefore,
 
 $$
 (X_1 + \cdots + X_n) \sim \text{Gamma}(n, \beta)
@@ -155,7 +156,7 @@ $$
 Let $X \sim N(0, 1)$. Find the pdf of $Y := X^2$.
 
 $$
-\begin{aligned}  
+\begin{aligned}
 P(Y \le y) &= P(X^2 \le y) \\
   &= P(-\sqrt{y} \le X \le \sqrt{y}) \\
   &= P(X \le \sqrt{y}) - P(X \le -\sqrt{y}) \\
@@ -178,9 +179,9 @@ $$
 
 <span class="statement-title">Theorem.</span><br/>
 
-Supp. $X$ has pmf or pdf $f_X (x)$. 
+Supp. $X$ has pmf or pdf $f_X (x)$.
 
-Let $Y = g(X)$ where $g$ may not be 1-1. 
+Let $Y = g(X)$ where $g$ may not be 1-1.
 
 Assume that the support for $f_X(x)$ can be partitioned into $k$ segments s.t., in each segment, $x_i = w_i(y)$ is 1-1 for $i=1, \dots, k$.
 

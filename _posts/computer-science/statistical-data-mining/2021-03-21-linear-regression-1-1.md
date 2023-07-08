@@ -1,7 +1,8 @@
 ---
 title: "Linear Regression - 1-1"
-layout: post
-tags: [applied_statistics]
+toc: true
+toc_sticky: true
+categories: ["Applied Statsitcs"]
 ---
 
 
@@ -104,11 +105,11 @@ $$
 \end{aligned}
 $$
 
-위의 식에서 $X^TX$를 \<gram matrix\>라고 한다. 
+위의 식에서 $X^TX$를 \<gram matrix\>라고 한다.
 
 이번에는 bias를 살펴보자. $\hat{\beta}$의 평균인 $E[\hat{\beta}]$를 구해보자.
 
-만약, $E[Y] = X^T \beta$라면, 
+만약, $E[Y] = X^T \beta$라면,
 
 $$
 \begin{aligned}
@@ -124,7 +125,7 @@ $\mathbf{y} = (y_1, \dots, y_n)^T$에 대해 $E[\mathbf{y}]$는
 
 $$
 E[\mathbf{y}] = \begin{pmatrix}
-    E[y_1] \\ 
+    E[y_1] \\
     \vdots \\
     E[y_n]
 \end{pmatrix} = \begin{pmatrix}

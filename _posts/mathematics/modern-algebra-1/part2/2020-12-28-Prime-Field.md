@@ -1,7 +1,8 @@
 ---
 title: "Prime Field"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -51,11 +52,11 @@ Let $\phi$ be a ring homomorphism metioned above.
 
 Then, $\ker \phi = s \mathbb{Z}$ where $s := \textrm{Char}(R)$.
 
-By FHT, 
+By FHT,
 
 $$
 \begin{aligned}
-    \mathbb{Z} / {\ker \phi} &\cong \phi(\mathbb{Z}) \\    
+    \mathbb{Z} / {\ker \phi} &\cong \phi(\mathbb{Z}) \\
     \mathbb{Z} / {s \mathbb{Z}} &\cong \mathbb{Z}_s = \phi(\mathbb{Z}) \le R
 \end{aligned}
 $$
@@ -80,7 +81,7 @@ Let $F$ be a Field.
 
 Then, $\textrm{Char}(F) = p$ (prime) or $\textrm{Char}(F) = 0$.
 
-So, 
+So,
 
 1\. $\textrm{Char}(F) = p$ $\implies$ $\mathbb{Z}_p \cong H \le F$.
 

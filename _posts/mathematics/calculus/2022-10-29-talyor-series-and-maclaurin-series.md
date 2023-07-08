@@ -1,7 +1,8 @@
 ---
 title: "Taylor Series & Macluarin Series"
-layout: post
-tags: ["calculus"]
+toc: true
+toc_sticky: true
+categories: ["Calculus"]
 preview: "실변수 함수 $f(x)$를 다항 함수의 멱급수로 표현하기. $n$차 근사를 무한번 수행한 것과 같다."
 ---
 
@@ -83,7 +84,7 @@ For real-valued function $f(x)$, if it can be infinitely differential on $x = 0$
 
 $$
 \begin{aligned}
-f(x) 
+f(x)
 &= f(0) + f'(0) x + \frac{f''(0)}{2!} x^2 + \cdots \frac{f^{k}(0)}{k!} x^k \cdots \\
 &= \sum^\infty_{n=0} \frac{f^{(n)}(x_0)}{n!} (x - x_0)^n
 \end{aligned}
@@ -105,8 +106,8 @@ For real-valued function $f(x)$, if it can be infinitely differential on $x = x_
 
 $$
 \begin{aligned}
-T(x) 
-&= f(x_0) + f'(x_0) (x-x_0) + \frac{f''(x_0)}{2!} (x-x_0)^2 + \cdots \frac{f^{k}(x_0)}{k!} (x-x_0)^k \cdots \\  
+T(x)
+&= f(x_0) + f'(x_0) (x-x_0) + \frac{f''(x_0)}{2!} (x-x_0)^2 + \cdots \frac{f^{k}(x_0)}{k!} (x-x_0)^k \cdots \\
 &= \sum^\infty_{n=0} \frac{f^{(n)}(x_0)}{n!} (x - x_0)^n
 \end{aligned}
 $$

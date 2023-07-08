@@ -1,7 +1,8 @@
 ---
 title: "Chi-sqaure Distribution"
-layout: post
-tags: ["probability"]
+toc: true
+toc_sticky: true
+categories: ["Probability"]
 ---
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
@@ -22,7 +23,7 @@ tags: ["probability"]
 선행 개념으로 [Gamma Distribution]({{"/2021/04/05/gamma-distribution.html" | relative_url}})에 대해 알고 있어야 한다.
 
 $$
-f(x; \alpha, \beta) 
+f(x; \alpha, \beta)
 = \begin{cases}
     C_{\alpha, \beta} \cdot x^{\alpha-1} e^{-\frac{x}{\beta}} & \text{for } x > 0 \\
     \quad 0 & \text{else}
@@ -30,7 +31,7 @@ f(x; \alpha, \beta)
 $$
 
 $$
-C_{\alpha, \beta} 
+C_{\alpha, \beta}
 = \frac{1}{\Gamma(\alpha) \cdot \beta^{\alpha}}
 $$
 
@@ -49,7 +50,7 @@ $$
 A RV $X$ is called a \<**Chi-square RV**\> with <u>$n$ degrees of freedom</u>, denoted as $X \sim \chi^2(n)$, <br/>
 if it has a <span class="half_HL">Gamma distribution with $\alpha = n/2$ and $\beta=2$</span>.
 
-That is, its pdf is given by 
+That is, its pdf is given by
 
 $$
 f(x; n/2, 2) = \frac{1}{\Gamma(n/2) \cdot 2^{n/2}} \cdot x^{n/2 - 1} \cdot e^{-x/2}
@@ -132,7 +133,7 @@ f(y) &= \frac{1}{\sqrt{2\pi}} y^{\frac{1}{2} - 1} e^{-\frac{y}{2}} \\
 \end{aligned}
 $$
 
-이것은 곧, 감마 분포 $\text{Gamma}(1/2, 2)$의 pdf와 같다! 따라서, 
+이것은 곧, 감마 분포 $\text{Gamma}(1/2, 2)$의 pdf와 같다! 따라서,
 
 $$
 \left(Z(0, 1)\right)^2 \overset{D}{=} \text{Gamma}(1/2, 2) \overset{D}{=} \chi^2(1)

@@ -1,7 +1,8 @@
 ---
 title: "Cyclic group and its subgroup"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 

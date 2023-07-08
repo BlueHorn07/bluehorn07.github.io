@@ -1,7 +1,8 @@
 ---
 title: "Bayesian Regression"
-layout: post
-tags: ["machine_learning"]
+toc: true
+toc_sticky: true
+categories: ["Machine Learning"]
 modified_date: 2021.09.20
 readtime: 30 Minutes
 ---
@@ -97,7 +98,7 @@ $$
 $$
 \begin{aligned}
 \theta \mid S &\sim \mathcal{N} \left( \frac{1}{\sigma^2} A^{-1}X^T\vec{y}, \; A^{-1}\right) \\
-y^{*} \mid x^{*}, S &\sim \mathcal{N} \left( \frac{1}{\sigma^2} {x^{*}}^T A^{-1} X^{T} \vec{y}, \; {x^{*}}^T A^{-1} x^{*} + \sigma^2 \right)  
+y^{*} \mid x^{*}, S &\sim \mathcal{N} \left( \frac{1}{\sigma^2} {x^{*}}^T A^{-1} X^{T} \vec{y}, \; {x^{*}}^T A^{-1} x^{*} + \sigma^2 \right)
 \end{aligned}
 $$
 

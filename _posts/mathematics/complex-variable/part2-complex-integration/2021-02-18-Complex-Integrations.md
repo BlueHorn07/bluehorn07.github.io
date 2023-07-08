@@ -1,7 +1,8 @@
 ---
 title: "complex primitive function & ML-ineqaulity"
-layout: post
-tags: ["Complex Variable"]
+toc: true
+toc_sticky: true
+categories: ["Complex Variable"]
 ---
 
 
@@ -134,7 +135,7 @@ ML-inequality는 적분의 절댓값의 상한을 계산하게 하는 아주아�
 
 Let $L$ be the length of $C$.
 
-If $\left\| f(z) \right\| \le M$ for all $z \in C$, 
+If $\left\| f(z) \right\| \le M$ for all $z \in C$,
 
 then
 
@@ -152,7 +153,7 @@ $$
 \left| \int^{b}_{a} f(x) dx \right| \le M(b-a)
 $$
 
-$M = \textrm{sup} \left\| f(x) \right\| \quad x \in (a, b)$ 
+$M = \textrm{sup} \left\| f(x) \right\| \quad x \in (a, b)$
 
 </div>
 

@@ -1,7 +1,8 @@
 ---
 title: "Huffman Encoding"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -181,7 +182,7 @@ for (auto &freq_pair: freq_map) {
 
 처음에는 `priorirty_queue<Node, ...>`로 구현했는데 주소 할당에서 뭔가 꼬이는 느낌이 있어서 동작 할당과 `priority_queue<Node *, ...>`를 쓰는 방향으로 구현했다.
 
-다음은 PQ $H$에서 노드를 2개씩 꺼내서 Huffman Tree를 생성하면 된다. 
+다음은 PQ $H$에서 노드를 2개씩 꺼내서 Huffman Tree를 생성하면 된다.
 
 ```cpp
 // generate Huffman tree

@@ -1,7 +1,8 @@
 ---
 title: "Polynomial over UFD"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -81,7 +82,7 @@ $$
 (dc)g(x) = (c_1c_2)r_2(x)s_2(x)
 $$
 
-and by "Lemman 45.25<small>(Guass's Lemma)</small>", $r_2(x)s_2(x)$ is primitive. 
+and by "Lemman 45.25<small>(Guass's Lemma)</small>", $r_2(x)s_2(x)$ is primitive.
 
 By "Lemma 45.23", $c_1 c_2 = dcu$ for some unit $u$ in $D$. <br>
 (non-constant인 $(dc)g(x)$를 content와 primitive로 분리하면, $dcu$와 $r_2(x)s_2(x)$의 파트로 분리된다는 말이다.)
@@ -102,7 +103,7 @@ $$
 
 이는 $f(x) \in D[x]$에서 irreducible이라, $F[x]$에서도 irreducible임을 보장한다.
 
-또한, 만약 $f(x) \in D[x]$에서 primitve이고, $F[x]$에서 irreducible이라면, $f(x)$는 $D[x]$에서도 irreducible이다. 왜냐하면, $D[x] \subseteq F[x]$이기 때문! 
+또한, 만약 $f(x) \in D[x]$에서 primitve이고, $F[x]$에서 irreducible이라면, $f(x)$는 $D[x]$에서도 irreducible이다. 왜냐하면, $D[x] \subseteq F[x]$이기 때문!
 
 $\blacksquare$
 
@@ -201,7 +202,7 @@ If $F$ is a field and $x_1, \cdots, x_n$ are indeterminatnes, then $F[x_1, \cdot
 
 <div class="math-statement" markdown="1">
 
-By "Theorem 23.20", $F[x_1]$ is a UFD. 
+By "Theorem 23.20", $F[x_1]$ is a UFD.
 
 By "Theorem 45.29", $(F[x_1])[x_2] = F[x_1, x_2]$ is a UFD.
 
@@ -222,7 +223,7 @@ Then $F[x, y]$ is a UFD.
 
 $F[x, y]$에서 상수항이 0인 모든 polynomial을 모은 집합 $N$을 생각해보자.
 
-이 집합 $N$은 Ideal이다. 
+이 집합 $N$은 Ideal이다.
 
 하지만, $N$은 principal ideal은 아니다!
 

@@ -1,7 +1,8 @@
 ---
 title: "Skyline Problem"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 

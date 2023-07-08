@@ -1,7 +1,8 @@
 ---
 title: "kubectl 명령어 핸드북"
-layout: post
-tags: ["develop", "kubernetes"]
+toc: true
+toc_sticky: true
+categories: ["Develop", "Kubernetes"]
 ---
 
 # kubectl CRUD

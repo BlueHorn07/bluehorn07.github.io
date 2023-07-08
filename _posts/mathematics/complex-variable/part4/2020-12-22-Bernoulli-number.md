@@ -1,7 +1,8 @@
 ---
 title: "Bernoulli Number derived by Maclaurin series"
-layout: post
-tags: ["Complex Variable"]
+toc: true
+toc_sticky: true
+categories: ["Complex Variable"]
 ---
 
 
@@ -32,7 +33,7 @@ defines the Bernoulli numbers $B_n$. Evaluate $B_1$, $B_2$, $B_3$, ...
 $$
 \begin{aligned}
   e^z &= 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \cdots \\
-  e^z - 1 &= z + \frac{z^2}{2!} + \frac{z^3}{3!} + \cdots \\ 
+  e^z - 1 &= z + \frac{z^2}{2!} + \frac{z^3}{3!} + \cdots \\
   \frac{e^z-1}{z} &= 1 + \frac{z}{2!} + \frac{z^2}{3!} + \cdots
 \end{aligned}
 $$
@@ -53,7 +54,7 @@ $$
 \end{aligned}
 $$
 
-따라서 
+따라서
 
 $$
 \begin{aligned}

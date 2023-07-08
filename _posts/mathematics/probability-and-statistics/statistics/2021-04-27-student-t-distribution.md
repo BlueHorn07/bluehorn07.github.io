@@ -1,7 +1,8 @@
 ---
 title: "Student's t-distribution"
-layout: post
-tags: ["statistics"]
+toc: true
+toc_sticky: true
+categories: ["Statistics"]
 ---
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
@@ -47,10 +48,10 @@ Then, the distribution of $T$ is called \<student's t-distribution of $n$ degree
 
 <span class="statement-title">Remark.</span><br>
 
-1\. The pdf of $t$-distribution is 
+1\. The pdf of $t$-distribution is
 
 $$
-f(x) 
+f(x)
 = \frac{\Gamma\left(\dfrac{n+1}{2}\right)}{\sqrt{n\pi} \cdot \Gamma\left( \dfrac{n}{2} \right)} \left( 1 + \frac{x^2}{n} \right)^{-(n+1)/2}
 $$
 
@@ -80,7 +81,7 @@ $$
 <span class="statement-title">proof.</span><br>
 
 $$
-f(x) 
+f(x)
 = \frac{\Gamma\left(\dfrac{n+1}{2}\right)}{\sqrt{n\pi} \cdot \Gamma\left( \dfrac{n}{2} \right)} \cdot \left( 1 + \frac{x^2}{n} \right)^{-(n+1)/2}
 $$
 
@@ -100,7 +101,7 @@ $$
 \left( 1 + \frac{x^2}{n} \right)^{-n/2} \cdot \left( 1 + \frac{x^2}{n} \right)^{-1/2}
 $$
 
-$n \rightarrow \infty$일 때, 왼쪽은 
+$n \rightarrow \infty$일 때, 왼쪽은
 
 $$
 \left( 1 + \frac{x^2}{n} \right)^{-n/2} \rightarrow \exp(-x^2 / 2)
@@ -150,11 +151,11 @@ $$
   }{
     \sqrt{\frac{1}{k}} \left( \frac{k}{2e} \right)^{k/2}
   } \\
-&= 
+&=
 \sqrt{\frac{k}{k+1}}
 \cdot \frac{(2e)^{k/2}}{(2e)^{(k+1)/2}}
 \cdot \frac{(k+1)^{(k+1)/2}}{(k)^{k/2}} \\
-&= 
+&=
 \sqrt{\frac{k}{k+1}}
 \cdot \frac{1}{\sqrt{2e}}
 \cdot \left(\frac{k+1}{k}\right)^{k/2}
@@ -170,7 +171,7 @@ $$
 $$
 \begin{aligned}
 \frac{\Gamma\left(\dfrac{n+1}{2}\right)}{\sqrt{n\pi} \cdot \Gamma\left( \dfrac{n}{2} \right)}
-&= 
+&=
 \frac{1}{\sqrt{n \pi}} \cdot \sqrt{\frac{n}{2e}}
 \cdot \left(1 + \frac{1}{n}\right)^{n/2} \\
 &\rightarrow
@@ -186,7 +187,7 @@ $$
 
 $$
 \begin{aligned}
-f(x) 
+f(x)
 &= \frac{\Gamma\left(\dfrac{n+1}{2}\right)}{\sqrt{n\pi} \cdot \Gamma\left( \dfrac{n}{2} \right)} \cdot \left( 1 + \frac{x^2}{n} \right)^{-(n+1)/2} \\
 &\rightarrow \frac{1}{\sqrt{2\pi}} \cdot \exp(-x^2 / 2)
 \end{aligned}
@@ -204,7 +205,7 @@ $$
 
 # Sampling Distribution of Mean (unknown $\sigma^2$)
 
-Sample Mean $\bar{X}$에 대한 분포를 계속 살펴보자. 이전의 "[Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt.html" | relative_url}})" 포스트에선 population variance $\sigma^2$에 대한 값을 정확히 알고 있었다. 
+Sample Mean $\bar{X}$에 대한 분포를 계속 살펴보자. 이전의 "[Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt.html" | relative_url}})" 포스트에선 population variance $\sigma^2$에 대한 값을 정확히 알고 있었다.
 
 $$
 Z = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}} \sim N(0, 1)
@@ -228,14 +229,14 @@ Let $T := \dfrac{\bar{X} - \mu}{S / \sqrt{n}}$, then $T$ has a t-distribution wi
 
 $$
 \begin{aligned}
-T 
+T
 &= \frac{\overline{X} - \mu}{S / \sqrt{n}} \\
 &= \frac{\overline{X} - \mu}{\sigma / \sqrt{n}} \cdot \frac{\sigma / \cancel{\sqrt{n}}}{S / \cancel{\sqrt{n}}} \\
 &= \dfrac{\left(\dfrac{\overline{X} - \mu}{\sigma / \sqrt{n}}\right)}{S / \sigma}
 \end{aligned}
 $$
 
-이때, 분자인 $\dfrac{\overline{X} - \mu}{\sigma / \sqrt{n}}$는 $N(0, 1)$의 분포를 따르고, 
+이때, 분자인 $\dfrac{\overline{X} - \mu}{\sigma / \sqrt{n}}$는 $N(0, 1)$의 분포를 따르고,
 
 분모인 $S / \sigma$는
 
@@ -275,7 +276,7 @@ $Z \sim N(0, 1)$이고 $V \sim \chi^2(n-1)$이다. 그리고 Sample Variance와 
 
 Let $T := \dfrac{\bar{x} - \mu}{S / \sqrt{n}} \overset{D}{=} t(n-1) = t(24)$
 
-t-value is 
+t-value is
 
 $$
 \frac{\bar{x} - \mu}{s/\sqrt{n}} = \frac{518-500}{40/5} = 2.25

@@ -1,6 +1,8 @@
 ---
 title: "Gnomonic Projection & FOV"
-layout: post
+toc: true
+toc_sticky: true
+categories: ["Computer Vision"]
 tags: ["3D Vision"]
 ---
 
@@ -84,7 +86,7 @@ $$
 
 [^1]
 
-Field of View, 줄여서 **FOV**[^2]는 구의 표면을 Gnomonic projection으로 매핑한 범위를 말한다. 통상 FOV는 radian 단위가 아닌 degree 단위로 표기한다. 
+Field of View, 줄여서 **FOV**[^2]는 구의 표면을 Gnomonic projection으로 매핑한 범위를 말한다. 통상 FOV는 radian 단위가 아닌 degree 단위로 표기한다.
 
 Gnomonic projection에서 FOV는 최대 180°의 범위를 가질 수 있다. 왜냐하면 Gnomonic projection은 반구 하나 만큼의 영역만 매핑할 수 있기 때문이다.
 
@@ -117,7 +119,7 @@ inverse mapping에서도 마찬가지로 $x$, $y$의 범위를 제한한 후 매
 
 ### Cubmap mapping
 
-Cubmap mapping은 구를 6개의 90° FOV 이미지로 매핑하는 방식이다. 
+Cubmap mapping은 구를 6개의 90° FOV 이미지로 매핑하는 방식이다.
 
 <div style="text-align: center;">
 <img src="/images/others/cubemap_globe.png"  style="width: 50%;">
@@ -129,7 +131,7 @@ Cubmap mapping은 구를 6개의 90° FOV 이미지로 매핑하는 방식이다
 
 ## 맺음말
 
-구의 표면을 2D로 매핑하는 방식은 소개한 Gnomonic projection 외에도 다양한 방법이 존재한다. 하지만 Gnomonic projection의 가장 기본이 되면서 널리 쓰이는 매핑 방식이므로 반드시 숙지해야 한다고 생각한다. 
+구의 표면을 2D로 매핑하는 방식은 소개한 Gnomonic projection 외에도 다양한 방법이 존재한다. 하지만 Gnomonic projection의 가장 기본이 되면서 널리 쓰이는 매핑 방식이므로 반드시 숙지해야 한다고 생각한다.
 
 
 <hr>

@@ -1,6 +1,7 @@
 ---
-layout: post
-tags: [Philosophy]
+toc: true
+toc_sticky: true
+categories: [Philosophy]
 ---
 
 본 글은 2020-1학기 포항공대 이충형 교수님의 '시공간과 물질의 철학' 수업의 읽기자료의 내용을 정리한 것입니다. 물리학도는 아니지만 수업의 본질에 다가가고자 이렇게 문서형태로 정리해둡니다. 지적은 언제나 환영입니다 :)
@@ -42,7 +43,7 @@ Science and Necessity, Bigelow & Pargetter, 1991<br>
    `First-order property`는 물체가 해당 속성을 가지는지 바로 결정 또는 묘사할 수 있는 속성이다. 무게나 전하량 등이 여기에 속한다.<br>
    `Second-order property`는 다른 물리적 속성의 도움을 받아야만 정의될 수 있는 성질이다. 우리의 심리적 상태나, 생각이 여기에 속한다.<br><br>
    여기서 유의할 점은 `Second-order property`로 아무리 날고 기어도 절대 `First-order property`를 정의하거나 설명할 수 없다는 것이다. 이것을 기준으로 `(순간)속도`에 대한 논의가 진행된다.
-   
+
 2. **Primary & Secondary Property** <small>제1성질 & 제2성질</small><br>
    `Primary property`는 물체가 어떤 상황에 있더라도 결코 분리될 수 없는 성질이다. 수(數), 형태, 크기가 여기에 속한다.<br>
    `Secondary property`는 우리의 감각과 관념에 의해 인지되는 주관적인 성질이다. 색, 향기, 소리, 맛 등이 여기에 속한다.<br><br>
@@ -85,7 +86,7 @@ A와 B가 충돌할 때, A의 순간속도가 B에 전해진다.
 
 반면, `오컴파`는 <br>
 ```
-2번 상황에서 B는 움직임이 없으므로 0의 속도를 가진다. 
+2번 상황에서 B는 움직임이 없으므로 0의 속도를 가진다.
 그러다가, 갑자기 C가 v의 속도를 가지며 앞으로 나아간다.
 ```
 라고 설명한다.<br><br>

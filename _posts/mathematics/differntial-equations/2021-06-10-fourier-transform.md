@@ -1,10 +1,12 @@
 ---
 title: "Fourier Transform"
-layout: post
-tags: ["Data Mining"]
+toc: true
+toc_sticky: true
+categories: ["Differential Equations", "Data Mining"]
 ---
 
 
+Differential Equations
 
 2021-1학기, 대학에서 '데이터 마이닝' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
@@ -37,7 +39,7 @@ $$
 \begin{aligned}
 x(t) &= \sum_{-\infty}^{\infty} C_k \cdot e^{ik\pi t/L} \\
 &\text{where} \\
-C_n &= \frac{1}{2L} \int_{-L}^L x(t) e^{-in\pi t/L} \; dt 
+C_n &= \frac{1}{2L} \int_{-L}^L x(t) e^{-in\pi t/L} \; dt
 \end{aligned}
 $$
 
@@ -49,7 +51,7 @@ $$
 
 $$
 \begin{aligned}
-\lim_{t\rightarrow\infty} x(t) 
+\lim_{t\rightarrow\infty} x(t)
 &= \lim_{t\rightarrow\infty} \sum_{-\infty}^{\infty} C_k \cdot e^{ik\pi t/L} \\
 &= \lim_{t\rightarrow\infty} \sum_{-\infty}^{\infty} \left[ \frac{1}{2L} \int_{-L}^L x(t) e^{-in\pi t/L} \; dt  \right] \cdot e^{ik\pi t/L}
 \end{aligned}
@@ -63,7 +65,7 @@ $$
 
 그러면, 위의 정적분의 극한에서 몇가지 기호를 아래와 같이 변환할 수 있다.
 
-- $k/2L \rightarrow f$[^1] 🔥 
+- $k/2L \rightarrow f$[^1] 🔥
 - $L \rightarrow \infty$
 - $-L \rightarrow -\infty$
 

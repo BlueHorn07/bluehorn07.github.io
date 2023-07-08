@@ -1,7 +1,8 @@
 ---
 title: "Index CRUD"
-layout: post
-tags: ["elastic-search"]
+toc: true
+toc_sticky: true
+categories: ["Elastic Search"]
 ---
 
 Index는 ElasticSearch에서 테이블의 역할을 한다. 먼저 Index에 대한 CRUD를 살펴보고, 레코드에 대응되는 Document의 CRUD를 살펴보자.
@@ -141,7 +142,7 @@ PUT <index-name>/_settings
 }
 ```
 
-단, `number_of_shards`는 변경할 수 없다. 
+단, `number_of_shards`는 변경할 수 없다.
 
 `mapping`의 경우 필드 명세를 추가하는 것만 가능하다.
 

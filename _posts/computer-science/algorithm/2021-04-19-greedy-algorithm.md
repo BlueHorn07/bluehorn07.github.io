@@ -1,7 +1,8 @@
 ---
 title: "Greedy Algorithm"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -9,7 +10,7 @@ tags: ["algorithm"]
 
 <hr>
 
-\<Greedy Algorithm; 탐욕 알고리즘\>의 아이디어는 간단하다. 
+\<Greedy Algorithm; 탐욕 알고리즘\>의 아이디어는 간단하다.
 
 <div class="statement" markdown="1" style="text-align:center; font-size: large;">
 

@@ -1,7 +1,8 @@
 ---
 title: "Factor Group"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -23,17 +24,17 @@ Factor Group을 정의하려면, 먼저 Factor Group에서 사용할 "**coset �
 
 <div class="statement" markdown="1">
 
-Let $H \le G$, THEN the left coset multiplication is well-defined by equation 
+Let $H \le G$, THEN the left coset multiplication is well-defined by equation
 
 $$
 \begin{equation}
-    (aH)(bH) := abH    
+    (aH)(bH) := abH
 \end{equation}
 $$
 
 </div>
 
-이때, 위의 식 (1)이 성립하여 연산이 well-defined이 되기 위해선 
+이때, 위의 식 (1)이 성립하여 연산이 well-defined이 되기 위해선
 
 <div class="statement" markdown="1" style="text-align: center;">
 "The left & right coset conincide, so that $aH = Ha \quad \forall a \in G$"
@@ -65,7 +66,7 @@ $$
 $$
 \begin{aligned}
     aHa^{-1} \subseteq H & \implies aH \subseteq Ha \\
-    a^{-1}Ha \subseteq H & \implies Ha \subseteq aH   
+    a^{-1}Ha \subseteq H & \implies Ha \subseteq aH
 \end{aligned}
 $$
 
@@ -81,7 +82,7 @@ To show "$(xH)(yH) = xyH$ is well-defined",
 
 Let $xH = x'H$, and $yH = y'H$.
 
-Then, we have to show $(xH)(yH) = (x'H)(y'H)$; i.e. $xyH = x'y'H$. 
+Then, we have to show $(xH)(yH) = (x'H)(y'H)$; i.e. $xyH = x'y'H$.
 
 <br>
 
@@ -106,7 +107,7 @@ Then, $xy = (x'h_1)(y'h_2)$에서 $H$가 normal subgroup이므로 $(x'h_1)(y'h_2
 
 <div class="statement" markdown="1">
 
-Let $H \le G$ be a normal subgroup, 
+Let $H \le G$ be a normal subgroup,
 
 Then the set of cosets of $H$ forms a **<u>factor group</u>** $G/H$ ($G$ mod $H$) under the binary operation.
 
@@ -147,12 +148,12 @@ $$
 \end{equation}
 $$
 
-이다. 
+이다.
 
 
 <div class="math-statement" markdown="1">
 
-부등호 방향이 한 방향이라 $aHa^{-1} = H$ 조건을 이끌어 내기에는 부족해보일지도 모른다. 하지만, 
+부등호 방향이 한 방향이라 $aHa^{-1} = H$ 조건을 이끌어 내기에는 부족해보일지도 모른다. 하지만,
 
 $\forall a\in G$이므로 Eq.(2)에 $a$ 대신 $a^{-1}$을 넣어도 식이 성립한다. 따라서
 

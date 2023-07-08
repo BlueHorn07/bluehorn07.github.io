@@ -1,7 +1,8 @@
 ---
 title: "Background for discussion of 'Special Relativity'"
-layout: post
-tags: [Philosophy]
+toc: true
+toc_sticky: true
+categories: [Philosophy]
 ---
 
 
@@ -30,7 +31,7 @@ tags: [Philosophy]
 `민코프스키 시공간`을 이해하려면, 두 가지가 필요하다.<br>
 1. 민코프스키 시공간을 그리는 방법
 2. 민코프스키 시공간에서 빛과 물체의 운동을 어떻게 기술하는지(=규칙)
-   
+
 1번에 대해서는 그냥 '아, 민코프스키 시공간은 이렇게 그리는 구나'에 대한 감만 익히면 된다.<br>
 시간축<small>*time-axis*</small>을 세로축으로 놓고, 공간축<small>*space-axis*</small>을 가로축으로 둔다. → 끝!<br>
 
@@ -131,7 +132,7 @@ tags: [Philosophy]
 1번 경우에 대해선, 맥스웰 방정식이 여러 실험 결과를 정확히 예측하고 잘 들어맞는다는 것이 확인이 되었다. 그럼 2번의 경우, "갈릴레이 변환에서 문제가 있다"는 결론을 얻게 된다!!<br>
 <br><br>
 
-그러다가 아주아주 똑똑한 로렌츠<small>*Lorentz*</small>라는 사람이 
+그러다가 아주아주 똑똑한 로렌츠<small>*Lorentz*</small>라는 사람이
 > 내가 한번 해봤는데, 갈릴레이 변환을 약간 수정하면 문제가 해결됨 ㅇㅇ
 
 라고 주장하며, 기존의 갈릴레이 변환을 수정한 **로렌츠 변환**<small>*Lorentz Transformation*</small>을 들고 온다.<br>

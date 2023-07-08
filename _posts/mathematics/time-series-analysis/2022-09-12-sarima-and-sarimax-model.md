@@ -1,7 +1,8 @@
 ---
 title: "SARIMA & SARIMAX Model"
-layout: post
-tags: ["time_series_analysis"]
+toc: true
+toc_sticky: true
+categories: ["Time Series Analysis"]
 ---
 
 # SARIMA Model

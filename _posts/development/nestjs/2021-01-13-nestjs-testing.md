@@ -1,7 +1,8 @@
 ---
 title: "NestJS: Mocking & Spy"
-layout: post
-tags: [NestJS]
+toc: true
+toc_sticky: true
+categories: [NestJS]
 ---
 
 
@@ -18,7 +19,7 @@ tags: [NestJS]
 
 `NestJS`에선 Javascript의 테스트 프레임워크인 `jest`<small>[link](https://jestjs.io/)</small>를 기본으로 하는 테스트 프레임워크를 지원한다.
 
-물론 약간의 변형은 있겠지만, 그냥 지원만 하는 수준이 아니라 `NestJS`의 테스트를 `jest`로 한다. 
+물론 약간의 변형은 있겠지만, 그냥 지원만 하는 수준이 아니라 `NestJS`의 테스트를 `jest`로 한다.
 
 ```
 npm i --save-dev @nestjs/testing
@@ -300,7 +301,7 @@ expect(mockFn).toBeCalledWith(["b", "c"])
 
 지금까지는 모두 기존 객체을 대신하는 '대역(代役)'인 **<u>Mock</u>**을 이용한 테스트를 살펴봤다. 하지만 몇몇 경우에는 기존 객체를 Mock로 대체하지 어려울 수도 있다. 이 경우 사용하는 것이 바로 "**<u>Spy Function</u>**"이다!
 
-예를 들어 아래와 같이 `calculator`에 정의된 `add`의 Spy Function을 만들어 사용할 수 있다. 
+예를 들어 아래와 같이 `calculator`에 정의된 `add`의 Spy Function을 만들어 사용할 수 있다.
 
 ``` js
 const calculator = {

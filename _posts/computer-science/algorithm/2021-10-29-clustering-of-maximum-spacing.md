@@ -1,7 +1,8 @@
 ---
 title: "Clustering of Maximum Spacing"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -61,7 +62,7 @@ $C^{\*}$의 clustering 중 하나인 $C_r^{\*}$에 속한 두 점 $p_i$, $p_j$�
   <img src="{{ "/images/algorithm/clustering-of-maximum-spacing-2.png" | relative_url }}" width="420px">
 </div>
 
-$C_r^{\*}$ 위에서 $p_i$에서 $p_j$로 가는 경로를 생각해보자. 이때 중간의 어떤 간선 $(p, q)$는 $C$에서의 두 클러스터 $C_s$, $C_r$를 가르는 clustrer distance가 될 것이다. $p_i \rightarrow p_j$ 경로의 모든 간선은 MST의 정의에 따라 $(k-1)$번째 간선인 $d^{\*}$의 길이보다는 작을 것이다. 따라서 
+$C_r^{\*}$ 위에서 $p_i$에서 $p_j$로 가는 경로를 생각해보자. 이때 중간의 어떤 간선 $(p, q)$는 $C$에서의 두 클러스터 $C_s$, $C_r$를 가르는 clustrer distance가 될 것이다. $p_i \rightarrow p_j$ 경로의 모든 간선은 MST의 정의에 따라 $(k-1)$번째 간선인 $d^{\*}$의 길이보다는 작을 것이다. 따라서
 
 $$
 \left| pq \right| \le d^{*}

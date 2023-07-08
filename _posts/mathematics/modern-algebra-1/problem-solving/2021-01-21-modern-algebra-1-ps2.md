@@ -1,7 +1,8 @@
 ---
 title: "Modern Algebra I - PS2"
-layout: post
-tags: ["Modern Algebra1", "Problem Solving"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1", "Problem Solving"]
 ---
 
 
@@ -86,7 +87,7 @@ $$
 
 그 다음은 초급 연산이라 몫을 구해서 the closest point on $\mathbb{Z}[\sqrt{-2}]$를 찾으면 $-6 -2 \sqrt{-2}$가 된다!
 
-따라서 
+따라서
 
 $$
 \begin{aligned}

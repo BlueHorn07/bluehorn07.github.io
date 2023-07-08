@@ -1,7 +1,8 @@
 ---
 title: "Introduction to AI"
-layout: post
-tags: ["Artificial Intelligence"]
+toc: true
+toc_sticky: true
+categories: ["Artificial Intelligence"]
 ---
 
 

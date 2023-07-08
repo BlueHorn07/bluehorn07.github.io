@@ -1,7 +1,8 @@
 ---
 title: "Closest pair of points"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -102,9 +103,9 @@ long long CloestPair(point_vec Px){
         return dist(Px[0], Px[1]);
     if(Px.size() == 3)
         return min({dist(Px[0], Px[1]), dist(Px[0], Px[2]), dist(Px[1], Px[2])});
-    
+
     int N = Px.size();
-    
+
     /* divide */
     int mid = N / 2;
 

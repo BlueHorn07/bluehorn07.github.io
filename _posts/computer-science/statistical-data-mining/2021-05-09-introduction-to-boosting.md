@@ -1,7 +1,8 @@
 ---
 title: "Introduction to Boosting"
-layout: post
-tags: [applied_statistics]
+toc: true
+toc_sticky: true
+categories: ["Applied Statsitcs"]
 ---
 
 
@@ -11,7 +12,7 @@ tags: [applied_statistics]
 
 <hr/>
 
-\<**Boosting**\>은 Ensemble Method의 일환으로 weak learniner들을 연속적(sequential)으로 여러 개를 결합하여 Prediction 성능을 높이는 기법이다. 
+\<**Boosting**\>은 Ensemble Method의 일환으로 weak learniner들을 연속적(sequential)으로 여러 개를 결합하여 Prediction 성능을 높이는 기법이다.
 
 먼저 \<**Ensemble Method**\>란 모델이 학습 데이터에 overfitting 되지 않도록, overfit 되지 않은 약한 모델 여러개를 결합해 사용한다는 것이다.
 

@@ -1,7 +1,8 @@
 ---
 title: "Linear Regression, GD, and Normal Equation"
-layout: post
-tags: [machine_learning]
+toc: true
+toc_sticky: true
+categories: ["Machine Learning"]
 ---
 
 본 글은 2018-2학기 Stanford Univ.의 Andrew Ng 교수님의 Machine Learning(CS229) 수업의 내용을 정리한 것입니다. 지적은 언제나 환영입니다 :)
@@ -97,7 +98,7 @@ $\textrm{tr} A$에 대한 derivative 공식들을 살펴보자.
 
 ### Least Squares Method
 
-우리의 목표는 global minimum을 찾는 것이다. 따라서 
+우리의 목표는 global minimum을 찾는 것이다. 따라서
 
 <div>
 $$\nabla_{\theta} f(\theta) = 0$$
@@ -131,12 +132,12 @@ $$J(\theta) = \cfrac{1}{2} {\left( X\theta - \vec{y} \right)}^{T} \left( X\theta
 $$
 \begin{split}
 \nabla_{\theta} J(\theta) &= \nabla_{\theta} \cfrac{1}{2} {\left( X\theta - \vec{y} \right)}^{T} \left( X\theta - \vec{y} \right) \\
-&= \cfrac{1}{2} \nabla_{\theta} \left( {\theta}^{T} X^T - \vec{y}^T \right) \left( X\theta - \vec{y} \right) 
+&= \cfrac{1}{2} \nabla_{\theta} \left( {\theta}^{T} X^T - \vec{y}^T \right) \left( X\theta - \vec{y} \right)
 \end{split}
 $$
 </div>
 
-이고, 분배법칙에 따라 분배하면, 
+이고, 분배법칙에 따라 분배하면,
 
 <div>
 $$
@@ -156,7 +157,7 @@ $$
 $$
 </div>
 
-$\textrm{tr}$ 함수의 성질에 따라 $\textrm{tr}$을 괄호 안으로 넣으면, 
+$\textrm{tr}$ 함수의 성질에 따라 $\textrm{tr}$을 괄호 안으로 넣으면,
 
 <div>
 $$
@@ -206,7 +207,7 @@ $$
 $$\nabla_{\theta} J(\theta) = {X^T} X \theta - {X^T} \vec{y} = 0$$
 </div>
 
-우변을 정리하면, 
+우변을 정리하면,
 
 <div>
 $${X^T} X \theta = {X^T} \vec{y}$$

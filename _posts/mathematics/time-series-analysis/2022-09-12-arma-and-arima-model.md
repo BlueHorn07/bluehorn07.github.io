@@ -1,7 +1,8 @@
 ---
 title: "ARMA & ARIMA Model"
-layout: post
-tags: ["time_series_analysis"]
+toc: true
+toc_sticky: true
+categories: ["Time Series Analysis"]
 ---
 
 # ARMA Model
@@ -20,7 +21,7 @@ ARMA 모델은 AR 모델과 MA 모델을 결합한 모델이다. 수식은 아�
 <span class="statement-title">Definition.</span> ARMA Model<br>
 
 $$
-X(t) 
+X(t)
 = \left( \phi_0 + \phi_1 X(t-1) + \cdots + \phi_p X(t-p) \right)
 + \left( \epsilon(t) + \theta_1 \epsilon(t-1) + \cdots + \theta_q \epsilon(t-q) \right)
 $$
@@ -45,14 +46,14 @@ MA로 모델링하기 위해선 시계열 데이터가 "정상성"을 가져야 
 
 그럼 비정상성 시계열에선 어떻게 해야할까? 답은 간단하다. 👏 \<차분(Differencing)\>을 해서 데이터를 정상성 시계열로 변환해주면 된다! **ARIMA 모델을 ARMA 모델에 $d$회 차분을 수행한 모델이다!**
 
-이때, ARIMA 모델에서 "I"는 차분(Differencing)의 "D"가 아니라 "Integrated"의 "I"이다. 
+이때, ARIMA 모델에서 "I"는 차분(Differencing)의 "D"가 아니라 "Integrated"의 "I"이다.
 
 <div class="definition" markdown="1">
 
 <span class="statement-title">Definition.</span> ARIMA Model<br>
 
 $$
-X'(t) 
+X'(t)
 = \left( \phi_0 + \phi_1 X'(t-1) + \cdots + \phi_p X'(t-p) \right)
 + \left( \epsilon(t) + \theta_1 \epsilon(t-1) + \cdots + \theta_q \epsilon(t-q) \right)
 $$

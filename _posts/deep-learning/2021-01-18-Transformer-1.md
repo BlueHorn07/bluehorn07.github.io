@@ -1,18 +1,25 @@
 ---
 title: "Transformer(2017) - 1"
-layout: post
-tags: ["research"]
+toc: true
+toc_sticky: true
+categories: ["Deep Learning"]
 ---
 
 
-이 포스트는 제가 개인적인 용도로 정리한 글 입니다. 
+이 포스트는 제가 개인적인 용도로 정리한 글 입니다.
 
 - "[Attention is all you need](https://arxiv.org/abs/1706.03762)"
   - 2017, Google
 
-1. [Attentionn Mechanism](#attention-mechanism2015)
-2. [Transformer](#transformer2017)
-3. [Three Attentions in Transformer](#three-attentions-in-transformer)
+- [Attention Mechanism(2015)](#attention-mechanism2015)
+  - [기존 seq2seq 모델의 한계](#기존-seq2seq-모델의-한계)
+  - [Attention Mechanism](#attention-mechanism)
+    - [Attention Function](#attention-function)
+  - [Dot-Product Attention](#dot-product-attention)
+- [Transformer(2017)](#transformer2017)
+  - [Positional Encoding](#positional-encoding)
+- [Three Attentions in Transformer](#three-attentions-in-transformer)
+- [Reference](#reference)
 
 <br>
 <hr>

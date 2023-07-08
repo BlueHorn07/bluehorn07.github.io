@@ -1,7 +1,8 @@
 ---
 title: "Damerau–Levenshtein distance"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -26,7 +27,7 @@ tags: ["algorithm"]
 
 4\. 교환(Trasposition with adjacent character): 두 인접한 글자의 위치를 서로 바꿀 수 있다.
 
-문제를 보고, 처음에는 꽤 할만 하다고 생각해서 단순히 "교환했을 때 matching cost가 0이 되고, 또 그때의 DP 값이 작다면, Transpotion!"인 식으로 4번째 연산을 처리해봤는데, <span style="color: red">**WA**</span>를 받았었다. 
+문제를 보고, 처음에는 꽤 할만 하다고 생각해서 단순히 "교환했을 때 matching cost가 0이 되고, 또 그때의 DP 값이 작다면, Transpotion!"인 식으로 4번째 연산을 처리해봤는데, <span style="color: red">**WA**</span>를 받았었다.
 
 검색해보니, 'Transpotion' 연산은 앞의 경우랑은 다르게 쉽게 계산되지 않고, \<[Damerau–Levenshtein distance](https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance)\>[^1]를 통해 구해야 한다.
 
@@ -119,9 +120,9 @@ int Damerau_Levenshtein(string a, string b) {
   // DP process
   for (int i = 2; i < a.size() + 2; i++) {
     // db: s2에서 현재 j보다 작으면서, s1[i]와 같은 문자를 갖는 곳의 위치; $l$
-    int db = 1; 
+    int db = 1;
     for (int j = 2; j < b.size() + 2; j++) {
-      int k = da[b[j - 2] - 'a']; 
+      int k = da[b[j - 2] - 'a'];
       int l = db;
       int cost;
       if (a[i - 2] == b[j - 2]) {

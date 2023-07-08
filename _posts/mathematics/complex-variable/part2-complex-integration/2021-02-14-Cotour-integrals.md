@@ -1,7 +1,8 @@
 ---
 title: "Contour Integrals"
-layout: post
-tags: ["Complex Variable"]
+toc: true
+toc_sticky: true
+categories: ["Complex Variable"]
 ---
 
 
@@ -27,7 +28,7 @@ $$
 
 </div>
 
-실수 영역 $\mathbb{R}^2$에서의 contour는 $\vec{r}(t)=(x(t), y(t))$와 같이 parametrized 하여 표현했다. 
+실수 영역 $\mathbb{R}^2$에서의 contour는 $\vec{r}(t)=(x(t), y(t))$와 같이 parametrized 하여 표현했다.
 
 그런데, 복소 영역 $\mathbb{C}$에서의 contour는 $z(t) = x(t) + i y(t)$와 같이 표현한다. $\mathbb{R}^2$에서와 '거의' 비슷하다.
 

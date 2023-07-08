@@ -1,7 +1,8 @@
 ---
 title: "Algorithm 수업과 나를 돌아보며"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 <br/>
@@ -14,7 +15,7 @@ tags: ["algorithm"]
 
 다시 알고리즘 공부를 하게 된 계기는 역시 코테를 준비하기 위함이었습니다. 더 좋은 커리어와 포항을 떠나고 싶은 마음이 컸었고, PS나 알고리즘 공부를 꾸준히 하진 않았어서 폼도 다시 끌어올릴 겸 \<분할 정복; Divide-and-Conquer\> 파트부터 하나씩 다시 보기 시작했습니다.
 
-첫 알고리즘 포스트의 날짜가 2021년 2월 26일이었는데요. 오늘 2022년 5월 21일, 알고리즘 정리를 마무리 했으니 <span style="color: red">**1년**</span>이 넘게 걸린 프로젝트 였습니다. 동아리 세미나와 다른 과목들을 공부하고 정리한다고 알고리즘에 크게 신경을 못 써서 이렇게 오래 걸렸네요. 그 사이에 저는 포항을 떠나 서울로 올라갔고, 좋은 회사에 들어가 산업기능요원으로 진화(?) 했습니다 🦕 
+첫 알고리즘 포스트의 날짜가 2021년 2월 26일이었는데요. 오늘 2022년 5월 21일, 알고리즘 정리를 마무리 했으니 <span style="color: red">**1년**</span>이 넘게 걸린 프로젝트 였습니다. 동아리 세미나와 다른 과목들을 공부하고 정리한다고 알고리즘에 크게 신경을 못 써서 이렇게 오래 걸렸네요. 그 사이에 저는 포항을 떠나 서울로 올라갔고, 좋은 회사에 들어가 산업기능요원으로 진화(?) 했습니다 🦕
 
 <div class="img-wrapper" style="margin-bottom: 20px">
   <img src="{{ "/images/algorithm/algorithm-textbook.jpg" | relative_url }}" width="320px">

@@ -1,7 +1,8 @@
 ---
 title: "Particle Filtering"
-layout: post
-tags: ["Computer Vision"]
+toc: true
+toc_sticky: true
+categories: ["Computer Vision"]
 ---
 
 
@@ -17,12 +18,12 @@ tags: ["Computer Vision"]
 </div>
 
 <div class="statement">
-  if you have a model of how the system changes in time, possibly in response to inputs, and a model of what observations you should see in particular states, you can use <b><u>particle filters</u></b> to track your belief state. 
+  if you have a model of how the system changes in time, possibly in response to inputs, and a model of what observations you should see in particular states, you can use <b><u>particle filters</u></b> to track your belief state.
 </div>
 
 <br>
 
-우리는 Particle Filter를 BBox prediction에 사용할 것이다. 그래서 
+우리는 Particle Filter를 BBox prediction에 사용할 것이다. 그래서
 
 <div class="statement" style="text-align: center;">
 "Particle" = BBox
@@ -66,7 +67,7 @@ weight를 이용해 particle을 weighted sampling 한다.
 ##### (2) Prediction
 resampling해서 얻은 결과를 랜덤하게 흩뜨리는 과정이다.
 
-state transition $p(x_t \mid x_{t-1})$을 적용하는 부분이다. 
+state transition $p(x_t \mid x_{t-1})$을 적용하는 부분이다.
 
 칼만 필터의 경우, 여기에서 Linear model assumption을 적용한다.
 
@@ -76,7 +77,7 @@ $$
 
 하지만, Particle Filtering은 Sequential Bayesian Modeling에 의해 진행한다고 한다. (아마도?) 아직 이 부분이 잘 와닿지 않는다 ㅠㅠ
 
-##### (3) Measures 
+##### (3) Measures
 prediction한 particle인 BBox가 실제 G.T.와 얼마나 비슷한지 Similarity를 측정하는 부분이다.
 
 ##### (4) Update

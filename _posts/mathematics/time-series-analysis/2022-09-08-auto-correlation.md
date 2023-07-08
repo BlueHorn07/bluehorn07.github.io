@@ -1,7 +1,8 @@
 ---
 title: "Auto-Correlation: ACF & PACF"
-layout: post
-tags: ["time_series_analysis"]
+toc: true
+toc_sticky: true
+categories: ["Time Series Analysis"]
 ---
 
 # 선행 개념
@@ -48,7 +49,7 @@ where $e_{X}$ and $e_{Y}$ are residual of multiple regression fitting on $\mathb
 Correlation $\text{Corr}(X, Y)$은 본래 서로 다른 두 Random Variable $X$, $Y$의 상관성을 보기 위한 지표이다. 그런데, 시계열 데이터에선 자신과 이전의 값 사이에 상관성을 보기 위해 Auto-Correlation $\text{Corr}(s(t), s(t-1))$를 구한다.
 
 $$
-\text{Corr}(s(t), s(t-1)) 
+\text{Corr}(s(t), s(t-1))
 = \frac{\text{Cov}(s(t), s(t-1))}{\sqrt{\text{Var}(s(t))} \sqrt{\text{Var}(s(t-1))}}
 = \frac{\text{Cov}(s(t), s(t-1))}{\text{Var}(s(t))}
 $$
@@ -131,14 +132,14 @@ PACF를 유도하는 것은 Partial Correlation $\rho_{XY\cdot Z}$를 유도하�
 먼저 아래와 같이 Linear Regression Fitting을 한다.
 
 $$
-\begin{aligned} 
-w^{\ast}_{s(t)} 
-&= \underset{w}{\text{argmin}} \left\{ 
+\begin{aligned}
+w^{\ast}_{s(t)}
+&= \underset{w}{\text{argmin}} \left\{
   \sum_{i} = (s(i) - w \cdot s(i-1))^2
 \right\} \\
 
 w^{\ast}_{s(t-2)}
-&= \underset{w}{\text{argmin}} \left\{ 
+&= \underset{w}{\text{argmin}} \left\{
   \sum_{i} = (s(i-2) - w \cdot s(i-1))^2
 \right\}
 \end{aligned}
@@ -152,10 +153,10 @@ $$
 
 $$
 \begin{aligned}
-e_{s(t), i} 
+e_{s(t), i}
 &= s(i) - w^{\ast}_{s(t)} \cdot s(i-1) \\
 
-e_{s(t-2), i} 
+e_{s(t-2), i}
 &= s(i-2) - w^{\ast}_{s(t-2)} \cdot s(i-1)
 \end{aligned}
 $$

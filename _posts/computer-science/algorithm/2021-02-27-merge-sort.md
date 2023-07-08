@@ -1,7 +1,8 @@
 ---
 title: "Merge Sort"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -31,7 +32,7 @@ Merge Sort는 \<분할 정복\>을 정말 충실히 수행하는 알고리즘이
   <img src="{{ "/images/algorithm/merge-sort-1.jpg" | relative_url }}" width="400px">
 </div>
 
-Merge Sort는 기능적으로 봤을 때, "**Merge Sort**"와 "**Merge**" 두 가지 작업만 수행하면 된다. 
+Merge Sort는 기능적으로 봤을 때, "**Merge Sort**"와 "**Merge**" 두 가지 작업만 수행하면 된다.
 
 <div class="math-statement" markdown="1">
 
@@ -121,9 +122,9 @@ p.s. 본인도 처음에는 이해가 잘 되질 않았다. 아마 $\Omega (n \l
 ``` cpp
 vector<int> merge(vector<int> left, vector<int> right) {
   int left_idx = 0, right_idx = 0;
-  
+
   vector<int> sorted;
-  
+
   while((left_idx < left.size()) && (right_idx < right.size())) {
     if (left[left_idx] <= right[right_idx]) {
       sorted.push_back(left[left_idx]);
@@ -133,17 +134,17 @@ vector<int> merge(vector<int> left, vector<int> right) {
       right_idx += 1;
     }
   }
-  
+
   for (int i = left_idx; i < left.size(); i++) {
     sorted.push_back(left[i]);
   }
-  
+
   for (int i = right_idx; i < right.size(); i++) {
     sorted.push_back(right[i]);
   }
-  
+
   return sorted;
-  
+
 }
 
 vector<int> mergeSort(vector<int> arr) {
@@ -153,7 +154,7 @@ vector<int> mergeSort(vector<int> arr) {
   int mid = arr.size() / 2;
   vector<int> leftSide = mergeSort(vector<int>(arr.begin(), arr.begin() + mid));
   vector<int> rightSide = mergeSort(vector<int>(arr.begin() + mid, arr.end()));
-  
+
   return merge(leftSide, rightSide);
 }
 ```

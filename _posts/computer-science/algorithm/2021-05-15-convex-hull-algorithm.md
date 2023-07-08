@@ -1,7 +1,8 @@
 ---
 title: "Convex hull Algorithm"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -52,7 +53,7 @@ $$
 이때, 식에 나눗셈이 있는 것은 "divide by zero"의 위험이 있기 떄문에, 식을 곱셈의 형태로 바꿔준다.
 
 $$
-(r_x - p_x) \cdot (q_y - p_y) \quad \text{vs.} \quad (q_x - p_x) \cdot (r_y - p_y) 
+(r_x - p_x) \cdot (q_y - p_y) \quad \text{vs.} \quad (q_x - p_x) \cdot (r_y - p_y)
 $$
 
 만약, 점 $r$이 직선 $\vec{pq}$의 왼쪽에 있다면, 위의 그림에서도 볼 수 있듯이, $\vec{pr}$의 기울기가 $\vec{pq}$ 보다 크게 된다. 따라서,
@@ -62,7 +63,7 @@ $$
 $$
 
 $$
-(r_x - p_x) \cdot (q_y - p_y) \quad < \quad (q_x - p_x) \cdot (r_y - p_y) 
+(r_x - p_x) \cdot (q_y - p_y) \quad < \quad (q_x - p_x) \cdot (r_y - p_y)
 $$
 
 </div>
@@ -77,7 +78,7 @@ $$
   <img src="{{ "/images/algorithm/convex-hull-3.png" | relative_url }}" width="250px">
 </div>
 
-만약 이 과정을 naive 하게 진행한다면, 
+만약 이 과정을 naive 하게 진행한다면,
 
 1. Pick two points from points set: $\displaystyle\binom{n}{2}$
 
@@ -108,7 +109,7 @@ Repeat this:<br/>
 
 </div>
 
-글로 살펴보면 알고리즘의 행동이 잘 그려지지 않는다. 일단 용어를 조금 다듬으면, 
+글로 살펴보면 알고리즘의 행동이 잘 그려지지 않는다. 일단 용어를 조금 다듬으면,
 
 - $r$는 우리가 살펴보는 직선 $\vec{pq}$의 바로 다음 정렬된 point
 - $q$는 우리의 직선 $\vec{pq}$의 끝점이다.
@@ -139,7 +140,7 @@ Repeat this:<br/>
 
 <hr/>
 
-알고리즘 테크닉 중에는 \<Convex hull trick\>라는 최적화 알고리즘이 있다. 사실 이름에 "Convex hull"이 붙었지만, \<Convex hull algorithm\>과는 전혀 다른 종류의 알고리즘이다. 
+알고리즘 테크닉 중에는 \<Convex hull trick\>라는 최적화 알고리즘이 있다. 사실 이름에 "Convex hull"이 붙었지만, \<Convex hull algorithm\>과는 전혀 다른 종류의 알고리즘이다.
 
 <hr/>
 

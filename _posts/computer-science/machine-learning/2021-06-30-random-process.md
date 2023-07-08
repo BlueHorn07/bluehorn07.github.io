@@ -1,7 +1,8 @@
 ---
 title: "Random Process"
-layout: post
-tags: ["machine_learning"]
+toc: true
+toc_sticky: true
+categories: ["Machine Learning"]
 modified_date: 2021.09.21
 readtime: 20 minutes
 ---
@@ -63,8 +64,8 @@ $$
 <span class="statement-title">Property.</span> Sample Space of Bernoulli Process<br>
 
 $$
-\Omega_{\text{BP}} 
-= \left\{ 
+\Omega_{\text{BP}}
+= \left\{
   (b_1, \dots, b_n, \dots ) \mid b_i \in \{ 0, 1 \}
   \right\}
 $$
@@ -132,7 +133,7 @@ $$
 
 <big>3. Time until the first $k$ success</big>
 
-\<Geometric Random Variable\>인 $T_1$을 확장한 개념이다. 
+\<Geometric Random Variable\>인 $T_1$을 확장한 개념이다.
 
 Let's derive a randome variable $T_k = \min \\{ i \in \mathbb{N} : \| \\{ X_i : X_i = 1 \\} \| = k\\}$ from the Bernoulli Process.
 

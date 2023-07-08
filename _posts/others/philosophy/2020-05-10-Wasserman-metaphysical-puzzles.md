@@ -1,7 +1,8 @@
 ---
 title: "Wasserman, Metaphysical Puzzles"
-layout: post
-tags: [Philosophy]
+toc: true
+toc_sticky: true
+categories: [Philosophy]
 ---
 
 
@@ -93,7 +94,7 @@ STDP, DTDP, DTSP 상황은 문제가 되지 않지만, Same-time, Same-place인 
 
 #### 주장1에 대한 반박
 **주장1**: Both Dion and Theon exist.<br>
-   
+
 첫날에 Dion과 Theon은 둘다 존재했다.<br>
 하지만, 수술 후에는 Dion과 Theon이 둘다 존재할 수 없다. 왜냐하면,<br>
 (1) Dion과 Theon은 numerically distinct하다.<br>

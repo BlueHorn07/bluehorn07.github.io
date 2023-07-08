@@ -1,7 +1,8 @@
 ---
 title: "How to save JSON array in MySQL with TypeORM"
-layout: post
-tags: [NestJS]
+toc: true
+toc_sticky: true
+categories: [NestJS]
 ---
 
 
@@ -36,7 +37,7 @@ DB Column에 array 타입을 저장하는 경우는 생각보다 자주 등장�
 +----+------------------+----------------+
 ```
 
-두 테이블을 보면, 각각 `email_id`와 `person_id`라는 foreign key를 가지고 있다. `Person`의 `Evans` 경우 특별하게 두 개의 이메일을 가지고 있어 `email_id`를 배열을 가지게 된다. 
+두 테이블을 보면, 각각 `email_id`와 `person_id`라는 foreign key를 가지고 있다. `Person`의 `Evans` 경우 특별하게 두 개의 이메일을 가지고 있어 `email_id`를 배열을 가지게 된다.
 
 즉, OneToMany/ManyToOne 관계 아래에서 fk_id Array를 발견할 수 있다.
 
@@ -110,9 +111,9 @@ JSON을 저장하는 우리에겐 이 방법도 문제가 있다.
 DB에 저장도 잘 된다. 하지만 `Get`으로 DB에 저장된 것을 확인해보면...
 
 ``` bash
-["{name: 'Baker'", 
+["{name: 'Baker'",
  "job: 'musician'}",
- "{name: 'Euler'", 
+ "{name: 'Euler'",
  "job: 'mathematician'}"]
 ```
 
@@ -183,4 +184,4 @@ async findJSONArray(): Promise<YourEntry[]> {
 
 [^1]: ManyToMany는 OneToMany/ManyToOne와 다르게 Array 기반이 아니다. ManyToManyo의 경우 **function table**을 만들어 Relation을 관리하고 기록한다.
 
-[^2]: 본인이 직접 확인해본 것은 아니지만, TypeORM에서 ProgressDB에 대해서는  `jonb`를 통해 JSON 배열 저장 방식을 구현한 것 같았다. 
+[^2]: 본인이 직접 확인해본 것은 아니지만, TypeORM에서 ProgressDB에 대해서는  `jonb`를 통해 JSON 배열 저장 방식을 구현한 것 같았다.

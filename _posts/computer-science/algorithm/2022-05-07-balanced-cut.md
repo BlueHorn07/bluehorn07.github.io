@@ -1,7 +1,8 @@
 ---
 title: "Balanced Cut"
-layout: post
-tags: ["algorithm"]
+toc: true
+toc_sticky: true
+categories: ["Algorithm"]
 ---
 
 
@@ -30,7 +31,7 @@ Given a graph and a budget $b$, find a cut with at most $b$ edges.
 
 </div>
 
-이 문제는 Network Flow 알고리즘으로 정말 쉽게 풀 수 있다. 
+이 문제는 Network Flow 알고리즘으로 정말 쉽게 풀 수 있다.
 
 - 각 edge에 1의 capacity를 할당
 - source 노드 $s$를 정한다.

@@ -1,7 +1,8 @@
 ---
 title: "Auto-Regressive Model"
-layout: post
-tags: ["time_series_analysis"]
+toc: true
+toc_sticky: true
+categories: ["Time Series Analysis"]
 ---
 
 # 과거가 미래를 예측한다
@@ -132,7 +133,7 @@ $$
 
 $$
 \begin{aligned}
-  \sigma_Z^2 
+  \sigma_Z^2
   &= \text{Var}(Z(t)) \\
   &= \phi_1^2 \cdot \text{Var}(Z(t)) + \text{Var}(\epsilon(t)) \\
   &= \phi_1^2 \cdot \sigma_Z^2 + \sigma^2 \\

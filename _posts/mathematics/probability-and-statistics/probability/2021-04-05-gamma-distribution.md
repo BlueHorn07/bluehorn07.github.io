@@ -1,7 +1,8 @@
 ---
 title: "Gamma Distribution"
-layout: post
-tags: ["probability"]
+toc: true
+toc_sticky: true
+categories: ["Probability"]
 ---
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
@@ -104,14 +105,14 @@ $$
 Let $\alpha > 0$ and $\beta > 0$. We say that $X$ has a \<**Gamma Distribution**\> with a shape parameter $\alpha$ and a scale parameter $\beta$, if its pdf is given by
 
 $$
-f(x; \alpha, \beta) 
+f(x; \alpha, \beta)
 = \begin{cases}
     C_{\alpha, \beta} \cdot x^{\alpha-1} e^{-\frac{x}{\beta}} & \text{for } x > 0 \\
     \quad 0 & \text{else}
 \end{cases}
 $$
 
-이때, 계수 $C_{\alpha, \beta}$는 
+이때, 계수 $C_{\alpha, \beta}$는
 
 $$
 C_{\alpha, \beta} \cdot \int^{\infty}_0 x^{\alpha - 1} e^{-\frac{x}{\beta}} \; dx = 1
@@ -120,8 +121,8 @@ $$
 이 되도록 하는 $C_{\alpha, \beta}$를 선택한다. 이것을 잘 정리하면,
 
 $$
-C_{\alpha, \beta} 
-= \frac{1}{\displaystyle \int^{\infty}_0 x^{\alpha - 1} e^{-\frac{x}{\beta}} \; dx} 
+C_{\alpha, \beta}
+= \frac{1}{\displaystyle \int^{\infty}_0 x^{\alpha - 1} e^{-\frac{x}{\beta}} \; dx}
 = \frac{1}{\Gamma(\alpha) \cdot \beta^{\alpha}}
 $$
 
@@ -169,7 +170,7 @@ In fact, $X$ can be written as $X = X_1 + \cdots + X_n$ where $X_i$'s are indepe
 
 <span class="statement-title">Theorem.</span><br/>
 
-If $X \sim \text{Gamma}(\alpha, \beta)$, then 
+If $X \sim \text{Gamma}(\alpha, \beta)$, then
 
 - $E[X] = \alpha \beta$
 - $\text{Var}(X) = \alpha \beta^2$
@@ -214,13 +215,13 @@ E[X^2] &= \int^{\infty}_0 x^2 f(x) dx \\
 \end{aligned}
 $$
 
-따라서, 
+따라서,
 
 $$
 \begin{aligned}
 \text{Var}(X) &= E[X^2] - (E[X])^2 \\
             &= (\alpha^2 - \alpha) \beta^2 - \alpha^2 \beta^2 \\
-            &= \alpha \beta^2 
+            &= \alpha \beta^2
 \end{aligned}
 $$
 

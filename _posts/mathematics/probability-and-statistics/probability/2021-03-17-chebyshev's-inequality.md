@@ -1,7 +1,8 @@
 ---
 title: "Chebyshev's Inequality"
-layout: post
-tags: ["probability"]
+toc: true
+toc_sticky: true
+categories: ["Probability"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -32,11 +33,11 @@ Supp. a RV $X$ has $\mu = 8$ and $\sigma^2 = 9$. Show that $P(0 < X < 16) \ge \d
 
 </div>
 
-Sol. 
+Sol.
 
 $$
 \begin{aligned}
-P(0 < X < 16) &= P(-8 < X -\mu <8) \\    
+P(0 < X < 16) &= P(-8 < X -\mu <8) \\
 &= 1 - P(\left| X - \mu \right| \ge 8) \\
 &\ge 1 - \frac{\sigma^2}{8^2} = 1 - \frac{9}{64} = \frac{55}{64}
 \end{aligned}
@@ -51,7 +52,7 @@ $$
 <span class="statement-title">*Proof*.</span><br>
 
 $$
-P \left( \left| X - \mu \right| \ge \lambda \right) = \int_{\{ x \; : \; \left| x - \mu \right| \ge \lambda \}} 1 \cdot f(x) dx \le \int^{\infty}_{-\infty} 1 \cdot f(x) dx 
+P \left( \left| X - \mu \right| \ge \lambda \right) = \int_{\{ x \; : \; \left| x - \mu \right| \ge \lambda \}} 1 \cdot f(x) dx \le \int^{\infty}_{-\infty} 1 \cdot f(x) dx
 $$
 
 이때, $P \left( \left\| X - \mu \right\| \ge \lambda \right)$에서 $\left\| X - \mu \right\| \ge \lambda$라는 조건이 있으므로

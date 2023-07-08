@@ -1,7 +1,8 @@
 ---
 title: "Fermat's Theorem on Sums of Two Squares"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -36,7 +37,7 @@ First, Supp. that $p = a^2 + b^2$.
 
 Now $a$ and $b$ cannot both be even or both be odd since $p$ is an odd number.
 
-If $a = 2r$ and $b = 2s + 1$, 
+If $a = 2r$ and $b = 2s + 1$,
 
 then $a^2 + b^2 = 4 r^2 + 4(s^2+s)+1$.
 

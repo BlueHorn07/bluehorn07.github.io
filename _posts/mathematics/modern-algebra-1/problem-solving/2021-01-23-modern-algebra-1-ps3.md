@@ -1,7 +1,8 @@
 ---
 title: "Modern Algebra I - PS3"
-layout: post
-tags: ["Modern Algebra1", "Problem Solving"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1", "Problem Solving"]
 ---
 
 
@@ -68,7 +69,7 @@ Let $q$ be the closest point to $b/a$ on $\mathbb{Z}[\zeta]$.
 
 Let $r$ be $r = b - qa$.
 
-Then check that 
+Then check that
 
 $$
 \left| r \right| = \left| b - qa \right| = \left| \frac{b}{a} - q \right| \left| a \right|
@@ -78,7 +79,7 @@ $$
 
 $\dfrac{b}{a}$를 제대로 구하면, $\dfrac{b}{a} = s + t \zeta \in \mathbb{Q}[\zeta]$이다.
 
-이때 $q$를 $\dfrac{b}{a}$에 가장 가까운 $\mathbb{Z}[\zeta]$로 설정했으므로 
+이때 $q$를 $\dfrac{b}{a}$에 가장 가까운 $\mathbb{Z}[\zeta]$로 설정했으므로
 
 $$
 q = x + y\zeta, \quad \textrm{where} \quad \left|x-s\right| \le \frac{1}{2} \quad \textrm{and} \quad \left|y-t\right| \le \frac{1}{2}

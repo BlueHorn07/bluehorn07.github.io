@@ -1,7 +1,8 @@
 ---
 title: "Elementary Complex Functions"
-layout: post
-tags: ["Complex Variable"]
+toc: true
+toc_sticky: true
+categories: ["Complex Variable"]
 ---
 
 

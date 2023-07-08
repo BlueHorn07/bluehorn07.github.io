@@ -1,7 +1,8 @@
 ---
 title: "Principal Ideal & PID"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -69,7 +70,7 @@ If $F$ is a field, every ideal in $F[x]$ is principal. <small>($F[x]$ is PID)</s
 <details>
 <div class="math-statement" markdown="1">
 
-Let $N \trianglelefteq F[x]$. 
+Let $N \trianglelefteq F[x]$.
 
 **(Case 1)**
 
@@ -110,7 +111,7 @@ $$
 
 **(Case 3)** $\deg g(x) \ge 1$
 
-let $\forall \; f(x) \in N$. 
+let $\forall \; f(x) \in N$.
 
 then, by "Division Algorithm" $f(x) = g(x) q(x) + r(x)$ where $r(x) = 0$ or $\deg r(x) < \deg g(x)$.
 
@@ -247,7 +248,7 @@ $\implies$ $\ker \phi \subseteq \left< x^2 - 2 \right>$.
 
 $\therefore \ker \phi = \left< x^2 - 2 \right>$.
 
-By FHT, 
+By FHT,
 
 $$
 \begin{aligned}

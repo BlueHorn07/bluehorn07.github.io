@@ -1,7 +1,8 @@
 ---
 title: "Bagging & Random Forest"
-layout: post
-tags: [applied_statistics]
+toc: true
+toc_sticky: true
+categories: ["Applied Statsitcs"]
 ---
 
 
@@ -130,8 +131,8 @@ $$
 이때, \<Bagging\>에 의해 개선된 정도는 아래와 같다.
 
 $$
-E_\mathbf{Z} \left[ E_{X} \left[ f_A(X) - \hat{f}(X) \right]^2 \right] 
-= \text{Var}\left( \hat{f}(X) - f_A(X) \right)  
+E_\mathbf{Z} \left[ E_{X} \left[ f_A(X) - \hat{f}(X) \right]^2 \right]
+= \text{Var}\left( \hat{f}(X) - f_A(X) \right)
 $$
 
 <br/>
@@ -179,7 +180,7 @@ $$
 0 \sigma^2 + \frac{1-0}{B} \sigma^2 = \frac{\sigma^2}{B}
 $$
 
-만약 correlation $\rho$가 1인 경우, 즉 $X = X_i$라면, 
+만약 correlation $\rho$가 1인 경우, 즉 $X = X_i$라면,
 
 $$
 \rho \sigma^2 + \frac{1-1}{B} \sigma^2 = \sigma^2 > \frac{\sigma^2}{B}

@@ -1,7 +1,8 @@
 ---
 title: "`.env` 파일 사용하기"
-layout: post
-tags: ["NestJS"]
+toc: true
+toc_sticky: true
+categories: ["NestJS"]
 ---
 
 <br/>
@@ -14,7 +15,7 @@ NestJS를 공부하면서 개인적인 용도로 정리한 글입니다. 지적�
 
 현재 NestJS 앱을 `TypeORM`으로 MySQL DB와 연결을 해둔 상태다.
 
-그런데, `app.module.ts`에 아래와 같이 DB 설정이 하드 코딩 되어 있는 상태라 개발 환경에 유연하게 대처하기 힘들었다. 
+그런데, `app.module.ts`에 아래와 같이 DB 설정이 하드 코딩 되어 있는 상태라 개발 환경에 유연하게 대처하기 힘들었다.
 
 ``` ts
 TypeOrmModule.forRoot({

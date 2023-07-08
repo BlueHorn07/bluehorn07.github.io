@@ -1,7 +1,8 @@
 ---
 title: "Fundamental Theorem of Arithmetic"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -32,7 +33,7 @@ $n\mathbb{Z} = \left< n \right>$
 
 </div>
 
-Fundamental Theorem of Arithmetic <small>(산술의 기본정리)</small>은 "Unique Factorization Theorem"으로도 불린다. 
+Fundamental Theorem of Arithmetic <small>(산술의 기본정리)</small>은 "Unique Factorization Theorem"으로도 불린다.
 
 <br>
 

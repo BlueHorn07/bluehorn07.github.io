@@ -1,7 +1,8 @@
 ---
 title: "Variance Estimation"
-layout: post
-tags: ["statistics"]
+toc: true
+toc_sticky: true
+categories: ["Statistics"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -46,7 +47,7 @@ $$
 Therefore, the confidence interval for $\sigma^2$ is
 
 $$
-\left( 
+\left(
   \frac{(n-1)\cdot s^2}{\chi^2_{\alpha/2}},
   \frac{(n-1)\cdot s^2}{\chi^2_{1 - \alpha/2}}
 \right)
@@ -88,15 +89,15 @@ Note that $f_{1-\alpha/2} \, (n_1 - 1, n_2 - 1) = \dfrac{1}{f_{\alpha/2} \, (n_2
 Therefore, the confidence interval for $\sigma_1^2 / \sigma_2^2$ is
 
 $$
-\left( 
-  \frac{s_1^2}{s_2^2} \cdot \frac{1}{f_{\alpha/2} \, (n_1 - 1, n_2 - 1)}, \; 
+\left(
+  \frac{s_1^2}{s_2^2} \cdot \frac{1}{f_{\alpha/2} \, (n_1 - 1, n_2 - 1)}, \;
   \frac{s_1^2}{s_2^2} \cdot f_{\alpha/2} \, (n_2 - 1, n_1 - 1)
 \right)
 $$
 
 <hr/>
 
-지금까지 "추정(Statistical Estimation)" 과정에 대해 살펴보았다. $\bar{x}$와 $s^2$와 같이 **Point Estimator**를 구하는 경우도 있었고, $\bar{x} \pm z_{\alpha/2} \cdot s / \sqrt{n}$ 과 같이 **Interval Estimator**를 구하는 경우도 있었다. 또, Single Sample에서 Estimator를 구하는 것도 있었고, Two Samples에서 Estimator를 구하는 것도 있었다. 
+지금까지 "추정(Statistical Estimation)" 과정에 대해 살펴보았다. $\bar{x}$와 $s^2$와 같이 **Point Estimator**를 구하는 경우도 있었고, $\bar{x} \pm z_{\alpha/2} \cdot s / \sqrt{n}$ 과 같이 **Interval Estimator**를 구하는 경우도 있었다. 또, Single Sample에서 Estimator를 구하는 것도 있었고, Two Samples에서 Estimator를 구하는 것도 있었다.
 
 그러나 지금까지 살펴본 방식 외에도 또다른 Estimation 방법이 있다 😲 \<**MLE; Maximum Likelihood Estimation**\>는 Sample Distribution을 재현할 확률이 가장 높은 Parameter $\theta$를 찾는 방식으로 Estimator를 찾는다. \<MLE\>는 당연히 Point Estimator를 제시하며, 그 과정에서 $\theta$에 대해 편미분을 수행한다.
 

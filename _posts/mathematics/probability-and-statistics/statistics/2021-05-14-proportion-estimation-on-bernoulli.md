@@ -1,7 +1,8 @@
 ---
 title: "Proportion Estimation on Bernoulli Distribution"
-layout: post
-tags: ["statistics"]
+toc: true
+toc_sticky: true
+categories: ["Statistics"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -46,8 +47,8 @@ $$
 then, the confidence interval is
 
 $$
-\hat{p} - z_{\alpha/2} \cdot \sqrt{\frac{p(1-p)}{n}} 
-\; \le \; p \; \le \; 
+\hat{p} - z_{\alpha/2} \cdot \sqrt{\frac{p(1-p)}{n}}
+\; \le \; p \; \le \;
 \hat{p} + z_{\alpha/2} \cdot \sqrt{\frac{p(1-p)}{n}}
 $$
 
@@ -57,11 +58,11 @@ $$
 
 [Solution 2] replace $p$ by $\hat{p}$ <small>// if $n$ is large, $\hat{p} \rightarrow p$ by LLN</small>
 
-Therefore, we the $n$ is large, 
+Therefore, we the $n$ is large,
 
 $$
-\hat{p} - z_{\alpha/2} \cdot \sqrt{\frac{\hat{p}(1-\hat{p})}{n}} 
-\; \le \; p \; \le \; 
+\hat{p} - z_{\alpha/2} \cdot \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
+\; \le \; p \; \le \;
 \hat{p} + z_{\alpha/2} \cdot \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
 $$
 
@@ -83,7 +84,7 @@ Q. How large should the sample size be so that the error is at most $\epsilon$?
 
 $$
 \begin{aligned}
-z_{\alpha/2} \cdot \sqrt{\frac{\hat{p}\hat{q}}{n}} 
+z_{\alpha/2} \cdot \sqrt{\frac{\hat{p}\hat{q}}{n}}
 &\le \epsilon \\
 z_{\alpha/2}^2 \cdot \frac{\hat{p}\hat{q}}{n}
 &\le \epsilon^2 \\
@@ -134,7 +135,7 @@ $$
 \frac{(\hat{p_1} - \hat{p_2}) - (p_1 - p_2)}{\sqrt{\hat{p}_1\hat{q}_1/n_1 + \hat{p}_2\hat{q}_2/n_2}}
 $$
 
-Then, the $100(1-\alpha)\%$ confidence interval for $p_1 - p_2$ is 
+Then, the $100(1-\alpha)\%$ confidence interval for $p_1 - p_2$ is
 
 $$
 \left( (\hat{p_1} - \hat{p_2}) - z_{\alpha/2} \cdot \sqrt{\dfrac{\hat{p}_1\hat{q}_1}{n_1} + \dfrac{\hat{p}_2\hat{q}_2}{n_2}}, \;
@@ -151,12 +152,12 @@ $$
 \frac{\bar{X} - \mu}{S / \sqrt{n}} \sim t(n-1)
 $$
 
-\<Proportion Estimation\>에서도 popualtion proportion $p$의 값을 모르기에 sample proportion인 $\hat{p}$를 대신 사용 했다. 
+\<Proportion Estimation\>에서도 popualtion proportion $p$의 값을 모르기에 sample proportion인 $\hat{p}$를 대신 사용 했다.
 
 $$
-\frac{\bar{X} - \mu}{\sigma / \sqrt{n}} 
-= \frac{\hat{p} - p}{\sqrt{pq} / \sqrt{n}} 
-= \frac{\hat{p} - p}{\sqrt{\hat{p}\hat{q}} / \sqrt{n}} 
+\frac{\bar{X} - \mu}{\sigma / \sqrt{n}}
+= \frac{\hat{p} - p}{\sqrt{pq} / \sqrt{n}}
+= \frac{\hat{p} - p}{\sqrt{\hat{p}\hat{q}} / \sqrt{n}}
 \approx N(0, 1)
 $$
 

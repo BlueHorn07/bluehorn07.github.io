@@ -1,7 +1,8 @@
 ---
 title: "Unique Factorization Domain - 1"
-layout: post
-tags: ["Modern Algebra1"]
+toc: true
+toc_sticky: true
+categories: ["Modern Algebra1"]
 ---
 
 
@@ -37,7 +38,7 @@ $a = by = (ax)y = axy$
 
 For two elts $a$, $b$ in a (Ring + Unity),
 
-$a$ and $b$ are associates each other, 
+$a$ and $b$ are associates each other,
 
 if one can be obtained from the other by multiplying by some unit.
 
@@ -106,7 +107,7 @@ In UFD, Irreducible elt is also a Prime elt.
 </div>
 
 일반적으로 Prime element면 Irreducible element다. [link]({{"2020/12/27/Prime-Irreducible-Element.html#theorem-prime---irreducible" | relative_url}}) <br>
-하지만, Irreduciblility가 Primality를 항상 보장하는 것은 아니다. 
+하지만, Irreduciblility가 Primality를 항상 보장하는 것은 아니다.
 
 그런데 UFD에서는 특별히 Irreducibility가 Primality를 보장한다!!
 
@@ -130,7 +131,7 @@ $$
 ab = (a_1 ... a_n)(b_1 ... b_m) = p \cdot (c_1 ... c_k)
 $$
 
-이때 $a$, $b$, $c$의 factorization이 unique 하므로 $p$는 $ab$의 irreducible 중 하나와 associate 해야 한다. 
+이때 $a$, $b$, $c$의 factorization이 unique 하므로 $p$는 $ab$의 irreducible 중 하나와 associate 해야 한다.
 
 즉, $p \sim a_i$ or $p \sim b_i$.
 
@@ -146,7 +147,7 @@ $$
 
 마찬가지로 $p \sim b_i$를 가정하면, $p \mid b$를 얻는다.
 
-따라서 $p \mid ab$에 대해 $p \mid a$ or $p \mid b$이므로 
+따라서 $p \mid ab$에 대해 $p \mid a$ or $p \mid b$이므로
 
 Irreducible element인 $p$는 Prime element이기도 하다. $\blacksquare$
 
@@ -160,7 +161,7 @@ Irreducible element인 $p$는 Prime element이기도 하다. $\blacksquare$
 
 $D$: Integral Domain
 
-$D$ is an UFD 
+$D$ is an UFD
 
 $\iff$ Every non-zero elt is a product of finitely many prime elt.
 

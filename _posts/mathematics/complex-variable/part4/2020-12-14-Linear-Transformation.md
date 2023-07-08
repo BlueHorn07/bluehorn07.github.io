@@ -1,7 +1,8 @@
 ---
 title: "Linear Transform"
-layout: post
-tags: ["Complex Variable"]
+toc: true
+toc_sticky: true
+categories: ["Complex Variable"]
 ---
 
 
@@ -103,10 +104,10 @@ For a transform $T(z) = \frac{1}{z}$, Let $T(0) = \infty$ and $T(\infty) = 0$, T
 
 </div>
 
-<div class="img-wrapper"> 
+<div class="img-wrapper">
   <img src="https://1millionmonkeystyping.files.wordpress.com/2014/02/joh-riemannsphere01.gif" style="width:60%;">
   <p>Picture from <a href="https://ibmathsresources.com/tag/4th-dimension/">link</a></p>
-</div> 
+</div>
 
 [^1]
 

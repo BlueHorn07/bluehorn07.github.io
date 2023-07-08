@@ -1,7 +1,8 @@
 ---
 title: "Naive Bayes Classifier"
-layout: post
-tags: [applied_statistics]
+toc: true
+toc_sticky: true
+categories: ["Applied Statsitcs"]
 ---
 
 2021-1학기, 대학에서 '데이터 마이닝' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
@@ -22,9 +23,10 @@ $$
 
 <br><span class="statement-title">TOC.</span><br>
 
-- [Navie Assumption; Strong Feautre Independence](#naive-assumption)
-- [Naive Bayes Classifer](#naive-bayes-classifier)
+- [Naive Assumption](#naive-assumption)
+- [Naive Bayes Classifier](#naive-bayes-classifier)
 - [Gaussian Naive Bayes](#gaussian-naive-bayes)
+  - [참고자료](#참고자료)
 
 <hr/>
 
@@ -56,9 +58,9 @@ $$
 
 $$
 \begin{aligned}
-y 
+y
 &= \underset{c_k}{\text{argmax}} \; p(c_k \mid \mathbf{x}) \\
-&= \underset{c_k}{\text{argmax}} \; p(c_k) \cdot p(\mathbf{x} \mid c_k) 
+&= \underset{c_k}{\text{argmax}} \; p(c_k) \cdot p(\mathbf{x} \mid c_k)
 \end{aligned}
 $$
 
@@ -68,7 +70,7 @@ Data $\mathbf{x}$가 feature $a_1, a_2, \dots, a_n$으로 구성되어 있다고
 
 $$
 \begin{aligned}
-p(c_k \mid a_1, \dots, a_n) 
+p(c_k \mid a_1, \dots, a_n)
 &= \frac{p(c_k) \cdot p(a_1, \dots, a_n \mid c_k)}{p(a_1, \dots, a_n)} \\
 &\propto p(c_k) \cdot p(a_1, \dots, a_n \mid c_k)
 \end{aligned}
@@ -87,7 +89,7 @@ $$
 
 $$
 \begin{aligned}
-p(c_k \mid a_1, \dots, a_n) 
+p(c_k \mid a_1, \dots, a_n)
 &\propto p(c_k) \cdot p(a_1, \dots, a_n \mid c_k) \\
 &= p(c_k) \cdot p(a_1 \mid c_k) \cdots p(a_n \mid c_k) \\
 &= p(c_k) \cdot \prod^n_{i=1} p(a_n \mid c_k)
@@ -97,7 +99,7 @@ $$
 만약 위의 식에서 $\propto$를 제거하고 등식으로 바꾸면 아래와 같다.
 
 $$
-p(c_k \mid a_1, \dots, a_n) 
+p(c_k \mid a_1, \dots, a_n)
 = \frac{\displaystyle p(c_k) \cdot \prod^n_{i=1} p(a_n \mid c_k)}{\displaystyle\sum_i p(c_i) p(\mathbf{x} \mid c_i)}
 $$
 
@@ -115,7 +117,7 @@ $$
 
 $$
 \begin{aligned}
-p(c_k \mid a_1, \dots, a_n) 
+p(c_k \mid a_1, \dots, a_n)
 &\propto p(c_k) \cdot p(a_1, \dots, a_n \mid c_k) \\
 &= p(c_k) \cdot \prod^n_{i=1} p(a_n \mid c_k) \\
 &= p(c_k) \cdot \prod^n_{i=1} \frac{1}{\sqrt{2\pi \sigma_{i, c_k}^2}} \cdot \exp \left( - \frac{(a_i - \mu_{c_k})}{2 \sigma_{i, c_k}^2} \right)

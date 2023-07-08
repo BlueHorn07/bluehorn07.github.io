@@ -1,7 +1,8 @@
 ---
 title: "Point Estimation"
-layout: post
-tags: ["statistics"]
+toc: true
+toc_sticky: true
+categories: ["Statistics"]
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
@@ -169,7 +170,7 @@ $$
 \end{aligned}
 $$
 
-For $\sum w_i = 1$, 
+For $\sum w_i = 1$,
 
 $$
 0 \le \sum^n_i \left(w_i - \frac{1}{n}\right)^2 = \sum w_i^2 - \frac{2}{n} \sum w_i + n \cdot \frac{1}{n^2} = \sum w_i^2 - \frac{1}{n}
@@ -229,7 +230,7 @@ Show that $\text{Var}(S^2) > \text{Var}(\hat{S}^2)$.
 
 <span class="statement-title">Definition.</span> MSE; Mean Squared Error 🔥<br>
 
-The \<MSE; Mean Squared Error\> of an estimator is defined as 
+The \<MSE; Mean Squared Error\> of an estimator is defined as
 
 $$
 \text{MSE} := E \left[ \left( \hat{\Theta} - \theta \right)^2 \right]
@@ -242,8 +243,8 @@ $$
 <span class="statement-title">Claim.</span><br/>
 
 $$
-\text{MSE} 
-:= E \left[ \left( \hat{\Theta} - \theta \right)^2 \right] 
+\text{MSE}
+:= E \left[ \left( \hat{\Theta} - \theta \right)^2 \right]
 = \text{Var}(\hat{\Theta}) + \left[ \text{Bias} \right]^2
 $$
 
