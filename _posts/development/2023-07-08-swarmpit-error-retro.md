@@ -6,7 +6,7 @@ categories: ["Develop", "Kubernetes"]
 tags: ["Docker"]
 ---
 
-Docker Swasrmp 클러스터를 운영하면서 겪었던 장애 사례들을 모아 간략히 회고 하고자 한다.
+Docker swarm 클러스터를 운영하면서 겪었던 장애 사례들을 모아 간략히 회고 하고자 한다.
 
 <hr/>
 
@@ -24,9 +24,11 @@ Dangling image란 더이상 사용하지 않는 도커 이미지를 말한다. �
 
 이상하게도 워커 노드에서만 `docker pull`이 안 되는 현상이 벌어졌다!
 
-<TODO: 사진 추가>
+<div class="img-wrapper" style="text-align: center">
+  <img src="{{ "/images/development/docker-image-pull-fail.png" | relative_url }}" width="50%" style="min-width: 360px">
+</div>
 
-요리조리 살펴보니 워커 노드에서 dangling 이미지가 너-무 많이 쌓여서 워커 노드의 스토리지 사용량이 "100%"가 되어버린 것이다!
+요리조리 살펴보니 워커 노드에서 **dangling 이미지가 너-무 많이 쌓여서 워커 노드의 스토리지 사용량이 "100%"가 되어버린 것**이다!
 
 그길로 워커 노드에 접속해서 `docker image prune`을 갈겨 줬더니 스토리지 용량이 풀리면서 Swarm 클러스터가 정상 동작하기 시작했다!
 
@@ -44,14 +46,16 @@ K8s GC는 아래의 작업들을 수행하며 클러스터 리소스를 정리�
 - "Unused Containers and Container Images"
 - 등등...
 
-### K8s Garbage Collection: dangling images
+### K8s Image GC
 
 K8s의 `kubelet`은 주기적으로 아래 작업을 수행한다.
 
 - 5분 마다 dangling 이미지를 삭제
 - 1분 마다 unused 컨테이너를 삭제
 
-<TODO: 사진 추가>
+<div class="img-wrapper">
+  <img src="{{ "/images/development/kubelet-image-gc.png" | relative_url }}" width="50%" style="min-width: 360px">
+</div>
 
 그렇다고 image GC 과정이 5분 마다 모든 dangling image를 삭제하는 것은 아닌데, kubelet의 옵션인 `imageGCHighThresholdPercent`와 `imageGCLowThresholdPercent`를 기준으로 image GC를 수행한다.
 
@@ -86,31 +90,30 @@ services:
     logging:
       drvier: local
       options:
-        max-size: 10m
+        max-size: 15m
 ```
 
-로그를 10분 정도 유지하는 건 리소스에 전혀 부담되지 않을 것 같았다. 게다가 요 옵션을 켜면, 워커 노드에서 귀찮게 `docker logs`로 확인할 필요 없이 Swarmpit 웹에서 바로 로그를 확인할 수 있다!
+<div class="img-wrapper" style="text-align: center">
+  <img src="{{ "/images/meme/relax.png" | relative_url }}" style="min-width: 240px">
+</div>
 
-
-<TODO: 사진 추가>
-
+로그를 15분 정도 유지하는 건 전혀 부담되지 않을 것 같았다. 게다가 요 옵션을 켜면, 워커 노드에서 귀찮게 `docker logs`로 확인할 필요 없이 Swarmpit 웹에서 바로 로그를 확인할 수 있다!
 
 
 <hr/>
-
 
 # Deploy RollBack 옵션 추가
 
 Docker Service의 처음 설정되어 있던 Deploy 옵션은 아래 사진과 같다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/develop/swarm-retro-rollback.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/development/swarm-retro-rollback.png" | relative_url }}" width="600px">
 </div>
 
 그런데 이렇게 설정하니 종종 있는 Deploy Fail에서 서비스가 아예 죽어버리는 문제가 있었다. 그래서 옵션을 아래와 같이 조정해 Rollback 할 수 있도록 변경했다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/develop/swarm-retro-rollback-2.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/development/swarm-retro-rollback-2.png" | relative_url }}" width="600px">
 </div>
 
 요 작업을 진행하면서 Docker Swarm의 Update/Rollback 옵션의 의미를 살펴봤는데, 아래와 같다.
