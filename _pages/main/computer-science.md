@@ -3,25 +3,28 @@ title: Computer Science
 permalink: /topic/computer-science
 ---
 
-<div class="statement">
-
 "All stable process we shall predict, All unstable process we shall control." - von Neumann
+{: .notice}
 
-</div>
+고등학교 첫 룸메가 컴공과를 지망하는 걸보고 따라서 공부하다가 결국 컴공과에 와버렸습니다;; 컴공과 공부를 너무 열심히 했나... 이제는 평소 생각마저 Algorithmic 하게 하는 경지에 이르렀습니다..!?
+
+<hr/>
 
 # [Algorithms]({{"/category/algorithm" | relative_url}})
 
 2020-1학기 POSTECH 안희갑 교수님의 『Algorithm(CSED331)』 수업 내용을 전부 정리하였습니다. 대학 수준 알고리즘을 스스로 공부하며 나아가는데 필수적인 지식을 담고 있습니다. 🍹
 
-## [Problem Solving]({{"/category/problem-solving" | relative_url}})
+<hr/>
 
-알고리즘 실전편으로 백준 문제를 풀고, 종만북을 읽으면서 보았던 좋은 문제들을 담았습니다. 머릿속으로 이해한 굳은 지식 보다는 문제를 직접 해결하면서 실력이 성장함을 느낍니다. 🎣
+# [Problem Solving]({{"/category/problem-solving" | relative_url}})
+
+알고리즘 실전편으로 백준 문제를 풀고, 종만북을 읽으면서 보았던 좋은 문제들을 담았습니다. 머릿속으로 이해하는 것도 재밌지만, 문제를 직접 해결하면서 실력이 성장함을 느낍니다. 🎣
 
 <hr/>
 
 # [Statistical Data Mining]({{"/category/statistical-data-mining" | relative_url}})
 
-2021-1학기 POSTECH 채민우 교수님의 “통계적 데이터 마이닝(IMEN472)” 수업 내용을 일부 정리 했습니다. 학부에서 들은 수업 중 제일 어려운 난이도 였지만 수업을 통해 제일 많이 성장했습니다. 학부 수준의 ML 모델과 접근을 배울 수 있었습니다. 현재 데이터 사이언티스트로 업무를 수행하는데 가장 큰 도움이 된 수업입니다. 👍
+2021-1학기 POSTECH 채민우 교수님의 “통계적 데이터 마이닝(IMEN472)” 수업 내용을 일부 정리 했습니다. 학부에서 들은 수업 중 제일 어려운 난이도 였지만 수업을 통해 제일 많이 성장했습니다. 학부 수준의 ML 모델과 접근을 배울 수 있었습니다. 데이터 사이언티스트의 업무를 수행하는데 가장 큰 도움이 된 수업입니다. 👍
 
 <hr/>
 

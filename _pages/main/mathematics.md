@@ -3,15 +3,12 @@ title: Mathematics
 permalink: /topic/mathematics
 ---
 
-<div class="statement">
-
 "The essence of mathematics lies in its freedom" - Georg Cantor
+{: .notice}
 
-</div>
+'공대생이라면! 선형대수, 미분방정식, 복소함수론, 이산수학 정도는 들어야지!'라는 생각(~~꼰대..?~~)으로 수학과 과목들을 들었습니다. 그렇게 수학과를 복수 전공하는 컴공과 학생이 되었습니다 😵‍💫
 
-'공대생이라면! 선형대수, 미분방정식, 복소함수론, 이산수학 정도는 들어야지!'라는 생각으로 수학과 과목들을 들었습니다. 그렇게 수학과를 복수 전공하는 컴공과 학생이 되었습니다 😵‍💫
-
-# [Calculus]({{"/category/calculus.html" | relative_url}}) 
+# [Calculus]({{"/category/calculus.html" | relative_url}})
 
 고등학교부터 AP 수업으로 공부했던 과목입니다. 대학에서 배우는 모든 수학의 기초가 되는 과목으로 꾸준히 복습해야 하는 것 같습니다 🚀
 
