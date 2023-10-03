@@ -5,10 +5,7 @@ toc: true
 toc_sticky: true
 ---
 
-<div class="img-wrapper">
-  <img src="{{ "/images/modern-algebra-1/group_meme.jpg" | relative_url }}">
-  <br/>
-</div>
+![](/images/modern-algebra-1/group_meme.jpg){: .align-center}
 
 # Group
 

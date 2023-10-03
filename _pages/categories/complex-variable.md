@@ -7,9 +7,7 @@ toc_sticky: true
 
 응용복소함수론(MATH210)
 
-<div class="img-wrapper">
-<img src="{{ "/images/complex-variable/complex-variable-meme.jpg" | relative_url}}" height="450px">
-</div>
+![](/images/complex-variable/complex-variable-meme.jpg){: .align-center}
 
 <hr/>
 
