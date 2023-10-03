@@ -10,7 +10,7 @@ categories: ["Modern Algebra1", "Problem Solving"]
 
 <hr>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $R$ be an integral domian. A non-zero element $p \in R$ is called prime if $\left< p \right>$ is a prime ideal.
 

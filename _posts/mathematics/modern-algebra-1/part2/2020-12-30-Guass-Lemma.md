@@ -36,7 +36,7 @@ categories: ["Modern Algebra1"]
 
 <span class="statement-title">Definition.</span> GCD in UFD<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $D$ be a UFD, and $a_1$, $a_2$, ..., $a_n$ be non-zero elts of $D$.
 
@@ -67,7 +67,7 @@ UFD에서 두 개의 GCD $d$, $d'$가 존재한다고 가정해보자. 그러면
 
 <span class="statement-title">Definition.</span> content & primitive part<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 The **<u>content</u>** of (polynomial with integer coeffi-.) = $\gcd$ of it coeffi-.
 
@@ -81,7 +81,7 @@ The **<u>primitive part</u>** of polynomial = quotient of polynomial by its cont
 
 <span class="statement-title">Definition.</span> Primitive Polynomial<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 A polynomial is **<u>primitive</u>**, if its content equals 1.
 
@@ -96,7 +96,7 @@ A polynomial is **<u>primitive</u>**, if its content equals 1.
 
 <span class="statement-title">Lemma 45.23</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 If $D$ is a UFD,
 
@@ -129,7 +129,7 @@ By definition of gcd $c$, the left polynomial $g(x)$ is a primitive polynomial. 
 
 <span class="statement-title">Lemma 45.25</span> Gauss's Lemma<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 If $D$ is a UFD, then a product of two primitive polynomials in $D[x]$ is again primitive.
 

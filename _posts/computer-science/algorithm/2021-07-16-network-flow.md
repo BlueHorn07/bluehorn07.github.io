@@ -23,7 +23,7 @@ categories: ["Algorithm"]
 
 좀더 formal 하게 기술하면 아래와 같다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 For a directed graph $G = (V, E)$, we have two special nodes source $s$ and sink $t$. And each edges has capacity $c_e > 0$, repectively.
 
@@ -80,7 +80,7 @@ Find an $s-t$ path whose edges $(u, v)$ can be of two types:
 
 \<Residual Graph\> $G^f$에 대해 formal 하게 기술하면 아래와 같다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 During the algorithm, we maintain a residual graph $G^f = (V, E^f)$, which has two types of edges with residual capacities
 

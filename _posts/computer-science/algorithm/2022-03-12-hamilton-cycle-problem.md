@@ -11,7 +11,7 @@ categories: ["Algorithm"]
 
 <hr/>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Given a graph, find a cycle that passes through every vertex exactly once.
 

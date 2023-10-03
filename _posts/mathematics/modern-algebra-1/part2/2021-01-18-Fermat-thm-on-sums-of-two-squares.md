@@ -17,7 +17,7 @@ categories: ["Modern Algebra1"]
 
 <br><span class="statement-title">Theorem 47.10</span> Fermat's $p=a^2+b^2$ Theorem<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $p \ne 2$ be a prime in $\mathbb{Z}$.
 

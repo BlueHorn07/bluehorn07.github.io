@@ -12,7 +12,7 @@ categories: ["Modern Algebra1"]
 
 ## (Review) Lagrange Thm
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 For a group $G$, and subgroup $H \le G$, $\lvert H \rvert \mid \lvert G \rvert$
 
@@ -28,7 +28,7 @@ Lagrange 정리는 Group $G$와 subgroup $H$ 사이의 관계를 기술한 정�
 
 Lagrange 정리의 역은 다음과 같다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Group $G$에 대해, $\lvert G \rvert$의 약수를 order로 갖는 subgroup이 항상 존재한다.
 

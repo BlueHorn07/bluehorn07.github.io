@@ -15,7 +15,7 @@ categories: ["Algorithm"]
 
 ### Source And Destination
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 1. Single source and single destination shortest path problem
 2. Single source shortest path problem

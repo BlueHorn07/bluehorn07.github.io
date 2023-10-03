@@ -87,7 +87,7 @@ $\blacksquare$
 
 위의 유도 과정에서는 이항 분포를 사용했지만, 미분방정식으로도 푸아송 분포를 유도할 수 있다고 한다. 유도 과정에 대한 영상을 링크로 걸어둔다. 👉 [YouTube - 푸아송 분포, 미분방정식으로 유도](https://youtu.be/vGExuMJRSyU)
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Theorem.</span> Law of Rare Events<br>
 
@@ -146,7 +146,7 @@ $$
 
 <span class="half_HL">먼저 $N(t)$ 또는 $N_t$를 정의하자. 이것은 $t$시간까지 도착한 사건의 갯수를 의미하는 RV이다.</span> BP에서의 성질들을 바탕으로 \<Poisson Process\>를 잘 정의해보자.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 1\. 각 time slot은 서로 독립이다.
 
@@ -162,7 +162,7 @@ $$
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 2\. (Time homogeneity) 각 time slot에서 arrival이 발생할 확률이 동일하다.
 
@@ -188,7 +188,7 @@ $$
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 3\. small interval probability
 

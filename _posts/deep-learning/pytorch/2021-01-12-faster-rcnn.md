@@ -21,7 +21,7 @@ categories: ["PyTorch"]
 <br>
 <hr>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 1. Region Proposal Network (RPN)
 2. RPN Loss Function
@@ -87,7 +87,7 @@ Q. Faster R-CNN에서 feature extractor가 <span style="color:red">꼭 50 x 50 �
 
 그래서 샘플링하는 수에 제한을 둬서 (ex: `256`) 이 불균형 문제를 해소하고자 하였다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Now we need to **randomly** sample #(positive samples) from the positive labels and <span style="color:red">ignore (-1) the remaining ones</span>. In some cases we get less than #(positive samples), in that we will **randomly** sample (#(sample) — #(positive)) negitive samples (0) and <span style="color:red">assign ignore label to the remaining anchor boxes</span>. This is done using the following code.
 
@@ -129,7 +129,7 @@ This feature is fed into two sibling fully connected layers.
 
 ### Generating proposals to feed Fast R-CNN network
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 "The Faster R_CNN says, <span style="color:red">RPN proposals highly overlap</span> with each other. To reduced redundancy, we adopt **non-maximum supression(NMS)** on the proposal regions based on their cls scores. We fix the IoU threshold for NMS at 0.7, which leaves us about 2000 proposal regions per image. After an ablation study, <span style="color:red">the authors show that NMS does not harm the ultimate detection accuracy, but substantially reduces the number of proposals.</span> After NMS, we use the top-N ranked proposal regions for detection. In the following <span style="color:red">we training Fast R-CNN using 2000 RPN proposals</span>. <span style="color:red">During testing they evaluate only 300 proposals</span>, they have tested this with various numbers and obtained this."
 
@@ -137,7 +137,7 @@ This feature is fed into two sibling fully connected layers.
 
 오홍! 학습 때와 테스트 할 때의 RPN proposal의 수가 다르구나!!
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 1. convert the loc predictions from the rpn network to bbox [y1, x1, y2, x2] format.
 2. clip the predicted boxes to the image    // 음?! 이건 좀 나중에 해도 될 것 같은데...?
@@ -206,7 +206,7 @@ and later convert to y1, x1, y2, x2 format
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Note that "the dimension of the RoI pooling output" doesn’t actually depend on the size of the input feature map nor on the size of the region proposals. It’s determined solely by the number of sections we divide the proposal into.
 

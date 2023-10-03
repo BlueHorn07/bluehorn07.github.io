@@ -92,7 +92,7 @@ $p$가 동일한 두 Sylow $p$-subgroup $P_5$, $P_5'$에 대해 둘은 conjugate
 
 <span class="statement-title">Lemma.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $H, K \trianglelefteq G$.
 
@@ -185,7 +185,7 @@ $\phi$가 homo-, 1-1 & onto이므로 $\phi$는 isomorphism이다.
 
 <span class="statement-title">Theorem.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $p$ be a prime,
 

@@ -14,7 +14,7 @@ categories: ["Modern Algebra1"]
 
 <span class="statement-title">Definition 1.</span> Associates<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 For two elts $a$, $b$ in a (Ring + Unity),
 
@@ -34,7 +34,7 @@ $a = by = (ax)y = axy$
 
 <span class="statement-title">Definition 2.</span> Associates<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 For two elts $a$, $b$ in a (Ring + Unity),
 
@@ -68,7 +68,7 @@ Two Integers are associates in $\mathbb{Z}$ $\iff$ they are the same up to sign.
 
 <span class="statement-title">Definition 1.</span> Unique Factorization Domain<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 An **Integral Domain** in which every non-zero elt has a **<u>unique factorization</u>**; <br>
 i.e. unique decomposition as the product of prime elements (or irreducible elements).
@@ -83,7 +83,7 @@ i.e. unique decomposition as the product of prime elements (or irreducible eleme
 
 <span class="statement-title">Definition 2.</span> Unique Factorization Domain<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 - Every $a \in D$ ,which is a non-zero & non-unit, can be written as a product of irreducibles.
 - This decomposition is **unique up to reordering**, and **up to associates**.
@@ -100,7 +100,7 @@ Then, $n=m$, and there exist a permutation $\sigma \in S_n$ s.t. $p_i = q_{\sigm
 <hr>
 
 <span class="statement-title">Theorem.</span> [^1] <br>
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 In UFD, Irreducible elt is also a Prime elt.
 
@@ -157,7 +157,7 @@ Irreducible element인 $p$는 Prime element이기도 하다. $\blacksquare$
 <br>
 
 <span class="statement-title">Corollary.</span><br>
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $D$: Integral Domain
 

@@ -64,7 +64,7 @@ $$
 
 <details>
 <summary>실제 논문에서의 notation</summary>
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $$
 \begin{aligned}
@@ -114,7 +114,7 @@ $$
 
 위의 공식이 잘 와닿지 않아서 직접 유도해보려고 한다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 먼저 $\mathbf{s}_{(0, 0)} = (0, 0)$인 경우를 살펴보자.
 
@@ -146,7 +146,7 @@ $$
 \end{aligned}
 $$
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 이번에는 $$\mathbf{s}_{(\pm 1, 0)} = (\pm \Delta_{\theta}, 0)$$의 경우를 살펴보자.
 

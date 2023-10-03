@@ -55,7 +55,7 @@ $$
 
 <span class="statement-title">Theorem.</span> Fermat's Little Theorem<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $p$ be a prime,
 
@@ -72,7 +72,7 @@ $a^{p-1} \equiv 0$ (mod $p$)가 된다!
 
 <span class="statement-title">Corollary.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 If $a \in \mathbb{Z}$, then $a^p \equiv a$ (mod $p$).
 

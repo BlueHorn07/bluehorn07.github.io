@@ -14,7 +14,7 @@ DP는 정말 알고리즘 PS를 하면서, 빠질 수 없는 주제다!! 실제 
 
 DP의 컨셉은 아래와 같다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 1\. Identifying a collection of subproblems.
 

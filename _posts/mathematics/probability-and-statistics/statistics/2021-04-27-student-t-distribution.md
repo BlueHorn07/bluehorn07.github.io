@@ -44,7 +44,7 @@ Then, the distribution of $T$ is called \<student's t-distribution of $n$ degree
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Remark.</span><br>
 
@@ -61,7 +61,7 @@ for $x \in \mathbb{R}$.
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 2\. $t$-distribution would converges to normal distribution as $n \rightarrow \infty$.
 
@@ -195,7 +195,7 @@ $$
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 3\. We define $t_\alpha$ as the number $x$ s.t. $P(T \ge x) = \alpha$.
 

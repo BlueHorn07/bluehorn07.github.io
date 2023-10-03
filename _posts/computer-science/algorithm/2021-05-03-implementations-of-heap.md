@@ -387,7 +387,7 @@ A \<**maximally damaged tree**\> is a binomial tree of degree $k$[^1] which has 
   <p>BIN tree의 degree가 줄지 않을 때까지 $\texttt{decreaseKey}$를 수행한 모습</p>
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Corollary.</span><br>
 
@@ -401,7 +401,7 @@ A \<maximally-damaged tree of degree $k$\> is a tree whose children are maximall
 
 위의 따름 정리에 의해 \<maximally damaged tree\>에서는 아래의 정리가 성립한다! 😲
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Theorem.</span><br>
 

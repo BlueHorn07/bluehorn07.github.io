@@ -119,7 +119,7 @@ entering variable과 departing variable이 정해졌다면 pivot entry가 결정
 
 현 상태에서의 solution은 $(x_1, x_2, s_1, s_2, s_3) = (0, 11, 0, 16, 35)$가 되며, object function의 값은 $z = 4x_1 + 6x_2 = 4(0) + 6(11) = 66$이 된다. 그러나 optimality check를 해보면, 마지막 행에 $-10$이라는 음수값이 있기 때문에 아직 optimal solution이 아니며 위에서 수행한 pivoting 과정을 다시 수행해야 한다! 다시 반복하는 부분은 생-략 하겠다 🙏
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 **Simplex Method**
 

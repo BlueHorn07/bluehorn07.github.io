@@ -11,10 +11,6 @@ PS에 대한 아티클은 [요기]({{"/category/problem-solving" | relative_url}
 
 알고리즘 정리를 마무리한 후기는 [요기]({{"/2022/05/21/end-of-algorithm-lecture.html" | relative_url}})에서 확인하실 수 있습니다.
 
-**참고 교재**
-- 『Algorithms』 Dasgupta, international ed.
-- [『알고리즘 문제해결전략』](https://book.algospot.com/) 구종만
-
 정규수업에서 다루지 않은 내용은 🎈로 표시하였습니다 😉
 {: .notice}
 
@@ -138,3 +134,7 @@ PS에 대한 아티클은 [요기]({{"/category/problem-solving" | relative_url}
   - [Lazy-Binomial Heap]({{"2021/05/03/implementations-of-heap.html#lazy-binomial-heap" | relative_url}})
   - [Fibonacci Heap]({{"/2021/05/03/implementations-of-heap.html#fibonacci-heap" | relative_url}}) 🔥
 - FFT; Fast Fourier Transformation 🎈
+
+## 참고 교재
+- 『Algorithms』 Dasgupta, international ed.
+- [『알고리즘 문제해결전략』](https://book.algospot.com/) 구종만

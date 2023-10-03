@@ -20,7 +20,7 @@ categories: ["Complex Variable"]
 
 <span class="statement-title">Theorem.</span> [Review] Goursat Theorem<br/>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $D$ be an open set in $\mathbb{C}$.
 
@@ -38,7 +38,7 @@ $$
 
 <span class="statement-title">Theorem.</span> Cauchy-Goursat Theorem for a disc<br/>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $f(z)$ be **<u>analytic</u>** in a disc $D$.
 
@@ -52,7 +52,7 @@ $$
 
 <span class="statement-title">Corollary.</span><br/>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $f(z)$ be **<u>analytic</u>** in a disc $D$.
 
@@ -170,7 +170,7 @@ $$
 
 <span class="statement-title">Theorem.</span><br/>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $f(z)$ be analytic in a simply connected domain $D$,
 
@@ -273,7 +273,7 @@ $$
 
 <span class="statement-title">Theorem.</span><br/>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $D$ be a simply connected domain.
 

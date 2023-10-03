@@ -18,7 +18,7 @@ categories: ["Applied Statsitcs"]
 
 <hr/>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 "Clustering refers to a braod set of techniques for partitioning a dataset into homogeneous subgroups called clusters."
 

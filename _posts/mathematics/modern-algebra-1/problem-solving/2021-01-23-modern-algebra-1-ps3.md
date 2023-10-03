@@ -10,7 +10,7 @@ categories: ["Modern Algebra1", "Problem Solving"]
 
 <hr>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Artin, p.442, sec.2, #2a.
 

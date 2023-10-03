@@ -28,7 +28,7 @@ $$
 
 먼저 가장 간단한 형태의 \<Computational Graph\>부터 살펴보자.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Remark.</span> basic building blocks<br>
 
@@ -72,7 +72,7 @@ $$
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Remark.</span> generalized build block<br>
 
@@ -84,7 +84,7 @@ $$
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Remark.</span> composing functions<br>
 
@@ -119,7 +119,7 @@ $$
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Remark.</span> Branching Block<br>
 

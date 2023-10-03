@@ -139,7 +139,7 @@ $$
 
 본인 말고도 두 개념이 헷갈리는 사람이 많은 것 같아. 구글에 검색해보니 둘을 비교하는 포스트가 꽤 있었다. 아래는 그 중에서 둘을 한 문장을 비교한 문구를 가져온 것이다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 A **mean response interval** is a confidence interval for the mean of all Y’s at a given X value.
 

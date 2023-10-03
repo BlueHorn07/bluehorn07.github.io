@@ -23,7 +23,7 @@ categories: ["Complex Variable"]
 
 <span class="statement-title">Theorem.</span> [Review] Cauchy's Integral Formula<br/>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $D$ be a simply connected domain, and $f$ be an analytic function in $D$.
 

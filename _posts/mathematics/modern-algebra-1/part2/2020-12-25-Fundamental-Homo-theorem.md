@@ -16,7 +16,7 @@ FHT를 살펴보기 전에 간단한 Factor Group Homomorphism에 대해 살펴�
 
 <span class="statement-title">Theorem.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $H \trianglelefteq G$, and define a mapping $\gamma: G \longrightarrow G/H$ where $\gamma(x) = xH$.
 
@@ -45,7 +45,7 @@ Then, $\gamma$ is a group homormophism, with $\ker \gamma = H$.
 
 <span class="statement-title">Theorem.</span> Fundamental Homormophism Theorem (FHT)<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $\phi: G \longrightarrow G'$ be a group homo-.
 

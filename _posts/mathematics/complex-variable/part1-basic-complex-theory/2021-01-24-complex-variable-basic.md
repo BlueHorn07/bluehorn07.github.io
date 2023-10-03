@@ -25,7 +25,7 @@ categories: ["Complex Variable"]
 
 <br><span class="statement-title">Definition.</span> Triangle inequality<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 For $z_1, z_2 \in \mathbb{C}$,
 
@@ -57,7 +57,7 @@ $$
 
 <br><span class="statement-title">Formula.</span> Euler's formula<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $$
 e^{i \theta} = \cos \theta + i \sin \theta
@@ -88,7 +88,7 @@ $$
 
 <br><span class="statement-title">Formula.</span> de Moivre's formula<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $$
 e^{in\theta} = (\cos \theta + i \sin \theta)^n = \cos n\theta + i \sin n\theta
@@ -143,7 +143,7 @@ $\blacksquare$
 
 <br><span class="statement-title">Formula.</span> $n$-th root of $w$<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $w \in \mathbb{C}$의 근호(root)를 취한 결과를 말한다.
 
@@ -167,7 +167,7 @@ $$
 
 <br><span class="statement-title">Definition.</span> $\epsilon$-neighborhood of $z_0$<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $$
 \left\{ z : \left| z - z_0 \right| < \epsilon \right\}
@@ -185,7 +185,7 @@ $$
 
 <br><span class="statement-title">Definition.</span> Interior / Exterior / Boundary <br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 For a set $S \subset \mathbb{C}$
 
@@ -219,7 +219,7 @@ If $z_0$ is neither of these, then it is called a "boundary point".
 
 <br><span class="statement-title">Definition.</span> Open / Closed set <br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 1\. **Open set**
 

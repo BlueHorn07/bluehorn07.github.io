@@ -33,7 +33,7 @@ Aliasing 현상은 그림의 가장자리에서 가장 심하게 부각된다.
 
 Aliasing을 좀더 formal하게 정의한 것은 아래와 같다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 디지털 샘플링에서 (샘플링 주파수)가 (원본 신호의 최대 주파수)의 2배 보다 낮은 경우, 인접한 스펙트럼이 겹쳐서 출력이 왜곡되는 현상
 <div class="img-wrapper">
 <img src="https://zone.ni.com/images/reference/en-XX/help/371361R-01/guid-932173fe-d89c-4bc0-a3ed-980f99bcc06b-help-web.png" style="width:270px;">
@@ -49,7 +49,7 @@ $$
 
 사실 컴퓨터 그래픽스에서 발생하는 Aliasing은 **<u>limited granularity</u>**에 의해 발생한다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 "Digital imprecision generated in the process of converting analog information into digital space is due to the limited granularity of digital numbering space. In computer graphics, aliasing is seen as [pixelation](https://en.wikipedia.org/wiki/Pixelation)."
 
@@ -59,7 +59,7 @@ $$
 
 #### Digital Artifact
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 "**<u>Digial Artifact</u>** is any undesired or unintended alteration in data introduced in a digital process."
 

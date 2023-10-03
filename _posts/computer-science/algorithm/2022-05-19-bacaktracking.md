@@ -46,7 +46,7 @@ $$
 
 \<SAT\> 문제를 Backtracking으로 해결하려 할 때 생각할 부분이 하나 더 있다. 우리는 <span style="color: red">다음 스텝에서 어떤 variable을 체크해 partial assn을 확장할 것인가?</span> 쉽지 않은 문제이지만, Greedy 하게 생각해보면 아래와 같은 규칙이 가능하다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 "Choose the subproblem that contains <span style="color: red">the smallest clause</span>, and then branch on a variable in that clause."
 
@@ -56,7 +56,7 @@ SAT 문제에서 가장 작은 clause라 하면 $(z)$와 같은 singleton clause
 
 이런 \<Backtracking\> 알고리즘을 정리하면 아래와 같다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Start with some problem $P_0$
 

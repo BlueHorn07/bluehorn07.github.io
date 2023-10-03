@@ -17,7 +17,7 @@ categories: ["Algorithm"]
   <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Konigsberg_bridges.png" width="240px">
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Given a graph, find a path that contains each edge exactly once.
 

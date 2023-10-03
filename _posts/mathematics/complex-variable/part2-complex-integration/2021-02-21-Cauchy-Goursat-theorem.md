@@ -20,7 +20,7 @@ categories: ["Complex Variable"]
 
 <span class="statement-title">Theorem.</span> The Cauchy-Goursat Theorem<br/>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 If $f(z)$ is analytic in s imply connected domain $D$,
 
@@ -49,7 +49,7 @@ doubly connected domain에서는 어떤 contour $C$에 대해, $\textrm{Int}\; C
 
 <span class="statement-title">Theorem.</span> Cauchy's Theorem<br/>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 If $f(z)$ is **<u>analytic</u>** in a **<u>simply connected domain</u>** $D$, and $f'(z)$ is **<u>continuous</u>** in $D$,
 
@@ -64,7 +64,7 @@ $$
 Cauchy의 정리에는 "$f'(z)$이 continuous"라는 조건이 붙는다. Cauchy는 이를 이용해 적분을 2차원의 real integral로 바꾸어 접근한다.
 
 <span class="statement-title">Theorem.</span> Green's Theorem<br/>
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 만약 $Q_x$, $P_y$가 연속 함수라면,
 
@@ -135,7 +135,7 @@ Cauchy's Thm은 analytic function의 적분에 대해 좋은 결과를 보여준
 
 <span class="statement-title">Theorem.</span> Goursat's Theorem<br/>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $D$ be an open set in $\mathbb{C}$.
 

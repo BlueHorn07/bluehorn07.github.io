@@ -10,7 +10,7 @@ categories: ["Modern Algebra1", "Problem Solving"]
 
 <hr>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Consider $\mathbb{Z}[\sqrt{-2}]$ as a sub-ring of $\mathbb{C}$ and with the norm $N(a+b\sqrt{-2}) = a^2 + 2b^2$.
 

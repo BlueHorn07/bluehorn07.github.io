@@ -42,7 +42,7 @@ $$
 
 그렇담 "**clustering of max. spacing**"를 어떻게 찾을 수 있을까? Brute Force하게 접근한다면 당연히 조합 폭발을 경험할 것이다. 이때, 좋은 정리가 있는데 <span class="half_HL">MST에서 가장 비싼 간선 $k-1$개를 삭제하면 $k$-clustering of max. spacing을 얻을 수 있다</span>는 것이다!
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Theorem.</span><br>
 

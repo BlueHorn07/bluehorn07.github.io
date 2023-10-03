@@ -86,7 +86,7 @@ kubernetes   ClusterIP   10.111.0.1   <none>        443/TCP   2d19h
 
 다음은 워커 노드를 관리하는 EKS 노드그룹을 띄우자!
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 참고로 노드그룹까지 띄워야 다른 AWS IAM User에게 EKS 클러스터 접속할 권한을 부여 해줄 수 있다!
 

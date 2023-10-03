@@ -62,7 +62,7 @@ $$
 
 지금까지 살펴본, $\text{AR}$, $\text{MA}$, $\text{ARMA}$, $\text{ARIMA}$, $\text{SARIMA}$ 모델을 모두 backshift operator를 사용해 표현해보자.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Definition.</span> AR Model w/ backshift operator<br>
 
@@ -87,7 +87,7 @@ $$
 </div>
 
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Definition.</span> MA Model w/ backshift operator<br>
 
@@ -112,7 +112,7 @@ $$
 </div>
 
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Definition.</span> ARMA Model w/ backshift operator<br>
 
@@ -136,7 +136,7 @@ $$
 </div>
 
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Definition.</span> ARIMA Model w/ backshift operator<br>
 
@@ -152,7 +152,7 @@ $$
 </div>
 
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Definition.</span> SARIMA Model w/ backshift operator<br>
 

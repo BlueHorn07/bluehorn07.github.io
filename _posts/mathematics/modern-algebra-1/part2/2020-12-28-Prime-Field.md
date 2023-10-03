@@ -12,7 +12,7 @@ categories: ["Modern Algebra1"]
 
 <span class="statement-title">Theorem.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $R$: Ring + unity
 
@@ -31,7 +31,7 @@ then, $\phi$ is a ring homomoprhism.
 
 <span class="statement-title">Corollary.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $R$: Ring + unity
 
@@ -75,7 +75,7 @@ Thus $R \ge \phi(\mathbb{Z}) \cong \mathbb{Z}$. $\blacksquare$.
 
 <span class="statement-title">Theorem.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $F$ be a Field.
 
@@ -104,7 +104,7 @@ $\mathbb{Z}_n$이 Field가 되는 경우는 $n = p$ (prime) 뿐이다.
 
 <span class="statement-title">Definition.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $\mathbb{Z}_p$ and $\mathbb{Q}$ are called a "**<u>Prime Field</u>**".
 

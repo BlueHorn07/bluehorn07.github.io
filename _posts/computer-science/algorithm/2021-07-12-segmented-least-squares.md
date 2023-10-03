@@ -37,7 +37,7 @@ categories: ["Algorithm"]
 
 \<Segmented Least Squares\> 문제를 기술하면 아래와 같다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 For the set of $n$ points in the plane $(x_1, y_1), ..., (x_n, y_n)$ with $x_1 \le \cdots \le x_n$.
 

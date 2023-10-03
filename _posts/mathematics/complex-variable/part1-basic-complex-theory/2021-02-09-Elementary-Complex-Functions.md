@@ -24,7 +24,7 @@ $$
 e^z \quad \textrm{or} \quad \exp z
 $$
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 For $z = x + iy$,
 
@@ -47,7 +47,7 @@ $$
 \end{aligned}
 $$
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 - $\cos z = \cos x \cosh y - i \sin x \sinh y$
 
@@ -78,7 +78,7 @@ $$
 \end{aligned}
 $$
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Some interesting, unexpected relations
 
@@ -109,7 +109,7 @@ $$
 \log z = \log \left| z \right| + i \arg z \quad (z\ne0)
 $$
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 - $e^{\log z} = z$
 - $\log e^z = z \pm i 2n\pi$
@@ -155,7 +155,7 @@ $$
 \textrm{P.V.} \; z^c = e^{c \; \textrm{Log} \; z}
 $$
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 1. If $c$ is natural number, then $z^n$ is sinle-valued.
 2. If $c = 1/n$, then $z^n$ is $n$-th valued.

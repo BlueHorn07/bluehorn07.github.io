@@ -101,7 +101,7 @@ where $\epsilon_i$ are independent random variables with mean 0 and variance $\s
 </div>
 $y_i$가 $x_i$에 dependent 하다고 가정한다. 이때, 둘은 random factor에 의해 영향을 받는다. 이 random factor는 $\epsilon_i$로 표현된다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Remark.</span><br>
 
@@ -157,7 +157,7 @@ $$
 
 먼저, $b_0$에 대한 식부터 정리해보자.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $$
 \frac{\partial f}{\partial b_0} = - 2 \sum_{i=1}^n (y_i - b_0 - b_1 x_i) = 0
@@ -189,7 +189,7 @@ $\blacksquare$
 
 이번에는 $b_1$에 대한 식을 정리해보자.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $$
 \frac{\partial f}{\partial b_1} = - 2 \sum_{i=1}^n (y_i - b_0 - b_1 x_i) x_i = 0
@@ -319,7 +319,7 @@ $\blacksquare$
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Remark.</span><br>
 

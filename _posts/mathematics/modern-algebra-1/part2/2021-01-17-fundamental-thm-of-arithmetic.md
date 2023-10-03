@@ -39,7 +39,7 @@ Fundamental Theorem of Arithmetic <small>(산술의 기본정리)</small>은 "Un
 
 산술의 기본정리를 다르게 표현하면 아래와 같다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 For a natrual number $n > 2$,
 

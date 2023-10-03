@@ -82,7 +82,7 @@ int fibo(n) {
 
 #### Matrix-based
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Property.</span> Pisano Period<br>
 

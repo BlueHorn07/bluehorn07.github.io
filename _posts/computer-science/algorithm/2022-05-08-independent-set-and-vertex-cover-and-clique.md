@@ -30,7 +30,7 @@ categories: ["Algorithm"]
   <img src="{{ "/images/algorithm/independent-set-2.png" | relative_url }}" width="300px">
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Problem.</span> Independent Set Problem<br>
 
@@ -46,7 +46,7 @@ Given a graph and a goal $g$, find $g$ vertices that are independent, that is, n
   <img src="{{ "/images/algorithm/vertex-cover-1.png" | relative_url }}" width="300px">
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Problem.</span> Vertex Cover Problem<br>
 
@@ -56,7 +56,7 @@ Given a graph and a budget $b$, find $b$ vertices that cover every edge.
 
 \<Vertex Cover\> 문제의 경우, \<Set Cover\> 문제의 특수한 경우라고 한다. 그전에 \<Set Cover\> 문제란 뭘까?
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Problem.</span> Set Cover Problem<br>
 
@@ -75,7 +75,7 @@ Given a set $B$ and its subsets $S_1, ..., S_m \subseteq B$, find a selection of
 
 \<Clique\>는 "complete subgraph"로 부분 그래프 중 complete graph인 녀석을 말한다. 그래서 그래프 위에서 정의된 \<Clique Problem\>은 다음과 같다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Problem.</span> Clique Problem<br>
 
@@ -135,7 +135,7 @@ Let $V \setminus S$ be any vertex cover. Consider two nodes $u \in S$ and $v \in
 
 이번에는 \<Independent Set\> 문제와 \<Clique\> 문제를 살펴보자. 두 문제 역시 동치인데, 방법은 아래와 같다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 For a graph $G = (V, E)$, define the complement graph $\bar{G} = (V, \bar{E})$. Then, an independent set $S$ of $G$ is a clique of $\bar{G}$.
 

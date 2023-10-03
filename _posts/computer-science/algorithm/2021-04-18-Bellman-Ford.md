@@ -24,7 +24,7 @@ categories: ["Algorithm"]
 
 \<Dijkstra's Algorithm\>은 아래의 Invariant를 갖는다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 The shortest path from the starting point $s$ to any node $v$ must *pass exclusively* through nodes that are closer than $v$.
 
@@ -63,7 +63,7 @@ if dist(v) > dist(u) + w(u, v):
   dist(v) = dist(u) + w(u, v)
 ```
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 `update()`[^1] gives the correct dist($v$) value when
 

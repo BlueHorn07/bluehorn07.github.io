@@ -17,7 +17,7 @@ categories: ["Complex Variable"]
 
 ### Comlex Contour
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $$
 \int_{C} f(z) dz
@@ -106,7 +106,7 @@ $$
 
 ### Contour Integrals
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $C$ be a smooth curve parametrized by $z(t): [a, b] \rightarrow \mathbb{C}$.
 

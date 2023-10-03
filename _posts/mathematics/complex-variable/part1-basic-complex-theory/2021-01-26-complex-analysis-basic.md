@@ -20,7 +20,7 @@ categories: ["Complex Variable"]
 
 ### Complex Functions
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 A function $f$ defined on $S \subset \mathbb{C}$ is a rule that assigns to each $z \in S$ to a complex number $w$.
 
@@ -39,7 +39,7 @@ $$
 
 <br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 복소 함수는 real-part와 imaginary-part를 각각 두 개의 real-valued function으로 분리해 표현할 수도 있음.
 
@@ -57,7 +57,7 @@ $f(x) = z^2$, $z = x + iy$
 
 <br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 복소 함수를 polar coordinate로 표현할 수도 있음!
 
@@ -75,7 +75,7 @@ $f(z) = z^2$, $z = r e^{i\theta}$
 
 <br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 복소 함수의 경우, 몇몇 경우에서는 "multi-valued relation"이 유도될 수 있음.
 
@@ -99,7 +99,7 @@ $$
 
 ### Complex Limit
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 As $z$ approaches to $z_0$, $f(z)$ approaches to $w_0$.
 
@@ -119,7 +119,7 @@ $$
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 단, 극한이 존재하지 않는 경우도 있다. 이 경우는 아래와 같이 묘사한다.
 
@@ -156,7 +156,7 @@ So, $\left\| f(z) - f(i) \right\| < \epsilon$ whenevery $\left\| z - i \right\| 
 
 <br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 **Theorem 1.** When a 'limit' of a function $f(z)$ exists at a point $z_0$, then it is unique. <br>
 <small>(극한값이 2개가 될 수 없다.)</small>
@@ -177,7 +177,7 @@ $$
 
 ### Complex Continuity
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $f(z)$ is continuous at $z_0$ if "$f(z_0)$ is defined" and "$\lim_{z \rightarrow z_0} f(z) = f(z_0)$".
 
@@ -189,13 +189,13 @@ $$
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Any polynomial $P(z)$ is continuous everywhere.
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 **Theorem 1.** A composition of continuous functions is continuous.
 
@@ -228,7 +228,7 @@ $$
 
 ### Complex Derivatives
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 The derivative of $f$ at $z_0$ is the limit
 
@@ -244,7 +244,7 @@ The function $f$ is said to be "**differentiable**" when $f'(z_0)$ exists.
 
 ### Analytic Functions
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 - $f(z)$ is **<u>analytic</u>** in an open set $S$, if $f(z)$ is differentiable everywhere in $S$.
 
@@ -256,7 +256,7 @@ The function $f$ is said to be "**differentiable**" when $f'(z_0)$ exists.
 
 <br/>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 * Polynomials are entire functions.
 

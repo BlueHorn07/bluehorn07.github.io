@@ -18,7 +18,7 @@ categories: ["Complex Variable"]
 
 <span class="statement-title">Example.</span>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $$
 \int_{C} \frac{1}{z} dz
@@ -48,7 +48,7 @@ If $m \ne 1$, (준식) = 0
 ### Integrals of primitive functions
 
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 \<미적분의 기본정리 Fundamental thm of Calculus\>에 따르면,
 
@@ -72,7 +72,7 @@ $$
 
 <span class="statement-title">Definition.</span>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $D$ be an open set in $\mathbb{C}$.
 
@@ -89,7 +89,7 @@ $$
 
 <span class="statement-title">Theorem.</span>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $f(z)$ be a primitive function in a domain $D$ with $F'(z) = f(z)$.
 
@@ -108,7 +108,7 @@ $$
 
 <span class="statement-title">Corollary.</span>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $C$ be a smooth closed curve in $D$.
 
@@ -131,7 +131,7 @@ ML-inequality는 적분의 절댓값의 상한을 계산하게 하는 아주아�
 
 <span class="statement-title">Theorem.</span>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $L$ be the length of $C$.
 
@@ -147,7 +147,7 @@ $$
 
 얼핏 보면, 미적분학의 중간값 정리와 비슷하다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $$
 \left| \int^{b}_{a} f(x) dx \right| \le M(b-a)

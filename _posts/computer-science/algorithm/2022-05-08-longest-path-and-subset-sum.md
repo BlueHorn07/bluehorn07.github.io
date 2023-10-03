@@ -22,7 +22,7 @@ categories: ["Algorithm"]
 
 \<Shortest Path Problem\>은 [다익스트라 알고리즘]({{"/2021/04/17/dijkstra-algorithm.html" | relative_url}})으로 효율적으로 해결할 수 있음을 알고 있다. 그렇다면 \<Longest Path Problem\>은 어떨까? 당신이 택시 기사라면, 출발지에서 목적지까지 최대한 긴 경로로 운전해서 최대의 택시비를 벌고 싶을 것이다. (단, 왔던 길을 뱅뱅 도는 *얕은* 수법을 쓴다면 똑독한 승객이 눈치 챌 테니, 왔던 길은 다시 가지 않아야 할 것이다.) 그래서 \<Longest Path Problem\>을 \<Taxicab Rip-off\> 문제, 즉 '택시 바가지' 문제라고도 부른다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Problem.</span> Longest Path Problem<br>
 
@@ -34,7 +34,7 @@ Given a graph with non-negative edge weights and two vertices $s$ and $t$, along
 
 [\<Knapsack Problem\>]({{"/2021/04/30/kanpsack.html" | relative_url}})을 기억하는가? 배당의 용량 $W$와 물건들 $(w_i, v_i)$가 있을 때 용량을 넘기지 않으면서 최대한의 가치를 담는 문제였다. 그러나 이번에는 정확히 용량 $W$ 만큼 물건을 담아서 최대한의 가치를 담으려 한다면 어떨까? \<Knapsack Problem\> 문제의 변형인 이 문제는 \<Subset Problem\>라는 이름의 문제로 주어진 집합의 부분집합(subset)을 선택해 원하는 용량 $W$와 동일한 값을 갖도록 하는 문제다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Problem.</span> Subset Sum Problem<br>
 

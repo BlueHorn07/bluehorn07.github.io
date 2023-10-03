@@ -22,7 +22,7 @@ Guassian Integer는 "Euclidean Domain"의 일종이다. Euclidean Domain에 대�
 
 <br><span class="statement-title">Definition.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 A **<u>Gaussian Intger</u>** is a complex number $a + bi$, where $a, b \in \mathbb{Z}$.
 
@@ -39,7 +39,7 @@ For Gaussian integer $\alpha = a + bi$, the **<u>norm</u>** $N(\alpha) = a^2 + b
 
 <br><span class="statement-title">Lemma 47.2</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 On $\mathbb{Z}[i]$, the following properties of Norm holds.
 
@@ -55,7 +55,7 @@ Guassian Norm $N$을 잘 생각해보면, 너무 당연한 명제들이다.
 
 <br><span class="statement-title">Lemma 47.3</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $Z[i]$ is an Integral Domain.
 
@@ -89,7 +89,7 @@ $$
 
 <br><span class="statement-title">Theorem 47.4</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 The function $\nu$ given by $\nu(\alpha) = N(\alpha)$ for non-zero $\alpha \in \mathbb{Z}[i]$ is an Euclidean norm on $\mathbb{Z}[i]$.
 
@@ -174,7 +174,7 @@ $\mathbb{Z}[i]$에선 5가 $5 = (1 + 2i)(1 - 2i)$로 분해가능하다!
 
 <br><span class="statement-title">Definition.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $D$ be an integral domain.
 
@@ -187,7 +187,7 @@ A **<u>multiplicative norm</u>** $N$ on $D$ is a function mapping $D$ into the i
 
 <br><span class="statement-title">Theorem 47.7</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 If $D$ is an integral domain with a multiplicative norm $N$,
 

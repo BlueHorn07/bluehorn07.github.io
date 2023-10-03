@@ -122,7 +122,7 @@ $$
 
 # Instability of Variable Selection
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 "Variable selection methods are known to be unstable."
 

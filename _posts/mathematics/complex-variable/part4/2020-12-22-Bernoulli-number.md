@@ -12,7 +12,7 @@ categories: ["Complex Variable"]
 
 <span class="statement-title">problem</span>.<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 The Maclaurin series
 
 $$

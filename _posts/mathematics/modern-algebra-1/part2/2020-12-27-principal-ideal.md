@@ -12,7 +12,7 @@ categories: ["Modern Algebra1"]
 
 <span class="statement-title">Definition.</span> Principal Ideal<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $R$ be a commutative ring with unity, and $a \in R$.
 
@@ -48,7 +48,7 @@ $\left< x \right>$은 unity $1$을 포함하지 않는다. 즉 $\left< x \right>
 ### Princial Ideal Domain; PID
 
 <span class="statement-title">Definition</span><br>
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 An Integral Domain whose **<u>every ideal is a Principal Ideal</u>**.
 
@@ -59,7 +59,7 @@ An Integral Domain whose **<u>every ideal is a Principal Ideal</u>**.
 
 ##### Theorem 27.24
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 If $F$ is a field, every ideal in $F[x]$ is principal. <small>($F[x]$ is PID)</small>
 
@@ -87,7 +87,7 @@ Then, $g(x) \in F$ is a constant function. 그리고 $N$이 group이므로 $N$�
 
 따라서 Ideal인 $N$에 대해 $1 \in N$이므로 앞에서 보인 정리에 의해 $N = F[x]$이다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 ($N = F[x]$이라는게 말이 되나 근데??)
 
@@ -130,7 +130,7 @@ $g(x)$는 정의상 $N$의 non-zero minimal degree elt이므로 $r(x) \in N$라�
 
 <span class="statement-title">Theorem </span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $F$ be a Field, and $0 \ne p(x) \in F[x]$.
 
@@ -275,7 +275,7 @@ $\mathbb{R}[x] / \left< x^2 + 1 \right> \cong \mathbb{C}$ is a Field.
 
 <span class="statement-title">Theorem</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $p(x) \in F[x]$
 
@@ -298,7 +298,7 @@ By [Theorem of Maximal Ideal]({{"2020/12/27/maximal-and-prime-ideal.html#maximal
 
 $\implies$ $p(x)$ is a Prime element.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 (보충) [Thm 27.24]({{"2020/12/27/principal-ideal.html#theorem-2724" | relative_url}})에서 우리는 Field에서 유도되는 ideal은 모두 principal임을 보였다. 따라서 $F[x]$는 **<u>PID</u>**가 된다.
 
@@ -353,7 +353,7 @@ $p(x)$가 irreducible이라고 가정한 것이 $p(x)$가 prime이라는 걸 유
 
 <span class="statement-title">Corollary</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 In PID, irreducible $\equiv$ prime
 

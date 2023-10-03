@@ -18,7 +18,7 @@ categories: ["Statistics", "Problem Solving"]
 
 <hr/>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Theorem.</span><br>
 
@@ -100,7 +100,7 @@ $\blacksquare$
 
 <hr/>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Theorem.</span><br>
 
@@ -219,7 +219,7 @@ $$
 
 <hr/>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Theorem.</span><br>
 
@@ -238,7 +238,7 @@ $s^2 \perp B_1$, and $s^2 \perp B_0$
 
 <hr/>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Theorem.</span><br>
 

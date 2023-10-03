@@ -29,7 +29,7 @@ DI는 '의존성(Dependency)'과 '주입(Injection)'을 함께 사용하는 설�
 
 ### 의존성; Dependency
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 &nbsp; "**Dependency** is a relationship between components or classes that can be thought of as a '*uses*' relationship."
 
@@ -112,7 +112,7 @@ public class PetOwner{
 
 <br><span class="statement-title">제어의 역전</span> <small>Inversion of Control; IoC</small><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 &nbsp; Principle that promotes componenets that relinquish control of aspects of the code execution to external modules to obtiain "**week coupling**".
 
@@ -157,7 +157,7 @@ DIP는 의존관계를 맺을 때 변화하기 쉬운 것 또는 자주 변하�
 
 좀더 체계를 갖춰 기술해보자면,
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 A. 하이-레벨 모듈은 로우-레벨 모듈에 의존해서는 안 된다. 둘다 추상에 의존해야 한다.<br>
 <small>A. High-level module should not depend upon low-level module. Both should depend upon abstractions.</small>

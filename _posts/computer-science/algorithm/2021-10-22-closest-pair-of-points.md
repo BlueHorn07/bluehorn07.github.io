@@ -45,7 +45,7 @@ delta $\delta$를 구했다면, 이제는 $P^L$, $P^R$에 걸쳐서 존재하는
 
 회색 띠 내부를 $\delta/2$ 길이 만큼의 **cell**로 분할하자. 그리고 $s_i$를 $P_y$에서 $i$번째로 작은 $y$ 좌표를 갖는 점이라고 하자. 그러면 아래의 회색 띠의 **cell**에 대해 아래 문장이 성립한다!
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 - No two points lie in same $\delta/2 \times \delta/2$ box.
   - 만약 그런 점이 존재한다면 subproblem을 해결하는 과정에서 $\le \delta/2$가 최소 거리로 뽑혔어야 한다.

@@ -29,7 +29,7 @@ toc_sticky: true
   - Complex Derivative
   - Analytic Functions
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Cauchy-Riemann Equation</span>
 
@@ -45,7 +45,7 @@ $$
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 IF $f(z) = u(x, y) + i u(x, y)$ is **<u>analytic</u>** in a domain $D$, THEN both $u$ and $v$ are **<u>harmonic functions</u>**.
 
@@ -73,7 +73,7 @@ $$
 
 # Part II - Contour Integrals
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Cauchy-Goursat Theorem</span>
 
@@ -120,7 +120,7 @@ $$
 
 #Part III - Power Series
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Talyor Series</span>
 
@@ -140,7 +140,7 @@ $$
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Laurent Series</span>
 

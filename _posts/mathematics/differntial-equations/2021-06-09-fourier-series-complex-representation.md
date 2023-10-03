@@ -43,7 +43,7 @@ $$
 
 사실 아이디어 자체는 간단하다. 삼각함수 $\cos$, $\sin$를 지수 형태로 표현한 후에 \<푸리에 급수\>에 대입해주기만 하면 된다. 복소함수론(MATH210)을 들었다면, 공식은 쉽게 유도할 수 있을 것이다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $$
 \cos \theta = \frac{1}{2} (e^{i\theta} + e^{-i\theta})

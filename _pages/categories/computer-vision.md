@@ -57,7 +57,7 @@ toc_sticky: true
 #### Image Classification + CV
 - SIFT (2004)
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 1. Finding Scale-Space Extrema
 2. Keypoint Filtering
@@ -134,7 +134,7 @@ toc_sticky: true
 
 ### Sementic Segmentation
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 - Fully Convolutional Network (FCN Family)
   - FCN (2015)

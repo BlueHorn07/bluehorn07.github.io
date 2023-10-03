@@ -19,7 +19,7 @@ categories: ["Statistics", "Problem Solving"]
 
 ## MSE is the sum of variance and square of bias
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Theorem.</span><br>
 
@@ -85,7 +85,7 @@ $\blacksquare$
 
 ## Sample Variance is not the minimal variance estimator
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Exercise.</span><br>
 
@@ -150,7 +150,7 @@ $$
 
 ## Which one is the most efficient variance estimator?
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Exercise.</span><br>
 

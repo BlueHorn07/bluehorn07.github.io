@@ -20,13 +20,13 @@ categories: ["Statistics"]
 
 ## Introduction to Estimation
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 "\<**Statistics**\> is the area of science which can make inferences from data set."
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 "\<**Statistical Inference; 통계적 추론**\> means making generalization about the <u>population properties</u> <u>based on a random sample</u>."
 
@@ -238,7 +238,7 @@ $$
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Claim.</span><br/>
 

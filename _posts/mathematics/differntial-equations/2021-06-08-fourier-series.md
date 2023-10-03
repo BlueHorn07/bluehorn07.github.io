@@ -64,7 +64,7 @@ then $f(x)$ is a \<**periodic function**\>.
 
 삼각함수를 예로 들어 \<fundamental period\>가 어떻게 등장하는지 살펴보자.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 1\. $\cos(x)$
 
@@ -108,7 +108,7 @@ $$
 
 삼각함수에서의 직교성(orthogonality)를 확인해보자. \<푸리에 급수\>를 전개하는 데도 자주 사용할 성질들이니 눈여겨 보자!
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 1\. $\cos$ and $\cos$
 
@@ -144,7 +144,7 @@ $$
 
 ### Fourier Series
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $$
 f(x) = \frac{a_0}{2} + \sum_{m=1}^{\infty} \left( a_m \cos \frac{m\pi x}{L} + b_m \sin \frac{m\pi x}{L} \right)

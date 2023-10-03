@@ -29,7 +29,7 @@ $$
 
 \<Combination\> $\binom{n}{k}$의 해석은 본래 아래와 같다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $n$개 대상에서 $k$개를 '순서없이' 뽑는 경우의 수
 
@@ -37,7 +37,7 @@ $n$개 대상에서 $k$개를 '순서없이' 뽑는 경우의 수
 
 그러나 $\binom{n}{k}$의 실제 값을 계산할 때, 본인은 이렇게 이해하지 않고 아래와 같이 이해하고 계산한다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 분모는 $k!$이고, 분자는 $n$부터 시작해서 $(-1)$를 $k$번 뺀 녀석들의 곱.
 

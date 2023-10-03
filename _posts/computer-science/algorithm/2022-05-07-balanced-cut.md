@@ -21,7 +21,7 @@ A set of edges whose removal leaves a graph **disconnected**.
 
 포스트를 앞에서부터 천천히 따라왔다면, [Network Flow]({{"/2021/07/16/network-flow.html" | relative_url}}) 챕터에서 Network Flow 문제가 Minimum Cut Problem과 dual problem 관계임을 공부했을 것이다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Problem.</span> Minimum Cut Problem<br>
 
@@ -42,7 +42,7 @@ Given a graph and a budget $b$, find a cut with at most $b$ edges.
 
 그러나 이렇게 쉬운 형태라면 NP에 등장할 수 없다. Balanced Cut 문제는 분할하는 두 그래프의 **균형**이 맞아야 한다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Problem.</span> Balanced Cut Problem<br>
 

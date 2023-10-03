@@ -19,7 +19,7 @@ categories: ["Modern Algebra1"]
 
 <br><span class="statement-title">Definition.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 A **<u>Euclidean norm</u>** on an integral domain $D$
 
@@ -38,7 +38,7 @@ such that the following conditions are satisfied:
 
 <br><span class="statement-title">Definition.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 An integral domain $D$ is an "Euclidean Domain"
 
@@ -77,7 +77,7 @@ $$
 
 <br><span class="statement-title">Theorem 46.4</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Every Euclidean Domain is a PID.
 
@@ -123,7 +123,7 @@ minimal $\nu(b)$로 $b$를 골랐으므로 $r$이 $\nu(r) < \nu(b)$인 경우는
 
 <br><span class="statement-title">Corollary 46.5</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Every Euclidean Domain is a UFD.
 
@@ -140,7 +140,7 @@ PID가 E.D.가 되지 안는 경우를 찾는 것은 생각보다 쉽진 않다.
 
 <br><span class="statement-title">Theorem 46.5</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 For a E.D. with Euclidean norm $\nu$,
 

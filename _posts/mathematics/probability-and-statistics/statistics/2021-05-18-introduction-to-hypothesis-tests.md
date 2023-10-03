@@ -49,7 +49,7 @@ Supp. we have a p-coin, I belive that it is a fair coin, on the other hand, you 
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Q. How do we do \<Hypothesis Test\>?
 
@@ -95,7 +95,7 @@ Then, we can use $X$ as a \<Test Statistic\>!
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Case.</span> Type 1 error; $\alpha$ error; 잘못된 인정<br>
 
@@ -111,7 +111,7 @@ $$
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Case.</span> Type 2 error; $\beta$ error; 잘못된 부정<br>
 

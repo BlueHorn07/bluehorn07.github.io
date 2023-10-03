@@ -27,7 +27,7 @@ Take random samples $X_1, \dots, X_{n_1}$ and $Y_1, \dots, Y_{n_2}$, and assume 
 
 Supp. that their observed sample means are $\bar{x}$ and $\bar{y}$, and their sample variances are $s_1^2$ and $s_2^2$.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 ✨ Goal: Find $100(1-\alpha)\%$ confidence interval for $\mu_1 - \mu_2$.
 
@@ -70,7 +70,7 @@ $$
 
 우리는 $\sigma^2$를 대체하기 위해 \<**pooled sample variance**\>라는 두 샘플의 sample variance를 종합한 녀석을 쓸 것이다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Recall.</span> sample variance and chi-square<br>
 

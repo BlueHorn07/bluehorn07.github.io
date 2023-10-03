@@ -72,7 +72,7 @@ find an estiamtor $\hat{f}_j$ based on $$\left\{ x_i, \; y_i - \hat{\alpha} - \d
 
 \<GAM; Generalized Additive Model\>은 강력하면서도 간단한 통계적 테크닉 중 하나이다. 1986년, ESL의 공동저자인 "Trevor Hastie"와 "Robert Tibshirani"에 의해 개발된 방법이다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Relationships btw the individual predictors and the dependent variable follow <u>smooth patterns</u> that can be linear or non-linear.
 

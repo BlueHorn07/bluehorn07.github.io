@@ -22,7 +22,7 @@ Factor Group을 정의하려면, 먼저 Factor Group에서 사용할 "**coset �
 
 <span class="statement-title">Theorem.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $H \le G$, THEN the left coset multiplication is well-defined by equation
 
@@ -105,7 +105,7 @@ Then, $xy = (x'h_1)(y'h_2)$에서 $H$가 normal subgroup이므로 $(x'h_1)(y'h_2
 
 <span class="statement-title">Theorem.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $H \le G$ be a normal subgroup,
 
@@ -186,7 +186,7 @@ $a^{-1}Ha \subseteq H$, $H \subseteq a^{-1}Ha$이므로 $a^{-1}Ha = H$이다. �
 
 <span class="statement-title">Theorem.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $\phi: G \longrightarrow G'$ be a group homormophism.
 
@@ -261,7 +261,7 @@ Homo-morphism + (self mapping)
 
 #### Inner Automorphism
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $G$ be a group, and $g \in G$.
 

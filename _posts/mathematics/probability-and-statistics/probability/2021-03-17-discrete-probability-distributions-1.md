@@ -69,7 +69,7 @@ $$
 
 여기서 주의할 점은 \<Bernoulli Trial\>은 **딱 한번만** 시행하는 것이다! Trial을 여러번 한다면, 뒤에 나올 \<Binomial Distribution\>이 된다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <br><span class="statement-title">Theorem.</span><br>
 

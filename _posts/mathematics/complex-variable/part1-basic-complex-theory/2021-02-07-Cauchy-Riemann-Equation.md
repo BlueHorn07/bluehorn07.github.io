@@ -20,7 +20,7 @@ categories: ["Complex Variable"]
 
 "주어진 복소함수 $f(z) = u(x, y) + i v(x, y)$에 대해, 실수부 $u(x, y)$와 허수부 $v(x, y)$를 보고 analytic 함수임을 보장할 수 있을까?"
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $f$ is **<u>analytic</u>** in a domain $D$
 
@@ -120,7 +120,7 @@ Supp. that $f(z)$ is analytic in a domain $D$, and $\left\| f(z) \right\| = k = 
 
 #### Polar Coordinate
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $$
 f(z) = u(r, \theta) + i v(r, \theta), \quad z=r e^{i\theta}
@@ -139,7 +139,7 @@ $$
 
 ### Harmonics functions & Laplace's Equation
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 A real-valued function $H(x, y)$ is harmonic in a domain $D$, if it satisfies "Laplace equation"
 
@@ -153,13 +153,13 @@ $$
 
 <span class="statement-title">Theorem.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 If $f(z)=u(x, y) + i v(x, y)$ is analytic in a domain $D$, <br/>
 then both $u$ and $v$ are Harmonic functions.
 
 </div>
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 If two harmonic functions $u$ and $v$ satisfy the Cauchy-Riemann equations in a domain $D$, <br/>
 then $f(z) = u(x, y) + i v(x, y)$ is analytic in $D$.

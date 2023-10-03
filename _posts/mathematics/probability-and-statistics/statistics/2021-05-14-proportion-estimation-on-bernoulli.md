@@ -20,7 +20,7 @@ categories: ["Statistics"]
 
 Supp. we have a p-coin. We want to verify that the coin is really a p-coin.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 ✨ Goal: Estimate $p$ based on the sample points!
 

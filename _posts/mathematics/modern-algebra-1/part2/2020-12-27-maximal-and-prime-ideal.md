@@ -12,7 +12,7 @@ categories: ["Modern Algebra1"]
 
 <span class="statement-title">Theorem.</span> Ideal + unity = Ring<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $R$ be a ring with unity.
 
@@ -44,7 +44,7 @@ $\blacksquare$
 
 <span class="statement-title">Corollary.</span> <br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Field $F$ contains no proper non-trivial ideals.
 
@@ -83,7 +83,7 @@ Ideal $I$에 대해 $1 \in I$라면, 위에서 증명한 정리에 의해 $I = F
 
 <span class="statement-title">Definition.</span> <br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $M$: maximal ideal of ring $R$
 
@@ -117,7 +117,7 @@ $\mathbb{Z} / p\mathbb{Z} \cong \mathbb{Z}_p$
 
 아래와 같은 정리에 따르면 $p\mathbb{Z}$는 maximal normal subgroup이 된다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $M$ is a **<u>maximal normal subgroup</u>** of $G$ $\iff$ $G/M$ is simple.
 
@@ -138,7 +138,7 @@ $\mathbb{Z}$가 abelian이므로 모든 subgroup은 normal subgroup이다.
 
 <span class="statement-title">Theorem.</span> <br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $R$ : commutative ring + unity
 
@@ -191,7 +191,7 @@ $rs$를 $(r)$로 바꾸었다. $(r)=rR$로 $r$로 생성된 [Principal Ideal]({{
 
 Claim. $M + (r)$은 Ideal이다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $r(M + (r)) = rM + r(r) = M + (r)$
 
@@ -234,7 +234,7 @@ Then, For $r \in N \setminus M$, $\overline{r} \ne M$ and $\overline{r} \in R/M$
 
 Claim. coset $M + (r) = M + rR$ is an Ideal.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 (앞에서 확인했던 방식대로 Ideal임을 확인하면 된다.)
 
@@ -246,7 +246,7 @@ Claim. coset $M + (r) = M + rR$ is an Ideal.
 
 $s \in R$이므로 $1 \in M + (r)$이 된다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $M$ is a Maximal Ideal $\implies$ $0 \in M$.
 
@@ -278,7 +278,7 @@ $M$ is a Maximal Ideal. $\blacksquare$
 
 <span class="statement-title">Corollary.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $R$: commutative ring + unity
 
@@ -321,7 +321,7 @@ $R$에는 ideal이 $R$ 하나 뿐이라고 가정했으므로 $rR = R$.
 
 <span class="statement-title">Definition.</span> Prime Ideal<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $R$ be a commutative ring, and $N \trianglelefteq R$.
 
@@ -342,7 +342,7 @@ $N \trianglelefteq R$이 prime ideal이라면, $a \in N$은 prime elt over $R$�
 
 <span class="statement-title">Theorem.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $R$ : commutative ring + unity.
 
@@ -407,7 +407,7 @@ Since $R/N$ is an integral domain, $\overline{a} = 0$ or $\overline{b} = 0$.
 
 <span class="statement-title">Theorem.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Any Maximal Ideal of commutative ring is also a Prime Ideal.
 

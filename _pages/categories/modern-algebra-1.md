@@ -12,7 +12,7 @@ toc_sticky: true
 
 # Group
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Lagrange Theorem</span><br>
 
@@ -30,7 +30,7 @@ If $H$ is a subgrop of a group $G$, then $\lvert H \rvert \mid \lvert G \rvert$,
 
 ## Fundamental Theorem of Finitely Generated Abelian Group
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">F.T of f.g. Abelian Group</span><br>
 
@@ -56,7 +56,7 @@ Where $p_i$ are primes, not necessarily distinct, and $r_i$ are positive integer
 
 <hr>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 condition for operation well-definedness on Factor group
 
@@ -74,7 +74,7 @@ $$
 
 <hr>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Fundamental Homomorphism Theorem</span><br>
 
@@ -121,7 +121,7 @@ Let $\phi: G \longrightarrow G'$ be a group homomorphism, THEN
 
 <hr>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Fermat's Little Theorem</span><br>
 
@@ -136,7 +136,7 @@ $$
 - [Fermat's Little Theorem]({{"2020/12/26/Fermat-little-theorem.html" | relative_url}}) 🔥
   - [Examples]({{"2020/12/26/Fermat-little-theorem.html#examples" | relative_url}})
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Euler's Theorem</span><br>
 
@@ -168,7 +168,7 @@ $$
   - [Factor Theorem]({{"2020/12/27/Polynomial-Ring.html#factor-theorem" | relative_url}}); 인수 정리
   - cyclic group embedding
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Eisenstein Criteria</span><br>
 
@@ -216,7 +216,7 @@ THEN, $f(x)$ is irreducible over $\mathbb{Q}$.
   - $\textrm{Char}$와 sub-ring / sub-field 사이의 관계
   - $\mathbb{Z}_p$, $\mathbb{Q}$ are Prime Field
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 Prime ideals generalize the concept of primality to more general commutative rings.
 </div>
 
@@ -263,7 +263,7 @@ Prime ideals generalize the concept of primality to more general commutative rin
 
 # Appendix
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 For a homormophism $\phi$,
 
@@ -271,7 +271,7 @@ if $\ker \phi = \\{ e \\}$, then $\phi$ is 1-1.
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Ring-Domain-Field</span><br>
 
@@ -281,7 +281,7 @@ if $\ker \phi = \\{ e \\}$, then $\phi$ is 1-1.
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">헷갈리는 조합 1</span><br>
 
@@ -290,7 +290,7 @@ if $\ker \phi = \\{ e \\}$, then $\phi$ is 1-1.
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">헷갈리는 조합 2</span><br>
 
@@ -300,7 +300,7 @@ if $\ker \phi = \\{ e \\}$, then $\phi$ is 1-1.
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Homomorphism 모음</span><br>
 
@@ -311,7 +311,7 @@ if $\ker \phi = \\{ e \\}$, then $\phi$ is 1-1.
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Maximal Ideal 모음</span><br>
 

@@ -37,7 +37,7 @@ $$
 
 위의 수식에서 $\phi_0$, $\phi_1$의 값에 따라 다양한 모델들이 파생되는데,
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Definition.</span> White Noise Model<br>
 
@@ -51,7 +51,7 @@ $$
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Definition.</span> Random Walk Model<br>
 
@@ -73,7 +73,7 @@ $$
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Definition.</span> Random Walk Model with drift<br>
 
@@ -87,7 +87,7 @@ Drift $\phi_0$가 존재하는 경우임. 시계열이 뚜렷한 추세를 가�
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Definition.</span> AR(1) with Stationarity<br>
 

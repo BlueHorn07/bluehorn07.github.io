@@ -119,7 +119,7 @@ $(F, +, \cdot)$가 Field임을 확인하기 위해 아래의 3가지 사실을 �
 
 <span class="statement-title">Lemma</span>.<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 We will show $D \cong \\{[(d, 1)] \mid d \in D \\}$
 
@@ -153,7 +153,7 @@ $$
 이것으로 아래의 정리가 성립한다.
 
 <span class="statement-title">Theorem</span>.<br>
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
   Any Integral Domain $D$ can be enlarged to a Field $F$ which consist of quotient of $D$.
 
   이때의 Field $F$를 **<u>Quotient Field</u>**라고 한다.
@@ -175,7 +175,7 @@ Domain $D$를 포함하는 어떤 Field가 있다고 하자. 그러면 이 Field
 이것을 수학적으로 기술하면 아래와 같다.
 
 <span class="statement-title">Theorem</span>.<br>
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
   Let $F$ be a Quotient Field of Domain $D$, and let $L$ be a any field containing $D$. ($L$ is any extension field of $D$.)
 
   THEN, $\exists$ a 1-1 ring homormophism $\psi: F \longrightarrow L$ s.t. $\psi(x) = x$ for $\forall x \in D$.
@@ -284,7 +284,7 @@ $\psi[F]$는 $\psi$의 Image 이므로 onto 역시 성립한다.
 
 <span class="statement-title">Corollary.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Every field $L$ containing an integral domain $D$ contains the field of quotient of $D$.
 
@@ -294,7 +294,7 @@ Every field $L$ containing an integral domain $D$ contains the field of quotient
 
 <span class="statement-title">Corollary.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Any two field of quotient of an integral domain $D$ are isomorphic as rings.
 

@@ -10,7 +10,7 @@ categories: ["Probability"]
 
 # Monti Hall Problem
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <div class="img-wrapper">
 <img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Monty_open_door.svg/440px-Monty_open_door.svg.png" style="width:200px;">

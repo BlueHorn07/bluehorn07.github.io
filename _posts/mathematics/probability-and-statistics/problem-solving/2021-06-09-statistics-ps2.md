@@ -17,7 +17,7 @@ categories: ["Statistics", "Problem Solving"]
 
 <hr/>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Theorem.</span><br>
 
@@ -52,7 +52,7 @@ $\blacksquare$
 
 <hr/>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Theorem.</span><br>
 
@@ -87,7 +87,7 @@ $\blacksquare$
 
 <hr/>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Theorem.</span><br>
 

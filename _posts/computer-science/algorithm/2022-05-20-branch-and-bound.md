@@ -72,7 +72,7 @@ partial solution $[a, S, b]$를 확장해보자. 그것은 $S$를 제외한 vert
 
 \<Branch-and-Bound\> 알고리즘의 원리를 요약하면 아래와 같다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Start with some problem $P_0$
 

@@ -41,7 +41,7 @@ categories: [PyTorch]
 
 모델이 `COCO` 데이터셋에 맞춰져 있다면, 아마 아래와 같은 형식을 따라야 할지도 모른다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 - image: a PIL Image of size (H, W)
 - target: a dict containing the following fields

@@ -12,7 +12,7 @@ categories: ["Modern Algebra1"]
 
 ### Cyclic group and its subgroup
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Every subgroup of cyclic group is also cyclic.
 

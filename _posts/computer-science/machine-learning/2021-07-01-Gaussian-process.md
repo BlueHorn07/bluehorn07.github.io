@@ -158,7 +158,7 @@ $$
 
 \<Gaussian Process\>의 정의를 다시 떠올려보자.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 "A **Gaussian process** is a stochastic process s.t. any finite subcollection of random variables has a multivariate Gaussian distribution."
 

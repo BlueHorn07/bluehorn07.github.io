@@ -39,7 +39,7 @@ seq2seq 모델은 인코더-디코더 구조로 이루어져 있음. 하지만, 
 #### Attention Mechanism
 
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 "Attention의 기본 아이디어는 디코더에서 출력 단어를 예측하는 매 시점(time step)마다, 인코더에서의 전체 입력 문장을 다시 한번 참고한다는 점이다.
 
@@ -53,7 +53,7 @@ seq2seq 모델은 인코더-디코더 구조로 이루어져 있음. 하지만, 
 <img src="https://wikidocs.net/images/page/22893/%EC%BF%BC%EB%A6%AC.PNG" width="50%">
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 **Attetion Function**은 주어진 Query $Q$에 대해 모든 키 $K$와의 "유사도"를 각각 구한다. 그리고 이 유사도를 키와 묶여있는 값 $V$에 반영해준다. 출력인 Attention Value는 이 값 $V$에 유사도를 반영한 결과를 모두 더해서 리턴한 것이다.
 

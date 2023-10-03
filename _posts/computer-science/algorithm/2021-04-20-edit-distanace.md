@@ -24,7 +24,7 @@ categories: ["Algorithm"]
 
 DP로 접근하기 위해 먼저 문제를 subproblem으로 분할해야 한다. 이때, 우리가 가장 자연스럽게 생각해볼 수 있는 분할 방식은 두 string을 prefix로 분할하는 방법이다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Given two strings, $x[1, \dots, m]$ and $y[1, \dots, n]$. A good subproblem would be to compute the optimal edit distance btw some **prefixes**, $x[1, \dots, i]$ and $y[1, \dots, j]$.
 

@@ -48,7 +48,7 @@ ps) 일반적으로, $F(n_1, n_2) \ne F(n_2, n_1)$이다. <small>F-distribution�
 
 <br/>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Remark.</span><br>
 
@@ -58,7 +58,7 @@ In fact we have $F(n_1, n_2) \overset{D}{=} \dfrac{1}{F(n_2, n_1)}$.
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 2\. Let $f_\alpha (n_1, n_2)$ be the number $x$ such that $\alpha = P\left(F(n_1, n_2) \ge x\right)$.
 

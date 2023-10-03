@@ -43,7 +43,7 @@ Then,
 
 # Weak Law of Large Numbers
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Theorem.</span> WLLN<br>
 

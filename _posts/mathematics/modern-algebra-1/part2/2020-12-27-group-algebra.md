@@ -14,7 +14,7 @@ categories: ["Modern Algebra1"]
 
 <span class="statement-title">Definition.</span> Group Ring<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $G = \\{ g_i \mid i \in I \\}$ be a **<u>group</u>** under multiplicity, and
 
@@ -61,7 +61,7 @@ Group Ring과 Polynomial의 차이는 power에 있다.
 
 <span class="statement-title">Theorem.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 If $G$ is any group written multiplicatively, and $R$ is a commutative ring with non-zero unity,
 
@@ -75,7 +75,7 @@ then $(R(G), +, \cdot\;)$ is a ring.
 
 <span class="statement-title">Definition.</span> Group Ring & Group Algebra<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 위와 같은 Ring $R(G)$를 "**<u>Group Ring</u>**"라고 한다.
 
@@ -104,7 +104,7 @@ then $(R(G), +, \cdot\;)$ is a ring.
 
 <span class="statement-title">Theorem.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 The Quaternions forms a **<u>skew field</u>** under $+$ and $\cdot\;$.
 
@@ -114,7 +114,7 @@ The Quaternions forms a **<u>skew field</u>** under $+$ and $\cdot\;$.
 
 <span class="statement-title">Theorem.</span> Wedderburn's Theorem<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Every finite division ring is a field.
 

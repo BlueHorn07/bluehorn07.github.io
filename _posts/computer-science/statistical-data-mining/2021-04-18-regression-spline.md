@@ -341,7 +341,7 @@ model complexity $\uparrow$ / bias $\downarrow$ / variance $\uparrow$<br/>
 4\. (general case) large $\lambda$ <br/>
 model complexity $\downarrow$ / bias $\uparrow$ / variance $\downarrow$
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 만약 $\mathcal{F}$가 특정 \<Sobolev space\>에 속하는 어떤 함수라면, smooth spline이 곧 natrual cubic spline이 된다고 한다.<br/>
 <small>ESL, Exercise 5.7</small>

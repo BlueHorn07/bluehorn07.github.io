@@ -26,7 +26,7 @@ $$
 
 \<Kruskal's Algorithm\>은 empty graph에서 시작해 아래의 순서대로 Greedy 방식으로 edge를 선택하는 알고리즘이다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 남은 edge 중에 가장 light한 edge를 그래프에 추가한다. 단, edge를 추가했을 때, 그래프에서 cycle이 생기지 않아야 한다.
 

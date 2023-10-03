@@ -185,7 +185,7 @@ $$
 
 👀 \<local quadratic regression\>이 \<local linear regression\>보다 curverture가 있는 부분을 더 잘 fitting 하는 것을 볼 수 있다. 👀
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Q. 지금까지의 살펴본 것을 종합해보면, \<local constant fit\> 보단 \<local linear fit\>이 좋았다. 또, \<local quadratic fit\>이 더 좋았다. 그렇다면, polynomial fitting의 차수가 높을 수록 좋은 것 일까?
 

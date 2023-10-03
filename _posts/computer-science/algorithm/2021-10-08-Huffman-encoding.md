@@ -15,7 +15,7 @@ categories: ["Algorithm"]
 
 ## Situation
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Consider a string consisting of 130 million characters and the alphabet {A, B, C, D}. `CDABDBACCDDBBCCDCC...` How to write this long string in binray with most economic way?
 

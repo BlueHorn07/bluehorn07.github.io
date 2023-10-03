@@ -20,7 +20,7 @@ Three Sylow Theorem은 [이곳]({{"2020/12/26/Sylow-thm.html" | relative_url}})�
 
 <span class="statement-title">Theorem 37.7</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 For a group of order $pq$ ($p<q$ are prime)
 
@@ -136,7 +136,7 @@ $H \times K$ 역시 cyclic이다.
 
 <span class="statement-title">Lemma 37.8</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $H$, $K$ be finite subgroups of $G$.
 

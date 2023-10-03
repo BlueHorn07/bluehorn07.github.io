@@ -132,7 +132,7 @@ Homo- 가 존재함을 보이는 건 머리를 잘 굴려서 생각해내면 되
 <br>
 <span class="statement-title">Theorem.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $\phi$ be a group homo-, Show that
 

@@ -134,7 +134,7 @@ $$
 
 가 됨을 기억하자.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $$
 \begin{aligned}
@@ -158,7 +158,7 @@ $$
 
 가 됨을 기억하자.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $$
 \begin{aligned}
@@ -174,7 +174,7 @@ $$
 
 Sine function $\sin x$에 대한 테일러 급수는 아래와 같다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $$
 \begin{aligned}

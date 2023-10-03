@@ -37,7 +37,7 @@ DE는 분류상 Unsupservised Learning로 분류된다. DE는 non-parameteric DE
 
 수식도 직관적이다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 we observe $X_1, ..., X_n$, and $\Delta_i$ is bin width.
 
@@ -58,7 +58,7 @@ Histogram이 이산적인 경우라면, KDE는 연속적인 데이터에 적합�
 그러나 현실에서 우리가 찾고자 하는 $x \in \mathbb{R}$에 정확하 어떤 데이터가 존재하는 일은 거의 없다. 그래서 $x$의 **주변 데이터**를 이용해 $p(x)$를 추정해야 한다. 어느 정도의 데이터를 "주변(neighborhood)"로 여길 것인지를 결정하는 함수가 바로 kernel function $k(u)$이다.
 
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 kernel function: parzen window
 
@@ -120,7 +120,7 @@ $\Delta$, $h$는 hyper parameter이기 때문에 어떤 값을 써야 하는지�
 
 분포를 추정하는 데이터가 1차원이 아닌 2차원 이상의 $d$-dimensional data인 경우도 있을 것이다. 그럴 때는 $h^d$의 cube 범위 내의 neighbor를 구하면 된다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $$
 k(u) = \begin{cases}

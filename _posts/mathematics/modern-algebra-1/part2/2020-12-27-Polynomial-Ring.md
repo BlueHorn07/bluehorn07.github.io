@@ -13,7 +13,7 @@ categories: ["Modern Algebra1"]
 
 <span class="statement-title">Definition.</span> Polynomial from Ring $R$<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $R$ be a ring,
 
@@ -50,7 +50,7 @@ $$
 
 <span class="statement-title">Theorem.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 If $R$ is a ring, also $R[x]$ is a ring.
 
@@ -67,7 +67,7 @@ If $R$ has the unity, also $R[x]$ has the unity.
 
 <span class="statement-title">Theorem 22.4</span> The Evaluation Homomorphism for Field Theory; 체론을 위한 대입 준동형사상<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $F$ be a subfield of a field $E$, and $\alpha \in E$.
 
@@ -109,7 +109,7 @@ Show $\phi_\alpha$ is a ring homomorphism.
 
 <span class="statement-title">Theorem.</span> Division Algorithm for Polynomial Ring<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $F$ be a field.
 
@@ -229,7 +229,7 @@ $$
 
 <span class="statement-title">Definition.</span>zero of polynomial; polynomial의 근<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let field $F$ be a sub-field of field $E$, and $\alpha \in E$.
 
@@ -246,7 +246,7 @@ if $f(\alpha) = 0$, then $\alpha$ is a zero of $f(x)$.
 
 <span class="statement-title">Corollary.</span> Factor Theorem; 인수 정리<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 For $a \in F$,
 
@@ -314,7 +314,7 @@ $(x-a) \mid f(x)$가 된다. $\blacksquare$
 
 <span class="statement-title">Corollary 23.5</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 A non-zero poly-. $f(x) \in F[x]$ of $\deg = n$ has at most $n$ zeros in field $F$.
 
@@ -353,7 +353,7 @@ $f(x)$의 차수가 $n$이므로 우변에는 많아야 $n$개의 $(x-a_i)$가 �
 
 <span class="statement-title">Corollary 23.6</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $(F^{*}, \cdot\;)$는 Field $F$에 대한 곱셈군이다.
 

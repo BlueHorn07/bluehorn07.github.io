@@ -57,7 +57,7 @@ UFD에 대한 첫번째 포스트는 [이곳]({{"2020/12/27/Unique-Factorization
 <br>
 
 <span class="statement-title">Proposition.</span><br>
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $D$: Integral Domain
 
@@ -96,7 +96,7 @@ This means $D[x]$ is an Integral Domain. $\blacksquare$
 
 <span class="statement-title">Theorem 23.20</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 If $F$ is a Field,
 
@@ -133,7 +133,7 @@ Supp. $f(x) = p_1 (x) \cdots p_r (x) = q_1 (x) \cdots q_s (x)$.
 $p_1(x)$는 $f(x)$를 divide 하므로 식의 우변을 divide한다. 따라서 $p_1 (x)$는 적어도 하나의 $q_i (x)$를 divide한다.
 
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 사실 위의 사실은 irreducibility의 정의를 확장한 것이다.
 
@@ -180,7 +180,7 @@ $u_1 \cdots u_r = 1 \cdots q_{r+1} (x) \cdots q_s (x)$가 된다.
 이번에는 **집합론**에서도 등장하는 명제를 다룬다. 생각보다 중요한 명제다.
 
 <span class="statement-title">Lemma 45.9</span><br>
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $R$: commutative ring + unity.
 
@@ -226,7 +226,7 @@ Therefore, $N$ is an Ideal. $\blacksquare$
 Lemma 45.9로부터 PID에 대한 ACC<small>(Ascedning Chain Condition)</small>을 유도할 수 있다!!
 
 <span class="statement-title">Lemma 45.10</span><br>
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $D$ be a PID.
 
@@ -288,7 +288,7 @@ Thus $N_r = N_s$ for $s \ge r$.
 
 <span class="statement-title">Theorem 45.11</span> proof of 1st condition<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $D$ be a PID.
 
@@ -369,7 +369,7 @@ This means, in PID, non-zero & non-unit can be factorized into a product of irre
 
 <span class="statement-title">Theorem 23.20</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 If $F$ is a **<u>Field</u>**, then every non-constant polynomial $f(x) \in F[x]$ can be factored in $F[x]$ into a **<u>product of irreducible polynomials</u>**.
 
@@ -384,7 +384,7 @@ The product of irreducible poylnomials is unique except for order and unit.
 
 <span class="statement-title">Theorem 27.25</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 An ideal $\left< p(x) \right> \ne \\{0\\}$ of $F[x]$ is **<u>maximal</u>**
 
@@ -396,7 +396,7 @@ $\iff$ $p(x)$ is **<u>irreducible</u>** over $F$.
 
 <span class="statement-title">Lemma 45.12</span> (Generalization of Thm 27.25)<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 An ideal $\left< p \right>$ in a PID is **<u>maximal</u>**
 
@@ -482,7 +482,7 @@ $p$ would be a unit ($a$, $b$ 모두 unit일 때)
 
 <span class="statement-title">Theorem 27.27</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $p(x)$ be an **irreducible polynomial** in $F[x]$.
 
@@ -496,7 +496,7 @@ then either $p(x) \mid r(x)$ or $p(x) \mid s(x)$.
 
 <span class="statement-title">Lemma 45.13</span> (Generalization of Thm 27.27)<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 In a PID, if an **irreducible** $p$ divides $ab$,
 
@@ -526,7 +526,7 @@ $(ab) \in \left< p \right>$ implies that either $a \in \left< p \right>$ or $b \
 
 <br><span class="statement-title">Corollary 45.14</span> (Generalization of Lemma 45.13)<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 If $p$ is an irreducible in a PID and $p \mid a_1 a_2 \cdots a_n$ for $a_i \in D$.
 

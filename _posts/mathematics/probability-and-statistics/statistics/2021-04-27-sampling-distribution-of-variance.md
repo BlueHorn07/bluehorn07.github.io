@@ -122,7 +122,7 @@ $$
 
 만약 $Z = X + Y$에서 $Z \sim \chi^2(n)$이고, $Y \sim \chi^2(1)$일 때 $X \perp Y$라면, $X \sim \chi^2(n-1)$가 된다. 그러나 아직 $X \perp Y$에 대해 확인하지 않았다. 아래의 Lemma를 통해 $X \perp Y$를 확인해보자.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Lemma.</span><br>
 

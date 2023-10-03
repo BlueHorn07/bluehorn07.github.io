@@ -18,7 +18,7 @@ categories: ["Modern Algebra1"]
 
 ## Lagrange Theorem
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 If $H$ is a subgrop of a group $G$, then $\lvert H \rvert \mid \lvert G \rvert$, in other words, $\lvert G \rvert = [G:H] \lvert H \rvert$.
 

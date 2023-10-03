@@ -36,7 +36,7 @@ Equivalently, it is <span class="half_HL">the largest convex polygon whose verti
 
 \<Convex hull Algorithm\>을 살펴보기 전에 먼저 아래의 문제를 풀어보자.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 For three points $p$, $q$, $r$, how do we test whether $r$ lies to the left or to the right of the directed line $\vec{pq}$?
 

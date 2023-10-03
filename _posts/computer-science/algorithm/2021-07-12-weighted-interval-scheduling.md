@@ -19,7 +19,7 @@ Greedy는 Interval이 모두 동일한 weight를 갖는다면 잘 동작한다. 
 
 먼저 문제를 기술해보자.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 A set of $n$ jobs, job $j$ starts at $s_j$, finishes at $f_j$ and has weight $w_j$. Find a maximum weight subset of "mutually compatible" jobs.
 

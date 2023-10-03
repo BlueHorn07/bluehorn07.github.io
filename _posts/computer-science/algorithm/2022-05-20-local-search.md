@@ -38,7 +38,7 @@ categories: ["Algorithm"]
 우리는 cycle을 다루고 있기 때문에, 두 cycle이 하나의 edge만 다를 순 없다. 적어도 2개의 edge를 바꿔줘야 새로운 cycle을 만들 수 있기 때문이다. 그래서 우리는 "2-change neighborhood"라고 2개의 edge가 바꿔 partial solution의 neighborhood solution을 생성하겠다.
 
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $s$ be any initial solution.
 
@@ -68,7 +68,7 @@ return $s$.
 > Occasionally allow moves that actually increase the cost, in the hope that they will pull the search out of dead ends.
 
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $s$ be any starting solution.
 
@@ -91,7 +91,7 @@ return $s$.
 
 그러나 이렇게 할 경우, (정말 운이 나쁘면) global solution 바로 앞에서 randomly pick한 neighbor로 가버릴 수 있을 것이다. 이런 상황을 방지하기 위해 iteration을 진행할 수록 probability $p$의 값을 줄여 오직 $\text{cost}(s') < \text{cost}(s)$만 허용하도록 \<Local Search\>를 설계할 수 있다. 이것을 위해 cost difference $\Delta$와 temperature $T$를 도입한다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $s$ be any starting solution.
 

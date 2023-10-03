@@ -15,7 +15,7 @@ primitive function에 대한 곱이 닫혀있음을 말하는 **<u>Guass's Lemma
 
 <br><span class="statement-title">Theorem 23.20</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 If $F$ is field, then every non-constant polynomial $f(x) \in F[x]$ can be factored in $F[x]$ into a product of irreducible polynomials.
 
@@ -42,7 +42,7 @@ The irreducible factorization is unique except for order and for unit.
 
 <br><span class="statement-title">Lemma 45.27</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $D$ be a UFD, and $F$ be a Quotient field of $D$.
 
@@ -115,7 +115,7 @@ $\blacksquare$
 
 <br><span class="statement-title">Lemma 45.28</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 If $D$ is a UFD, and $F$ is Quotient field of $D$,
 
@@ -192,7 +192,7 @@ $\blacksquare$
 
 <br><span class="statement-title">Corollary 45.30</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 If $F$ is a field and $x_1, \cdots, x_n$ are indeterminatnes, then $F[x_1, \cdots, x_n]$ is a UFD.
 

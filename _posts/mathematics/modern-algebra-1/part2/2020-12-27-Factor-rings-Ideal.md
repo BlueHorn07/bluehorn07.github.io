@@ -13,7 +13,7 @@ categories: ["Modern Algebra1"]
 
 <span class="statement-title">Definition.</span> Ring homomorphism<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $R$, $R'$ be rings
 
@@ -39,7 +39,7 @@ The map $\pi_i: R_1 \times R_2 \times \cdots \times R_n \longrightarrow R_i$ def
 
 <span class="statement-title">Theorem.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $\phi$ be a homo- of a ring $R$ onto a ring $R'$.
 
@@ -84,7 +84,7 @@ $\phi(x)\cdot\phi(y) = \phi(x \cdot y)$
 
 <span class="statement-title">Definition.</span> kernel of ring homomorphism<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $\phi: R \longrightarrow R'$ be a ring homomorphism.
 
@@ -107,7 +107,7 @@ $\mathbb{R} \not\cong \mathbb{C}$ as a ring isomorphism.
 
 <span class="statement-title">Theorem.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $H$ be a sub-ring of ring $R$; $H \le R$.
 
@@ -195,7 +195,7 @@ for $a, b \in R$
 
 <span class="statement-title">Definition.</span> Ideal<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 A subgroup $N$ of a ring $R$ is an "ideal", when
 
@@ -211,7 +211,7 @@ $$
 
 <span class="statement-title">Definition.</span> Factor Ring<br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $I$ be an ideal of a ring $R$.
 

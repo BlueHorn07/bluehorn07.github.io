@@ -69,7 +69,7 @@ $H_1: \mu < \mu_0$인 것도, $H_1: \mu \ne \mu_0$ 경우도 비슷하게, 식�
 <img src= "{{"/images/probability-and-statistics/sample-mean-test-2.png" | relative_url }}" width=650>
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Quick Remark.</span><br>
 

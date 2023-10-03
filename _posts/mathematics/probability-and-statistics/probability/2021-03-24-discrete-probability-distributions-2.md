@@ -57,7 +57,7 @@ $$
 \therefore \max \{ 0, n-(N-K) \} \le x \le \min \{ K, n \}
 $$
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Theorem.</span><br>
 
@@ -72,7 +72,7 @@ Let $X \sim \text{HyperGeo}(N, K, n)$, then
 
 HyperGeo의 $\dfrac{K}{N}$를 Binomial의 $p$로 해석한다면, Binomial의 평균인 $np$와 HpyerGeom의 $n\dfrac{K}{N}$는 그 형태가 꽤 비슷하다. 분산의 경우에도 HyperGeo의 경우 $n \dfrac{K}{N}\left( 1 - \dfrac{K}{N} \right) \cdot \dfrac{N-n}{N-1}$로 Binomial의 경우처럼 $npq$의 형태가 보이지만, 마지막 부분에 $\dfrac{N-n}{N-1}$에 대한 텀이 붙는다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Theorem.</span><br>
 
@@ -140,7 +140,7 @@ $$
 
 위와 같이 확률 合이 1이 됨을 보이는 과정에서 "Geometric Series"가 등장하기 때문에 "Geometric" Distribution이라는 이름이 붙었다!!
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Property.</span> Memeryless property 🔥<br>
 
@@ -162,7 +162,7 @@ $$
 
 <br/>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Theorem.</span><br>
 
@@ -340,7 +340,7 @@ $\blacksquare$
 
 즉, 유도 과정에서 Negative Binomial이 등장하기 때문에 지금의 Negative Binomial이라는 이름이 붙었다.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Theorem.</span><br>
 

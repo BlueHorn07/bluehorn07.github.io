@@ -88,7 +88,7 @@ $\therefore$ A 95% confidence interval would be $(170 - 3.92, 170 + 3.92)$.
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Remark.</span> Confidence Interval on $\mu$ when $\sigma^2$ is known<br>
 
@@ -242,7 +242,7 @@ $$
 
 가 된다!
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Remark.</span> Confidence Interval on $\mu$ when $\sigma^2$ is unknown<br>
 

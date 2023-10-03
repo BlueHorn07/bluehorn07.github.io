@@ -64,7 +64,7 @@ $$
 
 <br/>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Remark.</span><br/>
 
@@ -143,7 +143,7 @@ $$
 
 <br/>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 2\. If $X \sim \chi^2(n)$, then
 

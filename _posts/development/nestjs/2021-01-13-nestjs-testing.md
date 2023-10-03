@@ -168,7 +168,7 @@ describe('test title', () => {
 
 그래서 데이터베이스를 직접 조작하는 것이 아니라 테스트할 데이터베이스를 모사한 `Mock` 객체를 만들어 해당 `Mock` 객체에서 테스트 상황을 만들어 테스트를 진행해야 한다!!
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 #### Mocking & Mock
 

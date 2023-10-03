@@ -154,7 +154,7 @@ Supp. we have sample points $(x_1, y_1), \dots, (x_n, y_n)$ from $Y_i = \beta_0 
 
 우리는 위와 같은 상황에서 $\beta_0$, $\beta_1$에 대한 \<confidence interval\>을 찾고 또 그것을 이용해 **검정**을 수행해 볼 것이다!
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 우리는 $\beta_1$에 대한 point estimator로 $B_1 = S_{xy} / S_{xx}$를 사용했고, 이때 $B_1$의 분포는 아래와 같았다.
 
@@ -184,7 +184,7 @@ $$
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 마찬가지로 $B_0$에 대해서도 검정을 수행해보자. $B_0$의 분포는 아래와 같았다.
 

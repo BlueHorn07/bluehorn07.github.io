@@ -18,7 +18,7 @@ categories: ["Modern Algebra1"]
 
 <span class="statement-title">Theorem.</span><br>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 Let $H \le G$,
 

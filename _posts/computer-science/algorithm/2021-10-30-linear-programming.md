@@ -28,7 +28,7 @@ categories: ["Algorithm"]
 
 ## Profit Maximization
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 A, B 두 개의 상품을 제조하는 회사가 있다고 하자. 회사는 아래와 같이 조건에서 두 상품을 생산할 수 있다고 한다.
 
@@ -79,7 +79,7 @@ maximize project per day: $\max \; (x_1 + 6 x_2)$
 
 ## Diet Problem
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 다른 종류의 음식 $n$개 있다: $F_1, ..., F_n$. 그리고 각 음식은 $m$ 종류 만큼의 영양소를 함유하고 있다: $N_1, ..., N_m$.
 
@@ -113,7 +113,7 @@ minimize cost: $p_1x_1 + p_2x_2 + \cdots + p_nx_n$
 
 ## Assignment Problem
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 $n$명의 직원과 $m$개의 작업이 있다. 직원 $i$가 작업 $j$를 하루 종일 할 때의 효용이 $a_{ij}$라고 하자. 그러나 하나의 작업을 수행할 때는 한 명의 사람이 배정되어야 하고, 각 직원은 하루를 쪼개서 하루에 여러 개의 일을 수행할 수 있다. 우리는 직원들에게 하루치 작업을 적절히 분배해서 최고의 효용의 달성하고자 한다.
 
@@ -137,7 +137,7 @@ maximize $$\displaystyle \sum^{n}_{i=1} \sum^{m}_{j=1} a_{ij} x_{ij}$$
 
 ## Production Plaaning
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 도자기를 만드는 공장이 있다. 그 공장에 들어오는 월간 주문은 대략 $440 \le d_i \le 920$ 정도라고 한다. 공장에는 현재 30명의 직원이 있다. 직원들은 한달에 20개의 도자기를 만들 수 있으며, 2000원의 월급을 받는다.
 
@@ -171,7 +171,7 @@ $$
 
 문제를 계속 읽어보자.
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 ...
 
@@ -198,7 +198,7 @@ $$
 \min \quad 2000 \sum_i w_i + 320 \sum_i h_i + 400 \sum_i f_i + 180 \sum_i o_i
 $$
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 ...
 
@@ -224,7 +224,7 @@ $$
 
 ## Bandwidth Allocation
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 네트워크 공급자는 아래와 같은 조건으로 네트워크를 구축하려고 한다.
 

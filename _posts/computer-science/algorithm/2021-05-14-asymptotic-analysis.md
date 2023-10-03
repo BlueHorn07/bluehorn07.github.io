@@ -29,7 +29,7 @@ categories: ["Algorithm"]
 
 ### $O$ Notaiton
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <div class="light-margin" markdown="1">
 
@@ -53,7 +53,7 @@ we have $f(n) \le c\cdot g(n)$
 
 ### $\Omega$ Notaiton
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <div class="light-margin" markdown="1">
 
@@ -75,7 +75,7 @@ we have $f(n) \ge c\cdot g(n)$
 
 ### $\Theta$ Notaiton
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <div class="light-margin" markdown="1">
 
@@ -127,7 +127,7 @@ A3. E-Z
 
 ### Other Asymptotic Bounds
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Definition.</span> little-o notation<br>
 
@@ -139,7 +139,7 @@ then $f(n) = o(g(n))$.
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Definition.</span> little-omega notation<br>
 
@@ -162,7 +162,7 @@ if $g(n) = o(f(n))$, then $f(n) = \omega(g(n))$.
 
 </div>
 
-<div class="statement" markdown="1">
+<div class="notice" markdown="1">
 
 [Definition by Limitation]
 
