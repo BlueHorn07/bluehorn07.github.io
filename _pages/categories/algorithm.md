@@ -1,15 +1,9 @@
 ---
 title: "Algorithm"
 permalink: /categories/algorithm/
-layout: category
-# taxonomy: algorithm
-author_profile: true
-sidebar:
-  nav: "docs"
+toc: true
+toc_sticky: true
 ---
-
-
-<br>
 
 🔥 2020-1학기 POSTECH 안희갑 교수님의 『Algorithm(CSED331)』을 수강하면서 공부한 내용을 정리하였습니다. 😁
 
@@ -17,33 +11,14 @@ PS에 대한 아티클은 [요기]({{"/category/problem-solving" | relative_url}
 
 알고리즘 정리를 마무리한 후기는 [요기]({{"/2022/05/21/end-of-algorithm-lecture.html" | relative_url}})에서 확인하실 수 있습니다.
 
-#### 참고 교재
+**참고 교재**
 - 『Algorithms』 Dasgupta, international ed.
 - [『알고리즘 문제해결전략』](https://book.algospot.com/) 구종만
 
-<div class="math-statement" markdown="1">
-
-[목차]
-
-- [Computational Complexity](#computational-complexity)
-- [\[Divide and Conquer\]({{"2021/02/26/divide-and-conquer.html" | relative\_url}})](#divide-and-conquer20210226divide-and-conquerhtml--relative_url)
-- [Graph Algorithm](#graph-algorithm)
-- [\[Greedy Algorithm\]({{"/2021/04/19/greedy-algorithm.html" | relative\_url}})](#greedy-algorithm20210419greedy-algorithmhtml--relative_url)
-- [\[Dynamic Programming\]({{"/2021/04/20/dynamic-programming.html" | relative\_url}})](#dynamic-programming20210420dynamic-programminghtml--relative_url)
-- [Linear Programming](#linear-programming)
-- [\[Network Flow\]({{"/2021/07/16/network-flow.html" | relative\_url}})](#network-flow20210716network-flowhtml--relative_url)
-- [NP \& NP-complete](#np--np-complete)
-- [\[Coping with NP-hardness\]({{"/2022/05/18/coping-with-np-hardness.html" | relative\_url}})](#coping-with-np-hardness20220518coping-with-np-hardnesshtml--relative_url)
-- [Appendix](#appendix)
-
-</div>
-
-<br/>
-<hr/>
-
 정규수업에서 다루지 않은 내용은 🎈로 표시하였습니다 😉
+{: .notice}
 
-### Computational Complexity
+## Computational Complexity
 
 - [Asymptotic Analysis]({{"/2021/05/14/asymptotic-analysis.html" | relative_url}})
   - Big-O / Big-Omega / Big-Theta
@@ -57,7 +32,7 @@ PS에 대한 아티클은 [요기]({{"/category/problem-solving" | relative_url}
   - Brute Force
   - Graham's Scan
 
-### [Divide and Conquer]({{"2021/02/26/divide-and-conquer.html" | relative_url}})
+## [Divide and Conquer]({{"2021/02/26/divide-and-conquer.html" | relative_url}})
 
 - [Multiplication Algorithm: Karatsuba Algorithm]({{"2021/02/26/multiplication-algorithm.html" | relative_url}})
 - [Binary Search]({{"2021/02/27/binary-search.html" | relative_url}})
@@ -69,7 +44,7 @@ PS에 대한 아티클은 [요기]({{"/category/problem-solving" | relative_url}
 - [Quick Selection]({{"/2021/10/21/quick-selection.html" | relative_url}})
 - [Closest pair of points]({{"/2021/10/22/closest-pair-of-points.html" | relative_url}})
 
-### Graph Algorithm
+## Graph Algorithm
 
 - [DFS and BFS]({{"/2021/03/12/dfs-and-bfs.html" | relative_url}})
   - [DFS and BFS - code]({{"/2021/03/13/dfs-and-bfs-code.html" | relative_url}})
@@ -78,7 +53,7 @@ PS에 대한 아티클은 [요기]({{"/category/problem-solving" | relative_url}
 - [Bellman-Ford Algorithm]({{"/2021/04/18/Bellman-Ford.html" | relative_url}})
 - [DAG & Topological Sort]({{"/2021/04/19/directed-acyclic-graph.html" | relative_url}})
 
-### [Greedy Algorithm]({{"/2021/04/19/greedy-algorithm.html" | relative_url}})
+## [Greedy Algorithm]({{"/2021/04/19/greedy-algorithm.html" | relative_url}})
 
 - MST; Minimum Spanning Tree
   - [Kruskal's Algorithm]({{"/2021/04/19/kruskal-and-prim-algorithm.html#kruskals-algorithm" | relative_url}})
@@ -88,7 +63,7 @@ PS에 대한 아티클은 [요기]({{"/category/problem-solving" | relative_url}
 - [Huffman Encoding]({{"/2021/10/08/Huffman-encoding.html" | relative_url}})
 - [Clustering of Maximum Spacing]({{"/2021/10/29/clustering-of-maximum-spacing.html" | relative_url}})
 
-### [Dynamic Programming]({{"/2021/04/20/dynamic-programming.html" | relative_url}})
+## [Dynamic Programming]({{"/2021/04/20/dynamic-programming.html" | relative_url}})
 
 - [LIS; Longest Incresaing Subsequences]({{"/2021/04/20/longest-increasing-subsequences.html" | relative_url}})
 - [Edit Distance]({{"/2021/04/20/edit-distanace.html" | relative_url}})
@@ -104,12 +79,12 @@ PS에 대한 아티클은 [요기]({{"/category/problem-solving" | relative_url}
 - [Weighted Interval Scheduling]({{"/2021/07/12/weighted-interval-scheduling.html" | relative_url}})
 - [Segmented Least Squares]({{"/2021/07/12/segmented-least-squares.html" | relative_url}})
 
-### Linear Programming
+## Linear Programming
 
 - [Linear Programming]({{"2021/10/30/linear-programming.html" | relative_url}})
 - [Simplex Method]({{"/2021/11/16/simplex-method.html" | relative_url}})
 
-### [Network Flow]({{"/2021/07/16/network-flow.html" | relative_url}})
+## [Network Flow]({{"/2021/07/16/network-flow.html" | relative_url}})
 
 - [Max-Flow Min-Cut Theorem]({{"/2021/07/16/network-flow.html#residual-network" | relative_url}})
 - [Ford-Fulkerson Algorithm & Edmons-Karp Algorithm]({{"/2021/10/03/ford-fulkerson-algorithm-and-edmons-karp-algorithm.html" | relative_url}})
@@ -117,7 +92,7 @@ PS에 대한 아티클은 [요기]({{"/category/problem-solving" | relative_url}
 - Variations of Network Flow Problem
 - Dinic Algorithm 🎈
 
-### NP & NP-complete
+## NP & NP-complete
 
 - [P and NP]({{"/2022/01/14/P-and-NP.html" | relative_url}})
   - [Satisfiability (SAT)]({{"/2022/05/07/satisfiability.html" | relative_url}})
@@ -142,7 +117,7 @@ PS에 대한 아티클은 [요기]({{"/category/problem-solving" | relative_url}
     - 3-SAT → 3D-Matching
   - [Reduction (4): Circuit-SAT and Cook-Levin Theorem]({{"/2022/05/14/reduction-4.html" | relative_url}})
 
-### [Coping with NP-hardness]({{"/2022/05/18/coping-with-np-hardness.html" | relative_url}})
+## [Coping with NP-hardness]({{"/2022/05/18/coping-with-np-hardness.html" | relative_url}})
 
 - Exhaustive Search
   - [Backtracking]({{"/2022/05/19/bacaktracking.html" | relative_url}})
@@ -150,7 +125,7 @@ PS에 대한 아티클은 [요기]({{"/category/problem-solving" | relative_url}
 - Heuristic Algorithm
   - [Local Search]({{"/2022/05/20/local-search.html" | relative_url}})
 
-### Appendix
+## Appendix
 
 - [Amortized Analysis]({{"/2021/05/08/amortized-analysis.html" | relative_url}}) 🎈
   - Accounting Method
@@ -163,6 +138,3 @@ PS에 대한 아티클은 [요기]({{"/category/problem-solving" | relative_url}
   - [Lazy-Binomial Heap]({{"2021/05/03/implementations-of-heap.html#lazy-binomial-heap" | relative_url}})
   - [Fibonacci Heap]({{"/2021/05/03/implementations-of-heap.html#fibonacci-heap" | relative_url}}) 🔥
 - FFT; Fast Fourier Transformation 🎈
-
-<hr/>
-
