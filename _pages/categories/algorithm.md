@@ -1,6 +1,6 @@
 ---
 title: "Algorithm"
-permalink: /categories/algorithm/
+permalink: /categories/algorithm
 toc: true
 toc_sticky: true
 ---
