@@ -528,4 +528,4 @@ $$
 
 이어지는 포스트에서는 Random Variable에 대한 Transformation을 이어서 살펴본다. 1-1이 아닌 mapping의 경우를 좀더 살펴볼 예정이다.
 
-👉 [Transformations of Random Variable - 2]({{"/2021/04/12/transformations-of-random-variable-2.html" | relative_url}})
+👉 [Transformations of Random Variable - 2]({{"/2021/04/12/transformations-of-random-variable-2" | relative_url}})

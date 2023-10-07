@@ -9,9 +9,9 @@ categories: ["Probability"]
 
 <br><span class="statement-title">TOC.</span><br>
 
-- [HyperGeometric Distribution]({{"/2021/03/24/discrete-probability-distributions-2.html#hypergeometric-distribution" | relative_url}})
+- [HyperGeometric Distribution]({{"/2021/03/24/discrete-probability-distributions-2#hypergeometric-distribution" | relative_url}})
   - Multivariate HyperGeometric Distribution
-- [Geometric Distribution]({{"/2021/03/24/discrete-probability-distributions-2.html#geometric-distribution" | relative_url}})
+- [Geometric Distribution]({{"/2021/03/24/discrete-probability-distributions-2#geometric-distribution" | relative_url}})
   - Memoryless Property
   - Negative Binomial Distribution
 
@@ -308,7 +308,7 @@ $$
 = \sum^{\infty}_{y=0} \binom{k + y - 1}{y} q^{y}
 $$
 
-여기에 [\<Negative Binomial Theorem\>]({{"/2022/10/30/negative-binomial-theorem.html" | relative_url}})을 적용해보자.
+여기에 [\<Negative Binomial Theorem\>]({{"/2022/10/30/negative-binomial-theorem" | relative_url}})을 적용해보자.
 
 $$
 (1 + x)^{-n} = \sum^{\infty}_{k = 0} \binom{-n}{k} x^k = \sum^{\infty}_{k = 0} \binom{n + k - 1}{k} (-1)^k x^k
@@ -357,6 +357,6 @@ If $X \sim \text{Neg BIN}(k, p)$, then
 
 이어지는 포스트에서는 \<Poisson Distribution\>라는 이산 확률 분포의 보스가 등장한다!! Poisson은 상당히 중요하니 눈여겨 살펴보도록 하자!
 
-👉 [Poisson Distribution]({{"/2021/03/25/poisson-distribution.html" | relative_url}})
+👉 [Poisson Distribution]({{"/2021/03/25/poisson-distribution" | relative_url}})
 
 

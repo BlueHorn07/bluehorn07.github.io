@@ -11,7 +11,7 @@ categories: ["Deep Learning"]
 - "[Attention is all you need](https://arxiv.org/abs/1706.03762)"
   - 2017, Google
 
-Transformer에 대한 첫번째 포스트는 [이곳]({{"2021/01/18/Transformer-1.html" | relative_url}})에서 볼 수 있습니다.
+Transformer에 대한 첫번째 포스트는 [이곳]({{"2021/01/18/Transformer-1" | relative_url}})에서 볼 수 있습니다.
 
 - [Encoder in Transformer](#encoder-in-transformer)
   - [Self-Attention in Encoder Module](#self-attention-in-encoder-module)

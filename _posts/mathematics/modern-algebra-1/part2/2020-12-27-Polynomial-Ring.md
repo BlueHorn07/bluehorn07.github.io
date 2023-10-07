@@ -233,7 +233,7 @@ $$
 
 Let field $F$ be a sub-field of field $E$, and $\alpha \in E$.
 
-For a ring $F[x]$, $f(x) \in F[x]$, and $\phi_\alpha: F[x] \longrightarrow E$ is an **evaluation homormophism** from [Theorem 22.4]({{"2020/12/27/Polynomial-Ring.html#evaluation-homomorphism" | relative_url}})
+For a ring $F[x]$, $f(x) \in F[x]$, and $\phi_\alpha: F[x] \longrightarrow E$ is an **evaluation homormophism** from [Theorem 22.4]({{"2020/12/27/Polynomial-Ring#evaluation-homomorphism" | relative_url}})
 
 if $f(\alpha) = 0$, then $\alpha$ is a zero of $f(x)$.
 
@@ -285,7 +285,7 @@ $\implies$ evaluation $x$ at $a$, then $f(a) = (a-a) \cdot g(a) = 0 \cdot (a) = 
 
 ($\implies$) Supp. $f(a) = 0$.
 
-$f(x)$를 $(x-a)$로 나누자. 그러면, 앞에서 보인 [Ring Division Algorithm]({{"2020/12/27/Polynomial-Ring.html#division-algorithm-for-polynomial-ring" | relative_url}})에 의해
+$f(x)$를 $(x-a)$로 나누자. 그러면, 앞에서 보인 [Ring Division Algorithm]({{"2020/12/27/Polynomial-Ring#division-algorithm-for-polynomial-ring" | relative_url}})에 의해
 
 $\implies$ $f(x) = q(x)(x-a) + r(x)$ where $q(x), r(x) \in F[x]$
 
@@ -405,7 +405,7 @@ For $\alpha \in G$, $\alpha^m = 1$
 
 우리는 $x^m - 1$에 대해 $\lvert G \rvert$ 만큼의 해가 있음을 알고 있다. 그리고 $\lvert G \rvert = d_1 d_2 \cdots d_r$이다. (왜냐하면, $$G \cong \mathbb{Z}_{d_1} \times \mathbb{Z}_{d_2} \times \cdots \mathbb{Z}_{d_r}$$이기 때문이다.)
 
-이때, $x^m - 1$의 차수 $m$은 앞에서 보인 [Corollary 23.5]({{"2020/12/27/Polynomial-Ring.html#corollary-235" | relative_url}})에 의해 $m \ge \lvert G \rvert = d_1 d_2 \cdots d_r$이다.
+이때, $x^m - 1$의 차수 $m$은 앞에서 보인 [Corollary 23.5]({{"2020/12/27/Polynomial-Ring#corollary-235" | relative_url}})에 의해 $m \ge \lvert G \rvert = d_1 d_2 \cdots d_r$이다.
 
 <br>
 

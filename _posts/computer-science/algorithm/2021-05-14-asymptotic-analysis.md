@@ -208,4 +208,4 @@ A. E-Z. 식을 잘 정리한 후에, 극한으로 정의한 버전을 씀.
 
 그러나 \<Asympototic Analysis\>는 최악의 상황 아래서 알고리즘의 성능을 평가하기 때문에, 이것이 오히려 알고리즘의 실제 비용을 부풀리게 만들기도 한다. 이런 문제점을 개선한 것이 바로 \<Amortized Analysis\>이다. 고급 자료구조를 쓸때 \<Amortized Analysis\>가 자주 등장하기 때문에, 꼭 알아야 하는 기법 중 하나다.
 
-👉 [Amortized Analysis]({{"/2021/05/08/amortized-analysis.html" | relative_url}})
+👉 [Amortized Analysis]({{"/2021/05/08/amortized-analysis" | relative_url}})

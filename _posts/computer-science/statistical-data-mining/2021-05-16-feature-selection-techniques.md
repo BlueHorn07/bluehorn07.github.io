@@ -138,4 +138,4 @@ This is because variable selection uses hard decision rule (hard survivie or die
 
 <hr/>
 
-👉 [Shrinkage Method]({{"/2021/05/16/shrinkage-method.html" | relative_url}})
+👉 [Shrinkage Method]({{"/2021/05/16/shrinkage-method" | relative_url}})

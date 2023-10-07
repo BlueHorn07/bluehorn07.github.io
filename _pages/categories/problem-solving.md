@@ -19,16 +19,16 @@ toc_sticky: true
 
 ## 종만북
 
-- [쿼드 트리 뒤집기]({{"/2021/11/10/quad-tree.html" | relative_url}})
+- [쿼드 트리 뒤집기]({{"/2021/11/10/quad-tree" | relative_url}})
 - [히스토그램에서 가장 큰 직사각형](https://www.acmicpc.net/problem/6549)
   - 분할 정복을 연습하기 정말 좋은 문제다 👍
 
 ## 백준
 
-- [Skyline Problem]({{"/2021/09/25/skyline-problem.html" | relative_url}})
-- [Damerau–Levenshtein distance]({{"/2021/04/24/Damerau-Levenshtein-distance.html" | relative_url}})
+- [Skyline Problem]({{"/2021/09/25/skyline-problem" | relative_url}})
+- [Damerau–Levenshtein distance]({{"/2021/04/24/Damerau-Levenshtein-distance" | relative_url}})
 
 ## Self-Study
 
-- [Segment Tree]({{"/2022/07/17/segment-tree.html" | relative_url}})
+- [Segment Tree]({{"/2022/07/17/segment-tree" | relative_url}})
 

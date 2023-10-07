@@ -154,4 +154,4 @@ $$
 
 지금까지는 하나의  \<Random Variable\>이 $X$ 하나인 상황을 다뤘다면, 이어지는 내용에선 \<Random Variable\>이 $X$, $Y$ 두 개인 상황을 다룬다! 이것을 \<**Joint Probability Distribution**\>이라고 한다!
 
-👉 [Joint Probability Distribution]({{"/2021/03/09/joint-probability-distribution.html" | relative_url}})
+👉 [Joint Probability Distribution]({{"/2021/03/09/joint-probability-distribution" | relative_url}})

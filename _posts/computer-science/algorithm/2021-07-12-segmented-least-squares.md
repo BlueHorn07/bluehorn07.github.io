@@ -20,7 +20,7 @@ categories: ["Algorithm"]
   <p>Image from <a href="https://kartikkukreja.wordpress.com/2013/10/21/segmented-least-squares-problem/)">kartikkukreja' article</a></p>
 </div>
 
-\<LS Method\>에 대해 더 궁금하다면, "[Introduction to Linear Regression]({{"/2021/06/06/introduction-to-linear-regression.html" | relative_url}})" 아티클을 읽을 것을 추천한다 😉
+\<LS Method\>에 대해 더 궁금하다면, "[Introduction to Linear Regression]({{"/2021/06/06/introduction-to-linear-regression" | relative_url}})" 아티클을 읽을 것을 추천한다 😉
 
 그.러.나. 때로는 주어진 데이터에 대한 regression 식을 하나의 선형 모델로 표현하기 어려운 경우가 많다. 이 경우는 차수(degree)를 높여 곡선으로 모델을 fitting 하거나 구간을 나누어 각 구간 별로 regression fitting을 하는 방법이 있다.
 
@@ -92,7 +92,7 @@ $$
 
 \<Segmented Least Squares\>는 정규 수업을 들을 떄 과제로 한번 구현해봤던 기억이 있는데, 구현이 그렇게 어렵지는 않았던 걸로 기억한다.
 
-\<Segmented Least Squares\> 알고리즘을 공부하면서 ["통계적 데이터마이닝(IMEN472)"]({{"/category/statistical-data-mining" | relative_url}})에서 들었던 [\<Regression Spline\>](https://bluehorn07.github.io/computer_science/2021/04/18/regression-spline.html)이 대해 떠올랐다. 이 알고리즘 역시 도메인을 분할해 regression fitting 하는 알고리즘이다.
+\<Segmented Least Squares\> 알고리즘을 공부하면서 ["통계적 데이터마이닝(IMEN472)"]({{"/category/statistical-data-mining" | relative_url}})에서 들었던 [\<Regression Spline\>](https://bluehorn07.github.io/computer_science/2021/04/18/regression-spline)이 대해 떠올랐다. 이 알고리즘 역시 도메인을 분할해 regression fitting 하는 알고리즘이다.
 
 다만 \<Regression Spline\>의 경우 곡률(curverture)까지 고려해 fitting을 진행하며, 구간을 얼마나 나눌지 선택하는 knot selection을 cross validation 과정을 통해 진행한다는 점이 \<Segmented Least Squares\> 알고리즘과 다르다! 🤩
 

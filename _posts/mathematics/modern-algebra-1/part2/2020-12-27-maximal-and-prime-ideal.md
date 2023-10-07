@@ -187,7 +187,7 @@ $$
 \end{aligned}
 $$
 
-$rs$를 $(r)$로 바꾸었다. $(r)=rR$로 $r$로 생성된 [Principal Ideal]({{"2020/12/27/principal-ideal.html" | relative_url}})이다.
+$rs$를 $(r)$로 바꾸었다. $(r)=rR$로 $r$로 생성된 [Principal Ideal]({{"2020/12/27/principal-ideal" | relative_url}})이다.
 
 Claim. $M + (r)$은 Ideal이다.
 

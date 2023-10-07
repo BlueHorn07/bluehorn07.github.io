@@ -13,7 +13,7 @@ categories: ["Algorithm"]
 
 ![P-and-NP](https://media.geeksforgeeks.org/wp-content/uploads/NP-Completeness-1.png)
 
-"[P and NP]({{"/2022/01/14/P-and-NP.html" | relative_url}})" 포스트에서 $\textbf{NP}$ 문제는 non-deterministic and polynomial-time solvable한 문제를 말했다. 또는 set of all search problems라고도 했다. 그런데 위의 그림을 보면, $\textbf{P}$와 $\textbf{NP}$ 외에도 "$\textbf{NP-complete}$", "$\textbf{NP-hard}$"라는 클래스가 눈에 보인다. 이번 포스트에서는 그들에 대해 살펴보겠다.
+"[P and NP]({{"/2022/01/14/P-and-NP" | relative_url}})" 포스트에서 $\textbf{NP}$ 문제는 non-deterministic and polynomial-time solvable한 문제를 말했다. 또는 set of all search problems라고도 했다. 그런데 위의 그림을 보면, $\textbf{P}$와 $\textbf{NP}$ 외에도 "$\textbf{NP-complete}$", "$\textbf{NP-hard}$"라는 클래스가 눈에 보인다. 이번 포스트에서는 그들에 대해 살펴보겠다.
 
 <hr/>
 
@@ -53,7 +53,7 @@ A problem $x$ is $\textbf{NP-hard}$ if $x \in \textbf{NP}$ and $x \in \textbf{NP
 
 </div>
 
-<span style="color: red">$\textbf{NP}$와 $\textbf{NP-hard}$의 교집합</span>라는 의미를 그대로 담은 $\textbf{NP-complete}$의 정의다. Search Problem에 속하는 $\textbf{NP-hard}$라는 의미인데, 대표적인 문제로 [SAT 문제]({{"/2022/05/07/satisfiability.html" | relative_url}})가 $\textbf{NP-complete}$ 문제다.
+<span style="color: red">$\textbf{NP}$와 $\textbf{NP-hard}$의 교집합</span>라는 의미를 그대로 담은 $\textbf{NP-complete}$의 정의다. Search Problem에 속하는 $\textbf{NP-hard}$라는 의미인데, 대표적인 문제로 [SAT 문제]({{"/2022/05/07/satisfiability" | relative_url}})가 $\textbf{NP-complete}$ 문제다.
 
 <div class="img-wrapper">
   <img src="{{ "/images/algorithm/reduction-1.png" | relative_url }}" width="100%">
@@ -75,13 +75,13 @@ A search problem is $\textbf{NP-complete}$ if all other search problems reduce t
 
 결국 $\textbf{NP-complete}$를 온전히 이해하기 위해서 각종 $\textbf{NP}$ 문제부터, $\textbf{NP-hard}$의 개념까지 숙지해야 했다. 다음 포스트부터 각종 $\textbf{NP}$ 문제들이 어떻게 Reduction 되는지를 하나하나 살펴보자.
 
-- [Reduction (2)]({{"/2022/05/12/reduction-2.html" | relative_url}})
+- [Reduction (2)]({{"/2022/05/12/reduction-2" | relative_url}})
 - Reduction (3)
 - Reduction (4)
 
 
 ### 함께보기
 
-- [P and NP]({{"/2022/01/14/P-and-NP.html" | relative_url}})
-- [Reduction and NP-complete]({{"/2022/05/08/reduction-1.html#np-complete" | relative_url}})
+- [P and NP]({{"/2022/01/14/P-and-NP" | relative_url}})
+- [Reduction and NP-complete]({{"/2022/05/08/reduction-1#np-complete" | relative_url}})
 

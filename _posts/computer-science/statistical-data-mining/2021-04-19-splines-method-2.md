@@ -8,7 +8,7 @@ categories: ["Applied Statsitcs"]
 
 2021-1학기, 대학에서 '통계적 데이터마이닝' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
-이 포스트는 [Regression Spline]({{"/2021/04/18/regression-spline.html" | relative_url}})과 이어지는 내용입니다 😊
+이 포스트는 [Regression Spline]({{"/2021/04/18/regression-spline" | relative_url}})과 이어지는 내용입니다 😊
 
 <br><span class="statement-title">TOC.</span><br>
 
@@ -45,7 +45,7 @@ $$
 \ell_\lambda (f) = \sum^n_{i=1} \left[ y_i f(x_i) - \log (1 + e^{f(x_i)}) \right] - \frac{\lambda}{2} \int \left\{ f''(t) \right\}^2 \; dt
 $$
 
-복잡하게 생각하기 보다는 [\<smoothing spline\>]({{"/2021/04/18/regression-spline.html#smoothing-splines" | relative_url}})과 비슷한 형태라고 인식 해두자!
+복잡하게 생각하기 보다는 [\<smoothing spline\>]({{"/2021/04/18/regression-spline#smoothing-splines" | relative_url}})과 비슷한 형태라고 인식 해두자!
 
 <hr/>
 
@@ -83,4 +83,4 @@ $$
 
 이어지는 포스트에서는 KNN 기반의 non-parametric method에 대해 살펴보겠다.
 
-👉 [KNN & kernal method]({{"/2021/05/16/KNN-and-kernel-method.html" | relative_url}})
+👉 [KNN & kernal method]({{"/2021/05/16/KNN-and-kernel-method" | relative_url}})

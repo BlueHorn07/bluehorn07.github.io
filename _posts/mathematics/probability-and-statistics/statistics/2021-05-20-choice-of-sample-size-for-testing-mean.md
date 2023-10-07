@@ -9,7 +9,7 @@ categories: ["Statistics"]
 
 <br><span class="statement-title">TOC.</span><br>
 
-- (prev) [Sample Mean Test]({{"/2021/05/19/sample-mean-test.html" | relative_url}})
+- (prev) [Sample Mean Test]({{"/2021/05/19/sample-mean-test" | relative_url}})
 - [Choice of Sample Size](#choice-of-sample-size)
 
 <hr/>
@@ -125,5 +125,5 @@ $$
 
 이어지는 포스트에서는 \<Proportion\>과 \<Variance\>의 검정에 대해 살펴본다!! 😆
 
-👉 [Proportion Test]({{"/2021/05/26/proportion-test.html" | relative_url}})
-👉 [Variance Test]({{"/2021/05/26/variance-test.html" | relative_url}})
+👉 [Proportion Test]({{"/2021/05/26/proportion-test" | relative_url}})
+👉 [Variance Test]({{"/2021/05/26/variance-test" | relative_url}})

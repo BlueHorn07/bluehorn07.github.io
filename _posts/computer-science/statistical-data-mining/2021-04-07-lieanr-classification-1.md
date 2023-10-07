@@ -246,7 +246,7 @@ LDA에서의 $\delta_k(x)$와 비교해면, QDA의 경우, cancel out이 덜 되
 
 이어지는 포스트에서는 \<Logistic Regression\>에 대해 다룬다. 좀더 익숙한 용어를 쓰자면, \<**MLE; Maximum Likelihood Estimation**\>에 대해 다룬다는 말이다!
 
-👉 [Linear Classification - 2]({{"/2021/04/07/lieanr-classification-2.html" | relative_url}})
+👉 [Linear Classification - 2]({{"/2021/04/07/lieanr-classification-2" | relative_url}})
 
 
 

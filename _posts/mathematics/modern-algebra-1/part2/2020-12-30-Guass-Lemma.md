@@ -24,7 +24,7 @@ categories: ["Modern Algebra1"]
 
 - $R$ is a **<u>ring</u>** $\implies$ $R[x]$ is also a **<u>ring</u>**.
 - $D$ is an **<u>integral domain</u>** $\implies$ $D[x]$ is also an **<u>integral domain</u>**.
-- $F$ is a **<u>field</u>** $\iff$ $F[x]$ is a **<u>PID</u>**. ([Thm 27.24]({{"2020/12/27/principal-ideal.html#theorem-2724" | relative_url}}))
+- $F$ is a **<u>field</u>** $\iff$ $F[x]$ is a **<u>PID</u>**. ([Thm 27.24]({{"2020/12/27/principal-ideal#theorem-2724" | relative_url}}))
   - 이때 모든 Field는 PID이므로 위 명제에서 'field'를 'PID'로 바꿔도 성립한다.
 - $D$ is an **<u>integral domain</u>** with an irreducible elt $\implies$ $D[x]$ is **<u>not a PID</u>**.
 - $F$ is a **<u>field</u>** $\implies$ $F[x_1, \dots, x_n]$ is **<u>not a PID</u>** for $n \ge 2$.
@@ -32,7 +32,7 @@ categories: ["Modern Algebra1"]
 <br>
 <hr>
 
-우리는 지금까지 자연수에서의 GCD를 접했다. 하지만 앞에서 살펴본 '[산술의 기본정리]({{"2021/01/17/fundamental-thm-of-arithmetic.html" | relative_url}})'에 따르면 자연수 집합도 결국은 UFD의 한 예에 불과했다. 자연수 집합에서 정의한 GCD를 UFD로 확장하여 다시 정의해보자.
+우리는 지금까지 자연수에서의 GCD를 접했다. 하지만 앞에서 살펴본 '[산술의 기본정리]({{"2021/01/17/fundamental-thm-of-arithmetic" | relative_url}})'에 따르면 자연수 집합도 결국은 UFD의 한 예에 불과했다. 자연수 집합에서 정의한 GCD를 UFD로 확장하여 다시 정의해보자.
 
 <span class="statement-title">Definition.</span> GCD in UFD<br>
 
@@ -187,4 +187,4 @@ $p \mid a_i$ for $i < r$이므로 $p \mid (a_0 b_{r+s} + \cdots + a_{r-1} b_{s+1
 
 를 증명해보자!
 
-다음 포스트: [Poylnomial over UFD]({{"2021/01/18/polynomial-over-UFD.html" | relative_url}})
+다음 포스트: [Poylnomial over UFD]({{"2021/01/18/polynomial-over-UFD" | relative_url}})

@@ -7,7 +7,7 @@ categories: ["Statistics"]
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
-[Interval Estimation]({{"/2021/05/06/interval-estimation.html" | relative_url}}) 포스트에서 다룬 \<Interval Estimation\>을 특정 상황에 어떻게 적용할 수 있는지를 다루는 포스트입니다.
+[Interval Estimation]({{"/2021/05/06/interval-estimation" | relative_url}}) 포스트에서 다룬 \<Interval Estimation\>을 특정 상황에 어떻게 적용할 수 있는지를 다루는 포스트입니다.
 
 <br><span class="statement-title">TOC.</span><br>
 
@@ -101,4 +101,4 @@ $$
 
 그러나 지금까지 살펴본 방식 외에도 또다른 Estimation 방법이 있다 😲 \<**MLE; Maximum Likelihood Estimation**\>는 Sample Distribution을 재현할 확률이 가장 높은 Parameter $\theta$를 찾는 방식으로 Estimator를 찾는다. \<MLE\>는 당연히 Point Estimator를 제시하며, 그 과정에서 $\theta$에 대해 편미분을 수행한다.
 
-👉 [Maximum Likelihood Estimation]({{"/2021/05/17/maximum-likelihood-estimation.html" | relative_url}})
+👉 [Maximum Likelihood Estimation]({{"/2021/05/17/maximum-likelihood-estimation" | relative_url}})

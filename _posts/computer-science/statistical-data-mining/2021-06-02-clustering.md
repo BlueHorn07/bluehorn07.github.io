@@ -14,7 +14,7 @@ categories: ["Applied Statsitcs"]
   - K-means Algorithm
 - [Hierarchical Clustering](#hierarchical-clustering)
 - [Spectral Clustering](#spectral-clustering)
-- [Model-based Clustering]({{"/2021/06/02/model-based-clustering.html" | relative_url}}) (다음편)
+- [Model-based Clustering]({{"/2021/06/02/model-based-clustering" | relative_url}}) (다음편)
 
 <hr/>
 
@@ -173,5 +173,5 @@ Traditional clustering (ex. K-means) does not work well when clusters are non-co
 
 이번 포스트에서 살펴본 방식은 모두 휴리스틱 방법들이다. 이어지는 포스트에서는 모델(model)을 기반으로 하는 \<Model-based clustering\>을 살펴본다. \<Mixture Model\>, \<EM-Algorithm\> 등 무시무시한 것들이 왕창 나온다;;
 
-👉 [Model-based Clustering]({{"/2021/06/02/model-based-clustering.html" | relative_url}})
+👉 [Model-based Clustering]({{"/2021/06/02/model-based-clustering" | relative_url}})
 

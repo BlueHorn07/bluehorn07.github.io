@@ -7,7 +7,7 @@ categories: ["Statistics"]
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
-[\<Variance Estimation\>]({{"/2021/05/16/variance-estimation.html" | relative_url}})의 내용을 먼저 살펴보고 오는 것을 추천한다.
+[\<Variance Estimation\>]({{"/2021/05/16/variance-estimation" | relative_url}})의 내용을 먼저 살펴보고 오는 것을 추천한다.
 
 <br><span class="statement-title">TOC.</span><br>
 
@@ -37,6 +37,6 @@ $S_1^2 / S_2^2$를 Test Statistic로 잡고 $\frac{S_1^2/\sigma_1^2}{S_2^2/\sigm
 
 \<f-distribution\>이 등장하는 파트는 이번에 살펴본 \<Variance Test\>가 마지막이다! \<chi-square distribution\> $\chi^2(n)$은 이어지는 \<Chi-square Goodness-of-fit Test\> 포스트에서 또 등장한다.
 
-\<chi-square Goodness-of-fit Test\>는 이전에 살펴본 [\<proportion test\>]({{"/2021/05/26/proportion-test.html" | relative_url}})의 일반화이다. 카테고리 변수의 확률에 대한 검정을 수행한다.
+\<chi-square Goodness-of-fit Test\>는 이전에 살펴본 [\<proportion test\>]({{"/2021/05/26/proportion-test" | relative_url}})의 일반화이다. 카테고리 변수의 확률에 대한 검정을 수행한다.
 
-👉 [Chi-square Goodness-of-fit test]({{"/2021/05/27/chi-square-goodness-of-fit-test.html" | relative_url}})
+👉 [Chi-square Goodness-of-fit test]({{"/2021/05/27/chi-square-goodness-of-fit-test" | relative_url}})

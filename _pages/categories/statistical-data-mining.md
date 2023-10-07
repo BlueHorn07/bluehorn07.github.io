@@ -12,7 +12,7 @@ toc_sticky: true
 ## 참고 교재
 - [『The Elements of Statistical Learning』](https://web.stanford.edu/~hastie/ElemStatLearn/) Trevor Hastie · Robert Tibshirani · Jerome Friedman, 2nd ed.
 - [『An Introduction to Statistical Learning』](https://www.statlearning.com/) Gareth James · Daniela Witten · Trevor Hastie · Robert Tibshirani, 1st ed.
-- [CS229: Machine Learning](http://cs229.stanford.edu/syllabus-autumn2018.html), Andrew Ng, Stanford Univ. [^1]
+- [CS229: Machine Learning](http://cs229.stanford.edu/syllabus-autumn2018), Andrew Ng, Stanford Univ. [^1]
 
 <hr/>
 
@@ -25,14 +25,14 @@ toc_sticky: true
 
 ### Linear Algebra
 
-- [Basic Linear Algebra]({{"/2021/03/07/supp-1-linear-algebra-1.html" | relative_url}})
+- [Basic Linear Algebra]({{"/2021/03/07/supp-1-linear-algebra-1" | relative_url}})
   - Column space & Row space & Null space
   - Fundamental Theorem of Linear Algebra
-- [Eigen value & Eigen vector]({{"/2021/03/08/supp-1-linear-algebra-2.html#eigen-value--eigen-vector" | relative_url}})
-- [Vector Calculus & Matrix Calculus]({{"/2021/03/08/supp-1-linear-algebra-2.html#matrix-calculus" | relative_url}})
-- [Spectral Decomposition & Singular Value Decomposition]({{"/2021/03/14/supp-1-linear-algebra-3.html" | relative_url}})
-- [Nonnegative Definite & Positive Definite Matrix]({{"/2021/03/27/supp-1-linear-algebra-4.html" | relative_url}})
-- [Orthogonal Projection]({{"/2021/03/27/supp-1-linear-algebra-4.html#orthogonal-projection" | relative_url}})
+- [Eigen value & Eigen vector]({{"/2021/03/08/supp-1-linear-algebra-2#eigen-value--eigen-vector" | relative_url}})
+- [Vector Calculus & Matrix Calculus]({{"/2021/03/08/supp-1-linear-algebra-2#matrix-calculus" | relative_url}})
+- [Spectral Decomposition & Singular Value Decomposition]({{"/2021/03/14/supp-1-linear-algebra-3" | relative_url}})
+- [Nonnegative Definite & Positive Definite Matrix]({{"/2021/03/27/supp-1-linear-algebra-4" | relative_url}})
+- [Orthogonal Projection]({{"/2021/03/27/supp-1-linear-algebra-4#orthogonal-projection" | relative_url}})
 
 ### Multivariate Normal Distribution
 
@@ -42,7 +42,7 @@ toc_sticky: true
 
 <hr/>
 
-## [Introduction]({{"/2021/02/26/overview-of-supervised-learning.html" | relative_url}})
+## [Introduction]({{"/2021/02/26/overview-of-supervised-learning" | relative_url}})
 
 - Introduction to Regression & Classification
   - Least Squared Method
@@ -53,7 +53,7 @@ toc_sticky: true
 
 ## Linear Methods for Regression
 
-- [Feature Selection]({{"/2021/05/16/feature-selection-techniques.html" | relative_url}})
+- [Feature Selection]({{"/2021/05/16/feature-selection-techniques" | relative_url}})
   - Best Subset Selection
   - Forward Stepwise Selection
   - Backward Stepwise Selection
@@ -70,33 +70,33 @@ toc_sticky: true
 
 ## Non-parametric Method
 
-- [Non-parametric Linear Regression]({{"/2021/04/18/regression-spline.html" | relative_url}})
+- [Non-parametric Linear Regression]({{"/2021/04/18/regression-spline" | relative_url}})
   - Polynomial Regression
     - Local Polynomical Regression
-  - [Regression Spline]({{"/2021/04/18/regression-spline.html#regression-spine" | relative_url}}) 🔥
+  - [Regression Spline]({{"/2021/04/18/regression-spline#regression-spine" | relative_url}}) 🔥
   - Natural Cubic Spline
     - power basis function
-  - [Smoothing Splines]({{"/2021/04/18/regression-spline.html#smoothing-splines" | relative_url}})
+  - [Smoothing Splines]({{"/2021/04/18/regression-spline#smoothing-splines" | relative_url}})
     - knot selection
-  - [Non-parametric Logistic Regression]({{"/2021/04/19/splines-method-2.html#non-parameteric-logistic-regression" | relative_url}})
-  - [Multi-dimensional Splines]({{"/2021/04/19/splines-method-2.html#multi-dimensional-splines" | relative_url}})
+  - [Non-parametric Logistic Regression]({{"/2021/04/19/splines-method-2#non-parameteric-logistic-regression" | relative_url}})
+  - [Multi-dimensional Splines]({{"/2021/04/19/splines-method-2#multi-dimensional-splines" | relative_url}})
 
-- [KNN Method]({{"/2021/05/16/KNN-and-kernel-method.html" | relative_url}})
-  - [kernel method]({{"/2021/05/16/KNN-and-kernel-method.html#kernel-method" | relative_url}})
-- [Nadaraya-Watson Estimator]({{"/2021/05/16/KNN-and-kernel-method.html#nadaraya-watson-estimator" | relative_url}})
+- [KNN Method]({{"/2021/05/16/KNN-and-kernel-method" | relative_url}})
+  - [kernel method]({{"/2021/05/16/KNN-and-kernel-method#kernel-method" | relative_url}})
+- [Nadaraya-Watson Estimator]({{"/2021/05/16/KNN-and-kernel-method#nadaraya-watson-estimator" | relative_url}})
 
-- [Additive Model]({{"/2021/05/17/additive-model-and-gam.html#additive-model" | relative_url}})
+- [Additive Model]({{"/2021/05/17/additive-model-and-gam#additive-model" | relative_url}})
   - Backfitting Algorithm
-- [GAM; Generalized Additive Models]({{"/2021/05/17/additive-model-and-gam.html#gam-generalized-additive-model" | relative_url}}) 🔥
-- [MARS; Multivariate Adaptive Regression Spline]({{"/2021/05/22/MARS.html" | relative_url}}) 🔥
+- [GAM; Generalized Additive Models]({{"/2021/05/17/additive-model-and-gam#gam-generalized-additive-model" | relative_url}}) 🔥
+- [MARS; Multivariate Adaptive Regression Spline]({{"/2021/05/22/MARS" | relative_url}}) 🔥
 
 
 <hr/>
 
 ## Boosting
 
-- [Introduction to Boosting]({{"/2021/05/09/introduction-to-boosting.html" | relative_url}})
-- [AdaBoost]({{"/2021/05/10/AdaBoost.html" | relative_url}})
+- [Introduction to Boosting]({{"/2021/05/09/introduction-to-boosting" | relative_url}})
+- [AdaBoost]({{"/2021/05/10/AdaBoost" | relative_url}})
 - Gradient Boosting
 - XGBoost
 
@@ -108,7 +108,7 @@ toc_sticky: true
 
 ## Appendix
 
-- [내가 보려고 만든 '통계 분석' Cheat Sheet]({{"/2021/05/17/statistical-analysis-cheat-sheet-for-me.html" | relative_url}})
+- [내가 보려고 만든 '통계 분석' Cheat Sheet]({{"/2021/05/17/statistical-analysis-cheat-sheet-for-me" | relative_url}})
 
 
 

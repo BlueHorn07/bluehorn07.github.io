@@ -9,7 +9,7 @@ categories: ["Algorithm"]
 
 2020-1학기, 대학에서 '알고리즘' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
-이번 포스트에서는 Network Flow 문제에 대한 개요와 Network Flow 문제의 핵심이 되는 정리인 "Max-Flow Min-Cut Theorem"에 대해 다룹니다. 실제 예제와 코드는 이어지는 포스트 [Ford-Fulkerson & Edmons-Karp Algorithm]({{"/2021/10/03/ford-fulkerson-algorithm-and-edmons-karp-algorithm.html" | relative_url}})를 참고해주세요! 😉
+이번 포스트에서는 Network Flow 문제에 대한 개요와 Network Flow 문제의 핵심이 되는 정리인 "Max-Flow Min-Cut Theorem"에 대해 다룹니다. 실제 예제와 코드는 이어지는 포스트 [Ford-Fulkerson & Edmons-Karp Algorithm]({{"/2021/10/03/ford-fulkerson-algorithm-and-edmons-karp-algorithm" | relative_url}})를 참고해주세요! 😉
 
 <hr/>
 
@@ -279,7 +279,7 @@ $\blacksquare$
 
 ### 맺음말
 
-이번 포스트에서는 \<Network Flow\> 문제란 무엇인지 그리고 Maximum Flow를 찾는 접근법과 그 방법의 Optimality를 살펴봤다. 아직 \<Network Flow\> 문제에 대해서는 아직 다뤄야 할 내용들이 많이 남아있다. 남은 부분들은 이어지는 [Ford-Fulkerson & Edmons-Karp Algorithm]({{"/2021/10/03/ford-fulkerson-algorithm-and-edmons-karp-algorithm.html" | relative_url}}) 포스트에서 이어서 다루도록 하겠다.
+이번 포스트에서는 \<Network Flow\> 문제란 무엇인지 그리고 Maximum Flow를 찾는 접근법과 그 방법의 Optimality를 살펴봤다. 아직 \<Network Flow\> 문제에 대해서는 아직 다뤄야 할 내용들이 많이 남아있다. 남은 부분들은 이어지는 [Ford-Fulkerson & Edmons-Karp Algorithm]({{"/2021/10/03/ford-fulkerson-algorithm-and-edmons-karp-algorithm" | relative_url}}) 포스트에서 이어서 다루도록 하겠다.
 
 <hr/>
 

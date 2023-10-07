@@ -11,7 +11,7 @@ categories: ["Algorithm"]
 
 <hr/>
 
-지난번에 살펴본 [\<Backtracking\>]({{"/2022/05/19/bacaktracking.html" | relative_url}})과 비슷하게 \<Branch-and-Bound\> 테크닉 역시 partial solution을 검사해 Search Space를 줄이는 테크닉이다. \<Bracktracking\>과 전체적인 구조는 완전 동일한데, partial solution을  *bound*를 사용해 $\text{test}$한다는 구체적인 방법이 명시되어 있다.
+지난번에 살펴본 [\<Backtracking\>]({{"/2022/05/19/bacaktracking" | relative_url}})과 비슷하게 \<Branch-and-Bound\> 테크닉 역시 partial solution을 검사해 Search Space를 줄이는 테크닉이다. \<Bracktracking\>과 전체적인 구조는 완전 동일한데, partial solution을  *bound*를 사용해 $\text{test}$한다는 구체적인 방법이 명시되어 있다.
 
 대충 어떤 느낌인지 훑고 가자. 만약 우리가 **minimization** problem을 풀고 있다고 하자. 그리고 partial solution $S_i$를 탐색하고 있다고 하자. 우리는 이 partial solution $S_i$를 더 확장했을 때의 잠재적인 비용을 '예상'할 것이다. 구체적인 비용을 구하려고 하는 것이 아니라 '예상'이기 때문에 'lower bound'를 계산할 것이다. 사례를 보면 좀더 이해가 빠를 것이다. \<TSP\> 문제를 \<Branch-and-Bound\>로 해결하는 과정을 살펴보자!
 
@@ -91,8 +91,8 @@ return $\text{bestsofar}$
 
 </div>
 
-이전에 살펴본 [\<Backtracking\>]({{"/2022/05/19/bacaktracking.html" | relative_url}})과 큰 틀에서 비슷하다! 단지 \<Branch-and-Bound\>가 $\text{test}(P_i)$를 lower bound로 판단하고 구체적으로 명시되어 있을 뿐이다!
+이전에 살펴본 [\<Backtracking\>]({{"/2022/05/19/bacaktracking" | relative_url}})과 큰 틀에서 비슷하다! 단지 \<Branch-and-Bound\>가 $\text{test}(P_i)$를 lower bound로 판단하고 구체적으로 명시되어 있을 뿐이다!
 
 ## 함께보기
 
-- [Backtracking]({{"/2022/05/19/bacaktracking.html" | relative_url}})
+- [Backtracking]({{"/2022/05/19/bacaktracking" | relative_url}})

@@ -7,7 +7,7 @@ categories: ["Statistics"]
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
-[Introduction to Linear Regression]({{"/2021/06/06/introduction-to-linear-regression.html" | relative_url}}) 포스트에서 이어지는 포스트입니다.
+[Introduction to Linear Regression]({{"/2021/06/06/introduction-to-linear-regression" | relative_url}}) 포스트에서 이어지는 포스트입니다.
 
 <br><span class="statement-title">TOC.</span><br>
 
@@ -208,10 +208,10 @@ $$
 
 이어지는 포스트에선 Linear Regression 모델에서 수행하는 Prediction에서 수행하는 추정에 대해 살펴볼 예정이다. 이번 포스트에서 살펴봤던 $B_1$, $B_0$의 분포를 종합적으로 사용할 예정이며, 이 과정을 통해 Regression으로 얻은 결과(response)의 신뢰도와 그 오차에 대해 더 살펴볼 수 있다.
 
-👉 [Prediction on Regression]({{"/2021/06/10/prediction-on-regression.html" | relative_url}})
+👉 [Prediction on Regression]({{"/2021/06/10/prediction-on-regression" | relative_url}})
 
 <br/>
 
 이번 포스트에 제시 했던 HW 문제의 풀이는 아래의 포스트에 정리해두었다.
 
-👉 [Statistics - PS3]({{"/2021/06/10/statistics-ps3.html"}})
+👉 [Statistics - PS3]({{"/2021/06/10/statistics-ps3"}})

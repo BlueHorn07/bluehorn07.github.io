@@ -11,12 +11,12 @@ categories: ["Statistics"]
 
 **시리즈: Sampling Distributions**
 
-1. [Sampling Distribution]({{"/2021/04/25/sampling-distribution.html" | relative_url}})
-2. [Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt.html" | relative_url}})
-3. [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance.html" | relative_url}})
-4. [Student's t-distribution]({{"/2021/04/27/student-t-distribution.html" | relative_url}})
-5. [F-distribution]({{"/2021/05/04/F-distribution.html" | relative_url}}) 👀
-6. [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile.html" | relative_url}})
+1. [Sampling Distribution]({{"/2021/04/25/sampling-distribution" | relative_url}})
+2. [Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt" | relative_url}})
+3. [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance" | relative_url}})
+4. [Student's t-distribution]({{"/2021/04/27/student-t-distribution" | relative_url}})
+5. [F-distribution]({{"/2021/05/04/F-distribution" | relative_url}}) 👀
+6. [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile" | relative_url}})
 
 </div>
 
@@ -176,7 +176,7 @@ $$
 
 지금까지 우리는 population distribution의 parameter인 "평균"과 "분산"에 대해 추정했다. 이어지는 포스트에서는 sample로부터 얻는 분포인 **\<EDF; Empirical Distribution Function\>**으로부터 population distribution을 추정해본다. 이 과정에서 쓰는 것이 바로 **\<Quantile; 분위수\>**이다!
 
-👉 [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile.html" | relative_url}})
+👉 [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile" | relative_url}})
 
 <hr/>
 

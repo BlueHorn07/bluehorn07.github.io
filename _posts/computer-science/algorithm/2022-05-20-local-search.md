@@ -11,7 +11,7 @@ categories: ["Algorithm"]
 
 <hr/>
 
-이전의 두 포스트, [\<Backtracking\>]({{"/2022/05/19/bacaktracking.html" | relative_url}})과 [\<Branch-and-Bound\>]({{"/2022/05/20/branch-and-bound.html" | relative_url}})는 Exhausitive Search 방식이었다. 이번에 살펴보는 \<Local Search\>는 **Heuristic Algorithm**의 일종으로 <span style="color: red">"Optimality of the solution"를 희생해 빠르게 solution을 찾는 기법</span>이다.
+이전의 두 포스트, [\<Backtracking\>]({{"/2022/05/19/bacaktracking" | relative_url}})과 [\<Branch-and-Bound\>]({{"/2022/05/20/branch-and-bound" | relative_url}})는 Exhausitive Search 방식이었다. 이번에 살펴보는 \<Local Search\>는 **Heuristic Algorithm**의 일종으로 <span style="color: red">"Optimality of the solution"를 희생해 빠르게 solution을 찾는 기법</span>이다.
 
 <div class="img-wrapper">
   <img src="{{ "/images/algorithm/local-search-1.png" | relative_url }}" width="100%">

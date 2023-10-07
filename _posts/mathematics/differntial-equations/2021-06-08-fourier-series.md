@@ -15,7 +15,7 @@ categories: ["Differential Equations"]
   - orthogonality for functions
 - [Fourier Series](#fourier-series)
   - Fourier Coefficients
-- (next) [Fourier Series (Complex Representation)]({{"/2021/06/09/fourier-series-complex-representation.html" | relative_url}})
+- (next) [Fourier Series (Complex Representation)]({{"/2021/06/09/fourier-series-complex-representation" | relative_url}})
 
 <hr/>
 
@@ -261,6 +261,6 @@ $\blacksquare$
 
 이어지는 포스트에서는 \<푸리에 급수\>를 복소지수 형태로 표현하는 방식에 대해 살펴볼 것이다. \<푸리에 변환\>을 기술할 때 주로 이 복소지수 형태를 사용하기 때문에, \<푸리에 변환\>을 공부하려면 꼭 미리 알고 있어야 한다.
 
-👉 [Fourier Series (Complex Representation)]({{"/2021/06/09/fourier-series-complex-representation.html" | relative_url}})
+👉 [Fourier Series (Complex Representation)]({{"/2021/06/09/fourier-series-complex-representation" | relative_url}})
 
 

@@ -85,7 +85,7 @@ $$
 
 Merge Sort는 간단하지만 강력하다! 보통 Merge Sort를 직접 구현하는 경우는 드물지만, 어떤 경우에선 Merge Sort의 아이디어를 채용해서 풀어야 한다!
 
-- [Skyline Problem]({{"/2021/09/25/skyline-problem.html" | relative_url}})
+- [Skyline Problem]({{"/2021/09/25/skyline-problem" | relative_url}})
 
 <hr/>
 

@@ -13,8 +13,8 @@ categories: ["Deep Learning"]
 
 <br>
 
-- [Transformer - 1]({{"2021/01/18/Transformer-1.html" | relative_url}})
-- [Transformer - 2]({{"2021/01/18/Transformer-2.html" | relative_url}})
+- [Transformer - 1]({{"2021/01/18/Transformer-1" | relative_url}})
+- [Transformer - 2]({{"2021/01/18/Transformer-2" | relative_url}})
 
 - [Decoder in Transformer](#decoder-in-transformer)
   - [Self-Attention](#self-attention)

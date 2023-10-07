@@ -33,7 +33,7 @@ Differential Equations
 
 ### Fourier Trasnform
 
-주기가 $2L$인 주기함수 $x(t)$를 아래와 같이 [\<푸리에 급수\>]({{"/2021/06/08/fourier-series.html" | relative_url}}) 형태로 표현할 수 있다.
+주기가 $2L$인 주기함수 $x(t)$를 아래와 같이 [\<푸리에 급수\>]({{"/2021/06/08/fourier-series" | relative_url}}) 형태로 표현할 수 있다.
 
 $$
 \begin{aligned}
@@ -158,7 +158,7 @@ $$
 
 #### reference
 
-- ['공돌이의 수학정리노트': 연속시간 푸리에 변환(Continuous Time Fourier Transform)](https://angeloyeo.github.io/2019/07/07/CTFT.html)
+- ['공돌이의 수학정리노트': 연속시간 푸리에 변환(Continuous Time Fourier Transform)](https://angeloyeo.github.io/2019/07/07/CTFT)
 
 <hr/>
 

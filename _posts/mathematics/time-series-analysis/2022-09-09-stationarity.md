@@ -13,7 +13,7 @@ categories: ["Time Series Analysis"]
 <div class="img-wrapper">
   <img src="{{ "/images/time-series-analysis/stationarity-1.png" | relative_url }}" width="600px">
   <p markdown="1">
-    [Forecasting: Principles and Practices: 정상성과 차분](https://otexts.com/fppkr/stationarity.html)
+    [Forecasting: Principles and Practices: 정상성과 차분](https://otexts.com/fppkr/stationarity)
   </p>
 </div>
 
@@ -80,10 +80,10 @@ For a continuous time random process $\left\\{ X(t) \right\\}$, it satisfies the
 
 그러면 시계열에 정상성이 없으면, "어? 나 분석 못함 수고여"하고 두 손 놓고 있는 건 아니다. \<차분; Differencing\>와 \<로그 변환\>을 통해 시계열 데이터를 변환해, 분석할 수 있는 형태로 만들면 된다!
 
-\<로그 변환\>이야, 기존 데이터에 $\log$를 취해 스케일을 조정하는 것을 말한다. 이를 통해 변동성의 분산을 줄일 수 있다. \<차분\>은 인접한 두 시계열의 차이값을 구하는 것을 말한다. 다음 포스트 ["Differencing"]({{"/2022/09/10/differencing.html" | relative_url}})에서 자세한 내용을 확인하자 😉
+\<로그 변환\>이야, 기존 데이터에 $\log$를 취해 스케일을 조정하는 것을 말한다. 이를 통해 변동성의 분산을 줄일 수 있다. \<차분\>은 인접한 두 시계열의 차이값을 구하는 것을 말한다. 다음 포스트 ["Differencing"]({{"/2022/09/10/differencing" | relative_url}})에서 자세한 내용을 확인하자 😉
 
 # Reference
 
-- [Forecasting: Principles and Practices: 정상성과 차분](https://otexts.com/fppkr/stationarity.html)
+- [Forecasting: Principles and Practices: 정상성과 차분](https://otexts.com/fppkr/stationarity)
 - [시계열 분석 시리즈 (1): 정상성 (Stationarity) 뽀개기](https://assaeunji.github.io/statistics/2021-08-08-stationarity/)
 - [Wikipedia: Stationary Process](https://en.wikipedia.org/wiki/Stationary_process)

@@ -7,7 +7,7 @@ categories: ["Statistics"]
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
-[Interval Estimation]({{"/2021/05/06/interval-estimation.html" | relative_url}}) 포스트에서 다룬 \<Interval Estimation\>을 특정 상황에 어떻게 적용할 수 있는지를 다루는 포스트입니다.
+[Interval Estimation]({{"/2021/05/06/interval-estimation" | relative_url}}) 포스트에서 다룬 \<Interval Estimation\>을 특정 상황에 어떻게 적용할 수 있는지를 다루는 포스트입니다.
 
 <br><span class="statement-title">TOC.</span><br>
 
@@ -147,10 +147,10 @@ $$
 
 이어지는 포스트에서는 또다른 Two Samples Estimation인 \<Paired Observation\>의 경우를 살펴본다! 😁
 
-👉 [Two Samples Estimation: Paired Observations]({{"/2021/05/13/two-samples-estimation-paired-observations.html" | relative_url}})
+👉 [Two Samples Estimation: Paired Observations]({{"/2021/05/13/two-samples-estimation-paired-observations" | relative_url}})
 
 <br/>
 
 지금까지의 관심사는 population mean $\mu$에 대한 추정이었다. population mean $\mu$를 추정하거나 두 population mean $\mu$의 차이값을 추정했다. 그 다음 포스트에서는 population variance $\sigma^2$를 추정한다. $\sigma^2$를 추정하거나, 두 샘플의 population variance의 비율 $\sigma_1^2 / \sigma_2^2$를 추정한다.
 
-👉 [Variance Estimation]({{"/2021/05/16/variance-estimation.html" | relative_url}})
+👉 [Variance Estimation]({{"/2021/05/16/variance-estimation" | relative_url}})

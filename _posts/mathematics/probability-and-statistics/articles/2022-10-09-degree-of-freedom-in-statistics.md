@@ -65,20 +65,20 @@ $$
 
 자유도를 인자로 받는 확률 분포를 살펴보자.
 
-- [Chi-square distribution $\chi^2(n)$]({{"/2021/04/06/chi-square-distribution.html" | relative_url}})
+- [Chi-square distribution $\chi^2(n)$]({{"/2021/04/06/chi-square-distribution" | relative_url}})
 
 $$
 \chi^2(n) = \text{Gamma}\left(\frac{n}{2}, 2\right)
 $$
 
-- [Student's t-distribution $t(n)$]({{"/2021/04/27/student-t-distribution.html" | relative_url}})
+- [Student's t-distribution $t(n)$]({{"/2021/04/27/student-t-distribution" | relative_url}})
 
 $$
 T := \frac{Z}{\sqrt{V / n}} \quad
 (Z \sim N(0, 1), V \sim \chi^2(n), Z \perp V)
 $$
 
-- [F-distribution $F(n_1, n_2)$]({{"/2021/05/04/F-distribution.html" | relative_url}})
+- [F-distribution $F(n_1, n_2)$]({{"/2021/05/04/F-distribution" | relative_url}})
 
 $$
 F := \frac{V_1^2 / \sigma_1^2}{V_2^2 / \sigma_2^2} = F(n_1, n_2) \quad
@@ -114,7 +114,7 @@ $$
 s^2 = \frac{1}{n-1} \sum_i^n \left( x_i - \bar{x} \right)^2
 $$
 
-Sample Variance $S^2$에서 왜 분모에 $n$ 대신 $n-1$이 들어가는지 기억하는가? [Sample Variance에 대해 다뤘던 포스트]({{"/2021/04/25/sampling-distribution.html" | relative_url}})에선 $E[S^2] = \sigma^2$가 되기 위해서라고 수식으로 설명했다. 자유도를 겉들인 직관적인 설명은 <span class="red">"Sample Variance의 자유도가 $n-1$이기 때문"</span>라고 할 수 있다.
+Sample Variance $S^2$에서 왜 분모에 $n$ 대신 $n-1$이 들어가는지 기억하는가? [Sample Variance에 대해 다뤘던 포스트]({{"/2021/04/25/sampling-distribution" | relative_url}})에선 $E[S^2] = \sigma^2$가 되기 위해서라고 수식으로 설명했다. 자유도를 겉들인 직관적인 설명은 <span class="red">"Sample Variance의 자유도가 $n-1$이기 때문"</span>라고 할 수 있다.
 
 통계량(Statistic)을 정의하는 이유는 여러 샘플에서 추출한 값들을 종합해 그것들을 대표하는 하나의 값을 만들기 위해서다. 이때, 통계량(Statistic)에 함께 따라오는 DOF는 그 대표값에 실질적으로 얼만큼의 독립적인 요소가 있는지를 표현한다: "How many numbers in your statistic are *actually* independent."
 
@@ -165,9 +165,9 @@ $$
 
 자유도 개념이 있는 대표적인 추정과 검정의 예시들이다.
 
-- [Interval Estimation: Estimate $\mu$ is unknown]({{"/2021/05/19/sample-mean-test.html" | relative_url}})
-- [Variance Estimation]({{"/2021/05/16/variance-estimation.html" | relative_url}})
-- [Goodness-of-fit Test]({{"/2021/05/27/chi-square-goodness-of-fit-test.html" | relative_url}})
+- [Interval Estimation: Estimate $\mu$ is unknown]({{"/2021/05/19/sample-mean-test" | relative_url}})
+- [Variance Estimation]({{"/2021/05/16/variance-estimation" | relative_url}})
+- [Goodness-of-fit Test]({{"/2021/05/27/chi-square-goodness-of-fit-test" | relative_url}})
 
 <hr/>
 

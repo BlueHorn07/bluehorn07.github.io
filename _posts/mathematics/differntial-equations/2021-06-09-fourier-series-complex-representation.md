@@ -12,7 +12,7 @@ categories: ["Differential Equations"]
 
 <br><span class="statement-title">TOC.</span><br>
 
-- (prev) [Fourier Series]({{"/2021/06/08/fourier-series.html" | relative_url}})
+- (prev) [Fourier Series]({{"/2021/06/08/fourier-series" | relative_url}})
 - Fourier Series (Complex Representation)
 
 <hr/>
@@ -259,7 +259,7 @@ $$
 
 \<푸리에 변환\>은 \<푸리에 급수\>에서 주기 $L$을 무한대로 극한을 취해 쉽게 얻을 수 있다. 자세한 내용은 아래의 포스트에서 확인해보자.
 
-👉 [Fourier Transform]({{"/2021/06/10/fourier-transform.html" | relative_url}})
+👉 [Fourier Transform]({{"/2021/06/10/fourier-transform" | relative_url}})
 
 <hr/>
 

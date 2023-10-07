@@ -8,7 +8,7 @@ categories: ["Applied Statsitcs"]
 
 2021-1학기, 대학에서 '통계적 데이터마이닝' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
-이 포스트는 [Regression Spline]({{"/2021/04/18/regression-spline.html" | relative_url}})과 [Spline Method (2)]({{"/2021/04/19/splines-method-2.html" | relative_url}})이어지는 내용입니다 😊
+이 포스트는 [Regression Spline]({{"/2021/04/18/regression-spline" | relative_url}})과 [Spline Method (2)]({{"/2021/04/19/splines-method-2" | relative_url}})이어지는 내용입니다 😊
 
 <br><span class="statement-title">TOC.</span><br>
 
@@ -211,7 +211,7 @@ A. NO!!!
 
 ### Local Likelihood Appraoch for logistic regression
 
-이번에는 \<spline method\>에서 살펴봤던 [\<non-parametric (binary) logistic regression\>]({{"/2021/04/19/splines-method-2.html#multi-dimensional-splines" | relative_url}}) 모델에 \<kernel method\>를 적용해보자.
+이번에는 \<spline method\>에서 살펴봤던 [\<non-parametric (binary) logistic regression\>]({{"/2021/04/19/splines-method-2#multi-dimensional-splines" | relative_url}}) 모델에 \<kernel method\>를 적용해보자.
 
 \<logistic regreeion\>에서는 $f(x) = x^T \beta(x)$를 구했었다. 여기에 \<kernel method\>를 추가하면, 아래의 최적화 문제를 풀어 $\hat{\beta}(x)$를 구하는 문제가 된다.
 
@@ -243,4 +243,4 @@ $$
 
 이 중에서 마지막 접근인 \<Additive Model\>이 바로 다음 포스트에서 다룰 내용이며, $p$ 차원 함수를 추정하는 어려운 문제를 1차원 함수 $p$개를 추정하는 문제로 가정해 해결하는 접근법이다.
 
-👉 [Additive Model]({{"/2021/05/17/additive-model.html" | relative_url}}) 🔥
+👉 [Additive Model]({{"/2021/05/17/additive-model" | relative_url}}) 🔥

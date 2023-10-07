@@ -41,9 +41,9 @@ then $a$ is a "**<u>irreducible element</u>**".
 </div>
 
 - [Wikipedia/irreducible element](https://en.wikipedia.org/wiki/Irreducible_element)
-- [Mathworld.Wolfram/irreducible element](https://mathworld.wolfram.com/IrreducibleElement.html)
+- [Mathworld.Wolfram/irreducible element](https://mathworld.wolfram.com/IrreducibleElement)
 
-원래는 [Irreducible Polynomial]({{"2020/12/27/Irreducible-poly.html" | relative_url}})에 입각해 Irreducibility를 생각했는데, 그렇게 Irreducibility를 생각하는 것보단 Ring Theory에서 정의하는 Irreducibility 자체를 받아들이는게 좋을 듯!!
+원래는 [Irreducible Polynomial]({{"2020/12/27/Irreducible-poly" | relative_url}})에 입각해 Irreducibility를 생각했는데, 그렇게 Irreducibility를 생각하는 것보단 Ring Theory에서 정의하는 Irreducibility 자체를 받아들이는게 좋을 듯!!
 
 <div class="notice" markdown="1">
 

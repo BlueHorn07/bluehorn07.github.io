@@ -13,7 +13,7 @@ categories: ["Algorithm"]
 
 ## Damerau–Levenshtein distance
 
-[\<편집 거리; edit distance\>]({{"/2021/04/20/edit-distanace.html" | relative_url}})는 대표적인 DP 문제이다. 백준에서는 [15483번: 최소편집](https://www.acmicpc.net/problem/15483) 문제를 통해 \<edit distance\>에 대한 문제를 풀 수 있다.
+[\<편집 거리; edit distance\>]({{"/2021/04/20/edit-distanace" | relative_url}})는 대표적인 DP 문제이다. 백준에서는 [15483번: 최소편집](https://www.acmicpc.net/problem/15483) 문제를 통해 \<edit distance\>에 대한 문제를 풀 수 있다.
 
 먼저 \<edit distance\>의 상황을 살펴보면, 두 String `s1`, `s2`에 대해
 

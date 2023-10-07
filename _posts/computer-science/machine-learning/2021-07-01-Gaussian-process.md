@@ -11,15 +11,15 @@ readtime: 30 Minutes
 
 "Machine Learning"을 공부하면서 개인적인 용도로 정리한 포스트입니다. 지적은 언제나 환영입니다 :)
 
-본 글을 읽기 전에 "[Random Process]({{"/2021/06/30/random-process.html" | relative_url}})"에 대한 글을 먼저 읽고 올 것을 권합니다 😉
+본 글을 읽기 전에 "[Random Process]({{"/2021/06/30/random-process" | relative_url}})"에 대한 글을 먼저 읽고 올 것을 권합니다 😉
 
 <div class="proof" markdown="1">
 
 **기획 시리즈: Gaussian Process Regression**
 
-1. [기획 시리즈: Bayesian Regression]({{"/2021/09/06/bayesian-regression.html" | relative_url}})
-2. [Distribution over functions & Gaussian Process]({{"/2021/07/01/Gaussian-process.html" | relative_url}}) 👀
-3. [Gaussian Process Regression]({{"/2021/09/21/Gaussian-Process-Regression.html" | relative_url}})
+1. [기획 시리즈: Bayesian Regression]({{"/2021/09/06/bayesian-regression" | relative_url}})
+2. [Distribution over functions & Gaussian Process]({{"/2021/07/01/Gaussian-process" | relative_url}}) 👀
+3. [Gaussian Process Regression]({{"/2021/09/21/Gaussian-Process-Regression" | relative_url}})
 
 </div>
 
@@ -231,7 +231,7 @@ $$
 
 다음 포스트에선 GP를 이용해 Regression model을 만드는 \<Gaussian Process Regresssion\>에 대해 살펴본다!!
 
-👉 [Gaussian Process Regression]({{"/2021/09/21/Gaussian-Process-Regression.html" | relative_url}})
+👉 [Gaussian Process Regression]({{"/2021/09/21/Gaussian-Process-Regression" | relative_url}})
 
 <hr/>
 

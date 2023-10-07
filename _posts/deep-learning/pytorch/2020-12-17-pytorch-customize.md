@@ -6,7 +6,7 @@ categories: [PyTorch]
 ---
 
 
-본 글은 제가 [PyTorch Turotial](https://pytorch.org/tutorials/)의 [torchvision object detection 부분](https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html)을 읽고 개인적으로 정리한 글입니다. 지적은 언제나 환영입니다 :)
+본 글은 제가 [PyTorch Turotial](https://pytorch.org/tutorials/)의 [torchvision object detection 부분](https://pytorch.org/tutorials/intermediate/torchvision_tutorial)을 읽고 개인적으로 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
 <span class="statement-title">keyword</span>
 
@@ -64,7 +64,7 @@ categories: [PyTorch]
 
 pyTorch의 `torchvision`은 자체적으로 유명한 모델들을 내부적으로 가지고 있다!!
 
-이 [링크](https://pytorch.org/docs/stable/torchvision/models.html)에서 `torchvision`에 어떤 모델들이 있는지 확인할 수 있다.
+이 [링크](https://pytorch.org/docs/stable/torchvision/models)에서 `torchvision`에 어떤 모델들이 있는지 확인할 수 있다.
 
 내가 알고 있고, 앞으로 쓸 것 같은 모델들만 간단히 적어보았다.
 
@@ -86,7 +86,7 @@ densenet = models.desenet161(pretrained=True)
 
 <br>
 
-- [Object Detection, Instance Segmentation](https://pytorch.org/docs/stable/torchvision/models.html#object-detection-instance-segmentation-and-person-keypoint-detection)
+- [Object Detection, Instance Segmentation](https://pytorch.org/docs/stable/torchvision/models#object-detection-instance-segmentation-and-person-keypoint-detection)
   - `Faster R-CNN ResNet-50 FPN` // `FPN`은 **<u>Feature Pyramid Network</u>**를 말한다!
   - `RetinaNet ResNet-50 FPN`
   - `Mask R-CNN ResNet-50 FPN`
@@ -98,7 +98,7 @@ mask_rcnn50 = models.detection.maskrcnn_resnet50_fpn(pretrained=True)
 
 <br>
 
-- [Video Classification](https://pytorch.org/docs/stable/torchvision/models.html#video-classification)
+- [Video Classification](https://pytorch.org/docs/stable/torchvision/models#video-classification)
   - `ResNet 3D`
 
 ``` python
@@ -123,11 +123,11 @@ custom_rpn = # 5x3 anchor patterns
 
 ### ROI pooler 커스텀
 
-`torchvision`은 [`ops` 모듈](https://pytorch.org/docs/stable/torchvision/ops.html)을 통해 컴퓨터 비전에서 자주 사용하는 연산들을 제공한다.
+`torchvision`은 [`ops` 모듈](https://pytorch.org/docs/stable/torchvision/ops)을 통해 컴퓨터 비전에서 자주 사용하는 연산들을 제공한다.
 
 대표적으로 `nms`, `roi_pool`, `roi_align`, `MultiScaleRoIAlign` 등이 있다.
 
-pytorch Tutorial의 [torchvision object detection](https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html)에선 `MultiScaleRoIAlign`를 roi pooler로 채용하였다.
+pytorch Tutorial의 [torchvision object detection](https://pytorch.org/tutorials/intermediate/torchvision_tutorial)에선 `MultiScaleRoIAlign`를 roi pooler로 채용하였다.
 
 ``` python
 roi_pooler =

@@ -156,13 +156,13 @@ $Q = [s]$ (**queue** containing start node $s$)
 
 알고리즘을 이해하는 것도 중요하지만, 그것을 코드로 구현하는 것 역시 중요하다! 본인의 \<DFS\>, \<BFS\> 코드 스타일은 아래의 링크에서 볼 수 있다.
 
-👉 [DFS & BFS - code]({{"2021/03/13/dfs-and-bfs-code.html" | relative_url}})
+👉 [DFS & BFS - code]({{"2021/03/13/dfs-and-bfs-code" | relative_url}})
 
 2\. **DFS Tree** 🌲
 
 \<DFS\> 알고리즘으로 그래프를 순회하면 방문 순서를 바탕으로 \<Tree\> 구조를 만들 수 있다!! 이 \<DFS Tree\>는 나중에 \<DAG; Directed Acyclic Graph\>를 판단하는 문제와도 연관된다.
 
-👉 [DFS Tree]({{"2021/03/13/dfs-tree.html" | relative_url}})
+👉 [DFS Tree]({{"2021/03/13/dfs-tree" | relative_url}})
 
 3\. **Dijkstra Algorithm** 🚗
 

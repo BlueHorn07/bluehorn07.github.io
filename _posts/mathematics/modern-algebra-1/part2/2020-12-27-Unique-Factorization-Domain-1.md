@@ -77,7 +77,7 @@ i.e. unique decomposition as the product of prime elements (or irreducible eleme
 
 </div>
 
-- [MathWorld/Unique Factorization Domain](https://mathworld.wolfram.com/UniqueFactorizationDomain.html)
+- [MathWorld/Unique Factorization Domain](https://mathworld.wolfram.com/UniqueFactorizationDomain)
 
 <br>
 
@@ -106,7 +106,7 @@ In UFD, Irreducible elt is also a Prime elt.
 
 </div>
 
-일반적으로 Prime element면 Irreducible element다. [link]({{"2020/12/27/Prime-Irreducible-Element.html#theorem-prime---irreducible" | relative_url}}) <br>
+일반적으로 Prime element면 Irreducible element다. [link]({{"2020/12/27/Prime-Irreducible-Element#theorem-prime---irreducible" | relative_url}}) <br>
 하지만, Irreduciblility가 Primality를 항상 보장하는 것은 아니다.
 
 그런데 UFD에서는 특별히 Irreducibility가 Primality를 보장한다!!
@@ -170,7 +170,7 @@ $\iff$ Every non-zero elt is a product of finitely many prime elt.
 <br>
 <hr>
 
-PID와 UFD 사이의 관계에 대해선 [UFD - 2]({{"2020/12/27/Unique-Factorization-Domain-2.html" | relative_url}})에서 이어집니다.
+PID와 UFD 사이의 관계에 대해선 [UFD - 2]({{"2020/12/27/Unique-Factorization-Domain-2" | relative_url}})에서 이어집니다.
 
 <br>
 <hr>

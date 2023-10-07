@@ -15,9 +15,9 @@ readtime: 30 Minutes
 
 **기획 시리즈: Bayesian Regression**
 
-1. [MLE vs. MAP]({{"/2021/09/05/MLE-vs-MAP.html" | relative_url}})
-2. [Predictive Distribution]({{"/2021/09/05/predictive-distribution.html" | relative_url}})
-3. [Bayesian Regression]({{"/2021/09/06/bayesian-regression.html" | relative_url}}) 👀
+1. [MLE vs. MAP]({{"/2021/09/05/MLE-vs-MAP" | relative_url}})
+2. [Predictive Distribution]({{"/2021/09/05/predictive-distribution" | relative_url}})
+3. [Bayesian Regression]({{"/2021/09/06/bayesian-regression" | relative_url}}) 👀
 
 </div>
 
@@ -91,7 +91,7 @@ $$
 
 <br/>
 
-일반적으로 regression problem에서 정의한 parameter poster $p(\theta \mid S)$와 posterior predictive distribution $p(y^{\*} \mid x^{\*}, S)$는 적분 계산이 매우 어렵다. 그래서 근사를 이용해 문제를 해결하는데, 시리즈의 맨 처음에 다뤘던 [MAP(Maximum a Posterior)]({{"/2021/09/05/MLE-vs-MAP.html" | relative_url}})도 이런 근사 방식 중 하나이다.
+일반적으로 regression problem에서 정의한 parameter poster $p(\theta \mid S)$와 posterior predictive distribution $p(y^{\*} \mid x^{\*}, S)$는 적분 계산이 매우 어렵다. 그래서 근사를 이용해 문제를 해결하는데, 시리즈의 맨 처음에 다뤘던 [MAP(Maximum a Posterior)]({{"/2021/09/05/MLE-vs-MAP" | relative_url}})도 이런 근사 방식 중 하나이다.
 
 다행인 점은 \<Bayesian Linear Regression\>은 $p(\theta \mid S)$와 $p(y^{\*} \mid x^{\*}, S)$에 대한 분포해가 알려져 있으며 아래와 같다.
 
@@ -114,7 +114,7 @@ where $A = \frac{1}{\sigma^2}X^TX + \frac{1}{\tau^2}I$.
 
 이번 포스트를 마지막으로 Bayesian Approach 시리즈가 끝이 났다. 용어에 'Bayesian'이라는 말이 들어가면 어렵게만 느껴졌는데, 이번 시리즈를 통해 조금은 Bayesian Theory를 극복한 것 같다 🙌
 
-\<Bayesian Regression\>이 bayesian parameteric regression이라면, bayesian regression이지만 non-parameteric model인 [\<Gaussian Process Regression\>]({{"/2021/09/21/Gaussian-Process-Regression.html" | relative_url}})도 있다. 궁금하다면, 해당 포스트를 방문해보자 👏
+\<Bayesian Regression\>이 bayesian parameteric regression이라면, bayesian regression이지만 non-parameteric model인 [\<Gaussian Process Regression\>]({{"/2021/09/21/Gaussian-Process-Regression" | relative_url}})도 있다. 궁금하다면, 해당 포스트를 방문해보자 👏
 
 <hr/>
 

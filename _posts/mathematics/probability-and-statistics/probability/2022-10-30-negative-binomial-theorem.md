@@ -59,7 +59,7 @@ $$
 
 # Derivation
 
-아이디어는 실변수 함수 $f(x)$를 다항 함수의 멱급수로 표현하는 [\<매크로린 급수; Macluarin Series\>]({{"/2022/10/29/talyor-series-and-maclaurin-series.html" | relative_url}})에서 출발한다. 예제는 [Brilliant: Negative Binomial Theorem](https://brilliant.org/wiki/negative-binomial-theorem/)에서 빌려왔음을 미리 밝힌다. 아래의 함수를 \<테일러 전개\> 해보자.
+아이디어는 실변수 함수 $f(x)$를 다항 함수의 멱급수로 표현하는 [\<매크로린 급수; Macluarin Series\>]({{"/2022/10/29/talyor-series-and-maclaurin-series" | relative_url}})에서 출발한다. 예제는 [Brilliant: Negative Binomial Theorem](https://brilliant.org/wiki/negative-binomial-theorem/)에서 빌려왔음을 미리 밝힌다. 아래의 함수를 \<테일러 전개\> 해보자.
 
 <div class="proof" markdown="1">
 
@@ -175,7 +175,7 @@ $$
 
 이 정리는 \<Negative Binomial Distribution\>의 성질을 증명할 때, 다시 등장한다.
 
-👉 [Discrete Probability Distribution (2): Negative Binomial Distribution]({{"/2021/03/24/discrete-probability-distributions-2.html" | relative_url}})
+👉 [Discrete Probability Distribution (2): Negative Binomial Distribution]({{"/2021/03/24/discrete-probability-distributions-2" | relative_url}})
 
 <hr/>
 

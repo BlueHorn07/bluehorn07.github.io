@@ -316,7 +316,7 @@ A3. & A4. Q3는 이미 위에서 증명을 했다. 그러나 다른 방식으로
 
 이어지는 내용에서는 \<평균\>과 \<분산\>에 대한 약간의 추가적인 내용을 살펴본다.
 
-👉 [Chebyshev's Inequality]({{"/2021/03/17/chebyshev's-inequality.html" | relative_url}})
+👉 [Chebyshev's Inequality]({{"/2021/03/17/chebyshev's-inequality" | relative_url}})
 
 그리고 Discrete RV에서의 기본적인 Probability Distribution을 살펴본다.
 
@@ -326,6 +326,6 @@ A3. & A4. Q3는 이미 위에서 증명을 했다. 그러나 다른 방식으로
 - Hypergeometric Distriubtion
 - etc...
 
-👉 [Discrete Probability Distributions - 1]({{"/2021/03/17/discrete-probability-distributions-1.html" | relative_url}})
+👉 [Discrete Probability Distributions - 1]({{"/2021/03/17/discrete-probability-distributions-1" | relative_url}})
 
-👉 [Discrete Probability Distributions - 2]({{"/2021/03/24/discrete-probability-distributions-2.html" | relative_url}})
+👉 [Discrete Probability Distributions - 2]({{"/2021/03/24/discrete-probability-distributions-2" | relative_url}})

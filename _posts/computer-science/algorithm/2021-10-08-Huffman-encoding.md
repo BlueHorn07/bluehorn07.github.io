@@ -241,5 +241,5 @@ C: 11
 
 본 포스트는 \<Greedy Algorithm\> 시리즈의 일부 입니다. 더 많은 \<Greedy Algorithm\>에 대해 살펴보고 싶다면 아래에서 확인할 수 있습니다 😁
 
-👉 [Greedy Algorithm]({{"/2021/04/19/greedy-algorithm.html" | relative_url}})
+👉 [Greedy Algorithm]({{"/2021/04/19/greedy-algorithm" | relative_url}})
 

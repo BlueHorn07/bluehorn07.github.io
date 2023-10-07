@@ -63,7 +63,7 @@ $$
 
 오늘의 값 $X(t)$는 어제의 값 $X(t-1)$과 예측할 수 없는 변량 $\epsilon(t)$로 결정된다. 어쩌면 어제의 값이 오늘의 값을 예측하는데, 베스트 값이다.
 
-[\<Markove Process\>]({{"/2021/07/03/Markov-process.html" | relative_url}})는 확률이 직전 상태에만 의존하는 확률 과정이다.
+[\<Markove Process\>]({{"/2021/07/03/Markov-process" | relative_url}})는 확률이 직전 상태에만 의존하는 확률 과정이다.
 
 $$
 p(S_{t+1} \mid S_0, S_1, \dots, S_t) = p(S_{t+1} \mid S_t)
@@ -110,7 +110,7 @@ AR(1)의 마지막에서 $\left\| \phi_1 \right\| < 1$라면, 시계열이 정�
 <div class="img-wrapper">
   <img src="https://otexts.com/fppkr/fpp_files/figure-html/arp-1.png" width="640px">
   <p markdown="1">
-    [Forecasting: Principles and Practices: 자귀회귀 모델](https://otexts.com/fppkr/AR.html)
+    [Forecasting: Principles and Practices: 자귀회귀 모델](https://otexts.com/fppkr/AR)
   </p>
   <p arkdown="1">
     두 모델 다 $\left| \phi_1 \right| < 1$를 만족한다.
@@ -168,5 +168,5 @@ $$
 # Reference
 
 - [Wikipedia: Auto-regressive Model](https://en.wikipedia.org/wiki/Autoregressive_model)
-- [Forecasting: Principles and Practices: 자기회귀 모델](https://otexts.com/fppkr/AR.html)
+- [Forecasting: Principles and Practices: 자기회귀 모델](https://otexts.com/fppkr/AR)
 

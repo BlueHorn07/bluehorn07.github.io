@@ -9,7 +9,7 @@ categories: ["Algorithm"]
 
 2020-1학기, 대학에서 '알고리즘' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
-[Kruskal's Algorithm & Prim's Algorithm]({{"/2021/04/19/kruskal-and-prim-algorithm.html" | relative_url}})에서 이어지는 포스트입니다.
+[Kruskal's Algorithm & Prim's Algorithm]({{"/2021/04/19/kruskal-and-prim-algorithm" | relative_url}})에서 이어지는 포스트입니다.
 
 <hr/>
 
@@ -110,7 +110,7 @@ $\blacksquare$
 
 </div>
 
-마지막 4번째 문장은 두 노드가 동일 집합에 속하는지를 판단하는데 $O(\log n)$의 비용이 필요함을 의미한다. 그래서 [Kruskal Algorithm]({{"/2021/04/19/kruskal-and-prim-algorithm.html" | relative_url}})에서는 MST를 만들기 위해 union-find로 동일 집합에 속하는지 계속 체크하게 되는데, 이 작업에 $O(E \log V)$ 만큼의 비용이 발생한다.
+마지막 4번째 문장은 두 노드가 동일 집합에 속하는지를 판단하는데 $O(\log n)$의 비용이 필요함을 의미한다. 그래서 [Kruskal Algorithm]({{"/2021/04/19/kruskal-and-prim-algorithm" | relative_url}})에서는 MST를 만들기 위해 union-find로 동일 집합에 속하는지 계속 체크하게 되는데, 이 작업에 $O(E \log V)$ 만큼의 비용이 발생한다.
 
 <hr/>
 
@@ -281,5 +281,5 @@ $$
 
 이것으로 \<disjoint set\> 자료구조에 대해 살펴보았다. disjoint set을 통해 그래프에서 사이클이 존재하는지 확인할 수 있기 때문에 MST 외에도 충분히 활용할 수 있다.
 
-다른 포스트에서 \<Heap\> 자료구조의 구현에 대해 기술한 [Implementations of Heap]({{"/2021/05/03/implementations-of-heap.html" | relative_url}}) 포스트도 있으니 알고리즘 문제해결에 쓰는 자료구조가 더 궁금하다면 추천한다.
+다른 포스트에서 \<Heap\> 자료구조의 구현에 대해 기술한 [Implementations of Heap]({{"/2021/05/03/implementations-of-heap" | relative_url}}) 포스트도 있으니 알고리즘 문제해결에 쓰는 자료구조가 더 궁금하다면 추천한다.
 

@@ -97,7 +97,7 @@ $$
 
 ### Bernoulli Process (2)
 
-이번 문단에서는 \<[Bernoulli Process]({{"/2021/03/25/poisson-distribution.html#bernoulli-process" | relative_url}})\>에 대한 내용에서 추가적인 주제들을 다룬다. 아직 \<Bernoulli Processs\>가 뭔지 모른다면, 위의 포스트를 먼저 읽어보자!
+이번 문단에서는 \<[Bernoulli Process]({{"/2021/03/25/poisson-distribution#bernoulli-process" | relative_url}})\>에 대한 내용에서 추가적인 주제들을 다룬다. 아직 \<Bernoulli Processs\>가 뭔지 모른다면, 위의 포스트를 먼저 읽어보자!
 
 \<Bernoulii Process\>에서 어떤 random variable $Y$를 조건과 함께 정의하면 새로운 확률 분포를 유도할 수 있다! 우리는 \<Binomial distribution\>, \<Geometric distribution\>, \<Negative BIN distribution\>을 \<Bernoulli Process\>로부터 유도해보겠다 😁
 
@@ -153,7 +153,7 @@ $$
 
 PP에 대한 내용은 아래 포스트의 내용으로 대체한다 🙏
 
-👉 [Poisson Process]({{"/2021/03/25/poisson-distribution.html#bernoulli-process" | relative_url}})
+👉 [Poisson Process]({{"/2021/03/25/poisson-distribution#bernoulli-process" | relative_url}})
 
 <hr/>
 
@@ -161,13 +161,13 @@ PP에 대한 내용은 아래 포스트의 내용으로 대체한다 🙏
 
 A sequence of Gaussian distribution으로, multi-variate Gaussian distribution의 일반화된 버전이다. "distribution over functions"으로 취급한다! 💪
 
-👉 [Distribution over functions & Gaussian Process]({{"2021/07/01/Gaussian-process.html" | relative_url}})
+👉 [Distribution over functions & Gaussian Process]({{"2021/07/01/Gaussian-process" | relative_url}})
 
 <hr/>
 
 ### Markov Process
 
-👉 [Markov Process]({{"/2021/07/03/markov-process.html" | relative_url}})
+👉 [Markov Process]({{"/2021/07/03/markov-process" | relative_url}})
 
 <hr/>
 

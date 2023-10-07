@@ -186,5 +186,5 @@ $$
 
 - [PyTorch로 시작하는 딥러닝 입문, 유원준 저](https://wikidocs.net/book/2788)
 - [karpathy/min-char-rnn.py](https://gist.github.com/karpathy/d4dee566867f8291f086)
-- [Stanford CS231N 2017](http://cs231n.stanford.edu/2017/syllabus.html)
+- [Stanford CS231N 2017](http://cs231n.stanford.edu/2017/syllabus)
 

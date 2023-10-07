@@ -8,7 +8,7 @@ categories: ["Modern Algebra1"]
 
 2020-2학기, 대학에서 '현대대수1' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
-UFD에 대한 첫번째 포스트는 [이곳]({{"2020/12/27/Unique-Factorization-Domain-1.html" | relative_url}})에서 볼 수 있습니다.
+UFD에 대한 첫번째 포스트는 [이곳]({{"2020/12/27/Unique-Factorization-Domain-1" | relative_url}})에서 볼 수 있습니다.
 
 <hr>
 
@@ -638,5 +638,5 @@ $$
 <br>
 <hr>
 
-PID가 UFD임을 말하는 Theorem 45.17를 통해 우리는 정수 $\mathbb{Z}$에 대한 가장 근본적인 명제인 **"Fundamental Theorem of Arithmetic"**을 유도할 수 있다!! [link]({{"2021/01/17/fundamental-thm-of-arithmetic.html" | relative_url}})
+PID가 UFD임을 말하는 Theorem 45.17를 통해 우리는 정수 $\mathbb{Z}$에 대한 가장 근본적인 명제인 **"Fundamental Theorem of Arithmetic"**을 유도할 수 있다!! [link]({{"2021/01/17/fundamental-thm-of-arithmetic" | relative_url}})
 

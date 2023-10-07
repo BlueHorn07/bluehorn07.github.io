@@ -137,10 +137,10 @@ Cubmap mapping은 구를 6개의 90° FOV 이미지로 매핑하는 방식이다
 <hr>
 
 ### 참고문헌
-- [Wolfram MathWorld - Gnomonic Projection](https://mathworld.wolfram.com/GnomonicProjection.html)
+- [Wolfram MathWorld - Gnomonic Projection](https://mathworld.wolfram.com/GnomonicProjection)
 - [wiki.panotools - Projections](https://wiki.panotools.org/Projections)
 - [wiki.panotools - Rectilinear Projection](https://wiki.panotools.org/Rectilinear_Projection)
-- [nitishmutha - How to map Equirectangular projection to Rectilinear projection](http://blog.nitishmutha.com/equirectangular/360degree/2017/06/12/How-to-project-Equirectangular-image-to-rectilinear-view.html)
+- [nitishmutha - How to map Equirectangular projection to Rectilinear projection](http://blog.nitishmutha.com/equirectangular/360degree/2017/06/12/How-to-project-Equirectangular-image-to-rectilinear-view)
 <hr>
 
 [^1]: 앞의 Gnomonic projection의 구 표면을 외부의 tangent 평면에 매핑을 했다. 이 그림에선 원의 내부에서 구 표면을 바라본다. 그러나 구 표면을 외부에 매핑하는 것과 내부에서 바라보는 것은 완전히 동치인 상황이다!

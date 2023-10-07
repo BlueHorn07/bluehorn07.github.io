@@ -80,4 +80,4 @@ Announce that there is no solution.
 
 다음 포스트에선 \<Backtracking\> 알고리즘의 파생격인 \<Branch-and-Bound\> 알고리즘을 살펴본다 🙏
 
-👉 [Branch and Bound]({{"/2022/05/20/branch-and-bound.html" | relative_url}})
+👉 [Branch and Bound]({{"/2022/05/20/branch-and-bound" | relative_url}})

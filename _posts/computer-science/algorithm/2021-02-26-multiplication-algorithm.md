@@ -144,7 +144,7 @@ $$
 
 <hr/>
 
-이 빠른 곱셈 알고리즘을 \<카라츠바의 알고리즘; Karatsuba Algorithm\>이라고 한다. 1960년에 카라츠바가 제시한 알고리즘으로 행렬 곱셈 알고리즘인 [슈트라센(Stressen) 알고리즘]({{"/2021/10/19/matrix-multiplication-strassen-algorithm.html" | relative_url}})도 카라츠바 알고리즘과 비슷한 맥락으로 문제를 병합(merge) 하는 단계에서 시간 복잡도를 줄인 케이스이다.
+이 빠른 곱셈 알고리즘을 \<카라츠바의 알고리즘; Karatsuba Algorithm\>이라고 한다. 1960년에 카라츠바가 제시한 알고리즘으로 행렬 곱셈 알고리즘인 [슈트라센(Stressen) 알고리즘]({{"/2021/10/19/matrix-multiplication-strassen-algorithm" | relative_url}})도 카라츠바 알고리즘과 비슷한 맥락으로 문제를 병합(merge) 하는 단계에서 시간 복잡도를 줄인 케이스이다.
 
 이 \<카라츠바 알고리즘\>보다 더 빠른 알고리즘도 존재한다! \<FFT; 고속 푸리에 변환\>을 쓰면 더 빠르게 두 수의 곱셈을 구할 수 있다. 이 내용은 \<FFT; 고속 푸리에 변환\> 포스트에서 다시 다루도록 하겠다 🙌
 

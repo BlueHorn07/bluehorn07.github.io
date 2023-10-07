@@ -13,7 +13,7 @@ readtime: 1 Hour
 
 이번 포스트에서는 \<Heap\>의 구현 방식을 살펴볼 예정입니다. 구현 코드는 추후에 별도의 포스트에서 Heap의 종류별로 다룰 예정입니다! 😁
 
-\<Binomial Heap\>에서부터 시간복잡도를 유도하기 위해 amortized analysis를 사용합니다. "[Amortized Analysis]({{"/2021/05/08/amortized-analysis.html" | relative_url}})" 포스트를 먼저 읽고 오길 권합니다 😉
+\<Binomial Heap\>에서부터 시간복잡도를 유도하기 위해 amortized analysis를 사용합니다. "[Amortized Analysis]({{"/2021/05/08/amortized-analysis" | relative_url}})" 포스트를 먼저 읽고 오길 권합니다 😉
 
 <hr/>
 

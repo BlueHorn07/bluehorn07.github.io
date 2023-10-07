@@ -10,12 +10,12 @@ categories: ["Statistics"]
 
 **시리즈: Sampling Distributions**
 
-1. [Sampling Distribution]({{"/2021/04/25/sampling-distribution.html" | relative_url}})
-2. [Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt.html" | relative_url}})
-3. [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance.html" | relative_url}})
-4. [Student's t-distribution]({{"/2021/04/27/student-t-distribution.html" | relative_url}})
-5. [F-distribution]({{"/2021/05/04/F-distribution.html" | relative_url}})
-6. [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile.html" | relative_url}}) 👀
+1. [Sampling Distribution]({{"/2021/04/25/sampling-distribution" | relative_url}})
+2. [Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt" | relative_url}})
+3. [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance" | relative_url}})
+4. [Student's t-distribution]({{"/2021/04/27/student-t-distribution" | relative_url}})
+5. [F-distribution]({{"/2021/05/04/F-distribution" | relative_url}})
+6. [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile" | relative_url}}) 👀
 
 </div>
 
@@ -185,8 +185,8 @@ IF the distribution of $X$ is very close to $N(0, 1)$, then a \<Normal Quantile-
 
 다음 포스트부터는 "통계적 추론"의 방식 중 하나인 **\<Estimation; 추정\>**에 대해 다룬다. estimator의 \<bias\>와 \<variance\>에 대해 살펴보며, 신뢰 구간을 구하는 \<Interval Estimation\>을 수행한다 😁
 
-👉 [Point Estimation]({{"/2021/05/05/point-estimation.html" | relative_url}})
+👉 [Point Estimation]({{"/2021/05/05/point-estimation" | relative_url}})
 
-👉 [Interval Estimation]({{"/2021/05/06/interval-estimation.html" | relative_url}})
+👉 [Interval Estimation]({{"/2021/05/06/interval-estimation" | relative_url}})
 
 

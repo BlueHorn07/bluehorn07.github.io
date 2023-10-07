@@ -55,7 +55,7 @@ public class PetOwner{
 }
 ```
 
-<p style="color:gray">// code fragement from <a href="https://gmlwjd9405.github.io/2018/11/09/dependency-injection.html">here</a></p>
+<p style="color:gray">// code fragement from <a href="https://gmlwjd9405.github.io/2018/11/09/dependency-injection">here</a></p>
 
 이 코드에서 `PetOwner` 객체는 `AnimalType`의 객체를 만들기 위해 `Dog` 객체에 "의존"한다.
 
@@ -190,7 +190,7 @@ B. 추상은 상세를 의존해서는 안 된다. 상세는 추상을 의존해
 <hr>
 
 ### 참고자료
-- [[Design Pattern] DI란 (Dependency Injection)](https://gmlwjd9405.github.io/2018/11/09/dependency-injection.html)
+- [[Design Pattern] DI란 (Dependency Injection)](https://gmlwjd9405.github.io/2018/11/09/dependency-injection)
 - [Dependency Injection 이란?](https://medium.com/@jang.wangsu/di-dependency-injection-%EC%9D%B4%EB%9E%80-1b12fdefec4f)
 - [의존 역전 원칙, DIP](https://defacto-standard.tistory.com/113)
 - [의존 관계 역전의 원칙](https://vandbt.tistory.com/42)

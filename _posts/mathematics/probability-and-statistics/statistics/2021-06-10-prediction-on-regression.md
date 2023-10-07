@@ -14,7 +14,7 @@ categories: ["Statistics"]
 
 <hr/>
 
-우리는 이전 포스트 "[Test on Regression]({{"/2021/06/09/test-on-regression.html" | relative_url}})"에서 regression coefficient $B_1$, $B_0$의 분포를 확인했다. 이번 포스트에서는 이 결과를 종합해 우리가 regression 모델로부터 얻는 response의 분포를 추정해보는 과정을 진행한다.
+우리는 이전 포스트 "[Test on Regression]({{"/2021/06/09/test-on-regression" | relative_url}})"에서 regression coefficient $B_1$, $B_0$의 분포를 확인했다. 이번 포스트에서는 이 결과를 종합해 우리가 regression 모델로부터 얻는 response의 분포를 추정해보는 과정을 진행한다.
 
 개인적으로는 "$B_1$와 $B_0$이 estimated regression coefficient이기 때문에 모델로부터 얻는 response $y$ 역시 estimated response로 어느정도의 불확실성을 가지고 있다. 이를 $B_1$과 $B_0$의 불확실성을 모델링한 이들의 분포를 이용해 추정한다!"라고 이해했다.
 

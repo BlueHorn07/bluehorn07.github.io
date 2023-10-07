@@ -10,7 +10,7 @@ categories: ["Time Series Analysis"]
 <div class="img-wrapper">
   <img src="https://otexts.com/fppkr/fpp_files/figure-html/elecequip-trend-1.png" width="640px">
   <p markdown="1">
-    [Forecasting: Principles and Practices: 시계열 성분](https://otexts.com/fppkr/components.html)
+    [Forecasting: Principles and Practices: 시계열 성분](https://otexts.com/fppkr/components)
   </p>
 </div>
 
@@ -29,7 +29,7 @@ $$
 <div class="img-wrapper">
   <img src="https://otexts.com/fppkr/fpp_files/figure-html/elecequip-stl-1.png" width="640px">
   <p markdown="1">
-    [Forecasting: Principles and Practices: 시계열 성분](https://otexts.com/fppkr/components.html)
+    [Forecasting: Principles and Practices: 시계열 성분](https://otexts.com/fppkr/components)
   </p>
 </div>
 
@@ -46,7 +46,7 @@ $$
 <div class="img-wrapper">
   <img src="https://otexts.com/fppkr/fpp_files/figure-html/elecequip-sa-1.png" width="640px">
   <p markdown="1">
-    [Forecasting: Principles and Practices: 시계열 성분](https://otexts.com/fppkr/components.html)
+    [Forecasting: Principles and Practices: 시계열 성분](https://otexts.com/fppkr/components)
   </p>
 </div>
 
@@ -79,4 +79,4 @@ $$
 
 # Reference
 
-- [Forecasting: Principles and Practices: 시계열 성분](https://otexts.com/fppkr/components.html)
+- [Forecasting: Principles and Practices: 시계열 성분](https://otexts.com/fppkr/components)

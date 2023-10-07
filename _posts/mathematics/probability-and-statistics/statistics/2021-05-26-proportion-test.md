@@ -91,7 +91,7 @@ $$
 <img src= "{{"/images/probability-and-statistics/test-on-proportion-1.png" | relative_url }}" width=650>
 </div>
 
-<span class="red">두 집합의 비율이 동일한지, 즉 $p_1 = p_2$를 검정</span>하는 문제다. [\<Proportion Estimation\>]({{"/2021/05/14/proportion-estimation-on-bernoulli.html" | relative_url}})에서 한 것처럼 CLT를 적용해 Test Statistic을 구하면 아래와 같다.
+<span class="red">두 집합의 비율이 동일한지, 즉 $p_1 = p_2$를 검정</span>하는 문제다. [\<Proportion Estimation\>]({{"/2021/05/14/proportion-estimation-on-bernoulli" | relative_url}})에서 한 것처럼 CLT를 적용해 Test Statistic을 구하면 아래와 같다.
 
 $$
 \frac{(\hat{p}_1 - \hat{p}_2) - (p_1 - p_2)}{\sqrt{\dfrac{p_1 q_1}{n_1} + \dfrac{p_2 q_2}{n_2}}} \sim N(0, 1)
@@ -103,7 +103,7 @@ $$
 \frac{(\hat{p}_1 - \hat{p}_2)}{\sqrt{pq (1/n_1 + 1/n_2)}}
 $$
 
-그런데, 우리는 population proportion이 $p_1 = p_2$ 라는 것만 알지 $p_1$, $p_2$의 값을 모른다. 그래서, [\<Proportion Estimation\>]({{"/2021/05/14/proportion-estimation-on-bernoulli.html" | relative_url}})에서 한 것처럼 sample proportion $\hat{p}$을 사용해야 한다!
+그런데, 우리는 population proportion이 $p_1 = p_2$ 라는 것만 알지 $p_1$, $p_2$의 값을 모른다. 그래서, [\<Proportion Estimation\>]({{"/2021/05/14/proportion-estimation-on-bernoulli" | relative_url}})에서 한 것처럼 sample proportion $\hat{p}$을 사용해야 한다!
 
 그런데 sample proportion $\hat{p}_1$과 $\hat{p}_2$ 둘 중 뭘 써야할까? 둘을 종합한 pooled proportion $\hat{p}$을 사용하면 된다!
 
@@ -125,4 +125,4 @@ $$
 
 이어지는 포스트에서 \<proportion test\>을 일반화한 \<**Chi-square Goodness-of-fit test**\>를 살펴본다. \<chi-square distribution\> $\chi^2$를 사용해 검정을 수행하며, 이를 통해 표본의 독립(independence)와 동질성(homogeneity)에 대한 검정을 할 수 있다!
 
-👉 [Chi-square Goodness-of-fit test]({{"/2021/05/27/chi-square-goodness-of-fit-test.html"}})
+👉 [Chi-square Goodness-of-fit test]({{"/2021/05/27/chi-square-goodness-of-fit-test"}})

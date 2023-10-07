@@ -61,7 +61,7 @@ Bayes Rule의 용어를 정리해보자.
 
 <br/>
 
-분류 문제를 기준으로 말하자면, *Logistic Regression*이 Discriminative Model에 속한다. [*Naive Bayes Classifier*](https://poapper.github.io/pytorch-seminar/2021/12/26/seminar-6.html)는 Generative Model에 속한다. 또 아래에 언급되는 GDA(Gaussian Discriminant Analysis)도 Generative Model이다.
+분류 문제를 기준으로 말하자면, *Logistic Regression*이 Discriminative Model에 속한다. [*Naive Bayes Classifier*](https://poapper.github.io/pytorch-seminar/2021/12/26/seminar-6)는 Generative Model에 속한다. 또 아래에 언급되는 GDA(Gaussian Discriminant Analysis)도 Generative Model이다.
 
 <hr>
 

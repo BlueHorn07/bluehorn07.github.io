@@ -116,5 +116,5 @@ code-level에서는 이미지를 어떻게 Bluring 할 수 있는지 살펴보�
 torchvision.transform.GaussianBlur(kernel_size, sigma=(0.1, 2.0))
 ```
 
-\- [PyTorch doc/GaussianBlur()](https://pytorch.org/docs/stable/torchvision/transforms.html#torchvision.transforms.GaussianBlur)
+\- [PyTorch doc/GaussianBlur()](https://pytorch.org/docs/stable/torchvision/transforms#torchvision.transforms.GaussianBlur)
 

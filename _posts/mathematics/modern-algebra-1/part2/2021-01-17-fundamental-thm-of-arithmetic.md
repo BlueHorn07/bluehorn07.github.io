@@ -8,7 +8,7 @@ categories: ["Modern Algebra1"]
 
 2020-2학기, 대학에서 '현대대수1' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
-PID가 UFD를 만족함을 증명하는 포스트는 [이곳]({{"2020/12/27/Unique-Factorization-Domain-2.html" | relative_url}})에서 볼 수 있습니다.
+PID가 UFD를 만족함을 증명하는 포스트는 [이곳]({{"2020/12/27/Unique-Factorization-Domain-2" | relative_url}})에서 볼 수 있습니다.
 
 <br>
 <hr>
@@ -91,7 +91,7 @@ $N$까지의 모든 자연수에 대해 우리는 유일한 소인수분해를 �
 
 $n_1$, $n_2$의 factorization을 곱해 $N+1$의 factorization을 구할 수 있고, 이는 유일하다.
 
-(만약 이 유일성이 의심된다면, 또다른 factorization을 가정하고 두 factorization이 같음을 보이면 된다. 앞의 [UFD2 포스트]({{"2020/12/27/Unique-Factorization-Domain-2.html" | relative_url}})에서 했던 과정과 비슷하다.)
+(만약 이 유일성이 의심된다면, 또다른 factorization을 가정하고 두 factorization이 같음을 보이면 된다. 앞의 [UFD2 포스트]({{"2020/12/27/Unique-Factorization-Domain-2" | relative_url}})에서 했던 과정과 비슷하다.)
 
 따라서 자연수 $\mathbb{N}$은 UFD이다. $\blacksquare$
 

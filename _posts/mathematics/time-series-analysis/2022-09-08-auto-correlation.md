@@ -105,7 +105,7 @@ $s(t)$와 $s(t-1)$가 상관성이 있다면, $s(t-1)$와 $s(t-2)$도 상관성�
 
 <br/>
 
-\<Partial Correlation\>라는 개념이 있다. 자세한 내용은 "[Partial Correlation]({{"/2022/09/07/partial-correlation.html" | relative_url}})" 포스트에 적어뒀지만, 간단히 말해보자면. 여러 개의 독립변수가 있고, 각 독립변수 사이에 어느정도의 Correlation이 있을 때, 그런 **독립변수 사이의 상관성을 배제하고 오직 독립변수 단독의 종속변수에 대한 Correlation을 측정하는 방법**이다.
+\<Partial Correlation\>라는 개념이 있다. 자세한 내용은 "[Partial Correlation]({{"/2022/09/07/partial-correlation" | relative_url}})" 포스트에 적어뒀지만, 간단히 말해보자면. 여러 개의 독립변수가 있고, 각 독립변수 사이에 어느정도의 Correlation이 있을 때, 그런 **독립변수 사이의 상관성을 배제하고 오직 독립변수 단독의 종속변수에 대한 Correlation을 측정하는 방법**이다.
 
 <br/>
 

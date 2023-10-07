@@ -81,7 +81,7 @@ $$
 </details>
 <br>
 
-이때, 각 sampling point들이 tangent plane $\Pi_0$의 어디에 있는지 계산할 수 있다. [gnomonic projection]({{"2020/09/24/Gnomonic-Projection.html#how-to-map-with-gnomonic-projection" | relative_url}})을 이용해 계산한 결과는 아래와 같다.
+이때, 각 sampling point들이 tangent plane $\Pi_0$의 어디에 있는지 계산할 수 있다. [gnomonic projection]({{"2020/09/24/Gnomonic-Projection#how-to-map-with-gnomonic-projection" | relative_url}})을 이용해 계산한 결과는 아래와 같다.
 
 <div class="statement">
 

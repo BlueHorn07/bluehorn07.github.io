@@ -51,4 +51,4 @@ SARIMAX는 SARIMA 모델에 **"외생변수(eXogenous variable)"**을 추가로 
 
 # Reference
 
-- [Forecasting: Principles and Practices: 계절성 ARIMA 모델들](https://otexts.com/fppkr/seasonal-arima.html)
+- [Forecasting: Principles and Practices: 계절성 ARIMA 모델들](https://otexts.com/fppkr/seasonal-arima)

@@ -7,7 +7,7 @@ categories: ["Statistics"]
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
-[Interval Estimation]({{"/2021/05/06/interval-estimation.html" | relative_url}}) 포스트에서 다룬 \<Interval Estimation\>을 특정 상황에 어떻게 적용할 수 있는지를 다루는 포스트입니다.
+[Interval Estimation]({{"/2021/05/06/interval-estimation" | relative_url}}) 포스트에서 다룬 \<Interval Estimation\>을 특정 상황에 어떻게 적용할 수 있는지를 다루는 포스트입니다.
 
 <hr/>
 
@@ -25,7 +25,7 @@ Q. Can we find a 95% confidence interval for the true mean of the differences bt
 
 Supp. $X_1, \dots, X_n$ and $Y_1, \dots, Y_n$ are random samples and $\sigma_1^2$ and $\sigma_2^2$ are known.
 
-이전 포스트 "[Two Samples Estimation: Diff Btw Two Means]({{"/2021/05/13/two-samples-estimation-diff-btw-two-means.html" | relative_url}})"에서 만약 두 샘플의 분산을 정확히 안다면, 아래와 같이 구간을 추정할 수 있다고 하였다.
+이전 포스트 "[Two Samples Estimation: Diff Btw Two Means]({{"/2021/05/13/two-samples-estimation-diff-btw-two-means" | relative_url}})"에서 만약 두 샘플의 분산을 정확히 안다면, 아래와 같이 구간을 추정할 수 있다고 하였다.
 
 $$
 \left| \bar{x} - \bar{y} \right| \le z_{\alpha/2} \cdot \sqrt{\frac{\sigma_1^2}{n} + \frac{\sigma_2^2}{n}}
@@ -59,4 +59,4 @@ $$
 
 지금까지는 \<Normal Distribution\>에서 뽑은 random sample에서 추정(Estimation)을 진행했다. 다음 포스트에서는 \<Bernoulli Distribution\>에서 수행하는 추정인 \<Proportion Estimation\>에 대해 살펴본다!! <small>(Binomial Distribution에서의 평균은 Proportion이다!! 😁)</small>
 
-👉 [Proportion Estimation on Bernoullid Distribution]({{"/2021/05/14/proportion-estimation-on-bernoulli.html" | relative_url}})
+👉 [Proportion Estimation on Bernoullid Distribution]({{"/2021/05/14/proportion-estimation-on-bernoulli" | relative_url}})

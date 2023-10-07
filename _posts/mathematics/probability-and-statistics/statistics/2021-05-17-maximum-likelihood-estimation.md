@@ -143,5 +143,5 @@ $$
 
 이제 다음 포스트부터 통계학의 꽃🌹이라고 할 수 있는 \<**가설 검정; Hypothesis Tests**\>에 대해 다룬다!! 😁 우리가 지금까지 수행한 "추정(Estimation)"을 활용해 의사결정을 내리는 것이 바로 \<Hypothesis Test\>다!
 
-👉 [Introduction to Hypothesis Tests]({{"/2021/05/18/introduction-to-hypothesis-tests.html" | relative_url}})
+👉 [Introduction to Hypothesis Tests]({{"/2021/05/18/introduction-to-hypothesis-tests" | relative_url}})
 

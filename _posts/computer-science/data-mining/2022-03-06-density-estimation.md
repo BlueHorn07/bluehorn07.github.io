@@ -141,6 +141,6 @@ $$
 
 예전에 컴퓨터 비전 수업을 들을 때, \<Sequential Density Estimation\>이란 걸 배웠었다. 그때는 확률론을 전혀 모르고, \<Density Estimation\>도 전혀 모르는 상태에서 들어서 그 의미를 모르고 무작정 수식을 외웠던 기억이 있다. 나중에 해당 내용을 다시 살펴봐야 할 것 같다.
 
-👀 [Sequential Density Estimation]({{"/2020/12/15/Sequential-Density-Estimation.html" | relative_url}})
+👀 [Sequential Density Estimation]({{"/2020/12/15/Sequential-Density-Estimation" | relative_url}})
 
 

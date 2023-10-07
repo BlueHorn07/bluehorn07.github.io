@@ -7,7 +7,7 @@ categories: ["Statistics"]
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
-[Interval Estimation]({{"/2021/05/06/interval-estimation.html" | relative_url}}) 포스트에서 다룬 \<Interval Estimation\>을 특정 상황에 어떻게 적용할 수 있는지를 다루는 포스트입니다.
+[Interval Estimation]({{"/2021/05/06/interval-estimation" | relative_url}}) 포스트에서 다룬 \<Interval Estimation\>을 특정 상황에 어떻게 적용할 수 있는지를 다루는 포스트입니다.
 
 <br><span class="statement-title">TOC.</span><br>
 
@@ -132,8 +132,8 @@ where $F$ is the CDF of $N(0, 1)$.
 
 이어지는 포스트에서는 "두 가지 샘플"이 존재하는 **Two Samples** 상황을 다룬다. 주로 두 샘플의 평균의 차 $(\mu_1 - \mu_2)$를 추정하거나, 두 샘플의 분산의 비율 $\sigma_1^2 / \sigma_2^2$을 추정한다.
 
-- [Two Samples Estimation: Diff btw two means]({{"/2021/05/13/two-samples-estimation-diff-btw-two-means.html" | relative_url}})
-- [Two Samples Estimation: Paired Observations]({{"/2021/05/13/two-samples-estimation-paired-observations.html"}})
-- [Variance Estimation]({{"/2021/05/16/variance-estimation.html" | relative_url}})
+- [Two Samples Estimation: Diff btw two means]({{"/2021/05/13/two-samples-estimation-diff-btw-two-means" | relative_url}})
+- [Two Samples Estimation: Paired Observations]({{"/2021/05/13/two-samples-estimation-paired-observations"}})
+- [Variance Estimation]({{"/2021/05/16/variance-estimation" | relative_url}})
   - Single Sample
   - Two Samples

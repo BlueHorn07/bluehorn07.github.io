@@ -104,7 +104,7 @@ $$
 
 <br><span class="statement-title">Definition.</span> Design Matrix 🔥<br>
 
-정규 수업의 첫번째 강의에서는 [\<linear regression\>]({{"https://bluehorn07.github.io/computer_science/2021/02/26/overview-of-supervised-learning-1.html#regression" | relative_url}})을 수학적으로 정의하면서 \<design matrix\> $X$를 제시한다. 이 \<design matrix\>는 $p$-dim input features vector $n$개를 모은 $n \times p$ 차원의 행렬이다.
+정규 수업의 첫번째 강의에서는 [\<linear regression\>]({{"https://bluehorn07.github.io/computer_science/2021/02/26/overview-of-supervised-learning-1#regression" | relative_url}})을 수학적으로 정의하면서 \<design matrix\> $X$를 제시한다. 이 \<design matrix\>는 $p$-dim input features vector $n$개를 모은 $n \times p$ 차원의 행렬이다.
 
 $$
 X = \begin{pmatrix}
@@ -435,4 +435,4 @@ $$
 
 이어지는 내용에선 \<Eigen Value\>와 \<Eigen Vector\>, \<Matrix Derivative\>, \<Spectral Decomposition\> 등 더 지랄 맞은 내용들이 튀어나온다 🤩
 
-👉 [Supp-1: Linear Algebra - 2]({{"2021/03/08/supp-1-linear-algebra-2.html" | relative_url}})
+👉 [Supp-1: Linear Algebra - 2]({{"2021/03/08/supp-1-linear-algebra-2" | relative_url}})

@@ -11,10 +11,10 @@ tags: ["Auth"]
 **기획 시리즈: Web Authentication**
 
 1. Cookie & Session & JWT
-2. [OAuth]({{"/2021/05/01/OAuth.html" | relative_url}})
-3. [OpenID Connect(OIDC)]({{"/2021/05/02/OpenID-Connect.html" | relative_url}}) 👈
-4. [SSO]({{"/2021/05/02/SSO.html" | relative_url}})
-5. [SAML]({{"/2021/05/02/SAML.html" | relative_url}})
+2. [OAuth]({{"/2021/05/01/OAuth" | relative_url}})
+3. [OpenID Connect(OIDC)]({{"/2021/05/02/OpenID-Connect" | relative_url}}) 👈
+4. [SSO]({{"/2021/05/02/SSO" | relative_url}})
+5. [SAML]({{"/2021/05/02/SAML" | relative_url}})
 
 </div>
 

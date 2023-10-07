@@ -11,7 +11,7 @@ categories: ["Algorithm"]
 
 <hr/>
 
-이전의 ["Interval Scheduling and Partitioning"]({{ "2021/04/20/interval-scheduling-and-partitioning.html" | relative_url}}) 포스트에서 Interval을 스케쥴 하는 방법에 대해 살펴보았다. 이때는 Greedy 한 방식으로 접근해 문제를 해결했다.
+이전의 ["Interval Scheduling and Partitioning"]({{ "2021/04/20/interval-scheduling-and-partitioning" | relative_url}}) 포스트에서 Interval을 스케쥴 하는 방법에 대해 살펴보았다. 이때는 Greedy 한 방식으로 접근해 문제를 해결했다.
 
 Greedy는 Interval이 모두 동일한 weight를 갖는다면 잘 동작한다. 그러나 이번에는 각 Interval에 weight $W_i$가 있어 가중합을 최대화 하도록 문제를 풀어야 한다. 이 경우에는 Greedy가 아니라 DP로 문제를 해결해야 한다!
 

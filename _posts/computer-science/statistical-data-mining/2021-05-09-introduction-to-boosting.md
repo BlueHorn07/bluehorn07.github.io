@@ -31,7 +31,7 @@ categories: ["Applied Statsitcs"]
 
 \<Boosting\>은 "off-the-shelf procedure", 즉 바로 꺼내 써도 될 정도로 좋은 성능을 보이는 알고리즘이라고 한다.
 
-- [AdaBoost; Adaptive Boosting]({{"/2021/05/10/AdaBoost.html" | relative_url}})
+- [AdaBoost; Adaptive Boosting]({{"/2021/05/10/AdaBoost" | relative_url}})
 - Gradient Boosting; GBM
 - XGBoost
 

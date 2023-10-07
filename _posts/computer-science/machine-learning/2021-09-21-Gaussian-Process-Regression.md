@@ -10,21 +10,21 @@ readtime: 30 Minutes
 
 "Machine Learning"을 공부하면서 개인적인 용도로 정리한 포스트입니다. 지적은 언제나 환영입니다 :)
 
-본 글을 읽기 전에 "[Distribution over functions & Gaussian Process]({{"/2021/07/01/Gaussian-process.html" | relative_url}})"에 대한 글을 먼저 읽고 올 것을 권합니다 😉
+본 글을 읽기 전에 "[Distribution over functions & Gaussian Process]({{"/2021/07/01/Gaussian-process" | relative_url}})"에 대한 글을 먼저 읽고 올 것을 권합니다 😉
 
 <div class="proof" markdown="1">
 
 **기획 시리즈: Gaussian Process Regression**
 
-1. [기획 시리즈: Bayesian Regression]({{"/2021/09/06/bayesian-regression.html" | relative_url}})
-2. [Distribution over functions & Gaussian Process]({{"/2021/07/01/Gaussian-process.html" | relative_url}})
-3. [Gaussian Process Regression]({{"/2021/09/21/Gaussian-Process-Regression.html" | relative_url}}) 👀
+1. [기획 시리즈: Bayesian Regression]({{"/2021/09/06/bayesian-regression" | relative_url}})
+2. [Distribution over functions & Gaussian Process]({{"/2021/07/01/Gaussian-process" | relative_url}})
+3. [Gaussian Process Regression]({{"/2021/09/21/Gaussian-Process-Regression" | relative_url}}) 👀
 
 </div>
 
 <hr/>
 
-"[Distribution over functions & Gaussian Process]({{"/2021/07/01/Gaussian-process.html" | relative_url}})"를 통해 Gaussian Process로 함수에 대한 확률 분포(distribution over functions)를 어떻게 모델링하는지 살펴보았다. 이번 포스트에서는 distribution over functions가 **Bayesian Regression**의 패러다임 아래에서 어떻게 활용되는지를 살펴본다🙌
+"[Distribution over functions & Gaussian Process]({{"/2021/07/01/Gaussian-process" | relative_url}})"를 통해 Gaussian Process로 함수에 대한 확률 분포(distribution over functions)를 어떻게 모델링하는지 살펴보았다. 이번 포스트에서는 distribution over functions가 **Bayesian Regression**의 패러다임 아래에서 어떻게 활용되는지를 살펴본다🙌
 
 <hr/>
 
@@ -44,7 +44,7 @@ $$
 
 이때 $\epsilon_i$는 i.i.d noise로 $\epsilon_i \sim N(0, \sigma^2)$이다.
 
-[\<Bayesian Regression\>]({{"/2021/09/06/bayesian-regression.html" | relative_url}})에선 $y_i = \theta^T x_i + \epsilon_i$ 모델링한 것과 차이점이 있다.
+[\<Bayesian Regression\>]({{"/2021/09/06/bayesian-regression" | relative_url}})에선 $y_i = \theta^T x_i + \epsilon_i$ 모델링한 것과 차이점이 있다.
 
 <br/>
 
@@ -145,7 +145,7 @@ $$
 
 유도 과정은 [conditional distribution of multi-variate Guassiaion distribution](https://en.wikipedia.org/wiki/Multivariate_normal_distribution#Conditional_distributions)에 대한 식을 그대로 사용하면 된다. 🙌
 
-Boom! 이것으로 우리는 **posterior predictive distribution**을 얻었다!! 🤩 이전의 [Bayesian Linear Regression]({{"/2021/09/06/bayesian-regression.html#bayesian-linear-regression" | relative_url}})의 것과 비교해보면 GP Regression은 정말 계산적으로도 정말 간단한 형태임을 확인할 수 있다 👍
+Boom! 이것으로 우리는 **posterior predictive distribution**을 얻었다!! 🤩 이전의 [Bayesian Linear Regression]({{"/2021/09/06/bayesian-regression#bayesian-linear-regression" | relative_url}})의 것과 비교해보면 GP Regression은 정말 계산적으로도 정말 간단한 형태임을 확인할 수 있다 👍
 
 <details class="math-statement" markdown="1">
 <summary>보충</summary>
@@ -197,7 +197,7 @@ hyper-parameter인 $\tau$는 smoothness를 조정하는 파라미터로 $\tau$ �
 
 <div class="img-wrapper">
   <img src="{{ "/images/machine-learning/gaussian-process-regression-2.png" | relative_url }}" width=600 height=200>
-  <p markdown="1">ref. ['손쓰'님의 포스트](https://sonsnotation.blogspot.com/2020/11/11-2-gaussian-progress-regression.html)</p>
+  <p markdown="1">ref. ['손쓰'님의 포스트](https://sonsnotation.blogspot.com/2020/11/11-2-gaussian-progress-regression)</p>
 </div>
 
 <br/>
@@ -206,7 +206,7 @@ hyper-parameter인 $\tau$는 smoothness를 조정하는 파라미터로 $\tau$ �
 
 <div class="img-wrapper">
   <img src="{{ "/images/machine-learning/gaussian-process-regression-3.png" | relative_url }}" width=600 height=200>
-  <p markdown="1">ref. ['손쓰'님의 포스트](https://sonsnotation.blogspot.com/2020/11/11-2-gaussian-progress-regression.html)</p>
+  <p markdown="1">ref. ['손쓰'님의 포스트](https://sonsnotation.blogspot.com/2020/11/11-2-gaussian-progress-regression)</p>
 </div>
 
 <hr/>
@@ -226,7 +226,7 @@ hyper-parameter인 $\tau$는 smoothness를 조정하는 파라미터로 $\tau$ �
 #### references
 
 - [Gaussian processes - Chuong B. Do](http://cs229.stanford.edu/section/cs229-gaussian_processes.pdf)
-- ['손쓰'님의 포스트](https://sonsnotation.blogspot.com/2020/11/11-2-gaussian-progress-regression.html)
+- ['손쓰'님의 포스트](https://sonsnotation.blogspot.com/2020/11/11-2-gaussian-progress-regression)
 - [An Intuitive Tutorial to Gaussian Processes Regression](https://arxiv.org/pdf/2009.10862.pdf)
 
 <hr/>

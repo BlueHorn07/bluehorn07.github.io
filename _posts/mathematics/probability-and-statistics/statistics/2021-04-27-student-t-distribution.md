@@ -10,12 +10,12 @@ categories: ["Statistics"]
 
 **시리즈: Sampling Distributions**
 
-1. [Sampling Distribution]({{"/2021/04/25/sampling-distribution.html" | relative_url}})
-2. [Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt.html" | relative_url}})
-3. [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance.html" | relative_url}})
-4. [Student's t-distribution]({{"/2021/04/27/student-t-distribution.html" | relative_url}}) 👀
-5. [F-distribution]({{"/2021/05/04/F-distribution.html" | relative_url}})
-6. [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile.html" | relative_url}})
+1. [Sampling Distribution]({{"/2021/04/25/sampling-distribution" | relative_url}})
+2. [Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt" | relative_url}})
+3. [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance" | relative_url}})
+4. [Student's t-distribution]({{"/2021/04/27/student-t-distribution" | relative_url}}) 👀
+5. [F-distribution]({{"/2021/05/04/F-distribution" | relative_url}})
+6. [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile" | relative_url}})
 
 </div>
 
@@ -205,7 +205,7 @@ $$
 
 # Sampling Distribution of Mean (unknown $\sigma^2$)
 
-Sample Mean $\bar{X}$에 대한 분포를 계속 살펴보자. 이전의 "[Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt.html" | relative_url}})" 포스트에선 population variance $\sigma^2$에 대한 값을 정확히 알고 있었다.
+Sample Mean $\bar{X}$에 대한 분포를 계속 살펴보자. 이전의 "[Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt" | relative_url}})" 포스트에선 population variance $\sigma^2$에 대한 값을 정확히 알고 있었다.
 
 $$
 Z = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}} \sim N(0, 1)
@@ -298,19 +298,19 @@ $$
 F := \frac{S_1^2 / \sigma_1^2}{S_2^2 / \sigma_2^2} = F(n_1 - 1, n_2 -1)
 $$
 
-👉 [F-distribution]({{"/2021/05/04/F-distribution.html" | relative_url}})
+👉 [F-distribution]({{"/2021/05/04/F-distribution" | relative_url}})
 
 <br/>
 
 \<t-distribution\>은 뒤에 나오는 \<Interval Estimation\>에서 다시 볼 예정이다.
 
-👉 [t-test: Estimate $\mu$ when $\sigma^2$ is unknown]({{"/2021/05/06/interval-estimation.html#t-test-estimate-mu-when-sigma2-is-unknown" | relative_url}})
+👉 [t-test: Estimate $\mu$ when $\sigma^2$ is unknown]({{"/2021/05/06/interval-estimation#t-test-estimate-mu-when-sigma2-is-unknown" | relative_url}})
 
 <br/>
 
 개인적으로 여기가 \<t-value\>, \<z-value\>, \<p-value\>가 헷갈리는 지점이라고 생각한다. 만약, 두 개념이 어떻게 다르고, 또 언제 등장하는지 비교하고 싶다면, 아래의 포스트를 참고하길 바란다.
 
-👉 [Values in Statistics]({{"/2021/06/05/values-in-statistics.html"}})
+👉 [Values in Statistics]({{"/2021/06/05/values-in-statistics"}})
 
 # References
 

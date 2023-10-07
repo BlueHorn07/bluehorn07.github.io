@@ -45,7 +45,7 @@ return $\max_j L(j)$
 
 DP의 마법은 이제 시작이다. 이어지는 포스트에서는 LIS 보다 쪼오금 복잡한 방식으로 DP를 수행하는 \<Edit Distance\> 문제에 대해 살펴본다!!
 
-👉 [Edit Distance]({{"/2021/04/20/edit-distanace.html" | relative_url}})
+👉 [Edit Distance]({{"/2021/04/20/edit-distanace" | relative_url}})
 
 <hr/>
 

@@ -11,7 +11,7 @@ categories: ["Modern Algebra1"]
 <hr>
 <br>
 
-Three Sylow Theorem은 [이곳]({{"2020/12/26/Sylow-thm.html" | relative_url}})에서 확인할 수 있다.
+Three Sylow Theorem은 [이곳]({{"2020/12/26/Sylow-thm" | relative_url}})에서 확인할 수 있다.
 
 <br>
 <hr>
@@ -160,7 +160,7 @@ $\phi$는 homomorphism이다.
 
 <br>
 
-조건에서 $H \trianglelefteq G$라고 했으므로 $H \lor K = HK$가 된다. (by [Lemma 34.4]({{"2020/12/25/Isomorphism-Thm.html#lemma-344" | relative_url}}) & [join]({{"2020/12/25/Isomorphism-Thm.html#h-join-k" | relative_url}}))
+조건에서 $H \trianglelefteq G$라고 했으므로 $H \lor K = HK$가 된다. (by [Lemma 34.4]({{"2020/12/25/Isomorphism-Thm#lemma-344" | relative_url}}) & [join]({{"2020/12/25/Isomorphism-Thm#h-join-k" | relative_url}}))
 
 또, 가정에서 $H \lor K = G$라고 했으므로, $H \lor K = HK = G$가 된다.
 
@@ -176,7 +176,7 @@ $\phi$가 homo-, 1-1 & onto이므로 $\phi$는 isomorphism이다.
 
 </div>
 
-이 명제가 Lemma인 이유는 아무래도 Isomoprhism 파트에서 다뤘던 [Lemma 34.4]({{"2020/12/25/Isomorphism-Thm.html#lemma-344" | relative_url}})로부터 쉽게 유도할 수 있기 때문인 것 같다.
+이 명제가 Lemma인 이유는 아무래도 Isomoprhism 파트에서 다뤘던 [Lemma 34.4]({{"2020/12/25/Isomorphism-Thm#lemma-344" | relative_url}})로부터 쉽게 유도할 수 있기 때문인 것 같다.
 
 또 원래 목표인 $H \times K \cong G$는 사실 $H \times K \cong G = H \lor K = HK$이므로 사실상 $H \times K \cong HK$임을 보이는 명제였다.
 
@@ -258,7 +258,7 @@ $G \cong \left<a\right> \times \left<b\right> \cong \mathbb{Z}_p \times \mathbb{
 
 아직 Sylow Theorem에 대한 Application이 더 남았다...
 
-[Sylow Theorem - Application 2]({{"2020/12/26/Sylow-thm-Application-2.html" | relative_url}})에서 확인하자.
+[Sylow Theorem - Application 2]({{"2020/12/26/Sylow-thm-Application-2" | relative_url}})에서 확인하자.
 
 <br>
 <hr>

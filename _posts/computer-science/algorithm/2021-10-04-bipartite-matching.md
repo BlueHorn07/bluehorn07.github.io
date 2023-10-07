@@ -9,7 +9,7 @@ categories: ["Algorithm"]
 
 2020-1학기, 대학에서 '알고리즘' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
-이번 포스트는 [Network Flow]({{"/2021/07/16/network-flow.html" | relative_url}}) 포스트의 후속 포스트입니다. Network Flow 문제의 핵심이 되는 정리인 \<Max-Flow Min-Cut Theorem\>에 대해 궁금하다면 이전 포스트를 참고해주세요! 😉
+이번 포스트는 [Network Flow]({{"/2021/07/16/network-flow" | relative_url}}) 포스트의 후속 포스트입니다. Network Flow 문제의 핵심이 되는 정리인 \<Max-Flow Min-Cut Theorem\>에 대해 궁금하다면 이전 포스트를 참고해주세요! 😉
 
 이번 포스트의 코드는 [백준 1298번: 열혈강호 ](https://www.acmicpc.net/problem/11375) 문제를 기준으로 작성되었습니다 👨‍💻
 
@@ -71,9 +71,9 @@ Let $M$ be the set of edges used in the maximum flow of value $k$. Then $M$ is a
 
 사실 구현은 앞선 포스트에서 살펴본 \<Ford-Fulkerson Algorithm\>으로 reduction을 잘 구현하면 된다. 별로 어렵지 않다 ㅎㅎ
 
-👉 [Ford-Fulkerson & Edmons-Karp Algorithm]({{"/2021/10/03/ford-fulkerson-algorithm-and-edmons-karp-algorithm.html" | relative_url}})
+👉 [Ford-Fulkerson & Edmons-Karp Algorithm]({{"/2021/10/03/ford-fulkerson-algorithm-and-edmons-karp-algorithm" | relative_url}})
 
 ### 함께보기
 
-- [3D Matching]({{"/2022/05/07/3D-matching.html" | relative_url}})
+- [3D Matching]({{"/2022/05/07/3D-matching" | relative_url}})
 

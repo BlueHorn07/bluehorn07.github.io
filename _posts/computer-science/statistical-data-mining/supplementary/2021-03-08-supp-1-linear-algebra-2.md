@@ -64,7 +64,7 @@ $\det(A-\lambda I_n)$는 $\lambda$에 대한 $n$-th order polynomial이다. 따�
 
 \<eigen vector\>와 \<eigen value\>는 뒤에서 살펴볼 \<Eigen Decomposition\> 다른 말로 \<Spectral Decomposition\>에서 주요하게 사용된다. 이때, 모든 정방행렬에 대해 \<Eigen Decomposition\>이 가능한 것은 아니다. 이것이 가능하려면, $n\times n$ 행렬 $A$가 $n$개의 linearly indenpendent eigen vector를 가질 때만 가능하다! (조건이 꽤 까다롭다...!)
 
-👉 [Spectral Decomposition]({{"/2021/03/14/supp-1-linear-algebra-3.html#spectral-decomposition" | relative_url}})
+👉 [Spectral Decomposition]({{"/2021/03/14/supp-1-linear-algebra-3#spectral-decomposition" | relative_url}})
 
 <hr/>
 
@@ -172,4 +172,4 @@ $$
 
 이어지는 내용에선 \<Spectral Decomposition\>와 \<Singular Value Decomposition\> 등 선형 변환의 좀더 딥한 내용을 다룬다! 🤯
 
-👉 [Supp-1: Linear Algebra - 3]({{"2021/03/14/supp-1-linear-algebra-3.html" | relative_url}})
+👉 [Supp-1: Linear Algebra - 3]({{"2021/03/14/supp-1-linear-algebra-3" | relative_url}})

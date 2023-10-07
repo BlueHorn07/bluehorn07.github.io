@@ -48,5 +48,5 @@ model.train()
 
 <br/>
 
-PyTorch 공식 문서에서 `.eval()`에 대한 자세한 내용을 확인할 수 있다. [nn.Module.eval()](https://pytorch.org/docs/stable/generated/torch.nn.Module.html#torch.nn.Module.eval)
+PyTorch 공식 문서에서 `.eval()`에 대한 자세한 내용을 확인할 수 있다. [nn.Module.eval()](https://pytorch.org/docs/stable/generated/torch.nn.Module#torch.nn.Module.eval)
 

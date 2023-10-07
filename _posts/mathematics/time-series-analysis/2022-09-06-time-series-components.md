@@ -53,4 +53,4 @@ categories: ["Time Series Analysis"]
 
 # Reference
 
-- [Forecasting: Principles and Practices: 시계열 패턴](https://otexts.com/fppkr/tspatterns.html)
+- [Forecasting: Principles and Practices: 시계열 패턴](https://otexts.com/fppkr/tspatterns)

@@ -89,7 +89,7 @@ If $q$ is a unit, $1 \in \left< q \right>$, then $\left< q \right> = R$.
 
 Therefore, $\left< p \right>$ is a Maximal Ideal.
 
-If $\left< p \right>$ is a Maximal Ideal, then $\left< p \right>$ is a Prime Ideal. [link]({{"2020/12/27/maximal-and-prime-ideal.html#maximal-ideal-implies-prime-ideal" | relative_url}})
+If $\left< p \right>$ is a Maximal Ideal, then $\left< p \right>$ is a Prime Ideal. [link]({{"2020/12/27/maximal-and-prime-ideal#maximal-ideal-implies-prime-ideal" | relative_url}})
 
 If $\left< p \right>$ is a Prime Ideal, $p$ is a prime.
 

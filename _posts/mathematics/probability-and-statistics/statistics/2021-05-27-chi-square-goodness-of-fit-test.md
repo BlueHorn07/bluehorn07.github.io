@@ -8,7 +8,7 @@ preview: "<proportion test>의 일반화. 카레고리 변수에 대한 검정."
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
-[\<Proportion Test\>]({{"/2021/05/26/proportion-test.html" | relative_url}})의 내용을 먼저 살펴보고 오는 것을 추천한다. <span class="red">\<Proportion Test\>를 일반화한 것이 \<Goodness-of-fit Test\></span>이기 때문이다!
+[\<Proportion Test\>]({{"/2021/05/26/proportion-test" | relative_url}})의 내용을 먼저 살펴보고 오는 것을 추천한다. <span class="red">\<Proportion Test\>를 일반화한 것이 \<Goodness-of-fit Test\></span>이기 때문이다!
 
 <br><span class="statement-title">TOC.</span><br>
 
@@ -53,7 +53,7 @@ $$
 \frac{\hat{p} - p}{\sqrt{p(1-p) / n}} \sim N(0, 1)
 $$
 
-이전의 [\<Proportion Test\>]({{"/2021/05/26/proportion-test.html" | relative_url}})에선 이걸 그대로 사용했다.
+이전의 [\<Proportion Test\>]({{"/2021/05/26/proportion-test" | relative_url}})에선 이걸 그대로 사용했다.
 
 $$
 \text{reject} \; H_0, \quad \text{if} \quad \left| \frac{\hat{p} - p}{\sqrt{p(1-p) / n}} \right| > z_{\alpha/2}
@@ -155,7 +155,7 @@ The degree of freedom $\nu$ = (#. of categories after pooling - 1) - #. of param
 
 통계학에서의 DOF에 대해 궁금하다면, 아래의 포스트를 읽어보고 오자!
 
-👉 [Degree of Freedom in Statistics]({{"/2022/10/09/degree-of-freedom-in-statistics.html" | relative_url}})
+👉 [Degree of Freedom in Statistics]({{"/2022/10/09/degree-of-freedom-in-statistics" | relative_url}})
 
 <hr/>
 
@@ -319,7 +319,7 @@ Reject $H_0$, if $\chi^2 > \chi^2_{\alpha}(\nu)$
 
 # Proportion Test and Chi-square Test
 
-\<chi-square test\>가 "[\<proportion test\>]({{"/2021/05/26/proportion-test.html" | relative_url}})의 일반화"라는 걸 실제 값과 함께 다뤄보고자 한다.
+\<chi-square test\>가 "[\<proportion test\>]({{"/2021/05/26/proportion-test" | relative_url}})의 일반화"라는 걸 실제 값과 함께 다뤄보고자 한다.
 
 ## One Proportion Case
 
@@ -389,7 +389,7 @@ $$
 
 다음 포스트부터 \<Simple Linear Regression\>이라는 새로운 챕터를 살펴본다. 주어진 데이터에서 "Linear Regression"의 계수 $\beta_i$들을 어떻게 찾을 수 있을지를 다루는 챕터다!
 
-👉 [Introduction to Linear Regression]({{"/2021/06/06/introduction-to-linear-regression.html" | relative_url}})
+👉 [Introduction to Linear Regression]({{"/2021/06/06/introduction-to-linear-regression" | relative_url}})
 
 <hr/>
 

@@ -86,4 +86,4 @@ Similarity를 바탕으로 weight를 업데이트해준다.
 <hr>
 
 ### 참고자료
-- [쉽게 설명한 파티클 필터(particle filter) 동작 원리와 예제](https://ryanclaire.blogspot.com/2020/06/particle-filter-principle.html)
+- [쉽게 설명한 파티클 필터(particle filter) 동작 원리와 예제](https://ryanclaire.blogspot.com/2020/06/particle-filter-principle)

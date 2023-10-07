@@ -195,7 +195,7 @@ $$
 
 💥 commonly used values for $\alpha$ are $0.1$, $0.05$, $0.01$.
 
-💥 [Interval Estimation]({{"/2021/05/06/interval-estimation.html#introduction-to-interval-estimation" | relative_url}})을 수행할 때, 비슷한 것을 봤었다! 바로 \<Confidence Level\> $1-\alpha$다!
+💥 [Interval Estimation]({{"/2021/05/06/interval-estimation#introduction-to-interval-estimation" | relative_url}})을 수행할 때, 비슷한 것을 봤었다! 바로 \<Confidence Level\> $1-\alpha$다!
 
 </div>
 
@@ -393,6 +393,6 @@ $$
 
 우리가 추정(Estimation)에서 살펴본 순서와 동일하게 검정(Testing)을 살펴보자.
 
-- [Sample Mean Test]({{"/2021/05/19/sample-mean-test.html" | relative_url}})
-- [Proportion Test]({{"/2021/05/26/proportion-test.html" | relative_url}})
-- [Variance Test]({{"/2021/05/26/variance-test.html" | relative_url}})
+- [Sample Mean Test]({{"/2021/05/19/sample-mean-test" | relative_url}})
+- [Proportion Test]({{"/2021/05/26/proportion-test" | relative_url}})
+- [Variance Test]({{"/2021/05/26/variance-test" | relative_url}})

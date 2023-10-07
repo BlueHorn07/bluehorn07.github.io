@@ -400,4 +400,4 @@ The fitted regression line is the constant, $\bar{y}$.
 
 이어지는 포스트에서는 \<Simple Linear Regression\>의 성질을을 이어서 살펴볼 예정이다. \<Linear Regression\>에서 계수 $b_0$, $b_1$의 분포를 살펴보고 이를 통해 검정(Test)을 수행한다. 또, Regression을 통해 얻은 Prediction 결과를 바탕으로 \<Prediction Inference\>를 수행한다!
 
-👉 [Test on Regression]({{"/2021/06/09/test-on-regression.html" | relative_url}})
+👉 [Test on Regression]({{"/2021/06/09/test-on-regression" | relative_url}})

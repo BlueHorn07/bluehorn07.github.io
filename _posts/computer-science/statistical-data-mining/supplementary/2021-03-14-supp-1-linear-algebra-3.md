@@ -210,4 +210,4 @@ ps. Netflix의 추천 알고리즘 Contest에서 이 SVD를 활용해 Low Rank A
 
 지금까지 행렬을 분해하는 두 가지 방법인 \<Spectral Decomposition\>과 \<Singular Value Decomposition\>를 살펴봤다. 이 두 개념은 이어지는 내용인 행렬의 \<Nonnegative Definite\>, \<Positive Definite\>를 정의할 때 바탕이 된다.
 
-👉 [Supp-1: Linear Algebra - 4]({{"/2021/03/27/supp-1-linear-algebra-4.html" | relative_url}})
+👉 [Supp-1: Linear Algebra - 4]({{"/2021/03/27/supp-1-linear-algebra-4" | relative_url}})

@@ -11,7 +11,7 @@ categories: ["Modern Algebra1"]
 <hr>
 <br>
 
-Three Sylow Theorem은 [이곳]({{"2020/12/26/Sylow-thm.html" | relative_url}})에서 확인할 수 있다.
+Three Sylow Theorem은 [이곳]({{"2020/12/26/Sylow-thm" | relative_url}})에서 확인할 수 있다.
 
 <br>
 <hr>
@@ -40,7 +40,7 @@ For a group of order $pq$ ($p<q$ are prime)
 
 Let $n$ be (# of Sylow $q$-subgroups) of $G$,
 
-then by [3rd Sylow Theorem]({{"2020/12/26/Sylow-thm.html#3rd-sylow-theorem" | relative_url}})
+then by [3rd Sylow Theorem]({{"2020/12/26/Sylow-thm#3rd-sylow-theorem" | relative_url}})
 
 - $n \mid (\lvert G \rvert = pq)$
 - $n \equiv 1$ (mod $q$)
@@ -88,7 +88,7 @@ Let $m$ be a (# of Sylow $p$-subgroup).
 
 We will show that $m=1$
 
-By [3rd Sylow Theorem]({{"2020/12/26/Sylow-thm.html#3rd-sylow-theorem" | relative_url}})
+By [3rd Sylow Theorem]({{"2020/12/26/Sylow-thm#3rd-sylow-theorem" | relative_url}})
 
 - $m \mid (\lvert G \rvert = pq)$
 - $m \equiv 1$ (mod $p$)
@@ -119,7 +119,7 @@ $H \cap K$은 $H \cap K \le H$, $H \cap K \le K$이므로, **<u>Lagrange Thm</u>
 
 <br>
 
-그러면, [Lemma 37.5]({{"2020/12/26/Sylow-thm-Application-1.html#lemma-375" | relative_url}})에 의해 $H \times K \cong G$이다.
+그러면, [Lemma 37.5]({{"2020/12/26/Sylow-thm-Application-1#lemma-375" | relative_url}})에 의해 $H \times K \cong G$이다.
 
 $H$, $K$가 cyclic group이므로 (위수가 소수 $p$이므로 cyclic이 보장된다.)
 
@@ -218,7 +218,7 @@ Then, $G$ is not simple.
 
 <div class="math-statement" markdown="1">
 
-By [1st Sylow thm]({{"2020/12/26/Sylow-thm.html#1st-sylow-theorem" | relative_url}}),
+By [1st Sylow thm]({{"2020/12/26/Sylow-thm#1st-sylow-theorem" | relative_url}}),
 
 there exists a $p$-subgroup $H$ where $\lvert H \rvert = p^{n-1}$.
 
@@ -249,7 +249,7 @@ $15 = 3 \times 5$이다.
 
 이므로
 
-위에서 증명한 [Theorem 37.7]({{"2020/12/26/Sylow-thm-Application-2.html#theorem-377" | relative_url}})의 두번째 명제에 의해
+위에서 증명한 [Theorem 37.7]({{"2020/12/26/Sylow-thm-Application-2#theorem-377" | relative_url}})의 두번째 명제에 의해
 
 $G$는 cyclic group이다. $\blacksquare$
 
@@ -273,7 +273,7 @@ $\lvert G \rvert = 20 = 2^2 \times 5$
 - $n$ := (# of Sylow 2-subgroup)
 - $m$ := (# of Sylow 5-subgroup)
 
-그러면, [3rd Sylow Theorem]({{"2020/12/26/Sylow-thm.html#3rd-sylow-theorem" | relative_url}})에 의해
+그러면, [3rd Sylow Theorem]({{"2020/12/26/Sylow-thm#3rd-sylow-theorem" | relative_url}})에 의해
 
 - $n \mid 20$, and $n \equiv 1$ (mod 2) $\implies$ $2k + 1 \mid 20$
 - $m \mid 20$, and $m \equiv 1$ (mod 5) $\implies$ $5l + 1 \mid 20$
@@ -313,7 +313,7 @@ Then, $G$ is not simple.
 $\lvert G \rvert = 48 = 2^4 \times 3$
 
 $n$ := (# of Sylow 2-subgroup)라고 정의하자, <br>
-그러면 [3rd Sylow Theorem]({{"2020/12/26/Sylow-thm.html#3rd-sylow-theorem" | relative_url}})에 의해 $n$ = 1 or 3 이다.
+그러면 [3rd Sylow Theorem]({{"2020/12/26/Sylow-thm#3rd-sylow-theorem" | relative_url}})에 의해 $n$ = 1 or 3 이다.
 
 <br>
 
@@ -324,11 +324,11 @@ $G$에서 $H \ne K$인 두 Sylow 2-subgroup을 생각해보자. <br>
 
 <br>
 
-앞에서 증명한 [Lemma 37.8]({{"2020/12/26/Sylow-thm-Application-2.html#lemma-378" | relative_url}})을 이용해 $\lvert H \cap K \rvert = 8$임을 보일 것이다.
+앞에서 증명한 [Lemma 37.8]({{"2020/12/26/Sylow-thm-Application-2#lemma-378" | relative_url}})을 이용해 $\lvert H \cap K \rvert = 8$임을 보일 것이다.
 
 $HK$의 위수를 생각해보자.
 
-[Lemma 37.8]({{"2020/12/26/Sylow-thm-Application-2.html#lemma-378" | relative_url}})에 의해 아래의 식이 성립한다.
+[Lemma 37.8]({{"2020/12/26/Sylow-thm-Application-2#lemma-378" | relative_url}})에 의해 아래의 식이 성립한다.
 
 $$
 \lvert HK \rvert = \dfrac{\lvert H \rvert \times \lvert K \rvert}{\lvert H \cap K \rvert}

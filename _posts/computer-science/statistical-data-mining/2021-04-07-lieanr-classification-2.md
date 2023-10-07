@@ -89,7 +89,7 @@ $L(\beta)$가 왜 이렇게 정의되었는지 살펴보자.
 <div class="img-wrapper">
   <img src="https://raw.githubusercontent.com/angeloyeo/angeloyeo.github.io/master/pics/2020-07-17-MLE/pic2.png" width="600px">
   <p>
-  (출처: <a href="https://angeloyeo.github.io/2020/07/17/MLE.html">공돌이의 수학정리노트</a>)
+  (출처: <a href="https://angeloyeo.github.io/2020/07/17/MLE">공돌이의 수학정리노트</a>)
   </p>
 </div>
 
@@ -168,7 +168,7 @@ $$
 
 ## references
 
-- ['공돌이의 수학정리노트'님의 포스트](https://angeloyeo.github.io/2020/07/17/MLE.html)
+- ['공돌이의 수학정리노트'님의 포스트](https://angeloyeo.github.io/2020/07/17/MLE)
 
 <hr/>
 

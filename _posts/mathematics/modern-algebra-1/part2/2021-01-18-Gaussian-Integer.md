@@ -10,7 +10,7 @@ categories: ["Modern Algebra1"]
 
 <br>
 
-Guassian Integer는 "Euclidean Domain"의 일종이다. Euclidean Domain에 대한 포스트는 [이곳]({{"2021/01/18/Euclidean-domains.html" | relative_url}})에서 확인할 수 있다.
+Guassian Integer는 "Euclidean Domain"의 일종이다. Euclidean Domain에 대한 포스트는 [이곳]({{"2021/01/18/Euclidean-domains" | relative_url}})에서 확인할 수 있다.
 
 1. [Gaussian Integers](#gaussian-integers)
 2. [Multiplicative Norms](#multiplicative-norms)
@@ -343,4 +343,4 @@ $$
 
 앞에서한 논의를 활용하면, "페르마의 두 제곱수 정리" <small>(Fermat's $p = a^2 + b^2$ Theorem)</small>을 증명할 수 있다!!
 
-다음 포스트: [link]({{"2021/01/18/Fermat-thm-on-sums-of-two-squares.html" | relative_url}})
+다음 포스트: [link]({{"2021/01/18/Fermat-thm-on-sums-of-two-squares" | relative_url}})

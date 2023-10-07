@@ -22,11 +22,11 @@ categories: ["Algorithm"]
 이번 챕터에서는 $\textbf{NP-hard}$ 문제를 다루는 몇 가지 방법을 알아본다.
 
 1. Exhausitive Search (Exponential Search)
-   1. [Backtracking]({{"/2022/05/19/bacaktracking.html" | relative_url}})
-   2. [Branch-and-Bound]({{"/2022/05/20/branch-and-bound.html" | relative_url}})
+   1. [Backtracking]({{"/2022/05/19/bacaktracking" | relative_url}})
+   2. [Branch-and-Bound]({{"/2022/05/20/branch-and-bound" | relative_url}})
 2. Approximation Algorithm
 3. Heuristic Algorithm
-   1. [Local Search]({{"/2022/05/20/local-search.html" | relative_url}})
+   1. [Local Search]({{"/2022/05/20/local-search" | relative_url}})
       1. Simulated Annealing
 
 책에서는 3가지 방식이 제시되었는데, 정규 수업에서는 첫번째 Exhausitive Search와 세번째 Heuristic Algorithm만 다뤘다 🙏

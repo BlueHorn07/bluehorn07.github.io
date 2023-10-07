@@ -10,13 +10,13 @@ categories: ["Probability"]
 
 **시리즈: Continuous Probability Distributions**
 
-1. [Uniform and Normal Distribution]({{"/2021/03/29/uniform-and-normal-distribution.html" | relative_url}}) 👀
-2. [Exponential Distribution]({{"/2021/03/31/exponential-distribution.html" | relative_url}})
-3. [Gamma Distribution]({{"/2021/04/05/gamma-distribution.html" | relative_url}})
-4. [Chi-square Distribution]({{"/2021/04/06/chi-square-distribution.html" | relative_url}})
-5. [Beta Distribution]({{"/2021/04/07/beta-distribution.html" | relative_url}})
-6. [Log-normal Distribution]({{"/2021/04/08/log-normal-distribution.html" | relative_url}})
-7. [Weibull Distribution (optional)]({{"/2021/04/10/weibull-distribution.html" | relative_url}})
+1. [Uniform and Normal Distribution]({{"/2021/03/29/uniform-and-normal-distribution" | relative_url}}) 👀
+2. [Exponential Distribution]({{"/2021/03/31/exponential-distribution" | relative_url}})
+3. [Gamma Distribution]({{"/2021/04/05/gamma-distribution" | relative_url}})
+4. [Chi-square Distribution]({{"/2021/04/06/chi-square-distribution" | relative_url}})
+5. [Beta Distribution]({{"/2021/04/07/beta-distribution" | relative_url}})
+6. [Log-normal Distribution]({{"/2021/04/08/log-normal-distribution" | relative_url}})
+7. [Weibull Distribution (optional)]({{"/2021/04/10/weibull-distribution" | relative_url}})
 
 </div>
 
@@ -246,8 +246,8 @@ where $\Phi(x)$ is CDF of normal $N(0, 1)$.
 
 이어지는 포스트에서는 좀더 다양하고, 엄청난 분포들을 만나게 된다.
 
-  - [Exponential Distribution]({{"/2021/03/31/exponential-distribution.html" | relative_url}})
-  - [Gamma Distribution]({{"/2021/04/05/gamma-distribution.html" | relative_url}})
-  - [Chi-square, Beta and Log-normal Distribution]({{"/2021/04/06/chi-and-beta-and-lognormal-distribution.html" | relative_url}})
+  - [Exponential Distribution]({{"/2021/03/31/exponential-distribution" | relative_url}})
+  - [Gamma Distribution]({{"/2021/04/05/gamma-distribution" | relative_url}})
+  - [Chi-square, Beta and Log-normal Distribution]({{"/2021/04/06/chi-and-beta-and-lognormal-distribution" | relative_url}})
 
 

@@ -114,9 +114,9 @@ $\blacksquare$
 
 아래는 \<분할 정복\>을 이용해 해결하는 대표적인 주제들에 대해 정리한 포스트들이다.
 
-1. [Multiplication Algorithm]({{"2021/02/26/multiplication-algorithm.html" | relative_url}})
-2. [Binary Search]({{"2021/02/27/binary-search.html" | relative_url}})
-3. [Merge Sort]({{"2021/02/27/merge-sort.html" | relative_url}})
-4. [Matrix Multiplication: Strassen Algorithm]({{"/2021/10/19/matrix-multiplication-strassen-algorithm.html" | relative_url}})
-5. [Quick Selection]({{"/2021/10/21/quick-selection.html" | relative_url}})
-6. [Closest pair of points]({{"/2021/10/22/closest-pair-of-points.html" | relative_url}})
+1. [Multiplication Algorithm]({{"2021/02/26/multiplication-algorithm" | relative_url}})
+2. [Binary Search]({{"2021/02/27/binary-search" | relative_url}})
+3. [Merge Sort]({{"2021/02/27/merge-sort" | relative_url}})
+4. [Matrix Multiplication: Strassen Algorithm]({{"/2021/10/19/matrix-multiplication-strassen-algorithm" | relative_url}})
+5. [Quick Selection]({{"/2021/10/21/quick-selection" | relative_url}})
+6. [Closest pair of points]({{"/2021/10/22/closest-pair-of-points" | relative_url}})

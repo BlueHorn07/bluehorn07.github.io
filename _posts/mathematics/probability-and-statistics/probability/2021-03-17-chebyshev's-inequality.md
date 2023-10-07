@@ -79,4 +79,4 @@ $\blacksquare$
 
 \<체비쇼프 부등식\>은 이후에 통계(Statistics) 파트에서 \<Weak Law of Large Numbers\>를 증명할 때, 활용한다. 자세한 내용은 아래의 포스트로 고고~
 
-👉 [Sampleing Distribution of Mean: Weak Law of Large Numbers]({{"/2021/04/26/sampling-distribution-of-mean-and-clt.html" | relative_url}})
+👉 [Sampleing Distribution of Mean: Weak Law of Large Numbers]({{"/2021/04/26/sampling-distribution-of-mean-and-clt" | relative_url}})

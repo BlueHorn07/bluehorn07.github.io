@@ -298,7 +298,7 @@ A cubic spline is called a \<**natural cubic spline**\>, if it is **<u>linear</u
 <div class="img-wrapper">
   <img src="http://www.stanford.edu/class/stats202/figs/Chapter7/7.7.png" width="500px">
     <p>
-  (출처: <a href="http://web.stanford.edu/class/stats202/notes/Nonlinear/Splines.html">Stanford - STAT202</a>)
+  (출처: <a href="http://web.stanford.edu/class/stats202/notes/Nonlinear/Splines">Stanford - STAT202</a>)
   </p>
 </div>
 
@@ -388,4 +388,4 @@ $$
 
 이어지는 포스트에서는 spline method의 남은 내용을 좀더 살펴본다. 🤩
 
-👉 [Spline Method (2)]({{"/2021/04/19/splines-method-2.html" | relative_url}})
+👉 [Spline Method (2)]({{"/2021/04/19/splines-method-2" | relative_url}})

@@ -13,14 +13,14 @@ toc_sticky: true
 
 # Part I - Complex Functions
 
-- [Complex Variable - Basic]({{"2021/01/24/complex-variable-basic.html" | relative_url}})
+- [Complex Variable - Basic]({{"2021/01/24/complex-variable-basic" | relative_url}})
   - Triangle inequality
   - Euler’s formula
   - de Moivre’s formula
   - $n$-th root of $z$
   - Interior / Exteriror / Boundary
 
-- [Complex Analysis - Basic]({{"2021/01/26/complex-analysis-basic.html" | relative_url}})
+- [Complex Analysis - Basic]({{"2021/01/26/complex-analysis-basic" | relative_url}})
   - Complex Functions
   - Complex Limit
   - Complex Continuity
@@ -57,10 +57,10 @@ $$
 
 </div>
 
-- [Cauchy-Riemann Equation]({{"2021/02/07/Cauchy-Riemann-Equation.html" | relative_url}})
+- [Cauchy-Riemann Equation]({{"2021/02/07/Cauchy-Riemann-Equation" | relative_url}})
   - Laplace's Equation & Harmonic functions
   - harmonic conjugate
-- [Elementary Complex Functions]({{"2021/02/09/Elementary-Complex-Functions.html" | relative_url}})
+- [Elementary Complex Functions]({{"2021/02/09/Elementary-Complex-Functions" | relative_url}})
   - Exponential Functions; $\exp z$
   - Trigonometric Functions; $\cos z$, $\sin z$, $\tan z$
   - Hyperbolic Functions; $\cosh z$, $\sinh z$
@@ -97,18 +97,18 @@ $$
 
 </div>
 
-- [Contour Integrals]({{"2021/02/14/Cotour-integrals.html" | relative_url}})
+- [Contour Integrals]({{"2021/02/14/Cotour-integrals" | relative_url}})
   - parametric curves
   - Length of Curve; $\lvert C \rvert$
-- [Complex Integrations]({{"2021/02/18/Complex-Integrations.html" | relative_url}})
+- [Complex Integrations]({{"2021/02/18/Complex-Integrations" | relative_url}})
   - Primitive Function
   - Bounds for integrals: ML-inequality
-- [Cauchy-Goursat Theorem]({{"2021/02/21/Cauchy-Goursat-theorem.html" | relative_url}})
+- [Cauchy-Goursat Theorem]({{"2021/02/21/Cauchy-Goursat-theorem" | relative_url}})
   - Cauchy's proof (feat. Green's theorem)
   - Goursat's proof
-- [Cauchy’s Integral Formula]({{"2021/02/23/Cauchy-integral-formula.html" | relative_url}})
-- [Extended Cauchy's Integral Formula]({{"2021/03/07/extension-of-Cauchy-integral-formula.html#extension-of-cauchys-integral-formula" | relative_url}})
-- [Applications of Cauchy Integral]({{"2021/03/07/extension-of-Cauchy-integral-formula.html#application-of-cauchy-integral" | relative_url}})
+- [Cauchy’s Integral Formula]({{"2021/02/23/Cauchy-integral-formula" | relative_url}})
+- [Extended Cauchy's Integral Formula]({{"2021/03/07/extension-of-Cauchy-integral-formula#extension-of-cauchys-integral-formula" | relative_url}})
+- [Applications of Cauchy Integral]({{"2021/03/07/extension-of-Cauchy-integral-formula#application-of-cauchy-integral" | relative_url}})
   - Cauchy's Inequality
   - Liouville’s Theroem
   - Fundamental Theorem of Algebra
@@ -178,17 +178,17 @@ $$
   <img src="https://mathworld.wolfram.com/images/eps-gif/Contour_750.gif">
 </div>
 
-- [Residue Theorem]({{"2020/11/30/Residue-Thm.html" | relative_url}})
-- [singular points & poles]({{"2020/11/30/singulars-poles.html" | relative_url}})
-- [Formulas for residue]({{"2020/12/01/formulas-for-residue.html" | relative_url}})
-- [Applications to real integrals]({{"2020/12/02/Applications-to-real-integrals.html" | relative_url}}); integral with $\cos$, $\sin$ / improper integral
+- [Residue Theorem]({{"2020/11/30/Residue-Thm" | relative_url}})
+- [singular points & poles]({{"2020/11/30/singulars-poles" | relative_url}})
+- [Formulas for residue]({{"2020/12/01/formulas-for-residue" | relative_url}})
+- [Applications to real integrals]({{"2020/12/02/Applications-to-real-integrals" | relative_url}}); integral with $\cos$, $\sin$ / improper integral
 
 <hr/>
 
 # Part V - Complex Transformation
 
-- [Linear Transformation]({{"2020/12/14/Linear-Transformation.html" | relative_url}})
-- [Linear Fractional Trnasformation]({{"2020/12/15/Linear-Fractional-Trenasformation.html" | relative_url}})
+- [Linear Transformation]({{"2020/12/14/Linear-Transformation" | relative_url}})
+- [Linear Fractional Trnasformation]({{"2020/12/15/Linear-Fractional-Trenasformation" | relative_url}})
 - Conformal mapping
   - $w = \sin z$
 - Laplace's Equation

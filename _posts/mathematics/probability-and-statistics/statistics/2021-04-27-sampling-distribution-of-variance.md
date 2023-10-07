@@ -10,12 +10,12 @@ categories: ["Statistics"]
 
 **시리즈: Sampling Distributions**
 
-1. [Sampling Distribution]({{"/2021/04/25/sampling-distribution.html" | relative_url}})
-2. [Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt.html" | relative_url}})
-3. [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance.html" | relative_url}}) 👀
-4. [Student's t-distribution]({{"/2021/04/27/student-t-distribution.html" | relative_url}})
-5. [F-distribution]({{"/2021/05/04/F-distribution.html" | relative_url}})
-6. [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile.html" | relative_url}})
+1. [Sampling Distribution]({{"/2021/04/25/sampling-distribution" | relative_url}})
+2. [Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt" | relative_url}})
+3. [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance" | relative_url}}) 👀
+4. [Student's t-distribution]({{"/2021/04/27/student-t-distribution" | relative_url}})
+5. [F-distribution]({{"/2021/05/04/F-distribution" | relative_url}})
+6. [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile" | relative_url}})
 
 </div>
 
@@ -68,7 +68,7 @@ $$
 
 </div>
 
-와우! Sample Variance $S^2$과 Population Variance $\sigma^2$의 비율이 [Chi-square Distribution]({{"/2021/04/06/chi-and-beta-and-lognormal-distribution.html#chi-square-distribution" | relative_url}})을 따른다니!
+와우! Sample Variance $S^2$과 Population Variance $\sigma^2$의 비율이 [Chi-square Distribution]({{"/2021/04/06/chi-and-beta-and-lognormal-distribution#chi-square-distribution" | relative_url}})을 따른다니!
 
 <div class="math-statement" markdown="1">
 
@@ -158,7 +158,7 @@ $$
 T := \dfrac{\overline{X} - \mu}{S / \sqrt{n}} = t(n-1)
 $$
 
-👉 [Student's t-distribution]({{"/2021/04/27/student-t-distribution.html" | relative_url}})
+👉 [Student's t-distribution]({{"/2021/04/27/student-t-distribution" | relative_url}})
 
 <br/>
 
@@ -168,6 +168,6 @@ $$
 F := \frac{S_1^2 / \sigma_1^2}{S_2^2 / \sigma_2^2} = F(n_1 - 1, n_2 -1)
 $$
 
-👉 [F-distribution]({{"/2021/05/04/F-distribution.html" | relative_url}})
+👉 [F-distribution]({{"/2021/05/04/F-distribution" | relative_url}})
 
 

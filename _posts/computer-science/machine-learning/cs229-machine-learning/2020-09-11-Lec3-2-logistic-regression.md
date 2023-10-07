@@ -47,7 +47,7 @@ $$h_{\theta}(x) = g(\theta^{T}x) = \frac{1}{ 1+e^{-\theta^{T}x} } \in [0, 1]$$
 
 우리는 왜 하필 sigmoid 함수를 사용하는 것일까? 출력 값을 $[0, 1]$ 사이로 강제한다면, sigmoid 말고도 다른 smooth function을 사용할 수도 있는데 말이다.
 
-그 이유는 lecture 4의 [GLM]({{site.baseurl}}/2020/09/12/Lec4-3.html)<sub>Generalized Linear Model</sub>에서 다루게 된다!
+그 이유는 lecture 4의 [GLM]({{site.baseurl}}/2020/09/12/Lec4-3)<sub>Generalized Linear Model</sub>에서 다루게 된다!
 
 <hr>
 
@@ -139,7 +139,7 @@ $$
 
 <hr>
 
-LMS과 Classification의 Learning Algorithm이 유사한 형태를 띄는 것은 상당히 흥미롭다. 두 알고리즘의 유사성은 단순히 우연에서 기인하는 것일까? 이 질문에 대한 해답이 [다음 lecture]({{site.baseurl}}/2020/09/12/Lec4-3.html)에 있다!
+LMS과 Classification의 Learning Algorithm이 유사한 형태를 띄는 것은 상당히 흥미롭다. 두 알고리즘의 유사성은 단순히 우연에서 기인하는 것일까? 이 질문에 대한 해답이 [다음 lecture]({{site.baseurl}}/2020/09/12/Lec4-3)에 있다!
 
 <br>
 

@@ -8,7 +8,7 @@ categories: ["Modern Algebra1"]
 
 2020-2학기, 대학에서 '현대대수1' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
-primitive function에 대한 곱이 닫혀있음을 말하는 **<u>Guass's Lemma</u>**는 [이곳]({{"2020/12/30/Guass-Lemma.html" | relative_url}})에서 볼 수 있습니다.
+primitive function에 대한 곱이 닫혀있음을 말하는 **<u>Guass's Lemma</u>**는 [이곳]({{"2020/12/30/Guass-Lemma" | relative_url}})에서 볼 수 있습니다.
 
 <br>
 <hr>
@@ -25,7 +25,7 @@ The irreducible factorization is unique except for order and for unit.
 
 <br>
 
-이번 파트에서는 Field의 초입에 다뤘던 Integral Domain $D$를 확장해 만들었던 "[Quotient Field]({{"2020/12/19/Qutient-Field.html" | relative_url}})"에 대한 성질을 사용한다!
+이번 파트에서는 Field의 초입에 다뤘던 Integral Domain $D$를 확장해 만들었던 "[Quotient Field]({{"2020/12/19/Qutient-Field" | relative_url}})"에 대한 성질을 사용한다!
 
 증명의 개요를 서술하면 아래와 같다.
 

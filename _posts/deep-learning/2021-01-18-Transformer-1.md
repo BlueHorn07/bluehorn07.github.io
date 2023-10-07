@@ -234,7 +234,7 @@ Transformer는 위의 3가지 Attention을 모두 사용한다! 각각이 Transf
 
 두번째 포스트에선 Transformer 모델의 인코더와 디코더, 그리고 3가지 Attention Model에 대해 더 자세히 살펴봅니다.
 
-- [Trasnformer(2017) - 2]({{"2021/01/18/Transformer-2.html" | relative_url}})
+- [Trasnformer(2017) - 2]({{"2021/01/18/Transformer-2" | relative_url}})
 
 ### Reference
 - [트랜스포머(Transformer)](https://wikidocs.net/31379)

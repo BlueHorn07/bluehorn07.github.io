@@ -13,7 +13,7 @@ categories: ["Statistics"]
   - [Z-Test: When $\sigma$ is known](#sigma2-is-known)
   - [t-Test: When $\sigma$ is unknown](#sigma2-is-unknown)
 - [Two Samples Mean Test](#two-samples-mean-test)
-- (next) [Choice of Sample Size for testing mean]({{"/2021/05/20/choice-of-sample-size-for-testing-mean.html" | relative_url}})
+- (next) [Choice of Sample Size for testing mean]({{"/2021/05/20/choice-of-sample-size-for-testing-mean" | relative_url}})
 
 <hr/>
 
@@ -127,10 +127,10 @@ $$
 
 다음 포스트에서는 \<검정력; power of test\> $\beta$를 도입해 평균(Mean)에 대해 검정(Testing)을 수행할 때 필요한 Sample Size $n$을 결정하는 방법에 대해 살펴본다.
 
-👉 [Choice of Sample Size for Testing Mean]({{"/2021/05/20/choice-of-sample-size-for-testing-mean.html" | relative_url}})
+👉 [Choice of Sample Size for Testing Mean]({{"/2021/05/20/choice-of-sample-size-for-testing-mean" | relative_url}})
 
 <br/>
 
 이번 포스트에서는 평균(Mean)에 대한 검정 방법에 대해 살펴봤다. 그렇게 어렵지 않았고, 추정(Estimation)에서 하던 걸, 절차에 맞게 수행해 해석해주면 되는 거였다. 이어지는 포스트에서는 비율(proportion)과 분산(variance)에 대한 검정을 살펴본다!
 
-👉 [Test on Proportion and Variance]({{"/2021/05/27/test-on-proportion-and-variance.html" | relative_url}})
+👉 [Test on Proportion and Variance]({{"/2021/05/27/test-on-proportion-and-variance" | relative_url}})

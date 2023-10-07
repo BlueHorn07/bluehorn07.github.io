@@ -54,7 +54,7 @@ $$
 <div class="img-wrapper">
   <img src="https://otexts.com/fppkr/fpp_files/figure-html/elecequip2-1.png" width="640px">
   <p markdown="1">
-    [Forecasting: Principles and Practices: 이동평균](https://otexts.com/fppkr/moving-averages.html)
+    [Forecasting: Principles and Practices: 이동평균](https://otexts.com/fppkr/moving-averages)
   </p>
 </div>
 
@@ -85,11 +85,11 @@ $-1 < \phi_1 < 1$ 조건 아래에서 정상성을 만족하던 $\text{AR}(p)$ �
 
 # Invertible
 
-([Forecasting: Principles and Practices: 이동평균](https://otexts.com/fppkr/moving-averages.html)의 내용으로 대체. 이하 생략 😉)
+([Forecasting: Principles and Practices: 이동평균](https://otexts.com/fppkr/moving-averages)의 내용으로 대체. 이하 생략 😉)
 
 # Reference
 
 - [Wikipedia: Moving-Average Model](https://en.wikipedia.org/wiki/Moving-average_model)
-- [Forecasting: Principles and Practices: 이동평균](https://otexts.com/fppkr/moving-averages.html)
+- [Forecasting: Principles and Practices: 이동평균](https://otexts.com/fppkr/moving-averages)
 - [[시계열분석] 이동평균모형(Moving Average Model; MA Model)](https://datalabbit.tistory.com/121)
 - [When to use AR and when to use MA model?](https://stats.stackexchange.com/a/488447/283988)

@@ -323,7 +323,7 @@ $$
 
 스포를 조금 하자면, \<Uniqueness Theorem of MGF\>는 나중에 \<CLT; Central Limit Theorem\>을 증명할 때, 중요하게 사용된다.
 
-👉 [*Proof* of CLT]({{"/2021/04/26/sampling-distribution-of-mean-and-clt.html#proof-of-clt" | relative_url}})
+👉 [*Proof* of CLT]({{"/2021/04/26/sampling-distribution-of-mean-and-clt#proof-of-clt" | relative_url}})
 
 <hr/>
 

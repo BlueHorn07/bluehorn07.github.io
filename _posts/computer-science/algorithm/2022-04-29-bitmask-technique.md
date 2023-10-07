@@ -124,11 +124,11 @@ A ^ (1 << k)
 
 ## 예제 및 활용
 
-지금까지 기본적인 Bitmask 집합 연산들을 살펴보았다. 이번에는 Bitmask를 쓰는 대표적인 문제인 [[외판원 문제]({{"/2021/06/13/traveling-salesman-problem.html" | relative_url}})]와 Bitmask 연산의 활용들을 살펴보자.
+지금까지 기본적인 Bitmask 집합 연산들을 살펴보았다. 이번에는 Bitmask를 쓰는 대표적인 문제인 [[외판원 문제]({{"/2021/06/13/traveling-salesman-problem" | relative_url}})]와 Bitmask 연산의 활용들을 살펴보자.
 
 ### 외판원 문제
 
-외판원 문제에서는 방문한 도시를 Bitmask 집합으로 표현한다. 예를 들어 `001010`이라면 2번째, 4번째 도시를 방문한 것이 된다. 발상 자체는 [외판원 문제]({{"/2021/06/13/traveling-salesman-problem.html" | relative_url}}) 포스트에서 확인하고 DP에서 쓰는 점화식만 따로 써보면 아래와 같다.
+외판원 문제에서는 방문한 도시를 Bitmask 집합으로 표현한다. 예를 들어 `001010`이라면 2번째, 4번째 도시를 방문한 것이 된다. 발상 자체는 [외판원 문제]({{"/2021/06/13/traveling-salesman-problem" | relative_url}}) 포스트에서 확인하고 DP에서 쓰는 점화식만 따로 써보면 아래와 같다.
 
 $$
 C(j, S) = \min_{i \in S, \; i \ne j} \left\{ C(i, S - \{j\}) + d_{ij}\right\}

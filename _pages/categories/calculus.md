@@ -7,4 +7,4 @@ toc_sticky: true
 
 
 
-- [Taylor Series & Macluarin Series]({{"/2022/10/29/talyor-series-and-maclaurin-series.html" | relative_url}})
+- [Taylor Series & Macluarin Series]({{"/2022/10/29/talyor-series-and-maclaurin-series" | relative_url}})

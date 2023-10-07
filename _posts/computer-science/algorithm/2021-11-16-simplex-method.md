@@ -15,7 +15,7 @@ categories: ["Algorithm"]
 
 이번 포스트에서는 LP 문제를 푸는 방법인 \<Simplex Method\>에 대해 다룬다! 👏
 
-먼저 이전 포스트에서 다룬 [Profit Maximization 문제]({{"/2021/10/30/linear-programming.html" | relative_url}})를 다시 살펴보자. 문제가 정의하는 inequality들로부터 *feasible region*을 정의한 후 직선인 objective function과 만나는 지점에서 optimum solution을 구했었다.
+먼저 이전 포스트에서 다룬 [Profit Maximization 문제]({{"/2021/10/30/linear-programming" | relative_url}})를 다시 살펴보자. 문제가 정의하는 inequality들로부터 *feasible region*을 정의한 후 직선인 objective function과 만나는 지점에서 optimum solution을 구했었다.
 
 <div class="img-wrapper">
   <img src="{{ "/images/algorithm/simplex-method-1.png" | relative_url }}" width="100%">

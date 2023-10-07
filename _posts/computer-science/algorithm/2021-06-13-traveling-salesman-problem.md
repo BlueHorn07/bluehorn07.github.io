@@ -87,7 +87,7 @@ $$
 
 </div>
 
-TSP의 DP 알고리즘을 구현하기 위해선 [비트마스크(bitmask) 기법]({{"/2022/04/29/bitmask-technique.html" | relative_url}})에 대해 알아야 한다. 해당 포스트를 먼저 살펴보고 오자.
+TSP의 DP 알고리즘을 구현하기 위해선 [비트마스크(bitmask) 기법]({{"/2022/04/29/bitmask-technique" | relative_url}})에 대해 알아야 한다. 해당 포스트를 먼저 살펴보고 오자.
 
 ``` cpp
 // curr: 마지막으로 방문한 노드 (=here)
@@ -187,9 +187,9 @@ If there's no such tour, then report 'no tour'."
 
 ### 함께보기
 
-- [Bitmask Technique]({{"/2022/04/29/bitmask-technique.html" | relative_url}})
-- [Hamilton Cycle Problem]({{"/2022/03/12/hamilton-cycle-problem.html" | relative_url}})
-- [P and NP]({{"/2022/01/14/P-and-NP.html" | relative_url}})
+- [Bitmask Technique]({{"/2022/04/29/bitmask-technique" | relative_url}})
+- [Hamilton Cycle Problem]({{"/2022/03/12/hamilton-cycle-problem" | relative_url}})
+- [P and NP]({{"/2022/01/14/P-and-NP" | relative_url}})
 
 
 <hr/>

@@ -84,7 +84,7 @@ $$
 <hr/>
 
 앞에서 RSS 방식을 사용해 $\hat{\beta}$를 구했다. 이때, 이 모델이 얼마나 좋은지를 논하기 위해 \<prediction error\>를 구해야 한다. 이때 필요한 개념이 \<**bias**\>와 \<**variance**\>이다. 이 두 개념에 무엇인지는 별도의 포스트에 정리해두었다. 만약 bias도 작고 variance도 작다면, 우리는 그 모델이 좋다고 평가한다.<br/>
-👉 [bias & variance]({{"/2021/03/21/overview-of-supervised-learning-2.html#bias-variance-decomposition" | relative_url}})
+👉 [bias & variance]({{"/2021/03/21/overview-of-supervised-learning-2#bias-variance-decomposition" | relative_url}})
 
 $$
 \text{Err}(x_0) = \sigma^2 + \left\{ \text{Bias}(\hat{f}(x_0)) \right\}^2 + \text{Var}(\hat{f}(x_0))

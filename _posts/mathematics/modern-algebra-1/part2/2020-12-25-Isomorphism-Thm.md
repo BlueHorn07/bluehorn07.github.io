@@ -16,7 +16,7 @@ categories: ["Modern Algebra1"]
 <br>
 <hr>
 
-### [1st Isomorphism Theorem; FHT]({{"2020/12/25/Fundamental-Homo-theorem.html" | relative_url}})
+### [1st Isomorphism Theorem; FHT]({{"2020/12/25/Fundamental-Homo-theorem" | relative_url}})
 
 첫번재 Isomorphism Theorem은 이전의 포스트에서 이미 다루었다. FHT가 곧 1st Isomorphism Theorem이다!
 

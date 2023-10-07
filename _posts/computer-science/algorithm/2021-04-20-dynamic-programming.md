@@ -35,8 +35,8 @@ DP 테크닉의 중심은 \<Memoization\>이라고 할 수 있다. subproblem의
 
 이번 챕터에서 다루는 문제들은 아래와 같다.
 
-- [LIS; Longest Incresaing Subsequences]({{"/2021/04/20/longest-increasing-subsequences.html" | relative_url}})
-- [Edit Distance]({{"/2021/04/20/edit-distanace.html" | relative_url}})
+- [LIS; Longest Incresaing Subsequences]({{"/2021/04/20/longest-increasing-subsequences" | relative_url}})
+- [Edit Distance]({{"/2021/04/20/edit-distanace" | relative_url}})
 - Knapsack
 - Chain Matrix Multiplication
 - Shortest Reliable Paths

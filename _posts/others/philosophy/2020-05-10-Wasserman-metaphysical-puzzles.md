@@ -264,10 +264,10 @@ A. the 'kick' constitutes an 'attack' ⇒ *event constitution*<br>
 ### Reference
 아래는 읽기자료 외에 추가로 참고한 자료입니다.
 1. The Debtor's Paradox
-   - [The Debtor's Paradox, Henk bij de Weg](http://philosophybytheway.blogspot.com/2018/11/the-debtors-paradox.html)
+   - [The Debtor's Paradox, Henk bij de Weg](http://philosophybytheway.blogspot.com/2018/11/the-debtors-paradox)
 
 2. The Puzzle of Dion and Theon
-   - [The Puzzle of Dion and Theon, Bill Vallicella](https://maverickphilosopher.typepad.com/maverick_philosopher/2017/12/dion-and-theon.html)
+   - [The Puzzle of Dion and Theon, Bill Vallicella](https://maverickphilosopher.typepad.com/maverick_philosopher/2017/12/dion-and-theon)
 3. The ship of Theseue Puzzle
    - [Puzzles of Material Constitution](https://slideplayer.com/slide/14767271/)
 

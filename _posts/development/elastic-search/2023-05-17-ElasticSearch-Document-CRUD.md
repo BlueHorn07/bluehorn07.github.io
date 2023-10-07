@@ -5,7 +5,7 @@ toc_sticky: true
 categories: ["Elastic Search"]
 ---
 
-ElasticSearch에서 레코드의 역할을 하는 Document의 CRUD에 대해 살펴본다. 테이블 역할을 하는 Index에 대한 CRUD는 [이전 포스트]({{"/2023/05/15/ElasticSearch-Index-CRUD.html" | relative_url}})에서 다뤘다.
+ElasticSearch에서 레코드의 역할을 하는 Document의 CRUD에 대해 살펴본다. 테이블 역할을 하는 Index에 대한 CRUD는 [이전 포스트]({{"/2023/05/15/ElasticSearch-Index-CRUD" | relative_url}})에서 다뤘다.
 
 # Create
 

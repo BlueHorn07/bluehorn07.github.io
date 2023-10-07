@@ -10,13 +10,13 @@ categories: ["Probability"]
 
 **시리즈: Continuous Probability Distributions**
 
-1. [Uniform and Normal Distribution]({{"/2021/03/29/uniform-and-normal-distribution.html" | relative_url}})
-2. [Exponential Distribution]({{"/2021/03/31/exponential-distribution.html" | relative_url}})
-3. [Gamma Distribution]({{"/2021/04/05/gamma-distribution.html" | relative_url}}) 👀
-4. [Chi-square Distribution]({{"/2021/04/06/chi-square-distribution.html" | relative_url}})
-5. [Beta Distribution]({{"/2021/04/07/beta-distribution.html" | relative_url}})
-6. [Log-normal Distribution]({{"/2021/04/08/log-normal-distribution.html" | relative_url}})
-7. [Weibull Distribution (optional)]({{"/2021/04/10/weibull-distribution.html" | relative_url}})
+1. [Uniform and Normal Distribution]({{"/2021/03/29/uniform-and-normal-distribution" | relative_url}})
+2. [Exponential Distribution]({{"/2021/03/31/exponential-distribution" | relative_url}})
+3. [Gamma Distribution]({{"/2021/04/05/gamma-distribution" | relative_url}}) 👀
+4. [Chi-square Distribution]({{"/2021/04/06/chi-square-distribution" | relative_url}})
+5. [Beta Distribution]({{"/2021/04/07/beta-distribution" | relative_url}})
+6. [Log-normal Distribution]({{"/2021/04/08/log-normal-distribution" | relative_url}})
+7. [Weibull Distribution (optional)]({{"/2021/04/10/weibull-distribution" | relative_url}})
 
 </div>
 
@@ -276,11 +276,11 @@ $$
 
 이어지는 포스트에서는 감마 분포의 특수한 경우로 꼽히는 \<Chi-square distribution\>, \<Beta distribution\>과 \<Log-normal distribution\>에 대해 다룬다 🤩
 
-👉 [Chi-sqaure, Beta and Log-normal Distribution]({{"/2021/04/06/chi-and-beta-and-lognormal-distribution.html" | relative_url}})
+👉 [Chi-sqaure, Beta and Log-normal Distribution]({{"/2021/04/06/chi-and-beta-and-lognormal-distribution" | relative_url}})
 
 <hr/>
 
 ### references
 
-- [전파 거북이님의 포스트](https://ghebook.blogspot.com/2011/12/gamma-function.html)
+- [전파 거북이님의 포스트](https://ghebook.blogspot.com/2011/12/gamma-function)
 

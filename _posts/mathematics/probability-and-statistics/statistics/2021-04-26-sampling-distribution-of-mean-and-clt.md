@@ -10,12 +10,12 @@ categories: ["Statistics"]
 
 **시리즈: Sampling Distributions**
 
-1. [Sampling Distribution]({{"/2021/04/25/sampling-distribution.html" | relative_url}})
-2. [Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt.html" | relative_url}}) 👀
-3. [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance.html" | relative_url}})
-4. [Student's t-distribution]({{"/2021/04/27/student-t-distribution.html" | relative_url}})
-5. [F-distribution]({{"/2021/05/04/F-distribution.html" | relative_url}})
-6. [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile.html" | relative_url}})
+1. [Sampling Distribution]({{"/2021/04/25/sampling-distribution" | relative_url}})
+2. [Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt" | relative_url}}) 👀
+3. [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance" | relative_url}})
+4. [Student's t-distribution]({{"/2021/04/27/student-t-distribution" | relative_url}})
+5. [F-distribution]({{"/2021/05/04/F-distribution" | relative_url}})
+6. [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile" | relative_url}})
 
 </div>
 
@@ -63,7 +63,7 @@ $$
 
 <span class="statement-title">*Proof*.</span><br>
 
-[\<Chebyshev's Inequality\>]({{"/2021/03/17/chebyshev's-inequality.html" | relative_url}})를 사용하면 아주 쉽게 증명할 수 있다!
+[\<Chebyshev's Inequality\>]({{"/2021/03/17/chebyshev's-inequality" | relative_url}})를 사용하면 아주 쉽게 증명할 수 있다!
 
 $$
 \begin{aligned}
@@ -305,7 +305,7 @@ $$
 
 이어지는 포스트에서는 "평균"과 함께, 확률 분포의 특성을 결정하는 parameter인 **"분산(Variance)"**이 Random Sample에서 어떻게 유도되는지 살펴볼 예정이다.
 
-👉 [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance.html" | relative_url}})
+👉 [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance" | relative_url}})
 
 <hr/>
 

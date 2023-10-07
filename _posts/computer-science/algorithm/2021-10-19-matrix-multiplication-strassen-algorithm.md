@@ -72,7 +72,7 @@ $$
 T(n) = O(n^{\log_2 7}) \approx O(n^{2.81})
 $$
 
-로 원래의 $O(n^3)$보다 개선된 성능을 얻을 수 있다!! 😁 어떻게 보면 분할정복 파트의 초반에 다뤘던 ["두 정수의 곱셈 알고리즘"]({{"/2021/02/26/multiplication-algorithm.html" | relative_url}})과도 비슷한 맥락이었다.
+로 원래의 $O(n^3)$보다 개선된 성능을 얻을 수 있다!! 😁 어떻게 보면 분할정복 파트의 초반에 다뤘던 ["두 정수의 곱셈 알고리즘"]({{"/2021/02/26/multiplication-algorithm" | relative_url}})과도 비슷한 맥락이었다.
 
 <hr/>
 
@@ -82,4 +82,4 @@ $$
 
 <br/>
 
-행렬 곱셈과 관련해서는 몇가지 문제들이 더 있다. 행렬 $A^m$의 값을 빠르게 찾기 위한 문제도 있고([백준 10830번 - 행렬 제곱](https://www.acmicpc.net/problem/10830)), 행렬 곱셈 $A_1 \times A_2 \times \cdots \times A_n$에서의 최소 연산 수를 갖는 행렬 곱셈 순서를 찾는 [Chain Matrix Multiplication]({{"/2021/05/02/chain-matrix-multiplication.html" | relative_url}}) 문제도 있다.
+행렬 곱셈과 관련해서는 몇가지 문제들이 더 있다. 행렬 $A^m$의 값을 빠르게 찾기 위한 문제도 있고([백준 10830번 - 행렬 제곱](https://www.acmicpc.net/problem/10830)), 행렬 곱셈 $A_1 \times A_2 \times \cdots \times A_n$에서의 최소 연산 수를 갖는 행렬 곱셈 순서를 찾는 [Chain Matrix Multiplication]({{"/2021/05/02/chain-matrix-multiplication" | relative_url}}) 문제도 있다.

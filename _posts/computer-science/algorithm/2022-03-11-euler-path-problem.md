@@ -82,4 +82,4 @@ $\blacksquare$
 
 \<Euler Path Problem\>과 비슷하게 \<Hamilton Path Problem\>도 존재한다. 이 경우는 모든 정점을 한번씩만 방문하는 방법이 존재하는지 판별해야 한다. \<Euler Path Problem\>과 달리 poly-time으로 해결되는 알고리즘이 존재하지 않는다. 다음 포스트에서 이 문제에 대해 살펴보겠다.
 
-👉 [Hamilton Cycle Problem]({{"/2022/03/12/hamilton-cycle-problem.html" | relative_url }})
+👉 [Hamilton Cycle Problem]({{"/2022/03/12/hamilton-cycle-problem" | relative_url }})

@@ -9,19 +9,19 @@ categories: ["Algorithm"]
 
 2020-1학기, 대학에서 '알고리즘' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
-이번 포스트는 [Network Flow]({{"/2021/07/16/network-flow.html" | relative_url}}) 포스트의 후속 포스트입니다. Network Flow 문제의 핵심이 되는 정리인 \<Max-Flow Min-Cut Theorem\>에 대해 궁금하다면 이전 포스트를 참고해주세요! 😉
+이번 포스트는 [Network Flow]({{"/2021/07/16/network-flow" | relative_url}}) 포스트의 후속 포스트입니다. Network Flow 문제의 핵심이 되는 정리인 \<Max-Flow Min-Cut Theorem\>에 대해 궁금하다면 이전 포스트를 참고해주세요! 😉
 
 이번 포스트의 코드는 [백준 6086번: 최대 유량](https://www.acmicpc.net/problem/6086) 문제를 기준으로 작성되었습니다 👨‍💻
 
 <hr/>
 
-[Network Flow]({{"/2021/07/16/network-flow.html" | relative_url}}) 포스트에서 어떻게 Max Flow를 구할지 \<Max-Flow Min-Cut Theorem\>을 통해 살펴보았다. 이번 포스트에서는 Residual Graph를 사용하는 해당 알고리즘을 직접 구현해본다.
+[Network Flow]({{"/2021/07/16/network-flow" | relative_url}}) 포스트에서 어떻게 Max Flow를 구할지 \<Max-Flow Min-Cut Theorem\>을 통해 살펴보았다. 이번 포스트에서는 Residual Graph를 사용하는 해당 알고리즘을 직접 구현해본다.
 
 <hr/>
 
 ## Ford-Fulkerson Algorithm
 
-사실 [Network Flow]({{"/2021/07/16/network-flow.html" | relative_url}}) 포스트에서 설명한 Max-Flow를 찾는 방법을 코드로 구현한 것에 불과하다. 큰 범주로 봤을 때는 Brute Force Algorithm에 속한다.
+사실 [Network Flow]({{"/2021/07/16/network-flow" | relative_url}}) 포스트에서 설명한 Max-Flow를 찾는 방법을 코드로 구현한 것에 불과하다. 큰 범주로 봤을 때는 Brute Force Algorithm에 속한다.
 
 <div class="math-statement" markdown="1">
 
@@ -47,7 +47,7 @@ f(c, b) -= flow
 
 주목할 점은 [3.] 과정에서 역방향을 처리할 때인데, 만약 $f(b, a) = 0$이었다면 $f(b, a) < 0$로 음수가 된다. 그런데 이런 음수 유량을 흘려보내는 것은 가능한데, $f(b, a)$의 capacity는 $c(b, a) = 0$이므로 결국 $f(b, a) < 0 = c(b, a)$로 유량에 대한 법칙을 전혀 깨뜨리지 않는다!
 
-코드로 작성하기 전에 손으로 이 알고리즘을 따라가보자. 이 부분은 좋은 자료가 있어서 해당 자료로 대체하겠다. 🙏 [손으로 푸는 Ford-Fulkerson Algorithm](https://gseok.gitbooks.io/algorithm/content/b124-d2b8-c6cc-d06c-d50c-b85c-c6b0/d3ec-b4dc-d480-cee4-c2a828-ford-fulkerson-c560-b4dc-baac-b4dc-ce74-d50428-edmonds-karp.html#:~:text=그림으로)
+코드로 작성하기 전에 손으로 이 알고리즘을 따라가보자. 이 부분은 좋은 자료가 있어서 해당 자료로 대체하겠다. 🙏 [손으로 푸는 Ford-Fulkerson Algorithm](https://gseok.gitbooks.io/algorithm/content/b124-d2b8-c6cc-d06c-d50c-b85c-c6b0/d3ec-b4dc-d480-cee4-c2a828-ford-fulkerson-c560-b4dc-baac-b4dc-ce74-d50428-edmonds-karp#:~:text=그림으로)
 
 <br/>
 
@@ -241,10 +241,10 @@ long long FordFulkerson(int source, int sink) {
 
 다음 포스트로는 네트워크 플로우를 이용해 해결할 수 있는 문제들에 대해 다룬다. 대표적인 문제로 \<Bipartite Matching; 이분 매칭\>과 네트워크 플로우에 제약(contraint)를 추가한 버전의 문제들을 살펴볼 예정이다 🙌
 
-👉 [Bipartite Matching]({{"/2021/10/04/bipartite-matching.html" | relative_url}})
+👉 [Bipartite Matching]({{"/2021/10/04/bipartite-matching" | relative_url}})
 
 <hr/>
 
 ### references
 
-- [네트워크 유량(Network Flow)](https://gseok.gitbooks.io/algorithm/content/b124-d2b8-c6cc-d06c-d50c-b85c-c6b0/d3ec-b4dc-d480-cee4-c2a828-ford-fulkerson-c560-b4dc-baac-b4dc-ce74-d50428-edmonds-karp.html)
+- [네트워크 유량(Network Flow)](https://gseok.gitbooks.io/algorithm/content/b124-d2b8-c6cc-d06c-d50c-b85c-c6b0/d3ec-b4dc-d480-cee4-c2a828-ford-fulkerson-c560-b4dc-baac-b4dc-ce74-d50428-edmonds-karp)

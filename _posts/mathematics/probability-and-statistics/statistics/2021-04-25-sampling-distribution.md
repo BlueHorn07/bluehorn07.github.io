@@ -10,12 +10,12 @@ categories: ["Statistics"]
 
 **시리즈: Sampling Distributions**
 
-1. [Sampling Distribution]({{"/2021/04/25/sampling-distribution.html" | relative_url}}) 👀
-2. [Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt.html" | relative_url}})
-3. [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance.html" | relative_url}})
-4. [Student's t-distribution]({{"/2021/04/27/student-t-distribution.html" | relative_url}})
-5. [F-distribution]({{"/2021/05/04/F-distribution.html" | relative_url}})
-6. [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile.html" | relative_url}})
+1. [Sampling Distribution]({{"/2021/04/25/sampling-distribution" | relative_url}}) 👀
+2. [Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt" | relative_url}})
+3. [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance" | relative_url}})
+4. [Student's t-distribution]({{"/2021/04/27/student-t-distribution" | relative_url}})
+5. [F-distribution]({{"/2021/05/04/F-distribution" | relative_url}})
+6. [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile" | relative_url}})
 
 </div>
 
@@ -40,7 +40,7 @@ categories: ["Statistics"]
 
 확통 수업을 듣는 전체 학생을 대상으로, 확통 수업을 선호하는 학생의 비율을 구하고자 한다. 그런데, 확통 수업을 듣는 학생 수가 너무 많아서 전체를 조사할 순 없고, 전체 중 $n$명 학생을 대상으로 설문조사를 시행한다고 하자.
 
-$X$가 "$n$명의 학생 중에 확통 수업을 선호한다고 응답한 학생 수"라는 RV라면, $X$는 [HyperGeo]({{"/2021/03/24/discrete-probability-distributions-2.html#hypergeometric-distribution" | relative_url}})의 분포를 따를 것이다.
+$X$가 "$n$명의 학생 중에 확통 수업을 선호한다고 응답한 학생 수"라는 RV라면, $X$는 [HyperGeo]({{"/2021/03/24/discrete-probability-distributions-2#hypergeometric-distribution" | relative_url}})의 분포를 따를 것이다.
 
 또, 만약 전체 학생 수가 충분히 크다면, HyperGeo를 BIN으로 근사할 수도 있을 것이다.
 
@@ -79,7 +79,7 @@ $$
 P(\left| \overline{x} - \mu_0 \right| < \epsilon)
 $$
 
-의 확률을 구하여, 제시한 $\mu_0$와 우리가 얻은 sample mean이 얼마나 차이 나는지를 확인하고, 이것을 활용해 $\mu = \mu_0$라는 가설(Hypothesis)를 검정(Test)할 수 있기 때문이다. 이 내용은 뒤의 [\<가설 검정; Hypothesis Test\>]({{"/2021/05/18/introduction-to-hypothesis-tests.html" | relative_url}}) 부분에서 좀더 자세히 다룬다.
+의 확률을 구하여, 제시한 $\mu_0$와 우리가 얻은 sample mean이 얼마나 차이 나는지를 확인하고, 이것을 활용해 $\mu = \mu_0$라는 가설(Hypothesis)를 검정(Test)할 수 있기 때문이다. 이 내용은 뒤의 [\<가설 검정; Hypothesis Test\>]({{"/2021/05/18/introduction-to-hypothesis-tests" | relative_url}}) 부분에서 좀더 자세히 다룬다.
 
 $P(\left\| \overline{x} - \mu_0 \right\| < \epsilon)$, 이것을 구하기 위해서는 $\overline{x}$에 대한 분포를 알아야 하며, 우리는 이것을 \<**sampling distribution**; 표본 분포\>이라고 한다! 표본 분포에 대한 정의는 아티클의 맨 마지막에 정리하였다.
 
@@ -280,9 +280,9 @@ ex) distribution of sample mean, distribution of sample variance, ...
 
 이때, 표본 통계량(sample Statisticss)는 sample mean, sample variance와 같이 표본의 특성을 나타내는 대표값이다.
 
-👉 [Sampling Distribution of Mean, and CLT]({{"/2021/04/26/sampling-distribution-of-mean-and-clt.html" | relative_url}})
+👉 [Sampling Distribution of Mean, and CLT]({{"/2021/04/26/sampling-distribution-of-mean-and-clt" | relative_url}})
 
-👉 [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance.html" | relative_url}})
+👉 [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance" | relative_url}})
 
 
 <hr/>

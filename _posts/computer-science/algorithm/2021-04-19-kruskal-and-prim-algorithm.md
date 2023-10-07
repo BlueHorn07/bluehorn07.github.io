@@ -10,9 +10,9 @@ categories: ["Algorithm"]
 
 <br><span class="statement-title">TOC.</span><br>
 
-- [Kruskal's Algorithm]({{"/2021/04/19/kruskal-and-prim-algorithm.html#kruskals-algorithm" | relative_url}})
+- [Kruskal's Algorithm]({{"/2021/04/19/kruskal-and-prim-algorithm#kruskals-algorithm" | relative_url}})
   - cut property
-- [Prim's Algorithm]({{"2021/04/19/kruskal-and-prim-algorithm.html#prims-algorithm" | relative_url}})
+- [Prim's Algorithm]({{"2021/04/19/kruskal-and-prim-algorithm#prims-algorithm" | relative_url}})
 
 <hr>
 
@@ -116,7 +116,7 @@ Sort the edges $E$ by weight.
 - $\texttt{find}$: $E$ 번
 - $\texttt{union}$: $V-1$ 번
 
-$\texttt{makeset}$, $\texttt{find}$, $\texttt{union}$ 연산에 대한 시간복잡도는 추후에 [Disjoint Set]({{"/2021/10/26/disjoint-set-and-path-compression.html" | relative_url}}) 포스트에서 살펴보겠다.
+$\texttt{makeset}$, $\texttt{find}$, $\texttt{union}$ 연산에 대한 시간복잡도는 추후에 [Disjoint Set]({{"/2021/10/26/disjoint-set-and-path-compression" | relative_url}}) 포스트에서 살펴보겠다.
 
 <br/>
 
@@ -155,7 +155,7 @@ $H=\texttt{makequeue}(V)$ <span style="color: grey;"><small>// priority queue, u
 
 크루스컬 알고리즘과 달리 정렬이 없기 때문에, 프림 알고리즘의 시간복잡도는 Priority Queue를 쓰는데 걸리는 $E \times O(\log V) = O(E \log V)$이다.
 
-프림 알고리즘의 형태를 잘 살펴보면, 앞에서 봤던 [Dijkstra's Algorithm]({{"/2021/04/17/dijkstra-algorithm.html" | relative_url}})과 상당히 비슷하다! 둘의 차이점은 $\texttt{cost}(\cdot)$ 업데이트 rule에서 있는데,
+프림 알고리즘의 형태를 잘 살펴보면, 앞에서 봤던 [Dijkstra's Algorithm]({{"/2021/04/17/dijkstra-algorithm" | relative_url}})과 상당히 비슷하다! 둘의 차이점은 $\texttt{cost}(\cdot)$ 업데이트 rule에서 있는데,
 
 다익스트라 알고리즘에선 출발 노드 $s$에서 도달하는데 드는 최소 비용을 $\texttt{cost}(\cdot)$에 기록하고, **프림 알고리즘**에서는 노드 $v$를 MST에 포함시킬 때의 비용을 $\texttt{cost}(\cdot)$에 기록한다.
 
@@ -167,7 +167,7 @@ $H=\texttt{makequeue}(V)$ <span style="color: grey;"><small>// priority queue, u
 
 이어지는 포스트에서는 \<Kruskal's Algorithm\>에서 언급되었던 \<**Disjoint Set**\>에 대해 살펴본다. 이 부분은 Greedy Algorithm과 직접적으로 연관된 부분은 아니며, \<Disjoint Set\>이라는 자료구조를 어떻게 구현할 수 있고, 그리고 그때에 사용되는 테크닉에 대해 다룬다.
 
-👉 [Disjoint Set]({{"/2021/10/26/disjoint-set-and-path-compression.html" | relative_url}})
+👉 [Disjoint Set]({{"/2021/10/26/disjoint-set-and-path-compression" | relative_url}})
 
 <hr/>
 

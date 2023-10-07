@@ -74,7 +74,7 @@ categories: ["Probability"]
 
 ## 해설 2
 
-교수님 曰: 이건 [\<베이즈 정리\>]({{"/2021/03/02/Bayes-Rule.html" | relative_url}})로 풀 수 있어요. ~~베이즈 마스터면 풀 수 있을 듯;;~~
+교수님 曰: 이건 [\<베이즈 정리\>]({{"/2021/03/02/Bayes-Rule" | relative_url}})로 풀 수 있어요. ~~베이즈 마스터면 풀 수 있을 듯;;~~
 
 참가자가 고른 문을 $\textsf{A}$, 나머지 두개 문을 $\textsf{B}$, $\textsf{C}$라고 하자.
 

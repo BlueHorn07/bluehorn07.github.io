@@ -38,7 +38,7 @@ Given a graph and a goal $g$, find $g$ vertices that are independent, that is, n
 
 </div>
 
-이 문제는 예전에 DP 챕터에서 트리(Tree) 버전에서 살펴본 적이 있다: [Independent Sets in Tree]({{"/2021/07/10/independent-sets-in-tree.html" | relative_url}}) 이 경우는 DP 테크닉을 통해 선형 시간 만에 답을 구할 수 있다. 그러나 이번에는 그래프(Graph) 위에서의 Independent Set Problem이다. 그래프 위에서는 polynomial time algorithm이 존재하지 않는다.
+이 문제는 예전에 DP 챕터에서 트리(Tree) 버전에서 살펴본 적이 있다: [Independent Sets in Tree]({{"/2021/07/10/independent-sets-in-tree" | relative_url}}) 이 경우는 DP 테크닉을 통해 선형 시간 만에 답을 구할 수 있다. 그러나 이번에는 그래프(Graph) 위에서의 Independent Set Problem이다. 그래프 위에서는 polynomial time algorithm이 존재하지 않는다.
 
 ## Vertex Cover Problem
 
@@ -145,5 +145,5 @@ For a graph $G = (V, E)$, define the complement graph $\bar{G} = (V, \bar{E})$. 
 
 ## 함께보기
 
-- [Independent Sets in Tree]({{"/2021/07/10/independent-sets-in-tree.html" | relative_url}})
-- [P and NP]({{"/2022/01/14/P-and-NP.html" | relative_url}})
+- [Independent Sets in Tree]({{"/2021/07/10/independent-sets-in-tree" | relative_url}})
+- [P and NP]({{"/2022/01/14/P-and-NP" | relative_url}})

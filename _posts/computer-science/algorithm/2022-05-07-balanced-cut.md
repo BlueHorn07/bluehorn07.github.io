@@ -19,7 +19,7 @@ A set of edges whose removal leaves a graph **disconnected**.
 
 </div>
 
-포스트를 앞에서부터 천천히 따라왔다면, [Network Flow]({{"/2021/07/16/network-flow.html" | relative_url}}) 챕터에서 Network Flow 문제가 Minimum Cut Problem과 dual problem 관계임을 공부했을 것이다.
+포스트를 앞에서부터 천천히 따라왔다면, [Network Flow]({{"/2021/07/16/network-flow" | relative_url}}) 챕터에서 Network Flow 문제가 Minimum Cut Problem과 dual problem 관계임을 공부했을 것이다.
 
 <div class="notice" markdown="1">
 
@@ -56,5 +56,5 @@ Given a graph with $n$ vertices and a budget $b$, find a cut $(A, B)$ such that 
 
 ### 함께보기
 
-- [Network Flow]({{"/2021/07/16/network-flow.html" | relative_url}})
-- [P and NP]({{"/2022/01/14/P-and-NP.html" | relative_url}})
+- [Network Flow]({{"/2021/07/16/network-flow" | relative_url}})
+- [P and NP]({{"/2022/01/14/P-and-NP" | relative_url}})

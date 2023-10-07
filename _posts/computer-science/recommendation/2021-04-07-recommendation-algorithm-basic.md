@@ -137,7 +137,7 @@ $$
 
 여기서는 간단히 소개만 하고, 이어지는 포스트에서 \<Latent Factor Model\>에 대해 더 자세히 다루겠다 😉
 
-👉 [Latent Matrix Factorization]({{"/2021/04/08/latent-matrix-factorization.html" | relative_url}})
+👉 [Latent Matrix Factorization]({{"/2021/04/08/latent-matrix-factorization" | relative_url}})
 
 <hr/>
 

@@ -182,4 +182,4 @@ A. 만약 negative cost가 존재한다면, PQ를 이용해 min-cost tree를 만
 
 \<다익스트라 알고리즘\>의 단점은 Negative Edge를 처리하지 못한다는 것이다. 이어지는 포스트에서는 Negative Edge를 처리하는 알고리즘인 \<Bellman-Ford Algorithm\>에 대해 살펴본다.
 
-👉 [Bellman-Ford Algorithm]({{"/2021/04/18/Bellman-Ford.html" | relative_url}})
+👉 [Bellman-Ford Algorithm]({{"/2021/04/18/Bellman-Ford" | relative_url}})

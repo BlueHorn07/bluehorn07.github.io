@@ -7,7 +7,7 @@ categories: ["Statistics"]
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
 
-[Interval Estimation]({{"/2021/05/06/interval-estimation.html" | relative_url}}) 포스트에서 다룬 \<Interval Estimation\>을 특정 상황에 어떻게 적용 하는지를 다루는 포스트이다. 지금까지의 추정(Estimation)은 모두 \<Normal Distribution\>에서 추출한 샘플에 대해 시행했다. 이번에는 \<Bernoulli Distribution\>의 샘플에서 추정을 수행한다. 즉, \<Bernoulli Distribution\>의 parameter인 확률 $p$가 추정의 대상인 것이다!
+[Interval Estimation]({{"/2021/05/06/interval-estimation" | relative_url}}) 포스트에서 다룬 \<Interval Estimation\>을 특정 상황에 어떻게 적용 하는지를 다루는 포스트이다. 지금까지의 추정(Estimation)은 모두 \<Normal Distribution\>에서 추출한 샘플에 대해 시행했다. 이번에는 \<Bernoulli Distribution\>의 샘플에서 추정을 수행한다. 즉, \<Bernoulli Distribution\>의 parameter인 확률 $p$가 추정의 대상인 것이다!
 
 <br><span class="statement-title">TOC.</span><br>
 
@@ -111,7 +111,7 @@ $$
 
 # Two Samples Estimation: Diff Btw Two Proportions
 
-[Two Samples Estimation: Diff Btw Two Means]({{"/2021/05/13/two-samples-estimation-diff-btw-two-means.html" | relative_url}}) 포스트에서 이것과 비슷한 상황을 접한 적이 있다. 그때는 Normal Distribution에서 수행했고, sample variance $s^2$를 쓰게 되면서, pooled sample variance $S_p^2$나 \<Welch's t-test\>를 수행했다. 위의 상황과 \<Proportion Estimation\>이 어떻게 다른지 비교하면서 살펴보자!
+[Two Samples Estimation: Diff Btw Two Means]({{"/2021/05/13/two-samples-estimation-diff-btw-two-means" | relative_url}}) 포스트에서 이것과 비슷한 상황을 접한 적이 있다. 그때는 Normal Distribution에서 수행했고, sample variance $s^2$를 쓰게 되면서, pooled sample variance $S_p^2$나 \<Welch's t-test\>를 수행했다. 위의 상황과 \<Proportion Estimation\>이 어떻게 다른지 비교하면서 살펴보자!
 
 <div class="img-wrapper">
 <img src= "{{"/images/probability-and-statistics/difference-btw-two-proportions-1.png" | relative_url }}" width=650>
@@ -146,7 +146,7 @@ $$
 
 # Proportion Estimation and t-distribution
 
-[\<Mean Estimation\>]({{"/2021/05/06/interval-estimation.html" | relative_url}})의 기억을 떠올리면, population variance $\sigma^2$를 모르기에 sample variance $s^2$를 쓰고 normal distribution $N(0, 1)$ 대신 t-distribution $t(n)$로 근사한 기억이 있을 것이다.
+[\<Mean Estimation\>]({{"/2021/05/06/interval-estimation" | relative_url}})의 기억을 떠올리면, population variance $\sigma^2$를 모르기에 sample variance $s^2$를 쓰고 normal distribution $N(0, 1)$ 대신 t-distribution $t(n)$로 근사한 기억이 있을 것이다.
 
 $$
 \frac{\bar{X} - \mu}{S / \sqrt{n}} \sim t(n-1)
@@ -190,7 +190,7 @@ $$
 
 에 대한 추정을 살펴봤다. 다음 포스트에서는 sample variance $S^2$로부터 population variance $\sigma^2$를 추정하는 방법에 대해 살펴보겠다.
 
-👉 [Variance Estimation]({{"/2021/05/16/variance-estimation.html" | relative_url}})
+👉 [Variance Estimation]({{"/2021/05/16/variance-estimation" | relative_url}})
 
 # Reference
 

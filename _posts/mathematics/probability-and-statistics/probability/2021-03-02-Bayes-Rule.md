@@ -170,4 +170,4 @@ $$
 
 \<Bayes' Rule\>을 활용한 재밌는 문제가 있다! \<몬티 홀 문제; Monti Hall Problem\>이라는 문제가 있다. 더 말하면 스포가 될 것 같으니 궁금하다면 한번 도전해보자!
 
-👉 [Monti Hall Problem]({{"/2021/03/02/Monti-Hall-Problem.html" | relative_url}})
+👉 [Monti Hall Problem]({{"/2021/03/02/Monti-Hall-Problem" | relative_url}})

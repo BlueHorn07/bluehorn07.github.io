@@ -256,7 +256,7 @@ where $\text{Bias} := E \left[ \hat{\Theta} - \theta \right]$.
 
 <span class="statement-title">*Proof*.</span><br/>
 
-(Homework🎈) / [(Solution)]({{"/2021/06/06/statistics-ps1.html" | relative_url}})
+(Homework🎈) / [(Solution)]({{"/2021/06/06/statistics-ps1" | relative_url}})
 
 </div>
 
@@ -286,12 +286,12 @@ $$
 
 이어지는 포스트에서는 또다른 estimation 방식인 \<Interval Estimation\>에 대해 살펴보겠다. 이때, 주어진 Interval이 얼마나 좋은지 알려주는 지표가 바로 \<confidence level\> $1 - \alpha$다!
 
-👉 [Interval Estimation]({{"/2021/05/06/interval-estimation.html" | relative_url}})
+👉 [Interval Estimation]({{"/2021/05/06/interval-estimation" | relative_url}})
 
 포스트에 제시 되었던 HW 문제들은 아래의 포스트에 별도로 정리해두었다.
 
-👉 [Statistics - PS1]({{"/2021/06/06/statistics-ps1.html" | relative_url}})
+👉 [Statistics - PS1]({{"/2021/06/06/statistics-ps1" | relative_url}})
 
 <hr/>
 
-[^1]: \<statistic; 통계량\>은 random samples $X_1, ..., X_n$의 함수 $f(X_1, ..., X_n)$을 말한다. [Sampling Distribution]({{"/2021/04/25/sampling-distribution.html" | relative_url}}) 포스트 참고
+[^1]: \<statistic; 통계량\>은 random samples $X_1, ..., X_n$의 함수 $f(X_1, ..., X_n)$을 말한다. [Sampling Distribution]({{"/2021/04/25/sampling-distribution" | relative_url}}) 포스트 참고

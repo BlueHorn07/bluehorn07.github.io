@@ -14,7 +14,7 @@ toc_sticky: true
 
 <hr/>
 
-- [Introduction to AI]({{"/2021/05/20/intro-to-artificial-intelligence.html" | relative_url}})
+- [Introduction to AI]({{"/2021/05/20/intro-to-artificial-intelligence" | relative_url}})
 
 ## Reflex-based Model
 

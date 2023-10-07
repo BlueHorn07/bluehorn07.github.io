@@ -228,7 +228,7 @@ $$
 \frac{\bar{X} - \mu}{S / \sqrt{n}}
 $$
 
-어라! 이 식은 [student's t-distribution]({{"/2021/04/27/student-t-distribution.html" | relative_url}})에서 이미 살펴보았다.
+어라! 이 식은 [student's t-distribution]({{"/2021/04/27/student-t-distribution" | relative_url}})에서 이미 살펴보았다.
 
 $$
 \frac{\bar{X} - \mu}{S / \sqrt{n}} \; \overset{D}{\sim} \; t(n-1)
@@ -304,12 +304,12 @@ the error is $\left\| \bar{x} - \mu \right\| \le z_{\alpha/2} \cdot \frac{\sigma
 
 이어지는 포스트들에서는 상황별로 \<Interval Estimation\>을 수행하는 방법을 살펴볼 예정이다! 🤩
 
-- [Prediction & Tolerance Estimation]({{"/2021/05/13/prediction-and-tolerance-interval.html" | relative_url}})
-- [Two Samples Estimation: Diff Btw Two Means]({{"/2021/05/13/two-samples-estimation-diff-btw-two-means.html" | relative_url}})
-- [Two Samples Estimation: Paired Observations]({{"/2021/05/13/two-samples-estimation-paired-observations.html" | relative_url}})
-- [Proportion Estimation]({{"/2021/05/14/proportion-estimation-on-bernoulli.html" | relative_url}})
+- [Prediction & Tolerance Estimation]({{"/2021/05/13/prediction-and-tolerance-interval" | relative_url}})
+- [Two Samples Estimation: Diff Btw Two Means]({{"/2021/05/13/two-samples-estimation-diff-btw-two-means" | relative_url}})
+- [Two Samples Estimation: Paired Observations]({{"/2021/05/13/two-samples-estimation-paired-observations" | relative_url}})
+- [Proportion Estimation]({{"/2021/05/14/proportion-estimation-on-bernoulli" | relative_url}})
   - Single Sample Estimation: Proportion Estimation
   - Two Samples Estimation: Diff btw Two Proportions
-- [Variance Estimation]({{"/2021/05/16/variance-estimation.html" | relative_url}})
+- [Variance Estimation]({{"/2021/05/16/variance-estimation" | relative_url}})
   - Single Sample Estimation: Variance Estimation
   - Two Samples Estimation: The Ratio of Two Variances
