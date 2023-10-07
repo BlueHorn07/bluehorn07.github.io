@@ -1,6 +1,8 @@
 ---
 title: Development
 permalink: /topic/development
+toc: true
+toc_sticky: true
 ---
 
 “Talk is cheap. Show me the code.” - Linus Torvalds
@@ -10,24 +12,47 @@ permalink: /topic/development
 
 <hr/>
 
-- [CORS]({{"/2020/12/16/cors.html" | relative_url}})
-- [좋은 REST API]({{"/2020/12/24/good-rest-api.html" | relative_url}})
-- [Proxy]({{"/2021/05/01/proxy.html" | relative_url}})
+## Kubernetes
 
-<div class="proof" markdown="1">
+- [CKA 시험 후기](/2023/02/25/Pod-Networking)
+- [EKS Cluster Setup 후기](/2023/04/07/eks-cluster-setup-review/)
 
-**기획 시리즈: Web Authentication**
+- [Pod Internal Networking](/2023/02/25/Pod-Networking/)
+- [Static Pod](/2023/02/13/Static-Pod/)
+- [DaemonSet](/2023/02/09/DaemonSet/)
+- [Persistent Volume & Persistent Volume Claim](/2023/02/03/Persistent-Volume/)
+- [Pod and Volume](/2023/02/02/Pod-and-Volume/)
+- [Certificate Signing Request](/2023/02/14/Certificate-Signing-Request/)
+- [ServiceAccount](/2023/01/31/ServiceAccount/)
+- [Secret](/2023/01/29/Secret/)
+- [ConfigMap](/2023/01/29/Secret/)
+- [KubeConfig](/2023/01/28/ConfigMap/)
+- [`kubectl` 명령어 핸드북](/2023/01/28/kubectl-command-handbook/)
 
-1. Cookie & Session & JWT
-2. [OAuth]({{"/2021/05/01/OAuth.html" | relative_url}})
-3. [OpenID Connect(OIDC)]({{"/2021/05/02/OpenID-Connect.html" | relative_url}})
-4. [SSO]({{"/2021/05/02/SSO.html" | relative_url}}) 👈
-5. [SAML]({{"/2021/05/02/SAML.html" | relative_url}})
+## ElasticSearch
 
-</div>
+- [Lucene Segment](/2023/05/19/Lucene-Segment/)
+- [Document CRUD](/2023/05/17/ElasticSearch-Document-CRUD/)
+- [Index CRUD](/2023/05/15/ElasticSearch-Index-CRUD/)
 
-# 독서
+## Authentication
 
-- [『오늘 밤은 굶고 자야지』 박상영]({{"/2021/01/19/today-not-eat-before-sleep.html" | relative_url}})
-- [종만북 리딩 - 1]({{"/2021/02/15/jongman-book.html" | relative_url}})
+- Cookie & Session & JWT
+- [전송 계층 보안(TLS)](/2023/01/28/transport-layer-security/)
+- [OAuth]({{"/2021/05/01/OAuth" | relative_url}})
+- [OpenID Connect(OIDC)]({{"/2021/05/02/OpenID-Connect" | relative_url}})
+- [SSO]({{"/2021/05/02/SSO" | relative_url}})
+- [SAML]({{"/2021/05/02/SAML" | relative_url}})
 
+## Etc
+
+- [CORS]({{"/2020/12/16/cors" | relative_url}})
+- [좋은 REST API]({{"/2020/12/24/good-rest-api" | relative_url}})
+- [Proxy]({{"/2021/05/01/proxy" | relative_url}})
+- [Network Devices](/2023/02/12/network-devices/)
+- [Linux IP Commands](/2023/02/05/Linux-IP-commands/)
+
+## 독서
+
+- [『오늘 밤은 굶고 자야지』 박상영]({{"/2021/01/19/today-not-eat-before-sleep" | relative_url}})
+- [종만북 리딩 - 1]({{"/2021/02/15/jongman-book" | relative_url}})
