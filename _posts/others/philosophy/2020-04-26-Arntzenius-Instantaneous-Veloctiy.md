@@ -15,7 +15,7 @@ Are There Really Instantaneous Velocities?, Arntzenius, 2000<br>
 
 ## 중략
 
-### 전자기학과 time-reversal
+## 전자기학과 time-reversal
 **주의**: <br>
 저자는 지금 `time-reversible`과 `inverse sequence`에 대한 우리의 통념을 비틀고 있다.<br><br>
 
@@ -43,7 +43,7 @@ Are There Really Instantaneous Velocities?, Arntzenius, 2000<br>
 
 <hr>
 
-### 전자기학과 time direction
+## 전자기학과 time direction
 잠깐 딴 길로는 가는 내용인데,  "전자기학이 time-reversal하지 않다"는 것이 사실이라면, "시간의 절대적 방향이 존재한다<small>*Time has an objective direction*</small>"라고 생각할 수 있을까?<br>
 
 "time-reversal 하지 않다"는 말은 "역과정이 불가능하다"는 말이니까, "물리현상은 한쪽 방향으로만 일어난다"는 말이 되고, 이것은 곧 "시간이 한쪽 방향으로만 흐른다"는 말이 되면서 결국 "시간의 절대적 방향이 존재한다"는 결론을 도출하게 만든다.<br>
@@ -83,7 +83,7 @@ time-reveral에 대한 설명은 성공했는데, 오히려 "시간의 방향성
 
 <hr>
 
-### 결론
+## 결론
 결국 우리의 문제를 해결하려면, 우리는 앞에서 했던 논증의 방식이 아니라 다른 방식을 채용해서 문제를 해결해야 한다. <br>
 
 그래서, 우리는 전자기장이 *geometric* object이고, 전자기장의 값은 우리가 쓰는 space-time coordinate에 의존하는 값이라고 주장하자. 그리고 전자기장의 값이 velocity 처럼 space-time transformation 상황에서 변하는 값이라고 주장해야 한다.<br>
