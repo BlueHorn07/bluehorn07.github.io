@@ -1,5 +1,5 @@
 ---
-title: "Arntzenius, Instantaneous Veloctiy"
+title: "Arntzenius, Instantaneous Velocity"
 toc: true
 toc_sticky: true
 categories: [Philosophy]
