@@ -8,7 +8,7 @@ excerpt: 발로란트, Marvel Sanp의 아키텍처와 AWS Serverless 트렌드, 
 
 ![](/images/development/Games-on-AWS-2023/hero.jpeg){: .align-center style="width: 40%;"}
 
-작년에 이어 올해도 "Games on AWS"에 다녀왔다. 늘 삼성역 코엑스에서 진행했었는데, 이번에는 판교에서 진행했다!
+작년에 이어 올해도 "Games on AWS"에 다녀왔다. 늘 삼성 코엑스에서 진행했었는데, 이번에는 판교에서 진행했다!
 
 오랜만에 아침 일찍 지하철 타고 이동하려니 너무 피곤했다... ㅠㅠ
 
@@ -16,7 +16,9 @@ excerpt: 발로란트, Marvel Sanp의 아키텍처와 AWS Serverless 트렌드, 
 
 세션은 전반적으로 Game에 관련된 주제들인데, 흐음 의외로 작년 GoW 보다 들을게 없는 느낌이었다...;;
 
-그래도 재밌게 들었던 세션, 세션 들어면서 했던 생각들을 정리해보겠다.
+그래도 참석 했던 세션들을 재밌게 들었기에 세션 내용과 생각들을 정리해보겠다.
+
+<hr/>
 
 # 키노트 세션
 
@@ -48,6 +50,7 @@ AWS 기술 블로그에선 NC Varco LLM으로 한국어 chatbot 만드는 예제
 
 - [VARCO LLM과 Amazon OpenSearch를 이용하여 한국어 Chatbot 만들기](https://aws.amazon.com/ko/blogs/tech/korean-chatbot-using-varco-llm-and-opensearch/)
 
+<hr/>
 
 # Marvel Snap - AWS 서버리스 만으로 올해의 모바일 게임 만들기
 
@@ -125,6 +128,7 @@ Marvel Snap의 Serverless 아키텍처는 AWS SA가 극찬할 정도의 아키�
 
 이번 Marvel Snap의 세션으로 Serverless에 대한 내 인식이 크게 바뀐 것 같다. 어쩌면 다음 사내 GameJam에서는 Serverless 모델을 채택하게 될 것 같다 ㅎㅎ
 
+<hr/>
 
 # Riot Games에서의 EKS 사용법
 
@@ -171,6 +175,8 @@ Karpenter도 마찬가지로 Pod이 들어갈 적절한 노드가 없는 경우�
 단, K8s CAS와 Karpenter 둘다 Node Scaler의 기능을 하기 때문에 둘을 함께 쓰는 건 비추라고 한다.
 
 아마 팀에서는 K8s CAS로 NodeGroup 사용해 Node Scaling을 하는 것 같은데, 언젠가 Karpenter도 시험해보면 좋을 것 같다 ㅎㅎ
+
+<hr/>
 
 # 마무리: 컨퍼런스는 즐거워
 
