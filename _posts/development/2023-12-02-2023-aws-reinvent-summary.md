@@ -6,7 +6,11 @@ categories: ["Develop"]
 excerpt: 직접 다녀온 🎰 2023 AWS re:invent에서 소개된 신기술과 신기능 정리 및 소개!
 ---
 
+![](/images/development/2023-AWS-reinvent/reinvent-1.jpeg)
+
 회사에서 AWS re:invent를 보내준 덕분에 처음으로 미국도 다녀오고, 전세계 개발자가 모인 현장을 경험할 수 있었다 ㅎㅎ re:invent를 그냥 놀러만 간 건 아라서 AWS re:invent에서 소개된 신기술과 신기능들을 정리해보겠다!
+
+![](/images/development/2023-AWS-reinvent/reinvent-2.jpeg)
 
 아, 그런데 이번 AWS re:invent 2023에서 소개된 기술 말고도, 예전에 출시/소개 되었는데 이번에 자료 정리하면서 본인이 새로 알게된 서비스도 같이 적었다!
 
@@ -30,7 +34,7 @@ EKS 클러스터를 생성할 때, Promethues 지표를 내보내게 할 수 있
 
 AWS에서 서비스하는 managed Prometheus와 Grafana.
 
-현재는 eks 클러스터 마다 prometheus를 띄워서 지표를 보고 있는데, 클러스터에 독립적인 하나의 prometheus만을 띄워서 프메 지표를 수집하는 용도로 쓸 수 있지 않을까?
+현재는 eks 클러스터 마다 prometheus를 띄워서 지표를 보고 있는데, 클러스터 독립적인 하나의 prometheus만을 띄워서 프메 지표를 수집하는 용도로 쓸 수 있지 않을까?
 
 ## AWS IRSA(IAM Roles for Service Account)
 
@@ -43,7 +47,7 @@ EKS에 부여된 OIDC(Open ID Connect)와 AWS STS를 이용해 Pod에 IAM Role�
 ```yaml
 kind: ServiceAccount
 annotations:
-    eks.amazonaws.com/role-arn: arn:aws:iam::280144880143:role/ExternalSecretsRole
+  eks.amazonaws.com/role-arn: arn:aws:iam::280144880143:role/ExternalSecretsRole
 ```
 
 본래 K8s ServiceAccount은 K8s Pod이 K8s 클러스터 API에 대한 권한을 정의하는 용도로 사용되는데, IRSA에선 ServiceAccount를 사용해 K8s Pod에 AWS IAM 권한을 부여한다!
@@ -81,14 +85,15 @@ IRSA의 단점.
 
 https://aws.amazon.com/blogs/containers/amazon-eks-pod-identity-a-new-way-for-applications-on-eks-to-obtain-iam-credentials/
 
-- IRSA는 ServiceAccount에 부여된 IAM Role에 해당 EKS 클러스터의 OIDC provider 내용을 Trusted Relationship에 추가해줘야 한다.
+- IRSA는 ServiceAccount가 사용하려는 IAM Role에서 해당 EKS 클러스터의 OIDC provider 정보를 Trusted Relationship에 추가해줘야 한다.
 - IRSA는 처음에 EKS에 대한 OIDC provider를 만들어 줘야 하는데, 이걸 만드려면 EKS admin 권한이 필요하다. 그리고 EKS cluster 마다 OIDC provider 만드는게 번거롭다 등등
 
 그럼 Pod Identity는 어떤가?
 
 ![](https://d2908q01vomqb2.cloudfront.net/fe2ef495a1152561572949784c16bf23abb28057/2023/12/20/Pod-Identity-Worklow.jpg)
 
-<p>출처: https://aws.amazon.com/blogs/containers/amazon-eks-pod-identity-a-new-way-for-applications-on-eks-to-obtain-iam-credentials/</p>
+<p style="text-align:center" markdown="1">출처: [AWS Blog: Amazon EKS Pod Identity: a new way for applications on EKS to obtain IAM credentials
+](https://aws.amazon.com/blogs/containers/amazon-eks-pod-identity-a-new-way-for-applications-on-eks-to-obtain-iam-credentials/)</p>
 
 - OIDC provider 셋업 없이 pod에 IAM role 부여 가능.
 - AWS STS 거치지 않고, EKS 전용 Pod Identity API 통해서 AssumeRole 수행
@@ -97,10 +102,12 @@ https://aws.amazon.com/blogs/containers/amazon-eks-pod-identity-a-new-way-for-ap
 
 ![](https://d2908q01vomqb2.cloudfront.net/fe2ef495a1152561572949784c16bf23abb28057/2023/12/21/Agent-Addon.jpg)
 
-단, 이걸 하려면 "Amazon EKS Pod Identity Agent"라는 EKS addon을 설치해야 한다. 그리고 Trust Relationship을 적는 것 대신 EKS 콘솔 또는 AWS CLI 통해서 해당 ServiceAccount에 IAM Role을 바인딩 해주면 된다!
+단, 요 Pod Identity 기능을 사용하려면 **"Amazon EKS Pod Identity Agent"라는 EKS addon을 설치해야** 한다. 그리고 Trust Relationship을 적는 것 대신 EKS 콘솔 또는 AWS CLI 통해서 해당 ServiceAccount에 IAM Role을 바인딩 해주면 된다!
 
 
 ## EMR on EKS
+
+https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/emr-eks.html
 
 ![](/images/development/2023-AWS-reinvent/emr-on-eks.png)
 
@@ -128,6 +135,8 @@ nitro 시스템 도입으로 인해 EC2는
 nitro system은 c5, m5, r5 등 5세대 인스턴스부터 적용됨. 그래서 c5d 인스턴스는 c4 인스턴스보다 25~50% 개선된 성능을 제공함.
 
 ## Gaviton4 기반 EC2 r8g 인스턴스 출시
+
+https://aws.amazon.com/ko/blogs/korea/join-the-preview-for-new-memory-optimized-aws-graviton4-powered-amazon-ec2-instances-r8g/
 
 Gaviton 프로세스 제품군 중 가장 최신 세대.
 
@@ -179,18 +188,13 @@ with checkpoint.reader(CHECKPOINT_URI + "epoch0.ckpt") as reader:
 model.load_state_dict(state_dict)
 ```
 
-## AWS Billing 데이터를 정기적으로 AWS S3 버킷에 전달하는게 가능해짐.
-
-https://docs.aws.amazon.com/cur/latest/userguide/cur-s3.html
-
-우리 회사는 MSP 측에서 특정 버킷에 매일 데이터를 넣어주시는 중.
-
 ## S3 Batch Operation
 
 https://aws.amazon.com/about-aws/whats-new/2023/11/amazon-s3-batch-operations-buckets-prefixes-single-step/
 
 ![](/images/development/2023-AWS-reinvent/s3-batch-operations.png)
-<p>출처: https://docs.aws.amazon.com/AmazonS3/latest/userguide/batch-ops-create-job.html</p>
+<p style="text-align:center" markdown="1">출처: [AWS Document: Creating an S3 Batch Operations job
+](https://docs.aws.amazon.com/AmazonS3/latest/userguide/batch-ops-create-job.html)</p>
 
 S3 버킷에 전체 obj, prefix, suffix 조건으로 작업을 수행하는 job을 추가할 수 있게 됨. 해당 job 기능의 이름이 "Batch Operation"임.
 
@@ -220,7 +224,7 @@ ETL 데이터 파이프라인을 구축하지 않거나 최소 정도로 구축�
 
 https://aws.amazon.com/about-aws/whats-new/2023/11/amazon-opensearch-zero-etl-integration-s3-preview/
 
-OCU(OpenSearch Conputing  Unit) 이용한 S3 서버리스 Ingestion 지원.
+OCU(OpenSearch Conputing Unit) 이용한 S3 서버리스 Ingestion 지원.
 
 지금은 logstash로 kafka topic에서 OpenSearch로 데이터를 연동하는데, S3에서 바로 연동 해도 될 듯.
 
@@ -287,7 +291,7 @@ Apache Hive에서 대규모 데이터를 다룰 때 발생하는 문제를 해�
 
 <p>출처: https://learn.microsoft.com/ko-kr/azure/search/vector-search-overview</p>
 
-텍스트, 이미지 등 비정형 데이터의 의미와 컨텍스트를 있는 그대로가 아닌 embedding된 숫자 표현으로 변환해 저장하고, 검색 역시 검색어를 embedding된 숫자 표현으로 변환해 두 embedding 사이ㅡ이 유사도로 검색을 수행하는 방법.
+텍스트, 이미지 등 비정형 데이터의 의미와 컨텍스트를 있는 그대로가 아닌 embedding된 숫자 표현으로 변환해 저장하고, 검색 역시 검색어를 embedding된 숫자 표현으로 변환해 두 embedding 사이의 유사도로 검색을 수행하는 방법.
 
 ### Vector Search for MemoryDB for Redis
 
@@ -341,7 +345,7 @@ https://aws.amazon.com/ko/bedrock/
 
 ## Amazon Trascribe
 
-AWS애소 제공하는 Audio to Text 서비스.
+AWS에서 제공하는 Audio to Text 서비스.
 
 100+개 언어를 자동으로 인식. 문화권과 악센트별 음성 데이터를 학습 했다고 함.
 
@@ -414,4 +418,5 @@ AmazonQ와 통합해 개발 요구조건을 명시하면, 그걸 기반으로 �
 # 참고자료
 
 - [요기요 기술블로그: 2023 AWS re:invent 후기](https://techblog.yogiyo.co.kr/aws-re-invent-2023-%EC%B0%B8%EA%B4%80%EA%B8%B0%EC%99%80-%EC%97%B0%EC%82%AC%EC%9E%90-%ED%9B%84%EA%B8%B0-1-d14f9458a1c8)
+- 2023 AWS re:invent 직접 가서 듣고 온 키노트 🤓
 - 그외 AWS 기술블로그와 가이드 문서
