@@ -19,7 +19,7 @@ permalink: /about/
 
 <a href="/topic/development" target="_blank"><span class="dev-tag">개발</span></a> 데이터 엔지니어로서 겪은 문제들과 해결방법을 저 자신의 말로 다시 표현해보기도 하고, 스스로 공부한 주제들을 블로그에 정리하고 있습니다 📚 Kubernetes, ELK, Istio를 공부 했던 내용을 정리하고, 어려웠던 주제는 최대한 쉽게 풀어적어보았습니다 🍺 AWS re:invent와 Databricks Summit 등에 참석하고 접한 내용도 정리해서 올리고 있습니다 😁
 
-<a href="/topic/mathematics" target="_blank"><span class="math-tag">Math</span></a> 수학과 복수전공을 하면서, 공부한 내용을 정리하고 있습니다. 주로 대수, 통계, 수리논리의 내용 위주로 다루고 있으며, 배경과 증명까지 깊게 다루려고 노력하고 있습니다 💎 (참고로 제일 좋아하는 과목은 "집합론(Set Theory)" 입니다!!)
+<a href="/topic/mathematics" target="_blank"><span class="math-tag">Math</span></a> 수학과 복수전공을 하면서, 공부한 내용을 정리하고 있습니다. 주로 대수, 통계, 수리논리의 내용 위주로 다루고 있으며, 배경과 증명까지 깊게 다루려고 노력하고 있습니다 💎 (제일 좋아하는 과목은 "집합론(Set Theory)" 입니다!!)
 
 <a href="/topic/computer-science" target="_blank"><span class="cs-tag">CS</span></a> Algorithm과 Machine Learning의 내용들을 폭넓게 다루고 있으며, 수학적인 배경과 증명까지 깊게 다루려고 노력하고 있습니다 🎈
 
