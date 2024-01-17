@@ -1,5 +1,9 @@
 User-agent: *
 Allow: /
-Disallow: /2021/05/11/Hello-Bagelcode.html
+Disallow: /2021/05/11/Hello-Bagelcode/
+Disallow: /page*/
+Disallow: /topic/
+Disallow: /category/
+Disallow: /categories/
 
 Sitemap: https://bluehorn07.github.io/sitemap.xml
