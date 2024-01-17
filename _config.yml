@@ -303,3 +303,7 @@ defaults:
       layout: single
       author_profile: true
       sitemap: false
+  - scope:
+      path: "page*"
+    values:
+      sitemap: false
