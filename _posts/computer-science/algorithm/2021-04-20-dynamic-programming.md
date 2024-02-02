@@ -29,7 +29,7 @@ DP의 컨셉은 아래와 같다.
 
 <br/>
 
-DP 테크닉의 중심은 \<Memoization\>이라고 할 수 있다. subproblem의 결과를 바탕으로 problem을 풀기 떄문에 당연히 subproblem의 결과를 저장(memo)할 필요가 있고, 이때 쓰는 테크닉이 바로 \<Memoization\>이다. 간단히 말하자면, \<Memoization\>은 그냥 <span class="half_HL">subproblem의 결과를 배열에 저장한다!</span>이다. 이 Memoization을 어떻게 할껀지 고민하는 것 역시 DP에서 중요한 부분이기 때문에 많은 연습이 필요하다.
+DP 테크닉의 중심은 \<Memoization\>이라고 할 수 있다. subproblem의 결과를 바탕으로 problem을 풀기 때문에 당연히 subproblem의 결과를 저장(memo)할 필요가 있고, 이때 쓰는 테크닉이 바로 \<Memoization\>이다. 간단히 말하자면, \<Memoization\>은 그냥 <span class="half_HL">subproblem의 결과를 배열에 저장한다!</span>이다. 이 Memoization을 어떻게 할껀지 고민하는 것 역시 DP에서 중요한 부분이기 때문에 많은 연습이 필요하다.
 
 <hr/>
 

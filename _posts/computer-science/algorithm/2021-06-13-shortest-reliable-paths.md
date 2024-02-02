@@ -11,7 +11,7 @@ categories: ["Algorithm"]
 
 <hr/>
 
-주어진 그래프 $G$에서 최대 $k$개의 edge를 거쳐 노드 $s$에서 노드 $t$로 가는 shortest path를 찾고 싶다. 이전의 \<Dijkstra Algothm\>의 상황과 비슷하지만, <span class="half_HL">최대 $k$개의 edge를 거친다</span>는 조건이 추가 되었다. 아래의 그래프를 통해 살펴보면, $B$에서 $T$로 갈 떄, 최대 $1$개의 edge만 거칠 수 있다면, 비용이 $4$인 edge를 거쳐서 도착해야 한다. 이것은 "at most $k$ edge"라는 조건 떄문에 the shortest path인 $(B, D, T)$의 비용 $2$보다 더 큰 비용을 지불하게 된 것이다.
+주어진 그래프 $G$에서 최대 $k$개의 edge를 거쳐 노드 $s$에서 노드 $t$로 가는 shortest path를 찾고 싶다. 이전의 \<Dijkstra Algothm\>의 상황과 비슷하지만, <span class="half_HL">최대 $k$개의 edge를 거친다</span>는 조건이 추가 되었다. 아래의 그래프를 통해 살펴보면, $B$에서 $T$로 갈 때, 최대 $1$개의 edge만 거칠 수 있다면, 비용이 $4$인 edge를 거쳐서 도착해야 한다. 이것은 "at most $k$ edge"라는 조건 때문에 the shortest path인 $(B, D, T)$의 비용 $2$보다 더 큰 비용을 지불하게 된 것이다.
 
 <div class="img-wrapper">
   <img src="{{ "/images/algorithm/shortest-reliable-path-1.png" | relative_url }}" width="300px">

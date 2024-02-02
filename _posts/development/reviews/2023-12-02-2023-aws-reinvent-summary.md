@@ -152,7 +152,7 @@ https://aws.amazon.com/s3/storage-classes/express-one-zone/
 
 데이터를 특정 region의 한 AZ에 저장함. 그래서 S3 Standard에 비해 엑세스 속도가 10배 향상, 요청 비용이 50% 감소 한다고 함.
 
-단점은 One AZ이기 떄문에 해당 AZ의 데이터센터 화재/수해 등의 사고 발생 시 데이터 유실됨. 또, 10x 속도를 보장하기 위해선 해당 one zone S3에 접근하는 compute 역시 같은 AZ 위에 띄워야 함.
+단점은 One AZ이기 때문에 해당 AZ의 데이터센터 화재/수해 등의 사고 발생 시 데이터 유실됨. 또, 10x 속도를 보장하기 위해선 해당 one zone S3에 접근하는 compute 역시 같은 AZ 위에 띄워야 함.
 
 ## PyTorch 용 S3 커넥터
 
@@ -412,6 +412,10 @@ PR, Issue, CI/CD 같은 기능들이 모두 들어 있고, AWS Code 시리즈(Co
 ![](/images/development/2023-AWS-reinvent/code-catalyst-amazon-q.png)
 
 AmazonQ와 통합해 개발 요구조건을 명시하면, 그걸 기반으로 거의 완성본인 형태의 PR을 만들어 주는 기능도 있다고 함.
+
+<hr/>
+
+나의 첫 미국 방문이었는데, 회사에서 좋은 사람들과 대표님과 함께 다녀와서 진짜 너무 편하고 또 재밌게 다녀왔다!! ㅎㅎ 가서 맛있는 것도 정말 많이 먹었는데, 맛집들을 네이버 블로그에 한번 정리해봤다 [🎰 라스베가스 여행기: 맛집 탐방 🤤](https://blog.naver.com/hamverg/223302580589)
 
 <hr/>
 

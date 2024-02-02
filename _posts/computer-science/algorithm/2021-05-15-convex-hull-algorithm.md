@@ -50,7 +50,7 @@ $$
 \frac{q_y - p_y}{q_x - p_x} \quad \text{vs.} \quad \frac{r_y - p_y}{r_x - p_x}
 $$
 
-이때, 식에 나눗셈이 있는 것은 "divide by zero"의 위험이 있기 떄문에, 식을 곱셈의 형태로 바꿔준다.
+이때, 식에 나눗셈이 있는 것은 "divide by zero"의 위험이 있기 때문에, 식을 곱셈의 형태로 바꿔준다.
 
 $$
 (r_x - p_x) \cdot (q_y - p_y) \quad \text{vs.} \quad (q_x - p_x) \cdot (r_y - p_y)

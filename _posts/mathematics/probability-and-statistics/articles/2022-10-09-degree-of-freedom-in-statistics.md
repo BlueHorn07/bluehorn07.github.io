@@ -118,7 +118,7 @@ Sample Variance $S^2$에서 왜 분모에 $n$ 대신 $n-1$이 들어가는지 �
 
 통계량(Statistic)을 정의하는 이유는 여러 샘플에서 추출한 값들을 종합해 그것들을 대표하는 하나의 값을 만들기 위해서다. 이때, 통계량(Statistic)에 함께 따라오는 DOF는 그 대표값에 실질적으로 얼만큼의 독립적인 요소가 있는지를 표현한다: "How many numbers in your statistic are *actually* independent."
 
-다시 Sample Variance $S^2$의 경우를 보자. $S^2$는 $n$개 Sample로부터 유도되는 값이다. 그러나 Sample Mean $\bar{X}$의 값이 $\bar{x}$로 정해져 있다면, 이것은 통계량 Sample Variance를 구하는 데에 제약(Constraint)가 된다. $n-1$ Sample의 값이 정해진 이후에 마지막 한 Sample의 값이 고정되기 떄문이다. 따라서 처음에 살펴본 DOF에 대한 수식에 따라 $S^2$의 자유도는
+다시 Sample Variance $S^2$의 경우를 보자. $S^2$는 $n$개 Sample로부터 유도되는 값이다. 그러나 Sample Mean $\bar{X}$의 값이 $\bar{x}$로 정해져 있다면, 이것은 통계량 Sample Variance를 구하는 데에 제약(Constraint)가 된다. $n-1$ Sample의 값이 정해진 이후에 마지막 한 Sample의 값이 고정되기 때문이다. 따라서 처음에 살펴본 DOF에 대한 수식에 따라 $S^2$의 자유도는
 
 $$
 \begin{aligned}

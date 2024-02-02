@@ -172,7 +172,7 @@ $$
 
 <hr/>
 
-2014년에는 \<LSTM\>을 개선한 [\<GRU; Gated Recurrent Unit\>](https://en.wikipedia.org/wiki/Gated_recurrent_unit)라는 sequential model이 제시되었다. \<LSTM\>처럼 게이트(gate)가 달려있지만, $h_t$ 하나의 상태만을 기억하기 떄문에 \<LSTM\>보다 더 빠르게 학습한다고 한다. \<GRU\>에 대한 자세한 내용은 [이 아티클](https://yjjo.tistory.com/18)을 참고하라.
+2014년에는 \<LSTM\>을 개선한 [\<GRU; Gated Recurrent Unit\>](https://en.wikipedia.org/wiki/Gated_recurrent_unit)라는 sequential model이 제시되었다. \<LSTM\>처럼 게이트(gate)가 달려있지만, $h_t$ 하나의 상태만을 기억하기 때문에 \<LSTM\>보다 더 빠르게 학습한다고 한다. \<GRU\>에 대한 자세한 내용은 [이 아티클](https://yjjo.tistory.com/18)을 참고하라.
 
 \<RNN\>, \<LSTM\>은 자연어(Natural Language)와 시계열 데이터를 처리하는 가장 기본이 되는 모델이다. 그러니 이번 내용에 익숙해지는 것을 추천한다.
 

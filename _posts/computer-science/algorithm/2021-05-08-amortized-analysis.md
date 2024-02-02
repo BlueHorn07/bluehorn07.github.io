@@ -47,7 +47,7 @@ amortized cost = actual cost + accounting cost
 
 <br/>
 
-다시 Stack의 예시로 돌아와보자. Stack은 평소에는 `push`, `pop` 수행할 떄, $1$의 비용이 든다. 그런데 만약 Stack의 용량(capacity)가 꽉 차게 되면, \<Array Doubling\>이 발생하게 된다!! 😲
+다시 Stack의 예시로 돌아와보자. Stack은 평소에는 `push`, `pop` 수행할 때, $1$의 비용이 든다. 그런데 만약 Stack의 용량(capacity)가 꽉 차게 되면, \<Array Doubling\>이 발생하게 된다!! 😲
 
 이 Array Doubling을 수행하기 위해 "transferring cost"가 발생한다. 만약 원소 하나를 옮기는 데 드는 비용이 $t$라고 했을 때, $n$개 원소를 옮길 때에는 $n \times t$의 비용이 든다. 만약 이전의 "transferring cost"까지 모두 고려한다면, 전체 transferring cost는 $\le 2 \cdot n t$이다.
 
@@ -78,7 +78,7 @@ $2t$라는 비용은 Doubling 발생 여부와 상관없이 계속 지불하여 
 
 <br/>
 
-\<Amortized Analysis\>는 Advanced Data Structure를 다룰 때, 꼭 등장하는 테크닉이기 떄문에 반드시 숙지해야 하는 테크닉이다!! 😎
+\<Amortized Analysis\>는 Advanced Data Structure를 다룰 때, 꼭 등장하는 테크닉이기 때문에 반드시 숙지해야 하는 테크닉이다!! 😎
 
 <br/>
 

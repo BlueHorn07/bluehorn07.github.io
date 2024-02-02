@@ -20,7 +20,7 @@ Static Pod으로 Pod을 띄우면, `kubectl`로 해당 Pod을 삭제할 수 없�
 
 ## 미러 파드(mirror pod)
 
-Static Pod은 api-server가 아니라 kubelet 데몬이 관리하는 것이다. 그러나 `kubelet get pods`를 통해서 etcd Pod 등 Static Pod들을 확인할 수 있다. 이것은 kubelet 데몬이 api-server에 Static Pod에 대한 미러 파드(mirror pod) 생성을 요청하기 떄문이다. 즉, 우리가 `kubelet get pods`를 통해 보는 etcd Pod은 Static Pod의 본체가 아니라 분신인 셈이다!
+Static Pod은 api-server가 아니라 kubelet 데몬이 관리하는 것이다. 그러나 `kubelet get pods`를 통해서 etcd Pod 등 Static Pod들을 확인할 수 있다. 이것은 kubelet 데몬이 api-server에 Static Pod에 대한 미러 파드(mirror pod) 생성을 요청하기 때문이다. 즉, 우리가 `kubelet get pods`를 통해 보는 etcd Pod은 Static Pod의 본체가 아니라 분신인 셈이다!
 
 그래서 `kubelet delete pod ...`을 하더라도 미러 파드가 잠시 내려갈 뿐, **본체인 Static Pod은 내려가지 않는다!**
 

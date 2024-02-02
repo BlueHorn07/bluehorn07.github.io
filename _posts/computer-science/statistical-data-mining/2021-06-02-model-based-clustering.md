@@ -15,7 +15,7 @@ categories: ["Applied Statsitcs"]
 
 <hr/>
 
-앞에서 살펴본 \<K-means\>와 \<hierarchical\> clustering은 휴리스틱 기법에 속한다. 어떤 모델이 있는 것이 아니기 떄문에, statistical inference 역시 불가능하다. 또한, 실전에서는 categorical variable 때문에 "dissimilarity measure"를 정의하는 것도 쉽지 않다.
+앞에서 살펴본 \<K-means\>와 \<hierarchical\> clustering은 휴리스틱 기법에 속한다. 어떤 모델이 있는 것이 아니기 때문에, statistical inference 역시 불가능하다. 또한, 실전에서는 categorical variable 때문에 "dissimilarity measure"를 정의하는 것도 쉽지 않다.
 
 \<Model-based cluastering\>은 데이터셋의 모델, 즉 PDF $\text{Pr}(x)$을 estimation 하는 기법이다!
 

@@ -104,7 +104,7 @@ $$
 
 </div>
 
-확인할 점은 \<Binomial Distribution\>의 pmf $f(x)$가 정말로 pmf인지이다. 이것을 확인하려면 pmf $f(x)$의 합이 1이 됨을 보이면 된다. 이것은 \<**이항 정리 Binomial Theorem**\>을 통해 쉽게 보일 수 있다. 이 분포가 \<**Binomial**\>라는 이름인 이유가 이것 떄문이다.
+확인할 점은 \<Binomial Distribution\>의 pmf $f(x)$가 정말로 pmf인지이다. 이것을 확인하려면 pmf $f(x)$의 합이 1이 됨을 보이면 된다. 이것은 \<**이항 정리 Binomial Theorem**\>을 통해 쉽게 보일 수 있다. 이 분포가 \<**Binomial**\>라는 이름인 이유가 이것 때문이다.
 
 $$
 \sum_x f(x) = \sum^n_{k=0} \binom{n}{k} p^k (1-p)^{n-k} = \left(p + (1-p)\right)^n

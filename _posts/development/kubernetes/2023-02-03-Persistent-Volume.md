@@ -128,7 +128,7 @@ spec:
 ```
 
 Pod는 PVC를 볼륨으로 인식하고 사용한다.
-이때, Pod에 할당된 PVC는 Pod과 연결되어 있는 동안 시스템에서 임의로 삭제할 수 없다. 이것을 "Storage Object in Use Protetion"라고 한다. 사용 중인 데이터 스토리지를 삭제하는 것은 치명적인 결과를 초래하기 떄문이다.
+이때, Pod에 할당된 PVC는 Pod과 연결되어 있는 동안 시스템에서 임의로 삭제할 수 없다. 이것을 "Storage Object in Use Protetion"라고 한다. 사용 중인 데이터 스토리지를 삭제하는 것은 치명적인 결과를 초래하기 때문이다.
 
 이때, Pod과 PVC는 Many-to-Many 관계가 가능하다. 하나의 Pod이 여러 PVC를 쓸 수도 있고, 하나의 PVC가 여러 Pod에 연결될 수도 있다.
 

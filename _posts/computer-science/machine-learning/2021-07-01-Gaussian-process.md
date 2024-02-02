@@ -123,7 +123,7 @@ $$
 
 ### Probability distribution over functions with infinite domains
 
-이번에는 $\mathcal{X}$에서 추출한 collection을 이용해 random variable의 집합 $\\{ h(x) : x \in \mathcal{X}\\}_m$를 정의해보자. $h(\cdot)$가 probabilistic 하게 결정되는 random function이기 떄문에 $h(x)$도 random variable 이다. 😉 이때 domain set $\mathcal{X}$에 대해 별도로 특정하지는 않았다. 이전과 같은 finite domain을 생각해도 좋고, $\mathbb{R}$와 같은 infinite dimension을 생각해도 좋다.
+이번에는 $\mathcal{X}$에서 추출한 collection을 이용해 random variable의 집합 $\\{ h(x) : x \in \mathcal{X}\\}_m$를 정의해보자. $h(\cdot)$가 probabilistic 하게 결정되는 random function이기 때문에 $h(x)$도 random variable 이다. 😉 이때 domain set $\mathcal{X}$에 대해 별도로 특정하지는 않았다. 이전과 같은 finite domain을 생각해도 좋고, $\mathbb{R}$와 같은 infinite dimension을 생각해도 좋다.
 
 우리는 finite collection of random variable $\\{ h(x) : x \in \mathcal{X}\\}_m$로 multi-variate Gaussian distribution을 정의할 수 있다. 이때, $\mathcal{X}$를 domain으로 갖는 $m(x)$와 $k(x, x')$는 mean function, covariance function을 아래와 같이 정의할 수 있을 것이다.
 

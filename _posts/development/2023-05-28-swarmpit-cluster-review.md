@@ -61,7 +61,7 @@ docker run -it --rm \
   <img src="{{ "/images/development/swarmpit-resource.png" | relative_url }}" width="100%">
 </div>
 
-요게 Swarmpit 만을 실행 했을 떄의 리소스 정보다! 요걸로 대략적인 스펙을 확인할 수 있는데,
+요게 Swarmpit 만을 실행 했을 때의 리소스 정보다! 요걸로 대략적인 스펙을 확인할 수 있는데,
 
 - CPU: 0.75
 - Mem: 530 Mb
