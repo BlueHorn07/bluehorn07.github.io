@@ -160,7 +160,7 @@ https://aws.amazon.com/ko/about-aws/whats-new/2023/11/amazon-s3-connector-pytorc
 
 소스코드: https://github.com/awslabs/s3-connector-for-pytorch
 
-Pytorch가 S3에 있는 훈련 데이터와, S3에 있는 체크포인트 R/W를 좀더 빠르게 가능하게 함. 해당 S3 connector 내부적으로 Read/List 작업을 취적화 한다고 함.
+Pytorch가 S3에 있는 훈련 데이터와, S3에 있는 체크포인트 R/W를 좀더 빠르게 가능하게 함. 해당 S3 connector 내부적으로 Read/List 작업을 최적화 한다고 함.
 
 찾아봤는데 Tensorflow, Keras에 대한 S3 커넥터는 아직 없는 것 같음.
 
@@ -224,25 +224,25 @@ ETL 데이터 파이프라인을 구축하지 않거나 최소 정도로 구축�
 
 https://aws.amazon.com/about-aws/whats-new/2023/11/amazon-opensearch-zero-etl-integration-s3-preview/
 
-OCU(OpenSearch Conputing Unit) 이용한 S3 서버리스 Ingestion 지원.
+OCU(OpenSearch Computing Unit) 이용한 S3 서버리스 Ingestion 지원.
 
 지금은 logstash로 kafka topic에서 OpenSearch로 데이터를 연동하는데, S3에서 바로 연동 해도 될 듯.
 
-## DynamoDB zero-ETL integrartion with Redshift
+## DynamoDB zero-ETL integration with Redshift
 
 https://aws.amazon.com/about-aws/whats-new/2023/11/amazon-dynamodb-zero-etl-integration-redshift/
 
-Redshidft에서 DynamoDB 데이터에 대해 고성능 분석을 실행 가능.
+Redshift에서 DynamoDB 데이터에 대해 고성능 분석을 실행 가능.
 
 DynamoDB의 프로덕션 워크로드에는 영향 x
 
-## Servless ElasticCache 지원
+## Serverless ElasticCache 지원
 
 https://aws.amazon.com/blogs/aws/amazon-elasticache-serverless-for-redis-and-memcached-now-generally-available/
 
-그렇다고 한다
+드디어 ElasticCache에도 Serverless 컴퓨팅을 지원합니다!
 
-## Redshift의 Exteral Table에 Apache Iceberg 지원
+## Redshift의 External Table에 Apache Iceberg 지원
 
 https://docs.aws.amazon.com/redshift/latest/dg/querying-iceberg.html
 
@@ -260,7 +260,7 @@ https://docs.aws.amazon.com/redshift/latest/dg/c-spectrum-external-tables.html
 
 Apache Hive에서 대규모 데이터를 다룰 때 발생하는 문제를 해결하기 위한 새로운 데이터 저장 방식으로 Netflix가 처음 개발해 공개 했다.
 
-원래 Hive에선 아래와 같은 여러 문제가 있다.
+원래 Hive에선 아래와 같은 여러 한계가 있다.
 
 - 완벽하게 지원되지 않는 ACID
   - Transaction으로 Update 요청이 올 때 완벽하게 처리되지 않는다.
@@ -333,7 +333,7 @@ AWS에서 개발한 LLM 파운데이션 모델(FM).
 
 https://aws.amazon.com/ko/bedrock/
 
-각종 AI 회사의 고성능 FM 모델과 기반으로 생성형 AI 앱을 구축하는데 필요한 기능들을 제공하는 서비스.
+각종 AI 회사의 고성능 FM 모델과 생성형 AI 앱을 구축하는데 필요한 기능들을 제공하는 서비스.
 
 주요 지원 FM
 
