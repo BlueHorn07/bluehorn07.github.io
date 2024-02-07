@@ -3,7 +3,7 @@ title: "Install Istio and Addons(Prometheus, Kiali)"
 toc: true
 toc_sticky: true
 categories: ["Kubernetes", "Istio"]
-excerpt: 우당탕탕! Istio, 너 손이 많이 가는 녀석이구나!?
+excerpt: 우당탕탕! Istio 설치 수난기. `istioctl`과 Operator 패턴.
 ---
 
 ![](/images/meme/i-must-study.jpeg){: .align-center style="max-width: 300px" }
@@ -47,7 +47,7 @@ Istio는 설치할 때 제공하는 몇가지 구성이 있는데, 옵션을 안
 ![](/images/development/istio/istioctl-install-profile.png){: .full }
 
 [Istio: Installation Configuration Profiles](https://istio.io/latest/docs/setup/additional-setup/config-profiles/)
-{: .text-center }
+{: .small .text-center }
 
 ## Istio helm chart
 
@@ -98,7 +98,7 @@ https://istio.io/latest/docs/setup/install/helm/
 
 ## Istio Operator로 설치하기
 
-요건 K8s의 Operator 패턴으로 Istio를 관리하는 방법이다. 일단 Operator 패턴이 뭔지 잘 모른다면 패스하는 걸 추천한다... (그 다음엔 Addon인 Prometheus & Kiali 설치가 기다리고 있다! [건너뛰기]())
+요건 K8s의 Operator 패턴으로 Istio를 관리하는 방법이다. 일단 Operator 패턴이 뭔지 잘 모른다면 패스하는 걸 추천한다...
 
 일단 Istio Operator를 띄워야 하는데, `istioctl`과 helm chart로 띄우는 방법이 있다.
 
@@ -158,3 +158,77 @@ kubectl apply -f $KIALI_ADDON -n istio-system
 kubectl port-forward -n istio-system svc/kiali 20001:20001
 kubectl port-forward -n istio-system svc/prometheus 9090:9090
 ```
+
+리소스를 정리하고 싶다면, 반대로 `kubectl delete -f` 해주자.
+
+```bash
+kubectl delete -f $PROMETHEUS_ADDON -n istio-system
+kubectl delete -f $KIALI_ADDON -n istio-system
+```
+
+## Kiali Operator
+
+Istio의 `IstioOperator`처럼 Kiali와 Prometheus도 Operator 패턴을 지원한다! (우와 너무 고마워라 ಠ_ಠ)
+
+Prometheus도 Operator 패턴으로 설치해보면 좋겠지만... Prometheus도 Istio 만큼 복잡한 녀석이라 Prometheus Operator는 별도의 포스트로 분리하겠다
+
+일단 Kiali Operator가 동작할 `kiali-operator` 네임스페이스를 만들어준다.
+
+```bash
+kubectl create ns kiali-operator
+```
+
+그리고 아래와 같이 `helmfile.yaml`을 구성한다.
+
+```yaml
+repositories:
+  - name: kiali
+    url: https://kiali.org/helm-charts
+
+releases:
+  - name: kiali-operator
+    namespace: kiali-operator
+    chart: kiali/kiali-operator
+    version: 1.79.0
+    values: []
+```
+
+이때, 아래의 value 값을 주면, Kiali Operator와 함께 Kiali CR도 함께 생성된다.
+
+```yaml
+cr:
+  create: true
+  namespace: istio-system
+```
+
+이제 `Kiali` CR을 아래 명령어로 띄워보자!!
+
+```bash
+kubectl apply -f - <<EOF
+  apiVersion: kiali.io/v1alpha1
+  kind: Kiali
+  metadata:
+    name: kiali
+    namespace: istio-system
+  spec:
+    auth:
+      strategy: anonymous
+EOF
+```
+
+![](/images/development/istio/kiali-operator-install.png){: .fill }
+
+확인해보면, `istio-system` ns에 `kiali` 리소스가 뜬 걸 확인할 수 있다!
+
+<hr/>
+
+# 마무리 하며
+
+이제 Istio를 구축했으니, 마이크로 서비스들을 띄워서 Istio를 활용해볼 차례다!!
+
+![](/images/development/istio/kiali-airflow-graph.png){: .fill }
+
+Airflow의 Istio Graph. 각 컴포넌트가 Postgres와 Redis를 사용하는게 잘 보인다.
+{: .small .text-center .gray }
+
+Istio에서 제공하는 [helloworld 예제](https://github.com/istio/istio/tree/master/samples/helloworld)와 [bookinfo 예제](https://istio.io/latest/docs/examples/bookinfo/)로 트래픽을 마구마구 주물러 보자! (우하하... 다음 포스트에! To be continued...)
