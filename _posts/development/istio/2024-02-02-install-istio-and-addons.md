@@ -38,17 +38,16 @@ brew install istioctl
 
 그 다음은 간단하다. `istio-system` namespace를 만들고, `istioctl install`로 설치하면 끝! 🤙
 
-```bash
-$ kubectl get pods -n istio-system
-
-```
+![](/images/development/istio/istioctl-install.png){: .full }
 
 Istio는 설치할 때 제공하는 몇가지 구성이 있는데, 옵션을 안 주면 `default`로 설치되고, `istiod`와 기본 `istio-ingressgateway`가 설치된다.
 
 그외에 `demo`, `minimal`도 있는데 필요에 따라서 설치하길
 
-![](/images/istio/istioctl-install-profile.png){: .full }
+![](/images/development/istio/istioctl-install-profile.png){: .full }
+
 [Istio: Installation Configuration Profiles](https://istio.io/latest/docs/setup/additional-setup/config-profiles/)
+{: .text-center }
 
 ## Istio helm chart
 
@@ -127,8 +126,9 @@ spec:
 EOF
 ```
 
-TODO: 요거 설치 후의 istio-opreator 쪽에 pod 새로 생긴거 있는지 체크해서 첨부 필요
+![](/images/development/istio/istio-operator-install.png){: .full }
 
+보면, `istio-system` ns에 `istiod`가 하나 뜬 걸 볼 수 있다!!
 
 <hr/>
 
@@ -136,7 +136,7 @@ TODO: 요거 설치 후의 istio-opreator 쪽에 pod 새로 생긴거 있는지 
 
 ![](/images/meme/i-do-it.jpeg){: .align-center style="max-width: 500px" }
 
-휴우... 겨우겨우 Istio를 클러스터에 띄웠다. Istio 이 녀석 보통 내기가 아니었다... 이제 istio를 운영하는데 필요한 addon을 설치해보자! 여러 addon이 있지만, 필수적인 건 Prometheus와 Kiali 둘이다.
+휴우... 겨우겨우 Istio를 클러스터에 띄웠다. Istio 이 녀석 보통 내기가 아니었다... 이제 istio를 운영하는데 필요한 addon을 설치해보자! 여러 addon이 있지만, 필수적인 건 Prometheus와 Kiali 두 녀석이다.
 
 ## 가장 간단한 방법
 
@@ -151,3 +151,10 @@ kubectl apply -f $KIALI_ADDON -n istio-system
 ```
 
 꼭 `istio-system` namespace에 설치해야 한다!
+
+그리고 아래 명령어로 로컬에서 접근할 수 있도록 port-foward 해주자.
+
+```bash
+kubectl port-forward -n istio-system svc/kiali 20001:20001
+kubectl port-forward -n istio-system svc/prometheus 9090:9090
+```
