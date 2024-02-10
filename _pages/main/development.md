@@ -14,7 +14,7 @@ toc_sticky: true
 
 ## Kubernetes
 
-- [CKA 시험 후기](/2023/02/25/Pod-Networking)
+- [CKA 시험 합격 후기](https://bluehorn07.github.io/2023/02/27/CKA-pass-review/)
 - [EKS Cluster Setup 후기](/2023/04/07/eks-cluster-setup-review/)
 
 - [Pod Internal Networking](/2023/02/25/Pod-Networking/)
@@ -34,6 +34,11 @@ toc_sticky: true
 - [Lucene Segment](/2023/05/19/Lucene-Segment/)
 - [Document CRUD](/2023/05/17/ElasticSearch-Document-CRUD/)
 - [Index CRUD](/2023/05/15/ElasticSearch-Index-CRUD/)
+
+## Istio
+
+- [Install Istio and Addons(Prometheus, Kiali)](https://bluehorn07.github.io/2024/02/02/install-istio-and-addons/)
+- [Istio ‘helloworld’ 데모](https://bluehorn07.github.io/2024/02/05/istio-helloworld-demo/)
 
 ## Authentication
 
