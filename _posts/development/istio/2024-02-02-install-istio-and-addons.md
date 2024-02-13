@@ -233,5 +233,5 @@ Airflow의 Istio Graph. 각 컴포넌트가 Postgres와 Redis를 사용하는게
 
 Istio에서 제공하는 [helloworld 예제](https://github.com/istio/istio/tree/master/samples/helloworld)와 [Book Info 예제](https://istio.io/latest/docs/examples/bookinfo/)로 트래픽을 마구마구 주물러 보자! (우하하... 다음 포스트에! To be continued...)
 
-➡️ [Istio `helloworld` 예제 데모](https://bluehorn07.github.io/2024/02/05/istio-helloworld-demo/)
-
+➡️ [Istio `helloworld` 예제 데모](https://bluehorn07.github.io/2024/02/05/istio-helloworld-demo/)<br/>
+➡️ [Istio `bookinfo` 예제 데모](https://bluehorn07.github.io/2024/02/10/istio-book-info-demo/)

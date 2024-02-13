@@ -24,7 +24,7 @@ kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.20/samp
 
 뭔가가 잔뜩 떴다!
 
-Bookinfo는 일종의 웹 앱이다. 외부에서 어플리케이션에 접근할 수 있도록 `IngressGateway` 리소스와 물려보자. 아래의 커맨드를 실행하면, `Gateway`와 `VirtualService` 리소스가 생성된다.
+Bookinfo는 일종의 "**웹앱**"이다. 외부에서 어플리케이션에 접근할 수 있도록 `IngressGateway` 리소스와 물려보자. 아래의 커맨드를 실행하면, `Gateway`와 `VirtualService` 리소스가 생성된다.
 
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.20/samples/bookinfo/networking/bookinfo-gateway.yaml
