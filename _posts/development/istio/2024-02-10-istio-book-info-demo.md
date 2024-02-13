@@ -126,7 +126,7 @@ $ kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.20/sa
 
 ![](/images/development/istio/bookinfo-jason-v2.png){: .fill }
 
-와우! 유저 `json`은 이제 리뷰의 별점 정보도 확인할 수 있게 되었다!!
+와우! 유저 `jason`은 이제 리뷰의 별점 정보도 확인할 수 있게 되었다!!
 
 ![](/images/development/istio/bookinfo-kiali-jason-v2.png){: .fill }
 
