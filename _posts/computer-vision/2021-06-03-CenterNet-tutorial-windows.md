@@ -133,11 +133,11 @@ python demo.py ctdet --demo ../images/17790319373_bd19b24cfc_k.jpg --load_model 
 
 <div>
   <div class="img-wrapper" style="display:flex; justify-content:center; align-items:center;">
-    <img src="{{ "/images/computer-vision/centernet-demo-1.png" | relative_url }}" style="float:left; width:48%;">
-    <img src="{{ "/images/computer-vision/centernet-demo-2.png" | relative_url }}" style="float:left; width:48%;">
+    <img src="{{ "/images/computer-science/computer-vision/centernet-demo-1.png" | relative_url }}" style="float:left; width:48%;">
+    <img src="{{ "/images/computer-science/computer-vision/centernet-demo-2.png" | relative_url }}" style="float:left; width:48%;">
   </div>
   <div class="img-wrapper">
-    <img src="{{ "/images/computer-vision/centernet-demo-3.png" | relative_url }}">
+    <img src="{{ "/images/computer-science/computer-vision/centernet-demo-3.png" | relative_url }}">
   </div>
 </div>
 

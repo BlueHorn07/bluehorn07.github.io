@@ -173,7 +173,7 @@ $$
 이 방식으로 최적화 문제를 풀어서 $M^{*}$을 구했다면, Mahalanobis distance는 데이터셋을 아래와 같이 잘 분할하게 된다.
 
 <div style="text-align:center;">
-  <img src={{"/images/computer-vision/mahalanobis-dist-result.png" | relative_url}} style="width:60%;">
+  <img src={{"/images/computer-science/computer-vision/mahalanobis-dist-result.png" | relative_url}} style="width:60%;">
   <p>"Distance metric learning with application to clustering with side-information", NIPS 2002</p>
 </div>
 

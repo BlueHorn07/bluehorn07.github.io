@@ -60,7 +60,7 @@ $$
 ### Hidden Markov Model
 
 <div class="img-wrapper">
-  <img src="{{"/images/computer-vision/hidden_markov_model.png" | relative_url }}" style="width:70%;">
+  <img src="{{"/images/computer-science/computer-vision/hidden_markov_model.png" | relative_url }}" style="width:70%;">
 </div>
 
 **<u>은닉 마르코프 모델</u>**; Hidden Markov Model은 Sequential data를 다루는데 사용하는 모델이다.
