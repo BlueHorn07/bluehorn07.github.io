@@ -32,6 +32,10 @@ EKS 클러스터를 생성할 때, Promethues 지표를 내보내게 할 수 있
 
 ### Amazon Promethues & Grafana
 
+![](https://d2908q01vomqb2.cloudfront.net/972a67c48192728a34979d9a35164c1295401b71/2021/04/09/getting-started-blog.png)
+https://aws.amazon.com/blogs/mt/getting-started-amazon-managed-service-for-prometheus/
+{: .small .text-center .gray }
+
 AWS에서 서비스하는 managed Prometheus와 Grafana.
 
 현재는 eks 클러스터 마다 prometheus를 띄워서 지표를 보고 있는데, 클러스터 독립적인 하나의 prometheus만을 띄워서 프메 지표를 수집하는 용도로 쓸 수 있지 않을까?
@@ -85,6 +89,8 @@ IRSA의 단점.
 
 https://aws.amazon.com/blogs/containers/amazon-eks-pod-identity-a-new-way-for-applications-on-eks-to-obtain-iam-credentials/
 
+
+
 - IRSA는 ServiceAccount가 사용하려는 IAM Role에서 해당 EKS 클러스터의 OIDC provider 정보를 Trusted Relationship에 추가해줘야 한다.
 - IRSA는 처음에 EKS에 대한 OIDC provider를 만들어 줘야 하는데, 이걸 만드려면 EKS admin 권한이 필요하다. 그리고 EKS cluster 마다 OIDC provider 만드는게 번거롭다 등등
 
@@ -103,6 +109,12 @@ https://aws.amazon.com/blogs/containers/amazon-eks-pod-identity-a-new-way-for-ap
 ![](https://d2908q01vomqb2.cloudfront.net/fe2ef495a1152561572949784c16bf23abb28057/2023/12/21/Agent-Addon.jpg)
 
 단, 요 Pod Identity 기능을 사용하려면 **"Amazon EKS Pod Identity Agent"라는 EKS addon을 설치해야** 한다. 그리고 Trust Relationship을 적는 것 대신 EKS 콘솔 또는 AWS CLI 통해서 해당 ServiceAccount에 IAM Role을 바인딩 해주면 된다!
+
+![](https://d2908q01vomqb2.cloudfront.net/fe2ef495a1152561572949784c16bf23abb28057/2023/12/21/Pod-Identity-Association.jpg)
+https://aws.amazon.com/blogs/containers/amazon-eks-pod-identity-a-new-way-for-applications-on-eks-to-obtain-iam-credentials/
+{: .small .text-center .gray }
+
+기존 AWS IAM에 Trust Relationship을 적는 것과, K8s ServiceAccount의 `annotations`에 적던 방식은 **Pod Identity Association**을 맺는 방식으로 변경 되었습니다!
 
 
 ## EMR on EKS
@@ -220,7 +232,7 @@ ETL 데이터 파이프라인을 구축하지 않거나 최소 정도로 구축�
 - S3에서 redshift로 자동 복사: s3에 새 파일이 만들어지는 즉시 데이터를 redshift에 로딩
 - AWS RDS의 데이터를 Redshift로 실시간으로 싱크
 
-## Opensearch zero-ETL integration with AWS S3
+### Opensearch zero-ETL integration with AWS S3
 
 https://aws.amazon.com/about-aws/whats-new/2023/11/amazon-opensearch-zero-etl-integration-s3-preview/
 
@@ -228,7 +240,7 @@ OCU(OpenSearch Computing Unit) 이용한 S3 서버리스 Ingestion 지원.
 
 지금은 logstash로 kafka topic에서 OpenSearch로 데이터를 연동하는데, S3에서 바로 연동 해도 될 듯.
 
-## DynamoDB zero-ETL integration with Redshift
+### DynamoDB zero-ETL integration with Redshift
 
 https://aws.amazon.com/about-aws/whats-new/2023/11/amazon-dynamodb-zero-etl-integration-redshift/
 
@@ -416,6 +428,8 @@ AmazonQ와 통합해 개발 요구조건을 명시하면, 그걸 기반으로 �
 <hr/>
 
 나의 첫 미국 방문이었는데, 회사에서 좋은 사람들과 대표님과 함께 다녀와서 진짜 너무 편하고 또 재밌게 다녀왔다!! ㅎㅎ 가서 맛있는 것도 정말 많이 먹었는데, 맛집들을 네이버 블로그에 한번 정리해봤다 [🎰 라스베가스 여행기: 맛집 탐방 🤤](https://blog.naver.com/hamverg/223302580589)
+
+회사의 팀 블로그에서 한번 적어봤다 ㅎㅎ [Bagelcode: 2023 AWS re:invent 신기술 정리](https://medium.com/bagelcode/2023-aws-re-invent-%EC%8B%A0%EA%B8%B0%EC%88%A0-%EC%A0%95%EB%A6%AC-6eba0d0d53d2)
 
 <hr/>
 
