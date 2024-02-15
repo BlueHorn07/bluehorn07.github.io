@@ -19,7 +19,7 @@ categories: []
 👉 [Docker로 RStudio Server 환경 설치](https://emflant.tistory.com/240)
 
 <div class="img-wrapper">
-  <img src="{{ "/images/r-tutorial/r-tutorial-0.jpg" | relative_url }}" width="90%">
+  <img src="{{ "/images/others/r-tutorial/r-tutorial-0.jpg" | relative_url }}" width="90%">
 </div>
 
 도커로 R-studio를 돌린 선택은 정말 **대만족**이다!! 도커, 앞으로도 자주 사용할 것 같다 ㅎㅎ 😘
@@ -43,7 +43,7 @@ categories: []
 \<기술 통계\>가 \<평균\>, \<표준편차\> 같은 기초적인 통계량에 대한 접근이라면, \<**추리 통계**\>는 추출한 표본에서 각 요소들 사이 관계; Correlation를 살펴보거나, 모집단의 특징을 추론하는 통계다. `R` 강좌에서는 자동차 연비를 중심으로 거리-연비 관계에 대한 \<산점도 scatter plot\>를 확인해보았다.
 
 <div class="img-wrapper" style="display:flex; justify-content:center; align-items:center;">
-  <img src="{{ "/images/r-tutorial/r-tutorial-1.jpg" | relative_url }}"  style="float:left; width:48%;"> <img src="{{ "/images/r-tutorial/r-tutorial-5.jpg" | relative_url }}" style="float:left; width:48%;">
+  <img src="{{ "/images/others/r-tutorial/r-tutorial-1.jpg" | relative_url }}"  style="float:left; width:48%;"> <img src="{{ "/images/others/r-tutorial/r-tutorial-5.jpg" | relative_url }}" style="float:left; width:48%;">
 </div>
 
 <div class="img-wrapper">
@@ -55,7 +55,7 @@ categories: []
 R의 `KoNLP` 라는 패키지를 사용해 간단한 텍스트 마이닝을 시도해보았다. 처음에 `KoNLP` 설치가 원활하지 않아 [이곳](https://hs5555.tistory.com/71)의 포스트를 참고해 설치했다. 그러나 너무 기초적인 수준의 실습을 해서 그런지 `R`로 하는 텍스트 마이닝은 그렇게 유익하진 않았다 😥
 
 <div class="img-wrapper">
-  <img src="{{ "/images/r-tutorial/r-tutorial-3.jpg" | relative_url }}" width="400px">
+  <img src="{{ "/images/others/r-tutorial/r-tutorial-3.jpg" | relative_url }}" width="400px">
   <p><small>트윗에서 최빈도 단어에 대한 그래프다. 아쉽게도 한국어 인코딩이 깨졌다 😥</small></p>
 </div>
 
@@ -64,7 +64,7 @@ R의 `KoNLP` 라는 패키지를 사용해 간단한 텍스트 마이닝을 시�
 그 외에 `ggplot2`를 이용해 "년도별 실직자수"의 그래프를 그리거나, 미국 내 범죄율 빈도를 지도로 시각화하는 등의 작업을 `R`로 진행해보았다.
 
 <div class="img-wrapper" style="display:flex; justify-content:center; align-items:center;">
-  <img src="{{ "/images/r-tutorial/r-tutorial-2.jpg" | relative_url }}"  style="float:left; width:48%;"> <img src="{{ "/images/r-tutorial/r-tutorial-4.jpg" | relative_url }}" style="float:left; width:48%;">
+  <img src="{{ "/images/others/r-tutorial/r-tutorial-2.jpg" | relative_url }}"  style="float:left; width:48%;"> <img src="{{ "/images/others/r-tutorial/r-tutorial-4.jpg" | relative_url }}" style="float:left; width:48%;">
 </div>
 
 <hr/>

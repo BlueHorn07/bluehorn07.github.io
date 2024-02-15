@@ -116,7 +116,7 @@ Every body preseverse in its state either of rest or of uniform motion in a stra
 모든 `Affine Transformation`은 `Topological Transformation`의 특수한 경우이다.<br>
 <small>*Every affine transformation is a topological transformation.*</small><br>
 
-<br>![three_transformation](/images/CMST499/three_transformation.jpg){: width="300px"}<br>
+<br>![three_transformation](/images/others/CMST499/three_transformation.jpg){: width="300px"}<br>
 
 저자는 3가지 기하학적 구조에 덧붙여 Topological structure와 Affine structure 사이에 존재하는 `Differentiable structure`를 제시한다!! <br>
 

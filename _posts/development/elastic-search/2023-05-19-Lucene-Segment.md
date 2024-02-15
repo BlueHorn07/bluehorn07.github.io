@@ -2,7 +2,7 @@
 title: "Lucene Segment"
 toc: true
 toc_sticky: true
-teaser: /images/lucene-segment.png
+teaser: /images/development/lucene-segment.png
 categories: ["Elastic Search"]
 excerpt: "엘라스틱서치 내부 탐험: 루씬 세그먼트로 이해하는 검색 엔진의 섬세한 메커니즘"
 ---
@@ -13,7 +13,7 @@ ElasticSearch에서 샤드(Shard)를 구성하는 루씬(Lucene) Index와 역색
 # ElasticSearch Index의 구조
 
 <div class="img-wrapper">
-  <img src="{{ "/images/lucene-segment.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/development/lucene-segment.png" | relative_url }}" width="100%">
 </div>
 
 ElasticSearch Inex는 여러 샤드(Shard)로 나눠진다. 샤드는 데이터를 나눈 일종의 파티션(Partition)이다.

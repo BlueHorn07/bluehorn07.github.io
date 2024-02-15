@@ -73,7 +73,7 @@ Science and Necessity, Bigelow & Pargetter, 1991<br>
 
 #### Three Newtonian Rigid Sphere *A*, *B*, and *C*
 <br>
-![three_rigid_sphere](/images/CMST499/three_rigid_sphere.png){: width="550px"}<br><br>
+![three_rigid_sphere](/images/others/CMST499/three_rigid_sphere.png){: width="550px"}<br><br>
 
 위와 같은 탄성 충돌 상황에 대해 `오컴파`와 `Flux파`의 설명이 다르다!!<br>
 1번과 3번 과정에 대해서는 오컴파와 Flux파의 주장은 동일하다. 하지만, 2번 과정에 대해서는 둘의 설명이 달라진다!!<br><br>
@@ -129,7 +129,7 @@ A와 B가 충돌할 때, A의 순간속도가 B에 전해진다.
 ### 오컴파 vs. Flux파: 운석 충돌에 대한 설명
 어떤 현상에 대해 `오컴파`와 `Flux파`의 시각에서 설명의 차이가 생기는 적절한 경우로 저자는 '화성에 운석이 충돌'하는 상황을 제시한다.
 
-<br>![mars_and_meteor](/images/CMST499/mars_meteor.png){: width="400px"}<br>
+<br>![mars_and_meteor](/images/others/CMST499/mars_meteor.png){: width="400px"}<br>
 
 `오컴파`는 운석 충돌을 예측하기 위해 운석이 지금까지 겪은 과거의 위치에 대한 정보가 필요하다.<br>
 

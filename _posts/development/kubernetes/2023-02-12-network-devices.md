@@ -18,7 +18,7 @@ categories: ["Develop", "Network"]
 출발지의 신호를 증폭해 도착지로 보내는 장치
 
 <div class="img-wrapper">
-  <img src="{{ "/images/kubernetes/network-devices-1.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/development/kubernetes/network-devices-1.png" | relative_url }}" width="100%">
 </div>
 
 # 허브
@@ -27,7 +27,7 @@ categories: ["Develop", "Network"]
 허브를 통해 Network Topology를 단순화 할 수 있다!
 
 <div class="img-wrapper">
-  <img src="{{ "/images/kubernetes/network-devices-2.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/development/kubernetes/network-devices-2.png" | relative_url }}" width="100%">
 </div>
 
 # 브릿지
@@ -36,7 +36,7 @@ categories: ["Develop", "Network"]
 2개의 네트워크를 서로 연결하고, 분리시킨다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/kubernetes/network-devices-3.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/development/kubernetes/network-devices-3.png" | relative_url }}" width="100%">
 </div>
 
 # 스위치
@@ -46,7 +46,7 @@ categories: ["Develop", "Network"]
 네트워크 안(within network)의 커뮤니케이션의 역할을 맡는다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/kubernetes/network-devices-4.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/development/kubernetes/network-devices-4.png" | relative_url }}" width="100%">
 </div>
 
 # 라우터
@@ -54,11 +54,11 @@ categories: ["Develop", "Network"]
 네트워크와 네트워크 사이(between network)의 커뮤니케이션을 맡는다. 스위치와 비슷하지만, Security, Filtering, Redirecting 같은 기능들을 수행할 수 있다. (일반적인 스위치는 Filtering을 하지 못한다.)
 
 <div class="img-wrapper">
-  <img src="{{ "/images/kubernetes/network-devices-5.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/development/kubernetes/network-devices-5.png" | relative_url }}" width="100%">
 </div>
 
 네트워크의 트래픽이 네트워크 외부로 빠져나가고, 또 네트워크 외부의 트래픽이 네트워크로 들어오게 되는 게이트웨이(Gateway)의 역할을 맡는다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/kubernetes/network-devices-6.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/development/kubernetes/network-devices-6.png" | relative_url }}" width="100%">
 </div>

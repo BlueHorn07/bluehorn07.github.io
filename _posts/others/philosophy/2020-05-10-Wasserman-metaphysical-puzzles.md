@@ -71,13 +71,13 @@ B.C. 500년, 에피카르모스<small>*Epicharmus*</small>는 헤라클레이토
 
 ### The Puzzle of Dion and Theon
 어떤 두 물체에 대해 다음의 4가지 상황을 생각해보자.<br>
-![dion_and_theon_1](/images/CMST499/dion_and_theon_1.jpg)<br>
+![dion_and_theon_1](/images/others/CMST499/dion_and_theon_1.jpg)<br>
 STDP, DTDP, DTSP 상황은 문제가 되지 않지만, Same-time, Same-place인 **STSP**는 우리의 직관과 어긋나는 상황이다! "The puzzle of Dion and Theon"은 이 STSP에 대한 역설이다.<br>
 
 상황은 다음과 같다.<br>
 
 > Dion이라는 남자가 있다. Dion을 정의하는 집합에 대해, Dion의 왼발을 제외한 proper part를 "Theon"이라고 정의하자. <small>*Define 'Theon' as a proper part of Dion*</small><br>
-> ![dion_and_theon_2](/images/CMST499/dion_and_theon_2.jpg)<br>
+> ![dion_and_theon_2](/images/others/CMST499/dion_and_theon_2.jpg)<br>
 > 다음날 Dion이 왼발 제거 수술을 받았다고 하자. 그런데 Dion은 그의 proper part인 Theon과 함께 존재할 수 있을까?<br>
 
 저자 Wasserman는 Dion이 죽고, Theon이 살아남는다고 주장한다.<br>
@@ -145,7 +145,7 @@ So, then 'Dion' ceases to eist when he loses his left foot, but 'Theon' continue
 
 테세우스의 배 역설은 다음 이야기에서 비롯된다.<br>
 
-> ![theseus_ship](/images/CMST499/theseus_ship1.jpg)<br>
+> ![theseus_ship](/images/others/CMST499/theseus_ship1.jpg)<br>
 > <small>▲ photo from youtube channel, [Wireless Philosophy](https://www.youtube.com/watch?v=dYAoiLhOuao)</small><br><br>
 > 아테네의 박물관에는 테세우스가 타고 왔다는 한척의 배가 전시되어 있다. 그런데 해가 갈 수록 테세우스의 배의 널판지가 낡아서 매년 널판지를 하나씩 교체하게 되었다고 한다. 그런데 그 과정에서 박물관 경비원이 테세우스의 배의 낡은 널판지를 몰래 모아서 매년 자기 집에서 테세우스의 배를 다시 재조립 했다고 한다. 그렇게 100년 정도가 지나니 원래 테세우스의 배의 모든 널판지를 교체하게 되어서 **테세우스의 배는 박물관에 한 척, 경비원의 집에 한 척이 생기게 되었다.**<br>
 > 둘 중 어느 것이 진짜 테세우스의 배인가?
@@ -167,7 +167,7 @@ So, then 'Dion' ceases to eist when he loses his left foot, but 'Theon' continue
 ### The Puzzle of the Statue and the Clay
 드디어 마지막 역설이다. 이 점토상과 점토에 대한 역설이 본 글의 전체 주제를 포괄할 정도로 중요한 역설이다.<br>
 
-> ![statue_and_clay](/images/CMST499/statue_and_clay.jpg)<br>
+> ![statue_and_clay](/images/others/CMST499/statue_and_clay.jpg)<br>
 > 어느 월요일, 조각가가 한 움큼의 '점토'를 샀다. 다음날인 화요일, 조각가는 손바닥 크기의 작은 '점토상'을 하나 만들었다.<br>
 > 지금 조각가 손 위에 있는 '점토상'과 '점토'는 같은 것일까, 다른 것일까?
 
@@ -242,7 +242,7 @@ Q. What is the relation between the attack and the kick?<br>
 A. the 'kick' constitutes an 'attack' ⇒ *event constitution*<br>
 
 ### 맺음말
-![metaphysics_overview](/images/CMST499/metaphysics_overview.jpg){: width="500px"}<br>
+![metaphysics_overview](/images/others/CMST499/metaphysics_overview.jpg){: width="500px"}<br>
 
 제목은 형이상학<small>*Metaphysics*</small>이었지만, 결국 본 글에서 다루는 주제는 *Material Constitution*이었다. 교양 수업이기도 하고, 해당 주제에 대한 Introduction 수준의 발표를 준비했기 때문에 읽기자료의 내용을 충분히 이해하는 것에 초점을 두었다.<br>
 

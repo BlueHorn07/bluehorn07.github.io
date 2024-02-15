@@ -8,7 +8,7 @@ categories: ["Develop", "Kubernetes"]
 회사에서 쓰는 Kubernetes를 제대로 알고 쓰고 싶어서 CKA 시험을 준비해서 응시 했다. 시험 준비하고 응시 하기까지 우여곡절이 많았지만, 결국은 한번에 자격증을 딸 수 있었다!
 
 <div class="img-wrapper">
-  <img src="{{ "/images/kubernetes/cka-certificate.png" | relative_url }}" width="80%">
+  <img src="{{ "/images/development/kubernetes/cka-certificate.png" | relative_url }}" width="80%">
 </div>
 
 # 왜 CKA 시험을 봐야 겠다고 생각했는가?
@@ -18,7 +18,7 @@ categories: ["Develop", "Kubernetes"]
 # 시험은 어떻게 준비했는가?
 
 <div class="img-wrapper">
-  <img src="{{ "/images/kubernetes/cka-notion.png" | relative_url }}" width="60%">
+  <img src="{{ "/images/development/kubernetes/cka-notion.png" | relative_url }}" width="60%">
 </div>
 
 

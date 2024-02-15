@@ -10,7 +10,7 @@ excerpt: Alert if an image used in Kubernetes cannot be pulled from container re
 
 K8s 클러스터에서 python Pod을 띄우려는 당신! 그런데, 우연히도 Dockerhub의 장애가 발생해버리고... 당신이 띄우려는 Pod은 이미지를 받아오지 못해 `ImagePullBackOff`에 빠져버린다... Dockerhub의 안정성을 철썩 같이 믿어버린 당신은 설마 이 단계에서 오류가 날 거라고는 생각하지도 못한채...
 
-![](/images/kubernetes/dockerhub-outage.png){: .align-center style="width: 80%;"}
+![](/images/development/kubernetes/dockerhub-outage.png){: .align-center style="width: 80%;"}
 터져버린 Dockerhub...
 {: .text-center}
 
@@ -44,7 +44,7 @@ Pod을 띄울 당시에는 해당 Image Registry에 접근 가능한 상태였�
 
 놉, 그건 아닌 것 같다. 처음 요 Exporter가 공개되었을 때 기뼈한 사람도 있다.
 
-![](/images/kubernetes/k8s-iae-exporter-response.png){: .align-center style="width: 80%;"}
+![](/images/development/kubernetes/k8s-iae-exporter-response.png){: .align-center style="width: 80%;"}
 
 `quay.io`를 위한 Exporter가 등장했다고 좋아한 사람도 있다 ㅋㅋ 본인은 거의 쓴 적이 없는데, `quay.io`도 Dockerhub, ECR 처럼 Image Registry 중 하나다. 그런데 좀... 장애가 많은 것 같은... 그런 Registry인 것 같다 ㅋㅋ
 
@@ -58,7 +58,7 @@ Pod을 띄울 당시에는 해당 Image Registry에 접근 가능한 상태였�
 
 사이트에 들어가서 살펴보면, K8s 클러스터 운영과 관리 서비스를 전문적으로 제공하는 것 같다. spark cluster를 쉽게 운영/관리하기 위해 Databricks를 채택하는 것처럼, K8s 클러스터 솔루션을 제공하는 것 같았다.
 
-![](/images/kubernetes/deckhouse-solution.png){: .align-center}
+![](/images/development/kubernetes/deckhouse-solution.png){: .align-center}
 
 예를 들어, AWS EKS를 운영할 때도 csi provider를 직접 관리하게 되는데, deckhouse 솔루션은 그런 클러스터 운영에 필요한 provider를 자동으로 관리해주는 것 같았다. ~~그런 것들 직접 관리하면서 장애 한번 나봐야 실력이 많이 느는데... ㅋㅋ~~
 
