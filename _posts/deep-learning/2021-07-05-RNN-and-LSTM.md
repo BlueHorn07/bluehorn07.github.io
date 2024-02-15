@@ -67,7 +67,7 @@ $$
 <br/>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/natural-language-process/RNN-1.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/natural-language-process/RNN-1.png" | relative_url }}" width="500px">
 </div>
 
 하나의 \<Cell\>은 학습 데이터의 sequence 하나를 읽을 때까지 모두 동일한 weight 값을 사용한다. 예를 들어 "I love you"라는 데이터를 입력하면, 각 문자는 모두 동일한 weight $W_x$, $W_h$, $W_y$를 사용한다. 그래서 "I love you" 문장 하나가 하나의 데이터 입력이며, Back-propagation 역시 이 한 문장을 다 읽은 후에 일어나는 것이다.
@@ -77,13 +77,13 @@ $$
 \<RNN\>에서의 Back-propagation은 기존의 \<Feed Forward Network\>의 방식과는 조금 다르다. \<RNN\>에서는 time-step으로 \<Cell\>을 펼친 후에 Back-prop을 적용한다. 이를 \<**Backprop Through Time; BPTT**\>라고 한다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/natural-language-process/RNN-2.png" | relative_url }}" width="600px">
+  <img src="{{ "/images/computer-science/natural-language-process/RNN-2.png" | relative_url }}" width="600px">
 </div>
 
 그러나 위와 같은 방식은 처음부터 끝까지 역전파를 문자의 길이가 길어진다면 계산량이 증가한다는 문제가 있다. 이를 해결하기 위해 전체 문장을 일정 구간을 나눠서 Backprop을 수행하기도 한다. 이것을 \<Truncated BPTT\>라고 한다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/natural-language-process/RNN-3.png" | relative_url }}" width="550px">
+  <img src="{{ "/images/computer-science/natural-language-process/RNN-3.png" | relative_url }}" width="550px">
 </div>
 
 또, \<RNN\>과 같은 \<Sequential Model\>은 입력과 출력의 대응에 따라 1-to-1, 1-to-many, many-to-1, many-to-many 등 다양한 형태로 존재한다.
@@ -97,13 +97,13 @@ $$
 \<RNN\>의 경우 hidden state를 통해 이전 입력에 대한 정보를 가지고 있지만, 입력 시퀀스가 길어질수록 성능이 떨어진다는 단점이 존재한다. 이를 \<The problem of learning long-term dependencies; 장기 의존성 문제\>라고 한다. 이에 대해선 동일한 값의 $W_h$의 값을 여러번 사용하게 되면서 발생하는 Gradient Exploding 또는 Gradient Vanishing을 원인으로 꼽는다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/natural-language-process/RNN-4.png" | relative_url }}" width="750px">
+  <img src="{{ "/images/computer-science/natural-language-process/RNN-4.png" | relative_url }}" width="750px">
 </div>
 
 \<**LSTM**\>은 \<장기 의존성 문제\>를 해결하기 위해 \<RNN\>의 구조에 Cell state $c_t$를 추가하고 여러 게이트(gate)를 추가한 모델이다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/natural-language-process/LSTM-1.png" | relative_url }}" width="650px">
+  <img src="{{ "/images/computer-science/natural-language-process/LSTM-1.png" | relative_url }}" width="650px">
   <p>
   RNN(左)과 LSTM(右)
   </p>

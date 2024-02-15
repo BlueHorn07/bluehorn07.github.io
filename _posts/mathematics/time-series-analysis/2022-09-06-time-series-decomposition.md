@@ -63,7 +63,7 @@ y(t) = T(t) \times S(t) \times R(t)
 $$
 
 <div class="img-wrapper">
-  <img src="{{ "/images/time-series-analysis/time-series-decomposition-1.png" | relative_url }}" width="720px">
+  <img src="{{ "/images/computer-science/time-series-analysis/time-series-decomposition-1.png" | relative_url }}" width="720px">
 </div>
 
 Additive에선 추세와 계절성이 별개의 요소였다. 그러나 Multiplicative에선 계절성의 변동성이 추세에 영향을 받았다. 위의 그림을 보면, **증가하는 추세의 영향으로 계절성이 더욱 크게 변동하고 있다!**

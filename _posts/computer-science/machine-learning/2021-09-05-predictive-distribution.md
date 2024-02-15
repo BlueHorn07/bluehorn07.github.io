@@ -32,7 +32,7 @@ readtime: 30 Minutes
 <span class="half_HL">Bayesian Approach에서는 관측 데이터가 추가됨에 따라 parameter의 distribution을 계속 갱신한다.</span> 이는 parameter의 prior distribution을 새롭게 관측된 데이터로 갱신해 posterior distribution을 얻는 셈이다. [이 아티클](https://coffeewhale.com/bayesian/linear/regression/2019/10/19/bayesian-lr/)에서는 이것을 "데이터가 확률 분포를 잡아당기는 자석과 같다"고 표현하는데, 표현이 그럴싸 하다 😲 자세한 내용은 해당 아티클의 [요 부분](https://coffeewhale.com/bayesian/linear/regression/2019/10/19/bayesian-lr/#:~:text=%EC%A0%80%EB%8A%94%20%EC%9D%B4%EA%B2%83%EC%9D%84%20%EB%8B%A4%EC%9D%8C%EA%B3%BC%20%EA%B0%99%EC%9D%B4%20%ED%91%9C%ED%98%84%ED%95%98%EA%B8%B8%20%EC%A2%8B%EC%95%84%ED%95%A9%EB%8B%88%EB%8B%A4.)을 잠깐 읽어보고 오는 걸 추천한다. 글을 통해 데이터가 posterior distribution을 어떻게 갱신하는지 그리고 prior distribution을 잘 잡는게 중요한 이유를 깨달을 수 있다 👍
 
 <div class="img-wrapper">
-  <img src="{{ "/images/machine-learning/bayesian-approach-1.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/machine-learning/bayesian-approach-1.png" | relative_url }}" width="100%">
 </div>
 
 기존의 고전적인 방법은 Point Estimator나 confidence interval를 유도했다. 그러나 Bayesian Approach에서는 그런 것들이 전혀 없으며👋 단지 parameter에 대한 **posterior distribution**을 이용해 새로운 데이터 $x^{*}$를 예측할 뿐이다. 그리고 이 과정에서 등장하는 것이 바로 \<**Predictive Distribution**; 예측 분포\>이다!

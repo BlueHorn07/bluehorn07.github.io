@@ -20,7 +20,7 @@ categories: ["Applied Statsitcs"]
 \<Model-based cluastering\>은 데이터셋의 모델, 즉 PDF $\text{Pr}(x)$을 estimation 하는 기법이다!
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/density-estimation-1.png" | relative_url }}" width="400px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/density-estimation-1.png" | relative_url }}" width="400px">
   <p>2차원 데이터에서 non-parameteric method로 $\text{Pr}(x)$를 추정하는 것은 어렵지 않다!</p>
 </div>
 
@@ -55,7 +55,7 @@ $$
 💥 NOTE: 위에서 정의한 \<K-component mixture model\> 역시 PDF가 된다. 증명은 확률合이 1이 되는지 확인해보면 되는데, 쉽다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/mixture-model-1.png" | relative_url }}" width="400px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/mixture-model-1.png" | relative_url }}" width="400px">
   <p>component를 몇개 쓰는지에 따라 분포에서 나타나는 mode의 최대 갯수가 달라진다.</p>
 </div>
 

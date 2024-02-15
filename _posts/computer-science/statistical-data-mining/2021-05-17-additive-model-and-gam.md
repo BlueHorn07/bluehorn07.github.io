@@ -85,7 +85,7 @@ Relationships btw the individual predictors and the dependent variable follow <u
 'DataCamp'의 [유튜브 영상](https://youtu.be/6V_VvweZkoI)에서는 \<GAM\>이 \<Linear Model\>과 \<Bloack-BOX ML\> 모델의 중간 정도에 위치하는 모델이라고 소개한다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/GAM-1.png" | relative_url }}" width="450px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/GAM-1.png" | relative_url }}" width="450px">
   <p markdown="1">Image from ['DataCamp'](https://youtu.be/6V_VvweZkoI)</p>
 </div>
 
@@ -94,7 +94,7 @@ Relationships btw the individual predictors and the dependent variable follow <u
 \<GAM\>은 딱 중간 정도에 위치한 모델로, 적당한 \<Interpretability\>와 적당한 \<Flexibility\>를 제공한다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/GAM-2.png" | relative_url }}" width="650px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/GAM-2.png" | relative_url }}" width="650px">
   <p markdown="1">Image from ['DataCamp'](https://youtu.be/6V_VvweZkoI)</p>
 </div>
 
@@ -119,14 +119,14 @@ $$
 $$
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/GAM-3.png" | relative_url }}" width="650px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/GAM-3.png" | relative_url }}" width="650px">
   <p markdown="1">Image from ['DataCamp'](https://youtu.be/8doPTpkAWDQ)</p>
 </div>
 
 또는 basis func.의 수로도 smoothness를 조정할 수 있다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/GAM-4.png" | relative_url }}" width="650px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/GAM-4.png" | relative_url }}" width="650px">
   <p markdown="1">Image from ['DataCamp'](https://youtu.be/8doPTpkAWDQ)</p>
 </div>
 

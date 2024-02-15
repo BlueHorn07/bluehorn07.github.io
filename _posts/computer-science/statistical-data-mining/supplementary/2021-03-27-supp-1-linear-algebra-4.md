@@ -223,7 +223,7 @@ $$
 위 부등식의 의미는 $\mathcal{L}$ 위의 벡터와 $\mathbf{x}$ 사이의 거리를 잴 때, orthogonal proj. $\mathbf{x}_{\mathcal{L}}$이 가장 짧은 거리를 뱉음을 말한다. 그림으로 확인하면 아래와 같다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/orthogonal-proj-1.jpg" | relative_url }}" width="230px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/orthogonal-proj-1.jpg" | relative_url }}" width="230px">
 </div>
 
 <span class="statement-title">Definition.</span> idempotent or projection<br>

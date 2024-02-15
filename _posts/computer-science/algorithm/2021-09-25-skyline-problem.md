@@ -48,7 +48,7 @@ A **skyline** is a collection of rectangular strips. A rectangular strip is repr
 1\. Mark key points for each given building.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/skyline-problem-1.png" | relative_url }}" width="300px">
+  <img src="{{ "/images/computer-science/algorithm/skyline-problem-1.png" | relative_url }}" width="300px">
 </div>
 
 `[left, ht, right]` 형식의 각 빌딩을 `[left, ht], [right, 0]` 형식으로 바꿔준다.
@@ -58,7 +58,7 @@ A **skyline** is a collection of rectangular strips. A rectangular strip is repr
 왼쪽에서 오른쪽 방향으로 천천히 따라가보자!
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/skyline-problem-2.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/skyline-problem-2.png" | relative_url }}" width="500px">
 </div>
 
 먼저 초록색 빌딩의 `[left, ht]` 점은 빨간색 빌딩에 overlapping 되기 때문에 `y` 값을 갱신한다. 이때, `[left, ht]` 값 자체를 갱신하는게 아니라 갱신된 `[left, ht_new]`를 result array `vector<point> ret`에 넣어두면 된다.
@@ -66,15 +66,15 @@ A **skyline** is a collection of rectangular strips. A rectangular strip is repr
 이 방법을 계속하면...
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/skyline-problem-3.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/skyline-problem-3.png" | relative_url }}" width="500px">
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/skyline-problem-4.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/skyline-problem-4.png" | relative_url }}" width="500px">
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/skyline-problem-5.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/skyline-problem-5.png" | relative_url }}" width="500px">
 </div>
 
 모든 key point를 다 돌았다면, `vector<point> ret`에서 y 값이 중복되는 점들을 제거하면 된다.
@@ -190,7 +190,7 @@ vector<Coord> skyline(vector<Building> buildings) {
 <div class="math-statement" markdown="1">
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/skyline-problem-6.png" | relative_url }}" width="300px">
+  <img src="{{ "/images/computer-science/algorithm/skyline-problem-6.png" | relative_url }}" width="300px">
 </div>
 
 1\. Let's compare key points of skylines starting from the leftmost end.
@@ -210,31 +210,31 @@ vector<Coord> skyline(vector<Building> buildings) {
 자! 그럼 위의 알고리즘을 단계별로 수행해보자.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/skyline-problem-7.png" | relative_url }}" width="600px">
+  <img src="{{ "/images/computer-science/algorithm/skyline-problem-7.png" | relative_url }}" width="600px">
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/skyline-problem-8.png" | relative_url }}" width="600px">
+  <img src="{{ "/images/computer-science/algorithm/skyline-problem-8.png" | relative_url }}" width="600px">
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/skyline-problem-9.png" | relative_url }}" width="600px">
+  <img src="{{ "/images/computer-science/algorithm/skyline-problem-9.png" | relative_url }}" width="600px">
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/skyline-problem-10.png" | relative_url }}" width="600px">
+  <img src="{{ "/images/computer-science/algorithm/skyline-problem-10.png" | relative_url }}" width="600px">
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/skyline-problem-11.png" | relative_url }}" width="600px">
+  <img src="{{ "/images/computer-science/algorithm/skyline-problem-11.png" | relative_url }}" width="600px">
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/skyline-problem-12.png" | relative_url }}" width="600px">
+  <img src="{{ "/images/computer-science/algorithm/skyline-problem-12.png" | relative_url }}" width="600px">
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/skyline-problem-13.png" | relative_url }}" width="600px">
+  <img src="{{ "/images/computer-science/algorithm/skyline-problem-13.png" | relative_url }}" width="600px">
 </div>
 
 와우!! 놀라운 방법으로 두 skyline을 merge 했다!! 😲 코드로 작성하면 아래와 같다.
@@ -286,7 +286,7 @@ vector<Coord> merge(vector<Coord> left_side, vector<Coord> right_side) {
 그러나 위의 merge 알고리즘에서 우리는 두 key point의 x 값이 같은 경우를 다루지 않았다!
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/skyline-problem-14.png" | relative_url }}" width="300px">
+  <img src="{{ "/images/computer-science/algorithm/skyline-problem-14.png" | relative_url }}" width="300px">
 </div>
 
 이 경우는 아래와 같이 해결한다.

@@ -23,7 +23,7 @@ categories: ["Algorithm"]
 Choose a number $v$ from $S$, split $S$ into 3 sublists w.r.t. $v$.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/quick-selection-1.png" | relative_url }}" width="400px">
+  <img src="{{ "/images/computer-science/algorithm/quick-selection-1.png" | relative_url }}" width="400px">
 </div>
 
 이제 $S_L$, $S_v$, $S_R$의 크기를 기준으로 재귀 함수를 호출한다.

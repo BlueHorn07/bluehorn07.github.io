@@ -64,13 +64,13 @@ maximize project per day: $\max \; (x_1 + 6 x_2)$
 문제를 LP의 형식으로 표현했으면 이제 문제를 해결해보자. 가장 먼저 할 일은 Constraint를 인식하는 것이다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/linear-programming-1.png" | relative_url }}" width="260px">
+  <img src="{{ "/images/computer-science/algorithm/linear-programming-1.png" | relative_url }}" width="260px">
 </div>
 
 이 위에 objective function을 표현하면 아래와 같다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/linear-programming-2.png" | relative_url }}" width="260px">
+  <img src="{{ "/images/computer-science/algorithm/linear-programming-2.png" | relative_url }}" width="260px">
 </div>
 
 결국 constraints가 유도하는 feasible region 중에서 max. profit을 얻을 수 있다! 👏
@@ -229,7 +229,7 @@ $$
 네트워크 공급자는 아래와 같은 조건으로 네트워크를 구축하려고 한다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/linear-programming-3.png" | relative_url }}" width="260px">
+  <img src="{{ "/images/computer-science/algorithm/linear-programming-3.png" | relative_url }}" width="260px">
 </div>
 
 - 데이터 전송 단위 당 A-B 연결에서는 3의 수익이, B-C 연결에서는 2의 수익이, A-C 연결에서는 4의 수익이 난다.

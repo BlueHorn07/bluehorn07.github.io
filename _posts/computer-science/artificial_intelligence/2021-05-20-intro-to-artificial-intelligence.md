@@ -51,8 +51,8 @@ Machine Learning에는 크게 4가지 모델이 있다.
 모음/공백이 없는 문자에 모음/공백을 넣는 \<text reconstruction\>이나 \<blackjack\>, \<chess\>, \<Pac-Man\>과 같은 게임의 인공지능을 만드는 데에도 쓰는 모델이다.
 
 <div class="img-wrapper" style="display:flex; justify-content:center; align-items:center;">
-    <img src="{{ "/images/artificial-intelligence/intro-to-AI-1.png" | relative_url }}" style="float:left; width:48%;">
-    <img src="{{ "/images/artificial-intelligence/intro-to-AI-2.png" | relative_url }}" style="float:left; width:48%;">
+    <img src="{{ "/images/computer-science/artificial-intelligence/intro-to-AI-1.png" | relative_url }}" style="float:left; width:48%;">
+    <img src="{{ "/images/computer-science/artificial-intelligence/intro-to-AI-2.png" | relative_url }}" style="float:left; width:48%;">
 </div>
 
 <hr/>
@@ -64,7 +64,7 @@ Machine Learning에는 크게 4가지 모델이 있다.
 \<Map Coloring\>, \<Event Scheduling\>, \<Bayesian Network\> 등을 이 모델로 해결할 수 있다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/artificial-intelligence/intro-to-AI-3.png" | relative_url }}" width="300px">
+  <img src="{{ "/images/computer-science/artificial-intelligence/intro-to-AI-3.png" | relative_url }}" width="300px">
 </div>
 
 <hr/>

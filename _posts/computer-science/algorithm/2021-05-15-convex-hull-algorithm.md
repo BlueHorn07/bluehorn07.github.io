@@ -19,7 +19,7 @@ categories: ["Algorithm"]
 <span class="statement-title">Definition.</span> Convex hull<br>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/convex-hull-1.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/convex-hull-1.png" | relative_url }}" width="500px">
 </div>
 
 The \<**convex hull**\> of a set $P$ of points in the plane is <span class="half_HL">the smallest convex set containing $P$</span>.
@@ -41,7 +41,7 @@ Equivalently, it is <span class="half_HL">the largest convex polygon whose verti
 For three points $p$, $q$, $r$, how do we test whether $r$ lies to the left or to the right of the directed line $\vec{pq}$?
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/convex-hull-2.png" | relative_url }}" width="350px">
+  <img src="{{ "/images/computer-science/algorithm/convex-hull-2.png" | relative_url }}" width="350px">
 </div>
 
 해결 방법은 의외로 간단하다!! 그냥 $\vec{pq}$를 지나는 직선과 $\vec{pr}$을 지나는 직선의 기울기를 비교해보면 된다!!
@@ -75,7 +75,7 @@ $$
 어떤 두 점 $p$, $q$가 convex hull을 이룬다고 생각해보자, 그러면 $\vec{pq}$에 대해 다른 모든 점들은 $\vec{pq}$의 오른편에 존재하게 된다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/convex-hull-3.png" | relative_url }}" width="250px">
+  <img src="{{ "/images/computer-science/algorithm/convex-hull-3.png" | relative_url }}" width="250px">
 </div>
 
 만약 이 과정을 naive 하게 진행한다면,
@@ -120,7 +120,7 @@ Repeat this:<br/>
   <small>// 마찬가지로 이것은 $r$을 accept하는 것이 아니다!</small>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/convex-hull-4.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/convex-hull-4.png" | relative_url }}" width="500px">
 </div>
 
 이 과정을 반복하면, sorted list $L$에 convex hull을 이루는 점들만 남게 된다!! 😎

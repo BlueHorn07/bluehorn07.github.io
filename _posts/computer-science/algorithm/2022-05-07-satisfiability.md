@@ -56,7 +56,7 @@ Strongly Connected Components 문제로 환원(reduction)해 linear-time에 해�
 <hr/>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/reduction-1.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/algorithm/reduction-1.png" | relative_url }}" width="100%">
 </div>
 
 SAT 문제는 NP 문제 중에서 기본이 되는 문제다. 그래서 거의 모든 NP 문제들이 SAT 문제의 꼴로 환원할 수 있다. 해당 내용은 추후에 Reduction 포스트에서 더 살펴보도록 하겠다.

@@ -12,7 +12,7 @@ Partial Covariance/Correlation는 **여러 개의 독립변수(IV)와 하나의 
 우리는 독립변수를 하나를 잡고, 그 녀석과 종속변수의 Covariance를 계산할 수 있다. 만약에 존재하는 독립변수들 사이에 상관관계가 없다면, 상황은 아주 간단하다. 그냥 $\text{Cor}(\text{IV}, \text{DV})$가 가장 높은 독립변수 하나를 찾으면 된다. 또, $r = \text{Cor}(\text{IV}, \text{DV})$는 $\left[-1, +1 \right]$의 부호가 있기 때문에, 제곱해서 얻은 $r^2$ 값으로 그 독립변수의 설명력도 확인할 수 있다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/time-series-analysis/partial-correlation-1.png" | relative_url }}" width="280px">
+  <img src="{{ "/images/computer-science/time-series-analysis/partial-correlation-1.png" | relative_url }}" width="280px">
 </div>
 
 그러나 독립변수들 사이에 상관관계가 있다면, 상황이 복잡해진다. 예를 들어 $\text{IV}_a \rightarrow \text{DV}$라고 해보자. 그런데 다른 독립변수 $\text{IV}_b$에 대해 $\text{IV}_b \rightarrow \text{IV}_a$ 것이 밝혀졌다. 그렇다면, $\text{IV}_a \rightarrow \text{DV}$는 사실 $\text{IV}_b \rightarrow \text{DV}$라고 말할 수 있다.
@@ -56,7 +56,7 @@ Partial Correlation도 Correlation과 마찬가지로 $\left[-1, +1\right]$의 �
 3개의 변수에 대해 Correlation Matrix를 그려보면 아래와 같다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/time-series-analysis/partial-correlation-2.png" | relative_url }}" width="280px">
+  <img src="{{ "/images/computer-science/time-series-analysis/partial-correlation-2.png" | relative_url }}" width="280px">
   <p>각 변수의 Correlation</p>
 </div>
 
@@ -69,7 +69,7 @@ Partial Correlation도 Correlation과 마찬가지로 $\left[-1, +1\right]$의 �
 Correlation은 +/- 부호를 가지니 제곱한 $r^2$를 사용하자.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/time-series-analysis/partial-correlation-3.png" | relative_url }}" width="280px">
+  <img src="{{ "/images/computer-science/time-series-analysis/partial-correlation-3.png" | relative_url }}" width="280px">
   <p>각 변수의 $r^2$</p>
 </div>
 
@@ -78,7 +78,7 @@ Correlation은 +/- 부호를 가지니 제곱한 $r^2$를 사용하자.
 자! 여기서부터 Partial Correlation을 구하는 과정이 본격적으로 시작된다! 👏
 
 <div class="img-wrapper">
-  <img src="{{ "/images/time-series-analysis/partial-correlation-4.png" | relative_url }}" width="280px">
+  <img src="{{ "/images/computer-science/time-series-analysis/partial-correlation-4.png" | relative_url }}" width="280px">
   <p markdown="1" style="margin-top: 4px">
     `DRAT`과 `MPG`
   </p>
@@ -89,7 +89,7 @@ Correlation은 +/- 부호를 가지니 제곱한 $r^2$를 사용하자.
 마찬가지로 `HP`와 `MPG`도 위와 같은 벤 다이어그램을 그릴 수 있다. `DRAT`, `HP`, `MPG` 3가지를 모두 그리면 아래와 같다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/time-series-analysis/partial-correlation-5.png" | relative_url }}" width="280px">
+  <img src="{{ "/images/computer-science/time-series-analysis/partial-correlation-5.png" | relative_url }}" width="280px">
   <p markdown="1" style="margin-top: 4px">
     `DRAT`, `HP`, `MPG`
   </p>
@@ -204,7 +204,7 @@ $$
 일단 여기서 "잔차"의 의미는 말 그대로 독립변수 $Z$의 영향력을 제외한 이후의 데이터를 말한다. 여기까지는 자연스러운데, 왜 독립변수 $X$에도, 종속변수 $Y$에 대해서도 잔차를 구했을까?
 
 <div class="img-wrapper">
-  <img src="{{ "/images/time-series-analysis/partial-correlation-6.png" | relative_url }}" width="280px">
+  <img src="{{ "/images/computer-science/time-series-analysis/partial-correlation-6.png" | relative_url }}" width="280px">
   <p markdown="1" style="margin-top: 4px">
     $X2$를 $X1$에도 $Y$에도 빼주었다.
   </p>

@@ -34,7 +34,7 @@ categories: ["Algorithm"]
 <span class="statement-title">*Proof*.</span><br>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/interval-scheduling-1.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/interval-scheduling-1.png" | relative_url }}" width="500px">
 </div>
 
 (귀류법) Assume that the given greedy approach is not optimal.
@@ -46,7 +46,7 @@ Let $j_1, j_2, \dots, j_m$ denote the set of jobs in the optimal solution with $
 (해설) 즉, greedy가 optimal이 아니고, 다른 optimal sequence $\\{ j_k \\}$가 존재하는데, 그 optimal seq.와 greedy seq.가 $r$까지는 동일한 seq.라고 가정한다는 말이다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/interval-scheduling-2.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/interval-scheduling-2.png" | relative_url }}" width="500px">
 </div>
 
 By the greedy choice, job $i_{r+1}$ finishes before $j_{r+1}$.<br/>

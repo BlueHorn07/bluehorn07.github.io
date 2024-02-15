@@ -18,7 +18,7 @@ categories: ["Algorithm"]
 \<Network Flow\> 문제는 아래와 같은 Directed Graph $G$에 대해 <mark>source $S$에서 sink $t$로 흘러가는 Flow의 合을 최대화</mark> 하는 문제다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/network-flow-1.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/network-flow-1.png" | relative_url }}" width="500px">
 </div>
 
 좀더 formal 하게 기술하면 아래와 같다.
@@ -61,7 +61,7 @@ Find an $s-t$ path whose edges $(u, v)$ can be of two types:
 예를 통해 위의 규칙을 이해해보자.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/network-flow-2.png" | relative_url }}" width="300px">
+  <img src="{{ "/images/computer-science/algorithm/network-flow-2.png" | relative_url }}" width="300px">
 </div>
 
 우리는 왼쪽의 그래프에서 시작해 오른쪽의 결과를 얻고자 한다.
@@ -102,7 +102,7 @@ $$
 Residual Graph $G^f$ 개념을 처음 배울 때는 간선에 유량 $f$가 흐르면 반대편에 $f$ 만큼의 capacity가 생긴다는 사실을 잘 이해하지 못했다. 그냥 '아, 그냥 테크닉인가 보구나'하고 받아들였다. 그러나 이 부분 때문에 Network Flow를 제대로 받아들이지 못 하고 계속 걷돌고 있었다. 이번 문단에서는 본인이 나중에 이해하게 된 Residual Flow를 잘 설명해보려고 한다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/network-flow-2.png" | relative_url }}" width="300px">
+  <img src="{{ "/images/computer-science/algorithm/network-flow-2.png" | relative_url }}" width="300px">
 </div>
 
 다시 이름으로 돌아와보자. Given graph에서 $s \rightarrow a \rightarrow b \rightarrow t$의 경로로 flow를 흘려보내면 Residual Flow를 쓰지 않으면 더이상 문제를 해결할 수 없었다. Residual Flow를 적용하면 $b \rightarrow a$에 capacity $1$이 추가되어 $s \rightarrow b \rightarrow a \rightarrow t$가 가능해져 Final flow를 얻을 수 있다. 그런데 $b \rightarrow a$에 capacity $1$을 추가하는게 말이 되는 걸까?
@@ -118,7 +118,7 @@ Residual Graph $G^f$ 개념을 처음 배울 때는 간선에 유량 $f$가 흐�
 위와 같은 접근법이 Maximum Flow를 보장하는지를 확인해보자! 설명의 편의를 위해 이미 Maximum Flow를 구한 Residual Graph를 사용하도록 하겠다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/network-flow-3.png" | relative_url }}" width="600px">
+  <img src="{{ "/images/computer-science/algorithm/network-flow-3.png" | relative_url }}" width="600px">
 </div>
 
 그래프 $G$를 $s$를 포함하는 $L = \\{ s, a, c\\}$, $t$를 포함하는 $R=\\{ b, d, e, t\\}$로 분할해보자. 이렇게 vertex set을 disjoint set $(L, R)$로 분할하는 것을 <mark>$(s, t)$-cut</mark> 또는 간단하게 cut이라고 한다. 이때, $L-R$을 잇는 edge의 집합을 <mark>cut-set</mark>라고 하며, 이 cut-set의 capacity의 총합이 $(s, t)$-cut의 capacity가 된다. 사실 $s$와 $t$를 disjoint set으로 분할하는 가능한 cut은 정말 많다. 이때, **<mark>minimum cut</mark>** 줄여서 min-cut은 cut capacity가 최소가 되는 cut을 말한다.
@@ -208,7 +208,7 @@ $$
 <div class="proof" markdown="1">
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/network-flow-4.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/network-flow-4.png" | relative_url }}" width="500px">
 </div>
 
 Ford-Fulkerson으로 유도되는 $(L, R)$ 분할에 대해 $\text{size}(f) = \text{capacity}(L, R)$가 성립함을 증명해보자.

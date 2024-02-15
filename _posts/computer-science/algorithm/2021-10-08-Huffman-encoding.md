@@ -90,7 +90,7 @@ AAAABBBCCD -> 0000 1010 1011 1111 110 (19 bits)
 \<Huffman Encoding\>은 아래와 같은 알고리즘으로 최적의 인코딩 방식을 찾는다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/Huffman-encoding-1.png" | relative_url }}" width="600px">
+  <img src="{{ "/images/computer-science/algorithm/Huffman-encoding-1.png" | relative_url }}" width="600px">
 </div>
 
 <div class="math-statement" markdown="1">

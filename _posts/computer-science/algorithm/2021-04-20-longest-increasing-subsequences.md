@@ -15,13 +15,13 @@ categories: ["Algorithm"]
 예를 들어 우리에게 아래와 같은 수열이 주어졌다고 하자.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/LIS-1.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/LIS-1.png" | relative_url }}" width="500px">
 </div>
 
 이때, 증가하는 부분수열을 만들기 위해 가능한 모든 transition을 표시하면 아래와 같다!
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/LIS-2.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/LIS-2.png" | relative_url }}" width="500px">
 </div>
 
 Directed Graph가 그려졌다!! 그런데, 좀 익숙하지 않은가? 바로 **DAG**다!!

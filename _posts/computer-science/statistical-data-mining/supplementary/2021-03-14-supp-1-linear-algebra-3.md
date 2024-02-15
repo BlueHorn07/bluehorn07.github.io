@@ -62,7 +62,7 @@ $$
 $U^T$는 회전 변환을 수행한다. 따라서, $e_1$, $e_2$ 좌표계 위에 있던 $\mathbf{x}$를 $u_1$, $u_2$ 좌표계로 회전 변환한다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/spectral-decomposition-1.jpg" | relative_url }}" width="280px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/spectral-decomposition-1.jpg" | relative_url }}" width="280px">
 </div>
 
 이때, $u_1$, $u_2$는 $U^T$의 각 열으로써 $A$의 eigen vector이다.
@@ -79,7 +79,7 @@ $$
 가 되고, 이것은 $\mathbf{x}$를 $u_1$, $u_2$ 축으로 \<projection\>한 것과 같다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/spectral-decomposition-2.jpg" | relative_url }}" width="280px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/spectral-decomposition-2.jpg" | relative_url }}" width="280px">
 </div>
 
 2\. $D \left( U^T \mathbf{x} \right)$; 스칼라 곱
@@ -87,7 +87,7 @@ $$
 $D$는 diagnomal matrix이기 때문에 $u_1$, $u_2$ 방향의 벡터에 대한 스칼라 곱을 하는 역할이다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/spectral-decomposition-3.jpg" | relative_url }}" width="280px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/spectral-decomposition-3.jpg" | relative_url }}" width="280px">
 </div>
 
 3\. $U \left( D U^T \mathbf{x} \right)$; 원래의 좌표축으로 역-회전
@@ -95,7 +95,7 @@ $D$는 diagnomal matrix이기 때문에 $u_1$, $u_2$ 방향의 벡터에 대한 
 마지막으로 처음에 곱한 $U^T$의 역-회전 변환인 $U$를 적용해 다시 $e_1$, $e_2$의 좌표계로 되돌려 준다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/spectral-decomposition-4.jpg" | relative_url }}" width="280px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/spectral-decomposition-4.jpg" | relative_url }}" width="280px">
 </div>
 
 그래서 식을 정리하면, 아래와 같다.

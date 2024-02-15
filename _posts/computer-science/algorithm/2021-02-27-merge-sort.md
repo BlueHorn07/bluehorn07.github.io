@@ -29,7 +29,7 @@ Merge Sort는 \<분할 정복\>을 정말 충실히 수행하는 알고리즘이
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/merge-sort-1.jpg" | relative_url }}" width="400px">
+  <img src="{{ "/images/computer-science/algorithm/merge-sort-1.jpg" | relative_url }}" width="400px">
 </div>
 
 Merge Sort는 기능적으로 봤을 때, "**Merge Sort**"와 "**Merge**" 두 가지 작업만 수행하면 된다.
@@ -94,7 +94,7 @@ Merge Sort는 간단하지만 강력하다! 보통 Merge Sort를 직접 구현�
 정렬 알고리즘의 절차는 \<트리 Tree\>의 형태로 표현할 수 있다. 예를 들어 아래의 트리는 $a_1$, $a_2$, $a_3$ 세 개의 원소에 대한 정렬을 도식화한 그림이다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/merge-sort-2.jpg" | relative_url }}" width="420px">
+  <img src="{{ "/images/computer-science/algorithm/merge-sort-2.jpg" | relative_url }}" width="420px">
 </div>
 
 위와 같이 주어진 배열에 대해 원소를 비교하는 모든 경우를 고려하게 되면, 우리는 배열의 $n$개 원소에 대한 가능한 모든 \<순열 Permutation\>을 확인하는 것과 동일하다. 즉, $n!$ 가짓수의 가능한 순서를 생각한다는 말이다. 이때, "정렬"이라는 작업은 \<비교 트리; Comparision Tree\>에서 가능한 하나의 \<경로 Path\>를 취하는 것이라고 할 수 있다.

@@ -56,7 +56,7 @@ A problem $x$ is $\textbf{NP-hard}$ if $x \in \textbf{NP}$ and $x \in \textbf{NP
 <span style="color: red">$\textbf{NP}$와 $\textbf{NP-hard}$의 교집합</span>라는 의미를 그대로 담은 $\textbf{NP-complete}$의 정의다. Search Problem에 속하는 $\textbf{NP-hard}$라는 의미인데, 대표적인 문제로 [SAT 문제]({{"/2022/05/07/satisfiability" | relative_url}})가 $\textbf{NP-complete}$ 문제다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/reduction-1.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/algorithm/reduction-1.png" | relative_url }}" width="100%">
 </div>
 
 이전 포스트에서는 $\textbf{NP-complete}$를 아래와 같이 정의했는데, 이것도 맞는 표현이다.

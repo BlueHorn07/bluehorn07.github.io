@@ -222,7 +222,7 @@ $$
 이런 아이디어를 바탕으로 실제로 샘플링 해보면 아래와 같다고 한다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/machine-learning/gaussian-process-1.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/machine-learning/gaussian-process-1.png" | relative_url }}" width="100%">
 </div>
 
 <hr/>

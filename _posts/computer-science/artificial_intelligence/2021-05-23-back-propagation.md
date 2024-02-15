@@ -33,7 +33,7 @@ $$
 <span class="statement-title">Remark.</span> basic building blocks<br>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/artificial-intelligence/back-propagation-1.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/artificial-intelligence/back-propagation-1.png" | relative_url }}" width="500px">
 </div>
 
 1\. Addition $f(a, b) = a+b$
@@ -77,7 +77,7 @@ $$
 <span class="statement-title">Remark.</span> generalized build block<br>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/artificial-intelligence/back-propagation-3.png" | relative_url }}" width="180px">
+  <img src="{{ "/images/computer-science/artificial-intelligence/back-propagation-3.png" | relative_url }}" width="180px">
 </div>
 
 \<Computational Graph\>의 building block의 형태를 일반화하면 아래와 같다.
@@ -90,7 +90,7 @@ $$
 
 <div style="display:flex; justify-content:center;">
   <div style="float:left; width:25%;">
-    <img src="{{ "/images/artificial-intelligence/back-propagation-2.png" | relative_url }}">
+    <img src="{{ "/images/computer-science/artificial-intelligence/back-propagation-2.png" | relative_url }}">
   </div>
   <div style="margin-left: 20px" markdown="1">
 
@@ -124,7 +124,7 @@ $$
 <span class="statement-title">Remark.</span> Branching Block<br>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/artificial-intelligence/back-propagation-5.png" | relative_url }}" width="240px">
+  <img src="{{ "/images/computer-science/artificial-intelligence/back-propagation-5.png" | relative_url }}" width="240px">
 </div>
 
 함수값이 두 군데로 분기하는 경우의 gradient는 아래와 같이 구할 수 있다.
@@ -154,7 +154,7 @@ $$
 제일 먼저 할 일은 \<Computational Graph\>를 만드는 것이다. 그리고 그 다음에는 Graph의 edge에 규칙에 따라 계산한 gradient 값을 표시한다. 마지막에는 gradient를 구하고자 하는 대상, 여기서는 $\mathbf{w}$까지 Graph를 따라가며 edge에 표시된 gradient를 모두 곱해준다! 😁
 
 <div class="img-wrapper">
-  <img src="{{ "/images/artificial-intelligence/back-propagation-4.png" | relative_url }}" width="200px">
+  <img src="{{ "/images/computer-science/artificial-intelligence/back-propagation-4.png" | relative_url }}" width="200px">
 </div>
 
 따라서 gradient는

@@ -20,7 +20,7 @@ categories: ["Algorithm"]
 3. Combine the solutions to get the answer to the problem.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/divide-and-conquery-1.jpg" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/divide-and-conquery-1.jpg" | relative_url }}" width="500px">
 </div>
 
 **분할 정복**은 기본적으로 \<재귀 Recursion\>을 기반으로 한다. 문제를 \<하위 문제 subproblem\>로 분할하고, 그 하위 문제를 더 하위의 문제로 분할한다. 분할은 손쉽게 다룰 수 있는 수준인 베이스 케이스 진행된다. 이후엔 분할한 규칙에 따라 하위 문제에서 얻은 결과를 상위 문제에서 차례대로 조합(Combine) 해주면 원래 문제에 대한 정답을 얻는다.
@@ -33,7 +33,7 @@ categories: ["Algorithm"]
 이 단락에서는 \<분할 정복\>의 시간 복잡도를 유도하는 좋은 도구인 \<Master Theorem\>에 대해 다룬다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/divide-and-conquery-2.jpg" | relative_url }}" width="320px">
+  <img src="{{ "/images/computer-science/algorithm/divide-and-conquery-2.jpg" | relative_url }}" width="320px">
 </div>
 
 먼저 위와 같이 size $n$의 문제를 size $n/b$의 subproblem $a$개로 분할하는 경우를 고려해보자. 좀더 특정하자면, \<branching fator\>가 $a$, \<분할의 깊이 depth\>가 $\log_b {n}$인 상황이다. $O(n^c)$는 각 과정에서 드는 고정 비용이다.

@@ -20,7 +20,7 @@ categories: ["Algorithm"]
 ## TSP with Branch-and-Bound
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/branch-and-bound-1.png" | relative_url }}" width="300px">
+  <img src="{{ "/images/computer-science/algorithm/branch-and-bound-1.png" | relative_url }}" width="300px">
 </div>
 
 Complete weighted graph $G = (V, E)$를 생각해보자. 우리는 지금 $a$에서 출발해 $b$에 도달하는 partial solution을 가지고 있다. 이 partial solution은 vertex set $S$의 원소들을 정확히 한번씩 지나가는 Hamilton Path다. 이 partial solution을 $[a, S, b]$로 표현하겠다.
@@ -45,19 +45,19 @@ partial solution $[a, S, b]$를 확장해보자. 그것은 $S$를 제외한 vert
 좀더 구체적인 예를 통해 익숙해져보자!
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/branch-and-bound-2.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/algorithm/branch-and-bound-2.png" | relative_url }}" width="100%">
 </div>
 
 위와 같은 Graph에서 TSP 문제를 해결한다고 해보자. 일단 $A$ 노드에서 시작하는 탐색 트리를 확장해가자.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/branch-and-bound-3.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/algorithm/branch-and-bound-3.png" | relative_url }}" width="100%">
 </div>
 
 트리 노드 옆의 상자엔 해당 노드의 lower bound가 적혀있다. DFS 방식을 통해 트리를 탐색한다고 하면, 가장 먼저 $H$ 노드로 끝나는 왼쪽 경로를 타게 된다. 이때의 total cost가 11인데, 이것을 $\text{bestsofar}$ 값으로 저장해두고 다음 노드를 선택해 확장해간다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/branch-and-bound-4.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/algorithm/branch-and-bound-4.png" | relative_url }}" width="100%">
 </div>
 
 현재 비용 11이 $\text{bestsorfar}$ 값이다. 만약 다음 partial solution을 탐색했을 때, 비용의 lower bound가 $\text{bestsorfar} = 11$보다 크다면 해당 노드는 탐색할 필요가 없다!

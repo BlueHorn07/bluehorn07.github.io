@@ -175,7 +175,7 @@ $$
 </details>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/machine-learning/gaussian-process-regression-1.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/machine-learning/gaussian-process-regression-1.png" | relative_url }}" width="100%">
   <p markdown="1">ref. [Gaussian processes - Chuong B. Do](http://cs229.stanford.edu/section/cs229-gaussian_processes.pdf)</p>
 </div>
 
@@ -196,7 +196,7 @@ $$
 hyper-parameter인 $\tau$는 smoothness를 조정하는 파라미터로 $\tau$ 값이 작을수록 가까이 있는 샘플을 주로 본다. 그래서 model의 fluctuation이 심해진다. 반대로 $\tau$ 값이 커지면, 멀리 있는 샘플도 반영하기 때문에 model이 smooth 해진다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/machine-learning/gaussian-process-regression-2.png" | relative_url }}" width=600 height=200>
+  <img src="{{ "/images/computer-science/machine-learning/gaussian-process-regression-2.png" | relative_url }}" width=600 height=200>
   <p markdown="1">ref. ['손쓰'님의 포스트](https://sonsnotation.blogspot.com/2020/11/11-2-gaussian-progress-regression)</p>
 </div>
 
@@ -205,7 +205,7 @@ hyper-parameter인 $\tau$는 smoothness를 조정하는 파라미터로 $\tau$ �
 다음으로 regression noise인 $\sigma$(그림에서는 $\sigma_y$)가 있다. 이 녀석은 uncertainty의 정도를 결정하는 파라미터로 $\sigma$ 값이 클수록 데이터의 noise가 크다고 판단한다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/machine-learning/gaussian-process-regression-3.png" | relative_url }}" width=600 height=200>
+  <img src="{{ "/images/computer-science/machine-learning/gaussian-process-regression-3.png" | relative_url }}" width=600 height=200>
   <p markdown="1">ref. ['손쓰'님의 포스트](https://sonsnotation.blogspot.com/2020/11/11-2-gaussian-progress-regression)</p>
 </div>
 

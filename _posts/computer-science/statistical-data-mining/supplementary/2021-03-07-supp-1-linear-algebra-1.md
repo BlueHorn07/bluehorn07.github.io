@@ -391,7 +391,7 @@ where the summation is taken over all permuations of $\\{ 1, \dots, n\\}$.
 \<Determinant\>에 대한 정말 Abstract 한 정의다. $3\times3$ 에 대해선 아래와 같이 쉽게 구할 수 있다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/determinant-3x3-1.png" | relative_url }}" width="320px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/determinant-3x3-1.png" | relative_url }}" width="320px">
 </div>
 
 <br>

@@ -152,7 +152,7 @@ ps) $d=3$인 d-ary Heap을 \<Ternary Heap\>이라고도 부른다.
 #### Binomial Tree
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/binomial-tree-1.jpg" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/binomial-tree-1.jpg" | relative_url }}" width="500px">
 </div>
 
 \<Binomial Tree\>는 <span class="half_HL">degree가 같은 두 \<Binomial Tree\>를 병합(merge)함으로써 구축</span>한다. 방법은 그렇게 어렵지 않고, 아래의 예시를 보면 바로 이해 될 것이다. 😊
@@ -180,7 +180,7 @@ ps) $d=3$인 d-ary Heap을 \<Ternary Heap\>이라고도 부른다.
 #### Binomial Heap
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/binomial-heap-1.jpg" | relative_url }}" width="300px">
+  <img src="{{ "/images/computer-science/algorithm/binomial-heap-1.jpg" | relative_url }}" width="300px">
 </div>
 
 다시 \<Binomial Heap\>으로 돌아오자. \<Binomial Heap\>은 아래의 조건에 따라 모인 \<Binomial Tree\>의 집합이다.
@@ -256,7 +256,7 @@ Binomial Heap을 이루는 Tree의 루트 노드를 살펴보면 된다. 따라�
 이 $\texttt{consolidation}$이 수행되는 과정의 시간 복잡도를 분석해보자. degree가 자유롭게 분포되어 있는 상황에서 $\texttt{consolidation}$을 수행하는 방법을 각 BIN Tree를 degree 별로 정렬하여 앞에서부터 차례로 Tree를 합치는 것이다. 원래는 정렬을 수행할 때, $O(t \log t)$ ($t$는 Heap에 존재하는 BIN Tree의 수) 만큼의 시간이 소요된다. 그런데 정렬 과정에서 \<Bucket Sort\>를 사용한다면, BIN Tree 탐색에 $O(t)$, Bucket의 수 $O(\log n)$ 만큼 BIN tree merge 비용이 들어 $O(t + \log n)$의 비용으로 $\texttt{consolidation}$을 수행할 수 있다. 자세한 내용은 아래의 영상을 참고하자!
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/lazy-binomial-heap-1.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/lazy-binomial-heap-1.png" | relative_url }}" width="500px">
 </div>
 
 👉 [Jeff Zhang - Lazy Binomial Heap Intro Part 1 of 2](https://youtu.be/v4hlvJIS0ZU)
@@ -308,15 +308,15 @@ $\texttt{extracMin}$ 연산에 대해서는 그 시간 복잡도가 "**amortized
 하지만, <span class="half_HL">Lazy decreaseKey 연산을 수행하면 더이상 Heap에 존재하는 Tree는 BIN Tree의 조건을 만족하지 않게 된다.</span> 왜냐하면, BIN Tree가 되려면 degree $k$일 때, $2^k$ 개의 노드가 있어야 하기 때문이다. <small>(Fibo Heap에서는 $2^k$ 보다 적은 수의 노드가 트리에 남게 된다.)</small>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/fibonacci-heap-1.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/fibonacci-heap-1.png" | relative_url }}" width="500px">
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/fibonacci-heap-2.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/fibonacci-heap-2.png" | relative_url }}" width="500px">
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/fibonacci-heap-3.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/fibonacci-heap-3.png" | relative_url }}" width="500px">
 </div>
 
 예를 들어 왼쪽의 BIN tree에서 '10'의 키를 가진 말단 노드의 키를 '3'으로 바꾼다면, 그 노드를 BIN tree에서 분리(cut)하는 방식으로 $\texttt{decreaseKey}$ 연산을 수행한다. 이것은 $\texttt{decreaseKey}$ 연산의 대상이 되는 BIN tree가 더이상 BIN tree의 성질을 만족하지 못 하도록 만든다.
@@ -354,17 +354,17 @@ If a parent loses two children, we also cut the parent off from the grand-parent
 글로는 감이 안 잡히니, 그림으로 살펴보자!
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/fibonacci-heap-4.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/fibonacci-heap-4.png" | relative_url }}" width="500px">
   <p>BIN tree가 child를 하나 잃어 <span style="color: red">붉은색</span>으로 마킹 되었다.</p>
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/fibonacci-heap-5.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/fibonacci-heap-5.png" | relative_url }}" width="500px">
   <p><span style="color: red">붉은색</span>으로 마킹된 노드가 또 하나의 자식 노드를 잃었다!</p>
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/fibonacci-heap-6.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/fibonacci-heap-6.png" | relative_url }}" width="500px">
   <p>그러면 해당 노드를 부모 노드로부터 분리시킨다!</p>
 </div>
 
@@ -383,7 +383,7 @@ A \<**maximally damaged tree**\> is a binomial tree of degree $k$[^1] which has 
 \<Maximally damaged tree\>란 degree $k$의 BIN Tree에 $\texttt{decreaseKey}$를 수행할 때, Tree의 degree $k$를 훼손하지 않을때까지 $\texttt{decreaseKey}$를 수행한 트리를 말한다. 이 개념은 우리가 앞에서 정의한 새로운 $\texttt{decreaseKey}$의 방식에서 자연스럽게 유도되는 개념이다. <small>// 이 부분 역시 영상에서 잘 설명하니 영상을 보자!</small>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/fibonacci-heap-7.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/fibonacci-heap-7.png" | relative_url }}" width="500px">
   <p>BIN tree의 degree가 줄지 않을 때까지 $\texttt{decreaseKey}$를 수행한 모습</p>
 </div>
 
@@ -396,7 +396,7 @@ A \<maximally-damaged tree of degree $k$\> is a tree whose children are maximall
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/fibonacci-heap-8.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/fibonacci-heap-8.png" | relative_url }}" width="500px">
 </div>
 
 위의 따름 정리에 의해 \<maximally damaged tree\>에서는 아래의 정리가 성립한다! 😲

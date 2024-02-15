@@ -49,7 +49,7 @@ shortest path에는 다음의 중요한 성질이 있다.
 </div>
 
 <div style="text-align: center;">
-<img src="{{ "/images/algorithm/shortest-path-tree.png" | relative_url }}" width="500px">
+<img src="{{ "/images/computer-science/algorithm/shortest-path-tree.png" | relative_url }}" width="500px">
 <p>Graph and its Shortest path tree<br><small>diagram from 『Algorithms(Dasgupta)』</small></p>
 </div>
 

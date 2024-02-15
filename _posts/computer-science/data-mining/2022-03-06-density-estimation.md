@@ -32,7 +32,7 @@ DE는 분류상 Unsupservised Learning로 분류된다. DE는 non-parameteric DE
 먼저 density estimation의 **<u>이산적인</u>** 방법을 살펴보자! 사실 개념 자체는 간단한데, 데이터 범위를 몇개의 영역(bin)으로 쪼개서 해당 영역에 존재하는 데이터의 수를 세어주기만 하면 된다. 일종의 히스토그램(histogram)을 만드는 것이다!
 
 <div class="img-wrapper">
-  <img src="{{ "/images/data-mining/density-estimation-1.png" | relative_url }}" width="400">
+  <img src="{{ "/images/computer-science/data-mining/density-estimation-1.png" | relative_url }}" width="400">
 </div>
 
 수식도 직관적이다.
@@ -109,7 +109,7 @@ $$
 어떤가? KDE 너무 쉽지 않은가? :)
 
 <div class="img-wrapper">
-  <img src="{{ "/images/data-mining/density-estimation-2.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/data-mining/density-estimation-2.png" | relative_url }}" width="100%">
 </div>
 
 Histogram과 KDE를 통해 구한 pmf, pdf를 비교한 그림이다. 마찬가지로 $h$ 값이 커질 수록 global trend, 작을수록 local trend를 반영한다. KDE에선 범위가 더 적은 범위를 쓰기에 $h=0.005$에서 0인 값이 꽤 된다.

@@ -55,7 +55,7 @@ $$
 "averaging the probability"는 개별 estimator가 확률을 predict하며, 전체 bagging estimator의 결과에 평균을 내는 방법이다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/bagging-1.png" | relative_url }}" width="400px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/bagging-1.png" | relative_url }}" width="400px">
 </div>
 
 #### Variance Reduction for Bagging
@@ -201,7 +201,7 @@ Before each split in bagging DT, <span class="half_HL">RF selects $m \le p$ of i
 RF의 경우, 일부의 변수만 사용하기 때문에 \<bagging\>보다 더 빠른 속도를 보인다!
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/random-forest-1.png" | relative_url }}" width="400px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/random-forest-1.png" | relative_url }}" width="400px">
 </div>
 
 <hr/>

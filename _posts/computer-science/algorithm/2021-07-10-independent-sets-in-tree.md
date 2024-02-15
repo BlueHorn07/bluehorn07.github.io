@@ -36,7 +36,7 @@ Given a graph $G = (V, E)$, a subset $S \subset V$ is an \<**independent set**\>
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/independent-set-in-tree-1.png" | relative_url }}" width="400px">
+  <img src="{{ "/images/computer-science/algorithm/independent-set-in-tree-1.png" | relative_url }}" width="400px">
 </div>
 
 이 경우, greedy 하게 접근하여 문제를 해결할 수 있다!
@@ -61,7 +61,7 @@ Given a graph $G = (V, E)$, a subset $S \subset V$ is an \<**independent set**\>
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/independent-set-in-tree-2.png" | relative_url }}" width="400px">
+  <img src="{{ "/images/computer-science/algorithm/independent-set-in-tree-2.png" | relative_url }}" width="400px">
 </div>
 
 이 경우는 DP를 통해 문제를 해결할 수 있다!!

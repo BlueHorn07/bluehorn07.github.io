@@ -201,7 +201,7 @@ long long FordFulkerson(int source, int sink) {
 ### 시간 복잡도
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/ford-fulkerson-algorithm-1.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/ford-fulkerson-algorithm-1.png" | relative_url }}" width="500px">
 </div>
 
 위의 그림은 \<Ford-Fulkerson Algorithm\>에서 최악의 상황의 예시이다. DFS로 경로를 찾는 매 시행마다 용량 1의 가운데 간선을 지난다고 하자. 그러면 용량 1,000을 채우기 위해 1,000은 iteration을 수행해야 한다. 이것은 DFS로 경로를 탐색하는 \<Ford-Fulkerson Algorithm\>의 한계이다 😥
@@ -219,7 +219,7 @@ long long FordFulkerson(int source, int sink) {
 다시 위의 예제를 통해 살펴보자.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/edmonds-karp-algorithm-1.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/edmonds-karp-algorithm-1.png" | relative_url }}" width="500px">
 </div>
 
 일단 맨처음에는 `A - B - C - D`의 경로로 유량이 흘렀다고 하자. 그 다음에 흐를 유량을 살펴보면,

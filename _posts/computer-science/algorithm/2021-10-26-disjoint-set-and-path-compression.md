@@ -35,7 +35,7 @@ categories: ["Algorithm"]
 \<disjoint set\>의 기본 연산으로 어떻게 Tree 형태의 \<disjoin set\>이 만들어지는지 살펴보자. 👀
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/disjoint-set-1.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/algorithm/disjoint-set-1.png" | relative_url }}" width="100%">
 </div>
 
 먼저 $\text{makeset}(x)$는 루트 노드만 있는 트리를 생성한다. 그리고 $\text{union}(x, y)$ 연산은 각 노드가 포함된 두 개의 트리를 하나의 트리로 병합한다. 이때 하나의 트리를 다른 트리의 subtree로 병합된다. 구체적으로 어떻게 $\text{union}(x, y)$로 트리를 병합하는지는 코드를 보며 이해해보자.
@@ -136,7 +136,7 @@ $\text{find}(x)$ 함수가 재귀함수의 꼴이 되어서 헷갈릴 수도 있
 그림으로 보면 아래와 같다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/disjoint-set-2.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/algorithm/disjoint-set-2.png" | relative_url }}" width="100%">
 </div>
 
 ### Time Complexity

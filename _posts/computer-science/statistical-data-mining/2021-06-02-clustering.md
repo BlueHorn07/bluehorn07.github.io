@@ -88,7 +88,7 @@ $$
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/k-means-algorithm-1.png" | relative_url }}" width="400px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/k-means-algorithm-1.png" | relative_url }}" width="400px">
   <p>figure from ISLR</p>
   <p>그림을 보면, 2번만에 수렴한 것을 볼 수 있다!!</p>
 </div>
@@ -114,7 +114,7 @@ where $\bar{x}_k$ is mean of cluster $C_k$.
 \<K-means algorithm\>의 결과는 initial cluster에 따라 바뀌기 때문에, 서로 다른 몇가지 initial cluster로 여려번 돌려보는 것이 권장된다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/k-means-algorithm-2.png" | relative_url }}" width="400px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/k-means-algorithm-2.png" | relative_url }}" width="400px">
   <p>figure from ISLR</p>
   <p>그림을 보면, 하나의 형태로 cluster가 결정되는 것이 아니다. <br/>
   위 그림에서는 2, 3, 4, 5번째의 경우로 clustering 되는 것이 우세하다.</p>
@@ -127,7 +127,7 @@ where $\bar{x}_k$ is mean of cluster $C_k$.
 \<Hierarchical Clustering\>에서는 "dendrogram"이라는 것을 통해 cluster를 나누고, 또 그 계층을 분석한다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/hierarchical-clustering-1.png" | relative_url }}" width="400px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/hierarchical-clustering-1.png" | relative_url }}" width="400px">
   <p>figure from ISLR</p>
 </div>
 
@@ -151,7 +151,7 @@ where $\bar{x}_k$ is mean of cluster $C_k$.
 보통 "complete linkage"와 "average linkage"를 사용한다. "centroid linkage"의 경우, 순서가 역전되는 경우가 발생하기 때문에, 권장하진 않는다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/hierarchical-clustering-2.png" | relative_url }}" width="150px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/hierarchical-clustering-2.png" | relative_url }}" width="150px">
   <p>Cluster 사이 거리는 non-decreasing 해야 하는데, 이 경우는 8L 다음에 7L이 되어 inversion이 생겼다.</p>
 </div>
 

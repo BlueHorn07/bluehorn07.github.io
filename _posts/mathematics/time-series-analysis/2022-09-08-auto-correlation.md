@@ -82,13 +82,13 @@ $$
 ## Example: goog200
 
 <div class="img-wrapper">
-  <img src="{{ "/images/time-series-analysis/goog200.png" | relative_url }}" width="480px">
+  <img src="{{ "/images/computer-science/time-series-analysis/goog200.png" | relative_url }}" width="480px">
 </div>
 
 `goog200`이라는 시계열 주가 데이터에서 ACF를 구해보면 아래와 같다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/time-series-analysis/goog200-acf.png" | relative_url }}" width="480px">
+  <img src="{{ "/images/computer-science/time-series-analysis/goog200-acf.png" | relative_url }}" width="480px">
 </div>
 
 전반적으로 이전의 데이터에 높은 양(+)의 상관성을 보이는 것을 알 수 있다.
@@ -98,7 +98,7 @@ $$
 $\text{ACF}(k)$는 $s(t)$와 $s(t-k)$, 두 값의 상관성을 출력한다. 그러나 그 사이에 있는 $s(t-1)$부터 $s(t-(k-1))$의 영향력이 존재하지 않았을까? 🤔
 
 <div class="img-wrapper">
-  <img src="{{ "/images/time-series-analysis/pacf-1.png" | relative_url }}" width="280px">
+  <img src="{{ "/images/computer-science/time-series-analysis/pacf-1.png" | relative_url }}" width="280px">
 </div>
 
 $s(t)$와 $s(t-1)$가 상관성이 있다면, $s(t-1)$와 $s(t-2)$도 상관성이 있을 것이다. 그렇다면, $s(t)$와 $s(t-2)$도 상관성이 있을 것이라는게 자연스럽게 유도된다.
@@ -116,7 +116,7 @@ Partial ACF $\text{PACF}(k)$ 역시 $s(t)$와 $s(t-k)$의 상관성을 측정한
 다시 `goog200` 시계열 주가 데이터를 활용해 PACF 그래프를 그려보자.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/time-series-analysis/goog200-pacf.png" | relative_url }}" width="480px">
+  <img src="{{ "/images/computer-science/time-series-analysis/goog200-pacf.png" | relative_url }}" width="480px">
 </div>
 
 이번에는 ACF와 다르게, $\text{PACF}(1)$에서만 큰 상관성을 보였다. 이것을 통해 $S(t)$와 $S(t-1)$가 좀더 유의한 상관관계가 있을 거라고 생각할 수 있다! 😀

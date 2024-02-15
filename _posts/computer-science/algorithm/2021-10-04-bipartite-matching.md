@@ -20,7 +20,7 @@ categories: ["Algorithm"]
 **\<Bipartite Matching; 이분 매칭\>**은 직원의 집합 $P$와 작업의 집합 $J$, 그리고 각 직원들의 작업에 대한 선호가 주어졌을 때 (직원, 작업)의 매칭의 수를 최대한으로 만드는 조합을 도출하는 문제이다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/bipartite-matching-1.png" | relative_url }}" width="300px">
+  <img src="{{ "/images/computer-science/algorithm/bipartite-matching-1.png" | relative_url }}" width="300px">
 </div>
 
 이때, 매칭을 생성할 때는 각 사람은 최대 하나의 작업에 할당될 수 있고, 하나의 작업은 최대 한 사람에게만 할당 받을 수 있다. ~~대충 한 사람이 2가지 일을 못하고, 한 작업에 2명이 못 들어간다는 말~~
@@ -34,7 +34,7 @@ categories: ["Algorithm"]
 우리는 \<Bipartitie Matching\> 문제를 아래와 같이 \<reduction; 환원\>시켜 해결할 수 있다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/bipartite-matching-2.png" | relative_url }}" width="600px">
+  <img src="{{ "/images/computer-science/algorithm/bipartite-matching-2.png" | relative_url }}" width="600px">
 </div>
 
 <div class="math-statement" markdown="1">

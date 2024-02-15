@@ -14,7 +14,7 @@ categories: ["Algorithm"]
 이전의 두 포스트, [\<Backtracking\>]({{"/2022/05/19/bacaktracking" | relative_url}})과 [\<Branch-and-Bound\>]({{"/2022/05/20/branch-and-bound" | relative_url}})는 Exhausitive Search 방식이었다. 이번에 살펴보는 \<Local Search\>는 **Heuristic Algorithm**의 일종으로 <span style="color: red">"Optimality of the solution"를 희생해 빠르게 solution을 찾는 기법</span>이다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/local-search-1.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/algorithm/local-search-1.png" | relative_url }}" width="100%">
 </div>
 
 \<Local Search\>는 현재의 partial solution에서 가까운 이웃 solution을 탐색해 그 중 가장 좋은 녀석으로 partial solution을 갱신하는 기법이다.
@@ -30,7 +30,7 @@ categories: ["Algorithm"]
 우선 여기서의 \<TSP\> partial solution은 어떤 Hamilton Cycle이다. 그래프가 Complete Graph라면, 당연히 Hamilton Cycle이 존재 할 것이니 일단 하나를 만들어 둔다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/local-search-2.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/algorithm/local-search-2.png" | relative_url }}" width="100%">
 </div>
 
 그리고 이 partial solution을 아주 약간 수정해 neighborhood solution을 만든다. <span style="color: red">서로 다른 두 투어(tour)가 서로 얼마나 가까운지, 서로 이웃인지를 어떻게 정의할까?</span>
@@ -52,7 +52,7 @@ return $s$.
 이 방식은 정말 빠르다. 어떤 partial solution이라도 2-change neighborhood는 $O(n^2)$ 만큼 존재하기 때문이다. 그러나 iteration을 '언제' 멈춰야 할지는 정해지지 않았다. 운이 안 좋으면 평생 iteration을 해도 원하는 solution에 도달하지 못할 수 있다. 이것이 \<Local Search\>의 단점인데, <span style="color: red">탐색을 통해 찾은 final solution이 optimal solution임을 단언할 수 없다. 그것은 단지 local optimal solution일 뿐이다!</span>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/local-search-3.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/algorithm/local-search-3.png" | relative_url }}" width="100%">
 </div>
 
 이것을 해결하고 싶다면, <span style="color: red">이웃의 정의를 좀더 넓게 잡으면 된다.</span> 3개의 edge가 다른 녀석도 이웃으로 보고, 4개의 edge도 이웃으로 본다면, 더 넓은 범위를 후보로 잡아 주변 녀석과 비교해 좀더 좋은 녀석으로 solution을 갱신할 수 있을 것이다.
@@ -86,7 +86,7 @@ return $s$.
 <br/>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/local-search-4.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/algorithm/local-search-4.png" | relative_url }}" width="100%">
 </div>
 
 그러나 이렇게 할 경우, (정말 운이 나쁘면) global solution 바로 앞에서 randomly pick한 neighbor로 가버릴 수 있을 것이다. 이런 상황을 방지하기 위해 iteration을 진행할 수록 probability $p$의 값을 줄여 오직 $\text{cost}(s') < \text{cost}(s)$만 허용하도록 \<Local Search\>를 설계할 수 있다. 이것을 위해 cost difference $\Delta$와 temperature $T$를 도입한다.

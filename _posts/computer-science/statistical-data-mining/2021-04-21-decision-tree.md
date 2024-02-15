@@ -239,7 +239,7 @@ for some $c > 0.5$.
 이때, 우리는 classiciation rule $c$의 값을 바꿔가며, "sensitivity-specificity"를 측정할 수 있는데, 이것을 pair로 삼아 plot으로 그린 것이 바로 \<**ROC curve**; Receiver Operating Characteristic curve\>다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/ROC-curve.jpg" | relative_url }}" width="350px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/ROC-curve.jpg" | relative_url }}" width="350px">
 </div>
 
 

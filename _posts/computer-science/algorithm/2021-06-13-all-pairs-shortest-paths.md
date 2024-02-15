@@ -22,7 +22,7 @@ categories: ["Algorithm"]
 우리는 두 정점 $(i, j)$을 잇는 최단 경로를 아래와 같이 경유지 $k$를 거치는 문제로 생각해볼 수 있다!!
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/all-pairs-shortest-paths-1.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/all-pairs-shortest-paths-1.png" | relative_url }}" width="500px">
 </div>
 
 즉, 두 정점을 잇는 최단 경로를 $k-1$까지의 노드를 사용하는 경우와 $k$까지 노드를 포함해 사용한 경우(pass through $k$)로 나누어 둘 중 최단 경로를 선택한다.

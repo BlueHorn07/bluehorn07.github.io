@@ -66,7 +66,7 @@ Output: for all nodes $u$ reachable from $v$, **visited**($u$) is set to $true$.
 <div class="math-statement" markdown="1">
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/dfs-1.jpg" | relative_url }}" width="280px">
+  <img src="{{ "/images/computer-science/algorithm/dfs-1.jpg" | relative_url }}" width="280px">
 </div>
 
 Assume $u$ is reachable from $v$ but **explore** misses $u$. (귀류법)
@@ -109,7 +109,7 @@ $\blacksquare$
 \<**BFS**\> 알고리즘도 \<DFS\> 알고리즘과 마찬가지로 노드 $s$가 reachable 한지를 판단하는 알고리즘이다. 하지만, \<BFS\>의 경우 reachable 판단 작업보다도 노드 $s$부터의 \<**거리 distance**\>를 재는 데에 탁월한 알고리즘이다!!
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/bfs-1.jpg" | relative_url }}" width="280px">
+  <img src="{{ "/images/computer-science/algorithm/bfs-1.jpg" | relative_url }}" width="280px">
 </div>
 
 \<BFS\>의 컨셉은 "**layer by layer**"다. 시작 노드 $s$로부터 인접한 모든 노드를 살피고; 1st layer, 그리고 그 1st layer의 노드들로부터 인접하지만 방문하지 않은 다른 모든 노드를 살피고; 2nd layer, ... 더이상 방문할 노드가 없을 때까지 이 방식으로 모든 노드를 순회한다. 이제 각 노드가 몇번째 layer에 속해있는지를 통해 $s$로부터의 \<거리\>를 측정할 수 있다!! 어떻게 보면, 이산 영역에서 \<interest circle\>의 반지름을 1씩 들리며 거리를 측정해가는 과정처럼 보이기도 한다.

@@ -19,7 +19,7 @@ categories: ["Algorithm"]
 <hr/>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/independent-set-1.png" | relative_url }}" width="300px">
+  <img src="{{ "/images/computer-science/algorithm/independent-set-1.png" | relative_url }}" width="300px">
 </div>
 
 이번에 살펴볼 \<Independent Set\>, \<Vertex Cover\>, 그리고 \<Clique\> 모두 그래프 위에서 정의되는 Search Problem이다. 그리고 3가지 문제 모두 서로 동치다!
@@ -27,7 +27,7 @@ categories: ["Algorithm"]
 ## Independent Set Problem
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/independent-set-2.png" | relative_url }}" width="300px">
+  <img src="{{ "/images/computer-science/algorithm/independent-set-2.png" | relative_url }}" width="300px">
 </div>
 
 <div class="notice" markdown="1">
@@ -43,7 +43,7 @@ Given a graph and a goal $g$, find $g$ vertices that are independent, that is, n
 ## Vertex Cover Problem
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/vertex-cover-1.png" | relative_url }}" width="300px">
+  <img src="{{ "/images/computer-science/algorithm/vertex-cover-1.png" | relative_url }}" width="300px">
 </div>
 
 <div class="notice" markdown="1">
@@ -70,7 +70,7 @@ Given a set $B$ and its subsets $S_1, ..., S_m \subseteq B$, find a selection of
 ## Clique Problem
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/clique-1.png" | relative_url }}" width="300px">
+  <img src="{{ "/images/computer-science/algorithm/clique-1.png" | relative_url }}" width="300px">
 </div>
 
 \<Clique\>는 "complete subgraph"로 부분 그래프 중 complete graph인 녀석을 말한다. 그래서 그래프 위에서 정의된 \<Clique Problem\>은 다음과 같다.
@@ -90,7 +90,7 @@ Given a graph with $n$ vertices and a budget $b$, find a set of $b$ vertices suc
 ### Independent Set and Vertex Cover
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/independent-set-3.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/algorithm/independent-set-3.png" | relative_url }}" width="100%">
 </div>
 
 \<Independent Set\> 문제와 \<Vertex Cover\> 문제는 서로 동치이다! 위의 결과를 보면 알 수 있듯, \<Independent Set\> 문제에서 선택된 정점을 제외한 정점들이 \<Vertex Cover\> 문제의 solution임을 확인할 수 있다.
@@ -130,7 +130,7 @@ Let $V \setminus S$ be any vertex cover. Consider two nodes $u \in S$ and $v \in
 ### Independent Set and Clique
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/independent-set-4.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/algorithm/independent-set-4.png" | relative_url }}" width="100%">
 </div>
 
 이번에는 \<Independent Set\> 문제와 \<Clique\> 문제를 살펴보자. 두 문제 역시 동치인데, 방법은 아래와 같다.

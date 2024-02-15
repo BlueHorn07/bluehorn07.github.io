@@ -164,7 +164,7 @@ $$
 위의 스텝의 마지막에 $a+b^Tx = 0$라는 평면식이 유도 되었는데, 결국 이 $a+b^T x = 0$이라는 hyper-plain이 \<decision boundary\>가 됨을 알 수 있다!!
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/LDA-1.jpg" | relative_url }}" width="380px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/LDA-1.jpg" | relative_url }}" width="380px">
 </div>
 
 <br/>
@@ -236,7 +236,7 @@ $$
 LDA에서의 $\delta_k(x)$와 비교해면, QDA의 경우, cancel out이 덜 되기 때문에 "2차식"이 남게 된다!
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/QDA-1.jpg" | relative_url }}" width="400px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/QDA-1.jpg" | relative_url }}" width="400px">
   <p>
   (둘 중 하나는 QDA를, 다른 하나는 $X_i$에 대한 2차식($X_i^2, X_iX_j$)을 넣고 LDA를 돌린 결과다.)
   </p>

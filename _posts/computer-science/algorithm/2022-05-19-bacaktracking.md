@@ -35,13 +35,13 @@ $$
 위 formula의 $(w \lor \bar{x})$ clause를 통해 $w = 0, x = 1$이 존재하는 assignment는 모두 pruning 할 수 있다. 즉, not-satisfying partial assignment를 통해 탐색해야 하는 Search Space를 줄여나갈 수 있다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/backtracking-1.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/algorithm/backtracking-1.png" | relative_url }}" width="100%">
 </div>
 
 그러나 다른 partial assignment인 $w = 0, x = 0$로 탐색을 계속해도 satisfying assignment는 찾을 수 없다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/backtracking-2.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/algorithm/backtracking-2.png" | relative_url }}" width="100%">
 </div>
 
 \<SAT\> 문제를 Backtracking으로 해결하려 할 때 생각할 부분이 하나 더 있다. 우리는 <span style="color: red">다음 스텝에서 어떤 variable을 체크해 partial assn을 확장할 것인가?</span> 쉽지 않은 문제이지만, Greedy 하게 생각해보면 아래와 같은 규칙이 가능하다.

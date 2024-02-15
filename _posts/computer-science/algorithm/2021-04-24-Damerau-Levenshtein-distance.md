@@ -58,7 +58,7 @@ OSA 알고리즘은 구현하기도 쉽고, 또 본인이 처음 시도한 접�
 추가된 transposition 연산은 아래와 같이 수행된다. `s1 = "ca"`, `s2="abc"`의 예시를 통해 살펴보자.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/DL-distance-1.png" | relative_url }}" width="300px">
+  <img src="{{ "/images/computer-science/algorithm/DL-distance-1.png" | relative_url }}" width="300px">
 </div>
 
 먼저, 현재 `i=2`, `j=3`라고 하자. 즉, `s1[i=2] = 'a'`, `s2[j=3]='c'`인 상황이다.
@@ -66,7 +66,7 @@ OSA 알고리즘은 구현하기도 쉽고, 또 본인이 처음 시도한 접�
 이때, `s2`에서 `j=3`보다 작으면서, `s1[i=2]='a'`와 같은 문자를 갖는 곳의 위치를 `l`이라고 하자! 반대로 `s1`에서 `i=2`보다 작으면서, `s2[j=3]='c'`와 같은 문자를 갖는 곳의 위치를 `k`라고 하자! 위의 예시에서는 `l=0`, `k=0`이다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/DL-distance-2.png" | relative_url }}" width="300px">
+  <img src="{{ "/images/computer-science/algorithm/DL-distance-2.png" | relative_url }}" width="300px">
 </div>
 
 이때, transposition은 3단계를 통해 수행된다.
@@ -175,7 +175,7 @@ void printDP(int N, int M) {
 !! [15484번: 최소편집2](https://www.acmicpc.net/problem/15484)를 해결했다!
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/DL-distance-3.jpg" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/algorithm/DL-distance-3.jpg" | relative_url }}" width="100%">
 </div>
 
 위의 코드에서 약간만 수정하면, [2326번: 최소 편집 문제2](https://www.acmicpc.net/problem/2326)도 쉽게 <span style="color: #009874">**AC**</span>를 받을 수 있다 ㅎㅎ

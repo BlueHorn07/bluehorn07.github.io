@@ -14,7 +14,7 @@ categories: ["Algorithm"]
 <hr/>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/closest-pair-of-points-1.png" | relative_url }}" width="400px">
+  <img src="{{ "/images/computer-science/algorithm/closest-pair-of-points-1.png" | relative_url }}" width="400px">
 </div>
 
 \<closest pair of points\> 문제는 $n$개의 점이 있는 평면에서 가장 가까운 유클리드 거리를 찾는 알고리즘이다. 이 문제는 공항 관제탑에서 두 비행기가 충돌할지를 확인하고 자동으로 알려주는 시스템 등에서 빠르게 경보를 울리기 위해 필요한 알고리즘이다.
@@ -26,7 +26,7 @@ Brute Force 하게 접근한다면 모든 두 점의 쌍에 대해 거리를 구
 1\. Sort points in $P$ by $x$-coordinates: $P_x$. And calculate $x$-median $x_{\text{mid}}$
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/closest-pair-of-points-2.png" | relative_url }}" width="400px">
+  <img src="{{ "/images/computer-science/algorithm/closest-pair-of-points-2.png" | relative_url }}" width="400px">
 </div>
 
 2\. Divide the point set $P$ into two equal-sized subsets $P^{L}$ and $P^{R}$ along $x_{\text{mid}}$. And then solve the problem(= find the closest pair in subsets) for two subsets repectively.
@@ -40,7 +40,7 @@ Brute Force 하게 접근한다면 모든 두 점의 쌍에 대해 거리를 구
 delta $\delta$를 구했다면, 이제는 $P^L$, $P^R$에 걸쳐서 존재하는 거리들을 살펴봐야 한다. 이는 $x_{\text{mid}}$에서 좌우로 $\delta$ 만큼의 거리에 있는 점들을 살펴보면 된다. $2\delta$ 길이 만큼의 회색 띠에 속하는 점들은 $O(n)$의 비용으로 쉽게 구할 수 있다. 회색 띠에 속하는 점들을 모두 구했다면 이번에는 $y$-coordinate를 기준으로 정렬한 $P_y$를 유도한다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/closest-pair-of-points-3.png" | relative_url }}" width="160px">
+  <img src="{{ "/images/computer-science/algorithm/closest-pair-of-points-3.png" | relative_url }}" width="160px">
 </div>
 
 회색 띠 내부를 $\delta/2$ 길이 만큼의 **cell**로 분할하자. 그리고 $s_i$를 $P_y$에서 $i$번째로 작은 $y$ 좌표를 갖는 점이라고 하자. 그러면 아래의 회색 띠의 **cell**에 대해 아래 문장이 성립한다!

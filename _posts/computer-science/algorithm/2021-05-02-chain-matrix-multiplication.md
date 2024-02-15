@@ -33,7 +33,7 @@ categories: ["Algorithm"]
 가장 간단하지만, 가장 비용이 많이 드는 방법은 모든 행렬 곱셈 순서를 모두 살펴보는 것이다. <span class="half_HL">행렬의 곱셈은 binary operation이기 때문에 전체 행렬 연산은 어떤 binary tree의 형태로 표현할 수 있다.</span> 이때, 우리는 $n$개의 행렬을 가지고 있기 때문에, 이 binary tree는 $n$개의 leaf node를 가진 트리가 된다. 또한, 그 가짓수는 exponentially many한 $2^n$개가 된다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/chain-matrix-multiplication-1.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/chain-matrix-multiplication-1.png" | relative_url }}" width="500px">
 </div>
 
 <hr/>

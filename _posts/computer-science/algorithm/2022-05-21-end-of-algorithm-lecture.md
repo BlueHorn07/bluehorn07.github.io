@@ -8,7 +8,7 @@ categories: ["Algorithm"]
 <br/>
 
 <div class="img-wrapper" style="margin-bottom: 20px">
-  <img src="{{ "/images/algorithm/problem-and-solutions.jpg" | relative_url }}" width="300px">
+  <img src="{{ "/images/computer-science/algorithm/problem-and-solutions.jpg" | relative_url }}" width="300px">
 </div>
 
 2020-1학기, 대학에서 '알고리즘' 수업을 수강했습니다. 학부 지도 교수님께서 진행하시던 수업이라 열심히 듣고자 했지만... 첫 코로나 비대면 학기 였던지라 옆에서 같이 공부하는 사람도 없고, 팀플 과제에 인터뷰까지 겹쳐서 제대로 수업을 안 들었습니다 😢 특히 중간고사 이후의 마지막 챕터들은 제대로 이해도 못 하고 시험을 볼 정도 였으니까요. 그래서 종강을 하고도 이것이 늘 마음에 **짐**으로 있었습니다.
@@ -18,7 +18,7 @@ categories: ["Algorithm"]
 첫 알고리즘 포스트의 날짜가 2021년 2월 26일이었는데요. 오늘 2022년 5월 21일, 알고리즘 정리를 마무리 했으니 <span style="color: red">**1년**</span>이 넘게 걸린 프로젝트 였습니다. 동아리 세미나와 다른 과목들을 공부하고 정리한다고 알고리즘에 크게 신경을 못 써서 이렇게 오래 걸렸네요. 그 사이에 저는 포항을 떠나 서울로 올라갔고, 좋은 회사에 들어가 산업기능요원으로 진화(?) 했습니다 🦕
 
 <div class="img-wrapper" style="margin-bottom: 20px">
-  <img src="{{ "/images/algorithm/algorithm-textbook.jpg" | relative_url }}" width="320px">
+  <img src="{{ "/images/computer-science/algorithm/algorithm-textbook.jpg" | relative_url }}" width="320px">
   <p>훈련소를 함께 한 전우다 🐧</p>
 </div>
 

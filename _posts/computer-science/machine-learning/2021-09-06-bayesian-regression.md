@@ -48,7 +48,7 @@ $$
 <div class="proof" markdown="1">
 
 <div class="img-wrapper">
-  <img src="{{ "/images/machine-learning/bayesian_likelihood_from_train_set.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/machine-learning/bayesian_likelihood_from_train_set.png" | relative_url }}" width="100%">
   <p markdown="1">ref. [Gaussian processes: Sec. 2 - Chuong B. Do](http://cs229.stanford.edu/section/cs229-gaussian_processes.pdf)</p>
 </div>
 

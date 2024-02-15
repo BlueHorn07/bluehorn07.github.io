@@ -68,7 +68,7 @@ $$
 즉, "multi-dimensional spline"은 두 basis spline을 곱한 것을 basis function으로 삼는다는 말이다!
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/multi-dimensional-spline-1.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/multi-dimensional-spline-1.png" | relative_url }}" width="500px">
 </div>
 
 위와 같은 방식으로 접근하면, 2-dim 뿐만 아니라 d-dim까지도 쉽게 generalization 할 수 있다.

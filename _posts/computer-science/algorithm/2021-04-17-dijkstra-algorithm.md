@@ -20,7 +20,7 @@ categories: ["Algorithm"]
 \<다익스트르라 알고리즘; Dijkstra's Algorithm\>은 그래프에서 최단 경로를 찾는 대표적인 알고리즘이다. 그래프의 모든 weight가 동일한 값을 가진다면, BFS를 통해서 최단 경로를 구할 수 있다. 또는 각 edge의 weight 값이 다르더라도, 아래와 같이 dummy node를 생성한다면, BFS로도 충분히 최단 경로를 얻을 수 있다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/dijkstra-algorithm-1.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/dijkstra-algorithm-1.png" | relative_url }}" width="500px">
 </div>
 
 하지만, 만약 $\max w_i$의 값이 10,000일 정도로 정말 큰 값이라면, 우리는 dummy node를 생성하는 데에 너무 많은 overhead를 쓰게 된다.
@@ -75,7 +75,7 @@ $H = \texttt{makequeue}(V)$
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/dijkstra-algorithm-2.png" | relative_url }}" width="450px">
+  <img src="{{ "/images/computer-science/algorithm/dijkstra-algorithm-2.png" | relative_url }}" width="450px">
 </div>
 
 
@@ -163,7 +163,7 @@ Q. UCS는 정말 minimum cost path를 보장하는가?
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/dijkstra-algorithm-3.png" | relative_url }}" width="300px">
+  <img src="{{ "/images/computer-science/algorithm/dijkstra-algorithm-3.png" | relative_url }}" width="300px">
 </div>
 
 A. (귀류법) $s$가 PQ에서 $\texttt{pop}$될때, 그때의 $\texttt{PastCost}(s)$가 minimum cost가 아니라고 가정하자. 이것은 $s$ 이후에 $\texttt{pop}$되는 $u$라는 어떤 노드가 있고, $u \rightarrow s$로 가는 path가 minimum cost를 가짐을 의미한다.

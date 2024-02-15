@@ -42,7 +42,7 @@ we have $f(n) \le c\cdot g(n)$
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/O-notation-1.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/O-notation-1.png" | relative_url }}" width="500px">
 </div>
 
 즉, <span class="half_HL">$g(n)$ is an asymptotic upper bound of $f(n)$</span>.
@@ -66,7 +66,7 @@ we have $f(n) \ge c\cdot g(n)$
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/Omega-notation-1.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/Omega-notation-1.png" | relative_url }}" width="500px">
 </div>
 
 즉, <span class="half_HL">$g(n)$ is an asymptotic lower bound of $f(n)$</span>.
@@ -84,7 +84,7 @@ $f(n)$ is $\Theta(g(n))$ iff $f(n) = \Omega(g(n)) = O(g(n))$.
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/Theta-notation-1.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/Theta-notation-1.png" | relative_url }}" width="500px">
 </div>
 
 즉, <span class="half_HL">$g(n)$ is an asymptotic approximation of $f(n)$</span>.

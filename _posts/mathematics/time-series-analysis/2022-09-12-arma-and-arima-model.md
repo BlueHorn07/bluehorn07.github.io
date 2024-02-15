@@ -75,7 +75,7 @@ $$
 ## Example
 
 <div class="img-wrapper">
-  <img src="{{ "/images/time-series-analysis/goog200-arima.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/time-series-analysis/goog200-arima.png" | relative_url }}" width="100%">
 </div>
 
 `goog200` 데이터에 대해 $d = 0$으로 두고, $p$와 $q$를 0부터 2까지 변화시킨 결과이다. 생각보다 Fitting이 잘 되는 것을 볼 수 있다.

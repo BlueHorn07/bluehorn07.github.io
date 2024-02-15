@@ -50,7 +50,7 @@ $$
 $$
 
 <div class="img-wrapper">
-  <img src="{{ "/images/machine-learning/basis-function.png" | relative_url }}" width="400px">
+  <img src="{{ "/images/computer-science/machine-learning/basis-function.png" | relative_url }}" width="400px">
 </div>
 
 <hr/>

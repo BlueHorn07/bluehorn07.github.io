@@ -17,7 +17,7 @@ categories: ["Algorithm"]
 ## Longest Path Problem
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/longest-path-problem-1.png" | relative_url }}" width="300px">
+  <img src="{{ "/images/computer-science/algorithm/longest-path-problem-1.png" | relative_url }}" width="300px">
 </div>
 
 \<Shortest Path Problem\>은 [다익스트라 알고리즘]({{"/2021/04/17/dijkstra-algorithm" | relative_url}})으로 효율적으로 해결할 수 있음을 알고 있다. 그렇다면 \<Longest Path Problem\>은 어떨까? 당신이 택시 기사라면, 출발지에서 목적지까지 최대한 긴 경로로 운전해서 최대의 택시비를 벌고 싶을 것이다. (단, 왔던 길을 뱅뱅 도는 *얕은* 수법을 쓴다면 똑독한 승객이 눈치 챌 테니, 왔던 길은 다시 가지 않아야 할 것이다.) 그래서 \<Longest Path Problem\>을 \<Taxicab Rip-off\> 문제, 즉 '택시 바가지' 문제라고도 부른다.

@@ -39,7 +39,7 @@ KNN의 parameter인 $k$는 model complexity를 컨트롤 한다.
 - Large $k$: model complexity ▼, bias ▲, variance ▼ <small>// make smooth model</small>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/knn-1.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/knn-1.png" | relative_url }}" width="500px">
 </div>
 
 [Problem 😱] KNN $\hat{f}(x)$ is <span style="color:red">**not smooth**</span> and <span style="color:red">**not continuous**</span>!!
@@ -63,7 +63,7 @@ where $K_k (x, x_i) = I(x_i \in N_k (x))$.
 \<kernel method\>의 메인 아이디어는 <span class="half_HL">KNN에서 $I(x_i \in N_k(x))$를 다른 smooth function $K_{\lambda}(x, x')$로 대체한다</span>는 것이다!! 이때의 그 smooth function $K_{\lambda}(x, x')$를 \<**kernel function**\>이라고 한다!!
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/kernel-method-1.png" | relative_url }}" width="550px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/kernel-method-1.png" | relative_url }}" width="550px">
 </div>
 
 위의 그림은 \<kernel function\> 중 하나인 \<Epanechnikov kernel\>을 시각화한 것이다.
@@ -129,7 +129,7 @@ D(t) = \dfrac{1}{\sqrt{2\pi}} \exp \left( - t^2 / 2\right)
 $$
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/kernel-functions-1.jpg" | relative_url }}" width="550px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/kernel-functions-1.jpg" | relative_url }}" width="550px">
 </div>
 
 <br/>
@@ -152,7 +152,7 @@ kernel method를 쓰는 \<Nadaraya-Watson Estimator\>에선 "curvurse를 제대�
 지금까지의 \<kernel method\>는 사실 <span class="half_HL">weighted local constant fitting</span>을 한 것이다. 즉, "local constant fitting"을 하긴 했는데, kernel function으로 weighting을 했다는 말이다. 그래서 이번에는 constant fitting 대신에 <span style="color:red">linear fitting</span> 하는 방법을 도입하게 된다!
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/weighted-local-linear-regression-1.jpg" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/weighted-local-linear-regression-1.jpg" | relative_url }}" width="500px">
 </div>
 
 👀 \<local linear regression\>이 \<NW estimator\> 보다 boundary에서 훨씬 bias가 줄어든 것을 확인할 수 있다!! 👀
@@ -180,7 +180,7 @@ $$
 이 \<local linear regression\>의 아이디어를 확장에 \<local <u>polynomial</u> regression\>으로 확장해볼 수도 있다!!
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/weighted-local-quadratic-regression-1.jpg" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/weighted-local-quadratic-regression-1.jpg" | relative_url }}" width="500px">
 </div>
 
 👀 \<local quadratic regression\>이 \<local linear regression\>보다 curverture가 있는 부분을 더 잘 fitting 하는 것을 볼 수 있다. 👀
@@ -194,7 +194,7 @@ A. NO!!!
 상황에 따라 다르다!!! 아래의 그림을 살펴보자.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/bias-variance-tradeoff-1.jpg" | relative_url }}" width="450px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/bias-variance-tradeoff-1.jpg" | relative_url }}" width="450px">
 </div>
 
 이 경우, \<constant fit\>이 가장 좋은 결과를 보였다. 또, boundary에서 \<quadratic fit\>은 큰 variance을 보이는 걸 확인할 수 있다. <small>// 위 그림에선 bias는 똑같은데 variance는 quadratic이 가장 컸다.</small>

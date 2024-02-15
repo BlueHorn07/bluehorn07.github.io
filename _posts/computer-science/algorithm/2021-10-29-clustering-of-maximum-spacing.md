@@ -14,7 +14,7 @@ categories: ["Algorithm"]
 <hr/>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/clustering-of-maximum-spacing-1.png" | relative_url }}" width="260px">
+  <img src="{{ "/images/computer-science/algorithm/clustering-of-maximum-spacing-1.png" | relative_url }}" width="260px">
 </div>
 
 \<clustering\>이란 주어진 $n$개의 대상을 서로 관련있는 것끼리 묶어 그룹화 하는 것을 말한다. 그래서 $k$-clustering이라 하면 $n$개 대상을 $k$개의 non-empty group으로 분할하는 것을 말한다.
@@ -59,7 +59,7 @@ clustering $C^{\*}$의 spacing $d^{\*}$는 MST의 $(k-1)$번째로 비싼 간선
 $C^{\*}$의 clustering 중 하나인 $C_r^{\*}$에 속한 두 점 $p_i$, $p_j$에 대해 살펴보자. 그런데 이 두 점이 $C$에서는 $C_s$, $C_t$에 속해 서로 분리된 상태라고 하자. 즉, $p_i \in C_s$, $p_j \in C_t$인 것이다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/clustering-of-maximum-spacing-2.png" | relative_url }}" width="420px">
+  <img src="{{ "/images/computer-science/algorithm/clustering-of-maximum-spacing-2.png" | relative_url }}" width="420px">
 </div>
 
 $C_r^{\*}$ 위에서 $p_i$에서 $p_j$로 가는 경로를 생각해보자. 이때 중간의 어떤 간선 $(p, q)$는 $C$에서의 두 클러스터 $C_s$, $C_r$를 가르는 clustrer distance가 될 것이다. $p_i \rightarrow p_j$ 경로의 모든 간선은 MST의 정의에 따라 $(k-1)$번째 간선인 $d^{\*}$의 길이보다는 작을 것이다. 따라서

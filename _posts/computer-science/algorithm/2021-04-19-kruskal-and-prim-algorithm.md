@@ -33,7 +33,7 @@ $$
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/kruskal-algorithm-1.png" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/algorithm/kruskal-algorithm-1.png" | relative_url }}" width="500px">
 </div>
 
 크루스칼 알고리즘의 **correctness**는 \<**cut property**\>에 의해 보장된다.
@@ -41,7 +41,7 @@ $$
 <span class="statement-title">Theorem.</span> Cut Property<br>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/cut-property-1.png" | relative_url }}" width="200px">
+  <img src="{{ "/images/computer-science/algorithm/cut-property-1.png" | relative_url }}" width="200px">
 </div>
 
 Supp. edges in $X \subset E$ are part of a MST $T$ of $G = (V, E)$.
@@ -59,7 +59,7 @@ Then $X \cup \\{ e \\}$ is part of some MST.
 <div class="math-statement" markdown="1">
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/cut-property-2.png" | relative_url }}" width="200px">
+  <img src="{{ "/images/computer-science/algorithm/cut-property-2.png" | relative_url }}" width="200px">
 </div>
 
 (귀류법) Assume $e = (u, v) \notin T$. <br/>

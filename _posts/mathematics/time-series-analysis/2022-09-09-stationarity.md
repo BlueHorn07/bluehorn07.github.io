@@ -11,7 +11,7 @@ categories: ["Time Series Analysis"]
 
 
 <div class="img-wrapper">
-  <img src="{{ "/images/time-series-analysis/stationarity-1.png" | relative_url }}" width="600px">
+  <img src="{{ "/images/computer-science/time-series-analysis/stationarity-1.png" | relative_url }}" width="600px">
   <p markdown="1">
     [Forecasting: Principles and Practices: 정상성과 차분](https://otexts.com/fppkr/stationarity)
   </p>

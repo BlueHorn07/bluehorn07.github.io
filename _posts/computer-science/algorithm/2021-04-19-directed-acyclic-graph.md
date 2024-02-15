@@ -13,7 +13,7 @@ categories: ["Algorithm"]
 \<DAG; Directed Acyclic Graph\>는 cycle이 존재하지 않는 directed graph를 말한다.
 
 <div style="text-align: center;">
-<img src="{{ "/images/algorithm/DAG-1.jpg" | relative_url }}" width="200px">
+<img src="{{ "/images/computer-science/algorithm/DAG-1.jpg" | relative_url }}" width="200px">
 </div>
 
 이때, 모든 DAG의 노드는 \<topological ordering\>를 가지기 때문에, 우리는 DAG를 \<topological sort\>로 linearization 할 수 있다!!
@@ -23,7 +23,7 @@ categories: ["Algorithm"]
 위에서 제시한 DAG에 대해 vertex with no incoming edges를 반복적으로 제거하여 topological sort를 수행하면, 그 결과는 아래와 같다.
 
 <div style="text-align: center;">
-<img src="{{ "/images/algorithm/DAG-2.jpg" | relative_url }}" width="400px">
+<img src="{{ "/images/computer-science/algorithm/DAG-2.jpg" | relative_url }}" width="400px">
 </div>
 
 DAG과 topological ordering 사이의 관계를 기술하면 아래와 같다.

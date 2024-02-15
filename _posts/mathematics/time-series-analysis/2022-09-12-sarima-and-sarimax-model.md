@@ -29,7 +29,7 @@ $$
 
 <div class="img-wrapper">
   <a href="https://www.datadoghq.com/blog/introducing-anomaly-detection-datadog/" target="_blank">
-  <img src="{{ "/images/time-series-analysis/datadog-anomaly-detection.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/time-series-analysis/datadog-anomaly-detection.png" | relative_url }}" width="100%">
   </a>
 </div>
 

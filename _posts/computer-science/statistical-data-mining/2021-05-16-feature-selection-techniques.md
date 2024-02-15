@@ -32,11 +32,11 @@ Select the optimal model among $M_0, M_1, \dots, M_p$. For $M_p$, this means we 
 <div class="img-wrapper" style="display:flex; justify-content:center; align-items:center;">
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/best-subset-selection-1.png" | relative_url }}" width="450px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/best-subset-selection-1.png" | relative_url }}" width="450px">
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/best-subset-selection-2.png" | relative_url }}" width="320px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/best-subset-selection-2.png" | relative_url }}" width="320px">
   <p>
     Prostate cancer dataset
   </p>

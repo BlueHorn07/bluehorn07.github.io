@@ -30,7 +30,7 @@ categories: ["Algorithm"]
 포스트의 목적이 수업 내용 정리니 일단 정리를 해보자!
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/binary-search-1.jpg" | relative_url }}" width="320px">
+  <img src="{{ "/images/computer-science/algorithm/binary-search-1.jpg" | relative_url }}" width="320px">
 </div>
 
 **Goal**: Find a key $k$ in sorted order array.

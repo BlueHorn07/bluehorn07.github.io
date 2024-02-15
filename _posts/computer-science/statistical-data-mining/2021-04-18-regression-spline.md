@@ -165,7 +165,7 @@ where $f_i$ are polynomials and $\xi_i$ are the **<u>knots</u>**.
 <span class="statement-title">Example.</span> Constant & Linear<br>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/non-parametric-1.jpg" | relative_url }}" width="450px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/non-parametric-1.jpg" | relative_url }}" width="450px">
 </div>
 
 $f_i$를 constant function, linear function으로 모델링 했을 때의 결과이다. 그림에서도 볼 수 있듯이 <span class="half_HL">knots 주변에서 continuous 하지 않다</span>. 이걸 non-continuous 현상은 order가 커져도 여전히 발생한다. 😥
@@ -194,7 +194,7 @@ and <span class="half_HL">has continuous derivatives up to order $(M-1)$</span>.
 <span class="statement-title">Example.</span> 3rd-order polynomial ($M=3$)<br>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/non-parametric-2.jpg" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/non-parametric-2.jpg" | relative_url }}" width="500px">
 </div>
 
 왼쪽은 앞에서 살펴본 \<Local polynomial regression\>의 모델이다. knot에서 not-continuous하다.
@@ -227,7 +227,7 @@ $$
 <span class="statement-title">Example.</span> 3rd-order polynomial with 1st & 2nd derivative<br>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/non-parametric-3.jpg" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/non-parametric-3.jpg" | relative_url }}" width="500px">
 </div>
 
 이번에는 "knot에서 continuous" 조건과 함께 "<span class="half_HL">knot에서 1st/2nd derivatives continuous</span>" 조건이 추가되었다.
@@ -274,7 +274,7 @@ $$
 만약 $M=1$(linear) and $K=2$라면, **spline basis function**은 아래와 같다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/spline-basis-function-1.jpg" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/spline-basis-function-1.jpg" | relative_url }}" width="500px">
 </div>
 
 <br/>
@@ -282,7 +282,7 @@ $$
 만약 $M=3$(cubic) and $K=2$라면, **spline basis function**은 아래와 같다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/statistical-data-mining/spline-basis-function-2.jpg" | relative_url }}" width="500px">
+  <img src="{{ "/images/computer-science/statistical-data-mining/spline-basis-function-2.jpg" | relative_url }}" width="500px">
 </div>
 
 <hr/>

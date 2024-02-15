@@ -18,13 +18,13 @@ categories: ["Algorithm"]
 먼저 이전 포스트에서 다룬 [Profit Maximization 문제]({{"/2021/10/30/linear-programming" | relative_url}})를 다시 살펴보자. 문제가 정의하는 inequality들로부터 *feasible region*을 정의한 후 직선인 objective function과 만나는 지점에서 optimum solution을 구했었다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/simplex-method-1.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/algorithm/simplex-method-1.png" | relative_url }}" width="100%">
 </div>
 
 \<Simplex Method\>는 inequaility constraints가 만드는 feasible region의 모서리(vertex)를 순회하며 최적해를 찾는 접근이다. 위의 문제를 예로 들자면, 모서리 $(0, 0)$에서 시작해 인접한 모서리로 이동하며 더 좋은 objective value를 찾는다. 이런 모서리를 이동하는 것을 \<Simplex Method\>에서는 *hill-climbing*이라고 한다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/simplex-method-2.png" | relative_url }}" width="200px">
+  <img src="{{ "/images/computer-science/algorithm/simplex-method-2.png" | relative_url }}" width="200px">
 </div>
 
 이 *hill-climbing* 과정은 모서리를 이동할 때마다 object value가 커지도록 한다. \<Simplex Method\>는 이 object value가 커지다가 감소하는 그 지점이 optimal value라고 말한다. 방법 자체는 정말 쉽지 않은가? 👏
@@ -42,7 +42,7 @@ categories: ["Algorithm"]
 위의 문제의 경우 variable이 $x_1$, $x_2$ 2개 이기 때문에 feasible region이 2차원에서 그려졌다. 만약 variable이 3개라면 어떻게 될까? 이때도 똑같이 *feasible polyhedron*을 그려서 *hill-climbing*을 하면 된다 👏
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/simplex-method-3.png" | relative_url }}" width="300px">
+  <img src="{{ "/images/computer-science/algorithm/simplex-method-3.png" | relative_url }}" width="300px">
 </div>
 
 그러나 LP에서 다루는 variable이 4개를 넘어가면 더이상 도형을 그려서 *hill-climbing* 하는 방식으로는 최적해를 설명하거나 정당화하는 것이 불가능하다. 즉, Geometry의 한계라는 말이다.
@@ -58,13 +58,13 @@ categories: ["Algorithm"]
 일단은 간단한 예제부터 살펴보자.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/simplex-method-4.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/algorithm/simplex-method-4.png" | relative_url }}" width="100%">
 </div>
 
 이 문제를 simplex method로 풀기 위해 *inequality* constraint를 *equality* contraint로 바꾸는 작업을 해야 한다. 이것을 **<u>standardization</u>**이라고 하며 inequality 식에 $s_i \ge 0$인 **<u>slack variable</u>**을 사용하면 된다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/simplex-method-5.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/algorithm/simplex-method-5.png" | relative_url }}" width="100%">
 </div>
 
 inequality constraint 하나하나 마다 slack variable $s_i \ge 0$을 추가해준다. 이렇게 하면 $s_i \ge 0$이기 때문에 원본 수식의 값은 늘 약간 모자라거나 알맞은 값을 갖게 될 것이다. slack variable로 equality constraint로 바꿔주면 기존 문제를 **<u>system of linear equations</u>**의 관점으로 바라볼 수 있게 된다.
@@ -72,7 +72,7 @@ inequality constraint 하나하나 마다 slack variable $s_i \ge 0$을 추가�
 다음은 위의 linear syatem을 행렬꼴로 기술한다. 이 행렬을 **<u>simplex tableau</u>**라고 한다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/simplex-method-6.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/algorithm/simplex-method-6.png" | relative_url }}" width="100%">
 </div>
 
 위의 simplex tablaeu에서 세 가지 주목할 점이 있다.
@@ -94,13 +94,13 @@ Pivoting 작업에는 몇 가지 규칙이 있어 그 규칙에 따라 순서대
 current solution을 개선하기 위해선 current basic variable set에 새로운 variable을 추가해야 한다. 이 녀석을 **<u>entering variable</u>**이라고 한다. basic variable은 slack variable의 갯수를 넘을 수 없다. 그래서 기존 basic variable 중 하나가 퇴출 당해야 한다. 이 녀석을 **<u>departing variable</u>**라고 한다. 우리는 간단한 규칙에 따라 entering variable과 departing variable을 선택할 것이다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/simplex-method-7.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/algorithm/simplex-method-7.png" | relative_url }}" width="100%">
 </div>
 
 첫번째 규칙은 <span class="half_HL">맨 마지막 줄에서 가장 작은 값을 갖는 변수를 찾는 것</span>이다. 이 변수를 **entering variable**으로 삼는다. 현재의 tableau에서는 $x_2$가 entering variable이다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/simplex-method-8.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/algorithm/simplex-method-8.png" | relative_url }}" width="100%">
 </div>
 
 다음은 entering variable $x_2$을 값을 기준으로 ratio $b_i / a_i2$를 구한다. **smallest non-negative ratio**를 갖는 row의 basic variable을 선택해 **departing variable**으로 삼는다. 현재의 tableau에서는 $11/1=11$, $27/1=27$, $90/5= 18$로 $s_1$이 departing variable이 된다.
@@ -110,11 +110,11 @@ current solution을 개선하기 위해선 current basic variable set에 새로�
 entering variable과 departing variable이 정해졌다면 pivot entry가 결정된다. 위의 tableau에서는 $x_2$와 $s_1$이 entering/departing variable이었고, 1st row, 2nd col의 $1$이 pivot entry가 된다. pivot entry가 결정되면, 그 entry의 값만 남도록 해당 컬럼에 대해 Gaussian Elimination을 수행한다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/simplex-method-9.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/algorithm/simplex-method-9.png" | relative_url }}" width="100%">
 </div>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/algorithm/simplex-method-10.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/computer-science/algorithm/simplex-method-10.png" | relative_url }}" width="100%">
 </div>
 
 현 상태에서의 solution은 $(x_1, x_2, s_1, s_2, s_3) = (0, 11, 0, 16, 35)$가 되며, object function의 값은 $z = 4x_1 + 6x_2 = 4(0) + 6(11) = 66$이 된다. 그러나 optimality check를 해보면, 마지막 행에 $-10$이라는 음수값이 있기 때문에 아직 optimal solution이 아니며 위에서 수행한 pivoting 과정을 다시 수행해야 한다! 다시 반복하는 부분은 생-략 하겠다 🙏
