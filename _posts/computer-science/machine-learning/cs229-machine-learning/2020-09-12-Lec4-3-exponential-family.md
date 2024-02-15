@@ -158,7 +158,7 @@ GLM을 모델링 할 때 우리는 다음의 3가지를 가정한다.
 상황을 그림으로 이해해보자.
 
 <div style="text-align: center;">
-<img src="{{ "/images/CS229/GLM1.png" | relative_url }}" style="width: 70%;">
+<img src="{{ "/images/computer-science/CS229/GLM1.png" | relative_url }}" style="width: 70%;">
 </div>
 
 - 가정(2)에 따라 $\eta=\theta^{T}x$이므로 $\eta$는 Linear Model의 출력값이다.
@@ -167,7 +167,7 @@ GLM을 모델링 할 때 우리는 다음의 3가지를 가정한다.
 이번엔 Training/Test Phase에서 모델이 어떻게 작동하는지를 살펴보자.
 
 <div style="text-align: center;">
-<img src="{{ "/images/CS229/GLM2.png" | relative_url }}" style="width: 70%;">
+<img src="{{ "/images/computer-science/CS229/GLM2.png" | relative_url }}" style="width: 70%;">
 </div>
 
 - Training에서 영향을 받는 것은 오직 Linear Model이다. Distribution은 전혀 영향이 없으며, Learning의 대상이 아니다.
@@ -219,7 +219,7 @@ $$\eta = g^{-1}(\mu)$$
 model parameter $\theta$, natural parameter $\eta$, canonical parameter $\mu$ or $\phi$, canonical function $g(\eta)$, $g^{-1}(\mu)$에 대한 관계를 다이어그램으로 표현하면 다음과 같다.
 
 <div style="text-align: center;">
-<img src="{{ "/images/CS229/GLM3.png" | relative_url }}"  style="width: 70%;">
+<img src="{{ "/images/computer-science/CS229/GLM3.png" | relative_url }}"  style="width: 70%;">
 </div>
 
 Logistic Regression을 예로 들어 살펴보자!
@@ -251,13 +251,13 @@ GLM을 요약해보자.
   - Logistic Regression의 경우, Bernoulli 분포를 Exponential Family의 형태로 바꿈으로써 $\theta^{T}x$와 확률 $\phi$를 연결하는 sigmoid 함수를 찾을 수 있었다.
 
 <div style="text-align: center;">
-<img src="{{ "/images/CS229/GLM2.png" | relative_url }}"  style="width: 70%;">
+<img src="{{ "/images/computer-science/CS229/GLM2.png" | relative_url }}"  style="width: 70%;">
 </div>
 
 <br>
 
 <div style="text-align: center;">
-<img src="{{ "/images/CS229/GLM3.png" | relative_url }}"  style="width: 70%;">
+<img src="{{ "/images/computer-science/CS229/GLM3.png" | relative_url }}"  style="width: 70%;">
 </div>
 
 <hr>

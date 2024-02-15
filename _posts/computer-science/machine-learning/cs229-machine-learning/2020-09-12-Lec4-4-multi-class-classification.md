@@ -194,7 +194,7 @@ $$
 우리는 $\theta$와 linearly related 된 $\eta$에 exponential과 normalize를 취하여 predicted probability인 $\hat{p}(y)$을 유도하였다.
 
 <div style="text-align: center;">
-<img src="{{ "/images/CS229/GLM4.png" | relative_url }}"  style="width: 90%;">
+<img src="{{ "/images/computer-science/CS229/GLM4.png" | relative_url }}"  style="width: 90%;">
 </div>
 
 <br>
@@ -202,7 +202,7 @@ $$
 하지만 $\hat{p}(y)$은 엄연히 predicted 값일 뿐! 우리는 $\hat{p}(y)$과 실제 값인 $p(y)$를 비교하여 둘 사이의 오차를 최소화 해야 한다. 이때 정답 레이블에 대해 $p(y)$는 $1$의 값을 가진다.
 
 <div style="text-align: center;">
-<img src="{{ "/images/CS229/GLM5.png" | relative_url }}" style="width: 70%;">
+<img src="{{ "/images/computer-science/CS229/GLM5.png" | relative_url }}" style="width: 70%;">
 </div>
 
 이제 $\hat{p}(y)$와 $p(y)$ 사이의 오차를 최소화하는 지표인 **Cross Entropy**가 등장한다. Cross Entropy는 다음과 같이 정의된다.

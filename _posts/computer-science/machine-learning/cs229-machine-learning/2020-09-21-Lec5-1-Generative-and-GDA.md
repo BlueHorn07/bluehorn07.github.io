@@ -165,7 +165,7 @@ $\mu_0$을 잘 살펴보자. $\mu_0$의 결과를 말로 풀어쓰면, "$y=0$인
 이 결과를 그래프로 표현하면 다음과 같다.
 
 <div style="text-align: center;">
-<img src="{{ "/images/CS229/GDA1.png" | relative_url }}"  style="width: 50%;">
+<img src="{{ "/images/computer-science/CS229/GDA1.png" | relative_url }}"  style="width: 50%;">
 </div>
 
 위 그림에 그려진 직선은 $p(y=1 \vert x)=0.5$가 되는 decision boundary의 역할을 한다!!
@@ -185,7 +185,7 @@ $$\arg{ \max_{y} {p(y \vert x)}} = \arg{ \max_{y} {p(x \vert y)p(y)}}$$
 그러면,
 
 <div style="text-align: center;">
-<img src="{{ "/images/CS229/GDA2.png" | relative_url }}"  style="width: 50%;">
+<img src="{{ "/images/computer-science/CS229/GDA2.png" | relative_url }}"  style="width: 50%;">
 </div>
 
 즉, $p(y=1 \vert \phi, \mu_0, \mu_1, \Sigma)$는 sigmoid의 shape이 나온다!!
@@ -195,7 +195,7 @@ $$\arg{ \max_{y} {p(y \vert x)}} = \arg{ \max_{y} {p(x \vert y)p(y)}}$$
 위의 사실은 GDA와 Logistic Regression이 본질적으로 동일하다는 것을 말한다. 그렇다면 우리는 언제 GDA를 쓰고, 언제 Logistic Regression을 써야 할까??
 
 <div style="text-align: center;">
-<img src="{{ "/images/CS229/GDA3.png" | relative_url }}"  style="width: 80%;">
+<img src="{{ "/images/computer-science/CS229/GDA3.png" | relative_url }}"  style="width: 80%;">
 </div>
 
 

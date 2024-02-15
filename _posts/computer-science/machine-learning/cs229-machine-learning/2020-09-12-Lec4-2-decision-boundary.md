@@ -59,19 +59,19 @@ Linear Classification은 $\theta^{T}x$를 통해서 입력 $x$와 parameter $\th
 그러면, Hyperplain은 다음과 같다.
 
 <div style="text-align: center;">
-<img src="{{ "/images/CS229/hyperplain1.png" | relative_url }}" style="width: 40%;">
+<img src="{{ "/images/computer-science/CS229/hyperplain1.png" | relative_url }}" style="width: 40%;">
 </div>
 
 하지만, 이 모델은 하나의 원(○)을 놓치고 있다. 이 특정한 입력 $x_j$에 대해 $\theta$와의 내적값을 확인해보면,
 
 <div style="text-align: center;">
-<img src="{{ "/images/CS229/hyperplain2.png" | relative_url }}" style="width: 40%;">
+<img src="{{ "/images/computer-science/CS229/hyperplain2.png" | relative_url }}" style="width: 40%;">
 </div>
 
 $\theta^{T}{x_j} < 0$이라는 결과가 나온다. 하지만 이것은 본래 $x_j$가 가졌어야 할 $y_j=1$이라는 결과와는 크게 다르다! 그래서 Learning rule을 이용해 $\theta$의 값을 갱신해줘야 한다.
 
 <div style="text-align: center;">
-<img src="{{ "/images/CS229/hyperplain3.png" | relative_url}}" style="width: 40%;">
+<img src="{{ "/images/computer-science/CS229/hyperplain3.png" | relative_url}}" style="width: 40%;">
 </div>
 
 $\theta$를 $\theta'$으로 갱신한 결과, 새로운 Hyperplain이 정의되었다. 이 Hyperplain은 모든 원(○)를 $(\theta')^T x > 0$로 분류하고 있다.
