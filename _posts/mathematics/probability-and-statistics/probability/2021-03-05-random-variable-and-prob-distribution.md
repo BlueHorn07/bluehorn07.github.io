@@ -81,7 +81,7 @@ The set of ordered pairs $(x, f(x))$ is a \<**probability function**\>, \<**prob
 위와 같은 prabability function $f(x)$는 RV $X$가 $x$에서 갖는 \<확률 probability\>을 출력해준다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/probability-and-statistics/pmf-1.jpg" | relative_url }}" width="320px">
+  <img src="{{ "/images/mathematics/probability-and-statistics/pmf-1.jpg" | relative_url }}" width="320px">
 </div>
 
 <br><span class="statement-title">Definition.</span> Cumulative Distribution Function for Discrete RV<br>
@@ -95,7 +95,7 @@ $$
 개인적으로 PMF에 $\sum$을 한거라 명칭이 CMF가 되야 하지 않나 싶었는데, 교재에 "CMF"란 용어는 존재하지 않았다. 즉, \<**Cumulative Distribution Function**\>, 이게 맞는 표현이다.
 
 <div class="img-wrapper" style="margin: 10px">
-  <img src="{{ "/images/probability-and-statistics/discrete-cdf-1.jpg" | relative_url }}" width="400px">
+  <img src="{{ "/images/mathematics/probability-and-statistics/discrete-cdf-1.jpg" | relative_url }}" width="400px">
 </div>
 
 앞의 내용을 미리 스포하자면, \<Discrete RV\>와 \<Continuous RV\>에서의 CDF는 다르게 표현된다.
@@ -127,7 +127,7 @@ The function $f(x)$ is a \<**Probability Density Function**\> (PDF) for the cont
 3. $$P(a < X < b) = \int^b_a f(x) \; dx$$
 
 <div class="img-wrapper" style="margin: 10px">
-  <img src="{{ "/images/probability-and-statistics/density-function-1.jpg" | relative_url }}" width="600px">
+  <img src="{{ "/images/mathematics/probability-and-statistics/density-function-1.jpg" | relative_url }}" width="600px">
 </div>
 
 <br><span class="statement-title">Definition.</span> Cumulative Distribution Function for Continuous RV<br>
@@ -139,7 +139,7 @@ F(x) = P(X \le x) = \int^x_{-\infty} f(t) \; dt, \quad - \infty < x < \infty
 $$
 
 <div class="img-wrapper" style="margin: 10px">
-  <img src="{{ "/images/probability-and-statistics/continuous-cdf-1.jpg" | relative_url }}" width="400px">
+  <img src="{{ "/images/mathematics/probability-and-statistics/continuous-cdf-1.jpg" | relative_url }}" width="400px">
 </div>
 
 Continuous RV에서의 CDF는 적분으로 정의되기 때문에 CDF $F(x)$를 통해 PDF $f(x)$를 얻을 수 있다!!!

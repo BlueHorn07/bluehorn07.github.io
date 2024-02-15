@@ -24,7 +24,7 @@ Differential Equations
 \<**푸리에 변환; Fourier Transform**\>은 신호(signal)에서 주파수를 분석하기 위해 사용하는 테크닉이다.
 
 <div class="img-wrapper">
-  <img src="{{"/images/differential-equations/fourier-transform-1.png" | relative_url }}" style="width:100%;">
+  <img src="{{"/images/mathematics/differential-equations/fourier-transform-1.png" | relative_url }}" style="width:100%;">
 </div>
 
 흔히 위와 같이 신호에 잡음(noise)가 섞여 있는 경우에, 신호를 복원하기 위해 사용한다. 이때, (signal + noise)를 오른쪽의 "**주파수 공간**"으로 변환하는 것을 \<푸리에 변환\>이라고 한다.

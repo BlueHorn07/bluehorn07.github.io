@@ -7,7 +7,7 @@ toc_sticky: true
 
 응용복소함수론(MATH210)
 
-![](/images/complex-variable/complex-variable-meme.jpg){: .align-center}
+![](/images/mathematics/complex-variable/complex-variable-meme.jpg){: .align-center}
 
 <hr/>
 

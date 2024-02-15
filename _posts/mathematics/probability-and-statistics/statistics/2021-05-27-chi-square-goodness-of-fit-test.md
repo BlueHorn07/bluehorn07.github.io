@@ -27,7 +27,7 @@ preview: "<proportion test>의 일반화. 카레고리 변수에 대한 검정."
 먼저 아래의 예제를 풀면서, \<**Goodness-of-fit Test; 적합도 검정**\>에 대해 살펴보자.
 
 <div class="img-wrapper">
-<img src= "{{"/images/probability-and-statistics/goodness-of-fit-test-1.png" | relative_url }}" width=650>
+<img src= "{{"/images/mathematics/probability-and-statistics/goodness-of-fit-test-1.png" | relative_url }}" width=650>
 </div>
 
 1\. 검정의 목표
@@ -164,7 +164,7 @@ The degree of freedom $\nu$ = (#. of categories after pooling - 1) - #. of param
 \<Chi-squared goodness-of-fit Test\>를 응용해 <span class="red">두 개의 카테고리가 서로 **독립(independent)**인지 검정</span>해보자.
 
 <div class="img-wrapper">
-<img src= "{{"/images/probability-and-statistics/goodness-of-fit-test-2.png" | relative_url }}" width=650>
+<img src= "{{"/images/mathematics/probability-and-statistics/goodness-of-fit-test-2.png" | relative_url }}" width=650>
 </div>
 
 'income'과 'political'이 서로 독립인지를 검정해보자. 아래와 같이 $H_0$와 $H_1$을 설정한다.
@@ -237,7 +237,7 @@ Reject $H_0$, if $\chi^2 > \chi^2_{\alpha} (\nu)$.
 
 
 <div class="img-wrapper">
-<img src= "{{"/images/probability-and-statistics/goodness-of-fit-test-3.png" | relative_url }}" width=650>
+<img src= "{{"/images/mathematics/probability-and-statistics/goodness-of-fit-test-3.png" | relative_url }}" width=650>
 </div>
 
 먼저 무엇을 검정하고자 하는지 명확히 정의해보자.

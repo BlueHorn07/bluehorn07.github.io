@@ -141,7 +141,7 @@ $$
 ### Examples
 
 <div class="img-wrapper">
-<img src= "{{"/images/probability-and-statistics/F-distribution-example-1.png" | relative_url }}" width=550>
+<img src= "{{"/images/mathematics/probability-and-statistics/F-distribution-example-1.png" | relative_url }}" width=550>
 </div>
 
 <div class="math-statement" markdown="1">

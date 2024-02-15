@@ -49,7 +49,7 @@ If an operation can be performed in $n_1$ ways, and if for each of these ways a 
 \<곱의 규칙 Product Rule\>을 간단하게 생각하면 아래와 같은 문제라고 생각할 수 있다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/probability-and-statistics/sample-space-1.jpg" | relative_url }}" width="230px">
+  <img src="{{ "/images/mathematics/probability-and-statistics/sample-space-1.jpg" | relative_url }}" width="230px">
 </div>
 
 <br><span class="statement-title">Rule.</span> Inclusion-Exclusion Principle<br>

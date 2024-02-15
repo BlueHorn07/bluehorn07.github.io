@@ -403,6 +403,6 @@ $\blacksquare$
 앞으로도 군론의 다양한 정리들과 사례들이 기다리고 있으니! 기대하시라!!!
 
 <div class="img-wrapper">
-  <img src="{{ "/images/modern-algebra-1/group_meme.jpg" | relative_url }}">
+  <img src="{{ "/images/mathematics/modern-algebra-1/group_meme.jpg" | relative_url }}">
 </div>
 

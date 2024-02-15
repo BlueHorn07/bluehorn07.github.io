@@ -14,7 +14,7 @@ categories: ["Statistics"]
 아래의 문제를 살펴보자!
 
 <div class="img-wrapper">
-<img src= "{{"/images/probability-and-statistics/paired-observations-example-1.png" | relative_url }}" width=550>
+<img src= "{{"/images/mathematics/probability-and-statistics/paired-observations-example-1.png" | relative_url }}" width=550>
 </div>
 
 우리는 학생1부터 학생30까지 그들의 TOEIC 점수의 before-after를 가지고 있다. 우리는 과연 MATH230 수업이 학생들의 TOEIC 수업에 어떤 영향을 미치는지 알기 위해 $\mu_1 - \mu_2$를 추정하고자 한다!!

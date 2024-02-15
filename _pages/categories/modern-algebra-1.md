@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 ---
 
-![](/images/modern-algebra-1/group_meme.jpg){: .align-center}
+![](/images/mathematics/modern-algebra-1/group_meme.jpg){: .align-center}
 
 # Group
 

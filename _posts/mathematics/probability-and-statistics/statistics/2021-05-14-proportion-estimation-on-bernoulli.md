@@ -114,7 +114,7 @@ $$
 [Two Samples Estimation: Diff Btw Two Means]({{"/2021/05/13/two-samples-estimation-diff-btw-two-means" | relative_url}}) 포스트에서 이것과 비슷한 상황을 접한 적이 있다. 그때는 Normal Distribution에서 수행했고, sample variance $s^2$를 쓰게 되면서, pooled sample variance $S_p^2$나 \<Welch's t-test\>를 수행했다. 위의 상황과 \<Proportion Estimation\>이 어떻게 다른지 비교하면서 살펴보자!
 
 <div class="img-wrapper">
-<img src= "{{"/images/probability-and-statistics/difference-btw-two-proportions-1.png" | relative_url }}" width=650>
+<img src= "{{"/images/mathematics/probability-and-statistics/difference-btw-two-proportions-1.png" | relative_url }}" width=650>
 </div>
 
 Select $n_1$: math major, and $n_2$: physics major, independently.

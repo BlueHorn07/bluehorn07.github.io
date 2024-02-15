@@ -88,7 +88,7 @@ $$
 ## Test on Two Proportions
 
 <div class="img-wrapper">
-<img src= "{{"/images/probability-and-statistics/test-on-proportion-1.png" | relative_url }}" width=650>
+<img src= "{{"/images/mathematics/probability-and-statistics/test-on-proportion-1.png" | relative_url }}" width=650>
 </div>
 
 <span class="red">두 집합의 비율이 동일한지, 즉 $p_1 = p_2$를 검정</span>하는 문제다. [\<Proportion Estimation\>]({{"/2021/05/14/proportion-estimation-on-bernoulli" | relative_url}})에서 한 것처럼 CLT를 적용해 Test Statistic을 구하면 아래와 같다.

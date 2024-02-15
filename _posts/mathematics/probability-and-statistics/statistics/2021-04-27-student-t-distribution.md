@@ -263,7 +263,7 @@ $Z \sim N(0, 1)$이고 $V \sim \chi^2(n-1)$이다. 그리고 Sample Variance와 
 ## Examples
 
 <div class="img-wrapper">
-<img src= "{{"/images/probability-and-statistics/t-distribution-example-1.png" | relative_url }}" width=550>
+<img src= "{{"/images/mathematics/probability-and-statistics/t-distribution-example-1.png" | relative_url }}" width=550>
 </div>
 
 <div class="math-statement" markdown="1">

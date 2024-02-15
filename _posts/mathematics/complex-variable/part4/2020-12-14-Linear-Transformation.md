@@ -31,7 +31,7 @@ $$
 $A = a \cdot e^{i\alpha}$, $z = r \cdot e^{i\theta}$라고 두면, $w$는 $w = (ar) \cdot e^{i(\theta + \alpha)}$가 된다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/complex-variable/linear_transform_1.png" | relative_url }}" style="width:50%;">
+  <img src="{{ "/images/mathematics/complex-variable/linear_transform_1.png" | relative_url }}" style="width:50%;">
 </div>
 
 - 각도 $\alpha$ 만큼 Domain이 회전 이동
@@ -44,7 +44,7 @@ w = z + B
 $$
 
 <div class="img-wrapper">
-  <img src= "{{ "/images/complex-variable/linear_transform_2.png" | relative_url }}" style="width:50%;">
+  <img src= "{{ "/images/mathematics/complex-variable/linear_transform_2.png" | relative_url }}" style="width:50%;">
 </div>
 
 - $B$ 만큼 평행 이동
@@ -77,7 +77,7 @@ trasnform $w$를 두 단계로 나누어 실시하자.
 2. $w_2 = w_1 + 2$
 
 <div class="img-wrapper">
-  <img src= "{{ "/images/complex-variable/linear_transform_3.png" | relative_url }}" style="width:70%;">
+  <img src= "{{ "/images/mathematics/complex-variable/linear_transform_3.png" | relative_url }}" style="width:70%;">
 </div>
 
 <hr>
@@ -87,7 +87,7 @@ trasnform $w$를 두 단계로 나누어 실시하자.
 Write $z = r \cdot e^{i\theta}$, THEN $w = \frac{1}{r} \cdot e^{-i\theta}$
 
 <div class="img-wrapper">
-  <img src= "{{ "/images/complex-variable/inversion_mapping_1.png" | relative_url }}" style="width:70%;">
+  <img src= "{{ "/images/mathematics/complex-variable/inversion_mapping_1.png" | relative_url }}" style="width:70%;">
 </div>
 
 inversion mapping $w = \frac{1}{z}$는 $z$를 x-축으로 반전시키고, 길이를 수축/팽창시킨다.
@@ -126,7 +126,7 @@ $$
 #### (1) $x=c$ unser $w = \frac{1}{z}$
 
 <div class="img-wrapper">
-  <img src= "{{ "/images/complex-variable/inversion_mapping_2.png" | relative_url }}" style="width:65%;">
+  <img src= "{{ "/images/mathematics/complex-variable/inversion_mapping_2.png" | relative_url }}" style="width:65%;">
 </div>
 
 $$
@@ -150,7 +150,7 @@ $$
 #### (2) $\\{ x + iy : x \ge c \\}$ under $w = \frac{1}{z}$
 
 <div class="img-wrapper">
-  <img src= "{{ "/images/complex-variable/inversion_mapping_3.png" | relative_url }}" style="width:70%;">
+  <img src= "{{ "/images/mathematics/complex-variable/inversion_mapping_3.png" | relative_url }}" style="width:70%;">
 </div>
 
 <hr>
@@ -208,7 +208,7 @@ $$
 $A$, $D$에 따른 경우를 표로 분류하면 아래와 같다.
 
 <div class="img-wrapper">
-  <img src= "{{ "/images/complex-variable/inversion_mapping_4.png" | relative_url }}" style="width:75%;">
+  <img src= "{{ "/images/mathematics/complex-variable/inversion_mapping_4.png" | relative_url }}" style="width:75%;">
 </div>
 
 <hr>

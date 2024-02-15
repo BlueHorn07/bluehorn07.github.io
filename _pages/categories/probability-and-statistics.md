@@ -73,7 +73,7 @@ toc_sticky: true
 # Statistics
 
 <div class="img-wrapper">
-<img src= "{{"/images/probability-and-statistics/sampling-distribution-table-1.png" | relative_url }}" width=550>
+<img src= "{{"/images/mathematics/probability-and-statistics/sampling-distribution-table-1.png" | relative_url }}" width=550>
 </div>
 
 - [Sampling Distribution]({{"/2021/04/25/sampling-distribution" | relative_url}})

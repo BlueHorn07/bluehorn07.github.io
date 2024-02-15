@@ -29,7 +29,7 @@ $$
 이때, $\beta$는 T2 Error다!!
 
 <div class="img-wrapper">
-<img src= "{{"/images/probability-and-statistics/choice-of-sample-size-1.png" | relative_url }}" width=650>
+<img src= "{{"/images/mathematics/probability-and-statistics/choice-of-sample-size-1.png" | relative_url }}" width=650>
 </div>
 
 <div class="math-statement" markdown="1">
@@ -106,7 +106,7 @@ $$
 교재에서는 위의 상황을 아래의 그림처럼 표현하고 있다!
 
 <div class="img-wrapper">
-<img src= "{{"/images/probability-and-statistics/choice-of-sample-size-2.png" | relative_url }}" width=500>
+<img src= "{{"/images/mathematics/probability-and-statistics/choice-of-sample-size-2.png" | relative_url }}" width=500>
 </div>
 
 <br/>

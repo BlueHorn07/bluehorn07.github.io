@@ -141,7 +141,7 @@ $$
 # Meaning of Bayes Rule
 
 <div class="img-wrapper">
-<img src= "{{"/images/probability-and-statistics/bayes-rule-1.png" | relative_url }}" width="100%">
+<img src= "{{"/images/mathematics/probability-and-statistics/bayes-rule-1.png" | relative_url }}" width="100%">
 </div>
 
 베이즈 정리는 <span style="color: red">이벤트에 대한 원인을 규명하는 도구</span>이다. 어떤 이벤트가 일어나는 것에는 원인이 있다. 이 원인들은 2개가 동시에 발생하지는 않는 Exclusive 하다고 가정한다.
@@ -151,7 +151,7 @@ $$
 베이즈 정리를 관측(evidence)에 따른 믿음(belief)의 변화로 이해한 것이 \<Bayesian; 베이즈 주의자\>들이다.
 
 <div class="img-wrapper">
-<img src= "{{"/images/probability-and-statistics/bayes-rule-2.png" | relative_url }}" width="100%">
+<img src= "{{"/images/mathematics/probability-and-statistics/bayes-rule-2.png" | relative_url }}" width="100%">
 </div>
 
 앞에서 살펴본 "코로나에 걸린 블혼"의 예시를 다시 보자. 그는 키트로 양성(+) 판정을 받기 전에는 자신의 감기가 코로나일 거라는 믿음이 $P(C) = 0.4$에 불과 했다. 그러나 키트로 양성 판정을 받은 후에는 자신이 코로나에 걸렸을 거라는 믿음 $P(C \mid +)$이 $0.98$로 치솟았다!

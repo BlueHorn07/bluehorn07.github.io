@@ -142,7 +142,7 @@ $$
 # 맺음말
 
 <div class="img-wrapper">
-<img src= "{{"/images/probability-and-statistics/sampling-distribution-table-2.png" | relative_url }}" width=750>
+<img src= "{{"/images/mathematics/probability-and-statistics/sampling-distribution-table-2.png" | relative_url }}" width=750>
 </div>
 
 이어지는 포스트에서는 또다른 Two Samples Estimation인 \<Paired Observation\>의 경우를 살펴본다! 😁

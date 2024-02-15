@@ -9,7 +9,7 @@ categories: ["Modern Algebra1"]
 2020-2학기, 대학에서 '현대대수1' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
 <div class="img-wrapper">
-  <img src="{{ "/images/modern-algebra-1/group_meme.jpg" | relative_url }}">
+  <img src="{{ "/images/mathematics/modern-algebra-1/group_meme.jpg" | relative_url }}">
 </div>
 
 <hr>

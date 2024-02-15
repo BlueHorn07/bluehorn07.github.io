@@ -125,7 +125,7 @@ where $F$ is the CDF of $N(0, 1)$.
 예제를 통해 \<Confidence Interval\>과 \<Prediction Interval\>, \<Tolerance Interval\>와 그 차이를 익혀보자.
 
 <div class="img-wrapper">
-<img src= "{{"/images/probability-and-statistics/prediction-interval-and-tolerance-interval.png" | relative_url }}" width="100%">
+<img src= "{{"/images/mathematics/probability-and-statistics/prediction-interval-and-tolerance-interval.png" | relative_url }}" width="100%">
 </div>
 
 <hr/>

@@ -41,7 +41,7 @@ $$
 $$
 
 <div class="img-wrapper">
-<img src= "{{"/images/probability-and-statistics/chi-square-distribution.png" | relative_url }}" width=450>
+<img src= "{{"/images/mathematics/probability-and-statistics/chi-square-distribution.png" | relative_url }}" width=450>
 </div>
 
 Therefore, the confidence interval for $\sigma^2$ is

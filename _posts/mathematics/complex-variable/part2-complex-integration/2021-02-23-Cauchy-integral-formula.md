@@ -85,7 +85,7 @@ $$
 임을 보이자!
 
 <div class="img-wrapper">
-<img src= "{{"/images/complex-variable/cauchy-integral-formula-1.jpg" | relative_url }}" style="width:320px;">
+<img src= "{{"/images/mathematics/complex-variable/cauchy-integral-formula-1.jpg" | relative_url }}" style="width:320px;">
 </div>
 
 $$
@@ -151,7 +151,7 @@ $$
 $$
 
 <div class="img-wrapper">
-<img src= "{{"/images/complex-variable/cauchy-integral-formula-2.jpg" | relative_url }}" style="width:400px;">
+<img src= "{{"/images/mathematics/complex-variable/cauchy-integral-formula-2.jpg" | relative_url }}" style="width:400px;">
 </div>
 
 curve $C_1$, $C_2$를 가로지르는 3개의 disc를 생각해보자.
@@ -198,7 +198,7 @@ $$
 지금부터는 시야를 확장해서 Domain에 "hole"이 있는 경우를 살펴보자.
 
 <div class="img-wrapper">
-<img src= "{{"/images/complex-variable/cauchy-integral-formula-3.jpg" | relative_url }}" style="width:450px;">
+<img src= "{{"/images/mathematics/complex-variable/cauchy-integral-formula-3.jpg" | relative_url }}" style="width:450px;">
 </div>
 
 먼저 Domain에 hole이 하나 존재한다면, "**doubly connected domain**"이라고 한다. 만약 Domain에 hole이 $(p-1)$개 만큼 존재한다면, "**$p$-fold connected domain**"이라고 한다.
@@ -208,7 +208,7 @@ $$
 doubly connected domain $D$ 위에서 analytic function $f(z)$를 적분해보자.
 
 <div class="img-wrapper">
-<img src= "{{"/images/complex-variable/cauchy-integral-formula-4.jpg" | relative_url }}" style="width:250px;">
+<img src= "{{"/images/mathematics/complex-variable/cauchy-integral-formula-4.jpg" | relative_url }}" style="width:250px;">
 </div>
 
 이제까지 우리는 simply connected domain 위에서의 적분을 수행했다. 하지만, 지금은 "doubly connected domain" 위에서 적분하기 때문에 앞에서 얻은 "closed integral = 0"이라는 결과를 그대로 사용할 수 없다!!
@@ -216,7 +216,7 @@ doubly connected domain $D$ 위에서 analytic function $f(z)$를 적분해보�
 그래서 약간의 꼼수를 쓰려고 한다.
 
 <div class="img-wrapper">
-<img src= "{{"/images/complex-variable/cauchy-integral-formula-5.jpg" | relative_url }}" style="width:450px;">
+<img src= "{{"/images/mathematics/complex-variable/cauchy-integral-formula-5.jpg" | relative_url }}" style="width:450px;">
 </div>
 
 doubly connected domain 위에서의 curve $C_1$, $C_2$에서의 적분을 생각해보자. 이때, 두 curve의 사이를 적절히 분리하여 위와 같이 두 개의 curve $A_1$, $A_2$로 변형할 수 있다!
@@ -250,7 +250,7 @@ $$
 마찬가지 방법으로 "triply connected domain"에서는 어떻게 되는지 살펴보자.
 
 <div class="img-wrapper">
-<img src= "{{"/images/complex-variable/cauchy-integral-formula-6.jpg" | relative_url }}" style="width:450px;">
+<img src= "{{"/images/mathematics/complex-variable/cauchy-integral-formula-6.jpg" | relative_url }}" style="width:450px;">
 </div>
 
 만약 위 그림의 curve $C_1$과 같이 curve 내부에 hole이 두 개가 존재하는 경우는 각 hole에서 각각 적분한 결과의 합과 동일하다.
@@ -308,7 +308,7 @@ $$
 <div class="math-statement" markdown="1">
 
 <div class="img-wrapper">
-<img src= "{{"/images/complex-variable/cauchy-integral-formula-7.jpg" | relative_url }}" style="width:200px;">
+<img src= "{{"/images/mathematics/complex-variable/cauchy-integral-formula-7.jpg" | relative_url }}" style="width:200px;">
 </div>
 
 원래의 contour $C$ 내부에 "$z_0$를 중심으로 하고 반지름인 $\rho$가 충분히 작아서 $C$ 내부에 완전히 들어가는" disc $C_{\rho}$를 잡자.

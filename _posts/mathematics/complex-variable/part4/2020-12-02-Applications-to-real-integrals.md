@@ -170,7 +170,7 @@ Let $f(z) = \frac{1}{1+x^2}$, THEN there are two **<u>poles</u>** at $z=i$ and $
 이제 적분할 contour를 다음과 같이 잡아보자.
 
 <div class="img-wrapper">
-  <img src= "{{"/images/complex-variable/gaussian_integral.png" | relative_url }}" style="width:450px;">
+  <img src= "{{"/images/mathematics/complex-variable/gaussian_integral.png" | relative_url }}" style="width:450px;">
 </div>
 
 그리고 contour 적분을 해보면,

@@ -253,7 +253,7 @@ $G \cong \left<a\right> \times \left<b\right> \cong \mathbb{Z}_p \times \mathbb{
 <hr>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/modern-algebra-1/group_meme.jpg" | relative_url }}">
+  <img src="{{ "/images/mathematics/modern-algebra-1/group_meme.jpg" | relative_url }}">
 </div><br>
 
 아직 Sylow Theorem에 대한 Application이 더 남았다...

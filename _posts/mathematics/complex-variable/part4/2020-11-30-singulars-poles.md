@@ -172,7 +172,7 @@ Let $z=x+iy$, THEN $\exp z = e^x \cdot e^{iy}$
 $e^{1/z}$에서 $0 < \lvert z \rvert < r$ ($r$ is small)의 Image를 생각해보자.
 
 <div class="img-wrapper">
-  <img src= "{{"/images/complex-variable/essential_singular_example.png" | relative_url }}" style="width:450px;">
+  <img src= "{{"/images/mathematics/complex-variable/essential_singular_example.png" | relative_url }}" style="width:450px;">
 </div>
 
 그러면, $r$을 아무리 작게 잡아도 $2{\pi}$-strip을 포함하게 되고, 따라서 $e^{1/z}$는 0을 제외한 복소 평면 전체가 된다!!

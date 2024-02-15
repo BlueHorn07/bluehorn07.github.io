@@ -56,7 +56,7 @@ We usually take $\alpha = 0.01, \; 0.05, \; 0.1$.
 <span class="statement-title">Example.</span><br>
 
 <div class="img-wrapper">
-<img src= "{{"/images/probability-and-statistics/interval-estimation-example-1.png" | relative_url }}" width=550>
+<img src= "{{"/images/mathematics/probability-and-statistics/interval-estimation-example-1.png" | relative_url }}" width=550>
 </div>
 
 - $n=100$, $\bar{X} = 170$.
