@@ -107,13 +107,13 @@ services:
 Docker Service의 처음 설정되어 있던 Deploy 옵션은 아래 사진과 같다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/development/swarm-retro-rollback.png" | relative_url }}" width="600px">
+  <img src="{{ "/images/development/docker-swarm/swarm-retro-rollback.png" | relative_url }}" width="600px">
 </div>
 
 그런데 이렇게 설정하니 종종 있는 Deploy Fail에서 서비스가 아예 죽어버리는 문제가 있었다. 그래서 옵션을 아래와 같이 조정해 Rollback 할 수 있도록 변경했다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/development/swarm-retro-rollback-2.png" | relative_url }}" width="600px">
+  <img src="{{ "/images/development/docker-swarm/swarm-retro-rollback-2.png" | relative_url }}" width="600px">
 </div>
 
 요 작업을 진행하면서 Docker Swarm의 Update/Rollback 옵션의 의미를 살펴봤는데, 아래와 같다.

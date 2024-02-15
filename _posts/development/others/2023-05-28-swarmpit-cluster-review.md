@@ -11,7 +11,7 @@ Docker에서 제공하는 컨테이너 오케스트레이션 기능인 Docker Sw
 # 왜 도커 스웜인가?
 
 <div class="img-wrapper">
-  <img src="{{ "/images/development/docker-swarm-and-swarmpit-logo.png" | relative_url }}" width="320px">
+  <img src="{{ "/images/development/docker-swarm/docker-swarm-and-swarmpit-logo.png" | relative_url }}" width="320px">
 </div>
 
 컨테이터 오케스트레이션 도구로 유명한 양대산맥은 Kubernetes와 AWS ECS 둘이다.
@@ -58,7 +58,7 @@ docker run -it --rm \
 <br/>
 
 <div class="img-wrapper">
-  <img src="{{ "/images/development/swarmpit-resource.png" | relative_url }}" width="100%">
+  <img src="{{ "/images/development/docker-swarm/swarmpit-resource.png" | relative_url }}" width="100%">
 </div>
 
 요게 Swarmpit 만을 실행 했을 때의 리소스 정보다! 요걸로 대략적인 스펙을 확인할 수 있는데,
@@ -128,13 +128,13 @@ services:
 ```
 
 <div class="img-wrapper">
-  <img src="{{ "/images/development/docker-swarm-service-deployment.png" | relative_url }}" width="75%" style="min-width: 360px">
+  <img src="{{ "/images/development/docker-swarm/docker-swarm-service-deployment.png" | relative_url }}" width="75%" style="min-width: 360px">
 </div>
 
 `swarmpit.service.deployment.autoredeploy` 기능은 도커 이미지의 업데이트를 모니터링 해서 자동으로 최신 이미지로 컨테이너를 새로 Deploy 한다.
 
 <div class="img-wrapper">
-  <img src="{{ "/images/development/docker-swarm-node-label.png" | relative_url }}" width="75%" style="min-width: 360px">
+  <img src="{{ "/images/development/docker-swarm/docker-swarm-node-label.png" | relative_url }}" width="75%" style="min-width: 360px">
 </div>
 
 `placement`로는 해당 도커 컨테이너가 스웜 클러스터의 어느 노드에 떠야 하는지, 그 조건을 설정할 수 있다. 위의 코드에서는 서버가 (1) manager 노드가 아니고 (2) `my_app` 어플리케이션 전용 노드에만 컨테이너가 뜰 수 있다.
@@ -174,7 +174,7 @@ secrets:
 ```
 
 <div class="img-wrapper">
-  <img src="{{ "/images/development/docker-swarm-secret.png" | relative_url }}" width="75%" style="min-width: 360px">
+  <img src="{{ "/images/development/docker-swarm/docker-swarm-secret.png" | relative_url }}" width="75%" style="min-width: 360px">
 </div>
 
 이렇게 Swarmpit에서는 Secret을 생성할 수 있는데, `target` 경로를 잘 설정해서 도커 컨테이너의 특정 경로로 주입할 수 있다!
