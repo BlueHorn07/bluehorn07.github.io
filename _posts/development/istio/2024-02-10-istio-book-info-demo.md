@@ -3,7 +3,7 @@ title: "Istio 'Bookinfo' 데모"
 toc: true
 toc_sticky: true
 categories: ["Kubernetes", "Istio"]
-excerpt: Istio의 공식 예제 따라서 실습해보기.
+excerpt: Istio의 공식 예제 따라서 실습해보기. 📚
 ---
 
 ![](/images/meme/evangelion-sinji-do-that.png){: .fill .align-center style="width: 480px" }
