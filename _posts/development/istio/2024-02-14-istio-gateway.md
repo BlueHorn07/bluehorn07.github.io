@@ -32,9 +32,9 @@ Istio는 클러스터 외부에서 들어오는 모든 요청을 요 Ingress Gat
 
 ![](/images/development/istio/istio-ingressgateway.png){: .fill }
 
-위의 그림을 보면, Ingress Gateway도 "Envoy Proxy"가 있는 걸 알 수 있다. 그러나 다른 Application과 다르게 Service의 컨테이터는 존재하지 않는다!!
+위의 그림을 보면, Ingress Gateway도 "Envoy Proxy"가 있는 걸 알 수 있다. 그러나 다른 Application과 다르게 Service의 컨테이터는 존재하지 않는다!! 오직 Envoy Proxy 컨테이너만 단독으로 존재한다!!
 
-## 어떻게 쓸 수 있나요??
+## Ingress Gateway는 어떻게 쓰나요?
 
 요 ingress gateway라는 리소스를 사용하려면, istio의 [`Gateway`](https://istio.io/latest/docs/reference/config/networking/gateway/
 )라는 리소스를 정의 하는데
@@ -57,13 +57,13 @@ spec:
     - "*"
 ```
 
-- 어떤 ingress gateway에서 트래픽을 받을지
+- 어떤 ingress gateway로 트래픽을 받을지
 - 어떤 포트에서 (뒤에서 더 자세히 설명)
 - 어떤 호스트에서 요청이 들어올 건지 (요것도 뒤에서 더 자세히 설명!)
 
 에 대한 내용을 적어준다.
 
-요렇게 istio `Gateway` 리소스를 만들고 나면, 이제 istio `VirtualService` 리소스의 `spec.gateway` 항목에 요 리소스를 적어준다.
+요렇게 istio `Gateway` 리소스를 만들고 나면, 이제 `VirtualService` 리소스의 `spec.gateway` 항목에 요 리소스를 적어준다.
 
 ```yaml
 apiVersion: networking.istio.io/v1alpha3
@@ -77,8 +77,47 @@ spec:
   - bookinfo-gateway
 ```
 
-## Ingress Gateway를 추가하고 싶어요!!
+## Ingress Gateway를 추가하고 싶다!
 
+흐음... 방법을 찾는게 꽤 어려웠다... (╥﹏╥)
+
+일단 Istio 설치 때 자동으로 설치하는 Ingress Gateway 외에 추가 Ingress GW를 띄우고 싶다면, `IstioOperator` 리소스를 수정해줘야 한다.
+
+Istio를 설치하는 방법도 [`istioctl`, helm chart로 설치하기, Istio Operator로 설치하기](https://bluehorn07.github.io/2024/02/02/install-istio-and-addons/) 등 여러 방법이 있지만, 여기서는 `istioctl`와 Istio Operator를 사용해서 Ingress GW를 추가해보겠다.
+
+일단, 우리가 `IstioOperator` 리소스를 수정 했을 때, 그걸 반영해서 띄워 줄 IstioOperator-controller를 띄워야 한다.
+
+```bash
+$ istioctl operator init
+```
+
+요렇게 하면, 이제 `istio-operator`라는 ns에 IstioOperator-controller가 뜬다! (그런데 이름은 `istio-operator-xxx`이니 주의!)
+
+![](/images/development/istio/istioctl-operator-install.png)
+
+좋다! 이제 `IstioOperator`를 수정해보자! 아래 명령어로 리소스를 확인한다.
+
+```bash
+$ kubectl get istiooperator -n istio-system
+```
+
+그리고 존재하는 `IstioOperator` 리소스를 수정하는데...
+
+![](/images/development/istio/istio-operator-edit-1.png){: .fill style="max-width: 500px"}
+
+먼저 `annotations`에 있는 `install.istio.io/ignoreReconcile`을 `false`로 바꿔준다. <span class="red">요걸 바꾸지 않으면 리소스를 수정해도 IstioOperator-controller가 반영을 안 한다!</span>
+
+![](/images/development/istio/istio-operator-edit-2.png){: .fill style="max-width: 500px"}
+
+그리고 `spc.components.ingressGateways` 항목에서 새로운 Ingress GW를 추가해주자!
+
+이때 주의할 점은 `label.istio`도 같이 설정해줘야 한다! 만약 설정하지 않으면, default ingress gateway랑 같은 `label.istio = "ingressgateway"`를 쓰게 되어서 두 Ingress GW가 제대로 분리 되지 않게 된다!
+
+![](/images/development/istio/check-new-ingress-gateway.png){: .fill style="max-width: 600px"}
+
+야호!! 새로운 Ingress GW가 잘 떴다!! ദ്ദി ˉ͈̀꒳ˉ͈́ )✧
+
+<hr/>
 
 # Ingress Gateway 더 자세히 살펴보기
 
@@ -233,15 +272,26 @@ $ kubectl apply -n test -f https://raw.githubusercontent.com/istio/istio/release
 
 의 방법을 사용해야 한다.
 
-## egress-gateway를 ingress 용도로 사용할 수 있을까??
+## egress-gateway를 ingress 용도로 사용할 수 있을까?
 
-뿌슝빠슝??
+![](/images/meme/sonny.png){: .fill .align-center style="max-width: 400px"}
 
+뿌슝빠슝?? 이 무슨 변태적인(?) 생각인가 ㅋㅋ 나가는(egress) 곳으로 들어올(ingress) 수 있을까? 뭔 이런 생각인가 ㅋㅋ
 
+일단 답은 "불가능"이다!! ❌
 
-> Gateway describes a load balancer operating at **the edge of the mesh** receiving incoming or outgoing HTTP/TCP connections.
+![](/images/development/istio/egress-gateway-is-cluster-ip.png)
 
+그 이유는 Egress GW 리소스는 K8s Service가 `LoadBalancer` 타입이 아니라 `ClusterIP`이기 때문이다!!
 
+생각해보면, 원래도 클러스터 밖으로 나가는 건 할 수 있는데, 그걸 Egress GW라는 이름으로 트래픽을 제어하려는 것 뿐이다. 그래서 Egress GW는 `CluterIP`를 사용해도 충분하다!!}
 
+<hr/>
 
+# 맺음말
 
+드디어 Istio의 Ingress Gateway와 `Gateway` 리소스도 쭉 살펴봤다!! 이게 둘다 "Gateway"라는 워딩을 쓰니까 Istio 처음 공부할 때 진짜 헷갈리게 만들었다 O=('-'Q)
+
+게다가 Ingress Gateway는 K8s Pod이라도 있는데, `Gateway` 리소스는 Pod도 없지... 결국 `VirtualService`, `DestinationRule`, `Gateway` 모두 Istio가 Envoy Proxying 할 때 사용하는 Config 리소스라는 걸 알기 전까진 정말 헷갈렸다.
+
+자! 이젠 바로 위에서 봤던 "Egress Gateway"를 살펴볼 차례다!! 그럼 안녕~~

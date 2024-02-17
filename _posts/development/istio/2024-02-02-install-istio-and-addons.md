@@ -220,6 +220,17 @@ EOF
 
 확인해보면, `istio-system` ns에 `kiali` 리소스가 뜬 걸 확인할 수 있다!
 
+
+
+## 꿀팁!!
+
+놀랍게도 귀찮게 매번 `kubectl port-forward` 할 필요 없이 `istioctl dashboard` 명령어로 포트 포워딩 할 수 있다!! ㅎㅎ
+
+```bash
+$ istioctl dashboard kiali
+$ istioctl dashboard prometheus
+```
+
 <hr/>
 
 # 마무리 하며
