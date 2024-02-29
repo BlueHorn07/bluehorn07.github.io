@@ -4,6 +4,7 @@ toc: true
 toc_sticky: true
 categories: ["Kubernetes", "Istio"]
 excerpt: Istio의 edge proxy인 Ingress Gateway에 대해 꼼꼼하게 살펴보기! 🕵️
+last_modified_at: 2024-02-29
 ---
 
 # Ingress Gateway란?
@@ -63,7 +64,7 @@ spec:
 
 에 대한 내용을 적어준다.
 
-요렇게 istio `Gateway` 리소스를 만들고 나면, 이제 `VirtualService` 리소스의 `spec.gateway` 항목에 요 리소스를 적어준다.
+요렇게 istio `Gateway` 리소스를 만들고 나면, 이제 요 Gateway 리소스를 사용하는 `ViratualService`를 하나 만들어줘야 한다.
 
 ```yaml
 apiVersion: networking.istio.io/v1alpha3
@@ -75,7 +76,32 @@ spec:
   - "*"
   gateways: # 요기에 적어준다!
   - bookinfo-gateway
+  http:
+    ...
 ```
+
+이 `VirtualService`는 Ingress Gateway로 들어온 트래픽을 어떤 곳으로 라우팅 할지를 규칙이 적혀 있다. 이 규칙들을 Ingress Gateway의 Envoy Proxy에서 트래픽이 나갈 때 evaluate 된다.
+
+### Mesh gateway와 비교
+
+Ingress GW와 (곧 살펴볼) Egress GW를 구성하는 Envoy Proxy는 특수한 역할을 한다. 그래서 이들에 대해서는 `spec.gateways`에 직접 `Gateway` 리소스를 명시해서 그들이 사용하는 `VirtualService`를 정의하는 것이다.
+
+물론 이렇게 쓰는 경우도 있다.
+
+```yaml
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+spec:
+  gateways:
+  - bookinfo-gateway
+  - mesh # mesh gateway도 같이 적용할 수도 있다!
+  http:
+    ...
+```
+
+이때 "mesh gateway"란 Ingress/Egress GW를 구성하는 Envoy Proxy를 제외한 Istio Service Mesh 내에 존재하는 다른 모든 Envoy Proxy를 말한다.
+
+처음 `VirtualService`를 배울 때는 Service Mesh 내부에서의 트래픽만을 제어하기 때문에 `spec.gateways`에 아무것도 적지 않았다. 아무것도 안 적으면 `mesh` gateway가 기본으로 들어간다.
 
 ## Ingress Gateway를 추가하고 싶다!
 
@@ -284,7 +310,7 @@ $ kubectl apply -n test -f https://raw.githubusercontent.com/istio/istio/release
 
 그 이유는 Egress GW 리소스는 K8s Service가 `LoadBalancer` 타입이 아니라 `ClusterIP`이기 때문이다!!
 
-생각해보면, 원래도 클러스터 밖으로 나가는 건 할 수 있는데, 그걸 Egress GW라는 이름으로 트래픽을 제어하려는 것 뿐이다. 그래서 Egress GW는 `CluterIP`를 사용해도 충분하다!!}
+생각해보면, 원래도 클러스터 밖으로 나가는 건 할 수 있는데, 그걸 Egress GW라는 이름으로 트래픽을 제어하려는 것 뿐이다. 그래서 Egress GW는 `CluterIP`를 사용해도 충분하다!!
 
 <hr/>
 
