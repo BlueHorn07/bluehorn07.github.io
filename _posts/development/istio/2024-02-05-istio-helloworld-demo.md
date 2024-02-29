@@ -35,8 +35,6 @@ Hello version: v1, instance: helloworld-v1-867747c89-n6sl2
 우선 요 어플리케이션을 배포해보자!
 
 ```bash
-$ export HELLOWORLD_1=https://raw.githubusercontent.com/istio/istio/1.20.2/samples/helloworld/helloworld.yaml
-$ kubectl apply -n default -f $HELLOWORLD_1
 $ kubectl apply -n default -f https://raw.githubusercontent.com/istio/istio/1.20.2/samples/helloworld/helloworld.yaml
 service/helloworld created
 deployment.apps/helloworld-v1 created

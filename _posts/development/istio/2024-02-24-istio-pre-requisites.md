@@ -27,9 +27,9 @@ HTTP 통신인데, TLS 방식으로 이동하는 데이터가 암호화 되어 �
 
 ###  다른 프로토콜 통신에도 TLS가 사용될 수 있는가?
 
-(ex: TCP, UDP) 등에도 TLS가 사용될 수 있는가?
+예스!! Mysql 접속에도 TLS로 암호화된 데이터 전송이 가능하다. [Mysql Document: Using Encrypted Connections](https://dev.mysql.com/doc/refman/8.0/en/encrypted-connections.html)
 
-## TLS tunnel이란?
+물론 그외에 다른 프로토콜에서도 가능한 듯.
 
 ## TLS Termination
 
@@ -53,18 +53,52 @@ https://en.wikipedia.org/wiki/TLS_termination_proxy
 
 ### TLS Pass-through proxy
 
-> forward encrypted TLS traffic between clients and servers without terminating the tunnel.
-
-이 녀석은 client에서 날라오는 TLS 암호화 된 데이터를 복호화 하지 않고, application에 바로 전달한다. 이 경우,
-
-
+![](https://gateway-api.sigs.k8s.io/images/tls-termination-types.png)
 https://gateway-api.sigs.k8s.io/api-types/backendtlspolicy/
 
-https://www.ssl2buy.com/wiki/ssl-passthrough-work
+> forward encrypted TLS traffic between clients and servers without terminating the tunnel.
+
+\* tunnel(network tunneling): 한 네트워크에서 다른 네트워크로 패킷을 이동시키는 방법. 실제로 데이터가 전송되기 위해선 여러 홉(hop)을 거친 후 목적지에 도착하지만, Tunneling은 이런 단계가 없이 두 네트워크가 바로 연결 되어 있다고 여기게 됨.
+
+이 녀석은 client에서 날라오는 TLS 암호화 된 데이터를 복호화 하지 않고, application에 바로 전달한다.
+
+이렇게 하면, TLS 암호화된 데이터는 LB나 Gateway 단에서 복호화 되는게 아니라 Application 단에서 복호화 된다. 그래서 LB/Gateway에서도 데이터의 원본 내용을 알 수 없기 때문에, 데이터가 오직 Application에서만 복호화 되어야 하는 보안 조건이 있다면 고려 해볼 만한 것 같다.
 
 ### unterminated TLS traffic
 
 > Describes match conditions and actions for routing "unterminated TLS traffic" (TLS/HTTPS) The following routing rule forwards unterminated TLS traffic arriving at port 443 of gateway called “mygateway” to internal services in the mesh based on the SNI value.
+
+https://istio.io/latest/docs/reference/config/networking/virtual-service/#TLSRoute
+
+Istio `VirtualService` 리소스의 `tls` 속성에 대한 설명이다.
+
+```yaml
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: bookinfo-sni
+spec:
+  hosts:
+  - "*.bookinfo.com"
+  gateways:
+  - mygateway
+  tls:
+  - match:
+    - port: 443
+      sniHosts:
+      - login.bookinfo.com
+    route:
+    - destination:
+        host: login.prod.svc.cluster.local
+  - match:
+    - port: 443
+      sniHosts:
+      - reviews.bookinfo.com
+    route:
+    - destination:
+        host: reviews.prod.svc.cluster.local
+```
+
 
 
 ## TLS Orignation
@@ -82,3 +116,7 @@ https://istio.io/latest/docs/ops/configuration/traffic-management/tls-configurat
 ### Double Encryption
 
 # mTLS
+
+# 참고자료
+
+- https://www.ssl2buy.com/wiki/ssl-passthrough-work
