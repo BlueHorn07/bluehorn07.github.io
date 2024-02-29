@@ -4,6 +4,7 @@ toc: true
 toc_sticky: true
 categories: ["Kubernetes", "Istio", "Network"]
 excerpt: Istio로 Network Mesh를 다루는자, TLS를 완벽히 알고 있어야 할 것이니라 🧞‍♂
+last_modified_at: 2024-02-29
 ---
 
 ## SSL vs. TLS
@@ -53,24 +54,30 @@ https://en.wikipedia.org/wiki/TLS_termination_proxy
 
 ### TLS Pass-through proxy
 
-![](https://gateway-api.sigs.k8s.io/images/tls-termination-types.png)
+![](https://gateway-api.sigs.k8s.io/images/tls-termination-types.png){: .fill .align-center }
+
 https://gateway-api.sigs.k8s.io/api-types/backendtlspolicy/
+{: .small .text-center .gray }
 
 > forward encrypted TLS traffic between clients and servers without terminating the tunnel.
 
+<small>
 \* tunnel(network tunneling): 한 네트워크에서 다른 네트워크로 패킷을 이동시키는 방법. 실제로 데이터가 전송되기 위해선 여러 홉(hop)을 거친 후 목적지에 도착하지만, Tunneling은 이런 단계가 없이 두 네트워크가 바로 연결 되어 있다고 여기게 됨.
+</small>
 
 이 녀석은 client에서 날라오는 TLS 암호화 된 데이터를 복호화 하지 않고, application에 바로 전달한다.
 
-이렇게 하면, TLS 암호화된 데이터는 LB나 Gateway 단에서 복호화 되는게 아니라 Application 단에서 복호화 된다. 그래서 LB/Gateway에서도 데이터의 원본 내용을 알 수 없기 때문에, 데이터가 오직 Application에서만 복호화 되어야 하는 보안 조건이 있다면 고려 해볼 만한 것 같다.
+이렇게 하면, TLS 암호화된 데이터는 LB나 Gateway 단에서 복호화 되는게 아니라 Application 단에서 복호화 된다. 그래서 LB/Gateway에서도 데이터의 원본 내용을 알 수 없다. 데이터가 오직 Application에서만 복호화 되어야 하는 보안 조건이 있다면 고려 해볼 만한 것 같다.
 
-### unterminated TLS traffic
+### Unterminated TLS traffic
 
-> Describes match conditions and actions for routing "unterminated TLS traffic" (TLS/HTTPS) The following routing rule forwards unterminated TLS traffic arriving at port 443 of gateway called “mygateway” to internal services in the mesh based on the SNI value.
+> Describes match conditions and actions for routing "unterminated TLS traffic" (TLS/HTTPS) The following routing rule forwards unterminated TLS traffic arriving at port 443 of gateway called `mygateway` to internal services in the mesh based on the SNI value. - [출처: Istio 문서](https://istio.io/latest/docs/reference/config/networking/virtual-service/#TLSRoute)
 
-https://istio.io/latest/docs/reference/config/networking/virtual-service/#TLSRoute
+<small markdown="1">
+\* SNI(Server Name Indication): [Cloudflare의 설명](https://www.cloudflare.com/ko-kr/learning/ssl/what-is-sni/)이 제일 좋았다! 요약하면, 하나의 IP에서 여러 Host를 서비스 할 때, 어떤 TLS Cert를 써야 할지 resolve 하기 위해 도입된 기술 또는 속성을 말한다. 그러나, 여기에서는 `login.bookinfo.com`, `reviews.bookinfo.com`과 같이 host 주소 값을 말한다.
+</small>
 
-Istio `VirtualService` 리소스의 `tls` 속성에 대한 설명이다.
+Istio `VirtualService` 리소스에서 정의하는 `tls` 속성에 대한 설명이다.
 
 ```yaml
 apiVersion: networking.istio.io/v1alpha3
