@@ -4,6 +4,7 @@ toc: true
 toc_sticky: true
 categories: ["Kubernetes", "Istio"]
 excerpt: 꼬리에 꼬리는 무는 Virtual Service를 구성 했을 때 어떻게 동작할까? 🐍 VirtualService는 트래픽이 나가는 쪽의 Envoy Proxy에서, DestinationRule은 트래픽이 들어오는 쪽의 Envoy Proxy에서 Evaluation 된다.
+last_modified_at: 2024-02-29
 ---
 
 ![](https://upload.wikimedia.org/wikipedia/commons/f/fa/Ouroboros.png){: .fill .align-center }
@@ -213,7 +214,10 @@ $ while true; do curl "http://helloworld-v2.default.svc.cluster.local:5000/hello
 
 ![](/images/development/istio/destination-rule-max-http-request.png)
 
-캡쳐를 보면 처음에는 `v1`으로 요청이 잘 가다가 요청을 하나 더하기 시작하면 `reset reason: overflowupstream connect error or disconnect/reset before headers` 에러를 받게 된다.
+잘 안 보이니 확대 해서 보자
+{: .small .text-center .gray }
+
+캡쳐를 보면 처음에는 `v1`으로 요청이 잘 가다가, 다른 터미널에서도 요청을 보내기 시작하면서 `reset reason: overflowupstream connect error or disconnect/reset before headers` 에러를 받게 된다.
 
 신기한 점은 분명 요청은 `helloworld-v2`로 보냈는데, `helloworld-v1`의 DR 룰에 의해 upstream overflow가 발생 했다는 것이다.
 

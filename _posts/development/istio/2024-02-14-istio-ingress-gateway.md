@@ -3,7 +3,7 @@ title: "Istio: Ingress Gateway"
 toc: true
 toc_sticky: true
 categories: ["Kubernetes", "Istio"]
-excerpt: Istio의 edge proxy인 Ingress Gateway에 대해 꼼꼼하게 살펴보기! 🕵️
+excerpt: Istio의 edge proxy인 Ingress Gateway에 대해 꼼꼼하게 살펴보기! 🕵️ Mesh Gateway랑은 뭐가 다른 걸까?
 last_modified_at: 2024-02-29
 ---
 
