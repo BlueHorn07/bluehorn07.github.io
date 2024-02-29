@@ -125,7 +125,7 @@ while true; do curl "http://helloworld-v1.default.svc.cluster.local:5000/hello";
 
 만약 무한번 Evaluation이 일어났다면, timeout이 발생했을 것 같은데, 자기 자신으로 트래픽이 잘 가고 있다!!
 
-## 서로에게 트래픽을 보내 버리려는 Virtual Service
+## 서로에게 트래픽을 보내 버리는 Virtual Service
 
 ![](/images/meme/duplicated.jpeg)
 

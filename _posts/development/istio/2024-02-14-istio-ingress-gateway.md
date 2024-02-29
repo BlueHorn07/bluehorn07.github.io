@@ -129,17 +129,17 @@ $ kubectl get istiooperator -n istio-system
 
 그리고 존재하는 `IstioOperator` 리소스를 수정하는데...
 
-![](/images/development/istio/istio-operator-edit-1.png){: .fill style="max-width: 500px"}
+![](/images/development/istio/istio-operator-edit-1.png){: .fill style="width: 100%; max-width: 600px" }
 
 먼저 `annotations`에 있는 `install.istio.io/ignoreReconcile`을 `false`로 바꿔준다. <span class="red">요걸 바꾸지 않으면 리소스를 수정해도 IstioOperator-controller가 반영을 안 한다!</span>
 
-![](/images/development/istio/istio-operator-edit-2.png){: .fill style="max-width: 500px"}
+![](/images/development/istio/istio-operator-edit-2.png){: style="width: 100%; max-width: 400px;"}
 
 그리고 `spc.components.ingressGateways` 항목에서 새로운 Ingress GW를 추가해주자!
 
 이때 주의할 점은 `label.istio`도 같이 설정해줘야 한다! 만약 설정하지 않으면, default ingress gateway랑 같은 `label.istio = "ingressgateway"`를 쓰게 되어서 두 Ingress GW가 제대로 분리 되지 않게 된다!
 
-![](/images/development/istio/check-new-ingress-gateway.png){: .fill style="max-width: 600px"}
+![](/images/development/istio/check-new-ingress-gateway.png){: .fill style="max-width: 100"}
 
 야호!! 새로운 Ingress GW가 잘 떴다!! ദ്ദി ˉ͈̀꒳ˉ͈́ )✧
 
@@ -300,7 +300,7 @@ $ kubectl apply -n test -f https://raw.githubusercontent.com/istio/istio/release
 
 ## egress-gateway를 ingress 용도로 사용할 수 있을까?
 
-![](/images/meme/sonny.png){: .fill .align-center style="max-width: 400px"}
+![](/images/meme/sonny.png){: .fill .align-center style="max-width: 360px"}
 
 뿌슝빠슝?? 이 무슨 변태적인(?) 생각인가 ㅋㅋ 나가는(egress) 곳으로 들어올(ingress) 수 있을까? 뭔 이런 생각인가 ㅋㅋ
 
