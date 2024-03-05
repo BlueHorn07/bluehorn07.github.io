@@ -3,7 +3,7 @@ title: "Istio: Egress Gateway"
 toc: true
 toc_sticky: true
 categories: ["Kubernetes", "Istio"]
-excerpt: Istio로 Service Mesh를 나가는 트래픽도 모니터링 하기 💂 Egress Gateway도 띄워보고, Egress Gateway 통해서 외부 호스트로 나가는 트래픽 제어도 해보자!
+excerpt: Istio로 Service Mesh를 나가는 트래픽도 모니터링 & 제어 하기 💂 나가는 트래픽을 모니터링 하려면 `ServiceEntry`로 충분, 만약 트래픽 제어가 필요하다면 Egress Gateway까지 같이 사용하자!
 last_modified_at: 2024-02-29
 ---
 

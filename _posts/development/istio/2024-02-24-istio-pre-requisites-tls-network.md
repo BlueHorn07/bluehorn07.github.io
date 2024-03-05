@@ -4,7 +4,7 @@ toc: true
 toc_sticky: true
 categories: ["Kubernetes", "Istio", "Network"]
 excerpt: Istio로 Network Mesh를 다루는자, TLS를 완벽히 알고 있어야 할 것이니라 🧞‍♂
-last_modified_at: 2024-02-29
+last_modified_at: 2024-03-03
 ---
 
 ## SSL vs. TLS
@@ -122,7 +122,13 @@ https://istio.io/latest/docs/ops/configuration/traffic-management/tls-configurat
 
 ### Double Encryption
 
-# mTLS
+# mutual TLS (mTLS)
+
+![](/images/development/istio/toss-slash-23-mTLS.png)
+
+Client-Server가 통신할 때, 전통적인 TLS 통신은 Server의 인증서를 Client에서 검증 하는 방식이었는데, mTLS에서는 Client의 인증서도 Server에서 검증이 되어야 서로 통신이 수립된다!!
+
+
 
 # 참고자료
 
