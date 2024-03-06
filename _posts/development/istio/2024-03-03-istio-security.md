@@ -4,7 +4,7 @@ toc: true
 toc_sticky: true
 categories: ["Kubernetes", "Istio", "Security"]
 excerpt: "`PeerAuthentication`으로 Istio 워크로드의 접근만 허용하기, `AuthorizationPolicy`로 엔드포인트 접근 제어하기, `Sidecar`로 Envoy Sidecar 구성 커스텀 하기"
-last_modified_at: 2024-03-05
+last_modified_at: 2024-03-06
 ---
 
 ![](https://www.asylas.com/wp-content/uploads/2020/12/9-Awareness-Training.jpg){: .align-center }
@@ -41,7 +41,9 @@ curl: (56) Recv failure: Connection reset by peer
 
 # `AuthorizationPolicy`
 
-특정 Namespace와 리소스에 대한 Call 호출을 제한(Deny) 하거나 허용(Allow) 할도록 지정할 수 있는 리소스이다.
+Istio의 `AuthorizationPolicy`는 서비스의 접근 규칙을 미세한 수준을 제어하는 리소스이다. 요청(request)의 출발지(source) 속성을 기준으로 제어할 수도 있고, 요청의 도착지(to) 속성을 기준으로 제어할 수 있다. 그외에 요청이 가진 속성들(ex: request headers, JWT token principal 등)을 기준으로 제어할 수도 있다.
+
+여기서 살펴보는 3가지 리소스 중에서 요 녀석이 제일 어려웠다 ㅠㅠ
 
 가장 간단히 `default` 네임스페이스의 워크로드를 `test` 네임스페이스로부터 보호하는 `AuthorizationPolicy`부터 살펴보자.
 
@@ -95,7 +97,9 @@ EOF
 
 이렇게 하면, 반대로 `test` 네임스페이스의 접근은 허용하지만, 다른 네임스페이스로부터의 접근은 거부 된다.
 
-단, 같은 네임스페이스인 `default` 네임스페이스의 리소스들 간의 통신도 거부되기 때문에 주의할 것!!
+단, **같은 네임스페이스인 `default` 네임스페이스의 리소스들 간의 통신도 거부**되기 때문에 주의할 것!!
+
+## Request의 출발지 속성을 기준으로
 
 네임스페이스 외에도 다른 몇가지 조건들로 접근을 제어할 수 있다.
 
@@ -105,14 +109,16 @@ EOF
 - `ipBlocks`
 - `remoteIpBlocks`
 
-트래픽이 도착 지점을 기준으로
+## Request의 도착지 속성을 기준으로
 
 - `hosts`
 - `ports`
 - `methods`
 - `paths`
 
-등을 기준으로 접근 제어를 수행할 수 있다.
+## Request가 가진 속성을 기준으로
+
+https://istio.io/latest/docs/reference/config/security/conditions/
 
 # `Sidecar`
 
@@ -231,6 +237,7 @@ Istio를 공부하면서 "Zero-trust Network"(이하 ZTN)라는 용어를 처음
 - Istio 공식 문서들
   - [`PeerAuthentication`](https://istio.io/latest/docs/reference/config/security/peer_authentication/)
   - [`AuthroizationPolicy`](https://istio.io/latest/docs/reference/config/security/authorization-policy/)
+    - [Authorization Policy Conditions](https://istio.io/latest/docs/reference/config/security/conditions/)
   - [`Sidecar`](https://istio.io/latest/docs/reference/config/networking/sidecar/)
 - Toss Slash 23
   - [토스ㅣSLASH 23 - 고객 불안을 0으로 만드는 토스의 Istio Zero Trust](https://youtu.be/4sJd6PIkP_s?si=FUrtUOR3u_x9jEMK)
