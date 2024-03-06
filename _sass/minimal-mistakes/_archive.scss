@@ -59,6 +59,11 @@
     bottom: 0;
   }
 
+  a {
+    text-decoration: none;
+    color: #3d4144;
+  }
+
   a + a {
     opacity: 0.5;
   }
