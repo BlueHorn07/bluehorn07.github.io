@@ -3,7 +3,7 @@ title: "Istio Security"
 toc: true
 toc_sticky: true
 categories: ["Kubernetes", "Istio", "Security"]
-excerpt: "`PeerAuthentication`으로 Istio 워크로드의 접근만 허용하기, `AuthorizationPolicy`로 요청의 출발지/도착지/속성을 기준으로 접근 제어하기, `Sidecar`로 Envoy Sidecar 구성 커스텀 하기"
+excerpt: "Istio에서 Zero-Trust Network를 구축하는 길 🔐 `PeerAuthentication`으로 Istio 워크로드의 접근만 허용하기, `AuthorizationPolicy`로 요청의 출발지/도착지/속성을 기준으로 접근 제어하기, `Sidecar`로 Envoy Sidecar 구성 커스텀 하기"
 last_modified_at: 2024-03-06
 ---
 
