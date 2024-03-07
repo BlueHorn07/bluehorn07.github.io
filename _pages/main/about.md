@@ -23,7 +23,18 @@ permalink: /about/
 
 <a href="/topic/computer-science" target="_blank"><span class="cs-tag">CS</span></a> Algorithm과 Machine Learning의 내용들을 폭넓게 다루고 있으며, 수학적인 배경과 증명까지 깊게 다루려고 노력하고 있습니다 🎈
 
-
 스스로 운영하는 블로그이기 때문에 놓치거나 부족한 부분이 있을 수 있습니다. 질문과 지적은 언제나 환영이며, 블로그에 방문하신 여러분께 검수를 부탁드립니다 🙏
 
 since. 2019.06.
+
+# Certificatiions
+
+실력은 시험과 과제와 장애상황(?)에서 얻어진다고 생각합니다. 회사를 다니면서 스택들을 접하고, 또 그걸 정말 제대로 공부하기 위해서 자격증 시험에 응시 했습니다. 돌이켜 보면 자격증을 딴 이후부터 그 스택을 정말 잘 활용하기 시작한 것 같습니다. 🧑‍🎓
+ 
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="923f7132-c96a-47aa-93c4-548b13bb1b46" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="6d606865-8b5b-4e45-96ec-bb530f45d30a" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="377e75e4-4622-40d9-a702-8f6bed0a5e58" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="83a5eb5d-0cbd-4754-ac26-389387a97dd6" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
