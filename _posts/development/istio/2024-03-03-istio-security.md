@@ -3,7 +3,7 @@ title: "Istio Security"
 toc: true
 toc_sticky: true
 categories: ["Kubernetes", "Istio", "Security"]
-excerpt: "`PeerAuthentication`으로 Istio 워크로드의 접근만 허용하기, `AuthorizationPolicy`로 엔드포인트 접근 제어하기, `Sidecar`로 Envoy Sidecar 구성 커스텀 하기"
+excerpt: "`PeerAuthentication`으로 Istio 워크로드의 접근만 허용하기, `AuthorizationPolicy`로 요청의 출발지/도착지/속성을 기준으로 접근 제어하기, `Sidecar`로 Envoy Sidecar 구성 커스텀 하기"
 last_modified_at: 2024-03-06
 ---
 
@@ -99,26 +99,139 @@ EOF
 
 단, **같은 네임스페이스인 `default` 네임스페이스의 리소스들 간의 통신도 거부**되기 때문에 주의할 것!!
 
+## 정책 평가 순서
+
+`AuthorizaitonPolicy`의 정책은 `ALLOW`, `DENY`, `CUSTOM`, `AUDIT`(논외)가 가능한데, 정책 별로 평가되는 순서가 다르다.
+
+- 아무것도 안 걸려 있다면
+  - 모든 요청을 수용
+- `CUSTOM` 정책이 걸려 있다면
+  - 정책을 평가한 후에 결과에 따라 요청을 수용하거나 거부
+- `DENY` 정책이 걸려 있다면
+  - 정책의 조건을 만족하는 요청은 거부. 나머지는 수용
+- `ALLOW` 정책이 걸려 있다면
+  - 정책의 조건을 만족하는 요청만 수용. 나머지는 거부
+
+단, `DENY` 정책으로 요청이 거부 되었더라도, `ALLOW` 정책에서 허용해준다면 해당 요청을 수용 된다.
+
 ## Request의 출발지 속성을 기준으로
 
-네임스페이스 외에도 다른 몇가지 조건들로 접근을 제어할 수 있다.
-
-트래픽의 출발지를 기준으로
+아래의 요청의 출발지 속성을 기준으로 접근을 제어할 수 있다.
 
 - `namespace`
+- `principal`
 - `ipBlocks`
 - `remoteIpBlocks`
 
+위의 예제에서 `namespace` 기준은 해봤으니 `principal`을 기준으로 해보자.
+
+```yaml
+$ kubectl apply -f - <<EOF
+apiVersion: security.istio.io/v1
+kind: AuthorizationPolicy
+metadata:
+  name: only-allow-from-sleep-sa
+  namespace: default
+spec:
+  action: ALLOW
+  rules:
+  - from:
+    - source:
+        principals:
+          - "cluster.local/ns/default/sa/sleep"
+EOF
+```
+
+요렇게 하면 특정 K8s ServiceAccount를 바인딩한 워크로드의 요청만 허용할 수 있다!! (,,•o•,,)
+
+참고로 ServiceAccount의 패턴은 아래와 같다.
+
+- `<TRUST_DOMAIN>/ns/<NAMESPACE>/sa/<SERVICE_ACCOUNT>`
+- 예시: `cluster.local/ns/default/sa/sleep`
+
 ## Request의 도착지 속성을 기준으로
+
+요청이 도착지에 도달해서 수행하는 작업(operation)을 기준으로 접근을 제어할 수도 있다.
 
 - `hosts`
 - `ports`
 - `methods`
 - `paths`
 
+```yaml
+$ kubectl apply -f - <<EOF
+apiVersion: security.istio.io/v1
+kind: AuthorizationPolicy
+metadata:
+  name: only-deny-get-access
+  namespace: default
+spec:
+  action: DENY
+  rules:
+  - to:
+    - operation:
+        methods: ["GET"]
+EOF
+```
+
+위와 같이 설정하면, `default` 네임스페이스의 워크로드에 들어오는 모든 `GET` 요청이 거부된다.
+
+그외에도 `hsots`, `ports`, `paths`를 사용해 더 세부적으로 접근 제어가 가능하다.
+
 ## Request가 가진 속성을 기준으로
 
-https://istio.io/latest/docs/reference/config/security/conditions/
+마지막으로 `when` 조건을 통해서 요청이 가진 속성을 기준으로 접근 제어가 가능하다.
+
+그 목록은 "[Authorization Policy Conditions](https://istio.io/latest/docs/reference/config/security/conditions/)" 문서에서 확인할 수 있는데, 몇가지 사례를 예시와 함께 살펴보자.
+
+```yaml
+$ kubectl apply -f - <<EOF
+apiVersion: security.istio.io/v1
+kind: AuthorizationPolicy
+metadata:
+  name: only-allow-header-haha-hoho
+  namespace: default
+spec:
+  action: ALLOW
+  rules:
+  - when:
+    - key: request.headers[haha]
+      values: ["hoho"]
+EOF
+```
+
+위와 같은 `AuthorizationPolicy`를 만들면, 아래와 같이 header에 `haha: hoho`가 있는 요청만 허용 한다.
+
+```bash
+# With Header
+$ curl -H "haha: hoho" http://helloworld.default:5000/hello
+Hello version: v1, instance: helloworld-v1-77489ccb5f-jstpc
+
+# No Header
+$ curl http://helloworld.default:5000/hello
+RBAC: access denied
+```
+
+또, 위에서 `source`, `to` 규칙에 사용 했던 몇몇 속성들을 `when` 규칙에서도 구성할 수 있다. 예를 들어, 요청 워크로드의 `principal`을 기준으로 접근 제어하는 것을 `when` 조건에서도 수행할 수 있다.
+
+```yaml
+$ kubectl apply -f - <<EOF
+apiVersion: security.istio.io/v1
+kind: AuthorizationPolicy
+metadata:
+  name: only-allow-sleep-sa
+  namespace: default
+spec:
+  action: ALLOW
+  rules:
+  - when:
+    - key: source.principal
+      values: ["cluster.local/ns/default/sa/sleep"]
+EOF
+```
+
+그 외에도 요청에 담긴 JWT 토큰의 정보를 기준으로도 접근 제어가 가능하다고 한다. (정말 많구만!!!)
+
 
 # `Sidecar`
 
