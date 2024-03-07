@@ -8,7 +8,6 @@ last_modified_at: 2024-03-06
 ---
 
 ![](/images/meme/after-the-test-its-heaven.png){: .align-center style="max-width: 300px;" }
-
 내가 왜 ICA 시험을 신청 했을까...
 {: .small .text-center .gray }
 

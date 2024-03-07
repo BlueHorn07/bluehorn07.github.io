@@ -238,7 +238,6 @@ $ istioctl dashboard prometheus
 이제 Istio를 구축했으니, 마이크로 서비스들을 띄워서 Istio를 활용해볼 차례다!!
 
 ![](/images/development/istio/kiali-airflow-graph.png){: .fill }
-
 Airflow의 Istio Graph. 각 컴포넌트가 Postgres와 Redis를 사용하는게 잘 보인다.
 {: .small .text-center .gray }
 

@@ -55,7 +55,6 @@ https://en.wikipedia.org/wiki/TLS_termination_proxy
 ### TLS Pass-through proxy
 
 ![](https://gateway-api.sigs.k8s.io/images/tls-termination-types.png){: .fill .align-center }
-
 https://gateway-api.sigs.k8s.io/api-types/backendtlspolicy/
 {: .small .text-center .gray }
 

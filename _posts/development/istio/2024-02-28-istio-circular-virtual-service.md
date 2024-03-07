@@ -7,8 +7,7 @@ excerpt: 꼬리에 꼬리는 무는 Virtual Service를 구성 했을 때 어떻�
 last_modified_at: 2024-02-29
 ---
 
-![](https://upload.wikimedia.org/wikipedia/commons/f/fa/Ouroboros.png){: .fill .align-center }
-
+![](https://upload.wikimedia.org/wikipedia/commons/f/fa/Ouroboros.png){: .fill .align-center style="padding: 8px"}
 오늘의 주제는 꼬리에 꼬리를 무는, 무한번 호출이다!
 {: .small .text-center .gray }
 
@@ -213,7 +212,6 @@ $ while true; do curl "http://helloworld-v2.default.svc.cluster.local:5000/hello
 (DR 설정은 `helloworld-v1.default`에 했는데, 앞에서 VS 설정 한게 있어서 `helloworld-v2.default`에 요청을 보낸다!!)
 
 ![](/images/development/istio/destination-rule-max-http-request.png)
-
 잘 안 보이니 확대 해서 보자
 {: .small .text-center .gray }
 
