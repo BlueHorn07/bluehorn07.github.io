@@ -247,6 +247,37 @@ spec:
         autoscaleEnabled: false
 ```
 
+# Mesh Configuration
+
+`meshConfig` 옵션으로 istio 서비스 메쉬의 세부 구성을 조정할 수 있다!!
+
+## Outbound Traffic Policy
+
+서비스 메쉬 바깥으로 나가는 트래픽에 대해서 `ServiceEntry`에 등록된 도메인만 나가도록 할지 아님 등록되지 않아도 나갈 수 있게 설정하는 옵션이다. 요건 Egress Gateway를 살펴볼 때 봤다!! "[Istio: Egress Gateway](https://bluehorn07.github.io/2024/02/15/istio-egress-gateway/)"
+
+제일 간단한 녀석인데, 기본값은 `ALLOW_ANY`이고, 만약 등록된 도메인만 허용하고 싶다면 `REGISTRY_ONLY`로 설정하면 된다!
+
+## Root Namespace
+
+서비스 메쉬 내의 모두 적용할 속성을 정의하는 네임스페이스이다. 이곳에 정의한 Istio 리소스는 서비스 메쉬 내의 모든 리소스에 적용된다!! 기본 값은 `global.istioNamespace`의 것을 따르는데, 따로 설정하지 않았다면 `istio-system`일 것이다.
+
+에를 들어 이 네임스페이스에 아래와 같은 `Sidecar`를 설정 했다면, 모든 리소스는 오직 자기가 속한 네임스페이스의 안에서만 서로 통신할 수 있다.
+
+```yaml
+apiVersion: networking.istio.io/v1alpha3
+kind: Sidecar
+metadata:
+  name: default
+  namespace: istio-system
+spec:
+  egress:
+  - hosts:
+    - "./*"
+    - "istio-system/*"
+```
+
+그래서 만약 `istio-system`에 `VirtualService`나 `DestinationRule` 등을 띄웠다면, 그게 서비스 메쉬의 모든 워크로드에 영향을 주기 된다. 그래서 `istio-system` 네임스페이스에 뭔가를 띄울 때는 항상 주의하자!!
+
 # `istioctl`과 IstioOperator
 
 ## `istioctl`은 일종의 IstioOperator 컨트롤러다.
