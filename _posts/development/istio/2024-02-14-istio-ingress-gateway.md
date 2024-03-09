@@ -111,13 +111,13 @@ spec:
 
 Istio를 설치하는 방법도 [`istioctl`, helm chart로 설치하기, Istio Operator로 설치하기](https://bluehorn07.github.io/2024/02/02/install-istio-and-addons/) 등 여러 방법이 있지만, 여기서는 `istioctl`와 Istio Operator를 사용해서 Ingress GW를 추가해보겠다.
 
-일단, 우리가 `IstioOperator` 리소스를 수정 했을 때, 그걸 반영해서 띄워 줄 IstioOperator-controller를 띄워야 한다.
+일단, 우리가 `IstioOperator` 리소스를 수정 했을 때, 그걸 반영해서 띄워 줄 IstioOperator 컨트롤러를 띄워야 한다.
 
 ```bash
 $ istioctl operator init
 ```
 
-요렇게 하면, 이제 `istio-operator`라는 ns에 IstioOperator-controller가 뜬다! (그런데 이름은 `istio-operator-xxx`이니 주의!)
+요렇게 하면, 이제 `istio-operator`라는 ns에 IstioOperator 컨트롤러가 뜬다! (그런데 이름은 `istio-operator-xxx`이니 주의!)
 
 ![](/images/development/istio/istioctl-operator-install.png)
 
@@ -131,7 +131,7 @@ $ kubectl get istiooperator -n istio-system
 
 ![](/images/development/istio/istio-operator-edit-1.png){: .fill style="width: 100%; max-width: 600px" }
 
-먼저 `annotations`에 있는 `install.istio.io/ignoreReconcile`을 `false`로 바꿔준다. <span class="red">요걸 바꾸지 않으면 리소스를 수정해도 IstioOperator-controller가 반영을 안 한다!</span>
+먼저 `annotations`에 있는 `install.istio.io/ignoreReconcile`을 `false`로 바꿔준다. <span class="red">요걸 바꾸지 않으면 리소스를 수정해도 IstioOperator 컨트롤러가 반영을 안 한다!</span>
 
 ![](/images/development/istio/istio-operator-edit-2.png){: style="width: 100%; max-width: 400px;"}
 
