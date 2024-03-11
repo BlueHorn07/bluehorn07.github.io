@@ -4,22 +4,22 @@ toc: true
 toc_sticky: true
 categories: ["Kubernetes", "Istio"]
 excerpt: "Istio Operator 문서에서 있는 대부분의 것들을 찾아본 후기 🔥"
-last_modified_at: 2024-03-06
+last_modified_at: 2024-03-09
 ---
 
 ![](/images/meme/after-the-test-its-heaven.png){: .align-center style="max-width: 300px;" }
 내가 왜 ICA 시험을 신청 했을까...
 {: .small .text-center .gray }
 
-`IstioOperator` 리소스는 클러스터에 구성한 istio 서비스 메쉬의 명세가 되는 리소스다. 늘 헷갈리는 거지만, istio-operator controller가 따로 있고, `IstioOperator`가 따로 있다. istio-op controller가 `IstioOperator` 리소스를 모니터링 하면서 Istio 서비스 메쉬에 반영하는 것이다.
+`IstioOperator` 리소스는 클러스터에 구성한 istio 서비스 메쉬의 명세가 되는 리소스다. 늘 헷갈리는 거지만, istio-operator 컨트롤러가 있고, `IstioOperator`가 따로 있다. istio-op 컨트롤러가 `IstioOperator` 리소스를 모니터링 하면서 Istio 서비스 메쉬에 반영하는 것이다.
 
-암튼 `IstioOperator` 리소스는 istio 서비스 메쉬의 기반이 되는 리소스다. 왠지 시험 때 이것저것 시킬 것 같아서 완전 꼼꼼히 살펴보고 정리해봤다. (꼼꼼의 ISTJ)
+암튼 `IstioOperator` 리소스는 istio 서비스 메쉬의 기반이 되는 리소스다. 왠지 시험 때 이것저것 시킬 것 같아서 꼼꼼히 살펴보고 정리해봤다. (꼼꼼의 ISTJ)
 
 # `istioctl`로 띄운 `IstioOperator`를 yaml로 관리하기
 
 K8s 클러스터에 Istio 서비스 메쉬를 구성하는 방법이 여러가지가 있지만! (`istioctl`, helm chart, istio-operator로 설치할 수 있다!! 자세한 건 [정리 해둔 이 글](https://bluehorn07.github.io/2024/02/02/install-istio-and-addons/)을 참고)
 
-본인은 보통 `helmfile.yaml` 만들고 하기 귀찮아서 그냥 `istioctl install`로 설치하고 `istioctl uninstall --purge`로 없앤다 ㅋㅋㅋ (로컬이니까~~)
+본인은 `helmfile.yaml` 만들기 귀찮아서 그냥 `istioctl install`로 설치하고 `istioctl uninstall --purge`로 없앤다 ㅋㅋㅋ (로컬이니까~~)
 
 ```bash
 $ istioctl instal
@@ -42,7 +42,7 @@ $ istioctl install \
 
 그런데 `istioctl`도 yaml 파일을 `-f` 옵션으로 입력 받을 수 있다!!!
 
-그런데 주의할 점이 있는데, `metadata.name` 부분 없이 yaml을 만들어줘야 한다!!
+이때! 주의할 점이 있는데, `metadata.name` 부분 없이 yaml을 만들어줘야 한다!!
 
 ```yaml
 # custom-istio-op.yaml
@@ -68,7 +68,7 @@ installed-state                                   47h
 installed-state-custom-name                       47h
 ```
 
-이렇게 말이다!! 그래서 꼭 `metadata.name` 없이 custom yaml을 만들어야 한다.
+그래서 꼭 `metadata.name` 없이 custom yaml을 만들어야 한다.
 
 # Components 속성 자세히 보기
 
@@ -104,7 +104,7 @@ spec:
 
 istiod를 디플로이 하는 옵션이다. 만약 `enabled: false`라면 istiod가 뜨지 않는다!!
 
-참고로 `pilot.enabled: false`인 상태에서 Ingress/Egress Gateway를 띄우려고 한다면 **디플로이에 실패**한다!! 🙅
+참고로 `pilot.enabled: false`인 상태에서 Ingress/Egress Gateway를 띄우려고 한다면 **디플로이가 실패**한다!! 🙅
 
 istiod가 하는 일이 모든 Envoy Proxy를 Injection/Deploy 하고, 또 Istio 리소스들을 컴파일 해서 Envoy Proxy에 Config를 동기화 해주는 "컨트롤 플레인"인데, 머리가 없으니 몸통이 제대로 동작 할리가 없다.
 
@@ -129,7 +129,7 @@ spec:
 
 이리저리 커스텀 가능!! Gateway 커스텀은 뒤에서 좀더 자세히 다룰 예정이니 지금은 넘어가자!!
 
-## cni(Container Network Interface)
+## CNI(Container Network Interface)
 
 https://istio.io/latest/docs/setup/additional-setup/cni/
 
@@ -180,13 +180,13 @@ Containers:
 
 `cni` 플러그인을 사용할 경우, 이런 `istio-init` 컨테이너를 주입하지 않고도 workload container의 트래픽이 envoy proxy로 리다이렉션 된다고 한다!! 그래서 Init Container가 쓰는 초기 CPU/Mem 리소스를 절약하고, Pod이 디플로이 되는 랜딩 타임이 줄어든다고 한다!!
 
-그런데, istio cni plugin을 쓴다고 해서 Init Container가 완전히 없어지는 건 아니다!! envoy proxy로 트래픽 리다이렉션이 잘 설정되었는지 확인하는 `isito-validation`라는 Init Container가 대신 주입 되어 체크를 한다! 만약, validation이 실패하면 Pod이 디플로이 되지 않는다.
+그런데, istio CNI plugin을 쓴다고 해서 Init Container가 완전히 없어지는 건 아니다!! envoy proxy로 트래픽 리다이렉션이 잘 설정되었는지 확인하는 `isito-validation`라는 Init Container가 대신 주입 되어 체크를 한다! 만약, validation이 실패하면 Pod이 디플로이 되지 않는다.
 
 또, 본인의 로컬 K8s에서 `cni` 플러그인을 활성화 했을 때는 이상하게도 Pod 디플로이가 안 되는 현상을 경험 했다 🤔
 
 ![](/images/development/istio/istio-cni-need-existing-cni-plugin-question.png)
 
-뭔가 istio `cni` plugin 말고도, 다른 CNI Plugin(ex: calico)이 설치된 상태에서 같이 써야 하는 건가 생각해서 일단 istio 커뮤니티에 질문을 올려뒀다!
+뭔가 istio `cni` plugin 말고도, 다른 CNI Plugin(ex: calico)이 설치된 상태에서 같이 써야 하는 건가 생각해서 일단 istio 커뮤니티에 질문을 올려뒀다. 답변으로 "Istio CNI Plugin은 기존 CNI Plugin들(Calico, Cilium 등)과 함께 써야 한다"고 안내 받았다! (어쩐지 안 되더라...)
 
 ## ztunnel
 
@@ -288,10 +288,8 @@ spec:
 
 그래서 처음엔 `IstioOperator` 리소스는 만들어졌는데, 그걸 관리하는 컨트롤러가 없어서 혼란스러웠다. 그래서 이런 결론을 내리게 된 것 같다.
 
-## `istioctl`을 통해 배포된 IstioOperator 리소스 관리하기
+## `istioctl`을 통해 띄운 IstioOperator 리소스를 IstioOp 컨트롤러로 관리하기
 
-`istioctl install`로 `istio`를 띄우면 `installed-state`라는 이름으로 `IstioOperator` 리소스가 생성된다.
+`istioctl install`로 `istio`를 띄우면 `installed-state`라는 이름으로 `IstioOperator` 리소스가 생성된다. 그런데 요 리소스는 `istioctl`로 띄워서 그런지 IstioOperator 컨트롤러가 요 리소스를 관리하지 못 했고, 오직 `istioctl`로만 조작할 수 있었다.
 
-요 리소스는 `istioctl`로 띄워서 그런지 IstioOperator 컨트롤러가 요 리소스를 관리하지 못 했고, 오직 `istioctl`로만 조작할 수 있었다.
-
-그런데 방법이 없는 건 아니다!! `annotations`에 있는 `install.istio.io/ignoreReconcile`을 `false`로 바꿔주면 됐다!! 변경 후에는 별도로 띄운 컨트롤러가 해당 리소스의 변경 대로 istio 구성을 반영하기 시작 했다 😁
+그런데 방법이 없는 건 아니다!! `annotations`에 있는 `install.istio.io/ignoreReconcile`을 `false`로 바꿔주면 됐다!! ("reconcile"은 '조정하다'라는 뜻이다.) 변경 후에는 IstioOperator 컨트롤러가 `installed-state` IstioOperator의 구성 대로 istio 메쉬의 구성을 반영하기 시작 했다 😁

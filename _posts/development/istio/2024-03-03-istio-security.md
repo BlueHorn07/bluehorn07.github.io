@@ -335,7 +335,7 @@ Istio를 공부하면서 "Zero-trust Network"(이하 ZTN)라는 용어를 처음
 
 - 토스는 모든 워크로드에 mTLS `STRICT` 모드이다. 즉, Istio 서비스 메쉬 밖에서는 서비스 메쉬로 접근할 수 없다.
 - 토스는 Istio의 `Sidecar` 리소스를 사용해서 워크로드가 접근할 수 있는 egress host를 제한한다. 따로 설정해주지 않으면 어떤 워크로드에도 접근할 수 없다. (Least Privilliage 사례)
-- 토스는 Istio의 `AuthorizationPolicy` 리소스를 설정하여 예상치 못한 워크로드의 접근을 막고, 워크로드의 접근은 Endpoint 레벨까지 제한한다. 
+- 토스는 Istio의 `AuthorizationPolicy` 리소스를 설정하여 예상치 못한 워크로드의 접근을 막고, 워크로드의 접근은 Endpoint 레벨까지 제한한다.
 
 즉, 워크로드 A가 워크로드 B에 접근하고자 한다면, (1) 둘다 Istio 서비스 메쉬 안에 있어야 하고, (2) 워크로드 A의 `Sidecar`를 설정해서 워크로드 B에 egress 할 수 있게 허용해야 하고, (3) 워르코드 B에 `AuthorizationPolicy`를 설정해 워크로드 A의 ingress 트래픽을 허용해줘야 한다.
 
