@@ -111,7 +111,7 @@ upstream connect error or disconnect/reset before headers. retried and the lates
 
 암튼 결론은 istiod가 없어지면 대재앙이라는거...
 
-# Legacy 컨트롤 플레인의 아키텍처 (istio 1.5 이전)
+# Legacy Architecture (istio 1.5 이전)
 
 ![](/images/development/istio/istio-old-architecture.png)
 
