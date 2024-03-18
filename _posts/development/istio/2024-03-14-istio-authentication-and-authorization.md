@@ -4,7 +4,7 @@ toc: true
 toc_sticky: true
 categories: ["Kubernetes", "Istio"]
 excerpt: "Auth와 Authz를 istio 인프라 레벨에서 구현하기!"
-last_modified_at: 2024-03-14
+last_modified_at: 2024-03-15
 ---
 
 ![](/images/meme/dump-head.png){: .align-center style="max-width: 400px" }
@@ -164,30 +164,22 @@ Jwt issuer is not configured
 
 즉, JWT 토큰이 있다면 `RequestAuthentication` 리소스에 명시한 issuer와 JWT 디코딩 조건을 평가하고 이에 따라 요청을 허용하거나 거부한다!
 
-### JWT 토큰이 없다면 요청을 거부하고 싶어요!!
-
-이건 `AuthorizationPolicy` 리소스에서 핸들링 해줘야 한다!
+만약 JWT 토큰이 없을 때 요청을 "거부"하고 싶다면, 이건 `AuthorizationPolicy` 리소스에서 핸들링 해줘야 한다!
 
 ```yaml
-$ kubectl apply -f - <<EOF
 apiVersion: security.istio.io/v1beta1
 kind: AuthorizationPolicy
-metadata:
-  name: helloworld-require-jwt
-  namespace: default
-spec:
-  selector:
-    matchLabels:
-      app: helloworld
+...
   action: ALLOW
   rules:
   - from:
     - source:
        requestPrincipals: ["testing@secure.istio.io/testing@secure.istio.io"]    
-EOF
 ```
 
-## Ingress Gateway와 함께 정의 했다면
+위와 같이 `requestPrincipals`에 어떤 값을 정의하기만 하면, JWT 토큰이 없는 경우가 거부 된다.
+
+## Ingress Gateway로 트래픽을 받고 있다면
 
 이번에는 트래픽을 Ingress Gateway을 통해 받는 경우를 생각해보자! 이 경우에 `RequestAuthentication`과 `AuthorizationPolicy`에 어떤 변화가 있을까?
 
@@ -235,42 +227,40 @@ EOF
 
 ```bash
 ~ $ export TOKEN=$(curl -k https://raw.githubusercontent.com/istio/istio/master/security/tools/jwt/samples/demo.jwt -s)
-~ $ curl -X GET http://192.168.64.2/hello \
-      --header "Authorization: Bearer ${TOKEN}"
-Jwt issuer is not configured
+~ $ curl -X GET http://192.168.64.2/hello
+RBAC: access denied
+~ $ curl -X GET http://192.168.64.2/hello --header "Authorization: Bearer ${TOKEN}"
+Hello version: v2, instance: helloworld-v2-7bd9f44595-bhbpd
 ```
 
-흐음...?! 이상하다 난 분명 올바른 JWT 토큰을 줬는데??
+요청을 직접 워크로드에 보냈던 것 처럼 JWT 헤더를 포함해서 요청을 해야 요청이 처리되는 모습을 볼 수 있다.
 
-그 이유는 우리가 보낸 요청을 받는 Ingress Gateway의 Envoy Proxy가 트래픽을 Helloworld 워크로드로 포워딩 할 때, JWT 토큰을 함께 넘겨주지 않기 때문이다!!
+그 이유는 우리가 보낸 요청을 받아서 라우팅 하는 Ingress Gateway의 Envoy Proxy가 트래픽을 Helloworld 워크로드로 포워딩 할 때, 헤더(header)를 보존하기 때문이다!!
 
-그래서 `RequestAuthentcation` 리소스에 `forwardOriginalToken` 속성을 `true`로 세팅해 토큰이 함께 전달 될 수 있도록 설정해야 한다!
+워크로드와 envoy sidecar가 같이 있을 때도 envoy는 들어오는 트래픽을 워크로드 컨테이너로 그대로 포워딩 했다. 마찬가지로 Ingress Gateway의 envoy도 `VirtualService` 규칙에 정의된 목적지로 들어오는 트래픽을 헤더를 포함해 그대로 포워딩 하는 것으로 보인다.
+
+### forwardOriginalToken 속성
+
+만약 Envoy로 들어오는 JWT 토큰이 Envoy 단에서 검증된(validated) 후에 본래의 워크로드 컨테이너로 까지 포워딩 되길 원한다면, `RequestAuthentcation` 리소스에 `forwardOriginalToken` 속성을 `true`로 설정해줘야 한다.
 
 ```yaml
-$ kubectl apply -f - <<EOF
 apiVersion: security.istio.io/v1beta1
 kind: RequestAuthentication
-metadata:
- name: helloworld-authentication
- namespace: default
-spec:
-  selector:
-    matchLabels:
-      app: helloworld
+...
   jwtRules:
   - issuer: "testing@secure.istio.io"
-    jwksUri: "https://raw.githubusercontent.com/istio/istio/master/security/tools/jwt/samples/jwks.json"
-    forwardOriginalToken: false
-EOF
+    jwksUri: "..."
+    forwardOriginalToken: true
 ```
+
+본래 JWT 인증-인가가 없던 워크로드 였는데, Istio를 통해 Auth 레이어를 구현한 것이니 `forwardOriginalToken`의 기본값은 `false`로 설정되어 원본 워크로드에 JWT 토큰을 포워딩 하지 않는 것 같다.
+
 
 ## oauth2-proxy랑 비슷한 것 같음
 
-![](https://raw.githubusercontent.com/oauth2-proxy/oauth2-proxy/master/docs/static/img/logos/OAuth2_Proxy_horizontal.svg)
+![](https://raw.githubusercontent.com/oauth2-proxy/oauth2-proxy/master/docs/static/img/logos/OAuth2_Proxy_horizontal.svg){: .align-center style="max-width: 400px" }
 
-어떻게 보면, [oauth2-proxy](https://github.com/oauth2-proxy/oauth2-proxy)
-
-
+Auth 없이 구축된 워크로드에 Auth 레이어를 붙여준다는게, [oauth2-proxy](https://github.com/oauth2-proxy/oauth2-proxy)랑 비슷한 것 같다. 요것도 Auth를 위임 받아 인증된 트래픽만 해당 워크로드에 접근하도록 세팅하는데 사용하기 때문!!
 
 # 참고자료
 
