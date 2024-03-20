@@ -29,16 +29,28 @@ toc_sticky: true
 - [KubeConfig](/2023/01/28/ConfigMap/)
 - [`kubectl` 명령어 핸드북](/2023/01/28/kubectl-command-handbook/)
 
+## Istio
+
+- [Install Istio and Addons(Prometheus, Kiali)](https://bluehorn07.github.io/2024/02/02/install-istio-and-addons/)
+- [Istio ‘helloworld’ 데모](https://bluehorn07.github.io/2024/02/05/istio-helloworld-demo/)
+- [Istio `Bookinfo` 데모](https://bluehorn07.github.io/2024/02/10/istio-book-info-demo/)
+- [Istio: Ingress Gateway](https://bluehorn07.github.io/2024/02/14/istio-ingress-gateway/)
+- [Istio: Egress Gateway](https://bluehorn07.github.io/2024/02/15/istio-egress-gateway/)
+- [Istio TLS Network 관련 사전 지식](https://bluehorn07.github.io/2024/02/24/istio-pre-requisites-tls-network/)
+- [Istio circular Virtual Service](https://bluehorn07.github.io/2024/02/28/istio-circular-virtual-service/)
+- [Istio Security](https://bluehorn07.github.io/2024/03/03/istio-security/)
+- [Istio Operator 꼼꼼히 살펴보기](https://bluehorn07.github.io/2024/03/05/istio-operator-detail-examine/)
+- [Istio의 컨트롤 플레인 꼼곰히 살펴보기](https://bluehorn07.github.io/2024/03/07/istio-control-plane-detail-examine/)
+- [Istio의 Authentication & Authorization](https://bluehorn07.github.io/2024/03/14/istio-authentication-and-authorization/)
+- [Istio Envoy Acess Logging](https://bluehorn07.github.io/2024/03/16/istio-envoy-access-logging/)
+- [Istio Distributed Tracing with Jaeger](https://bluehorn07.github.io/2024/03/18/istio-distributed-tracing-jaeger/)
+
+
 ## ElasticSearch
 
 - [Lucene Segment](/2023/05/19/Lucene-Segment/)
 - [Document CRUD](/2023/05/17/ElasticSearch-Document-CRUD/)
 - [Index CRUD](/2023/05/15/ElasticSearch-Index-CRUD/)
-
-## Istio
-
-- [Install Istio and Addons(Prometheus, Kiali)](https://bluehorn07.github.io/2024/02/02/install-istio-and-addons/)
-- [Istio ‘helloworld’ 데모](https://bluehorn07.github.io/2024/02/05/istio-helloworld-demo/)
 
 ## Authentication
 

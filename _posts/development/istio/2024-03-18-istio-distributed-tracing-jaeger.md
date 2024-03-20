@@ -4,7 +4,7 @@ toc: true
 toc_sticky: true
 categories: ["Kubernetes", "Istio"]
 excerpt: "Jeager로 살펴보는 Istio의 분산 추적 시스템과 그 원리 🦌 요청의 응답이 내게 돌아오기까지의 여정을 보여주는 길잡이."
-last_modified_at: 2024-03-16
+last_modified_at: 2024-03-20
 ---
 
 ![](https://upload.wikimedia.org/wikipedia/en/a/ab/J%C3%A4germeister_logo.svg){: .align-center style="max-width: 240px"}
@@ -77,6 +77,10 @@ $ istioctl dashboard jaeger
 ![](/images/development/istio/jaeger-trace-3.png)
 
 Ingress Gateway를 통해 보낸 요청도 Jaeger로 추적이 가능하다!
+
+## Header와 Body 정보는 확인 불가
+
+[Istio Envoy Acess Logging 포스트](https://bluehorn07.github.io/2024/03/16/istio-envoy-access-logging/)에서도 그랬는데, 요청의 Header와 Body 정보는 Tracing에서도 확인 불가능 했다.
 
 # Zipkin
 

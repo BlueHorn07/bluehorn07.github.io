@@ -1,9 +1,9 @@
 ---
-title: "Istio Envoy Logging"
+title: "Istio Envoy Access Logging"
 toc: true
 toc_sticky: true
 categories: ["Kubernetes", "Istio"]
-excerpt: ""
+excerpt: "Envoy로 들어오고 나가는 트래픽을 모니터링 하는 방법."
 last_modified_at: 2024-03-20
 ---
 
@@ -130,7 +130,7 @@ upstream, downstream 요것들은 envoy의 용어다.
   - 요청이 어떻게 처리되었는지 표시.
   - [Envoy 문서](https://www.envoyproxy.io/docs/envoy/latest/configuration/http/http_conn_man/response_code_details)에서 전체 목록 확인 가능.
 
-## Header 정보와 Body 정보는 확인 불가
+## Header와 Body 정보는 확인 불가
 
 Envoy Acess Log는 Header와 Body 정보는 보여주지 않는다.
 
