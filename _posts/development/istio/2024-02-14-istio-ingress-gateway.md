@@ -4,7 +4,7 @@ toc: true
 toc_sticky: true
 categories: ["Kubernetes", "Istio"]
 excerpt: Istio의 edge proxy인 Ingress Gateway에 대해 꼼꼼하게 살펴보기! 🕵️ Mesh Gateway랑은 뭐가 다른 걸까?
-last_modified_at: 2024-02-29
+last_modified_at: 2024-03-22
 ---
 
 # Ingress Gateway란?
@@ -297,6 +297,74 @@ $ kubectl apply -n test -f https://raw.githubusercontent.com/istio/istio/release
 - ingress-gateway의 다른 containerPort 사용하기 (ex: `9443`)
 
 의 방법을 사용해야 한다.
+
+## Ingress로 특정 host 주소로 들어오는 트래픽 핸들링하기
+
+우리가 `Gateway` 리소스를 처음 만들 땐, 아래와 같이 `hosts`를 와일드카드 `"*"`로 설정 했었다.
+
+```yaml
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: bookinfo-gateway
+spec:
+  servers:
+  - ...
+    hosts:
+    - "*" # 와일드카드!
+```
+
+그런데 요기에 특정 host 주소를 넣어서 해당 주소로만 오는 트래픽을 받을 수도 있다. 아래와 같이 말이다!
+
+```yaml
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: bookinfo-gateway
+spec:
+  servers:
+  - ...
+    hosts:
+    - "mybookinfo.com" # host를 명시했다!
+```
+
+이렇게 할 경우, `mybookinfo.com`라는 주소로 들어온 트래픽만 `Gateway` 리소스가 핸들링하게 된다!
+
+본인은 로컬 맥북에서 Rancher Desktop으로 K8s 클러스터를 돌려 실험하고 있는데, 이렇게 `Gateway` 리소스에 Host를 명시하게 되면, `curl` 명령어에 `-HHost` 속성을 더 넣어줘야 했다. (`--header "Host: ..."`로 넣어줘도 된다!)
+
+```bash
+# https://istio.io/latest/docs/tasks/traffic-management/ingress/ingress-control/#using-node-ports-of-the-ingress-gateway-service
+$ export INGRESS_NS=istio-system
+$ export INGRESS_NAME=istio-ingressgateway
+$ export INGRESS_HOST="192.168.64.2"
+
+# 성공!
+$ curl -s -I --header "Host:mybookinfo.com" "http://$INGRESS_HOST/productpage"
+HTTP/1.1 200 OK
+server: istio-envoy
+
+# 실패...
+$ curl -s -I "http://$INGRESS_HOST/productpage"
+HTTP/1.1 404 Not Found
+```
+
+로컬 맥북이라 Internal IP가 붙어서 Host가 없기 때문에 `Host` 헤더가 값을 넣어서 우회하는 방법을 썼다.
+
+### 하나의 Ingress가 여러 Host로 들어오는 트래픽 받기
+
+`Gateway`에 host를 지정할 수 있다는 사실은 하나의 Ingress로 여러 서비스를 노출할 수 있다는 걸 말하기도 한다!! 방금 `mybookinfo.com`을 위해 만들었던 `Gateway`, `VirtualService`는 그대로 두고, helloworld 워크로드를 노출하기 위한 리소스를 추가로 만들어 띄워보자.
+
+그러고 요청을 보내보면
+
+```bash
+$ curl -s --header "Host:mybookinfo.com" "http://$INGRESS_HOST/productpage"
+# ...bookinfo web html...
+
+$ curl -s --header "Host:myhelloworld.com" "http://$INGRESS_HOST/hello"
+Hello version: v2, instance: helloworld-v2-77f98b76b-zq5ch
+```
+
+요렇게 Host 정보에 따라서 서로 다른 워크로드의 결과를 받을 수 있다!! ✌️
 
 ## egress-gateway를 ingress 용도로 사용할 수 있을까?
 
