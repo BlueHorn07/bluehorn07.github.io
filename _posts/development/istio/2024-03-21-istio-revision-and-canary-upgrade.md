@@ -3,7 +3,7 @@ title: "Istio Revision and Canary Upgrade"
 toc: true
 toc_sticky: true
 categories: ["Kubernetes", "Istio"]
-excerpt: "동시에 2개 Istio를 운영하는 방법. Revision으로 Istio를 Canary Upgrade 하기"
+excerpt: "동시에 2개 Istio를 운영하는 방법. Revision으로 Istio를 Canary Upgrade 하기 🐣"
 last_modified_at: 2024-03-22
 ---
 

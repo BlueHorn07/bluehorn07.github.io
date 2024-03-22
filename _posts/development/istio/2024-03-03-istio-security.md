@@ -4,7 +4,7 @@ toc: true
 toc_sticky: true
 categories: ["Kubernetes", "Istio", "Security"]
 excerpt: "Istio에서 Zero-Trust Network를 구축하는 길 🔐 `PeerAuthentication`으로 Istio 워크로드의 접근만 허용하기, `AuthorizationPolicy`로 요청의 출발지/도착지/속성을 기준으로 접근 제어하기, `Sidecar`로 Envoy Sidecar 구성 커스텀 하기"
-last_modified_at: 2024-03-06
+last_modified_at: 2024-03-22
 ---
 
 ![](https://www.asylas.com/wp-content/uploads/2020/12/9-Awareness-Training.jpg){: .align-center }
@@ -14,7 +14,7 @@ last_modified_at: 2024-03-06
 
 # `PeerAuthentication`
 
-요건 istio 워크로드에 `mTLS`의 트래픽만 접근만 허용할 것인지(`STRICT`) 아니면 mTLS가 적용되지 않은 트래픽 접근도 허용할 것인지(`PERMISSIVE`) 결정하는 정책이다.
+요건 istio 워크로드에 `mTLS`의 트래픽의 접근만 허용할 것인지(`STRICT`) 아니면 mTLS가 적용되지 않은 트래픽 접근도 허용할 것인지(`PERMISSIVE`) 결정하는 정책이다.
 
 ```yaml
 $ kubectl apply -f - <<EOF
@@ -38,6 +38,18 @@ curl: (56) Recv failure: Connection reset by peer
 ```
 
 만약 istio 워크로드가 아닌 곳에서 요청을 보낸다면 이렇게 접근이 불가능하다.
+
+## istio -> non-istio 방향의 트래픽 막기
+
+위의 `PeerAuthentication`은 non-istio ➡️ istio 방향의 접근을 막는 방식이었다. 그렇담 반대로 istio ➡️ non-istio 방향의 접근을 막을 수는 없을까?
+
+요건 istio가 Istio Service Registry에 등록된 워크로드에만 접근하도록 `MeshConfig.OutboundTrafficPolicy.mode`를 `STRICT`로 설정해주면 된다. 이렇게 할 경우, K8s Service와 `ServiceEntry`로 등록한 엔드포인트만 접근할 수 있게 된다.
+
+하지만 단점이 있는데 본인이 확인 했을 땐 모든 K8s Service는 istio건 non-istio건 모두 Istio Service Registry에 등록된다. 그래서 "istio ➡️ non-istio K8s Svc" 방향의 접근은 막을 수 없다. 이 방식은 "istio ➡️ non-istio external endpoint" 방향의 접근만 막을 수 있다.
+
+Istio Service Registry에 대해 더 궁금하다면, 후속 포스트를 참고
+
+➡️ [Istio Service Registry](https://bluehorn07.github.io/2024/03/21/istio-service-registry/)
 
 # `AuthorizationPolicy`
 
