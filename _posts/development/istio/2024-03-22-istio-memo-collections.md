@@ -188,15 +188,99 @@ Envoy에 `gRPC` Access Log를 활성화 하려면 켜는 옵션이라고 한다.
 
 처음에 Envoy Access Log 켜려면 요걸 `true`로 만들어줘야 되는 줄 알고 좀 헤맸다 ㅋㅋ
 
+# Across the Mesh
+
+Istio 메쉬 전체에 트래픽 규칙을 적용하는게 가능하다!! 아래 리소스들을 istio 메쉬의 root namespace, 보통 `istio-system`에 생성하면 메쉬의 모든 워크로드에 해당 규칙이 적용된다!
+
+- `DestinationRule`
+- ...
+
+이때, 리소스를 사용하는 순서는 보통 워크로드가 떠있는 곳의 네임스페이스에 존재하는 Istio 리소스스를 먼저 확인하고, 그게 없으면 root ns의 Istio 리소스를 보게 된다고 한다.
+
+## DestinationRule
+
+[Istio Circuit Breaking을 연습 했던 포스트](https://bluehorn07.github.io/2024/03/23/istio-circuit-breaking/)에서 작성 했던 Outlier Detection 코드를 가져와 루트 네임스페이스인 `istio-system`에 디플로이 해보자.
+
+```yaml
+$ kubectl apply -f - <<EOF
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: default-dr
+  namespace: istio-system
+spec:
+  host: "*"
+  trafficPolicy:
+    connectionPool:
+      http: # 동시에 접속할 수 있는 connection을 제한
+        http1MaxPendingRequests: 1
+        maxRequestsPerConnection: 1
+      tcp:
+        maxConnections: 1
+    outlierDetection:
+      consecutive5xxErrors: 3 # 503 service unavailable
+      interval: 1m
+      baseEjectionTime: 5m
+      maxEjectionPercent: 100
+EOF
+```
+
+그러면 모든 네임스페이스에 Outlier Detection이 적용된다.
+
+### DestinationRule Inheritance
+
+root 네임스페이스에 정의한 DR과 워크로드 네임스페이스에 정의한 DR의 평가 순서는 항상 워크로드 네임스페이스의 DR이 우선권을 갖는다. 그래서 워크로드 네임스페이스에 DR이 있다면, root 네임스페이스의 DR는 곧바로 무시된다.
+
+그런데 root 네임스페이스의 DR이 무시되지 않고, 여전히 default 케이스로 동작하길 바란다면, pilot에 `PILOT_ENABLE_DESTINATION_RULE_INHERITANCE` 환경 변수를 `true`로 설정하면 된다고 한다!
+
+[learncloudnative의 블로그 글](https://learncloudnative.com/blog/2023-02-03-global-dr)을 참고했음을 밝힌다.
+
+# `istioctl kube-inject`로 sidecar 주입하기
+
+TODO: ...
+
 # Istio Ingress Controller
 
 https://istio.io/latest/docs/tasks/traffic-management/ingress/kubernetes-ingress/
 
 https://kubebyexample.com/learning-paths/istio/ingress-control
 
-Istio에서는 외부로 서비스를 노출하기 위해 Ingress Gateway를 사용한다. 그런데, K8s에서는 서비스를 노출할 때 (보통은) `Ingress`를 사용한다. 늘 이 두 개념이 상충된다고 생각하고 있었는데,  
+Istio에서는 외부로 서비스를 노출하기 위해 Ingress Gateway를 사용한다. 그런데, K8s에서는 서비스를 노출할 때 (보통은) `Ingress`를 사용한다. 공부를 하면서 늘 이 두 개념이 상충된다고 생각하고 있었는데, Istio Ingress Gateway와 K8s Ingress를 같이 엮어서 쓸수도 있는 것 같다.
 
-이거 로컬에서 Ingress 세팅 가능한지 체크하기.
+Istio 문서에 따르면, Istio Ingress Controller라는게 있어서 이걸로 `IngressClass` 리소스를 생성하면 되는 것 같다.
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: IngressClass
+metadata:
+  name: istio
+spec:
+  controller: istio.io/ingress-controller
+```
+
+그리고 K8s Ingress를 만들때, `ingressClassName: istio`로 적으면 Istio Ingress Controller의 제어를 받는 듯 하다.
+
+Istio [Mesh Config](https://istio.io/latest/docs/reference/config/istio.mesh.v1alpha1/)에도 관련된 필드들이 있다.
+
+- `ingressClass`
+- `ingressService`
+- `ingressControllerMode`
+  - `DEFAULT`: istio ingress controller를 k8s 클러스터 전체의 default ingress controller로 사용
+  - `STRICT`(default): `ingressClass`에 명시한 값과 동일한 annot 또는 `ingressClassName`을 가진 Ingress만 처리
+- `ingressSelector`
+
+TODO: ICA 시험 때 안 물어볼 것 같아서 핸즈온은 스킵!
+
+# Kubernetes Gateway API
+
+이번에 istio 공부하면서 처음 본 K8s 리소스임. K8s의 Ingress API의 기능을 보완한 새로운 K8s API라고 함.
+
+K8s Gateway API를 사용할 때, istio 리소스를 어떻게 호환 시켜야 하는지도 istio 문서에 잘 나와 있음. 잠깐 살펴보니 Istio 리소스를 하는게 아니라 전부 Gateway API 리소스를 정의하는 걸로 대체되는 것 같음.
+
+- Istio `Gateway` ➡️ Gateway `Gateway`
+- Istio `VirtualService` ➡️ Gateway `HTTPRoute`
+
+TODO: 요건 아직 K8s 표준 API가 아닌 것 같아서 ICA 시험에 안 나올 것 같음 ㅋㅋㅋ 나중에 다시 찾아보는 걸로!
 
 # Istio ControlZ
 
@@ -215,3 +299,11 @@ https://docs.google.com/document/d/1x5XeKWRdpFPAy7JYxiTz5u-Ux2eoBQ80lXT6XYjvUuQ/
 Istio가 `1.5`버전에서 Mixer를 Deprecate 하면서 작성한 문서. 본인이 istio를 접했을 땐 이미 Mixer가 없어진 후라서 글을 읽어도 잘 이해는 안 됐음 ㅋㅋㅋ
 
 대충 Mixer 때문에 CPU utilization cost가 컸고, latency에도 영향을 줬다는 정도만 이해함.
+
+# Killercoda ICA 모의 시험
+
+https://killercoda.com/ica
+
+요걸로 뜨는 가상 환경이 너무너무 느리고 답답하지만, 내가 공부하다가 놓친게 없는지 찾는데 도움이 됐다!!
+
+요걸로 `istioctl kube-inject`랑 Istio의 `WorkloadGroup` 등의 리소스를 내가 놓쳤다는 걸 깨달았음!!
