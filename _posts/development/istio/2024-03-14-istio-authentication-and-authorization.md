@@ -4,16 +4,16 @@ toc: true
 toc_sticky: true
 categories: ["Kubernetes", "Istio"]
 excerpt: "Auth와 Authz를 istio 인프라 레벨에서 구현하기!"
-last_modified_at: 2024-03-15
+last_modified_at: 2024-03-23
 ---
 
 ![](/images/meme/dump-head.png){: .align-center style="max-width: 400px" }
 
-istio를 사용하면 Authentication과 Authorization을 Envoy Proxy 레벨에서 수행할 수 있다. 이건 Auth & Authz 로직을 어플리케이션에서 구현이 없어도 워크로드를 보호할 수 있도록 하는 기능 같다!!
+istio를 사용하면 Authentication과 Authorization을 Envoy Proxy 레벨에서 수행할 수 있다. 이건 AuthN & AuthZ 로직을 어플리케이션에서 구현이 없어도 워크로드를 보호할 수 있도록 하는 기능 같다!!
 
 # 사전 준비: helloworld 예제
 
-Istio 예제로 제공되는 helloworld 예제를 활용해서 Istio의 Auth&Authz을 검증해보자. 자세한 예제는 이전에 적어둔 [Istio 'helloworld' 데모](https://bluehorn07.github.io/2024/02/05/istio-helloworld-demo/) 포스트에서 확인할 수 있다.
+Istio 예제로 제공되는 helloworld 예제를 활용해서 Istio의 AuthN&AuthZ을 검증해보자. 자세한 예제는 이전에 적어둔 [Istio 'helloworld' 데모](https://bluehorn07.github.io/2024/02/05/istio-helloworld-demo/) 포스트에서 확인할 수 있다.
 
 일단 위의 명령어로 워크로드를 띄우고
 
@@ -72,9 +72,12 @@ spec:
   rules:
   - from:
     - source:
+       # format: issuer/subject
        requestPrincipals: ["testing@secure.istio.io/testing@secure.istio.io"]
 EOF
 ```
+
+이때 "issuer"는 토큰을 발급한 주체(인증서버), "subject"는 토큰을 발급받은 주체(사용자, 서비스계정)을 표현한다.
 
 ## JWT 실어서 요청 보내기 
 

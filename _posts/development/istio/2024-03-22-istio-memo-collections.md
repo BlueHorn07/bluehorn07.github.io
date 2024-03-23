@@ -54,6 +54,9 @@ https://istio.io/latest/docs/reference/config/networking/virtual-service/
 - Retry Policy 세팅 가능
   - ???: 삼세번은 봐준다
   - `DR`에는 outlier detection이 있다.
+- Fault Injection
+  - delay
+  - abort
 - CORS Policy 세팅 가능
 
 하지만 모두 K8s Service로 존재하는 워크로드, 또는 엔드포인트가 명확한 타깃(`naver.com`)을 대상으로만 할 수 있다.
@@ -127,7 +130,7 @@ spec:
         host: productpage.nsA.svc.cluster.local
 ```
 
-# 동일 host에 2개 VirtualService가 있는 경우
+## 동일 host에 2개 VirtualService가 있는 경우
 
 ```yaml
 # duplicate-host-vs.yaml
@@ -193,7 +196,8 @@ Envoy에 `gRPC` Access Log를 활성화 하려면 켜는 옵션이라고 한다.
 Istio 메쉬 전체에 트래픽 규칙을 적용하는게 가능하다!! 아래 리소스들을 istio 메쉬의 root namespace, 보통 `istio-system`에 생성하면 메쉬의 모든 워크로드에 해당 규칙이 적용된다!
 
 - `DestinationRule`
-- ...
+- `EnvoyFilter`
+- `ProxyConfig`
 
 이때, 리소스를 사용하는 순서는 보통 워크로드가 떠있는 곳의 네임스페이스에 존재하는 Istio 리소스스를 먼저 확인하고, 그게 없으면 root ns의 Istio 리소스를 보게 된다고 한다.
 
@@ -239,6 +243,18 @@ root 네임스페이스에 정의한 DR과 워크로드 네임스페이스에 �
 
 TODO: ...
 
+# Merged Prometheus telemetry
+
+https://istio.io/latest/docs/ops/integrations/prometheus/#option-1-metrics-merging
+
+Istio의 Envoy Proxy들은 그들의 metric을 프로메테우스 metric 형식으로 노출함. Envoy Proxy의 메트릭은 Pod의 `15090` 포트로 노출됨.
+
+그런데 어떤 Pod들은 isito proxy를 도입하기 이전부터 자체적으로 Prometheus 메트릭을 노출하고 있었을 수도 있음. 그렇게 되면, istio proxy의 메트릭도 노출되고 App이 원래 노출하던 메트릭도 같이 있게 됨. (이렇게 되면 뭔가 간섭이 있나봄??)
+
+그래서 istio는 친절하게도(?) 기존 App이 노출하는 프로메테우스 메트릭이 있다면 그걸 병합(merge)해서 "merged prometheus telemtry"의 포트인 `15020`에 쏴준다고 함.
+
+이렇게 두 프메 메트릭을 병합하는 옵션은 IstioOp를 설치할 때 `meshConfig.enablePrometheusMerge` 옵션에 의해 설정되는데, 기본값이 `true`라서 Istio proxsy가 주입되었다면 기존 App 메트릭이 병합되게 될 것임. 그리고 위의 옵션에 따라 istio proxy가 주입된 Pod은 프메 Scrape을 위한 `prometheus.io/xxx` annot이 이것저것 붙게 된다고 함. 만약, 기존에 이미 `prometheus.io/xxx` annot이 있었다면 overwrite 됨.... ㅋㅋ
+
 # Istio Ingress Controller
 
 https://istio.io/latest/docs/tasks/traffic-management/ingress/kubernetes-ingress/
@@ -281,6 +297,27 @@ K8s Gateway API를 사용할 때, istio 리소스를 어떻게 호환 시켜야 
 - Istio `VirtualService` ➡️ Gateway `HTTPRoute`
 
 TODO: 요건 아직 K8s 표준 API가 아닌 것 같아서 ICA 시험에 안 나올 것 같음 ㅋㅋㅋ 나중에 다시 찾아보는 걸로!
+
+# Istio Reserved Ports
+
+https://istio.io/latest/docs/ops/deployment/requirements/
+
+외부로 직접 노출된 port만 적음. internal port는 생략! 대부분이 `150xx` 포트임.
+
+## Envoy Proxy
+
+- `15001`: Envoy outbound
+- `15006`: Envoy inbound
+- `15021`: Health checks
+- `15020`: Merged Prometheus telemetry from Istio agent, Envoy, and application	
+  - 왜 프메 메트릭을 병합(?)한 포트가 있는지는 요 포스트의 위쪽에 문단에 적어둠!
+- `15090`: Envoy Prometheus telemetry	
+
+## Istiod
+
+- `15014`: Control plane monitoring
+- `15017`: Webhook container port
+- `15010`, `15012`: XDS and CA services
 
 # Istio ControlZ
 
