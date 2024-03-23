@@ -79,7 +79,7 @@ Helloworld 워크로드를 모두 디플로이 하고 나면, 테스트용 Pod�
 
 ```bash
 $ k exec ... -it -- sh
-~ $ while true; do curl "http://helloworld.default.svc.cluster.local:5000/hello"; sleep 1; done;
+~ $ while true; do curl "http://helloworld.default.svc.cluster.local:5000/hello"; done;
 ```
 
 # Circuit Breaker란
