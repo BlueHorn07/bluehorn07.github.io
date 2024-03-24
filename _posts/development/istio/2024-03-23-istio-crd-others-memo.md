@@ -4,7 +4,7 @@ toc: true
 toc_sticky: true
 categories: ["Kubernetes", "Istio"]
 excerpt: "아니 Istio에 이런 리소스도 있었어 싶은 것들을 아주 간단히 정리해봤다: "
-last_modified_at: 2024-03-23
+last_modified_at: 2024-03-24
 ---
 
 ```bash
@@ -52,7 +52,40 @@ ICA 시험 준비할 때, 위의 명령어를 쳐서 나온 Istio 리소스들�
 
 # Telemtry
 
-TODO...
+https://istio.io/latest/docs/tasks/observability/telemetry/
+
+Istio의 Metrics, Access Logs, Tracing 기능을 세팅하고 커스텀하는데 사용하는 컴포넌트다. Istio에선 위의 기능을 담당하는 여러 Provider를 정의하고, 그것을 Telemetry API에서 세부 설정을 커스텀 한다.
+
+Istio에서 편의를 위해 기본으로 구성해둔 Provider도 있는데
+
+- `prometheus`
+  - Metrics
+- `evoy`
+  - Access Logging
+  - 특정 워크로드나 네임스페이스에 Envoy Access Logging를 활성화 하고 싶을 때 `Telemtry` 리소스를 사용했다. 자세한 내용은 정리해둔 [Istio Envoy Access Logging 포스트](https://bluehorn07.github.io/2024/03/16/istio-envoy-access-logging/) 참조.
+- `stackdriver`
+  - Metrics, Tracing, Access Logging
+  - default provider 지만, `default` profile로 설치하면 `enabled: false`로 세팅 되어 있음.
+
+default provider 외에 다른 Provider, 예를 들어 zipkin, datadog 등을 추가하고 싶다면 `IstioOperator`의 `meshConfig.extensionProviders` 항목에 추가하면 된다. 참고로 [Jaeger addon을 핸즈온 할 때](https://bluehorn07.github.io/2024/03/18/istio-distributed-tracing-jaeger/)는 `meshConfig.defaultConfig.tracing.zipkin.address` 필드를 수정해 envoy가 trace 데이터를 보낼 수 있도록 세팅 했었다.
+
+Telemtry API 문서에는 `extensionProviders`를 이렇게 세팅하라던데
+
+```yaml
+...
+extensionProviders:
+  - name: "localtrace" # istio 메쉬 내부에서 tracing 운영
+    zipkin:
+      service: "zipkin.istio-system.svc.cluster.local"
+      port: 9411
+      maxTagLength: 56
+  - name: "cloudtrace" # 클라우드 서비스에서 tracing 운영
+    stackdriver:
+      maxTagLength: 256
+...
+```
+
+뭔가 둘다 가능한 것 같기도?
 
 # WasmPlugin
 

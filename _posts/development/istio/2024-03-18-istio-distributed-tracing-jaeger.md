@@ -4,7 +4,7 @@ toc: true
 toc_sticky: true
 categories: ["Kubernetes", "Istio"]
 excerpt: "Jeager로 살펴보는 Istio의 분산 추적 시스템과 그 원리 🦌 요청의 응답이 내게 돌아오기까지의 여정을 보여주는 길잡이."
-last_modified_at: 2024-03-20
+last_modified_at: 2024-03-24
 ---
 
 ![](https://upload.wikimedia.org/wikipedia/en/a/ab/J%C3%A4germeister_logo.svg){: .align-center style="max-width: 240px"}
@@ -58,7 +58,16 @@ $ kubectl apply \
     -f https://raw.githubusercontent.com/istio/istio/release-1.21/samples/addons/jaeger.yaml
 ```
 
-대시보드에 접속하는 것도 `istioctl`로 손쉽게 가능하다.
+Jaeger를 띄우고 나면, istio에게 앞으로 요 주소로 tracing 데이터를 보내라고 명시해줘야 한다.
+
+```bash
+istioctl \
+  --set meshConfig.defaultConfig.tracing.zipkin.address=zipkin.istio-system.svc.cluster.local:9411 
+```
+
+(왜 Jaeger인데, zipkin 필드에 설정하는지 당황하는 부분이다. istio 설명에 따르면 Jaeger가 zipkin의 포맷을 따르기 때문이라고 한다 ㅇㅅㅇ)
+
+이제 Jaeger 대시보드에 접속 해보자! `istioctl`로 손쉽게 가능하다.
 
 ```bash
 $ istioctl dashboard jaeger
