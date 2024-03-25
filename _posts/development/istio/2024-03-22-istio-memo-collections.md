@@ -344,3 +344,7 @@ https://killercoda.com/ica
 요걸로 뜨는 가상 환경이 너무너무 느리고 답답하지만, 내가 공부하다가 놓친게 없는지 찾는데 도움이 됐다!!
 
 요걸로 `istioctl kube-inject`랑 Istio의 `WorkloadGroup` 등의 리소스를 내가 놓쳤다는 걸 깨달았음!!
+
+특히 요 모의 테스트가 좋다!
+
+https://killercoda.com/nashwan

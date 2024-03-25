@@ -26,6 +26,8 @@ Info [IST0118] (Service istio-system/jaeger-collector) Port name jaeger-collecto
 
 # `istioctl x describe`
 
+https://istio.io/latest/docs/ops/diagnostic-tools/istioctl-describe/
+
 K8s Pod이나 Service의 상태를 확인하는 용도의 명령어.
 
 ## `istioctl x describe pod <pod-name>`
