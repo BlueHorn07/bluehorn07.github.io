@@ -3,11 +3,11 @@ title: About
 permalink: /about/
 ---
 
-![logo](/assets/img/logo.png)
+![logo](/assets/img/me.png)
 
-안녕하세요, [BlueHorn07](https://github.com/BlueHorn07) 입니다 🐚
+안녕하세요, Seokyun Ha (a.k.a [BlueHorn07](https://github.com/BlueHorn07)) 입니다 🐚
 
-처음에 대학에서 수강하고 공부한 내용을 저만의 언어로 표현하고 정리하기 위해 블로그를 시작했습니다. 때로는 문제를 해결하고, 때로는 주제들을 서로 엮으면서 관계를 구축하고 세상을 보는 눈을 넓혀갑니다.
+대학에서 수강하고 공부한 내용을 저만의 언어로 표현하고 정리하기 위해 블로그를 처음 시작했습니다. 때로는 문제를 해결하고, 때로는 주제들을 서로 엮으면서 관계를 구축하고 세상을 보는 눈을 넓혀갑니다.
 
 현재는 [Bagelcode](https://bagelcode.com/)에서 "데이터 엔지니어"로 일하며 Kubernetes, Airflow, Promethues, Kafka 등등 팀에서 쓰는 기술 스택 위주로 공부하고 있습니다 👨‍🚀
 
