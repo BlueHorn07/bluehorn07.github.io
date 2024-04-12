@@ -1,8 +1,9 @@
 ---
-title: "Istio Certificate Associate 시험 후기"
+title: "Istio Certificate Associate 시험 후기 ⭐️"
 toc: true
 toc_sticky: true
 categories: ["Develop", "Istio"]
+priority: 0.9
 ---
 
 ![](/images/development/istio/ICA-certificate.png)
@@ -14,6 +15,22 @@ CKA 시험에 이어서 2번째로 시험 본 CNCF 자격증이다 ㅎㅎ 올해
 회사에서 데이터 파이프라인을 넘겨 받게 되었는데, 이 파이프라인이 Istio를 서비스 메쉬로 채택해 사용하고 있다. 인수인계 받을 때 Istio에 대해서도 설명을 듣고, `VirtualService`나 `InressGateway` 리소스도 떠있는 걸 확인 했는데, 이게 어떻게 동작하는지 내가 요걸 건드려도 될지 안 될지 전혀 감이 안 잡혔다.
 
 이제는 내가 주도적으로 관리하는 파이프라인이기도 하고, 문제가 생겼을 때 잘 진단하고 대응하기 위해서 Istio를 공부해야 겠다고 생각하고 있었고, 우연히 CNCF에서 Istio 자격증을 출시했다는 소식을 듣고 2024년 올해 첫 자격증으로 Istio를 공부하기로 결심 했다!!
+
+# 시험을 준비하면서 공부가 많이 됐다고?
+
+진짜진짜 공부가 많이 됐다!! Istio에 대해서도 공부를 많이 했지만, 그외에 Istio에 사용된 처음 보는 기술들도 많이 만난 것 같다.
+
+특히 Istio의 컨트롤 플레인인 `istiod`를 공부할 때 실력이 많이 성장한 것 같다. 처음에는 Sidecar Injection만 이해하고 있었는데, 이후에 Envoy 구성 정보 컴파일과 Certificate 관리에 대한 내용을 공부하면서 Istio의 전체적인 구조를 깨달은 것 같다. 또, 인터넷의 Istio 자료들을 찾아보면 몇몇 자료가 Istio 구버전(istio 1.5 이하)의 구조로 설정하고 있는데, Mixer, Galley, Citadel이 나오는 이 구조를 이해하고 싶다는 생각이 갑자기 들어서 Istio 블로그 글이랑 패치 노트를 열심히 찾아본 것도 기억에 남는다 ㅎㅎ [[삽질의 흔적 ㅎㅎ]](https://bluehorn07.github.io/2024/03/07/istio-control-plane-detail-examine/)
+
+Istio를 공부하면서 새로운 개념들도 많이 만나게 되었는데, mTLS와 WebAssembly도 Istio에서 처음 들어봤고, Zero-trust Network에 대해서도 처음에 잘 이해가 안 됬는데 관련 자료를 찾아보니 Istio로 쉽게 K8s ZTN를 구축할 수 있다는 것도 알게 됐다. (토스의 ["고객 불안을 0으로 만드는 토스의 Istio Zero Trust" 영상](https://youtu.be/4sJd6PIkP_s?si=aYMdO52OFKBGied9)이 많이 도움이 됐다.)
+
+Istio 공부하면서 Envoy를 만나게 되는데, Istio가 Envoy를 사용하기만 하는거라 처음엔 Envoy가 되게 블랙 박스처럼 느껴졌다. 이것도 `istiod`의 Envoy Configuration 컴파일 기능을 자세히 공부하면서 Istio가 Envoy를 쓰기 위해 어떻게 동작하는지, 그리고 Config를 모든 Envoy 사이드카에 전파하기 위해 Service Discovery API 이런 부분들이 조금 어려웠지만 재밌게 느껴졌다 ㅎㅎ
+
+그외에도  Istio가 Sidecar 기반 메쉬의 다음 세대(Generation)로 준비중인 [Ambient Mesh](https://istio.io/latest/docs/ops/ambient/getting-started/)에 대한 부분, Istio를 K8s가 아닌 Virtual Machine에 대해서도 서비스메쉬를 구축하는 `WorkloadGroup` 리소스에 대해서도, 그리고 트래픽을 추적(Tracing)하는 Jaeger, 그리고 서비스메쉬의 트래픽을 모니터링 하는 Kiali도 모두 정말 재밌는 주제들이었다.
+
+처음엔 파이프라인을 잘 관리하고 싶어서 그리고 내가 맡은 일을 내가 잘 모르고 있다는 불안감 때문에 Istio 공부를 시작한 것 같은데, 공부를 하면서 정말 다양한 엔지니어링 도구들과 MSA 구조를 운영할 때의 고민들과 그것들을 해결하기 위해 어떤 테크닉들을 살펴보고 온 것 같다.
+
+이젠 자신이 생겨서 Istio가 떠있는 K8s를 업그레이드 할 때도, Istio 업그레이드를 할 때도 자신 있게 하고 있다 ㅎㅎ '장애가 나도 나는 금방 디버그하고 해결할 수 있는 실력이 있는걸!'라는 생각이 갖춰진 것 같다. 이젠 예전만큼 Istio 관련 작업들이 힘들게 느껴지지 않는다 ㅎㅎ
 
 # 시험은 어떻게 준비 했는가?
 
@@ -120,8 +137,6 @@ CKA 시험 보던 그 가상환경 플랫폼이다!! CKA 시험 봤다면 익숙
 
 오래 준비 했던 시험이 끝나서 해방감을 만끽 하고 있다 (얏호~!~!) 4월초에 3박 5일로 🇹🇭 태국 방콕 여행을 다녀왔다 ㅎㅎ 방콕이 지금 여름인 시즌이라 기온이 38도나 되서 진짜 너무너무너무 더웠다 😣 그래도 맛있는거 많이 먹고, 수영장에서 수영도 많이 하고 진짜 재밌게 놀고 또 쉬고 왔다 ㅎㅎ 그리고 회사 돌아와서는 그동안에 생겨난 일들을 열심히 처리하는 중... ~~으악~~ ㅋㅋㅋ
 
-아 그리고 이젠 Istio에 자신이 생겨서 Istio가 떠있는 K8s를 업그레이드 할 때도, Istio 업그레이드를 할 때도 자신 있게 하고 있다 ㅎㅎ 이젠 예전만큼 Istio 관련 작업들이 힘들게 느껴지지 않는다 ㅎㅎ
-
 # 다음 시험 계획은??
 
 시험이 있어야 공부를 좀 한다는 사실을 알게 되어서 ~~스스로 인생을 하드 모드로 살고 있다~~ 다음 시험도 벌써 생각해뒀다 ㅋㅋ
@@ -130,4 +145,4 @@ CKA 시험 보던 그 가상환경 플랫폼이다!! CKA 시험 봤다면 익숙
 
 수학과 졸업 시험은 아직 많이 남기도 했고 그 사이 심심할 것 같아서 "Databricks Certificate"를 따보려고 한다!! ㅎㅎ 원래 Databricks는 회사에서 쓰고 있었는데, 좀더 잘 써보고 싶기도 했고 아직 나 자신이 spark, hadoop을 제대로 이해하고 있다고 생각하지 못 하고 있어서 시험을 준비하면서 spark, hadoop도 제대로 공부해 볼 것 같다.
 
-그럼 이만~~
+나의 두서없는 이 글이 Istio를 공부하는 다른 사람들에게 조금 도움이 되었으면 좋겠다 ㅎㅎ 그럼 이만~~~
