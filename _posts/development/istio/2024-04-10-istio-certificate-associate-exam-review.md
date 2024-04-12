@@ -1,5 +1,5 @@
 ---
-title: "Istio Certificate Associate 시험 합격 후기"
+title: "Istio Certificate Associate 시험 후기"
 toc: true
 toc_sticky: true
 categories: ["Develop", "Istio"]
