@@ -1,9 +1,10 @@
 ---
-title: "Istio Certificate Associate 시험 후기 ⭐️"
+title: "Istio Certified Associate 시험 후기 ⭐️"
 toc: true
 toc_sticky: true
 categories: ["Develop", "Istio"]
-priority: 0.9
+sitemap:
+    priority: 0.9
 ---
 
 ![](/images/development/istio/ICA-certificate.png)
