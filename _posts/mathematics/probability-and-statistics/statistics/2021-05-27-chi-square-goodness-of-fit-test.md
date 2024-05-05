@@ -3,7 +3,7 @@ title: "Chi-square Goodness-of-fit Test"
 toc: true
 toc_sticky: true
 categories: ["Statistics"]
-preview: "<proportion test>의 일반화. 카레고리 변수에 대한 검정."
+excerpt: "<proportion test>의 일반화. 카레고리 변수에 대한 검정."
 ---
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
