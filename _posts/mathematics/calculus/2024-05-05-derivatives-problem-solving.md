@@ -21,7 +21,7 @@ excerpt: "모든 점에서 미분 불가능한 연속 함수, Cissoid, 드립 �
 
 <div class="notice" markdown="1">
 
-**Weierstrass's function**.
+<big><b>Weierstrass's function</b></big>.
 
 $$
 f(x) = \sum_{n=0}^{\infty} a^n \cos (b^n \pi x)
