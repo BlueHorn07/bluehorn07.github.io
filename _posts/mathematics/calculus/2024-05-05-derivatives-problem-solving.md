@@ -250,3 +250,92 @@ $$
 
 사실 $h_1(t)$에 대한 식을 Implicit Function 형태가 아니라 $t$에 대한 정확한 식으로 표현할 수 있었지만, 그렇게 하지 않고 Implicit Function에서 형태에서 바로 미분한게 오히려 높이의 변화율을 아는데 더 도움이 된 것 같다.
 
+# exponential function defined by limit
+
+<div class="notice" markdown="1">
+
+Show that 
+
+$$
+\lim_{n\rightarrow \infty} \left( 1 + \frac{x}{n} \right)^n = e^x
+$$
+
+for any $x > 0$.
+
+</div>
+
+$1^{\infty}$ 꼴의 부정형이다! 이 경우 $\ln$을 씌우고, 거기에 로피탈 정리를 적용하는 접근을 "교재에서" 언급 했다.
+
+Let $f(n) = \left( 1 + \frac{x}{n} \right)^n$, we will see $\lim \ln f(n)$.
+
+$$
+\begin{aligned}
+\lim_{n\rightarrow \infty} \ln f(n) 
+&= \lim n \cdot \ln (1 + x/n) \\  
+&= \lim \frac{\ln(1+x/n)}{1/n}
+\end{aligned}
+$$
+
+요렇게 두면 $0 / 0$ 꼴의 부정형이기 때문에 로피탈 정리를 적용해 극한을 구할 수 있다!
+
+$$
+\lim \frac{\ln(1+x/n)}{1/n} \rightarrow \lim \frac{\frac{1}{1+x/n} \cdot - \frac{x}{n^2}}{- 1 / n^2} = \lim \frac{n x}{n + x} = \lim \ln f(n)
+$$
+
+이제 $\ln$을 씌웠던 걸 다시 풀어보면
+
+$$
+\begin{aligned}
+\lim_{n \rightarrow \infty} f(n) 
+&= \lim_{n \rightarrow \infty} e^{\ln f(n)} \\
+&= \lim_{n \rightarrow \infty} e^{\frac{nx}{n+x}} \\
+&= \lim_{n \rightarrow \infty} e^{x \cdot \frac{n}{n+x}} \\
+\end{aligned}
+$$
+
+이때 $\frac{n}{n+x}$의 극한은 $1$로 수렴하므로, 최종적으로 $e^x$만 남게 된다. $\blacksquare$
+
+# Newton's Serpentine
+
+![](/images/mathematics/calculus-1/newton-serpentine.png)
+
+Newton이 정형화한 Cubic Curve. 아래와 같은 방정식을 갖는다.
+
+$$
+y(x^2 + a^2) = abx
+$$
+
+몇가지 특정을 가지고 있는데
+
+- 원점을 중심으로 반전.
+- $x$축이 점근선
+- 함수값은 $y = \pm b / 2$ 사이에 존재
+
+## Parametric Equation
+
+Serpentine Curve를 parametric equation으로 표현하면 아래와 같다.
+
+$$
+\begin{aligned}
+x &= a \tan t \\
+y &= b \sin t \cos t
+\end{aligned}
+$$
+
+이때 식을 조금 변형하고 정리하면 Explicit Form으로 표현할 수도 있다!!
+
+$$
+\begin{aligned}
+\arctan x/a &= t \\
+y = b \sin t \cos t &= b \sin (2t) \\
+\end{aligned}
+$$
+
+따라서 $y = b \sin (2 \cdot \arctan x / a)$의 형태로 정리된다. 그래프를 그려보면 Implicit Form으로 적은 것과 동일한 것도 확인할 수 있다 ㅎㅎ
+
+# 참고문헌
+
+- Wikipedia
+  - [Weierstrass Function](https://en.wikipedia.org/wiki/Weierstrass_function)
+  - [Cissoid](https://en.wikipedia.org/wiki/Cissoid)
+  - [Serpentine Curve](https://en.wikipedia.org/wiki/Serpentine_curve)
