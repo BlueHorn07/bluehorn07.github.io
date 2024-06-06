@@ -6,15 +6,8 @@ categories: ["Calculus"]
 excerpt: "실변수 함수 $f(x)$를 다항 함수의 멱급수로 표현하기. $n$차 근사를 무한번 수행한 것과 같다."
 ---
 
-"미적분학” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Calculus]({{"/category/calculus" | relative_url}}) 페이지에서 확인하실 수 있습니다 📐
-
-- 함수의 멱급수 표현
-- Maclaurin Series
-- Taylor Series
-- Examples
-- Why Taylor Series?
-
-<hr/>
+"미적분학” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Calculus](https://bluehorn07.github.io/categories/calculus) 페이지에서 확인하실 수 있습니다 📐
+{: .notice--info}
 
 # 함수의 멱급수 표현
 
@@ -126,7 +119,7 @@ $$
 
 ## Fractional Function
 
-Fractional function $1 / (1-x)$에 대한 테일러 급수는 아래와 같다.
+Fractional function $1 / (1-x)$에 대한 매크로린 급수는 아래와 같다.
 
 $$
 \left(\frac{1}{1-x}\right)^{(n)} = n! \cdot \frac{1}{(1-x)^n}
@@ -150,13 +143,7 @@ $$
 
 ## Exponential Function
 
-Exponential function $e^x$에 대한 테일러 급수는 아래와 같다.
-
-$$
-(e^x)' = e^x
-$$
-
-가 됨을 기억하자.
+Exponential function $e^x$에 대한 테일러 급수는 아래와 같다. 이때, $(e^x)' = e^x$가 됨을 기억하자.
 
 <div class="notice" markdown="1">
 
