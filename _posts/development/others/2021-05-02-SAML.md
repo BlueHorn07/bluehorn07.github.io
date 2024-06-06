@@ -6,7 +6,7 @@ categories: ["Develop"]
 tags: ["Auth"]
 ---
 
-<div class="proof" markdown="1">
+<div class="notice" markdown="1">
 
 **기획 시리즈: Web Authentication**
 

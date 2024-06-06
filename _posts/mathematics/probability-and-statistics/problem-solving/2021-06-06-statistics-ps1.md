@@ -34,7 +34,7 @@ where $\text{Bias} := E [ \hat{\Theta} - \theta ]$.
 
 </div>
 
-<div class="proof" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">*Proof*.</span><br>
 
@@ -98,7 +98,7 @@ Show that $\text{Var}(S^2) > \text{Var}(\hat{S}^2)$.
 
 </div>
 
-<div class="proof" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">Solve.</span><br>
 
@@ -159,7 +159,7 @@ Compare $S^2$ and $\hat{S}^2$, which one is the most efficient estimator?
 
 </div>
 
-<div class="proof" markdown="1">
+<div class="notice" markdown="1">
 
 First, we know that the $S^2$ is an unbiased estimator, so $\text{bias}(S^2) = 0$.
 

@@ -11,7 +11,7 @@ readtime: 30 Minutes
 
 "Machine Learning"을 공부하면서 개인적인 용도로 정리한 포스트입니다. 지적은 언제나 환영입니다 :)
 
-<div class="proof" markdown="1">
+<div class="notice" markdown="1">
 
 **기획 시리즈: Bayesian Regression**
 
@@ -85,7 +85,7 @@ $$
 
 동전을 던졌을 때, 앞면이 나올 확률이 균일 분포를 따른다. 동전을 던졌더니 앞면이 나왔을 때, parameter poster를 구하라.
 
-<div class="proof" markdown="1">
+<div class="notice" markdown="1">
 
 <details markdown="1">
 <summary>Solution</summary>

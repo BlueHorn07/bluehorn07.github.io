@@ -77,7 +77,7 @@ $$
 
 </div>
 
-<div class="proof" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">proof.</span><br>
 

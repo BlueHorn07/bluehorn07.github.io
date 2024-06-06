@@ -279,7 +279,7 @@ $$
 
 그런데 왜 "Negative" Binomial이라는 이름이 붙었을까? 그것은 \<Geometric Distribution\> 때와 마찬가지로 확률의 合이 1이 됨을 보이는 과정에서 유래한다.
 
-<div class="proof" markdown="1">
+<div class="notice" markdown="1">
 
 
 $$

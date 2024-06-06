@@ -55,7 +55,7 @@ $$
 
 아이디어는 실변수 함수 $f(x)$를 다항 함수의 멱급수로 표현하는 [\<매크로린 급수; Macluarin Series\>]({{"/2022/10/29/talyor-series-and-maclaurin-series" | relative_url}})에서 출발한다. 예제는 [Brilliant: Negative Binomial Theorem](https://brilliant.org/wiki/negative-binomial-theorem/)에서 빌려왔음을 미리 밝힌다. 아래의 함수를 \<테일러 전개\> 해보자.
 
-<div class="proof" markdown="1">
+<div class="notice" markdown="1">
 
 $$
 \frac{1}{(1+x)^3}
@@ -119,7 +119,7 @@ $$
 \binom{-n}{k} = \frac{(-n) \cdot (-n-1) \cdots (-n-(k-1))}{k!}
 $$
 
-<div class="proof" markdown="1">
+<div class="notice" markdown="1">
 
 식에서 음수를 전부 빼서 $(-1)$의 곱셈으로 압축해보자.
 

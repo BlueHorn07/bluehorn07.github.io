@@ -145,7 +145,7 @@ $$
 f(L, R) = f(L \cup \{ v \}, R \setminus \{ v\})
 $$
 
-<div class="proof" markdown="1">
+<div class="notice" markdown="1">
 
 For two vertext set $L$ and $R$, $v$ is an element of $R$. Remove $v$ from $R$ and place it in $S$, and now re-evaluate the flow of new cut $(L \cup \\{ v\\}, R \setminus \\{ v \\})$.
 
@@ -205,7 +205,7 @@ $$
 \text{size}(f) = \text{capacity}(L, R)
 $$
 
-<div class="proof" markdown="1">
+<div class="notice" markdown="1">
 
 <div class="img-wrapper">
   <img src="{{ "/images/computer-science/algorithm/network-flow-4.png" | relative_url }}" width="500px">
@@ -243,7 +243,7 @@ The following statements are equivalent.
 
 이 \<MFMC Theorem\>이 무엇을 의미하는지 살펴보자. Lemma 1, 2를 종합해 얻은 결론은 어떤 cut $(L, R)$을 잡든 그때의 capacity는 $\text{val}(f)$보다 크거나 같다이다. \<MFMC Theorem\>은 capacity가 최소가 되는, 즉 $\text{capacity}(L, R) = \text{val}(f)$가 되는  $(L, R)$ cut이 존재하지만, 그것은 오직 $\text{val}(f)$가 네트워크의 maximum flow일 때만 성립함을 말한다! (즉, $(3) \implies (1)$라는 말이다.)
 
-<div class="proof" markdown="1">
+<div class="notice" markdown="1">
 
 MFMC Theorem이 기술하는 3가지 명제가 서로 Equivalent 함을 증명해보자. 증명 순서는 $(1) \implies (2)$, $(2) \implies (3)$, $(3) \implies (1)$ 순서로 진행한다.
 

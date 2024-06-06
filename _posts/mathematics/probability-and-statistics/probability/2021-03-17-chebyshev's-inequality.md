@@ -46,7 +46,7 @@ $$
 
 \<Chebyshev's Theorem\>의 증명은 생각보단 간단하다.
 
-<div class="proof" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">*Proof*.</span><br>
 

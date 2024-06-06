@@ -98,7 +98,7 @@ $r_y \leftarrow \text{find}(y)$ <br/>
 
 이 중에서 3번째 문장을 증명해보자.
 
-<div class="proof" markdown="1">
+<div class="notice" markdown="1">
 
 [Proof by Induction]
 
@@ -120,7 +120,7 @@ $\blacksquare$
 
 **Path Compression**은 $\text{find}(x)$ 연산을 수행하기만 하면 된다!
 
-<div class="proof" markdown="1">
+<div class="notice" markdown="1">
 
 **Algorithm** $\text{find}(x)$
 

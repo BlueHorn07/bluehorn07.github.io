@@ -42,7 +42,7 @@ A connected undirected graph has an <u><b>Eulerian cycle</b></u> iff every verte
 
 </div>
 
-<div class="proof" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">*Proof*.</span> $\implies$ <br>
 
@@ -54,7 +54,7 @@ Euler cycle은 그래프의 모든 vertex를 지나게 된다. 그래서 Euler c
 
 </div>
 
-<div class="proof" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">*Proof*.</span> $\impliedby$ <br>
 

@@ -11,7 +11,7 @@ readtime: 30 Minutes
 
 "Machine Learning"을 공부하면서 개인적인 용도로 정리한 포스트입니다. 지적은 언제나 환영입니다 :)
 
-<div class="proof" markdown="1">
+<div class="notice" markdown="1">
 
 **기획 시리즈: Bayesian Regression**
 
@@ -45,7 +45,7 @@ $$
 
 이것은 아래와 같은 regression의 가정을 통해 유도된 것으로 <span class="half_HL">$y$를 하나의 확률 변수로 취급한다</span>는 의미를 가진다. 또한, 이전 포스트에서는 likelihood function이 이항 분포, 정규 분포 등등의 분포를 가질 수 있었는데, <span class="half_HL">regression problem의 상황에서는 likelihood를 Gaussian distribution로 설정할 수 밖에 없다!</span> 🙌
 
-<div class="proof" markdown="1">
+<div class="notice" markdown="1">
 
 <div class="img-wrapper">
   <img src="{{ "/images/computer-science/machine-learning/bayesian_likelihood_from_train_set.png" | relative_url }}" width="100%">

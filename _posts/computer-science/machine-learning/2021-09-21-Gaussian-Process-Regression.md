@@ -12,7 +12,7 @@ readtime: 30 Minutes
 
 본 글을 읽기 전에 "[Distribution over functions & Gaussian Process]({{"/2021/07/01/Gaussian-process" | relative_url}})"에 대한 글을 먼저 읽고 올 것을 권합니다 😉
 
-<div class="proof" markdown="1">
+<div class="notice" markdown="1">
 
 **기획 시리즈: Gaussian Process Regression**
 

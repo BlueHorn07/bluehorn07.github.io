@@ -89,7 +89,7 @@ If each single classifier is **unstable** – that is, it has **high variance**,
 즉, 우리가 제대로 aggregate 했다면, 항상 그 error $e_A$는 항상 단일 estiatmor의 error $e$ 보다 작다는 정리이다.
 
 
-<div class="proof" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">*proof*.</span><br>
 
@@ -156,7 +156,7 @@ $$
 
 이때, \<Bagging\> 모델의 "variance"를 줄일 수 있는 방법은 <span class="half_HL">개별 bootstrap tree 사이의 correlation을 줄여 모델을 개선</span>할 수 있다!!! 😁
 
-<div class="proof" markdown="1">
+<div class="notice" markdown="1">
 
 The 'average' of $B$ iid random variables with variance $\sigma^2$ has variance $\sigma^2/B$. (당연!)
 

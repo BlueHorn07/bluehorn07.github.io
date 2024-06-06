@@ -33,7 +33,7 @@ Here, $\mathbf{x}$ is called an \<**eigen vector**\> of $A$ associated with $\la
 
 $\det (A - \lambda I_n) = 0$ if and only if $\lambda$ is an \<eigen value\>.
 
-<div class="proof" markdown="1">
+<div class="notice" markdown="1">
 
 <span class="statement-title">*Proof*.</span><br>
 
