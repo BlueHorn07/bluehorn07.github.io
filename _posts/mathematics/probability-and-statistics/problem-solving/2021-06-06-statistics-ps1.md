@@ -10,14 +10,6 @@ categories: ["Statistics", "Problem Solving"]
 
 이 글은 "[Point Estimation]({{"/2021/05/05/point-estimation" | relative_url}})" 포스트에서 제시한 숙제 문제들을 풀이한 포스트입니다.
 
-<span class="statement-title">TOC.</span><br>
-
-- [MSE is the sum of variance and square of bias](#mse-is-the-sum-of-variance-and-square-of-bias)
-- [Sample Variance is not the minimal variance estimator](#sample-variance-is-not-the-minimal-variance-estimator)
-- [Which one is the most efficient variance estimator?](#which-one-is-the-most-efficient-variance-estimator)
-
-<hr/>
-
 ## MSE is the sum of variance and square of bias
 
 <div class="notice" markdown="1">

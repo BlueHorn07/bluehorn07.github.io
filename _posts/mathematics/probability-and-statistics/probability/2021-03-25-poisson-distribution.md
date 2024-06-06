@@ -8,15 +8,6 @@ categories: ["Probability"]
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](https://bluehorn07.github.io/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
 {: .notice--info}
 
-<br><span class="statement-title">TOC.</span><br>
-
-- [Poisson Distribution](#poisson-distribution)
-- [Bernoulli Process \& Poisson Process](#bernoulli-process--poisson-process)
-  - [Bernoulli Process](#bernoulli-process)
-  - [Poisson Process](#poisson-process)
-
-<hr/>
-
 # Poisson Distribution
 
 \<푸아송 분포 Poisson Distribution\>는 [이항 분포]({{"/2021/03/17/discrete-probability-distributions-1#binomial-distribution" | relaitve_url}}) $\text{BIN}(n, p)$의 특수한 경우이다. $\text{BIN}(n, p)$에서 $n$이 무한대로 커지고, $p$가 아주아주 작아질 때, 분포는 푸아송 분포를 만족하게 된다!

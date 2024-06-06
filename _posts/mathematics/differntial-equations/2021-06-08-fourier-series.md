@@ -5,19 +5,7 @@ toc_sticky: true
 categories: ["Differential Equations"]
 ---
 
-
 2019-2학기, 대학에서 들은 '미분방정식' 수업을 복습하는 차원에서 정리하게 된 글입니다. 지적은 언제나 환영입니다 :)
-
-<br><span class="statement-title">TOC.</span><br>
-
-- [Introduction to Fourier Series](#introduction-to-fourier-series)
-  - fundamental period
-  - orthogonality for functions
-- [Fourier Series](#fourier-series)
-  - Fourier Coefficients
-- (next) [Fourier Series (Complex Representation)]({{"/2021/06/09/fourier-series-complex-representation" | relative_url}})
-
-<hr/>
 
 ### Introduction to Fourier Series
 

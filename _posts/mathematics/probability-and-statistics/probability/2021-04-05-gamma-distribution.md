@@ -22,13 +22,6 @@ categories: ["Probability"]
 
 </div>
 
-<br><span class="statement-title">TOC.</span><br>
-
-- Gamma Function; $\Gamma(\alpha)$
-- Gamma Distribution; $f(x; \alpha, \beta)$
-  - Relation to Poisson Process; Generalization of \<Exponential Distribution\>
-<hr/>
-
 # Gamma Function
 
 <div class="definition" markdown="1">

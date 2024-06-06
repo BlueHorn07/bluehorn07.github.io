@@ -8,15 +8,6 @@ categories: ["Probability"]
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](https://bluehorn07.github.io/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
 {: .notice--info}
 
-<br><span class="statement-title">TOC.</span><br>
-
-- Joint Probability Distribution
-- Marginal Distribution
-- Conditional Probability Distribution
-- Statistical Independence
-
-<hr/>
-
 ## Joint Probability Distribution
 
 앞에서는 하나의 RV에 대한 probability distribution을 살펴보았다. 하지만, 현실에서는 둘 이상의 RV에 대한 결과를 동시에 고려해야 하는 경우가 많다. \<Joint Probability Distribution\>은 이런 둘 이상의 RV를 수학적으로 정의한 개념이다.

@@ -5,15 +5,7 @@ toc_sticky: true
 categories: ["Applied Statsitcs"]
 ---
 
-
 2021-1학기, 대학에서 '통계적 데이터마이닝' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
-
-<br><span class="statement-title">TOC.</span><br>
-
-- Mixture Model
-- EM Algorithm
-
-<hr/>
 
 앞에서 살펴본 \<K-means\>와 \<hierarchical\> clustering은 휴리스틱 기법에 속한다. 어떤 모델이 있는 것이 아니기 때문에, statistical inference 역시 불가능하다. 또한, 실전에서는 categorical variable 때문에 "dissimilarity measure"를 정의하는 것도 쉽지 않다.
 

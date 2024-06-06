@@ -23,17 +23,6 @@ readtime: 30 Minutes
 
 </div>
 
-<br><span class="statement-title">TOC.</span><br>
-
-- [Introduction to Gaussian Process](#introduction-to-gaussian-process)
-- [Probability distribution over functions with finite domains](#probability-distribution-over-functions-with-finite-domains)
-- [Probability distribution over functions with infinite domains](#probability-distribution-over-functions-with-infinite-domains)
-- [mean \& convariance function for GP](#mean--convariance-function-for-gp)
-- [zero-mean GP](#zero-mean-gp)
-- [references](#references)
-
-<hr/>
-
 ### Introduction to Gaussian Process
 
 먼저 \<Gaussian distribution\>을 복습해보자.

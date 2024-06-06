@@ -20,23 +20,6 @@ categories: ["Statistics"]
 
 </div>
 
-<br><span class="statement-title">TOC.</span><br>
-
-- sample mean & sampling distribution
-- random sample
-- Statistics; 통계량
-- location measures of a sample
-  - sample mean
-  - sample median
-  - sample mode
-- variability measures of a sample
-  - sample variance 🔥
-  - sample standard deviation
-  - range
-
-
-<hr/>
-
 # Introduction
 
 확통 수업을 듣는 전체 학생을 대상으로, 확통 수업을 선호하는 학생의 비율을 구하고자 한다. 그런데, 확통 수업을 듣는 학생 수가 너무 많아서 전체를 조사할 순 없고, 전체 중 $n$명 학생을 대상으로 설문조사를 시행한다고 하자.

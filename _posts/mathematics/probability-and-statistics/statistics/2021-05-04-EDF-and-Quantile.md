@@ -20,14 +20,6 @@ categories: ["Statistics"]
 
 </div>
 
-<br><span class="statement-title">TOC.</span><br>
-
-- [EDF; Empirical Distribution Function](#edf-empirical-distribution-function)
-- [Quantile](#quantile)
-- [Normal Q-Q Plot](#normal-q-q-plot)
-
-<hr/>
-
 ### EDF; Empirical Distribution Function
 
 For given samples $X_1, \dots, X_n$,

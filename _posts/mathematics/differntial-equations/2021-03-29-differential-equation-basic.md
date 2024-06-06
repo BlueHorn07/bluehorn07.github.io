@@ -5,17 +5,7 @@ toc_sticky: true
 categories: ["Differential Equations"]
 ---
 
-
 2019-2학기, 대학에서 들은 '미분방정식' 수업을 복습하는 차원에서 정리하게 된 글입니다. 지적은 언제나 환영입니다 :)
-
-<br><span class="statement-title">TOC.</span><br>
-
-- \<미분 방정식; Differential Equations\>이란 무엇인가?
-- Type I & Type II
-- Linear DE
-  - Intergrating Factor Method
-
-<hr/>
 
 ## 미분 방정식이란?
 

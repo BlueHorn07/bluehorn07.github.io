@@ -36,12 +36,6 @@ C_{\alpha, \beta}
 = \frac{1}{\Gamma(\alpha) \cdot \beta^{\alpha}}
 $$
 
-<br><span class="statement-title">TOC.</span><br>
-
-- [Chi-square Distribution](#chi-square-distribution) $\chi^2(n)$
-
-<hr/>
-
 # Chi-square Distribution
 
 <div class="definition" markdown="1">

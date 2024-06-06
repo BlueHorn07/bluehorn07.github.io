@@ -21,13 +21,6 @@ categories: ["Probability"]
 
 </div>
 
-<br><span class="statement-title">TOC.</span><br>
-
-- Weibull Distribution; $\text{Weibull}(\alpha, \beta)$
-  - Failure rate & Reliability
-
-<hr/>
-
 ## Weibull Distribution
 
 <div class="definition" markdown="1">

@@ -5,16 +5,7 @@ toc_sticky: true
 categories: [NestJS]
 ---
 
-<br/>
-
 NestJS를 공부하면서 개인적인 용도로 정리한 글입니다. 지적은 언제나 환영입니다 :)
-
-<br><span class="statement-title">TOC.</span><br>
-- One-to-One
-- One-to-Many / Many-to-One
-- Many-to-Many
-
-<hr/>
 
 ### Set-up
 

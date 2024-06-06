@@ -5,27 +5,9 @@ toc_sticky: true
 categories: ["Algorithm"]
 ---
 
-
-
 2020-1학기, 대학에서 '알고리즘' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
 보통 우리는 어떤 알고리즘의 성능을 입력 데이터의 크기 $N$에 대한 함수로 표현한다. 이번 포스트에서는 알고리즘의 성능을 표기하는 여러 기법들에 대해 살펴본다 😎
-
-<br><span class="statement-title">TOC.</span><br>
-
-- $O$ Notation
-- $\Omega$ Notation
-- $\Theta$ Notation
-- Examples
-
-- little-o Notation
-- little-omega Notation
-- little-theta Notation
-- Examples
-
-- Exercises
-
-<hr/>
 
 ### $O$ Notaiton
 

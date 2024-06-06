@@ -20,15 +20,6 @@ categories: ["Statistics"]
 
 </div>
 
-<br><span class="statement-title">TOC.</span><br>
-
-- Sampling Distribution of Mean & CLT
-- [Weak Law of Large Numbers](#weak-law-of-large-numbers)
-- [CLT; Central Limit Theorem](#clt-central-limit-theorem)
-  - [*proof*](#proof-of-clt)
-
-<hr/>
-
 # Sampling Distribution of Mean
 
 Let $X_1, \dots, X_n$ be a random sample with $E[X_i] = \mu$ and $\text{Var}(X_i) = \sigma^2$.

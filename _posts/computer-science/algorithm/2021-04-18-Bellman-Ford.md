@@ -10,16 +10,6 @@ categories: ["Algorithm"]
 
 💥 \<**Bellman-Ford Algorithm**\>은 negative edge가 있는 Acyclic Directed Graph에서의 Shortest path를 찾는 알고리즘입니다. 만약 negative cycle이 있다면, \<Bellman-Ford Algorithm\>을 쓸 수 없습니다 😥
 
-<br><span class="statement-title">TOC.</span><br>
-
-- Golden rule for the shortest path
-  - distance update rule
-  - *proof*
-- Bellman-Ford Algorithm
-  - Negaitve Cycle Detection
-
-<hr>
-
 ### Shortest Path with Negative Edge
 
 \<Dijkstra's Algorithm\>은 아래의 Invariant를 갖는다.

@@ -5,21 +5,9 @@ toc_sticky: true
 categories: ["Applied Statsitcs"]
 ---
 
-
 2021-1학기, 대학에서 '통계적 데이터마이닝' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
 우리는 Feature의 차원이 늘어남에 따라 \<Curse of Dimensionality\>라는 문제를 갖게 된다. 이런 문제를 해결하기 위해서는 많은 기법들이 제시되었고, 이번 포스트에서는 그 기법 중 전체 feature에서 몇개를 선택해 사용하는 \<Feature Selection\>의 기법들에 대해 소개할 예정이다 😁
-
-<span class="statement-title">TOC.</span><br>
-
-- [Best Subset Selection](#best-subset-selection)
-- [Forward Stepwise Selection](#forward-stepwise-selection)
-- [Backward Stepwise Selection](#backward-stepwise-selection)
-- [Mallow's $C_p$](#mallows-c_p)
-- [AIC & BIC](#aic--bic)
-- [Instability of Variable Selection](#instability-of-variable-selection)
-
-<hr/>
 
 # Best Subset Selection
 

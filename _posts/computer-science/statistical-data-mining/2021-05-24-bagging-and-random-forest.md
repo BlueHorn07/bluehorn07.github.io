@@ -5,22 +5,9 @@ toc_sticky: true
 categories: ["Applied Statsitcs"]
 ---
 
-
 2021-1학기, 대학에서 '통계적 데이터마이닝' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
-<br><span class="statement-title">TOC.</span><br>
-
-- [Bagging](#bagging)
-  - [Bootstrap Sampling](#bootstrap-sampling)
-  - [Variance Reduction for Bagging](#variance-reduction-for-bagging)
-- [Random Forest](#random-forest)
-- [Out of Bag Error](#out-of-bag-error)
-
-<hr/>
-
 \<Bagging\>, \<Boosting\>, \<Random Forest\>를 아우르는 공통점은 모두 \<**ensemble model**\>이라는 점이다. \<**ensemble model**\>은 많은 weak learner를 결합해 strong learner를 디자인 하는 접근법이다. 많은 경우에 \<**ensemble model**\>가 single model보다 더 좋은 성능을 보인다 😁
-
-<hr/>
 
 ### Bagging
 

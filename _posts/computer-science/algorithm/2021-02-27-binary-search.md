@@ -5,17 +5,7 @@ toc_sticky: true
 categories: ["Algorithm"]
 ---
 
-
 2020-1학기, 대학에서 '알고리즘' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
-
-<br><span class="statement-title">TOC.</span><br>
-
-- Binary Search
-- Off-by-One
-- Binary Search - Code
-- Approximate Matches
-
-<hr/>
 
 ## Binary Search
 

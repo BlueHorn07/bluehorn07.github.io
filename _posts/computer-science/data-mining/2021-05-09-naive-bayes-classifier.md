@@ -21,15 +21,6 @@ $$
 
 </div>
 
-<br><span class="statement-title">TOC.</span><br>
-
-- [Naive Assumption](#naive-assumption)
-- [Naive Bayes Classifier](#naive-bayes-classifier)
-- [Gaussian Naive Bayes](#gaussian-naive-bayes)
-  - [참고자료](#참고자료)
-
-<hr/>
-
 <div class="statement" markdown="1" align="center">
 
 "One assumption taken is the <span style="color:red;">strong independence</span> assumptions btw the features."

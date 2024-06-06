@@ -5,17 +5,7 @@ toc_sticky: true
 categories: ["Deep Learning", "NLP"]
 ---
 
-<br/>
-
 2020-2학기 "연구참여(CSED339A)"에서 진행한 "Stanford CS231" 스터디에서 공부한 내용을 정리한 포스트입니다. 지적은 언제나 환영입니다 :)
-
-<br><span class="statement-title">TOC.</span><br>
-
-- [Introduction to Sequential Model](#introduction-to-sequential-model)
-- [RNN; Recurrent Neural Network](#rnn-recurrent-neural-network)
-- [LSTM; Long Short Term Memory model](#lstm-long-short-term-memory-model)
-
-<hr/>
 
 ### Introduction to Sequential Model
 

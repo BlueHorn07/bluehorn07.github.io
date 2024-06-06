@@ -10,15 +10,6 @@ categories: ["Statistics", "Problem Solving"]
 
 이 글은 "[Test on Regression]({{"/2021/06/09/test-on-regression" | relative_url}})" 포스트에서 제시한 숙제들을 풀이한 포스트입니다.
 
-<span class="statement-title">TOC.</span><br>
-
-- Variance of estimator $B_0$
-- unbiased estimator of $\sigma^2$ is $s^2$
-- (not yet) $s^2 \perp B_1$, and $s^2 \perp B_0$
-- (not yet) the distribution of $s^2$
-
-<hr/>
-
 <div class="notice" markdown="1">
 
 <span class="statement-title">Theorem.</span><br>

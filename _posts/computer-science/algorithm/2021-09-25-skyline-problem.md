@@ -5,19 +5,9 @@ toc_sticky: true
 categories: ["Algorithm"]
 ---
 
-
-
 2020-1학기, 대학에서 '알고리즘' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
 [백준 1933번: 스카이라인](https://www.acmicpc.net/problem/1933) 문제를 다루는 포스트입니다 🙌
-
-<br><span class="statement-title">TOC.</span><br>
-
-- [Brute Force](#brute-force)
-- [Divide and Conquer (feat. Merge Sort)](#divide-and-conquer-feat-merge-sort)
-- [reference](#reference)
-
-<hr/>
 
 <div class="math-statement" markdown="1">
 

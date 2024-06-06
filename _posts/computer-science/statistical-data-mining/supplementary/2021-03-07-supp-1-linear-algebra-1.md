@@ -5,22 +5,7 @@ toc_sticky: true
 categories: ["Linear Algebra", "Applied Statsitcs"]
 ---
 
-
 2021-1학기, 대학에서 '통계적 데이터마이닝' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
-
-<br><span class="statement-title">TOC.</span><br>
-
-- (review) Matrix
-- Vector Space
-- Linearly Independent
-- basis & dimension
-- Column space & Row space & Null space
-- Fundamental Theorem of Linear Algebra
-  - Rank Theorem
-- Rank
-- Determinant
-
-<hr/>
 
 ## (Reveiw) Matrix
 

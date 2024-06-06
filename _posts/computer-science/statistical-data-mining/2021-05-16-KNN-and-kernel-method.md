@@ -5,21 +5,9 @@ toc_sticky: true
 categories: ["Applied Statsitcs"]
 ---
 
-
 2021-1학기, 대학에서 '통계적 데이터마이닝' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
 이 포스트는 [Regression Spline]({{"/2021/04/18/regression-spline" | relative_url}})과 [Spline Method (2)]({{"/2021/04/19/splines-method-2" | relative_url}})이어지는 내용입니다 😊
-
-<br><span class="statement-title">TOC.</span><br>
-
-- [KNN; K-Nearest Neighbor method](#knn-k-nearest-neighbor-method)
-- [kernel method](#kernel-method)
-  - [Nadaraya-Watson Estimator](#nadaraya-watson-estimator)
-- [Local Linear Regression with kernel method](#local-linear-regression-with-kernel-method)
-- [Local Likelihood Appraoch for logistic regression](#local-likelihood-appraoch-for-logistic-regression)
-- [Kernel method with $p>1$](#kernel-method-with-p--1)
-
-<hr/>
 
 ### KNN; K-Nearest Neighbor method
 

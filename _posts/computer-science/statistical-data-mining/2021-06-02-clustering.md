@@ -5,18 +5,7 @@ toc_sticky: true
 categories: ["Applied Statsitcs"]
 ---
 
-
 2021-1학기, 대학에서 '통계적 데이터마이닝' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
-
-<br><span class="statement-title">TOC.</span><br>
-
-- [K-means Clustering](#k-means-clustering)
-  - K-means Algorithm
-- [Hierarchical Clustering](#hierarchical-clustering)
-- [Spectral Clustering](#spectral-clustering)
-- [Model-based Clustering]({{"/2021/06/02/model-based-clustering" | relative_url}}) (다음편)
-
-<hr/>
 
 <div class="notice" markdown="1">
 

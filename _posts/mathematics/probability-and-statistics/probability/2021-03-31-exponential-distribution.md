@@ -21,15 +21,6 @@ categories: ["Probability"]
 
 </div>
 
-<br><span class="statement-title">TOC.</span><br>
-
-- Exponential Distribution
-  - derived from Poisson Process
-  - memoeryless property
-  - mean & variance
-
-<hr/>
-
 이번 포스트에서는 포아송 프로세스와도 관련있는 \<Exponential Distribution\>에 대해 살펴본다!
 
 ### Exponential Distribution

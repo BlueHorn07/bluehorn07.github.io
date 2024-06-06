@@ -5,22 +5,7 @@ toc_sticky: true
 categories: ["Applied Statsitcs"]
 ---
 
-
 2021-1학기, 대학에서 '통계적 데이터마이닝' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
-
-<br><span class="statement-title">TOC.</span><br>
-
-- Basis Expansion
-- [Polynomial Regression](#polynomial-regression)
-  - [Local Polynomial Regression](#local-polynomial-regression)
-- [Regression Spline](#regression-spine)
-  - spline basis function
-- [Natural Cubic Spline](#natural-cubic-spline)
-  - power basis functions
-- [Smoothing Splines](#smoothing-splines)
-  - knot selection
-
-<hr/>
 
 이전 챕터에서는 parameter를 추론해 linear regreeion & linear classification을 수행하는 방법을 살펴보았다.
 

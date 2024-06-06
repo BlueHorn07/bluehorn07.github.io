@@ -37,12 +37,6 @@ C_{\alpha, \beta}
 = \frac{1}{\Gamma(\alpha) \cdot \beta^{\alpha}}
 $$
 
-<br><span class="statement-title">TOC.</span><br>
-
-- [Beta Distribution](#beta-distribution); $\text{Beta}(\alpha, \beta)$
-
-<hr/>
-
 ## Beta Distribution
 
 <div class="definition" markdown="1">

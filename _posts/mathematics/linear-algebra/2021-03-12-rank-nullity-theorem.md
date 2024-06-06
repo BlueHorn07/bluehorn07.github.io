@@ -5,15 +5,6 @@ toc_sticky: true
 categories: ["Linear Algebra"]
 ---
 
-
-
-<br><span class="statement-title">TOC.</span><br>
-
-- $\dim (\mathcal{C}(A)) = \dim (\mathcal{R}(A))$
-- $\dim (\mathcal{R}(A)) + \dim (\mathcal{N}(A)) = n$
-
-<hr/>
-
 ## Rank-Nullity Theorem
 
 \<**Rank-Nullity Theorem**\>은 선형 대수학의 중요한 정리인 \<Fundamental Theorem of Linear Algebra\>의 정리 중 하나다. 정리에 \<**선형 대수**\>의 핵심과 정수를 담고 있기에 아래에 제시되는 정리들이 \<선형 대수\>에서 어떤 의미를 갖는지를 깨달아야 한다!

@@ -21,14 +21,6 @@ categories: ["Probability"]
 
 </div>
 
-<br><span class="statement-title">TOC.</span><br>
-
-- Uniform Distribution
-- Normal Distribution (or Gaussian Distribution)
-  - Normal Approximation
-
-<hr/>
-
 ## Uniform Distribution
 
 <span class="statement-title">Definition.</span> Uniform Distribution<br>

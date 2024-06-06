@@ -36,12 +36,6 @@ C_{\alpha, \beta}
 = \frac{1}{\Gamma(\alpha) \cdot \beta^{\alpha}}
 $$
 
-<br><span class="statement-title">TOC.</span><br>
-
-- [Log-normal Distribution](#log-normal-distribution) $\text{LN}(\mu, \sigma^2)$
-
-<hr/>
-
 ## Log-normal Distribution
 
 <div class="definition" markdown="1">

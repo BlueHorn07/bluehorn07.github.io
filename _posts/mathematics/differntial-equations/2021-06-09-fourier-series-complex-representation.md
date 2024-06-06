@@ -5,17 +5,9 @@ toc_sticky: true
 categories: ["Differential Equations"]
 ---
 
-
 2019-2학기, 대학에서 들은 '미분방정식' 수업을 복습하는 차원에서 정리하게 된 글입니다. 지적은 언제나 환영입니다 :)
 
 사실 정규 수업에서 다룬 내용은 아니고, \<푸리에 변환\>을 공부하다보니 이 부분이 필요해서 정리하게 되었다 😆
-
-<br><span class="statement-title">TOC.</span><br>
-
-- (prev) [Fourier Series]({{"/2021/06/08/fourier-series" | relative_url}})
-- Fourier Series (Complex Representation)
-
-<hr/>
 
 \<푸리에 변환\>을 기술할 때 주로 이 복소지수 형태를 사용하기 때문에, \<푸리에 변환\>을 공부하려면 이 부분을 꼭 알고 있어야 한다 🤯
 

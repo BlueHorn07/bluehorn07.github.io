@@ -5,19 +5,9 @@ toc_sticky: true
 categories: ["Differential Equations", "Data Mining"]
 ---
 
-
-Differential Equations
-
 2021-1학기, 대학에서 '데이터 마이닝' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
 사실 정규 수업 때 배운 건 아니고, \<Wavelet Transform\> 부분의 수업을 이해하기 위해 개인적으로 정리한 포스트다.
-
-<br><span class="statement-title">TOC.</span><br>
-
-- Introduction to Fourier Transform
-  - Fourier Series
-- Fourier Transform
-<hr/>
 
 ### Introduction to Fourier Transform
 

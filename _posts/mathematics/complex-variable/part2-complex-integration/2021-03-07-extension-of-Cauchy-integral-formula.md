@@ -5,21 +5,7 @@ toc_sticky: true
 categories: ["Complex Variable"]
 ---
 
-
 2020-2학기, 대학에서 '응용복소함수론' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
-
-<br><span class="statement-title">TOC.</span><br>
-
-- Extended Cauchy's Integral Formula
-- Applications
-  - Cauchy's Inequality
-  - Liouville's Theorem
-  - Fundamental Theorem of Algebra
-  - Morera's Theorem
-
-<br/>
-<hr/>
-
 
 <span class="statement-title">Theorem.</span> [Review] Cauchy's Integral Formula<br/>
 

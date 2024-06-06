@@ -5,16 +5,7 @@ toc_sticky: true
 categories: ["Machine Learning"]
 ---
 
-
 "Machine Learning"을 공부하면서 개인적인 용도로 정리한 포스트입니다. 지적은 언제나 환영입니다 :)
-
-<br><span class="statement-title">TOC.</span><br>
-
-- [Markov Property](#introduction-to-markov-property)
-  - vs. Memoryless Property
-- [Markov Chain](#markov-chain)
-
-<hr/>
 
 # Introduction to Markov Property
 

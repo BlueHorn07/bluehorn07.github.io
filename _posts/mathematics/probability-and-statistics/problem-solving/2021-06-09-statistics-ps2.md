@@ -10,14 +10,6 @@ categories: ["Statistics", "Problem Solving"]
 
 이 글은 "[Introduction to Linear Regression]({{"/2021/06/06/introduction-to-linear-regression" | relative_url}})" 포스트에서 제시한 숙제들을 풀이한 포스트입니다.
 
-<span class="statement-title">TOC.</span><br>
-
-- $\sum e_i = 0$
-- $\sum x_i e_i = 0$
-- $\text{SST} = \text{SSR} + \text{SSE}$
-
-<hr/>
-
 <div class="notice" markdown="1">
 
 <span class="statement-title">Theorem.</span><br>

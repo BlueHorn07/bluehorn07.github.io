@@ -8,14 +8,6 @@ categories: ["Algorithm"]
 
 2020-1학기, 대학에서 '알고리즘' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
-<br><span class="statement-title">TOC.</span><br>
-
-- DFS
-- BFS
-
-
-<hr/>
-
 <br><span class="statement-title">Definition.</span> connected<br>
 
 An undirected graph is \<**connected**\> if for every pair of nodes $u$ and $v$, there is a path between $u$ and $v$.

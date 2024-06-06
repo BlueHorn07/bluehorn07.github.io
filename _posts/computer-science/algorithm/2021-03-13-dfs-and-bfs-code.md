@@ -8,16 +8,6 @@ categories: ["Algorithm"]
 
 2020-1학기, 대학에서 '알고리즘' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
-<br><span class="statement-title">TOC.</span><br>
-
-- Set-up
-- DFS (recursion)
-- DFS (stack)
-- BFS (queue)
-- DFS-BFS 호환 코드
-
-<hr/>
-
 \<DFS\>, \<BFS\>에 대한 기초 백준 문제인 [1260번 - DFS와 BFS](https://www.acmicpc.net/problem/1260) 기준으로 코드를 작성해보았다.
 
 ### Set-up

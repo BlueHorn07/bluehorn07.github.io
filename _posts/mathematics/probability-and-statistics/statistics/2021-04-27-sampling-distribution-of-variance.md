@@ -20,15 +20,6 @@ categories: ["Statistics"]
 
 </div>
 
-<br><span class="statement-title">TOC.</span><br>
-
-- Sampling Distribution of $S^2$
-  - chi-square distribution!
-- (next) When $\sigma$ is unknown
-
-
-<hr/>
-
 ### Sampling Distribution of $S^2$
 
 Let $X_1, \dots, X_n$ be a random sample with $\text{Var}(X_i) = \sigma^2$. We already know that $E[S^2] = \sigma^2$. How about the distribution of $\displaystyle S^2 = \dfrac{1}{n-1} \sum^n_{i=1} (X_i - \bar{X})^2$?

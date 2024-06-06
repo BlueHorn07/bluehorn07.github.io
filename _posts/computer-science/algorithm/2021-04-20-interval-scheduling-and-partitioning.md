@@ -8,13 +8,6 @@ categories: ["Algorithm"]
 
 2020-1학기, 대학에서 '알고리즘' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
-<br/><span class="statement-title">TOC.</span><br>
-
-- Interval Scheduling
-- Interval Partitioning
-
-<hr>
-
 ## Interval Scheduling
 
 각 Job $j$는 $[s_j, f_j]$의 start time, finish time을 가진다고 가자. 이때, 두 Job이 *compatible* 하다는 것은 두 Job이 서로 중첩되지 않는다는 말이다. \<Interval Scheduling\>은 전체 Job의 집합의 부분집합 중 포함된 모든 Job이 서로 compatible하면서 그 부분집합의 크기가 최대가 되는 집합을 찾는 것을 목표로 한다.

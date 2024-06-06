@@ -8,14 +8,6 @@ categories: ["Algorithm"]
 
 2020-1학기, 대학에서 '알고리즘' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
-<br><span class="statement-title">TOC.</span><br>
-
-- [Kruskal's Algorithm]({{"/2021/04/19/kruskal-and-prim-algorithm#kruskals-algorithm" | relative_url}})
-  - cut property
-- [Prim's Algorithm]({{"2021/04/19/kruskal-and-prim-algorithm#prims-algorithm" | relative_url}})
-
-<hr>
-
 MST는 **weighted undirected graph** $G=(V, E, W)$가 입력으로 들어올 때, 아래의 식을 만족하는 tree $T=(V, E')$를 출력하는 알고리즘이다.
 
 $$

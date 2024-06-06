@@ -5,20 +5,9 @@ toc_sticky: true
 categories: ["Applied Statsitcs"]
 ---
 
-
 2021-1학기, 대학에서 '통계적 데이터마이닝' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
 💥 이번 포스트는 \<Decision Tree\>를 수학적으로 정의하는 내용을 다룹니다. DT에 대한 정의와 개념은 다른 포스트를 참고해주세요 😉
-
-<br><span class="statement-title">TOC.</span><br>
-
-- DT Estimation
-- DT Construction
-- Splitting Rule
-  - Impurity Measures
-- Pruning
-
-<hr/>
 
 #### DT Estimation
 

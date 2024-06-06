@@ -8,15 +8,6 @@ categories: ["Probability"]
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](https://bluehorn07.github.io/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
 {: .notice--info}
 
-<br><span class="statement-title">TOC.</span><br>
-
-- [Moment Generating Function](#moment-generating-function)
-  - [MGF Examples](#mgf-examples)
-  - [Uniqueness Theorem for MGF](#uniqueness-theorem-for-mgf)
-  - [MGF with Independence](#mgf-with-independence)
-
-<hr/>
-
 ## Moment Generating Function
 
 <div class="definition" markdown="1">
