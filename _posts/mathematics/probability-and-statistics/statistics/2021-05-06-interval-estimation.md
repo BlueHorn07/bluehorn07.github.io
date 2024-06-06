@@ -5,18 +5,8 @@ toc_sticky: true
 categories: ["Statistics"]
 ---
 
-“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
-
-<br><span class="statement-title">TOC.</span><br>
-
-- [Interval Estimation](#interval-estimation)
-  - [z-value: Estimate $\mu$ when $\sigma^2$ is known](#z-value-estimate-mu-when-sigma2-is-known)
-    - [Error of Interval Estimation](#error-of-interval-estimation)
-    - [one-sided confidence bounds](#one-sided-confidence-bounds)
-  - [t-value: Estimate $\mu$ when $\sigma^2$ is unknown](#t-value-estimate-mu-when-sigma2-is-unknown)
-- [Compare Point Estimator and Interval Estimator](#compare-point-estimator-and-interval-estimator)
-
-<hr/>
+“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](https://bluehorn07.github.io/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
+{: .notice--info}
 
 # Introduction to Interval Estimation
 

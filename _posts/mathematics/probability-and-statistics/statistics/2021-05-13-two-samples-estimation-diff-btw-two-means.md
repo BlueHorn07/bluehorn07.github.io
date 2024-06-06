@@ -5,19 +5,10 @@ toc_sticky: true
 categories: ["Statistics"]
 ---
 
-“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
+“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](https://bluehorn07.github.io/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
+{: .notice--info}
 
 [Interval Estimation]({{"/2021/05/06/interval-estimation" | relative_url}}) 포스트에서 다룬 \<Interval Estimation\>을 특정 상황에 어떻게 적용할 수 있는지를 다루는 포스트입니다.
-
-<br><span class="statement-title">TOC.</span><br>
-
-- [$\sigma_1^2$ and $\sigma_2^2$ are known](#sigma_12-and-sigma_22-are-known)
-- [$\sigma_1^2$ and $\sigma_2^2$ are unknown, but known that $\sigma_1^2 = \sigma_2^2$](#sigma_12-and-sigma_22-are-unknown-but-known-that-sigma_12--sigma_22)
-  - pooled sample variance; $S_p^2$
-- [$\sigma_1^2$ and $\sigma_2^2$ are unknown and unequal](#sigma_12-and-sigma_22-are-unknown-and-unequal)
-  - Welch’s t-test
-
-<hr/>
 
 # Two Samples Estimation
 

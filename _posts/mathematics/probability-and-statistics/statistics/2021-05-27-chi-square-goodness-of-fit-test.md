@@ -6,19 +6,10 @@ categories: ["Statistics"]
 excerpt: "<proportion test>의 일반화. 카레고리 변수에 대한 검정."
 ---
 
-“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
+“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](https://bluehorn07.github.io/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
+{: .notice--info}
 
 [\<Proportion Test\>]({{"/2021/05/26/proportion-test" | relative_url}})의 내용을 먼저 살펴보고 오는 것을 추천한다. <span class="red">\<Proportion Test\>를 일반화한 것이 \<Goodness-of-fit Test\></span>이기 때문이다!
-
-<br><span class="statement-title">TOC.</span><br>
-
-- [Introduction to Goodness-of-fit Test](#introduction-to-goodness-of-fit-test)
-  - Test Statistic of Goodness-of-fit
-  - DOF of Goodness-of-fit
-- [Test on Independence](#test-for-independence)
-- [Test on Homogeneity](#test-for-homogeneity)
-
-<hr/>
 
 # Introduction to Goodness-of-fit Test
 

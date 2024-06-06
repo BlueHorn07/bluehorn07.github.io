@@ -5,15 +5,10 @@ toc_sticky: true
 categories: ["Statistics"]
 ---
 
-“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
+“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](https://bluehorn07.github.io/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
+{: .notice--info}
 
 [\<Variance Estimation\>]({{"/2021/05/16/variance-estimation" | relative_url}})의 내용을 먼저 살펴보고 오는 것을 추천한다.
-
-<br><span class="statement-title">TOC.</span><br>
-
-- [Test on Variance](#test-on-variance)
-
-<hr/>
 
 # Test on Variance
 

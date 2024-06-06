@@ -5,17 +5,10 @@ toc_sticky: true
 categories: ["Statistics"]
 ---
 
-“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
+“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](https://bluehorn07.github.io/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
+{: .notice--info}
 
 [Introduction to Linear Regression]({{"/2021/06/06/introduction-to-linear-regression" | relative_url}}) 포스트에서 이어지는 포스트입니다.
-
-<br><span class="statement-title">TOC.</span><br>
-
-- [Review]
-- [Distribution of Regression Coefficients $B_0$ and $B_1$](#distribution-of-regression-coefficients)
-- [Estimator of Error Variance $\sigma^2$](#estimator-of-error-variance)
-
-<hr/>
 
 이번 포스트에서는 아래의 두 질문에 대해 주요하게 살펴볼 예정이다.
 

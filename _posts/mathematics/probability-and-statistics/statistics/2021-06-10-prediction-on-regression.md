@@ -5,14 +5,8 @@ toc_sticky: true
 categories: ["Statistics"]
 ---
 
-“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
-
-<br><span class="statement-title">TOC.</span><br>
-
-- [Estimate on Mean Response $\mu_{Y\mid x_0}$](#estimate-on-mean-response)
-- [Prediction Interval](#prediction-interval)
-
-<hr/>
+“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](https://bluehorn07.github.io/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
+{: .notice--info}
 
 우리는 이전 포스트 "[Test on Regression]({{"/2021/06/09/test-on-regression" | relative_url}})"에서 regression coefficient $B_1$, $B_0$의 분포를 확인했다. 이번 포스트에서는 이 결과를 종합해 우리가 regression 모델로부터 얻는 response의 분포를 추정해보는 과정을 진행한다.
 

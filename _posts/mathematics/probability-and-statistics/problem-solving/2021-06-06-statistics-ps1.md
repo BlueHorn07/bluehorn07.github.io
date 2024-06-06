@@ -5,15 +5,16 @@ toc_sticky: true
 categories: ["Statistics", "Problem Solving"]
 ---
 
-“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
+“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](https://bluehorn07.github.io/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
+{: .notice--info}
 
 이 글은 "[Point Estimation]({{"/2021/05/05/point-estimation" | relative_url}})" 포스트에서 제시한 숙제 문제들을 풀이한 포스트입니다.
 
 <span class="statement-title">TOC.</span><br>
 
-- [MSE(Mean Squared Error) is the sum of variance and square of bias](#mse-is-the-sum-of-variance-and-square-of-bias)
-- [Sample ariance $S^2$ is not the minimal variance estimator](#sample-variance-is-note-the-minimal-variance-estimator)
-- [Compare $S^2$ and $\hat{S}^2$ which one is the most efficient variance estimator?](#which-one-is-the-most-efficient-variance-estimator)
+- [MSE is the sum of variance and square of bias](#mse-is-the-sum-of-variance-and-square-of-bias)
+- [Sample Variance is not the minimal variance estimator](#sample-variance-is-not-the-minimal-variance-estimator)
+- [Which one is the most efficient variance estimator?](#which-one-is-the-most-efficient-variance-estimator)
 
 <hr/>
 

@@ -4,7 +4,8 @@ toc: true
 toc_sticky: true
 categories: ["Statistics"]
 ---
-“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
+“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](https://bluehorn07.github.io/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
+{: .notice--info}
 
 <div class="proof" markdown="1">
 
@@ -21,10 +22,9 @@ categories: ["Statistics"]
 
 <br><span class="statement-title">TOC.</span><br>
 
-- [EDF; Empirical Distribution Function; $\hat{F}$](#edf-empirical-distribution-function)
-- [Quantile; 분위수](#quantile)
-  - Quantile of a Sample
-- Normal Quantile-Quantile plot; Q-Q plot; 본위수대조도
+- [EDF; Empirical Distribution Function](#edf-empirical-distribution-function)
+- [Quantile](#quantile)
+- [Normal Q-Q Plot](#normal-q-q-plot)
 
 <hr/>
 

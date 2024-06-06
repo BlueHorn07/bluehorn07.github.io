@@ -5,9 +5,8 @@ toc_sticky: true
 categories: ["Probability"]
 ---
 
-“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
-
-<hr/>
+“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](https://bluehorn07.github.io/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
+{: .notice--info}
 
 \<체비쇼프의 부등식; Chebyshev's Inequality\>은 평균 $\mu$로부터 $\lambda$ 거리 이상 멀어진 경우, 즉 tail 상황에 대한 확률의 상한을 제시한다. 즉, "The upper bound of tail probability"인 셈이다. 식은 아래와 같이 정의되어 있다.
 

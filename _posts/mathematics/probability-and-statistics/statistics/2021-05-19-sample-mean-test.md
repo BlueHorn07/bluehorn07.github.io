@@ -5,17 +5,8 @@ toc_sticky: true
 categories: ["Statistics"]
 ---
 
-“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics]({{"/category/probability-and-statistics" | relative_url}})에서 확인하실 수 있습니다 🎲
-
-<br><span class="statement-title">TOC.</span><br>
-
-- [Sample Mean Test](#sample-mean-test)
-  - [Z-Test: When $\sigma$ is known](#sigma2-is-known)
-  - [t-Test: When $\sigma$ is unknown](#sigma2-is-unknown)
-- [Two Samples Mean Test](#two-samples-mean-test)
-- (next) [Choice of Sample Size for testing mean]({{"/2021/05/20/choice-of-sample-size-for-testing-mean" | relative_url}})
-
-<hr/>
+“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](https://bluehorn07.github.io/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
+{: .notice--info}
 
 ### Sample Mean Test
 
