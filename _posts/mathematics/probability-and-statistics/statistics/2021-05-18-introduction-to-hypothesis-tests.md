@@ -7,20 +7,6 @@ categories: ["Statistics"]
 
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](https://bluehorn07.github.io/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
 
-<br><span class="statement-title">TOC.</span><br>
-
-- Statistical Hypothesis
-- Null Hypothetsis $H_0$ & Alternative Hypothesis $H_1$
-- Test Statistic
-  - Rejection Region or Critical Region; $X \ge C$
-  - Critical Value; $C$
-- [Type 1 Error & Type 2 Error](#t1-erorr--t2-error)
-  - [Significance level; Size of Test; 유의 수준 $\alpha$](#significance-level-alpha) 🔥
-  - [Power of Test; 검정력 $\gamma(\theta)$](#power-of-test-gammatheta) 🔥
-  - [p-value; 유의 확률](#p-value) 🔥🔥
-
-<hr/>
-
 # Statistical Hypothesis
 
 <div class="definition" markdown="1">
