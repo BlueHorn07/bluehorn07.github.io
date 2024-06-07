@@ -107,3 +107,16 @@
 .notice--danger {
   @include notice($danger-color);
 }
+
+// Custom
+.definition {
+  @include notice(powderblue);
+}
+
+.statement {
+  @include notice(burlywood);
+}
+
+.proof {
+  @include notice(gray);
+}
