@@ -49,11 +49,13 @@ $$
 
 ### Gaussian Distribution
 
-Error Function $\textbf{erf}(x)$는 Gaussian Distribution의 특수한 형태다. 
+Error Function $\textbf{erf}(x)$는 Gaussian Distribution의 특수한 형태다.
 
 $$
 f(x; \mu, \sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}} \exp \left( - \frac{(x-\mu)^2}{2\sigma^2}\right)
 $$
+
+자세한 내용은 "확률과 통계(MATH230)" 수업 들을 때 정리했던 블로그 포스틀 참고하자. [링크](https://bluehorn07.github.io/2021/03/30/normal-distribution/)
 
 ## Sine-Integral Function
 
@@ -84,7 +86,7 @@ $$
 $$
 \begin{aligned}
 \int \sqrt{1 + f'(x)^2} \, dx &= \int \sqrt{1 + \cos^2 x} \, dx \\
-= \int \sqrt{1 + (1 - \sin^2 x)} \, dx &= \sqrt{2} \cdot \int \sqrt{1 - \frac{1}{2} \sin^2 x} \, dx    
+= \int \sqrt{1 + (1 - \sin^2 x)} \, dx &= \sqrt{2} \cdot \int \sqrt{1 - \frac{1}{2} \sin^2 x} \, dx
 \end{aligned}
 $$
 

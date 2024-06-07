@@ -54,7 +54,8 @@ toc_sticky: true
 <br/>
 
 - Continuous Probability Distribution
-  - [Uniform and Normal Distribution]({{"/2021/03/29/uniform-and-normal-distribution" | relative_url}})
+  - [Uniform Distribution]({{"/2021/03/29/uniform-distribution" | relative_url}})
+  - [Normal Distribution]({{"/2021/03/30/normal-distribution" | relative_url}})
   - [Exponential Distribution]({{"/2021/03/31/exponential-distribution" | relative_url}})
   - [Gamma Distribution]({{"/2021/04/05/gamma-distribution" | relative_url}})
   - [Chi-square Distribution]({{"/2021/04/06/chi-square-distribution" | relative_url}})
