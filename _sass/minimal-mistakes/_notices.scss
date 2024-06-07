@@ -117,6 +117,10 @@
   @include notice(burlywood);
 }
 
+.problem {
+  @include notice(burlywood);
+}
+
 .proof {
   @include notice(gray);
 }

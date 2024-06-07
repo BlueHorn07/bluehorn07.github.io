@@ -3,13 +3,13 @@ title: "Techniques of Integrals: Problem Solving"
 toc: true
 toc_sticky: true
 categories: ["Calculus"]
-excerpt: "Washer Method와 Shell Method는 동치다. 점화식으로 유도되는 적분. 몇가지 미분방정식 문제."
+excerpt: "Washer method와 Shell method는 동치다. 점화식으로 유도되는 적분. 이상 적분에 대한 정의. 면적은 무한한데, 부피는 유한한 함수."
 ---
 
 복수전공하고 있는 수학과의 졸업시험을 위해 학부 수학 과목들을 다시 공부하고 있습니다. 공부하면서 재밌어 보였던 문제들과 풀이들을 모아서 정리한 포스트 입니다.
 {: .notice--info}
 
-# Equivalence of the washer and shell methods
+# Equivalence of the Washer and Shell methods
 
 Wahser 방식과 Shell 방식이 동치임을 밝히는 문제다. Thomas Calculus 연습문제로 나왔는데, 요건 *American Mathematical Monthly*에서 문제를 발췌한 문제였다.
 
@@ -288,3 +288,69 @@ $$
 \frac{\ln \left(x \cdot (N-x)\right)}{N} &= kt + C
 \end{aligned}
 $$
+
+# Improper Integral and Limit of Integral may not eqaul
+
+두 적분이 서로 같은지 판단하자.
+
+$$
+\int_{-\infty}^{\infty} \frac{2x}{x^2 + 1} \, dx \overset{?}{=} \lim_{b \rightarrow \infty} \int_{-b}^{b} \frac{2x}{x^2 + 1} \, dx
+$$
+
+먼저 좌변의 적분을 먼저 계산해보자. 요건 적분을 $(0, \infty)$ 구간과 $(- \infty, 0)$ 구간으로 나누어 계산해보면 된다.
+
+$$
+\begin{aligned}
+&\int_{0}^{\infty} \frac{2x}{x^2 + 1} \, dx \\
+&= \int_{1}^{\infty} \frac{1}{t} \, dt \\
+&= \ln t ]_{1}^{\infty} = \infty - 0
+\end{aligned}
+$$
+
+즉, 적분이 발산한다! 반면에 우변은 수렴하는데,
+
+$$
+\int_{-b}^{b} \frac{2x}{x^2 + 1} \, dx = 0
+$$
+
+으로 odd function의 적분이기 때문에 적분값이 0으로 수렴한다.
+
+즉, 얼핏 보면 같아 보이는 두 적분은 서로 다른 적분이다!!
+
+그럼 주어진 함수 $f(x) = 2x/(x^2+1)$의 이상 적분은 발산한다고 말해야 할까, 아님 수렴한다고 말해야 맞는 걸까? 그런 상황 때문에 Improper Integral을 정의할 때 아래와 같이 정의를 한다.
+
+<div class="definition" markdown="1">
+
+$$
+\int_{-\infty}^{\infty} f(x) \, dx = \int_c^{\infty} f(x) \, dx + \int_{-\infty}^{c} f(x) \, dx
+$$
+
+이때, $c$는 임의의 실수이다.
+
+</div>
+
+위의 정의에 따르면, $f(x)$의 이상적분은 발산한다.
+
+# Infinite area and finite volume
+
+<div class="problem" markdown="1">
+
+What values of $p$ have the following property:
+
+- The area of the region between the curve $y = x^{-p}$, $1 \le x < \infty$, and
+- the $x$-axis is finite but the volume of the solid generate by revolving the region about the $x$-axis is finite.
+
+</div>
+
+우선 $x^{-p}$의 적분이 발산하라면, 그 조건은 $p=1$이거나 $-p+1 > 0$이면 된다. 즉, $p \le 1$이면 면적에 대한 적분값이 발산한다. 부피에 대한 적분이 수렴하려면, $-2p + 1 < 0$라는 조건이 필요하다. 즉, $p > 1/2$다.
+
+두 구간을 종합하면 면적이 무한대로 발산하고, 부피가 수렴하려면 $p$ 값은 $p \in (1/2, 1]$ 범위 내에 있어야 한다.
+
+<br/>
+
+## Torricelli's trumpet
+
+요런 신기한 현상을 이름 붙인 것이 바로 토리첼리의 트럼펫(Torricelli's trumpet)이다.
+
+<a title="RokerHRO, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:GabrielHorn.png"><img width="512" alt="GabrielHorn" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/GabrielHorn.png/512px-GabrielHorn.png?20080624144711"></a>
+

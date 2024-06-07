@@ -1,5 +1,5 @@
 ---
-title: "Non-elementaryIntegrals"
+title: "Non-elementary Integrals"
 toc: true
 toc_sticky: true
 categories: ["Calculus"]
