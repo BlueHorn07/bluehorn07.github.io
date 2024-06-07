@@ -5,18 +5,8 @@ toc_sticky: true
 categories: ["Algorithm"]
 ---
 
-
-
 2020-1학기, 대학에서 '알고리즘' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
-
-- [Independent Set Problem](#independent-set-problem)
-- [Vertex Cover Problem](#vertex-cover-problem)
-- [Clique Problem](#clique-problem)
-- [Reductions](#reduction)
-  - [Independent Set and Vertex Cover](#independent-set-and-vertex-cover)
-  - [Independent Set and Clique](#independent-set-and-clique)
-
-<hr/>
+{: .notice }
 
 <div class="img-wrapper">
   <img src="{{ "/images/computer-science/algorithm/independent-set-1.png" | relative_url }}" width="300px">

@@ -276,7 +276,8 @@ $$
 이번 포스트에서 다룬 \<Poisson Distribution\>을 끝으로 교재에서 다루는 모든 이산 확률 분포를 살펴보았다. 다음 포스트부터는 연속 RV가 갖는 \<연속 확률 분포; Continuous Distribution\>에 살펴보겠다.
 
 - Continuous Probability Distribution
-  - [Uniform and Normal Distribution]({{"/2021/03/29/uniform-and-normal-distribution" | relative_url}})
+  - [Uniform Distribution]({{"/2021/03/29/uniform-distribution" | relative_url}})
+  - [Normal Distribution]({{"/2021/03/30/normal-distribution" | relative_url}})
   - [Exponential Distribution]({{"/2021/03/31/exponential-distribution" | relative_url}})
   - [Gamma Distribution]({{"/2021/04/05/gamma-distribution" | relative_url}})
   - [Chi-square, Beta and Log-normal Distribution]({{"/2021/04/06/chi-and-beta-and-lognormal-distribution" | relative_url}})
