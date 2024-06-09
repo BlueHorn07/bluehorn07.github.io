@@ -178,7 +178,7 @@ $$
   <img src="https://mathworld.wolfram.com/images/eps-gif/Contour_750.gif">
 </div>
 
-- [Residue Theorem]({{"2020/11/30/Residue-Thm" | relative_url}})
+- [Residue Theorem]({{"2020/11/30/residue-theorem" | relative_url}})
 - [singular points & poles]({{"2020/11/30/singulars-poles" | relative_url}})
 - [Formulas for residue]({{"2020/12/01/formulas-for-residue" | relative_url}})
 - [Applications to real integrals]({{"2020/12/02/Applications-to-real-integrals" | relative_url}}); integral with $\cos$, $\sin$ / improper integral
@@ -187,8 +187,8 @@ $$
 
 # Part V - Complex Transformation
 
-- [Linear Transformation]({{"2020/12/14/Linear-Transformation" | relative_url}})
-- [Linear Fractional Trnasformation]({{"2020/12/15/Linear-Fractional-Trenasformation" | relative_url}})
+- [Linear Transformation]({{"2020/12/14/linear-transformation" | relative_url}})
+- [Linear Fractional Trnasformation]({{"2020/12/15/linear-fractional-transformation" | relative_url}})
 - Conformal mapping
   - $w = \sin z$
 - Laplace's Equation
