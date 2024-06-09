@@ -64,11 +64,13 @@ If $\sum_{n=1}^{\infty} a_n$ converges, then $a_n \rightarrow 0$.
 
 대우 명제를 사용하면, 급수가 발산 하는지도 테스트 할 수 있다.
 
-이때, 역 명제는 성립하지 않는다. 수열에 대해 $a_n \rightarrow 0$를 만족하더라고 급수는 발산할 수도 있다. 그 예시가 바로 조화(harmonic) 급수!!
+이때, 역 명제는 성립하지 않는다. <span class="red">수열이 $a_n \rightarrow 0$를 만족하더라고 급수는 발산할 수도 있다.</span> 그 예시가 바로 **조화(harmonic) 급수**!!
 
 $$
 \sum_{n=1}^{\infty} \frac{1}{n} = \infty
 $$
+
+
 
 # 맺음말
 
