@@ -25,7 +25,7 @@ categories: ["Algorithm"]
 
 <div class="notice" markdown="1">
 
-For a directed graph $G = (V, E)$, we have two special nodes source $s$ and sink $t$. And each edges has capacity $c_e > 0$, repectively.
+For a directed graph $G = (V, E)$, we have two special nodes source $s$ and sink $t$. And each edges has capacity $c_e > 0$, respectively.
 
 We want to send as much flow as possible from $s$ to $t$ s.t. $0 \le f_e \le c_e$ for all $e \in E$.
 
@@ -40,13 +40,13 @@ $$
 
 </div>
 
-위와 같이 기술된 \<Network Flow\> 문제를 살펴보면 정말 유량(Flow)에 대한 당연한 얘기들을 하고 있다는 것을 알 수 있다. ~~이런 당연한 얘기들이 전부 contraint가 된다는게 흠이지만...~~
+위와 같이 기술된 \<Network Flow\> 문제를 살펴보면 정말 유량(Flow)에 대한 당연한 얘기들을 하고 있다는 것을 알 수 있다. ~~이런 당연한 얘기들이 전부 constraint가 된다는게 흠이지만...~~
 
 <hr/>
 
 ### Residual Network
 
-\<Networ Flow\> 문제는 기존의 Graph $G$에서 \<**Residual Network**\>라는 그래프를 구축(constrcution) 하면서 해결할 수 있다! 😉 알고리즘이 한번에 이해 되지는 않으니 주의 깊게 살펴보자!
+\<Networ Flow\> 문제는 기존의 Graph $G$에서 \<**Residual Network**\>라는 그래프를 구축(construction) 하면서 해결할 수 있다! 😉 알고리즘이 한번에 이해 되지는 않으니 주의 깊게 살펴보자!
 
 <div class="math-statement" markdown="1">
 
@@ -149,7 +149,7 @@ $$
 
 For two vertext set $L$ and $R$, $v$ is an element of $R$. Remove $v$ from $R$ and place it in $S$, and now re-evaluate the flow of new cut $(L \cup \\{ v\\}, R \setminus \\{ v \\})$.
 
-Let's define two edge set $\text{In}(v)$ and $\text{Out}(v)$, they are incomming edges and outcoming edges of $v$ each. Then, by the conservation of flow:
+Let's define two edge set $\text{In}(v)$ and $\text{Out}(v)$, they are incoming edges and outcoming edges of $v$ each. Then, by the conservation of flow:
 
 $$
 \sum_{(u, v) \in \text{In}(v)} f(u, v) = \sum_{(v, w) \in \text{Out}(v)} f(v, w)

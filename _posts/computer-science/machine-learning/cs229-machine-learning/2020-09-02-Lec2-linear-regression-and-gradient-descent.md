@@ -22,7 +22,7 @@ A. 예측<small>*predict*</small>하고자 하는 target variable이 *continuous
 single-var. regression을 하는 경우보다는 **multi-var. regression**을 주로 함.
 
 Q. regression은 어떻게 prediction하는가?<br>
-A. 주어진 parameter $\theta$에 대한 hypothesis funciton $h(x; \theta)$의 값이 prediction 값이다.
+A. 주어진 parameter $\theta$에 대한 hypothesis function $h(x; \theta)$의 값이 prediction 값이다.
 
 Q. parameter $\theta$를 어떻게 최적화할까?<br>
 A. cost function $J(\theta)$를 정의하고 cost 값을 minimize 하는 방향으로 learning 한다.

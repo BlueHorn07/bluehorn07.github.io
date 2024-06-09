@@ -89,7 +89,7 @@ $$
 
 <span class="statement-title">Definition.</span> Mutlivariate HyperGeometric Distribution<br>
 
-If $N$ items can be partitioned into the $k$ cells $A_1, A_2, \dots, A_k$ with $a_1, a_2, \dots, a_k$ elements, repectively, then the probability distribution of the RVs $X_1, X_2, \dots, X_k$, representing the number of elements selected from $A_1, A_2, \dots, A_k$ in a random sample of size $n$, is
+If $N$ items can be partitioned into the $k$ cells $A_1, A_2, \dots, A_k$ with $a_1, a_2, \dots, a_k$ elements, respectively, then the probability distribution of the RVs $X_1, X_2, \dots, X_k$, representing the number of elements selected from $A_1, A_2, \dots, A_k$ in a random sample of size $n$, is
 
 $$
 f(x_1, \dots, x_k\;  ; \; a_1, \dots, a_k, N, n) = \frac{\binom{a_1}{x_1} \cdots \binom{a_k}{x_k}}{\binom{N}{n}}

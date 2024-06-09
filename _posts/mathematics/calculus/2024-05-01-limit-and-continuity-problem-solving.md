@@ -82,7 +82,7 @@ $$
 
 <div class="notice" markdown="1">
 
-Suppose that a funciton $f$ is continuous on the closed interval $[0, 1]$ and that $0 \leq f(x) \leq 1 $ for every $x$ in $[0, 1]$. Show that there must exist a number $c$ in $[0, 1]$ s.t. $f(c) = c$ ($c$ is called a fixed point of $f$).
+Suppose that a function $f$ is continuous on the closed interval $[0, 1]$ and that $0 \leq f(x) \leq 1 $ for every $x$ in $[0, 1]$. Show that there must exist a number $c$ in $[0, 1]$ s.t. $f(c) = c$ ($c$ is called a fixed point of $f$).
 
 </div>
 

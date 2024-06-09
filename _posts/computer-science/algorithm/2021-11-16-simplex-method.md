@@ -33,7 +33,7 @@ categories: ["Algorithm"]
 
 <details markdown="1">
 
-위의 것을 좀더 보충하겠다. 일단 Linear Programming의 Contraints가 유도하는 feasible region이 convex임을 보여야 한다. 그렇다면 optimum point를 지나는 직선이 feasible region을 완전히 덮는다는 걸 보장할 수 있다. 👏 feasible region의 convexity에 대해선 [이곳](https://math.stackexchange.com/a/438262/713722)을 참고하자.
+위의 것을 좀더 보충하겠다. 일단 Linear Programming의 constraints가 유도하는 feasible region이 convex임을 보여야 한다. 그렇다면 optimum point를 지나는 직선이 feasible region을 완전히 덮는다는 걸 보장할 수 있다. 👏 feasible region의 convexity에 대해선 [이곳](https://math.stackexchange.com/a/438262/713722)을 참고하자.
 
 </details>
 
@@ -61,7 +61,7 @@ categories: ["Algorithm"]
   <img src="{{ "/images/computer-science/algorithm/simplex-method-4.png" | relative_url }}" width="100%">
 </div>
 
-이 문제를 simplex method로 풀기 위해 *inequality* constraint를 *equality* contraint로 바꾸는 작업을 해야 한다. 이것을 **<u>standardization</u>**이라고 하며 inequality 식에 $s_i \ge 0$인 **<u>slack variable</u>**을 사용하면 된다.
+이 문제를 simplex method로 풀기 위해 *inequality* constraint를 *equality* constraint로 바꾸는 작업을 해야 한다. 이것을 **<u>standardization</u>**이라고 하며 inequality 식에 $s_i \ge 0$인 **<u>slack variable</u>**을 사용하면 된다.
 
 <div class="img-wrapper">
   <img src="{{ "/images/computer-science/algorithm/simplex-method-5.png" | relative_url }}" width="100%">
@@ -69,7 +69,7 @@ categories: ["Algorithm"]
 
 inequality constraint 하나하나 마다 slack variable $s_i \ge 0$을 추가해준다. 이렇게 하면 $s_i \ge 0$이기 때문에 원본 수식의 값은 늘 약간 모자라거나 알맞은 값을 갖게 될 것이다. slack variable로 equality constraint로 바꿔주면 기존 문제를 **<u>system of linear equations</u>**의 관점으로 바라볼 수 있게 된다.
 
-다음은 위의 linear syatem을 행렬꼴로 기술한다. 이 행렬을 **<u>simplex tableau</u>**라고 한다.
+다음은 위의 linear system을 행렬꼴로 기술한다. 이 행렬을 **<u>simplex tableau</u>**라고 한다.
 
 <div class="img-wrapper">
   <img src="{{ "/images/computer-science/algorithm/simplex-method-6.png" | relative_url }}" width="100%">

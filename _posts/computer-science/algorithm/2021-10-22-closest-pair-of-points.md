@@ -29,7 +29,7 @@ Brute Force 하게 접근한다면 모든 두 점의 쌍에 대해 거리를 구
   <img src="{{ "/images/computer-science/algorithm/closest-pair-of-points-2.png" | relative_url }}" width="400px">
 </div>
 
-2\. Divide the point set $P$ into two equal-sized subsets $P^{L}$ and $P^{R}$ along $x_{\text{mid}}$. And then solve the problem(= find the closest pair in subsets) for two subsets repectively.
+2\. Divide the point set $P$ into two equal-sized subsets $P^{L}$ and $P^{R}$ along $x_{\text{mid}}$. And then solve the problem(= find the closest pair in subsets) for two subsets respectively.
 
 3\. Choose the minimum of the tow smallest distances, returned from each subproblem: denote it as $\delta$.
 
@@ -91,13 +91,13 @@ long long dist(Point p1, Point p2){
 ...
 sort(points.begin(), points.end());
 
-printf("%lld", CloestPair(points));
+printf("%lld", ClosestPair(points));
 ```
 
 값을 입력 받은 후에는 $x$값에 따라 point 배열을 정렬한다.
 
 ```cpp
-long long CloestPair(point_vec Px){
+long long ClosestPair(point_vec Px){
     // base case
     if(Px.size() == 2)
         return dist(Px[0], Px[1]);
@@ -113,8 +113,8 @@ long long CloestPair(point_vec Px){
     point_vec Px_L = point_vec(Px.begin(), Px.begin() + mid);
     point_vec Px_R = point_vec(Px.begin() + mid, Px.end());
 
-    long long d1 = CloestPair(Px_L);
-    long long d2 = CloestPair(Px_R);
+    long long d1 = ClosestPair(Px_L);
+    long long d2 = ClosestPair(Px_R);
     long long d = min(d1, d2);
 
     ....

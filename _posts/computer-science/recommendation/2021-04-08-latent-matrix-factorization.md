@@ -47,7 +47,7 @@ $$
 
 <hr/>
 
-### How to Trian?: Loss
+### How to Train?: Loss
 
 이제 모델을 학습시키기 위한 파트다. 방법은 strightforward 한데, 그냥 $$\hat{r}_ui$$와 $r_{ui}$ 사이의 값이 가까워지도록 두 값의 차이값을 minimize 하면 된다!
 
@@ -65,7 +65,7 @@ $$
 
 ### Optimization
 
-Loss Function을 디자인 했으니 이제 Optimization만 달성하면 된다. 두 가지 방법이 있는데, \<**Graident Descent**\>와 \<**Alternating Least Squares**\>, 두 가지 알고리즘이 있다. 각각 어떻게 동작하는지 살펴보자!
+Loss Function을 디자인 했으니 이제 Optimization만 달성하면 된다. 두 가지 방법이 있는데, \<**Gradient Descent**\>와 \<**Alternating Least Squares**\>, 두 가지 알고리즘이 있다. 각각 어떻게 동작하는지 살펴보자!
 
 #### Gradient Descent
 
@@ -92,7 +92,7 @@ Gradient Descent 방식의 단점은 최적화를 시키는 과정이 너무 느
 
 <hr/>
 
-#### Alternating Least Sqaures
+#### Alternating Least Squares
 
 \<Alternating Least Squares\>의 컨셉은 <span class="half_HL">$X$, $Y$ 둘 중 하나를 고정시키고, 다른 하나를 최적화 시킨다</span>는 것이다. 이 과정을 번갈아가면 반복, 즉 alternating 하면서 짧은 시간 내에 최적의 $X$, $Y$를 찾아낸다! (두 행렬을 한꺼번에 최적화시키는 것은 어렵다 💫)
 

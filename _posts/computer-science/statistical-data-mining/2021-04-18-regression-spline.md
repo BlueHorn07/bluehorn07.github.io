@@ -195,7 +195,7 @@ $$
 라는 조건이 추가된 것이다. 이는 곧, $f_i(\xi_i) = f_{i+1}(\xi_i)$이기 때문에, $f_{i+1}$에서 $b_4, b_3, b_2$에 대한 값이 정해졌다면, 자동으로 $b_0$의 값이 결정된다.
 
 $$
-a_3 x^3 + a_2 x^2 + a_1 x + a_0 = b_3 x^3 + b_2 x^2 + b_1 x + \cancelto{\text{calculated by contraint}}{b_0}
+a_3 x^3 + a_2 x^2 + a_1 x + a_0 = b_3 x^3 + b_2 x^2 + b_1 x + \cancelto{\text{calculated by constraint}}{b_0}
 $$
 
 따라서, estimate 해야 하는 Coefficients의 갯수는
@@ -220,10 +220,10 @@ $$
 이를 만족하려면, $f_i' (\xi_i) = f_{i+1}'(\xi_i)$를 만족해야 하며, 이것은 곧
 
 $$
-3 a_3 x^2 + 2 a_2 x + a_1 = 3 b_3 x^2 + 2 b_2 x + \cancelto{\text{calculated by contraint}}{b_1}
+3 a_3 x^2 + 2 a_2 x + a_1 = 3 b_3 x^2 + 2 b_2 x + \cancelto{\text{calculated by constraint}}{b_1}
 $$
 
-이므로 contraint를 통해 $b_1$의 값을 정할 수 있다는 말이 된다. 2nd derivative continuous에 대해서도 동일한 방법으로 접근하면 된다.
+이므로 constraint를 통해 $b_1$의 값을 정할 수 있다는 말이 된다. 2nd derivative continuous에 대해서도 동일한 방법으로 접근하면 된다.
 
 따라서, estimate 해야 하는 Coefficients의 갯수는
 

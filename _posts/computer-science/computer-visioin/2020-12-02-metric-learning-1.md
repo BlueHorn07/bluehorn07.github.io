@@ -58,7 +58,7 @@ $$
 D(f(x_1), f(x_2)) \downarrow \quad D(f(x_1), f(x_3)) \uparrow
 $$
 
-즉, Metric Learning가 두 대상의 extraced feature의 값을 최대한 낮추는 것을 목표로 한다는 말이다.
+즉, Metric Learning가 두 대상의 extracted feature의 값을 최대한 낮추는 것을 목표로 한다는 말이다.
 
 **Loss minimization**과 비슷한 맥락이다.
 
@@ -131,14 +131,14 @@ $$
 
 수업에서는 **<u>Mahalanobis distance</u>**을 다루는 방법을 소개하였다.
 
-- A first approach to distnace metric learning
+- A first approach to distance metric learning
 - Large Margin Nearest Neighbor(LMNN)
 
 <br>
 
 <hr>
 
-#### A first approach to distnace metric learning
+#### A first approach to distance metric learning
 
 데이터셋에서 pair를 바탕으로 두 집합 $S^{+}$, $S^{-}$를 만든다.
 
@@ -261,15 +261,15 @@ $$
 
 처음의 시도와 비교했을 때, LMNN는 좀더 **동적**이라고 말할 수 있다.
 
-앞의 시도에선 negative-pair에 대해 거리값이 $1$이라는 지정된 값보다 크기만 하면 충분했다. 그러나 이런 접근은 **허점**이 있는데, **<u>postive-pair의 거리값이 도저히 1보다 좁혀지지 않을 수도 있다</u>**는 것이다; positve-pair에 대해선 constraint를 만족하면서 거리합이 줄어들기만 하면 된다는 점을 상기하라.
+앞의 시도에선 negative-pair에 대해 거리값이 $1$이라는 지정된 값보다 크기만 하면 충분했다. 그러나 이런 접근은 **허점**이 있는데, **<u>positive-pair의 거리값이 도저히 1보다 좁혀지지 않을 수도 있다</u>**는 것이다; positve-pair에 대해선 constraint를 만족하면서 거리합이 줄어들기만 하면 된다는 점을 상기하라.
 
-그래서 **<u>negative-pair가 postive-pair보다 더 가까이 위치하는 상황이 충분히 가능하다</u>**는 점이 허점으로 지적받는다.
+그래서 **<u>negative-pair가 positive-pair보다 더 가까이 위치하는 상황이 충분히 가능하다</u>**는 점이 허점으로 지적받는다.
 
 <br>
 
-**<u>LMNN</u>**에선 이것을 극복해 negative-pair가 postive-pair보다 Margin $1$만큼 떨어지도록 최적화한다.
+**<u>LMNN</u>**에선 이것을 극복해 negative-pair가 positive-pair보다 Margin $1$만큼 떨어지도록 최적화한다.
 
-이때, negative-pair의 거리값의 기준이 되는 postive-piar의 거리값이 고정된 것이 아니라 동적으로 변하기 때문에 **<u>LMNN</u>**은 더 **<u>동적으로 작동한다</u>**고 평가한다.
+이때, negative-pair의 거리값의 기준이 되는 positive-pair의 거리값이 고정된 것이 아니라 동적으로 변하기 때문에 **<u>LMNN</u>**은 더 **<u>동적으로 작동한다</u>**고 평가한다.
 
 <br>
 

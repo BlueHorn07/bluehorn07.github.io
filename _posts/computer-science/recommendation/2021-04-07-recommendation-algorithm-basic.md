@@ -96,7 +96,7 @@ $r_{XY} = 1$이면, 양(+)의 상관관계를, $r_{XY} = -1$이면, 음(-)의 �
 
 반대로 아이템 사이의 Corr를 구할 수도 있다. 그리고 이 중 가장 유사한 $K$의 아이템을 묶어줄 수도 있을 것이다. 이런 상황을 생각해보자. 내가 넷플릭스에서 어떤 영화 한편을 선택했다. 그리고 화면 하단에는 그 영화와 유사한 $K$의 영화들이 나열되어 있다. 이때, 영화 추천과 함께 내가 줄 '예상 평점'도 함께 제공된다. 나는 분명이 저 영화를 본적이 없는데, '예상 평점'은 어떻게 유도된 것일까? 이때, 등장하는 것이 \<**Neighborhood Algorithm**\>이다.
 
-<span class="statement-title">Definition.</span> Neighbhorhood Algorithm<br>
+<span class="statement-title">Definition.</span> Neighborhood Algorithm<br>
 
 - $\hat{s}_{ui}$: **predicted score** that user $u$ will give to movie $i$.
 - $r_{ij}$: **similarity** btw movie $i$ and movie $j$.

@@ -83,7 +83,7 @@ Q. Faster R-CNN에서 feature extractor가 <span style="color:red">꼭 50 x 50 �
 
 ### RPN 학습
 
-전체 anchor를 생각해보면, positive anchor 보다 negative anchor의 수가 훨씬 많을 것이다. 또는 그 반대도 생길 수 있고. 많아 postivei-negative anchor 사이 불균형이 있다면, RPN을 학습시키지 좋지 않을 것이라고 Faster R-CNN 논문은 생각했다.
+전체 anchor를 생각해보면, positive anchor 보다 negative anchor의 수가 훨씬 많을 것이다. 또는 그 반대도 생길 수 있고. 많아 positivei-negative anchor 사이 불균형이 있다면, RPN을 학습시키지 좋지 않을 것이라고 Faster R-CNN 논문은 생각했다.
 
 그래서 샘플링하는 수에 제한을 둬서 (ex: `256`) 이 불균형 문제를 해소하고자 하였다.
 

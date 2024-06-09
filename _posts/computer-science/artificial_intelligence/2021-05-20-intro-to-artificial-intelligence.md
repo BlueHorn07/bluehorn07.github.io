@@ -14,10 +14,10 @@ categories: ["Artificial Intelligence"]
 
 Machine Learning에는 크게 4가지 모델이 있다.
 
-1. [Reflex-based Model](#reflex-based-model)
-2. [State-based Model](#state-based-model)
-3. [Variable-based Model](#variable-based-model)
-4. [Logic-based Model](#logic-based-model)
+- [Reflex-based Model](#reflex-based-model)
+- [State-based Model](#state-based-model)
+- [Variable-based Model](#variable-based-model)
+- [Logic-based Model](#logic-based-model)
 
 "인공지능(CSED422)" 정규 수업에서는 1, 2, 3번 모델에 대해 주요하게 살펴본다 👀
 
@@ -59,7 +59,7 @@ Machine Learning에는 크게 4가지 모델이 있다.
 
 ### Variable-based Model
 
-"variable"의 모음에 적절한 value를 부여(assign)하는 모델이다. 이때, "제약(constraint)"가 있으며, 이 제약을 만족하면서 "variable"에 적절한 값을 부여해야 한다. \<**CSP; Contraint Satisfaction Problem**\>가 대표적인 \<Varibale-based Model\>의 주요한 문제 해결 대상이다!
+"variable"의 모음에 적절한 value를 부여(assign)하는 모델이다. 이때, "제약(constraint)"가 있으며, 이 제약을 만족하면서 "variable"에 적절한 값을 부여해야 한다. \<**CSP; constraint Satisfaction Problem**\>가 대표적인 \<Variable-based Model\>의 주요한 문제 해결 대상이다!
 
 \<Map Coloring\>, \<Event Scheduling\>, \<Bayesian Network\> 등을 이 모델로 해결할 수 있다.
 

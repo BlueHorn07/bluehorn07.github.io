@@ -76,7 +76,7 @@ $$
 
 의 성질을 만족한다.
 
-위의 두 성질은 Sequential data에서 Density Esimation 하는 데에 중요한 도구로 사용된다!
+위의 두 성질은 Sequential data에서 Density Estimation 하는 데에 중요한 도구로 사용된다!
 
 <br>
 
@@ -84,7 +84,7 @@ $$
 
 ### Sequential Density Estimation
 
-Sequential Density Esimation은 Sequential data에 대한 pdf를 추정하는 과정이다.
+Sequential Density Estimation은 Sequential data에 대한 pdf를 추정하는 과정이다.
 
 즉, pdf $p(x_t \mid z_{1:t})$를 추정한다.
 

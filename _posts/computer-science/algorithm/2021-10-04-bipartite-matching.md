@@ -47,7 +47,7 @@ categories: ["Algorithm"]
 
 </div>
 
-위와 같이 \<Bipartite Maching\>을 \<Network Flow\> 문제로 환원하면, 우리는 reduction 위에서의 maximum flow가 아래의 결과를 뱉을 것이라고 기대할 수 있다.
+위와 같이 \<Bipartite Matching\>을 \<Network Flow\> 문제로 환원하면, 우리는 reduction 위에서의 maximum flow가 아래의 결과를 뱉을 것이라고 기대할 수 있다.
 
 <div class="statement" align="center">
 
