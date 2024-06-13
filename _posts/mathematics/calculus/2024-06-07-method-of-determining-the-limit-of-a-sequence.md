@@ -50,7 +50,7 @@ If a sequence $\{ a_n \}$ is both bounded and monotonic, then the sequence conve
 
 </div>
 
-![](/images/mathematics/calculus-1/monotonic-convergence-theorem.png)
+![](/images/mathematics/calculus/monotonic-convergence-theorem.png)
 
 그럼으로 보면 요런 느낌.
 

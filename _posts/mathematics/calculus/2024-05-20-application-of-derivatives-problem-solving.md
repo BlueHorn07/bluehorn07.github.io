@@ -93,7 +93,7 @@ $$
 인 시점 $t=c$를 찾을 수 있다는 것이다.
 
 <div class="img-wrapper">
-<img src="/images/mathematics/calculus-1/cauchy-mean-value-theorem.png" width="300px">
+<img src="/images/mathematics/calculus/cauchy-mean-value-theorem.png" width="300px">
 </div>
 
 요걸 시각적으로 확인하면 이런 느낌이다.
@@ -149,7 +149,7 @@ $\blacksquare$
 
 ## $(\sin x)^x$
 
-![](/images/mathematics/calculus-1/sinx_x.png)
+![](/images/mathematics/calculus/sinx_x.png)
 
 연습 문제에 나왔던 함수다. 일단 문제에서는 그래프의 개형을 그려보고, 함수가 $x=0$에서 연속이기 위해 가져야 할 함숫값에 대해서 물어봤다.
 
@@ -174,7 +174,7 @@ $\ln f(x)$의 극한이 $0$이므로 $f(x)$의 극한은 $1$이 된다! $\blacks
 
 ## $(\sin x)^{\tan x}$
 
-![](/images/mathematics/calculus-1/sinx_tanx.png)
+![](/images/mathematics/calculus/sinx_tanx.png)
 
 $(\sin x)^x$와 비슷하지만 이번에는 지수가 $\tan x$가 되었다!
 

@@ -57,7 +57,7 @@ If you start with $x_1 = 1$ and define the subsequent terms of $\{ x_n \}$ by th
 
 </div>
 
-![](/images/mathematics/calculus-1/recurisve-definition-of-pi-2.png){: .align-center style="height: 240px"}
+![](/images/mathematics/calculus/recurisve-definition-of-pi-2.png){: .align-center style="height: 240px"}
 
 연습문제에선 수열을 $\{ x_n \}$으로 표현했는데, 좀더 이해가 쉽도록 $\{ \theta_n \}$으로 바꿔서 표현하겠다.
 
