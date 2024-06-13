@@ -10,6 +10,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Check Typo
-        uses: crate-ci/typos
+        uses: crate-ci/typos@v1
         with:
           config: ./_typos.toml
