@@ -19,6 +19,6 @@ categories: ["Time Series Analysis"]
 
 ### Covariate Shift
 
-딥러닝 쪽에서 쓰는 용어인데, "training set과 test set이 다른 분포를 가지는 상황"을 말한다. 사실 trianing set과 test set을 단순한 테크닉으로 나눴다면 이런 현상을 마주할 가능성이 크다. 또, 모델을 학습 했을 때와 모델을 서비스 할 때 입력되는 데이터 사이에는 Gap이 있을 수 밖에 없다.
+딥러닝 쪽에서 쓰는 용어인데, "training set과 test set이 다른 분포를 가지는 상황"을 말한다. 사실 training set과 test set을 단순한 테크닉으로 나눴다면 이런 현상을 마주할 가능성이 크다. 또, 모델을 학습 했을 때와 모델을 서비스 할 때 입력되는 데이터 사이에는 Gap이 있을 수 밖에 없다.
 
 이런 상황을 해결하기 위해 딥러닝에선 Batch Normalization이 등장했는데... 잘 모르겠다면 지금은 넘어가자! 😉

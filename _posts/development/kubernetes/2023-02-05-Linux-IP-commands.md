@@ -47,7 +47,7 @@ $ ip link
 - `mode DEFAULT`
 - `group default`
 - `qlen 1000`
-  - `qlen`은 Transimission Queue Lenght의 약자다
+  - `qlen`은 Transimission Queue Length의 약자다
   - 1000개 패킷까지 큐에 저장되고, 1001개 패킷부터 드롭된다.
 
 - `link/loopback`

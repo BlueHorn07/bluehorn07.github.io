@@ -369,7 +369,7 @@ $(F^{*}, \cdot\;)$는 Field $F$에 대한 곱셈군이다.
 
 Let $G \le (F^{*}, \cdot\;)$.
 
-If $G$ is cylic, then $G$ is finite abelian.
+If $G$ is cyclic, then $G$ is finite abelian.
 
 따라서 F.T. of f.g. abelian에 의해 $G$를 적당한 finite cyclic group의 direct product로 표현할 수 있다.
 
@@ -381,7 +381,7 @@ $$
 
 <br>
 
-cylic group $\mathbb{Z}_{n_i}$ 각각을 곱셈군으로서 생각하자.
+cyclic group $\mathbb{Z}_{n_i}$ 각각을 곱셈군으로서 생각하자.
 
 $m = \gcd(d_i)_{i \in \Lambda}$로 정의하면,
 

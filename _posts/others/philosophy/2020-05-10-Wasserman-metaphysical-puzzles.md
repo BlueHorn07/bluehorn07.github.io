@@ -100,7 +100,7 @@ STDP, DTDP, DTSP 상황은 문제가 되지 않지만, Same-time, Same-place인 
 (1) Dion과 Theon은 numerically distinct하다.<br>
 (2) Dion과 Theon은 동일 공간과 동일 시간을 동일한 집합으로 점유하고 있으므로 STSP 상황에 처해있다.<br>
 
-만약 수술 후에 Dion과 Theon이 둘이 '동일<small>*indentical*</small>'한 상태로 존재한다고 주장한다면, 이것은 ***Indiscenibility of Identical***을 위배한다!<br>
+만약 수술 후에 Dion과 Theon이 둘이 '동일<small>*identical*</small>'한 상태로 존재한다고 주장한다면, 이것은 ***Indiscenibility of Identical***을 위배한다!<br>
 왜냐하면, Dion은 과거에 두 발을 가졌지만, Theon은 항상 오른발만 가지고 있었다. <small>*Dion once had two feet, but Theon had not.*</small>
 
 #### 주장2는 기각
@@ -189,7 +189,7 @@ So, then 'Dion' ceases to eist when he loses his left foot, but 'Theon' continue
 
 '점토상'과 '점토' 사이에 단 하나라도 다르다면, 그 둘은 다르다. |
 
-그리고 어떤 두 객체가 동일한지는 **Indentity of Indiscernibles**를 통해 판단할 수 있다.<br>
+그리고 어떤 두 객체가 동일한지는 **Identity of Indiscernibles**를 통해 판단할 수 있다.<br>
 
 객체 $X$가 가지는 모든 성질을 객체 $Y$가 가짐과 동시에, 객체 $Y$가 객체 $X$의 모든 성질을 가질 때, $X = Y$이다. |
 
@@ -206,7 +206,7 @@ So, then 'Dion' ceases to eist when he loses his left foot, but 'Theon' continue
 그래서 논리의 흐름을 정리해보면,<br>
 (1) '점토상'은 월요일에 존재하지 않았다. (그것은 화요일에 존재했다.)<br>
 (2) '점토'는 월요일에 존재했다. (단, '점토'는 화요일에도 역시 존재한다.)<br>
-(3) 만약 (1), (2)가 참이라면, '점토상'과 '점토'는 존재한 시기가 다르므로 *Indentity of Indiscernibles*에 의해 '점토상'과 '점토'는 동일하지 않다.<br>
+(3) 만약 (1), (2)가 참이라면, '점토상'과 '점토'는 존재한 시기가 다르므로 *Identity of Indiscernibles*에 의해 '점토상'과 '점토'는 동일하지 않다.<br>
 (4) **따라서 '점토상'과 '점토'는 동일하지 않다.**<br>
 <br>
 
@@ -219,7 +219,7 @@ So, then 'Dion' ceases to eist when he loses his left foot, but 'Theon' continue
 <small>*the constitution view* & *the temporal parts theory*</small><br>
 
 (**대답2**) (1)을 부정한다. '점토상'은 월요일부터 존재했다.<br>
-<small>*the eliminativist veiw* (제거적 유물론자)</small><br>
+<small>*the eliminativist view* (제거적 유물론자)</small><br>
 
 (**대답3**) (2)를 부정한다. '점토'가 '점토상'의 형태가 되어 존재한다는 것을 부정<br>
 <small>*the eliminativist view* & *the dominant kinds view*</small><br>
@@ -232,8 +232,8 @@ So, then 'Dion' ceases to eist when he loses his left foot, but 'Theon' continue
 
 ※ *the eliminativist view*와 *the deflationist view*에 대해서는 맨 뒤에 간단한 요약을 기재하였습니다.<br>
 
-### beyond 'material consitution'
-우리는 지금까지 'material consitution'에 대한 puzzle들을 살펴봤습니다.<br>
+### beyond 'material constitution'
+우리는 지금까지 'material constitution'에 대한 puzzle들을 살펴봤습니다.<br>
 
 하지만, 다른 종류의 개체<small>*entity*</small>에 대해서도 비슷한 논의를 진행할 수 있습니다. *event*, *properties*, 그리고 *group*에 대해서 말입니다.<br>
 

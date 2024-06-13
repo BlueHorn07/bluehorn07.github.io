@@ -29,7 +29,7 @@ $$
 y'' + y = 0
 $$
 
-우리는 위의 두 방정식과 같이 방정식 안에 \<**derivative**\> 텀이 존재하는 것을 \<**미분 방정식 differntial equations**\>라고 부를 것이다.
+우리는 위의 두 방정식과 같이 방정식 안에 \<**derivative**\> 텀이 존재하는 것을 \<**미분 방정식 differential equations**\>라고 부를 것이다.
 
 이때, 미분 방정식에서 가장 높은 derivative의 차수를 DE의 "**order**"라고 한다.
 

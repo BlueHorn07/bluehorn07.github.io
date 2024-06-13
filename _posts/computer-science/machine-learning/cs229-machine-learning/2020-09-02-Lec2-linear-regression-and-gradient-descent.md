@@ -106,7 +106,7 @@ $$\nabla_{\theta} f(\theta) = 0$$
 
 이 되는 $\theta$를 찾아야 한다.
 
-global minimum을 찾기 위해 traning set을 모두 모은 행렬 $X$를 다음과 같이 정의하자.
+global minimum을 찾기 위해 training set을 모두 모은 행렬 $X$를 다음과 같이 정의하자.
 
 <div>
 $$X = \begin{bmatrix} { \left(  { x }^{ (1) } \right)  }^{ T } \\ { \left( { x }^{ (2) } \right)  }^{ T } \\ \vdots  \\ { \left( { x }^{ (m) } \right)  }^{ T } \end{bmatrix}$$

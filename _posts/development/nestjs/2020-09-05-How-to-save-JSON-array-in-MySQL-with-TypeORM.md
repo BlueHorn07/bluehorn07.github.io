@@ -158,9 +158,9 @@ JSON 배열의 JSON 하나하나는 `JSON.stringify()` 함수로 serialize 해�
 // save JSON array into MySQL DB
 saveJSONArray(json_arr: JSON[]) {
   let jsonArr_string = "[";
-  for(let i=0; i < json_arr.lenght; i++){
+  for(let i=0; i < json_arr.length; i++){
     jsonArr_string += JSON.stringify(json_arr[i]);
-    if(i < json_arr.lenght-1){
+    if(i < json_arr.length-1){
       jsonArr_string += ",";
     }
   }
@@ -171,7 +171,7 @@ saveJSONArray(json_arr: JSON[]) {
 // load JSON array from MySQL DB
 async findJSONArray(): Promise<YourEntry[]> {
   const entry_arr = await this.yourRepository.find();
-  for(let i=0; i < entry_arr.lenght; i++){
+  for(let i=0; i < entry_arr.length; i++){
     entry_arr[i].json_arr = JSON.parse(entry_arr[i].json_arr);
   }
   return entry_arr;

@@ -23,7 +23,7 @@ $$
 P(Y = 1 \mid X = x) = \frac{e^{\beta^T x}}{1 + e^{\beta^T x}}
 $$
 
-\<Non-paremetric (binary) logistic regression\>은 위의 식에서 $\beta^T x$를 $f(x)$로 대체한다!!
+\<Non-parametric (binary) logistic regression\>은 위의 식에서 $\beta^T x$를 $f(x)$로 대체한다!!
 
 $$
 P(Y = 1 \mid X = x) = \frac{e^{f(x)}}{1 + e^{f(x)}}
@@ -43,7 +43,7 @@ $$
 
 ### Multi-dimensional Splines
 
-지금까지 살펴본 \<Spline Method\>는 모두 1-dimensional spline model이었다. 하지만, 많은 경우 feature의 상호작용을 고려하는 multi-dimentional한 접근을 필요로 한다.
+지금까지 살펴본 \<Spline Method\>는 모두 1-dimensional spline model이었다. 하지만, 많은 경우 feature의 상호작용을 고려하는 multi-dimensional한 접근을 필요로 한다.
 
 \<Multi-dimensional Spline\>은 아래와 같이 모델링 한다.
 

@@ -63,7 +63,7 @@ $$
 
 <div class="notice" markdown="1">
 
-Supp. that $f(x) = x^2$ and $g(x) = \|x\|$. Then the composities
+Supp. that $f(x) = x^2$ and $g(x) = \|x\|$. Then the composite
 
 - $(f \circ g)(x) = \|x\|^2 = x^2$
 - $(g \circ f)(x) = \|x^2\| = x^2$

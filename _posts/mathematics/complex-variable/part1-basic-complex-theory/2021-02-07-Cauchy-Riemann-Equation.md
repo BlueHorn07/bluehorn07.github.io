@@ -117,7 +117,7 @@ $$
 f(z) = u(r, \theta) + i v(r, \theta), \quad z=r e^{i\theta}
 $$
 
-Cauchy-Riemann eqaution for polar coordinate
+Cauchy-Riemann equation for polar coordinate
 
 $$
 u_r = \frac{1}{r}u_\theta, \quad v_r = - \frac{1}{r} u_{\theta}

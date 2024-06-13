@@ -30,7 +30,7 @@ categories: ["Computer Vision", "Deep Learning"]
 <img src="https://i.imgur.com/5pLQuGX.png" width="40%">
 </div>
 <div class="quote" markdown="1">
-&emsp; "This is achieved by represneting the **kernel** as a **small patch tangent to the spehre.**"
+&emsp; "This is achieved by representing the **kernel** as a **small patch tangent to the spehre.**"
 </div>
 
 - $S$: unit sphere
@@ -45,7 +45,7 @@ categories: ["Computer Vision", "Deep Learning"]
 &emsp; "A point $s$ on the sphere is related to its tangent plane coordinates $\mathbf{x}$ via a gnomonic projection."
 
 <div style="text-align:center;">
-($\mathbf{s}$: point on sphere) $\equiv$ ($\mathbf{x}$ : cooridnate on tanget plane)
+($\mathbf{s}$: point on sphere) $\equiv$ ($\mathbf{x}$ : coordinate on tangent plane)
 </div>
 </div>
 
@@ -241,7 +241,7 @@ Equirectangular Image에서 row에 대한 정보가 같다면 모두 동일한 k
 <br>
 <hr>
 
-### Experiement
+### Experiment
 
 #### Spherical Image Classification
 
@@ -274,7 +274,7 @@ Conv layer와 Pool layer를 SphereConv와 SpherePool로 교체해주면 된다.
 
 생-략
 
-#### Ojbect Detection: FlyingCars
+#### Object Detection: FlyingCars
 
 <div class="img-wrapper">
 <img src="https://i.imgur.com/fk1gomq.png" width="65%">

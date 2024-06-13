@@ -25,7 +25,7 @@ If $H$ is a subgrop of a group $G$, then $\lvert H \rvert \mid \lvert G \rvert$,
 </div>
 
 ### equivalent relation과 coset
-우리는 집합 위에 정의된 **equivelent relatio**n $\sim$가 집합을 분할한다는 사실을 알고 있다. 그리고 $\sim$에 의해 집합을 분할하는 부분집합을 **equivalent class**라고 한다.
+우리는 집합 위에 정의된 **equivalent relatio**n $\sim$가 집합을 분할한다는 사실을 알고 있다. 그리고 $\sim$에 의해 집합을 분할하는 부분집합을 **equivalent class**라고 한다.
 
 equivalent relation $\sim_{L}$을 다음과 같이 정의하자.
 
@@ -52,7 +52,7 @@ $\bar{a} \supseteq aH$는 $x = ah \in aH$로 잡으면 손쉽게 보일 수 있�
 coset $aH$의 형태만 익숙하다면, $aH$가 단순히 $H$에 $a \in G$를 곱한 집합이라는 느낌을 받게 된다. 그러나 $aH$는 집합과 원소 사이의 곱의 의미보다는 **equivalent class**임을 꼭 기억해야 한다.
 
 ### equivalent class에 의한 partition
-앞에서 말했듯 equivalent relation은 equivelant class로 집합을 분할한다. 따라서 relation $\sim_{L}$의 equivalent class $aH$는 집합 $G$의 분할의 일부분이다.
+앞에서 말했듯 equivalent relation은 equivalent class로 집합을 분할한다. 따라서 relation $\sim_{L}$의 equivalent class $aH$는 집합 $G$의 분할의 일부분이다.
 
 우리는 모든 $aH$에 대해서 $\lvert H \rvert = \lvert aH \rvert$임을 보일 수 있다.
 

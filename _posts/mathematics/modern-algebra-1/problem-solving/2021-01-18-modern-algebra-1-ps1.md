@@ -12,7 +12,7 @@ categories: ["Modern Algebra1", "Problem Solving"]
 
 <div class="notice" markdown="1">
 
-Let $R$ be an integral domian. A non-zero element $p \in R$ is called prime if $\left< p \right>$ is a prime ideal.
+Let $R$ be an integral domain. A non-zero element $p \in R$ is called prime if $\left< p \right>$ is a prime ideal.
 
 (a) A prime element is irreducible.
 

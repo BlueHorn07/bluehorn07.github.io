@@ -88,7 +88,7 @@ $$
 
 💥 본인은 $y_i$의 차원 때문에 유도를 하고도 위의 식이 조금 헷갈렸는데, 셋업을 다시 보니까, $y_i$가 $N_f$ 차원의 열벡터였다 ㅋㅋㅋ
 
-Gradient Descent 방식의 단점은 최적화를 시키는 과정이 너무 느리고, 많은 반복이 필요하다. 또, Global minimum이 아닌 local minumum에 stuck할 가능성이 있다 등등의 단점이 있다. ~~단점이 있긴 있다~~ 두번째 방법인 \<**Alternating Least Squares**\>는 이런 문제를 스마트하게 해결한다! 😎
+Gradient Descent 방식의 단점은 최적화를 시키는 과정이 너무 느리고, 많은 반복이 필요하다. 또, Global minimum이 아닌 local minimum에 stuck할 가능성이 있다 등등의 단점이 있다. ~~단점이 있긴 있다~~ 두번째 방법인 \<**Alternating Least Squares**\>는 이런 문제를 스마트하게 해결한다! 😎
 
 <hr/>
 
@@ -190,7 +190,7 @@ $$
 
 $$
 YY^T
-= \left[ y_1 y_1^T + y_2 y_2^T + \cdots + y_i y_i^T \right] = \sum_i y_iy_i^T
+= \left[ y_1 y_1^T + y_2 y_2^T + \cdots + y_i y_i^T \right] = \sum_i y_i y_i^T
 $$
 
 하지만, 위의 식에는 신뢰도 $c_{ui}$가 빠져있다. 이것은 diag matrix를 통해 쉽게 해결할 수 있다!
@@ -210,7 +210,7 @@ then, $YC_uY^T$ is
 
 $$
 YC_uY^T
-= \left[ c_{u1} y_1 y_1^T + c_{u2} y_2 y_2^T + \cdots + c_{ui} y_i y_i^T \right] = \sum_i c_{ui} y_iy_i^T
+= \left[ c_{u1} y_1 y_1^T + c_{u2} y_2 y_2^T + \cdots + c_{ui} y_i y_i^T \right] = \sum_i c_{ui} y_i y_i^T
 $$
 
 우변도 식을 정리해보자.

@@ -8,11 +8,11 @@ categories: ["Probability"]
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](https://bluehorn07.github.io/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
 {: .notice--info}
 
-몇몇 Distribution의 경우 현실을 모사하고 잘 설명하기 때문에 유용하게 사용된다. 이번 포스트에선 Discrete RV에서 볼 수 있는 유명한 Distriubtion을 살펴본다. 각 Distribution이 다른 분포에 대한 Motivation이 되고, 각각이 모두 중요성을 갖기 때문에 그 의미를 곱씹고, 충분히 연습해야 한다.
+몇몇 Distribution의 경우 현실을 모사하고 잘 설명하기 때문에 유용하게 사용된다. 이번 포스트에선 Discrete RV에서 볼 수 있는 유명한 Distributions을 살펴본다. 각 Distribution이 다른 분포에 대한 Motivation이 되고, 각각이 모두 중요성을 갖기 때문에 그 의미를 곱씹고, 충분히 연습해야 한다.
 
 <hr/>
 
-# Discrete Uniform Distriubtion
+# Discrete Uniform Distributions
 
 Discrete RV $X$에 대해 각 sample point $x$의 pmf $f(x)$의 값이 모두 동일한 경우를 대표한다.
 
@@ -45,7 +45,7 @@ $$
 
 (1) A \<**Bernoulli trial**\> is an experiment whose outcomes are only **<u>success</u>** or **<u>failure</u>**.
 
-(2) A RV $X$ is said to have \<**Bernoulli Distriubtion**\> if its pmf is given by
+(2) A RV $X$ is said to have \<**Bernoulli Distributions**\> if its pmf is given by
 
 $$
 f(x) = p^x \cdot (1-p)^{1-x}

@@ -111,7 +111,7 @@ Docker Stack/Service는 docker-compose과 비교해서 더 강력한 기능들�
 
 ## Docker Service: deploy
 
-Docker Service는 deploy 항목이 있어 CD(Continuos Deploy)가 가능하다! 도커 스웜의 가장 큰 메리트 바로 이 `autoredeploy` 기능이다!
+Docker Service는 deploy 항목이 있어 CD(Continuous Deploy)가 가능하다! 도커 스웜의 가장 큰 메리트 바로 이 `autoredeploy` 기능이다!
 
 ```yaml
 version: '3.8'

@@ -48,7 +48,7 @@ https://istio.io/latest/docs/reference/config/networking/virtual-service/
   - `match.headers`
   - `match.method` (GET, PUT, ...)
   - `match.queryParams`
-  - `mathc.gateways`
+  - `match.gateways`
   - ...
 - 헤더 조작 가능
 - Retry Policy 세팅 가능

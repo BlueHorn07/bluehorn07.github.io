@@ -42,7 +42,7 @@ K8s에서도 Pod에서 사용하고 난 이미지는 dangling 이미지가 되�
 K8s GC는 아래의 작업들을 수행하며 클러스터 리소스를 정리한다.
 
 - Terminated Pods
-- Complated Jobs
+- Completed Jobs
 - "Unused Containers and Container Images"
 - 등등...
 
@@ -72,7 +72,7 @@ K8s의 `kubelet`은 주기적으로 아래 작업을 수행한다.
 services:
   service_name:
     logging:
-      drvier: None
+      driver: None
 ```
 
 이렇게 하면 컨테이너의 로그를 전혀 볼 수 없다.
@@ -88,7 +88,7 @@ Error response from daemon: configured logging driver does not support reading
 services:
   service_name:
     logging:
-      drvier: local
+      driver: local
       options:
         max-size: 15m
 ```

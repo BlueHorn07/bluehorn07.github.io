@@ -31,7 +31,7 @@ npm i --save-dev @nestjs/testing
 
 `NestJS CLI`를 이용해 NestJS Object를 생성하게 되면 자동으로 테스팅 파일인 `.spec.ts`가 생성된다.
 
-이 `.sepc.ts` 파일은 **<u>Controller</u>**와 **<u>Serivce</u>**를 `NestJS CLI`로 생성할 때에만 자동으로 생성된다.
+이 `.sepc.ts` 파일은 **<u>Controller</u>**와 **<u>service</u>**를 `NestJS CLI`로 생성할 때에만 자동으로 생성된다.
 
 사실 둘의 차이는 거의 없는데, 만약 차이를 보고 싶다면 펼쳐보기에 기술은 해두겠다.
 
@@ -65,7 +65,7 @@ describe('CatController', () => {
 });
 ```
 
-- `app.serivce.spec.ts`
+- `app.service.spec.ts`
 
 ``` ts
 import { Test, TestingModule } from '@nestjs/testing';
@@ -193,7 +193,7 @@ describe('test title', () => {
 
 <br>
 
-본래 Serivce에선 Repository 변수를 만들어 해당 Repository를 이용해 데이터베이스에 접근한다. 테스트에서는 아래와 같이 Repository를 모사한 "**MockRepository**"를 만든다.
+본래 service에선 Repository 변수를 만들어 해당 Repository를 이용해 데이터베이스에 접근한다. 테스트에서는 아래와 같이 Repository를 모사한 "**MockRepository**"를 만든다.
 
 예를 들어 UserRepository를 모사한 `MockRepository`를 만들어보자.
 
@@ -272,7 +272,7 @@ console.log(mockFn()); // "Lorem Ipsum"
 ``` js
 mockFn.mockResolvedValue("Async resolve value");
 mockFn.then((result) => {
-  console.log(result); // "Async resolved vaue"
+  console.log(result); // "Async resolved value"
 })
 ```
 

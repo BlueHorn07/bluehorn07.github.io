@@ -148,7 +148,7 @@ $$
 \frac{\bar{X} - \mu}{S / \sqrt{n}} \sim t(n-1)
 $$
 
-\<Proportion Estimation\>에서도 popualtion proportion $p$의 값을 모르기에 sample proportion인 $\hat{p}$를 대신 사용 했다.
+\<Proportion Estimation\>에서도 populations proportion $p$의 값을 모르기에 sample proportion인 $\hat{p}$를 대신 사용 했다.
 
 $$
 \frac{\bar{X} - \mu}{\sigma / \sqrt{n}}

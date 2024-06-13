@@ -289,7 +289,7 @@ for any closed contour in $D$, then $f(z)$ is analytic in $D$.
 <br/><span class="statement-title">*Proof*.</span><br/>
 
 $$
-\oint_C f(z) dz = 0 \implies f(z) \; \text{is primative.}
+\oint_C f(z) dz = 0 \implies f(z) \; \text{is primitive.}
 $$
 
 따라서, $f(z)$에 대한 Anti-Derivative Function $F(z)$가 존재해 아래가 성립한다.

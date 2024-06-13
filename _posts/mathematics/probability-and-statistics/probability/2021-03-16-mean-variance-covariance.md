@@ -1,5 +1,5 @@
 ---
-title: "Mean, Variance, and Covriance"
+title: "Mean, Variance, and Covariance"
 toc: true
 toc_sticky: true
 categories: ["Probability"]
@@ -43,7 +43,7 @@ ps) 수업 시간에 교수님께서 이산 RV에 대한 증명은 쉽게 할 �
 
 <br/>
 
-이번에는 joint distriubtion에 대한 \<Expectation\>을 살펴보자.
+이번에는 joint distributions에 대한 \<Expectation\>을 살펴보자.
 
 <span class="statement-title">Definition.</span><br>
 
@@ -311,9 +311,9 @@ A3. & A4. Q3는 이미 위에서 증명을 했다. 그러나 다른 방식으로
 그리고 Discrete RV에서의 기본적인 Probability Distribution을 살펴본다.
 
 - Bernoulli Distribution
-- Binomial Distriubtion
+- Binomial Distributions
 - Multinomial Distribution
-- Hypergeometric Distriubtion
+- Hypergeometric Distributions
 - etc...
 
 👉 [Discrete Probability Distributions - 1]({{"/2021/03/17/discrete-probability-distributions-1" | relative_url}})

@@ -112,7 +112,7 @@ TypeORM 공식 문서에선 `Question`과 `Category`의 예를 들고 있다. �
 
 Many-to-Many는 기존의 relation과 달리 작동 양상이 조금 다르다!!
 
-Many-to-Many에선 `@JoinTable`을 통해 두 Table에 대한 Foregin Key가 담긴 **<u>새로운 Table이 생성</u>**된다!!
+Many-to-Many에선 `@JoinTable`을 통해 두 Table에 대한 Foreign Key가 담긴 **<u>새로운 Table이 생성</u>**된다!!
 
 사실 개인적인 경험으론 Many-to-Many는 뭔가 제약이 많아서 DB를 설계하는데에 좋은 선택이 아니었던 것 같다. 만약 Many-to-Many를 사용하다가 막힌다면, 과감히 Many-to-Many 방식을 포기하고 우회하는 방법을 찾아보는 것도 좋은 접근일 것 같다! 😥
 

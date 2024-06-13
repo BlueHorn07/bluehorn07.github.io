@@ -126,7 +126,7 @@ $$
 
 is single-valued and it is continuous function!
 
-1. A *<u>brach</u>* of multi-valued function $f$ is any single-valued function $F(z)$ that is analytic in some domain.
+1. A *<u>branch</u>* of multi-valued function $f$ is any single-valued function $F(z)$ that is analytic in some domain.
 2. A *<u>branch cut</u>* is a partition of a line or a curve that is introduced in order to define a branch $F$.
 3. A *<u>branch point</u>* is any point that is ccommon to all branch cuts of $f$.
 

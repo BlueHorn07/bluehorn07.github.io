@@ -55,7 +55,7 @@ public class PetOwner{
 }
 ```
 
-<p style="color:gray">// code fragement from <a href="https://gmlwjd9405.github.io/2018/11/09/dependency-injection">here</a></p>
+<p style="color:gray">// code fragment from <a href="https://gmlwjd9405.github.io/2018/11/09/dependency-injection">here</a></p>
 
 이 코드에서 `PetOwner` 객체는 `AnimalType`의 객체를 만들기 위해 `Dog` 객체에 "의존"한다.
 
@@ -114,7 +114,7 @@ public class PetOwner{
 
 <div class="notice" markdown="1">
 
-&nbsp; Principle that promotes componenets that relinquish control of aspects of the code execution to external modules to obtiain "**week coupling**".
+&nbsp; Principle that promotes components that relinquish control of aspects of the code execution to external modules to obtiain "**week coupling**".
 
 <small>\* relinquish: give up</small>
 
@@ -134,7 +134,7 @@ Client는 `IComparator` dependency에 대한 implementation, creation, lifetime�
 
 <div class="math-statement" markdown="1">
 
-&nbsp; "Dependecny injection is a software desing pattern that implements ***<u>inverseion of control</u>*** for resolving dependencies. A '**dependency**' is an object that can be used. An '**injection**' is the passing of a dependency to a dependent object that would use it.
+&nbsp; "Dependecny injection is a software design pattern that implements ***<u>inverseion of control</u>*** for resolving dependencies. A '**dependency**' is an object that can be used. An '**injection**' is the passing of a dependency to a dependent object that would use it.
 
 <small>\- Wikipedia</small>
 

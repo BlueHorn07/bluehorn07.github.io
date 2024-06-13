@@ -12,7 +12,7 @@ categories: ["Probability"]
 
 앞에서는 하나의 RV에 대한 probability distribution을 살펴보았다. 하지만, 현실에서는 둘 이상의 RV에 대한 결과를 동시에 고려해야 하는 경우가 많다. \<Joint Probability Distribution\>은 이런 둘 이상의 RV를 수학적으로 정의한 개념이다.
 
-Joint Probability는 Discrete RV와 Continous RV에서 각각 \<Joint pmf\>, \<Joint pdf\>로 정의된다.
+Joint Probability는 Discrete RV와 Continuous RV에서 각각 \<Joint pmf\>, \<Joint pdf\>로 정의된다.
 
 <br><span class="statement-title">Definition.</span> Joint pmf<br>
 
@@ -149,4 +149,4 @@ $$
 
 이어지는 포스트에서는 RV의 확률을 이용해 \<평균\>, \<분산\>, \<공분산\>을 유도해본다!
 
-👉 [Mean, Variance, and Covriance]({{"/2021/03/16/mean-variance-covariance" | relative_url}})
+👉 [Mean, Variance, and Covariance]({{"/2021/03/16/mean-variance-covariance" | relative_url}})

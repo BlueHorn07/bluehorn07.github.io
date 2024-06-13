@@ -24,7 +24,7 @@ categories: []
 - R 데이터 타입
   - `class(obj)`로 데이터 타입 확인 가능!
   - `factor`는 카테고리형 변수
-  - `charactor`는 문자형 변수 // `factor`랑 다름!
+  - `character`는 문자형 변수 // `factor`랑 다름!
 
 ``` R
 > table(vowel.train$y)
@@ -77,5 +77,5 @@ vowel.fit <- lm(y ~., vowel.train)
 - [RPubs](https://rpubs.com/)
   - R 생태계의 github 같은 느낌.
 - [rdrr.io](https://rdrr.io/)
-  - R pakage documentation
+  - R package documentation
   - 새로운 R 패키지를 익힐 때 유용!!

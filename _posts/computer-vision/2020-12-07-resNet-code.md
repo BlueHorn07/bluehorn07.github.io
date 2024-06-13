@@ -153,7 +153,7 @@ class ResBlock(nn.Module):
 
 #### residual projection options
 
-이 구현에선 `residual`을 바로 더하는 게 아니라 `self.proejction`을 한번 거치게 하는 옵션도 구현을 했다.
+이 구현에선 `residual`을 바로 더하는 게 아니라 `self.projection`을 한번 거치게 하는 옵션도 구현을 했다.
 
 ``` python
 class ResBlock(nn.Module):
@@ -179,7 +179,7 @@ class ResBlock(nn.Module):
 
 - `residual` 이미지를 그대로 보내기도 하고; `IdentityPadding()`
 - `residual` 이미지를 Convolution 하기도 하고; `ConvProjection()`
-- `residual` 이미지를 Avgerage Pooling 하기도 한다; `AvgPoolPadding()`
+- `residual` 이미지를 Average Pooling 하기도 한다; `AvgPoolPadding()`
 
 residual projection 옵션들에 대한 더 자세한 내용은 이 [링크](https://github.com/KellerJordan/ResNet-PyTorch-CIFAR10/blob/204803ca5be4143ee9ab4ae5e165318af45fff50/model.py#L80)를 통해 확인할 수 있다!
 

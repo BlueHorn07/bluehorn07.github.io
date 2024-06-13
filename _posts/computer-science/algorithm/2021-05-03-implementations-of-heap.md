@@ -251,7 +251,7 @@ Binomial Heap을 이루는 Tree의 루트 노드를 살펴보면 된다. 따라�
 
 하지만, 위와 같이 $\texttt{merge}$를 수행할 경우, 앞에서 살펴본 \<BIN Heap\>의 아름답고 좋은 성질이 깨지게 된다 😥 \<Lazy-BIN Heap\>에서는 BIN Tree의 degree는 규칙성 없이 자유롭게 분포되어 있을 것이다.
 
-이번에는 \<Lazy-BIN Heap\>의 $\texttt{extractMin}$ 연산을 살펴보자. 이 연산은 Heap에서 가장 작은 원소를 제거한다. \<Lazy-BIN Heap\>은 이 $\texttt{extracMin}$ 연산이 수행될 때, $\texttt{consolidation}$(= 합병, 병합)을 수행하여 \<Lazy-BIN Heap\>에서 BIN Heap의 구조를 다시 구축한다.
+이번에는 \<Lazy-BIN Heap\>의 $\texttt{extractMin}$ 연산을 살펴보자. 이 연산은 Heap에서 가장 작은 원소를 제거한다. \<Lazy-BIN Heap\>은 이 $\texttt{extractMin}$ 연산이 수행될 때, $\texttt{consolidation}$(= 합병, 병합)을 수행하여 \<Lazy-BIN Heap\>에서 BIN Heap의 구조를 다시 구축한다.
 
 이 $\texttt{consolidation}$이 수행되는 과정의 시간 복잡도를 분석해보자. degree가 자유롭게 분포되어 있는 상황에서 $\texttt{consolidation}$을 수행하는 방법을 각 BIN Tree를 degree 별로 정렬하여 앞에서부터 차례로 Tree를 합치는 것이다. 원래는 정렬을 수행할 때, $O(t \log t)$ ($t$는 Heap에 존재하는 BIN Tree의 수) 만큼의 시간이 소요된다. 그런데 정렬 과정에서 \<Bucket Sort\>를 사용한다면, BIN Tree 탐색에 $O(t)$, Bucket의 수 $O(\log n)$ 만큼 BIN tree merge 비용이 들어 $O(t + \log n)$의 비용으로 $\texttt{consolidation}$을 수행할 수 있다. 자세한 내용은 아래의 영상을 참고하자!
 
@@ -261,7 +261,7 @@ Binomial Heap을 이루는 Tree의 루트 노드를 살펴보면 된다. 따라�
 
 👉 [Jeff Zhang - Lazy Binomial Heap Intro Part 1 of 2](https://youtu.be/v4hlvJIS0ZU)
 
-$\texttt{extracMin}$ 연산에 대해서는 그 시간 복잡도가 "**amortized** $O(\log n)$"라고 한다. 시간 복잡도 분석에 \<Potential Method\>를 사용하는데, Potential Method에 소개하는 lecture note [Lecture 20: Amortized Analysis](http://www.cs.cornell.edu/courses/cs3110/2011sp/Lectures/lec20-amortized/amortized.htm)와 Lazy-BIN Heap을 Potential Method로 분석한 이 lecture note [Lecture 3: Fibonacci Heaps](http://www.cs.cmu.edu/afs/cs/academic/class/15750-s19/OldScribeNotes/lecture3.pdf)를 잘 읽어보면 그럭저럭 이해할 수 있다 🤞
+$\texttt{extractMin}$ 연산에 대해서는 그 시간 복잡도가 "**amortized** $O(\log n)$"라고 한다. 시간 복잡도 분석에 \<Potential Method\>를 사용하는데, Potential Method에 소개하는 lecture note [Lecture 20: Amortized Analysis](http://www.cs.cornell.edu/courses/cs3110/2011sp/Lectures/lec20-amortized/amortized.htm)와 Lazy-BIN Heap을 Potential Method로 분석한 이 lecture note [Lecture 3: Fibonacci Heaps](http://www.cs.cmu.edu/afs/cs/academic/class/15750-s19/OldScribeNotes/lecture3.pdf)를 잘 읽어보면 그럭저럭 이해할 수 있다 🤞
 
 | Operation | Binomial Heap | Lazy-Binomial Heap |
 |:---:|:---:|:---:|

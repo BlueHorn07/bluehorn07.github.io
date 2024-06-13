@@ -152,7 +152,7 @@ kubectl apply -f $KIALI_ADDON -n istio-system
 
 꼭 `istio-system` namespace에 설치해야 한다!
 
-그리고 아래 명령어로 로컬에서 접근할 수 있도록 port-foward 해주자.
+그리고 아래 명령어로 로컬에서 접근할 수 있도록 port-forward 해주자.
 
 ```bash
 kubectl port-forward -n istio-system svc/kiali 20001:20001

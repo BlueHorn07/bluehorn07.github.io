@@ -36,7 +36,7 @@ $$
 
 그래서 우리는 각 $X_i$, $Y_i$를 개별적으로 생각하는 것이 아니라 그들을 paring한 Difference $D_i = X_i - Y_i$로 접근하고자 한다!
 
-이렇게 할 경우, 각 Pair는 서로 independet하게 된다!
+이렇게 할 경우, 각 Pair는 서로 independent하게 된다!
 
 Assume that $D_1, \dots, D_n$ are normal random samples: $D_i \sim N(\mu_D, \sigma_D^2)$
 

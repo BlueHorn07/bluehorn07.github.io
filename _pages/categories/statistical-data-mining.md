@@ -47,7 +47,7 @@ toc_sticky: true
 - Introduction to Regression & Classification
   - Least Squared Method
   - Nearest Neighbor Method
-- Curse of dimentionality
+- Curse of dimensionality
 
 <hr/>
 

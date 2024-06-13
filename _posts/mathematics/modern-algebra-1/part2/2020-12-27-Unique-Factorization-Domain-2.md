@@ -82,7 +82,7 @@ $$
 \end{aligned}
 $$
 
-then, for $f(x)g(x)$, the cofficient of term $x^{n+m}$ is $a_n b_m \ne 0$.
+then, for $f(x)g(x)$, the coefficient of term $x^{n+m}$ is $a_n b_m \ne 0$.
 
 Therefore $f(x)g(x)$ never be zero.
 
@@ -112,11 +112,11 @@ This factorization is unique up to orerding and associates.
 
 Let $f(x) \in F[x]$ be a non-constant polyno-.
 
-If $f(x)$ is 'not' irreducible, then $f(x) = g(x)h(x)$ for some lower degress polynomials.
+If $f(x)$ is 'not' irreducible, then $f(x) = g(x)h(x)$ for some lower degrees polynomials.
 
 If $g(x)$ and $h(x)$ are irreducible, we stop here.
 
-If not, at least one of them factors into lower degress polno-s.
+If not, at least one of them factors into lower degrees polno-s.
 
 Continuing this process, then we get
 

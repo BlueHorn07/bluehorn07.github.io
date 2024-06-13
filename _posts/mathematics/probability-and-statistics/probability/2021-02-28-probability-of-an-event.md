@@ -63,7 +63,7 @@ $$
 
 > "The notion of conditional probability provides the capability of reevaluating the idea of probability of an event in light of additional information"
 
-> The probability $P(A \mid B)$ is an updating of $P(A)$ based on the knowledge that event $B$ has occured.
+> The probability $P(A \mid B)$ is an updating of $P(A)$ based on the knowledge that event $B$ has occurred.
 
 #### Independent Events
 
@@ -75,11 +75,11 @@ $$
 P(B \mid A) = P(B) \quad \mbox{or} \quad P(A \mid B) = P(A)
 $$
 
-assuming the existences of the conditional probabilites.
+assuming the existences of the conditional probabilities.
 
 Otherwise, $A$ and $B$ are **dependent**.
 
-> If two events $A$ and $B$ are independent, then the occrurence of  $B$ had no impact on the odds of occurence of $A$.
+> If two events $A$ and $B$ are independent, then the occrurence of  $B$ had no impact on the odds of occurrence of $A$.
 
 <hr/>
 

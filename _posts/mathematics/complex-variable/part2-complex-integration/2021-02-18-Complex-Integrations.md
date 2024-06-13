@@ -1,5 +1,5 @@
 ---
-title: "complex primitive function & ML-ineqaulity"
+title: "complex primitive function & ML-inequality"
 toc: true
 toc_sticky: true
 categories: ["Complex Variable"]

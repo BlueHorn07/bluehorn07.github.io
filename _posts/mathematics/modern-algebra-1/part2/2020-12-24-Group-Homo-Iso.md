@@ -52,7 +52,7 @@ $\phi$를 반대 방향으로 잡아서 증명을 할 수도 있다. 그러나 �
 
 Supp. $\exists$ an iso- $\phi: \mathbb{R}^{\*} \longrightarrow \mathbb{C}^{\*}$.
 
-THEN, it is true that $\phi(1) = 1$; <small>identity maps to identitiy</small>
+THEN, it is true that $\phi(1) = 1$; <small>identity maps to identity</small>
 
 THEN,
 

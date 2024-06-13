@@ -20,7 +20,7 @@ tags: ["3D Vision"]
 <p>By <a href="//commons.wikimedia.org/wiki/User:Strebe" title="User:Strebe">Strebe</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=16115262">Link</a></p>
 </div>
 
-360 이미지를 2차원에 매핑하는 대표적인 기법인 **Gnomonic Projection**에 대해 살펴보자. Gnomonic Projection을 번역하면 심사도법(心射圖法)이라고 한다. 때때로 Gnomonic Proejction을 **Rectilinear Proejction**이라는 이름으로 부르기도 한다.
+360 이미지를 2차원에 매핑하는 대표적인 기법인 **Gnomonic Projection**에 대해 살펴보자. Gnomonic Projection을 번역하면 심사도법(心射圖法)이라고 한다. 때때로 Gnomonic Projection을 **Rectilinear Projection**이라는 이름으로 부르기도 한다.
 
 Gnomonic Projection에서 주의할 점은 **반구 하나의 범위만을 매핑할 수 있다**는 것이다. 즉, 반구 이상의 범위는 Gnomonic Projection으로 매핑할 수 없다.
 
@@ -57,7 +57,7 @@ $$\cos{c} = \sin{\phi_0}\sin{\phi} + \cos{\phi_0}\cos{\phi}\cos(\theta-\theta_0)
 
 $\cos{c}$에서 $c$는 매핑된 평면에서 원점과 $(x, y)$이 이루는 각을 말한다.
 
-공식에서 볼 수 있듯 longitutde는 $\theta - \theta_0$를 통해 그 값을 보정하는 반면, latitude $\phi$에는 longitutde 같은 보정이 없다. 또한 매핑으로 얻은 $x$와 $y$는 $x^2 + y^2 \le 1$의 unit disk 내부의 점이다.
+공식에서 볼 수 있듯 longitude는 $\theta - \theta_0$를 통해 그 값을 보정하는 반면, latitude $\phi$에는 longitude 같은 보정이 없다. 또한 매핑으로 얻은 $x$와 $y$는 $x^2 + y^2 \le 1$의 unit disk 내부의 점이다.
 
 #### Inverse mapping
 

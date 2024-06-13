@@ -132,7 +132,7 @@ $$
 \end{aligned}
 $$
 
-So, $\left\| f(z) - f(i) \right\| < \epsilon$ whenevery $\left\| z - i \right\| < \frac{\epsilon}{2}$.
+So, $\left\| f(z) - f(i) \right\| < \epsilon$ when every $\left\| z - i \right\| < \frac{\epsilon}{2}$.
 
 <br>
 
@@ -237,7 +237,7 @@ The function $f$ is said to be "**differentiable**" when $f'(z_0)$ exists.
 
 - $f(z)$ is **<u>analytic</u>** in an open set $S$, if $f(z)$ is differentiable everywhere in $S$.
 
-- $f(z)$ is **<u>analytic</u>** at $z_0$, if $f(z)$ is analytic in some neightborhood of $z_0$.
+- $f(z)$ is **<u>analytic</u>** at $z_0$, if $f(z)$ is analytic in some neighborhood of $z_0$.
 
 - An **<u>entire function</u>** is a function that is analytic at each point in the entire complex plane.
 

@@ -48,7 +48,7 @@ Linear Classification은 $\theta^{T}x$를 통해서 입력 $x$와 parameter $\th
 
 앞선 파트에서 우리는 Logistic Regression을 살펴보았고, hypothesis로 $h_{\theta}(x) = \frac{1}{1 + e^{-\theta^{T}x}}$를 사용하였다. sigmoid function 자체는 non-linear 함수이다. 하지만, $\theta$와 $x$가 $\theta^{T}x$라는 Linear한 방식으로 연결되어 있기 때문에 Logistic Regression도 결국은 Linear Classification에 속한다.
 
-참고로 non-Linear Classifier는 $\theta^{T}x$ 대신 $x^2_j$나 ${x_i}{x_j}$를 사용해 Classificaiton을 진행한다.
+참고로 non-Linear Classifier는 $\theta^{T}x$ 대신 $x^2_j$나 ${x_i}{x_j}$를 사용해 Classification을 진행한다.
 
 ### Interpretation of Decision Boundary with Learning
 

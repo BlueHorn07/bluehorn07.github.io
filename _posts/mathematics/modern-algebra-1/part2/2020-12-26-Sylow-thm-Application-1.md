@@ -81,7 +81,7 @@ $p$가 동일한 두 Sylow $p$-subgroup $P_5$, $P_5'$에 대해 둘은 conjugate
 
 "either $P_3$ or $P_5$ is normal to $G$."가 올바른 표현이다.
 
-따라서 $G$는 trivial subgroup 외에도 다른 noraml subgroup을 갖는다!! $\blacksquare$
+따라서 $G$는 trivial subgroup 외에도 다른 normal subgroup을 갖는다!! $\blacksquare$
 
 </div>
 

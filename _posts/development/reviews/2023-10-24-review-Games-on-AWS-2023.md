@@ -66,7 +66,7 @@ Marvel Snap에서는 중요한 기능에 대해선 "Provisioned Concurrency" 기
 
 물론 Lambda Container를 대시 시켜두기 때문에 기본 모드 보다 비용은 더 나간다.
 
-## Lambda Optimization: Static Initilization
+## Lambda Optimization: Static Initialization
 
 또, Serverless의 경우 내부적으로 초기 호출 후엔 Micro Container?가 살아있어 그후 호출부터는 응답 시간이 아주 줄어든다고 한다. 그래서 람다 코드를 어떻게 구성하느냐에 따라서 그후 응답 시간이 달라진다.
 

@@ -33,7 +33,7 @@ $n_m$ is the # of training data in $R_m$.
 
 <br/>
 
-2\. DT estimation in classifcation problem
+2\. DT estimation in classification problem
 
 $$
 \hat{P}(Y=k \mid X=x) = \hat{p}_{mk} = \frac{1}{n_m} \sum_{x_i \in R_m} I(y_i = k) \quad \text{for} \quad x \in R_m

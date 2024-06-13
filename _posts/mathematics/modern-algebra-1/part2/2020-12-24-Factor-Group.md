@@ -37,7 +37,7 @@ $$
 이때, 위의 식 (1)이 성립하여 연산이 well-defined이 되기 위해선
 
 <div class="statement" markdown="1" style="text-align: center;">
-"The left & right coset conincide, so that $aH = Ha \quad \forall a \in G$"
+"The left & right coset coincide, so that $aH = Ha \quad \forall a \in G$"
 </div>
 
 조건이 만족되어야 한다!! 이 조건은 $H$가 $G$의 **normal subgroup**임을 말한다!!

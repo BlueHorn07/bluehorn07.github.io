@@ -1,5 +1,5 @@
 ---
-title: "Factor Group - Appliaction"
+title: "Factor Group - Application"
 toc: true
 toc_sticky: true
 categories: ["Modern Algebra1"]

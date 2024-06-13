@@ -121,11 +121,11 @@ https://jwt.io/
 
 # 더 살펴보기
 
-## `RequstAuthentication`은 JWT 토큰이 없을 땐 통과시킨다
+## `RequestAuthentication`은 JWT 토큰이 없을 땐 통과시킨다
 
 > A request that does not contain any authentication credentials will be accepted but will not have any authenticated identity - [istio: RequestAuthentication](https://istio.io/latest/docs/reference/config/security/request_authentication/)
 
-`RequstAuthentication`만 설정 했을 때는 JWT 없이 요청을 보내면 응답이 돌아온다!!! 그래서 처음에 `RequstAuthentication`가 뭘 하는지 이해하기가 조금 어려웠던 것 같다. JWT 토큰이 없으면 요청을 거부하게 만드려면 반드시 `AuthorizationPolicy`까지 설정해야 한다고 한다.
+`RequestAuthentication`만 설정 했을 때는 JWT 없이 요청을 보내면 응답이 돌아온다!!! 그래서 처음에 `RequestAuthentication`가 뭘 하는지 이해하기가 조금 어려웠던 것 같다. JWT 토큰이 없으면 요청을 거부하게 만드려면 반드시 `AuthorizationPolicy`까지 설정해야 한다고 한다.
 
 그런데, `RequestAuthentication`은 올바르지 않은 JWT 토큰, 명시하지 않은 issuer가 발급한 JWT 토큰은 거부 한다!
 

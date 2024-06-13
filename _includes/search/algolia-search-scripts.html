@@ -19,9 +19,9 @@ const search = instantsearch({
 
 const hitTemplate = function(hit) {
   const url = hit.url;
-  const hightlight = hit._highlightResult;
-  const title = hightlight.title && hightlight.title.value  || "";
-  const content = hightlight.html && hightlight.html.value  || "";
+  const heightlight = hit._highlightResult;
+  const title = heightlight.title && heightlight.title.value  || "";
+  const content = heightlight.html && heightlight.html.value  || "";
 
   return `
     <div class="list__item">

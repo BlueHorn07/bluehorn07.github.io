@@ -105,7 +105,7 @@ $$
 
 <br/>
 
-💥 (two-sided case) If $H_1$ is a form fo $H_1: \mu \ne \mu_0$ at the level $\alpha$, and we want the power at $\mu = \mu_1$ to be at least $1 - \beta$?
+💥 (two-sided case) If $H_1$ is a form of $H_1: \mu \ne \mu_0$ at the level $\alpha$, and we want the power at $\mu = \mu_1$ to be at least $1 - \beta$?
 
 이 경우에는 식이
 

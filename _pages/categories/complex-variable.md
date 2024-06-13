@@ -110,7 +110,7 @@ $$
 - [Extended Cauchy's Integral Formula]({{"2021/03/07/extension-of-Cauchy-integral-formula#extension-of-cauchys-integral-formula" | relative_url}})
 - [Applications of Cauchy Integral]({{"2021/03/07/extension-of-Cauchy-integral-formula#application-of-cauchy-integral" | relative_url}})
   - Cauchy's Inequality
-  - Liouville’s Theroem
+  - Liouville’s Theorem
   - Fundamental Theorem of Algebra
   - Morera's Theorem
 

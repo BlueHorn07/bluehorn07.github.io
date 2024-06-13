@@ -85,7 +85,7 @@ Let $\phi: G \longrightarrow G'$ be a group homomorphism, THEN
 - [Fundamental Homomorphism Theorem(FHT)]({{"2020/12/25/Fundamental-Homo-theorem" | relative_url}}); 1st Isomorphism Thm 🔥🔥
   - [Canonical homomorphism]({{"2020/12/25/Fundamental-Homo-theorem#canonical-homomorphism" | relative_url}}) $\gamma: G \longrightarrow G/H \quad (H \trianglelefteq G)$
 - [index-2 group is normal]({{"2020/12/25/index-2-Group" | relative_url}})
-- [Factor Group - Appliaction]({{"2020/12/25/Factor-Group-Application" | relative_url}}')
+- [Factor Group - Application]({{"2020/12/25/Factor-Group-Application" | relative_url}}')
   - [Converse of Lagrange Thm]({{"2020/11/28/Converse-of-Lagrange-Thm" | relative_url}})
 
 ## Advanced Group Theory
@@ -233,7 +233,7 @@ Prime ideals generalize the concept of primality to more general commutative rin
   - In UFD, Irreducible elt is also a Prime elt.
   - [Every PID is UFD]({{"2020/12/27/Unique-Factorization-Domain-2" | relative_url}}) 🔥
 - [Fundamental Theorem of Arithmetic]({{"2021/01/17/fundamental-thm-of-arithmetic" | relative_url}})
-- [Guass's Lemma]({{"2020/12/30/Guass-Lemma" | relative_url}})
+- [Gauss's Lemma]({{"2020/12/30/Gauss-Lemma" | relative_url}})
   - (primitive) $\times$ (primitive) = (primitive)
 - [Polynomial over UFD]({{"2021/01/18/polynomial-over-UFD" | relative_url}})
 - [Euclidean Domain]({{"2021/01/18/Euclidean-domains" | relative_url}})

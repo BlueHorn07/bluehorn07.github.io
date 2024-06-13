@@ -7,18 +7,18 @@ categories: ["Develop", "Kubernetes"]
 
 # kubectl CRUD
 
-- <span class="red"><big>C</big></span>reate
+- Create
   - `kubectl create`
   - `kubectl run` (Pod을 생성)
   - `kubectl apply`*
-- <span class="red"><big>R</big></span>ead
+- Read
   - `kubectl get`
-  - `kubectl describe`
-- <span class="red"><big>U</big></span>pdate
+  - `kubectl describe`c
+- Update
   - `kubectl edit`
   - `kubectl replace`
   - `kubectl apply`*
-- <span class="red"><big>D</big></span>elete
+- Delete
   - `kubectl delete`
 - Others
   - `kubectl logs`

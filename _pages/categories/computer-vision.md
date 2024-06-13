@@ -18,7 +18,7 @@ toc_sticky: true
   - [Image Classification + DL](#image-classification--dl)
 - [CNN Architectures](#cnn-architectures)
 - [Object Detection](#object-detection)
-- [Sementic Segmentation](#sementic-segmentation)
+- [Semantic Segmentation](#semantic-segmentation)
   - [Instance-aware Semantic Segmentation](#instance-aware-semantic-segmentation)
 - [Metric Learning](#metric-learning)
 - [Video Vision](#video-vision)
@@ -82,7 +82,7 @@ toc_sticky: true
   - Drop out
   - Weight decay
   - Early Stopping
-  - Network Intialization
+  - Network Initialization
     - Learning from scratch
     - Xavier Initialization (2010)
     - He Initialization (2015)
@@ -132,7 +132,7 @@ toc_sticky: true
 <br>
 <hr>
 
-### Sementic Segmentation
+### Semantic Segmentation
 
 <div class="notice" markdown="1">
 
@@ -155,7 +155,7 @@ toc_sticky: true
 - Pyramid Scene Parsing Network (2017)
   - Pyramid pooling module
 - Context Encoding Network (2018)
-  - Attension module
+  - Attention module
 
 <br>
 
@@ -234,9 +234,9 @@ toc_sticky: true
   - Affine transform
   - Projective transform
 - 3D Objects
-  - homogenous coordinates; $\overline{x} = [x, y, z, 1]$
+  - homogeneous coordinates; $\overline{x} = [x, y, z, 1]$
 - Pinhole Model
   - Intrinsic Parameters
   - Extrinsic Parameters
 - Camera Clibration
-  - Estimate camera prameters matrix
+  - Estimate camera parameters matrix

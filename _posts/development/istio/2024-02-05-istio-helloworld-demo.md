@@ -318,7 +318,7 @@ spec:
 
 리소스를 만든 후에 트래픽을 흘려주면...
 
-![](/images/development/istio/helloworld-virtual-service-with-detination-rule.png){: .fill}
+![](/images/development/istio/helloworld-virtual-service-with-destination-rule.png){: .fill}
 DestinationRule로 버전별 subset을 만들었을 때
 {: .small .gray .text-center }
 

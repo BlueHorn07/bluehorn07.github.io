@@ -34,7 +34,7 @@ Then $H \trianglelefteq G$.
 
 <div class="math-statement" markdown="1">
 
-The set of left cosets of $H$ in $G$ froms a partition of $G$.
+The set of left cosets of $H$ in $G$ forms a partition of $G$.
 
 $$
 \begin{equation}

@@ -40,11 +40,11 @@ if __name__ == "__main__":
 
   # take gradient
   ## Gaussian blurring
-  blured = cv2.GaussianBlur(img, (3, 3), 0)
+  blurred = cv2.GaussianBlur(img, (3, 3), 0)
 
   ## sobel filter
-  sobelX = cv2.Sobel(blured, cv2.CV_8U, 1, 0, ksize=3)
-  sobelY = cv2.Sobel(blured, cv2.CV_8U, 0, 1, ksize=3)
+  sobelX = cv2.Sobel(blurred, cv2.CV_8U, 1, 0, ksize=3)
+  sobelY = cv2.Sobel(blurred, cv2.CV_8U, 0, 1, ksize=3)
 
   ## merge two gradients
   gradient = sobelX + sobelY
@@ -71,7 +71,7 @@ if __name__ == "__main__":
 
 ``` python
   ## Gaussian blurring
-  blured = cv2.GaussianBlur(img, (3, 3), 0)
+  blurred = cv2.GaussianBlur(img, (3, 3), 0)
 ```
 
 <br>
@@ -80,8 +80,8 @@ if __name__ == "__main__":
 
 ``` python
   ## sobel filter
-  sobelX = cv2.Sobel(blured, cv2.CV_8U, 1, 0, ksize=3)
-  sobelY = cv2.Sobel(blured, cv2.CV_8U, 0, 1, ksize=3)
+  sobelX = cv2.Sobel(blurred, cv2.CV_8U, 1, 0, ksize=3)
+  sobelY = cv2.Sobel(blurred, cv2.CV_8U, 0, 1, ksize=3)
 ```
 
 `sobelX`는 수평 성분을 제거한 이미지로, 수직 Edge를 검출한다. 반대로 `sobelY`는 수직 성분을 제거한 이미지로, 수평 Edge를 검출한다.

@@ -22,7 +22,7 @@ https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/prometheus.html
 
 EKS로 운영하는 k8s 클러스터의 Prometheus 지표를 prometheus agent 설치 없이 EKS 콘솔과 API 호출을 통해서 Prometheus 지표 정보를 수집할 수 있다!
 
-EKS 클러스터를 생성할 때, Promethues 지표를 내보내게 할 수 있다.
+EKS 클러스터를 생성할 때, Prometheus 지표를 내보내게 할 수 있다.
 
 ![](/images/development/2023-AWS-reinvent/eks-prometheus-metrics-to-amazon-prometheus.png)
 
@@ -30,7 +30,7 @@ EKS 클러스터를 생성할 때, Promethues 지표를 내보내게 할 수 있
 
 또, 기존에 이미 생성된 EKS 클러스터에서는 요 기능을 활성화 하는 방법을 못 찾았다 😢
 
-### Amazon Promethues & Grafana
+### Amazon Prometheus & Grafana
 
 ![](https://d2908q01vomqb2.cloudfront.net/972a67c48192728a34979d9a35164c1295401b71/2021/04/09/getting-started-blog.png)
 https://aws.amazon.com/blogs/mt/getting-started-amazon-managed-service-for-prometheus/
@@ -291,7 +291,7 @@ Apache Hive에서 대규모 데이터를 다룰 때 발생하는 문제를 해�
   - Delta Lake는 이 부분을 더 확장해서 Unity Catalog로 진화 했다.
 - Snapshot 방식이기 때문에 Time Travel과 Rollback 기능 지원
 
-국내에선 [LINE이 Data Plaform으로 Apache Iceberg를 채택](https://www.youtube.com/watch?v=7y9gNwqLNtU).
+국내에선 [LINE이 Data Platform으로 Apache Iceberg를 채택](https://www.youtube.com/watch?v=7y9gNwqLNtU).
 
 ![](/images/development/2023-AWS-reinvent/delta-iceberg-hudi-compare.png)
 
@@ -403,7 +403,7 @@ AWS의 위성 프로젝트.
 
 ## Amazon Q
 
-웹 콘솔에서 쓸 수 있는 대화형 assitant.
+웹 콘솔에서 쓸 수 있는 대화형 assistant.
 
 써보니까 AWS 관련 질문은 답변을 잘 하고 있음.
 

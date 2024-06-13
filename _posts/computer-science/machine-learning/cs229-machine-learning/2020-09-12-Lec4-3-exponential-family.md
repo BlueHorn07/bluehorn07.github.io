@@ -32,7 +32,7 @@ $$p(y; \phi) = \phi^{y} (1-\phi)^{(1-y)}$$
 
 세상에는 셀수없이 많은<sub>countless</sub> Distribution이 존재할 것이다. 하지만 Gaussian 분포와 Bernoulli 분포 같이 인간은 몇몇 Distribution을 수식의 형태로 정형화하고 분석하였다.
 
-그러던 중 Distribution에서 보이는 어떤 '**패턴**'을 발견하게 되었고, 그 패턴을 가지는 Distribution을 모아 *Familiy*라고 불리는 집합을 제시한다. 이번에 다루는 **Exponential Family**는 그런 특정 패턴을 보이는 확률 분포를 포괄하는 것이다.
+그러던 중 Distribution에서 보이는 어떤 '**패턴**'을 발견하게 되었고, 그 패턴을 가지는 Distribution을 모아 *Family*라고 불리는 집합을 제시한다. 이번에 다루는 **Exponential Family**는 그런 특정 패턴을 보이는 확률 분포를 포괄하는 것이다.
 
 확률 분포가 다음과 같은 꼴을 가지면, "확률 분포가 Exponential Family에 속한다."고 말한다.
 
@@ -95,7 +95,7 @@ $$
   - $a(\eta) = \log{(1+e^{\eta})}$
 - $b(y)$: $1$
 
-즉, 기존의 Bernoulli Distirbution을 적절히 변형해서 $\eta$, $T(y)$, $a(\eta)$, $b(y)$를 잘 설정해줌으로써 Bernoulli Distribution이 Exponential Family에 속함을 보였다!
+즉, 기존의 Bernoulli Distribution을 적절히 변형해서 $\eta$, $T(y)$, $a(\eta)$, $b(y)$를 잘 설정해줌으로써 Bernoulli Distribution이 Exponential Family에 속함을 보였다!
 
 <hr>
 
@@ -179,9 +179,9 @@ GLM을 모델링 할 때 우리는 다음의 3가지를 가정한다.
 
 ### Ordinary Least Squares
 
-지금까지 제시한 GLM의 원리를 GLM의 특수한 경우 중 하나인 **Ordinary Least Sqares**를 살펴봄으로써 곱씹어 보자.
+지금까지 제시한 GLM의 원리를 GLM의 특수한 경우 중 하나인 **Ordinary Least Squares**를 살펴봄으로써 곱씹어 보자.
 
-예측하고자 하는 target varialbe $y$(GLM에서는 response variable이라고도 함.)가 연속적이고, Gaussian $\mathcal{N}(\mu, \sigma^{2})$를 만족한다고 가정할 것이다.
+예측하고자 하는 target variable $y$(GLM에서는 response variable이라고도 함.)가 연속적이고, Gaussian $\mathcal{N}(\mu, \sigma^{2})$를 만족한다고 가정할 것이다.
 
 Gaussian은 Exponential Family에 속하므로, Gaussian의 파라미터 $\mu$는 Exponential Family의 $\eta$가 된다. : $\mu = \eta$
 

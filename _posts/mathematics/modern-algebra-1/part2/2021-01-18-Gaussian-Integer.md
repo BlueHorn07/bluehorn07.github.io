@@ -10,7 +10,7 @@ categories: ["Modern Algebra1"]
 
 <br>
 
-Guassian Integer는 "Euclidean Domain"의 일종이다. Euclidean Domain에 대한 포스트는 [이곳]({{"2021/01/18/Euclidean-domains" | relative_url}})에서 확인할 수 있다.
+Gaussian Integer는 "Euclidean Domain"의 일종이다. Euclidean Domain에 대한 포스트는 [이곳]({{"2021/01/18/Euclidean-domains" | relative_url}})에서 확인할 수 있다.
 
 1. [Gaussian Integers](#gaussian-integers)
 2. [Multiplicative Norms](#multiplicative-norms)
@@ -24,15 +24,15 @@ Guassian Integer는 "Euclidean Domain"의 일종이다. Euclidean Domain에 대�
 
 <div class="notice" markdown="1">
 
-A **<u>Gaussian Intger</u>** is a complex number $a + bi$, where $a, b \in \mathbb{Z}$.
+A **<u>Gaussian Integer</u>** is a complex number $a + bi$, where $a, b \in \mathbb{Z}$.
 
 For Gaussian integer $\alpha = a + bi$, the **<u>norm</u>** $N(\alpha) = a^2 + b^2$.
 
 </div>
 
-위의 Guassian Integer를 모두 모은 집합이 바로 $\mathbb{Z}[i] \subset \mathbb{C}$가 된다.
+위의 Gaussian Integer를 모두 모은 집합이 바로 $\mathbb{Z}[i] \subset \mathbb{C}$가 된다.
 
-우리의 목표는 "Guassian Integers $\mathbb{Z}[i]$가 Euclidean Domain이 됨"을 보이는 것이다!
+우리의 목표는 "Gaussian Integers $\mathbb{Z}[i]$가 Euclidean Domain이 됨"을 보이는 것이다!
 
 <br>
 <hr>
@@ -51,7 +51,7 @@ On $\mathbb{Z}[i]$, the following properties of Norm holds.
 
 </div>
 
-Guassian Norm $N$을 잘 생각해보면, 너무 당연한 명제들이다.
+Gaussian Norm $N$을 잘 생각해보면, 너무 당연한 명제들이다.
 
 <br><span class="statement-title">Lemma 47.3</span><br>
 
@@ -101,7 +101,7 @@ Thus $\mathbb{Z}[i]$ is an Euclidean Domain.
 
 <div class="math-statement" markdown="1">
 
-Note taht for $\beta = b_1 + b_2 i \ne 0$, $N(\beta) = {b_1}^2 + {b_2}^2$, so $N(\beta) \ge 1$.
+Note that for $\beta = b_1 + b_2 i \ne 0$, $N(\beta) = {b_1}^2 + {b_2}^2$, so $N(\beta) \ge 1$.
 
 Then for all non-zero $\alpha, \beta \in \mathbb{Z}[i]$, $N(\alpha) \le N(\alpha)N(\beta) = N(\alpha \beta)$.
 
@@ -168,7 +168,7 @@ $\mathbb{Z}[i]$에선 5가 $5 = (1 + 2i)(1 - 2i)$로 분해가능하다!
 
 ### Multiplicative Norms
 
-이번 섹션에서는 세심하게 정의된 norm은 Integeral Domain $D$의 artihmetic structure를 결정하는 데에 많은 도움을 준다는 사실을 살펴볼 것이다.
+이번 섹션에서는 세심하게 정의된 norm은 Integral Domain $D$의 arithmetic structure를 결정하는 데에 많은 도움을 준다는 사실을 살펴볼 것이다.
 
 *Algebraic Number Theory*에선 이렇게 *norm* 을 통해 대수적인 구조를 파악하는 것이 빈번하다.
 
@@ -259,7 +259,7 @@ $1+2i$ and $1-2i$ are irreducibles.
 <br>
 <hr>
 
-<br><span class="statement-title">Example.</span> Integeral Domain, but not UFD 🔥<br>
+<br><span class="statement-title">Example.</span> Integral Domain, but not UFD 🔥<br>
 
 <div class="math-statement" markdown="1">
 

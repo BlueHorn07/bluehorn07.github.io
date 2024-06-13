@@ -12,7 +12,7 @@ categories: ["Probability"]
 
 <div class="notice" markdown="1">
 
-<span class="statement-title">Theorem.</span> Chebyshev's Theroem<br>
+<span class="statement-title">Theorem.</span> Chebyshev's Theorem<br>
 
 Let $X$ be a RV with $\text{Var}(X) < \infty$ and let $\lambda > 0$, then
 

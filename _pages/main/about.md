@@ -9,7 +9,7 @@ permalink: /about/
 
 대학에서 수강하고 공부한 내용을 저만의 언어로 표현하고 정리하기 위해 블로그를 처음 시작했습니다. 때로는 문제를 해결하고, 때로는 주제들을 서로 엮으면서 관계를 구축하고 세상을 보는 눈을 넓혀갑니다.
 
-현재는 [Bagelcode](https://bagelcode.com/)에서 "데이터 엔지니어"로 일하며 Kubernetes, Airflow, Promethues, Kafka 등등 팀에서 쓰는 기술 스택 위주로 공부하고 있습니다 👨‍🚀
+현재는 [Bagelcode](https://bagelcode.com/)에서 "데이터 엔지니어"로 일하며 Kubernetes, Airflow, Prometheus, Kafka 등등 팀에서 쓰는 기술 스택 위주로 공부하고 있습니다 👨‍🚀
 
 최근에는 회사에서 오픈소스 어플리케이션을 사용하면서 답답한 것들을 느껴서, 오픈소스 프로젝트에 Contribute 하고 있습니다.
 

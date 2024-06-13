@@ -7,7 +7,7 @@ categories: ["Complex Variable"]
 
 2020-2학기, 대학에서 '응용복소함수론' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
-### Comlex Contour
+### Complex Contour
 
 <div class="notice" markdown="1">
 

@@ -198,7 +198,7 @@ When $X_i$'s are iid $N(\mu, \sigma^2)$, it is known that $\bar{X}$ is the most 
 
 Q. 왜 most efficient estimator는 unbiased estimator 중에서 고르는 걸까? biased estimator 중에서 variance가 가장 작은게 있을 수도 있지 않을까?
 
-A. Yes, it is possble that <span class="half_HL">a biased estimator can have smaller variance</span> than an unbiased estimator.
+A. Yes, it is possible that <span class="half_HL">a biased estimator can have smaller variance</span> than an unbiased estimator.
 
 <br/>
 

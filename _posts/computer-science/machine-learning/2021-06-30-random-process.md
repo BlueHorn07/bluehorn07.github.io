@@ -27,7 +27,7 @@ readtime: 20 minutes
 
 <span class="statement-title">Definition.</span> Random Process<br>
 
-A **random process** is a time-varing function, that assigns the outcome of a random experiment to each time instant.
+A **random process** is a time-varying function, that assigns the outcome of a random experiment to each time instant.
 
 </div>
 
@@ -97,7 +97,7 @@ $$
 
 ### Bernoulli Process (2)
 
-이번 문단에서는 \<[Bernoulli Process]({{"/2021/03/25/poisson-distribution#bernoulli-process" | relative_url}})\>에 대한 내용에서 추가적인 주제들을 다룬다. 아직 \<Bernoulli Processs\>가 뭔지 모른다면, 위의 포스트를 먼저 읽어보자!
+이번 문단에서는 \<[Bernoulli Process]({{"/2021/03/25/poisson-distribution#bernoulli-process" | relative_url}})\>에 대한 내용에서 추가적인 주제들을 다룬다. 아직 \<Bernoulli Process\>가 뭔지 모른다면, 위의 포스트를 먼저 읽어보자!
 
 \<Bernoulii Process\>에서 어떤 random variable $Y$를 조건과 함께 정의하면 새로운 확률 분포를 유도할 수 있다! 우리는 \<Binomial distribution\>, \<Geometric distribution\>, \<Negative BIN distribution\>을 \<Bernoulli Process\>로부터 유도해보겠다 😁
 

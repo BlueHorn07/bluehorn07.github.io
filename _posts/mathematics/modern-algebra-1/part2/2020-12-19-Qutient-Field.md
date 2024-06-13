@@ -189,7 +189,7 @@ Domain $D$를 포함하는 어떤 Field가 있다고 하자. 그러면 이 Field
 
 <div class="math-statement" markdown="1">
 
-$L$ is extention field of $D$. 따라서 $D \le L$.
+$L$ is extension field of $D$. 따라서 $D \le L$.
 
 이제 $L$과 $F$ 사이의 homomorphism $\psi$를 정의해보자.
 

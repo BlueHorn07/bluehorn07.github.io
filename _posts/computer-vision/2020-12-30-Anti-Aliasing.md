@@ -61,7 +61,7 @@ $$
 
 <div class="notice" markdown="1">
 
-"**<u>Digial Artifact</u>** is any undesired or unintended alteration in data introduced in a digital process."
+"**<u>Digital Artifact</u>** is any undesired or unintended alteration in data introduced in a digital process."
 
 </div>
 
@@ -104,13 +104,13 @@ Anti-Aliasing은 위 사진처럼 같은 타일이 수업이 반복되는 것을
 
 참고로 `Anti-Aliasing Filter(AAF)`나 `Low-pass Filter(LPF)`나 `blur Filter`나 모두 동일한 말이다.
 
-#### `torchvision.trasnform.GaussianBlue()`
+#### `torchvision.transform.GaussianBlue()`
 
 code-level에서는 이미지를 어떻게 Bluring 할 수 있는지 살펴보자.
 
-`PyTorch`에서는 Gaussian Blur를 할 수 있는 `tranform`을 제공한다.
+`PyTorch`에서는 Gaussian Blur를 할 수 있는 `transform`을 제공한다.
 
-그래서 `torch.utils.data.Dataset`을 정의할 때, `tranform` 항목의 인자로 `GaussianBlur()`를 넘길 수 있다.
+그래서 `torch.utils.data.Dataset`을 정의할 때, `transform` 항목의 인자로 `GaussianBlur()`를 넘길 수 있다.
 
 ``` python
 torchvision.transform.GaussianBlur(kernel_size, sigma=(0.1, 2.0))

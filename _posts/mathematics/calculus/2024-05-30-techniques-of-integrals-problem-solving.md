@@ -185,7 +185,7 @@ $$
 
 적분 함수가 점화식으로 유도되는게 신기했던 적분이다. $\blacksquare$
 
-## Intergal of $(1 - x^2)^n$
+## Integral of $(1 - x^2)^n$
 
 $$
 \int_{-1}^{1} (1 - x^2)^n \, dx
@@ -289,7 +289,7 @@ $$
 \end{aligned}
 $$
 
-# Improper Integral and Limit of Integral may not eqaul
+# Improper Integral and Limit of Integral may not equal
 
 두 적분이 서로 같은지 판단하자.
 

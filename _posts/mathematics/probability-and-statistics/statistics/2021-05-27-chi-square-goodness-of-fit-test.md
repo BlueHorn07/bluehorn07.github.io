@@ -126,9 +126,9 @@ $$
 \chi^2 := \sum_{i=1}^k \frac{(o_i - e_i)^2}{e_i}
 $$
 
-where $o_i$ and $e_i$ are the observed and expected occurences respectively.
+where $o_i$ and $e_i$ are the observed and expected occurrences respectively.
 
-💥 NOTE: <span style="color: red">all expected occurences must be at least 5</span>. <small>만약, 5 이하의 빈도를 가지는 카테고리가 있다면, 그것을 다른 카테고리에 합치는 **pooling**을 수행하라!</small>
+💥 NOTE: <span style="color: red">all expected occurrences must be at least 5</span>. <small>만약, 5 이하의 빈도를 가지는 카테고리가 있다면, 그것을 다른 카테고리에 합치는 **pooling**을 수행하라!</small>
 
 </div>
 
@@ -224,7 +224,7 @@ Reject $H_0$, if $\chi^2 > \chi^2_{\alpha} (\nu)$.
 
 ## Test for Homogeneity
 
-이번에는 \<Goodness-of-fit Test\>를 응용해 <span class="red">각 카테고리에서의 분포가 **균일(homogenous)**한지 검정</span>해보자. 예를 들면, "인종 별로 흡연자와 비흡연자 비율이 동일한가?"와 같은 질문을 검증하는 것이다.
+이번에는 \<Goodness-of-fit Test\>를 응용해 <span class="red">각 카테고리에서의 분포가 **균일(homogeneous)**한지 검정</span>해보자. 예를 들면, "인종 별로 흡연자와 비흡연자 비율이 동일한가?"와 같은 질문을 검증하는 것이다.
 
 
 <div class="img-wrapper">
@@ -233,7 +233,7 @@ Reject $H_0$, if $\chi^2 > \chi^2_{\alpha} (\nu)$.
 
 먼저 무엇을 검정하고자 하는지 명확히 정의해보자.
 
-"Is the party preference homogenous among various regions?"
+"Is the party preference homogeneous among various regions?"
 
 이것을 확인하려면, 'part $i$'을 선호하는 비율이 각 지역마다 모두 동일한지 확인해야 한다. 이것은 아래의 등식 성립함을 말한다.
 
@@ -294,7 +294,7 @@ $$
 
 </div>
 
-위의 증명을 통해 \<Homogeneity Test\>가 \<Independence Test\>와 동치임을 확인했다. 그래서 \<Indepdence Test\>에서 썼던 검정 방식을 그대로 쓰면 된다!!
+위의 증명을 통해 \<Homogeneity Test\>가 \<Independence Test\>와 동치임을 확인했다. 그래서 \<Independence Test\>에서 썼던 검정 방식을 그대로 쓰면 된다!!
 
 DOF도 \<Independence Test\>의 공식으로 구해보면,
 

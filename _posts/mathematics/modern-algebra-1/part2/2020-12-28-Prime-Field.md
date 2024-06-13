@@ -48,7 +48,7 @@ $\textrm{Char}(R) = n > 1$
 <details>
 <div class="math-statement" markdown="1">
 
-Let $\phi$ be a ring homomorphism metioned above.
+Let $\phi$ be a ring homomorphism mentioned above.
 
 Then, $\ker \phi = s \mathbb{Z}$ where $s := \textrm{Char}(R)$.
 

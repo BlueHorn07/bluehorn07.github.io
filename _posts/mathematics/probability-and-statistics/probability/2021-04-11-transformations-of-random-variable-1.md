@@ -282,7 +282,7 @@ $$
 
 </div>
 
-<span class="statement-title">**Exmaple**.</span><br>
+<span class="statement-title">**Example**.</span><br>
 
 Let $X \sim \text{Exp}(\lambda)$, then cdf is $F_X(x) = 1 - e^{-\lambda x}$.
 

@@ -10,7 +10,7 @@ categories: ["Statistics"]
 
 ### Introduction
 
-\<MLE; Maximum Likelihood Estimation\>은 지금까지의 접근법과는 사뭇 다른 접근 방식이다. \<MLE\>는 statistical inference를 수행하는 많은 접근법 중 하나로, statistical apporach에 새로운 철학과 시야를 제공한다 😁
+\<MLE; Maximum Likelihood Estimation\>은 지금까지의 접근법과는 사뭇 다른 접근 방식이다. \<MLE\>는 statistical inference를 수행하는 많은 접근법 중 하나로, statistical approach에 새로운 철학과 시야를 제공한다 😁
 
 <br/>
 

@@ -77,7 +77,7 @@ time-reversal 과정에서 `velocity`가 변한다는 입장을 지지하기 위
 게다가 이것은 "시간이 전자기학에서 절대적인 방향성"을 가진다고 주장하는 꼴이 되고, 나아가 "전자기학에서는 선호되는 '절대적인 정지좌표계'<small>objective preferred rest-frame</small>가 존재한다"고 주장하는 꼴이 된다.<br>
 
 **요약**:<br>
-time-reveral에 대한 설명은 성공했는데, 오히려 "시간의 방향성"을 인정하게 된 상황!
+time-reversal에 대한 설명은 성공했는데, 오히려 "시간의 방향성"을 인정하게 된 상황!
 
 뭔가 혼란이 오는데, 내 생각엔 "`local intrinsic property`가 존재한다"는 거짓인 명제를 바탕으로 논증을 진행해서, "전자기학에선 시간이 절대적인 방향성을 가진다."라는 말도 안 되는 결과가 나온 것 같다.
 
@@ -88,7 +88,7 @@ time-reveral에 대한 설명은 성공했는데, 오히려 "시간의 방향성
 
 그래서, 우리는 전자기장이 *geometric* object이고, 전자기장의 값은 우리가 쓰는 space-time coordinate에 의존하는 값이라고 주장하자. 그리고 전자기장의 값이 velocity 처럼 space-time transformation 상황에서 변하는 값이라고 주장해야 한다.<br>
 
-그리고 이런 *geometric object*에 대해 기술하는 `Differential Goemetry`라는 학문이 있다. 그러니까 이런 학문을 이용해 time-reversal tranformation에서 전자기장의 값과 velocity를 변화를 기술할 수 있고, 나아가 `intrinsic velocity`도 허용할 수 있다.<br><br>
+그리고 이런 *geometric object*에 대해 기술하는 `Differential Goemetry`라는 학문이 있다. 그러니까 이런 학문을 이용해 time-reversal transformation에서 전자기장의 값과 velocity를 변화를 기술할 수 있고, 나아가 `intrinsic velocity`도 허용할 수 있다.<br><br>
 
 결론적으로 time-reversibility로는 `"impetus" theory`를 부정할 수 없게 되었다!! (해피 엔딩)<br>
 

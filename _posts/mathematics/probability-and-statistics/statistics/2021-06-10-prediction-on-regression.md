@@ -22,7 +22,7 @@ Supp. we have sample points $(x_1, y_1), \dots, (x_n, y_n)$ from $Y_i = \beta_0 
 
 Q. Given data $x=x_0$, what can be the mean response $\mu_{Y\mid x_0}$?
 
-이때, $x_0$는 sample point에서 유래하거나 미리 설정한 값이 아니라, varialbe $Y_0$의 값 $y_0$를 predict하는 용도의 값이다.
+이때, $x_0$는 sample point에서 유래하거나 미리 설정한 값이 아니라, variable $Y_0$의 값 $y_0$를 predict하는 용도의 값이다.
 
 $$
 \mu_{Y \mid x_0} = E[Y_0] = E[\beta_0 + \beta_1 x_0 + \epsilon_i] = \beta_0 + \beta_1 x_0 + \cancelto{0}{E[\epsilon_i]}

@@ -79,7 +79,7 @@ imports: [
 
 하지만, 주의할 점은 모듈에서 `process.env.****`를 사용할 때마다 `ConfigModule.forRoot()`를 import 해줘야 한다.
 
-NestJS 공식 Document의 [Configuration](https://docs.nestjs.com/techniques/configuration#use-module-globally)에서 `isGloabl: true` 옵션을 주면 전체 App에서 사용할 수 있다고 하던데... 본인은 옵션을 줘도 안 됬다!! 🤬
+NestJS 공식 Document의 [Configuration](https://docs.nestjs.com/techniques/configuration#use-module-globally)에서 `isGlobal: true` 옵션을 주면 전체 App에서 사용할 수 있다고 하던데... 본인은 옵션을 줘도 안 됬다!! 🤬
 
 <br/>
 

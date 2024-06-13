@@ -63,15 +63,15 @@ $$
 
 <hr>
 
-#### Image of Linear trasnform; Square Domain
+#### Image of Linear transform; Square Domain
 
-The iamge of the set $\\{ x + ig : 0 \le x \le 1, \; 0 \le y \le 2 \\}$ under the map
+The image of the set $\\{ x + ig : 0 \le x \le 1, \; 0 \le y \le 2 \\}$ under the map
 
 $$
 w = (1+i)z + 2
 $$
 
-trasnform $w$를 두 단계로 나누어 실시하자.
+transform $w$를 두 단계로 나누어 실시하자.
 
 1. $w_1 = (1+i)z$
 2. $w_2 = w_1 + 2$
@@ -123,7 +123,7 @@ $$
 
 ### Images of inversion mapping
 
-#### (1) $x=c$ unser $w = \frac{1}{z}$
+#### (1) $x=c$ under $w = \frac{1}{z}$
 
 <div class="img-wrapper">
   <img src= "{{ "/images/mathematics/complex-variable/inversion_mapping_2.png" | relative_url }}" style="width:65%;">

@@ -16,7 +16,7 @@ ElasticSearch에서 샤드(Shard)를 구성하는 루씬(Lucene) Index와 역색
   <img src="{{ "/images/development/lucene-segment.png" | relative_url }}" width="100%">
 </div>
 
-ElasticSearch Inex는 여러 샤드(Shard)로 나눠진다. 샤드는 데이터를 나눈 일종의 파티션(Partition)이다.
+ElasticSearch Index는 여러 샤드(Shard)로 나눠진다. 샤드는 데이터를 나눈 일종의 파티션(Partition)이다.
 
 하나의 ES 샤드는 하나의 Lucene Index를 가진다. 사실 ES 샤드는 Lucene Index를 확장한 것이나 다름 없다. 거의 비슷한 존재라고 보면 된다!
 
@@ -28,7 +28,7 @@ Lucene은 이상적인 준-실시간(Near-realtime) 검색 기능을 제공하�
 
 ```python
 class LuSegment:
-  self.documents = [Document(1), Docuemtn(2), ...]
+  self.documents = [Document(1), Document(2), ...]
   self.inverted_index = InvertedIndex()
 
 class LuIndex:
@@ -41,7 +41,7 @@ Lucene Index의 검색은 인덱스가 가진 N개의 Lucene Segment에서 검�
 
 ```python
 class LuSegment:
-  self.documents = [Document(1), Docuemtn(2), ...]
+  self.documents = [Document(1), Document(2), ...]
   self.inverted_index = InvertedIndex()
 
   def search(self, qry: str):
@@ -73,7 +73,7 @@ class LuIndex:
 
 ```python
 class LuSegment:
-  self.documents = [Document(1), Docuemtn(2), ...]
+  self.documents = [Document(1), Document(2), ...]
   self.inverted_index = InvertedIndex()
 
   def __init__(self, document: Document):
@@ -95,11 +95,11 @@ class LuIndex:
 
 ```python
 class LuSegment:
-  self.documents = [Document(1), Docuemtn(2), ...]
+  self.documents = [Document(1), Document(2), ...]
   self.inverted_index = InvertedIndex()
 
-  def __init__(self, seg1: Segmenet, seg2: Segment):
-    self.documents = seg1.documenets + seg2.documents
+  def __init__(self, seg1: Segment, seg2: Segment):
+    self.documents = seg1.documents + seg2.documents
     self.inverted_index = InvertedIndex(self.documents)
 
 
@@ -129,7 +129,7 @@ Lucene Index에서 Document와 Lucene Segment는 불변성(immutability)를 가�
 
 ```python
 class LuSegment:
-  self.documents = [Document(1), Docuemtn(2), ...]
+  self.documents = [Document(1), Document(2), ...]
   self.inverted_index = InvertedIndex()
 
   def delete(self, doc_id: str):
@@ -139,7 +139,7 @@ class LuSegment:
 
   def __init__(self, seg1: Segment, seg2: Segment):
     self.documents = []
-    for document in (seg1.documenets + seg2.documents):
+    for document in (seg1.documents + seg2.documents):
       if document.is_delete:
         continue
       self.documents.append(document)

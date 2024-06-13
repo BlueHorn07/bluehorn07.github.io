@@ -25,7 +25,7 @@ toc_sticky: true
 
 <br/>
 
-- [Random Variables and Probability Distriubtions]({{"2021/03/05/random-variable-and-prob-distribution" | relative_url}})
+- [Random Variables and Probability Distributionss]({{"2021/03/05/random-variable-and-prob-distribution" | relative_url}})
   - Random Variable $X$
   - Probability Distributions
     - PMF $f(x)$ & CDF $F(x)$ for Discrete RV
@@ -119,7 +119,7 @@ toc_sticky: true
   - Test Statistic
     - Rejection Region or Critical Region; $X \ge C$
     - Critical Value; $C$
-  - [Type 1 Error & Type 2 Error]({{"/2021/05/18/introduction-to-hypothesis-tests#t1-erorr--t2-error" | relative_url}})
+  - [Type 1 Error & Type 2 Error]({{"/2021/05/18/introduction-to-hypothesis-tests#t1-error--t2-error" | relative_url}})
     - [Significance level; Size of Test; 유의 수준 $\alpha$]({{"/2021/05/18/introduction-to-hypothesis-tests#significance-level-alpha" | relative_url}}) 🔥
     - [Power of Test; 검정력 $\gamma(\theta)$]({{"/2021/05/18/introduction-to-hypothesis-tests#power-of-test-gammatheta" | relative_url}}) 🔥
     - [p-value; 유의 확률]({{"/2021/05/18/introduction-to-hypothesis-tests#p-value" | relative_url}}) 🔥🔥
@@ -139,7 +139,7 @@ toc_sticky: true
   - Least Square Method
     - unbiased regression coefficients
   - R-square $R^2$; 결정 계수
-- [Test on Regession]({{"/2021/06/09/test-on-regression" | relative_url}})
+- [Test on Regression]({{"/2021/06/09/test-on-regression" | relative_url}})
   - Distribution of Regression Coefficients $B_0$ and $B_1$
   - Estimator of $\sigma^2$
 - [Prediction on Regression]({{"/2021/06/10/prediction-on-regression" | relative_url}})

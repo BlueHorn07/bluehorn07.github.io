@@ -14,7 +14,7 @@ categories: ["Machine Learning"]
 
 <span class="statement-title">Definition.</span> basis function; 기저 함수<br>
 
-$y(\mathbf{x}, \mathbf{w}) = \mathbf{w} \cdot \mathbf{x}$인 Linear Regression식에 input $\mathbf{x}$를 tranform 하는 함수를 말함.
+$y(\mathbf{x}, \mathbf{w}) = \mathbf{w} \cdot \mathbf{x}$인 Linear Regression식에 input $\mathbf{x}$를 transform 하는 함수를 말함.
 
 $$
 y(\mathbf{x}, \mathbf{w}) = \mathbf{w} \cdot \phi(\mathbf{x})

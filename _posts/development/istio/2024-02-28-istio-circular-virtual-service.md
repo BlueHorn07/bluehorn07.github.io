@@ -168,7 +168,7 @@ spec:
 
 일단 Envoy Proxy는 앱에서 in/out 하는 트래픽을 대신 컨트롤 하는 녀석이다. 그래서 `nginx`가 `helloworld-v2.default`에 요청을 보낸다면, 현재 Service Mesh에 정의된 `VirtualService` 중에 저곳을 `hosts`로 갖는 `VirtualService`를 찾은 후, 그 `ViritualService`의 규칙을 적용한다.
 
-이때, Envoy Proxy가 트래픽을 `helloworld-v1.default`로 보내라고 정했으면 추가적인 evalution은 더이상 없다! **즉, 다시 `helloworld-v1.default`를 `hosts`로 갖는 `VirtualService`를 찾지는 않는다는 것이다.**
+이때, Envoy Proxy가 트래픽을 `helloworld-v1.default`로 보내라고 정했으면 추가적인 evaluation은 더이상 없다! **즉, 다시 `helloworld-v1.default`를 `hosts`로 갖는 `VirtualService`를 찾지는 않는다는 것이다.**
 
 ## 나가는 트래픽에는 VirtualService 규칙을 적용
 
@@ -219,6 +219,6 @@ $ while true; do curl "http://helloworld-v2.default.svc.cluster.local:5000/hello
 
 신기한 점은 분명 요청은 `helloworld-v2`로 보냈는데, `helloworld-v1`의 DR 룰에 의해 upstream overflow가 발생 했다는 것이다.
 
-또, 만약 Istio Service Mesh 바깥의 Pod이 DR이 설정된 `helloworld-v1.default`에 요청을 보내도, 똑같이 이 max http request의 규칙을 적용 받는 것이다!! 이 또한 `DestinaionRule`이 트래픽을 받는 쪽의 Envoy Proxy에서 적용 되기 때문이다!
+또, 만약 Istio Service Mesh 바깥의 Pod이 DR이 설정된 `helloworld-v1.default`에 요청을 보내도, 똑같이 이 max http request의 규칙을 적용 받는 것이다!! 이 또한 `DestinationRule`이 트래픽을 받는 쪽의 Envoy Proxy에서 적용 되기 때문이다!
 
 즉, 이 경우 트래픽을 받는 쪽의 `DestinationRule`이 적용된 거라고 볼 수 있다.

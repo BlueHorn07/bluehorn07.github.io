@@ -50,7 +50,7 @@ $\equiv$ $a = bu$ for some unit $u$.
 
 <br>
 
-<span class="statement-title">Example.</span> from [StackExchnage](https://math.stackexchange.com/a/1312571) <br>
+<span class="statement-title">Example.</span> from [StackExchange](https://math.stackexchange.com/a/1312571) <br>
 
 In the Ring of Integers $\mathbb{Z}$, the units are $1$ and $-1$.
 

@@ -57,7 +57,7 @@ CA(Certificate Authority)는 신뢰할 만한 인증 기관으로, 서버 인증
 - 인증서 소유자의 공개키
   - 당연히 소유자의 개인키는 노출되지 않는다!
 - 인증서의 유효기간
-- <span class="red">**CA의 서명(signiture)**</span>
+- <span class="red">**CA의 서명(signature)**</span>
   - 소유자의 공개키를 CA의 비밀키로 암호화
   - **해커가 절대 위조할 수 없음!**
 - CA 서명의 해싱 알고리즘
@@ -70,10 +70,10 @@ CA(Certificate Authority)는 신뢰할 만한 인증 기관으로, 서버 인증
 
 ```py
 server_public_key = "12345"
-CA_signiture = "abcdefg"
+CA_signature = "abcdefg"
 CA_hash_function = "SHA-256"
 
-hashed1 = do_decrypt(CA_signiture, CA_public_key)
+hashed1 = do_decrypt(CA_signature, CA_public_key)
 hashed2 = do_hashing(server_public_key, CA_hash_function)
 
 if hashed1 == hashed2:

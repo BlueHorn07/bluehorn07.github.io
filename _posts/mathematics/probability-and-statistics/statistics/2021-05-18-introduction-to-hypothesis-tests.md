@@ -19,7 +19,7 @@ A \<**statistical hypothesis**\> is a <span class="half_HL">statement about the 
 
 <span class="statement-title">Example.</span><br>
 
-Supp. we have a p-coin, I belive that it is a fair coin, on the other hand, you think it is a biased coin, in particular, you believe that $p=0.7$. What can we do?
+Supp. we have a p-coin, I believe that it is a fair coin, on the other hand, you think it is a biased coin, in particular, you believe that $p=0.7$. What can we do?
 
 - $H_0: p = 0.5$
 - $H_1: p = 0.7$
@@ -57,7 +57,7 @@ Then, we can use $X$ as a \<Test Statistic\>!
 
 <hr/>
 
-# T1 Erorr & T2 Error
+# T1 Error & T2 Error
 
 <big>Q. How to choose $C$?</big>
 
@@ -246,7 +246,7 @@ $$
 P(\text{BIN}(20, 0.7) \le 14) = 0.392 \approx 0.4
 $$
 
-If we fail to reject $H_0$, then we can't accept $H_0$ because $P(T2)$ is too hight to not accept $H_0$.
+If we fail to reject $H_0$, then we can't accept $H_0$ because $P(T2)$ is too height to not accept $H_0$.
 
 </div>
 
@@ -258,7 +258,7 @@ If we fail to reject $H_0$, then we can't accept $H_0$ because $P(T2)$ is too hi
 
 <span class="statement-title">Solve.</span><br>
 
-The critical point $C$ is same as the previous one, because $H_0$ doens't change. → $C=14$
+The critical point $C$ is same as the previous one, because $H_0$ doesn't change. → $C=14$
 
 Now, T2 Error is
 
@@ -290,7 +290,7 @@ $$
 
 즉, \<power of test\>는 Null hypo $H_0$가 거짓일 때, $H_0$를 기각시키는 확률이다!
 
-\<검정력\>은 T2 Erorr가 클수록 그 값이 작아진다! 그래서 \<검정력\>을 높이고 싶다면, T2 Error를 줄이는 적절한 Alternative Hypothesis $H_1: \theta = \theta_1$를 제시해야 한다.
+\<검정력\>은 T2 Error가 클수록 그 값이 작아진다! 그래서 \<검정력\>을 높이고 싶다면, T2 Error를 줄이는 적절한 Alternative Hypothesis $H_1: \theta = \theta_1$를 제시해야 한다.
 
 이 \<power of test\>는 아래 상황일 때, 그 값이 커진다.
 
@@ -302,7 +302,7 @@ $$
 
 ## p-value
 
-지금까지 우리는 \<significance level\> $\alpha$ 값을 $0.1$, $0.05$ 등으로 설정하고, 이에 따른 \<critical value\> $C$를 구하고, 이걸 Test Statitics $X$와 비교해서 $H_0$를 기각할지 결정했다. 그런데 $\alpha$ 값을 설정하지 않고, Critical Value $C$를 reject이 가능한 경계인 $C = X$로 설정한 후, $\alpha$을 역으로 구할 수 있지 않을까? \<p-value\>가 딱 그런 녀석이다!
+지금까지 우리는 \<significance level\> $\alpha$ 값을 $0.1$, $0.05$ 등으로 설정하고, 이에 따른 \<critical value\> $C$를 구하고, 이걸 Test Statistics $X$와 비교해서 $H_0$를 기각할지 결정했다. 그런데 $\alpha$ 값을 설정하지 않고, Critical Value $C$를 reject이 가능한 경계인 $C = X$로 설정한 후, $\alpha$을 역으로 구할 수 있지 않을까? \<p-value\>가 딱 그런 녀석이다!
 
 <div class="definition" markdown="1">
 

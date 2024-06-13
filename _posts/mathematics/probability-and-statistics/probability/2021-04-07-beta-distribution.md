@@ -155,7 +155,7 @@ $$
 
 <br/>
 
-3\. Expection & Variance
+3\. Expectation & Variance
 
 If $X \sim \text{Beta}(\alpha, \beta)$, then
 
@@ -182,7 +182,7 @@ P(Y \le y) &= P(X_1 \le y, X_2 \le y, X_3 \le y) \\
 \end{aligned}
 $$
 
-따라서, pdf는 $f(y) = 3y^2$가 되고 이것은 Beta Distriubtion인 $\text{Beta}(3, 1)$의 pdf와 동일하다!!
+따라서, pdf는 $f(y) = 3y^2$가 되고 이것은 Beta Distributions인 $\text{Beta}(3, 1)$의 pdf와 동일하다!!
 
 $$
 B(3, 1) = \frac{\Gamma(3)\Gamma(1)}{\Gamma(3+1)} = \frac{2! \; 0!}{3!} = \frac{1}{3}
@@ -198,6 +198,6 @@ $$
 
 # 맺음말
 
-이어지는 포스트에서는 \<**Weibull Distribution**\>을 통해 \<결함률; Failture rate\>와 \<신뢰도; Reliability\>을 모델링한다. 이 부분은 정규 수업에서는 소개만 하고 넘어간 부분이기 때문에 관심이 있거나 꼭 필요한게 아니라면 건너 뛰어도 괜찮다.
+이어지는 포스트에서는 \<**Weibull Distribution**\>을 통해 \<결함률; Failure rate\>와 \<신뢰도; Reliability\>을 모델링한다. 이 부분은 정규 수업에서는 소개만 하고 넘어간 부분이기 때문에 관심이 있거나 꼭 필요한게 아니라면 건너 뛰어도 괜찮다.
 
 👉 [Weibull Distribution (Optional)]({{"/2021/04/10/weibull-distribution" | relative_url}})

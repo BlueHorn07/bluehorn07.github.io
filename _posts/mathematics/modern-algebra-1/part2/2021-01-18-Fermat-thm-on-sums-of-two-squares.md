@@ -10,7 +10,7 @@ categories: ["Modern Algebra1"]
 
 <br>
 
-앞에서 다룬 Guassian Integer와 Multiplicative Norm에서의 현상을 잘 이용하면, "페르마의 두 제곱수 정리"를 증명할 수 있다!!
+앞에서 다룬 Gaussian Integer와 Multiplicative Norm에서의 현상을 잘 이용하면, "페르마의 두 제곱수 정리"를 증명할 수 있다!!
 
 <br>
 <hr>

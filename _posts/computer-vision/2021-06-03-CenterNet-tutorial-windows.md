@@ -87,7 +87,7 @@ nms.c(8192): warning C4244: '함수': 'double'에서 'float'(으)로 변환하�
 
 먼저, 기존 \<CenterNet\>의 `src/lib/models/networks`의 `DCNv2` 폴더를 삭제한다. \<CeterNet\>dms `PyTorch 0.4.1`이라는 아주 구시대 버전의 PyTorch를 쓰고 있고, CenterNet의 레포에는 이것에 맞춘 DCNv2 모델이 들어있다. 그래서 CenterNet 레포의 DCNv2는 `PyTorch 1.x`대와는 전혀 호환 되지 않는다.
 
-['ausk'님의 이슈](https://github.com/xingyizhou/CenterNet/issues/7)에서는 DCNv2의 [origianl repo](https://github.com/CharlesShang/DCNv2)를 다운 받으라고 하지만, 이것 역시 본인은 동작하지 않았다. 대신 아래의 DCNv2 레포를 다운 받아서 기존 DCNv2의 폴더에 넣도록 하자!
+['ausk'님의 이슈](https://github.com/xingyizhou/CenterNet/issues/7)에서는 DCNv2의 [original repo](https://github.com/CharlesShang/DCNv2)를 다운 받으라고 하지만, 이것 역시 본인은 동작하지 않았다. 대신 아래의 DCNv2 레포를 다운 받아서 기존 DCNv2의 폴더에 넣도록 하자!
 
 👉 [jinfagang/DCNv2_latest](https://github.com/jinfagang/DCNv2_latest) <span style="color: grey"><small>// compatible with PyTorch 1.8+</small></span>
 

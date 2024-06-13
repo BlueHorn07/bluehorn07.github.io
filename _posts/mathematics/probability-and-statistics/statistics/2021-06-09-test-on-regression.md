@@ -50,7 +50,7 @@ $$
 
 is a linear combination of normal random variables $y_i$s, thus $B_1$ is also a normal RV.
 
-Hense, we only need to find the mean and the variance of $B_1$.
+Hence, we only need to find the mean and the variance of $B_1$.
 
 <br/>
 

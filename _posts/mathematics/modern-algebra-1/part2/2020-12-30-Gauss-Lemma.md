@@ -1,5 +1,5 @@
 ---
-title: "Guass's Lemma"
+title: "Gauss's Lemma"
 toc: true
 toc_sticky: true
 categories: ["Modern Algebra1"]
@@ -155,7 +155,7 @@ that is $p \mid a_i$ for $i < r$, but $p \not\mid a_r$.
 
 Similarly, let $b_s$ be the first coefficient of $g(x)$ not divisible by $p$.
 
-The cofficient of $x^{r+s}$ in $h(x) = f(x)g(x)$ is
+The coefficient of $x^{r+s}$ in $h(x) = f(x)g(x)$ is
 
 $$
 c_{r+s} = (a_0 b_{r+s} + \cdots + a_{r-1} b_{s+1}) + a_r b_s + (a_{r+1} b_{s-1} \cdots a_{r+s} b_0)
@@ -177,7 +177,7 @@ $p \mid a_i$ for $i < r$이므로 $p \mid (a_0 b_{r+s} + \cdots + a_{r-1} b_{s+1
 <br>
 <hr>
 
-이제 이 Guass's Lemma를 활용해 본래의 목적인
+이제 이 Gauss's Lemma를 활용해 본래의 목적인
 
 <div style="text-align:center">
 

@@ -50,7 +50,7 @@ $$
 \end{aligned}
 $$
 
-2\. succesive case
+2\. successive case
 
 $$
 \begin{aligned}
@@ -272,7 +272,7 @@ $$
 
 이어지는 포스트에서는 감마 분포의 특수한 경우로 꼽히는 \<Chi-square distribution\>, \<Beta distribution\>과 \<Log-normal distribution\>에 대해 다룬다 🤩
 
-👉 [Chi-sqaure, Beta and Log-normal Distribution]({{"/2021/04/06/chi-and-beta-and-lognormal-distribution" | relative_url}})
+👉 [Chi-square, Beta and Log-normal Distribution]({{"/2021/04/06/chi-and-beta-and-lognormal-distribution" | relative_url}})
 
 <hr/>
 

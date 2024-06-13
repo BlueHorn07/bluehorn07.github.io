@@ -90,7 +90,7 @@ Q. What is the probability of $P\left( \overline{X} > 7\right)$?
 
 Note that $X_1, \dots, X_n \sim \text{Ber}(p)$, and then $(X_1 + \cdots + X_n) \sim \text{BIN}(n, p)$.
 
-When $n$ is larget, then $(X_1 + \cdots + X_n) \rightarrow N(\mu, \sigma^2)$.
+When $n$ is largest, then $(X_1 + \cdots + X_n) \rightarrow N(\mu, \sigma^2)$.
 
 Let's standardize it, then
 
@@ -293,7 +293,7 @@ $$
 
 # 맺음말
 
-이번 포스트에서는 표본평균 $\bar{X}$에 대한 분포인 "Sampling Distribuion of Mean"을 보았다. 또, 표본평균 $\bar{X}$의 분포를 파악하고, 활용하는데 필요한 \<WLLN\>과 \<CLT\>를 살펴보았다.
+이번 포스트에서는 표본평균 $\bar{X}$에 대한 분포인 "Sampling Distribution of Mean"을 보았다. 또, 표본평균 $\bar{X}$의 분포를 파악하고, 활용하는데 필요한 \<WLLN\>과 \<CLT\>를 살펴보았다.
 
 이어지는 포스트에서는 "평균"과 함께, 확률 분포의 특성을 결정하는 parameter인 **"분산(Variance)"**이 Random Sample에서 어떻게 유도되는지 살펴볼 예정이다.
 

@@ -8,7 +8,7 @@ categories: ["Modern Algebra1"]
 
 2020-2학기, 대학에서 '현대대수1' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
-primitive function에 대한 곱이 닫혀있음을 말하는 **<u>Guass's Lemma</u>**는 [이곳]({{"2020/12/30/Guass-Lemma" | relative_url}})에서 볼 수 있습니다.
+primitive function에 대한 곱이 닫혀있음을 말하는 **<u>Gauss's Lemma</u>**는 [이곳]({{"2020/12/30/Gauss-Lemma" | relative_url}})에서 볼 수 있습니다.
 
 <br>
 <hr>
@@ -82,7 +82,7 @@ $$
 (dc)g(x) = (c_1c_2)r_2(x)s_2(x)
 $$
 
-and by "Lemman 45.25<small>(Guass's Lemma)</small>", $r_2(x)s_2(x)$ is primitive.
+and by "Lemman 45.25<small>(Gauss's Lemma)</small>", $r_2(x)s_2(x)$ is primitive.
 
 By "Lemma 45.23", $c_1 c_2 = dcu$ for some unit $u$ in $D$. <br>
 (non-constant인 $(dc)g(x)$를 content와 primitive로 분리하면, $dcu$와 $r_2(x)s_2(x)$의 파트로 분리된다는 말이다.)
@@ -103,7 +103,7 @@ $$
 
 이는 $f(x) \in D[x]$에서 irreducible이라, $F[x]$에서도 irreducible임을 보장한다.
 
-또한, 만약 $f(x) \in D[x]$에서 primitve이고, $F[x]$에서 irreducible이라면, $f(x)$는 $D[x]$에서도 irreducible이다. 왜냐하면, $D[x] \subseteq F[x]$이기 때문!
+또한, 만약 $f(x) \in D[x]$에서 primitive이고, $F[x]$에서 irreducible이라면, $f(x)$는 $D[x]$에서도 irreducible이다. 왜냐하면, $D[x] \subseteq F[x]$이기 때문!
 
 $\blacksquare$
 
@@ -121,7 +121,7 @@ If $D$ is a UFD, and $F$ is Quotient field of $D$,
 
 then a non-constant $f(x) \in D[x]$ factors into a product of two polynomials of lower degrees $r$ and $s$ in $F[x]$
 
-$\iff$ it has a factorization into polynomials of the same degress $r$ and $s$ in $D[x]$.
+$\iff$ it has a factorization into polynomials of the same degrees $r$ and $s$ in $D[x]$.
 
 </div>
 
@@ -159,7 +159,7 @@ $D[x] \subseteq F[x]$이므로 명제의 역도 자연스럽게 성립한다.
 
 Let $f(x) \in D[x]$ for a non-zero and non-unit $f(x)$.
 
-If $f(x)$ has zero-degress, we are done.
+If $f(x)$ has zero-degrees, we are done.
 
 Supp. that $\deg f(x) > 0$.
 
@@ -233,4 +233,4 @@ $F[x, y]$에서 상수항이 0인 모든 polynomial을 모은 집합 $N$을 생�
 
 <br>
 
-<span class="statement-title">Exercies 46.12.</span> $\mathbb{Z}[x]$ is UFD, but not a PID.
+<span class="statement-title">Exercise 46.12.</span> $\mathbb{Z}[x]$ is UFD, but not a PID.

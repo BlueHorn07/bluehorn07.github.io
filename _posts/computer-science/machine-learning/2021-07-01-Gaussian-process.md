@@ -171,7 +171,7 @@ finite domain에서 $h(x)$를 finite random vector로 이해한 것처럼, infin
 
 <div class="math-statement" markdown="1">
 
-For covariance function $k(x, x')$ and for any set of elts $x_1, \dots, x_m \in \mathcal{X}$, the resulting covariance matrix must be statisfy the properties of covariance matrix.
+For covariance function $k(x, x')$ and for any set of elts $x_1, \dots, x_m \in \mathcal{X}$, the resulting covariance matrix must be satisfy the properties of covariance matrix.
 
 $$
 K = \begin{bmatrix}
@@ -218,7 +218,7 @@ $$
 
 자! 여기까지 \<Gaussian Process\>에 대해 살펴보았다. distribution over random vector의 개념을 확장한 distribution over random function 그리고 그것을 infinite dimension까지 확장한 **Gaussian Process**까지!! 이번 포스트에서 다룬 내용이 결코 쉽지는 않지만, 공부할 가치는 충분한 주제였다 💪
 
-다음 포스트에선 GP를 이용해 Regression model을 만드는 \<Gaussian Process Regresssion\>에 대해 살펴본다!!
+다음 포스트에선 GP를 이용해 Regression model을 만드는 \<Gaussian Process Regression\>에 대해 살펴본다!!
 
 👉 [Gaussian Process Regression]({{"/2021/09/21/Gaussian-Process-Regression" | relative_url}})
 

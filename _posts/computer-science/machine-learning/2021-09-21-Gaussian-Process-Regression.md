@@ -143,7 +143,7 @@ $$
 \end{aligned}
 $$
 
-유도 과정은 [conditional distribution of multi-variate Guassiaion distribution](https://en.wikipedia.org/wiki/Multivariate_normal_distribution#Conditional_distributions)에 대한 식을 그대로 사용하면 된다. 🙌
+유도 과정은 [conditional distribution of multi-variate Gaussiaion distribution](https://en.wikipedia.org/wiki/Multivariate_normal_distribution#Conditional_distributions)에 대한 식을 그대로 사용하면 된다. 🙌
 
 Boom! 이것으로 우리는 **posterior predictive distribution**을 얻었다!! 🤩 이전의 [Bayesian Linear Regression]({{"/2021/09/06/bayesian-regression#bayesian-linear-regression" | relative_url}})의 것과 비교해보면 GP Regression은 정말 계산적으로도 정말 간단한 형태임을 확인할 수 있다 👍
 

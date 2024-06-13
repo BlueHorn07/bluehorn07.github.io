@@ -91,7 +91,7 @@ $$
 a_n=\frac{1}{2{\pi}i} \oint_{C} {\frac{f(w)}{(w-z_0)^{n+1}} dw} \quad \textrm{and} \quad b_n=\frac{1}{2{\pi}i} \oint_{C} {f(w)(w-z_0)^n-1 dw}
 $$
 
-where $C$ is any simle closed contour around $z_0$ with CCW orientation that lies in $0<\lvert z-z_0\rvert < R$
+where $C$ is any simple closed contour around $z_0$ with CCW orientation that lies in $0<\lvert z-z_0\rvert < R$
 
 <br>
 
@@ -244,6 +244,6 @@ $$
 
 <hr>
 
-[^1]: Talyer 정리에 의하면, anayltic 함수는 양의 차수를 가진 다항식으로 전개할 수 있으므로 $b_1=0$이다. 그래서 residue thm은 singular point 여부와 상관없이 기술할 수도 있다.
+[^1]: Talyer 정리에 의하면, analytic 함수는 양의 차수를 가진 다항식으로 전개할 수 있으므로 $b_1=0$이다. 그래서 residue thm은 singular point 여부와 상관없이 기술할 수도 있다.
 
 

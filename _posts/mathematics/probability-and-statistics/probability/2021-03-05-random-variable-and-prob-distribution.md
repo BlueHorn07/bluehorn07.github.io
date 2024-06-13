@@ -1,5 +1,5 @@
 ---
-title: "Random Variables and Probability Distriubtions"
+title: "Random Variables and Probability Distributionss"
 toc: true
 toc_sticky: true
 categories: ["Probability"]
@@ -39,7 +39,7 @@ If a sample space $S$ contains a finite or an unending sequence of possibilities
 
 If a sample space $S$ contains an infinite number of possibilities or equal to the number of points on a line segment, it is called a \<continuous sample space\>.
 
-즉, Sample Space $S$의 Cardinality에 따라 **"Discrete"**이냐 **"Continous"**가 나뉜다.
+즉, Sample Space $S$의 Cardinality에 따라 **"Discrete"**이냐 **"Continuous"**가 나뉜다.
 
 <br/>
 
@@ -47,11 +47,11 @@ If a sample space $S$ contains an infinite number of possibilities or equal to t
 
 A random variable is called a \<discrete random variable\>, if its set of possible outcomes it **countable**.
 
-<br><span class="statement-title">Definition.</span> Continous Random Variable<br>
+<br><span class="statement-title">Definition.</span> Continuous Random Variable<br>
 
 A random variable is called a \<continuous random variable\>, if its set of possible outcomes it **uncountable**.
 
-즉, Random Variable의 치역의 Cardinality에 따라  **"Discrete"**이냐 **"Continous"**가 나뉜다.
+즉, Random Variable의 치역의 Cardinality에 따라  **"Discrete"**이냐 **"Continuous"**가 나뉜다.
 
 <hr/>
 
@@ -71,7 +71,7 @@ The set of ordered pairs $(x, f(x))$ is a \<**probability function**\>, \<**prob
 2. $$\sum_x f(x) = 1$$
 3. $$P(X = x) = f(x)$$
 
-위와 같은 prabability function $f(x)$는 RV $X$가 $x$에서 갖는 \<확률 probability\>을 출력해준다.
+위와 같은 probability function $f(x)$는 RV $X$가 $x$에서 갖는 \<확률 probability\>을 출력해준다.
 
 <div class="img-wrapper">
   <img src="{{ "/images/mathematics/probability-and-statistics/pmf-1.jpg" | relative_url }}" width="320px">

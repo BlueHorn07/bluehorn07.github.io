@@ -237,4 +237,4 @@ Therefore, $\mathcal{U}(F[x]) = F^{\*}$.
 
 $\mathbb{Z}$와 $F[x]$는 대표적인 Euclidean Domain이다.
 
-다음 포스트에선 조금 특별하고 중요한 Euclidean Domain인 "Guassian Integer"에 대해 다룬다. [link]({{"2021/01/18/Gaussian-Integer" | relative_url}})
+다음 포스트에선 조금 특별하고 중요한 Euclidean Domain인 "Gaussian Integer"에 대해 다룬다. [link]({{"2021/01/18/Gaussian-Integer" | relative_url}})

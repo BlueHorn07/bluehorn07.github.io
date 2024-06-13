@@ -21,7 +21,7 @@ categories: ["Differential Equations", "Data Mining"]
 
 <hr/>
 
-### Fourier Trasnform
+### Fourier Transform
 
 주기가 $2L$인 주기함수 $x(t)$를 아래와 같이 [\<푸리에 급수\>]({{"/2021/06/08/fourier-series" | relative_url}}) 형태로 표현할 수 있다.
 

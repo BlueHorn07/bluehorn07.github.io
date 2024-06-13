@@ -22,7 +22,7 @@ Science and Necessity, Bigelow & Pargetter, 1991<br>
 변화란 "서로 다른 시간에 서로 다른 성질들의 배열이 점유하는 것 <small>*change is nothing more than the possession of a sequence of different properrties at different times*</small>"이라고 주장하는 `Doctrine of Changing Form`과 이것과 반대되는 `Doctrine of Change of Form`에 대해서 살펴볼 것인다. (솔직히 이름이 너무 비슷하다 ㅜㅠ)<br>
 
 그래서 좀더 알아듣기 쉽게,<br>
-`Doctrine of Chaning Form` = `Ockhamist` 또는 `오컴파`<br>(Ockham과 그의 추종자들이 주창해서)<br>
+`Doctrine of Changing Form` = `Ockhamist` 또는 `오컴파`<br>(Ockham과 그의 추종자들이 주창해서)<br>
 `Doctrine of Changing Form` = `Doctrine of Flux` = `Flux파`<br>(왜 이렇게 부르는지는 다음 설명을 들어보자!)<br>
 라고 부를 것이다. <br>
 
@@ -30,7 +30,7 @@ Science and Necessity, Bigelow & Pargetter, 1991<br>
 
 두 주장은 `운동`<small>*motion: change of place*</small>에 대해서도 서로 다른 의견을 제시한다!!<br>
 
-`오컴파`는 운동을  "*motion is the occupation of successive palces at successive times*" 이라고 주장하며,<br>
+`오컴파`는 운동을  "*motion is the occupation of successive places at successive times*" 이라고 주장하며,<br>
 `Flux파`는 "*moving body possesses not only a position, but also what amounts to an instantaneous velocity*" 이라고 주장한다. [^1]<br>
 
 `오컴파`와 `Flux파`가 vector를 다루는 방식이 약간 다른데, `Flux파`가 우리가 평소 다루는 방식대로 방향과 함께 (순간) 속도를 다룬다면 `오컴파`는 물체의 위치 변화의 배열<small>*sequence of position*</small>로 vector의 방향을 기술하고, 뒤이어 *mathematical limit*를 사용해 `순간 속도`라 불리는 것을 정의한다. `오컴파`도 어찌어찌 순간 속도를 정의는 했지만 이것을 물체의 내재적 속성<small>*intrinsic property*</small>으로 여기지는 않는다.<br>
@@ -63,7 +63,7 @@ Science and Necessity, Bigelow & Pargetter, 1991<br>
 하지만 `오컴파`는 velocity가 물체의 위치 변화에 의해서 기술되는 것이라고 주장한다. <small>*a certain velocity just because it has been in different places*</small><br><br>
 **그!리!고!**<br>
 `오컴파`는 `position`은 1차 속성이며, `velocity`는 2차 속성이라고 정의하였다!!<br>
-덧붙여 *what constitues velocity is a second-order pattern over first-order positions at times.*라고 주장한다.<br>
+덧붙여 *what constitutes velocity is a second-order pattern over first-order positions at times.*라고 주장한다.<br>
 
 **반!면!**<br>
 `Flux파`는 `position`과 `(instantaneous) velocity` 모두 1차 속성이라고 정의한다.<br>

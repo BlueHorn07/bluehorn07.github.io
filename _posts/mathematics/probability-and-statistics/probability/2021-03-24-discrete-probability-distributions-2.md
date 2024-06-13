@@ -22,7 +22,7 @@ categories: ["Probability"]
 
 <span class="statement-title">Definition.</span> HyperGeometric Distribution<br>
 
-성공으로 표시된 $K$개의 샘플과 실패로 표시된 $N-K$개의 샘플이 있는 $N$개의 샘플에서, 무작위로 $n$개의 샘플을 **w/o replacement**로 뽑는다고 하자. 이것을 \<HyperGeometric Experiement\>라고 한다. 이때, RV $X$는 \<HyperGeometric Experiment\>에서 성공을 뽑은 횟수이다. 이 RV $X$를 \<HyperGeometric RV\>라고 한다.
+성공으로 표시된 $K$개의 샘플과 실패로 표시된 $N-K$개의 샘플이 있는 $N$개의 샘플에서, 무작위로 $n$개의 샘플을 **w/o replacement**로 뽑는다고 하자. 이것을 \<HyperGeometric Experiment\>라고 한다. 이때, RV $X$는 \<HyperGeometric Experiment\>에서 성공을 뽑은 횟수이다. 이 RV $X$를 \<HyperGeometric RV\>라고 한다.
 
 \<HyperGeometric RV\> $X$의 pmf는 아래와 같이 정의된다.
 

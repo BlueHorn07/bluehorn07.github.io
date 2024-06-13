@@ -26,7 +26,7 @@ For a group of order $pq$ ($p<q$ are prime)
 
 1\. is not simple.
 
-2\. If $q \not\equiv 1$ (mod $p$), then $G$ is cylic.
+2\. If $q \not\equiv 1$ (mod $p$), then $G$ is cyclic.
 
 </div>
 

@@ -48,7 +48,7 @@ ICA 시험 준비할 때, 위의 명령어를 쳐서 나온 Istio 리소스들�
 
 # WorkloadGroup & WorkloadEntry`
 
-요건 Istio의 [Virtual Machine Archtecture](https://bluehorn07.github.io/2024/03/23/istio-virtual-machine-architecture/) 살펴보면서 공부하고 정리 해뒀다 ㅎㅎ
+요건 Istio의 [Virtual Machine Architecture](https://bluehorn07.github.io/2024/03/23/istio-virtual-machine-architecture/) 살펴보면서 공부하고 정리 해뒀다 ㅎㅎ
 
 # Telemtry
 

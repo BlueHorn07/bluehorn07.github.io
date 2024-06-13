@@ -31,9 +31,9 @@ $$
 \sum^n_{i=1} \left(y_i - \hat{f}(x_i) \right)^2
 $$
 
-일반적으로 complexity가 높일 수록 Test Erorr는 감소한다. 하지만, complexity가 일정 수준의 이상으로 높아진다면, Test Error는 다시 증가하기 시작한다: NN 기법에서는 $k$가 작아질수록 complexity가 증가한다. 이것은 모든 모델에서 **일반적으로 발견되는 현상**이다. 그리고 이런 현상은 \<bias-variance decomposition\>이라는 이론으로 설명 가능하다!
+일반적으로 complexity가 높일 수록 Test Error는 감소한다. 하지만, complexity가 일정 수준의 이상으로 높아진다면, Test Error는 다시 증가하기 시작한다: NN 기법에서는 $k$가 작아질수록 complexity가 증가한다. 이것은 모든 모델에서 **일반적으로 발견되는 현상**이다. 그리고 이런 현상은 \<bias-variance decomposition\>이라는 이론으로 설명 가능하다!
 
-<span class="statement-title">Properity.</span> Bias-Variance trade-off (for regression)<br>
+<span class="statement-title">Property.</span> Bias-Variance trade-off (for regression)<br>
 
 아래와 같은 regression 문제를 상정해보자.
 

@@ -165,7 +165,7 @@ $$
 
 이 과정에서 GLM의 가정인 "natural parameter $\eta$ and model parameter $\theta$ are linearly related"를 적용하였다.
 
-이렇게 softmax function을 response function으로 사용하는 regresssion을 **softmax regression**이라고 한다. softmax regression은 logistic regression의 general model이다.
+이렇게 softmax function을 response function으로 사용하는 regression을 **softmax regression**이라고 한다. softmax regression은 logistic regression의 general model이다.
 
 <br>
 

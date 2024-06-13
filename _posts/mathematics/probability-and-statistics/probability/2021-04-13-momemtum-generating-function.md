@@ -253,7 +253,7 @@ $$
 
 ### Uniqueness Theorem for MGF
 
-mgf는 미분만 하면 momentum을 쉽게 구할 수 있다는 장점도 있지만, \<Uniqueness Theroem\>이라는 아래의 정리에 의해 두 RV이 동일한 분포를 가지는 것을 보장하는 조건이 되기도 한다.
+mgf는 미분만 하면 momentum을 쉽게 구할 수 있다는 장점도 있지만, \<Uniqueness Theorem\>이라는 아래의 정리에 의해 두 RV이 동일한 분포를 가지는 것을 보장하는 조건이 되기도 한다.
 
 <div class="theorem" markdown="1">
 

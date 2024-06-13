@@ -144,7 +144,7 @@ $$
 
 <div class="theorem" markdown="1">
 
-<span class="statement-title">Thereom.</span><br>
+<span class="statement-title">Theorem.</span><br>
 
 If $\bar{x}$ is used as an estimate of $\mu$, we can be $100(1-\alpha)\%$ confident that the <u>error</u> will not exceed $z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}$.
 
@@ -152,7 +152,7 @@ If $\bar{x}$ is used as an estimate of $\mu$, we can be $100(1-\alpha)\%$ confid
 
 <div class="theorem" markdown="1">
 
-<span class="statement-title">Thereom.</span><br>
+<span class="statement-title">Theorem.</span><br>
 
 Q. How large can the sample size be if the error is at most $\epsilon$?
 

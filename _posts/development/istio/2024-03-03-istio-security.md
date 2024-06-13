@@ -361,7 +361,7 @@ Istio를 공부하면서 "Zero-trust Network"(이하 ZTN)라는 용어를 처음
 
 - Istio 공식 문서들
   - [`PeerAuthentication`](https://istio.io/latest/docs/reference/config/security/peer_authentication/)
-  - [`AuthroizationPolicy`](https://istio.io/latest/docs/reference/config/security/authorization-policy/)
+  - [`AuthorizationPolicy`](https://istio.io/latest/docs/reference/config/security/authorization-policy/)
     - [Authorization Policy Conditions](https://istio.io/latest/docs/reference/config/security/conditions/)
   - [`Sidecar`](https://istio.io/latest/docs/reference/config/networking/sidecar/)
 - Toss Slash 23
