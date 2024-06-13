@@ -66,7 +66,7 @@ Newton's Method는 오직 linear function만을 사용해 함숫값이 0이 되�
 
 Newton's Method는 앞선 Gradient Descent 방식과 비교했을 때, 매우 적은 step으로 최적의 $\theta$를 얻는다.
 
-우리가 원하는 $\theta$는 1D real-value가 아니라 N-dimentional real-valued vector이다. 그래서 Newton's Method를 일반화해보자!
+우리가 원하는 $\theta$는 1D real-value가 아니라 N-dimensional real-valued vector이다. 그래서 Newton's Method를 일반화해보자!
 
 <div>
 $$

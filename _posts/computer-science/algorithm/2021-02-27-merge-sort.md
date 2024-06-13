@@ -88,7 +88,7 @@ Merge Sort는 간단하지만 강력하다! 보통 Merge Sort를 직접 구현�
   <img src="{{ "/images/computer-science/algorithm/merge-sort-2.jpg" | relative_url }}" width="420px">
 </div>
 
-위와 같이 주어진 배열에 대해 원소를 비교하는 모든 경우를 고려하게 되면, 우리는 배열의 $n$개 원소에 대한 가능한 모든 \<순열 Permutation\>을 확인하는 것과 동일하다. 즉, $n!$ 가짓수의 가능한 순서를 생각한다는 말이다. 이때, "정렬"이라는 작업은 \<비교 트리; Comparision Tree\>에서 가능한 하나의 \<경로 Path\>를 취하는 것이라고 할 수 있다.
+위와 같이 주어진 배열에 대해 원소를 비교하는 모든 경우를 고려하게 되면, 우리는 배열의 $n$개 원소에 대한 가능한 모든 \<순열 Permutation\>을 확인하는 것과 동일하다. 즉, $n!$ 가짓수의 가능한 순서를 생각한다는 말이다. 이때, "정렬"이라는 작업은 \<비교 트리; Comparison Tree\>에서 가능한 하나의 \<경로 Path\>를 취하는 것이라고 할 수 있다.
 
 비교 트리에서 가장 긴 경로(longest path)의 길이를 생각해보자. 비교 트리는 총 $n!$개 만큼의 leaf node를 가지므로 트리의 깊이(depth)는 $\log {(n!)}$이 된다. 이 트리의 "깊이"는 곧 **Worst-case**에서의 비교 횟수이다!!
 

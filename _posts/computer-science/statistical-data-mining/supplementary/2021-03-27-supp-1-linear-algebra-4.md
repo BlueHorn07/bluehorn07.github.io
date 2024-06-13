@@ -303,4 +303,4 @@ Then, $H$ is the **orthogonal projection** onto $C(X)$, that is
 
 [^2]: "convex"는 볼록한, "concave"는 오목한을 의미한다.
 
-[^3]: $X$의 모든 Colomn $\mathbf{x}_i$가 서로 linearly independent 하다는 말이다.
+[^3]: $X$의 모든 Column $\mathbf{x}_i$가 서로 linearly independent 하다는 말이다.

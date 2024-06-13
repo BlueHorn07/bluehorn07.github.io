@@ -216,7 +216,7 @@ of degree $n$ ($n \ge 1$) has a solution.
 
 (귀류법) Supp. that $P(z)$ has no solution.
 
-Then $\dfrac{1}{P(z)}$ is entire, becuase there's no $z_0$ s.t. $p(z_0) = 0$
+Then $\dfrac{1}{P(z)}$ is entire, because there's no $z_0$ s.t. $p(z_0) = 0$
 
 It is also **<u>bounded</u>** in the complex plane!
 

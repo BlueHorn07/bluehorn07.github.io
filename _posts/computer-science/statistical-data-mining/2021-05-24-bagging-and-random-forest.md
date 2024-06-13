@@ -17,7 +17,7 @@ categories: ["Applied Statsitcs"]
 
 간단하게 말하면, 기존의 샘플 $X = \\{ (x_i, y_i) \\}_i$에서 <span class="half_HL">"sampling with replacement"</span>로 뽑은 샘플을 말한다. \<Bagging\>에서는 이 \<bootstrap sample\>을 $Z$로 표기한다.
 
-$Z^{(b)}$를 $b$번째 \<bootstrap sample\>이라고 한다면, \<Bagging\>은 각 boostrap sample에 대해 estiamtor $\hat{f}^{(b)}(\, \cdot \, ; \, Z^{(b)})$를 구한다.
+$Z^{(b)}$를 $b$번째 \<bootstrap sample\>이라고 한다면, \<Bagging\>은 각 bootstrap sample에 대해 estiamtor $\hat{f}^{(b)}(\, \cdot \, ; \, Z^{(b)})$를 구한다.
 
 #### Bagging
 

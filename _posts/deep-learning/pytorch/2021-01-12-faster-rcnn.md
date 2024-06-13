@@ -66,7 +66,7 @@ Q. Faster R-CNN에서 feature extractor가 <span style="color:red">꼭 50 x 50 �
 
 "Note that single ground-truth object may assign positive labels to multiple anchors." -> 당연!
 
-"c) We assign a negative label to a non-positive anchor if its IoU ratio is lower than 0.3 for all ground-truth boxes. d) <span style="color:red">Anchors that are neither positive nor negitive do not contribute to the training objective."</span>
+"c) We assign a negative label to a non-positive anchor if its IoU ratio is lower than 0.3 for all ground-truth boxes. d) <span style="color:red">Anchors that are neither positive nor negative do not contribute to the training objective."</span>
 
 - `argmax_ious`: 각 anchor box가 어떤 gt-box와 더 큰 IoU를 갖는지에 대한 배열
 - `max_ious`: 전체 IoU에서 `argmax_ious`를 바탕으로 추출한 `max` 값!
@@ -89,7 +89,7 @@ Q. Faster R-CNN에서 feature extractor가 <span style="color:red">꼭 50 x 50 �
 
 <div class="notice" markdown="1">
 
-Now we need to **randomly** sample #(positive samples) from the positive labels and <span style="color:red">ignore (-1) the remaining ones</span>. In some cases we get less than #(positive samples), in that we will **randomly** sample (#(sample) — #(positive)) negitive samples (0) and <span style="color:red">assign ignore label to the remaining anchor boxes</span>. This is done using the following code.
+Now we need to **randomly** sample #(positive samples) from the positive labels and <span style="color:red">ignore (-1) the remaining ones</span>. In some cases we get less than #(positive samples), in that we will **randomly** sample (#(sample) — #(positive)) negative samples (0) and <span style="color:red">assign ignore label to the remaining anchor boxes</span>. This is done using the following code.
 
 </div>
 
@@ -131,7 +131,7 @@ This feature is fed into two sibling fully connected layers.
 
 <div class="notice" markdown="1">
 
-"The Faster R_CNN says, <span style="color:red">RPN proposals highly overlap</span> with each other. To reduced redundancy, we adopt **non-maximum supression(NMS)** on the proposal regions based on their cls scores. We fix the IoU threshold for NMS at 0.7, which leaves us about 2000 proposal regions per image. After an ablation study, <span style="color:red">the authors show that NMS does not harm the ultimate detection accuracy, but substantially reduces the number of proposals.</span> After NMS, we use the top-N ranked proposal regions for detection. In the following <span style="color:red">we training Fast R-CNN using 2000 RPN proposals</span>. <span style="color:red">During testing they evaluate only 300 proposals</span>, they have tested this with various numbers and obtained this."
+"The Faster R_CNN says, <span style="color:red">RPN proposals highly overlap</span> with each other. To reduced redundancy, we adopt **non-maximum suppression(NMS)** on the proposal regions based on their cls scores. We fix the IoU threshold for NMS at 0.7, which leaves us about 2000 proposal regions per image. After an ablation study, <span style="color:red">the authors show that NMS does not harm the ultimate detection accuracy, but substantially reduces the number of proposals.</span> After NMS, we use the top-N ranked proposal regions for detection. In the following <span style="color:red">we training Fast R-CNN using 2000 RPN proposals</span>. <span style="color:red">During testing they evaluate only 300 proposals</span>, they have tested this with various numbers and obtained this."
 
 </div>
 
@@ -184,7 +184,7 @@ and later convert to y1, x1, y2, x2 format
   - Find the index of all the boxes which have high overlap with "this box"
   - Remove them from order array
   - Iterate this till we get the order_size to zero (while loop)
-- Ouput the keep variable which tells what indexes to consider.
+- Output the keep variable which tells what indexes to consider.
 
 </div>
 

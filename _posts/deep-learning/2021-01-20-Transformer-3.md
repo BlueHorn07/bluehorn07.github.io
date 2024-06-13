@@ -42,7 +42,7 @@ categories: ["Deep Learning"]
 
 Transformer의 디코더는 입력에 포함된, 나중에 예측해야 할 단어들을 참고하지 못하도록 Masking으로 그 단어들을 가려버린다. 이것을 "Look-ahead mask"라고 한다.
 
-이런 "LAM"는 디코더의 첫번째 sub-layer인 Self-Attention 층에서 이루어진다. 디코더의 Self-Attention 층은 인코더의 Self-Attnetion과 동일한 연산을 수행하지만, 오직 다른 점은 디코더의 경우 마스킹이 적용된 Attention Score 행렬을 사용한다는 것이다.
+이런 "LAM"는 디코더의 첫번째 sub-layer인 Self-Attention 층에서 이루어진다. 디코더의 Self-Attention 층은 인코더의 Self-Attention과 동일한 연산을 수행하지만, 오직 다른 점은 디코더의 경우 마스킹이 적용된 Attention Score 행렬을 사용한다는 것이다.
 
 대략 아래와 같은 느낌이다.
 

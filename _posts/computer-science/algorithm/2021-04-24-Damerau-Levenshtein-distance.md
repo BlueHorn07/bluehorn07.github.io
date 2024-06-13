@@ -25,13 +25,13 @@ categories: ["Algorithm"]
 
 그런데, [최소편집](https://www.acmicpc.net/problem/15483) 문제의 다음 문제인 [최소편집2](https://www.acmicpc.net/problem/2326)에서는 하나의 연산이 더 추가된다.
 
-4\. 교환(Trasposition with adjacent character): 두 인접한 글자의 위치를 서로 바꿀 수 있다.
+4\. 교환(Transposition with adjacent character): 두 인접한 글자의 위치를 서로 바꿀 수 있다.
 
 문제를 보고, 처음에는 꽤 할만 하다고 생각해서 단순히 "교환했을 때 matching cost가 0이 되고, 또 그때의 DP 값이 작다면, Transpotion!"인 식으로 4번째 연산을 처리해봤는데, <span style="color: red">**WA**</span>를 받았었다.
 
 검색해보니, 'Transpotion' 연산은 앞의 경우랑은 다르게 쉽게 계산되지 않고, \<[Damerau–Levenshtein distance](https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance)\>[^1]를 통해 구해야 한다.
 
-\<DL-distance\>는 오타 수정(misspel correction)에서 활용하는 알고리즘이다. DL-distance에서 쓰는 4가지 경우는 우리가 흔히 하는 오타의 경우들이며, 구글 검색에서 검색을 잘못 입력해도 적절히 원래의 형태로 변환해주는 것 역시 이런 DL-distance로 유사도를 판단하기 때문이다.
+\<DL-distance\>는 오타 수정(misspell correction)에서 활용하는 알고리즘이다. DL-distance에서 쓰는 4가지 경우는 우리가 흔히 하는 오타의 경우들이며, 구글 검색에서 검색을 잘못 입력해도 적절히 원래의 형태로 변환해주는 것 역시 이런 DL-distance로 유사도를 판단하기 때문이다.
 
 <hr/>
 

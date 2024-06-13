@@ -129,7 +129,7 @@ istio의 엣날 구조를 알아보는게 무슨 필요가 있을까 싶긴 하�
 
 지금도 그렇고 예전에도 그렇고 istio에서 가장 핵심이 되는 컴포넌트다.
 
-일단 istio의 각종 Traffic Managemenet API(`VirtualService`, `DestinationRule`, `Gateways`, `ServiceEntry`, `Sidecar`)가 동작 할 수 있도록 Envoy에 주입하는 역할을 pilot이 한다!!
+일단 istio의 각종 Traffic Management API(`VirtualService`, `DestinationRule`, `Gateways`, `ServiceEntry`, `Sidecar`)가 동작 할 수 있도록 Envoy에 주입하는 역할을 pilot이 한다!!
 
 게다가 Service Discovery 역할도 수행하는데, K8s 클러스터와 istio 서비스 메쉬에 새로운 인스턴스가 디플로이 되면, 해당 정보를 반영한 새로운 Envoy 규칙을 각 Envoy Poroxy에 전파한다.
 

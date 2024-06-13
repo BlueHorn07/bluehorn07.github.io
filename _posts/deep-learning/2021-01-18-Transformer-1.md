@@ -55,7 +55,7 @@ seq2seq 모델은 인코더-디코더 구조로 이루어져 있음. 하지만, 
 
 <div class="notice" markdown="1">
 
-**Attetion Function**은 주어진 Query $Q$에 대해 모든 키 $K$와의 "유사도"를 각각 구한다. 그리고 이 유사도를 키와 묶여있는 값 $V$에 반영해준다. 출력인 Attention Value는 이 값 $V$에 유사도를 반영한 결과를 모두 더해서 리턴한 것이다.
+**Attention Function**은 주어진 Query $Q$에 대해 모든 키 $K$와의 "유사도"를 각각 구한다. 그리고 이 유사도를 키와 묶여있는 값 $V$에 반영해준다. 출력인 Attention Value는 이 값 $V$에 유사도를 반영한 결과를 모두 더해서 리턴한 것이다.
 
 </div>
 
@@ -134,7 +134,7 @@ $$
 a_t = \sum^{N}_{i=1} { {\alpha^t}_i \cdot h_i }
 $$
 
-이 Attnetion value$a_t$는 인코더의 문맥을 포함하고 있다고 하여 **"Context Vector"**라고도 불린다. seq2seq에선 인코더의 마지막 은닉 상태를 Context Vetor라고 부른 것과는 다르다!
+이 Attention value$a_t$는 인코더의 문맥을 포함하고 있다고 하여 **"Context Vector"**라고도 불린다. seq2seq에선 인코더의 마지막 은닉 상태를 Context Vector라고 부른 것과는 다르다!
 
 <br>
 
@@ -174,7 +174,7 @@ RNN의 문제점을 해결하기 위해 Attention 모델이 제시되었다. Tra
 
 #### Positional Encoding
 
-Tranformer는 기존 인코더-디코더 모델과는 달리 입력 Sequence를 그대로 받는 구조가 아니라 **"Positional Encoding"**로 전처리된 값을 입력으로 받는다.
+Transformer는 기존 인코더-디코더 모델과는 달리 입력 Sequence를 그대로 받는 구조가 아니라 **"Positional Encoding"**로 전처리된 값을 입력으로 받는다.
 
 기존 RNN에서는 Sequence를 단어별로 순차적으로 입력 받기 때문에 단어의 위치 정보(Positional Information)이 알아서 담기게 된다. 물론 그럼에도 불구하고 RNN에서도 Encoding 과정은 거친다! 이를 **"워드 임베딩(Word Embedding)"**이라고 한다. [link](https://wikidocs.net/33520)
 
@@ -203,7 +203,7 @@ $$
 
 (위의 그림에선 $d_{\textrm{model}}=4$로 설정하였지만, 실제 논문에선 512로 설정되어 있다고 한다.)
 
-위와 같은 Positional Encoding 방식을 사용하면, 입력 sequence에 대한 순서 정보가 보존된다고 한다! 이를 통해 같은 단어일지라도 문장 내의 위치에 따라서 Transformer의 입력으로 들어가는 Enbedding Vector의 값이 달라지는 것이다!
+위와 같은 Positional Encoding 방식을 사용하면, 입력 sequence에 대한 순서 정보가 보존된다고 한다! 이를 통해 같은 단어일지라도 문장 내의 위치에 따라서 Transformer의 입력으로 들어가는 Embedding Vector의 값이 달라지는 것이다!
 
 <br>
 <hr>
@@ -234,7 +234,7 @@ Transformer는 위의 3가지 Attention을 모두 사용한다! 각각이 Transf
 
 두번째 포스트에선 Transformer 모델의 인코더와 디코더, 그리고 3가지 Attention Model에 대해 더 자세히 살펴봅니다.
 
-- [Trasnformer(2017) - 2]({{"2021/01/18/Transformer-2" | relative_url}})
+- [Transformer(2017) - 2]({{"2021/01/18/Transformer-2" | relative_url}})
 
 ### Reference
 - [트랜스포머(Transformer)](https://wikidocs.net/31379)

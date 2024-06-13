@@ -35,7 +35,7 @@ with a **<u>linear basis expansion</u>** in $X$.
 
 <span class="statement-title">Example.</span><br>
 
-1\. 1-dimentional projection
+1\. 1-dimensional projection
 
 $$
 h_m(X) = X_m \quad \text{for} \quad m=1, \dots, p
@@ -92,7 +92,7 @@ f(X) = \beta_0 + \left(\sum^p_{j=1} \beta_j X_j\right) + \left(\sum^{p^2}_{j,k} 
 $$
 
 - As $p$ increases, the # of parameters grows exponentially.
-- In general, it is difficult to estimate $p$-dimentional regression function for large $p$.
+- In general, it is difficult to estimate $p$-dimensional regression function for large $p$.
 
 그리고 그런 $m$-th order polynomial 방식은 \<Multi-collinearity\>에 대한 문제도 가지고 있다. 👇
 
@@ -127,7 +127,7 @@ $$
 
 <div class="statement">
 
-"Every smooth function can be locally approximated by low dimentional polynomials!" <br/>
+"Every smooth function can be locally approximated by low dimensional polynomials!" <br/>
 
 <small style="color: grey">-- Talyor's Theorem</small>
 
@@ -276,7 +276,7 @@ $$
 
 완벽할 것 같은 \<Regression Spline\> 방식도 작은 문제를 가지고 있다. 바로 양끝 boundary에서 regression이 잘 안 된다는 것이다. 이를 해결하기 위해 \<Natural cubic spline\>은 <span class="half_HL">양끝에서 linear로 모델링 한다<span>.
 
-<span class="statement-title">Definition.</span> Natrual Cubic Spline<br>
+<span class="statement-title">Definition.</span> Natural Cubic Spline<br>
 
 A cubic spline is called a \<**natural cubic spline**\>, if it is **<u>linear</u>** beyond the boundary knots $\xi_1$ and $\xi_K$.
 
@@ -299,7 +299,7 @@ $$
 
 ### Smoothing Splines
 
-<span class="half_HL">\<knot slection\></span>은 Spline Method의 주된 이슈이다. \<smoothing spline\>은 이 문제를 아래와 같이 해결한다!
+<span class="half_HL">\<knot selection\></span>은 Spline Method의 주된 이슈이다. \<smoothing spline\>은 이 문제를 아래와 같이 해결한다!
 
 Consider $\hat{f} = \underset{f\in\mathcal{F}}{\text{argmin}} \; \text{RSS}_{\lambda}(f)$, where
 
@@ -328,7 +328,7 @@ model complexity $\downarrow$ / bias $\uparrow$ / variance $\downarrow$
 
 <div class="notice" markdown="1">
 
-만약 $\mathcal{F}$가 특정 \<Sobolev space\>에 속하는 어떤 함수라면, smooth spline이 곧 natrual cubic spline이 된다고 한다.<br/>
+만약 $\mathcal{F}$가 특정 \<Sobolev space\>에 속하는 어떤 함수라면, smooth spline이 곧 natural cubic spline이 된다고 한다.<br/>
 <small>ESL, Exercise 5.7</small>
 
 </div>
@@ -341,7 +341,7 @@ $$
 f(\theta; x) = \sum^n_{j=1} \theta_j N_j (x)
 $$
 
-where $N_j$ are basis functions of natrual cubic splines.
+where $N_j$ are basis functions of natural cubic splines.
 
 Then,
 

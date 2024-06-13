@@ -174,7 +174,7 @@ $$
 C_{\alpha}(T) = \left(\sum^{|T|}_{m=1} n_m Q_m(T)\right) + \alpha |T|
 $$
 
-where $\alpha > 0$ is a tunning parameter.
+where $\alpha > 0$ is a tuning parameter.
 
 $C_\alpha(T)$에 대한 식을 잘 살펴보면, "training err"와 "complexity panelty"에 대한 텀이 있음을 확인할 수 있다.
 
@@ -186,7 +186,7 @@ $$
 
 위와 같은 접근법을 \<weakest link pruning\>라고도 한다.
 
-tunning parameter $\alpha$는 generalization error를 최소화하는 것을 골라서 사용하면 된다고 한다. (Cross Validation을 활용하는 것 같다.)
+tuning parameter $\alpha$는 generalization error를 최소화하는 것을 골라서 사용하면 된다고 한다. (Cross Validation을 활용하는 것 같다.)
 
 <br/>
 <hr/>
@@ -251,8 +251,8 @@ ps) ROC curve는 classification problem에서만 유도할 수 있다!
 - When depth is too large, not only accuracy but interpretation are bad 😥
 - Heavy computation cost
 - Unstable
-- Absense of linearity
-- Absense of Main effects: all nodes are high order interactions.
+- Absence of linearity
+- Absence of Main effects: all nodes are high order interactions.
 - Discontinuity
 
 <hr/>

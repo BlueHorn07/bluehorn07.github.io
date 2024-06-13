@@ -30,7 +30,7 @@ int fibo(n) {
 
 <div class="math-statement" markdown="1">
 
-`fibo()`에 의해 생성되는 recursion tree를 생각해보자. 이때, tree의 leaf는 항상 1을 리턴해주고 이에 따라 `fibo(n)`의 값은 단순히 recusion tree의 leaves 수로 유도할 수 있다.
+`fibo()`에 의해 생성되는 recursion tree를 생각해보자. 이때, tree의 leaf는 항상 1을 리턴해주고 이에 따라 `fibo(n)`의 값은 단순히 recursion tree의 leaves 수로 유도할 수 있다.
 
 이때, leaf 단에서는 $O(1)$ 만큼의 시간이 걸리기 때문에 결국, $T(n) = \text{fibo}(n) \cdot O(1)$의 복잡도를 가지게 된다.
 

@@ -15,7 +15,7 @@ categories: ["Differential Equations"]
 
 <div class="statement">
 
-"Every smooth function can be locally approximated by low dimentional polynomials!"<br/>
+"Every smooth function can be locally approximated by low dimensional polynomials!"<br/>
 <small style="color: grey">-- Talyor's Theorem</small>
 
 </div>

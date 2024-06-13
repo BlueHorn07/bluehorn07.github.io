@@ -202,7 +202,7 @@ spec:
 EOF
 ```
 
-이렇게 하면, Egress GW로 들어오는 트래픽에 `DestionationRule`이 적용된다. 그리고 둘 이상의 터미널에서 Egress GW로 요청을 보내게 되면 `maxConnections`에 정의한 숫자 만큼의 Connection만 유지되고 나머지는 Drop 된다!!!
+이렇게 하면, Egress GW로 들어오는 트래픽에 `DestinationRule`이 적용된다. 그리고 둘 이상의 터미널에서 Egress GW로 요청을 보내게 되면 `maxConnections`에 정의한 숫자 만큼의 Connection만 유지되고 나머지는 Drop 된다!!!
 
 즉, 외부로 나가는 트래픽도 제어할 수 있게 된거다!!
 

@@ -94,7 +94,7 @@ Then every subpath $\pi_i = su_1\cdots u_i$ is
 
 시작점 $s$는 $\texttt{dist}(s)=0$으로, 나머지 노드는 모두 `INF`로 초기화한다. 이제 시작점 $s$와 연결된 노드들을 살펴보자. *See node $u_i$ s.t. $(s, u_i) \in E$*
 
-$\texttt{dist}(u_i)$의 값은 `update()` 규칙에 따라 $\texttt{dist}(u_i) = \texttt{dist}(s) + w(u_i, v)$가 된다. 위의 명제를 다시 보자. 만약 $\texttt{dist}(u_i)$에 대해 $s$가 second last 노드이고, $\texttt{dist}(s)$가 correctly setted라면, $\texttt{dist}(u_i)$에는 `update()`를 통해 shortest distance가 저장된다.
+$\texttt{dist}(u_i)$의 값은 `update()` 규칙에 따라 $\texttt{dist}(u_i) = \texttt{dist}(s) + w(u_i, v)$가 된다. 위의 명제를 다시 보자. 만약 $\texttt{dist}(u_i)$에 대해 $s$가 second last 노드이고, $\texttt{dist}(s)$가 correctly set라면, $\texttt{dist}(u_i)$에는 `update()`를 통해 shortest distance가 저장된다.
 
 이제, 모든 edge $E$에 대해서 `update()` rule을 적용해보자. $\texttt{dist}(s)$ 외에는 모두 `INF`로 초기화 되어 있기 때문에 $s$와 연결된 노드들의 $\texttt{dist}$ 값만 갱신된다. 이때에 갱신되는 노드들 중 <u>적어도 하나</u>는 $s$를 second last 노드로 갖는다.[^2]
 

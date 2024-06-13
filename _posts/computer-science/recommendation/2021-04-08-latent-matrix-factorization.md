@@ -88,7 +88,7 @@ $$
 
 💥 본인은 $y_i$의 차원 때문에 유도를 하고도 위의 식이 조금 헷갈렸는데, 셋업을 다시 보니까, $y_i$가 $N_f$ 차원의 열벡터였다 ㅋㅋㅋ
 
-Gradient Descent 방식의 단점은 최적화를 시키는 과정이 너무 느리고, 많은 반복이 필요하다. 또, Global minimum이 아닌 local minum에 stuck할 가능성이 있다 등등의 단점이 있다. ~~단점이 있긴 있다~~ 두번째 방법인 \<**Alternating Least Squares**\>는 이런 문제를 스마트하게 해결한다! 😎
+Gradient Descent 방식의 단점은 최적화를 시키는 과정이 너무 느리고, 많은 반복이 필요하다. 또, Global minimum이 아닌 local minumum에 stuck할 가능성이 있다 등등의 단점이 있다. ~~단점이 있긴 있다~~ 두번째 방법인 \<**Alternating Least Squares**\>는 이런 문제를 스마트하게 해결한다! 😎
 
 <hr/>
 

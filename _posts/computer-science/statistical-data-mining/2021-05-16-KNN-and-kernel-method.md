@@ -60,7 +60,7 @@ where $K_k (x, x_i) = I(x_i \in N_k (x))$.
 
 <div class="light-margin" markdown="1">
 
-Q. \<kernel method\>를 적용한 그림에서 bounary 쪽을 보면, estimated curve가 약간 올라가 있는 것을 볼 수 있다. 이것은 왜 발생하는 것이며, 이 문제는 dataset에 상관없이 일어나는 \<kernel method\>의 본질적인 문제인가?
+Q. \<kernel method\>를 적용한 그림에서 boundary 쪽을 보면, estimated curve가 약간 올라가 있는 것을 볼 수 있다. 이것은 왜 발생하는 것이며, 이 문제는 dataset에 상관없이 일어나는 \<kernel method\>의 본질적인 문제인가?
 
 A. 아무리 \<kernel method\>라고 해도 boundary problem에서 자유로울 순 없다. 이것은 \<kernel method\>의 본질적인 문제다.
 
@@ -122,7 +122,7 @@ $$
 
 <br/>
 
-$\lambda$는 일종의 tunning parameter로, scale을 조정하는 기능을 한다; bandwidth (smoothing) parameter.
+$\lambda$는 일종의 tuning parameter로, scale을 조정하는 기능을 한다; bandwidth (smoothing) parameter.
 
 - small $\lambda$: model complexity ▲, bias ▼, variance ▲ <small>// make ziggle model</small>
 - Large $\lambda$: model complexity ▼, bias ▲, variance ▼ <small>// make smooth model</small>
@@ -197,7 +197,7 @@ A. NO!!!
 
 <hr/>
 
-### Local Likelihood Appraoch for logistic regression
+### Local Likelihood Approach for logistic regression
 
 이번에는 \<spline method\>에서 살펴봤던 [\<non-parametric (binary) logistic regression\>]({{"/2021/04/19/splines-method-2#multi-dimensional-splines" | relative_url}}) 모델에 \<kernel method\>를 적용해보자.
 

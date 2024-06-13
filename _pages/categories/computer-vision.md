@@ -176,7 +176,7 @@ toc_sticky: true
 ### Metric Learning
 - Pairwise & Triplet Metric
 - [Mahalanobis Distance]({{"2020/12/02/metric-learning-1#mahalanobis-distance" | relative_url}})
-- [A first approach to distnace metric learning]({{"2020/12/02/metric-learning-1#a-first-approach-to-distnace-metric-learning" | relative_url}}) <small>(Pairwise)</small>
+- [A first approach to distance metric learning]({{"2020/12/02/metric-learning-1#a-first-approach-to-distance-metric-learning" | relative_url}}) <small>(Pairwise)</small>
 - [Large Margin Nearest Neighbor(LMNN)]({{"2020/12/02/metric-learning-1#mahalanobis-distance" | relative_url}}) <small>(Triplet)</small>
 - [Metric Learning + DL]({{"2020/12/02/metric-learning-1#metric-learning--dl" | relative_url}})
 

@@ -3,7 +3,7 @@ title: "Istio 'helloworld' 데모"
 toc: true
 toc_sticky: true
 categories: ["Kubernetes", "Istio"]
-excerpt: Istio 첫걸음. Hello Istio! 그리고 Vritual Service, Destination Rule도 안녕!
+excerpt: Istio 첫걸음. Hello Istio! 그리고 Virtual Service, Destination Rule도 안녕!
 ---
 
 {% include figure image_path="/images/meme/hell-kitty.JPG" alt="hell kitty" caption="Hell?o" %}{: .fill style="width: 400px" .align-center .text-center }
@@ -100,7 +100,7 @@ spec:
 EOF
 ```
 
-그리고 아래와 같이 Vritual Service를 구성해서, `v1`에는 10% 트래픽이, `v2`에는 90%의 트래픽이 흐를 수 있도록 구성해보자.
+그리고 아래와 같이 Virtual Service를 구성해서, `v1`에는 10% 트래픽이, `v2`에는 90%의 트래픽이 흐를 수 있도록 구성해보자.
 
 ```yaml
 # simple-virtual-service
@@ -134,9 +134,9 @@ while true; do curl "http://helloworld.default:5000/hello"; done
 
 와우!! 트래픽의 20:80 비율로 분산되었다!! ദ്ദി ˉ͈̀꒳ˉ͈́ )✧
 
-## Gateway와 함께 Vritual Service를 구성
+## Gateway와 함께 Virtual Service를 구성
 
-istio에서 제공하는 예제에서는 [`helloworld-gateway.yaml`](https://github.com/istio/istio/blob/master/samples/helloworld/helloworld-gateway.yaml)라는 파일에 IngressGateway와 VritualService를 정의해서 제공하고 있다.
+istio에서 제공하는 예제에서는 [`helloworld-gateway.yaml`](https://github.com/istio/istio/blob/master/samples/helloworld/helloworld-gateway.yaml)라는 파일에 IngressGateway와 VirtualService를 정의해서 제공하고 있다.
 
 이번에는 IngressGateway와 함께 VirtualService를 구성해보자.
 
@@ -160,7 +160,7 @@ spec:
     - "*"
 ```
 
-그리고 VritualService는 이렇게 구성한다. 이번에는 구분을 위해서 v1:v2를 70:30으로 구성하자. 이번에는 v1 트래픽이 더 많다!
+그리고 VirtualService는 이렇게 구성한다. 이번에는 구분을 위해서 v1:v2를 70:30으로 구성하자. 이번에는 v1 트래픽이 더 많다!
 
 ```yaml
 # hellworld-vs-with-gateway.yaml
@@ -203,14 +203,14 @@ Kiali에서 트래픽을 확인해보면,
 
 와웅! 이번에는 istio의 default ingress gateway를 통해서 트래픽이 분산되고 있다! ٩(^ᗜ^ )و
 
-## VritualService와 Gateway 조금 더보기
+## VirtualService와 Gateway 조금 더보기
 
 요 부분은 VirtualService와 Gateway 리소스에 대해 조금더 깊은 내용을 다룬다. 이 부분을 스킵해도 helloworld 예제를 진행하는데 문제가 없으니, Istio에 입문한지 얼마 되지 않았다면, 과감히 `DestinationRule`을 쓰는 다음 단계로 넘어가자!
 {: .notice }
 
 <details markdown="1">
 
-여기서 잠깐! IngressGateway와 함께 쓰면서, VritualService에서 바뀐 부분은 `hosts`와 `gateways` 부분이다.
+여기서 잠깐! IngressGateway와 함께 쓰면서, VirtualService에서 바뀐 부분은 `hosts`와 `gateways` 부분이다.
 
 ```yaml
 apiVersion: networking.istio.io/v1alpha3
@@ -264,7 +264,7 @@ Gateway의 `spec.servers[].hosts` 부분은 ingress gateway가 노출하는 포�
 
 # 안녕, Destination Rule!
 
-이번엔 DestinationRule 리소스와 VritualService를 조합해서 트래픽을 분산해보자!
+이번엔 DestinationRule 리소스와 VirtualService를 조합해서 트래픽을 분산해보자!
 
 일단 시작에 앞서 앞에서 만들어뒀던 리소스는 모두 지워두자. 첫 예제에서 만들어뒀던 `v1`, `v2`의 K8s Service까지 둘다 지운다!
 

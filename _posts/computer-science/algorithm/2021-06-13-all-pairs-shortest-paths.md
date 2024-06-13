@@ -13,7 +13,7 @@ categories: ["Algorithm"]
 
 우리가 지금까지 살펴본 "Shortest Path" 문제는 모두 출발 노드 $s$와 도착 노드 $t$가 고정된 경우였다. 그러나 때로는 주어지는 노드 쿼리 $(s, t)$에 대한 shortest path를 찾거나 또는 그래프에 존재하는 모든 노드 쌍 $(u, v)$ 사이의 shortest path를 찾고 싶을 수 있다.
 
-만약 이것을 \<Dijkstra Algorihtm\>을 사용해 $V$개의 노드에 대해서 "single-source shortest path"를 찾고자 한다면, 총 $V \times O(VE) = O(V^2 E)$의 시간이 걸린다.
+만약 이것을 \<Dijkstra Algorithm\>을 사용해 $V$개의 노드에 대해서 "single-source shortest path"를 찾고자 한다면, 총 $V \times O(VE) = O(V^2 E)$의 시간이 걸린다.
 
 그.러.나. \<DP\>를 사용하면, 좀더 빠른 시간 안에 문제를 해결할 수 있다!! 😁 이 알고리즘을 \<**Floyd-Warshall Aglrorithm**\>라고 한다.
 

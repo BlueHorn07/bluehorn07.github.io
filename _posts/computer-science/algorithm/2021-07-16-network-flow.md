@@ -88,7 +88,7 @@ $$
 c^f_{uv} =
 \begin{cases}
   c_{uv} - f_{uv} & \text{if} \; (u, v) \in E \; \text{and} \; f_{uv} < c_{uv} \\
-  f_{vu}          & \text{if} \; (v, u) \in E \; \text{and} \; f_{vu} > 0 \; ( \equiv \text{$(u, v)$ is revserse edge})
+  f_{vu}          & \text{if} \; (v, u) \in E \; \text{and} \; f_{vu} > 0 \; ( \equiv \text{$(u, v)$ is reverse edge})
 \end{cases}
 $$
 
@@ -259,7 +259,7 @@ $\therefore$ When the $f$ is maximized, $G^f$ should have no augmenting paths.
 
 2\. $(2) \implies (3)$
 
-Suppose $G^f$ has no augmenting paths. Then we can easily contruct a cut $(L, R)$ s.t. $\text{capacity}(L, R) = \text{val}(f)$ by the following way: Let $L$ denote the set of vertices reacahble from $s$ and for a vertext $v$ if there is an augmenting path from $s$, then $v \in S$. Since $G^f$ has no augmenting $s-t$ path, we know that $t \not\in S$. And let $R$ be the $R = V \setminus L$, then $t \in R$, and this $(L, R)$ is a valid $s-t$ cut. Then, the capacity of $(L, R)$ is exactly the $f$ of the $G^f$. If not, then there's more capacity to flow through $L$ to $R$, and it means $G^f$ has an augmenting path! (귀류법!)
+Suppose $G^f$ has no augmenting paths. Then we can easily construct a cut $(L, R)$ s.t. $\text{capacity}(L, R) = \text{val}(f)$ by the following way: Let $L$ denote the set of vertices reachable from $s$ and for a vertext $v$ if there is an augmenting path from $s$, then $v \in S$. Since $G^f$ has no augmenting $s-t$ path, we know that $t \not\in S$. And let $R$ be the $R = V \setminus L$, then $t \in R$, and this $(L, R)$ is a valid $s-t$ cut. Then, the capacity of $(L, R)$ is exactly the $f$ of the $G^f$. If not, then there's more capacity to flow through $L$ to $R$, and it means $G^f$ has an augmenting path! (귀류법!)
 
 <hr/>
 

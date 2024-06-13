@@ -110,7 +110,7 @@ Istio 모의 테스트가 2개 있는데, 요 테스트가 더 퀄리티가 좋�
 - [Istio Operator 꼼꼼히 살펴보기](https://bluehorn07.github.io/2024/03/05/istio-operator-detail-examine/)
 - [Istio의 컨트롤 플레인 꼼곰히 살펴보기](https://bluehorn07.github.io/2024/03/07/istio-control-plane-detail-examine/)
 - [Istio의 Authentication & Authorization](https://bluehorn07.github.io/2024/03/14/istio-authentication-and-authorization/)
-- [Istio Envoy Acess Logging](https://bluehorn07.github.io/2024/03/16/istio-envoy-access-logging/)
+- [Istio Envoy Access Logging](https://bluehorn07.github.io/2024/03/16/istio-envoy-access-logging/)
 - [Istio Distributed Tracing with Jaeger](https://bluehorn07.github.io/2024/03/18/istio-distributed-tracing-jaeger/)
 - [Istio Envoy Discovery Service](https://bluehorn07.github.io/2024/03/20/istio-envoy-service-discovery/)
 - [Istio Revision and Canary Upgrade](https://bluehorn07.github.io/2024/03/21/istio-revision-and-canary-upgrade/)

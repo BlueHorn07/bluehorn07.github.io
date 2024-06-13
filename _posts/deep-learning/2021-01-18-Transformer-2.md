@@ -58,7 +58,7 @@ Transformer는 더이상 RNN을 사용하지 않는다. 그래서 '은닉 상태
 
 Query $Q$ 벡터는 모든 $K$ 벡터에 대해 Attention score를 구하고, softmax로 Attention distribution를 구한다. 그리고 Attention distribution에 $V$ 벡터를 가중합하여 Attention Value를 구한다. 이 과정을 모든 Query $Q$ 벡터에 대해 반복한다.
 
-이때, 앞에서 다룬 Attetion Mechanism과 달리 Dot-Product Attetion이 아닌, Dot-Product 결과에 특정값을 나누는 $\textrm{score}(q, k) = \frac{q \cdot k}{\sqrt{n}}$를 사용한다. 이런 Attention Function을 **"Scaled Dot-Product Attention"**이라고 한다.
+이때, 앞에서 다룬 Attention Mechanism과 달리 Dot-Product Attention이 아닌, Dot-Product 결과에 특정값을 나누는 $\textrm{score}(q, k) = \frac{q \cdot k}{\sqrt{n}}$를 사용한다. 이런 Attention Function을 **"Scaled Dot-Product Attention"**이라고 한다.
 
 Attention Function으로 Attention Score를 구한 후에는 기존 방식처럼 Softmax를 씌워 Attention Distribution을 구하고, 각 $V$ 벡터와 가중합하여 Attention Value를 얻는다!
 

@@ -126,7 +126,7 @@ where
 
 #### Low Rank Approximation
 
-SVD를 잘 이용하면, 행렬 $A$에 대한 \<Low Rank Aprroximation\> $A_k$를 유도할 수 있다.
+SVD를 잘 이용하면, 행렬 $A$에 대한 \<Low Rank Approximation\> $A_k$를 유도할 수 있다.
 
 Let $A = UDV^T$ and assume that $n \gg p$, then
 

@@ -16,7 +16,7 @@ categories: ["Applied Statsitcs"]
 
 ## Density Estimation이란?
 
-이번에 살펴볼 \<Density Estimation\>은 주어진 데이터로부터 probaiblity denstiy function, pdf를 복원하는 작업이다. 확률론에 익숙하다면, \<Point Estimation\>, \<Internal Estimation\> 등의 **추청(Estimation)** 기법을 들어봤을 것이다. \<Density Estimation\>은 pdf를 추정하는 작업으로 다른 Estimation 처럼 Confidence Interval도 구할 수 있다고 한다.
+이번에 살펴볼 \<Density Estimation\>은 주어진 데이터로부터 probaiblity density function, pdf를 복원하는 작업이다. 확률론에 익숙하다면, \<Point Estimation\>, \<Internal Estimation\> 등의 **추청(Estimation)** 기법을 들어봤을 것이다. \<Density Estimation\>은 pdf를 추정하는 작업으로 다른 Estimation 처럼 Confidence Interval도 구할 수 있다고 한다.
 
 <div class="img-wrapper">
   <img src="https://images.deepai.org/django-summernote/2019-06-08/12c2ff70-74af-4895-bc10-edd46fbeef39.jpeg" width="360px">

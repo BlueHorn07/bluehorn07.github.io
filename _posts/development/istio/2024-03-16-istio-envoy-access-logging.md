@@ -69,7 +69,7 @@ Access Log가 어떤 정보들을 보여주는지 좀더 살펴보자.
 
 ## 트래픽의 방향 구분 가능
 
-Acess Log는 inbound, outbound 트래픽의 흐름을 기록한다.
+Access Log는 inbound, outbound 트래픽의 흐름을 기록한다.
 
 - inbound
   - 워크로드로 들어오는 트래픽
@@ -132,7 +132,7 @@ upstream, downstream 요것들은 envoy의 용어다.
 
 ## Header와 Body 정보는 확인 불가
 
-Envoy Acess Log는 Header와 Body 정보는 보여주지 않는다.
+Envoy Access Log는 Header와 Body 정보는 보여주지 않는다.
 
 ```bash
 curl http://helloworld.default.svc.cluster.local:5000/hello --header "haha: hoho"
@@ -140,7 +140,7 @@ curl http://helloworld.default.svc.cluster.local:5000/hello --header "haha: hoho
 
 요렇게 요청을 보내도, header 정보는 확인 불가능!
 
-단, 몇몇 헤더(`X-FORWARDED-FOR`, `X-REQUEST-ID`, `AUTHORITY`)는 Acess Log에 표시된다.
+단, 몇몇 헤더(`X-FORWARDED-FOR`, `X-REQUEST-ID`, `AUTHORITY`)는 Access Log에 표시된다.
 
 # 참고자료
 

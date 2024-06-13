@@ -89,7 +89,7 @@ Ingress Gateway를 통해 보낸 요청도 Jaeger로 추적이 가능하다!
 
 ## Header와 Body 정보는 확인 불가
 
-[Istio Envoy Acess Logging 포스트](https://bluehorn07.github.io/2024/03/16/istio-envoy-access-logging/)에서도 그랬는데, 요청의 Header와 Body 정보는 Tracing에서도 확인 불가능 했다.
+[Istio Envoy Access Logging 포스트](https://bluehorn07.github.io/2024/03/16/istio-envoy-access-logging/)에서도 그랬는데, 요청의 Header와 Body 정보는 Tracing에서도 확인 불가능 했다.
 
 # Zipkin
 

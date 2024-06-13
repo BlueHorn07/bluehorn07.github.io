@@ -82,7 +82,7 @@ $$
   <p>그림을 보면, 2번만에 수렴한 것을 볼 수 있다!!</p>
 </div>
 
-✨ NOTE: \<K-means algorithm\> is guaranteed to decrease $W(C)$ becuase
+✨ NOTE: \<K-means algorithm\> is guaranteed to decrease $W(C)$ because
 
 $$
 W(C_k) = \frac{1}{\left| C \right|} \sum_{\begin{aligned}

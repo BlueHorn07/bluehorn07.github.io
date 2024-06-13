@@ -112,7 +112,7 @@ For example, $\sum (1/n)$ diverges because $\sum 2^n \cdot (1/2^n) = \sum 1$ div
 
 Show $\sum a_n$ converges, then $\sum 2^n a_{2^n}$.
 
-Becuase, $a_n$ is non-increasing and positive sequence, blow inequality satisfies.
+because, $a_n$ is non-increasing and positive sequence, blow inequality satisfies.
 
 $$
 \begin{aligned}
@@ -133,7 +133,7 @@ Show $\sum 2^n a_{2^n}$ converges, then $\sum a_n$.
 
 이번에는 식을 다르게 묶어서 부등식 방향을 바꾸면 된다!
 
-Becuase, $a_n$ is non-increasing and positive sequence, blow inequality satisfies.
+because, $a_n$ is non-increasing and positive sequence, blow inequality satisfies.
 
 $$
 \begin{aligned}

@@ -43,7 +43,7 @@ $$p(y; \eta) = b(y) \exp{\left( \eta^{T} T(y) - a(\eta) \right)} $$
 이때 위의 형태에 등장하는 변수와 함수들은 다음과 같은 이름을 가진다. (외울 정도로 중요하지는 않다.)
 
 - $y$: data
-- $\eta$: natrual parameter (of distribution)
+- $\eta$: natural parameter (of distribution)
 - $T(y)$: sufficient statistic
 - $b(y)$: base measure
 - $a(\eta)$: log partition function

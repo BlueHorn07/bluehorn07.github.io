@@ -231,7 +231,7 @@ $$
 
 의 조건을 만족해야 하는 것이 된다.
 
-이것은 negative-pair dist가 positve-pair dist보다 Margin $1$ 만큼 더 멀리있도록 만든다. 즉,
+이것은 negative-pair dist가 positive-pair dist보다 Margin $1$ 만큼 더 멀리있도록 만든다. 즉,
 
 $$
 \begin{aligned}
@@ -248,7 +248,7 @@ $$
 
 즉,
 
-1\. pair $(\mathbf{x}_i, \mathbf{x}_j)$가 postivie-pair라면, 두 점의 거리값을 줄여 서로 가까워지도록 끌어당긴다; **<u>Pull</u>**
+1\. pair $(\mathbf{x}_i, \mathbf{x}_j)$가 positive-pair라면, 두 점의 거리값을 줄여 서로 가까워지도록 끌어당긴다; **<u>Pull</u>**
 
 2\. pair $(\mathbf{x}_i, \mathbf{x}_k)$가 negative-pair라면, 두 점의 거리값을 positive-pair의 가장 큰 거리값보다 1 만큼의 여유<small>**<u>Margin</u>**</small>를 두고 멀어지도록 밀어낸다; **<u>Push</u>**
 
@@ -261,7 +261,7 @@ $$
 
 처음의 시도와 비교했을 때, LMNN는 좀더 **동적**이라고 말할 수 있다.
 
-앞의 시도에선 negative-pair에 대해 거리값이 $1$이라는 지정된 값보다 크기만 하면 충분했다. 그러나 이런 접근은 **허점**이 있는데, **<u>positive-pair의 거리값이 도저히 1보다 좁혀지지 않을 수도 있다</u>**는 것이다; positve-pair에 대해선 constraint를 만족하면서 거리합이 줄어들기만 하면 된다는 점을 상기하라.
+앞의 시도에선 negative-pair에 대해 거리값이 $1$이라는 지정된 값보다 크기만 하면 충분했다. 그러나 이런 접근은 **허점**이 있는데, **<u>positive-pair의 거리값이 도저히 1보다 좁혀지지 않을 수도 있다</u>**는 것이다; positive-pair에 대해선 constraint를 만족하면서 거리합이 줄어들기만 하면 된다는 점을 상기하라.
 
 그래서 **<u>negative-pair가 positive-pair보다 더 가까이 위치하는 상황이 충분히 가능하다</u>**는 점이 허점으로 지적받는다.
 

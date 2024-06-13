@@ -7,7 +7,7 @@ categories: ["Linear Algebra", "Applied Statsitcs"]
 
 2021-1학기, 대학에서 '통계적 데이터마이닝' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
 
-## (Reveiw) Matrix
+## (Review) Matrix
 
 ✨ (중요) 별다른 언급이 없다면, 모든 벡터 "**column vector**"다. ✨
 
@@ -369,7 +369,7 @@ $$
 \sum_{\pi} \text{sgn} (\pi) \cdot \left( a_{1\pi(1)} \cdots a_{n\pi(n)}\right)
 $$
 
-where the summation is taken over all permuations of $\\{ 1, \dots, n\\}$.
+where the summation is taken over all permutations of $\\{ 1, \dots, n\\}$.
 
 </div>
 
@@ -383,7 +383,7 @@ where the summation is taken over all permuations of $\\{ 1, \dots, n\\}$.
 
 <span class="statement-title">Properties.</span> Determinant<br>
 
-이어지는 성질들은 \<Determinant\>에 대한 성질을 정말 Abtract 한 용어로 기술한 것이다.
+이어지는 성질들은 \<Determinant\>에 대한 성질을 정말 Abstract 한 용어로 기술한 것이다.
 
 $$
 A, B \in \mathbb{R}^{n\times n}

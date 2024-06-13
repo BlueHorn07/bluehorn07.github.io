@@ -55,7 +55,7 @@ $$
 f(x) = E + c \cdot L
 $$
 
-where $L$ is the number of segments, and $c$ is a postivie constant.
+where $L$ is the number of segments, and $c$ is a positive constant.
 
 </div>
 

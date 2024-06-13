@@ -43,9 +43,9 @@ $$
 
 ### Multi-dimensional Splines
 
-지금까지 살펴본 \<Spline Method\>는 모두 1-dimentional spline model이었다. 하지만, 많은 경우 feature의 상호작용을 고려하는 multi-dimentional한 접근을 필요로 한다.
+지금까지 살펴본 \<Spline Method\>는 모두 1-dimensional spline model이었다. 하지만, 많은 경우 feature의 상호작용을 고려하는 multi-dimentional한 접근을 필요로 한다.
 
-\<Multi-dimentional Spline\>은 아래와 같이 모델링 한다.
+\<Multi-dimensional Spline\>은 아래와 같이 모델링 한다.
 
 $$
 f(X) = \sum^{M_1}_{i=1} \sum^{M_2}_{j=1} \; \theta_{ij} \cdot g_{ij} (X)
@@ -75,4 +75,4 @@ $$
 
 이어지는 포스트에서는 KNN 기반의 non-parametric method에 대해 살펴보겠다.
 
-👉 [KNN & kernal method]({{"/2021/05/16/KNN-and-kernel-method" | relative_url}})
+👉 [KNN & kernel method]({{"/2021/05/16/KNN-and-kernel-method" | relative_url}})

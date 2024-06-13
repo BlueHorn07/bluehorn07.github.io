@@ -107,13 +107,13 @@ We will show $S$ is an independent set iff $V \setminus S$ is a vertex cover.
 
 ($\implies$)
 
-Let $S$ be any independent set. Consider an **arbitrary** edge $(u, v)$. Since $S$ is an independent set, any edge $(u, v)$ in $G$ don't have the ends on $S$. This means it cannot be $u \in S$ and $v \in S$, so $u \notin S$ or $v \notin S$. This implies that $u \in V \setminus S$ or $v \in V \setminus S$. It is enought to cover an edge $(u, v)$ that one of end belongs to $V \setminus S$. Thus, $V \setminus S$ covers $(u, v)$.
+Let $S$ be any independent set. Consider an **arbitrary** edge $(u, v)$. Since $S$ is an independent set, any edge $(u, v)$ in $G$ don't have the ends on $S$. This means it cannot be $u \in S$ and $v \in S$, so $u \notin S$ or $v \notin S$. This implies that $u \in V \setminus S$ or $v \in V \setminus S$. It is enough to cover an edge $(u, v)$ that one of end belongs to $V \setminus S$. Thus, $V \setminus S$ covers $(u, v)$.
 
 <br/>
 
 ($\impliedby$)
 
-Let $V \setminus S$ be any vertex cover. Consider two nodes $u \in S$ and $v \in S$. This means two verticies $u$, $v$ is not in $V \setminus S$. Since $V \setminus S$ is a vertex cover, this non-existance means **the graph does not have edge $(u, v)$**. (If two nodes have an edge, one of two should be in a vertex cover $V \setminus S$) Thus, no two nodes in $S$ are joined by an edge, which implies that $S$ is an independent set.
+Let $V \setminus S$ be any vertex cover. Consider two nodes $u \in S$ and $v \in S$. This means two vertices $u$, $v$ is not in $V \setminus S$. Since $V \setminus S$ is a vertex cover, this non-existence means **the graph does not have edge $(u, v)$**. (If two nodes have an edge, one of two should be in a vertex cover $V \setminus S$) Thus, no two nodes in $S$ are joined by an edge, which implies that $S$ is an independent set.
 
 </div>
 

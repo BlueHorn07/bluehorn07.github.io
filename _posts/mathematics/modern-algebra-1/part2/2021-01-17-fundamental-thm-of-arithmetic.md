@@ -41,7 +41,7 @@ Fundamental Theorem of Arithmetic <small>(산술의 기본정리)</small>은 "Un
 
 <div class="notice" markdown="1">
 
-For a natrual number $n > 2$,
+For a natural number $n > 2$,
 
 can have an unique factorization.
 

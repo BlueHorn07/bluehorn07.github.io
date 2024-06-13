@@ -79,7 +79,7 @@ for (int i = 0; i < N; i++) {
 long long FordFulkerson(int source, int sink) {
   long long ret = 0;
 
-  // find path and upate residual graph
+  // find path and update residual graph
   while (1) {
     ...
     // dfs

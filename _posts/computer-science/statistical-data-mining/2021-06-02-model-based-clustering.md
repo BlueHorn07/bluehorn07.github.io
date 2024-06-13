@@ -55,13 +55,13 @@ $$
 
 Let $X_1, \dots, X_n$ be iid from a \<K-component mixture\>; Data point $X_i$가 mixture model에서 샘플링 되었다고 가정한다.
 
-우리는 Data points $\\{ X_1, \dots, X_n \\}$로부터 parameter $\theta$를 추정해야 한다. 현재 우리는 $\theta$를 모르는(unkown) 상태며, 그 형태는 아래와 같다.
+우리는 Data points $\\{ X_1, \dots, X_n \\}$로부터 parameter $\theta$를 추정해야 한다. 현재 우리는 $\theta$를 모르는(unknown) 상태며, 그 형태는 아래와 같다.
 
 $$
 \theta = (\pi_1, \dots, \pi_K, \; \phi_1, \dots, \phi_K)^T
 $$
 
-우리는 이 unknown paramter $\phi$를 추정하기 위해 MLE를 사용할 것이다.
+우리는 이 unknown parameter $\phi$를 추정하기 위해 MLE를 사용할 것이다.
 
 <div class="definition" markdown="1">
 
