@@ -1,0 +1,28 @@
+[default]
+
+[files]
+extend-exclude = [
+  # Ignore these files
+  "**/*.js",
+  "**/*.yaml",
+  "**/*.yml",
+  "**/*.xml",
+  "**/*.json",
+  "**/*.css",
+  "**/*.scss",
+  "**/*.html",
+  "_includes/**/*",
+  "assets/**/*"
+]
+
+[default.extend-words]
+"ALS" = "ALS"
+"MAP" = "MAP"
+"MAPE" = "MAPE"
+"BA" = "BA"
+"IST" = "IST"
+"iy" = "iy"
+"Thm" = "Thm"
+"STIP" = "STIP"
+"FOVgames" = "FOVgames"
+"FO" = "FO"
