@@ -56,6 +56,13 @@ toc_sticky: true
 - [istioctl 디버그 도구들](https://bluehorn07.github.io/2024/03/24/istioctl-debug-tool/)
 - [Istio Certificate Associate 시험 후기 ⭐️](https://bluehorn07.github.io/2024/04/10/istio-certificate-associate-exam-review/)
 
+
+## Spark & Delta
+
+- [Delta Lake 데이터 처리에 대한 고찰](https://bluehorn07.github.io/2024/06/13/delta-lake-data-processing-insights/)
+- [Delta Lake Time Travel](https://bluehorn07.github.io/2024/06/16/delta-lake-time-travel/)
+
+
 ## ElasticSearch
 
 - [Lucene Segment](/2023/05/19/Lucene-Segment/)

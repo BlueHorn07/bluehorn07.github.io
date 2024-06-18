@@ -1,9 +1,9 @@
 ---
-title: "Delta Lake: CRUD"
+title: "Delta Lake 데이터 처리에 대한 고찰"
 toc: true
 toc_sticky: true
 categories: ["Spark"]
-exceprt: Delta Lake의 기본 연산에 대한 고찰
+excerpt: Delta 테이블 생성과 읽기. 그리고 각종 Write 연산들(`DELETE`, `UPDATE`, `replaceWhere`, `MERGE INTO`)에 대한 고찰
 ---
 
 회사에서 Databricks를 통해 Spark Cluster를 운영하고 있습니다. 본 글은 Databricks를 기준으로 작성했음을 미리 밝힙니다.
@@ -56,6 +56,18 @@ SELECT * FROM `sample_schema`.`sample_table`
 
 ```scala
 val df = spark.table("sample_schema.sample_table")
+```
+
+Scala에선 `spark.read.table()`로 접근하는 것도 가능하다.
+
+```scala
+val df = spark.read.table("sample_schema.sample_table")
+```
+
+요 방식은 Delta 테이블에 Option을 붙일 수 있다.
+
+```scala
+val df = spark.read.option("versionAsOf", 1).table("sample_schema.sample_table")
 ```
 
 ## Without Table Name
@@ -146,7 +158,16 @@ WHERE id BETWEEN 1 AND 500
 
 이 경우, `id=1~1000` 데이터가 들어있던 `.parquet` 파일에서 삭제된 부분을 제외한 `id=501~1000` 데이터가 담긴 `.parquet` 파일이 새로 생성된다. 데이터를 절반쯤 날렸으니, 새로 생성된 `.parquet`는 기존 파일의 절반 쯤의 크기를 갖게 된다.
 
-이럼 점 때문에, `DELETE` 연산은 오히려 스토리지 용량이 늘어난다. 또, `DELETE` 연산을 할수록 여분 데이터가 복제되어 신규 버전에 쌓이는 것이기 때문에 작은 `DELETE`를 여러번 할수록 Delta에 담긴 `.parquet` 파일들과 크기의 총합이 매우 증가하게 된다.
+이럼 점 때문에, `DELETE` 연산은 오히려 스토리지 용량이 늘어난다. 또, `DELETE` 연산을 할수록 여분 데이터가 복제되어 신규 버전에 쌓이는 것이기 때문에 `DELETE` 연산을 여러번 할수록 Delta에 담긴 `.parquet` 파일들과 크기의 총합이 횟수만큼 증가하게 된다.
+
+단, 이때 변경되는 `.parquet` 파일은 `DELETE` 연산으로 영향을 받는 `.parquet` 파일만으로 한정 된다. 예를 들어, 데이터가 아래와 같이 2개의 Repartition으로 저장 되어 있었다고 하자.
+
+| id | repartition |
+|:---:|:---:|
+| 1~50 | `parquet-1` |
+| 51~100 | `parquet-2` |
+
+만약, `DELETE` 연산으로 id 1부터 10까지의 데이터를 기준다고 해보자. 그러면, Delta는 `parquet-1` 파일을 읽어서 `DELETE` 연산을 처리한 새로운 `.parquet` 파일을 만든다. 연산 범위 밖에 있는 `parquet-2` 파일은 아무 영향 없이 그대로 존재한다!
 
 
 # Update
@@ -184,6 +205,6 @@ WHEN NOT MATCHED THEN
 # References
 
 - Delta Lake
-  - [Table Batch Reads and Writes](https://docs.delta.io/0.4.0/delta-batch.html)
-  - [Table Deletes, Updates, and Merges](https://docs.delta.io/0.4.0/delta-update.html)
+  - [Table Batch Reads and Writes](https://docs.delta.io/latest/delta-batch.html)
+  - [Table Deletes, Updates, and Merges](https://docs.delta.io/latest/delta-update.html)
 - [[Delta Lake] 데이터 레이크하우스: 테이블 활용하기](https://data-engineer-tech.tistory.com/55)
