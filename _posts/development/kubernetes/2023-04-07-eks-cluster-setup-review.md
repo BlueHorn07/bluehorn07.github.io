@@ -54,7 +54,7 @@ EKS 클러스터는 콘솔이 아닌 AWS CLI를 사용해 띄울 것이다. EKS 
 - `AmazonEKSClusterPolicy`
 - `AmazonEKSVPCResourceController`
 
-그 이후엔 bastion 호스트에서 아래의 명령어를 치면 된다.
+그 이후엔 bastion 호스트에서 아래의 명령어를 실행하면 된다.
 
 ```bash
 aws eks create-cluster \
@@ -98,7 +98,7 @@ kubernetes   ClusterIP   10.111.0.1   <none>        443/TCP   2d19h
 - `AmazonEC2ContainerRegistryReadOnly`
 - `AmazonEKS_CNI_Policy`
 
-그 이후엔 bastion 호스트에서 아래의 명령어를 치면 된다.
+그 이후엔 bastion 호스트에서 아래의 명령어를 실행하면 된다.
 
 ```bash
 aws eks create-nodegroup \
