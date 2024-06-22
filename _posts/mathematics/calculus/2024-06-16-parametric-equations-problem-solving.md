@@ -3,7 +3,7 @@ title: "Parametric Equations: Problem Solving"
 toc: true
 toc_sticky: true
 categories: ["Calculus"]
-excerpt: ""
+excerpt: "Hypocycloid, Trochoids"
 ---
 
 # The witch of Maria Agnesi
@@ -149,5 +149,127 @@ y
 \end{aligned}
 $$
 
-# Troichoids
+# Trochoids
+
+![](https://mathworld.wolfram.com/images/eps-svg/Trochoid_1000.svg)
+
+직선 위를 둥근 원이 둘러갈 때의 자취를 일반화한 것이 "Trochoids"이다. 원의 반지름을 $a$라고 하고, 원의 중심에서 뻗어나온 바큇살(spoke of wheel)의 길이를 $b$라고 하자. 이때, $a = b$인 상황이 많이 살펴본 "Cycloid"의 경우다. 이름은 그리스어로 "바퀴"를 뜻하는 *trochos*에서 유래했다고 한다.
+
+매개방정식은 Cycloid의 것을 구했던 접근과 비슷하게 유도하면 된다.
+
+$$
+\begin{aligned}
+x &= a \theta - b \sin \theta \\
+y &= a - b \cos \theta
+\end{aligned}
+$$
+
+# Complete Elliptic Integral
+
+아래와 같은 타원의 둘레를 계산해보자.
+
+$$
+\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1
+$$
+
+이를 매개변수로 표현하면 아래와 같다.
+
+$$
+\begin{aligned}
+x &= a \cos t \\
+y &= b \sin t
+\end{aligned}
+$$
+
+매개변수 방정식의 arc length를 계산하는 식에 따라 적분을 수행하면 아래와 같다.
+
+$$
+P = 4 \cdot \int_0^{\pi/2} \sqrt{a^2 \sin^2 t + b^2 \cos^2 t} \, dt
+$$
+
+식을 $a$를 기준으로 정리하면...
+
+
+$$
+\begin{aligned}
+P
+&= 4 \cdot \int_0^{\pi/2} \sqrt{a^2 \sin^2 t + b^2 \cos^2 t} \, dt \\
+&= 4 \cdot \int_0^{\pi/2} \sqrt{b^2  - (b^2 - a^2)\sin^2 t} \, dt \\
+&= 4 \cdot \int_0^{\pi/2} b \sqrt{1  - \frac{(b^2 - a^2)}{b^2}\sin^2 t} \, dt \\
+&= 4 \cdot \int_0^{\pi/2} b \sqrt{1  - k^2 \sin^2 t} \, dt \\
+\end{aligned}
+$$
+
+이때, $k$는 이심률(eccentricity)로 $0 \le k^2 \le 1$의 값을 갖는다.
+
+요 타원 적분이 완전(complete)인 이유는 $0$부터 $\pi/2$까지 적분하기 때문이다. 만약 적분 범위가 $\pi/2$가 아니라 변수라면, 불완전 타원 적분이라고 한다.
+
+$$
+F(\theta, k) = \int_0^{\theta} \sqrt{1 - k^2 \sin^2 t} \, dt
+$$
+
+## 풀이
+
+타원의 둘레를 구하는 적분은 non-elementry integral임이 알려져 있다. 그래도 그 적분값을 못 구하는게 아닌데, 어떻게 구하는지 살펴보자.
+
+$\sqrt{1 - x}$를 일반화된 이항정리를 적용해 전개하면 아래와 같다.
+
+$$
+\sqrt{1-x} = \sum_{n=0}^{\infty} \binom{1/2}{n} x^n = 1 - \frac{1}{2} x - \frac{1}{8} x^2 - \cdots
+$$
+
+이걸 $\sqrt{1 - k^2 \sin^2 t}$에 적용해보자.
+
+$$
+\sqrt{1-k^2 \sin^2 t} = 1 - \frac{1}{2} k^2 \sin^2 t - \frac{1}{8} k^4 \sin^4 t - \cdots
+$$
+
+이제 $[0, \pi/2]$ 범위에 대해 적분해보자.
+
+$$
+\begin{aligned}
+&\int_0^{\pi/2} \sqrt{1-k^2 \sin^2 t} \, dt \\
+&=\int_0^{\pi/2} 1 - \frac{1}{2} k^2 \sin^2 t - \frac{1}{8} k^4 \sin^4 t - \cdots \, dt \\
+\end{aligned}
+$$
+
+이때, $n$이 짝수일 때, 적분 $\int_0^{\pi/2} \sin^n t \, dt$에 대해서 아래가 성립한다.
+
+$$
+\begin{aligned}
+&\int_0^{\pi/2} \sin^n t \, dt \\
+&= \frac{1 \cdot 3 \cdot 5 \cdots (n-1)}{2 \cdot 4 \cdot 6 \cdots n} \cdot \frac{\pi}{2} \\
+&=\frac{(n-1)!!}{n!!} \cdot \frac{\pi}{2}
+\end{aligned}
+$$
+
+적분식을 정리하면 아래와 같다.
+
+$$
+\begin{aligned}
+&\int_0^{\pi/2} \sqrt{1-k^2 \sin^2 t} \, dt \\
+&=\int_0^{\pi/2} 1 - \frac{1}{2} k^2 \sin^2 t - \frac{1}{8} k^4 \sin^4 t - \cdots \, dt \\
+&= \frac{\pi}{2} - \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{\pi}{2}\cdot k^2 - \frac{1}{2 \cdot 4} \cdot \frac{1 \cdot 3}{2 \cdot 4} \frac{\pi}{2} k^4 - \cdots \\
+&= \frac{\pi}{2} \left( 1 - \left( \frac{1}{2} \right)^2 k^2 - \left( \frac{1 \cdot 3}{2 \cdot 4} \right)^2 \frac{k^4}{3} - \cdots \right)
+\end{aligned}
+$$
+
+위의 적분은 수렴하는지는 $k^2$의 등비 급수와 비교했을 때, 위의 적분이 더 가파르게 감소하기 때문에, Complete Eliptical Integral이 수렴한다고 말할 수 있다.
+
+# Limaçon Curve
+
+<p><a href="https://commons.wikimedia.org/wiki/File:EpitrochoidIn1.gif#/media/File:EpitrochoidIn1.gif"><img src="https://upload.wikimedia.org/wikipedia/commons/2/28/EpitrochoidIn1.gif" alt="EpitrochoidIn1.gif" height="446" width="453"></a><br>By Sam Derbyshire - <a class="external free" href="https://en.wikipedia.org/wiki/Image:EpitrochoidIn1.gif">http://en.wikipedia.org/wiki/Image:EpitrochoidIn1.gif</a>, <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=3974765">Link</a></p>
+
+리마송(Limacon)은 프랑스어로 달팽이🐌라는 뜻이다.
+
+심장형 곡선(Cardioid)가 리마송 곡선의 특수한 케이스라고 함.
+
+https://en.wikipedia.org/wiki/Lima%C3%A7on
+
+# Lissajous Figures
+
+# The nephroid of Freeth
+
+
+
 
