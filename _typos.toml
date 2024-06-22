@@ -26,3 +26,4 @@ extend-exclude = [
 "STIP" = "STIP"
 "FOVgames" = "FOVgames"
 "FO" = "FO"
+"astroid" = "astroid"
