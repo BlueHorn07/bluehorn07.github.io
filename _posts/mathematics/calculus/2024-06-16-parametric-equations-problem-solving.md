@@ -210,9 +210,9 @@ $$
 
 ## 풀이
 
-타원의 둘레를 구하는 적분은 non-elementry integral임이 알려져 있다. 그래도 그 적분값을 못 구하는게 아닌데, 어떻게 구하는지 살펴보자.
+타원의 둘레를 구하는 적분은 non-elementry integral임이 알려져 있다. non-elementry integral이라고 해도 적분값은 계산할 수 있다!! 어떻게 구하는지 살펴보자.
 
-$\sqrt{1 - x}$를 일반화된 이항정리를 적용해 전개하면 아래와 같다.
+$\sqrt{1 - x}$를 Generalized Binomial Theorem을 적용해 전개하면 아래와 같다.
 
 $$
 \sqrt{1-x} = \sum_{n=0}^{\infty} \binom{1/2}{n} x^n = 1 - \frac{1}{2} x - \frac{1}{8} x^2 - \cdots
@@ -268,7 +268,7 @@ $$
 
 </div>
 
-## Parametric Equation Form
+## Parametric Equation
 
 ![](/images/mathematics/calculus/limacon-curve.png){: style="height: 400px" }
 
@@ -330,7 +330,7 @@ P
 \end{aligned}
 $$
 
-## Polar Eqaution Form
+## Polar Eqaution
 
 매개변수 방정식으로 표현한 리마송 곡선을 극좌표 방정식으로 표현해보자. 이때, 원점 $O$에서 시작하는 리마송 곡선을 표현한 방정식을 사용하면, 식이 훨씬 간편하게 정리된다.
 
