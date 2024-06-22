@@ -3,7 +3,7 @@ title: "Parametric Equations: Problem Solving"
 toc: true
 toc_sticky: true
 categories: ["Calculus"]
-excerpt: "Hypocycloid, Trochoids"
+excerpt: "The witch of Maria Agnesi, Hypocycloid, Trochoids, Limaçon Curve, Lissjouse Curve, Nephroid"
 ---
 
 # The witch of Maria Agnesi
@@ -260,16 +260,160 @@ $$
 
 <p><a href="https://commons.wikimedia.org/wiki/File:EpitrochoidIn1.gif#/media/File:EpitrochoidIn1.gif"><img src="https://upload.wikimedia.org/wikipedia/commons/2/28/EpitrochoidIn1.gif" alt="EpitrochoidIn1.gif" height="446" width="453"></a><br>By Sam Derbyshire - <a class="external free" href="https://en.wikipedia.org/wiki/Image:EpitrochoidIn1.gif">http://en.wikipedia.org/wiki/Image:EpitrochoidIn1.gif</a>, <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=3974765">Link</a></p>
 
-리마송(Limacon)은 프랑스어로 달팽이🐌라는 뜻이다.
+리마송(Limacon)은 프랑스어로 달팽이🐌라는 뜻이다. 곡선에 대한 정의는 아래와 같다.
 
-심장형 곡선(Cardioid)가 리마송 곡선의 특수한 케이스라고 함.
+<div class="definition" markdown="1">
 
-https://en.wikipedia.org/wiki/Lima%C3%A7on
+고정된 원 $O_1$의 바깥쪽에 외접한, 반지름 길이가 같은 다른 한 원 $O_2$를 미끄러짐 없이 한 바퀴 굴렸다고 하자. 이때, 구르는 원의 중심에서 일정한 거리만큼 떨어져 있는 지점인 원의 바큇살이 구르는 원과 함께 움직이며 그리는 점의 자취.
 
-# Lissajous Figures
+</div>
 
-# The nephroid of Freeth
+## Parametric Equation Form
+
+![](/images/mathematics/calculus/limacon-curve.png){: style="height: 400px" }
+
+매개방정식의 꼴로 유도해보자. 계산의 편의를 위해 바깥 원의 바큇살을 원의 반지름과 같은 $R$이라고 하자.
+
+점 $O_2$의 자취는 아래와 같다.
+
+$$
+O_2 = (2R \cos \theta, \; 2R \sin \theta)
+$$
+
+이때, 직선 $O_2 P$가 $x$축과 이루는 각도가 $2 \theta$이므로 점 $P$의 자취는 아래와 같다.
+
+$$
+P = (2R \cos \theta - R \cos 2 \theta, \; 2R \sin \theta - R \sin 2 \theta)
+$$
+
+위와 같이 기술해도 충분하다. 하지만 여기서 배각 $2 \theta$를 풀어서 $\theta$에 대해서로 바꿔보자.
+
+<$x$ 좌표>
+
+$$
+\begin{aligned}
+x &= 2R \cos \theta - R \cos 2 \theta \\
+&= 2R \cos \theta - R \cos^2 \theta + R \sin^2 \theta \\
+&= 2R \cos \theta - R \cos^2 \theta + R(1 - \cos^2 \theta) \\
+&= 2R \cos \theta - 2R \cos^2 \theta + R \\
+&= R + 2R \cos \theta (1 - \cos \theta)
+\end{aligned}
+$$
+
+<$y$ 좌표>
+
+$$
+\begin{aligned}
+y &=2R \sin \theta - R \sin 2 \theta \\
+&= 2R \sin \theta - 2R \sin \theta \cos \theta \\
+&= 2R \sin \theta (1 - \cos \theta)
+\end{aligned}
+$$
+
+어떤 자료에서는 점 $P$의 자취가 원점 $O$부터 시작하도록 기술하기 위해 $x$ 축에 대해서 평행이동 시키는 경우가 있다. 이 경우, 방정식이 아래와 같이 기술된다.
+
+$$
+P' = (2R \cos \theta (1 - \cos \theta), \; 2R \sin \theta (1 - \cos \theta))
+$$
+
+요렇게 원점 $O$에서 시작하는 리마송 곡선은 뒤에서 극좌표 방정식으로 표현할 때 사용하게 된다.
+
+<br/>
+
+위의 유도에서는 바큇살의 길이가 원의 반지름인 $R$과 같다고 두었다. 바큇살의 길이가 $R$이 아닌 $r$라고 한다면, 식은 아래와 같다.
+
+$$
+\begin{aligned}
+P
+&= (2R \cos \theta - r \cos 2\theta, \; 2R \sin \theta - r \sin 2\theta) \\
+&= (r + 2 \cos \theta(R - r \cos \theta), \; 2 \sin \theta (R - r \sin \theta))
+\end{aligned}
+$$
+
+## Polar Eqaution Form
+
+매개변수 방정식으로 표현한 리마송 곡선을 극좌표 방정식으로 표현해보자. 이때, 원점 $O$에서 시작하는 리마송 곡선을 표현한 방정식을 사용하면, 식이 훨씬 간편하게 정리된다.
+
+$$
+\begin{aligned}
+r^2
+&= x^2 + y^2 \\
+&= \left( 2R \cos \theta \cdot (1 - \cos \theta) \right)^2 + \left( 2R \sin \theta \cdot (1 - \cos \theta) \right)^2 \\
+&= 4 R^2 \cdot (1 - \cos \theta)^2
+\end{aligned}
+$$
+
+즉, 극좌표 방정식을 표현하면 $r = 2 R \cdot (1 - \cos \theta)$로 표현된다.
+
+<br/>
+
+<p class="img-wrapper"><a href="https://commons.wikimedia.org/wiki/File:Limacons.svg#/media/File:Limacons.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Limacons.svg" alt="Limacons.svg" height="230" width="620"></a><br>By <a href="//commons.wikimedia.org/wiki/User:Mktyscn" class="mw-redirect" title="User:Mktyscn">Mktyscn</a> - Made by Mktyscn using a custom C program and Windows Notepad, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=7286020">Link</a></p>
+
+만약 바큇살의 길이가 $r$라고 하면, 극좌표식은 아래와 같다.
+
+$$
+r = 2R - 2r \cos \theta
+$$
+
+$R$과 $r$의 대소 관계에 따른 리마송 곡선의 모양이 어떻게 달라지는지, 위의 그림을 기준으로 이해해보면
+
+- $R > r$
+  -  원점 $O$를 지나지 않는다.
+- $R = r$
+  - 원점 $O$를 지나간다.
+  - 심장형 곡선
+- $R < r$
+  - 원점 $O$를 지나간다.
+  - 원점 $O$를 지나면서 매듭이 생긴다.
+
+## Cardioid
+
+<p><a href="https://commons.wikimedia.org/wiki/File:Kardioide.svg#/media/File:Kardioide.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Kardioide.svg" alt="Kardioide.svg" height="243" width="278"></a><br>By <a href="//commons.wikimedia.org/wiki/User:Ag2gaeh" title="User:Ag2gaeh">Ag2gaeh</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=46189703">Link</a></p>
+
+심장형 곡선(cardioid)는 리마송 곡선의 특수한 경우로, 원의 반지름과 바큇살의 반지름의 길이가 같은 경우다: $R = r$.
+
+매개변수 방정식으로는
+
+$$
+\begin{aligned}
+x &= 2R \cos \theta (1 - \cos \theta)  \\
+y &= 2R \sin \theta (1 - \cos \theta)
+\end{aligned}
+$$
+
+극좌표 방정식으로는
+
+$$
+r = 2R (1 - \cos \theta)
+$$
+
+# Lissajous Curve
+
+<p class="img-wrapper"><a href="https://commons.wikimedia.org/wiki/File:Lissajous_relaciones.png#/media/File:Lissajous_relaciones.png"><img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Lissajous_relaciones.png" alt="Lissajous figures: various frequency relations and phase differences" width="200px"></a><br>By <a href="//commons.wikimedia.org/w/index.php?title=User:Vhastorga&amp;action=edit&amp;redlink=1" class="new" title="User:Vhastorga (page does not exist)">Vhastorga</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=98659598">Link</a></p>
+
+리사주 곡선(Lissajous Curve)는 두 사인파 곡선이 수평축과 수직축을 이룰 때, 이 들의 위상차(phase difference), 주파수비에 따라 그려지는 곡선을 말한다.
+
+<p class="img-wrapper"><a href="https://commons.wikimedia.org/wiki/File:Harmonie-circulaire.gif#/media/File:Harmonie-circulaire.gif"><img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Harmonie-circulaire.gif" alt="Harmonie-circulaire.gif" height="300" width="530"></a><br>By <a href="//commons.wikimedia.org/wiki/User:Thierry_Dugnolle" title="User:Thierry Dugnolle">Thierry Dugnolle</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=90178783">Link</a></p>
+
+가장 익숙한 형태로는 원형(Circle)으로 $x = \cos t$, $y = \sin t$로 두 곡선은 $\pi/2$의 위상차에 같은 주파수비를 가지고 있다.
+
+<br/>
+
+리사쥬 곡선을 이루는 두 사인파의 주바수비를 쉽게 확인하는 방법은 $x$축과 $y$축에서 $x=1$, $y=1$ 지점에 곡선이 몇번 접하는지 세어보면 된다.
+
+![](/images/mathematics/calculus/lissajouse-curves.png){: style="height: 200px" .align-center }
+
+첫번째 곡선은 $x=1$에 1번 접하고 $y=1$에 2번 접하므로, $x$ 사인파와 $y$ 사인파의 주파수 비율이 1:2를 이룬다.
+
+두번째 곡선은 $x=1$에 2번 접하고 $y=1$에 3번 접하므로, $x$ 사인파와 $y$ 사인파의 주파수 비율이 2:3을 이룬다.
+
+# Nephroid
+
+<p><a href="https://commons.wikimedia.org/wiki/File:EpitrochoidOn2.gif#/media/File:EpitrochoidOn2.gif"><img src="https://upload.wikimedia.org/wikipedia/commons/0/02/EpitrochoidOn2.gif" alt="EpitrochoidOn2.gif" height="454" width="446"></a><br>By <a href="https://en.wikipedia.org/wiki/User:Sam_Derbyshire" class="extiw" title="en:User:Sam Derbyshire">Sam Derbyshire</a> at the <a href="https://en.wikipedia.org/wiki/" class="extiw" title="en:">English Wikipedia</a>, <a href="http://creativecommons.org/licenses/by-sa/3.0/" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=6688559">Link</a></p>
+
+콩팥형 곡선(Nephroid, 네프로이드)는 궤적의 모양이 콩팥과 같이 생긴 곡선이다.
 
 
+## The nephroid of Freeth
 
-
+TDB
