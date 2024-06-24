@@ -12,6 +12,9 @@ Apple M3 맥북(Sonoma 14.5)에서 Rancher Desktop(`1.14.1`) 통해 Local Kubern
 
 # Check Knative Compatibility
 
+![](https://avatars.githubusercontent.com/u/35583233?v=4)
+{: style="width: 200px" }
+
 Knative를 설치하거나 버전 업그레이드 할 때는 K8s와의 호환성을 고려해야 한다. Knative의 [Release Support](https://github.com/knative/community/blob/main/mechanics/RELEASE-SCHEDULE.md) 문서를 보면, 호환되는 minimum k8s version이 명시되어 있다.
 
 이번 글에서 사용하는 Knative 버전은 `1.14.1` 버전이다. 요 버전은 최소 K8s `1.28` 버전을 요구한다. 아마, K8s 버전이 올라가면서 K8s API 규격이나 기능들이 추가되거나 변경 되는데, Knative에서 사용하는 로직에서 해당 버전 이상부터 지원하는 것들이 있는가보다.
