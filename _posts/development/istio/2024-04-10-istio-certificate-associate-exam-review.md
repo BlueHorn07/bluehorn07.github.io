@@ -24,7 +24,7 @@ CKA 시험에 이어서 2번째로 시험 본 CNCF 자격증이다 ㅎㅎ 올해
 
 특히 Istio의 컨트롤 플레인인 `istiod`를 공부할 때 실력이 많이 성장한 것 같다. 처음에는 Sidecar Injection만 이해하고 있었는데, 이후에 Envoy 구성 정보 컴파일과 Certificate 관리에 대한 내용을 공부하면서 Istio의 전체적인 구조를 깨달은 것 같다. 또, 인터넷에서 Istio 자료들을 찾다보면 몇몇 자료가 Istio 구버전(istio 1.5 이하)의 구조로 설명하고 있는데, Mixer, Galley, Citadel이 나오는 이 구조를 이해하고 싶다는 생각이 갑자기 들어서 Istio 블로그 글이랑 패치 노트를 열심히 찾아본 것도 기억에 남는다 ㅎㅎ [[삽질의 흔적 ㅎㅎ]](https://bluehorn07.github.io/2024/03/07/istio-control-plane-detail-examine/)
 
-Istio를 공부하면서 새로운 개념들도 많이 만나게 되었는데, mTLS와 WebAssembly도 Istio에서 처음 들어봤고, Zerㄴo-trust Network에 대해서도 처음에 잘 이해가 안 됐는데 관련 자료를 찾아보니 Istio로 쉽게 K8s ZTN를 구축할 수 있다는 것도 알게 됐다. (토스의 ["고객 불안을 0으로 만드는 토스의 Istio Zero Trust" 영상](https://youtu.be/4sJd6PIkP_s?si=aYMdO52OFKBGied9)이 많이 도움이 됐다.)
+Istio를 공부하면서 새로운 개념들도 많이 만나게 되었는데, mTLS와 WebAssembly도 Istio에서 처음 들어봤고, Zero-trust Network에 대해서도 처음에 잘 이해가 안 됐는데 관련 자료를 찾아보니 Istio로 쉽게 K8s ZTN를 구축할 수 있다는 것도 알게 됐다. (토스의 ["고객 불안을 0으로 만드는 토스의 Istio Zero Trust" 영상](https://youtu.be/4sJd6PIkP_s?si=aYMdO52OFKBGied9)이 많이 도움이 됐다.)
 
 Istio 공부하면서 Envoy를 만나게 되는데, Istio가 Envoy를 사용하기만 하는거라 처음엔 Envoy가 되게 블랙 박스처럼 느껴졌다. 이것도 `istiod`의 Envoy Configuration 컴파일 기능을 자세히 공부하면서 Istio가 Envoy를 쓰기 위해 어떻게 동작하는지, 그리고 Config를 모든 Envoy 사이드카에 전파하기 위해 Service Discovery API 이런 부분들이 조금 어려웠지만 재밌게 느껴졌다 ㅎㅎ
 
