@@ -210,7 +210,7 @@ $$
 
 ## 풀이
 
-타원의 둘레를 구하는 적분은 non-elementry integral임이 알려져 있다. non-elementry integral이라고 해도 적분값은 계산할 수 있다!! 어떻게 구하는지 살펴보자.
+타원의 둘레를 구하는 적분은 non-elementary integral임이 알려져 있다. non-elementary integral이라고 해도 적분값은 계산할 수 있다!! 어떻게 구하는지 살펴보자.
 
 $\sqrt{1 - x}$를 Generalized Binomial Theorem을 적용해 전개하면 아래와 같다.
 
@@ -254,7 +254,7 @@ $$
 \end{aligned}
 $$
 
-위의 적분은 수렴하는지는 $k^2$의 등비 급수와 비교했을 때, 위의 적분이 더 가파르게 감소하기 때문에, Complete Eliptical Integral이 수렴한다고 말할 수 있다.
+위의 적분은 수렴하는지는 $k^2$의 등비 급수와 비교했을 때, 위의 적분이 더 가파르게 감소하기 때문에, Complete Elliptical Integral이 수렴한다고 말할 수 있다.
 
 # Limaçon Curve
 
@@ -330,7 +330,7 @@ P
 \end{aligned}
 $$
 
-## Polar Eqaution
+## Polar Equation
 
 매개변수 방정식으로 표현한 리마송 곡선을 극좌표 방정식으로 표현해보자. 이때, 원점 $O$에서 시작하는 리마송 곡선을 표현한 방정식을 사용하면, 식이 훨씬 간편하게 정리된다.
 

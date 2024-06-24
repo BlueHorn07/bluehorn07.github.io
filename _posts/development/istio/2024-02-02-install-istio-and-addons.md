@@ -6,6 +6,10 @@ categories: ["Kubernetes", "Istio"]
 excerpt: 우당탕탕! Istio 설치 수난기. `istioctl`과 Operator 패턴.
 ---
 
+이 글을 작성하는 24년 2월엔 Istio [`1.20.2`](https://github.com/istio/istio/releases/tag/1.20.2) 버전이 최신 버전입니다.
+Apple M3 맥북(Sonoma 14.5)에서 Rancher Desktop 통해 Local Kubernetes Cluster 구성하여 진행하였습니다. K8s 버전은 `1.27`입니다.
+{: .notice }
+
 ![](/images/meme/i-must-study.jpeg){: .align-center style="max-width: 300px" }
 
 24년의 첫 자격증 공부로 Istio를 시작하고 무한 고통 받고 있는 나 자신... Udemy 강의는 쭉 다 들었고, 이젠 로컬 맥북에 Istio를 구축해서 이리저리 핸즈온을 해보고 있다.
