@@ -27,3 +27,4 @@ extend-exclude = [
 "FOVgames" = "FOVgames"
 "FO" = "FO"
 "astroid" = "astroid"
+"circulaire" = "circulaire"
