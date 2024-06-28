@@ -243,6 +243,9 @@ kubectl delete knativeserving knative-serving -n knative-serving
 
 # destroy knative serving operator
 kubectl delete -f https://github.com/knative/operator/releases/download/knative-v1.14.3/operator.yaml
+
+# destroy istio
+istioctl uninstall --purge
 ```
 
 # 마무리 하며
