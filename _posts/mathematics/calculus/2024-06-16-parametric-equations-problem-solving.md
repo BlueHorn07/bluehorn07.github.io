@@ -3,7 +3,7 @@ title: "Parametric Equations: Problem Solving"
 toc: true
 toc_sticky: true
 categories: ["Calculus"]
-excerpt: "The witch of Maria Agnesi, Hypocycloid, Trochoids, Limaçon Curve, Lissjouse Curve, Nephroid"
+excerpt: "The witch of Maria Agnesi, Hypocycloid, Trochoids, Limaçon Curve, Lissajous Curve, Nephroid, Strophoid, The nephroid of Freeth"
 ---
 
 # The witch of Maria Agnesi
@@ -413,7 +413,64 @@ $$
 
 콩팥형 곡선(Nephroid, 네프로이드)는 궤적의 모양이 콩팥과 같이 생긴 곡선이다.
 
+고정된 원의 바깥을 다른 원이 구르는 궤적이라는 점에서 앞에서 살펴본 리마송(Limaçon) 곡선과 비슷하다. 그러나, 리마송 곡선은 고정된 원과 구르는 원의 반지름이 정확히 같았고, 네프로이드 곡선은 고정된 원과 구르는 원의 반지름 비율이 "**2:1**"이다.
+
+## Parametric Equations
+
+매개변수 방식을 유도하면 아래와 같다.
+
+![](/images/mathematics/calculus/nephroid-parametric.png){: style="max-height: 300px" .align-center }
+
+$$
+\begin{aligned}
+x &= 3 r \cos \theta - r \cos 3\theta \\
+y &= 3r \sin \theta - r \sin 3\theta
+\end{aligned}
+$$
+
+# Strophoid
+
+<p><a href="https://commons.wikimedia.org/wiki/File:Allgemeine_strophoide5.svg#/media/File:Allgemeine_strophoide5.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Allgemeine_strophoide5.svg" alt="Allgemeine strophoide5.svg" height="290" width="280"></a><br>By <a href="//commons.wikimedia.org/wiki/User:Kmhkmh" title="User:Kmhkmh">Kmhkmh</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by/4.0" title="Creative Commons Attribution 4.0">CC BY 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=92742133">Link</a></p>
+
+
+평면 상에서 곡선 $C$와 고정점 $A$, 그리고 원점 $O$에 의해 생성되는 곡선을 말한다. 만드는 과정은 아래와 같다.
+
+<div class="definition" markdown="1">
+
+원점 $O$에서 출발해 곡선 $C$를 지나는 직선 $L$을 생각해보자. 직선 $L$이 곡선 $C$와 $K$라는 점을 지나간다. 고정점 $A$와 점 $K$ 사이 거리를 $\overline{AK}$를 반지름으로 하고 점 $K$를 중심으로 하는 원을 하나 생각해보자. 그 원과 직전 $L$이 점하는 두 지점이 있는데, 그걸 $P_1$과 $P_2$라고 하자. 그럼 아래 등식이 성립한다.
+
+$$
+\overline{AK} = \overline{KP_1} = \overline{KP_2}
+$$
+
+직전 $L$을 회전화면 이런 조건을 만족하는 점 $P_1$과 점 $P_2$의 자취가 생긴다. 이것을 
+"Strophoid"라고 한다.
+
+</div>
+
+곡선 $C$가 선(line)이라면, 두 개의 Strophoid 곡선은 만들어진다. 이때, 곡선 하나는 고정점 $A$가 위에 존재하는데, 이를 "oblique strophoid"라고 한다.
 
 ## The nephroid of Freeth
 
-TDB
+Freeth(1819 - 1904)라는 영국의 수학자가 연구한 곡선이다. 앞에서 Nephroid라는 이름이 붙어있지만, 모양은 다르게 생겼다.
+
+![](https://mathcurve.com/courbes2d.gb/freeth/freeth%20construction.gif){: style="max-height: 300px" .align-center }
+<p markdown="1" style="text-align: center">
+By Robert FERREOL at the [mathcurve.com](https://mathcurve.com/courbes2d.gb/freeth/nephroiddefreeth.shtml)
+</p>
+
+고정된 원 위의 고정된 한 점 $A$와 원점 $O$를 지나는 직선 $L$이 있다고 하자. 그 직선 $L$이 고정 원을 지나는 점을 $M_0$라고 할 때, 교차점 $M_0$을 원점으로 하고, $\overline{AM_0}$를 반지름으로 하는 원을 떠올려보자. 이때, 그 원과 직선 $L$이 만나는 지점을 $M$, $M'$라고 하자. 그러면 The nephroid of Freeth는 그 두 점 $M$, $M'$이 만드는 자취이다.
+
+극방정식으로 표현하면 아래와 같다.
+
+$$
+r = 1 + 2 \sin \frac{\theta}{2}
+$$
+
+$(0, 2\pi)$ 구간에서는 원 바깥의 곡선을 만들고, $(2\pi, 4\pi)$ 구간에서는 원 안의 곡선이 만들어진다.
+
+# 맺음말
+
+아니 이름 붙은 곡선이 세상에 이렇게나 많은 건지...;; 교재 연습 문제에 나왔던 곡선들을 찾아다 점점 아스트랄 해지는 경험이었다... 🌌
+
+그래도 이젠 굴러다니는 원으로 만들어진 곡선들 같은 거는 확실히 식을 유도할 수 있을 것 같다 ㅋㅋㅋㅋ
