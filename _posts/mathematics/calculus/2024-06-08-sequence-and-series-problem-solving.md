@@ -6,7 +6,7 @@ categories: ["Calculus"]
 excerpt: "Zipper theorem 🤐, Cantor Set, Cauchy Condesnation Test"
 ---
 
-복수전공하고 있는 수학과의 졸업시험을 위해 학부 수학 과목들을 다시 공부하고 있습니다. 공부하면서 재밌어 보였던 문제들과 풀이들을 모아서 정리한 포스트 입니다. [미적분학 포스트 전체 보기](https://bluehorn07.github.io/categories/calculus)
+복수전공하고 있는 수학과의 졸업시험을 위해 학부 수학 과목들을 다시 공부하고 있습니다. 공부하면서 재밌어 보였던 문제들과 풀이들을 모아서 정리한 포스트 입니다. [미적분학 포스트 전체 보기](/categories/calculus)
 {: .notice--info}
 
 # The zipper theorem
@@ -107,6 +107,8 @@ Let $\{ a_n \}$ be a non-increasing sequence of positive terms that converges to
 For example, $\sum (1/n)$ diverges because $\sum 2^n \cdot (1/2^n) = \sum 1$ diverges.
 
 </div>
+
+이때, "condensation"은 응축이라는 뜻이다. 즉, 기존의 급수를 응축한 급수의 수렴/발산을 판정하는 것만으로도 기존 급수의 수렴/발산을 판정할 수 있다는 정리다.
 
 <div class="proof" markdown="1">
 

@@ -6,7 +6,7 @@ categories: ["Calculus"]
 excerpt: "무한개의 초등 함수의 급수로 표현되는 함수들: Error Function, Sinc Function, Epllitical Integrals, Gamma Function"
 ---
 
-복수전공하고 있는 수학과의 졸업시험을 위해 학부 수학 과목들을 다시 공부하고 있습니다. 공부하면서 재밌어 보였던 문제들과 풀이들을 모아서 정리한 포스트 입니다. [미적분학 포스트 전체 보기](https://bluehorn07.github.io/categories/calculus)
+복수전공하고 있는 수학과의 졸업시험을 위해 학부 수학 과목들을 다시 공부하고 있습니다. 공부하면서 재밌어 보였던 문제들과 풀이들을 모아서 정리한 포스트 입니다. [미적분학 포스트 전체 보기](/categories/calculus)
 {: .notice--info}
 
 # Elementary Function이란?
