@@ -6,7 +6,7 @@ categories: ["Calculus"]
 excerpt: "Washer method와 Shell method는 동치다. 점화식으로 유도되는 적분. 이상 적분에 대한 정의. 면적은 무한한데, 부피는 유한한 함수."
 ---
 
-복수전공하고 있는 수학과의 졸업시험을 위해 학부 수학 과목들을 다시 공부하고 있습니다. 공부하면서 재밌어 보였던 문제들과 풀이들을 모아서 정리한 포스트 입니다.
+복수전공하고 있는 수학과의 졸업시험을 위해 학부 수학 과목들을 다시 공부하고 있습니다. 공부하면서 재밌어 보였던 문제들과 풀이들을 모아서 정리한 포스트 입니다. [미적분학 포스트 전체 보기](https://bluehorn07.github.io/categories/calculus)
 {: .notice--info}
 
 # Equivalence of the Washer and Shell methods
