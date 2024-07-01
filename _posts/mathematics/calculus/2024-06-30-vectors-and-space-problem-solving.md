@@ -53,11 +53,11 @@ $$
 
 연속인 벡터 함수는 공간 상에서 곡선을 그릴 수 있음.
 
-![](/images/mathematics/calculus/vector-function-and-space-curve.png)
+![](/images/mathematics/calculus/vector-function-and-space-curve.png){: .align-center style="max-height: 300px" }
 
 ## Tangent Vector
 
-![](/images/mathematics/calculus/tangent-vector.png)
+![](/images/mathematics/calculus/tangent-vector.png){: .align-center style="max-height: 300px" }
 
 벡터 함수 $\vec{r}(t)$를 term-by-term으로 미분한 함수를 말한다.
 
@@ -103,7 +103,7 @@ $$
 서로 수직하는 두 벡터를 외적하면, 그 두 벡터에 수직하는 또 다른 벡터를 얻을 수 있다는 사실을 기억하는가!! 앞에서 서로 수직하는 두 벡터 $\vec{T}(t)$, $\vec{N}(t)$를 구했으니, 외적을 이용해 또 다른 수직 벡터를 구할 수 있다!!
 
 $$
-\vec{B}(t) = \vec{T}(t) \prod \vec{N}(t)
+\vec{B}(t) = \vec{T}(t) \times \vec{N}(t)
 $$
 
 접선 벡터와 법선 벡터의 외적으로 유도되는 이 벡터를 "**종법선 벡터(Binormal Vector)**"라고 부른다. 아마 두 벡터에 둘(bi-) 다 수직(normal)인 관계를 만족해서 "Binormal"라는 이름이 붙은게 아닐까...?
@@ -112,6 +112,16 @@ $$
 
 # Many shapes on 3-dim space
 
-![](/images/mathematics/calculus/x2+y2=z.png)
+![](/images/mathematics/calculus/x2+y2=z.png){: .align-center style="max-height: 300px" }
 
-![](/images/mathematics/calculus/x2+y2=z2.png)
+$$
+x^2 + y^2 = z
+$$
+
+<br/>
+
+![](/images/mathematics/calculus/x2+y2=z2.png){: .align-center style="max-height: 300px" }
+
+$$
+x^2 + y^2 = z^2
+$$

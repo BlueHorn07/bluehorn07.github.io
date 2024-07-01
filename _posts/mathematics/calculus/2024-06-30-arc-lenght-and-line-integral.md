@@ -47,7 +47,7 @@ $$
 
 만약 함수 $f(x, y)$가 xy 평면 상에서의 밀도 함수 $\rho(x, y)$ 였다면, 곡선 $C$에 대한 선적분은 곡선 $C$의 "**무게**"가 될 것이다.
 
-![](/images/mathematics/calculus/line-integral-of-scala-field.png){: .align-center style="height: 400px" }
+![](/images/mathematics/calculus/line-integral-of-scala-field.png){: .align-center style="max-height: 400px" }
 
 만약 함수 $f(x, y)$를 z축 상의 어떤 점이라고 본다면, Line Integral은 "**곡선이 그리는 벽의 면적**"을 계산하게 된다.
 

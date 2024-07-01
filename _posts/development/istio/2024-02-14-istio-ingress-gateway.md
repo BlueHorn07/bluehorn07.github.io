@@ -266,7 +266,7 @@ ports:
 
 ## `host`-`port` 조합은 하나의 Gateway만 가능
 
-![](/images/meme/duplicated.jpeg){: .fill style="height:300px" .align-center }
+![](/images/meme/duplicated.jpeg){: .fill style="max-height:300px" .align-center }
 
 이번에는 Bookinfo 예제를 `default` ns에도 띄우고, `test` ns에도 띄워보자!! 📘📙
 

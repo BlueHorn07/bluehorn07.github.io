@@ -12,7 +12,7 @@ last_modified_at: 2024-06-29
 
 # The witch of Maria Agnesi
 
-![](/images/mathematics/calculus/the-witch-of-maria-agnesi.png){: style="height: 300px" }
+![](/images/mathematics/calculus/the-witch-of-maria-agnesi.png){: style="max-height: 300px" }
 
 <div class="problem" markdown="1">
 
@@ -66,11 +66,11 @@ $$
 
 # Hypocycloid
 
-![](/images/mathematics/calculus/hypocycloid.png){: style="height: 300px" }
+![](/images/mathematics/calculus/hypocycloid.png){: style="max-height: 300px" }
 
 큰 원 안에 작은 원을 굴릴 때 생기는 원의 자취에 대한 방정식이다. 큰 원의 반지름은 $a$, 작은 원의 반지름을 $b$라고 하자.
 
-![](/images/mathematics/calculus/hypocycloid-2.png){: style="height: 300px" }
+![](/images/mathematics/calculus/hypocycloid-2.png){: style="max-height: 300px" }
 
 작은 원의 중심인 $C$의 좌표를 구해보자. $OC$의 길이가 $b - a$이므로 좌표값은 아래와 같다.
 
@@ -274,7 +274,7 @@ $$
 
 ## Parametric Equation
 
-![](/images/mathematics/calculus/limacon-curve.png){: style="height: 400px" }
+![](/images/mathematics/calculus/limacon-curve.png){: style="max-height: 400px" }
 
 매개방정식의 꼴로 유도해보자. 계산의 편의를 위해 바깥 원의 바큇살을 원의 반지름과 같은 $R$이라고 하자.
 
@@ -405,7 +405,7 @@ $$
 
 리사쥬 곡선을 이루는 두 사인파의 주바수비를 쉽게 확인하는 방법은 $x$축과 $y$축에서 $x=1$, $y=1$ 지점에 곡선이 몇번 접하는지 세어보면 된다.
 
-![](/images/mathematics/calculus/lissajouse-curves.png){: style="height: 200px" .align-center }
+![](/images/mathematics/calculus/lissajouse-curves.png){: style="max-height: 200px" .align-center }
 
 첫번째 곡선은 $x=1$에 1번 접하고 $y=1$에 2번 접하므로, $x$ 사인파와 $y$ 사인파의 주파수 비율이 1:2를 이룬다.
 
