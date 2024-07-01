@@ -46,4 +46,6 @@ toc_sticky: true
   - Nephroid
   - Strophoid
   - The nephroid of Freeth
-- [Arc Length와 Line Integral](/2024/06/30/arc-lenght-and-line-integral/)
+- [Arc Length와 Line Integral](/2024/06/30/arc-length-and-line-integral/)
+- [Vectors and Space: Problem Solving](/2024/06/30/vectors-and-space-problem-solving/)
+
