@@ -55,9 +55,58 @@ $$
 
 ![](/images/mathematics/calculus/vector-function-and-space-curve.png)
 
+## Tangent Vector
+
+![](/images/mathematics/calculus/tangent-vector.png)
+
+벡터 함수 $\vec{r}(t)$를 term-by-term으로 미분한 함수를 말한다.
+
+$$
+\vec{r}'(t) = \left( f'(t), g'(t), h'(t) \right)
+$$
+
+공간 곡선의 한 점에 접하는 직선의 방향이라고 볼 수 있다. Tangent Vector의 방향만 알고 싶을 때는 Unit Tangent Vector를 사용한다.
+
+$$
+\vec{T}(t) = \frac{\vec{r}'(t)}{\left| \vec{r}'(t) \right|}
+$$
 
 
-# Tangent Vector, Normal Vector, Binormal Vector
+TODO: tangent vector 값이 클수록 어떻다는 거 말할 필요 있음.
+
+r(t)와 T(t)가 수직하는 경우는 어떤 경우인지도 업근 필요.
+
+
+## Normal Vector
+
+Unit Tangent Vector $\vec{T}(t)$에 대해 수직하는 법선 벡터(Normal Vector)를 찾고자 한다. 그런데 유일하게 결정되는 Unit Tangent Vector와 달리 $\vec{T}(t)$에 수직하는 법선 벡터는 무수히 많다...!
+
+이때, 접선 벡터 $\vec{T}(t)$에 대해선 아래의 등식이 만족한다.
+
+$$
+\vec{T}(t) \cdot \vec{T}'(t) = 0
+$$
+
+즉, 접선 벡터 $\vec{T}(t)$를 또 하나의 공간 곡선으로 보고, 그것의 접선 벡터 $\vec{T}'(t)$를 구해보면, 그 둘이 수직 관계에 있다는 것이다...!
+
+이 사실을 바탕으로 아래와 같은 법선 벡터를 정의해보자.
+
+$$
+\vec{N}(t) = \frac{\vec{T}'(t)}{\left| \vec{T}'(t) \right|}
+$$
+
+접선 벡터의 접선 벡터로 정의한 요 법선 벡터를 "Principal Unit Normal Vecor" $\vec{N}(t)$라고 부른다. 편하게 "unit normal"라고도 부른다.
+
+
+## Binormal Vector
+
+서로 수직하는 두 벡터를 외적하면, 그 두 벡터에 수직하는 또 다른 벡터를 얻을 수 있다는 사실을 기억하는가!! 앞에서 서로 수직하는 두 벡터 $\vec{T}(t)$, $\vec{N}(t)$를 구했으니, 외적을 이용해 또 다른 수직 벡터를 구할 수 있다!!
+
+$$
+\vec{B}(t) = \vec{T}(t) \prod \vec{N}(t)
+$$
+
+접선 벡터와 법선 벡터의 외적으로 유도되는 이 벡터를 "**종법선 벡터(Binormal Vector)**"라고 부른다. 아마 두 벡터에 둘(bi-) 다 수직(normal)인 관계를 만족해서 "Binormal"라는 이름이 붙은게 아닐까...?
 
 
 
