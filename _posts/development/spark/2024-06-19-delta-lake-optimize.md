@@ -3,7 +3,7 @@ title: "Delta Lake Optimize"
 toc: true
 toc_sticky: true
 categories: ["Spark"]
-excerpt: ""
+excerpt: "Delta Lake로 저장된 데이터를 최적화하는 여러 테크닉들. Compaction(압축), Data Skipping, Z-Ordering"
 ---
 
 회사에서 Databricks를 통해 Spark Cluster를 운영하고 있습니다. 본 글은 Databricks를 기준으로 작성했음을 미리 밝힙니다.
@@ -133,6 +133,28 @@ Delta의 Data skpping 정보는 Delta 테이블에 데이터 쓰기 작업을 �
 - `delta.dataSkippingNumIndexedCols`
 - `delta.dataSkippingStatsColumns`
 
+### Get Column Statistics
+
+Delta 쓰기에서 수집한 컬럼의 Stats 정보는 아래의 쿼리를 통해서 확인할 수 있다.
+
+```sql
+> DESC EXTENDED <TABLE_NAME> <COLUMN_NMAE>
+     info_name info_value
+ -------------- ----------
+       col_name       name
+      data_type     string
+        comment       NULL
+            min       NULL
+            max       NULL
+      num_nulls          0
+ distinct_count          2
+    avg_col_len          4
+    max_col_len          4
+      histogram       NULL
+```
+
+
+
 ## Z-Ordering
 
 Delta의 경우 `OPTIMIZE`를 수행할 때, `ZORDER BY`라는 절(clause)를 추가하여 Parquet 파티션의 데이터가 정렬되는 순서를 결정할 수 있다. 예시를 통해 좀더 살펴보자.
@@ -187,27 +209,87 @@ Z-Ordering은 둘의 이상의 컬럼에 대해서도 수행할 수 있다. 하�
 
 <br/>
 
+또한 이런 Z-ordering에 기반한 파티션은 전체 데이터가 `1 TB` 이하, 파티션 별 데이터가 `1 GB` 이하라면 별로 추천하지 않는다는 내용도 Delta 블로그 포스트에 기술되어 있다.
+
 > You should not be partitioning tables under one terabyte in general.
 > You also shouldn’t partition by a column that will have partitions with less than 1 GB of data. 
 
+## Compare to Hive-style partitioning
+
+Delta의 Z-Ordering과 Hive-style partitioing 둘다 비슷한 종류의 데이터를 하나의 파일 하나의 파일 청크로 묶기 위한 테크닉이다. 이를 통해 특정 쿼리를 수행할 때, 전체 데이터가 아닌 일부 데이터만 읽고 결과를 반환할 수 있다.
+
+단, 차이점은 물리적인 구조에 있다. Hive-style partitioning은 비슷한 종류의 데이터를 같은 디렉토리(directory)에 배치한다. 그러나, Delta의 Z-Ordering은 비슷한 데이터를 디렉토리 분리 없이 하나의 디렉토리에 다른 종류의 데이터와 함께 모두 배치한다.
+
+Partition 끼리 완벽하게 분리하는 Hive-style이 어떤 때는 강점을 가질 수 있다. 그러나 디렉토리 분리를 책임이 따르는데, 만약 파티션 컬럼에 너무 많은 Distinct 값들이 있을 때는 파티션 디렉토리가 너-무 많이 생길 것이고, 파티션 컬럼을 한번 지정하면 그것을 바꾸기는 정말 어렵고, 또 파티션 컬럼을 여러 개 지정하면 그만큼 파티션 디렉토리의 깊이(depth)가 깊어진다.
+
+단, Z-Ordering과 Hive-style Partition은 베타적인 존재가 아니다. Delta에서도 Hive-style Partitioning을 할 수 있기 때문이다.
 
 
 
-이런 정보는 `ZORDER BY`와 함께 
+# Analyze
+
+앞에서 Delta는 쓰기 작업에 작동으로 컬럼의 Stats 정보를 수집한다고 했었다. 그런데, 이것을 직접 쿼리를 실행해 수행할 수 있으니 그것이 `ANALYZE` 명령어다.
 
 ```sql
+-- need DBR 14.x above
 ANALYZE TABLE <TABLE_NAME> COMPUTE DELTA STATISTICS
 ```
 
+Delta의 최신 버전이 가리키는 Parquet 파일들을 모두 읽어서 Stats 정보를 다시 계산한다. Stats 정보를 다시 계산하는 것이기 떄문에 `_delta_log/`에 커밋도 새로 생성되며, `COMPUTE STATS`라는 연산으로 기록된다. 단, 새로운 Parquet 파일이 생기거나 삭제되는 것은 아니다.
+
+<br/>
+
+그외에도 몇가지 옵션과 함께 `ANALYZE`를 수행할 수 있는데,
+
+- `ANALYZE ... COMPUTE STATISTICS NOSCAN`
+  - Delta 테이블의 사이즈만 새로 계산한다.
+- `ANALYZE ... COMPUTE STATISTICS FOR COLUMNS ...`
+  - 일부 컬럼에 대해서 Stats 정보 다시 게산
+- `ANALYZE ... COMPUTE STATISTICS FOR ALL COLUMNS`
+  - 전체 컬럼에 대해서 Stats 정보 다시 계산
+
+## 왜 필요한가??
+
+사실 Delta 쓰기 때마다 Stats 정보를 수집하고, 또 `OPTIMIZE ZORDER` 때도 Stats 데이터를 계산할 텐데 `ANALYZE` 명령어가 꼭 필요한 걸까?? 이 명령어를 언제 실행해줘야 하는 걸까??
+
+이것저곳 찾아보니 Databricks Community에 이런 답변이 있었다: "[What's the best practice on running ANALYZE on Delta Tables for query performance optimization?](https://community.databricks.com/t5/data-engineering/what-s-the-best-practice-on-running-analyze-on-delta-tables-for/td-p/26685)"
+
+> - `ANALYZE` whenever the data has changed by about 10%
+> - Make sure when you use `ANALYZE`, you are specifying the `COLUMNS` or `PARTITIONS` you want to collect statistics for. Otherwise, as you have noted, it will re-analyze the entire table
+
+암튼 테이블에 데이터 변화 좀(ex: 10%) 있었다거나 Stats 정보 수집 자체를 수동으로 컨트롤 하고 싶을 때, Stats 수집을 Delta 쓰기와 별도로 수행하고 싶은 용도로 명령어가 분리된게 아닐까 싶다.
+
+
+
+# Write Performance Compare
+
+Delta의 경우 쓰기 작업을 할 때마다 Stats 데이터를 수집한다. 이것은 Parquet 쓰기 작업에서 없던 추가적인 작업이다. 이런 Stats가 몇몇 데이터 읽기 쿼리를 확실히 도움이 되겠지만, 과연 데이터 쓰기 때 Stats 정보 수집 때문에 생기는 오버헤드로 쓰기 퍼포먼스가 떨어지는게 아닐지 걱정이 되었다.
+
+![](/images/development/delta-lake/delta-lake-write-performance.png){: .align-center style="max-height: 300px" }
+
+Databricks에서 출시한 2020년의 "[Delta Lake: High-Performance ACID Table Storage over Cloud Object Stores](https://www.databricks.com/wp-content/uploads/2020/08/p975-armbrust.pdf)" 논문에 따르면, Delta 쓰기의 경우 Stats 수집이 있지만, 그 오버헤드가 Parquet 쓰기와 비교해 미미한 수준이라고 한다. 아래는 논문의 해당 문단의 내용의 발췌다.
+
+<div class="notice" markdown="1">
+
+We also evaluated the performance of loading a large dataset into Delta Lake as opposed to Parquet to test whether Delta’s statistics collection adds significant overhead. Figure 7 shows the time to load a 400 GB TPC-DS `store_sales` table, initially formatted as CSV,
+on a cluster with one `i3.2xlarge` master and eight `i3.2xlarge` workers (with results averaged over 3 runs). Spark’s performance writing to Delta Lake is similar to writing to Parquet, showing that statistics collection does not add a significant overhead over the other data loading work.
+
+</div>
+
+
 # 맺음말
 
-Delta의 Data Skipping은 물론 `SELECT * FROM <TABLE_NAME>`으로 전체 데이터를 조회한다면 Data Skipping 기법을 쓸 순 없을 것이다. 그러나 데이터 엔지니어가 개입할 수 있는 부분이 이런 곳인 것 같다.
+Delta의 Data Skipping 기법은 `SELECT * FROM <TABLE_NAME>`으로 전체 데이터를 조회한다면 무용지물 일 수도 있다. 그러나 세상의 모든 쿼리가 Full Scan 쿼리가 아닐 것이고, 그런 특정 쿼리에 대해서 어떻게 퍼포먼스를 향상 시킬지 고민하는게 Delta Lake를 도입한 세상의 데이터 엔지니어가 해야 할 일인 것 같다.
+
+어떤 프레임워크를 깊게 공부하는 건, 그 프레임워크에 대한 전문성을 갖추는 것 뿐만 아니라 문제를 해결하기 위해 그것이 채택한 기술도 함께 공부하게 되는 것 같다. 종종 "먄약 내가 대규모 분산처리 시스템을 다시 설계 한다면?" 같은 물음을 되뇌이며 그런 순간이 왔을 때 어떤 테크닉들을 써야 하는지 익히는 과정이라고 생각한다. 또, 어떤 기술적인 세부사항 보다는 그 테크닉이 문제를 합리적으로 접근하고, 설계되었는지를 고민하는 것 자체가 가치 있는 순간들인 것 같다.
 
 
 # Reference
 
 - Databricks
   - [Data skipping for Delta Lake](https://docs.databricks.com/en/delta/data-skipping.html)
+  - [What's the best practice on running ANALYZE on Delta Tables for query performance optimization?](https://community.databricks.com/t5/data-engineering/what-s-the-best-practice-on-running-analyze-on-delta-tables-for/td-p/26685)
+  - [Delta Lake: High-Performance ACID Table Storage over Cloud Object Stores](https://www.databricks.com/wp-content/uploads/2020/08/p975-armbrust.pdf)
 - Delta Lake
   - [Optimizations](https://docs.delta.io/latest/optimizations-oss.html)
 - Delta Lake Official Blog
