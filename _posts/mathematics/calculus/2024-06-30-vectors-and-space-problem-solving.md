@@ -147,6 +147,35 @@ $$
 
 ![](/images/mathematics/calculus/vector-function-and-space-curve.png){: .align-center style="max-height: 300px" }
 
+## Vector Functions of Constant Length
+
+벡터 함수 $\vec{r}(t)$의 길이가 상수값 $c$로 고정 되어 있다면, 아래 등식이 성립한다.
+
+$$
+\vec{r}(t) \cdot \vec{r'}(t) = 0
+$$
+
+즉, 벡터 함수의 그것의 접선 벡터가 서로 수직이다.
+
+![](/images/mathematics/calculus/vector-function-of-constant-length.png){: .align-center style="max-height: 400px" }
+
+증명은 어렵지 않다.
+
+<div class="proof" markdown="1">
+
+$$
+\begin{aligned}
+\vec{r}(t) \cdot \vec{r}(t) &= c^2 \\
+\frac{d}{dt} \left( \vec{r}(t) \cdot \vec{r}(t) \right) &= 0 \\
+2 \, \vec{r}(t) \cdot \vec{r'}(t) &= 0
+\end{aligned}
+$$
+
+$\blacksquare$
+
+</div>
+
+
 ## Tangent Vector
 
 ![](/images/mathematics/calculus/tangent-vector.png){: .align-center style="max-height: 300px" }
@@ -173,13 +202,13 @@ r(t)와 T(t)가 수직하는 경우는 어떤 경우인지도 업근 필요.
 
 Unit Tangent Vector $\vec{T}(t)$에 대해 수직하는 법선 벡터(Normal Vector)를 찾고자 한다. 그런데 유일하게 결정되는 Unit Tangent Vector와 달리 $\vec{T}(t)$에 수직하는 법선 벡터는 무수히 많다...!
 
-이때, 접선 벡터 $\vec{T}(t)$에 대해선 아래의 등식이 만족한다.
+이때, 접선 벡터 $\vec{T}(t)$가 길이 1인 unit vector이므로 아래의 등식이 성립한다.
 
 $$
 \vec{T}(t) \cdot \vec{T}'(t) = 0
 $$
 
-즉, 접선 벡터 $\vec{T}(t)$를 또 하나의 공간 곡선으로 보고, 그것의 접선 벡터 $\vec{T}'(t)$를 구해보면, 그 둘이 수직 관계에 있다는 것이다...! 이것이 가능한 이유는 Unit Tangent Vector $\vec{T}(t)$의 크기가 모든 $t$에 대해서 $\| \vec{T}(t) \| = 1$로 일정하기 떄문이다.
+즉, 접선 벡터 $\vec{T}(t)$를 또 하나의 공간 곡선으로 보고, 그것의 접선 벡터 $\vec{T}'(t)$를 구해보면, 그 둘이 수직 관계에 있다는 것이다...!
 
 이 사실을 바탕으로 아래와 같은 법선 벡터를 정의해보자.
 
