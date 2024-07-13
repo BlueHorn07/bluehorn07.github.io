@@ -3,7 +3,7 @@ title: "Multi-dimensional Functions: Problem Solving"
 toc: true
 toc_sticky: true
 categories: ["Calculus"]
-excerpt: "Partial Derivative, Differentiability of High Order"
+excerpt: "Differentiability of High Order: Partial Derivative, Total Derivative and Directional Derivative"
 ---
 
 복수전공하고 있는 수학과의 졸업시험을 위해 학부 수학 과목들을 다시 공부하고 있습니다. [미적분학 포스트 전체 보기](/categories/calculus)
@@ -391,6 +391,61 @@ $$
 
 # Directional Derivative
 
+이변수 함수 $z = f(x, y)$의 미분을 생각할 때, 편미분 $f_x$, $f_y$는 $x$축/$y$축라는 특정 방향에서의 순간변화율을 얻을 수 있다. 그런데, 2차원에선 정말 많은 방향으로 그 점을 지나칠 수 있다. 예를 들어, $y = x$ 방향으로의 순간변화율을 얻고 싶을 수도 있고, $y = 2x$ 방향으로의 순간변화율을 얻고 싶을 수도 있다.
+
+그래서 이변수 함수 $z = f(x, y)$의 어떤 방향 벡터 $\vec{u} = <a, b>$ 방향으로의 순간변화율을 계산한 것이 "**방향 도함수(Directional Derivative)**"다.
+
+<div class="definition" markdown="1">
+
+$$
+D_u f(x_0, y_0) = \lim_{h \rightarrow 0} \frac{f(x_0 + ah, y_0 + bh) - f(x_0, y_0)}{h}
+$$
+
+</div>
+
+만약 뱡항 벡터가 $u = <1, 0>$라면, 방향도함수는 $x$축에 대한 편미분 $f_x$가 된다. $y$축에 대해서도 마찬가지.
+
+방향도함수에서 대한 위의 정의를 이용해도 되지만, $x$, $y$축에 대한 편도함수를 사용하면 더 쉽게 방향도함수를 계산할 수 있다.
+
+<div class="theorem" markdown="1">
+
+$$
+D_u f(x, y) = f_x(x, y) a + f_y(x, y) b
+$$
+
+</div>
+
+이것은 편도함수과 방향도함수의 개념을 연결해주는 중요한 성질이다.
 
 
+## Gradient Vector
 
+방향도함수와 편도함수를 연결한 위의 식을 자세히 살펴보면... 뭔가 내적(dot product) 같은 느낌이 솔솔 난다 ㅋㅋ
+
+그래서 방향도함수를 아래와 같이 표현할 수 있다.
+
+$$
+D_u f(x, y) = <f_x(x, y), f_y(x, y)> \cdot <a, b>
+$$
+
+이때, 방향벡터와 내적하는 왼쪽의 벡터에 "**Gradient Vector**"라는 이름을 붙여주자. 요 벡터는 함수 $f(x, y)$를 $x$축, $y$축 방향으로 편미분한 편도함수를 각각의 성분으로 갖는다.
+
+<div class="definition" markdown="1">
+
+$$
+\nabla f(x, y) = <f_x(x, y), f_y(x, y)>
+$$
+
+</div>
+
+### How to maximize the directional derivative
+
+Direction Derivative는 Gradient Vector $\nabla f$와 방향 벡터 $\mathbf{u}$의 내적으로 정의되었다. 이 값을 최대화 하려면 어떻게 해야 할까?
+
+정답은 방향 벡터 $\mathbf{u}$가 "Gradient Vector"와 평행한 벡터일 때 Direction Derivative의 크기가 가장 커진다.
+
+$$
+\text{max size when } \nabla f \parallel \mathbf{u}
+$$
+
+이 사실을 바탕으로 우리는 이변수 함수가 있을 때, 어떤 방향으로 가야 함숫값이 가장 커지는 방향으로 갈 수 있는지 알 수 있게 된다. 만약 지금 위치하는 점에서의 방향 벡터 방향만 움직인다면, 그것이 함수의 최대값에 가장 빠르게 도달하는 방법이다. 만약, 최솟값에 빠르게 도달하고자 한다면, 방향 벡터와 반대 방향으로 움직이면 된다. (이것에서 유래한 것이 머신러닝에서 사용하는 "**Gradient Descent**" 방식이다.)
