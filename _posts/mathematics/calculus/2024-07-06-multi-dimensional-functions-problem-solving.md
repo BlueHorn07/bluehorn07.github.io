@@ -3,11 +3,13 @@ title: "Multi-dimensional Functions: Problem Solving"
 toc: true
 toc_sticky: true
 categories: ["Calculus"]
-excerpt: ""
+excerpt: "Partial Derivative, Differentiability of High Order"
 ---
 
 복수전공하고 있는 수학과의 졸업시험을 위해 학부 수학 과목들을 다시 공부하고 있습니다. [미적분학 포스트 전체 보기](/categories/calculus)
 {: .notice--info}
+
+이번 챕터는 개념들이 너무너무 헷갈려서 문제 풀이보다는 교재의 개념들을 제대로 이해하는 것에 초점을 두었다. 😵‍💫
 
 # Limit of 2-dimensional function
 
@@ -188,6 +190,21 @@ $$
 
 # Differentiability of 2-dimension
 
+## Meaning of Partial Derivative
+
+이변수 함수 $f(x, y)$에 대한 편미분 $\partial x$, $\partial y$는 어떤 점에서의 함수에 접하는 접선의 기울기를 의미한다. 구체적으로는 $x$축 방향의 접선의 기울기와, $y$축 방향의 접선의 기울기를 의미한다.
+
+![](/images/mathematics/calculus/meaning-of-partial-derivative.png){: .align-center style="max-height: 300px" }
+
+이를 이용해서 함수 $f(x, y)$ 위의 점 $(x_0, y_0)$에 접하는 **접평면의 방정식**을 유도할 수 있다.
+
+$$
+z = f(x_0, y_0) + f_x(x_0, y_0) \cdot (x - x_0) + f_y(x_0, y_0) \cdot (y - y_0)
+$$
+
+그리고 이 접평면은 이변수 함수 $f(x, y)$를 "선형 근사"한 식으로 볼 수 있다.
+
+
 ## Partial Derivatives exist, but not continuous
 
 $$
@@ -198,6 +215,8 @@ f(x, y) = \begin{cases}
 $$
 
 위와 같은 함수를 생각해보자. 이 함수는 $x$축, $y$축과 원점에서는 1의 값을 갖고 나며지 영역에서는 모두 0의 값을 갖는다.
+
+![](/images/mathematics/calculus/non-contiuous-at-origin.png){: .align-center style="max-height: 300px" }
 
 원점 $O$에서의 함수의 극한을 생각해보자.
 
@@ -220,6 +239,158 @@ $y = f(x)$ 꼴의 함수에서도 어떤 점에서의 미분가능성은 해당 
 이에 대한 답변은 "**다차원(multi-dimension)에서도 미분가능성은 연속성을 보장된다.**"라고 말할 수 있다.
 
 위의 예제는 편도함수의 존재 여부는 함수의 미분가능성과 전혀 별개의 속성이라 교훈을 가장 간단한 형태로 말해준다.
+
+
+## The Mixed Derivative Theorem
+
+편미분을 수행하다보면, 무의식적으로 아래의 두 편미분 값이 같은 걸 발견할 수 있다.
+
+$$
+\frac{\partial^2 f}{\partial y \partial x}
+= \frac{\partial^2 f}{\partial x \partial y}
+$$
+
+그러나 이것은 우연히도 함수 $f(x, y)$가 아주 나이스한 함수이기 때문이 위의 등식을 만족하는 것이다. 이것에 대해서 정리한 것이 아래의 "**Clairaut's Theorem(클레로의 정리)**"이다.
+
+<div class="theorem" markdown="1">
+
+If $f(x, y)$ and its partial derivatives $f_x$, $f_y$, $f_{xy}$, and $f_{yx}$ are defined throughout an open region containing a point $(a, b)$ and are all continuous at $(a, b)$, then
+
+$$
+f_{xy}(a, b) = f_{yx}(a, b)
+$$
+
+</div>
+
+즉, 편미분의 교환법칙이 성립하기 위해선 모든 편미분이 존재하고, 또 해당 지점에서 연속이어야 한다.
+
+## Differentiability
+
+함수 $z = f(x, y)$가 점 $(x_0, y_0)$에서 미소량 $\Delta x$, $\Delta y$만큼 움직일 때의 증분 $\Delta z$는 아래의 식으로 정의 해보자.
+
+$$
+\Delta z = f(x_0 + \Delta x, y_0 + \Delta y) - f(x_0, y_0)
+$$
+
+<br/>
+
+이때, 함수 $f(x, y)$를 점 $(x_0, y_0)$에서 선형 근사하면 아래와 같다. (이것은 점 $(x_0, y_0)$에서의 접평면과 같다)
+
+$$
+L(x, y) = f(x_0, y_0) + f_x(x_0, y_0) \cdot (x - x_0) + f_y(x_0, y_0) \cdot (y - y_0)
+$$
+
+이것을 증분 $\Delta z$에 대한 식에 대입하여 $L(x, y)$에 대한 증분 $\Delta L$를 유도하면 아래와 같다.
+
+$$
+\Delta L = f_x \cdot \Delta x + f_y \cdot \Delta y
+$$
+
+<br/>
+
+위의 식을 바탕으로 증분 $\Delta z$에 대한 식을 아래와 같이 작성해보자.
+
+$$
+\Delta z = \Delta L + \epsilon_1 \Delta x + \epsilon_2 \Delta y
+$$
+
+선형 근사는 말 그대로 근사식이다. 따라서 실제 함숫값의 증분인 $\Delta z$와는 차이가 있을 수 밖에 없고, 이것을 $\epsilon_1$, $\epsilon_2$로 정의한 것이다.
+
+<br/>
+
+위의 식을 통해 함수 $f(x, y)$의 미분가능성(Differentiability)를 아래와 같이 정의한다.
+
+<div class="definition" markdown="1">
+
+A function $z = f(x, y)$ is differentiable at $(x_0, y_0)$ if 
+
+- $f_x(x_0, y_0)$ and $f_y(x_0, y_0)$ exist
+- and $\Delta z$ satisfies an equation of the form
+
+$$
+\begin{aligned}
+\Delta z 
+&= \Delta L + \epsilon_1 \Delta x + \epsilon_2 \Delta y	\\
+&= f_x(x_0, y_0) \cdot (x - x_0) + f_y(x_0, y_0) \cdot (y - y_0) + \epsilon_1 \Delta x + \epsilon_2 \Delta y
+\end{aligned}
+$$
+
+in which each $\epsilon_1, \epsilon_2 \rightarrow 0$ as both $\Delta x, \Delta y \rightarrow 0$.
+
+</div>
+
+위의 문장을 잘 이해해보면, 점 $(x_0, y_0)$의 근방인  $\Delta x, \Delta y \rightarrow 0$에서 오차값인 $\epsilon_1$와 $\epsilon_2$가 0으로 수렴하여 **함수의 증분과 선형 근사의 증분이 같아진다면**, 함수 $f(x, y)$가 그 점에서 미분가능하다고 말하는 것이다.
+
+$$
+\Delta z \approx \Delta L
+$$
+
+만약 함수가 정의역(Domain) 전체에서 미분가능하다면, 그 함수를 differential function라고 부르며, 함수의 그래프가 smooth surface를 갖는다고 말한다.
+
+
+### Continuous Partial Derivatives implies Differentiability
+
+만약 함수의 편미분이 연속이라면, 함수가 해당 점에서 미분 가능하다고 말할 수 있다.
+
+<div class="theorem" markdown="1">
+
+Supp. the first partial derivatives of $f(x, y)$ are defined, and $f_x$ and $f_y$ are "**continuous**" at $(x_0, y_0)$. Then the function $f(x, y)$ is differential at $(x_0, y_0)$.
+
+</div>
+
+앞에서 살펴봤던 함수를 다시 가져와보자.
+
+$$
+f(x, y) = \begin{cases}
+\frac{2xy}{x^2 + y^2} & (x, y) \ne (0, 0) \\
+0 & (x, y) = (0, 0)
+\end{cases}
+$$
+
+이 함수는 편도함수 $f_x$가 존재한다. 하지만, 아래와 같은 형태를 갖는다.
+
+$$
+f_x(x, y) = \begin{cases}
+0 & y = 0\\
+0 & x \ne 0, y \ne 0 \\
+\texttt{not exist} & x = 0, y \ne 0 \\
+\end{cases}
+$$
+
+이 경우, 편도함수 $f_x$는 원점의 근방에서 극한이 존재하지 않는 지점이 있어 연속성을 갖지 않는다. 따라서 $f(x, y)$는 원점에서 미분불가능하다.
+
+### Differentiability implies Continuity
+
+바로 윗 명제의 역 명제를 살펴보자.
+
+<div class="theorem" markdown="1">
+
+If a function $f(x, y)$ is differentiable at $(x_0, y_0)$, then $f$ is continuous at $(x_0, y_0)$
+
+</div>
+
+이것은 미분가능의 정의에서 쉽게 유도할 수 있는데, 일단 함수가 미분 가능하다는 것은 증분 $\Delta z$가 선형근사의 증분 $\Delta L$과 같아진다는 걸 의미한다.
+
+$$
+\Delta z = \Delta L = f_x(x_0, y_0) \cdot (x - x_0) + f_y(x_0, y_0)
+$$
+
+그런데, $\Delta x, \Delta y \rightarrow 0$라면, 선형근사의 증분 $\Delta L$이 0으로 수렴한다. 이것은 $f_x(x_0, y_0)$와 $f_y(x_0, y_0)$의 값이 고정값이기 때문에 $\Delta x, \Delta y \rightarrow 0$라면 덩달아 0에 수렴하기 때문이다.
+
+미분가능성은 $\Delta z = \Delta L$을 보장하므로, $\Delta z$도 0으로 수렴한다. 이것은 함수 $f(x, y)$가 해당 점에서 연속성을 가짐을 말한다.
+
+
+## Total Differential
+
+함수 $f(x, y)$가 한 점에서 미분가능한 경우, 그것의 증분 $\Delta z$를 선형근사식의 증분 $\Delta L$로 표현할 수 있었다. 위와 같은 미분 가능 상황에서 정의한 증분 $\Delta z$를 "**전미분(Total Derivative)**"라고 하며 $dz$라고 표기한다.
+
+$$
+dz = f_x \cdot \Delta x + f_y \cdot \Delta y = \Delta L
+$$
+
+
+# Directional Derivative
+
 
 
 
