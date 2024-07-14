@@ -1,13 +1,15 @@
 ---
-title: "Multi-dimensional Functions: Problem Solving"
+title: "Partial Derivatives and Differentiability"
 toc: true
 toc_sticky: true
 categories: ["Calculus"]
-excerpt: "Differentiability of High Order: Partial Derivative, Total Derivative and Directional Derivative"
+excerpt: "Differentiability of High Order: Partial Derivative, Total Derivative and Directional Derivative, Gradient Vector"
 ---
 
 복수전공하고 있는 수학과의 졸업시험을 위해 학부 수학 과목들을 다시 공부하고 있습니다. [미적분학 포스트 전체 보기](/categories/calculus)
 {: .notice--info}
+
+![](/images/meme/oh-that-is-not-easy.png){: .fill .align-center style="width: 100%; max-width: 400px"}
 
 이번 챕터는 개념들이 너무너무 헷갈려서 문제 풀이보다는 교재의 개념들을 제대로 이해하는 것에 초점을 두었다. 😵‍💫
 
@@ -387,6 +389,29 @@ $$
 $$
 dz = f_x \cdot \Delta x + f_y \cdot \Delta y = \Delta L
 $$
+
+
+<br/>
+
+연습문제를 하나 풀어보자.
+
+<div class="problem" markdown="1">
+
+반지름 $r$이 2%씩 증가하고, 높이 $h$가 1%씩 증가하는 원뿔의 부피 변화량을 계산하라.
+
+</div>
+
+부피 $V(r, h) = \frac{\pi r^2 h}{3}$의 부피 변화율인 $dV$를 구하는 문제다. Total Derivative를 사용하면, 쉽게 부피 변화량을 계산할 수 있다.
+
+$$
+\begin{aligned}
+dV &= V_r \cdot dr + V_h \cdot dh \\
+&= \frac{2\pi r h}{3} \cdot (0.02) r + \frac{\pi r^2}{3} \cdot (0.01)h \\
+&= \frac{\pi r^2 h}{3} \cdot 0.05 = 0.05 V
+\end{aligned}
+$$
+
+따라서 부피는 5%씩 증가한다. $\blacksquare$
 
 
 # Directional Derivative
