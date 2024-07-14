@@ -147,7 +147,25 @@ $$
 
 ![](/images/mathematics/calculus/vector-function-and-space-curve.png){: .align-center style="max-height: 300px" }
 
-## Vector Functions of Constant Length
+
+## Tangent Vector
+
+![](/images/mathematics/calculus/tangent-vector.png){: .align-center style="max-height: 300px" }
+
+벡터 함수 $\vec{r}(t)$를 term-by-term으로 미분한 함수를 말한다.
+
+$$
+\vec{r}'(t) = \left( f'(t), g'(t), h'(t) \right)
+$$
+
+공간 곡선의 한 점에 접하는 직선의 방향이라고 볼 수 있다. Tangent Vector의 방향만 알고 싶을 때는 Unit Tangent Vector를 사용한다.
+
+$$
+\vec{T}(t) = \frac{\vec{r}'(t)}{\left| \vec{r}'(t) \right|}
+$$
+
+
+### Vector Functions of Constant Length
 
 벡터 함수 $\vec{r}(t)$의 길이가 상수값 $c$로 고정 되어 있다면, 아래 등식이 성립한다.
 
@@ -173,31 +191,8 @@ $$
 
 $\blacksquare$
 
+
 </div>
-
-
-## Tangent Vector
-
-![](/images/mathematics/calculus/tangent-vector.png){: .align-center style="max-height: 300px" }
-
-벡터 함수 $\vec{r}(t)$를 term-by-term으로 미분한 함수를 말한다.
-
-$$
-\vec{r}'(t) = \left( f'(t), g'(t), h'(t) \right)
-$$
-
-공간 곡선의 한 점에 접하는 직선의 방향이라고 볼 수 있다. Tangent Vector의 방향만 알고 싶을 때는 Unit Tangent Vector를 사용한다.
-
-$$
-\vec{T}(t) = \frac{\vec{r}'(t)}{\left| \vec{r}'(t) \right|}
-$$
-
-
-TODO: tangent vector 값이 클수록 어떻다는 거 말할 필요 있음.
-
-r(t)와 T(t)가 수직하는 경우는 어떤 경우인지도 업근 필요.
-
-
 ## Normal Vector
 
 Unit Tangent Vector $\vec{T}(t)$에 대해 수직하는 법선 벡터(Normal Vector)를 찾고자 한다. 그런데 유일하게 결정되는 Unit Tangent Vector와 달리 $\vec{T}(t)$에 수직하는 법선 벡터는 무수히 많다...!
