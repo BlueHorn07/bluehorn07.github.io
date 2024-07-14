@@ -126,7 +126,7 @@ Delta의 Data skpping 정보는 Delta 테이블에 데이터 쓰기 작업을 �
 
 `dataSkippingNumIndexedCols` 값에는 stats를 수집한 컬럼 갯수를 적는다. 기본값은 `32`로 첫 32개 컬럼에 대해서 stats를 계산한다. 만약 `-1`을 적어주면 모든 컬럼에 대해 stats 정보를 수집한다.
 
-`dataSkippingStatsColumns`는 stats를 수집할 컬럼 이름을 comma-seperated로 적어준다.
+`dataSkippingStatsColumns`는 stats를 수집할 컬럼 이름을 comma-separated로 적어준다.
 
 또는 Table Property로도 제어할 수 있는데 아래의 두 속성으로 지정할 수 있으며, 위의 Spark Session Config와 기능적으로 대응한다.
 
@@ -138,7 +138,7 @@ Delta의 Data skpping 정보는 Delta 테이블에 데이터 쓰기 작업을 �
 Delta 쓰기에서 수집한 컬럼의 Stats 정보는 아래의 쿼리를 통해서 확인할 수 있다.
 
 ```sql
-> DESC EXTENDED <TABLE_NAME> <COLUMN_NMAE>
+> DESC EXTENDED <TABLE_NAME> <COLUMN_NAME>
      info_name info_value
  -------------- ----------
        col_name       name
@@ -205,7 +205,7 @@ Delta의 블로그 아티클을 보면, 확실히 Z-Ordering을 준 컬럼에 �
 
 <br/>
 
-Z-Ordering은 둘의 이상의 컬럼에 대해서도 수행할 수 있다. 하지만, Z-Ordering 컬럼 수가 많아질수록 여러 컬럼에 대해 좀더 빠른 쿼리를 얻겠지만, 그만큼 `OPTIMZIE` 과정에서 데이터 정렬이 더 필요하고, 또, 데이터의 지역성으로 얻는 이점이 저하될 수도 있다. 그렇기 때문에 해당 데이터를 쿼리하는 패턴을 면밀히 분석하고, 그에 맞춰 Z-Ordering할 컬럼을 결정하는 것이 중요하다.
+Z-Ordering은 둘의 이상의 컬럼에 대해서도 수행할 수 있다. 하지만, Z-Ordering 컬럼 수가 많아질수록 여러 컬럼에 대해 좀더 빠른 쿼리를 얻겠지만, 그만큼 `OPTIMIZE` 과정에서 데이터 정렬이 더 필요하고, 또, 데이터의 지역성으로 얻는 이점이 저하될 수도 있다. 그렇기 때문에 해당 데이터를 쿼리하는 패턴을 면밀히 분석하고, 그에 맞춰 Z-Ordering할 컬럼을 결정하는 것이 중요하다.
 
 <br/>
 
@@ -216,7 +216,7 @@ Z-Ordering은 둘의 이상의 컬럼에 대해서도 수행할 수 있다. 하�
 
 ## Compare to Hive-style partitioning
 
-Delta의 Z-Ordering과 Hive-style partitioing 둘다 비슷한 종류의 데이터를 하나의 파일 하나의 파일 청크로 묶기 위한 테크닉이다. 이를 통해 특정 쿼리를 수행할 때, 전체 데이터가 아닌 일부 데이터만 읽고 결과를 반환할 수 있다.
+Delta의 Z-Ordering과 Hive-style partitioning 둘다 비슷한 종류의 데이터를 하나의 파일 하나의 파일 청크로 묶기 위한 테크닉이다. 이를 통해 특정 쿼리를 수행할 때, 전체 데이터가 아닌 일부 데이터만 읽고 결과를 반환할 수 있다.
 
 단, 차이점은 물리적인 구조에 있다. Hive-style partitioning은 비슷한 종류의 데이터를 같은 디렉토리(directory)에 배치한다. 그러나, Delta의 Z-Ordering은 비슷한 데이터를 디렉토리 분리 없이 하나의 디렉토리에 다른 종류의 데이터와 함께 모두 배치한다.
 
