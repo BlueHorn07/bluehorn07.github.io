@@ -8,7 +8,7 @@ last_modified_at: 2024-03-24
 ---
 
 ![](https://upload.wikimedia.org/wikipedia/en/a/ab/J%C3%A4germeister_logo.svg){: .align-center style="max-width: 240px"}
-얘거마이스터, 허브향이 나는 리큐르지만 예거밤으로 해서 먹으면 맛있다!
+얘거마이스터, 허브향이 나는 리큐르. 예거밤으로 해서 먹으면 맛있다!
 {: .small .text-center .gray }
 
 "**Distributed Tracing(분산 추적)**"이란 분산 시스템에서 요청이 시스템의 다양한 서비스를 거치며 진행될 때, 요청의 경로를 추적하고 시각화 하는 기술을 말한다.
@@ -62,7 +62,7 @@ Jaeger를 띄우고 나면, istio에게 앞으로 요 주소로 tracing 데이�
 
 ```bash
 istioctl \
-  --set meshConfig.defaultConfig.tracing.zipkin.address=zipkin.istio-system.svc.cluster.local:9411 
+  --set meshConfig.defaultConfig.tracing.zipkin.address=zipkin.istio-system.svc.cluster.local:9411
 ```
 
 (왜 Jaeger인데, zipkin 필드에 설정하는지 당황하는 부분이다. istio 설명에 따르면 Jaeger가 zipkin의 포맷을 따르기 때문이라고 한다 ㅇㅅㅇ)
@@ -167,13 +167,13 @@ Istio 예제에 구현 코드도 살짝 나와있는데 Java에선 이런 느낌
 @GET
 @Path("/reviews/{productId}")
 public Response bookReviewsById(
-    @PathParam("productId") int productId, 
+    @PathParam("productId") int productId,
     @Context HttpHeaders requestHeaders // 요청의 헤더를
 ) {
   // ...
   if (ratings_enabled) {
     JsonObject ratingsResponse = getRatings(
-      Integer.toString(productId), 
+      Integer.toString(productId),
       requestHeaders // 그대로 넘겨줬다!!
     );
 ```
