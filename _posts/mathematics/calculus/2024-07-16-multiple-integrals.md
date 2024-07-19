@@ -109,10 +109,97 @@ $$
 
 # Triple Integrals in Cylindrical Coordinates
 
+![](/images/mathematics/calculus/cylindrical-coordinates.png){: style="max-height: 240px" .align-center }
 
+3차원 상의 좌표를 $P(r, \theta, z)$로 표현하는 좌표계이다. 원점을 중심으로 하는 극좌표계로 표현되면서, 높이 $z$가 추가된 녀석으로 원기둥, 포물선 등을 표현하기에 쉬운 좌표계이다.
+
+예를 들어, 아래와 같은 도형의 부피를 구하는 데에 적절하다.
+
+![](/images/mathematics/calculus/cylindrical-object-1.png){: style="max-height: 300px" .align-center }
+
+위의 도형의 경우, 부피를 구하기 위해서 아래의 적분을 수행한다.
+
+$$
+V = \int_{0}^{2\theta} \int_{0}^{2} \int_{0}^{r^2} 1 \cdot dz \, r \, dr \, d\theta
+$$
+
+$z$축 방향으로 먼저 적분하고, 극좌표에 대한 적분을 수행한다.
+
+<br/>
+
+Cylindrical Coordinates에서는 미소부피가 아래와 같이 표현된다.
+
+![](/images/mathematics/calculus/cylindrical-volume-wedge.png){: style="max-height: 280px" .align-center }
+
+$$
+\Delta V = \Delta z \cdot r \Delta r \cdot \Delta \theta
+$$
+
+극좌표의 Polar Rectangular에서 높이 $\Delta z$만 추가된 꼴이다.
 
 
 # Triple Integrals in Spherical Coordinates
+
+![](/images/mathematics/calculus/spherical-coordinates.png){: style="max-height: 280px" .align-center }
+
+3차원 상의 좌표를 $P(\rho, \phi, \theta)$로 표현하는 좌표계이다. 원점을 중심으로 위도(longitude, $\theta$)와 경도(latitude, $\phi$)로 좌표를 표현한다. **이때, 헷갈리지 말아야 할 것은 극좌표계처럼 $(r, \theta)$가 아니라 원점으로부터 떨어진 길이 $\rho$를 사용한다는 점이다.**
+
+$xyz$ 좌표계에 대응하면 아래와 같다.
+
+$$
+\begin{aligned}
+x &= \rho \sin \phi \cos \theta \\
+y &= \rho \sin \phi \sin \theta \\
+z &= \rho \cos \phi
+\end{aligned}
+$$
+
+구면좌표계는 아래와 같은 도형의 부피를 구하는 데에 적절하다. ~~아이스크림 콘 🍨~~
+
+![](/images/mathematics/calculus/spherical-object-1.png){: style="max-height: 280px" .align-center }
+
+부피를 구하기 위해서 아래의 적분을 수행한다.
+
+$$
+V = \int_{0}^{2\theta} \int_{0}^{\pi/3} \int_{0}^{1} 1 \cdot \rho^2 \sin \phi \cdot d \rho \, d \phi \, d\theta
+$$
+
+적분식에서 갑자기 $\rho^2 \sin \phi$가 튀어나왔는데, 요것은 미소 부피 변화량에서 유도된다.
+
+![](/images/mathematics/calculus/spherical-wedge.png){: style="max-height: 280px" .align-center }
+
+$$
+\Delta V = \Delta  \rho \cdot (\rho \, \Delta  \phi) \cdot (\rho \, \sin \phi \, \Delta  \theta)
+$$
+
+혹시, $\rho^2 \sin \phi$가 기억이 안 난다면 요 "Spherical Wedge"의 부피가 유도되는 원리를 떠올리자 🙂
+
+
+# Transformation in a plane
+
+1차원에서의 치환(Transformation)과 치환적분은 x = g(t)$라는 식에서 아래와 같은 미소 변화량을 유도했다.
+
+$$
+dx = g'(t) \, dt
+$$
+
+이런 1차원에서의 치환을 2차원에서 한번 생각해보자. 2차원 평면에서 $(u, y)$ 좌표를 $(x, y)$ 좌표로 변환하는 변환 함수 $T$를 상상 해보자.
+
+$$
+T(u, v) = (x, y)
+$$
+
+이 함수를 성분별로 분해하여 표현하면, 아래와 같을 것이다.
+
+$$
+T(u, v) = (g(u, v), h(u, v))
+$$
+
+
+
+
+
+
 
 # Jacobian
 
