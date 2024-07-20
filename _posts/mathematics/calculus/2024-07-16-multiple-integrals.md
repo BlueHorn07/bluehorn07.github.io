@@ -177,29 +177,109 @@ $$
 
 # Transformation in a plane
 
-1차원에서의 치환(Transformation)과 치환적분은 x = g(t)$라는 식에서 아래와 같은 미소 변화량을 유도했다.
+1차원에서의 치환(Transformation)과 치환적분은 $x = g(t)$라는 식에서 아래와 같은 미소 변화량을 유도했다.
 
 $$
 dx = g'(t) \, dt
 $$
 
-이런 1차원에서의 치환을 2차원에서 한번 생각해보자. 2차원 평면에서 $(u, y)$ 좌표를 $(x, y)$ 좌표로 변환하는 변환 함수 $T$를 상상 해보자.
+이런 1차원에서의 치환을 2차원에서 한번 생각해보자. 2차원 평면에서 $(u, v)$ 좌표를 $(x, y)$ 좌표로 변환하는 변환 함수 $T$를 상상 해보자.
+
+![](/images/mathematics/calculus/transformation-in-a-plane-1.png){: style="max-height: 280px" .align-center }
 
 $$
 T(u, v) = (x, y)
 $$
 
-이 함수를 성분별로 분해하여 표현하면, 아래와 같을 것이다.
+이 함수를 벡터 함수 $\mathbf{r}(u, v)$의 형태로 표현해, 성분 별로 살펴보면 아래와 같다.
 
 $$
-T(u, v) = (g(u, v), h(u, v))
+\mathbf{r}(u, v) = g(u, v) \mathbf{i} + h(u, v) \mathbf{j}
 $$
 
+<br/>
 
+$xy$ 평면 위의 점 $(x_0, y_0)$에서 영역 $R$의 lower side에서 그리는 곡선 $\mathbf{r}(u, v_0)$에 접하는 직선의 벡터를 구하면 아래와 같다.
 
+$$
+\mathbf{r}_u = g_u(u_0, v_0) \mathbf{i} + h_u(u_0, v_0) \mathbf{j}
+$$
 
+같은 방식으로 영역 $R$에서 left side의 곡선에 접하는 직선 벡터를 구하면 아래와 같다.
 
+$$
+\mathbf{r}_v = g_v(u_0, v_0) \mathbf{i} + h_v(u_0, v_0) \mathbf{j}
+$$
+
+우리는 변환 $T$의 결과로 만들어진 영역 $R$의 넓이를 구하기 위해 아래와 같이 할선(secant line)을 그어서 근사치를 구할 수 있을 것이다.
+
+![](/images/mathematics/calculus/transformation-in-a-plane-2.png){: style="max-height: 280px" .align-center }
+
+이 할선 벡터는 아래와 같이 주어질 것이다.
+
+$$
+\begin{aligned}
+\mathbf{a} &= \mathbf{r}(u_0 + \Delta u, \, v_0) - \mathbf{r}(u_0, \, v_0) \\
+\mathbf{b} &= \mathbf{r}(u_0, \, v_0 + \Delta v) - \mathbf{r}(u_0, \, v_0) \\
+\end{aligned}
+$$
+
+이때, 아까 위에서 구한 접선 벡터 $\mathbf{r}_u$와 $\mathbf{r}_v$의 정의를 살펴보면,
+
+$$
+\mathbf{r}_u = \lim_{\Delta u \rightarrow 0} \frac{\mathbf{r}(u_0 + \Delta u, \, v_0) - \mathbf{r}(u_0, \, v_0)}{\Delta u}
+$$
+
+위의 식을 활용해 $\Delta u$를 좌변으로 옮기면, 아래와 같은 근사식을 얻을 수 있다.
+
+$$
+\begin{aligned}
+\Delta u \cdot \mathbf{r}_u &= \mathbf{r}(u_0 + \Delta u, \, v_0) - \mathbf{r}(u_0, \, v_0) \\
+\Delta v \cdot \mathbf{r}_v &= \mathbf{r}(u_0, \, v_0 + \Delta v) - \mathbf{r}(u_0, \, v_0)
+\end{aligned}
+$$
+
+<br/>
+
+![](/images/mathematics/calculus/transformation-in-a-plane-3.png){: style="max-height: 280px" .align-center }
+
+위의 식을 활용해 영역 $R$의 넓이의 근사값을 두 벡터 $\Delta u \cdot \mathbf{r}_u$, $\Delta v \cdot \mathbf{r}_v$의 외적으로 구할 수 있다.
+
+$$
+\left| (\Delta u \cdot \mathbf{r}_u) \times (\Delta v \cdot \mathbf{r}_v) \right|
+= \left| \mathbf{r}_u \times \mathbf{r}_v \right| \cdot \Delta u \Delta v
+$$
+
+이제 남은 건 외적 $\mathbf{r}_u \times \mathbf{r}_v$를 구하는 것이 남았다. 이것은 아래와 같은 행렬식을 구하는 것이다.
+
+![](/images/mathematics/calculus/transformation-in-a-plane-4.png){: style="max-height: 280px" .align-center }
 
 
 # Jacobian
+
+2차원에서의 변환 $T$에서 외적 $\mathbf{r}_u \times \mathbf{r}_v$의 행렬식을 "Jacobian"라고 부른다. 정의는 아래와 같다.
+
+![](/images/mathematics/calculus/Jacobian-1.png){: style="max-height: 280px" .align-center }
+
+그리고 변환 $T$로 인해 만들어지는 넓이 미소변화량을 아래와 같이 Jacobian으로 쉽게 표기할 수 있다.
+
+$$
+\Delta A = \left| \frac{\partial(x, y)}{\partial(u, v)} \right| \Delta u \Delta v
+$$
+
+![](/images/mathematics/calculus/Jacobian-2.png){: style="max-height: 280px" .align-center }
+
+<br/>
+
+이제 이를 바탕으로 이중 적분식에서 치환 적분을 했을 때, 적분식이 어떻게 변하는지 적어보면 아래와 같다.
+
+$$
+\underset{R}{\iint} f(x, y) dA = \underset{R}{\iint} f(x(u, v), y(u, v)) \left| \frac{\partial(x, y)}{\partial(u, v)} \right| du dv
+$$
+
+넓이 미소변화량이 $dA$도 함께 치환된다...!!
+
+<br/>
+
+3차원 치환에서도 야코비안이 정의되고, 이것을 삼중적분에 활용할 수 있지만... 포스트가 넘 길어졌으니 이젠 생략...!!
 
