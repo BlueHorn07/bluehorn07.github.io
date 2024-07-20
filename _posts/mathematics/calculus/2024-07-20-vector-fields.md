@@ -34,9 +34,29 @@ A vector field $\mathbf{F}$ is called a "**conservative vector field**" if it is
 
 # Line Integrals
 
-선적분은 어떤 곡선을 따라 적분을 수행하는 것을 말한다.
+어떤 곡선을 따라 함수 $f(x, y)$에 대한 적분을 수행하는 것을 "선적분"이라고 한다.
 
-요 부분은 공부하다가 좀 헷갈려서 별도 포스트로 정리했다.
+$$
+\int_C f(x, y) \, ds = \int_C f(x(t), y(t)) \cdot \sqrt{x'(t)^2 + y'(t)^2} \, dt
+$$
+
+선적분 부분은 공부하다가 너무 헷갈려서 별도 포스트로 정리했다. 선적분에 대한 자세한 내용은 아래 포스트 참고 ㅎㅎ
 
 ➡️ [Arc Length와 Line Integral](/2024/06/30/arc-length-and-line-integral/)
 
+
+## Fundamental Theorem for Line Integrals
+
+<div class="definition" markdown="1">
+
+Let $C$ be a smooth curve given by the vector function $\mathbf{r}(t)$ for $a \le t \le b$.
+
+Let $f(x, y)$ be a differentiable function of two or three variables whose gradient vector $\nabla f$ is continuous on $C$.
+
+Then,
+
+$$
+\int_{C} \nabla f \cdot d\mathbf{r} = f(\mathbf{r}(b)) - f(\mathbf{r}(a))
+$$
+
+</div>
