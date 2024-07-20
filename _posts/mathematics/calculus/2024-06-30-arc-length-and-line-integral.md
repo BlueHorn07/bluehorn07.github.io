@@ -47,7 +47,7 @@ $$
 L = \int_a^{b} \sqrt{1 + (f'(x))^2} \, dx
 $$
 
-# Line Integral
+# Line Integral of a Scala Field
 
 xy 평면 위에 $(x(t), y(t))$로 그려지는 곡선 $C$가 있다고 하자. 그리고 어떤 이변수 함수 $f(x, y)$를 생각해보자. 요 이변수 함수를 곡선 $C$ 위에서의 선적분을 하면 아래와 같다.
 
@@ -108,17 +108,60 @@ $$
 \int_{-C} f(x, y) \, ds = \int_{C} f(x, y) \, ds
 $$
 
-## Line Integral of a Scala Field
+단, 이 성질은 $z = f(x, y)$인 **스칼라 함수를 선적분 할 때만 만족한다**는 것이다. 벡터 필드를 선적분 할 때는 위의 성질을 만족하지 않는다. 자세한 내용은 후술.
 
-위에서 이변수 함수 $f(x, y)$로 선적분 한 것을 "Scala Field 위에서의 선적분"라고 부른다. 이변수 함수 $f(x, y)$가 스칼라 값을 출력하기 때문이다.
 
-## Line Integral of a Vector Field
+# Line Integral of a Vector Field
 
-이변수 함수 $f(x, y)$가 $\mathbb{R}^2 \rightarrow \mathbb{R}^2$하는 벡터 함수이라고 할 때, 이런 벡터 함수에 대한 선적분도 정의할 수 있다.
+이변수 함수 $\mathbf{F}(x, y)$가 $\mathbb{R}^2 \rightarrow \mathbb{R}^2$하는 벡터 필드라고 할 때, 이런 벡터 필드에 대한 선적분도 정의할 수 있다. 참고로 적분 결과 역시 스칼라 함수를 적분할 때처럼 스칼라 값으로 나온다.
 
-요건 그냥 벡터 적분 하던 것처럼 벡터 성분별로 적분하면 된다.
+벡터장에서의 선적분 값은 "**일(Work)의 크기**"로 해석한다. 물체를 시점 $A$에서 종점 $B$로 옮기면서 드는 일의 크기로 보는 것. 이때, 힘을 받는 벡터장 $\mathbf{F}$과 움직이는 방향 $\mathbf{T}$ 사이에서 일의 미소변화량을 구하면 아래와 같다.
 
+![](/images/mathematics/calculus/line-integral-on-vector-field-1.png){: .align-center style="max-height: 200px" }
+
+$$
+W_k = \mathbf{F}(x_k, y_k, z_k) \cdot T(x_k, y_k, z_k) \Delta s_k
+$$
+
+이를 전체 경로 시점을 보면 아래와 같다.
+
+![](/images/mathematics/calculus/line-integral-on-vector-field-2.png){: .align-center style="max-height: 300px" }
+
+$$
+W = \int_C \mathbf{F} \cdot \mathbf{T} \, ds
+$$
+
+위의 적분은 곡선 $C$를 따라 수행된 전체 일의 크기를 계산한 값이다.
+
+<br/>
+
+이제, 곡선 $C$를 매개변수료 표현해 $\mathbf{r}(t)$로 표기하면, 식은 아래와 같이 바뀐다.
+
+$$
+W = \int_C \mathbf{F} \cdot \mathbf{T} \, ds = \int_a^b \mathbf{F}(\mathbf{r}(t)) \cdot \frac{d\mathbf{r}}{dt} dt
+$$
+
+전체 정리된 버전은 아래 표 참고.
+
+![](/images/mathematics/calculus/line-integral-on-vector-field-3.png){: .align-center style="max-height: 360px" }
+
+<br/>
+
+벡터 필드를 선적분 할 때는 Opposite Direction으로 적분하면 아래의 식이 만족한다.
+
+$$
+\int_{-C} \mathbf{F} \cdot d\mathbf{r} = - \int_{C} \mathbf{F} \cdot d\mathbf{r}
+$$
+
+스칼라 선적분과 달리 부호가 바뀌는 이유는 반대 경로에서는 Tangent Vector $\mathbf{T}$의 방향이 바뀌기 때문이다.
 
 # Fundamental Theorem for Line Integrals
 
-요기서부터는 다시 본편인 "[Vector Field](/2024/07/20/vector-fields/)" 포스트에서 살펴보자 ㅎㅎ
+요기서부터는 본편인 "[Vector Field](/2024/07/20/vector-fields/)" 포스트에서 살펴보자 ㅎㅎ
+
+<hr/>
+
+# References
+
+- [stackexchange: Interpreting Line Integrals with respect to x or y](https://math.stackexchange.com/a/1374187)
+- [LibreTexts Mathematics: Properties of Line Integrals](https://math.libretexts.org/Bookshelves/Calculus/Vector_Calculus_(Corral)/04%3A_Line_and_Surface_Integrals/4.02%3A_Properties_of_Line_Integrals)
