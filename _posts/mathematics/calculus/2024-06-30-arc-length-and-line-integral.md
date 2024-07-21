@@ -16,9 +16,8 @@ excerpt: ""
 # Arc Length
 
 ![](/images/mathematics/calculus/arc-length.png){: .align-center style="max-height: 300px" }
-<p markdown="1" style="text-align: center; color: gray;">
-Gilbert Strang - Calculus Vol 3.
-</p>
+[Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
+{: .align-caption .text-center }
 
 
 곡선의 미소변화량 $ds$는 아래와 같이 유도된다.
@@ -64,9 +63,8 @@ $$
 만약 함수 $f(x, y)$가 xy 평면 상에서의 밀도 함수 $\rho(x, y)$ 였다면, 곡선 $C$에 대한 선적분은 곡선 $C$의 "**무게**"가 될 것이다.
 
 ![](/images/mathematics/calculus/line-integral-of-scala-field.png){: .align-center style="max-height: 400px;" }
-<p markdown="1" style="text-align: center; color: gray; margin-top: 0;">
-Gilbert Strang - Calculus Vol 3.
-</p>
+[Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
+{: .align-caption .text-center }
 
 만약 함수 $f(x, y)$를 z축 상의 어떤 점이라고 본다면, Line Integral은 "**곡선이 그리는 벽(fence)의 면적**"을 계산하게 된다.
 
@@ -127,9 +125,8 @@ $$
 벡터장에서의 선적분 값은 "**일(Work)의 크기**"로 해석한다. 물체를 시점 $A$에서 종점 $B$로 옮기면서 드는 일의 크기로 보는 것. 이때, 힘을 받는 벡터장 $\mathbf{F}$과 움직이는 방향 $\mathbf{T}$ 사이에서 일의 미소변화량을 구하면 아래와 같다.
 
 ![](/images/mathematics/calculus/line-integral-on-vector-field-1.png){: .align-center style="max-height: 300px" }
-<p markdown="1" style="text-align: center; color: gray; margin-top: 0;">
-Gilbert Strang - Calculus Vol 3.
-</p>
+[Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
+{: .align-caption .text-center }
 
 $$
 W_k = \mathbf{F}(x_k, y_k, z_k) \cdot T(x_k, y_k, z_k) \Delta s_k

@@ -24,7 +24,7 @@ $$
 공간 상의 두 점 $(x_1, y_1, z_1)$, $(x_2, y_2, z_2)$에 대해 두 점을 지나는 직선은 아래와 같이 정의된다.
 
 $$
-\frac{x-x_1}{x_2 - x_1} = \frac{y-y_1}{y_2 - y_1} = \frac{z-z_1}{z_2 - z_1} 
+\frac{x-x_1}{x_2 - x_1} = \frac{y-y_1}{y_2 - y_1} = \frac{z-z_1}{z_2 - z_1}
 $$
 
 다시 하려고 보니 기억이 안 났었다 ㅋㅋㅋ ㅠㅠ ~~고등학교 때 배웠던 건데...~~
@@ -88,7 +88,7 @@ i & j & k \\
 x_2 - x & y_2 - y & z_2 - z \\
 x_3 - x & y_3 - y & z_3 - z \\
 \end{matrix}\right\| \\
-&= 
+&=
 \left\|
 \begin{matrix}
 x_1 - x & y_1 - y & z_1 - z \\
@@ -143,14 +143,18 @@ $$
 \vec{r} (t) = \left( f(t), g(t), h(t) \right)
 $$
 
-연속인 벡터 함수는 공간 상에서 곡선을 그릴 수 있음.
+연속인 벡터 함수는 공간 상에서 곡선을 그린다.
 
-![](/images/mathematics/calculus/vector-function-and-space-curve.png){: .align-center style="max-height: 300px" }
+![](/images/mathematics/calculus/vector-function-and-space-curve.png){: .align-center style="max-height: 400px" }
+[Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
+{: .align-caption .text-center }
 
 
 ## Tangent Vector
 
 ![](/images/mathematics/calculus/tangent-vector.png){: .align-center style="max-height: 300px" }
+[APEX Calculus Textbook](https://www.apexcalculus.com/)
+{: .align-caption .text-center }
 
 벡터 함수 $\vec{r}(t)$를 term-by-term으로 미분한 함수를 말한다.
 
@@ -175,7 +179,11 @@ $$
 
 즉, 벡터 함수의 그것의 접선 벡터가 서로 수직이다.
 
-![](/images/mathematics/calculus/vector-function-of-constant-length.png){: .align-center style="max-height: 400px" }
+![](/images/mathematics/calculus/normal-vector-direction.png){: .align-center style="max-height: 300px" }
+[CLP Calculus Textbook](https://personal.math.ubc.ca/~CLP/CLP4/)
+{: .align-caption .text-center }
+
+예를 들어, 2차원의 원 위에서 한 점에서 그은 Tangent Vector는 항상 위치 벡터 $\vec{r}(t)$와 수직한다. 이것은 3차원 이상에서도 성립한다.
 
 증명은 어렵지 않다.
 
@@ -216,8 +224,11 @@ $$
 <br/>
 
 ![](/images/mathematics/calculus/normal-vector-direction.png){: .align-center style="max-height: 300px" }
+[CLP Calculus Textbook](https://personal.math.ubc.ca/~CLP/CLP4/)
+{: .align-caption .text-center }
 
-Normal Vector는 항상 곡선의 안쪽 방향(inner side of the curve)을 가리킨다는 특징이 있다. 예를 들어, 위의 그림처럼 법선 벡터가 곡선의 안쪽을 항할 수 있지만, 곡선의 바깥쪽으로 향해도 접선 벡터 $\vec{T}(t)$와 수직한다. 서로 반대 방향의 법선 벡터 중에 선택되는 것은 항상 안쪽 방향의 벡터다.
+
+Normal Vector는 항상 곡선의 **안쪽 방향(inner side of the curve)**을 가리킨다는 특징이 있다. 예를 들어, 위의 그림처럼 법선 벡터가 곡선의 안쪽을 항할 수 있지만, 곡선의 바깥쪽으로 향해도 접선 벡터 $\vec{T}(t)$와 수직한다. 서로 반대 방향의 법선 벡터 중에 선택되는 것은 항상 안쪽 방향의 벡터다.
 
 외적의 방향을 결정할 때 자주 쓰는 오른손 법칙으로 쉽게 생각하면,
 
@@ -229,8 +240,10 @@ Normal Vector는 항상 곡선의 안쪽 방향(inner side of the curve)을 가�
 ## Binormal Vector
 
 ![](/images/mathematics/calculus/TNB-vectors.png){: .align-center style="max-height: 280px" }
+[Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
+{: .align-caption .text-center }
 
-서로 수직하는 두 벡터를 외적하면, 그 두 벡터에 수직하는 또 다른 벡터를 얻을 수 있다는 사실을 기억하는가!! 앞에서 서로 수직하는 두 벡터 $\vec{T}(t)$, $\vec{N}(t)$를 구했으니, 외적을 이용해 또 다른 수직 벡터를 구할 수 있다!!
+서로 수직하는 두 벡터를 "외적"하면, 그 두 벡터에 수직하는 또 다른 벡터를 얻을 수 있다는 사실을 기억하는가!! 앞에서 서로 수직하는 두 벡터 $\vec{T}(t)$, $\vec{N}(t)$를 구했으니, 외적을 이용해 또 다른 수직 벡터를 구할 수 있다!!
 
 $$
 \vec{B}(t) = \vec{T}(t) \times \vec{N}(t)
@@ -241,6 +254,8 @@ $$
 ## The TNB Frame
 
 ![](/images/mathematics/calculus/the-TNB-frame.png){: .align-center style="max-height: 280px" }
+[stewartcalculus.com](https://www.stewartcalculus.com/media/explore/inner/models/v13_3b/)
+{: .align-caption .text-center }
 
 공간 곡선의 한 점에서 유도되는 서로 직교하는 세 벡터 $\vec{T}$, $\vec{N}$, $\vec{B}$를 하나의 좌표계로 해석하는 것을 말한다. xyz 좌표계와 별개로써 공간 곡선 위를 한 점이 이동하면서 곡선의 곡률(curvature), 열률(torsion)에 따라 시시각각 좌표계가 변화하게 되는데, 이를 잘 표현해준다.
 

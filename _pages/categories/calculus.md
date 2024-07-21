@@ -13,6 +13,7 @@ toc_sticky: true
 - George B. Thomas, Jr. - Calculus 13th ed. Early Transcendentals
 - [Gilbert Strang - Calculus](https://open.umn.edu/opentextbooks/textbooks/252)
 - [Joel Feldman - CLP Calculus](https://personal.math.ubc.ca/~CLP/)
+- [APEX Calculus](https://www.apexcalculus.com/)
 
 
 # Calculus 1
