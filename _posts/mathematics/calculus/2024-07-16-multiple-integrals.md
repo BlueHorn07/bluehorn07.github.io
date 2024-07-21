@@ -22,7 +22,7 @@ $$
 then
 
 $$
-\underset{R}{\iint} f(x, y) dA = \int_{a}^{b} \int_{c}^{d} f(x, y) dy dx = \int_{c}^{d} \int_{a}^{b} f(x, y) dx dy
+\underset{R}{\iint} f(x, y) \, dA = \int_{a}^{b} \int_{c}^{d} f(x, y) \, dy dx = \int_{c}^{d} \int_{a}^{b} f(x, y) \, dx dy
 $$
 
 </div>
@@ -35,10 +35,14 @@ $$
 위의 경우는 적분 영역 $R$이 '직사각형'의 나이스한 형태로 주어진 경우다. 이런 이중 적분은 정말 쉽다. 그러나 많은 경우, 적분 영역은 자유분방한 형태로 존재한다. 특히 $y = g(x)$의 관계를 만족하거나,$x = h(y)$의 관계를 만족하는 적분 영역을 마주하는 경우가 많을 것이다.
 
 ![](/images/mathematics/calculus/double-integral-general-region-2.png){: style="max-height: 300px" .align-center }
+Thomas Calculus - Example Problem
+{: .align-caption .text-center }
 
 이 경우는 $x = h(y)$의 꼴로 적분 영역이 표현되는 경우에 해당한다. 그래서 $x$ 축 방향으로 먼저 적분을 수행한 후에, $y$ 축 방향으로 적분을 수행한다.
 
 ![](/images/mathematics/calculus/double-integral-general-region-1.png){: style="max-height: 300px" .align-center }
+Thomas Calculus - Example Problem
+{: .align-caption .text-center }
 
 위의 예제는 반대로 $y = g(x)$ 꼴로 표현하여 해결할 수도 있다. 이 경우는 $y$ 축 방향으로 먼저 적분 후 $x$ 축 방향으로 적분을 수행한다.
 
@@ -57,6 +61,8 @@ $$
 와 같이 $xy$-좌표계에서 직사각형을 표현하는 것처럼 쉽게 영역 $R$를 표현할 수 있다. 그래서 이런 형태의 영역을 "**Polar Rectangle**"이라고 부른다 ㅋㅋ
 
 ![](/images/mathematics/calculus/polar-rectangle.png){: style="max-height: 240px" .align-center }
+[Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
+{: .align-caption .text-center }
 
 <br/>
 
@@ -69,6 +75,8 @@ $$
 위의 식을 보면, 미분소가 $dx dy = r \cdot dr d\theta$이 되는데,
 
 ![](/images/mathematics/calculus/differential-in-polar-form.png){: style="max-height: 240px" .align-center }
+[Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
+{: .align-caption .text-center }
 
 위와 같이 Polar Rectangle의 미소변화량을 $dA$를 계산해보면, $r \cdot dr d\theta$의 꼴이 되기 때문이다.
 
@@ -85,7 +93,9 @@ $$
 
 <br/>
 
-![](/images/mathematics/calculus/triple-integral-1.png){: style="max-height: 240px" .align-center }
+![](/images/mathematics/calculus/triple-integral-1.png){: style="max-height: 300px" .align-center }
+[Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
+{: .align-caption .text-center }
 
 3차원 물체의 위-아래 뚜껑이 어떤 함수로 정해지는 경우다. 이 경우, 아래와 같이 적분 구간에 해당 함수를 넣어주면 된다.
 
@@ -93,7 +103,11 @@ $$
 \underset{D}{\iint} \left[ \int_{u_1(x, y)}^{u_2(x, y)} f(x, y, z) \, dz \right] \, dx \, dy
 $$
 
-![](/images/mathematics/calculus/triple-integral-2.png){: style="max-height: 240px" .align-center }
+<br/>
+
+![](/images/mathematics/calculus/triple-integral-2.png){: style="max-height: 300px" .align-center }
+[Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
+{: .align-caption .text-center }
 
 이중적분에서 했던 것처럼 $xy$ 평면의 영역 $D$가 $y = g(x)$ 꼴로 두 변수 간에 함수 관계가 있을 수도 있다. 이 경우는 삼중 적분이 아래와 같을 것이다.
 
@@ -101,21 +115,30 @@ $$
 \int_{a}^{b} \int_{g_1(x)}^{g_2(x)} \int_{u_1(x, y)}^{u_2(x, y)} f(x, y, z) \, dz \, dy \, dx
 $$
 
-![](/images/mathematics/calculus/triple-integral-3.png){: style="max-height: 240px" .align-center }
+<br/>
+
+![](/images/mathematics/calculus/triple-integral-3.png){: style="max-height: 300px" .align-center }
+[Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
+{: .align-caption .text-center }
 
 반대로 $x = h(y)$와 같은 종속 관계도 있을 수도 있다. 삼중 적분 식의 표현은 생략.
 
 주의할 점은 삼중적분의 영역을 정의하는 물체 $V$의 위-아래 뚜껑이 항상 $u(x, y)$와 같이 $z$ 축이 아닐 수도 있다는 점이다. 위-아래 뚜껑이 $y$축을 따라서 존재할 수도 있고, $x$축을 따라서 존재할 수도 있다. 적분 영역이 항상 위의 그림과 같은 형태로 나올 거라고 착각하지 말 것!
 
+
 # Triple Integrals in Cylindrical Coordinates
 
-![](/images/mathematics/calculus/cylindrical-coordinates.png){: style="max-height: 240px" .align-center }
+![](/images/mathematics/calculus/cylindrical-coordinates.png){: style="max-height: 300px" .align-center }
+[Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
+{: .align-caption .text-center }
 
 3차원 상의 좌표를 $P(r, \theta, z)$로 표현하는 좌표계이다. 원점을 중심으로 하는 극좌표계로 표현되면서, 높이 $z$가 추가된 녀석으로 원기둥, 포물선 등을 표현하기에 쉬운 좌표계이다.
 
 예를 들어, 아래와 같은 도형의 부피를 구하는 데에 적절하다.
 
-![](/images/mathematics/calculus/cylindrical-object-1.png){: style="max-height: 300px" .align-center }
+![](/images/mathematics/calculus/cylindrical-object-1.png){: style="max-height: 340px" .align-center }
+Thomas Calculus - Example Problem
+{: .align-caption .text-center }
 
 위의 도형의 경우, 부피를 구하기 위해서 아래의 적분을 수행한다.
 
@@ -129,7 +152,9 @@ $z$축 방향으로 먼저 적분하고, 극좌표에 대한 적분을 수행한
 
 Cylindrical Coordinates에서는 미소부피가 아래와 같이 표현된다.
 
-![](/images/mathematics/calculus/cylindrical-volume-wedge.png){: style="max-height: 280px" .align-center }
+![](/images/mathematics/calculus/cylindrical-wedge.png){: style="max-height: 280px" .align-center }
+[CLP Calculus Textbook](https://personal.math.ubc.ca/~CLP/CLP4/)
+{: .align-caption .text-center }
 
 $$
 \Delta V = \Delta z \cdot r \Delta r \cdot \Delta \theta
@@ -159,6 +184,8 @@ $$
 구면좌표계는 아래와 같은 도형의 부피를 구하는 데에 적절하다. ~~아이스크림 콘 🍨~~
 
 ![](/images/mathematics/calculus/spherical-object-1.png){: style="max-height: 280px" .align-center }
+Thomas Calculus - Example Problem
+{: .align-caption .text-center }
 
 부피를 구하기 위해서 아래의 적분을 수행한다.
 
@@ -169,6 +196,8 @@ $$
 적분식에서 갑자기 $\rho^2 \sin \phi$가 튀어나왔는데, 요것은 미소 부피 변화량에서 유도된다.
 
 ![](/images/mathematics/calculus/spherical-wedge.png){: style="max-height: 280px" .align-center }
+[APEX Calculus Textbook](https://www.apexcalculus.com/)
+{: .align-caption .text-center }
 
 $$
 \Delta V = \Delta  \rho \cdot (\rho \, \Delta  \phi) \cdot (\rho \, \sin \phi \, \Delta  \theta)
@@ -188,6 +217,8 @@ $$
 이런 1차원에서의 치환을 2차원에서 한번 생각해보자. 2차원 평면에서 $(u, v)$ 좌표를 $(x, y)$ 좌표로 변환하는 변환 함수 $T$를 상상 해보자.
 
 ![](/images/mathematics/calculus/transformation-in-a-plane-1.png){: style="max-height: 280px" .align-center }
+[Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
+{: .align-caption .text-center }
 
 $$
 T(u, v) = (x, y)
@@ -216,6 +247,8 @@ $$
 우리는 변환 $T$의 결과로 만들어진 영역 $R$의 넓이를 구하기 위해 아래와 같이 할선(secant line)을 그어서 근사치를 구할 수 있을 것이다.
 
 ![](/images/mathematics/calculus/transformation-in-a-plane-2.png){: style="max-height: 280px" .align-center }
+Thomas Calculus
+{: .align-caption .text-center }
 
 이 할선 벡터는 아래와 같이 주어질 것이다.
 
@@ -244,6 +277,8 @@ $$
 <br/>
 
 ![](/images/mathematics/calculus/transformation-in-a-plane-3.png){: style="max-height: 280px" .align-center }
+Thomas Calculus
+{: .align-caption .text-center }
 
 위의 식을 활용해 영역 $R$의 넓이의 근사값을 두 벡터 $\Delta u \cdot \mathbf{r}_u$, $\Delta v \cdot \mathbf{r}_v$의 외적으로 구할 수 있다.
 
@@ -255,6 +290,8 @@ $$
 이제 남은 건 외적 $\mathbf{r}_u \times \mathbf{r}_v$를 구하는 것이 남았다. 이것은 아래와 같은 행렬식을 구하는 것이다.
 
 ![](/images/mathematics/calculus/transformation-in-a-plane-4.png){: style="max-height: 280px" .align-center }
+Thomas Calculus
+{: .align-caption .text-center }
 
 
 # Jacobian
@@ -270,6 +307,8 @@ $$
 $$
 
 ![](/images/mathematics/calculus/Jacobian-2.png){: style="max-height: 280px" .align-center }
+Thomas Calculus
+{: .align-caption .text-center }
 
 <br/>
 
