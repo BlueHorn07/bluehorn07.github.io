@@ -15,7 +15,9 @@ excerpt: "제약 조건 아래에서 함수의 극값을 찾는 방법에 대해
 
 # The Lagrange Multiplier
 
-![](/images/mathematics/calculus/lagrage-multiplier.png){: style="max-height: 300px" }
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Lagrange_multiplier.png/300px-Lagrange_multiplier.png){: style="max-height: 300px" .align-center }
+picture from [wikimedia](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Lagrange_multiplier.png/300px-Lagrange_multiplier.png)
+{: .align-caption .text-center }
 
 거두절미하고 바로 어떻게 하는 건지 바로 살펴보자.
 
@@ -39,13 +41,15 @@ $$
 
 처음에는 Constraint Curve와 Level Curve가 접한다는 조건이 이해가 안 되었다. "꼭 접해야만 최대/최소가 있는건가?"라는 생각이 들었다. 그래서 찾아보니 [stackexchange](https://math.stackexchange.com/questions/1765722/in-lagrange-multiplier-why-level-curves-of-f-and-g-are-tangent-to-each-othe) 사이트에서 요런 답변을 찾고 드디어 이해가 좀 되었다.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Lagrange_multiplier.png/300px-Lagrange_multiplier.png){: style="max-height: 300px" }
-
-picture from [wikimedia](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Lagrange_multiplier.png/300px-Lagrange_multiplier.png)
-
 > For $f(x, y) = d$, you increment value $d$ until you touch $𝑔(x, y)=c$. In the moment of contact you take a minimum. If you go on, just before $f(x, y) = d$ leaves the contact, you take the maximum.
 
 즉, $f(x, y) = d_{min}$하는 점에서부터 점점 함숫값을 키우며 Level Curve를 확장하다가 Level Curve와 접하는 그 순간이 minimum 순간이다. 여기서 Level Curve의 값을 더 늘리면 제약조건은 만족하지만 접하던 순간보다는 함숫값이 커져버린다.
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Lagrange_multiplier.png/300px-Lagrange_multiplier.png){: style="max-height: 300px" .align-center }
+picture from [wikimedia](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Lagrange_multiplier.png/300px-Lagrange_multiplier.png)
+{: .align-caption .text-center }
+
+그림과 함께 이해해보자.
 
 <br/>
 
@@ -90,7 +94,9 @@ $$
 
 # Lagrange Method with Two Constraints
 
-![](/images/mathematics/calculus/lagrange-multiplier-with-two-constraints.png){: style="max-height: 300px" }
+![](/images/mathematics/calculus/lagrange-multiplier-with-two-constraints.png){: style="max-height: 320px" .align-center }
+Thomas Calculus
+{: .align-caption .text-center }
 
 어떤 경우는 제약 조건이 2개 존재할 수도 있다.
 
@@ -106,7 +112,7 @@ $$
 C \perp \nabla f
 $$
 
-또, 곡선 $C$는 $\nabla g_1$, $\nabla g_2$와도 수직 관계를 이룬다. 이것은 곡선 $C$가 제약조건을 이루는 평면 위에 존재하지 때문이다.
+또, 곡선 $C$는 $\nabla g_1$, $\nabla g_2$와도 수직 관계를 이룬다. 이것은 곡선 $C$가 제약조건을 이루는 평면 위에 존재하기 때문이다.
 
 $$
 C \perp \nabla g_1 \text{  and  } C \perp \nabla g_2
@@ -128,7 +134,9 @@ The plane $x + y + z = 1$ cuts the cylinder $x^2 + y^2 = 1$ in an ellipse. Find 
 
 </div>
 
-![](/images/mathematics/calculus/lagrange-multiplier-with-two-constraints-example.png){: style="max-height: 300px" }
+![](/images/mathematics/calculus/lagrange-multiplier-with-two-constraints-example.png){: style="max-height: 300px" .align-center }
+Thomas Calculus - Example Problem
+{: .align-caption .text-center }
 
 제약 조건과 거리 함수를 정의하자.
 
