@@ -7,7 +7,15 @@ toc_sticky: true
 
 복수전공하고 있는 수학과의 학부 졸업시험을 위해 2024년 5월부터 2024년 7월까지 미적분학 1·2를 다시 공부 했습니다. 다시 공부를 하면서, 교재 연습 문제 중에 재밌었던 문제들과 헷갈리는 개념들을 정리해보았습니다.
 
-# 미적분학 1
+# 참고자료
+
+- James Stewart - Calculus 8th ed. Early Transcendentals
+- George B. Thomas, Jr. - Calculus 13th ed. Early Transcendentals
+- [Gilbert Strang - Calculus](https://open.umn.edu/opentextbooks/textbooks/252)
+- [Joel Feldman - CLP Calculus](https://personal.math.ubc.ca/~CLP/)
+
+
+# Calculus 1
 
 - [Limit and Continuity: Problem Solving](/2024/05/01/limit-and-continuity-problem-solving/)
   - 입델 논법이 수립된 과정
@@ -35,7 +43,7 @@ toc_sticky: true
   - The Cauchy condensation test
 
 
-# 미적분학 2
+# Caclulus 2
 
 - [Parametric Equations: Problem Solving](/2024/06/16/parametric-equations-problem-solving/)
   - The witch of Maria Agnesi
@@ -46,6 +54,19 @@ toc_sticky: true
   - Nephroid
   - Strophoid
   - The nephroid of Freeth
-- [Arc Length와 Line Integral](/2024/06/30/arc-length-and-line-integral/)
 - [Vectors and Space: Problem Solving](/2024/06/30/vectors-and-space-problem-solving/)
 - [Partial Derivatives and Differentiability](/2024/07/06/prtial-derivatives-and-differentiability/)
+- [Lagrange Multiplier](/2024/07/14/lagrange-multiplier/)
+  - Constrained Maxima/minima
+  - Lagrange Method with Two Constraints
+- [Multiple Integrals](/2024/07/16/multiple-integrals/)
+  - Fubini’s Theorem
+  - Jacobian
+- [Vector Fields](/2024/07/20/vector-fields/)
+  - Gradient Fields $\nabla f$
+  - Conservative Vector Field, and Potential Function
+  - [Arc Length와 Line Integral](/2024/06/30/arc-length-and-line-integral/)
+    - Fundamental Theorem for Line Integrals
+    - Work done by Gravitational Field
+    - Independent of Path
+    - On a Closed Curve

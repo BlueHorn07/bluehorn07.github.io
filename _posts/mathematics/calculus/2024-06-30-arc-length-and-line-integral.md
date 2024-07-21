@@ -16,6 +16,10 @@ excerpt: ""
 # Arc Length
 
 ![](/images/mathematics/calculus/arc-length.png){: .align-center style="max-height: 300px" }
+<p markdown="1" style="text-align: center; color: gray;">
+Gilbert Strang - Calculus Vol 3.
+</p>
+
 
 곡선의 미소변화량 $ds$는 아래와 같이 유도된다.
 
@@ -59,7 +63,10 @@ $$
 
 만약 함수 $f(x, y)$가 xy 평면 상에서의 밀도 함수 $\rho(x, y)$ 였다면, 곡선 $C$에 대한 선적분은 곡선 $C$의 "**무게**"가 될 것이다.
 
-![](/images/mathematics/calculus/line-integral-of-scala-field.png){: .align-center style="max-height: 400px" }
+![](/images/mathematics/calculus/line-integral-of-scala-field.png){: .align-center style="max-height: 400px;" }
+<p markdown="1" style="text-align: center; color: gray; margin-top: 0;">
+Gilbert Strang - Calculus Vol 3.
+</p>
 
 만약 함수 $f(x, y)$를 z축 상의 어떤 점이라고 본다면, Line Integral은 "**곡선이 그리는 벽(fence)의 면적**"을 계산하게 된다.
 
@@ -88,7 +95,9 @@ $$
 Arc Length와 선적분 개념이 익숙해져서 저걸 어떻게 받아드려야 할지 고민이었는데, stackexchange에서 아래와 같은 답변을 찾았다.
 
 ![](/images/mathematics/calculus/line-integrals-along-axis.jpg){: .align-center style="max-height: 400px" }
+<p markdown="1" style="text-align: center; color: gray; margin-top: 0;">
 Picture from [bfhaha's answer](https://math.stackexchange.com/a/1374187) on math.stackexchange.com
+</p>
 
 즉, 벽면(fence)을 $x$축 위로 사영하여 만들어지는 영역의 넓이가 바로 $x$축 위로 수행한 선적분 값이다.
 
@@ -117,15 +126,16 @@ $$
 
 벡터장에서의 선적분 값은 "**일(Work)의 크기**"로 해석한다. 물체를 시점 $A$에서 종점 $B$로 옮기면서 드는 일의 크기로 보는 것. 이때, 힘을 받는 벡터장 $\mathbf{F}$과 움직이는 방향 $\mathbf{T}$ 사이에서 일의 미소변화량을 구하면 아래와 같다.
 
-![](/images/mathematics/calculus/line-integral-on-vector-field-1.png){: .align-center style="max-height: 200px" }
+![](/images/mathematics/calculus/line-integral-on-vector-field-1.png){: .align-center style="max-height: 300px" }
+<p markdown="1" style="text-align: center; color: gray; margin-top: 0;">
+Gilbert Strang - Calculus Vol 3.
+</p>
 
 $$
 W_k = \mathbf{F}(x_k, y_k, z_k) \cdot T(x_k, y_k, z_k) \Delta s_k
 $$
 
-이를 전체 경로 시점을 보면 아래와 같다.
-
-![](/images/mathematics/calculus/line-integral-on-vector-field-2.png){: .align-center style="max-height: 300px" }
+이를 전체 곡선 $C$에 대해서 정리해서 보면 아래와 같은 적분이 된다.
 
 $$
 W = \int_C \mathbf{F} \cdot \mathbf{T} \, ds
@@ -141,9 +151,14 @@ $$
 W = \int_C \mathbf{F} \cdot \mathbf{T} \, ds = \int_a^b \mathbf{F}(\mathbf{r}(t)) \cdot \frac{d\mathbf{r}}{dt} dt
 $$
 
-전체 정리된 버전은 아래 표 참고.
+또, 벡터 필드 $\mathbf{F}(x, y, z)$의 성분별로 표현하기도 한다.
 
-![](/images/mathematics/calculus/line-integral-on-vector-field-3.png){: .align-center style="max-height: 360px" }
+$$
+\begin{aligned}
+& \int_{a}^{b} \left( \mathbf{F}_1 x'(t) + \mathbf{F}_2 y'(t) + \mathbf{F}_3 z'(t) \right) \, dt	\\
+&= \int_C \mathbf{F}_1 dx + \mathbf{F}_2 dy + \mathbf{F}_3 dz
+\end{aligned}
+$$
 
 <br/>
 

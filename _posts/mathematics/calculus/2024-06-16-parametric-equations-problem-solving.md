@@ -156,6 +156,7 @@ $$
 # Trochoids
 
 ![](https://mathworld.wolfram.com/images/eps-svg/Trochoid_1000.svg)
+Picture from [Wolfram Mathworld](https://mathworld.wolfram.com/Trochoid.html)
 
 직선 위를 둥근 원이 둘러갈 때의 자취를 일반화한 것이 "Trochoids"이다. 원의 반지름을 $a$라고 하고, 원의 중심에서 뻗어나온 바큇살(spoke of wheel)의 길이를 $b$라고 하자. 이때, $a = b$인 상황이 많이 살펴본 "Cycloid"의 경우다. 이름은 그리스어로 "바퀴"를 뜻하는 *trochos*에서 유래했다고 한다.
 
@@ -405,10 +406,9 @@ $$
 
 리사쥬 곡선을 이루는 두 사인파의 주바수비를 쉽게 확인하는 방법은 $x$축과 $y$축에서 $x=1$, $y=1$ 지점에 곡선이 몇번 접하는지 세어보면 된다.
 
-![](/images/mathematics/calculus/lissajouse-curves.png){: style="max-height: 200px" .align-center }
+![](/images/mathematics/calculus/lissajouse-curves.png){: style="max-height: 320px" .align-center }
 
-첫번째 곡선은 $x=1$에 1번 접하고 $y=1$에 2번 접하므로, $x$ 사인파와 $y$ 사인파의 주파수 비율이 1:2를 이룬다.
-
+첫번째 곡선은 $x=1$에 1번 접하고 $y=1$에 2번 접하므로, $x$ 사인파와 $y$ 사인파의 주파수 비율이 1:2를 이룬다.<br/>
 두번째 곡선은 $x=1$에 2번 접하고 $y=1$에 3번 접하므로, $x$ 사인파와 $y$ 사인파의 주파수 비율이 2:3을 이룬다.
 
 # Nephroid
@@ -447,7 +447,7 @@ $$
 \overline{AK} = \overline{KP_1} = \overline{KP_2}
 $$
 
-직전 $L$을 회전화면 이런 조건을 만족하는 점 $P_1$과 점 $P_2$의 자취가 생긴다. 이것을 
+직전 $L$을 회전화면 이런 조건을 만족하는 점 $P_1$과 점 $P_2$의 자취가 생긴다. 이것을
 "Strophoid"라고 한다.
 
 </div>

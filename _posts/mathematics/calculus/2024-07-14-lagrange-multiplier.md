@@ -88,7 +88,7 @@ $$
 
 이를 바탕으로 다시 $(x, y, z)$에 대입하면, closest point $p(x, y, z) = (5/3, 5/6, -5/6)$가 된다. $\blacksquare$
 
-# Lagrange Multipliers with Two Constraints
+# Lagrange Method with Two Constraints
 
 ![](/images/mathematics/calculus/lagrange-multiplier-with-two-constraints.png){: style="max-height: 300px" }
 

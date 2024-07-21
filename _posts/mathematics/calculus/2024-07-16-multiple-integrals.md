@@ -141,6 +141,9 @@ $$
 # Triple Integrals in Spherical Coordinates
 
 ![](/images/mathematics/calculus/spherical-coordinates.png){: style="max-height: 280px" .align-center }
+<p markdown="1" style="text-align: center; color: gray; margin-top: 0;">
+CLP Calculus
+</p>
 
 3차원 상의 좌표를 $P(\rho, \phi, \theta)$로 표현하는 좌표계이다. 원점을 중심으로 위도(longitude, $\theta$)와 경도(latitude, $\phi$)로 좌표를 표현한다. **이때, 헷갈리지 말아야 할 것은 극좌표계처럼 $(r, \theta)$가 아니라 원점으로부터 떨어진 길이 $\rho$를 사용한다는 점이다.**
 
