@@ -169,7 +169,7 @@ $$
 
 # Fundamental Theorem for Line Integrals
 
-요기서부터는 본편인 "[Vector Field](/2024/07/20/vector-fields/)" 포스트에서 살펴보자 ㅎㅎ
+요기서부터는 본편인 "[Vector Field](/2024/07/20/vector-fields-and-line-integrals/)" 포스트에서 살펴보자 ㅎㅎ
 
 <hr/>
 

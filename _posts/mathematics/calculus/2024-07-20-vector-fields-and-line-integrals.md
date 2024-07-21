@@ -1,9 +1,9 @@
 ---
-title: "Vector Fields"
+title: "Vector Fields, and Line Integrals"
 toc: true
 toc_sticky: true
 categories: ["Calculus"]
-excerpt: "Gradient Fields, Fundamental Theorem for Line Integrals"
+excerpt: "Gradient Fields, Conservative Vector Field, Fundamental Theorem for Line Integrals"
 ---
 
 복수전공하고 있는 수학과의 졸업시험을 위해 학부 수학 과목들을 다시 공부하고 있습니다. [미적분학 포스트 전체 보기](/categories/calculus)
@@ -140,4 +140,81 @@ $$
 $$
 
 (요기에서 opposite direction 적분 볼 때, 스칼라 선적분이랑 헷갈려서 한참 고민함... ㅋㅋ)
+
+# Theorems
+
+## Independent of Path implies Conservative
+
+만약 주어진 벡터 필드의 적분이 주어진 도메인 $D$에서 모두 independent of path라면, 해당 벡터 필드는 도메인 $D$ 위에서 Conservative Field이다.
+
+본래 Conservative Field면, Independent of path를 만족하는데, 그 역 명제도 성립함을 말한다.
+
+## If Conservative Field, then
+
+만약 벡터 필드 $\mathbf{F} = P(x, y) \mathbf{i} + Q(x, y) \mathbf{j}$가 conservative vector field이고, $P$, $Q$ 함수가 도메인 $D$ 위에서 continuous first-order partial derivative를 가진다면, 아래 등식을 만족한다.
+
+$$
+\frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x}
+$$
+
+<br/>
+
+증명은 간단한데, 벡터 필드 $\mathbf{F}$가 conservative 하므로, 아래 식을 만족하는 potential function $f$가 존재한다.
+
+$$
+\mathbf{F} = \nabla f
+$$
+
+따라서 각 성분 $P$, $Q$는 아래와 같이 1차 편미분으로 정의된다.
+
+$$
+\begin{aligned}
+P(x, y) &= \frac{\partial f}{\partial x} \\
+Q(x, y) &= \frac{\partial f}{\partial y}
+\end{aligned}
+$$
+
+이제, $P$, $Q$ 성분에 다시 $y$와 $x$에 대해 편미분 하면 아래와 같다.
+
+$$
+\frac{\partial P}{\partial y} = \frac{\partial f}{\partial y \partial x} = \frac{\partial f}{\partial x \partial y} = \frac{\partial Q}{\partial x}
+$$
+
+$\blacksquare$
+
+## Condition of conservative field
+
+바로 위에서 살펴본 명제의 역 명제가 언제 성립하는지도 살펴보자.
+
+<div class="theorem" markdown="1">
+
+Let $\mathbf{F} = P\mathbf{i} + Q \mathbf{j}$ be a vector field on an open simply-connected region $D$.
+
+Suppose that $P$ and $Q$ have continuous first-order derivatives and satisfy $\frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x}$ throughout $D$.
+
+Then, $\mathbf{F}$ is conservative.
+
+</div>
+
+주어진 벡터 필드가 Conservative 한지 판단하는 또 다른 방법이다. Conservative 여부를 판단하기 위해선 $P$, $Q$ 성분의 편미분 값이 일치한지를 확인하라는 말.
+
+<br/>
+
+그런데 여기서 처음 등장한 개념이 "simply-connected region"이다. 대충 나눠서 설명하면,
+
+![](/images/mathematics/calculus/simple-curve-and-cases.png){: style="max-height: 300px" .align-center }
+[Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
+{: .align-caption .text-center }
+
+"simple curve"는 곡선 자체가 자기 자신과 다시 만나지 않는 나이스한 곡선을 말한다.
+
+<br/>
+
+"simply-connected region"은 영역 위에 그릴 수 있는 모든 simple closed curve 안의 점이 모두 영역 $D$에 속하는 점들인 경우를 말한다.
+
+![](/images/mathematics/calculus/simply-connected-region-and-cases.png){: style="max-height: 500px" .align-center }
+[Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
+{: .align-caption .text-center }
+
+만약 영역 안에 구멍(hole)이 있다면, 그 구멍을 둘러싸는 simple closed curve가 만드는 영역 안에는 영역 $D$에 속하는 점도 있겠지만, 속하지 않는 점도 생긴다. 따라서 2차원에서는 구멍 없는 영역을 일컫는다고 볼 수 있다.
 

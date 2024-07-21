@@ -63,7 +63,7 @@ toc_sticky: true
 - [Multiple Integrals](/2024/07/16/multiple-integrals/)
   - Fubini’s Theorem
   - Jacobian
-- [Vector Fields](/2024/07/20/vector-fields/)
+- [Vector Fields](/2024/07/20/vector-fields-and-line-integrals/)
   - Gradient Fields $\nabla f$
   - Conservative Vector Field, and Potential Function
   - [Arc Length와 Line Integral](/2024/06/30/arc-length-and-line-integral/)
