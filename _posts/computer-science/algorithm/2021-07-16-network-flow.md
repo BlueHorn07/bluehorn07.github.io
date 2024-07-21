@@ -15,7 +15,7 @@ categories: ["Algorithm"]
 
 ### Introduction to Network Flow
 
-\<Network Flow\> 문제는 아래와 같은 Directed Graph $G$에 대해 <mark>source $S$에서 sink $t$로 흘러가는 Flow의 合을 최대화</mark> 하는 문제다.
+\<Network Flow\> 문제는 아래와 같은 Directed Graph $G$에 대해 **source $S$에서 sink $t$로 흘러가는 Flow의 合을 최대화** 하는 문제다.
 
 <div class="img-wrapper">
   <img src="{{ "/images/computer-science/algorithm/network-flow-1.png" | relative_url }}" width="500px">
@@ -76,7 +76,7 @@ Find an $s-t$ path whose edges $(u, v)$ can be of two types:
 
 <br/>
 
-\<Network Flow\> 알고리즘에서는 위와 같은 과정을 좀더 편하게 다루기 위해, $s-t$ 경로를 찾는 매번의 과정에서 \<Residual Graph\> $G^f = (V, E^f)$라는 그래프를 갱신하며 사용한다. 우리는 <mark>Residual Graph $G^f$에서 Network Flow 문제를 해결함으로써 기존의 그래프 $G$의 Network Flow 문제를 해결할 수 있다!</mark> 즉 $G \equiv G^f$, $G$와 $G^f$가 동치인 셈이다! 😲
+\<Network Flow\> 알고리즘에서는 위와 같은 과정을 좀더 편하게 다루기 위해, $s-t$ 경로를 찾는 매번의 과정에서 \<Residual Graph\> $G^f = (V, E^f)$라는 그래프를 갱신하며 사용한다. 우리는 **Residual Graph $G^f$에서 Network Flow 문제를 해결함으로써 기존의 그래프 $G$의 Network Flow 문제를 해결할 수 있다!** 즉 $G \equiv G^f$, $G$와 $G^f$가 동치인 셈이다! 😲
 
 \<Residual Graph\> $G^f$에 대해 formal 하게 기술하면 아래와 같다.
 
@@ -107,7 +107,7 @@ Residual Graph $G^f$ 개념을 처음 배울 때는 간선에 유량 $f$가 흐�
 
 다시 이름으로 돌아와보자. Given graph에서 $s \rightarrow a \rightarrow b \rightarrow t$의 경로로 flow를 흘려보내면 Residual Flow를 쓰지 않으면 더이상 문제를 해결할 수 없었다. Residual Flow를 적용하면 $b \rightarrow a$에 capacity $1$이 추가되어 $s \rightarrow b \rightarrow a \rightarrow t$가 가능해져 Final flow를 얻을 수 있다. 그런데 $b \rightarrow a$에 capacity $1$을 추가하는게 말이 되는 걸까?
 
-놀랍게도 말이 된다! 다른 건 다 제거하고 $a \; -- \; b$ 구간만 보자. $a \rightarrow b$로 1만큼의 유량이 흐른다고 하자. 그런데 이렇게 유량 1이 흐르는 상태에서 반대 방향 $a \leftarrow b$로 1만큼의 유량을 흘려보낸다면 두 유량은 상쇄되어 0이 될 것이다. <mark>residual flow는 바로 이것을 말한다.</mark> 이미 간선에 흐르는 flow $f_e$에 대해 그걸 상쇄하는 건 가능하다. 그래서 그걸 상쇄하는 양이 흐를 수 있도록 기존 그래프 $G$를 약간 수정하는 거다. $c_e' = f_e$가 되도록 말이다!
+놀랍게도 말이 된다! 다른 건 다 제거하고 $a \; -- \; b$ 구간만 보자. $a \rightarrow b$로 1만큼의 유량이 흐른다고 하자. 그런데 이렇게 유량 1이 흐르는 상태에서 반대 방향 $a \leftarrow b$로 1만큼의 유량을 흘려보낸다면 두 유량은 상쇄되어 0이 될 것이다. **residual flow는 바로 이것을 말한다.** 이미 간선에 흐르는 flow $f_e$에 대해 그걸 상쇄하는 건 가능하다. 그래서 그걸 상쇄하는 양이 흐를 수 있도록 기존 그래프 $G$를 약간 수정하는 거다. $c_e' = f_e$가 되도록 말이다!
 
 이런 접근이 자연스럽다고 여기게 되는 점은 residual flow는 꼭 간선에 흐르는 flow 만큼만 생긴다는 것이다. 이것은 이미 흐르는 flow $f_e$보다 많은 residual flow가 흘러서 $f_e$가 음수가 되는 현상을 방지한다. 이 사실들을 이해한다면 residual flow는 꽤 자연스러운 접근이라고 깨닫게 될 것이다.
 
@@ -121,7 +121,7 @@ Residual Graph $G^f$ 개념을 처음 배울 때는 간선에 유량 $f$가 흐�
   <img src="{{ "/images/computer-science/algorithm/network-flow-3.png" | relative_url }}" width="600px">
 </div>
 
-그래프 $G$를 $s$를 포함하는 $L = \\{ s, a, c\\}$, $t$를 포함하는 $R=\\{ b, d, e, t\\}$로 분할해보자. 이렇게 vertex set을 disjoint set $(L, R)$로 분할하는 것을 <mark>$(s, t)$-cut</mark> 또는 간단하게 cut이라고 한다. 이때, $L-R$을 잇는 edge의 집합을 <mark>cut-set</mark>라고 하며, 이 cut-set의 capacity의 총합이 $(s, t)$-cut의 capacity가 된다. 사실 $s$와 $t$를 disjoint set으로 분할하는 가능한 cut은 정말 많다. 이때, **<mark>minimum cut</mark>** 줄여서 min-cut은 cut capacity가 최소가 되는 cut을 말한다.
+그래프 $G$를 $s$를 포함하는 $L = \\{ s, a, c\\}$, $t$를 포함하는 $R=\\{ b, d, e, t\\}$로 분할해보자. 이렇게 vertex set을 disjoint set $(L, R)$로 분할하는 것을 **$(s, t)$-cut**또는 간단하게 cut이라고 한다. 이때, $L-R$을 잇는 edge의 집합을 **cut-set**라고 하며, 이 cut-set의 capacity의 총합이 $(s, t)$-cut의 capacity가 된다. 사실 $s$와 $t$를 disjoint set으로 분할하는 가능한 cut은 정말 많다. 이때, **minimum cut** 줄여서 min-cut은 cut capacity가 최소가 되는 cut을 말한다.
 
 $s \rightarrow t$ 방향으로 흐르는 모든 유량(flow)은 $L$에서 $R$을 지나야 한다. 그러므로 어떤 유량도 $L$과 $R$ 사이를 잇는 edge의 capacity 보다 큰 값을 가질 수 없다.  이것은 네트워크의 유량(flow)의 총합이 $(s, t)$-cut의 capacity를 넘을 수 없음을 의미한다.
 
@@ -129,7 +129,7 @@ $s \rightarrow t$ 방향으로 흐르는 모든 유량(flow)은 $L$에서 $R$을
 
 <div markdown="1" align="center">
 
-Pick any $(s, t)$-cut $(L, R)$ and any flow $f$, then <mark>$\text{size}(f) \le \text{capacity}(L, R)$</mark>.
+Pick any $(s, t)$-cut $(L, R)$ and any flow $f$, then **$\text{size}(f) \le \text{capacity}(L, R)$**.
 
 </div>
 
@@ -179,7 +179,7 @@ $$
 
 </div>
 
-위의 결과는 <mark>어떤 cut을 잡든 상관없이 Network에 흐르는 flow의 최종값은 모두 동일하다</mark>고 말한다! 그래서 이 flow의 최종값을 value of flow, $\text{val}(f)$라고 부르겠다.
+위의 결과는 **어떤 cut을 잡든 상관없이 Network에 흐르는 flow의 최종값은 모두 동일하다**고 말한다! 그래서 이 flow의 최종값을 value of flow, $\text{val}(f)$라고 부르겠다.
 
 $$
 \text{val}(f) = f(L, R) = f(\{s\}, V \setminus \{s\}) = \sum_{(s, u) \in E} f(s, u)
@@ -293,4 +293,4 @@ $\blacksquare$
 
 <hr/>
 
-[^1]: smallest $(s, t)$-cut, 또는 "<mark>min-cut</mark>"이라는 개념이 등장한다. 이것은 <mark>그래프에서 가능한 모든 $(s, t)$-cut 중 capacity가 가장 작은 cut</mark>을 의미한다.
+[^1]: smallest $(s, t)$-cut, 또는 "**min-cut**"이라는 개념이 등장한다. 이것은 **그래프에서 가능한 모든 $(s, t)$-cut 중 capacity가 가장 작은 cut**을 의미한다.
