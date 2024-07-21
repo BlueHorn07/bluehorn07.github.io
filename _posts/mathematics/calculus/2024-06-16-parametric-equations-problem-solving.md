@@ -12,7 +12,9 @@ last_modified_at: 2024-06-29
 
 # The witch of Maria Agnesi
 
-![](/images/mathematics/calculus/the-witch-of-maria-agnesi.png){: style="max-height: 300px" }
+![](/images/mathematics/calculus/the-witch-of-maria-agnesi.png){: style="max-height: 300px" .align-center }
+Thomas Calculus - Example Problem
+{: .align-caption .text-center }
 
 <div class="problem" markdown="1">
 
@@ -66,11 +68,13 @@ $$
 
 # Hypocycloid
 
-![](/images/mathematics/calculus/hypocycloid.png){: style="max-height: 300px" }
+![](/images/mathematics/calculus/hypocycloid.png){: style="max-height: 300px" .align-center }
+Thomas Calculus - Example Problem
+{: .align-caption .text-center }
 
 큰 원 안에 작은 원을 굴릴 때 생기는 원의 자취에 대한 방정식이다. 큰 원의 반지름은 $a$, 작은 원의 반지름을 $b$라고 하자.
 
-![](/images/mathematics/calculus/hypocycloid-2.png){: style="max-height: 300px" }
+![](/images/mathematics/calculus/hypocycloid-2.png){: style="max-height: 300px" .align-center }
 
 작은 원의 중심인 $C$의 좌표를 구해보자. $OC$의 길이가 $b - a$이므로 좌표값은 아래와 같다.
 

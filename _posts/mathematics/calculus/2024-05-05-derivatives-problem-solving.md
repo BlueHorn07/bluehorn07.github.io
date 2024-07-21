@@ -184,9 +184,9 @@ $\blacksquare$
 
 ## Making Coffee
 
-<div class="img-wrapper">
-  <img src="/images/mathematics/calculus/making-coffee.png" width="320px">
-</div>
+![](/images/mathematics/calculus/making-coffee.png){: style="max-height: 360px" .align-center }
+Thomas Calculus - Example Problem
+{: .align-caption .text-center }
 
 원뿔과 원기둥의 높이 변화에 대한 식을 유도하는 문제다. 뭔가 드립 커피 내려먹을 때 생각날 것 같은 문제라서 풀어봤다 ㅋㅋ
 
@@ -254,7 +254,7 @@ $$
 
 <div class="notice" markdown="1">
 
-Show that 
+Show that
 
 $$
 \lim_{n\rightarrow \infty} \left( 1 + \frac{x}{n} \right)^n = e^x
@@ -270,8 +270,8 @@ Let $f(n) = \left( 1 + \frac{x}{n} \right)^n$, we will see $\lim \ln f(n)$.
 
 $$
 \begin{aligned}
-\lim_{n\rightarrow \infty} \ln f(n) 
-&= \lim n \cdot \ln (1 + x/n) \\  
+\lim_{n\rightarrow \infty} \ln f(n)
+&= \lim n \cdot \ln (1 + x/n) \\
 &= \lim \frac{\ln(1+x/n)}{1/n}
 \end{aligned}
 $$
@@ -286,7 +286,7 @@ $$
 
 $$
 \begin{aligned}
-\lim_{n \rightarrow \infty} f(n) 
+\lim_{n \rightarrow \infty} f(n)
 &= \lim_{n \rightarrow \infty} e^{\ln f(n)} \\
 &= \lim_{n \rightarrow \infty} e^{\frac{nx}{n+x}} \\
 &= \lim_{n \rightarrow \infty} e^{x \cdot \frac{n}{n+x}} \\
