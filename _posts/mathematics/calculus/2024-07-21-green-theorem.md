@@ -4,7 +4,7 @@ toc: true
 author: bluehorn_math
 toc_sticky: true
 categories: ["Calculus"]
-excerpt: ""
+excerpt: "선적분과 이중적분을 연결하는 정리. 이중 적분으로 선적분을 계산할 수도 있고, 반대로 선적분으로 이중 적분을 계산하는 것도 가능. 도넛 모양의 영역을 선적분하거나 이중 적분하는 방법에 대해 🍩"
 ---
 
 복수전공하고 있는 수학과의 졸업시험을 위해 학부 수학 과목들을 다시 공부하고 있습니다. [미적분학 포스트 전체 보기](/categories/calculus)
@@ -146,5 +146,120 @@ $$
 [CLP Calculus Textbook](https://personal.math.ubc.ca/~CLP/CLP4/)
 {: .align-caption .text-center .small .gray }
 
-곡선이 요렇게 "**도넛 모양**"을 이루더라도 그린 정리가 성립한다!!
+곡선이 요렇게 "**도넛 모양**"을 이루더라도 그린 정리가 성립한다!! 연습문제를 통해 도넛 형태의 영역을 어떻게 적분할 수 있을지 살펴보자.
 
+<div class="problem" markdown="1">
+
+(Problem from [CLP Calculus Textbook](https://personal.math.ubc.ca/~CLP/CLP4/).)
+
+Evaluate
+
+$$
+\oint_C \mathbf{F} \cdot d\mathbf{r}
+$$
+
+where
+
+$$
+\mathbf{F} = \frac{-y \, \mathbf{i} + x \, \mathbf{j}}{x^2 + y^2}
+$$
+
+and curve $C$ is an unit circle
+
+$$
+\begin{aligned}
+x(t) &= \cos t \\
+y(t) &= \sin t
+\end{aligned}
+$$
+
+</div>
+
+**[잘못된 풀이]** 먼저 그린 정리를 잘못 사용하는 사례부터 살펴보자. 그린 정리에 따라 벡터 선적분을 이중 적분으로 변환하자.
+
+$$
+\begin{aligned}
+\oint_C \mathbf{F} \cdot d\mathbf{r}
+&= \iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right) dA \\
+&= \iint_D \left( \frac{-x^2 + y^2}{(x^2 + y^2)^2} - \frac{(-x^2 + y^2)}{(x^2 + y^2)^2}\right) dA = 0
+\end{aligned}
+$$
+
+즉, 이중 적분의 값이 0이므로, 벡터 선적분의 값도 0이다...?! 이 풀이는 잘못되었다. 그 이유는 이중 적분에서 적분 영역 $D$ 내부에 있는 원점 $O$에서 함수 $\mathbb{F}(x, y)$가 정의되지 않기 때문이다. 마찬가지 이유로 원점 $O$에서 1차 편미분 $\partial P$, $\partial Q$도 정의되지 않기 때문에, 그린 정리를 적용하기 위한 전제 조건을 위반한다.
+
+**[올바른 풀이]** 이런 경우, 적분을 계산하라면 '정직하게' 벡터 선적분 값을 계산하는 수 밖에 없다^^
+
+$$
+\begin{aligned}
+\oint_C \mathbf{F} \cdot d\mathbf{r}
+&= \oint_C P \, dx + Q \, dy \\
+&= \int_{0}^{2\pi} \left((- \sin t \cdot - \sin t) + (\cos t \cdot \cos t)\right) \, dt \\
+&= \int_{0}^{2\pi} 1 \, dt = 2 \pi
+\end{aligned}
+$$
+
+따라서 위의 선적분 값은 $2\pi$이다. 그런데, 이번에는 아래의 문제를 또 풀어보자.
+
+<br/>
+
+<div class="problem" markdown="1">
+
+With same vector function, show that $\oint_C \mathbf{F} \cdot d\mathbf{r} = 2\pi$ for every positively oriented simple closed curve that encloses the origin $O$.
+
+</div>
+
+이번에는 원점을 포함하는 "모든" 닫힌 커브에서 선적분 값이 $2\pi$임을 보여야 한다. 이 문제를 풀기 위해선 아래와 도넛 모양의 영역을 상상해야 한다.
+
+
+![](/images/mathematics/calculus/not-simply-connected-region-2.png){: .align-center style="max-height: 300px" }
+[CLP Calculus Textbook](https://personal.math.ubc.ca/~CLP/CLP4/)
+{: .align-caption .text-center .small .gray }
+
+$-C_a$는 원점을 중심으로 하는 unit circle이다.
+
+이전과 달리 요런 영역에서는 적분이 가능하다. 원점이 포함되어 있지 않기 때문에 $\mathbf{F}$와 $\partial P$, $\partial Q$가 정의되기 때문 ㅎㅎ 그리고 이에 대한 적분식의 값은 $0$이란건 이미 확인하였다.
+
+$$
+\iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right) dA = 0
+$$
+
+그린 정리의 표기에 따라 적분 영역 $D$의 경계에 대한 선적분으로 이중 적분을 바꿀 수 있다. 이때, 경계 $\partial D$는 CCW의 커브 $C$와 CW 방향의 $-C_a$로 구성된다.
+
+$$
+\partial D = C + (-C_a)
+$$
+
+이제 위의 이중 적분 결과를 선적분으로 바꿔서 기술하면,
+
+$$
+\iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right) dA
+= \oint_C \mathbf{F} \cdot d\mathbf{r} + \oint_{-C_a} \mathbf{F} \cdot d\mathbf{r}
+= 0
+$$
+
+선적분에 대한 적분만 따로 떼어서 보면,
+
+$$
+\begin{aligned}
+\oint_C \mathbf{F} \cdot d\mathbf{r} + \oint_{-C_a} \mathbf{F} \cdot d\mathbf{r} &= 0 \\
+\oint_C \mathbf{F} \cdot d\mathbf{r} - \oint_{C_a} \mathbf{F} \cdot d\mathbf{r} &= 0 \\
+\oint_C \mathbf{F} \cdot d\mathbf{r}  &= \oint_{C_a} \mathbf{F} \cdot d\mathbf{r} = 2\pi
+\end{aligned}
+$$
+
+즉, 어떤 닫힌 곡선에 대한 선적분도 모두 unit circle 위에서의 선적분 값과 동일한 $2\pi$가 된다. $\blacksquare$
+
+## Partition a Region
+
+위의 경우는 도넛 모양 영역에 대한 선적분을 이중적분으로 바꿔서 해결한 경우이다. 그런데, 도넛 모양 적분은 아래와 같이 2개의 커브로 분할하여 선적분을 수행할 수도 있다.
+
+![](/images/mathematics/calculus/not-simply-connected-region-3.png){: .align-center style="max-height: 300px" }
+[CLP Calculus Textbook](https://personal.math.ubc.ca/~CLP/CLP4/)
+{: .align-caption .text-center .small .gray }
+
+요렇게 도넛 영역을 위·아래로 분할하여 2개의 커브로 바꾸어 선적분 하는 것도 가능하다.
+
+
+# 맺음말
+
+뭔가 [응용복소함수론(MATH210)](/categories/complex-variable) 수업에서 이런 적분을 많이 했던 기억이 있다. 그때도 닫힌 영역에 대해서 커브의 모양에 상관 없이 적분값이 같은 그런 적분들을 많이 만났던 기억이 난다. 미적2 들을 때, 열심히 들었으면 응복함이 좀더 쉬웠으려냐 ㅠㅠ
