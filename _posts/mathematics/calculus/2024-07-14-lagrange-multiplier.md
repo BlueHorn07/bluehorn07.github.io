@@ -17,7 +17,7 @@ excerpt: "제약 조건 아래에서 함수의 극값을 찾는 방법에 대해
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Lagrange_multiplier.png/300px-Lagrange_multiplier.png){: style="max-height: 300px" .align-center }
 picture from [wikimedia](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Lagrange_multiplier.png/300px-Lagrange_multiplier.png)
-{: .align-caption .text-center }
+{: .align-caption .text-center .small .gray }
 
 거두절미하고 바로 어떻게 하는 건지 바로 살펴보자.
 
@@ -47,7 +47,7 @@ $$
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Lagrange_multiplier.png/300px-Lagrange_multiplier.png){: style="max-height: 300px" .align-center }
 picture from [wikimedia](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Lagrange_multiplier.png/300px-Lagrange_multiplier.png)
-{: .align-caption .text-center }
+{: .align-caption .text-center .small .gray }
 
 그림과 함께 이해해보자.
 
@@ -95,8 +95,8 @@ $$
 # Lagrange Method with Two Constraints
 
 ![](/images/mathematics/calculus/lagrange-multiplier-with-two-constraints.png){: style="max-height: 320px" .align-center }
-Thomas Calculus
-{: .align-caption .text-center }
+Thomas Calculus 13th ed.
+{: .align-caption .text-center .small .gray }
 
 어떤 경우는 제약 조건이 2개 존재할 수도 있다.
 
@@ -135,8 +135,8 @@ The plane $x + y + z = 1$ cuts the cylinder $x^2 + y^2 = 1$ in an ellipse. Find 
 </div>
 
 ![](/images/mathematics/calculus/lagrange-multiplier-with-two-constraints-example.png){: style="max-height: 300px" .align-center }
-Thomas Calculus - Example Problem
-{: .align-caption .text-center }
+Thomas Calculus 13th ed. - Example Problem
+{: .align-caption .text-center .small .gray }
 
 제약 조건과 거리 함수를 정의하자.
 

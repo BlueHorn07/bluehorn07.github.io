@@ -204,7 +204,7 @@ Then, $\mathbf{F}$ is conservative.
 
 ![](/images/mathematics/calculus/simple-curve-and-cases.png){: style="max-height: 300px" .align-center }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
-{: .align-caption .text-center }
+{: .align-caption .text-center .small .gray }
 
 "simple curve"는 곡선 자체가 자기 자신과 다시 만나지 않는 나이스한 곡선을 말한다.
 
@@ -214,7 +214,7 @@ Then, $\mathbf{F}$ is conservative.
 
 ![](/images/mathematics/calculus/simply-connected-region-and-cases.png){: style="max-height: 500px" .align-center }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
-{: .align-caption .text-center }
+{: .align-caption .text-center .small .gray }
 
 만약 영역 안에 구멍(hole)이 있다면, 그 구멍을 둘러싸는 simple closed curve가 만드는 영역 안에는 영역 $D$에 속하는 점도 있겠지만, 속하지 않는 점도 생긴다. 따라서 2차원에서는 구멍 없는 영역을 일컫는다고 볼 수 있다.
 

@@ -17,7 +17,7 @@ excerpt: ""
 
 ![](/images/mathematics/calculus/arc-length.png){: .align-center style="max-height: 300px" }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
-{: .align-caption .text-center }
+{: .align-caption .text-center .small .gray }
 
 
 곡선의 미소변화량 $ds$는 아래와 같이 유도된다.
@@ -64,7 +64,7 @@ $$
 
 ![](/images/mathematics/calculus/line-integral-of-scala-field.png){: .align-center style="max-height: 400px;" }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
-{: .align-caption .text-center }
+{: .align-caption .text-center .small .gray }
 
 만약 함수 $f(x, y)$를 z축 상의 어떤 점이라고 본다면, Line Integral은 "**곡선이 그리는 벽(fence)의 면적**"을 계산하게 된다.
 
@@ -126,7 +126,7 @@ $$
 
 ![](/images/mathematics/calculus/line-integral-on-vector-field-1.png){: .align-center style="max-height: 300px" }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
-{: .align-caption .text-center }
+{: .align-caption .text-center .small .gray }
 
 $$
 W_k = \mathbf{F}(x_k, y_k, z_k) \cdot T(x_k, y_k, z_k) \Delta s_k

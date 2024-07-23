@@ -185,8 +185,8 @@ $\blacksquare$
 ## Making Coffee
 
 ![](/images/mathematics/calculus/making-coffee.png){: style="max-height: 360px" .align-center }
-Thomas Calculus - Example Problem
-{: .align-caption .text-center }
+Thomas Calculus 13th ed. - Example Problem
+{: .align-caption .text-center .small .gray }
 
 원뿔과 원기둥의 높이 변화에 대한 식을 유도하는 문제다. 뭔가 드립 커피 내려먹을 때 생각날 것 같은 문제라서 풀어봤다 ㅋㅋ
 

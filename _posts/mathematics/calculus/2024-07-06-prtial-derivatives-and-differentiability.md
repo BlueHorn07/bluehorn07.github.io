@@ -33,7 +33,7 @@ $\|f(x, y) - L\| < \epsilon$ whenever $0 < \sqrt{(x-x_0)^2 + (y-y_0)^2} < \delta
 
 ![](/images/mathematics/calculus/limit-of-the-two-dimensional-function.png){: .align-center style="max-height: 500px" }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
-{: .align-caption .text-center }
+{: .align-caption .text-center .small .gray }
 
 반대로 $\delta$의 근방(disk)를 잡았을 때, 그 안의 어떤 점의 집합이 $\epsilon$ 범위를 벗어나는 경우가 있다면, 함수의 극한값을 결정할 수 없거나 제시한 극한값이 올바르지 않다고 말할 수 있다.
 
@@ -200,7 +200,7 @@ $$
 
 ![](/images/mathematics/calculus/meaning-of-partial-derivative.png){: .align-center style="max-height: 300px" }
 [APEX Calculus Textbook](https://www.apexcalculus.com/)
-{: .align-caption .text-center }
+{: .align-caption .text-center .small .gray }
 
 이를 이용해서 함수 $f(x, y)$ 위의 점 $(x_0, y_0)$에 접하는 **접평면의 방정식**을 유도할 수 있다.
 
@@ -223,8 +223,8 @@ $$
 위와 같은 함수를 생각해보자. 이 함수는 $x$축, $y$축과 원점에서는 1의 값을 갖고 나며지 영역에서는 모두 0의 값을 갖는다.
 
 ![](/images/mathematics/calculus/non-contiuous-at-origin.png){: .align-center style="max-height: 300px" }
-Thomas Calculus - Example Problem
-{: .align-caption .text-center }
+Thomas Calculus 13th ed. - Example Problem
+{: .align-caption .text-center .small .gray }
 
 원점 $O$에서의 함수의 극한을 생각해보자.
 

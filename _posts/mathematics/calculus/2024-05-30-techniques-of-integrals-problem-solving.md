@@ -11,7 +11,7 @@ excerpt: "Washer method와 Shell method는 동치다. 점화식으로 유도되�
 
 # Equivalence of the Washer and Shell methods
 
-Wahser 방식과 Shell 방식이 동치임을 밝히는 문제다. Thomas Calculus 연습문제로 나왔는데, 요건 *American Mathematical Monthly*에서 문제를 발췌한 문제였다.
+Wahser 방식과 Shell 방식이 동치임을 밝히는 문제다. Thomas Calculus 13th ed. 연습문제로 나왔는데, 요건 *American Mathematical Monthly*에서 문제를 발췌한 문제였다.
 
 일단 Washer 방식으로 구한 부피는 아래와 같다.
 
