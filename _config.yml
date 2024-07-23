@@ -289,6 +289,24 @@ defaults:
       author_profile: true
       show_date: true
       read_time: true
+      author: bluehorn_engineer
+      comments: true
+      share: # true
+      related: true
+      toc: false
+      toc_sticky: true
+      # sidebar:
+        # nav: "docs"
+  - scope:
+      path: "_posts/mathematics/"
+      type: posts
+    values:
+      layout: single
+      # classes: wide # TOC가 없어짐.
+      author_profile:
+      author: bluehorn_math
+      show_date: true
+      read_time: true
       comments: true
       share: # true
       related: true
