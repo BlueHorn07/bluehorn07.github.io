@@ -1,6 +1,7 @@
 ---
 title: "Unique Factorization Domain - 2"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Modern Algebra1"]
 ---

@@ -1,6 +1,7 @@
 ---
 title: "급수의 극한을 판정하는 법"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Calculus"]
 excerpt: ""

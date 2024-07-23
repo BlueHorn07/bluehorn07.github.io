@@ -1,6 +1,7 @@
 ---
 title: "Chebyshev's Inequality"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Probability"]
 ---

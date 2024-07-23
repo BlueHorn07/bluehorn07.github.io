@@ -1,6 +1,7 @@
 ---
 title: "Test on Regression"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Statistics"]
 ---

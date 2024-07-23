@@ -1,6 +1,7 @@
 ---
 title: "Group Rings & Group Algebras"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Modern Algebra1"]
 ---

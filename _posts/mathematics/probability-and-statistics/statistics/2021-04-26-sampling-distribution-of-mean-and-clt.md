@@ -1,6 +1,7 @@
 ---
 title: "Sampling Distribution of Mean, and CLT"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Statistics"]
 ---

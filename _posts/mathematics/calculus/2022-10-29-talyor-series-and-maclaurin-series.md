@@ -1,6 +1,7 @@
 ---
 title: "Taylor Series & Macluarin Series"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Calculus"]
 excerpt: "실변수 함수 $f(x)$를 다항 함수의 멱급수로 표현하기. $n$차 근사를 무한번 수행한 것과 같다."

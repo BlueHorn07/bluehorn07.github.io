@@ -1,6 +1,7 @@
 ---
 title: "Green Theorem"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Calculus"]
 excerpt: ""

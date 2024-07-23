@@ -1,6 +1,7 @@
 ---
 title: "Derivatives: Problem Solving"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Calculus"]
 excerpt: "모든 점에서 미분 불가능한 연속 함수, Cissoid, 드립 커피는 언제 다 내려갈까에 대한 문제 ☕️"

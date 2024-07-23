@@ -1,6 +1,7 @@
 ---
 title: "Gauss's Lemma"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Modern Algebra1"]
 ---

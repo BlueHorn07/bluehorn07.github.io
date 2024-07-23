@@ -1,6 +1,7 @@
 ---
 title: "Arc Length와 Line Integral"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Calculus"]
 excerpt: "Arc Length에 대한 적분을 일반화 한 것이 '스칼라' 선적분. 벡터 함수를 선적분 하면 '벡터' 선적분. 🥞"

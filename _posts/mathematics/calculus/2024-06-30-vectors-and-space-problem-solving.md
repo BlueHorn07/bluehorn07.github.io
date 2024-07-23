@@ -1,6 +1,7 @@
 ---
 title: "Vector and Space: Problem Solving"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Calculus"]
 excerpt: "행렬식으로 평면의 방정식 정의하기. Tagent-Normal-Binormal Vector로 구성되는 TNB 프레임. 🎢"

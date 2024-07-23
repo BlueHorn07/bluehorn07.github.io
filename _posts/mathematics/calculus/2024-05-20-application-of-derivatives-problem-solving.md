@@ -1,6 +1,7 @@
 ---
 title: "Application of Derivatives: Problem Solving"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Calculus"]
 excerpt: "Cauchy의 Mean Value Theorem, 로피탈 정리에 대한 증명, 함수의 연속성을 위한 확장."

@@ -1,6 +1,7 @@
 ---
 title: "Non-elementary Integrals"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Calculus"]
 excerpt: "무한개의 초등 함수의 급수로 표현되는 함수들: Error Function, Sinc Function, Epllitical Integrals, Gamma Function"

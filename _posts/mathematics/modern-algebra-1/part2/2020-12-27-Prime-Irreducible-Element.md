@@ -1,6 +1,7 @@
 ---
 title: "Prime & Irreducible element"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Modern Algebra1"]
 ---

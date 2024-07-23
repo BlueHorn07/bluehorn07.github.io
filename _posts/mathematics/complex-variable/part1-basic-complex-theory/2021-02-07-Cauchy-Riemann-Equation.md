@@ -1,6 +1,7 @@
 ---
 title: "Cauchy-Riemann Equation & Harnomic function"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Complex Variable"]
 ---

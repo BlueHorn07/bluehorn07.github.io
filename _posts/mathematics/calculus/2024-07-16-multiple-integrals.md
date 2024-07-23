@@ -1,6 +1,7 @@
 ---
 title: "Multiple Integrals"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Calculus"]
 excerpt: "이변수 함수, 삼변수 함수 적분하기. 적분하려는 함수가 연속성을 갖는다면, 적분 순서는 상관없다(Fubini's Theorem). 중적분에서 치환 적분을 수행할 때 좌표계를 변환하기 위해 사용하는 Jacobian ☯️"

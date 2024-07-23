@@ -1,6 +1,7 @@
 ---
 title: "Sequence and Series: Problem Solving"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Calculus"]
 excerpt: "Zipper theorem 🤐, Cantor Set, Cauchy Condesnation Test"

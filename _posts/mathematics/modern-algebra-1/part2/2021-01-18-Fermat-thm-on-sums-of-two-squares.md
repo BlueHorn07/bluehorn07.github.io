@@ -1,6 +1,7 @@
 ---
 title: "Fermat's Theorem on Sums of Two Squares"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Modern Algebra1"]
 ---

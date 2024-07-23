@@ -1,6 +1,7 @@
 ---
 title: "칸토어 집합"
 toc: true
+author: bluehorn_math
 categories: ["Calculus", "Set Theory"]
 excerpt: "길이는 0이면서, 집합의 크기는 실수 전체와 반직관적인 집합"
 ---

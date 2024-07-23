@@ -1,6 +1,7 @@
 ---
 title: "Regression Analysis and Simple Linear Regression"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Statistics"]
 ---

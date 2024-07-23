@@ -1,6 +1,7 @@
 ---
 title: "Degree of Freedom in Statistics"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Statistics"]
 excerpt: "통계학에서 자유도(Degree of Freedom)란 무엇인가? 왜 보통 자유도로 $(n-1)$ 값을 쓰는가?"

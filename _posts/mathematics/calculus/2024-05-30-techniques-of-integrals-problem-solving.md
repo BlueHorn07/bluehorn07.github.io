@@ -1,6 +1,7 @@
 ---
 title: "Techniques of Integrals: Problem Solving"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Calculus"]
 excerpt: "Washer method와 Shell method는 동치다. 점화식으로 유도되는 적분. 이상 적분에 대한 정의. 면적은 무한한데, 부피는 유한한 함수."

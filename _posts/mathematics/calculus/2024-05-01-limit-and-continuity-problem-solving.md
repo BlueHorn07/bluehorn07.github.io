@@ -1,6 +1,7 @@
 ---
 title: "Limit and Continuity: Problem Solving"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Calculus"]
 excerpt: "입델 논법이 만들어지는 과정에 대해서, 그리고 재밌었던 문제들"

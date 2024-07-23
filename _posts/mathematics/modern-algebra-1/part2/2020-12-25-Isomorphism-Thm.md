@@ -1,6 +1,7 @@
 ---
 title: "Three Isomorphism Theorems"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Modern Algebra1"]
 ---

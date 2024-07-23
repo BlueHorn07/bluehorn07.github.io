@@ -1,6 +1,7 @@
 ---
 title: "Statistics - PS2"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Statistics", "Problem Solving"]
 ---

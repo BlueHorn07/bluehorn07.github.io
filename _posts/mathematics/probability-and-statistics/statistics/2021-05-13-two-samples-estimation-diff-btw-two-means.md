@@ -1,6 +1,7 @@
 ---
 title: "Two Samples Estimation: Diff Btw Two Means"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Statistics"]
 ---

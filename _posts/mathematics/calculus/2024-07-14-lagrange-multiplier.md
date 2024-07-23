@@ -1,6 +1,7 @@
 ---
 title: "Lagrange Multiplier"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Calculus"]
 excerpt: "제약 조건 아래에서 함수의 극값을 찾는 방법에 대해. Constraint Curve와 Level Curve가 접할 때 최대/최소를 이룬다. 제약 조건이 두 개일 때는 Lagrange Multiplier가 2개 필요함. ✌️"

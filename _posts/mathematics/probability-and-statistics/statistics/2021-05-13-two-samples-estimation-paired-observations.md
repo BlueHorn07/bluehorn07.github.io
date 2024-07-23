@@ -1,6 +1,7 @@
 ---
 title: "Two Samples Estimation: Paired Observations"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Statistics"]
 ---

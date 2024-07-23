@@ -1,6 +1,7 @@
 ---
 title: "Parametric Equations: Problem Solving"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Calculus"]
 excerpt: "The witch of Maria Agnesi, Hypocycloid, Trochoids, Limaçon Curve, Lissajous Curve, Nephroid, Strophoid, The nephroid of Freeth"

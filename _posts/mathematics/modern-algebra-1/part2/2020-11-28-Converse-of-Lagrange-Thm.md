@@ -1,6 +1,7 @@
 ---
 title: "Converse of Lagrange Thm"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Modern Algebra1"]
 ---

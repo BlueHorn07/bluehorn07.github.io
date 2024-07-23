@@ -1,6 +1,7 @@
 ---
 title: "Three Sylow Theorems - Application 1"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Modern Algebra1"]
 ---

@@ -1,6 +1,7 @@
 ---
 title: "교대 급수의 극한을 판정하는 법"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Calculus"]
 excerpt: "절대 수렴과 조건부 수렴. 재배열 정리에 대해"

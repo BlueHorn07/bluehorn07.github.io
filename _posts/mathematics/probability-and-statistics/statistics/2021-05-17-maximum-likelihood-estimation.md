@@ -1,6 +1,7 @@
 ---
 title: "Maximum Likelihood Estimation"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Statistics"]
 ---

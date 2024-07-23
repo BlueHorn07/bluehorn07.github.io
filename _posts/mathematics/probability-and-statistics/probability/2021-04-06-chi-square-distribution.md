@@ -1,6 +1,7 @@
 ---
 title: "Chi-square Distribution"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Probability"]
 ---

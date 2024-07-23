@@ -1,6 +1,7 @@
 ---
 title: "Modern Algebra I - PS3"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Modern Algebra1", "Problem Solving"]
 ---

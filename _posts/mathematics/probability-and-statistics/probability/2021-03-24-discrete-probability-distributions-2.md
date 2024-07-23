@@ -1,6 +1,7 @@
 ---
 title: "Discrete Probability Distributions - 2"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Probability"]
 ---

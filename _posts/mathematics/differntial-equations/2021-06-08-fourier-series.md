@@ -1,6 +1,7 @@
 ---
 title: "Fourier Series"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Differential Equations"]
 ---

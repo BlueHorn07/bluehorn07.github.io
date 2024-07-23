@@ -1,6 +1,7 @@
 ---
 title: "Auto-Correlation: ACF & PACF"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Time Series Analysis"]
 ---

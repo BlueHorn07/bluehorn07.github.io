@@ -1,6 +1,7 @@
 ---
 title: "Vector Fields, and Line Integrals"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Calculus"]
 excerpt: "Gradient Fields, Conservative Vector Field, Fundamental Theorem for Line Integrals"

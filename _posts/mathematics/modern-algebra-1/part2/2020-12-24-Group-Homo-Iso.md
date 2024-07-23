@@ -1,6 +1,7 @@
 ---
 title: "Group Homo/Iso-morphism + 문풀"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Modern Algebra1"]
 ---

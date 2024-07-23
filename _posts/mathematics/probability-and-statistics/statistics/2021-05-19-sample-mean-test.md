@@ -1,6 +1,7 @@
 ---
 title: "Sample Mean Test"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Statistics"]
 ---

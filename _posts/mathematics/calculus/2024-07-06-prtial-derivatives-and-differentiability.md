@@ -1,6 +1,7 @@
 ---
 title: "Partial Derivatives and Differentiability"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Calculus"]
 excerpt: "Differentiability of High Order: Partial Derivative, Total Derivative and Directional Derivative, Gradient Vector"

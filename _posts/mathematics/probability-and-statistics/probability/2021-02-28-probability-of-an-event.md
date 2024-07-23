@@ -1,6 +1,7 @@
 ---
 title: "Probability of an Event"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Probability"]
 ---

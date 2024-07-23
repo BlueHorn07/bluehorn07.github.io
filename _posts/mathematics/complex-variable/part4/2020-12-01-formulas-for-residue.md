@@ -1,6 +1,7 @@
 ---
 title: "Formulas for residue"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Complex Variable"]
 ---

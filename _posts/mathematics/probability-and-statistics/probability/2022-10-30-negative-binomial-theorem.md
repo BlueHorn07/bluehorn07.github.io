@@ -1,6 +1,7 @@
 ---
 title: "Negative Binomial Theorem"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Probability"]
 excerpt: 조합에 음수 $n$이 들어간 $\binom{-n}{k}$를 어떻게 정의할까?

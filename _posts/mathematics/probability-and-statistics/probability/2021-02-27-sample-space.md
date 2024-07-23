@@ -1,6 +1,7 @@
 ---
 title: "Sample Space"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Probability"]
 ---

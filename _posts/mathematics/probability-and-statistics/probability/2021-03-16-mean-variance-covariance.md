@@ -1,6 +1,7 @@
 ---
 title: "Mean, Variance, and Covariance"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Probability"]
 ---

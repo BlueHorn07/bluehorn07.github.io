@@ -1,6 +1,7 @@
 ---
 title: "Time Series Component: Trend, Seasonality, Cycle"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Time Series Analysis"]
 ---

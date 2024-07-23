@@ -1,6 +1,7 @@
 ---
 title: "Transformations of Random Variable - 1"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Probability"]
 ---

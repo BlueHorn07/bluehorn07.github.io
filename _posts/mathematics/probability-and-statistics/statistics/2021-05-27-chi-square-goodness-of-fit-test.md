@@ -1,6 +1,7 @@
 ---
 title: "Chi-square Goodness-of-fit Test"
 toc: true
+author: bluehorn_math
 toc_sticky: true
 categories: ["Statistics"]
 excerpt: "<proportion test>의 일반화. 카레고리 변수에 대한 검정."
