@@ -34,11 +34,27 @@ A vector field $\mathbf{F}$ is called a "**conservative vector field**" if it is
 
 # Line Integrals
 
-어떤 곡선을 따라 함수 $f(x, y)$에 대한 적분을 수행하는 것을 "선적분"이라고 한다.
+어떤 곡선을 따라 함수 $f(x, y)$에 적분을 수행하는 것을 "선적분"이라고 한다.
+
+<div class="definition" markdown="1">
+
+Scala Line Integral
 
 $$
 \int_C f(x, y) \, ds = \int_C f(x(t), y(t)) \cdot \sqrt{x'(t)^2 + y'(t)^2} \, dt
 $$
+
+</div>
+
+<div class="definition" markdown="1">
+
+Vector Line Integral
+
+$$
+\int_C \mathbf{F}(x, y) \cdot d\mathbf{r} = \int_C \mathbf{F}_1 \, dx + \mathbf{F}_2 \, dy + \mathbf{F}_3 \, dz
+$$
+
+</div>
 
 선적분 부분은 공부하다가 너무 헷갈려서 별도 포스트로 정리했다. 선적분에 대한 자세한 내용은 아래 포스트 참고 ㅎㅎ
 

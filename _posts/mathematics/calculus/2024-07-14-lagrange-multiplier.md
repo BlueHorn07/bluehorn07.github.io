@@ -3,7 +3,7 @@ title: "Lagrange Multiplier"
 toc: true
 toc_sticky: true
 categories: ["Calculus"]
-excerpt: "제약 조건 아래에서 함수의 극값을 찾는 방법에 대해"
+excerpt: "제약 조건 아래에서 함수의 극값을 찾는 방법에 대해. Constraint Curve와 Level Curve가 접할 때 최대/최소를 이룬다. 제약 조건이 두 개일 때는 Lagrange Multiplier가 2개 필요함. ✌️"
 ---
 
 복수전공하고 있는 수학과의 졸업시험을 위해 학부 수학 과목들을 다시 공부하고 있습니다. [미적분학 포스트 전체 보기](/categories/calculus)

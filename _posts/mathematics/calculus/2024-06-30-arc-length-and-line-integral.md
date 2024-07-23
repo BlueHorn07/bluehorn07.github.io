@@ -3,7 +3,7 @@ title: "Arc Length와 Line Integral"
 toc: true
 toc_sticky: true
 categories: ["Calculus"]
-excerpt: ""
+excerpt: "Arc Length에 대한 적분을 일반화 한 것이 '스칼라' 선적분. 벡터 함수를 선적분 하면 '벡터' 선적분. 🥞"
 ---
 
 복수전공하고 있는 수학과의 졸업시험을 위해 학부 수학 과목들을 다시 공부하고 있습니다. [미적분학 포스트 전체 보기](/categories/calculus)

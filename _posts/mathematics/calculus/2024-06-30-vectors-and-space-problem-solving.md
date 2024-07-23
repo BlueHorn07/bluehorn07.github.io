@@ -3,7 +3,7 @@ title: "Vector and Space: Problem Solving"
 toc: true
 toc_sticky: true
 categories: ["Calculus"]
-excerpt: "행렬식으로 평면의 방정식 정의하기. Tagent-Normal-Binormal Vector로 구성되는 TNB 프레임."
+excerpt: "행렬식으로 평면의 방정식 정의하기. Tagent-Normal-Binormal Vector로 구성되는 TNB 프레임. 🎢"
 ---
 
 복수전공하고 있는 수학과의 졸업시험을 위해 학부 수학 과목들을 다시 공부하고 있습니다. [미적분학 포스트 전체 보기](/categories/calculus)
