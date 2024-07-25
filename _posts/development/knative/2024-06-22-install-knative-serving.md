@@ -3,7 +3,7 @@ title: "Install Knative Serving"
 toc: true
 toc_sticky: true
 categories: ["Kubernetes", "knative"]
-excerpt: "좌충우돌! Knative 설치 수난기. Knative를 쓰고 싶다면, Istio도 설치해야 할 것이다."
+excerpt: "좌충우돌! Knative 설치 수난기. Istio를 네트워킹 백엔드로 사용하는 Knative ⛵️"
 ---
 
 이 글을 작성하는 24년 6월엔 Knative [`v1.14.1`](https://github.com/knative/serving/releases/knative-v1.14.1) 버전이 최신 버전입니다.
