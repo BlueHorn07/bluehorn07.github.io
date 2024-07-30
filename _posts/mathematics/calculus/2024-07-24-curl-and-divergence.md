@@ -99,11 +99,6 @@ $$
 또, 이런 $\text{div }\mathbf{F} = 0$인 벡터장을 "[Solenoidal Vector Field](https://en.wikipedia.org/wiki/Solenoidal_vector_field)"라고도 부른다. 솔레노이드는 고등학교 물리시간에 봤던 그 '솔레노이드'를 말한다 ㅋㅋ
 
 
-## Green's Theorem of Normal Form
-
-...
-
-
 # Curl
 
 <div class="definition" markdown="1">
@@ -230,6 +225,120 @@ then $\mathbf{F}$ is a conservative vector field.
 
 그래서 벡터 함수가 불연속성을 가지거나, 성분 함수의 편미분이 불연속성을 갖는 그런 특수한 상황만 아니라면, $\text{curl } \mathbf{F} = \mathbf{0}$인지 확인하여 conservative 여부를 판단할 수 있을 것이다 ㅎㅎ
 
+사실 정의역이 $\mathbb{R}^3$일 필욘 없고, simply-connected region이기만 하면 된다고 한다. (증명은 이후에 스토스크 정리 할 때 배운다고 함.)
 
 # Curl and Div
+
+어떤 벡터장에 Curl을 적용한 후, Divergence를 적용하면 재밌는 결과가 나온다.
+
+<div class="theorem" markdown="1">
+
+If $\mathbf{F} = P \, \mathbf{i} + Q \, \mathbf{j} + R \, \mathbf{k}$ is a vector field on $\mathbb{R}^3$ and $p$, $Q$, and $R$ have continuous second-order partial derivatives, then
+
+$$
+\text{div } \text{curl } \mathbf{F} = 0
+$$
+
+</div>
+
+증명은 curl와 div의 정의에 맞에 아래 식을 전개하면 된다. Ez
+
+$$
+\text{div } \text{curl } \mathbf{F} = \nabla \cdot (\nabla \times \mathbf{F}) = 0
+$$
+
+<br/>
+
+요 정리는 어떤 벡터장이 curl 연산으로 인해 만들어진 것이라면, 그것의 div가 0임을 말한다. 그래서 만약 어떤 벡터장의 div 값이 0인지 아닌지를 통해 그 벡터장이 curl 벡터로 유도된 것인지 판단할 수 있다. (참고로 요건 대우 명제를 활용하기 때문에 $\text{div } \mathbf{F} \ne 0$인 상황에서만 판단할 수 있다.)
+
+# Laplace Operator
+
+만약 어떤 벡터장이 Conservative Field라고 해보자. 그러면,
+
+$$
+\mathbf{F} = \nabla f
+$$
+
+인데, 여기에 div 연산을 한번더 수행해보자. 그러면 식은 아래와 같이 potential function $f$에 성분별로 편미분을 두 번 적용한 것의 합으로 표현된다.
+
+$$
+\text{div}(\nabla f) = \nabla \cdot (\nabla f)
+= \frac{\partial^2 f}{\partial x^2}
++ \frac{\partial^2 f}{\partial y^2}
++ \frac{\partial^2 f}{\partial z^2}
+$$
+
+요렇게 potential function에 Gradient 연산과 Div 연산을 연속해 수행하는 것을 간단하게 아래의 표기로 표현한다.
+
+$$
+\nabla^2 f = \nabla \cdot (\nabla f) = \text{div}(\nabla f)
+$$
+
+요 연산을 수행하는 연산자를 "**Laplace Operator**"라고 부른다. 왜냐하면, Laplace Equation에서 유래한 것이기 때문.
+
+$$
+\nabla^2 f = \frac{\partial^2 f}{\partial x^2}
++ \frac{\partial^2 f}{\partial y^2}
++ \frac{\partial^2 f}{\partial z^2} = 0
+$$
+
+(참고로 라플라스 방정식은 미방 때 많이 볼 예정... ^^)
+
+
+# Vector form of Green's Theorem
+
+[그린 정리(Green's Theorem)](/2024/07/21/green-theorem/)는 2차원 평면 위의 벡터장 $\mathbf{F}(x, y)$에 대한 선적분이 그것의 성분 벡터의 편미분을 조합한 어떤 이중 적분과 연결하는 정리였다.
+
+
+<div class="theorem" markdown="1">
+
+[그린 정리]
+
+$$
+\int_C \mathbf{F} \cdot d\mathbf{r}
+= \int_C P \, dx + Q \, dy
+= \iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right) \, dA
+$$
+
+</div>
+
+그런데 이 정리를 3차원 공간에서 $z$ 좌표가 0인 3차원 벡터장 $\mathbf{F}(x, y, 0)$으로 바꾸어 살펴보면, 그린 정리를 발산(div)과 회전(curl)과 연결 해볼 수 있다. 😮
+
+## Tangent Form
+
+2차원의 벡터장에 $z=0$인 $z$ 성분을 추가하여 3차원 벡터장 $\mathbf{F} = \left< x, y, 0\right>$을 생각해보자. 이때, 이 벡터장의 curl 벡터는 아래와 같다.
+
+$$
+\text{curl } \mathbf{F}
+= \left|\begin{matrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+P(x, y) & Q(x, y) & 0
+\end{matrix}\right|
+= \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right) \mathbf{k}
+$$
+
+요기에 $z$ 성분만 있는 벡터에 unit vector $\mathbf{k}$를 내적하면, 익숙한 식이 나온다.
+
+$$
+(\text{curl } \mathbf{F}) \cdot \mathbf{k}
+= \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right)
+$$
+
+요건 그린 정리에서 이중 적분에 들어가는 아주 익숙한 형태다!! 그래서 식을 정리하면...
+
+<div class="theorem" markdown="1">
+
+$$
+\int_C \mathbf{F} \cdot d\mathbf{r}
+= \iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\right) \, dA
+= \iint_D (\text{curl } \mathbf{F}) \cdot \mathbf{k} \, dA
+$$
+
+</div>
+
+
+## Normal Form
+
+그린 정리의 Normal Form은 $d\mathbf{r}$ 벡터의 접선 벡터인...
 

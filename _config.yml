@@ -285,7 +285,7 @@ defaults:
       type: posts
     values:
       layout: single
-      # classes: wide # TOC가 없어짐.
+      classes: wide # TOC가 없어짐.
       author_profile: true
       show_date: true
       read_time: true
