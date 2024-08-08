@@ -71,3 +71,14 @@ toc_sticky: true
     - Work done by Gravitational Field
     - Independent of Path
     - On a Closed Curve
+- [Green Theorem](/2024/07/21/green-theorem/)
+  - Curve Orientation: CCW is positive orientation
+  - Curve Boundary
+  - Green Theorem on Not simply-connected(= General Region)
+- [Divergence and Curl](/2024/07/24/curl-and-divergence/)
+  - Divergence $\nabla \cdot \mathbf{F}$
+  - Curl $\nabla \times \mathbf{F}$
+  - Laplace Operator $\nabla^2$
+  - Vector form of Green Theorem
+    - Tangential Form
+    - Normal Form
