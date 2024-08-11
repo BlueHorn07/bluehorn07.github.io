@@ -58,7 +58,7 @@ If you start with $x_1 = 1$ and define the subsequent terms of $\{ x_n \}$ by th
 
 </div>
 
-![](/images/mathematics/calculus/recurisve-definition-of-pi-2.png){: .align-center style="max-height: 240px"}
+![](/images/mathematics/calculus-1/recurisve-definition-of-pi-2.png){: .align-center style="max-height: 240px"}
 Thomas Calculus 13th ed. - Example Problem
 {: .align-caption .text-center .small .gray }
 

@@ -95,7 +95,7 @@ $$
 
 # Lagrange Method with Two Constraints
 
-![](/images/mathematics/calculus/lagrange-multiplier-with-two-constraints.png){: style="max-height: 320px" .align-center }
+![](/images/mathematics/calculus-2/lagrange-multiplier-with-two-constraints.png){: style="max-height: 320px" .align-center }
 Thomas Calculus 13th ed.
 {: .align-caption .text-center .small .gray }
 
@@ -135,7 +135,7 @@ The plane $x + y + z = 1$ cuts the cylinder $x^2 + y^2 = 1$ in an ellipse. Find 
 
 </div>
 
-![](/images/mathematics/calculus/lagrange-multiplier-with-two-constraints-example.png){: style="max-height: 300px" .align-center }
+![](/images/mathematics/calculus-2/lagrange-multiplier-with-two-constraints-example.png){: style="max-height: 300px" .align-center }
 Thomas Calculus 13th ed. - Example Problem
 {: .align-caption .text-center .small .gray }
 

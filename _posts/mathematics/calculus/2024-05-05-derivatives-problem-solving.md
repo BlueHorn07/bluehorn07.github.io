@@ -15,7 +15,7 @@ excerpt: "모든 점에서 미분 불가능한 연속 함수, Cissoid, 드립 �
 일단 연속 함수더라도 몇몇 점에서는 미분이 불가능할 수도 있다. 뾰족점이 있다면 해당 점에서 미분이 불가능하기 때문이다. 만약 뾰족점이 없더라도 $f(x) = \sin (1/x)$같이 무한번 진동하는 함수는 $x=0$에서 미분 불가능이다.
 
 <div>
-  <img class="align-center" src="/images/mathematics/calculus/sin-1-x.png" width="400px">
+  <img class="align-center" src="/images/mathematics/calculus-1/sin-1-x.png" width="400px">
 </div>
 
 그런데 연속함수인데 특정 위치만 미분 불가능한게 아니라 모든 점에서 미분 불가능한 함수도 있을까?? 이 질문은 전공책 연습 문제에 있던 건데, 연속 함수면 당연히 모든 점에서 미분 가능할 줄 알았던 직관을 깨는 엄청난 명제와 그 예시 였다. 예제는 이런 함수를 소개했다.
@@ -185,7 +185,7 @@ $\blacksquare$
 
 ## Making Coffee
 
-![](/images/mathematics/calculus/making-coffee.png){: style="max-height: 360px" .align-center }
+![](/images/mathematics/calculus-1/making-coffee.png){: style="max-height: 360px" .align-center }
 Thomas Calculus 13th ed. - Example Problem
 {: .align-caption .text-center .small .gray }
 
@@ -298,7 +298,7 @@ $$
 
 # Newton's Serpentine
 
-![](/images/mathematics/calculus/newton-serpentine.png)
+![](/images/mathematics/calculus-1/newton-serpentine.png)
 
 Newton이 정형화한 Cubic Curve. 아래와 같은 방정식을 갖는다.
 

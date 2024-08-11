@@ -63,7 +63,7 @@ $$
 
 </div>
 
-![](/images/mathematics/calculus/determine-a-plane-1.jpeg){: .align-center style="max-height: 300px" }
+![](/images/mathematics/calculus-2/determine-a-plane-1.jpeg){: .align-center style="max-height: 300px" }
 
 세 점이 구성하는 평면 위에 존재하는 다른 한 점 $P(x, y, z)$를 생각해보자. 그리고 $P$를 종점으로 하는 세 벡터를 생각해보자: $\overrightarrow{P_1P}$, $\overrightarrow{P_2P}$, $\overrightarrow{P_3P}$
 
@@ -146,14 +146,14 @@ $$
 
 연속인 벡터 함수는 공간 상에서 곡선을 그린다.
 
-![](/images/mathematics/calculus/vector-function-and-space-curve.png){: .align-center style="max-height: 400px" }
+![](/images/mathematics/calculus-2/vector-function-and-space-curve.png){: .align-center style="max-height: 400px" }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
 {: .align-caption .text-center .small .gray }
 
 
 ## Tangent Vector
 
-![](/images/mathematics/calculus/tangent-vector.png){: .align-center style="max-height: 300px" }
+![](/images/mathematics/calculus-2/tangent-vector.png){: .align-center style="max-height: 300px" }
 [APEX Calculus Textbook](https://www.apexcalculus.com/)
 {: .align-caption .text-center .small .gray }
 
@@ -180,7 +180,7 @@ $$
 
 즉, 벡터 함수의 그것의 접선 벡터가 서로 수직이다.
 
-![](/images/mathematics/calculus/normal-vector-direction.png){: .align-center style="max-height: 300px" }
+![](/images/mathematics/calculus-2/normal-vector-direction.png){: .align-center style="max-height: 300px" }
 [CLP Calculus Textbook](https://personal.math.ubc.ca/~CLP/CLP4/)
 {: .align-caption .text-center .small .gray }
 
@@ -224,7 +224,7 @@ $$
 
 <br/>
 
-![](/images/mathematics/calculus/normal-vector-direction.png){: .align-center style="max-height: 300px" }
+![](/images/mathematics/calculus-2/normal-vector-direction.png){: .align-center style="max-height: 300px" }
 [CLP Calculus Textbook](https://personal.math.ubc.ca/~CLP/CLP4/)
 {: .align-caption .text-center .small .gray }
 
@@ -240,7 +240,7 @@ Normal Vector는 항상 곡선의 **안쪽 방향(inner side of the curve)**을 
 
 ## Binormal Vector
 
-![](/images/mathematics/calculus/TNB-vectors.png){: .align-center style="max-height: 280px" }
+![](/images/mathematics/calculus-2/TNB-vectors.png){: .align-center style="max-height: 280px" }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
 {: .align-caption .text-center .small .gray }
 
@@ -254,7 +254,7 @@ $$
 
 ## The TNB Frame
 
-![](/images/mathematics/calculus/the-TNB-frame.png){: .align-center style="max-height: 280px" }
+![](/images/mathematics/calculus-2/the-TNB-frame.png){: .align-center style="max-height: 280px" }
 [stewartcalculus.com](https://www.stewartcalculus.com/media/explore/inner/models/v13_3b/)
 {: .align-caption .text-center .small .gray }
 
@@ -262,7 +262,7 @@ $$
 
 [stewartcalculus.com](https://www.stewartcalculus.com/media/explore/inner/models/v13_3b/)에서 에니메이션과 함께 TNB 좌표계를 더 잘 이해해볼 수 있다.
 
-![](/images/mathematics/calculus/rollercoaster-tycoon-2.jpeg){: .align-center style="max-height: 280px" }
+![](/images/mathematics/calculus-2/rollercoaster-tycoon-2.jpeg){: .align-center style="max-height: 280px" }
 <p>어렸을 때 정말 많이 했던 롤코2... ㅋㅋ</p>
 {: style="color: gray; font-size: small; text-align: center" }
 
@@ -272,7 +272,7 @@ $$
 
 # Many shapes on 3-dim space
 
-![](/images/mathematics/calculus/x2+y2=z.png){: .align-center style="max-height: 300px" }
+![](/images/mathematics/calculus-2/x2+y2=z.png){: .align-center style="max-height: 300px" }
 
 $$
 x^2 + y^2 = z
@@ -280,7 +280,7 @@ $$
 
 <br/>
 
-![](/images/mathematics/calculus/x2+y2=z2.png){: .align-center style="max-height: 300px" }
+![](/images/mathematics/calculus-2/x2+y2=z2.png){: .align-center style="max-height: 300px" }
 
 $$
 x^2 + y^2 = z^2

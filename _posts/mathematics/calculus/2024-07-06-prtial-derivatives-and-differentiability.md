@@ -32,7 +32,7 @@ $\|f(x, y) - L\| < \epsilon$ whenever $0 < \sqrt{(x-x_0)^2 + (y-y_0)^2} < \delta
 
 이변수 함수에서의 극한을 입델 논법으로 정의한 문장이다. 극한값 $L$ 근방의 어떤 값을 잡아도, 그에 대응하는 $\sqrt{(x-x_0)^2 + (y-y_0)^2} < \delta$ 범위를 잡아서, 그 안의 모든 $(x, y)$에 대해 함숫값이 $\epsilon$ 범위 안에 들어가는 $\delta$를 결정할 수 있음으로 이변수 함수의 극한을 정의한다.
 
-![](/images/mathematics/calculus/limit-of-the-two-dimensional-function.png){: .align-center style="max-height: 500px" }
+![](/images/mathematics/calculus-2/limit-of-the-two-dimensional-function.png){: .align-center style="max-height: 500px" }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
 {: .align-caption .text-center .small .gray }
 
@@ -199,7 +199,7 @@ $$
 
 이변수 함수 $f(x, y)$에 대한 편미분 $\partial x$, $\partial y$는 어떤 점에서의 함수에 접하는 접선의 기울기를 의미한다. 구체적으로는 $x$축 방향의 접선의 기울기와, $y$축 방향의 접선의 기울기를 의미한다.
 
-![](/images/mathematics/calculus/meaning-of-partial-derivative.png){: .align-center style="max-height: 300px" }
+![](/images/mathematics/calculus-2/meaning-of-partial-derivative.png){: .align-center style="max-height: 300px" }
 [APEX Calculus Textbook](https://www.apexcalculus.com/)
 {: .align-caption .text-center .small .gray }
 
@@ -223,7 +223,7 @@ $$
 
 위와 같은 함수를 생각해보자. 이 함수는 $x$축, $y$축과 원점에서는 1의 값을 갖고 나며지 영역에서는 모두 0의 값을 갖는다.
 
-![](/images/mathematics/calculus/non-contiuous-at-origin.png){: .align-center style="max-height: 300px" }
+![](/images/mathematics/calculus-2/non-contiuous-at-origin.png){: .align-center style="max-height: 300px" }
 Thomas Calculus 13th ed. - Example Problem
 {: .align-caption .text-center .small .gray }
 

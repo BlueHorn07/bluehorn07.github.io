@@ -16,7 +16,7 @@ excerpt: "Arc Length에 대한 적분을 일반화 한 것이 '스칼라' 선적
 
 # Arc Length
 
-![](/images/mathematics/calculus/arc-length.png){: .align-center style="max-height: 300px" }
+![](/images/mathematics/calculus-2/arc-length.png){: .align-center style="max-height: 300px" }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
 {: .align-caption .text-center .small .gray }
 
@@ -63,7 +63,7 @@ $$
 
 만약 함수 $f(x, y)$가 xy 평면 상에서의 밀도 함수 $\rho(x, y)$ 였다면, 곡선 $C$에 대한 선적분은 곡선 $C$의 "**무게**"가 될 것이다.
 
-![](/images/mathematics/calculus/line-integral-of-scala-field.png){: .align-center style="max-height: 400px;" }
+![](/images/mathematics/calculus-2/line-integral-of-scala-field.png){: .align-center style="max-height: 400px;" }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
 {: .align-caption .text-center .small .gray }
 
@@ -93,7 +93,7 @@ $$
 
 Arc Length와 선적분 개념이 익숙해져서 저걸 어떻게 받아드려야 할지 고민이었는데, stackexchange에서 아래와 같은 답변을 찾았다.
 
-![](/images/mathematics/calculus/line-integrals-along-axis.jpg){: .align-center style="max-height: 400px" }
+![](/images/mathematics/calculus-2/line-integrals-along-axis.jpg){: .align-center style="max-height: 400px" }
 <p markdown="1" style="text-align: center; color: gray; margin-top: 0;">
 Picture from [bfhaha's answer](https://math.stackexchange.com/a/1374187) on math.stackexchange.com
 </p>
@@ -125,7 +125,7 @@ $$
 
 벡터장에서의 선적분 값은 "**일(Work)의 크기**"로 해석한다. 물체를 시점 $A$에서 종점 $B$로 옮기면서 드는 일의 크기로 보는 것. 이때, 힘을 받는 벡터장 $\mathbf{F}$과 움직이는 방향 $\mathbf{T}$ 사이에서 일의 미소변화량을 구하면 아래와 같다.
 
-![](/images/mathematics/calculus/line-integral-on-vector-field-1.png){: .align-center style="max-height: 300px" }
+![](/images/mathematics/calculus-2/line-integral-on-vector-field-1.png){: .align-center style="max-height: 300px" }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
 {: .align-caption .text-center .small .gray }
 
@@ -177,4 +177,4 @@ $$
 # References
 
 - [stackexchange: Interpreting Line Integrals with respect to x or y](https://math.stackexchange.com/a/1374187)
-- [LibreTexts Mathematics: Properties of Line Integrals](https://math.libretexts.org/Bookshelves/Calculus/Vector_Calculus_(Corral)/04%3A_Line_and_Surface_Integrals/4.02%3A_Properties_of_Line_Integrals)
+- [LibreTexts Mathematics: Properties of Line Integrals](https://math.libretexts.org/Bookshelves/calculus-2/Vector_Calculus_(Corral)/04%3A_Line_and_Surface_Integrals/4.02%3A_Properties_of_Line_Integrals)

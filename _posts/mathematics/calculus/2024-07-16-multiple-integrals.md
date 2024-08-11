@@ -35,13 +35,13 @@ $$
 
 위의 경우는 적분 영역 $R$이 '직사각형'의 나이스한 형태로 주어진 경우다. 이런 이중 적분은 정말 쉽다. 그러나 많은 경우, 적분 영역은 자유분방한 형태로 존재한다. 특히 $y = g(x)$의 관계를 만족하거나,$x = h(y)$의 관계를 만족하는 적분 영역을 마주하는 경우가 많을 것이다.
 
-![](/images/mathematics/calculus/double-integral-general-region-2.png){: style="max-height: 300px" .align-center }
+![](/images/mathematics/calculus-2/double-integral-general-region-2.png){: style="max-height: 300px" .align-center }
 Thomas Calculus 13th ed. - Example Problem
 {: .align-caption .text-center .small .gray }
 
 이 경우는 $x = h(y)$의 꼴로 적분 영역이 표현되는 경우에 해당한다. 그래서 $x$ 축 방향으로 먼저 적분을 수행한 후에, $y$ 축 방향으로 적분을 수행한다.
 
-![](/images/mathematics/calculus/double-integral-general-region-1.png){: style="max-height: 300px" .align-center }
+![](/images/mathematics/calculus-2/double-integral-general-region-1.png){: style="max-height: 300px" .align-center }
 Thomas Calculus 13th ed. - Example Problem
 {: .align-caption .text-center .small .gray }
 
@@ -52,7 +52,7 @@ Thomas Calculus 13th ed. - Example Problem
 
 어떤 함수들은 원점을 기준으로 하는 극좌표계로 편리하여, 적분도 극좌표계를 기준으로 수행하는게 더 쉬운 경우도 있다.
 
-![](/images/mathematics/calculus/double-integral-in-polar-form.png){: style="max-height: 200px" .align-center }
+![](/images/mathematics/calculus-2/double-integral-in-polar-form.png){: style="max-height: 200px" .align-center }
 
 위와 같은 경우, 극좌표계로 표현하면
 
@@ -61,7 +61,7 @@ Thomas Calculus 13th ed. - Example Problem
 
 와 같이 $xy$-좌표계에서 직사각형을 표현하는 것처럼 쉽게 영역 $R$를 표현할 수 있다. 그래서 이런 형태의 영역을 "**Polar Rectangle**"이라고 부른다 ㅋㅋ
 
-![](/images/mathematics/calculus/polar-rectangle.png){: style="max-height: 240px" .align-center }
+![](/images/mathematics/calculus-2/polar-rectangle.png){: style="max-height: 240px" .align-center }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
 {: .align-caption .text-center .small .gray }
 
@@ -75,7 +75,7 @@ $$
 
 위의 식을 보면, 미분소가 $dx dy = r \cdot dr d\theta$이 되는데,
 
-![](/images/mathematics/calculus/differential-in-polar-form.png){: style="max-height: 240px" .align-center }
+![](/images/mathematics/calculus-2/differential-in-polar-form.png){: style="max-height: 240px" .align-center }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
 {: .align-caption .text-center .small .gray }
 
@@ -94,7 +94,7 @@ $$
 
 <br/>
 
-![](/images/mathematics/calculus/triple-integral-1.png){: style="max-height: 300px" .align-center }
+![](/images/mathematics/calculus-2/triple-integral-1.png){: style="max-height: 300px" .align-center }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
 {: .align-caption .text-center .small .gray }
 
@@ -106,7 +106,7 @@ $$
 
 <br/>
 
-![](/images/mathematics/calculus/triple-integral-2.png){: style="max-height: 300px" .align-center }
+![](/images/mathematics/calculus-2/triple-integral-2.png){: style="max-height: 300px" .align-center }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
 {: .align-caption .text-center .small .gray }
 
@@ -118,7 +118,7 @@ $$
 
 <br/>
 
-![](/images/mathematics/calculus/triple-integral-3.png){: style="max-height: 300px" .align-center }
+![](/images/mathematics/calculus-2/triple-integral-3.png){: style="max-height: 300px" .align-center }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
 {: .align-caption .text-center .small .gray }
 
@@ -129,7 +129,7 @@ $$
 
 # Triple Integrals in Cylindrical Coordinates
 
-![](/images/mathematics/calculus/cylindrical-coordinates.png){: style="max-height: 300px" .align-center }
+![](/images/mathematics/calculus-2/cylindrical-coordinates.png){: style="max-height: 300px" .align-center }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
 {: .align-caption .text-center .small .gray }
 
@@ -137,7 +137,7 @@ $$
 
 예를 들어, 아래와 같은 도형의 부피를 구하는 데에 적절하다.
 
-![](/images/mathematics/calculus/cylindrical-object-1.png){: style="max-height: 340px" .align-center }
+![](/images/mathematics/calculus-2/cylindrical-object-1.png){: style="max-height: 340px" .align-center }
 Thomas Calculus 13th ed. - Example Problem
 {: .align-caption .text-center .small .gray }
 
@@ -153,7 +153,7 @@ $z$축 방향으로 먼저 적분하고, 극좌표에 대한 적분을 수행한
 
 Cylindrical Coordinates에서는 미소부피가 아래와 같이 표현된다.
 
-![](/images/mathematics/calculus/cylindrical-wedge.png){: style="max-height: 280px" .align-center }
+![](/images/mathematics/calculus-2/cylindrical-wedge.png){: style="max-height: 280px" .align-center }
 [CLP Calculus Textbook](https://personal.math.ubc.ca/~CLP/CLP4/)
 {: .align-caption .text-center .small .gray }
 
@@ -166,7 +166,7 @@ $$
 
 # Triple Integrals in Spherical Coordinates
 
-![](/images/mathematics/calculus/spherical-coordinates.png){: style="max-height: 280px" .align-center }
+![](/images/mathematics/calculus-2/spherical-coordinates.png){: style="max-height: 280px" .align-center }
 [CLP Calculus Textbook](https://personal.math.ubc.ca/~CLP/CLP4/)
 {: .align-caption .text-center .small .gray }
 
@@ -184,7 +184,7 @@ $$
 
 구면좌표계는 아래와 같은 도형의 부피를 구하는 데에 적절하다. ~~아이스크림 콘 🍨~~
 
-![](/images/mathematics/calculus/spherical-object-1.png){: style="max-height: 280px" .align-center }
+![](/images/mathematics/calculus-2/spherical-object-1.png){: style="max-height: 280px" .align-center }
 Thomas Calculus 13th ed. - Example Problem
 {: .align-caption .text-center .small .gray }
 
@@ -196,7 +196,7 @@ $$
 
 적분식에서 갑자기 $\rho^2 \sin \phi$가 튀어나왔는데, 요것은 미소 부피 변화량에서 유도된다.
 
-![](/images/mathematics/calculus/spherical-wedge.png){: style="max-height: 280px" .align-center }
+![](/images/mathematics/calculus-2/spherical-wedge.png){: style="max-height: 280px" .align-center }
 [APEX Calculus Textbook](https://www.apexcalculus.com/)
 {: .align-caption .text-center .small .gray }
 
@@ -217,7 +217,7 @@ $$
 
 이런 1차원에서의 치환을 2차원에서 한번 생각해보자. 2차원 평면에서 $(u, v)$ 좌표를 $(x, y)$ 좌표로 변환하는 변환 함수 $T$를 상상 해보자.
 
-![](/images/mathematics/calculus/transformation-in-a-plane-1.png){: style="max-height: 280px" .align-center }
+![](/images/mathematics/calculus-2/transformation-in-a-plane-1.png){: style="max-height: 280px" .align-center }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
 {: .align-caption .text-center .small .gray }
 
@@ -247,7 +247,7 @@ $$
 
 우리는 변환 $T$의 결과로 만들어진 영역 $R$의 넓이를 구하기 위해 아래와 같이 할선(secant line)을 그어서 근사치를 구할 수 있을 것이다.
 
-![](/images/mathematics/calculus/transformation-in-a-plane-2.png){: style="max-height: 280px" .align-center }
+![](/images/mathematics/calculus-2/transformation-in-a-plane-2.png){: style="max-height: 280px" .align-center }
 Thomas Calculus 13th ed.
 {: .align-caption .text-center .small .gray }
 
@@ -277,7 +277,7 @@ $$
 
 <br/>
 
-![](/images/mathematics/calculus/transformation-in-a-plane-3.png){: style="max-height: 280px" .align-center }
+![](/images/mathematics/calculus-2/transformation-in-a-plane-3.png){: style="max-height: 280px" .align-center }
 Thomas Calculus 13th ed.
 {: .align-caption .text-center .small .gray }
 
@@ -290,7 +290,7 @@ $$
 
 이제 남은 건 외적 $\mathbf{r}_u \times \mathbf{r}_v$를 구하는 것이 남았다. 이것은 아래와 같은 행렬식을 구하는 것이다.
 
-![](/images/mathematics/calculus/transformation-in-a-plane-4.png){: style="max-height: 280px" .align-center }
+![](/images/mathematics/calculus-2/transformation-in-a-plane-4.png){: style="max-height: 280px" .align-center }
 Thomas Calculus 13th ed.
 {: .align-caption .text-center .small .gray }
 
@@ -299,7 +299,7 @@ Thomas Calculus 13th ed.
 
 2차원에서의 변환 $T$에서 외적 $\mathbf{r}_u \times \mathbf{r}_v$의 행렬식을 "Jacobian"라고 부른다. 정의는 아래와 같다.
 
-![](/images/mathematics/calculus/Jacobian-1.png){: style="max-height: 280px" .align-center }
+![](/images/mathematics/calculus-2/Jacobian-1.png){: style="max-height: 280px" .align-center }
 
 그리고 변환 $T$로 인해 만들어지는 넓이 미소변화량을 아래와 같이 Jacobian으로 쉽게 표기할 수 있다.
 
@@ -307,7 +307,7 @@ $$
 \Delta A = \left| \frac{\partial(x, y)}{\partial(u, v)} \right| \Delta u \Delta v
 $$
 
-![](/images/mathematics/calculus/Jacobian-2.png){: style="max-height: 280px" .align-center }
+![](/images/mathematics/calculus-2/Jacobian-2.png){: style="max-height: 280px" .align-center }
 Thomas Calculus 13th ed.
 {: .align-caption .text-center .small .gray }
 

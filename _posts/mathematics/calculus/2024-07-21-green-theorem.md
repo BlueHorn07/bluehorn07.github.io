@@ -46,13 +46,13 @@ $$
 
 그린 정리를 기술한 위의 명제에서 *"positively oriented"*라는 표현이 등장한다. 수학에서는 Curve의 방향을 positive, negative로 정의하는데 CCW 방향을 positive orientation으로 설정한다.
 
-![](/images/mathematics/calculus/curve-orientation.png){: .align-center style="max-height: 400px;" }
+![](/images/mathematics/calculus-2/curve-orientation.png){: .align-center style="max-height: 400px;" }
 [CLP Calculus Textbook](https://personal.math.ubc.ca/~CLP/CLP4/)
 {: .align-caption .text-center .small .gray }
 
 positive orientation을 CCW로 설정하고, TNB 좌표를 잡으면, 법선 벡터 $\mathbf{N}$이 항상 커브 안쪽으로 향하게 된다.
 
-![](/images/mathematics/calculus/normal-vector-direction.png){: .align-center style="max-height: 300px" }
+![](/images/mathematics/calculus-2/normal-vector-direction.png){: .align-center style="max-height: 300px" }
 [CLP Calculus Textbook](https://personal.math.ubc.ca/~CLP/CLP4/)
 {: .align-caption .text-center .small .gray }
 
@@ -142,7 +142,7 @@ $$
 
 즉, 곡선이 simply-connected인 필요는 없다!!
 
-![](/images/mathematics/calculus/not-simply-connected-region.png){: .align-center style="max-height: 300px" }
+![](/images/mathematics/calculus-2/not-simply-connected-region.png){: .align-center style="max-height: 300px" }
 [CLP Calculus Textbook](https://personal.math.ubc.ca/~CLP/CLP4/)
 {: .align-caption .text-center .small .gray }
 
@@ -211,7 +211,7 @@ With same vector function, show that $\oint_C \mathbf{F} \cdot d\mathbf{r} = 2\p
 이번에는 원점을 포함하는 "모든" 닫힌 커브에서 선적분 값이 $2\pi$임을 보여야 한다. 이 문제를 풀기 위해선 아래와 도넛 모양의 영역을 상상해야 한다.
 
 
-![](/images/mathematics/calculus/not-simply-connected-region-2.png){: .align-center style="max-height: 300px" }
+![](/images/mathematics/calculus-2/not-simply-connected-region-2.png){: .align-center style="max-height: 300px" }
 [CLP Calculus Textbook](https://personal.math.ubc.ca/~CLP/CLP4/)
 {: .align-caption .text-center .small .gray }
 
@@ -253,7 +253,7 @@ $$
 
 위의 경우는 도넛 모양 영역에 대한 선적분을 이중적분으로 바꿔서 해결한 경우이다. 그런데, 도넛 모양 적분은 아래와 같이 2개의 커브로 분할하여 선적분을 수행할 수도 있다.
 
-![](/images/mathematics/calculus/not-simply-connected-region-3.png){: .align-center style="max-height: 300px" }
+![](/images/mathematics/calculus-2/not-simply-connected-region-3.png){: .align-center style="max-height: 300px" }
 [CLP Calculus Textbook](https://personal.math.ubc.ca/~CLP/CLP4/)
 {: .align-caption .text-center .small .gray }
 

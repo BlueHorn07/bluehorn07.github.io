@@ -121,7 +121,7 @@ Multiple Regression의 $R^2$ 값은 `0.74`이다.
 
 <br/>
 
-드이어...! 👏 Partial Corr $\rho$를 구해보자!
+드디어...! 👏 Partial Corr $\rho$를 구해보자!
 
 $$
 \left(\rho_{X_1 Y \cdot X_2}\right)^2

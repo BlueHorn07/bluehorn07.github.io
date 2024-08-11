@@ -141,7 +141,7 @@ Line integrals of a continuous **conservative vector field** with a differentiab
 
 이번에는 닫힌 곡선 $C$에서 Conservative Vector Field의 적분을 살펴보자. 결론부터 말하면, 폐곡선에서의 선적분의 값은 항상 0이다.
 
-![](/images/mathematics/calculus/closed-curve.png){: style="max-height: 200px" .align-center }
+![](/images/mathematics/calculus-2/closed-curve.png){: style="max-height: 200px" .align-center }
 
 $$
 \int_{C} \mathbf{F} \cdot d\mathbf{r} = 0
@@ -219,7 +219,7 @@ Then, $\mathbf{F}$ is conservative.
 
 그런데 여기서 처음 등장한 개념이 "simply-connected region"이다. 대충 나눠서 설명하면,
 
-![](/images/mathematics/calculus/simple-curve-and-cases.png){: style="max-height: 300px" .align-center }
+![](/images/mathematics/calculus-2/simple-curve-and-cases.png){: style="max-height: 300px" .align-center }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
 {: .align-caption .text-center .small .gray }
 
@@ -229,7 +229,7 @@ Then, $\mathbf{F}$ is conservative.
 
 "simply-connected region"은 영역 위에 그릴 수 있는 모든 simple closed curve 안의 점이 모두 영역 $D$에 속하는 점들인 경우를 말한다.
 
-![](/images/mathematics/calculus/simply-connected-region-and-cases.png){: style="max-height: 500px" .align-center }
+![](/images/mathematics/calculus-2/simply-connected-region-and-cases.png){: style="max-height: 500px" .align-center }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
 {: .align-caption .text-center .small .gray }
 

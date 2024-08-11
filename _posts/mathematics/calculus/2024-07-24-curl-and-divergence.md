@@ -61,7 +61,7 @@ $$
 발산에 대한 식을 3차원 공간에 대한 것으로 적었지만, 2차원 평면에서 정의한 벡터장에 대해서도 발산(divergence) 값을 계산할 수 있다.
 
 
-![](/images/mathematics/calculus/divergence-negative.png){: .align-center style="max-height: 400px;" }
+![](/images/mathematics/calculus-2/divergence-negative.png){: .align-center style="max-height: 400px;" }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3): Negative Divergence
 {: .align-caption .text-center .small .gray }
 
@@ -69,7 +69,7 @@ $$
 
 <br/>
 
-![](/images/mathematics/calculus/divergence-zero-1.png){: .align-center style="max-height: 400px;" }
+![](/images/mathematics/calculus-2/divergence-zero-1.png){: .align-center style="max-height: 400px;" }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3): Zero Divergence
 {: .align-caption .text-center .small .gray }
 
@@ -77,7 +77,7 @@ $$
 
 <br/>
 
-![](/images/mathematics/calculus/divergence-zero-2.png){: .align-center style="max-height: 400px;" }
+![](/images/mathematics/calculus-2/divergence-zero-2.png){: .align-center style="max-height: 400px;" }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3): Zero Divergence
 {: .align-caption .text-center .small .gray }
 
@@ -144,7 +144,7 @@ $$
 - curl 벡터의 크기 = 회전하는 속도
 
 
-![](/images/mathematics/calculus/divergence-zero-1.png){: .align-center style="max-height: 400px;" }
+![](/images/mathematics/calculus-2/divergence-zero-1.png){: .align-center style="max-height: 400px;" }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3): Zero Divergence, Positive Curl
 {: .align-caption .text-center .small .gray }
 
@@ -163,7 +163,7 @@ $$
 
 curl 벡터가 영벡터인 경우를 유체가 해당 점 주변을 회전하지 않는(irrotational)하다고 말한다. 이것은 유체가 회전 운동에서 자유롭다는 것으로, 유체가 직선 운동을 하고 있다면, 그 방향이 거의 바뀌지 않을 것임을 말한다.
 
-![](/images/mathematics/calculus/divergence-zero-2.png){: .align-center style="max-height: 400px;" }
+![](/images/mathematics/calculus-2/divergence-zero-2.png){: .align-center style="max-height: 400px;" }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3): Zero Divergence, Zero Curl
 {: .align-caption .text-center .small .gray }
 
@@ -343,7 +343,7 @@ $$
 
 </div>
 
-![](/images/mathematics/calculus/green-theorem-circular-form.png){: .align-center style="max-height: 400px;" }
+![](/images/mathematics/calculus-2/green-theorem-circular-form.png){: .align-center style="max-height: 400px;" }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
 {: .align-caption .text-center .small .gray }
 
@@ -354,7 +354,7 @@ Tangential Form은 영역 $D$ 내부에서의 회전(curl)의 총합이 경계 �
 
 그린 정리의 Normal Form은 선적분을 곡선의 진행 방향 $d\mathbf{r}$과 수직인 벡터에 대해서 선적분을 수행하는 것이다.
 
-![](/images/mathematics/calculus/green-theorem-flux-form.png){: .align-center style="max-height: 400px;" }
+![](/images/mathematics/calculus-2/green-theorem-flux-form.png){: .align-center style="max-height: 400px;" }
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3)
 {: .align-caption .text-center .small .gray }
 
