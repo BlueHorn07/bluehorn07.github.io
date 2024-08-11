@@ -4,7 +4,7 @@ toc: true
 author: bluehorn_math
 toc_sticky: true
 categories: ["Calculus"]
-excerpt: "벡터장을 흐르는 유체로 보고, 한 점에 대해 유체가 팽창 or 압축 하는지, 아니면 한 점을 주변으로 유체가 얼마나 빠르게 회전하는지를 정의한 두 지표. 영역 내부의 회전(circulation)과 유출(flux)를 그린 정리의 선적분으로 계산하는 방법에 대해서 🌊"
+excerpt: "벡터장을 흐르는 유체로 보고, 한 점에 대해 유체가 팽창 or 압축 하는지, 아니면 한 점을 주변으로 유체가 얼마나 빠르게 회전하는지를 정의한 두 지표. 영역 내부의 회전(circulation)과 유출(flux)을 그린 정리의 선적분으로 계산하는 방법에 대해서 🌊"
 ---
 
 
@@ -85,7 +85,7 @@ $$
 
 뭔가 $\text{div } \mathbf{F} = 0$인 상황을 "유체가 받는 압력이 $0$"이다 라고 표현하면 좀 모호한 감이 있다. 그래서 이렇게 표현하는 것도 가능하다.
 
-> 한 지점에서 유체의 유츌량이 없다.
+> 한 지점에서 유체의 유출이나 유입되는 유량이 없다.
 
 즉, 유체가 나가는 만큼, 어딘가에서 유체가 들어와 나가는 량을 상쇄시킨다는 것이다.
 
@@ -116,7 +116,7 @@ $$
 
 </div>
 
-식이 조금 복잡한데, 위의 식을 외우기 보다는 외적으로 표기한 아래의 식을 습득하는게 더 유용하다.
+식이 조금 복잡한데, 위의 식을 외우기 보다는 외적으로 표기한 아래의 식으로 이해하는게 더 유용하다.
 
 $$
 \text{curl } \mathbf{F} = \nabla \times \mathbf{F}
@@ -203,9 +203,10 @@ $$
 
 EzEz $\blacksquare$ (요게 가능한 이유는 편미분 순서를 바꿔도 상관 없다는 클레로의 정리(Clairaut's Theorem) 때문.)
 
-위의 정리는 어떤 스칼라 함수 $f$ 또는 벡터장 $\mathbf{F}$가 주어졌을 때 해당 함수나 벡터장이 Conservative인지 '아니라고' 판단하는 기준이 된다. 왜냐하면, 대우 명제로 curl 벡터가 영벡터가 아니면 해당 Conservative 성질을 만족하지 않기 때문!!
+위의 정리는 Conservative 벡터장의 curl 벡터가 항상 영벡터라 계산할 필요 없다는 것도 말해주지만,
+오히려 벡터장의 curl이 영벡터가 아닌 상황에서 유용하다. 왜냐하면, 대우 명제에 따라 $\text{curl }\mathbf{F} \ne 0$라면, 벡터장이 non-conservative이기 때문이다.
 
-참고로 역명제는 성립하지 않는다. $\text{curl } \mathbf{F} = \mathbf{0}$이더라도 그 벡터장이 conservative가 아닌 반례가 있기 때문.
+위의 정리의 역명제는 성립하지 않는다. $\text{curl } \mathbf{F} = \mathbf{0}$이더라도 그 벡터장이 conservative가 아닌 반례가 있기 때문.
 
 <br/>
 
@@ -387,7 +388,7 @@ $$
 + \frac{y'(t)}{\left| \mathbf{r}'(t) \right|} \, \mathbf{j}
 $$
 
-그리고 이에 대한 노멀 벡터 $\mathbb{N}(t)$는 $\mathbf{T}(t) \cdot \mathbf{N}(t) = 0$임을 생각하면 아래와 같이 유도된다.
+그리고 이에 대한 노멀 벡터 $\mathbf{N}(t)$는 $\mathbf{T}(t) \cdot \mathbf{N}(t) = 0$임을 생각하면 아래와 같이 유도된다.
 
 $$
 \mathbf{N}(t)
