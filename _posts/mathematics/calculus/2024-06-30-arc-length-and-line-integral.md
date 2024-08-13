@@ -51,7 +51,7 @@ $$
 L = \int_a^{b} \sqrt{1 + (f'(x))^2} \, dx
 $$
 
-# Line Integral of a Scala Field
+# Line Integral of a Scalar Field
 
 xy 평면 위에 $(x(t), y(t))$로 그려지는 곡선 $C$가 있다고 하자. 그리고 어떤 이변수 함수 $f(x, y)$를 생각해보자. 요 이변수 함수를 곡선 $C$ 위에서의 선적분을 하면 아래와 같다.
 

@@ -26,7 +26,7 @@ $$
 
 <div class="definition" markdown="1">
 
-A vector field $\mathbf{F}$ is called a "**conservative vector field**" if it is the gradient of some scala function.
+A vector field $\mathbf{F}$ is called a "**conservative vector field**" if it is the gradient of some scalar function.
 
 </div>
 
@@ -39,7 +39,7 @@ A vector field $\mathbf{F}$ is called a "**conservative vector field**" if it is
 
 <div class="definition" markdown="1">
 
-Scala Line Integral
+Scalar Line Integral
 
 $$
 \int_C f(x, y) \, ds = \int_C f(x(t), y(t)) \cdot \sqrt{x'(t)^2 + y'(t)^2} \, dt
