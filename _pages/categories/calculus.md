@@ -44,7 +44,7 @@ toc_sticky: true
   - The Cauchy condensation test
 
 
-# Caclulus 2
+# Calculus 2
 
 - [Parametric Equations: Problem Solving](/2024/06/16/parametric-equations-problem-solving/)
   - The witch of Maria Agnesi
@@ -82,3 +82,5 @@ toc_sticky: true
   - Vector form of Green Theorem
     - Tangential Form
     - Normal Form
+- [Parametric Surface, and Surface Integral](/2024/08/10/paramteric-surface/)
+- [Stokes' Theorem](/2024/08/11/stokes-theorem/)

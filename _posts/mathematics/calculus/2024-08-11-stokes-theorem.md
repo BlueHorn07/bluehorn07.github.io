@@ -1,5 +1,5 @@
 ---
-title: "Stokes Theorem"
+title: "Stokes' Theorem"
 toc: true
 author: bluehorn_math
 toc_sticky: true
