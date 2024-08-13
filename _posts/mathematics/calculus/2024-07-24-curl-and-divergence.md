@@ -30,7 +30,7 @@ $$
 \frac{\partial P}{\partial x} \text{ , } \frac{\partial Q}{\partial y} \text{ , } \frac{\partial R}{\partial z}
 $$
 
-then the "divergence of $\mathbf{F}$" is a scala value defined by
+then the "divergence of $\mathbf{F}$" is a scalar value defined by
 
 $$
 \text{div } \mathbf{F}
@@ -251,6 +251,75 @@ $$
 <br/>
 
 요 정리는 벡터장이 curl 연산으로 인해 만들어진 것이라면, 그것의 div가 0임을 말한다. 이것의 대우 명제를 활용하면, 어떤 벡터장 $\mathbf{G}$가 $\text{div } \mathbf{G} \ne 0$라면, 그 벡터장은 curl 벡터로 유도된 것이 아니라고 판단할 수 있다.
+
+## Vector Potential
+
+벡터장에 curl을 적용하면 회전 벡터장이라는 또다른 벡터장이 뛰쳐나온다. 그래서 주어진 벡터장이 회전 벡터장이라면, curl을 적용한 원본 벡터장을 "Vector Potential"라고 부른다.
+
+<div class="definition" markdown="1">
+
+The vector field $\mathbf{A}$ is said to be a "vector potential" for the vector field $\mathbf{B}$ if
+
+$$
+\mathbf{B} = \nabla \times \mathbf{A}
+$$
+
+</div>
+
+그래서 위의 Curl-Div 항등식을 다시 기술하면 아래와 같다.
+
+<div class="theorem" markdown="1">
+
+If there exists a vector potential for the vector field $\mathbf{B}$, then
+
+$$
+\nabla \cdot \mathbf{B} = 0
+$$
+
+</div>
+
+
+앞에 나왔던 $\nabla \times \mathbf{F} = 0$인 케이스와 좀 헷갈릴 수도 있어서 한번 정리를 좀 해보자.
+
+For a vector field $\mathbf{F}$
+
+- If scalar Potential(= potential function) exists, then
+  - the field is a conservative field
+  - $\nabla \times \mathbf{F} = \mathbf{0}$
+- If vector Potential exists, then
+  - the field is a curl vector field
+  - $\nabla \cdot \mathbf{F} = 0$
+
+Vector Potential이든 Scalar Potential이든 벡터장의 원본이 되는 vector/scalar function라는게 공통점!
+
+<br/>
+
+이때, 회전 벡터장 $\mathbf{B}$를 만드는 Vector Potential은 유일하게 결정되지 않는다.
+
+임의의 스칼라 함수 $\psi$에 대해 아래의 등식이 성립한다.
+
+<div class="theorem" markdown="1">
+
+$$
+\mathbf{B} = \nabla \times \mathbf{A} = \nabla \times (\mathbf{A} + \nabla \psi)
+$$
+
+</div>
+
+이것이 가능한 이유는 $\nabla \times \nabla \psi = \mathbf{0}$이기 때문이다. 즉, $\mathbf{A}$와 $\mathbf{A} + \nabla \psi$ 둘다 회전 벡터장 $\mathbf{B}$를 유도하므로, 둘다 Vector Potential 이고, Vector Potential은 유일하게 결정되지 않고 무한히 많다.
+
+따라서, 아래의 따름 정리가 성립하는데,
+
+<div class="theorem" markdown="1">
+
+If the vector field $\mathbf{B}$ has a vector potential,
+
+then, there is a vector potential $\mathbf{A}$ for $\mathbf{B}$ with $\mathbf{A}_3 = 0$.
+
+</div>
+
+즉, 회전 벡터장의 Vector Potential로 $\mathbf{k}$ 컴포넌트가 0인 벡터장이 항상 존재한다는 것이다. 이 결과는 $\mathbf{k}$ 컴포넌트가 아니라 $\mathbf{i}$나 $\mathbf{j}$가 0이어도 성립한다.
+
 
 # Laplace Operator
 
