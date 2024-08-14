@@ -266,7 +266,7 @@ $$
 
 </div>
 
-그래서 위의 Curl-Div 항등식을 다시 기술하면 아래와 같다.
+위의 Curl-Div 항등식을 Vector Potential로 다시 기술하면 아래와 같다.
 
 <div class="theorem" markdown="1">
 
@@ -279,7 +279,7 @@ $$
 </div>
 
 
-앞에 나왔던 $\nabla \times \mathbf{F} = 0$인 케이스와 좀 헷갈릴 수도 있어서 한번 정리를 좀 해보자.
+앞에 나왔던 $\nabla \times \mathbf{F} = 0$ 케이스와 좀 헷갈릴 수도 있어서 정리를 좀 해보자.
 
 For a vector field $\mathbf{F}$
 
@@ -290,15 +290,15 @@ For a vector field $\mathbf{F}$
   - the field is a curl vector field
   - $\nabla \cdot \mathbf{F} = 0$
 
-Vector Potential이든 Scalar Potential이든 벡터장의 원본이 되는 vector/scalar function라는게 공통점!
+Vector Potential이든 Scalar Potential이든 어떤 벡터장의 원본이 되는 vector/scalar function라는게 공통점!
 
 <br/>
 
 이때, 회전 벡터장 $\mathbf{B}$를 만드는 Vector Potential은 유일하게 결정되지 않는다.
 
-임의의 스칼라 함수 $\psi$에 대해 아래의 등식이 성립한다.
-
 <div class="theorem" markdown="1">
+
+임의의 스칼라 함수 $\psi$에 대해 아래의 등식이 성립한다.
 
 $$
 \mathbf{B} = \nabla \times \mathbf{A} = \nabla \times (\mathbf{A} + \nabla \psi)
@@ -306,7 +306,7 @@ $$
 
 </div>
 
-이것이 가능한 이유는 $\nabla \times \nabla \psi = \mathbf{0}$이기 때문이다. 즉, $\mathbf{A}$와 $\mathbf{A} + \nabla \psi$ 둘다 회전 벡터장 $\mathbf{B}$를 유도하므로, 둘다 Vector Potential 이고, Vector Potential은 유일하게 결정되지 않고 무한히 많다.
+이것이 가능한 이유는 $\nabla \times \nabla \psi = \mathbf{0}$이기 때문이다. $\mathbf{A}$와 $\mathbf{A} + \nabla \psi$ 둘다 회전 벡터장 $\mathbf{B}$를 유도하므로, 둘다 Vector Potential 이고, Vector Potential은 유일하게 결정되지 않고 무한히 많다.
 
 따라서, 아래의 따름 정리가 성립하는데,
 
@@ -323,13 +323,13 @@ then, there is a vector potential $\mathbf{A}$ for $\mathbf{B}$ with $\mathbf{A}
 
 # Laplace Operator
 
-만약 어떤 벡터장이 Conservative Field라고 해보자. 그러면,
+벡터장 $\mathbf{F}$가 Conservative Field라면,
 
 $$
 \mathbf{F} = \nabla f
 $$
 
-인데, 여기에 div 연산을 한번더 수행해보자. 그러면 식은 아래와 같이 potential function $f$에 성분별로 편미분을 두 번 적용한 것의 합으로 표현된다.
+인데, 여기에 div 연산을 한번더 수행해보자.[* curl 연산을 하면, 영벡터가 되었다: $\nabla \times \nabla f = \mathbf{0}$] 그러면 식은 아래와 같이 potential function $f$에 성분별로 편미분을 두 번 적용한 것의 합으로 표현된다.
 
 $$
 \text{div}(\nabla f) = \nabla \cdot (\nabla f)
