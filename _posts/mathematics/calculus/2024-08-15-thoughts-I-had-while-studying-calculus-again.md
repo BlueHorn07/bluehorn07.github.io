@@ -2,6 +2,7 @@
 title: "미적분학을 다시 공부하며 든 생각들"
 categories: ["Calculus"]
 excerpt: "컴공과 학생이 수학과 졸업시험을 위해 고군분투 하는 첫번째 이야기. 그래도 복학 하기 전에 미적분학은 끝냈다는 감동적인 이야기 🥺"
+pin: true
 ---
 
 ![](/images/meme/my-military-service-done-sun.jpeg){: .align-center style="max-height: 360px;" }

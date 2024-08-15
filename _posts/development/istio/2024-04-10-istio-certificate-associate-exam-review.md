@@ -5,7 +5,8 @@ toc_sticky: true
 categories: ["Develop", "Istio"]
 sitemap:
     priority: 0.9
-excerpt: "2024년의 첫 자격증으로 Istio 자격증을 따고, 성장한 나의 이야기"
+excerpt: "2024년의 첫 자격증으로 도전한 Istio 자격증!! 그리고 K8s 엔지니어로 성장한 나의 이야기 ⛵️"
+pin: true
 ---
 
 ![](/images/development/istio/ICA-certificate.png)

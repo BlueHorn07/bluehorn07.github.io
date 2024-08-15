@@ -3,6 +3,8 @@ title: "Algorithm 수업과 나를 돌아보며"
 toc: true
 toc_sticky: true
 categories: ["Algorithm"]
+excerpt: "코로나 떄문에 3주 동안 훈련소에 갇혀서 학부 알고리즘을 다시 공부하게 된 썰 🤦‍♂️"
+pin: true
 ---
 
 <br/>

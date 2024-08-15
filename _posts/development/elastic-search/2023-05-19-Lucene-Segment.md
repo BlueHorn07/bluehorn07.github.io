@@ -4,7 +4,8 @@ toc: true
 toc_sticky: true
 teaser: /images/development/lucene-segment.png
 categories: ["Elastic Search"]
-excerpt: "엘라스틱서치 내부 탐험: 루씬 세그먼트로 이해하는 검색 엔진의 섬세한 메커니즘"
+excerpt: "엘라스틱서치 내부 탐험: 루씬 세그먼트로 이해하는 검색 엔진의 섬세한 메커니즘 🔦"
+pin: true
 ---
 
 ElasticSearch에서 샤드(Shard)를 구성하는 루씬(Lucene) Index와 역색인(Inverted Index) 구조와 문서 검색 기능의 구현체인 Lucene Segment에 대해 살펴보자. Lucene Segment를 이해했다면, ElasticSearch 동작의 핵심을 이해한 것이다!

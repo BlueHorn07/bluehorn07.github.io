@@ -4,6 +4,19 @@ layout: archive
 
 {{ content }}
 
+<div>
+  <h3 class="archive__subtitle">Pinned Posts 📌</h3>
+  <div class="grid__wrapper">
+    {% for post in site.posts %}
+      {% if post.pin == true %}
+        {% include archive-single.html type="grid" %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<div>
+
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
 {% if paginator %}
@@ -20,3 +33,6 @@ layout: archive
 </div>
 
 {% include paginator.html %}
+
+
+</div>
