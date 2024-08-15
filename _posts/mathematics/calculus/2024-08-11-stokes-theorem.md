@@ -11,6 +11,10 @@ excerpt: "회전(curl)에 대한 기본정리. 열린 곡면에서의 curl 벡�
 복수전공하고 있는 수학과의 졸업시험을 위해 학부 수학 과목들을 다시 공부하고 있습니다. [미적분학 포스트 전체 보기](/categories/calculus)
 {: .notice--info}
 
+
+이번 챕터는 [Joel Feldman - CLP Calculus](https://personal.math.ubc.ca/~CLP/) 교재의 도움을 많이 받았다.
+{: .notice}
+
 # Stokes' Theorem
 
 ![](/images/mathematics/calculus-2/stokes-theorem.png){: .align-center style="max-height: 260px;" }
@@ -75,13 +79,14 @@ $$
 [Youtube: The intuition behind Stokes Curl theorem](https://youtu.be/ztvKq1gzrZA?si=wGwsECLw5b4TnXdI)
 {: .align-caption .text-center .small .gray }
 
-이 부분을 공부하면서 항상 헷갈렸던 이유는, 이게 모든 벡터장에서 성립하는게 아니라 오직 curl 벡터장 $\nabla \mathbf{F}$에 대해서만 성립한다는 사실을 인지하지 못 했기 때문인 것 같다. curl 벡터의 경우 미소 영역에서 회전이 인접한 곳의 회전과 상쇄된다는 성질이 닫힌 곡면에서의 면적분은 "0"라는 결과를 유도하는 것 같다.
+스토크스 정리를 공부하면서 항상 헷갈렸던 이유는, 명제가 모든 벡터장에서 성립하는게 아니라 오직 curl 벡터장 $\nabla \times \mathbf{F}$에 대해서만 성립한다는 사실을 인지하지 못 했기 때문인 것 같다. curl 벡터의 경우 미소 영역에서 회전이 인접한 곳의 회전과 상쇄된다는 성질이, 곡면의 적분이 경계에서의 선적분과 같다는 것도 말하고, 닫힌 곡면에서의 면적분이 "0"라는 결과도 유도한다.
+
 
 ## 발산 정리 맛보기
 
 위의 닫힌 곡면의 예제에서 발산 정리를 슬쩍 유도할 수 있다. 발산 정리도 경계에 대한 적분의 성질로, 부피 $V$에 대한 적분과 부피의 경계 곡면 $\partial V$에 대한 적분이 같다는 걸 말하는 정리다.
 
-<div class="definition" markdown="1">
+<div class="theorem" markdown="1">
 
 [curl 벡터의 면적분을 부피 적분으로 해석 by 발산 정리]
 
@@ -92,5 +97,5 @@ $$
 
 </div>
 
-이때, [$\nabla \cdot (\nabla \times \mathbf{F}) = 0$라는 성질](/2024/07/24/curl-and-divergence/#curl-and-div)에 의해 부피 적분의 값이 0이 되고, 덩달아 curl 벡터의 면적분 값도 0이 된다.
+이때, [$\nabla \cdot (\nabla \times \mathbf{F}) = 0$라는 항등식](/2024/07/24/curl-and-divergence/#curl-and-div)에 의해 부피 적분의 값이 0이 되고, 덩달아 curl 벡터의 면적분 값도 0이 된다.
 
