@@ -53,6 +53,32 @@ pin: true
 이번에도 노션은 야무지게 썼다 ㅋㅋ
 {: .align-caption .text-center .small .gray }
 
+공부한 내용은 노션에 두서 없이 기록하고, 깃헙 블로그에 정리 했다. 미적1은 연습문제 위주로, 미적2는 개념 위주로 정리 했다. 오랜만에 $\LaTeX$을 쓰니 좀 어색하기도 했지만, 하는 김에 그동안 썼던 포스트들도 좀 검수하고 다듬는 작업도 많이 한 것 같다.
+
+- Calculus 1
+  - [Limit and Continuity: Problem Solving](/2024/05/01/limit-and-continuity-problem-solving/)
+  - [Derivatives: Problem Solving](/2024/05/05/derivatives-problem-solving/)
+  - [Application of Derivatives: Problem Solving](/2024/05/20/application-of-derivatives-problem-solving/)
+  - [Techniques of Integrals: Problem Solving](/2024/05/30/techniques-of-integrals-problem-solving/)
+  - [Taylor Series & Macluarin Series](/2022/10/29/talyor-series-and-maclaurin-series/)
+  - [급수의 극한을 판정하는 법](/2024/06/08/method-of-determining-the-limit-of-a-series/)
+  - [교대 급수의 극한을 판정하는 법](/2024/06/08/method-of-determining-the-limit-of-an-alternating-series/)
+  - [Sequence and Series: Problem Solving](/2024/06/08/sequence-and-series-problem-solving/)
+- Calculus 2
+  - [Parametric Equations: Problem Solving](/2024/06/16/parametric-equations-problem-solving/)
+  - [Vectors and Space: Problem Solving](/2024/06/30/vectors-and-space-problem-solving/)
+  - [Partial Derivatives and Differentiability](/2024/07/06/prtial-derivatives-and-differentiability/)
+  - [Lagrange Multiplier](/2024/07/14/lagrange-multiplier/)
+  - [Multiple Integrals](/2024/07/16/multiple-integrals/)
+  - [Vector Fields](/2024/07/20/vector-fields-and-line-integrals/)
+    - [Arc Length와 Line Integral](/2024/06/30/arc-length-and-line-integral/)
+  - [Green Theorem](/2024/07/21/green-theorem/)
+  - [Divergence and Curl](/2024/07/24/curl-and-divergence/)
+  - [Parametric Surface, and Surface Integral](/2024/08/10/paramteric-surface/)
+  - [Stokes' Theorem](/2024/08/11/stokes-theorem/)
+  - [Divergence Theorem](/2024/08/14/divergence-theorem/)
+
+
 # 미적분학을 드디어 완주 하다
 
 ![](/images/meme/omedeto.gif){: .align-center style="max-height: 360px;" }

@@ -84,3 +84,4 @@ toc_sticky: true
     - Normal Form
 - [Parametric Surface, and Surface Integral](/2024/08/10/paramteric-surface/)
 - [Stokes' Theorem](/2024/08/11/stokes-theorem/)
+- [Divergence Theorem](/2024/08/14/divergence-theorem/)
