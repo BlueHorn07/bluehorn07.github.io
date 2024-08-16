@@ -154,6 +154,7 @@
     .grid__item {
       width: 100%;
     }
+    margin-left: 0;
     /* CUSTOM END */
 
     @include breakpoint($large) {
