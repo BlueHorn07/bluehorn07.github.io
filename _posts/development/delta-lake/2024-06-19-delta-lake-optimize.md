@@ -2,7 +2,7 @@
 title: "Delta Lake Optimize"
 toc: true
 toc_sticky: true
-categories: ["Spark"]
+categories: ["Spark", "Delta Lake"]
 excerpt: "Delta Lake로 저장된 데이터를 최적화하는 여러 테크닉들. Compaction(압축), Data Skipping, Z-Ordering"
 ---
 

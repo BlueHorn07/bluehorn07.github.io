@@ -2,7 +2,7 @@
 title: "Delta Lake Vacuum"
 toc: true
 toc_sticky: true
-categories: ["Spark"]
+categories: ["Spark", "Delta Lake"]
 excerpt: "Stale 된 Parquet 파일들을 정리해서 용량 압축하기 🧹"
 ---
 

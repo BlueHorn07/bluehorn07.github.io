@@ -2,7 +2,7 @@
 title: "Delta Lake 데이터 처리에 대한 고찰"
 toc: true
 toc_sticky: true
-categories: ["Spark"]
+categories: ["Spark", "Delta Lake"]
 excerpt: Delta 테이블 생성과 읽기. 그리고 각종 Write 연산들(`DELETE`, `UPDATE`, `replaceWhere`, `MERGE INTO`)에 대한 고찰
 ---
 

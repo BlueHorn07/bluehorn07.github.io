@@ -2,7 +2,7 @@
 title: "Delta Lake Time Travel"
 toc: true
 toc_sticky: true
-categories: ["Spark"]
+categories: ["Spark", "Delta Lake"]
 excerpt: Delta 테이블의 버전 관리를 통해 특정 시점과 특정 버전으로 시간 여행하기. 특정 버전으로 복구하는 것까지!
 ---
 
