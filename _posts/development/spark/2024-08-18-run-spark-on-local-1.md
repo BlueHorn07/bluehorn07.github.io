@@ -1,9 +1,9 @@
 ---
-title: "로컬 맥북에서 Spark 실행하기 - 1편: Local Mode"
+title: "💻 로컬 맥북에서 Spark 실행하기 - 1편: Local Mode"
 toc: true
 toc_sticky: true
 categories: ["Spark"]
-excerpt: ""
+excerpt: "Spark 꼼꼼히 살펴보기의 첫걸음"
 ---
 
 2024년 목표로 Databricks Certification을 취득해보려고 Apache Spark를 "제대로" 공부해보고 있습니다. 🎇
