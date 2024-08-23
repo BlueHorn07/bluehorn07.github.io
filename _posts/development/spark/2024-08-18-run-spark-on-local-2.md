@@ -3,7 +3,7 @@ title: "💻 로컬 맥북에서 Spark 실행하기 - 2편: Cluster Mode"
 toc: true
 toc_sticky: true
 categories: ["Spark"]
-excerpt: ""
+excerpt: "로컬에서 Spark 클러스터 구축하기 ✌️"
 ---
 
 2024년 목표로 Databricks Certification을 취득해보려고 Apache Spark를 "제대로" 공부해보고 있습니다. 🎇
@@ -114,4 +114,4 @@ Master-Worker 노드로 Spark 클러스터를 구축한 이 방식을 "Standalon
 
 ![](https://spark.apache.org/docs/latest/img/cluster-overview.png){: .align-center style="max-height: 400px" }
 
-Standalone의 뜻인 "자립형/독립형"라는 뜻에 맞게 Standalone 모드에서는 Cluster Manager의 역할을 Spark 자체에서 수행한다. 보통 Production 환경에서는 YARN이나 Mesos가 Cluster Manager 역할을 수행하도록 구축한다고 한다. 만약 spark-on-kubernetes라면, Kubernetes가 Cluster Manager의 역할을 수행하기도 한다.
+Standalone의 뜻인 "자립형/독립형"라는 뜻에 맞게 Standalone 모드에서는 Cluster Manager의 역할을 Spark 자체에서 수행한다. Spark 클러스터를 Prod 환경에서 운영할 때는 YARN이나 Mesos를 Cluster Manager로 많이 사용한다고 한다.  spark-on-kubernetes로 클러스터를 운영한다면, Kubernetes가 Cluster Manager의 역할을 수행하기도 한다.
