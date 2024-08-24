@@ -3,10 +3,10 @@ title: "💻 로컬 맥북에서 Spark 실행하기 - 1편: Local Mode"
 toc: true
 toc_sticky: true
 categories: ["Spark"]
-excerpt: "Spark 꼼꼼히 살펴보기의 첫걸음 🏃"
+excerpt: "Spark 꼼꼼히 살펴보기의 첫걸음 🏃 `spark-submit`으로 Spark Application 실행하기."
 ---
 
-2024년 목표로 Databricks Certification을 취득해보려고 Apache Spark를 "제대로" 공부해보고 있습니다. 🎇
+2024년의 목표로 Databricks Certification을 취득해보려고 Apache Spark를 “제대로” 공부해보고 있습니다. 회사에선 Databricks Unity Catalog를 도입하려고 분투하고 있는데요. Spark와 좀 친해질 수 있을까요? 🎇 Spark에 대해 작성한 전체 포스트는 [Development - Spark](/topic/development#apache-spark)에서 확인해실 수 있습니다 :)
 {: .notice--info}
 
 악기를 배울 때의 첫 걸음을 악기를 사는 것(음.!?), 새로운 언어를 배울 때도 언어를 세팅 하는 것부터 하듯이. Spark도 로컬에 세팅을 해보면서 배우는게 많을 거라고 생각한다. 본인은 회사에서 Databricks를 사용해서 그동안 Spark를 한번도 직접 세팅 해본 적이 없었다...! Databricks가 참 편리하긴 한데, 근본 원리를 모르고 쓰다보니 모래성 위에서 뭔가를 쌓아올리는 느낌을 떨칠 수 없었다. 그래서 시작하게 된 Spark 공부...!

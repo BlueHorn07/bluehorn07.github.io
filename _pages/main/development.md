@@ -31,7 +31,7 @@ toc_sticky: true
 
 ## Istio
 
-24년 1월 1일부터 3월 24일까지 Istio Certified Associate 시험을 준비하면서 기록한 것들.
+24년 1월 1일부터 3월 24일까지 Istio Certified Associate 시험을 준비하면서 공부한 것들을 정리하고 기록하였습니다. Istio Certificate Associate 시험 후기는 "[Istio Certificate Associate 시험 후기 ⭐️](/2024/04/10/istio-certificate-associate-exam-review/)" 포스트를 참고해주세요.
 
 - [Install Istio and Addons(Prometheus, Kiali)](/2024/02/02/install-istio-and-addons/)
 - [Istio ‘helloworld’ 데모](/2024/02/05/istio-helloworld-demo/)
@@ -54,10 +54,18 @@ toc_sticky: true
 - [Istio CRD 중에 지엽적인 나머지 것들 정리](/2024/03/23/istio-crd-others-memo/)
 - [Istio Virtual Machine Architecture](/2024/03/23/istio-virtual-machine-architecture/)
 - [istioctl 디버그 도구들](/2024/03/24/istioctl-debug-tool/)
-- [Istio Certificate Associate 시험 후기 ⭐️](/2024/04/10/istio-certificate-associate-exam-review/)
 
 
-## Spark & Delta
+## Apache Spark
+
+2024년의 목표로 Databricks Certification을 취득해보려고 Apache Spark를 “제대로” 공부해보고 있습니다. 회사에선 Databricks Unity Catalog를 도입하려고 분투하고 있는데요. Spark와 좀 친해질 수 있을까요? 🎇
+
+- [💻 로컬 맥북에서 Spark 실행하기 - 1편: Local Mode](/2024/08/18/run-spark-on-local-1/)
+- [💻 로컬 맥북에서 Spark 실행하기 - 2편: Client Mode](/2024/08/18/run-spark-on-local-2/)
+- [Jump into Spark Sessions](/2024/08/21/jump-into-spark-sessions/)
+
+
+## Delta Lakes
 
 - [Delta Lake 데이터 처리에 대한 고찰](/2024/06/13/delta-lake-data-processing-insights/)
 - [Delta Lake Time Travel](/2024/06/16/delta-lake-time-travel/)
@@ -70,6 +78,8 @@ toc_sticky: true
 - [Lucene Segment](/2023/05/19/Lucene-Segment/)
 - [Document CRUD](/2023/05/17/ElasticSearch-Document-CRUD/)
 - [Index CRUD](/2023/05/15/ElasticSearch-Index-CRUD/)
+
+<hr/>
 
 ## Authentication
 
