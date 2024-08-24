@@ -1,5 +1,5 @@
 ---
-title: "💻 로컬 맥북에서 Spark 실행하기 - 2편: Cluster Mode"
+title: "💻 로컬 맥북에서 Spark 실행하기 - 2편: Client Mode"
 toc: true
 toc_sticky: true
 categories: ["Spark"]
@@ -9,7 +9,7 @@ excerpt: "로컬에서 Spark 클러스터 구축하기 ✌️"
 2024년 목표로 Databricks Certification을 취득해보려고 Apache Spark를 "제대로" 공부해보고 있습니다. 🎇
 {: .notice--info}
 
-1편에서는 단일 머신에서 실행하는 Local Mode로 Spark 작업을 하는 방법을 살펴보았다. 2편에서는 Cluster Mode로 Spark 클러스터를 구성하고, Spark 작업을 실행하는 방법을 살펴보자.
+1편에서는 단일 머신에서 실행하는 "Local Mode"로 Spark 작업을 하는 방법을 살펴보았다. 2편에서는 "Client Mode"로 Spark 클러스터를 구성하고, Spark 작업을 실행하는 방법을 살펴보자.
 
 # Setup Spark Cluster
 
@@ -112,6 +112,59 @@ Master-Worker 노드로 Spark 클러스터를 구축한 이 방식을 "Standalon
 
 본래 Spark 클러스터는 Master 노드, Worker 노드 뿐만 아니라 "Cluster Manager"라는 컴포넌트가 있어 Spark 클러스터 상태 관리, 리소스 할당, 작업 분배 등의 역할을 수행한다.
 
+- Memory Management
+- Fault Recovery
+- Task Scheduling
+
 ![](https://spark.apache.org/docs/latest/img/cluster-overview.png){: .align-center style="max-height: 400px" }
 
-Standalone의 뜻인 "자립형/독립형"라는 뜻에 맞게 Standalone 모드에서는 Cluster Manager의 역할을 Spark 자체에서 수행한다. Spark 클러스터를 Prod 환경에서 운영할 때는 YARN이나 Mesos를 Cluster Manager로 많이 사용한다고 한다.  spark-on-kubernetes로 클러스터를 운영한다면, Kubernetes가 Cluster Manager의 역할을 수행하기도 한다.
+Standalone의 뜻인 "자립형/독립형"라는 뜻에 맞게 Standalone 모드에서는 Master 노드가 Cluster Manager의 역할까지 수행한다.
+
+Spark 클러스터를 Prod 환경에서 운영할 때는 YARN이나 Mesos를 Cluster Manager로 많이 사용한다고 한다.  spark-on-kubernetes로 클러스터를 운영한다면, Kubernetes가 Cluster Manager의 역할을 수행하기도 한다.
+
+# Client Mode에 대해 좀더 자세히
+
+![](/images/development/spark/spark-client-mode.png){: .align-center style="max-height: 400px" }
+Spark Client Mode
+{: .align-caption .text-center .small .gray }
+
+지난 포스트에서는 "Local Mode"로 Spark Application을 실행했다면, 이번에는 "Client Mode"로 Spark App을 실행했다. Client 모드에서는 Driver Process가 Client JVM 위에서 실행된다. 그리고 Worker JVM 위에서 Executor Process들이 실행되는 구조다.
+
+## Master and Worker, Driver and Executor
+
+이 부분을 공부하면서 어떨 때는 Master-Worker 또는 Driver-Worker라고 부르고, 또 어떨 때는 Driver-Executor라고 부르는 용어들이 정말 헷갈렸다.
+
+그래서 찾아보니 이렇게 설명하는 곳이 있었다.
+
+- Spark 클러스터 관점에서는
+  - Master 노드와 Worker 노드로 구성된다.
+  - 각 노드는 물리적 머신의 개념이다.
+- Spark의 관점에서는
+  - Driver Process와 Executor Progress로 구성된다.
+  - Process 대신 Program라고도 말한다.
+
+이때, Driver Process는 반드시 Master 노드에 뜨는 건 아니다. 앞에서 살펴본 Client Mode는 Driver Process가 Client의 JVM에 뜬다. 반면에, 아직 실험해보지 않은 "Cluster Mode"에서는 Driver Process가 클러스터 내부에서 결정된다. (이것도 Master 노드에 반드시 뜨는게 아니라 Worker 노드 중 하나에 Driver Process가 실행되는 경우도 있다는 것 같다. 😵‍💫)
+
+
+![](/images/development/spark/spark-cluster-mode.png){: .align-center style="max-height: 400px" }
+Spark Cluster Mode
+{: .align-caption .text-center .small .gray }
+
+위의 Client Mode에서의 그림과 잘 비교해보면, Client JVM인지 Driver JVM인지 표기가 다르게 되어 있다. 아래는 Spark 공식 문서에서 묘사된 Client 모드와 Cluster 모드의 차이점이다.
+
+> Spark Deploy Mode: Distinguishes where the driver process runs. In "cluster" mode, the framework launches the driver inside of the cluster. In "client" mode, the submitter launches the driver outside of the cluster. - [Spark Doc](https://spark.apache.org/docs/latest/cluster-overview.html#glossary)
+
+
+# 다음에는
+
+아직 "Cluster Mode"를 제대로 살펴보지 못 했다. 실험은 해봤는데, 아래와 같은 오류가 뜨면, Cluster Mode에서는 `pyspark`를 실행시킬 수 없다고 한다.
+
+> Exception in thread "main" org.apache.spark.SparkException: Cluster deploy mode is currently **not supported** for python applications on standalone clusters.
+
+그래서 Cluster Mode는 다음에 scala 실험을 하게 될 때 다시 살펴볼 것!
+
+<br/>
+
+다음 포스트에선 `SparkSession`과 `SparkContext`를 살펴보고 둘을 비교 해보고자 한다.
+
+👉 [Jump into Spark Sessions](/2024/08/21/jump-into-spark-sessions/)
