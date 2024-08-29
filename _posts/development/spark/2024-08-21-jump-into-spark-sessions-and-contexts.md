@@ -75,13 +75,14 @@ Spark Session을 설명하는 가장 간단한 문장이다. `spark`라는 변�
 
 ![](/images/development/spark/databricks-spark-context.png){: .align-center style="max-height: 300px" }
 
-Spark 공부를 시작할 때, RDD와 함께 가장 먼저 마주치는 녀석인 `SparkContext`다. 사실 예전에는 `SparkContext`로 Spark를 접하는데, 당연 했을 지도 모른다. 왜냐하면, `SparkContext`가 `SparkSession`보다 먼저 릴리즈 되었기 때문이다.
+Spark 공부를 시작할 때, RDD와 함께 가장 먼저 마주치는 녀석인 `SparkContext`다. 예전에는 `SparkContext`로 Spark를 접하는데, 당연 했을 지도 모른다. 왜냐하면, `SparkSession`은 spark 2.0부터 도입된 방식이기 때문이다.
 
 - `SparkContext`
   - spark 1.x
 - `SparkSession`
-  - spark 2.0
-- 참고로 작성일(24.08.27) 기준 Spark는 `3.5.2` 버전까지 나왔다. spark 3.0의 가장 주요한 변경점은 AQE(Adaptive Query Execution)이고 다음 포스트에서 다뤄볼 예정이다.
+  - spark 2.0 (2016-07-26 출시)
+
+참고로 작성일(24.08.27) 기준 Spark는 `3.5.2` 버전까지 나왔다. Spark 3.0 버전에서 가장 주요한 변경점은 AQE(Adaptive Query Execution)이고 다음 포스트에서 다뤄볼 예정이다.
 
 `SparkContext`는 RDD(Resilient Distributed Data)를 다루기 위한 entry point이다. RDD는 초기 Spark를 이루는 가장 기초적인 데이터 구조이다. RDD에 대해서도 지금 자세히 언급하기는 어려워서 별도 포스트에서 다뤄보겠다. 대충 원시적인 형태의 DataFrame이라고 보면 될 것 같다.
 
@@ -145,9 +146,6 @@ df.show()
 Spark Context 에선...
 
 ```scala
-val conf = new SparkConf().setAppName("CSV Reader Example").setMaster("local[*]")
-val sc = new SparkContext(conf)
-
 // CSV 파일을 텍스트 파일로 읽기
 val rdd = sc.textFile("/path/to/your/file.csv")
 
@@ -162,10 +160,87 @@ val parsedData = data.map(line => line.split(","))
 parsedData.collect().foreach(row => println(row.mkString(", ")))
 ```
 
-확실히 Spark Context를 사용하는 쪽이 low-level API라서 그런지 CSV 파일을 읽는 간단한 작업도, 처리를 많이 해주는 모습이 보인다.
+Spark Context 방식은 low-level API라서 그런지 CSV 파일을 읽는 간단한 작업도, 처리를 많이 해주는 모습이 보인다.
 
-----
+# SQLContext
 
-결국 RDD vs. Dataframe까지 다뤄야 하나?
+```scala
+scala> val sqlContext = spark.sqlContext
+res3: org.apache.spark.sql.SQLContext = org.apache.spark.sql.SQLContext@59aba9b3
 
-RDD -> DataFrame 변환도 가능?
+scala> val df = sqlContext.read.json("./people.json")
+df: org.apache.spark.sql.DataFrame = [age: bigint, name: string]
+
+scala> df.createOrReplaceTempView("people")
+
+scala> sqlContext.sql("SELECT name, age FROM people WHERE age > 21").show()
++----+---+
+|name|age|
++----+---+
+|Andy| 30|
++----+---+
+```
+
+SQL Context는 spark가 읽은 데이터를 SQL을 사용해 쿼리하거나 조작하는 기능을 제공한다.
+
+
+# HiveContext
+
+사실 아직 Hive를 제대로 공부하지 않았아서, 이 부분을 제대로 이해하진 못 했지만, 현재 팀에서 Databricks에서 Hive Metastore를 사용하는 것을 보면, 대충 Spark SQL 쿼리가 Hive 테이블을 쿼리하는 거라고 짐작하고 있다.
+
+Spark의 `HiveContext`는 Hive에 저장된 테이블을 Spark에서 쿼리하는 엔드포인트라고 이해하고 있다. 아래 코드를 사용하면, `spark-shell`을 실행한 경로에 Hive metastore를 로컬 세팅 해볼 수 있다.
+
+```scala
+scala> val df = spark.read.json("./people.json")
+df: org.apache.spark.sql.DataFrame = [age: bigint, name: string]
+
+scala> df.write.mode("overwrite").saveAsTable("people")
+24/08/29 17:54:56 WARN HiveConf: HiveConf of name hive.stats.jdbc.timeout does not exist
+24/08/29 17:54:56 WARN HiveConf: HiveConf of name hive.stats.retries.wait does not exist
+24/08/29 17:54:57 WARN ObjectStore: Version information not found in metastore. hive.metastore.schema.verification is not enabled so recording the schema version 2.3.0
+24/08/29 17:54:57 WARN ObjectStore: setMetaStoreSchemaVersion called but recording version is disabled: version = 2.3.0, comment = Set by MetaStore seokyunha@127.0.2.2
+24/08/29 17:54:57 WARN ObjectStore: Failed to get database default, returning NoSuchObjectException
+24/08/29 17:54:58 WARN SessionState: METASTORE_FILTER_HOOK will be ignored, since hive.security.authorization.manager is set to instance of HiveAuthorizerFactory.
+24/08/29 17:54:58 WARN HiveConf: HiveConf of name hive.internal.ss.authz.settings.applied.marker does not exist
+24/08/29 17:54:58 WARN HiveConf: HiveConf of name hive.stats.jdbc.timeout does not exist
+24/08/29 17:54:58 WARN HiveConf: HiveConf of name hive.stats.retries.wait does not exist
+24/08/29 17:54:58 WARN ObjectStore: Failed to get database global_temp, returning NoSuchObjectException
+```
+
+위의 명령어를 실행하면, 로컬에 두 폴더가 자동으로 생성된다.
+
+- `./metastore_db/`
+  - 자동으로 생성된 Hive Metastore다.
+  - Apache Derby라는 순수 자바로 구현된 RDBMS다.
+    - 약간 sqlite 같은 녀석임.
+  - 이곳에 Database, Table 그리고 컬럼 정보 등이 저장된다.
+- `./spark-warehouse/people`
+  - `.saveAsTable()`로 저장한 Hive 테이블이 물리적으로 저장된 경로
+
+로컬에 Hive Metastore를 구축했기 때문에, `spark-shell`을 종료하고 다시 실행해도 같은 경로에서 실행만 한다면, `metastore_db` 폴더를 통해 이전에 저장했던 Hive 테이블 정보를 다시 사용할 수 있다.
+
+
+```scala
+scala> spark.sql("SELECT * FROM default.people").show
++----+-------+
+| age|   name|
++----+-------+
+|NULL|Michael|
+|  30|   Andy|
+|  19| Justin|
++----+-------+
+```
+
+`HiveContext`를 사용해서 HiveQL을 날려면 아래와 같이 하면 된다.
+
+```scala
+scala> import org.apache.spark.sql.hive.HiveContext
+scala> val hiveContext = new HiveContext(sc)
+scala> hiveContext.sql("SELECT * FROM default.people")
+```
+
+# 맺음말
+
+이번 포스트를 작성하면서, `SparkSession`과 `SparkContext`, `SQLContext`, `HiveContext`까지, 모호하게 알던 개념을 이해하게 된 것 같다. Spark와 Hive도 둘이 왜 맨날 엮이는지 궁금했는데, 이것도 어렴풋이 알게 된 것 같다. "`RDD`와 `DataFrame`의 차이점은?" 같은 질문도 새롭게 생겨났다.
+
+물론 아직도 Databricks의 Shared-mode에서 Unity Catalog에서 왜 `SparkContext`, `SQLContext`, `RDD`를 제한하게 되었는지는 잘 모르겠지만, Spark를 공부하다보면 곧 알게 되겠지...!?
