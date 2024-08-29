@@ -58,7 +58,7 @@ toc_sticky: true
 
 ## Apache Spark
 
-2024년의 목표로 Databricks Certification을 취득해보려고 Apache Spark를 “제대로” 공부해보고 있습니다. 회사에선 Databricks Unity Catalog를 도입하려고 분투하고 있는데요. Spark와 좀 친해질 수 있을까요? 🎇
+Databricks Certification 취득을 목표로 Apache Spark를 “제대로” 공부해보고 있습니다. 회사에선 Databricks Unity Catalog를 도입하려고 분투하고 있는데요. Spark와 좀 친해질 수 있을까요? 🎇
 
 - [💻 로컬 맥북에서 Spark 실행하기 - 1편: Local Mode](/2024/08/18/run-spark-on-local-1/)
 - [💻 로컬 맥북에서 Spark 실행하기 - 2편: Client Mode](/2024/08/18/run-spark-on-local-2/)
