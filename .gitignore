@@ -29,3 +29,8 @@ _asset_bundler_cache
 _site
 
 .ruby-version
+
+# Local Spark
+metastore_db/
+spark-warehouse/
+*.log

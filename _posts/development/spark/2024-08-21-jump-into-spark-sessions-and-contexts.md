@@ -82,7 +82,7 @@ Spark 공부를 시작할 때, RDD와 함께 가장 먼저 마주치는 녀석�
 - `SparkSession`
   - spark 2.0 (2016-07-26 출시)
 
-참고로 작성일(24.08.27) 기준 Spark는 `3.5.2` 버전까지 나왔다. Spark 3.0 버전에서 가장 주요한 변경점은 AQE(Adaptive Query Execution)이고 다음 포스트에서 다뤄볼 예정이다.
+참고로 작성일(24.08.27) 기준 Spark는 `3.5.2` 버전까지 나왔다. Spark 3.0 버전에서 가장 주요한 변경점은 AQE(Adaptive Query Execution)이고 다음 포스트에서 다뤄볼 예정이다. [link](/2024/08/29/spark-adpative-query-execution/)
 
 `SparkContext`는 RDD(Resilient Distributed Data)를 다루기 위한 entry point이다. RDD는 초기 Spark를 이루는 가장 기초적인 데이터 구조이다. RDD에 대해서도 지금 자세히 언급하기는 어려워서 별도 포스트에서 다뤄보겠다. 대충 원시적인 형태의 DataFrame이라고 보면 될 것 같다.
 
@@ -181,7 +181,7 @@ scala> sqlContext.sql("SELECT name, age FROM people WHERE age > 21").show()
 +----+---+
 ```
 
-SQL Context는 spark가 읽은 데이터를 SQL을 사용해 쿼리하거나 조작하는 기능을 제공한다.
+SQL Context는 spark가 읽은 데이터를 SQL을 사용해 쿼리하거나 조작하는 기능을 제공한다. 코드에 사용한 json 파일은 [spark example](https://github.com/apache/spark/blob/master/examples/src/main/resources/people.json)에서 확인 가능하다.
 
 
 # HiveContext
