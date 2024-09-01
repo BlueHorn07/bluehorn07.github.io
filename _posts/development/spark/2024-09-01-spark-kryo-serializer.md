@@ -3,7 +3,7 @@ title: "Spark Kryo Serializer"
 toc: true
 toc_sticky: true
 categories: ["Spark"]
-excerpt: ""
+excerpt: "Spark의 직렬화, 그리고 직렬화 성능을 올려주는 Kryo Serializer 사용하기."
 ---
 
 Databricks Certification 취득을 목표로 Apache Spark를 “제대로” 공부해보고 있습니다. 회사에선 Databricks Unity Catalog를 도입하려고 분투하고 있는데요. Spark와 좀 친해질 수 있을까요? 🎇 전체 포스트는 [Development - Spark](/topic/development#apache-spark)에서 확인해실 수 있습니다.
