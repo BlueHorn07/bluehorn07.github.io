@@ -160,7 +160,7 @@ val parsedData = data.map(line => line.split(","))
 parsedData.collect().foreach(row => println(row.mkString(", ")))
 ```
 
-Spark Context 방식은 low-level API라서 그런지 CSV 파일을 읽는 간단한 작업도, 처리를 많이 해주는 모습이 보인다.
+Spark Context 방식은 low-level API라서 그런지 CSV 파일을 읽는 간단한 작업도, 몇번의 처리를 거쳐서 수행되는 모습이다.
 
 # SQLContext
 
