@@ -231,7 +231,7 @@ scala> spark.sql("SELECT * FROM default.people").show
 +----+-------+
 ```
 
-`HiveContext`를 사용해서 HiveQL을 날려면 아래와 같이 하면 된다.
+`HiveContext`를 사용해서 HiveQL을 날리려면 아래와 같이 하면 된다.
 
 ```scala
 scala> import org.apache.spark.sql.hive.HiveContext
