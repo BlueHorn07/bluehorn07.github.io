@@ -30,7 +30,7 @@ Speculative Execution 기능은 Spark `0.6.0`부터 도입된 유서 깊은 기�
 
 요 기능은 기본적으로 꺼져있고, 기능을 켜고 싶다면 `spark.speculation = true`로 설정하면 된다.
 
-Speculation에서 작업을 복제할지 말지 여부 판단은 `spark.speculation.interval`에 명시한 주기로 일어나며, 기본값은 `100ms`로 되어 있다. 이때, `spark.speculation.minTaskRuntime` 값(default: 100ms)보다 오래 실행되는 작업이 Speculation 대상이 된다. 또, `spark.speculation.quantile	` 값(default: 0.75)에 의해 해당 Task가 실행되는 Stage의 Task들이 일정 비율 이상 실행 완료 되어야 Speculation 작업이 트리거 되기 시작한다.
+Speculation에서 작업을 복제할지 말지 여부 판단은 `spark.speculation.interval`에 명시한 주기로 일어나며, 기본값은 `100ms`로 되어 있다. 이때, `spark.speculation.minTaskRuntime` 값(default: 100ms)보다 오래 실행되는 작업이 Speculation 대상이 된다. 또, `spark.speculation.quantile` 값(default: 0.75)에 의해 해당 Task가 실행되는 Stage의 Task들이 일정 비율 이상 실행 완료 되어야 Speculation 작업이 트리거 되기 시작한다.
 
 Speculation 검사가 실행되더라도, 작업이 충분히 느려야 Speculative Execution이 트리거 된다. 그 값은 `spark.speculation.multiplier`로 판단하며, 해당 Task가 실행되는 Stage에서 함께 실행되는 작업들의 평균 작업 완료 시간을 기준으로 몇 배(default: 1.5) 이상 걸리면 느린 작업이라고 판단하고, 작업을 복제한다.
 
