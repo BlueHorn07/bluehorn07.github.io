@@ -64,7 +64,9 @@ Databricks Certification 취득을 목표로 Apache Spark를 “제대로” 공
 - [💻 로컬 맥북에서 Spark 실행하기 - 2편: Client Mode](/2024/08/18/run-spark-on-local-2/)
 - [Jump into Spark Sessions](/2024/08/21/jump-into-spark-sessions/)
 - [Spark Adaptive Query Execution](/2024/08/29/spark-adpative-query-execution/)
+- [Spark Kryo Serializer](/2024/09/01/spark-kryo-serializer/)
 - [Spark Speculative Execution](/2024/09/01/spark-speculative-execution/)
+- [Spark Jobs, Stages and Tasks](/2024/09/02/spark-jobs-and-stages-and-tasks/)
 
 
 ## Delta Lakes
