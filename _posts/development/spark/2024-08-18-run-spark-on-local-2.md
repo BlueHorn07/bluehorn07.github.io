@@ -167,4 +167,4 @@ Spark Cluster Mode
 
 다음 포스트에선 `SparkSession`과 `SparkContext`를 살펴보고 둘을 비교 해보고자 한다.
 
-👉 [Jump into Spark Sessions](/2024/08/21/jump-into-spark-sessions/)
+👉 [Jump into Spark Sessions](/2024/08/21/jump-into-spark-sessions-and-contexts/)
