@@ -202,7 +202,7 @@ spec:
 
 <br/>
 
-일단 결론부터 말하면, `istio-system` ns에 떠있는 default IngressGateway Pod에서 특정 포트들만 허용하기 떄문이다!!
+일단 결론부터 말하면, `istio-system` ns에 떠있는 default IngressGateway Pod에서 특정 포트들만 허용하기 때문이다!!
 
 오직 아래 두 포트의 경우로 설정했을 때만 Gateway가 제대로 동작한다.
 

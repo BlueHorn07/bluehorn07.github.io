@@ -38,7 +38,7 @@ Delta의 Compaction 작업은 멱등성(idempotent)을 가진다. 따라서 같�
 > If there are only a few small files, then you don’t need to run `OPTIMIZE`. The small file overhead only starts to become a performance issue where there are lots of small files.
 > You also don’t need to run `OPTIMIZE` on data that’s already been compacted. If you have an incremental update job, make sure to specify predicates to only compact the newly added data.
 
-Delta의 공식 블로그에서는 "**the Small File Problem**"이 발생해서 쿼리 퍼포먼스에 문제가 생기는게 아니라면, 굳이 `OPTIMIZE`를 자주 돌릴 필욘 없다고 한다. 만약 데이터가 이미 충분히 압축된 상황이라면 `OPTIMIZE` 전후 큰 차이가 없기 떄문이다. 또, 데이터가 증분(incremental)하게 추가되는 경우에도 전체 범위에 대해 압축할 필요 없고, 아래와 같이 범위를 지정해서 압축하는 걸 권장한다.
+Delta의 공식 블로그에서는 "**the Small File Problem**"이 발생해서 쿼리 퍼포먼스에 문제가 생기는게 아니라면, 굳이 `OPTIMIZE`를 자주 돌릴 필욘 없다고 한다. 만약 데이터가 이미 충분히 압축된 상황이라면 `OPTIMIZE` 전후 큰 차이가 없기 때문이다. 또, 데이터가 증분(incremental)하게 추가되는 경우에도 전체 범위에 대해 압축할 필요 없고, 아래와 같이 범위를 지정해서 압축하는 걸 권장한다.
 
 ```sql
 OPTIMIZE <TABLE_NAME> WHERE `date` >= '2024-01-01'
@@ -235,7 +235,7 @@ Partition 끼리 완벽하게 분리하는 Hive-style이 어떤 때는 강점을
 ANALYZE TABLE <TABLE_NAME> COMPUTE DELTA STATISTICS
 ```
 
-Delta의 최신 버전이 가리키는 Parquet 파일들을 모두 읽어서 Stats 정보를 다시 계산한다. Stats 정보를 다시 계산하는 것이기 떄문에 `_delta_log/`에 커밋도 새로 생성되며, `COMPUTE STATS`라는 연산으로 기록된다. 단, 새로운 Parquet 파일이 생기거나 삭제되는 것은 아니다.
+Delta의 최신 버전이 가리키는 Parquet 파일들을 모두 읽어서 Stats 정보를 다시 계산한다. Stats 정보를 다시 계산하는 것이기 때문에 `_delta_log/`에 커밋도 새로 생성되며, `COMPUTE STATS`라는 연산으로 기록된다. 단, 새로운 Parquet 파일이 생기거나 삭제되는 것은 아니다.
 
 <br/>
 

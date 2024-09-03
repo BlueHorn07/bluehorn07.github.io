@@ -13,13 +13,13 @@ Databricks Certification 취득을 목표로 Apache Spark를 “제대로” 공
 
 직렬화(Serialization)이란 프로그래밍 언어(Java, Python 등등)의 객체를 바이너리 포맷인 byte 형태로 변환하는 작업을 말한다. 데이터를 바이너리로 변환하고, 이 데이터를 네트워크나 저장소로 보내는 처리한다. 데이터를 Json, Csv 또는 Python Pickle 파일로 저장하는 모든 과정이 직렬화에 해당한다.
 
-반댓말은 역질렬화(deserialization)이다. 바이너리로 된 데이터를 프로그래밍 언어의 객체로 변환하는 과정을 말한다. 파일로 저장된 데이터를 프로그래밍 언어에서 읽거나, Response로 받은 네트워크 데이터의 값을 프로그래밍 언어에서 읽는 과정을 말한다.
+반댓말은 역직렬화(deserialization)이다. 바이너리로 된 데이터를 프로그래밍 언어의 객체로 변환하는 과정을 말한다. 파일로 저장된 데이터를 프로그래밍 언어에서 읽거나, Response로 받은 네트워크 데이터의 값을 프로그래밍 언어에서 읽는 과정을 말한다.
 
 # Spark에서의 직렬화
 
 Spark은 많은 부분에서 데이터를 직렬화 하여 전달한다.
 
-1. 워커 노드 사이에 데이터를 셔플링 할 떄
+1. 워커 노드 사이에 데이터를 셔플링 할 때
 2. RDD 데이터를 디스크에 저장할 때
 
 Spark에선 2가지 방식의 직렬화를 제공하는데, 하나가 Java Serialization이고, 또 하나가 요 포스트에서 살펴보는 [Kryo Seriliazation](https://github.com/EsotericSoftware/kryo)이다.

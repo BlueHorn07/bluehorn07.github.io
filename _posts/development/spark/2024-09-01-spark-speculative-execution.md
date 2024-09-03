@@ -21,7 +21,7 @@ Speculative Execution 기능은 Spark `0.6.0`부터 도입된 유서 깊은 기�
 
 > If set to "true", performs speculative execution of tasks. This means if one or more tasks are running slowly in a stage, they will be re-launched.	
 
-이 기능은 Spark에서 실행하는 일부 Task가 비정상적으로 느리게 실행되고 있을 때, 그것을 인식하고 해당 Task를 다른 Worker 노드에서 추가로 실행해보는 기법이다. *speculative*라고 이름 붙은 이유는 Task가 정상적으로 완료되지 않을 가능성을 추정(speculate)해 대비한기 떄문이라고 한다.
+이 기능은 Spark에서 실행하는 일부 Task가 비정상적으로 느리게 실행되고 있을 때, 그것을 인식하고 해당 Task를 다른 Worker 노드에서 추가로 실행해보는 기법이다. *speculative*라고 이름 붙은 이유는 Task가 정상적으로 완료되지 않을 가능성을 추정(speculate)해 대비한기 때문이라고 한다.
 
 
 만약 다른 노드에 복제된 작업이 느리게 실행되던 기존 작업보다 먼저 끝나게 된다면, 그 작업의 결과를 사용하고 기존 작업은 취소(kill) 시킨다.
