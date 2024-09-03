@@ -22,7 +22,7 @@ Spark은 많은 부분에서 데이터를 직렬화 하여 전달한다.
 1. 워커 노드 사이에 데이터를 셔플링 할 때
 2. RDD 데이터를 디스크에 저장할 때
 
-Spark에선 2가지 방식의 직렬화를 제공하는데, 하나가 Java Serialization이고, 또 하나가 요 포스트에서 살펴보는 [Kryo Seriliazation](https://github.com/EsotericSoftware/kryo)이다.
+Spark에선 2가지 방식의 직렬화를 제공하는데, 하나가 Java Serialization이고, 또 하나가 요 포스트에서 살펴보는 [Kryo Serialization](https://github.com/EsotericSoftware/kryo)이다.
 
 # Kryo Serializer
 
