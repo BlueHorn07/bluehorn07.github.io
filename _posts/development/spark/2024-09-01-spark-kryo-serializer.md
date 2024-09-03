@@ -24,16 +24,13 @@ Spark은 많은 부분에서 데이터를 직렬화 하여 전달한다.
 
 Spark에선 2가지 방식의 직렬화를 제공하는데, 하나가 Java Serialization이고, 또 하나가 요 포스트에서 살펴보는 [Kryo Seriliazation](https://github.com/EsotericSoftware/kryo)이다.
 
+# Kryo Serializer
+
 Spark 문서에 따르면, Kryo가 Java 직렬화 보다 보통 10배 정도 빠르다고 한다. Spark에서 다루는 단순 데이터들을 Kryo를 사용해 직렬화 처리하는 것이 확실히 낫다는 말.
 
 다만, 요 Kryo 직렬화를 사용하려면 `spark.serializer`의 값을 `org.apache.spark.serializer.KryoSerializer`로 직접 설정해야 한다.
 
 직렬화는 거의 모든 Spark 작업에서 반드시 일어나기 때문에, Kryo 직렬화를 사용하는 건 Spark 튜닝의 가장 쉬운 방법이다. 심지어 Kryo를 쓰기만 하면 개선이 된다고 한다!!! (대박)
-
-![](https://www.databricks.com/wp-content/uploads/2020/05/blog-adaptive-query-execution-2.png){: .align-center style="width: 100%" }
-[Databricks: Adaptive Query Execution](https://www.databricks.com/blog/2020/05/29/adaptive-query-execution-speeding-up-spark-sql-at-runtime.html)
-{: .align-caption .text-center .small .gray }
-
 
 # References
 
