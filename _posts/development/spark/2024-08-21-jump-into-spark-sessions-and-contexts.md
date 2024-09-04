@@ -239,6 +239,21 @@ scala> val hiveContext = new HiveContext(sc)
 scala> hiveContext.sql("SELECT * FROM default.people")
 ```
 
+# Multiple SparkSession, but only one SparkContext
+
+하나의 Spark Cluster 안에 SparkSession은 동시에 여러 개 존재하거나 생성할 수 있지만, SparkContext은 오직 하나만 존재한다.
+
+즉, 여러 SparkSession이 하나의 같은 SparkContext를 서로 공유한다는 뜻이다. Spark에서 Multiple Spark Session을 지원하기 때문에, 각자의 Databricks 노트북(또는 Jupyter 노트북)에서 생성하는 `TEMP VIEW`의 이름이 같아도 서로 간섭 하지 않는다.
+
+Databricks에서 서로 다른 두 노트북에서 같은 클러스터를 붙여 확인해보면
+
+![](/images/development/spark/multiple-spark-session-but-one-spark-context.png){: .align-center style="max-height: 400px" }
+Spark Session은 서로 다른 ID를 같지만, Spark Context는 같은 ID를 갖는다.
+{: .align-caption .text-center .small .gray }
+
+위와 같이 `sc`의 ID는 동일한 걸 볼 수 있다. 이때 ID는 어떤 `YYYYMMDDHHmmss` 포맷인데, Databricks 클러스터가 시작된 UTC 시간이 ID 값이 되었다.
+
+
 # 맺음말
 
 이번 포스트를 작성하면서, `SparkSession`과 `SparkContext`, `SQLContext`, `HiveContext`까지, 모호하게 알던 개념을 이해하게 된 것 같다. Spark와 Hive도 둘이 왜 맨날 엮이는지 궁금했는데, 이것도 어렴풋이 알게 된 것 같다. "`RDD`와 `DataFrame`의 차이점은?" 같은 질문도 새롭게 생겨났다.
