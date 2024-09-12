@@ -34,7 +34,7 @@ $$
 
 이때, 미분 방정식에서 가장 높은 derivative의 차수를 DE의 "**order**"라고 한다.
 
-마지막으로 DE를 만족할 수 있는 가능한 모든 $y(t)$를 찾는 것을 우리는 "**solve DE**"라고 한다.
+마지막으로 DE를 만족할 수 있는 가능한 모든 $y(t)$를 찾는 것을 우리는 "**solve ODE**"라고 한다.
 
 <hr/>
 
@@ -56,19 +56,23 @@ $$
 
 <hr/>
 
-## Linear DE
+## Linear ODE
 
-앞에서 DE의 두 가지 타입을 살펴봤다. 그런데, 이 두 가지 타입은 지금 소개할 **Linear DE**의 특수한 경우다.
+앞에서 ODE의 두 가지 타입을 살펴봤다. 그런데, 이 두 가지 타입은 지금 소개할 **Linear ODE**의 특수한 경우다.
 
-<span class="statement-title">Definition.</span> Linear DE<br>
+<div class="definition" markdown="1">
 
-우리는 아래와 같은 형태의 DE를 \<**Linear DE**\>라고 부른다.
+<span class="statement-title">Definition.</span> Linear ODE<br>
+
+우리는 아래와 같은 형태의 DE를 \<**Linear ODE**\>라고 부른다.
 
 $$
 y' = a(t) y + b(t)
 $$
 
-이런 Linear DE의 예를 살펴보자.
+</div>
+
+이런 Linear ODE의 예를 살펴보자.
 
 $$
 y' = t^2 y + \sin t
@@ -76,9 +80,9 @@ $$
 
 위와 같은 DE는 Type I도, Type II도 아니다. 그래서 아래에 소개할 \<**Integrating Factor**\> 방법으로 식을 변형해 Type I or II로 DE를 reduction 시켜야 한다.
 
-<span class="statement-title">Method.</span> Integrating Factor<br>
+## Integrating Factor
 
-For given DE, $y' = ay + b$, let's introduce $\mu (t) \ne =$. Then
+For given ODE, $y' = ay + b$, let's introduce $\mu (t) \ne 0$. Then
 
 $$
 y' = ay + b \iff \mu y' = \mu (ay + b)
@@ -121,5 +125,3 @@ $$
 $$
 y'(t) = a(t) y(t) + b(t) \quad\iff\quad y(t) = e^{\int a(t)} \left( \int \left(e^{-\int a(t)}\right)  b(t) +C \right)
 $$
-
-
