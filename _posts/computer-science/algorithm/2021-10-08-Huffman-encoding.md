@@ -17,7 +17,7 @@ categories: ["Algorithm"]
 
 <div class="notice" markdown="1">
 
-Consider a string consisting of 130 million characters and the alphabet {A, B, C, D}. `CDABDBACCDDBBCCDCC...` How to write this long string in binray with most economic way?
+Consider a string consisting of 130 million characters and the alphabet {A, B, C, D}. `CDABDBACCDDBBCCDCC...` How to write this long string in binary with most economic way?
 
 <hr/>
 
@@ -27,7 +27,7 @@ $1 \le N \le 20$ length alphabetical string.
 
 \* Output
 
-Most economic binray encoding.
+Most economic binary encoding.
 
 <hr/>
 

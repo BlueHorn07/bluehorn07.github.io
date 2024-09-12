@@ -9,7 +9,7 @@ categories: ["Applied Statsitcs"]
 
 ## Classficiation by Linear Regression
 
-### Binray Classification
+### Binary Classification
 
 Assume that $\mathcal{Y}= \\{ 0, 1 \\}$, and consider the \<linear regression\> model
 
@@ -36,7 +36,7 @@ $$
 
 ### Multi-class Classification
 
-Assume that $\mathcal{Y}=\\{1, \dots, K\\}$, and let $\mathbf{Y}$ be the $n \times K$ binray matrix where the $(i, k)$ element is $1$ if $y_i = k$ and $0$ otherwise.
+Assume that $\mathcal{Y}=\\{1, \dots, K\\}$, and let $\mathbf{Y}$ be the $n \times K$ binary matrix where the $(i, k)$ element is $1$ if $y_i = k$ and $0$ otherwise.
 
 Let
 
@@ -58,7 +58,7 @@ $$
 
 where $(\hat{f}_1 (x), \dots, \hat{f}_K(x)) = x^T \hat{\mathbf{B}}$.
 
-이때, 각 $\hat{f}_i (x)$는 binray classification의 $\hat{f}(x)$와 비슷하게 아래의 조건부 확률 또는 poster-priority를 예측하는 estimator의 역할을 한다.
+이때, 각 $\hat{f}_i (x)$는 binary classification의 $\hat{f}(x)$와 비슷하게 아래의 조건부 확률 또는 poster-priority를 예측하는 estimator의 역할을 한다.
 
 $$
 \hat{f}_k (x) = \text{Pr}(Y=k \mid X=x)

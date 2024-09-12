@@ -120,7 +120,7 @@ $R = \left\\{ \right\\}$ (the "known region")
 
 <br/>
 
-만약 Binray Heap로 구현된 PQ를 사용한다면,
+만약 Binary Heap로 구현된 PQ를 사용한다면,
 
 - $\texttt{deletemin}$에 $O(\log \left\| V \right\|)$ 만큼의 비용이 들고,
 - $\texttt{insert}$와 $\texttt{decreasekey}$는 $O(\log \left\| V \right\|)$ 만큼의 비용이 든다.
@@ -133,7 +133,7 @@ $$
 
 <br/>
 
-PQ 또는 Heap을 Binray Heap이 아닌 다른 방식들, 예를 들면, \<$d$-ary heap\>, \<Fibonacci heap\> 등으로 구현해 시간을 더 줄일 수도 있다고 한다.
+PQ 또는 Heap을 Binary Heap이 아닌 다른 방식들, 예를 들면, \<$d$-ary heap\>, \<Fibonacci heap\> 등으로 구현해 시간을 더 줄일 수도 있다고 한다.
 
 \* 자세한 내용은 위키피디아의 해당 항목을 참고 👉 [link](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm#Running_time)
 
