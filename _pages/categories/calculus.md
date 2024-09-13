@@ -7,13 +7,16 @@ toc_sticky: true
 
 복수전공하고 있는 수학과의 학부 졸업시험을 위해 2024년 5월부터 2024년 7월까지 미적분학 1·2를 다시 공부 했습니다. 다시 공부를 하면서, 교재 연습 문제 중에 재밌었던 문제들과 헷갈리는 개념들을 정리해보았습니다.
 
-# 참고자료
+공부를 마치고 나서는 "[미적분학을 다시 공부하며 든 생각들](/2024/08/15/thoughts-I-had-while-studying-calculus-again/)"라는 제목으로 간단한 회고도 작성해보았습니다 🙂
+
+
+# 참고자료 및 서적
 
 - James Stewart - Calculus 8th ed. Early Transcendentals
 - George B. Thomas, Jr. - Calculus 13th ed. Early Transcendentals
-- [Gilbert Strang - Calculus](https://open.umn.edu/opentextbooks/textbooks/252)
-- [Joel Feldman - CLP Calculus](https://personal.math.ubc.ca/~CLP/)
-- [APEX Calculus](https://www.apexcalculus.com/)
+- [Gilbert Strang - Calculus](https://open.umn.edu/opentextbooks/textbooks/252) (Open TextBook)
+- [Joel Feldman - CLP Calculus](https://personal.math.ubc.ca/~CLP/) (Open TextBook)
+- [APEX Calculus](https://www.apexcalculus.com/) (Open TextBook)
 
 
 # Calculus 1
