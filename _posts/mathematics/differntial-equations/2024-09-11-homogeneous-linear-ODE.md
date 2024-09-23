@@ -58,7 +58,7 @@ $$
 
 ## Integrating Factor
 
-일단 Homogeneous Linear ODE도 "Total Differential"의 꼴로 볼 수 있다.
+Homogeneous Linear ODE도 "Total Differential"의 꼴로 볼 수 있으나
 
 $$
 \left[ p(x) y \right] \cdot dx + 1 \cdot dy = 0
@@ -106,7 +106,13 @@ $$
 F' y \cdot dx + F(x) dy = F'y + Fy' = (Fy)' = 0
 $$
 
-훨씬 풀기 쉬운 $Fy$에 대한 ODE가 되었다 ㅎㅎ 이제는 기계적으로 풀기만 하면 된다.
+즉, Int. Factor $F(x)$를 적용하고 나니, Total Differential에 대한 미분방정식이 아주 깔끔하게 정리 되었다 ㅎㅎ
+
+$$
+(Fy)' = 0
+$$
+
+이제는 기계적으로 정리만 하면 된다.
 
 $$
 \begin{aligned}
@@ -139,12 +145,12 @@ $$
 \left[ p(x)y - r(x) \right] \cdot dx + 1 \cdot dy = 0
 $$
 
-요기도 $N_x = 0$이기 때문에, Exactness Test를 통과하지 못한다. 따라서, **이 문제를 풀기 위해선 Integrating Factor를 도입해야 한다.**
+요기도 $N_x = 0$이기 때문에, Exactness Test를 통과하지 못한다. 따라서, **이 문제를 풀기 위해선 Integrating Factor를 적용해야 한다.**
 
 
 ## Integrating Factor
 
-Integrating Factor를 구해보면, non-homo.의 경우도 같은 Integrating Factor를 갖는 걸 발견할 수 있다.
+Integrating Factor를 구해보면, non-homo. ODE에서도 homo. ODE와 같은 Integrating Factor를 갖는 걸 발견할 수 있다.
 
 <div class="definition" markdown="1">
 
@@ -196,4 +202,45 @@ $$
 
 # 맺음말
 
-미분방정식의 첫번째 챕터인데, 벌써 이해가 안 되는 부분이 있어서 포스트로 정리 해보았다... 강의에서 왜 Linear ODE를 풀 때, Integrating Factor가 필요한지 설명하는 부분 없이 바로 "*Integrating Factor를 적으면 요래요^^*"라던가, "*Linear ODE의 솔루션은 요래요^^ $r(x)$이 없으면 homogeneous ODE의 솔루션이랑 같아요^^*" 요렇게 결과로 바로 넘어갔던 느낌이 있는 것 같다.
+미분방정식의 첫번째 챕터인데, 벌써 이해 안 되는 부분이 있어서 포스트로 정리 해보았다...;; 공부하면서 보고 있는 강의에서 Integrating Factor가 필요한지 설명하는 부분 없이 바로 
+
+> "Integrating Factor $F(x)$를 적으면 요래요^^"
+
+> "General Linear ODE의 솔루션은 요래요^^ $r(x)$이 없으면 homogeneous ODE의 솔루션이랑 같아요^^"
+
+요렇게 결과로 바로 넘어 갔던게 좀 막막하게 느껴졌던 것 같다.
+
+
+# 한번더 정리
+
+이 부분... 다시 읽으니 이해가 안 되어서 다시 한번더 요약 해본다.
+
+일단 homogeneous든 non-homogeneous든 Integrating Factor $F(x)$는 아래의 식이다.
+
+$$
+F(x) = \exp \left( - \int p(x) \, dx \right)
+$$
+
+homogeneous와 non-homogeneous의 차이는 Int. Factor를 도입한 후에 푸는 ODE의 폼과 관련 있다.
+
+<div class="theorem" markdown="1">
+
+[homogeneous linear ODE인 경우]
+
+$$
+(Fy)' = 0
+$$
+
+</div>
+
+<div class="theorem" markdown="1">
+
+[non-homogeneous linear ODE인 경우]
+
+$$
+(Fy)' = Fr
+$$
+
+</div>
+
+요기서부터는 그냥 적분하고 식을 정리만 하면 된다. 본인은 $y$에 대한 전체 폼을 익히는 것보다 요게 더 편한 듯!!
