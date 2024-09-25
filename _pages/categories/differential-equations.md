@@ -19,6 +19,7 @@ toc_sticky: true
 
 - [Exact Differential Equation](/2024/09/10/exact-differential-equation/)
 - [Homogeneous Linear ODE](/2024/09/11/homogeneous-linear-ODE/)
+- [Bernoulli Differential Equations](/2024/09/12/bernoulli-differential-equations/)
 - [Logistic Population Model](/2024/09/24/logistic-population-model/)
 
 
