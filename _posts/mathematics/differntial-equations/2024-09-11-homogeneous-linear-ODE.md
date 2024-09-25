@@ -218,7 +218,7 @@ $$
 일단 homogeneous든 non-homogeneous든 Integrating Factor $F(x)$는 아래의 식이다.
 
 $$
-F(x) = \exp \left( - \int p(x) \, dx \right)
+F(x) = \exp \left(\int p(x) \, dx \right)
 $$
 
 homogeneous와 non-homogeneous의 차이는 Int. Factor를 도입한 후에 푸는 ODE의 폼과 관련 있다.
