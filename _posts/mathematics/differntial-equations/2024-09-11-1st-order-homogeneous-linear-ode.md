@@ -1,5 +1,5 @@
 ---
-title: "Homogeneous Linear ODE"
+title: "1st order Homogeneous Linear ODE"
 toc: true
 author: bluehorn_math
 toc_sticky: true
@@ -139,7 +139,7 @@ $$
 
 </div>
 
-위의 ODE를 Total Differential로 표현하면 아래와 같은데, exact ODE가 될 수 없다. 
+위의 ODE를 Total Differential로 표현하면 아래와 같은데, exact ODE가 될 수 없다.
 
 $$
 \left[ p(x)y - r(x) \right] \cdot dx + 1 \cdot dy = 0
@@ -202,7 +202,7 @@ $$
 
 # 맺음말
 
-미분방정식의 첫번째 챕터인데, 벌써 이해 안 되는 부분이 있어서 포스트로 정리 해보았다...;; 공부하면서 보고 있는 강의에서 Integrating Factor가 필요한지 설명하는 부분 없이 바로 
+미분방정식의 첫번째 챕터인데, 벌써 이해 안 되는 부분이 있어서 포스트로 정리 해보았다...;; 공부하면서 보고 있는 강의에서 Integrating Factor가 필요한지 설명하는 부분 없이 바로
 
 > "Integrating Factor $F(x)$를 적으면 요래요^^"
 
