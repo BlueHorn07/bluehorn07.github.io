@@ -10,6 +10,7 @@ toc_sticky: true
 # Textbooks
 
 - Erwin Kreyszig, Advanced Engineering Mathematics, 10th ed.
+  - [이상준 경희대 교수님의 유튜브 강의](https://www.youtube.com/playlist?list=PLaqQvlCBe8vJSkha_-G0uCV2c1aXTs8i9)를 들으며 복습을 진행했습니다.
 - [William F. Trench, Elementary Differential Equations with Boundary Value Problems](https://digitalcommons.trinity.edu/mono/9/) (Open Textbook)
 - [Notes on Diffy Qs: Differential Equations for Engineers](https://open.umn.edu/opentextbooks/textbooks/notes-on-diffy-qs-differential-equations-for-engineers) (Open Textbook)
 
@@ -18,7 +19,7 @@ toc_sticky: true
 ## First-Order ODEs
 
 - [Exact Differential Equation](/2024/09/10/exact-differential-equation/)
-- [Homogeneous Linear ODE](/2024/09/11/homogeneous-linear-ODE/)
+- [1st order Homogeneous Linear ODE](/2024/09/11/1st-order-homogeneous-linear-ode/)
 - [Bernoulli Differential Equations](/2024/09/12/bernoulli-differential-equations/)
 - [Logistic Population Model](/2024/09/24/logistic-population-model/)
 
@@ -26,7 +27,8 @@ toc_sticky: true
 ## Second-Order Linear ODEs
 
 - [Vibration of water in a tube](/2024/09/23/vibrating-u-shape-tube/)
-
+- [2nd order Homogeneous Linear ODE](/2024/09/30/2nd-order-homogeneous-lienar-ode/)
+- [2nd order Non-Homogeneous Linear ODE](/2024/10/01/2nd-order-non-homogeneous-linear-ode/)
 
 ## Higher Order Linear ODEs
 
@@ -34,7 +36,7 @@ toc_sticky: true
 
 
 
-# Stale Versions
+# Old Posts
 
 - [Differential Equation - Basic](/2021/03/29/differential-equation-basic/)
 - [Fourier Series](/2021/06/08/fourier-series/)
