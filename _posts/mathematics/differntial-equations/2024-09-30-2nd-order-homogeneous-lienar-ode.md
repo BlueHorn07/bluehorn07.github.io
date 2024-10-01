@@ -12,7 +12,7 @@ excerpt: "2차 방정식을 풀어서 ODE의 해를 구하는 방법. Reduction 
 
 # 들어가며
 
-아래와 같이 생긴 2nd order homogenous linear ODE의 해를 구하는 일반적인 방법에 대해 다룬다.
+아래와 같이 생긴 2nd order homogeneous linear ODE의 해를 구하는 일반적인 방법에 대해 다룬다.
 
 <div class="definition" markdown="1">
 

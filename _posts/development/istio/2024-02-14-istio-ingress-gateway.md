@@ -378,7 +378,7 @@ Hello version: v2, instance: helloworld-v2-77f98b76b-zq5ch
 
 그 이유는 Egress GW 리소스는 K8s Service가 `LoadBalancer` 타입이 아니라 `ClusterIP`이기 때문이다!!
 
-생각해보면, 원래도 클러스터 밖으로 나가는 건 할 수 있는데, 그걸 Egress GW라는 이름으로 트래픽을 제어하려는 것 뿐이다. 그래서 Egress GW는 `CluterIP`를 사용해도 충분하다!!
+생각해보면, 원래도 클러스터 밖으로 나가는 건 할 수 있는데, 그걸 Egress GW라는 이름으로 트래픽을 제어하려는 것 뿐이다. 그래서 Egress GW는 `ClusterIP`를 사용해도 충분하다!!
 
 <hr/>
 

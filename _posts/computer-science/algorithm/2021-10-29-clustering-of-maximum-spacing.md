@@ -30,7 +30,7 @@ $$
 \text{cluster dist}(C_1, C_2) = \min_{p_i, \; p_j} \, \text{dist}(p_i, p_j) \quad \text{where} \; p_i \in C_1, \; p_j \in C_2
 $$
 
-이제 \<spacing\>을 정의해보자. \<spacing\>은 클러스터 사이의 cluter distance 중 가장 작은 distance를 말한다.
+이제 \<spacing\>을 정의해보자. \<spacing\>은 클러스터 사이의 cluster distance 중 가장 작은 distance를 말한다.
 
 $$
 \text{spacing} = \min_{C_a, \, C_b} \; \text{cluster dist} (C_a, C_b)
