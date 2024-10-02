@@ -4,7 +4,7 @@ toc: true
 author: bluehorn_math
 toc_sticky: true
 categories: ["Differential Equations"]
-excerpt: "2차 방정식을 풀어서 ODE의 해를 구하는 방법. Reduction of Method로 2nd order ODE를 1st order ODE로 변환하는 방법에 대해."
+excerpt: "2차 방정식을 풀어서 2nd order ODE의 해를 구하는 방법. Reduction of Method로 2nd order ODE를 1st order ODE로 변환하는 방법에 대해."
 ---
 
 복수전공하고 있는 수학과의 졸업시험을 위해 학부 수학 과목들을 다시 공부하고 있습니다만... 미분방정식은 졸업시험 대상 과목이 아니라는 걸 나중에 알게 되었습니다... OTL... 그래도 이왕 시작한 거 다시 복습 좀 해봅시다! 🏃 [미분방정식 포스트 전체 보기](/categories/differential-equations)
