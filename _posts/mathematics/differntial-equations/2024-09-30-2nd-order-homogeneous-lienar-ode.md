@@ -101,7 +101,7 @@ $$
 
 </div>
 
-첫번째 basis $y_1$에 $x$를 곱하면 두번째 basis $y_2 = x \cdot y_1$를 구하는 과정이 뭔가 "뿅!"하고 튀어나온 것 같지만 그렇지 않다. "Reduction of Order"라는 방법을 적용해서 구한 것이고, 구체적인 방법은 $y'' + p(x) y' + y = 0$ ODE를 푸는 방법을 다룰 때 자세히 볼 것이다.
+첫번째 basis $y_1$에 $x$를 곱하면 두번째 basis $y_2 = x \cdot y_1$를 구하는 과정이 뭔가 "뿅!"하고 튀어나온 것 같지만 그렇지 않다. "Reduction of Order"라는 방법을 적용해서 구한 것이고, 구체적인 방법은 $y'' + p(x) y' + q(x) y = 0$ ODE를 푸는 방법을 다룰 때 자세히 볼 것이다.
 
 ### 두 허근
 
@@ -115,12 +115,12 @@ $$
 
 $$
 \begin{aligned}
-y 
+y
 &= e^{\lambda x}
 = e^{\left( - \frac{a}{2} \pm \frac{\sqrt{a^2 - 4b}}{2} i \right) x} \\
 &= e^{- ax / 2} \cdot e^{\pm \frac{\sqrt{a^2 - 4b}}{2} i \cdot x} \\
 &= e^{- ax / 2} \cdot \left( \cos \omega x \pm i \sin \omega x \right)
-  
+
 \end{aligned}
 $$
 
@@ -159,7 +159,7 @@ $$
 
 띠용?? 아니 첫번째고 나발이고 $y_1$을 어케 찾으란 말임?? 생각할 수 있는데, 그냥 센스나 직관을 발휘해서 찾으라고 한다 ㅋㅋ 그래도 요 "Reduction or Order" 방법에 따르면 $y_1$을 찾기만 하면 $y_2$를 무조건 찾을 수 있다.
 
-예를 들어서, 아까 위에서 봤던 상수 계수의 경우에서 중근을 가졌던 경우를 생각해보자. 이때는 해가 
+예를 들어서, 아까 위에서 봤던 상수 계수의 ODE에서 중근이 나왔던 경우를 생각해보자. 이때는 해가
 
 - $y_1 = e^{\lambda x}$
 - $y_2 = x e^{\lambda x}$
@@ -175,7 +175,7 @@ $$
 y_2 = u(x) \cdot y_1(x)
 $$
 
-그리고 본래의 2nd order ODE에 $y_2$를 대입한다. 이를 위해 $y_2'$, $y_2''$를 구한다.
+그리고 본래의 2nd order ODE에 $y_2$를 대입한다. 이를 위해 $y_2'$, $y_2\prime\prime$를 구한다.
 
 $$
 \begin{aligned}
@@ -200,9 +200,9 @@ $$
 
 $u$에 대해 정리했더니 $(y_1'' + p(x) y_1' + q(x) y_1)$ 부분이 $0$으로 소개 되면서, $u''$, $u'$에 대한 텀만 남게 되었다!! 그리고 ODE에 대한 식도 $u'$에 대한 **1st order ODE로 바뀌었다**!!
 
-이렇게 $y_2 = u y_1$로 대입하면 ODE의 차수가 2에서 1로 떨어지기 때문에 "Reduction of Order"라는 이름이 붙었다.
+이렇게 $y_2 = u y_1$로 대입하면 ODE의 차수가 2에서 1로 떨어지기 때문에 "Reduction of Order"라는 이름이 붙은 것이다.
 
-그 다음부터는 $u'$에 대한 1st order ODE를 풀고(Separable ODE라서 별로 안 어려울 것이다), $u = \int u'$로 적분을 차례차례 하면 된다.
+그 다음부터는 $u'$에 대한 1st order ODE를 풀고(Separable ODE라서 별로 안 어려울 것이다), $u = \int u'$로 적분을 차례차례 하면 된다. EzEz
 
 
 # 맺음말
