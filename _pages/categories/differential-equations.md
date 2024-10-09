@@ -32,7 +32,12 @@ toc_sticky: true
 
 ## Higher Order Linear ODEs
 
+(Nothing to post)
+
 ## Systems of ODEs. Phase Plane.
+
+- [Wronskian](/2024/10/09/wronskian/)
+
 
 
 
