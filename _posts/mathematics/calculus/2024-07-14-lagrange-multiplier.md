@@ -38,19 +38,19 @@ $$
 
 갑자기 Gradient Vector가 나왔다!! 위의 식은 최대/최소 위치 $(a, b)$에서 함수 $f(x, y)$와 $g(x, y)$의 Gradient Vector가 서로 같은(parallel) 방향을 바라본다는 것을 말한다. 평행을 표현하기 위해 $\lambda \in \mathbb{R}$로 표현한 것.
 
-위와 같은 Gradient Vector가 평행한 상황이 나오는 이유는 제약조건 $g(x, y) = k$ 곡선과 함수 $f(x, y)$의 Level Curve $f(a, b) = z_0$가 서로 접하기 때문이다.
+위와 같은 Gradient Vector가 평행한 상황이 나오는 이유는 제약조건 $g(x, y) = k$ 곡선과 함수 $f(x, y)$의 Level Curve $f(x, y) = z_0$가 서로 접하기 때문이다.
 
 처음에는 Constraint Curve와 Level Curve가 접한다는 조건이 이해가 안 되었다. "꼭 접해야만 최대/최소가 있는건가?"라는 생각이 들었다. 그래서 찾아보니 [stackexchange](https://math.stackexchange.com/questions/1765722/in-lagrange-multiplier-why-level-curves-of-f-and-g-are-tangent-to-each-othe) 사이트에서 요런 답변을 찾고 드디어 이해가 좀 되었다.
 
 > For $f(x, y) = d$, you increment value $d$ until you touch $𝑔(x, y)=c$. In the moment of contact you take a minimum. If you go on, just before $f(x, y) = d$ leaves the contact, you take the maximum.
 
-즉, $f(x, y) = d_{min}$하는 점에서부터 점점 함숫값을 키우며 Level Curve를 확장하다가 Level Curve와 접하는 그 순간이 minimum 순간이다. 여기서 Level Curve의 값을 더 늘리면 제약조건은 만족하지만 접하던 순간보다는 함숫값이 커져버린다.
+즉, $f(x, y) = d_{min}$하는 점에서부터 점점 함숫값을 키우며 Level Curve를 확장하다가 $g(x, y) = k$와 접하는 그 순간이 minimum 순간이다. 여기서 Level Curve의 값을 더 늘리면 제약조건은 만족하지만 접하던 순간보다는 함숫값이 커져버린다.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Lagrange_multiplier.png/300px-Lagrange_multiplier.png){: style="max-height: 300px" .align-center }
 picture from [wikimedia](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Lagrange_multiplier.png/300px-Lagrange_multiplier.png)
 {: .align-caption .text-center .small .gray }
 
-그림과 함께 이해해보자.
+그림을 곁들여 함께 이해해보자.
 
 <br/>
 
@@ -71,11 +71,11 @@ $$
 위의 연립방정식을 풀면 제약조건 위에서의 최대/최소값과 그 위치를 알 수 있다. 위의 연립식에서 구해야 할 미지수는 최대최소값의 위치 $(x, y)$ 뿐만 아니라 multiplier인 $\lambda$의 값도 미지수로서 그 값을 찾아야 한다. 이때 $\lambda$는 그 값을 찾아도 별 의미는 없지만 방정식을 풀다보면 그 값을 반드시 찾아야 한다는 걸 깨닫게 된다. (예제에서 느끼게 될 것.)
 
 
-# Constrained Maxima/Minima
+## Constrained Maxima/Minima
 
 <div class="problem" markdown="1">
 
-Find the point $p(x, y, z)$ on the plane $2x + y - z = 5$ that is closest to the origin.
+Find the point $(x, y, z)$ on the plane $2x + y - z = 5$ that is closest to the origin.
 
 </div>
 
@@ -91,7 +91,7 @@ $$
 
 이것을 $g(x, y, z) = 2x + y - z = 5$에 대입하면, $2 \lambda + \lambda/2 + \lambda/2 = 5$가 되고, $\lambda = 5/3$이 된다.
 
-이를 바탕으로 다시 $(x, y, z)$에 대입하면, closest point $p(x, y, z) = (5/3, 5/6, -5/6)$가 된다. $\blacksquare$
+이를 바탕으로 다시 $(x, y, z)$에 대입하면, closest point $(x, y, z) = (5/3, 5/6, -5/6)$가 된다. $\blacksquare$
 
 # Lagrange Method with Two Constraints
 
@@ -105,7 +105,7 @@ $$
 g_1(x, y, z) = 0 \text{  and  } g_2(x, y, z) = 0
 $$
 
-단, 이때 두 제약조건은 둘다 미분가능해야 하며, Gradient Vector가 서로 평행하지 않아야 한다.
+이때 두 제약조건은 둘다 미분가능 하며, Gradient Vector가 서로 평행하지 않아야 한다.
 
 두 제약조건 $g_1 = 0$와 $g_2 = 0$가 서로 교차하여 생긴 곡선 $C$를 생각해보자. 우리는 이 곡선 $C$ 위에서 함수 $f(x, y, z)$의 극대/극소 값을 찾아야 한다. 그리고, 곡선 $C$는 함수 $f(x, y, z)$와 접하는 지점에서 극대/극소 값을 갖는다. 이것은 제약조건이 하나 였을 때와 비슷한 패턴이다.
 
