@@ -37,8 +37,9 @@ toc_sticky: true
 ## Systems of ODEs. Phase Plane.
 
 - [Wronskian](/2024/10/09/wronskian/)
-
-
+- [Zero Eigen Value on 1st Order Linear ODE](/2024/10/15/zero-eigen-value-case/)
+- [Jordan Block Case on 1st Order Linear ODE](/2024/10/16/jordan-block-case/)
+  - [Generalized Eigen Values](/2024/10/26/generalized-eigen-values/)의 내용을 참고할 것
 
 
 # Old Posts
