@@ -4,7 +4,7 @@ toc: true
 author: bluehorn_math
 toc_sticky: true
 categories: ["Differential Equations"]
-excerpt: "2nd order ODE를 Systems of ODE로 표현 했을 때, 특성 방정식이 중근을 가진다면 그 결과를 어떻게 해석해야 할까?"
+excerpt: "2nd order ODE를 Systems of ODE로 표현 했을 때, 중근을 갖는 경우라면 그 결과를 어떻게 해석해야 할까?"
 ---
 
 복수전공하고 있는 수학과의 졸업시험을 위해 학부 수학 과목들을 다시 공부하고 있습니다만... 미분방정식은 졸업시험 대상 과목이 아니라는 걸 나중에 알게 되었습니다... OTL... 그래도 이왕 시작한 거 다시 복습 좀 해봅시다! 🏃 [미분방정식 포스트 전체 보기](/categories/differential-equations)
