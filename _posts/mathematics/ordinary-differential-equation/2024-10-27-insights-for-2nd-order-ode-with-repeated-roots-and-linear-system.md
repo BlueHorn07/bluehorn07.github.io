@@ -1,10 +1,10 @@
 ---
-title: "중근이 존재하는 2차 미분방정식과 연립 미분방정식에 대한 고찰"
+title: "Insights for Solving 2nd Order ODE System with Repeated Roots"
 toc: true
 author: bluehorn_math
 toc_sticky: true
 categories: ["Differential Equations"]
-excerpt: ""
+excerpt: "2nd order ODE를 Systems of ODE로 표현 했을 때, 특성 방정식이 중근을 가진다면 그 결과를 어떻게 해석해야 할까?"
 ---
 
 복수전공하고 있는 수학과의 졸업시험을 위해 학부 수학 과목들을 다시 공부하고 있습니다만... 미분방정식은 졸업시험 대상 과목이 아니라는 걸 나중에 알게 되었습니다... OTL... 그래도 이왕 시작한 거 다시 복습 좀 해봅시다! 🏃 [미분방정식 포스트 전체 보기](/categories/differential-equations)
@@ -14,13 +14,13 @@ excerpt: ""
 
 미분방정식을 살펴볼 때는 늘 나이스한 상황만 있지 않습니다. 예를 들면, 2차 동차 미분방정식을 풀 때, **중근(repeated root)**이 나오는 경우가 그렇고, 행렬 $A$의 고유값이 **중복도**를 갖는 경우가 있습니다. 그러나, 시험이나 문제는 늘 저런 상황에서 나오는 법... ㅠㅠ
 
-[Generalized Eigen Values](/2024/10/26/generalized-eigen-values/) 포스트에서 고유값이 중복도를 갖는 경우를 살펴보았습니다. 그리고, 이를 활용해 행렬 $A$가 Jordan block인 $x' = Jx$ 케이스도 포스트 [##](/2024/10/16/jordan-block-case/)에서 살펴보았습니다.
+[Generalized Eigen Values](/2024/10/26/generalized-eigen-values/) 포스트에서 고유값이 중복도를 갖는 경우를 살펴보았습니다. 그리고, 이를 활용해 행렬 $A$가 Jordan block인 $\mathbf{x}' = J \mathbf{x}$ 케이스도 [포스트](/2024/10/16/jordan-block-case/)로 정리해 살펴보았습니다.
 
 이번에는 이것을 2nd order homogeneous linear ODE 경우에서 살펴보고자 합니다!!
 
 ## 2nd order homogeneous linear ODE
 
-이에 대한 경우는 2학년 수업인 미방 수업에서 경험 했습니다. [#](/2024/09/30/2nd-order-homogeneous-lienar-ode/)
+요 부분은 2학년 수업인 미방 수업에서 경험 했습니다. [#](/2024/09/30/2nd-order-homogeneous-lienar-ode/)
 
 <div class="definition" markdown="1">
 
@@ -44,14 +44,14 @@ $$
 x(t) = c_1 e^{t} + c_2 t e^{t}
 $$
 
-그런데, 이런 형태! 4학년 과목인 상미방의 $x' = Jx$에서도 볼 수 있었습니다...!
+그런데, 이런 $te^{t}$가 있는 형태! 4학년 과목인 상미방의 $\mathbf{x}' = J \mathbf{x}$에서도 볼 수 있었습니다...!
 
 ## Jordan Form ODE
 
-이에 대한 경우는 다른 포스트 [#](/2024/10/16/jordan-block-case/)에서 충분히 다뤘으니 결론만 보겠습니다.
+이에 대한 경우는 [별도 포스트](/2024/10/16/jordan-block-case/)에서 충분히 다뤘으니 결론만 보겠습니다.
 
 $$
-x' = Jx, \qquad J = \left( 
+\mathbf{x}' = J\mathbf{x}, \qquad J = \left(
 \begin{matrix}
 1 & 1 \\
 0 & 1
@@ -62,7 +62,7 @@ $$
 위와 같은 ODE 행렬이 있을 때, 솔루션은
 
 $$
-x(t) = c_1 \left(
+\mathbf{x}(t) = c_1 \left(
 \begin{matrix}
 1 \\
 0
@@ -71,7 +71,7 @@ e^{t}
 +
 c_2 \left(
 \begin{matrix}
-t \\ 
+t \\
 1
 \end{matrix}
 \right)
@@ -85,7 +85,7 @@ $$
 2학년 미방의 끝부분에는 기존의 n차 미분 방정식을 n 차원 행렬 $A \in \mathbb{R}^{n\times n}$으로 표현하여 아래와 같은 행렬 미방으로 표현하는 방법에 대해 배웁니다.
 
 $$
-x' = Ax
+\mathbf{x}' = A\mathbf{x}
 $$
 
 이것을 그대로 2nd order homogeneous linear ODE에 적용해보겠습니다. 적용할 2nd order linear ODE는 아래와 같습니다.
@@ -124,7 +124,7 @@ $$
 이제 솔루션을 적어보면...
 
 $$
-x(t) = \left(
+\mathbf{x}(t) = \left(
 \begin{matrix}
 x_1 \\
 x_2
@@ -148,15 +148,15 @@ $$
 
 ## 왜 제대로된 솔루션을 안 주는 걸까?
 
-위의 솔루션에 따르면, 해는 $x_1(t) = x(t) = c_1 e^t$입니다. 그러나, 우리는 2nd order linear ODE가 중근을 가질 때의 해에는 $te^{t}$ 텀이 들어간다는 것을 알고 있습니다.
+위의 솔루션에 따르면, 해는 $x(t) = x_1(t) = c_1 e^t$입니다. 그러나, 우리는 2nd order linear ODE가 중근을 가질 때의 해에는 $te^{t}$ 텀이 들어간다는 것을 알고 있습니다.
 
 반면에, $te^{t}$ 텀은 $x_2(t) = x'(t)$에 들어가있습니다. 이게 무슨일 일까요??
 
 ## 사실 제대로된 게 맞습니다.
 
-사실! 제대로 된 게 맞습니다...!! 😮
+제대로 된 게 맞습니다...!! 😮
 
-일단 $x(t) = c_1 e^{t}$라는 결과, 이것도 자체로도 이미 미분방정식의 솔루션입니다. 다만, General Solution이 아니고, $te^{t}$ 텀이 부족한 것이죠.
+일단 $x(t) = c_1 e^{t}$라는 결과, 이것 자체도 이미 미분방정식의 솔루션입니다. 미분방정식에 대입 해보면 식을 만족하죠. 다만, General Solution이 아니고, $te^{t}$ 텀이 부족합니다.
 
 $x'(t) = (c_1 + c_2) e^{t} + c_2 t e^{t}$라는 것도 틀린 말이 아닙니다!! 실제로 우리가 알고 있는 2nd order ODE의 솔루션 $x(t)$를 미분하면...
 
@@ -173,7 +173,7 @@ $$
 그래서 결론은 우리는 미분 시스템의 $x_2(t) = x'(t)$에 대한 것을 적분하여, $x(t)$의 솔루션을 제대로 얻을 수 있습니다.
 
 $$
-x(t) = \int x'(t) dx = \int \left( (c_1 + c_2) e^{t} + c_2 t e^{t} \right) dx
+x(t) = \int x'(t) \, dx = \int \left( (c_1 + c_2) e^{t} + c_2 t e^{t} \right) \, dx
 = c_1 e^{t} + c_2 t e^{t}
 $$
 
