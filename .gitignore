@@ -34,3 +34,7 @@ _site
 metastore_db/
 spark-warehouse/
 *.log
+
+# VScode extensions
+.favorites.json
+settings.json
