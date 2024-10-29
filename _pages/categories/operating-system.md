@@ -10,5 +10,6 @@ toc_sticky: true
 # 운영체제
 
 - [Unix and Linux](/2024/10/19/unix-and-linux/)
-- [Makefile](/2024/10/19/makefile/)
+- [Introduction to Makefile](/2024/10/19/intro-to-makefile/)
 - [Hello, pthread!](/2024/10/20/hello-pthread/)
+- [Stack Frame](/2024/10/23/stack-frame/)
