@@ -169,6 +169,7 @@
 
 .grid__item {
   margin-bottom: 2em;
+  margin: 4px;
 
   @include breakpoint($medium) {
     float: left;
