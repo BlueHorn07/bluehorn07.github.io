@@ -24,6 +24,9 @@ permalink: /topic/mathematics
 
 학부 수준의 미분방정식의 풀이와 라플라스/푸리에 변환과 같은 적분 변환들에 대해 배웠습니다. 수업을 듣던 때엔 공식만 달달 외워서 시험을 봤던 기억이... 🙄
 
+## [Ordinary Differential Equations](/categories/ordinary-differential-equations)
+
+복수전공하고 있는 수학과의 학부 졸업시험에 미분방정식이 있는 줄 알고, 시험 준비도 할 겸 복학할 때 "상미분방정식" 과목을 신청했습니다. 나중에 알고보니 미분방정식은 졸업시험 과목이 아니었습니다... OTL... 그래도 이왕 시작한 것 포기란 없습니다!! 💪 으랏차!!
 
 <hr/>
 

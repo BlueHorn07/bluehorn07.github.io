@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 ---
 
-복수전공하고 있는 수학과의 학부 졸업시험을 위해 2024년 9월부터 미분방정식을 다시 공부하고 있습니다. (현재진행형... 🏃‍♂️‍➡️) 그런데 시험 준비도 할 겸, 복학할 때 "상미분방정식" 과목도 신청했는데, 나중에 알고보니 미분방정식은 졸업시험 과목이 아니었습니다... OTL... 그래도 이왕 시작한 것 포기란 없습니다!! 💪 언젠가 다시 복습할 과목이었으니!! 한번 부딪혀 보죠!!
+복수전공하고 있는 수학과의 학부 졸업시험을 위해 2024년 9월부터 미분방정식을 다시 공부하고 있습니다. (현재진행형... 🏃‍♂️‍➡️) 그런데 시험 준비도 할 겸, 복학할 때 "상미분방정식" 과목도 신청했는데, 나중에 알고보니 미분방정식은 졸업시험 과목이 아니었습니다... OTL... 그래도 이왕 시작한 것 포기란 없습니다!! 💪 언젠가 다시 복습할 과목이었으니!! 한번 부딪혀 보죠!! [상미분방정식(MATH412)](/categories/ordinary-differential-equations)에 대한 글 목록은 별도 포스트로 분리하였습니다.
 
 # Textbooks
 
@@ -29,6 +29,7 @@ toc_sticky: true
 - [Vibration of water in a tube](/2024/09/23/vibrating-u-shape-tube/)
 - [2nd order Homogeneous Linear ODE](/2024/09/30/2nd-order-homogeneous-lienar-ode/)
 - [2nd order Non-Homogeneous Linear ODE](/2024/10/01/2nd-order-non-homogeneous-linear-ode/)
+- [Wronskian](/2024/10/09/wronskian/)
 
 ## Higher Order Linear ODEs
 
@@ -36,11 +37,7 @@ toc_sticky: true
 
 ## Systems of ODEs. Phase Plane.
 
-- [Wronskian](/2024/10/09/wronskian/)
-- [Zero Eigen Value on 1st Order Linear ODE](/2024/10/15/zero-eigen-value-case/)
-- [Jordan Block Case on 1st Order Linear ODE](/2024/10/16/jordan-block-case/)
-  - [Generalized Eigen Values](/2024/10/26/generalized-eigen-values/)의 내용을 참고할 것
-- [Insights for Solving 2nd Order ODE System with Repeated Roots](/2024/10/27/insights-for-2nd-order-ode-with-repeated-roots-and-linear-system/)
+4학년 미방 과목인 [상미분방정식(MATH412)](/categories/ordinary-differential-equations)에서 요기 내용을 상세히 다룹니다. 상미방에 대한 글은 별도 포스트로 분리했으니 해당 링크에서 확인하실 수 있습니다 🙂
 
 
 # Old Posts
