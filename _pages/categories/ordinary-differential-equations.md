@@ -10,7 +10,7 @@ toc_sticky: true
 # Textbooks
 
 - Morris, Differential Equations, Dynamical Systems & An Introduction to Chaos 3rd Edition
-  - 학교 됴서관에서 e-book으로 다운 받을 수 있길래 그걸로 공부 했습니다 🙂
+  - 학교 도서관에서 e-book으로 다운 받을 수 있길래 그걸로 공부 했습니다 🙂
 - Gerald Teschl, Ordinary Differential Equations and Dynamical Systems
 - Terence Tao, Chapter 1 of "Nonlinear dispersive equations: local and global analysis"
 
