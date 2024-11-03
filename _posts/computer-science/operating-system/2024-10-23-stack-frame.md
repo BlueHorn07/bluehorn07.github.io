@@ -122,15 +122,13 @@ Base Pointer는 재밌는 특성을 가지고 있는데, BP 기준으로 위에�
 mov sp, bp    ; BP 값을 SP로 복사해 스택을 정리
 ```
 
-<br/>
-
 이제 BP 값을 caller의 BP 값으로 복원한다. 이것도 아래의 명령어로 수행할 수 있다.
 
 ```
 pop bp
 ```
 
-위의 과정을 통해 BP가 가리키던 곳에 저장되어 있던 caller BP 값이 BP 레지스터에 저장된다. `pop`이 호출되었기 때문에, SP는 자동으로 SP += 4 처리 된다 ㅎㅎ
+위의 과정을 통해 BP가 가리키던 곳에 저장되어 있던 caller BP 값이 BP 레지스터에 저장된다. `pop`이 호출되었기 때문에, SP는 자동으로 SP += 4 처리 된다 ㅎㅎ 어셈블리에서는 요 `mov`와 `pop` 과정을 합쳐서 `leave`라는 명령어로 제공하기도 한다.
 
 <br/>
 
@@ -195,16 +193,29 @@ sub sp, N
 leave
 ret
 
-; Caller Termination
+; Caller Termination (remove args)
 pop
 ```
 
 `ret`을 실행해서 Caller는 함수 호출에서 돌아온 후에는, `pop`으로 스택에 넣어뒀던 함수 args를 빼주는 과정이 일어난다!
 
-## 함수 리턴값을 처리하는 법에 대해
+## 함수 리턴값은 eax 레지스터에 저장된다.
 
-TDB...
+만약 함수에 리턴값이 존재한다면, 그 값은 `eax` 레지스터에 저장된다.
 
+```
+; Callee Termination
+mov eax, 42
+leave
+ret
+
+; Caller Termination (remove args)
+pop
+```
+
+함수가 `ret`으로 종료되기 전에 `mov eax, xxx`를 통해 `eax` 레지스터에 담긴다. 그러면 콜러 함수는 `eax`에 저장된 리턴 값을 사용하거나, 콜러 함수의 스택에 어떤 변수로 저장한다.
+
+리턴 값은 다른 레지스터가 아니라 항상 `eax`에 저장되는데, 이것은 x86 아키텍처에서 "Calling Convention"이기 때문이다. 해당 규약에서는 함수 리턴 값은 `eax` 레지스터에 담도록 정의하고 있다. 사실 `eax` 레지스터는 "누산기(Accumulator) 레지스터"라는 이름으로, 산술 연산의 결과를 담기 위해 디자인된 레지스터이지만, 요 함수 리턴 값을 저장하는 용도로도 사용되는 것이다.
 
 # Overall ASM Code
 
