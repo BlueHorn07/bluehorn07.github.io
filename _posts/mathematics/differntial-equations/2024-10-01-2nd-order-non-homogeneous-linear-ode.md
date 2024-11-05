@@ -53,9 +53,12 @@ $$
 
 </div>
 
-위의 식에서 $y_h$는 원래의 non-homo ODE에 대응하는 $r(x) = 0$인 homogeneous linear ODE에서의 general solution이고, $y_p$는 non-homo. ODE를 만족하는 어떤 구체적인 함수이다.
+위의 식에서 $y_h$와 $y_p$의 의미는 아래와 같다.
 
-이게 가능한 이유는 $L(y) = y'' + p(x) y' + q(x) y$라고 둘 때, 아래의 식을 만족하기 때문이다.
+- $y_h$: non-homo ODE 식에서 $r(x) = 0$인 homogeneous linear ODE에서의 general solution
+- $y_p$는 non-homo. ODE 식을 만족하는 어떤 구체적인 함수
+
+이다. 이게 가능한 이유는 "$L(y) = y'' + p(x) y' + q(x) y$"라고 둘 때, 아래의 식을 만족하기 때문이다.
 
 $$
 L(y_h) + L(y_p) = L(y_h + y_p) = r + 0 = r
@@ -68,7 +71,7 @@ $$
 
 ## Method of undetermined coefficients
 
-"미정계수법"라고 불리는 방법이다. 비동차 ODE의 우항인 $r(x)$이 아래의 함수이거나 그들의 linear combination 일 때 요 방법을 쓸 수 있다.
+"미정계수법"라고 불리는 방법이다. non-homo ODE의 우항인 $r(x)$가 아래의 함수이거나 그들의 linear combination 일 때 요 방법을 쓸 수 있다.
 
 - exponential: $e^x$
 - power of $x$ = polynomial: $x^n$
@@ -76,7 +79,7 @@ $$
 
 위의 함수들의 특징은 미분이나 적분이 그 카테고리 안에서 노는 아주 나이스한 함수라는 것이다.
 
-요 "미적계수법"은 예제 몇문제 풀어보면 금방 감을 잡을 수 있다.
+요 "미정계수법"은 예제 몇문제 풀어보면 금방 감을 잡을 수 있다.
 
 ### Example 1
 
@@ -134,7 +137,7 @@ $$
 
 그런데, 미정계수법에 따라 $y_p$를 잡으면, $y_p = C e^{3x}$가 되는데, 요게 $y_h$와 linearly dependent 하기 때문에 particular solution으로 사용할 수 없다.
 
-이렇게 미정계수법의 규칙에 따라 설정한 $y_p$이 $y_h$의 일차 종속이 되는 경우, $y_p$이 $x$ 또는 $x^2$를 곱하여 일차 종속이 되지 않도록 만든 후, 미정계수법을 적용한다. 이번에는 $x^2$를 곱해서 $y_p$를 설정하고 ODE를 풀어보자.
+지금처럼 미정계수법의 규칙에 따라 설정한 $y_p$이 $y_h$와 일차 종속이 되는 경우, $y_p$이 $x$ 또는 $x^2$를 곱하여 일차 종속이 되지 않도록 만든 후, 미정계수법을 적용한다. 이번에는 $x^2$를 곱해서 $y_p$를 설정하고 ODE를 풀어보자.
 
 $$
 y_p = C x^2 e^{3x}
@@ -163,11 +166,16 @@ $$
 
 매개변수 변환법에서는 particular solution $y_p$를 아래의 공식으로 구한다.
 
+<div class="definition" markdown="1">
+
 $$
 y_p = - y_1 \int \frac{y_2 r}{W} dx + y_2 \int \frac{y_1 r}{W} dx
 $$
 
-$y_1$, $y_2$는 대응하는 homogeneous ODE의 basis들이고, $W$는 Wronskian of $y_1$, $y_2$이다: $W = y_1 y_2' - y_2 y_1'$.
+- $y_1$, $y_2$는 대응하는 homogeneous ODE의 basis
+- $W$는 Wronskian of $y_1$, $y_2$: $W = y_1 y_2' - y_2 y_1'$
+
+</div>
 
 왜 이런 공식이 나오는지는... 생략한다!! (나는 컴공과니까!!)
 
