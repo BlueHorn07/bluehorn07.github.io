@@ -1,6 +1,6 @@
 ---
 title: "Differential Equations"
-permalink: /categories/differential-equations
+permalink: /categories/ordinary-differential-equations
 toc: true
 toc_sticky: true
 ---
