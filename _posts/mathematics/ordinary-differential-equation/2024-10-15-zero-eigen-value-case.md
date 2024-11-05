@@ -1,5 +1,5 @@
 ---
-title: "Zero Eigen Value on 1st Order Linear ODE"
+title: "Zero Eigen Value on Systems of ODEs"
 toc: true
 author: bluehorn_math
 toc_sticky: true

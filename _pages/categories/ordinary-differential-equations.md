@@ -26,8 +26,8 @@ Nothing to write
 
 # Phase Portraits for Planar Systems
 
-- [Zero Eigen Value on 1st Order Linear ODE](/2024/10/15/zero-eigen-value-case/)
-- [Jordan Block Case on 1st Order Linear ODE](/2024/10/16/jordan-block-case/)
+- [Zero Eigen Value on Systems of ODEs](/2024/10/15/zero-eigen-value-case/)
+- [Jordan Block Case on Systems of ODEs](/2024/10/16/jordan-block-case/)
   - [Generalized Eigen Values](/2024/10/26/generalized-eigen-values/)의 내용을 참고할 것
 - [Insights for Solving 2nd Order ODE System with Repeated Roots](/2024/10/27/insights-for-2nd-order-ode-with-repeated-roots-and-linear-system/)
 

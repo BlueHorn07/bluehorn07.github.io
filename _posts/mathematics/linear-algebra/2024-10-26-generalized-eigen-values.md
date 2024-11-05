@@ -285,4 +285,4 @@ $$
 
 이걸 기반으로 풀어낸 1st Order Linear ODE System에 대한 문제를 풀고 정리한 것이 아래의 포스트이다.
 
-👉 [Jordan Block Case on 1st Order Linear ODE](/2024/10/16/jordan-block-case/)
+👉 [Jordan Block Case on Systems of ODEs](/2024/10/16/jordan-block-case/)

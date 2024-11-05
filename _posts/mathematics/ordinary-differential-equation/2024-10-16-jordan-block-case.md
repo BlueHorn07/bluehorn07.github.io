@@ -1,5 +1,5 @@
 ---
-title: "Jordan Block Case on 1st Order Linear ODE"
+title: "Jordan Block Case on Systems of ODEs"
 toc: true
 author: bluehorn_math
 toc_sticky: true
