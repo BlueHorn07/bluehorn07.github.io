@@ -91,11 +91,11 @@ $n$이 even인 경우는 쉽게 $\rho = 1/2$임을 보일 수 있고, odd인 경
 
 <div class="theorem" markdown="1">
 
-수열 $\{ a_n \}$가 단조 감수 수열이고, $\lim_{n \rightarrow \infty} a_n = 0$이라면, 급수 $\sum_{n=1}^{\infty} (-1)^n \cdot a_n$는 수렴한다.
+수열 $\{ a_n \}$가 단조 감소 수열이고, $\lim_{n \rightarrow \infty} a_n = 0$이라면, 급수 $\sum_{n=1}^{\infty} (-1)^n \cdot a_n$는 수렴한다.
 
 </div>
 
-신기한 점은 "수열 $\{ a_n \}$가 단조 감수 수열이고, $\lim_{n \rightarrow \infty} a_n = 0$"라는 조건은 급수 $\sum a_n$에 대해서는 수렴/발산에 대해 아무것도 말해줄 수 없지만, 급수 $\sum (-1)^n \cdot a_n$에 대해서는 수렴한다는 것을 보장한다.
+신기한 점은 "수열 $\{ a_n \}$가 단조 감소 수열이고, $\lim_{n \rightarrow \infty} a_n = 0$"라는 조건은 급수 $\sum a_n$에 대해서는 수렴/발산에 대해 아무것도 말해줄 수 없지만, 급수 $\sum (-1)^n \cdot a_n$에 대해서는 수렴한다는 것을 보장한다.
 
 # 조건부 수렴
 
