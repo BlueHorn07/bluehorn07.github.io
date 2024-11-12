@@ -175,7 +175,7 @@ $$
 y_2 = u(x) \cdot y_1(x)
 $$
 
-그리고 본래의 2nd order ODE에 $y_2$를 대입한다. 이를 위해 $y_2'$, $y_2\prime\prime$를 구한다.
+그리고 본래의 2nd order ODE에 $y_2$를 대입한다. 이를 위해 $y_2'$, $y_2^{\prime\prime}$를 구한다.
 
 $$
 \begin{aligned}
