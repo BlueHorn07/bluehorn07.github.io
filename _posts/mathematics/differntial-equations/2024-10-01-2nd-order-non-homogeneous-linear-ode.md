@@ -1,5 +1,5 @@
 ---
-title: "2nd order Non-Homogeneous Linear ODE"
+title: "2nd order Non-homogeneous Linear ODE"
 toc: true
 author: bluehorn_math
 toc_sticky: true

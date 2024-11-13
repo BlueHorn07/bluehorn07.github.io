@@ -20,7 +20,13 @@ toc_sticky: true
 
 - [Exact Differential Equation](/2024/09/10/exact-differential-equation/)
 - [1st order Homogeneous Linear ODE](/2024/09/11/1st-order-homogeneous-linear-ode/)
+  - Homogeneous
+    - Separable Equation
+    - Integrating Factor
+  - Non-homogeneous
+    - Integrating Factor
 - [Bernoulli Differential Equations](/2024/09/12/bernoulli-differential-equations/)
+  - non-linear ODE를 linear ODE로 치환하는 방법에 대해
 - [Logistic Population Model](/2024/09/24/logistic-population-model/)
 
 
@@ -28,7 +34,18 @@ toc_sticky: true
 
 - [Vibration of water in a tube](/2024/09/23/vibrating-u-shape-tube/)
 - [2nd order Homogeneous Linear ODE](/2024/09/30/2nd-order-homogeneous-lienar-ode/)
-- [2nd order Non-Homogeneous Linear ODE](/2024/10/01/2nd-order-non-homogeneous-linear-ode/)
+  - with constant coefficient
+  - Reduction of Order Method
+- [2nd order Non-homogeneous Linear ODE](/2024/10/01/2nd-order-non-homogeneous-linear-ode/)
+  - 미정계수법
+  - 매개변수 변환법
+- [Harmonic Oscillation](/2024/11/12/harmonic-oscillation/)
+  - Simple Harmonic Oscillation
+  - Damped Harmonic Oscillation
+  - Forced Harmonic Oscillation
+    - Simple but Forced ...
+    - Envelop Oscillation
+    - General Forced Oscillation
 - [Wronskian](/2024/10/09/wronskian/)
 
 ## Higher Order Linear ODEs
