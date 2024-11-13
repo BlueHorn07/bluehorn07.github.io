@@ -111,7 +111,7 @@ $$
 \lambda = - \frac{a}{2} \pm \frac{\sqrt{a^2 - 4b}}{2} i
 $$
 
-이때, 오일러 공식에 따르면 $e^{\lambda x}$는 아래와 같이 쓸 수 있다.
+$e^{\lambda x}$는 오일러 공식을 사용해 아래와 같이 쓸 수 있다.
 
 $$
 \begin{aligned}
@@ -124,9 +124,9 @@ y
 \end{aligned}
 $$
 
-이때, $\omega = \sqrt{a^2 - 4b} / 2$의 값이다.
+이때, $\omega = \sqrt{a^2 - 4b} / 2$이다.
 
-위와 같이 허근 $i$가 표함된 형태 그대로 ODE의 해라고 얘기해도 되지만, 아래와 같이 실수 부분만 남겨서 표현하기도 한다.
+위와 같이 허근 $i$가 표함된 형태 그대로 ODE의 해라고 얘기해도 되지만, 아래와 같이 실수 부분만 남겨서 표현하는 경우가 많다.
 
 $$
 \begin{aligned}
@@ -135,7 +135,11 @@ y_2 &= \frac{1}{2i} \cdot (e^{\lambda_1 x} - e^{\lambda_2 x}) = e^{- ax / 2} \cd
 \end{aligned}
 $$
 
-정리하면 허근일 때는 해가 주기 $\omega$를 갖는 $\cos$, $\sin$의 주기 함수로 결정된다는 말이다.
+정리하면 허근일 때는 해가 주기 $\omega$를 갖는 $\cos$, $\sin$의 주기 함수의 일차 결합의 꼴이 된다.
+
+$$
+y(t) = e^{- ax / 2} \cdot \left( C_1 \cos \omega x + C_2 \sin \omega x \right)
+$$
 
 
 
