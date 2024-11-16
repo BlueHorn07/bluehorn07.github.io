@@ -18,7 +18,7 @@ excerpt: "$X' = F(X)$의 해가 존재하고 유일함을 보이는 과정."
 
 이 챕터의 목표는 ODE의 solution이 존재(Existence)하고 그리고 유일(Uniqueness)하다는 것을 보이는 것입니다. 그런데 저는 감자(🥔)니까 그 주변 곁다리부터 다가가보도록 하겠습니다.
 
-<div class="statement" markdown="1">
+<div class="proof" markdown="1">
 
 **[Existence and Uniqueness의 곁다리들]**
 
