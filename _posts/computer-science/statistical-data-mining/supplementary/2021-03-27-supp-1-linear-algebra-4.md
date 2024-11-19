@@ -19,7 +19,7 @@ categories: ["Linear Algebra", "Applied Statsitcs"]
 
 <span class="statement-title">Theorem.</span><br>
 
-For a **symmetric matrix** $A \in \mathbf{R}^{n \times n}$, T.F.A.E.
+For a **symmetric matrix** $A \in \mathbb{R}^{n \times n}$, T.F.A.E.
 
 (1) $A$ is \<non-negative definite\>, denoted $A \succeq 0$:
 
@@ -70,7 +70,7 @@ $\blacksquare$
 
 <span class="statement-title">Theorem.</span><br>
 
-For a **symmetric matrix** $A \in \mathbf{R}^{n \times n}$, T.F.A.E.
+For a **symmetric matrix** $A \in \mathbb{R}^{n \times n}$, T.F.A.E.
 
 (1) $A$ is \<positive definite\>, denoted $A \succ 0$:
 
@@ -177,7 +177,7 @@ $$
 
 <span class="statement-title">Definition.</span><br>
 
-For a subspace $\mathcal{L} \in \mathbf{R}^n$, the \<**orthogonal complement**\> of $\mathcal{L}$ is defined as
+For a subspace $\mathcal{L} \subseteq \mathbb{R}^n$, the \<**orthogonal complement**\> of $\mathcal{L}$ is defined as
 
 $$
 \mathcal{L}^{\perp} = \{ \mathbf{x} \in \mathbb{R}^n : \mathbf{x}^T \mathbf{y} = 0 \quad \text{for all} \quad \mathbf{y} \in \mathcal{L} \}

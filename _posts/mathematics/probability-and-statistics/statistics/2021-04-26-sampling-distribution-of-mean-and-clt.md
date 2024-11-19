@@ -174,7 +174,7 @@ $$
 M_{X_n} (t) \rightarrow M_{X} (t) \quad \text{for} \quad t \in (-\delta, \delta)
 $$
 
-and $X$ is continuous, then CDF $F_{X_n}(x)$ converges to $F_{X}(x)$ for all $x \in \mathbf{R}$.
+and $X$ is continuous, then CDF $F_{X_n}(x)$ converges to $F_{X}(x)$ for all $x \in \mathbb{R}$.
 
 $$
 F_{X_n}(x) \rightarrow F_{X}(x)

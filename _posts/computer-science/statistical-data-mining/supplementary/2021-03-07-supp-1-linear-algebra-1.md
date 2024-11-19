@@ -97,7 +97,7 @@ X = \begin{pmatrix}
 \end{pmatrix} \in \mathbb{R}^{n\times p}
 $$
 
-\<linear regression\>에선 coefficients 벡터인 $\beta$를 곱해 $X \beta \in \mathbf{R}^{n\times 1}$을 구한다. 그러면 $n\times 1$의 열벡터가 나오는데, 만약 $n \ge 1,000$라면, $X\beta$가 너무 큰 차원의 벡터가 아닌가, 너어어무 큰 선형변환이 아닌가 생각했던 적이 있다. 그런데 그런 의문은 아래의 식을 보자 해결되었다.
+\<linear regression\>에선 coefficients 벡터인 $\beta$를 곱해 $X \beta \in \mathbb{R}^{n\times 1}$을 구한다. 그러면 $n\times 1$의 열벡터가 나오는데, 만약 $n \ge 1,000$라면, $X\beta$가 너무 큰 차원의 벡터가 아닌가, 너어어무 큰 선형변환이 아닌가 생각했던 적이 있다. 그런데 그런 의문은 아래의 식을 보자 해결되었다.
 
 $$
 Y = X\beta + \epsilon
@@ -149,7 +149,7 @@ $$
 $\mathcal{L} \subset \mathbb{R}^n$ is called a \<linear subspace\> of $\mathbb{R}^n$ if
 
 $$
-\text{For} \quad \mathbf{x}, \mathbf{y} \in \mathcal{L} \quad \text{and} \quad c \in \mathbf{R} \implies c \mathbf{x} + \mathbf{y} \in \mathcal{L}
+\text{For} \quad \mathbf{x}, \mathbf{y} \in \mathcal{L} \quad \text{and} \quad c \in \mathbb{R} \implies c \mathbf{x} + \mathbf{y} \in \mathcal{L}
 $$
 
 <br><span class="statement-title">Definition.</span> span<br>
