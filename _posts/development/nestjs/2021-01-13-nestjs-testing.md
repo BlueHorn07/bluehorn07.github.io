@@ -89,7 +89,7 @@ describe('CatService', () => {
 
 ```
 
-정말 차이가 없지 않은가? :smile:
+정말 차이가 없지 않은가? 🙂
 
 </details>
 
@@ -157,8 +157,12 @@ describe('test title', () => {
 
 `Jest` 라이브러리를 이용해 데이터베이스 테스트를 할 수 있는 두 가지 방법을 알아보자!
 
-1. [MockRepository](#mockrepository)
-2. [Jest: spyOn](#jest-spyon)
+- [테스팅 기초 코드](#테스팅-기초-코드)
+- [데이터베이스 테스트](#데이터베이스-테스트)
+  - [MockRepository](#mockrepository)
+  - [Mocking \& Mock](#mocking--mock)
+  - [Jest: spyOn](#jest-spyon)
+- [Reference](#reference)
 
 #### MockRepository
 

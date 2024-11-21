@@ -8,7 +8,6 @@ categories: [NestJS]
 
 본 글은 제가 `NestJS` 프레임 워크를 통해 개발하면서 깨달은 노하우를 기록한 것입니다. 제가 제시한 방법보다 더 좋은 방법이 있을 수도 있습니다. 지적은 언제나 환영입니다 :)
 
-<br>
 <hr>
 
 Dependency Injection은 `NestJS` 프레임워크에서 단골로 등장하는 용어다.
@@ -17,7 +16,7 @@ Dependency Injection(DI)는 소프웨어 설계의 "Design Pattern" 중 하나�
 
 DI는 '의존성(Dependency)'과 '주입(Injection)'을 함께 사용하는 설계 방법이다. 그래서 두 개념에 대한 이해가 선행되어야 한다!
 
-본편에 들어가기 전에 DI에 대한 간단한 짤을 보고 가자 :smile:
+본편에 들어가기 전에 DI에 대한 간단한 짤을 보고 가자 🙂
 
 <div class="img-wrapper">
 <img src="https://i.imgur.com/QAxvQRr.png" width="600vw">
@@ -27,7 +26,7 @@ DI는 '의존성(Dependency)'과 '주입(Injection)'을 함께 사용하는 설�
 <br>
 <hr>
 
-### 의존성; Dependency
+# 의존성; Dependency
 
 <div class="notice" markdown="1">
 
@@ -69,7 +68,7 @@ public class PetOwner{
 
 즉, `Dog` 객체를 수정하면, `PetOwner`까지 덩달아 수정해야 할지도 모른다.
 
-### 주입; Injection
+# 주입; Injection
 
 "주입"은 객체 생성이 내부가 아니라 "외부"에서 진행하여 그것을 사용할 객체에 주입하는 것을 말한다.
 
@@ -97,7 +96,7 @@ public class PetOwner{
 
 <br>
 
-사실 위와 같이 "의존성"이 발견되는 부분을 "주입"으로 해결해주면 "**의존성-주입**"이 된다!! :smile:
+사실 위와 같이 "의존성"이 발견되는 부분을 "주입"으로 해결해주면 "**의존성-주입**"이 된다!! 🙂
 
 위의 코드에서는 간단하게 함수 인자로 설정했지만, 객체를 생성의 `Factory`를 사용할 수도 있을 것 같다!!
 
@@ -108,21 +107,17 @@ public class PetOwner{
 
 이제 조금 소프트웨어 설계를 곁들인 개념들을 살펴보자. **Design Principle**에 대해 익숙하다면, 당연한 것들을 기술하는 것과 불과하다고 느낄 것이다.
 
-### 제어의 역전 / 의존관계 역전
+# 제어의 역전과 의존관계 역전
 
-<br><span class="statement-title">제어의 역전</span> <small>Inversion of Control; IoC</small><br>
+## 제어의 역전
 
-<div class="notice" markdown="1">
-
-&nbsp; Principle that promotes components that relinquish control of aspects of the code execution to external modules to obtiain "**week coupling**".
-
-<small>\* relinquish: give up</small>
+> &nbsp; Principle that promotes components that relinquish control of aspects of the code execution to external modules to obtain "**week coupling**". <small>\* relinquish: give up</small>
 
 </div>
 
-예를 들어, Sorting 함수의 Comparator가 대표적인 "제어의 역전"이다!
+예를 들어, Sorting 함수의 Comparator가 대표적인 "제어의 역전(Inversion of Control; IoC)"이다!
 
-```
+``` java
 List<T>.Sort(IComparator<T>);
 ```
 
@@ -132,30 +127,30 @@ Client는 `IComparator` dependency에 대한 implementation, creation, lifetime�
 
 이 "제어의 역전"과 DI에 대한 관계는 아래 문장에서 소개된다.
 
-<div class="math-statement" markdown="1">
-
-&nbsp; "Dependecny injection is a software design pattern that implements ***<u>inverseion of control</u>*** for resolving dependencies. A '**dependency**' is an object that can be used. An '**injection**' is the passing of a dependency to a dependent object that would use it.
-
-<small>\- Wikipedia</small>
+> &nbsp; "Dependency injection is a software design pattern that implements ***<u>inversion of control</u>*** for resolving dependencies. A '**dependency**' is an object that can be used. An '**injection**' is the passing of a dependency to a dependent object that would use it. <small>\- Wikipedia</small>
 
 </div>
 
-<br>
 <hr>
 
-<br><span class="statement-title">의존관계 역전의 원칙</span> <small>Dependency Inversion Principle; DIP</small><br>
+## 의존관계 역전의 원칙
 
-"**의존관계 역전의 원칙(DIP)**"는 객체 사이에 의존관계를 맺을 때의 가이드 라인이다.
+"**의존관계 역전의 원칙(Dependency Inversion Principle; DIP)**"는 객체 사이에 의존관계를 맺을 때의 가이드 라인이다.
 
 DIP는 의존관계를 맺을 때 변화하기 쉬운 것 또는 자주 변하는 것 보다는 변화하기 어려운 것, 거의 변하지 않는 것에 의존하라는 원칙이다!
 
-이때, 변하기 쉬운 것과 잘 변하지 않는 것을 구분하는 기준은 `interface`인지와 `implementation`이다 정도로 이해하면 될 것 같다.
+이때, 변함에 대한 구분 기준은
 
-앞에서의 예제를 빌려오자면, `Dog`과 같은 구체적인 `AnimalType`에 의존하는 것이 아니라 `AnimalType` 자체와 같은 추상적인 `interface`에 의존하라는 것이다!!
+- 설계도 `interface`이면 변하지 않는 것, 아직 변하지 않은 것
+- 구현체 `implementation`은 이미 변한 것
+
+정도로 이해하면 될 것 같다.
+
+앞에서의 예제를 빌려오자면, 구현체인 `Dog`에 의존하는 것이 아니라 `AnimalType` 자체와 같은 추상적인 `interface`에 의존하라는 것이다!!
 
 `interface`에 의존함으로써 소프트웨어는 좀더 유연한 시스템이 된다.
 
-좀더 체계를 갖춰 기술해보자면,
+좀더 엄밀히 기술해보자면,
 
 <div class="notice" markdown="1">
 
@@ -189,7 +184,7 @@ B. 추상은 상세를 의존해서는 안 된다. 상세는 추상을 의존해
 <br>
 <hr>
 
-### 참고자료
+# 참고자료
 - [[Design Pattern] DI란 (Dependency Injection)](https://gmlwjd9405.github.io/2018/11/09/dependency-injection)
 - [Dependency Injection 이란?](https://medium.com/@jang.wangsu/di-dependency-injection-%EC%9D%B4%EB%9E%80-1b12fdefec4f)
 - [의존 역전 원칙, DIP](https://defacto-standard.tistory.com/113)
