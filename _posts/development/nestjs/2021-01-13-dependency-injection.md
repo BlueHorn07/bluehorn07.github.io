@@ -7,24 +7,17 @@ categories: [NestJS]
 
 
 본 글은 제가 `NestJS` 프레임 워크를 통해 개발하면서 깨달은 노하우를 기록한 것입니다. 제가 제시한 방법보다 더 좋은 방법이 있을 수도 있습니다. 지적은 언제나 환영입니다 :)
+{: .notice }
 
-<hr>
+# 들어가며
 
-Dependency Injection은 `NestJS` 프레임워크에서 단골로 등장하는 용어다.
+Dependency Injection은 `NestJS` 프레임워크에서 단골로 등장하는 용어다. Dependency Injection(DI)는 소프웨어 설계의 "Design Pattern" 중 하나인데, '의존성(Dependency)'과 '주입(Injection)'을 함께 사용하는 설계 방법이다. 그래서 두 개념에 대한 이해가 선행되어야 한다!
 
-Dependency Injection(DI)는 소프웨어 설계의 "Design Pattern" 중 하나다.
+누가 5살 꼬마에게 의존성 주입에 대해 설명하려면 어떻게 해야 하는지 질문글을 올린 적이 있는데, 답변으로 아래와 같이 달렸다고 한다 ㅋㅋ
 
-DI는 '의존성(Dependency)'과 '주입(Injection)'을 함께 사용하는 설계 방법이다. 그래서 두 개념에 대한 이해가 선행되어야 한다!
-
-본편에 들어가기 전에 DI에 대한 간단한 짤을 보고 가자 🙂
-
-<div class="img-wrapper">
-<img src="https://i.imgur.com/QAxvQRr.png" width="600vw">
-<p>Material from <a href="https://www.slideshare.net/ThibaudDesodt/dependency-injection-the-right-way">here</a></p>
-</div>
-
-<br>
-<hr>
+![](/images/development/dependency-injection.png){: style="max-width: 100%" }
+[How to explain dependency injection to a 5-year-old?](https://stackoverflow.com/questions/1638919/how-to-explain-dependency-injection-to-a-5-year-old)
+{: .small .gray .text-center }
 
 # 의존성; Dependency
 
@@ -42,7 +35,7 @@ Class $B$ is a dependency of Class $A$ <br>
 
 </div>
 
-이번엔 코드 레벨에서 살펴보자!
+코드 레벨에서도 살펴보자!
 
 ``` java
 public class PetOwner{
@@ -100,20 +93,14 @@ public class PetOwner{
 
 위의 코드에서는 간단하게 함수 인자로 설정했지만, 객체를 생성의 `Factory`를 사용할 수도 있을 것 같다!!
 
-<br>
-<hr>
-
-여기까지만 알면, DI에 대해 충분히 이해한 것이다.
-
-이제 조금 소프트웨어 설계를 곁들인 개념들을 살펴보자. **Design Principle**에 대해 익숙하다면, 당연한 것들을 기술하는 것과 불과하다고 느낄 것이다.
 
 # 제어의 역전과 의존관계 역전
+
+여기까지 알면, DI에 대해 충분히 이해한 것이다. 이제 조금 소프트웨어 설계를 곁들인 개념들을 살펴보자. **Design Principle**에 대해 익숙하다면, 당연한 것들을 기술하는 것과 불과하다고 느낄 것이다.
 
 ## 제어의 역전
 
 > &nbsp; Principle that promotes components that relinquish control of aspects of the code execution to external modules to obtain "**week coupling**". <small>\* relinquish: give up</small>
-
-</div>
 
 예를 들어, Sorting 함수의 Comparator가 대표적인 "제어의 역전(Inversion of Control; IoC)"이다!
 
@@ -128,10 +115,6 @@ Client는 `IComparator` dependency에 대한 implementation, creation, lifetime�
 이 "제어의 역전"과 DI에 대한 관계는 아래 문장에서 소개된다.
 
 > &nbsp; "Dependency injection is a software design pattern that implements ***<u>inversion of control</u>*** for resolving dependencies. A '**dependency**' is an object that can be used. An '**injection**' is the passing of a dependency to a dependent object that would use it. <small>\- Wikipedia</small>
-
-</div>
-
-<hr>
 
 ## 의존관계 역전의 원칙
 
@@ -166,23 +149,16 @@ B. 추상은 상세를 의존해서는 안 된다. 상세는 추상을 의존해
 
 <br>
 
-모델 디자인이 DIP를 만족하는 설계라면, '의존성 주입'을 쉽게 수용하는 코드를 작성할 수 있다.
+모델 디자인이 DIP를 만족하는 설계라면, '의존성 주입'을 쉽게 수용하는 코드를 작성할 수 있다. `implementation`이 아니라 `interface`에 의존되어 있기 때문에, 의존성을 손쉽게 주입할 수 있다.
 
-의존성이 필요한 부분이 `implementation`이 아니라 `interface`에 의존되어 있기 때문에 그 `interface`를 기반으로 한다면 의존성을 손쉽게 주입할 수 있다.
-
-<br>
-<hr>
+<br/>
 
 자! 이제 처음에 봤던 짤을 다시 한번 보자.
 
-<div class="img-wrapper">
-<img src="https://i.imgur.com/QAxvQRr.png" width="600vw">
-<p>Material from <a href="https://www.slideshare.net/ThibaudDesodt/dependency-injection-the-right-way">here</a></p>
-</div>
+![](/images/development/dependency-injection.png){: style="max-width: 100%" }
+[How to explain dependency injection to a 5-year-old?](https://stackoverflow.com/questions/1638919/how-to-explain-dependency-injection-to-a-5-year-old)
+{: .small .gray .text-center }
 
-
-<br>
-<hr>
 
 # 참고자료
 - [[Design Pattern] DI란 (Dependency Injection)](https://gmlwjd9405.github.io/2018/11/09/dependency-injection)
