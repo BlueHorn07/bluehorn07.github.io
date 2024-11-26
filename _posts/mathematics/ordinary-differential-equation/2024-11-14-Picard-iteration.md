@@ -27,6 +27,7 @@ excerpt: "$X' = F(X)$의 해가 존재하고 유일함을 보이는 과정."
 - [Lipschitz Constant](/2024/11/14/Lipschitz-constant/)
 - [Picard Iteration](/2024/11/14/Picard-iteration/) 👋
 - [Gronwall's Inequality](/2024/11/14/Gronwall-inequality/)
+- [Some Preliminaries](/2024/11/16/some-preliminary-the-existence-and-uniqueness-theorem/)
 
 </div>
 

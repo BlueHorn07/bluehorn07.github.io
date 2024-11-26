@@ -27,6 +27,7 @@ excerpt: "함수 기울기에 상한(supreme)이 있는 함수들에 대해"
 - [Lipschitz Constant](/2024/11/14/Lipschitz-constant/) 👋
 - [Picard Iteration](/2024/11/14/Picard-iteration/)
 - [Gronwall's Inequality](/2024/11/14/Gronwall-inequality/)
+- [Some Preliminaries](/2024/11/16/some-preliminary-the-existence-and-uniqueness-theorem/)
 
 </div>
 

@@ -1,10 +1,10 @@
 ---
-title: "The Existence and Uniqueness Theorem"
+title: "Some Preliminary for The Existence and Uniqueness Theorem"
 toc: true
 author: bluehorn_math
 toc_sticky: true
 categories: ["Differential Equations"]
-excerpt: ""
+excerpt: "Function Spaces, Compactness, Differential on Vector Field."
 ---
 
 복수전공하고 있는 수학과의 졸업시험을 위해 학부 수학 과목들을 다시 공부하고 있습니다만... 미분방정식은 졸업시험 대상 과목이 아니라는 걸 나중에 알게 되었습니다... OTL... 그래도 이왕 시작한 거 다시 복습 좀 해봅시다! 🏃 [미분방정식 포스트 전체 보기](/categories/differential-equations)
@@ -25,8 +25,9 @@ excerpt: ""
 순서는 상관없습니다.
 
 - [Lipschitz Constant](/2024/11/14/Lipschitz-constant/)
-- [Picard Iteration](/2024/11/14/Picard-iteration/) 👋
+- [Picard Iteration](/2024/11/14/Picard-iteration/)
 - [Gronwall's Inequality](/2024/11/14/Gronwall-inequality/)
+- [Some Preliminaries](/2024/11/16/some-preliminary-the-existence-and-uniqueness-theorem/) 👋
 
 </div>
 
@@ -68,66 +69,35 @@ THEN $f$ is has its maximum/minimum on $\Omega$.
 그러나 구간 $[-1, 1]$ 위에서 정의된 함수 $f(x) = 1/x$는 이 정리를 만족하지 않는다. 그 이유는 일단 함수가 $x = 0$에서 정의되지 않기 때문에, 함수의 정의역은 엄밀히 말해 $[-1, 1] \setminus \\{ 0 \\}$이다. 이 집합은 열린 집합이므로 콤팩트하지 않다. 만약 정의역을 콤팩트하게 만들기 위해 $f(x=0) = a \in \mathbf{R}$라고 설정한다면, 이것은 함수 $f(x)$가 continuous라는 조건을 위배하게 된다. 즉, 생각보다 "**콤팩트 연속 함수**"라는 조건을 만족하기 어렵다는 것!
 
 
-# The Existence and Uniqueness Theorem
+# Differential on Vector Field
 
-<div class="theorem" markdown="1">
+벡터 필드 $F: \mathbb{R}^n \rightarrow \mathbb{R}^n$가 있을 때, 해당 필드의 Differential을 생각해보자.
 
-Consider the initial value problem
-
-$$
-X' = F(X), \quad X(0) = X_0
-$$
-
-where $X_0 \in \mathbb{R}^n$. Supp. that $F: \mathbb{R}^n \rightarrow \mathbb{R}^n$ is $C^1$.
-
-Then there exists a unique solution of this initial value problem. More precisely, there exists $a > 0$ and a unique solution
+먼저, $X = (x_1, ..., x_n)$의 벡터로 정의되고, $F(X)$는 $F(X) = (f_1(X), ..., f_n(X))$로 정의된다. 그리고 미분을 정의하면
 
 $$
-X: (-a, a) \rightarrow \mathbb{R}^n
+DF_X(U) = \lim_{h \rightarrow 0} \frac{F(X + hU) - F(X)}{h}
 $$
 
-of this differential equation satisfying the initial condition $X(0) = X_0$.
+이때, $U$는 임의의 방향 벡터 입니다. 고차원에서 미분을 정의하기 위해서는 모든 방향에 대한 극한을 확인해야 하는데, $F(X + h)$를 사용하면, $X$ 벡터에 대한 방향만을 판단하게 되기 떄문에 $F(X + hU)$를 사용한 것입니다.
 
-</div>
+<br/>
 
-이때, $C^1$은 "Continuously Differentiable Function"입니다. 그리고 $F(X)$는 벡터 필드로 
+또는 아래와 같이 Jacobian을 정의할 수도 있습니다.
 
 $$
-F(X) = (f_1, (x_1, ..., x_n), ..., f_n(x_1, ..., x_n))
+DF_X = \left( \frac{\partial f_i}{\partial x_j}\right) \in \mathbb{R^{n\times n}}
 $$
 
-을 만족합니다.
+이때, $DF_X(U)$는 $DF_X \cdot U$로 행렬곱의 결과입니다.
 
-# Road to the theorem
+$$
+DF_X(U) = \sum^{n}_{j=1} (\frac{\partial f_i}{\partial x_j} \cdot u_j)
+$$
 
-우리의 목표는 위의 정리를 이해하고, 증명해보는 것입니다. 내용이 어려울 수도 있겠지만, 포기하지 않고 전지해봅시다! 🏃‍♂️‍➡️ 내용을 다 이해하지 못 해도 괜찮다!! (나에게 하는 말 ㅋㅋ)
+그리고 이 Jacobian의 노름(Norm)을 아래와 같이 정의합시다.
 
-## Continuous Differential Functions are Locally Lipschitz
+$$
+\| DF_X \| = \sum_{\| U \| = 1} \| DF_X(U) \|
+$$
 
-<div class="theorem" markdown="1">
-
-Supp. that the function $F: \Omega \rightarrow \mathbb{R}^n$ is $C^1$.
-
-Then $F$ is locally Lipschitz.
-
-\* 이때, 함수의 정의역 $\Omega$는 콤팩트 집합이다.
-
-</div>
-
-<div class="proof" markdown="1">
-
-Let $x_0 \in \Omega$ and let $B_{\epsilon} := \left\\{ x: \| x - x_0 \| \le \epsilon \right\\}$ with small $\epsilon > 0$ s.t. $B_{\epsilon} \subset \Omega$.
-
-</div>
-
-
-$DF_X$에 대한 내용.... (요건 언제 쓰는 거징?)
-
-존재성 정리가 있고, 유일성에 대한 정리가 따로 있는 건가?
-
-# References
-
-https://youtu.be/Zxr6Wekwxh0?si=k3uo7A_srkM8Us7R
-
-https://people.math.wisc.edu/~aseeger/319/notes2.pdf
-^읽어봐야 함

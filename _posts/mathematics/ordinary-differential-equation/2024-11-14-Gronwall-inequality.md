@@ -27,6 +27,7 @@ excerpt: "미분방정식에서 만나는 부등식. 간단하지만 강력한 �
 - [Lipschitz Constant](/2024/11/14/Lipschitz-constant/)
 - [Picard Iteration](/2024/11/14/Picard-iteration/)
 - [Gronwall's Inequality](/2024/11/14/Gronwall-inequality/) 👋
+- [Some Preliminaries](/2024/11/16/some-preliminary-the-existence-and-uniqueness-theorem/)
 
 </div>
 
