@@ -135,7 +135,7 @@ maximize $$\displaystyle \sum^{n}_{i=1} \sum^{m}_{j=1} a_{ij} x_{ij}$$
 
 <hr/>
 
-## Production Plaaning
+## Production Planning
 
 <div class="notice" markdown="1">
 
