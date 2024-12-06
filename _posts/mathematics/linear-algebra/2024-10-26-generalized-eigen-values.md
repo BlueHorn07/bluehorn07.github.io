@@ -53,7 +53,7 @@ $$
 
 그러면 "이게 행렬 $A$의 고유벡터냐??" 라고 하면, 그건 아닙니다!!!
 
-왜냐하면 $Aw \ne \lambda w$가 아니기 때문이죠. 만약, 이걸 만족했다면 $w$는 고유벡터이고 우리가 특성방정식을 풀어 고유값을 계산할 떄 찾았어야 합니다. 그래서 벡터 $w$는 고유벡터라는 이름이 아니라 "**일반화된(generalized) 고유벡터**"라고 부릅니다.
+왜냐하면 $Aw \ne \lambda w$가 아니기 때문이죠. 만약, 이걸 만족했다면 $w$는 고유벡터이고 우리가 특성방정식을 풀어 고유값을 계산할 때 찾았어야 합니다. 그래서 벡터 $w$는 고유벡터라는 이름이 아니라 "**일반화된(generalized) 고유벡터**"라고 부릅니다.
 
 <br/>
 
@@ -87,7 +87,7 @@ $$
 
 $$
 \begin{aligned}
-Au + \frac{\mu}{\nu - \lambda} Av 
+Au + \frac{\mu}{\nu - \lambda} Av
 &= \mu v + \nu u + \frac{\mu}{\nu - \lambda} Av \\
 &= \mu v + \nu u + \frac{\lambda \mu}{\nu - \lambda} v \\
 &= \nu u + \frac{\mu (\nu - \cancel{\lambda})+ \cancel{\lambda \mu} }{\nu - \lambda} v \\
@@ -144,7 +144,7 @@ $$
 
 $$
 \begin{aligned}
-(A - \lambda I)w &= v \\  
+(A - \lambda I)w &= v \\
 (A - \lambda I)(A - \lambda I)w &= (A - \lambda I)v = 0 \\
 (A - \lambda I)^2 w &= 0
 \end{aligned}
@@ -190,21 +190,21 @@ $$
 \begin{aligned}
 (v_1, v_2)^T A (v_1, v_2)
 &= (v_1 A, v_2 A)^T (v_1, v_2) \\
-&= 
+&=
 \left(
 \begin{matrix}
 v_1^T A v_1 & v_1^T A v_2 \\
 v_2^T A v_1 & v_2^T A v_2 \\
 \end{matrix}
 \right) \\
-&= 
+&=
 \left(
 \begin{matrix}
 v_1^T \lambda_1 v_1 & v_1^T \lambda_2 v_2 \\
 v_2^T \lambda_1 v_1 & v_2^T \lambda_2 v_2 \\
 \end{matrix}
 \right) \\
-&= 
+&=
 \left(
 \begin{matrix}
 \lambda_1 & 0 \\
@@ -216,7 +216,7 @@ $$
 
 (참... 쉽죠..!? ㅋㅋ)
 
-위의 경우는 고유값이 서로 다른 실근을 갖는 경우를 다뤘는데 만약 중근이 있어 $v_2$가 일반화된 고유 벡터라면, 
+위의 경우는 고유값이 서로 다른 실근을 갖는 경우를 다뤘는데 만약 중근이 있어 $v_2$가 일반화된 고유 벡터라면,
 
 $$
 v_1^T A v_2 = v_1^T (v_1 + \lambda v_2) = 1 + 0 = 1

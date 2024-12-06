@@ -116,7 +116,7 @@ Hello from thread 7
 Hello from thread 3
 ```
 
-응?? 10개 쓰레드를 만드려고 했는데, 4개 정도 만들고 실행이 종료 되었다 🤔 그 이유는 Thread Join을 하지 않았기 떄문이다!!
+응?? 10개 쓰레드를 만드려고 했는데, 4개 정도 만들고 실행이 종료 되었다 🤔 그 이유는 Thread Join을 하지 않았기 때문이다!!
 
 ### Argument passing
 
@@ -164,7 +164,7 @@ int main(void) {
 - `pthread_t thread`
   - 앞에서 `pthread_create()` 때는 `pthread_t`의 포인터를 사용 했는데, join에서는 쓰레드 변수 그 자체를 사용한다.
 - `void **retval`
-  - 뒤에서 다룰 거지만, `pthread_exit()`으로 부모 쓰레드에게 signal을 줄 수 있는데, 그떄 전달 받은 값을 기록하기 위한 인자이다.
+  - 뒤에서 다룰 거지만, `pthread_exit()`으로 부모 쓰레드에게 signal을 줄 수 있는데, 그때 전달 받은 값을 기록하기 위한 인자이다.
   - 지금은 `NULL`을 사용했지만, 곧 뒤에서 `retval`을 쓰는 예시도 볼 예정!
 
 그리고 코드를 컴파일 해서 살펴보면...

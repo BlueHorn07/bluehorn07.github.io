@@ -73,7 +73,7 @@ $$
 이때, 중력은 운동방향의 반대로 작용하므로 마이너스 부호를 붙인다.
 
 
-그런데 이떄, 물기둥이 올라간 높이는 물이 평형상태를 기준으로 재는 것이 아니라, 반대편 기둥의 높이를 기준으로 더 추가된 물기둥의 무게 만큼 중력이 작용한다.
+그런데 이때, 물기둥이 올라간 높이는 물이 평형상태를 기준으로 재는 것이 아니라, 반대편 기둥의 높이를 기준으로 더 추가된 물기둥의 무게 만큼 중력이 작용한다.
 
 
 ![](/images/mathematics/differential-equations/vibration-of-water-in-an-u-shaped-tube.png){: style="max-height: 280px" .align-center }

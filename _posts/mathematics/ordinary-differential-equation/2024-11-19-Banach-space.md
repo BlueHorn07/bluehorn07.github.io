@@ -30,7 +30,7 @@ where $d$ is a distance function defined on the given space.
 
 </div>
 
-코시 수열의 정의는 결국 그 수열이 어떤 값이 수렴한다는 것을 말한다: $\lim_{n\rightarrow \infty} a_n = \alpha$. 그리고 완비성은 그 수렴값 $\alpha$가 수렴이 정의된 공간에 다히 포함된다는 것을 말한다.
+코시 수열의 정의는 결국 그 수열이 어떤 값이 수렴한다는 것을 말한다: $\lim_{n\rightarrow \infty} a_n = \alpha$. 그리고 완비성은 그 수렴값 $\alpha$가 수렴이 정의된 공간에 다시 포함된다는 것을 말한다.
 
 $$
 \lim_{n\rightarrow \infty} a_n = \alpha \in S
@@ -40,7 +40,7 @@ $$
 
 실수 공간 $\mathbb{R}$ 위에서 정의되는 모든 실수 코시 수열은 $\mathbb{R}$에 수렴한다는 성질입니다. 요 개념은 유리수 집합 $\mathbb{Q}$ 위에서 완비성을 생각해보면 쉽게 이해가 됩니다.
 
-유리수의 집합 $\mathbb{Q}$ 완비성을 갖추지 못합니다. 왜냐하면, 아래와 같이 정의한 코시 수열이 $\mathbb{Q}$에 수렴하지 않고, 무리수에 수렴하기 떄문입니다.
+유리수의 집합 $\mathbb{Q}$ 완비성을 갖추지 못합니다. 왜냐하면, 아래와 같이 정의한 코시 수열이 $\mathbb{Q}$에 수렴하지 않고, 무리수에 수렴하기 때문입니다.
 
 $$
 x_1 = 1, \quad x_2 = 1.4, \quad x_3 = 1.41, \quad x_4 = 1.414, ...

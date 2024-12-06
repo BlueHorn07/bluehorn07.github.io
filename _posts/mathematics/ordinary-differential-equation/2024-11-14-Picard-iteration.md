@@ -39,7 +39,7 @@ $$
 x' = f(x)
 $$
 
-이떄, $f(x)$는 임의의 함수이고, $x(0) = x_0$입니다. 우리의 목표는 이런 미분방정식에 해가 존재하고, 또 그 해가 유일해라는 것을 보이고자 합니다.
+이때, $f(x)$는 임의의 함수이고, $x(0) = x_0$입니다. 우리의 목표는 이런 미분방정식에 해가 존재하고, 또 그 해가 유일해라는 것을 보이고자 합니다.
 
 <div class="theorem" markdown="1">
 
@@ -272,7 +272,7 @@ U_1(t) = \begin{pmatrix}
 = \begin{pmatrix}
 1 \\
 0
-\end{pmatrix} + 
+\end{pmatrix} +
 \int_0^t \begin{pmatrix}
 0 \\
 -1
@@ -293,7 +293,7 @@ U_2(t) = \begin{pmatrix}
 -s \\
 -1
 \end{pmatrix} ds
-= 
+=
 \begin{pmatrix}
 1 - t^2/2 \\
 - t

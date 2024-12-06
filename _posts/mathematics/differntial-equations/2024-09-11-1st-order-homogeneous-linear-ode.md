@@ -22,7 +22,7 @@ ODE에서 $y$의 최대 차수가 1인 ODE를 Linear ODE라고 한다.
 
 </div>
 
-이떄, $r(x)$ 텀이 0이라면, "Homogeneous Linear ODE"라고 하고, 이 경우는 아주 쉽게 ODE를 풀 수 있다.
+이때, $r(x)$ 텀이 0이라면, "Homogeneous Linear ODE"라고 하고, 이 경우는 아주 쉽게 ODE를 풀 수 있다.
 
 # Homogeneous Linear ODE
 
@@ -170,7 +170,7 @@ $$
 F (py - r) \cdot dx + F \cdot dy = 0
 $$
 
-이떄, $F' = p F$이므로...
+이때, $F' = p F$이므로...
 
 $$
 (F'y - Fr) \cdot dx + F \cdot dy = 0
