@@ -126,7 +126,7 @@ message = {
 
 `fastavro.write()`를 할 때, 저장할 메시지가 설정한 스키마와 불일치 한다면, avro write이 일어나지 않습니다. 예를 들어, 스키마에는 `age` 필드가 정의되어 있는데, 메시지에는 없다면 `ValueError: no value and no default for age` Exception을 보게 됩니다.
 
-반대로, 메시지에 정의하지 않은 컬럼이 추가로 들어오는 경우는 
+반대로, 메시지에 정의하지 않은 컬럼이 추가로 들어오는 경우는
 
 ```py
 message = {
@@ -138,7 +138,7 @@ message = {
 
 Avro write는 성공하지만, 저장된 데이터를 읽어보면, 정의하지 않은 필드는 `.avro`에 저장되지 않습니다.
 
-Rejection은 타입에 대해서도 일어나는데, 
+Rejection은 타입에 대해서도 일어나는데,
 
 ```py
 message = {
