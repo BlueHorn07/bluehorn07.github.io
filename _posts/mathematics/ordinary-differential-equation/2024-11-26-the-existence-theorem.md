@@ -55,7 +55,7 @@ of this differential equation satisfying the initial condition $X(0) = X_0$.
 
 </div>
 
-이때, $C^1$은 "Continuously Differentiable Function"입니다. 그리고 $F(X)$는 벡터 필드로 
+이때, $C^1$은 "Continuously Differentiable Function"입니다. 그리고 $F(X)$는 벡터 필드로
 
 $$
 F(X) = (f_1, (x_1, ..., x_n), ..., f_n(x_1, ..., x_n))
@@ -65,7 +65,7 @@ $$
 
 # Road to the theorem
 
-우리의 목표는 위의 정리를 이해하고, 증명해보는 것입니다. 내용이 어려울 수도 있겠지만, 포기하지 않고 전지해봅시다! 🏃‍♂️‍➡️ 내용을 다 이해하지 못 해도 괜찮다!! (나에게 하는 말 ㅋㅋ)
+우리의 목표는 위의 정리를 이해하고, 증명해보는 것입니다. 내용이 어려울 수도 있겠지만, 포기하지 않고 전진해봅시다! 🏃‍♂️‍➡️ 내용을 다 이해하지 못 해도 괜찮다!! (나에게 하는 말 ㅋㅋ)
 
 ## Continuous Differential Functions are Locally Lipschitz
 
@@ -91,13 +91,15 @@ $$
 
 (이때, $U$는 방향 벡터로 $U = Z - Y$, 그리고 $s$는 $0 \le s \le 1$라는 매개변수.)
 
-이 straight line 위에서의 함숫값을 $\psi(s) = F(Y + sU)$라고 정의해봅시다. (미적2에서 요런 line integral이 떠오르네요) 이걸 미분하면 Chain Rule에 의해,
+이 straight line 위에서의 함숫값을 $\psi(s) = F(Y + sU)$라고 정의해봅시다. (미적2의 [선적분(Line integral)이 떠오르네요)](/2024/06/30/arc-length-and-line-integral/) 이걸 미분하면 [Differential on Vector Field](/2024/11/16/some-preliminary-the-existence-and-uniqueness-theorem/#differential-on-vector-field)에서 했던대로
 
 $$
-\psi'(s) = DF_{Y_{sU}}(U)
+\psi'(s) = DF_{Y+sU}(U)
 $$
 
-가 됩니다. 이제 처음에 잡았던 두 점 $Y, Z \in B_{\epsilon}$에 대한 두 함수값의 차이인 $F(Z) - F(Y)$를 확인해봅시다.
+가 됩니다. 표기가 항상 헷갈리는데, $DF_{Y+sU}$는 점 $Y+sU$ 위에서의 Jacobian을 말하고, $U$는 속미분에 의해 밖으로 나온 벡터입니다. 이 둘을 내적한 것이 $\psi'(s)$ 입니다.
+
+이제 처음에 잡았던 두 점 $Y, Z \in B_{\epsilon}$에 대한 두 함수값의 차이인 $F(Z) - F(Y)$를 확인해봅시다.
 
 $$
 \begin{aligned}
@@ -109,13 +111,13 @@ $$
 
 이때, 집합 $B_{\epsilon}$가 compact 하므로, 그 정의역 안에서 함수값 $F(X)$은 Minimum과 Maximum이 존재합니다. 그리고 $B_{\epsilon}$에 대한 Jacobian의 노름 $K$를 정의합니다: $K = \sup_{x \in B_{\epsilon}} \| DF_x \| < + \infty$.
 
-그러면, 위의 함수값 차이에 대한 식은 아래와 같은 부등식을 만족합니다.
+이제 아래와 같은 부등식을 만족합니다.
 
 $$
-\|F(Z) - F(Y)\| = \| \int_0^1 DF_{Y+sU}(U) \, ds \| \le \int_0^1 K \| U \| \, ds = K \| Z - Y \|
+\|F(Z) - F(Y)\| = \left\| \int_0^1 DF_{Y+sU}(U) \, ds \right\| \le \int_0^1 K \| U \| \, ds = K \| Z - Y \|
 $$
 
-위의 부등식을 잘 정리하면, 아래와 같이 Lipschitz 부등식에 대한 결과를 얻게 됩니다.
+부등식을 잘 정리하면, 아래와 같이 Lipschitz 부등식에 대한 결과를 얻게 됩니다.
 
 $$
 \frac{\| F(Z) - F(Y) \|}{\| Z - Y \|} \le K
@@ -144,11 +146,11 @@ $$
 - 초기값 $X_0$를 중심으로하고, 반지름 $\rho > 0$인 closed ball $O_\rho$를 정의함.
 - 벡터 필드 $F(X)$가 $O_\rho$ 안에 대해 Lipschitz Constant $K$를 가짐.
 - 벡터 필드 $F(X)$의 상한이 $O_\rho$ 안에 존재하는데, 이를 $M$이라고 함.
-- 구간 $J = [-a, a]$를 정의하는데, $a$는 $a < \min \\{ \rho/M, 1/K \\}$여야 함. 
+- 구간 $J = [-a, a]$를 정의하는데, $a$는 $a < \min \\{ \rho/M, 1/K \\}$여야 함.
 
 ## Function Sequence
 
-$J = [-a, a]$ 범위 안에서 함수 $U_0, U_1, ...$를 정의합니다. 이 함수들은 [Picard Iteration](/2024/11/14/Picard-iteration/)에 의해 정의되는 함수열입니다.
+$J = [-a, a]$ 범위 안에서 함수열 $\left\\{U_0, U_1, ...\right\\}$를 정의합니다. 이것은 [Picard Iteration](/2024/11/14/Picard-iteration/)에 의해 정의되는 함수열입니다.
 
 초기엔 $U_0(t) = X_0$입니다. Iteration을 한번 돌면,
 
@@ -156,27 +158,30 @@ $$
 U_1(t) = X_0 + \int_0^t F(U_0(s)) \, ds = X_0 + t F(X_0)
 $$
 
-로 정의됩니다. 이때, $U_t(t)$가 다시 $O_{\rho}$에 속하는지 확인해봅시다. 모든 $U_k(t) \in O_\rho$를 만족해야 같은 조건 위에서 Iteration을 계속할 수 있기 때문입니다.
+로 정의됩니다. 이때, $U_k(t)$가 다시 $O_{\rho}$에 속하는지 확인해봅시다. 모든 $U_k(t) \in O_\rho$를 만족해야 같은 조건 위에서 Iteration을 계속할 수 있기 때문입니다.
 
 $$
-\| U_1(t) - X_0 \| = \| t \| \cdot \| F(X_0) \| \le a \cdot M < \rho
+\begin{aligned}
+U_1(t) &= X_0 + t F(X_0) \\
+\| U_1(t) - X_0 \| &= \| t \| \cdot \| F(X_0) \| \le a \cdot M < \rho
+\end{aligned}
 $$
 
 이것은 $U_1(t)$각 $X_0$를 중심으로 하는 닫힌 원 $O_{\rho}$에 속한다는 것을 말합니다: $U_1(t) \in O_{\rho}$.
 
-이 과정을 Picard Iteration 방식에 따라 반복하면, 귀납법에 의해 $U_k(t)$는 아래와 같이 정의되고
+Picard Iteration 방식에 따라 이 과정을 반복하면, 귀납법에 의해 $U_k(t)$는 아래와 같이 정의되고
 
 $$
 U_{k+1}(t) = X_0 + \int_0^t F(U_{k}(s)) \, ds
 $$
 
-각 $U_k(t)$는 $O_{\rho}$에 포함되게 됩니다. (이것을 보이는 것은 위의 등식을 정리하면 됩니다.)
+각 $U_k(t)$는 $O_{\rho}$에 포함되게 됩니다. ($U_1(t)$에서 했던 방식대로 정리하면 됩니다.)
 
-따라서, 함수열 $\{ U_{k+1} (t) \}$는 $J = [-a, a]$ 위에서 well-defined 입니다.
+따라서, 함수열 $\left\\{ U_k (t) \right\\}$는 $J = [-a, a]$ 위에서 well-defined 입니다.
 
 ## Convergence of Function Sequence
 
-위의 과정에서 함수열 $\{ U_{k+1} (t) \}$이 well-defined인 것을 확인 했습니다. 이제 $U_{k}(t)$가 solution인 $X(t)$에 수렴한다는 것을 보여야 합니다. 함수열이 수렴하는지 보이기 위해 아래의 것을 보여야 하는데
+위의 과정에서 함수열 $\left\\{ U_k (t) \right\\}$이 well-defined인 것을 확인 했습니다. 이제 $U_{k}(t)$가 solution인 $X(t)$에 수렴한다는 것을 보여야 합니다. 함수열이 수렴하는지 보이기 위해 아래의 것을 보여야 하는데
 
 $$
 \lim_{k\rightarrow\infty}\| U_{k+1}(t) - U_{k}(t) \| < + \infty

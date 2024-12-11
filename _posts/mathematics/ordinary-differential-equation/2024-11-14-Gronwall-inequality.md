@@ -35,7 +35,7 @@ excerpt: "미분방정식에서 만나는 부등식. 간단하지만 강력한 �
 
 미분방정식에 대해 성립하는 일반적인 형태의 부등식입니다. 처음에는 이게 어떤 의미인지 잘 와닿지 않아서 이해하는데 시간이 좀 걸렸습니다. 다른 작업들을 좀 하다가 다시 돌아오니 머리가 맑아졌는지 이제 이해가 좀 되네요 ㅎㅎ
 
-일단 이 부등식에는 (1) 미분 폼(form)가 (2) 적분 폼이 있습니다. 일단 쉬운 버전은 미분 폼입니다. 미분폼부터 보는게 쉬운 길인 것 같습니다.
+일단 이 부등식에는 (1) 미분 폼(form)과 (2) 적분 폼이 있습니다. 일단 쉬운 버전은 미분 폼입니다. 미분폼부터 보는게 쉬운 길인 것 같습니다.
 
 ## Differential Form
 
@@ -67,7 +67,7 @@ $$
 u(t) \le u(0) \exp \left( \int_0^t \beta(s) \, ds \right)
 $$
 
-\* Remark: there's no assumption on the sign of $u(t)$ ans $\beta(t)$.
+\* Remark: there's no assumption on the sign of $u(t)$ and $\beta(t)$.
 
 </div>
 
@@ -170,7 +170,7 @@ $$
 양변을 적분하면,
 
 $$
-\begin{aligned}  
+\begin{aligned}
 \ln (v(t)) &\le \ln v(0) + Kt \\
 \ln (v(t)) &\le \ln C + Kt \\
 v(t) &\le C \cdot e^{Kt}
