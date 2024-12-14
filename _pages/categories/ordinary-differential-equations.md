@@ -41,7 +41,7 @@ Nothing to write
 
 - [Lipschitz Constant](/2024/11/14/Lipschitz-constant/)
   - Locally Liipschitz
-- [Picard Iteration](/2024/11/14/Picard-iteration/) 👋
+- [Picard Iteration](/2024/11/14/Picard-iteration/)
 - [Gronwall's Inequality](/2024/11/14/Gronwall-inequality/)
   - Differential Form
   - Integral Form
