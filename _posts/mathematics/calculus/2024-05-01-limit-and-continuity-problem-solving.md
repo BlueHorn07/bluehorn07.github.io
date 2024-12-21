@@ -59,7 +59,7 @@ cc. 요 문제도 어디가 잘못된 건지 도저히 못 찾겠어서 솔루�
 
 <div class="notice" markdown="1">
 
-Let $f(x)$ be defined on an poen interval about $c$, except possible at $c$ itself. (함수값이 $x=c$에서 정의되지 않아도 상관 없기 때문.)
+Let $f(x)$ be defined on an open interval about $c$, except possible at $c$ itself. (함수값이 $x=c$에서 정의되지 않아도 상관 없기 때문.)
 
 We say that the limit of $f(x)$ as $x$ approaches $c$ is the number $L$, and write
 
@@ -75,7 +75,7 @@ $$
 
 </div>
 
-입델-논법에서 유도되는 유명한 성질이 바로 "Uniqueness of Limit"다. 입델-논법이 극한을 엄밀하게 정의해준 덕분에 "극한이 여러개 있으면 어떻하지?"라는 불안감 없이 극한은 하나야!라고 말할 수 있다.
+입델-논법에서 유도되는 유명한 성질이 바로 "**Uniqueness of Limit**"다. 입델-논법이 극한을 엄밀하게 정의해준 덕분에 "극한이 여러개 있으면 어떻하지?"라는 불안감 없이 극한은 하나야!라고 말할 수 있다.
 
 <hr/>
 
