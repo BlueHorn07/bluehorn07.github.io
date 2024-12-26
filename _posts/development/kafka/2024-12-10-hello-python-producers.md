@@ -8,7 +8,7 @@ excerpt: "꼭 Java로 Kafka Producer 개발할 필욘 없잖아 ¯\\\_(ツ)_/¯ 
 
 # 왜 Python Producer에 관심을 갖게 되었나요?
 
-"Kafka 개발은 Java가 일반적이죠"라는 말을 참 많이 들은 것 같다. 그런데, 지금 다니는 회사의 Kafka Producer Application은 Python으로 개발 되어 있고, 이걸로 꽤 많은 데이터가 처리되고 있다!! (지금도!)
+"Kafka 개발은 Java가 일반적이죠"라는 말을 참 많이 들은 것 같다. 그런데, 회사에서의 Kafka Producer Application은 Python으로 개발 되어 있고, 이걸로 꽤 많은 데이터가 처리되고 있다!! (지금도!)
 
 그렇게 생각하니 'Python Producer도 나쁘지 않는데?'라는 생각이 들기도 하고, 한번 제대로 정리해보면 좋을 것 같다는 생각이 들었다. 이 글은 그런 생각이 들은 내가 테스트 해본 Python Producer 코드들을 아카이브 하고 깨달은 점을 적은 글이다.
 

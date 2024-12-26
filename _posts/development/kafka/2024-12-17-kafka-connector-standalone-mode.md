@@ -8,7 +8,7 @@ excerpt: "Kafka Connect로 Topic 데이터를 손쉽게 전달하기 ✌️ File
 
 # 들어가며
 
-지금 다니는 회사는 Confluent를 통해 Kafka 클러스터를 사용하고 있습니다. 대부분의 경우 Confluent-managed Connector를 사용 했었으나, 최근 Confluent에서 지원하지 않는 데이터베이스로 Topic의 데이터를 적재해야 할 일이 생겼습니다...! 저는 Confluent를 이해할 좋은 기회라고 생각했고, Kubernetes 위에서 Sink Connector를 운영하는 경험을 해볼 수 있었습니다.
+회사에서 Confluent를 통해 Kafka 클러스터를 사용하고 있습니다. 대부분의 경우 Confluent-managed Connector를 사용 했었으나, 최근 Confluent에서 지원하지 않는 데이터베이스로 Topic의 데이터를 적재해야 할 일이 생겼습니다...! 저는 Confluent를 이해할 좋은 기회라고 생각했고, Kubernetes 위에서 Sink Connector를 운영하는 경험을 해볼 수 있었습니다.
 
 구글에 검색해보면, [Strimzi](https://strimzi.io/)를 사용해 Kafka Cluster와 Connector까지 띄우는 경우를 많이 봤는데요. Strimzi도 매력적인 도구이지만, 이번 작업에서는 그것 없이 Sink Connector를 띄워보고 싶었습니다! 그래서 저 말고도 이런 니즈를 가진 분들이 있을까 하여 내용을 정리해보았습니다 ㅎㅎ
 
