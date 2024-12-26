@@ -40,7 +40,7 @@ CREATE TABLE delta.`s3://{BUCKET_NAME}/{PATH}` (
 SELECT * FROM delta.`s3://{BUCKET_NAME}/{PATH}`
 ```
 
-이것이 가능한 이유는 Delta 테이블의 경우, 스키마 정보가 Hive Metastore에 저장되는 것이 아니라 `_delta_log/` 폴더에 담기기 때문이다. 즉, Delta 테이블을 생성되지만, Hive Metastore에는 등록되지 않는다.
+이것이 가능한 이유는 Delta 테이블은 스키마 정보가 Hive Metastore에 저장되는 것이 아닌 `_delta_log/` 폴더에 담기기 때문이다. 즉, 스키마 정보를 Hive Metastore에는 등록하지 않아도 데이터를 S3에서 읽을 수 있다.
 
 앞에 붙은 `delta`는 스키마 이름이 아니라 `delta` 테이블을 읽거나 만든다는 예약 키워드다.
 

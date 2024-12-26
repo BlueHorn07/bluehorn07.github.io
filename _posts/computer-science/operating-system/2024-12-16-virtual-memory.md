@@ -136,11 +136,13 @@ process에서 `fork()`를 실행하면, 모든 것이 똑같은 복제본을 만
   - Context Switch 과정은 요 GDTR 레지스터의 포인터가 바뀌는 것임.
 - Multi-level Page Table
   - 페이지 크기는 4 Kb ($2^12$)
-    - offset bit가 12 bit로 고정
+    - 하위 12 비트가 offset bit로 사용됨.
   - 32-bit 시스템은 2단계 페이지 테이블로 나눔
     - $2^{32} = 2^{10} \cdot 2^{10} \cdot 2^{12}$
   - 64-bit 시스템은 4단계 페이지 테이블로 나눔
-    - $2^{64} = 2^{32} \cdot 2^{10} \cdot 2^{10} \cdot 2^{12}$
+    - $2^{64} = 2^{16} \cdot (2^{9} \cdot 2^{9} \cdot 2^{9} \cdot 2^{9}) \cdot 2^{12}$
+      - 첫 16 비트는 Unused bit임.
+      - [요기 다이어그램을 참고할 것](https://blog.xenoscr.net/2021/09/06/Exploring-Virtual-Memory-and-Page-Structures.html)
 
 # Kernel Memory is not swapped out
 
@@ -153,6 +155,17 @@ process에서 `fork()`를 실행하면, 모든 것이 똑같은 복제본을 만
 PAE
 
 # Buddy System
+
+Linux에서 커널 메모리 관리를 위해 사용함.
+
+메모리를 2의 제곱 크기로 나누어 관리함.
+
+요청 크기와 가장 가까운 2의 제곱 크기를 할당하고, 해제된 메모리는 "buddy"와 병함하여 큰 메모리 블록으로 복구함.
+
+커널에서는 동적 메모리 할당이 자주 일어나는데, 빠른 할당과 해제가 가능함.
+
+단, 내부 단편화가 무조건 발생함.
+
 
 # Slab Allocator
 
