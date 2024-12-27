@@ -78,9 +78,7 @@ categories: ["Probability"]
 
 참가자가 고른 문을 $\textsf{A}$, 나머지 두개 문을 $\textsf{B}$, $\textsf{C}$라고 하자.
 
-그리고 "문 $\textsf{X}$에 자동차가 있는 사건"을 $C_{\textsf{X}}$라고 하자.
-
-반대로 "문 $\textsf{Y}$에 염소가 있는 사건"을 $G_{\textsf{Y}}$라고 하자.
+"문 $\textsf{X}$에 자동차가 있는 사건"을 $C_{\textsf{X}}$라고 하자. 그리고 "참가자가 문 $\textsf{A}$를 지목한 상태에서 사회자가 문 $\textsf{Y}$에 염소가 있음을 보여주는 사건"을 $G_{\textsf{Y}}$라고 하자.
 
 우리가 구하고자 하는 것은 사건 $G_{\textsf{Y}}$가 일어난 상태에서, $\textsf{A}$문에 자동차가 있는 사건 $C_{\textsf{A}}$의 조건부 확률, 즉 $P(C_{\textsf{A}} \mid G_{\textsf{Y}})$이다. 사회자의 공개로 염소가 있음을 확인하는 문은 $\textsf{B}$ 아님 $\textsf{C}$ 이다. 논의의 편의를 위해 $G_{\textsf{B}}$가 일어났다고 가정하자.
 
@@ -111,7 +109,7 @@ P(C_{\textsf{A}} \mid G_{\textsf{B}}) = \frac{P(G_{\textsf{B}} \mid C_{\textsf{A
 $$
 
 $$
-P(C_{\textsf{C}} \mid G_{\textsf{B}}) = \frac{P(G_{\textsf{B}} \mid C_{\textsf{B}}B)}{P(G_{\textsf{B}} \mid C_{\textsf{A}}) + P(G_{\textsf{B}} \mid C_{\textsf{B}}) + P(G_{\textsf{B}} \mid C_{\textsf{C}})} = \frac{1}{0.5 + 1 + 0} = \frac{2}{3}
+P(C_{\textsf{C}} \mid G_{\textsf{B}}) = \frac{P(G_{\textsf{B}} \mid C_{\textsf{B}})}{P(G_{\textsf{B}} \mid C_{\textsf{A}}) + P(G_{\textsf{B}} \mid C_{\textsf{B}}) + P(G_{\textsf{B}} \mid C_{\textsf{C}})} = \frac{1}{0.5 + 1 + 0} = \frac{2}{3}
 $$
 
 $P(C_{\textsf{C}} \mid G_{\textsf{B}})$의 확률이 더 높다는 것은, 문 $\textsf{B}$에서 염소를 봤다면, 처음 선택한 문 $\textsf{A}$가 아닌 다른 문 $\textsf{C}$에 자동차가 있을 확률이 크다는 것이다!
@@ -122,4 +120,6 @@ $P(C_{\textsf{C}} \mid G_{\textsf{B}})$의 확률이 더 높다는 것은, 문 $
 
 # 여담
 
-수업에서 이 문제를 본 후에, "21"라는 이름의 블랙잭 게임에 대한 카지노 영화에서 이 문제를 한번더 만났다. 영화에서는 깊은 설명 없이 잠깐 등장한다.
+수업에서 이 문제를 본 후에, "21"라는 이름의 블랙잭 게임에 대한 카지노 영화에서 이 문제를 한번더 만났다. 영화에서는 깊은 설명 없이 잠깐 등장한다. 그래도 나름 반가웠달까 ㅋㅋ
+
+
