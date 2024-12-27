@@ -99,7 +99,7 @@ $$
 
 </div>
 
-자세한 내용은 별도의 블로그 포스트에 적어뒀다. [링크](https://bluehorn07.github.io/2024/06/08/cantor-set/)
+자세한 내용은 별도의 블로그 포스트에 적어뒀다. [링크](/2024/06/08/cantor-set/)
 
 # The Cauchy condensation test
 

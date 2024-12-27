@@ -63,7 +63,7 @@ kn service create hello \
 
 ## Install Istio
 
-Knative의 네트워킹 백엔드를 구성하기 위해 서비스 메쉬인 Istio를 설치하자!! Istio를 설치하는 방법으로 여러 가지가 있지만, 여기서는 `istioctl`로 진행한다. Istio를 설치하는 다른 방법이 궁금하다면, "[Install Istio and Addons](https://bluehorn07.github.io/2024/02/02/install-istio-and-addons/)" 포스트를 참고하자.
+Knative의 네트워킹 백엔드를 구성하기 위해 서비스 메쉬인 Istio를 설치하자!! Istio를 설치하는 방법으로 여러 가지가 있지만, 여기서는 `istioctl`로 진행한다. Istio를 설치하는 다른 방법이 궁금하다면, "[Install Istio and Addons](/2024/02/02/install-istio-and-addons/)" 포스트를 참고하자.
 
 ```bash
 istioctl install -y

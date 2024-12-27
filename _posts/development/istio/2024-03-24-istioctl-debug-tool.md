@@ -80,7 +80,7 @@ httpbin-v1-7b56f9959b-b5grp.default                    Kubernetes     SYNCED    
 httpbin-v2-65b8495dfd-t8mx2.default                    Kubernetes     SYNCED     SYNCED     SYNCED     SYNCED     NOT SENT     istiod-6b4c7d75b7-4h5f9     1.20.3
 ```
 
-예를 들어, [`IstioOperator`의 Canary Upgrade](https://bluehorn07.github.io/2024/03/21/istio-revision-and-canary-upgrade/) 때문에 서로 다른 `revision`의 istio를 운영해는 상황이라, 어떤 것들이 기존 istiod를 쓰고 어떤 것들이 `revision=canary`의 istiod를 쓰는지 확인해야 한다면 유용할 듯.
+예를 들어, [`IstioOperator`의 Canary Upgrade](/2024/03/21/istio-revision-and-canary-upgrade/) 때문에 서로 다른 `revision`의 istio를 운영해는 상황이라, 어떤 것들이 기존 istiod를 쓰고 어떤 것들이 `revision=canary`의 istiod를 쓰는지 확인해야 한다면 유용할 듯.
 
 ![](/images/development/istio/istio-canary-revision.png)
 

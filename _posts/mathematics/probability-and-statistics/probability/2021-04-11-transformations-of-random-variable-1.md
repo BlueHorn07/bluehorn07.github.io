@@ -6,7 +6,7 @@ toc_sticky: true
 categories: ["Probability"]
 ---
 
-“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](https://bluehorn07.github.io/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
+“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
 {: .notice--info}
 
 이번 챕터 "Ch07. Functions of Random Variables"에서는 RV $X$에 어떤 함수 $f(x)$를 씌워 $Y = f(X)$라는 새로운 RV를 만들때, 이 RV $Y$에 대한 분포를 살펴본다. 즉, $f(X)$에 대한 pdf, cdf를 구한다는 말이다.

@@ -23,7 +23,7 @@ CKA 시험에 이어서 2번째로 시험 본 CNCF 자격증이다 ㅎㅎ 올해
 
 진짜진짜 공부가 많이 됐다!! Istio에 대해서도 공부를 많이 했지만, 그외에 Istio에 사용된 처음 보는 엔지니어링 테크닉들도 많이 만난 것 같다.
 
-특히 Istio의 컨트롤 플레인인 `istiod`를 공부할 때 실력이 많이 성장한 것 같다. 처음에는 Sidecar Injection만 이해하고 있었는데, 이후에 Envoy 구성 정보 컴파일과 Certificate 관리에 대한 내용을 공부하면서 Istio의 전체적인 구조를 깨달은 것 같다. 또, 인터넷에서 Istio 자료들을 찾다보면 몇몇 자료가 Istio 구버전(istio 1.5 이하)의 구조로 설명하고 있는데, Mixer, Galley, Citadel이 나오는 이 구조를 이해하고 싶다는 생각이 갑자기 들어서 Istio 블로그 글이랑 패치 노트를 열심히 찾아본 것도 기억에 남는다 ㅎㅎ [[삽질의 흔적 ㅎㅎ]](https://bluehorn07.github.io/2024/03/07/istio-control-plane-detail-examine/)
+특히 Istio의 컨트롤 플레인인 `istiod`를 공부할 때 실력이 많이 성장한 것 같다. 처음에는 Sidecar Injection만 이해하고 있었는데, 이후에 Envoy 구성 정보 컴파일과 Certificate 관리에 대한 내용을 공부하면서 Istio의 전체적인 구조를 깨달은 것 같다. 또, 인터넷에서 Istio 자료들을 찾다보면 몇몇 자료가 Istio 구버전(istio 1.5 이하)의 구조로 설명하고 있는데, Mixer, Galley, Citadel이 나오는 이 구조를 이해하고 싶다는 생각이 갑자기 들어서 Istio 블로그 글이랑 패치 노트를 열심히 찾아본 것도 기억에 남는다 ㅎㅎ [[삽질의 흔적 ㅎㅎ]](/2024/03/07/istio-control-plane-detail-examine/)
 
 Istio를 공부하면서 새로운 개념들도 많이 만나게 되었는데, mTLS와 WebAssembly도 Istio에서 처음 들어봤고, Zero-trust Network에 대해서도 처음에 잘 이해가 안 됐는데 관련 자료를 찾아보니 Istio로 쉽게 K8s ZTN를 구축할 수 있다는 것도 알게 됐다. (토스의 ["고객 불안을 0으로 만드는 토스의 Istio Zero Trust" 영상](https://youtu.be/4sJd6PIkP_s?si=aYMdO52OFKBGied9)이 많이 도움이 됐다.)
 
@@ -56,7 +56,7 @@ Udemy 강좌를 다 들은 후에는 아래 2개를 계속 반복 했는데
 
 처음 Istio를 공부할 때는 `VirtualService`, `DestinationRule` 둘의 기능이 서로 헷갈려서 반대로 기억하는 경우도 종종 있었다 ㅋㅋㅋ `Gateway` 리소스도 Ingress Gateway가 K8s `Ingress`랑 이름이 비슷해서 둘이 어떻게 다른건지, 어떻게 동작하는 건지. 그리고 또 `Gateway`랑 `VirtualService`랑 같이 생각하는 것도 처음에 갈피를 잘 못 잡았었다 ㅠㅠ
 
-이런 혼란의 과정을 극복하는데 도움이 된 건 핸즈온이다!! 로컬 맥북에 띄운 K8s 클러스터에 이것저것 핸즈온들을 해보면서 각 리소스들이 이해되고 나아가서 그들이 서로 어떻게 상호작용하는지도 터득하게 된 것 같다 😁 Istio에서 제공하는 예제인 [helloworld 예제](https://bluehorn07.github.io/2024/02/05/istio-helloworld-demo/)와 [Bookinfo 예제](https://bluehorn07.github.io/2024/02/10/istio-book-info-demo/)를 활용하면서 Istio의 기능들을 익혀나갔다.
+이런 혼란의 과정을 극복하는데 도움이 된 건 핸즈온이다!! 로컬 맥북에 띄운 K8s 클러스터에 이것저것 핸즈온들을 해보면서 각 리소스들이 이해되고 나아가서 그들이 서로 어떻게 상호작용하는지도 터득하게 된 것 같다 😁 Istio에서 제공하는 예제인 [helloworld 예제](/2024/02/05/istio-helloworld-demo/)와 [Bookinfo 예제](/2024/02/10/istio-book-info-demo/)를 활용하면서 Istio의 기능들을 익혀나갔다.
 
 ## 슬랙 커뮤니티에 질문하기!
 
@@ -100,27 +100,27 @@ Istio 모의 테스트가 2개 있는데, 요 테스트가 더 퀄리티가 좋�
 
 [전체 목록]
 
-- [Install Istio and Addons(Prometheus, Kiali)](https://bluehorn07.github.io/2024/02/02/install-istio-and-addons/)
-- [Istio ‘helloworld’ 데모](https://bluehorn07.github.io/2024/02/05/istio-helloworld-demo/)
-- [Istio `Bookinfo` 데모](https://bluehorn07.github.io/2024/02/10/istio-book-info-demo/)
-- [Istio: Ingress Gateway](https://bluehorn07.github.io/2024/02/14/istio-ingress-gateway/)
-- [Istio: Egress Gateway](https://bluehorn07.github.io/2024/02/15/istio-egress-gateway/)
-- [Istio TLS Network 관련 사전 지식](https://bluehorn07.github.io/2024/02/24/istio-pre-requisites-tls-network/)
-- [Istio circular Virtual Service](https://bluehorn07.github.io/2024/02/28/istio-circular-virtual-service/)
-- [Istio Security](https://bluehorn07.github.io/2024/03/03/istio-security/)
-- [Istio Operator 꼼꼼히 살펴보기](https://bluehorn07.github.io/2024/03/05/istio-operator-detail-examine/)
-- [Istio의 컨트롤 플레인 꼼곰히 살펴보기](https://bluehorn07.github.io/2024/03/07/istio-control-plane-detail-examine/)
-- [Istio의 Authentication & Authorization](https://bluehorn07.github.io/2024/03/14/istio-authentication-and-authorization/)
-- [Istio Envoy Access Logging](https://bluehorn07.github.io/2024/03/16/istio-envoy-access-logging/)
-- [Istio Distributed Tracing with Jaeger](https://bluehorn07.github.io/2024/03/18/istio-distributed-tracing-jaeger/)
-- [Istio Envoy Discovery Service](https://bluehorn07.github.io/2024/03/20/istio-envoy-service-discovery/)
-- [Istio Revision and Canary Upgrade](https://bluehorn07.github.io/2024/03/21/istio-revision-and-canary-upgrade/)
-- [Istio Service Registry](https://bluehorn07.github.io/2024/03/21/istio-service-registry/)
-- [Istio 이것저것 메모들](https://bluehorn07.github.io/2024/03/22/istio-memo-collections/)
-- [Istio Circuit Breaking](https://bluehorn07.github.io/2024/03/23/istio-circuit-breaking/)
-- [Istio CRD 중에 지엽적인 나머지 것들 정리](https://bluehorn07.github.io/2024/03/23/istio-crd-others-memo/)
-- [Istio Virtual Machine Architecture](https://bluehorn07.github.io/2024/03/23/istio-virtual-machine-architecture/)
-- [istioctl 디버그 도구들](https://bluehorn07.github.io/2024/03/24/istioctl-debug-tool/)
+- [Install Istio and Addons(Prometheus, Kiali)](/2024/02/02/install-istio-and-addons/)
+- [Istio ‘helloworld’ 데모](/2024/02/05/istio-helloworld-demo/)
+- [Istio `Bookinfo` 데모](/2024/02/10/istio-book-info-demo/)
+- [Istio: Ingress Gateway](/2024/02/14/istio-ingress-gateway/)
+- [Istio: Egress Gateway](/2024/02/15/istio-egress-gateway/)
+- [Istio TLS Network 관련 사전 지식](/2024/02/24/istio-pre-requisites-tls-network/)
+- [Istio circular Virtual Service](/2024/02/28/istio-circular-virtual-service/)
+- [Istio Security](/2024/03/03/istio-security/)
+- [Istio Operator 꼼꼼히 살펴보기](/2024/03/05/istio-operator-detail-examine/)
+- [Istio의 컨트롤 플레인 꼼곰히 살펴보기](/2024/03/07/istio-control-plane-detail-examine/)
+- [Istio의 Authentication & Authorization](/2024/03/14/istio-authentication-and-authorization/)
+- [Istio Envoy Access Logging](/2024/03/16/istio-envoy-access-logging/)
+- [Istio Distributed Tracing with Jaeger](/2024/03/18/istio-distributed-tracing-jaeger/)
+- [Istio Envoy Discovery Service](/2024/03/20/istio-envoy-service-discovery/)
+- [Istio Revision and Canary Upgrade](/2024/03/21/istio-revision-and-canary-upgrade/)
+- [Istio Service Registry](/2024/03/21/istio-service-registry/)
+- [Istio 이것저것 메모들](/2024/03/22/istio-memo-collections/)
+- [Istio Circuit Breaking](/2024/03/23/istio-circuit-breaking/)
+- [Istio CRD 중에 지엽적인 나머지 것들 정리](/2024/03/23/istio-crd-others-memo/)
+- [Istio Virtual Machine Architecture](/2024/03/23/istio-virtual-machine-architecture/)
+- [istioctl 디버그 도구들](/2024/03/24/istioctl-debug-tool/)
 
 # 시험 준비 기간은?
 

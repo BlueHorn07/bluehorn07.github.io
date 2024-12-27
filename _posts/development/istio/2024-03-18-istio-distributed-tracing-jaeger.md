@@ -21,7 +21,7 @@ Tracing을 통해 MSA 구조를 이루는 복잡한 분산 시스템이 서로 �
 
 ![](https://istio.io/latest/docs/examples/bookinfo/withistio.svg)
 
-Tracing을 잘 살펴보기 위해 MSA 구조를 가진 어플리케이션을 띄우자. Istio 예제인 "bookinfo"를 띄운다. (예제 핸즈온은 [예전에 써둔 포스트](https://bluehorn07.github.io/2024/02/10/istio-book-info-demo/) 참고.)
+Tracing을 잘 살펴보기 위해 MSA 구조를 가진 어플리케이션을 띄우자. Istio 예제인 "bookinfo"를 띄운다. (예제 핸즈온은 [예전에 써둔 포스트](/2024/02/10/istio-book-info-demo/) 참고.)
 
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.20/samples/bookinfo/platform/kube/bookinfo.yaml
@@ -89,7 +89,7 @@ Ingress Gateway를 통해 보낸 요청도 Jaeger로 추적이 가능하다!
 
 ## Header와 Body 정보는 확인 불가
 
-[Istio Envoy Access Logging 포스트](https://bluehorn07.github.io/2024/03/16/istio-envoy-access-logging/)에서도 그랬는데, 요청의 Header와 Body 정보는 Tracing에서도 확인 불가능 했다.
+[Istio Envoy Access Logging 포스트](/2024/03/16/istio-envoy-access-logging/)에서도 그랬는데, 요청의 Header와 Body 정보는 Tracing에서도 확인 불가능 했다.
 
 # Zipkin
 

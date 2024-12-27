@@ -13,7 +13,7 @@ istio를 사용하면 Authentication과 Authorization을 Envoy Proxy 레벨에�
 
 # 사전 준비: helloworld 예제
 
-Istio 예제로 제공되는 helloworld 예제를 활용해서 Istio의 AuthN&AuthZ을 검증해보자. 자세한 예제는 이전에 적어둔 [Istio 'helloworld' 데모](https://bluehorn07.github.io/2024/02/05/istio-helloworld-demo/) 포스트에서 확인할 수 있다.
+Istio 예제로 제공되는 helloworld 예제를 활용해서 Istio의 AuthN&AuthZ을 검증해보자. 자세한 예제는 이전에 적어둔 [Istio 'helloworld' 데모](/2024/02/05/istio-helloworld-demo/) 포스트에서 확인할 수 있다.
 
 일단 위의 명령어로 워크로드를 띄우고
 

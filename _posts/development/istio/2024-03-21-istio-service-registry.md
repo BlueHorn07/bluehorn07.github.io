@@ -38,7 +38,7 @@ metrics-server.kube-system.svc.cluster.local
 
 > Istio does not provide service discovery, although most services are automatically added to the registry by Pilot adapters that reflect the discovered services of the underlying platform (Kubernetes, Consul, plain DNS). Additional services can also be **registered manually** using a `ServiceEntry` configuration.
 
-[Istio Egress Gateway](https://bluehorn07.github.io/2024/02/15/istio-egress-gateway/)를 살펴볼 때 만난 `ServiceEntry`라는 리소스는 Istio 워크로드가 메쉬 외부로 나갈 때의 트래픽을 모니터링 하게 한다.
+[Istio Egress Gateway](/2024/02/15/istio-egress-gateway/)를 살펴볼 때 만난 `ServiceEntry`라는 리소스는 Istio 워크로드가 메쉬 외부로 나갈 때의 트래픽을 모니터링 하게 한다.
 
 ```yaml
 $ kubectl apply -f - <<EOF
@@ -74,7 +74,7 @@ curl: (35) Recv failure: Connection reset by peer
 ```
 naver는 Istio Service Registry에 등록되지 않아서 접근이 불가!
 
-이전의 [Istio Security 포스트](https://bluehorn07.github.io/2024/03/03/istio-security/)의 `PeerAuthentication` 부분에도 적어뒀는데, 요 `ServiceEntry`는 "istio ➡️ non-istio" 방향의 트래픽 중 non-istio external endpoint로 가는 트래픽을 허용하는 방법이다.
+이전의 [Istio Security 포스트](/2024/03/03/istio-security/)의 `PeerAuthentication` 부분에도 적어뒀는데, 요 `ServiceEntry`는 "istio ➡️ non-istio" 방향의 트래픽 중 non-istio external endpoint로 가는 트래픽을 허용하는 방법이다.
 
 # 참고자료
 

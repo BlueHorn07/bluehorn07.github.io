@@ -20,7 +20,7 @@ kubectl label ns default istio-injection=enabled
 
 그리고 앞선 포스트를 참고해 Istio와 Kiali, Prometheus Addon을 설치한다.
 
-➡️ [Install Istio and Addons(Prometheus, Kiali)](https://bluehorn07.github.io/2024/02/02/install-istio-and-addons/)
+➡️ [Install Istio and Addons(Prometheus, Kiali)](/2024/02/02/install-istio-and-addons/)
 
 
 # helloworld 어플리케이션

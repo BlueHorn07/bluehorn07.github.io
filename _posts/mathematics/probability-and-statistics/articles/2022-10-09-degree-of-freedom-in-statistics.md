@@ -7,7 +7,7 @@ categories: ["Statistics"]
 excerpt: "통계학에서 자유도(Degree of Freedom)란 무엇인가? 왜 보통 자유도로 $(n-1)$ 값을 쓰는가?"
 ---
 
-통계학을 공부하면서 들었던 의문과 생각들을 에세이로 적어보았습니다 🙏 전체 포스트는 [Probability and Statistics](https://bluehorn07.github.io/categories/probability-and-statistics)에서 확인하실 수 있습니다🎲
+통계학을 공부하면서 들었던 의문과 생각들을 에세이로 적어보았습니다 🙏 전체 포스트는 [Probability and Statistics](/categories/probability-and-statistics)에서 확인하실 수 있습니다🎲
 {: .notice--info}
 
 이번 포스트는 통계학에서 나오는 "자유도(Degree of Freedom)"와 "왜 통계학에선 DOF를 $n-1$로 설정하는지"에 대한 생각을 다룹니다. 🙌

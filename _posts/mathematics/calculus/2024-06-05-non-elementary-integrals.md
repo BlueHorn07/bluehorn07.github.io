@@ -56,7 +56,7 @@ $$
 f(x; \mu, \sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}} \exp \left( - \frac{(x-\mu)^2}{2\sigma^2}\right)
 $$
 
-자세한 내용은 "확률과 통계(MATH230)" 수업 들을 때 정리했던 블로그 포스틀 참고하자. [링크](https://bluehorn07.github.io/2021/03/30/normal-distribution/)
+자세한 내용은 "확률과 통계(MATH230)" 수업 들을 때 정리했던 블로그 포스틀 참고하자. [링크](/2021/03/30/normal-distribution/)
 
 ## Sine-Integral Function
 
@@ -107,4 +107,4 @@ $$
 
 $\Gamma(x) = x \cdot \Gamma(x-1)$라는 성질을 만족하는 함수다. 팩토리얼 $n!$을 자연수에서 실수와 복소수 영역으로 확장시킨 함수다.
 
-요 감마 함수를 기반으로 하는 연속 확률 분포인 "Gamma Distribution"라는 것도 있다. 자세한 내용은 "확률과 통계(MATH230)" 수업 들을 때 정리 했던 블로그 포스트를 참고. [Link](https://bluehorn07.github.io/2021/04/05/gamma-distribution/)
+요 감마 함수를 기반으로 하는 연속 확률 분포인 "Gamma Distribution"라는 것도 있다. 자세한 내용은 "확률과 통계(MATH230)" 수업 들을 때 정리 했던 블로그 포스트를 참고. [Link](/2021/04/05/gamma-distribution/)

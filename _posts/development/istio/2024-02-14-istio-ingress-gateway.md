@@ -109,7 +109,7 @@ spec:
 
 일단 Istio 설치 때 자동으로 설치하는 Ingress Gateway 외에 추가 Ingress GW를 띄우고 싶다면, `IstioOperator` 리소스를 수정해줘야 한다.
 
-Istio를 설치하는 방법도 [`istioctl`, helm chart로 설치하기, Istio Operator로 설치하기](https://bluehorn07.github.io/2024/02/02/install-istio-and-addons/) 등 여러 방법이 있지만, 여기서는 `istioctl`와 Istio Operator를 사용해서 Ingress GW를 추가해보겠다.
+Istio를 설치하는 방법도 [`istioctl`, helm chart로 설치하기, Istio Operator로 설치하기](/2024/02/02/install-istio-and-addons/) 등 여러 방법이 있지만, 여기서는 `istioctl`와 Istio Operator를 사용해서 Ingress GW를 추가해보겠다.
 
 일단, 우리가 `IstioOperator` 리소스를 수정 했을 때, 그걸 반영해서 띄워 줄 IstioOperator 컨트롤러를 띄워야 한다.
 

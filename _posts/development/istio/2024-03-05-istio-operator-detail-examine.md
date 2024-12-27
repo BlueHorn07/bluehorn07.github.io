@@ -17,7 +17,7 @@ last_modified_at: 2024-03-09
 
 # `istioctl`로 띄운 `IstioOperator`를 yaml로 관리하기
 
-K8s 클러스터에 Istio 서비스 메쉬를 구성하는 방법이 여러가지가 있지만! (`istioctl`, helm chart, istio-operator로 설치할 수 있다!! 자세한 건 [정리 해둔 이 글](https://bluehorn07.github.io/2024/02/02/install-istio-and-addons/)을 참고)
+K8s 클러스터에 Istio 서비스 메쉬를 구성하는 방법이 여러가지가 있지만! (`istioctl`, helm chart, istio-operator로 설치할 수 있다!! 자세한 건 [정리 해둔 이 글](/2024/02/02/install-istio-and-addons/)을 참고)
 
 본인은 `helmfile.yaml` 만들기 귀찮아서 그냥 `istioctl install`로 설치하고 `istioctl uninstall --purge`로 없앤다 ㅋㅋㅋ (로컬이니까~~)
 
@@ -253,7 +253,7 @@ spec:
 
 ## Outbound Traffic Policy
 
-서비스 메쉬 바깥으로 나가는 트래픽에 대해서 `ServiceEntry`에 등록된 도메인만 나가도록 할지 아님 등록되지 않아도 나갈 수 있게 설정하는 옵션이다. 요건 Egress Gateway를 살펴볼 때 봤다!! "[Istio: Egress Gateway](https://bluehorn07.github.io/2024/02/15/istio-egress-gateway/)"
+서비스 메쉬 바깥으로 나가는 트래픽에 대해서 `ServiceEntry`에 등록된 도메인만 나가도록 할지 아님 등록되지 않아도 나갈 수 있게 설정하는 옵션이다. 요건 Egress Gateway를 살펴볼 때 봤다!! "[Istio: Egress Gateway](/2024/02/15/istio-egress-gateway/)"
 
 제일 간단한 녀석인데, 기본값은 `ALLOW_ANY`이고, 만약 등록된 도메인만 허용하고 싶다면 `REGISTRY_ONLY`로 설정하면 된다!
 

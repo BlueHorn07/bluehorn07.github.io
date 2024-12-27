@@ -7,7 +7,7 @@ categories: ["Probability"]
 excerpt: 조합에 음수 $n$이 들어간 $\binom{-n}{k}$를 어떻게 정의할까?
 ---
 
-“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](https://bluehorn07.github.io/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
+“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
 {: .notice--info}
 
 # 도입말

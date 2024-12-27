@@ -26,7 +26,7 @@ categories: ["Algorithm"]
 
 <big>1. Single source and single destination shortest path problem</big>
 
-간단하다. 그냥 [\<Dijkstra Algorithm\>](https://bluehorn07.github.io/computer_science/2021/04/17/dijkstra-algorithm)으로 해결하면 된다 😉
+간단하다. 그냥 [\<Dijkstra Algorithm\>](/computer_science/2021/04/17/dijkstra-algorithm)으로 해결하면 된다 😉
 
 사실 2번째 케이스인 "Single source shortest path problem"도 \<Dijkstra Algorithm\>을 돌리면 된다 ㅋㅋㅋ
 
@@ -40,7 +40,7 @@ categories: ["Algorithm"]
 
 <big>4. All pairs shortest path problem</big>
 
-이 녀석은 \<Dijkstra Algorithm\>이 아닌 [\<Floyd-Warshall Algorithm\>](https://bluehorn07.github.io/computer_science/2021/06/13/all-pairs-shortest-paths)으로 풀어야 한다! DP로 구현하며, 자세한 내용을 포스트를 읽어보자! 🎈
+이 녀석은 \<Dijkstra Algorithm\>이 아닌 [\<Floyd-Warshall Algorithm\>](/computer_science/2021/06/13/all-pairs-shortest-paths)으로 풀어야 한다! DP로 구현하며, 자세한 내용을 포스트를 읽어보자! 🎈
 
 <hr/>
 

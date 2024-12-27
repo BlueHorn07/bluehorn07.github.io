@@ -85,7 +85,7 @@ Envoy Proxy의 인증서는 수명이 24시간 뿐이지만, 12시간 마다 갱
 
 ## 일단 istio 설치는 제대로 안 됩니다.
 
-"[Istio Operator 꼼꼼히 살펴보기](https://bluehorn07.github.io/2024/03/05/istio-operator-detail-examine/)" 포스트에서도 확인 했지만, `components.pilot.enabled: false`로 설정하고 `istioctl install`을 실행하면 ingress/egress gateway가 뜨지 않고 멈춰버린다!!
+"[Istio Operator 꼼꼼히 살펴보기](/2024/03/05/istio-operator-detail-examine/)" 포스트에서도 확인 했지만, `components.pilot.enabled: false`로 설정하고 `istioctl install`을 실행하면 ingress/egress gateway가 뜨지 않고 멈춰버린다!!
 
 ## istiod가 있던 상태에서 istiod가 없어진다면?
 

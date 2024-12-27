@@ -6,7 +6,7 @@ toc_sticky: true
 categories: ["Statistics", "Problem Solving"]
 ---
 
-“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](https://bluehorn07.github.io/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
+“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
 {: .notice--info}
 
 이 글은 "[Test on Regression]({{"/2021/06/09/test-on-regression" | relative_url}})" 포스트에서 제시한 숙제들을 풀이한 포스트입니다.

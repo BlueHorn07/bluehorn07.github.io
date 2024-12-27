@@ -203,7 +203,7 @@ Istio 메쉬 전체에 트래픽 규칙을 적용하는게 가능하다!! 아래
 
 ## DestinationRule
 
-[Istio Circuit Breaking을 연습 했던 포스트](https://bluehorn07.github.io/2024/03/23/istio-circuit-breaking/)에서 작성 했던 Outlier Detection 코드를 가져와 루트 네임스페이스인 `istio-system`에 디플로이 해보자.
+[Istio Circuit Breaking을 연습 했던 포스트](/2024/03/23/istio-circuit-breaking/)에서 작성 했던 Outlier Detection 코드를 가져와 루트 네임스페이스인 `istio-system`에 디플로이 해보자.
 
 ```yaml
 $ kubectl apply -f - <<EOF

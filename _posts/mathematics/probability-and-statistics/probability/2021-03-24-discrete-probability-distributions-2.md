@@ -6,7 +6,7 @@ toc_sticky: true
 categories: ["Probability"]
 ---
 
-“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](https://bluehorn07.github.io/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
+“확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
 {: .notice--info}
 
 이전 포스트에서 이산 분포의 기본이 되는 \<Bernoulli Distribution\>, \<Binomial Distribution\> 등등을 살펴봤다. 이번 포스트에서는 좀더 재미있는 분포들이 등장한다!

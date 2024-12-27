@@ -49,7 +49,7 @@ curl: (56) Recv failure: Connection reset by peer
 
 Istio Service Registry에 대해 더 궁금하다면, 후속 포스트를 참고
 
-➡️ [Istio Service Registry](https://bluehorn07.github.io/2024/03/21/istio-service-registry/)
+➡️ [Istio Service Registry](/2024/03/21/istio-service-registry/)
 
 # `AuthorizationPolicy`
 

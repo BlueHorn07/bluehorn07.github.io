@@ -116,7 +116,7 @@ EOF
 ```
 
 <small markdown="1">
-\* "TLS Pass-through"에 대해선 [Istio TLS Network 관련 사전 지식](https://bluehorn07.github.io/2024/02/24/2024-02-24-istio-pre-requisites-tls-network/) 문서에 따로 정리 했으니 참고하자. 여기서는 Egress GW를 통해 서비스 메시 바깥으로 나가는 트래픽을 따로 TLS 복호화 없이 그대로 통과 시킨다는 의미로 받아들이자.
+\* "TLS Pass-through"에 대해선 [Istio TLS Network 관련 사전 지식](/2024/02/24/2024-02-24-istio-pre-requisites-tls-network/) 문서에 따로 정리 했으니 참고하자. 여기서는 Egress GW를 통해 서비스 메시 바깥으로 나가는 트래픽을 따로 TLS 복호화 없이 그대로 통과 시킨다는 의미로 받아들이자.
 </small>
 
 이제 2개의 `VirtrualService` 리소스를 만들어 주는데
