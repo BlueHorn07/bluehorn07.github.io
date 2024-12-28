@@ -1,5 +1,5 @@
 ---
-title: "Differential Equations"
+title: "Ordinary Differential Equations"
 permalink: /categories/ordinary-differential-equations
 toc: true
 toc_sticky: true

@@ -7,14 +7,15 @@ categories: ["Differential Equations"]
 excerpt: ""
 ---
 
-복수전공하고 있는 수학과의 졸업시험을 위해 학부 수학 과목들을 다시 공부하고 있습니다만... 미분방정식은 졸업시험 대상 과목이 아니라는 걸 나중에 알게 되었습니다... OTL... 그래도 이왕 시작한 거 다시 복습 좀 해봅시다! 🏃 [미분방정식 포스트 전체 보기](/categories/differential-equations)
+복수전공하고 있는 수학과의 학부 졸업시험에 미분방정식이 있는 줄 알고, 시험 준비도 할 겸 복학할 때 “상미분방정식” 과목을 신청했습니다. 나중에 알고보니 미분방정식은 졸업시험 과목이 아니었습니다… OTL… 그래도 이왕 시작한 것 포기란 없습니다!! 💪 으랏차!!
+[상미분방정식 포스트 전체 보기](/categories/ordinary-differential-equations)
 {: .notice--info}
 
 # Example 1
 
 <div class="problem" markdown="1">
 
-Draw the phase portrait of $x' = A x$ where 
+Draw the phase portrait of $x' = A x$ where
 
 $$
 A = \left(
@@ -56,7 +57,7 @@ e^{4t}
 +
 c_2 \left(
 \begin{matrix}
-1 \\ 
+1 \\
 -2
 \end{matrix}
 \right)
@@ -72,7 +73,7 @@ e^{4t}
 +
 c_2 \left(
 \begin{matrix}
-1 \\ 
+1 \\
 -2
 \end{matrix}
 \right)
@@ -92,7 +93,7 @@ $\lambda_1 = 4$이 양수이므로 벡터 $v_1$ 위에서 원점에 대해 나�
 
 <div class="problem" markdown="1">
 
-Draw the phase portrait of $x' = A x$ where 
+Draw the phase portrait of $x' = A x$ where
 
 $$
 A = \left(
@@ -149,7 +150,7 @@ x(t) = c_1 \left(
 +
 c_2 \left(
 \begin{matrix}
-1 \\ 
+1 \\
 -2
 \end{matrix}
 \right)

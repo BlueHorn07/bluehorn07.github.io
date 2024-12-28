@@ -7,7 +7,8 @@ categories: ["Differential Equations"]
 excerpt: "Systems of ODEs를 일반적인 방법에 대해."
 ---
 
-복수전공하고 있는 수학과의 졸업시험을 위해 학부 수학 과목들을 다시 공부하고 있습니다만... 미분방정식은 졸업시험 대상 과목이 아니라는 걸 나중에 알게 되었습니다... OTL... 그래도 이왕 시작한 거 다시 복습 좀 해봅시다! 🏃 [미분방정식 포스트 전체 보기](/categories/differential-equations)
+복수전공하고 있는 수학과의 학부 졸업시험에 미분방정식이 있는 줄 알고, 시험 준비도 할 겸 복학할 때 “상미분방정식” 과목을 신청했습니다. 나중에 알고보니 미분방정식은 졸업시험 과목이 아니었습니다… OTL… 그래도 이왕 시작한 것 포기란 없습니다!! 💪 으랏차!!
+[상미분방정식 포스트 전체 보기](/categories/ordinary-differential-equations)
 {: .notice--info}
 
 # 들어가며
@@ -65,7 +66,7 @@ Z'(t) = \frac{d}{dt} \left( e^{-tA} Y(t) \right)
 = 0
 $$
 
-$Z'(t) = 0$라는 결과는 $Z(t)$ 함수가 constant 함수라는 것이고, 이는 
+$Z'(t) = 0$라는 결과는 $Z(t)$ 함수가 constant 함수라는 것이고, 이는
 
 $$
 Z(t) = e^{-tA} Y(t) = Z_0 = Y(0) = X_0
@@ -155,7 +156,7 @@ $$
 
 $$
 \begin{aligned}
-X'(t) 
+X'(t)
 &=
 A \cdot \left(e^{tA} \left( X_0 + \int_0^t e^{-sA} G(s) ds \right) \right)
 + \cancel{e^{tA}} \left( \cancel{e^{tA}} G(t) \right) \\

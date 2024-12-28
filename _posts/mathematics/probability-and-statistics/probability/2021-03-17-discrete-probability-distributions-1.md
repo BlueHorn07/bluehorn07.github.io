@@ -117,20 +117,28 @@ $$
 이때, 개별 시행 $X_i$가 Bernoulli Distribution을 따르고, 서로가 독립으므로 \<expectation\>의 Linearity에 의해
 
 $$
-E[X] = E[X_1 + \cdots + X_n] = E[X_1] + \cdots + E[X_n]
+\begin{aligned}
+E[X]
+&= E[X_1 + \cdots + X_n] \\
+&= E[X_1] + \cdots + E[X_n] \\
+&= p + \cdots + p \\
+&= n \cdot p
+\end{aligned}
 $$
 
 좀더 엄밀하게 증명하면 아래와 같다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $$
 \begin{aligned}
 E[X] &= \sum k f(k) = \sum k \binom{n}{k} p^k q^{n-k} \\
-    &= \sum k \frac{n!}{k! (n-k)!} p^k q^{n-k} \\
-    &= \sum \frac{n!}{(k-1)! (n-k)!} p^k q^{n-k} \\
-    &= \sum n \frac{(n-1)!}{(k-1)! (n-k)!} p^k q^{n-k} \\
-    &= np \sum^{n-1}_{k=0} \frac{(n-1)!}{(k-1)! (n-k)!} p^{k-1} q^{n-k} \\
+    &= \sum^{n}_{k=0} k \frac{n!}{k! (n-k)!} p^k q^{n-k} \\
+    &= \sum^{n}_{k=1} k \frac{n!}{k! (n-k)!} p^k q^{n-k} \\
+    &= \sum^{n}_{k=1} \frac{n!}{(k-1)! (n-k)!} p^k q^{n-k} \\
+    &= n \cdot \sum^{n}_{k=1} \frac{(n-1)!}{(k-1)! (n-k)!} p^k q^{n-k} \\
+    &= np \cdot \sum^{n}_{k=1} \frac{(n-1)!}{(k-1)! (n-k)!} p^{k-1} q^{n-k} \\
+    &= np \cdot \sum^{n-1}_{k=0} \frac{(n-1)!}{k! ((n-1)-k)!} p^{k} q^{(n-1)-k} \\
     &= np \cdot (p + (1-p))^{n-1} = np
 \end{aligned}
 $$
