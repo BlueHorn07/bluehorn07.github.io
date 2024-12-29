@@ -107,7 +107,9 @@ $ curl -X POST -H "Content-Type: application/json" \
   --data "@/etc/kafka-connect-properties/file-sink-connector/local-file-sink.json"
 ```
 
-위의 `curl` 명령어에서 `local-file-sink.json`으로 전달하는데, 이를 위해 `local-file-sink.json`을 아래와 같이 작성한 후, Standalone 모드에서 했던 것처럼 K8s Secret으로 만들어 Pod에 Volume Mount로 주입합니다.
+위의 `curl` 명령어에서 POST의 body를 `local-file-sink.json`으로 전달 합니다.
+이를 위해 `local-file-sink.json`을 아래와 같이 작성한 후, Standalone 모드에서 했던 것처럼 K8s Secret으로 만들어 Pod에 Volume Mount로 주입합니다.
+(아! 참고로 요렇게 `.json` 파일로 주입하는 경우 경로 맨 앞에 `@`를 꼭 넣어줘야 했습니다;;)
 
 ```json
 // @./local-file-sink.json

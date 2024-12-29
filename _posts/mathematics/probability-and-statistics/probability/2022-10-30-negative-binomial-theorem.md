@@ -50,11 +50,11 @@ $$
 
 이렇게 된다! 분자 부분에 $(-n)$부터 시작해 $(-1)$를 $k$번 뺀 녀석의 곱을 만들어줬다!
 
-이미 "$n$개 대상에서 $k$개를 '순서없이' 뽑는 경우의 수"라는 해석은 무의미 해졌다. \<Combination\> $\binom{n}{k}$라는 연산이 추상화되고 일반화된 것이다! 👏
+"$n$개 대상에서 $k$개를 '순서없이' 뽑는 경우의 수"라는 해석은 무의미 해졌다. \<Combination\> $\binom{n}{k}$라는 연산이 추상화되고 일반화된 것이다! 👏
 
 # Derivation
 
-아이디어는 실변수 함수 $f(x)$를 다항 함수의 멱급수로 표현하는 [\<매크로린 급수; Macluarin Series\>]({{"/2022/10/29/talyor-series-and-maclaurin-series" | relative_url}})에서 출발한다. 예제는 [Brilliant: Negative Binomial Theorem](https://brilliant.org/wiki/negative-binomial-theorem/)에서 빌려왔음을 미리 밝힌다. 아래의 함수를 \<테일러 전개\> 해보자.
+아이디어는 실변수 함수 $f(x)$를 다항 함수의 멱급수로 표현하는 [\<매크로린 급수; Macluarin Series\>]({{"/2022/10/29/talyor-series-and-maclaurin-series" | relative_url}})에서 출발한다. 예제는 [Brilliant: Negative Binomial Theorem](https://brilliant.org/wiki/negative-binomial-theorem/)에서 빌려왔음을 미리 밝힌다. 아래의 함수를 "테일러 전개" 해보자.
 
 <div class="notice" markdown="1">
 

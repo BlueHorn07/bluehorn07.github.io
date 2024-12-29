@@ -120,7 +120,7 @@ $$
 
 </div>
 
-여기서 왜 \<Geometric Distribution\>에 "Geometric"이라는 이름이 붙었는지 궁금증이 생긴다. 그 이유는 Geo에서 확률의 合이 1이 됨을 확인하면서 알 수 있다.
+여기서 왜 \<Geometric Distribution\>에 "Geometric"이라는 이름이 붙었는지 궁금증이 생긴다. 그 이유는 확률의 合이 1이 되는지 확인해보면 알 수 있다.
 
 $$
 \begin{aligned}
