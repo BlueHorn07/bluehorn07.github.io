@@ -70,7 +70,7 @@ Green's Theorem을 이용해 Cauchy's Theorem을 증명해보자.
 
 <span class="statement-title">proof.</span><br/>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 
 $$

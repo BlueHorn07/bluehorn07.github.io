@@ -69,7 +69,7 @@ If $F$ is a field, every ideal in $F[x]$ is principal. <small>($F[x]$ is PID)</s
 <span class="statement-title">proof.</span><br>
 
 <details>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $N \trianglelefteq F[x]$.
 
@@ -146,7 +146,7 @@ $\iff$ $p(x)$ is irreducible in $F[x]$.
 <span class="statement-title">proof.</span><br>
 <details>
 <summary>($\implies$)</summary>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Supp. $\left< p(x) \right>$ is a Maximal Ideal.
 
@@ -167,7 +167,7 @@ $\therefore$ $p(x)$ is **irreducible**. $\blacksquare$
 
 <details>
 <summary>($\impliedby$)</summary>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Supp. $p(x)$ is irreducible.
 
@@ -212,7 +212,7 @@ $$
 
 <details>
 <summary>proof.</summary>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Define an evaluation homomorphism $\phi_{\sqrt{2}}$
 
@@ -289,7 +289,7 @@ $\iff$ $p(x)$ is a prime element of $F[x]$.
 <span class="statement-title">proof.</span><br>
 <details>
 <summary>($\implies$)</summary>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $p(x)$ be a irreducible in $F[x]$.
 
@@ -337,7 +337,7 @@ Therefore, $a$ is a Prime element, and Every Principal Prime Ideal is generated 
 
 <details>
 <summary>($\impliedby$)</summary>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 In General, a Prime element is Irreducible. [Theorem]({{"2020/12/27/Prime-Irreducible-Element#theorem-prime---irreducible" | relative_url}})
 </div>
 </details>

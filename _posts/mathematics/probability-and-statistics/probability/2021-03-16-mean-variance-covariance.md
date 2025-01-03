@@ -214,7 +214,7 @@ $$
 
 \<Correlation\>은 $[-1, 1]$의 값을 갖는다. 이는 \<코시-슈바르트 부등식\>을 통해 유도할 수 있다!
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 **Cauchy-Schwarrtz inequality** :
 
@@ -287,7 +287,7 @@ Q3. Prove that $-1 \le \text{Corr}(X, Y) \le 1$.
 
 Q4. Prove that if $\text{Corr}(X, Y) = 1$, then there exist $a>0$ and $b\in\mathbb{R}$ s.t. $Y = aX + b$.
 
-<details class="math-statement" markdown="1">
+<details class="proof" markdown="1">
 
 <summary>펼쳐보기</summary>
 

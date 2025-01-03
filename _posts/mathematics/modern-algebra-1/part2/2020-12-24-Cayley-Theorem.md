@@ -30,7 +30,7 @@ $$
 
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $G$ be a group, and $S_G$ be a set of permutations on $G$.
 

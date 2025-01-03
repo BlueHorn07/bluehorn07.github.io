@@ -63,7 +63,7 @@ $$
 
 와우! Sample Variance $S^2$과 Population Variance $\sigma^2$의 비율이 [Chi-square Distribution]({{"/2021/04/06/chi-and-beta-and-lognormal-distribution#chi-square-distribution" | relative_url}})을 따른다니!
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 <span class="statement-title">*Proof*.</span><br>
 

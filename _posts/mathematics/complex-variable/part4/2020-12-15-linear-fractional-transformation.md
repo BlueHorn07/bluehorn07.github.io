@@ -98,7 +98,7 @@ $w = T(z) = \frac{az + b}{cz + d}$는 $z = -\frac{d}{c}$에서 정의되지 않�
 
 **<u>Statement.</u>**<br>
 
-<div class="math-statement">
+<div class="proof">
 
   $w = \frac{az+b}{cz+d}$ transforms (circles and lines) into (circles and lines).
 
@@ -128,7 +128,7 @@ $$
 
 **<u>Exercise.</u>**<br>
 
-<div class="math-statement">
+<div class="proof">
 
   <b><u>Composition</u></b> of L.F. trnasform is also a L.F. transform.
 
@@ -139,7 +139,7 @@ $$
 
 **<u>Definition.</u>**; Fixed points<br>
 
-<div class="math-statement">
+<div class="proof">
 
   For $z_0 \in \mathbb{C}$, IF $T(z_0) = z_0$, THEN $z_0$ is a <b><u>fixed point</u></b> of $T(z)$.
 
@@ -172,7 +172,7 @@ at most two fixed points
 
 **<u>Lemma.</u>**<br>
 
-<div class="math-statement">
+<div class="proof">
 
 Let $T_1(z) = \frac{az+b}{cz+d}$, and $T_2(z) = \frac{Az+B}{Cz+D}$ <br>
 
@@ -212,7 +212,7 @@ $$
 
 **<u>Theorem.</u>**<br>
 
-<div class="math-statement">
+<div class="proof">
 
 Let $w=Tz$ be a L.F. transform s.t. $T(z_1) = w_1$, $T(z_2) = w_2$ and $T(z_3) = w_3$. <br>
 

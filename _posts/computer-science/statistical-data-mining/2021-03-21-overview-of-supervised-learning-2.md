@@ -61,7 +61,7 @@ $$
 
 마지막 줄의 $\textcolor{red}{\cancel{2 \cdots}}$ 부분은 잘 전개해보면 모두 0이 된다. 이것은 아래의 **펼쳐보기** 통해 확인할 수 있다.
 
-<details class="math-statement" markdown="1">
+<details class="proof" markdown="1">
 <summary>펼쳐보기</summary>
 
 1\. $E\left[ (Y - f(X)) \cdot (f(X) - E [\hat{f}(X)]) \mid X = x_0 \right]$

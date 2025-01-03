@@ -93,7 +93,7 @@ AAAABBBCCD -> 0000 1010 1011 1111 110 (19 bits)
   <img src="{{ "/images/computer-science/algorithm/Huffman-encoding-1.png" | relative_url }}" width="600px">
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 1\. 문자열에서 문자들의 빈도수를 계산한다: $\\{f_i \mid i \in \Omega \\}$
 
@@ -109,7 +109,7 @@ AAAABBBCCD -> 0000 1010 1011 1111 110 (19 bits)
 
 위와 같은 알고리즘을 구현하기 위해 \<우선순위 큐\>를 사용한다. 이 자료구조를 사용하면 [2] 과정의 정렬을 직접 수행하지 않아도 된다! 그래서 알고리즘을 다시 쓰면,
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 1\. 문자열에서 문자들의 빈도수를 계산한다: $\\{f_i \mid i \in \Omega \\}$
 

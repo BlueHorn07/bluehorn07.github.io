@@ -27,7 +27,7 @@ Let $R$ be an integral domain. A non-zero element $p \in R$ is called prime if $
 
 <big>(a) A prime element is irreducible.</big>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Supp. $p$ is a prime.
 
@@ -60,7 +60,7 @@ Therefore, if $p = ab$, then $a$ or $b$ is a unit. $\blacksquare$
 
 <big>(b) In a PID, a non-zero element is prime iff it is irreducible.</big>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 ($\implies$)
 
@@ -102,7 +102,7 @@ Therefore, if $p$ is irreducible, then $p$ is prime. $\blacksquare$
 
 <big>(c) Consider $\mathbb{Z}[\sqrt{-5}]$ with norm $N(a+b\sqrt{-5}) = a^2 + 5b^2$. Then $\alpha = 2 + \sqrt{-5}$ is irreducible but not prime. Thus, $\mathbb{Z}[\sqrt{-5}]$ is not a PID.</big>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Consider $9 = (2 + \sqrt{-5})(2 - \sqrt{-5})$.
 

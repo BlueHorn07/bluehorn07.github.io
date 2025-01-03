@@ -133,7 +133,7 @@ $$
 
 <details>
 <summary>정답 보기</summary>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 1\. Yes. We know $P(A \cap B) + P(A \cap B') = P(A)$, and $P(A \cap B) = P(A)P(B)$. 이 두 식을 잘 정리하면, $P(A \cap B') = P(A)P(B')$를 얻을 수 있다!
 
 <hr/>

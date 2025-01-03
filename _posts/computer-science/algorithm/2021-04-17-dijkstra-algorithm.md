@@ -20,7 +20,7 @@ categories: ["Algorithm"]
 
 BFS의 이런 문제를 해결하기 위해 \<alarm clock algorithm\>을 도입할 수 있다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 1\. Set $\texttt{alaram}(s)=0$, and for all other nodes $v$, set $\texttt{alarm}(v)=\infty$.
 
@@ -34,7 +34,7 @@ BFS의 이런 문제를 해결하기 위해 \<alarm clock algorithm\>을 도입�
 
 위에서 제시된 \<alarm clock algorithm\>은 \<**우선순위 큐; priority queue**\>를 통해 쉽게 구현할 수 있다!
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Algorithm: **dijkstra**($G$, $\ell$, $s$)<br/>
 <small>※ 주의: 그래프 $G$의 모든 edge는 positive edge여야 한다.</small>
@@ -76,7 +76,7 @@ $H = \texttt{makequeue}(V)$
 
 위와 같은 방식으로 접근하여 앞에서 소개한 방식의 동치인 알고리즘을 제시할 수도 있다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Algorithm: **dijkstra**($G$, $\ell$, $s$)<br/>
 

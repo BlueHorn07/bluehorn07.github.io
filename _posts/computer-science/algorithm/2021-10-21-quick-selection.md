@@ -15,7 +15,7 @@ categories: ["Algorithm"]
 
 \<Quick Selection\>의 아이디어는 퀵 정렬과 정말 비슷하다! \<Quick Selection\>도 pivot을 고르고 left, center, right로 배열을 분할한다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 - input: a list $S$ of numbers and an integer $k$
 - output: The $k$-th smallest elt in $S$

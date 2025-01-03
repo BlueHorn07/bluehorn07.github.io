@@ -86,7 +86,7 @@ Once a random function $h(\cdot)$ is selected from $\mathcal{H}$ probabilistical
 
 먼저 확률 분포가 어떻게 함수 위에서 정의되는지 알기 위해 $\mathcal{X}$가 finite set인 간단한 상황부터 살펴보자.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $\mathcal{X} = \\{x_1, \dots, x_m\\}$ be any finite set of elements. Now consider the set $\mathcal{H}$ of all possible functions mapping from $\mathcal{X}$ to $\mathbb{R}$.
 
@@ -169,7 +169,7 @@ finite domain에서 $h(x)$를 finite random vector로 이해한 것처럼, infin
 
 일반적으로 <span class="half_HL">mean function $m(x)$는 어떤 real-valued function도 가능하다</span>. 그러나 covariance function $k(x, x')$는 GP를 marginalization 했을 때 유도되는 Covariance Matrix가 semi-positive definite 같은 covariance의 성질들을 만족해야 한다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 For covariance function $k(x, x')$ and for any set of elts $x_1, \dots, x_m \in \mathcal{X}$, the resulting covariance matrix must be satisfy the properties of covariance matrix.
 

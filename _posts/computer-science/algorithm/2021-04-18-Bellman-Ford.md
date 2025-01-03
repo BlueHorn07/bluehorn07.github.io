@@ -64,7 +64,7 @@ if dist(v) > dist(u) + w(u, v):
 
 <span class="statement-title">*Proof*.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Consider the shortest path $\pi = su_1u_2u_3\cdots u_k t$ from $s$ to $t$.
 
@@ -90,7 +90,7 @@ Then every subpath $\pi_i = su_1\cdots u_i$ is
 
 <span class="statement-title">Algorithm.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 시작점 $s$는 $\texttt{dist}(s)=0$으로, 나머지 노드는 모두 `INF`로 초기화한다. 이제 시작점 $s$와 연결된 노드들을 살펴보자. *See node $u_i$ s.t. $(s, u_i) \in E$*
 

@@ -27,7 +27,7 @@ $$
 <img src= "{{"/images/mathematics/probability-and-statistics/choice-of-sample-size-1.png" | relative_url }}" width=650>
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 1\. Set Hypothesis
 

@@ -99,7 +99,7 @@ $\frac{1}{r}$을 취하기 때문에 복소수 $z$가 원점 $O$에 가까워질
 
 Transform $T(z)$를 nice하게 정의하기 위해서 $\\{ \infty \\}$를 추가해 이미지 영역을 확장시킨다.
 
-<div class="math-statement">
+<div class="proof">
 
 For a transform $T(z) = \frac{1}{z}$, Let $T(0) = \infty$ and $T(\infty) = 0$, THEN $T$ is <b><u>continuous</u></b>.
 
@@ -158,7 +158,7 @@ $$
 
 **<u>Statement.</u>**<br>
 
-<div class="math-statement">
+<div class="proof">
 
 
 $w=\frac{1}{z}$ transforms (circles and lines) into (circles and lines).

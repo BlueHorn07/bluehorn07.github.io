@@ -147,7 +147,7 @@ $$
 
 Boom! 이것으로 우리는 **posterior predictive distribution**을 얻었다!! 🤩 이전의 [Bayesian Linear Regression]({{"/2021/09/06/bayesian-regression#bayesian-linear-regression" | relative_url}})의 것과 비교해보면 GP Regression은 정말 계산적으로도 정말 간단한 형태임을 확인할 수 있다 👍
 
-<details class="math-statement" markdown="1">
+<details class="proof" markdown="1">
 <summary>보충</summary>
 
 앞에서 $h(\cdot)$가 'prior' distribution over functions 라고 했다. 그럼 'posterior' distribution over function을 유도하면, 위에서 언급한 joint distribution $p(\vec{h}, \vec{h^{\*}} \mid X, X^{\*})$에서 conditional distribution을 구하면 된다.

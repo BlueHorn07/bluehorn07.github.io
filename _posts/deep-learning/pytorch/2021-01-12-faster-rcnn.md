@@ -153,7 +153,7 @@ This feature is fed into two sibling fully connected layers.
 
 아래의 수식을 통해 드디어 **RPN**을 완벽히 이해했다는 느낌이 들었다!!
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 - x = (w_{a} * ctr_x_{p}) + ctr_x_{a}
 - y = (h_{a} * ctr_x_{p}) + ctr_x_{a}
@@ -176,7 +176,7 @@ and later convert to y1, x1, y2, x2 format
 
 <br><span class="statement-title">NMS</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 - while order_array.size > 0:
   - take "the first element" in order_array and append that to keep
@@ -194,7 +194,7 @@ and later convert to y1, x1, y2, x2 format
 
 ![fast R-CNN](https://t1.daumcdn.net/cfile/tistory/99CB45475C651BEB21)
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 **Region of interest pooling** (also known as RoI pooling) purpose is to perform max pooling on inputs of non-uniform sizes to <span style="color:red">obtain fixed-size feature maps</span> (e.g. 7×7). This layer takes two inputs
 

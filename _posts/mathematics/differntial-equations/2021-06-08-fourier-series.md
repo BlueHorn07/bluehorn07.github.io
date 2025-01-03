@@ -143,7 +143,7 @@ $$
 
 위의 식은 주기 $2L$을 갖는 주기함수 $f(x)$를 \<푸리에 급수\> 형태로 근사했을 때의 형태다. 지금부터 우리의 목표는 <span style="color: red">위의 근사식에 존재하는 모든 계수 $a_n$, $b_n$의 값을 결정하는 것</span>이다!! 그리고 그 과정에서 쓰는 테크닉은 \<**직교성; Orthogonality**\>, 단 하나 뿐이다! 😉
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 1\. $a_0$ 결정
 
@@ -175,7 +175,7 @@ $\blacksquare$
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 2\. $a_n$ 결정
 
@@ -205,7 +205,7 @@ $\blacksquare$
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 3\. $b_n$ 결정
 

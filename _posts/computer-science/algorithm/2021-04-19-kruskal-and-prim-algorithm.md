@@ -48,7 +48,7 @@ Then $X \cup \\{ e \\}$ is part of some MST.
 
 <span class="statement-title">*Proof*.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 <div class="img-wrapper">
   <img src="{{ "/images/computer-science/algorithm/cut-property-2.png" | relative_url }}" width="200px">
@@ -74,7 +74,7 @@ Then, $T'$ is a spanning tree with $\texttt{cost}(T') \le \texttt{cost}(T)$ (왜
 
 \<Kruskal Algorithm\>은 \<**set**\> 자료형을 사용해 쉽게 구현할 수 있다! 🤩
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Algorithm: **Kruskal**($G$, $w$)<br/>
 <small>($G = (V, E)$ is a connected undirected graph with edge weights $w_e$.)</small>
@@ -120,7 +120,7 @@ $\texttt{makeset}$, $\texttt{find}$, $\texttt{union}$ 연산에 대한 시간복
 
 \<Prim's Algorithm\>은 그래프 $G$에서 가장 light한 edge를 선택하며, intermediate MST $X$를 grow 하는 알고리즘이다. 이때, 크루스컬 때와 마찬가지로 선택한 edge로 인해 cycle이 형성되어서는 안 된다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Algorithm: **Prime**($G$, $w$)<br/>
 <small>($G = (V, E)$ is a connected undirected graph with edge weights $w_e$.)</small>

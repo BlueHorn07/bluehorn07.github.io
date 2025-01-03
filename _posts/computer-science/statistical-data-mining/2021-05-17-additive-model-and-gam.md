@@ -39,7 +39,7 @@ Therefore, it can effectively avoid "the curve of dimensionality".
 
 이렇게 다른 함수를 fix 시켜두고, 함수 하나를 fitting 하는 기법을 \<Backfitting Algorithm\>이라고 한다.'
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 <span class="statement-title">Algorithm.</span> Backfitting Algorithm<br>
 

@@ -24,7 +24,7 @@ $\iff$ the first partial derivatives of $u$ and $v$ satisfy
 
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $f$ is differentiable $\implies$ $u$, $v$ satisfy the Cauchy-Riemann Equations.
 
@@ -72,7 +72,7 @@ $$
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $u, v$ have continuous partial derivatives satisfy the Cauchy-Riemann equations $\implies$ $f$ is analytic.
 

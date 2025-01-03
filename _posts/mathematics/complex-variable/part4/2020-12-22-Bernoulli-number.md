@@ -28,7 +28,7 @@ defines the Bernoulli numbers $B_n$. Evaluate $B_1$, $B_2$, $B_3$, ...
 
 <span class="statement-title">solution</span>.<br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 우리가 확실히 아는 Series에서 출발한다.
 
 $$

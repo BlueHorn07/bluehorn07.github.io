@@ -21,7 +21,7 @@ categories: ["Statistics"]
 <img src= "{{"/images/mathematics/probability-and-statistics/sample-mean-test-1.png" | relative_url }}" width=650>
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 1\. 상황 인식
 

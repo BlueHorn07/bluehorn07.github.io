@@ -33,7 +33,7 @@ Then $H \trianglelefteq G$.
 
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 The set of left cosets of $H$ in $G$ forms a partition of $G$.
 

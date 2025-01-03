@@ -58,7 +58,7 @@ Let $\phi$ be a homo- of a ring $R$ onto a ring $R'$.
 
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 3번 명제만 증명을 해보자.
 
@@ -127,7 +127,7 @@ $\iff$ $aH \subseteq H$, $Hb \subseteq H$ for all $a, b \in R$.
 <details>
 <summary>($\impliedby$)</summary>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 ($\impliedby$) Supp. $ah, hb \in H$ for all $a, b \in R$ and all $h \in H$.
 
@@ -148,7 +148,7 @@ $$
 <details>
 <summary>($\implies$)</summary>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 ($\implies$) Supp. multiplication of cosets is well-defined.
 

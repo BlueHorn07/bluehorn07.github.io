@@ -65,7 +65,7 @@ Then,
 
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 1\. $HN = NH$
 
@@ -94,7 +94,7 @@ $\blacksquare$
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 2\. $HN \le G$
 
@@ -157,7 +157,7 @@ $H$ join $K$는 subgroup $H$와 $K$를 포함하는 가장 작은 subgroup이다
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 "만약 $H \trianglelefteq G$라면, $H \lor K = HK$가 된다!"라는 명제에 대해 보충해보고자 한다.
 
@@ -206,7 +206,7 @@ $$
 
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 먼저 가정인 $H \le G$, $N \trianglelefteq G$로부터 명제의 재료가 되는 factor group $HN/N$을 유도하자. 이 과정에서 앞부분에 나왔던 Lemma를 사용한다.
 
@@ -232,7 +232,7 @@ $N$에 대한 $HN$의 Factor Group $HN/N$을 정의할 수 있다!
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 이번에는 동형식의 우변인 $H / (H \cap N)$을 유도해보자.
 
@@ -242,7 +242,7 @@ $N$에 대한 $HN$의 Factor Group $HN/N$을 정의할 수 있다!
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 드디어 증명의 본게임이다!
 
@@ -322,7 +322,7 @@ $\blacksquare$
 
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Define a homomoprhism $\phi$ as
 

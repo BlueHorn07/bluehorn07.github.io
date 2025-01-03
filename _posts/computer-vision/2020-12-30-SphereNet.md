@@ -110,7 +110,7 @@ $$
 
 <details>
 <summary>공식 유도</summary>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 위의 공식이 잘 와닿지 않아서 직접 유도해보려고 한다.
 

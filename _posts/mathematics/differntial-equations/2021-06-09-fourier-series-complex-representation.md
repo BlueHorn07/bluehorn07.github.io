@@ -51,7 +51,7 @@ $$
 이제 위의 공식에 따라 \<푸리에 급수\>의 식에 지수함수를 대입해주자!!
 
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $$
 \begin{aligned}
@@ -74,7 +74,7 @@ $$
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 이번에는 \<푸리에 급수\>의 계수에 대한 식을 복소지수 형태로 표현해보자.
 
@@ -117,7 +117,7 @@ $a_n$과 $ib_n$ 익숙하지 않은가? 우리가 \<푸리에 급수\>를 복소
 
 <br/>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $$
 f(x) = \frac{a_0}{2} + \sum_{m=1}^{\infty} \left( \frac{1}{2} \left( a_m - ib_m \right) \cdot e^{im\omega x} + \frac{1}{2} \left( a_m + ib_m \right) \cdot e^{-im\omega x} \right)
@@ -145,7 +145,7 @@ $$
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 이번엔 [1, 2]에서 얻은 두 식을 $A_n$, $B_n$으로 치환하자. 그러면, 전체 식은 아래와 같이 변한다.
 
@@ -173,7 +173,7 @@ $$
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 위의 식에서 더 간단하게 만들 수 있다! 😲 $A_m$과 $B_m$을 하나로 합쳐보자!
 

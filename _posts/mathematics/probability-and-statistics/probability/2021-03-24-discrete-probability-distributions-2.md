@@ -136,13 +136,20 @@ $$
 
 <span class="statement-title">Property.</span> Memeryless property 🔥<br>
 
-\<Geometric Distribution\>은 \<Memoryless Property\>라는 재미있는 성질을 가지고 있다. 수식으로 기술하면 아래와 같다.
+\<Geometric Distribution\>은 "Memoryless Property"라는 재미있는 성질을 가지고 있다.
+
+예를 들어, 로또를 1년 전부터 사기 시작한 사람과, 로또를 오늘부터 사기 시작한 사람의 당첨 확률은 같다!
+이것은 1년 전부터 로또를 사기 시작했고, 그것들이 모두 낙첨이었다는 사실이 로또에 언제 처음 당첨될지와 아무 관련이 없기 때문이다.
+
+수식으로 기술하면 아래와 같다.
 
 $$
 P(X = x+k \mid x > k) = P(X = x)
 $$
 
-또는
+즉, 내가 이전에 $k$번 시도 했다는 사실이 현재 확률에 아무런 영향을 끼치지 않는다.
+
+Geometric Distribution 기준으로 작성하면 아래와 같다.
 
 $$
 P(X > k) = q^{k}
@@ -167,7 +174,7 @@ Let $X \sim \text{Geo}(p)$, then
 
 위의 식에 대한 증명은 간단하다. 지금 유도해보자.
 
-<details class="math-statement" markdown="1">
+<details class="proof" markdown="1">
 <summary>펼쳐보기</summary>
 
 <span class="statement-title">*Proof*.</span><br>

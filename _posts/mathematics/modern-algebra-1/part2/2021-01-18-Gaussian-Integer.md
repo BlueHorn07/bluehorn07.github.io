@@ -65,7 +65,7 @@ $Z[i]$ is an Integral Domain.
 <span class="statement-title">proof.</span><br>
 
 <details>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $\mathbb{Z}[i]$는 commutative ring with unity이다.
 
@@ -100,7 +100,7 @@ Thus $\mathbb{Z}[i]$ is an Euclidean Domain.
 
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Note that for $\beta = b_1 + b_2 i \ne 0$, $N(\beta) = {b_1}^2 + {b_2}^2$, so $N(\beta) \ge 1$.
 
@@ -203,7 +203,7 @@ then
 
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $D$ be an integral domain with a multiplicative norm $N$.
 
@@ -262,7 +262,7 @@ $1+2i$ and $1-2i$ are irreducibles.
 
 <br><span class="statement-title">Example.</span> Integral Domain, but not UFD 🔥<br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $\mathbb{Z}[\sqrt{-5}] = \\{ a+ib\sqrt{5} \mid a, b \in \mathbb{Z} \\}$.
 

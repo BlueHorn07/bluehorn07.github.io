@@ -56,7 +56,7 @@ $$
 
 증명은 생각보다 간단하다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 논의의 편의를 위해 Disc $D$의 중심이 원점이라고 하자.
 
@@ -295,7 +295,7 @@ $$
 
 <span class="statement-title">proof.</span><br/>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 <div class="img-wrapper">
 <img src= "{{"/images/mathematics/complex-variable/cauchy-integral-formula-7.jpg" | relative_url }}" style="width:200px;">

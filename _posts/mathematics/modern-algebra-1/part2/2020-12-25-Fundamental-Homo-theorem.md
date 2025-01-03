@@ -60,7 +60,7 @@ Then,
 <br>
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 1\. $\phi[G]$ is a group
 
@@ -89,7 +89,7 @@ $\left(\phi(g)\right)^{-1} = \phi(g^{-1}) \in \phi[G]$
 </div>
 
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 2\. $G / {\ker \phi} \cong \phi[G]$
 

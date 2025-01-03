@@ -42,7 +42,7 @@ $$
 
 앞에서 푸아송 분포는 이항분포의 특수한 경우라고 소개했다. 이것을 확인해보자.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 <span class="statement-title">Derivation.</span><br>
 

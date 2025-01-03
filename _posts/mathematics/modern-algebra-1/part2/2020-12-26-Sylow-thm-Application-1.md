@@ -27,7 +27,7 @@ A group of order 15 is not simple.
 <br>
 <span class="statement-title">Sol.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $15 = 5 \times 3$
 
@@ -107,7 +107,7 @@ Then, $H \times K \cong G$.
 
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 먼저 $hk = kh$임을 보이자.
 
@@ -196,7 +196,7 @@ then every group $G$ of order $p^2$ is abelian.
 
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $G$가 cyclic이면 당연히 가환이므로, $G$가 cyclic group이 아니라고 가정하자.
 

@@ -7,7 +7,7 @@ toc_sticky: true
 
 <br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 [목차]
 

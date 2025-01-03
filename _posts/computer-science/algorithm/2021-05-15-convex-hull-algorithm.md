@@ -83,7 +83,7 @@ $$
 
 $O(n^3)$ 수준의 알고리즘은 아직 많이 느리다. \<Graham's Scan\>은 points를 정렬하고, 또 몇가지 규칙을 통해 $O(n^3)$보다 훨씬 빠른 알고리즘을 제시한다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 <span class="statement-title">Algorithm.</span><br>
 

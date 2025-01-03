@@ -53,7 +53,7 @@ We usually take $\alpha = 0.01, \; 0.05, \; 0.1$.
 - $n=100$, $\bar{X} = 170$.
 - $\sigma = 20$
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 1\. We use $\bar{X}$ as a point estimator for $\mu$.
 
@@ -107,7 +107,7 @@ Q2. Then what does the confidence interval really mean?
 
 A2. Its the number of counts that $\mu$ is actually belong to sampled interval! 🔥
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $x_1, \dots, x_n$ be a random sample. Supp. we obtain 1,000 samples and each sample has size $n$. Then, we have the following:
 

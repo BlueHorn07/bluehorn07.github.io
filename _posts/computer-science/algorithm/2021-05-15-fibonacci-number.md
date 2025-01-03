@@ -28,7 +28,7 @@ int fibo(n) {
 
 그러나 위의 알고리즘을 썼을 때의 시간 복잡도는 exponential 하다. 🤦‍♂️
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 `fibo()`에 의해 생성되는 recursion tree를 생각해보자. 이때, tree의 leaf는 항상 1을 리턴해주고 이에 따라 `fibo(n)`의 값은 단순히 recursion tree의 leaves 수로 유도할 수 있다.
 

@@ -30,7 +30,7 @@ Directed Graph가 그려졌다!! 그런데, 좀 익숙하지 않은가? 바로 *
 
 
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 **for** $j=1, 2, \dots, n$<br/>
 &emsp;&emsp;$L(j) = 1 + \max \\{ L(i) : (i, j) \in E \\}$

@@ -24,7 +24,7 @@ PID가 UFD를 만족함을 증명하는 포스트는 [이곳]({{"2020/12/27/Uniq
 
 <br><span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $\mathbb{Z}$의 모든 Ideal은 모두 principal ideal이다.
 
@@ -66,7 +66,7 @@ $$
 
 <br><span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 증명은 귀납법에 의해 진행된다.
 

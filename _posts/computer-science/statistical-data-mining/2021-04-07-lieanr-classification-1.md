@@ -142,7 +142,7 @@ $$
 
 일부 스텝은 과정을 생략하고 결과만 바로 적었는데, 자세한 과정은 아래의 펼쳐보기에 기술해두겠다.
 
-<details class="math-statement" markdown="1">
+<details class="proof" markdown="1">
 <summary>펼쳐보기</summary>
 
 (추후 기술)
@@ -195,7 +195,7 @@ $$
 \hat{\Sigma} = \frac{1}{N-k} \sum^K_{k=1} \sum_{i: y_i=k} (x_i - \hat{\mu}_k) (x_i - \hat{\mu}_k)^T \quad \text{(pooled sample cov-var matrix)}
 $$
 
-<details class="math-statement" markdown="1">
+<details class="proof" markdown="1">
 <summary>펼쳐보기</summary>
 
 1\. $\mu$를 확실히 알 때

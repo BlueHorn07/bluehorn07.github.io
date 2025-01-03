@@ -29,7 +29,7 @@ Given a graph $G = (V, E)$, a subset $S \subset V$ is an \<**independent set**\>
 
 먼저 첫 번째 경우는 트리의 노드에 가중치가 없는 경우다. 문제를 묘사하면 아래와 같다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 당신은 회사 파티를 주최하려 한다. 최대한 많은 사람을 초대하려 하지만 각각의 사람들은 바로 직속 상사가 파티에 올 경우 파티에 오지 않는다.
 
@@ -41,7 +41,7 @@ Given a graph $G = (V, E)$, a subset $S \subset V$ is an \<**independent set**\>
 
 이 경우, greedy 하게 접근하여 문제를 해결할 수 있다!
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 **while** $T$ is not empty:<br/>
 &emsp;&emsp; take all the leaves to the solution.<br/>
@@ -54,7 +54,7 @@ Given a graph $G = (V, E)$, a subset $S \subset V$ is an \<**independent set**\>
 
 두 번째 경우는 트리의 노드에 가중치가 존재하는 경우다. 문제를 묘사하면,
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 위의 문제와 상황은 똑같으나 파티에 오는 사람마다 매력적인 정도가 있어서 이 매력도의 合을 최대로 하고자 한다.
 

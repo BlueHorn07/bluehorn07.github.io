@@ -91,7 +91,7 @@ for $a \in F$, $\phi_\alpha(a) = a$
 
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Show $\phi_\alpha$ is a ring homomorphism.
 
@@ -126,7 +126,7 @@ s.t. $f(x) = q(x) \cdot g(x) + r(x)$ with $\deg(r(x)) < m$.
 
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 (Case 1: $n < m$)
 
@@ -189,7 +189,7 @@ $$
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 (Uniqueness)
 
@@ -270,7 +270,7 @@ $f(a) = 0$ $\iff$ $(x - a) \mid f(x)$ in $F[x]$.
 
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 ($\impliedby$) Supp. $(x-a) \mid f(x)$ in $F[x]$.
 
@@ -282,7 +282,7 @@ $\implies$ evaluation $x$ at $a$, then $f(a) = (a-a) \cdot g(a) = 0 \cdot (a) = 
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 ($\implies$) Supp. $f(a) = 0$.
 
@@ -323,7 +323,7 @@ A non-zero poly-. $f(x) \in F[x]$ of $\deg = n$ has at most $n$ zeros in field $
 
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 (Induction on $\deg f(x)$)
 
@@ -366,7 +366,7 @@ $(F^{*}, \cdot\;)$는 Field $F$에 대한 곱셈군이다.
 
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $G \le (F^{*}, \cdot\;)$.
 

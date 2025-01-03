@@ -89,7 +89,7 @@ Let $X \sim \text{Poi}(\lambda)$ and $Y \sim \text{Poi}(\mu)$, and $X \perp Y$.
 
 Find the distribution of $X + Y$.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 만약 $P(X+Y = 5)$라고 한다면, 이것을 계산하기 위해 $P(X = 0, Y=5)$, $P(X=1, Y=4)$, ..., $P(X=5, Y=0)$의 확률을 구해서 더할 것이다. 이 아이디어를 바탕으로 아래와 같이 식을 전개해보자!
 
@@ -107,7 +107,7 @@ $$
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 We first find the joint pmf of $(X, X+Y)$, and then find the marginal pmf of $X+Y$.
 
@@ -253,7 +253,7 @@ Let $U \sim \text{Unif}(0, 1)$ Then,
 
 <span class="statement-title">*Proof*.</span> 1 <br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $$
 \begin{aligned}
@@ -269,7 +269,7 @@ $$
 
 <span class="statement-title">*Proof*.</span> 2 <br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $$
 \begin{aligned}

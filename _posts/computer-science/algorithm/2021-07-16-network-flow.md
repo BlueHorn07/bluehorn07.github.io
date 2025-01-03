@@ -48,7 +48,7 @@ $$
 
 \<Networ Flow\> 문제는 기존의 Graph $G$에서 \<**Residual Network**\>라는 그래프를 구축(construction) 하면서 해결할 수 있다! 😉 알고리즘이 한번에 이해 되지는 않으니 주의 깊게 살펴보자!
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Find an $s-t$ path whose edges $(u, v)$ can be of two types:
 

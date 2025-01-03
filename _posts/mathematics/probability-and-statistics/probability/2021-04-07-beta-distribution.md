@@ -63,7 +63,7 @@ $$
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $$
 \begin{aligned}
@@ -173,7 +173,7 @@ Let $X_1, X_2, X_3$ be $\text{Unif}(0, 1)$ and independent.
 
 Let $Y:=\max(X_1, X_2, X_3)$. Find the distribution of $Y$.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $$
 \begin{aligned}

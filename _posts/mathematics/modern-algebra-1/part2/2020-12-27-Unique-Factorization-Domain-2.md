@@ -68,7 +68,7 @@ $\implies$ $D[x]$: Integral Domain
 
 <span class="statement-title">proof.</span><br>
 <details>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Integral Domain임을 보이기 위해 zero-divisor가 없음을 보여야 한다.
 
@@ -109,7 +109,7 @@ This factorization is unique up to orerding and associates.
 
 <span class="statement-title">proof.</span><br>
 <details>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $f(x) \in F[x]$ be a non-constant polyno-.
 
@@ -193,7 +193,7 @@ Then, $N = \cup_i N_i$ is an **<u>Ideal</u>** in $R$.
 
 <span class="statement-title">proof.</span><br>
 <details>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $a, b \in N$.
 
@@ -251,7 +251,7 @@ Equivalently, every **strictly ascending chain of ideals** in a PID is of finite
 
 <span class="statement-title">proof.</span><br>
 <details>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 By Lemma 45.9, we know that $N = \cup_{i} N_i$ is an ideal of $D$.
 
@@ -300,7 +300,7 @@ Every non-zero & non-unit elt in $D$ is a product of irreducibles.
 <span class="statement-title">proof.</span><br>
 
 <details>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $a$ be a non-zero & non-unit elt in $D$.
 
@@ -409,7 +409,7 @@ $\iff$ $p$ is an **<u>irreducible</u>**.
 
 <details>
 <summary>($\implies$)</summary>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Supp. $\left< p \right>$ be a maximal ideal of PID $D$.
 
@@ -439,7 +439,7 @@ This means $p$ is an irreducible of $D$. $\blacksquare$
 
 <details>
 <summary>($\impliedby$)</summary>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Supp. $p$ is an irreducible in $D$.
 
@@ -508,7 +508,7 @@ then either $p \mid a$ or $p \mid b$.
 <span class="statement-title">proof.</span><br>
 
 <details>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $D$ be a PID, and Supp. that for an **irreducible** $p \in D$ we have $p \mid ab$.
 
@@ -579,7 +579,7 @@ In similar way, neither $x^3$ nor $y^3$ is a prime.
 <br><span class="statement-title">proof.</span><br>
 
 <details>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Thm 45.11 shows that if $D$ is a PID, then each non-zero & non-unit $a \in D$ has a factorization into irreducibles. (1st Condition)
 

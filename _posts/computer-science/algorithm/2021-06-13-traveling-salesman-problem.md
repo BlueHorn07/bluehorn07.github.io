@@ -73,7 +73,7 @@ long long shortestPath(vector<int> &path, vector<bool> &visited, long long curre
 
 \<TSP\>를 \<DP\>로 풀기 위한 알고리즘의 뼈대는 아래와 같다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $C(j, S)$ the length of shortest path when visit $j$ at last and visit each node in $S$ exactly once.
 

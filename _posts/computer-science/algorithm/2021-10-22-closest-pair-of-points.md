@@ -21,7 +21,7 @@ categories: ["Algorithm"]
 
 Brute Force 하게 접근한다면 모든 두 점의 쌍에 대해 거리를 구해 최소 거리를 찾을 수 있다. 그러나 이 방법은 $O(n^2)$의 비용을 필요로 한다. 우리는 Divide and Conquer로 접근해 $O(n \log n)$의 비용으로 이 문제를 해결할 것이다! 🙌
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 1\. Sort points in $P$ by $x$-coordinates: $P_x$. And calculate $x$-median $x_{\text{mid}}$
 

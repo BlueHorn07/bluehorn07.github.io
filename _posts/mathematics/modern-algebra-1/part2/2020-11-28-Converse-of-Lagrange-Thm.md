@@ -45,7 +45,7 @@ $A_4$의 order는 $\frac{24}{2}=12$이다. 하지만, $A_4$는 order 6인 subgro
 
 <br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 (pf) **proof by contradiction**
 

@@ -151,7 +151,7 @@ $M = \textrm{sup} \left\| f(x) \right\| \quad x \in (a, b)$
 
 <span class="statement-title">proof.</span>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $$
 \begin{aligned}

@@ -225,7 +225,7 @@ Let $T := \dfrac{\bar{X} - \mu}{S / \sqrt{n}}$, then $T$ has a t-distribution wi
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 <span class="statement-title">*Proof*.</span><br>
 
@@ -268,7 +268,7 @@ $Z \sim N(0, 1)$이고 $V \sim \chi^2(n-1)$이다. 그리고 Sample Variance와 
 <img src= "{{"/images/mathematics/probability-and-statistics/t-distribution-example-1.png" | relative_url }}" width=550>
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 [population] $X$ follows Normal Distribution, $\mu = 500$, $\sigma$: unknown
 

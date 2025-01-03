@@ -29,7 +29,7 @@ $$
 
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 2번째 명제만 증명하겠다.
 
@@ -90,7 +90,7 @@ $$
 
 <span class="statement-title">Sol.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 먼저 주어진 factor group $\mathbb{Z}_4 \times \mathbb{Z}_6 / <(2, 3)>$의 위수를 구해보자.
 
@@ -154,7 +154,7 @@ $$
 
 <span class="statement-title">Sol.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $<(1, 1)>$로 생성되는 left coset들을 생각해보자. 그러면
 

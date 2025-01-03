@@ -146,7 +146,7 @@ $$
 
 \<Geometric Distribution\>으로부터 \<Exponential Distribution\>을 유도해볼 수도 있는데, 아래의 펼쳐보기에 기술하였다.
 
-<details class="math-statement" markdown="1">
+<details class="proof" markdown="1">
 <summary>펼쳐보기</summary>
 
 Random Variable $X_n$을 $1/n$초마다 버스가 왔는지 안 왔는지 확인했을 때, 버스가 처음올 때까지 확인한 **횟수**라고 해보자. 또, $X$는 버스가 처음올 때까지 걸린 **시간**이라고 한다면, $X_n$와 $X$ 사이에는 아래의 비례식이 성립할 것이다.
@@ -185,7 +185,7 @@ Let $X \sim \text{EXP}(\lambda)$, then
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 <span class="statement-title">*Proof*.</span><br>
 

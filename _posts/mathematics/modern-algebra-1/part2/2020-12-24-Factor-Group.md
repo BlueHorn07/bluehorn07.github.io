@@ -46,7 +46,7 @@ $$
 <br>
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 ($\implies$) Supp. that $(aH)(bH) = abH$ is well-defined.
 
@@ -122,7 +122,7 @@ $$
 
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 실제로 $G/H$가 Group인지 확인하면 된다.
 
@@ -152,7 +152,7 @@ $$
 이다.
 
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 부등호 방향이 한 방향이라 $aHa^{-1} = H$ 조건을 이끌어 내기에는 부족해보일지도 모른다. 하지만,
 
@@ -197,7 +197,7 @@ Then, $\ker \phi = \\{ g \in G \mid \phi(G) = e'\\}$ is a **<u>normal subgroup</
 
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 We will show $g (\ker \phi) g^{-1} \subseteq \ker \phi \quad \forall g \in G$.
 

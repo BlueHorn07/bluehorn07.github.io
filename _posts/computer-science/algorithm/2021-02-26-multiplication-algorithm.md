@@ -87,7 +87,7 @@ $$
 
 \<Master Theorem\>을 적용하기 전에 재귀를 이용한 \<Multiplication Algorithm\>이 어떻게 동작하는지부터 코드-레벨에서 살펴보자.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 function **multiply**($x$, $y$)<br/>
 Input: Two $n$-bit integers $x$ and $y$<br/>

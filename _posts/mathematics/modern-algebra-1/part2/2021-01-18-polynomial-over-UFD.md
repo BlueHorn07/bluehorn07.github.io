@@ -57,7 +57,7 @@ Let $f(x) \in D[x]$, where $\deg f(x) > 0$.
 
 <br><span class="statement-title">proof.</span><br>
 <details>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Supp. that a non-constant $f(x) \in D[x]$ factors into polynomials of lower degree in $F[x]$ for $r(x), s(x) \in F[x]$.
 
@@ -128,7 +128,7 @@ $\iff$ it has a factorization into polynomials of the same degrees $r$ and $s$ i
 
 <br><span class="statement-title">proof.</span><br>
 <details>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 ($\implies$)
 
@@ -156,7 +156,7 @@ $D[x] \subseteq F[x]$이므로 명제의 역도 자연스럽게 성립한다.
 
 <br><span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $f(x) \in D[x]$ for a non-zero and non-unit $f(x)$.
 
@@ -201,7 +201,7 @@ If $F$ is a field and $x_1, \cdots, x_n$ are indeterminatnes, then $F[x_1, \cdot
 
 <br><span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 By "Theorem 23.20", $F[x_1]$ is a UFD.
 
@@ -216,7 +216,7 @@ By "Theorem 45.29", $(F[x_1])[x_2] = F[x_1, x_2]$ is a UFD.
 
 "Note every UFD is a PID."
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $F$ be a field, and $x$ and $y$ be indeterminates.
 

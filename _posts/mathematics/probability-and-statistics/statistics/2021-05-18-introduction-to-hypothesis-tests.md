@@ -134,7 +134,7 @@ $$
 
 아래의 경우를 생각해보자.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 - $H_0$: 피고 A is innocent
 - $H_1$: 피고 A is guilty
@@ -192,7 +192,7 @@ $\alpha$는 1종 오류의 가능성이다. Critical Value $C$에 의존하는 �
 
 <hr/>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 <span class="statement-title">Example.</span><br>
 
@@ -227,7 +227,7 @@ Since $x=14$, we reject $H_0$ at $\alpha = 0.0577$. $\blacksquare$
 </div>
 
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Now, we consider T2 error case! If T2 error is small, then we might accept $H_0$.
 
@@ -251,7 +251,7 @@ If we fail to reject $H_0$, then we can't accept $H_0$ because $P(T2)$ is too he
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 <span class="statement-title">Example.</span><br>
 
@@ -321,7 +321,7 @@ A. T1 Error에 대해 얘기할 때, Critical Value $C$를 빡세게 잡을 수�
 
 예를 통해 제대로 이해해보자!
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 <span class="statement-title">Example.</span><br>
 

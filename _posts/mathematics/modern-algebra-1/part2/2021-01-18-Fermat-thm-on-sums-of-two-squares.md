@@ -30,7 +30,7 @@ $\iff$ $p \equiv 1$ (mod $4$).
 
 <br><span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 ($\implies$)
 
@@ -46,7 +46,7 @@ So $p \equiv 1$ (mod $4$).
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 ($\impliedby$)
 

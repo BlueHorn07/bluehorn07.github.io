@@ -85,7 +85,7 @@ $$
 
 Q. Why?
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $$
 \begin{aligned}

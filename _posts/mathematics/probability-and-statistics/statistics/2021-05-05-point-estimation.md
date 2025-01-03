@@ -148,7 +148,7 @@ $$
 
 Among all weighted averages $\\{ \bar{X}_w : w = (w_1, \dots, w_n), \sum w_i = 1\\}$, $\bar{X}$ has the smallest variance.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 We know that $\displaystyle\text{Var}(\bar{X}) = \frac{\sigma^2}{n}$.
 
@@ -243,7 +243,7 @@ where $\text{Bias} := E \left[ \hat{\Theta} - \theta \right]$.
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 <span class="statement-title">*Proof*.</span><br/>
 

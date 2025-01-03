@@ -110,7 +110,7 @@ then for every non-constant $f(x) \in D[x]$, we have $f(x) = (c)g(x)$, where $c 
 <span class="statement-title">proof.</span><br>
 
 <details>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $f(x) \in D[x]$ be a non-constant polynomial; $f(x) = a_0 + a_1 x + \cdots a_n x^n$
 
@@ -140,7 +140,7 @@ If $D$ is a UFD, then a product of two primitive polynomials in $D[x]$ is again 
 <span class="statement-title">proof.</span><br>
 
 <details>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $f(x) = a_0 + a_1 x + \cdots a_n x^n$ and $g(x) = b_0 + b_1 x + \cdots b_m x^m$ be primitive in $D[x]$,
 

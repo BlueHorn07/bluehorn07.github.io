@@ -61,7 +61,7 @@ $$
 
 \<Goodness-of-fit Test\>를 소개할 때도 말했듯이 \<Goodness-of-fit Test\>는 <span class="red">카테고리 변수</span>에 대한 검정이다. 위의 식은 카테고리가 2개 뿐인 상황에서만 성립한다. 그래서 위의 식을 약간 변형해 \<GOF Test\>의 식을 유도해보자.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 일단은 2개 카테고리에서 시작해보자.
 
@@ -262,7 +262,7 @@ $$
 
 사실 Homogeneity Test는 앞에서 수행한 Independence Test와 동치이다. Homogeneity Test의 $H_0$가 Inpendence를 직접적으로 표현하진 않았지만, 약간 변형하면 Independence로 유도할 수 있다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 편의를 위해 $\text{party } i = B_i$, $\text{region } j = A_j$로 표시하겠다.
 

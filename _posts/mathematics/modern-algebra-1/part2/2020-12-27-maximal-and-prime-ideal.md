@@ -28,7 +28,7 @@ then $I = R$.
 <span class="statement-title">proof.</span> <br>
 
 <details>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $r \in R$, and $1 \in I$
 
@@ -56,7 +56,7 @@ Field $F$ contains no proper non-trivial ideals.
 <span class="statement-title">proof.</span> <br>
 
 <details>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let Ideal $I \triangleleft F$ be a proper ideal.
 
@@ -110,7 +110,7 @@ Show $p\mathbb{Z} \triangleleft \mathbb{Z}$
 <span class="statement-title">proof.</span> <br>
 
 <details>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $\mathbb{Z} / p\mathbb{Z} \cong \mathbb{Z}_p$
 
@@ -153,7 +153,7 @@ $\iff$ $R / M$ is a Field.
 
 <details>
 <summary>($\implies$)</summary>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 ($\implies$) Supp. $M$ is a Maximal Ideal.
 
@@ -223,7 +223,7 @@ p.s. 교수님이 수업 때 하신 증명인데 뭔가 이상하게 마음에 �
 
 <details>
 <summary>($\impliedby$)</summary>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Supp. $R/M$ : Field
 
@@ -293,7 +293,7 @@ $\iff$ $R$ has no proper non-trivial ideal.
 
 <details>
 <summary>($\impliedby$)</summary>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Supp. the only ideals in $R$ is $\\{ 0 \\}$ and $R$.
 
@@ -357,7 +357,7 @@ $\iff$ $R/N$ is an integral domain.
 
 <details>
 <summary>($\implies$)</summary>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Supp. $N$ is a Prime Ideal, and $\overline{a} \cdot \overline{b} = \overline{0}$ for some $a, b \in R$.
 
@@ -380,7 +380,7 @@ $$
 
 <details>
 <summary>($\impliedby$)</summary>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Supp. $R/N$ is an Integral Domain.
 
@@ -417,7 +417,7 @@ Any Maximal Ideal of commutative ring is also a Prime Ideal.
 <span class="statement-title">proof.</span><br>
 
 <details>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Any Field is an Integral Domain.
 

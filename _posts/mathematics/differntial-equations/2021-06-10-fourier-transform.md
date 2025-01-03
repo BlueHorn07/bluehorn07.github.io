@@ -36,7 +36,7 @@ $$
 
 이때, 주기 $2L$에 대해서 극한을 취해 $L \rightarrow \infty$로 보낸다면, 이것은 함수 $x(t)$가 사실항 비주기 함수가 됨을 의미한다. 이는 곧 <span class="half_HL">어떤 비주기 함수도 \<푸리에 급수\>를 통해 sinusoidal function으로 분해할 수 있다</span>는 것을 말한다!
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 비주기 함수에서의 \<푸리에 급수\> 형태를 살펴보기 위해 \<푸리에 급수\>에 대한 식에 아래와 같이 극한을 취해보자.
 

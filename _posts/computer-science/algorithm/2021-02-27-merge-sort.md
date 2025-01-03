@@ -25,7 +25,7 @@ Merge Sort는 \<분할 정복\>을 정말 충실히 수행하는 알고리즘이
 
 Merge Sort는 기능적으로 봤을 때, "**Merge Sort**"와 "**Merge**" 두 가지 작업만 수행하면 된다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 function: **mergesort**($a[1...n]$)
 
@@ -39,7 +39,7 @@ function: **mergesort**($a[1...n]$)
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 function: **merge**($x[1...k]$, $y[1...l]$)
 

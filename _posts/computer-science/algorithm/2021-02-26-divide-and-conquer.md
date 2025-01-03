@@ -58,7 +58,7 @@ $a$, $b$, $c$에 대한 값만 안다면, 계산 복잡도를 바로 얻을 수 
 
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 At $k$-th level, we get $a_k$ subproblems of size $n/b^k$. Also we should consider fixed cost $O(n^c)$ too. At $k$-th level, the size of problem is $n/b^k$, so fixed cost is $O\left(\left(n/b^k\right)^c\right)$.
 

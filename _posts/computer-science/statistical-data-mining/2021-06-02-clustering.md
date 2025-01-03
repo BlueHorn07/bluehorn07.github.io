@@ -64,7 +64,7 @@ $$
 
 그래서 Brute Force와 같은 방식이 아니라, 위 문제의 sub-optimal solution을 찾는 방식으로 \<K-means clustering\>을 수행한다!
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 <span class="statement-title">Algorithm.</span> K-means Algorithm<br>
 

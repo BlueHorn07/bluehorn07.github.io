@@ -35,7 +35,7 @@ An undirected graph is \<**connected**\> if for every pair of nodes $u$ and $v$,
 
 \<DFS\>를 수도 코드로 표현하면 아래와 같다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 function: **explore**($G$, $v$)<br/>
 Input: $G=(V, E)$ is a graph; $v \in V$<br/>
@@ -55,7 +55,7 @@ Output: for all nodes $u$ reachable from $v$, **visited**($u$) is set to $true$.
 
 하지만 \<DFS\> 알고리즘이 정말로 $v$에서 reachable한 모든 노드를 방문한다고 어떻게 보장할 수 있을까? "\<DFS\> 알고리즘은 시작 노드 $v$에서 도달할 수 있는 모든 노드를 방문한다."는 명제를 증명해보자!
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 <div class="img-wrapper">
   <img src="{{ "/images/computer-science/algorithm/dfs-1.jpg" | relative_url }}" width="280px">
@@ -79,7 +79,7 @@ $z$에 방문했으면, **explore** 함수에서 인접한 모든 노드를 방�
 
 이번에는 \<DFS\> 알고리즘의 시간 복잡도를 계산해보자! 그래프를 \<인접 행렬\>과 \<인접 리스트\>로 표현했느냐에 따라서 시간 복잡도가 다른데, 본인이 주로 \<인접 리스트\> 방식으로 그래프를 생각하기 때문에 여기서는 \<인접 리스트\>의 경우를 살펴보겠다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 그래프 $G=(V, E)$에 대해 모든 정점을 방문한다고 하면, **explore**는 총 $V$번 호출된다. 이때, 각 **explore**에서 노드 $v$의 $\deg$ 만큼 **for** 문을 돌리므로 \<DFS\> 알고리즘이 종료된 시점에서 보면, $\displaystyle \sum_{v} \deg(v)$ 만큼 iteration을 수행한 것이 된다. 이때, $\displaystyle \sum_{v} \deg(v) = 2 \times E$이다.
 
@@ -108,7 +108,7 @@ $\blacksquare$
 
 \<BFS\>를 수도 코드로 표현하면 아래와 같다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 function: **bfs**($G$, $s$)<br/>
 Input: $G=(V, E)$ is a graph; $s \in V$<br/>

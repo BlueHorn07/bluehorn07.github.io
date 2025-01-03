@@ -137,7 +137,7 @@ $$
 
 이번에는 실제로 \<ALS\>의 동작을 살펴보자!
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 1\. 먼저 사용자와 아이템의 Latent Factor 행렬을 아주 작은 랜덤값으로 초기화 한다.
 

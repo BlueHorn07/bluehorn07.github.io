@@ -68,7 +68,7 @@ Here, we have $f_{1-\alpha}(n_1, n_2) = \dfrac{1}{f_{\alpha}(n_2, n_1)}$
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 <span class="statement-title">*Quick Proof*.</span><br>
 
@@ -122,7 +122,7 @@ $$
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 <span class="statement-title">*Proof*.</span><br>
 
@@ -146,7 +146,7 @@ $$
 <img src= "{{"/images/mathematics/probability-and-statistics/F-distribution-example-1.png" | relative_url }}" width=550>
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $n_1 = 21$, $n_2 = 31$
 

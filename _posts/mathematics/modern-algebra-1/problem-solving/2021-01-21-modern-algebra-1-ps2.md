@@ -25,7 +25,7 @@ Consider $\mathbb{Z}[\sqrt{-2}]$ as a sub-ring of $\mathbb{C}$ and with the norm
 
 <big>(a) The ring $\mathbb{Z}[\sqrt{-2}]$ is a Euclidean domain.</big>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $\mathbb{Z}[\sqrt{-2}]$가 Euclidean Algorithm을 만족하는지 확인해야 한다.
 
@@ -68,7 +68,7 @@ $\mathbb{Z}[\sqrt{-2}]$는 Euclidean Domain이다. $\blacksquare$
 
 <big>(b) Find a generator for the ideal $\left< 85, -11+4\sqrt{-2} \right>$.</big>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 (a)에서 $\mathbb{Z}[\sqrt{-2}]$가 Euclidean Domain임을 보였으므로 Euclidean Algorithm을 활용해 GCD를 구할 수 있다!
 

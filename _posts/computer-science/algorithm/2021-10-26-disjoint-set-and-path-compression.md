@@ -40,7 +40,7 @@ categories: ["Algorithm"]
 
 먼저 $\text{makeset}(x)$는 루트 노드만 있는 트리를 생성한다. 그리고 $\text{union}(x, y)$ 연산은 각 노드가 포함된 두 개의 트리를 하나의 트리로 병합한다. 이때 하나의 트리를 다른 트리의 subtree로 병합된다. 구체적으로 어떻게 $\text{union}(x, y)$로 트리를 병합하는지는 코드를 보며 이해해보자.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 **Algorithm** $\text{makeset}(x)$
 
@@ -52,7 +52,7 @@ $\text{rank}(x) \leftarrow 0$
 
 먼저 $\text{makeset}(x)$은 루트 노드만 있는 트리를 만든다. 루트 노드는 부모가 자기 자신을 가리키기 때문에 $\pi(x)$는 자기자신인 $x$이다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 **Algorithm** $\text{find}(x)$
 
@@ -65,7 +65,7 @@ $\text{rank}(x) \leftarrow 0$
 
 노드 $x$의 루트 노드를 반환하는 $\text{find}(x)$는 $\pi(x)$를 순회하며 쉽게 구할 수 있다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 **Algorithm** $\text{union}(x, y)$
 
@@ -210,7 +210,7 @@ $$
 T = T_1 + T_2 = \sum (1) + \sum (2)
 $$
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 1\. $x$ and $\pi(x)$ belong to the different interval
 
@@ -224,7 +224,7 @@ $$
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 2\. $x$ and $\pi(x)$ belong to the same interval
 

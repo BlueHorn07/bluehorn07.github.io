@@ -23,7 +23,7 @@ categories: ["Algorithm"]
 
 사실 [Network Flow]({{"/2021/07/16/network-flow" | relative_url}}) 포스트에서 설명한 Max-Flow를 찾는 방법을 코드로 구현한 것에 불과하다. 큰 범주로 봤을 때는 Brute Force Algorithm에 속한다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 1\. source에서 sink로 가는 유량을 보낼 수 있는 경로 $p$를 하나 찾는다. DFS 또는 BFS를 이용하면 된다.
 

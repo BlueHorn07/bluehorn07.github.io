@@ -103,7 +103,7 @@ Let $\ell(\theta; X, Z) = \log p_{\theta}(Y)$ be the "**complete log-likelihood*
 
 여기서 잠깐 Insight를 얻고 가자. ['Lee-jaejoon'님의 포스트](https://lee-jaejoon.github.io/ESL-8/)의 포스트를 많이 참고했다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 1\. 만약 모든 확률변수가 관측 가능했다면, 즉, $Z = \emptyset$.
 
@@ -125,7 +125,7 @@ Let $\ell(\theta; X, Z) = \log p_{\theta}(Y)$ be the "**complete log-likelihood*
 
 \<EM Algorithm\>은 <span class="half_HL">"만약 $\theta$를 안다면?"</span>라는 아이디어로 이 상황을 해결한다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 <span class="statement-title">Algorithm.</span> EM Algorithm<br>
 

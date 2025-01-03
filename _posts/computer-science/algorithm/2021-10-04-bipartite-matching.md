@@ -37,7 +37,7 @@ categories: ["Algorithm"]
   <img src="{{ "/images/computer-science/algorithm/bipartite-matching-2.png" | relative_url }}" width="600px">
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 <span class="statement-title">Reduction to NF</span>
 
@@ -57,7 +57,7 @@ all capacities are 1, so an edge is used(= flow 1) or not.
 
 그리고 reduction된 NF 문제에서 얻는 maximum total flow가 maximum matching을 유도한다는 것을 간단하게 증명해보자!
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $M$ be the set of edges used in the maximum flow of value $k$. Then $M$ is a matching because there is at most on edge in $M$ leaving a one person and entering a one job. (바로 위에서 언급한 성질 때문!) Moreover, $M$ consists of $k$ matching edges!
 

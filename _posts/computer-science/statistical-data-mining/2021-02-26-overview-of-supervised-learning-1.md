@@ -107,7 +107,7 @@ $$
 
 이것은 $\text{RSS}(\beta)$에 대한 미분으로 쉽게 유도할 수 있다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $$
 \begin{aligned}

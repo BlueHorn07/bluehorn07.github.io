@@ -249,7 +249,7 @@ Let $A \in \mathbb{R}^{n\times n}$ and symmetric. Then, T.F.A.E.
 
 ((1)$\implies$(2))는 쉽게 \<spectral decomposition\>을 활용하면, 쉽게 증명할 수 있다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Because $A$ is symmetric, $A = UDU^T$ by spectral theorem.
 
@@ -267,7 +267,7 @@ eigenvalue $d_i$가 0 or 1이라는 사실은 proj. $A$가 $d_i = 1$인 특정 $
 
 ((2)$\implies$(3))도 증명해보자. 이건 rank과 eigenvalue 사이의 관계를 통해 쉽게 증명할 수 있다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 rank는 (# of non-zero eigenvalue)로 정의된다. orthognoal proj인 $A$는 eigvenvalue가 0 또는 1이므로 $d_i = 1$의 갯수를 세면 된다.
 

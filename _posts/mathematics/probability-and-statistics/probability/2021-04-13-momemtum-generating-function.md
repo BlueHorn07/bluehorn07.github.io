@@ -341,7 +341,7 @@ $$
 X+Y \sim \text{BIN}(n+m, p)
 $$
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $$
 \begin{aligned}
@@ -367,7 +367,7 @@ $$
 X+Y \sim \text{Poi}(\lambda + \mu)
 $$
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $$
 \begin{aligned}
@@ -406,7 +406,7 @@ $$
 X+Y \sim N(\mu_1 + \mu_2, \sigma_1^2 + \sigma_2^2)
 $$
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $$
 \begin{aligned}

@@ -9,7 +9,7 @@ categories: ["Algorithm"]
 
 [백준 1933번: 스카이라인](https://www.acmicpc.net/problem/1933) 문제를 다루는 포스트입니다 🙌
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Given n rectangular buildings in a 2-dimensional city, computes the **skyline** of these buildings, eliminating hidden lines. The main task is to view buildings from a side and remove all sections that are not visible.
 
@@ -71,7 +71,7 @@ A **skyline** is a collection of rectangular strips. A rectangular strip is repr
 
 각 key point의 overlap 되는 tallest building을 찾기 위해 `building` 배열을 순회한다: $O(n)$. 따라서 $n$개 key point를 처리하는데 $O(n)$ 만큼의 연산이 필요하므로, Brute Force 방식은 $O(n^2)$의 시간복잡도를 갖는다.
 
-<details class="math-statement" markdown="1">
+<details class="proof" markdown="1">
 
 <summary>Brute Force 풀이</summary>
 
@@ -177,7 +177,7 @@ vector<Coord> skyline(vector<Building> buildings) {
 
 2개의 skyline 배열을 merge하는 방법은 아래와 같다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 <div class="img-wrapper">
   <img src="{{ "/images/computer-science/algorithm/skyline-problem-6.png" | relative_url }}" width="300px">
@@ -281,7 +281,7 @@ vector<Coord> merge(vector<Coord> left_side, vector<Coord> right_side) {
 
 이 경우는 아래와 같이 해결한다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 If `x` values of both key points are same, then choose the one with higher `y` value and advance key points for both skylines.
 

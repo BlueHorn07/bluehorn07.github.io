@@ -38,7 +38,7 @@ $$
 
 </div>
 
-감마 함수는 1730년 오일러가 제시한 함수로 수학계에서 정말 유명한 함수다. 감마 함수는 정수에서 정의되는 \<factorial\> $n!$을 실수, 복소수 영역까지 확장하는 시도에서 등장한 함수이다. 즉, \<factorial\>의 일반화 버전이라고 생각하면 된다.
+감마 함수는 1730년 오일러가 제시한 함수로 수학계에서 정말 유명한 함수다. 감마 함수는 정수에서 정의되는 \<factorial\> $n!$을 실수, 복소수 영역까지 확장하는 시도에서 등장한 함수이다. 즉, "factorial"을 일반화 한 것이라고 생각하면 된다.
 
 <span class="statement-title">Remark.</span><br>
 
@@ -92,6 +92,22 @@ $$
 $$
 
 <hr/>
+
+# Standard Gamma Distribution
+
+신기하게도 Gamma 함수 $\Gamma(\alpha)$로부터 아래와 같은 확률 분포를 정의할 수 있다.
+
+$$
+f(x; \alpha) = \frac{x^{\alpha - 1} e^{-x}}{\Gamma(\alpha)} \quad \text{for} \; x \ge 0
+$$
+
+이것은 확률 분포가 되는데, 그 이유는 $\int f(x; \alpha) = \Gamma(\alpha) / \Gamma(\alpha) = 1$이 되기 때문이다!
+
+이때의 평균과 분산은 아래와 같다.
+
+- $E[X] = \alpha$
+- $\text{Var}(X) = \alpha$
+
 
 # Gamma Distribution
 
@@ -232,7 +248,7 @@ Let $N(t)$ be a \<Poisson process\> with rate $\lambda$. Let $X$ be the time to 
 
 Claim: $X \sim \text{Gamma}(n, \beta)$ where $\beta = 1/\lambda$
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $$
 \begin{aligned}

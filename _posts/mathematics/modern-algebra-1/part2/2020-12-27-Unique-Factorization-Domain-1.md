@@ -115,7 +115,7 @@ In UFD, Irreducible elt is also a Prime elt.
 
 <span class="statement-title">proof.</span><br>
 <details>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 
 Let $p \in D$ be a irreducible element.

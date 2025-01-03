@@ -33,7 +33,7 @@ A set of $n$ jobs, job $j$ starts at $s_j$, finishes at $f_j$ and has weight $w_
 
 $DP[j]$를 업데이트 하는 규칙에는 2가지가 있다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 
 1\. select job $j$

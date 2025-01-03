@@ -49,7 +49,7 @@ $$
 
 <span class="statement-title">*Proof*.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $A$ as
 
@@ -140,7 +140,7 @@ Let $X \sim N(\mu, \sigma^2)$, then
 
 이 부분은 간단하게 증명을 살펴보자. 1번 명제는 $Z$가 normal 분포를 가지는 걸 유도하면 된다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 CDF of $Z$ is $P(Z \le z) = P\left( \dfrac{X - \mu}{\sigma} \le z \right)$, then we can shift and scaling $Z$ as
 

@@ -19,7 +19,7 @@ categories: ["Algorithm"]
 
 이 문제는 \<DP\> 기법을 사용해 $k$를 점진적으로 증가시키며 풀 수 있다. 시작노드 $s$에서 각 노드 $v$까지 $k$개의 edge를 거쳤을 때, 즉 $k$-hop을 했을 때의 shortest cost를 `dist[v][k]`에 저장하면 된다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $\text{dist}(v, i)$ be the shortest path from $s$ to $v$ that uses $i$ edges.
 

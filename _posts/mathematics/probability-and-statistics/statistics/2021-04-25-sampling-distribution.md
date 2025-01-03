@@ -190,7 +190,7 @@ Q. Why $(n-1)$ in the bottom??
 
 A. 왜냐하면,  <span class="half_HL">$(n-1)$로 나눠줘야 표본 분산의 평균 $E[S^2]$이 $\sigma^2$이 되기 때문!!!</span>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 <span class="statement-title">*Proof*.</span><br>
 

@@ -58,7 +58,7 @@ $$
 
 then $\hat{F}(x) \rightarrow F(x)$ as $n \rightarrow \infty$ in sense of probability.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $$
 \begin{aligned}

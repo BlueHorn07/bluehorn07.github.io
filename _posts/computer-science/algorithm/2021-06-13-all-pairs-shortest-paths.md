@@ -31,7 +31,7 @@ categories: ["Algorithm"]
 
 이를 알고리즘으로 표현하면 아래와 같다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 // initialize<br/>
 **for all** $(i, j) \in E$<br/>

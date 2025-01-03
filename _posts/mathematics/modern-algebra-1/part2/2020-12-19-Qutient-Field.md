@@ -78,7 +78,7 @@ $$
 이제 위에서 정의한 두 연산이 Well-defined되어 있음을 보여야 한다.
 
 <span class="statement-title">proof.</span>.<br>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
   Supp. $[(a, b)] = [(a', b')]$, and $[(c, d)] = [(c', d')]$
 
   Check $[(ad+bc, bd)] = [(a'd'+b'c', b'd')]$, and $[(ac, bd)] = [(a'c', b'd')]$.
@@ -138,7 +138,7 @@ $$
 </div>
 
 <span class="statement-title">proof.</span>.<br>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
   Check
 
   1. $\phi$ is additive homormophism
@@ -188,7 +188,7 @@ Domain $D$를 포함하는 어떤 Field가 있다고 하자. 그러면 이 Field
 
 <span class="statement-title">proof.</span>.<br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $L$ is extension field of $D$. 따라서 $D \le L$.
 
@@ -253,7 +253,7 @@ $$
 
 <br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 우리는 명제에서 요구하는 ring homomorphism $\psi$를 잘 정의하였다.
 

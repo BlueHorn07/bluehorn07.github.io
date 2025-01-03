@@ -35,7 +35,7 @@ For a group of order $pq$ ($p<q$ are prime)
 <br>
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 [첫번째 명제]
 
@@ -75,7 +75,7 @@ $$
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 [두번째 명제]
 
@@ -159,7 +159,7 @@ Lemma 37.8은 그 경우가 정확히 $\lvert H \cap K \rvert$ 만큼 발생한�
 
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $h_1, h_2 \in H$, $k_1, k_2 \in K$.
 
@@ -217,7 +217,7 @@ Let $\lvert G \rvert = p^n$ ($n > 1$, $p$ is prime).
 
 Then, $G$ is not simple.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 By [1st Sylow thm]({{"2020/12/26/Sylow-thm#1st-sylow-theorem" | relative_url}}),
 
@@ -240,7 +240,7 @@ Let $\lvert G \rvert = 15$.
 
 Then, $G$ is cyclic.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $15 = 3 \times 5$이다.
 
@@ -265,7 +265,7 @@ Let $\lvert G \rvert = 20$.
 
 Then, $G$ is not simple.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $\lvert G \rvert = 20 = 2^2 \times 5$
 
@@ -309,7 +309,7 @@ Let $\lvert G \rvert = 48$.
 
 Then, $G$ is not simple.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $\lvert G \rvert = 48 = 2^4 \times 3$
 

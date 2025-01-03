@@ -111,7 +111,7 @@ E[\hat{\beta}] &= E\left[ (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T \mathbf{y} \
 \end{aligned}
 $$
 
-<details class="math-statement" markdown="1">
+<details class="proof" markdown="1">
 <summary>$E[\mathbf{y}]$ 유도</summary>
 
 $\mathbf{y} = (y_1, \dots, y_n)^T$에 대해 $E[\mathbf{y}]$는

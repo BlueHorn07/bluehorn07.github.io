@@ -120,7 +120,7 @@ $$
 
 <span class="statement-title">proof.</span>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $f(z) = f(x+iy) = u(x,y) + i v(x,y)$
 

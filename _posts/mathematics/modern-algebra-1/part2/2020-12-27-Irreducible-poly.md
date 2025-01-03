@@ -59,7 +59,7 @@ $f(x) = g_1(x)h_1(x)$ over $\mathbb{Z}[x]$ with $\deg(g_1(x)) = r$, $\deg(h_1(x)
 
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $f(x) = g(x)h(x)$, $g(x), h(x) \in \mathbb{Q}[x]$.
 

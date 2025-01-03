@@ -59,7 +59,7 @@ $n$개의 수업이 주어졌고, 각 수업 $j$는 $[s_j, f_j]$의 start/finish
 
 위의 문제 역시 Greedy Algorithm으로 간단히 해결할 수 있다!!
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Algorithm: **Interval-Partition**($S$)<br/>
 

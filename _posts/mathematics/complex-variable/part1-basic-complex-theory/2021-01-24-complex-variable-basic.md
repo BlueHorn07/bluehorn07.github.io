@@ -85,7 +85,7 @@ $$
 
 <br><span class="statement-title">Exercise.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Derive
 

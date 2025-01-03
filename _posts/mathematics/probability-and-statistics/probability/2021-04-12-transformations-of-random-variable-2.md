@@ -39,7 +39,7 @@ $$
 
 <span class="statement-title">*Proof*.</span> [1]<br/>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $$
 \begin{aligned}
@@ -70,7 +70,7 @@ Let $X \sim \text{Gamma}(n, \beta)$, $Y \sim \text{Gamma}(m, \beta)$, and $X \pe
 
 Find the pdf of $X+Y$.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $$
 \begin{aligned}

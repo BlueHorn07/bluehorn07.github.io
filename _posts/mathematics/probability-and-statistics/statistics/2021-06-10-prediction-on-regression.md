@@ -37,7 +37,7 @@ $$
 
 이제, $\hat{Y}_0$의 분포에 대해 살펴보자. 이때, $B_0$, $B_1$가 normal 분포이므로, $\hat{Y}_0$ 역시 normal 분포를 따른다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 1\. Mean
 
@@ -53,7 +53,7 @@ $$
 
 </div>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 2\. Variance
 

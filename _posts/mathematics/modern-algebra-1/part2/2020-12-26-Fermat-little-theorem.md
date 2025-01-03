@@ -81,7 +81,7 @@ If $a \in \mathbb{Z}$, then $a^p \equiv a$ (mod $p$).
 
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 (Case 1) $p \mid a$
 
@@ -99,7 +99,7 @@ $8^{103} \equiv \; ?$ (mod 13)
 
 <span class="statement-title">Sol.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 By Fermat-, $8^{12} \equiv 1$ (mod 13)
 
@@ -121,7 +121,7 @@ $2^{11213} \equiv \; ?$ (mod 11)
 
 <span class="statement-title">Sol.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 By Fermat-, $2^{10} \equiv 1$ (mod 11)
 
@@ -138,7 +138,7 @@ Show that, for $\forall \; n \in \mathbb{N}$, $15 \mid (n^{33} - n)$.
 
 <span class="statement-title">Sol.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $15 \mid (n^{33} - n)$. 즉, $n^{33} - n = n(n^{32} - 1) \equiv 0$ (mod 15)임을 보이면 된다.
 

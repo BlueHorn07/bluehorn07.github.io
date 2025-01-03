@@ -49,7 +49,7 @@ if $\exists$ a Euclidean norm on $D$.
 
 <br><span class="statement-title">Example.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $$
 \begin{aligned}
@@ -62,7 +62,7 @@ $$
 
 <br><span class="statement-title">Example.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $$
 \begin{aligned}
@@ -86,7 +86,7 @@ Every Euclidean Domain is a PID.
 
 <br><span class="statement-title">proof.</span><br>
 <details>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $D$ be a Euclidean Domain with a Euclidean norm $\nu$.
 
@@ -153,7 +153,7 @@ For a E.D. with Euclidean norm $\nu$,
 
 <br><span class="statement-title">proof.</span><br>
 <details>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 (1번 명제에 대한 증명)
 
@@ -196,7 +196,7 @@ $\blacksquare$
 
 <br><span class="statement-title">Example.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 For $\mathbb{Z}$, $\nu(n) = \left\| n \right\|$.
 
@@ -210,7 +210,7 @@ when $\nu(n) = 1$, $n = 1, -1$.
 
 <br><span class="statement-title">Example.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $F[x]$, for non-zero $f(x)$, $\nu(f(x)) = \deg f(x)$.
 

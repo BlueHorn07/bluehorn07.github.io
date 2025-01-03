@@ -105,7 +105,7 @@ $\texttt{sink}$는 자식 노드보다 작은 key를 가진 부모 노드가 자
 - $\texttt{insert}$: $O(\log_d N)$
 - $\texttt{deleteMin}$: $O(d \log_d N)$
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 <b>\* $\texttt{deleteMin}$ in d-ary Heap</b>
 

@@ -22,7 +22,7 @@ Show $(\mathbb{R}^{\*}, \cdot) \not\cong (\mathbb{C}^{\*}, \cdot)$.
 <br>
 <span class="statement-title">Sol. 1</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Supp. $\exists$ an iso- $\phi: \mathbb{C}^{\*} \longrightarrow \mathbb{R}^{\*}$.
 
@@ -49,7 +49,7 @@ $\phi$를 반대 방향으로 잡아서 증명을 할 수도 있다. 그러나 �
 
 <span class="statement-title">Sol. 2</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Supp. $\exists$ an iso- $\phi: \mathbb{R}^{\*} \longrightarrow \mathbb{C}^{\*}$.
 
@@ -147,7 +147,7 @@ If $\lvert G \rvert < \infty$, then
 <br>
 <span class="statement-title">proof.</span><br>
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 1번은 $\phi$가 well-defined 함수라면, <br>
 $G$의 원소 하나를 $G'$의 원소 하나로 대응시킬 것이기 때문에 당연히 $\lvert \phi[G] \rvert < \infty$가 된다.
@@ -156,7 +156,7 @@ $G$의 원소 하나를 $G'$의 원소 하나로 대응시킬 것이기 때문�
 
 <details>
 <summary>2번 명제에 대한 증명</summary>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 2번은 $\lvert \phi[G] \rvert$가 $\lvert G \rvert$의 약수라는 점에서 힌트를 얻어 Lagrange Thm을 생각해내고, "그럼 $\lvert \phi[G] \rvert$와 동형일 subgroup $H$가 존재하지 않을까"라고 생각해서 해결하였다.
 

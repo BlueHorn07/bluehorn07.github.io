@@ -38,7 +38,7 @@ A directed graph is a DAG iff it has a topological ordering.
 
 이렇게 DAG를 topological order로 linearization 했다면, 우리는 DAG 위에서의 shortest path를 쉽게 구할 수 있다.
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Linearize $G$
 

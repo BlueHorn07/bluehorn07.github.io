@@ -46,7 +46,7 @@ $$
 
 아이디어는 간단하다. 두 prefix에 대해, <span class="half_HL">마지막 문자가 공백일 때의 두 경우</span>와 <span class="half_HL">마지막 문자를 맞췄을 때의 경우</span>를 종합해 최소 edit distance의 경우를 취하는 아이디어다!
 
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 <span style="color: grey">// initialization</span><br/>
 **for** $i=0, 1, 2, \dots, m$<br/>

@@ -47,7 +47,7 @@ $\textrm{Char}(R) = n > 1$
 <span class="statement-title">proof.</span><br>
 
 <details>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Let $\phi$ be a ring homomorphism mentioned above.
 
@@ -95,7 +95,7 @@ $\mathbb{Z}_p$와 $\mathbb{Q}$ 모두 Field다!!
 </div>
 
 <span class="statement-title">proof.</span><br>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 $\mathbb{Z}_n$이 Field가 되는 경우는 $n = p$ (prime) 뿐이다.
 

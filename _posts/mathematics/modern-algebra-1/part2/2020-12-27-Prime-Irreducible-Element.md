@@ -94,7 +94,7 @@ Prime element in $D$ $\implies$ Irreducible in $D$
 
 <details>
 <summary>($\implies$)</summary>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Since $p$ is a Prime element,
 
@@ -130,7 +130,7 @@ $$
 
 <details>
 <summary>($\impliedby$의 반례)</summary>
-<div class="math-statement" markdown="1">
+<div class="proof" markdown="1">
 
 Integer Domain<small>(또는 Qudratic Integr Ring)</small>과 Algebraic Norm에 대한 개념을 알아야 반례를 쉽게 찾을 수 있다.
 
