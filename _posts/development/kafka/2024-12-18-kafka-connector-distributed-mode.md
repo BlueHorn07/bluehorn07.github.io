@@ -3,7 +3,7 @@ title: "Kafka Connector on k8s - Distributed Mode"
 toc: true
 toc_sticky: true
 categories: ["Kafka"]
-excerpt: ""
+excerpt: "고가용성을 갖춘 Kafka Connect 디플로이 하기 👏 REST API로 작업 등록하기!"
 ---
 
 이번 포스트는 [Kafka Connector on k8s - Standalone Mode](/2024/12/17/kafka-connector-standalone-mode/)에서 내용이 이어집니다. 🙏

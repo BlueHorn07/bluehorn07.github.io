@@ -2,7 +2,7 @@
 title: "Hello, Java!"
 toc: true
 toc_sticky: true
-categories: ["Kafka"]
+categories: ["Java"]
 excerpt: "☕️"
 ---
 
@@ -120,8 +120,10 @@ bw.close();
 
 https://start.spring.io/
 
-- Springboot?
-- 내부에 tomcat 서버?
+- Spring Boot!
+  - 내부에 tomcat 서버가 있다!
+  - 그냥 Spring만 쓸 때는 tomcat 서버까지 직접 운영해야 했음.
+- Component Scan `@Component`
 
 
 ## Spring Boot가 짱이다
@@ -130,6 +132,29 @@ https://start.spring.io/
 
 반면에 Spring Boot에는 tomcat 서버가 내장 되어 있음(embedded server). 그래서 서빙 레이어를 따로 디플로이 할 필요 없음.
 
-## Getter, Setter
+## Java Bean
 
-요게 있는 걸 Java Bin? 규약 이라고 함.
+아래와 같은 규칙을 따르는 Java 클래스를 지칭함. 이런 규칙들을 Java Bean 표준이라고 부르는 것.
+
+- 매개변수가 없는 기본 생성자가 있어야 함.
+- 모든 멤버 변수는 `private`으로 선언해야 함.
+- Getter와 Setter 메서드를 제공해야 함.
+- Java Bean 객체를 파일에 저장하거나 네트워크 전송을 위해 `java.io.Serializable` 인터페이스를 구현해야 함.
+
+이렇게 하는 이유는 Java에서 객체의 재사용 성을 높이고, 더 쉽게 다루기 위해서임.
+
+## JDBC Integration Test
+
+- `@SpringBootTest`
+  - 요 Annotation은 Test 코드에서 Spring 컴포넌트를 DI로 주입 받기 위해서
+- `@Transactional`
+  - JDBC에 쿼리를 실행한 후에, `COMMIT` 없이 `ROLLBACK`을 실행해서 해당 내용이 DB에 반영되지 않도록!
+
+요거는 Unit Test랑은 다른 개념임. Integration Test는 다른 컴포넌트와 상호작용까지 테스트에 포함되어 있음.
+
+# JDBC, JDBC Template, JPA, Spring Data JPA
+
+
+
+# AOP(Aspect-oriented Programming)
+
