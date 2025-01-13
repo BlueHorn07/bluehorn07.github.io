@@ -263,7 +263,7 @@ $ kubectl exec -it bitnami-kafka-client --namespace kafka -- sh
 ```bash
 $ kafka-topics.sh \
   --bootstrap-server bitnami-kafka.kafka.svc.cluster.local:9092 \
-  --command-config=/tmp/client.properties \
+  --command-config /tmp/client.properties \
   --create \
   --replication-factor 1 \
   --partitions 2 \
@@ -278,7 +278,7 @@ Created topic test-topic.
 ```bash
 $ kafka-topics.sh \
   --bootstrap-server bitnami-kafka.kafka.svc.cluster.local:9092 \
-  --command-config=/tmp/client.properties \
+  --command-config /tmp/client.properties \
   --list
 test-topic
 ```
@@ -290,7 +290,7 @@ test-topic
 ```bash
 $ kafka-topics.sh \
   --bootstrap-server bitnami-kafka.kafka.svc.cluster.local:9092 \
-  --command-config=/tmp/client.properties \
+  --command-config /tmp/client.properties \
   --delete \
   --topic test-topic
 ```
@@ -304,7 +304,7 @@ $ kafka-topics.sh \
 ```bash
 $ kafka-topics.sh \
   --bootstrap-server bitnami-kafka.kafka.svc.cluster.local:9092 \
-  --command-config=/tmp/client.properties \
+  --command-config /tmp/client.properties \
   --create \
   --replication-factor 1 \
   --partitions 2 \
@@ -344,6 +344,34 @@ hahaha
 hhohohoh
 merong
 ```
+
+# Deploy without Auth
+
+그후에 로컬에서 Kafka 클러스터를 디플로이 해 연습을 해보니, 로컬 Kafka 클러스터에선 SASL Auth 없이 접속하는게 Kafka를 익히는데 더 도움이 되는 것 같습니다... 그래서 bitnami-kafka를 디플로이 할 때 사용한 `values.bitnami-kafka.yaml` 파일에 `listerners` 부분을 아래와 같이 추가합니다.
+
+```yaml
+# @values.bitnami-kafka.yaml
+zookeeper:
+  enabled: true
+  replicaCount: 1
+
+broker:
+  replicaCount: 3
+
+controller:
+  replicaCount: 0
+
+kraft:
+  enabled: false
+
+listeners:
+  client:
+    protocol: 'PLAINTEXT'
+  controller:
+    protocol: 'PLAINTEXT'
+```
+
+그리고 디플로이 하면, SASL 인증 없이도 Kafka 클러스터에 접속할 수 있습니다 ㅎㅎ
 
 # 더 나아가기
 
