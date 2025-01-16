@@ -76,6 +76,17 @@ Databricks Certification 취득을 목표로 Apache Spark를 “제대로” 공
 - [Delta Lake Vacuum](/2024/06/18/delta-lake-vacuum/)
 - [Delta Lake Optimize](/2024/06/19/delta-lake-optimize/)
 
+## Kafka
+
+- [Deploy KAfka on Kubernetes ☸](/2025/01/05/deploy-kafka-on-k8s/)
+- [Hello, Avro!](/2024/11/15/hello-avro/)
+- [Hello, Python Producers!](/2024/12/10/hello-python-producers/)
+- [Kafka Connector on k8s - Standalone Mode](/2024/12/17/kafka-connector-standalone-mode/)
+- [Kafka Connector on k8s - Distributed Mode](/2024/12/18/kafka-connector-distributed-mode/)
+- [Kafka Shell Script 둘러보기](/2025/01/12/kafka-shell-scripts/)
+  - [`kafka-topics.sh`](/2025/01/11/kafka-shell-kafka-topics-sh/)
+  - [Console Produce/Consume](/2025/01/12/kafka-shell-console-produce-and-consume/)
+
 
 ## ElasticSearch
 

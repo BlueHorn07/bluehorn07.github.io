@@ -1,5 +1,5 @@
 ---
-title: "Kafka Shell Script 돌러보기"
+title: "Kafka Shell Script 둘러보기"
 toc: true
 toc_sticky: true
 categories: ["Kafka"]
@@ -62,40 +62,39 @@ start.time, end.time, data.consumed.in.MB, MB.sec, data.consumed.in.nMsg, nMsg.s
 
 
 # 고급
-4 + 
 
-kafka-e2e-latency.sh
-kafka-mirror-maker.sh
-kafka-streams-application-reset.sh
-zookeeper-server-start.sh
-connect-mirror-maker.sh
-kafka-features.sh
-kafka-producer-perf-test.sh
-zookeeper-server-stop.sh
-connect-plugin-path.sh
-kafka-get-offsets.sh
-kafka-reassign-partitions.sh
-kafka-transactions.sh
-zookeeper-shell.sh
-kafka-jmx.sh
-kafka-replica-verification.sh
-kafka-verifiable-consumer.sh
-kafka-acls.sh
-kafka-consumer-perf-test.sh
-kafka-leader-election.sh
-kafka-run-class.sh
-kafka-verifiable-producer.sh
-kafka-broker-api-versions.sh
-kafka-delegation-tokens.sh
-kafka-log-dirs.sh
-kafka-server-start.sh
-trogdor.sh
-kafka-client-metrics.sh
-kafka-delete-records.sh
-kafka-metadata-quorum.sh
-kafka-server-stop.sh
-kafka-cluster.sh
-kafka-dump-log.sh
-kafka-metadata-shell.sh
-kafka-storage.sh
-zookeeper-security-migration.sh
+- `kafka-e2e-latency.sh`
+- `kafka-mirror-maker.sh`
+- `kafka-streams-application-reset.sh`
+- `zookeeper-server-start.sh`
+- `connect-mirror-maker.sh`
+- `kafka-features.sh`
+- `kafka-producer-perf-test.sh`
+- `zookeeper-server-stop.sh`
+- `connect-plugin-path.sh`
+- `kafka-get-offsets.sh`
+- `kafka-reassign-partitions.sh`
+- `kafka-transactions.sh`
+- `zookeeper-shell.sh`
+- `kafka-jmx.sh`
+- `kafka-replica-verification.sh`
+- `kafka-verifiable-consumer.sh`
+- `kafka-acls.sh`
+- `kafka-consumer-perf-test.sh`
+- `kafka-leader-election.sh`
+- `kafka-run-class.sh`
+- `kafka-verifiable-producer.sh`
+- `kafka-broker-api-versions.sh`
+- `kafka-delegation-tokens.sh`
+- `kafka-log-dirs.sh`
+- `kafka-server-start.sh`
+- `trogdor.sh`
+- `kafka-client-metrics.sh`
+- `kafka-delete-records.sh`
+- `kafka-metadata-quorum.sh`
+- `kafka-server-stop.sh`
+- `kafka-cluster.sh`
+- `kafka-dump-log.sh`
+- `kafka-metadata-shell.sh`
+- `kafka-storage.sh`
+- `zookeeper-security-migration.sh`
