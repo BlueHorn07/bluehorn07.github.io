@@ -12,12 +12,12 @@ categories: ["Statistics"]
 
 **시리즈: Sampling Distributions**
 
-1. [Sampling Distribution]({{"/2021/04/25/sampling-distribution" | relative_url}}) 👀
-2. [Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt" | relative_url}})
-3. [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance" | relative_url}})
-4. [Student's t-distribution]({{"/2021/04/27/student-t-distribution" | relative_url}})
-5. [F-distribution]({{"/2021/05/04/F-distribution" | relative_url}})
-6. [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile" | relative_url}})
+1. [Sampling Distribution](/2021/04/25/sampling-distribution") 👀
+2. [Sampling Distribution of Mean](/2021/04/26/sampling-distribution-of-mean-and-clt")
+3. [Sampling Distribution of Variance](/2021/04/27/sampling-distribution-of-variance")
+4. [Student's t-distribution](/2021/04/27/student-t-distribution")
+5. [F-distribution](/2021/05/04/F-distribution")
+6. [EDF and Quantile](/2021/05/04/EDF-and-Quantile")
 
 </div>
 
@@ -25,11 +25,9 @@ categories: ["Statistics"]
 
 확통 수업을 듣는 전체 학생을 대상으로, 확통 수업을 선호하는 학생의 비율을 구하고자 한다. 그런데, 확통 수업을 듣는 학생 수가 너무 많아서 전체를 조사할 순 없고, 전체 중 $n$명 학생을 대상으로 설문조사를 시행한다고 하자.
 
-$X$가 "$n$명의 학생 중에 확통 수업을 선호한다고 응답한 학생 수"라는 RV라면, $X$는 [HyperGeo]({{"/2021/03/24/discrete-probability-distributions-2#hypergeometric-distribution" | relative_url}})의 분포를 따를 것이다.
+$X$가 "$n$명의 학생 중에 확통 수업을 선호한다고 응답한 학생 수"라는 RV라면, $X$는 [HyperGeometric 분포](/2021/03/24/discrete-probability-distributions-2#hypergeometric-distribution)를 따를 것이다. 만약 전체 학생 수가 충~분히 크다면, HyperGeometric 분포를 Binomial 분포로 근사할 수도 있을 것이다.
 
-또, 만약 전체 학생 수가 충분히 크다면, HyperGeo를 BIN으로 근사할 수도 있을 것이다.
-
-이때, 각 학생 $i$의 선호를 RV $X_i$로 표현해보자. 그러면,
+각 학생 $i$의 선호를 RV $X_i$는 Binary 값을 가진다.
 
 $$
 X_i = \begin{cases}
@@ -38,13 +36,13 @@ X_i = \begin{cases}
 \end{cases}
 $$
 
-그러면, 전체 RV $X_1, \dots, X_n$를 종합하면, 새로운 RV $\overline{X}$를 유도할 수 있다.
+그리고 RV $X_1, \dots, X_n$를 전체를 종합하면, 새로운 RV $\overline{X}$를 유도할 수 있다.
 
 $$
 \overline{X} := \frac{X_1 + \cdots X_n}{n}
 $$
 
-우리는 이 $\overline{X}$를 \<**sample mean**\>이라고 한다!
+이렇게 유도한 $\overline{X}$를 \<**sample mean**\>이라고 한다!
 
 <br/>
 
@@ -55,24 +53,24 @@ $n=100$, and 60 students said they like lecture. Then, $\overline{x} = \frac{60}
 이때, 우리가 \<sample mean\> $\overline{x}$에 대해 논하고자 하는 주제는 바로
 
 $$
-P(\left| \overline{x} - 0.6 \right| < \epsilon)
+P(\left| \overline{X} - 0.6 \right| < \epsilon)
 $$
 
-과 같은 확률을 어떻게 구하는지에 대한 것이다. 이것을 구하는 이유는
+의 확률을 어떻게 구하는지에 대한 것이다. 이것을 구하는 이유는
 
 $$
-P(\left| \overline{x} - \mu_0 \right| < \epsilon)
+P(\left| \overline{X} - \mu_0 \right| < \epsilon)
 $$
 
-의 확률을 구하여, 제시한 $\mu_0$와 우리가 얻은 sample mean이 얼마나 차이 나는지를 확인하고, 이것을 활용해 $\mu = \mu_0$라는 가설(Hypothesis)를 검정(Test)할 수 있기 때문이다. 이 내용은 뒤의 [\<가설 검정; Hypothesis Test\>]({{"/2021/05/18/introduction-to-hypothesis-tests" | relative_url}}) 부분에서 좀더 자세히 다룬다.
+의 확률을 구하여, 제시한 $\mu_0$와 우리가 얻은 sample mean이 얼마나 차이 나는지를 확인하고, 이것을 활용해 $\mu = \mu_0$라는 가설(Hypothesis)를 검정(Test)할 수 있기 때문이다. 이 내용은 뒤의 [\<가설 검정; Hypothesis Test\>](/2021/05/18/introduction-to-hypothesis-tests) 부분에서 자세히 다룬다.
 
-$P(\left\| \overline{x} - \mu_0 \right\| < \epsilon)$, 이것을 구하기 위해서는 $\overline{x}$에 대한 분포를 알아야 하며, 우리는 이것을 \<**sampling distribution**; 표본 분포\>이라고 한다! 표본 분포에 대한 정의는 아티클의 맨 마지막에 정리하였다.
+$P(\left\| \overline{X} - \mu_0 \right\| < \epsilon)$, 이것을 구하기 위해서는 $\overline{X}$에 대한 분포를 알아야 하며, 우리는 이것을 \<**sampling distribution**; 표본 분포\>라고 한다! 표본 분포에 대한 정의는 아티클의 맨 마지막에 정리하였다.
 
-<hr/>
+# Population and Sample
 
 <div class="definition" markdown="1">
 
-<span class="statement-title">Definition.</span> population<br>
+<span class="statement-title">Definition.</span> population; 모집단<br>
 
 A \<population\> is the totality of observations.
 
@@ -80,7 +78,7 @@ A \<population\> is the totality of observations.
 
 <div class="definition" markdown="1">
 
-<span class="statement-title">Definition.</span> sample<br>
+<span class="statement-title">Definition.</span> sample; 표본<br>
 
 A \<sample\> is a subset of population.
 
@@ -102,7 +100,7 @@ The observed values $x_1, \dots, x_n$ of $X_1, \dots, X_n$ are called \<**sample
 
 </div>
 
-<hr/>
+# Statistics
 
 <div class="definition" markdown="1">
 
@@ -112,7 +110,7 @@ A \<**Statistics; 통계량**\> is a function of a random sample $X_1, \dots, X_
 
 </div>
 
-즉, $f(X_1, \dots, X_n)$ 형태의 함수를 \<Statistics\>라고 한다. 이 \<Statistics\>는 해당 RV 집합의 대표값 역할을 한다.
+즉, $f(X_1, \dots, X_n)$ 형태의 함수를 \<Statistics\>라고 한다. 이 \<Statistics\>는 RV 집합의 대표값 역할을 한다.
 
 <br/>
 
@@ -128,9 +126,7 @@ Then,
 
 3\. $\dfrac{X_1 + \cdots + X_n + \mu}{n}$ is <u>not a Statistics</u>!
 
-우리는 <span class="half_HL">오직 \<Statistics\>을 통해서만 population에 대한 inference를 수행할 수 있다</span>.
-
-<hr/>
+우리는 개별 샘플값 $X_i = x_i$가 아니라, 통계량 \<Statistics\>을 통해서만 모집단에 대한 각종 성질을 추론할 수 있다.
 
 # Location Measures of a Sample
 
@@ -157,7 +153,7 @@ $\overline{X} = \dfrac{X_1 + \cdots + X_n}{n}$ is called a \<sample mean\>.
 
 <span class="statement-title">Definition.</span> sample median<br>
 
-그냥 Sample에서의 중간값.
+Sample에서의 중간값.
 
 </div>
 
@@ -168,9 +164,6 @@ $\overline{X} = \dfrac{X_1 + \cdots + X_n}{n}$ is called a \<sample mean\>.
 Sample에서의 최빈값.
 
 </div>
-
-
-<hr/>
 
 # Variability Measures of a Sample
 
@@ -185,6 +178,8 @@ S^2 := \frac{1}{n-1} \sum^n_{i=1} \left( X_i - \overline{X}\right)^2
 $$
 
 </div>
+
+## Why divide by (n-1)?
 
 Q. Why $(n-1)$ in the bottom??
 
@@ -251,7 +246,7 @@ $$
 
 </div>
 
-<hr/>
+# Sampling Distribution
 
 <div class="definition" markdown="1">
 
@@ -263,14 +258,7 @@ ex) distribution of sample mean, distribution of sample variance, ...
 
 </div>
 
-이때, 표본 통계량(sample Statisticss)는 sample mean, sample variance와 같이 표본의 특성을 나타내는 대표값이다.
+이때, 표본 통계량(sample Statistics)는 sample mean, sample variance와 같이 표본의 특성을 나타내는 대표값이다. 자세한 내용은 아래의 두 포스트를 참고하자!
 
-👉 [Sampling Distribution of Mean, and CLT]({{"/2021/04/26/sampling-distribution-of-mean-and-clt" | relative_url}})
-
-👉 [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance" | relative_url}})
-
-
-<hr/>
-
-[^1]: 그냥 finite variance를 가진다는 말이다.
-
+- [Sampling Distribution of Mean, and CLT](/2021/04/26/sampling-distribution-of-mean-and-clt")
+- [Sampling Distribution of Variance](/2021/04/27/sampling-distribution-of-variance")
