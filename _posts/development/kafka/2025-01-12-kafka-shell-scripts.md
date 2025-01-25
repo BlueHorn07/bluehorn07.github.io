@@ -48,6 +48,106 @@ start.time, end.time, data.consumed.in.MB, MB.sec, data.consumed.in.nMsg, nMsg.s
 
 # Reassign Partitions
 
+토픽을 이루는 리더 파티션이 하나의 브로커에 올리는 핫스팟(Hot spot) 현상을 방지하기 위한 도구 입니다. `kafka-reassign-partitions.sh` 명령어를 사용하면, 리더 파티션과 팔로워 파티션 위치를 재설정 합니다.
+
+먼저 재분배 작업을 위해 적당한 파티션과 Replication Factor를 가진 토픽을 하나 생성합니다.
+
+```bash
+$ kafka-topics.sh \
+  --bootstrap-server bitnami-kafka:9092 \
+  --topic test2 \
+  --partitions 3 \
+  --replication-factor 3 \
+  --create
+$ kafka-topics.sh \
+  --bootstrap-server bitnami-kafka:9092 \
+  --topic test2 \
+  --describe
+Topic: test2    TopicId: a3vf0OqaSN6sqjtAVfrOhw PartitionCount: 3       ReplicationFactor: 3    Configs: 
+        Topic: test2    Partition: 0    Leader: 101     Replicas: 101,100,102   Isr: 101,100,102        Elr: N/A        LastKnownElr: N/A
+        Topic: test2    Partition: 1    Leader: 100     Replicas: 100,102,101   Isr: 100,102,101        Elr: N/A        LastKnownElr: N/A
+        Topic: test2    Partition: 2    Leader: 102     Replicas: 102,101,100   Isr: 102,101,100        Elr: N/A        LastKnownElr: N/A
+```
+
+이게 현재 리더 파티션이 순서대로 `101`, `100`, `102`에 존재하는데, 이걸 +1 브로커로 재분배 해봅시다! 
+일단 명령어를 실행하기 위해선 `--reassignment-json-file`에 전달할 json 파일이 필요합니다.
+
+```bash
+$ cat <<EOF > /tmp/partitions.json
+{
+  "partitions":
+  [
+    { "topic": "test2", "partition": 0, "replicas": [102,100,101] }
+  ],
+  "version": 1
+}
+EOF
+```
+
+```bash
+$ kafka-reassign-partitions.sh \
+  --bootstrap-server bitnami-kafka:9092 \
+  --reassignment-json-file /tmp/partitions.json \
+  --execute
+Current partition replica assignment
+
+{"version":1,"partitions":[{"topic":"test2","partition":0,"replicas":[100,102,101],"log_dirs":["any","any","any"]}]}
+
+Save this to use as the --reassignment-json-file option during rollback
+Successfully started partition reassignment for test2-0
+```
+
+```bash
+$ kafka-reassign-partitions.sh \
+  --bootstrap-server bitnami-kafka:9092 \
+  --reassignment-json-file /tmp/partitions.json \
+  --verify
+Status of partition reassignment:
+Reassignment of partition test2-0 is completed.
+
+Clearing broker-level throttles on brokers 100,101,102
+Clearing topic-level throttles on topic test2
+```
+
+그리고 다시 `--describe`를 해보면
+
+```bash
+$ kafka-topics.sh \
+  --bootstrap-server bitnami-kafka:9092 \
+  --topic test2 \
+  --describe
+Topic: test2    TopicId: a3vf0OqaSN6sqjtAVfrOhw PartitionCount: 3       ReplicationFactor: 3    Configs: 
+        Topic: test2    Partition: 0    Leader: 101     Replicas: 101,102,100   Isr: 101,100,102        Elr: N/A        LastKnownElr: N/A
+        Topic: test2    Partition: 1    Leader: 100     Replicas: 100,101,102   Isr: 100,102,101        Elr: N/A        LastKnownElr: N/A
+        Topic: test2    Partition: 2    Leader: 102     Replicas: 102,101,100   Isr: 102,101,100        Elr: N/A        LastKnownElr: N/A
+```
+
+아직 반영이 안 되었다. 리더 재선출을 위해서는 `kafka-leader-election.sh` 명령어를 추가로 실행해야 한다.
+
+```bash
+$ kafka-leader-election.sh \
+  --bootstrap-server bitnami-kafka:9092 \
+  --topic test2 \
+  --partition 0 \
+  --election-type preferred
+```
+
+그리고 다시 `--describe`를 해보면
+
+```bash
+$ kafka-topics.sh \
+  --bootstrap-server bitnami-kafka:9092 \
+  --topic test2 \
+  --describe
+Topic: test2    TopicId: a3vf0OqaSN6sqjtAVfrOhw PartitionCount: 3       ReplicationFactor: 3    Configs: 
+        Topic: test2    Partition: 0    Leader: 102     Replicas: 102,100,101   Isr: 101,100,102        Elr: N/A        LastKnownElr: N/A
+        Topic: test2    Partition: 1    Leader: 100     Replicas: 101,100,102   Isr: 100,102,101        Elr: N/A        LastKnownElr: N/A
+        Topic: test2    Partition: 2    Leader: 102     Replicas: 102,101,100   Isr: 102,101,100        Elr: N/A        LastKnownElr: N/A
+```
+
+`0`번 파티션이 브로커 `102`번으로 옮겨졌다!! ㅎㅎ 강제로 핫스팟으로 만들어졌다 ㅋㅋ
+
+그러나 이런 파티션 재설정은 카프카 내부에 많은 작업을 요구하기해 클러스터에 부하가 올 수 있고, 또 해당 토픽을 구독하는 컨슈머에게도 리밸런싱을 트리거 하게 됩니다. 그래서 운영 환경에서는 재설정을 아주 조심히 진행해야 하며, 만약 장애가 예상된다면 파티션을 신규 생성해 해결하는 것이 방법일 수도 있습니다.
 
 # Kafka Delete record
 
@@ -98,3 +198,7 @@ start.time, end.time, data.consumed.in.MB, MB.sec, data.consumed.in.nMsg, nMsg.s
 - `kafka-metadata-shell.sh`
 - `kafka-storage.sh`
 - `zookeeper-security-migration.sh`
+
+# 참고자료
+
+- [kyeongseo.oh님의 블로그](https://kyeongseo.tistory.com/entry/kafka-kafka-reassign-partitionssh%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%9C-%ED%8C%8C%ED%8B%B0%EC%85%98-%EC%9E%AC%ED%95%A0%EB%8B%B9)
