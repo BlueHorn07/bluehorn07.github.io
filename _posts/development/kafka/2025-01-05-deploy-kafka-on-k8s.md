@@ -39,14 +39,14 @@ zookeeper:
   enabled: true
   replicaCount: 1
 
+kraft:
+  enabled: false
+
 broker:
   replicaCount: 3
 
-controller:
+controller: # Kraft mode
   replicaCount: 0
-
-kraft:
-  enabled: false
 ```
 
 포스트를 처음 작성할 때는 `broker.replicaCount=1`로 설정 했습니다만... 그렇게 하니 나중에 내부용 토픽인 `__consumer_offsets` 토픽 만들때, `replication.factor=3` 때문에 컨슈머 쪽에 오류가 생기더라구요... 그래서 시행착오를 원치 않으신다면 `broker.replicaCount=3`으로 시작하길 권장합니다!
@@ -225,6 +225,8 @@ Kafka UI와 Kafka 클러스터에 연결에 대한 더 세부적인 내용이 �
 
 처음에 bitnami-kafka 클러스터를 디플로이 한 후에 나오는 가이드를 따라 kubernetes에 `kafka-client`라는 pod을 하나 더 디플로이 합니다.
 이 Pod은 `bitnami/kafka` 이미지를 사용하지만, `--command sleep infinity` 때문에 Kafka 클러스터로 동작하지는 않습니다. (이 과정에 귀찮다면, 그냥 클러스터를 이루는 브로커 중 하나를 사용하셔도 무방합니다 ㅋㅋ)
+
+제가 CCDAK 자격증을 준비하면서 느낀 점은 로컬에 Kafka Shell을 실행할 수 있도록 세팅 해뒀더라도, 요렇게 컨테이너로 격리된 환경에서 Kafka Shell을 실행하는게 가장 정확한다는 것 입니다. 맥북 로컬의 Kafka Shell에서는 Exception을 뿜으며 제대로 동작하지 않던 것이 Kafka Broker pod에서는 제대로 동작하는 경우가 종종 있었습니다!
 
 ```bash
 $ kubectl run bitnami-kafka-client --restart='Never' --image docker.io/bitnami/kafka:3.9.0-debian-12-r4 --namespace kafka --command -- sleep infinity

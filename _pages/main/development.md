@@ -78,7 +78,8 @@ Databricks Certification 취득을 목표로 Apache Spark를 “제대로” 공
 
 ## Kafka
 
-- [Deploy KAfka on Kubernetes ☸](/2025/01/05/deploy-kafka-on-k8s/)
+- [Deploy Kafka on Kubernetes ☸](/2025/01/05/deploy-kafka-on-k8s/)
+  - [Deploy Kafka on Kraft Mode](/2025/01/27/deploy-kafka-kraft-mode/)
 - [Hello, Avro!](/2024/11/15/hello-avro/)
 - [Hello, Python Producers!](/2024/12/10/hello-python-producers/)
 - [Kafka Connector on k8s - Standalone Mode](/2024/12/17/kafka-connector-standalone-mode/)
@@ -86,6 +87,7 @@ Databricks Certification 취득을 목표로 Apache Spark를 “제대로” 공
 - [Kafka Shell Script 둘러보기](/2025/01/12/kafka-shell-scripts/)
   - [`kafka-topics.sh`](/2025/01/11/kafka-shell-kafka-topics-sh/)
   - [Console Produce/Consume](/2025/01/12/kafka-shell-console-produce-and-consume/)
+- [Kafka 공부하면서 메모](/2025/01/25/kafka-study-memo/)
 
 
 ## ElasticSearch
