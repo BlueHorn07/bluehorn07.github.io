@@ -74,7 +74,7 @@ excerpt: "컨슈머 그룹이 데이터를 잘 처리할 수 있도록 조율하
 [Confluent: Consumer Group Protocol](https://developer.confluent.io/courses/architecture/consumer-group-protocol/)
 {: .gray .small .text-center }
 
-`JoinGroup` 요청에서 멤버 리스트에 대한 정보를 받은 그룹 리더는 각 컨슈머에 "파티션 할당(Partition Assign)"을 수행합니다. 할당 정책은 컨슈머 그룹의 `partition.assignment.strategy`에 정의되어 있고, 아래와 같은 옵션들이 있습니다.
+그룹 리더는 `JoinGroup` 요청에서 멤버 리스트에 대한 정보를 받습니다. 그룹 리더는 "파티션 할당(Partition Assign)" 계획을 수립 합니다. 할당 정책은 컨슈머 그룹의 `partition.assignment.strategy`에 정의되어 있고, 아래와 같은 옵션들이 있습니다.
 
 - RoundRobinAssignor
 - RangeAssignor
@@ -82,7 +82,7 @@ excerpt: "컨슈머 그룹이 데이터를 잘 처리할 수 있도록 조율하
 
 파티션 어싸인에 대한 부분은 별도 포스트에서 좀더 다뤄보도록 하겠습니다.
 
-그룹 리더가 파티션 할당을 수행하고 나면, 리더와 각 파티션은 `SyncGroup` 요청을 브로커에게 보냅니다. 그룹 코디네이터는 이 할당 정보를 바탕으로 리밸런싱이 필요한 상황이 오면, 리밸런싱을 트리거 합니다.
+그룹 리더가 파티션 할당을 계획을 수립하면, 브로커에게 `SyncGroup` 요청을 보내어 해당 정보를 전달합니다. 이 정보는 각 컨슈머가 `SyncGroup` 요청을 할 때, 응답으로 전달 됩니다.
 
 ## Commit Consumption
 
