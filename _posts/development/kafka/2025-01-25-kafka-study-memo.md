@@ -137,6 +137,15 @@ for node in brokers.result().nodes:
 
 요런 Python 코드를 사용하면, 브로커 이름만 출력해 확인할 수 있습니다!
 
+# Kafka Tiered Storage
+
+본래 Kafka 클러스터는 데이터를 브로커의 디스크 공간에 저장합니다. 그러나 Kafka Tiered Storage를 사용하게 되면, 오래된 데이터를 저렴한 스토리지(ex: AWS S3)에 저장합니다.
+
+“local-log-start-offset”은 파티션 데이터가 로컬에서 더이상 유지되지 않고, 외부 스토리지로 이동한 시점을 가리킵니다. 즉, "로컬 디스크에서 접근 가능한 로그의 끝 지점(offset)"을 나타냅니다. 이 값 이전의 데이터는 외부 스토리지에서만 읽을 수 있습니다. [[Apache Kafka]](https://cwiki.apache.org/confluence/display/KAFKA/KIP-405%3A+Kafka+Tiered+Storage)
+
+요 기능은 2020년 Confluent에서 먼저 제공했고, 2023년 Kafka에서도 정식으로 지원하기 시작 했습니다. Confluent에서 이 기능을 키려면 브로커에 `confluent.tier.feature=true`로 설정하면 됩니다. [[Confluent]](https://docs.confluent.io/platform/current/clusters/tiered-storage.html)
+
+기존에는 모든 레코드를 로컬 스토리지에 저장하기 때문에 브로커 서버의 디스크 사용량을 아주 엄격하게 관리해주어야 했습니다. Tiered Storage를 사용하면, 일부 데이터가 remote storage로 옮겨가기 때문에 브로커 디스크에 사용에 좀더 여유가 된다고 합니다. [[데브원영님의 아티클]](https://blog.voidmainvoid.net/509)
 
 # Kafka 활용 사례
 

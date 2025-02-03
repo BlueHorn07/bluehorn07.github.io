@@ -100,6 +100,15 @@ excerpt: "컨슈머 그룹이 데이터를 잘 처리할 수 있도록 조율하
 
 컨슈머 그룹이 재시작하거나 맨처음에 실행되는 경우, 브로커에게서 처리할 Offset 정보를 받아야 합니다. 각 컨슈머는 `OffsetFetch` 요청을 브로커에 보내고, 기존에 처리하던 정보가 있다면 그 정보를, 처리하던 정보가 없다면, 컨슈머의 `auto.offset.reset` 값에 따라 Offset 값을 결정해 응답으로 반환합니다.
 
+# poll broker & heartbeat broker
+
+![](https://learn.conduktor.io/kafka/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Fo12xgu4mepom%2FmUcYzOI3M008QR4duteBU%2F1b5ec037b2eb3c01d477b9bc6407352a%2FAdv_Consumer_Internal_Threads_1.png&w=1920&q=75)
+[conduktor: Kafka Consumer Important Settings: Poll and Internal Threads Behavior](https://learn.conduktor.io/kafka/kafka-consumer-important-settings-poll-and-internal-threads-behavior/)
+{: .gray .small .text-center }
+
+지금까지 컨슈머 그룹을 관리하는 "그룹 코디네이터"에 대해 얘기를 했다. 하지만, 컨슈머가 처리할 데이터를 가져오는 브로커는 따로 있다!! 컨슈머가 할당 받은 파티션의 리더 파티션이 있는 브로커와 주기적으로 `poll()`을 통해 데이터를 가져온다. 그룹 코디네이터와는 주기적으로 `heartbeat()` 통신을 하며, 컨슈머가 잘 동작하고 있다는 것을 확인하는 것이다.
+
+
 # 맺음말
 
 그동안 카프카를 사용하면서, "고성능이고 고가용성을 갖추는 분산 MQ" 정도라고 생각했습니다. 그런데 마음먹고 카프카를 깊게 공부해보니, 위의 특성들을 갖추기 위해 필요한 구현과 컨셉이 한 둘이 아닌 것 같습니다 ㅎㄷㄷ
@@ -110,3 +119,4 @@ excerpt: "컨슈머 그룹이 데이터를 잘 처리할 수 있도록 조율하
 
 - [Consumer Group Protocol](https://developer.confluent.io/courses/architecture/consumer-group-protocol/)
 - [Coordinator in Apache Kafka](https://www.waitingforcode.com/apache-kafka/coordinator-in-apache-kafka/read)
+- [conduktor: Kafka Consumer Important Settings: Poll and Internal Threads Behavior](https://learn.conduktor.io/kafka/kafka-consumer-important-settings-poll-and-internal-threads-behavior/)
