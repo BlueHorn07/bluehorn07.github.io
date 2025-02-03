@@ -31,6 +31,8 @@ Kafka Shell은 로컬에서 실행할 수도 있을 것이고, Kafka Shell을 �
 - `kafka-topics.sh`
   - "[Kafka Shell: `kafka-topics.sh`](/2025/01/11/kafka-shell-kafka-topics-sh/)" 포스트로 분리
 - `kafka-configs.sh`
+  - 이미 생성한 카프카 토픽의 Config를 변경할 때 사용함. `--alter`를 사용.
+  - "[Kafka Shell: `kafka-topics.sh`](/2025/01/11/kafka-shell-kafka-topics-sh/)" 포스트에 함께 기술함.
 - `kafka-console-producer.sh`
   - "[Kafka Shell: Console Produce/Consume](/2025/01/12/kafka-shell-console-produce-and-consume/)" 포스트로 분리
 - `kafka-console-consumer.sh`
