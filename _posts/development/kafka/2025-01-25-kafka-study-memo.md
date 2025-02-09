@@ -1,9 +1,9 @@
 ---
-title: "Kafka Study Memo"
+title: "Kafka 공부하면서 이것저것 메모"
 toc: true
 toc_sticky: true
 categories: ["Kafka"]
-excerpt: ""
+excerpt: "카프카 자격증... 언제 따려나..."
 ---
 
 # 들어가며
@@ -147,6 +147,61 @@ for node in brokers.result().nodes:
 
 기존에는 모든 레코드를 로컬 스토리지에 저장하기 때문에 브로커 서버의 디스크 사용량을 아주 엄격하게 관리해주어야 했습니다. Tiered Storage를 사용하면, 일부 데이터가 remote storage로 옮겨가기 때문에 브로커 디스크에 사용에 좀더 여유가 된다고 합니다. [[데브원영님의 아티클]](https://blog.voidmainvoid.net/509)
 
+# Confluent REST Proxy
+
+Confluent에서 개발하여 제공하는 독점적인 기능합니다. Kafka 클러스터에 RESTful 인터페이스를 제공합니다! 기존에는 Kafka의 네이티브 프로코톨을 사용하거나 Kafka에서 제공하는 SDK를 사용해 상호작용 해야 했던 것들 REST API를 통해 가능하게 합니다!!
+
+```bash
+curl \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Basic <BASE64-encoded-key-and-secret>" \
+  https://pkc-xxxx.us-west-2.aws.confluent.cloud/kafka/v3/clusters/<CLUSTER_ID>/topics
+```
+
+응답은 아래와 같은 형식으로 받게 됩니다!
+
+```json
+{
+    "kind": "KafkaTopicList",
+    "metadata": {
+        "self": "https://pkc-xxxx.us-west-2.aws.confluent.cloud/kafka/v3/clusters/xxx-xxxx/topics",
+        "next": null
+    },
+    "data": [
+        {
+            "kind": "KafkaTopic",
+            "metadata": {
+                "self": "https://pkc-xxxx.us-west-2.aws.confluent.cloud/kafka/v3/clusters/xxx-xxxx/topics/<TOPIC_NAME>",
+                "resource_name": "crn:///kafka=xxx-xxxx/topic=<TOPIC_NAME>"
+            },
+            "cluster_id": "xxx-xxxx",
+            "topic_name": "<TOPIC_NAME>",
+            "is_internal": false,
+            "replication_factor": 3,
+            "partitions_count": 1,
+            "partitions": {
+                "related": "https://pkc-xxxx.us-west-2.aws.confluent.cloud/kafka/v3/clusters/xxx-xxxx/topics/<TOPIC_NAME>/partitions"
+            },
+            "configs": {
+                "related": "https://pkc-xxxx.us-west-2.aws.confluent.cloud/kafka/v3/clusters/xxx-xxxx/topics/<TOPIC_NAME>/configs"
+            },
+            "partition_reassignments": {
+                "related": "https://pkc-xxxx.us-west-2.aws.confluent.cloud/kafka/v3/clusters/xxx-xxxx/topics/<TOPIC_NAME>/partitions/-/reassignment"
+            },
+            "authorized_operations": []
+        },
+        ...
+  ]
+}
+```
+
+단순히 토픽 목록을 조회하는 것 말고도 Topic에 데이터를 Produce 하는 것도 가능 합니다... 라고 문서에는 나와 있는데... 요상하게도 Postman으로 테스트 해보는데 잘 안 되네요...;; 요건 추후에 다시 좀 살펴보겠습니다!!
+
+그리고 REST Proxy를 통해 토픽의 데이터를 Consume 하는 것은 지원하지 않습니다!
+
+Confluent에서 제공하는 REST Proxy 전체를 확인하고 싶다면, "[Confluent Cloud APIs](https://docs.confluent.io/cloud/current/api.html)" 문서를 살펴보면 됩니다!
+
 
 # Java
 
@@ -166,7 +221,7 @@ import ch.qos.logback.classic.Logger;
 import org.slf4j.LoggerFactory;
 
 public static void main () {
-	Logger kafkaLogger = (Logger) LoggerFactory.getLogger("org.apache.kafka");
+  Logger kafkaLogger = (Logger) LoggerFactory.getLogger("org.apache.kafka");
   kafkaLogger.setLevel(Level.INFO);
   ...
 }
@@ -182,11 +237,26 @@ public static void main () {
 -Dlogging.level.org.apache.kafka=INFO
 ```
 
-요게 `-D`는 Define system property의 약자라고 함. JVM이 실행되는 동안 사용할 시스템의 프로퍼티 쌍을 정의하는 방법이라고 함.
+`-D`는 Define system property의 약자라고 함. JVM이 실행되는 동안 사용할 시스템의 프로퍼티 쌍을 정의하는 방법이라고 함.
 
 `-DpropertyName=value` 요런 형식임.
 
-요 방식은 어플리케이션 코드를 수정하지 않고도, 실행 동작을 변경해줄 수 있다고 함.
+요 방식은 어플리케이션 코드를 수정하지 않고도, 실행 동작을 변경해줄 수 있다고 함. 대신 코드에서 `System.geProperty()`로 값을 받아오긴 해야 합니다!
+
+```java
+import ch.qos.logback.classic.Level;
+import ch.qos.logback.classic.Logger;
+import org.slf4j.LoggerFactory;
+
+public static void main () {
+  String logLevelProperty = System.getProperty("logging.level.org.apache.kafka", "INFO");
+  Level logLevel = Level.valueOf(logLevelProperty.toUpperCase());
+
+  Logger kafkaLogger = (Logger) LoggerFactory.getLogger("org.apache.kafka");
+  kafkaLogger.setLevel(Level.INFO);
+  ...
+}
+```
 
 여기에서 꼬리로 더 찾아본 건, 회사에서 JVM 위에서 돌아가는 어플리케이션들을 조정하다가 보면, `-Xms1g -Xmx4g`와 같이 JVM의 힙 메모리를 조정한 경험이 있음. 그래서 `-D`랑 `-X`랑 무슨 차이인지 궁금해졌음.
 
