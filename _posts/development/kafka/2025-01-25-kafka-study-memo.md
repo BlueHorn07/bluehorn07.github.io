@@ -147,6 +147,58 @@ for node in brokers.result().nodes:
 
 기존에는 모든 레코드를 로컬 스토리지에 저장하기 때문에 브로커 서버의 디스크 사용량을 아주 엄격하게 관리해주어야 했습니다. Tiered Storage를 사용하면, 일부 데이터가 remote storage로 옮겨가기 때문에 브로커 디스크에 사용에 좀더 여유가 된다고 합니다. [[데브원영님의 아티클]](https://blog.voidmainvoid.net/509)
 
+
+# Java
+
+## slf4j `DEBUG` 출력 커스텀
+
+로컬에서 Java Kafka Client를 실행하면, 자꾸 `DEBUG` 출력이 나왔음;;
+
+![](/images/development/kafka/java-kafka-client-debug.png)
+
+요렇게 Kafka Client의 초기화 단계에 대해서 출력이 되는데, `DEBUG` 부분은 출력을 좀 안 하고 싶었음. GPT의 도움을 받아 `DEBUG` 출력을 쓸 수 있었음.
+
+### logback 설정 변경
+
+```java
+import ch.qos.logback.classic.Level;
+import ch.qos.logback.classic.Logger;
+import org.slf4j.LoggerFactory;
+
+public static void main () {
+	Logger kafkaLogger = (Logger) LoggerFactory.getLogger("org.apache.kafka");
+  kafkaLogger.setLevel(Level.INFO);
+  ...
+}
+```
+
+이렇게 하니까 이제 `DEBUG` 출력이 안 나옴!!! (happy)
+
+### Define System Property
+
+다른 방식으로는 JVM 실행 때, 요런 시스템 프로퍼티를 설정하라고 조언 했음.
+
+```bash
+-Dlogging.level.org.apache.kafka=INFO
+```
+
+요게 `-D`는 Define system property의 약자라고 함. JVM이 실행되는 동안 사용할 시스템의 프로퍼티 쌍을 정의하는 방법이라고 함.
+
+`-DpropertyName=value` 요런 형식임.
+
+요 방식은 어플리케이션 코드를 수정하지 않고도, 실행 동작을 변경해줄 수 있다고 함.
+
+여기에서 꼬리로 더 찾아본 건, 회사에서 JVM 위에서 돌아가는 어플리케이션들을 조정하다가 보면, `-Xms1g -Xmx4g`와 같이 JVM의 힙 메모리를 조정한 경험이 있음. 그래서 `-D`랑 `-X`랑 무슨 차이인지 궁금해졌음.
+
+| 옵션 | 목적 | 접근 방법 | 사용 예제 |
+|-|-|-|-|
+| `-D` | 애플리케이션의 시스템 프로퍼티 설정 | System.getProperty("key") | `-Dapp.env=production` |
+| `-X` | JVM의 비표준 옵션 (메모리, GC 등) | JVM 내부에서만 사용 | `-Xmx2g` |
+| `-XX` | JVM의 고급 옵션 (GC 튜닝, 내부 동작 설정) | JVM 내부에서만 사용 | `-XX:+UseG1GC`|
+
+`-D`로 전달하는 값은 Java 코드에서 값을 조회할 수 있습니다. 반면에, `-X`로 전달 하는 값은 JVM 내부에서 사용하기 때문에 Java 코드에서 값을 조회할 수 없습니다.
+
+
 # Kafka 활용 사례
 
 - Kakao
