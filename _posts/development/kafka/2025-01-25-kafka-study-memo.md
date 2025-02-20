@@ -145,7 +145,7 @@ for node in brokers.result().nodes:
 
 요 기능은 2020년 Confluent에서 먼저 제공했고, 2023년 Kafka에서도 정식으로 지원하기 시작 했습니다. Confluent에서 이 기능을 키려면 브로커에 `confluent.tier.feature=true`로 설정하면 됩니다. [[Confluent]](https://docs.confluent.io/platform/current/clusters/tiered-storage.html)
 
-기존에는 모든 레코드를 로컬 스토리지에 저장하기 때문에 브로커 서버의 디스크 사용량을 아주 엄격하게 관리해주어야 했습니다. Tiered Storage를 사용하면, 일부 데이터가 remote storage로 옮겨가기 때문에 브로커 디스크에 사용에 좀더 여유가 된다고 합니다. [[데브원영님의 아티클]](https://blog.voidmainvoid.net/509)
+기존에는 모든 레코드를 로컬 스토리지에 저장하기 때문에 브로커 서버의 디스크 사용량을 아주 엄격하게 관리해주어야 했습니다. Tiered Storage를 사용하면, 일부 데이터가 remote storage로 옮겨가기 때문에 브로커의 디스크 관리가 여유로워진다고 합니다. [[데브원영님의 아티클]](https://blog.voidmainvoid.net/509)
 
 # Confluent REST Proxy
 
@@ -268,6 +268,13 @@ public static void main () {
 
 `-D`로 전달하는 값은 Java 코드에서 값을 조회할 수 있습니다. 반면에, `-X`로 전달 하는 값은 JVM 내부에서 사용하기 때문에 Java 코드에서 값을 조회할 수 없습니다.
 
+# MQTT Proxy
+
+- “Message Queuing Telemetry Transport”의 약자
+- MQTT proxy는 MQTT를 기반으로 하는 앱의 데이터가 kafka에 적재될 수 있도록 하는 가교 역할을 함.
+- 센서 장치나 미니 컴퓨터 사이에 통신을 중계하는 장치이자 프로토콜
+- **IoT 업계**의 카프카 같은 느낌?
+
 
 # Kafka 활용 사례
 
@@ -281,7 +288,8 @@ public static void main () {
     - Kafka Parameter를 기본값이 아니라 커스텀 값 사용한 것들도 이유와 노하우를 친절히 알려주심
     - 본래 `log.dir`은 `/tmp` 경로에 로그 데이터를 적재하는데, 요게 OS 환경에 따라 자동 삭제 될 수 있기 때문에 경로는 바꿔줘야 한다고 함.
   - [카프카, Kraft를 만나다: 주키퍼 없이 운영하는 카프카의 실전 운영 노하우 / if(kakaoAI)2024](https://youtu.be/VIGkd2U_8Ro?si=yipxHTJbCebZqo0w)
-    - 컨슈머 그룹 관리에 대한 메타 정보를 기존에는 Zookeeper에서 관리 했는데, 이걸 나중엔 System Topic인 `__consumer_offsets`으로 옮겼다는 얘기도 요 영상으로 처음 알게 됨!
+    - 컨슈머 그룹 관리에 대한 메타 정보를 예전에는 Zookeeper에서 관리 했는데, 나중엔 System Topic인 `__consumer_offsets`으로 옮겼다는 얘기를 처음 알게 됨!
+      - 즉, 예전부터 Kafka는 주키퍼에 대한 의존성이 점점 줄이고 있었다.
     - `__cluster_metadata`라는 System Topic으로 클러스터 메타 정보를 관리함.
       - 이 정보는 컨트롤러 노드 뿐만 아니라 옵저너 노드도 해당 토픽에 대한 파티션을 가지고 있음.
     - Checkpoint를 구성하여, 빠른 복구가 가능하도록 함.
