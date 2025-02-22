@@ -3,7 +3,7 @@ title: "Kafka `listeners` vs. `advertised.listeners`"
 toc: true
 toc_sticky: true
 categories: ["Kafka"]
-excerpt: "컨테이너 환경에서 카프카를 실행할 때 꼭 설정해야 하는 옵션!"
+excerpt: "카프카 클러스터 외부의 클라이언트가 클러스터에 접속하기 위해 꼭 설정해야 하는 옵션!"
 ---
 
 회사에서 Confluent를 통해 Kafka 클러스터를 잘 사용하고 있었습니다. 그런데, 이 카프카에 대해서 좀더 자세히 알고, 전문성을 갖추고 싶다는 생각이 들어서 2025년 첫 목표로 Confluent의 Kafka 자격증인 [Confluent Certified Developer for Apache Kafka®](https://training.confluent.io/examdetail/confluent-dev) 자격증을 준비하고 있습니다 ✌️
