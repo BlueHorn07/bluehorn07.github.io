@@ -92,7 +92,8 @@ Databricks Certification 취득을 목표로 Apache Spark를 “제대로” 공
 - Consumer Group
   - [Coordinator of Consumer Group](/2025/01/27/kafka-group-coordinator/)
   - [Partition Assignors of Consumer Group](/2025/01/29/kafka-consumer-group-partition-assignor/)
-
+- [Kafka `listeners` vs. `advertised.listeners`](/2025/02/20/kafka-listeners-and-advertised-listeners/)
+- [Kafka 시간 기반으로 동작하는 Config 모음](/2025/02/21/kafka-time-based-configurations/)
 
 ## ElasticSearch
 
