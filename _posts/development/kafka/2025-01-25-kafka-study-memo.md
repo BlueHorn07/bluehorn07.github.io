@@ -18,7 +18,7 @@ excerpt: "카프카 자격증... 언제 따려나..."
 
 주키퍼와 통신하며, 클러스터의 메타 데이터를 싱크 합니다.
 
-컨트롤 플레인 zookeeper든 Kraft 모드이든 컨트롤러 브로커는 리더 파티션을 선정 합니다. 다만, 두 모드에 따라서 컨트롤러 브로커가 유실된 상태에서 새로운 컨트롤러 브로커를 선출하는 방식이 다른 것입니다.
+컨트롤 플레인 zookeeper든 Kraft 모드이든 컨트롤러 브로커는 리더 파티션을 선정 합니다. 다만, 모드에 따라서 컨트롤러 브로커가 유실된 상태에서 새로운 컨트롤러 브로커를 선출하는 방식이 다른 것입니다.
 
 - zookeeper 모드
   - 주키퍼가 남은 브로커 중 하나를 컨트롤러 브로커로 선출합니다.
@@ -69,7 +69,7 @@ Active Segment는 현재 데이터가 실시간으로 쌓이고 있으니 압축
 
 Log Compaction이 활성화된 토픽에서는 특정 key의 데이터를 삭제할 수 있음.
 
-방법은 그냥 null value 값에 삭제하려는 key를 묶어서 레코드로 쏘면 됨. 이렇게 삭제를 위해 보내는 null value 레코드를 "**Tombstone 레코드**"라고 함.
+방법은 삭제하려는 key에 null value 묶어서 레코드로 쏘면 됨. 이렇게 삭제를 위해 보내는 null value 레코드를 "**Tombstone 레코드**"라고 함.
 
 Tombstone 레코드가 생기면, 기존에 해당 key에 존재하던 값이 non-latest가 되고, Log Compaction이 될 때 삭제 처리가 됨.
 
@@ -77,7 +77,7 @@ Tombstone 레코드는 해당 key에 대한 latest 레코드이므로, Log Compa
 
 이 값은 기본값이 24시간으로 설정 되어 있고, Tombstone 레코드로 인한 non-latest 레코드 정리(Log Compaction) 주기 보다 충분히 길게 설정 해줘야 함. Log Compaction 주기는 2가지 속성에 의해 영향을 받는데, `min.cleanable.dirty.ratio`(default: 0.5), `log.cleaner.backoff.ms`(default: 15,000 ms)로 되어 있음. 그래서 왠만하면 Tombstone 레코드가 삭제 되기 전에, non-latest 값들이 정리 됨.
 
-이렇게 Delete 레코드를 행위를 지원하는 이유는 GDPR과 같은 개인정보 보호 요구 사항을 만족하기 위해서임.
+이렇게 레코드 삭제를 지원하는 이유는 GDPR과 같은 개인정보 보호 요구 사항을 만족하기 위해서임.
 
 
 # 레코드 삭제에 대해
@@ -275,6 +275,37 @@ public static void main () {
 - 센서 장치나 미니 컴퓨터 사이에 통신을 중계하는 장치이자 프로토콜
 - **IoT 업계**의 카프카 같은 느낌?
 
+# Message Delivery Guarantees
+
+카프카 프로듀서는 기본적으로 "**at-least-once**"를 보장함. 다만, 네트워크 오류 등으로 인해 동일 메시지가 두 번 전송되어 적재될 수 있음. 이렇게 중복 적재되는 것을 막기 위해 "**at-most once**"와 "**exactly-once**" 기능을 추가로 지원함.
+
+## At most once
+
+데이터를 딱 한번만 보냄. 데이터가 중복 적재되지는 않지만, 경우에 따라서는 데이터가 아예 유실 되어 버릴 수 있음.
+
+사실 가장 안 좋은 방법이겠지만, 그만큼 가장 빠르고 처리량을 높일 수 있음.
+
+```toml
+retries=0
+acks=0
+```
+
+사실 `retries=0`만 설정하면 재전송이 없으니 "At most once"를 달성하는게 아닌가라고 생각 했음. 그런데, `acks=0`까지 설정해야 "Fire & Forgot"을 만족한다고 함. "At most once"는 사실상 "Fire & Forgot"을 의미한다는 것.
+
+
+## Exactly Once
+
+시스템에 장애가 발생하더라도, 데이터가 정확히 한번 적재 되는 것을 보장함.
+
+```toml
+enable.idempotence=true
+acks=all
+transactional.id=my-transaction
+```
+
+`enable.idempotence=true`는 데이터의 중복을 방지하고, `acks=all`은 ISR이 만족되길 기다리므로 데이터의 손실 방지를 보장한다.
+
+그러나 `transactional.id`는 왜 필요한지 조금 의문이었는데, 프로듀서가 Transaction 기능이 필요하지 않다면, 필요 없을 수도 있을 것 같다. 하지만 Transaction 기반으로 동작하는 프로듀서라면 이 속성값도 반드시 넣어줘야 할 것 같다.
 
 # Kafka 활용 사례
 
@@ -291,7 +322,7 @@ public static void main () {
     - 컨슈머 그룹 관리에 대한 메타 정보를 예전에는 Zookeeper에서 관리 했는데, 나중엔 System Topic인 `__consumer_offsets`으로 옮겼다는 얘기를 처음 알게 됨!
       - 즉, 예전부터 Kafka는 주키퍼에 대한 의존성이 점점 줄이고 있었다.
     - `__cluster_metadata`라는 System Topic으로 클러스터 메타 정보를 관리함.
-      - 이 정보는 컨트롤러 노드 뿐만 아니라 옵저너 노드도 해당 토픽에 대한 파티션을 가지고 있음.
+      - 이 정보는 컨트롤러 노드 뿐만 아니라 옵저버 노드도 해당 토픽에 대한 파티션을 가지고 있음.
     - Checkpoint를 구성하여, 빠른 복구가 가능하도록 함.
     - 정말 꼼꼼하게 벤치마크 테스트를 진행해서 놀랐음! (정말 배워야 할 점이라고 생각함)
       - [trogdor](https://github.com/a0x8o/kafka/blob/master/TROGDOR.md): Trogdor is a test framework for Apache Kafka.

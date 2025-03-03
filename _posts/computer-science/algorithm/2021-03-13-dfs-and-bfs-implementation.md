@@ -1,5 +1,5 @@
 ---
-title: "DFS and BFS - code"
+title: "DFS & BFS 구현"
 toc: true
 toc_sticky: true
 categories: ["Algorithm"]
