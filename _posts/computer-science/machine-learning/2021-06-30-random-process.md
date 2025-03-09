@@ -13,11 +13,13 @@ readtime: 20 minutes
 
 이번 포스트는 "확률론(Probability Theory)"과 "Machine Learning"에서 등장하는 *"Process"* 가 붙은 모든 개념을 넓은 시야로 살펴보기 위해 작성한 포스트입니다. 다루는 주제는 아래와 같습니다.
 
-- [Random Process; Stochastic Process](#introduction-to-random-process)
-- [Bernoulli Process](#bernoulli-process-2)
-- [Poisson Process](#poisson-process)
-- [Gaussian Process](#gaussian-process)
-- [Markov Process](#markov-process)
+- [Introduction to Random Process](#introduction-to-random-process)
+  - [Some Properties of Random Process](#some-properties-of-random-process)
+  - [Bernoulli Process (2)](#bernoulli-process-2)
+  - [Poisson Process](#poisson-process)
+  - [Gaussian Process](#gaussian-process)
+  - [Markov Process](#markov-process)
+  - [references](#references)
 
 <hr/>
 
@@ -153,7 +155,7 @@ $$
 
 PP에 대한 내용은 아래 포스트의 내용으로 대체한다 🙏
 
-👉 [Poisson Process]({{"/2021/03/25/poisson-distribution#bernoulli-process" | relative_url}})
+👉 [Poisson Process](/2021/03/25/poisson-distribution#bernoulli-process)
 
 <hr/>
 
