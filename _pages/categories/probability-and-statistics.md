@@ -11,43 +11,43 @@ toc_sticky: true
 
 # Probability Theory
 
-- [Sample Space]({{"2021/02/27/sample-space" | relative_url}})
+- [Sample Space](2021/02/27/sample-space)
   - Sample Space & Event
   - Permutation & Combination
-- [Probability of an Event]({{"2021/02/28/probability-of-an-event" | relative_url}})
+- [Probability of an Event](2021/02/28/probability-of-an-event)
   - Probability
   - Conditional Probability
     - Independent Events
-- [Bayes' Rule]({{"2021/03/02/Bayes-Rule" | relative_url}})
+- [Bayes' Rule](2021/03/02/Bayes-Rule)
   - Law of Total Probability
   - Meaning of Bayes Rule
-- [Monti Hall Problem]({{"2021/03/02/Monti-Hall-Problem" | relative_url}})[^1]
+- [Monti Hall Problem](2021/03/02/Monti-Hall-Problem" | relative_u)
 
 <br/>
 
-- [Random Variables and Probability Distributionss]({{"2021/03/05/random-variable-and-prob-distribution" | relative_url}})
+- [Random Variables and Probability Distributionss](2021/03/05/random-variable-and-prob-distribution)
   - Random Variable $X$
   - Probability Distributions
     - PMF $f(x)$ & CDF $F(x)$ for Discrete RV
     - PDF $f(x)$ & CDF $F(x)$ for Continuous RV
-- [Joint Probability Distribution]({{"/2021/03/09/joint-probability-distribution" | relative_url}})
-- [Mean, Variance and Covariance]({{"/2021/03/16/mean-variance-covariance" | relative_url}})
-- [Chebyshev's Inequality]({{"/2021/03/17/chebyshev's-inequality" | relative_url}})
+- [Joint Probability Distribution](/2021/03/09/joint-probability-distribution)
+- [Mean, Variance and Covariance](/2021/03/16/mean-variance-covariance)
+- [Chebyshev's Inequality](/2021/03/17/chebyshev-inequality)
 
 <br/>
 
-- [Discrete Probability Distribution - 1]({{"/2021/03/17/discrete-probability-distributions-1" | relative_url}})
+- [Discrete Probability Distribution - 1](/2021/03/17/discrete-probability-distributions-1)
   - (Discrete) Uniform Distribution
   - Bernoulli Distribution
   - Binomial Distribution
     - Multinomial Distribution
-- [Discrete Probability Distribution - 2]({{"/2021/03/24/discrete-probability-distributions-2" | relative_url}})
+- [Discrete Probability Distribution - 2](/2021/03/24/discrete-probability-distributions-2)
   - HyperGeometric Distribution
     - Multivariate HyperGeometric Distribution
   - Geometric Distribution
     - Negative Binomial Distribution
-      - [Negative Binomial Theorem]({{"/2022/10/30/negative-binomial-theorem" | relative_url}}) 🎈
-- [Poisson Distribution]({{"/2021/03/25/poisson-distribution" | relative_url}})
+      - [Negative Binomial Theorem](/2022/10/30/negative-binomial-theorem)
+- [Poisson Distribution](/2021/03/25/poisson-distribution)
   - Law of Rare Events
   - Bernoulli Process & Poisson Process
 
@@ -65,9 +65,9 @@ toc_sticky: true
 
 <br/>
 
-- [Transformations of Random Variable - 1]({{"/2021/04/11/transformations-of-random-variable-1" | relative_url}})
-- [Transformations of Random Variable - 2]({{"/2021/04/12/transformations-of-random-variable-2" | relative_url}})
-- [Momemtum Generating Function]({{"/2021/04/13/momemtum-generating-function" | relative_url}})
+- [Transformations of Random Variable - 1](/2021/04/11/transformations-of-random-variable-1)
+- [Transformations of Random Variable - 2](/2021/04/12/transformations-of-random-variable-2)
+- [Momemtum Generating Function](/2021/04/13/momemtum-generating-function)
 
 <hr/>
 
@@ -77,72 +77,72 @@ toc_sticky: true
 <img src= "{{"/images/mathematics/probability-and-statistics/sampling-distribution-table-1.png" | relative_url }}" width=550>
 </div>
 
-- [Sampling Distribution]({{"/2021/04/25/sampling-distribution" | relative_url}})
+- [Sampling Distribution](/2021/04/25/sampling-distribution)
   - statistic; 통계량
     - sample distribution
-- [Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt" | relative_url}})
+- [Sampling Distribution of Mean](/2021/04/26/sampling-distribution-of-mean-and-clt)
   - WLLN; Weak Law of Large Numbers
   - CLT; Central Limit Theorem
     - *proof*
-- [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance" | relative_url}})
-- [Student's t-distribution]({{"/2021/04/27/student-t-distribution" | relative_url}})
+- [Sampling Distribution of Variance](/2021/04/27/sampling-distribution-of-variance)
+- [Student's t-distribution](/2021/04/27/student-t-distribution)
   - Population Variance $\sigma^2$ is unknown
-- [F-distribution]({{"/2021/05/04/F-distribution" | relative_url}})
-- [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile" | relative_url}})
+- [F-distribution](/2021/05/04/F-distribution)
+- [EDF and Quantile](/2021/05/04/EDF-and-Quantile)
 
 <br/>
 
-- [Point Estimation]({{"/2021/05/05/point-estimation" | relative_url}})
+- [Point Estimation](/2021/05/05/point-estimation)
   - unbiased estimator: $E(\hat{\Theta}) = \theta$
   - variance of estimator: $\text{Var}(\hat{\Theta})$
   - the most efficient estimator
   - Mean Squared Error of estimator
-- [Interval Estimation]({{"/2021/05/06/interval-estimation" | relative_url}})
+- [Interval Estimation](/2021/05/06/interval-estimation)
   - z-value: Estimate $\mu$ when $\sigma^2$ is known
   - t-value: Estimate $\mu$ when $\sigma^2$ is unknown
-- [Prediction & Tolerance Estimation]({{"/2021/05/13/prediction-and-tolerance-interval" | relative_url}})
-- [Two Samples Estimation: Diff Btw Two Means]({{"/2021/05/13/two-samples-estimation-diff-btw-two-means" | relative_url}})
-- [Two Samples Estimation: Paired Observations]({{"/2021/05/13/two-samples-estimation-paired-observations" | relative_url}})
-- [Proportion Estimation]({{"/2021/05/14/proportion-estimation-on-bernoulli" | relative_url}})
+- [Prediction & Tolerance Estimation](/2021/05/13/prediction-and-tolerance-interval)
+- [Two Samples Estimation: Diff Btw Two Means](/2021/05/13/two-samples-estimation-diff-btw-two-means)
+- [Two Samples Estimation: Paired Observations](/2021/05/13/two-samples-estimation-paired-observations)
+- [Proportion Estimation](/2021/05/14/proportion-estimation-on-bernoulli)
   - Single Sample Estimation: Proportion Estimation
   - Two Samples Estimation: Diff Btw Two Proportions
-- [Variance Estimation]({{"/2021/05/16/variance-estimation" | relative_url}})
+- [Variance Estimation](/2021/05/16/variance-estimation)
   - Single Sample Estimation: Variance Estimation
   - Two Samples Estimation: The ratio of two variances
 
-- [Maximum Likelihood Estimation]({{"/2021/05/17/maximum-likelihood-estimation" | relative_url}})
+- [Maximum Likelihood Estimation](/2021/05/17/maximum-likelihood-estimation)
 
 <br/>
 
-- [Introduction to Hypothesis Tests]({{"/2021/05/18/introduction-to-hypothesis-tests" | relative_url}})
-  - Null Hypothetsis $H_0$ & Alternative Hypothesis $H_1$
+- [Introduction to Hypothesis Tests](/2021/05/18/introduction-to-hypothesis-tests)
+  - Null Hypothesis $H_0$ & Alternative Hypothesis $H_1$
   - Test Statistic
     - Rejection Region or Critical Region; $X \ge C$
     - Critical Value; $C$
-  - [Type 1 Error & Type 2 Error]({{"/2021/05/18/introduction-to-hypothesis-tests#t1-error--t2-error" | relative_url}})
-    - [Significance level; Size of Test; 유의 수준 $\alpha$]({{"/2021/05/18/introduction-to-hypothesis-tests#significance-level-alpha" | relative_url}}) 🔥
-    - [Power of Test; 검정력 $\gamma(\theta)$]({{"/2021/05/18/introduction-to-hypothesis-tests#power-of-test-gammatheta" | relative_url}}) 🔥
-    - [p-value; 유의 확률]({{"/2021/05/18/introduction-to-hypothesis-tests#p-value" | relative_url}}) 🔥🔥
-- [Sample Mean Test]({{"/2021/05/19/sample-mean-test" | relative_url}})
-- [Choice of Sample Size for Testing Mean]({{"/2021/05/20/choice-of-sample-size-for-testing-mean" | relative_url}})
-- [Proportion Test]({{"/2021/05/26/proportion-test" | relative_url}})
-- [Variance Test]({{"/2021/05/26/variance-test" | relative_url}})
-- [Chi-square Goodness-of-fit Test]({{"/2021/05/27/chi-square-goodness-of-fit-test" | relative_url}})
+  - [Type 1 Error & Type 2 Error](/2021/05/18/introduction-to-hypothesis-tests#t1-error--t2-error)
+    - [Significance level; Size of Test; 유의 수준 $\alpha$](/2021/05/18/introduction-to-hypothesis-tests#significance-level-alpha) 🔥
+    - [Power of Test; 검정력 $\gamma(\theta)$](/2021/05/18/introduction-to-hypothesis-tests#power-of-test-gammatheta) 🔥
+    - [p-value; 유의 확률](/2021/05/18/introduction-to-hypothesis-tests#p-value) 🔥🔥
+- [Sample Mean Test](/2021/05/19/sample-mean-test)
+- [Choice of Sample Size for Testing Mean](/2021/05/20/choice-of-sample-size-for-testing-mean)
+- [Proportion Test](/2021/05/26/proportion-test)
+- [Variance Test](/2021/05/26/variance-test)
+- [Chi-square Goodness-of-fit Test](/2021/05/27/chi-square-goodness-of-fit-test)
   - Chi-square-Test; 카이제곱-검정
   - Test on Independence
   - Test on Homogeneity
 
 <br/>
 
-- [Introduction to Linear Regression]({{"/2021/06/06/introduction-to-linear-regression" | relative_url}})
+- [Introduction to Linear Regression](/2021/06/06/introduction-to-linear-regression)
   - Simple Linear Regression
   - Least Square Method
     - unbiased regression coefficients
   - R-square $R^2$; 결정 계수
-- [Test on Regression]({{"/2021/06/09/test-on-regression" | relative_url}})
+- [Test on Regression](/2021/06/09/test-on-regression)
   - Distribution of Regression Coefficients $B_0$ and $B_1$
   - Estimator of $\sigma^2$
-- [Prediction on Regression]({{"/2021/06/10/prediction-on-regression" | relative_url}})
+- [Prediction on Regression](/2021/06/10/prediction-on-regression)
   - Estimate on Mean Response $\mu_{Y \mid x_0}$
   - Prediction Interval
 
@@ -156,15 +156,15 @@ toc_sticky: true
 
 ## Statistics
 
-- [PS1]({{"/2021/06/06/statistics-ps1" | relative_url}})
+- [PS1](/2021/06/06/statistics-ps1)
   - sample variance $S^2$ is not the minimal variance estimator
   - MSE(Mean Squared Error) is sum of variance and square of bias
   - Compare $S^2$ and $\hat{S}^2$ using MSE
-- [PS2]({{"/2021/06/09/statistics-ps2" | relative_url}})
+- [PS2](/2021/06/09/statistics-ps2)
   - $\sum e_i = 0$
   - $\sum x_i e_i = 0$
   - $\text{SST} = \text{SSR} + \text{SSE}$
-- [PS3]({{"/2021/06/10/statistics-ps3" | relative_url}})
+- [PS3](/2021/06/10/statistics-ps3)
   - Variance of estimator $B_0$
   - unbiased estimator of $\sigma^2$ is $s^2$
   - (not yet) $s^2 \perp B_1$, and $s^2 \perp B_0$
@@ -172,9 +172,9 @@ toc_sticky: true
 
 <hr/>
 
-# Eassays
+# Essays
 
-- [Degree of Freedom in Statistics]({{"/2022/10/09/degree-of-freedom-in-statistics" | relative_url}})
+- [Degree of Freedom in Statistics](/2022/10/09/degree-of-freedom-in-statistics)
 
 <hr/>
 

@@ -56,7 +56,7 @@ $$
 
 <span class="statement-title">*Proof*.</span><br>
 
-[\<Chebyshev's Inequality\>]({{"/2021/03/17/chebyshev's-inequality" | relative_url}})를 사용하면 아주 쉽게 증명할 수 있다!
+[\<Chebyshev's Inequality\>](/2021/03/17/chebyshev-inequality)를 사용하면 아주 쉽게 증명할 수 있다!
 
 $$
 \begin{aligned}
