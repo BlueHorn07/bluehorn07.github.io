@@ -270,17 +270,17 @@ $$
 \frac{d}{dt} P(T \le t) = \frac{d}{dt} (1 - e^{-\lambda t}) = \lambda \cdot e^{-\lambda t}
 $$
 
-뒤에서 다루겠지만, 위와 같은 pdf를 가지는 continuous distribution을 [**\<Exponential Distribution\>**]({{"/2021/03/31/exponential-distribution" | relative_url}})이라고 한다.
+뒤에서 다루겠지만, 위와 같은 pdf를 가지는 continuous distribution을 [**\<Exponential Distribution\>**](/2021/03/31/exponential-distribution)이라고 한다.
 
 <hr/>
 
 이번 포스트에서 다룬 \<Poisson Distribution\>을 끝으로 교재에서 다루는 모든 이산 확률 분포를 살펴보았다. 다음 포스트부터는 연속 RV가 갖는 \<연속 확률 분포; Continuous Distribution\>에 살펴보겠다.
 
 - Continuous Probability Distribution
-  - [Uniform Distribution]({{"/2021/03/29/uniform-distribution" | relative_url}})
-  - [Normal Distribution]({{"/2021/03/30/normal-distribution" | relative_url}})
-  - [Exponential Distribution]({{"/2021/03/31/exponential-distribution" | relative_url}})
-  - [Gamma Distribution]({{"/2021/04/05/gamma-distribution" | relative_url}})
+  - [Uniform Distribution](/2021/03/29/uniform-distribution)
+  - [Normal Distribution](/2021/03/30/normal-distribution)
+  - [Exponential Distribution](/2021/03/31/exponential-distribution)
+  - [Gamma Distribution](/2021/04/05/gamma-distribution)
   - [Chi-square, Beta and Log-normal Distribution]({{"/2021/04/06/chi-and-beta-and-lognormal-distribution" | relative_url}})
-  - [Weibull Distribution (optional)]({{"/2021/04/10/weibull-distribution" | relative_url}})
+  - [Weibull Distribution (optional)](/2021/04/10/weibull-distribution)
 

@@ -54,14 +54,14 @@ toc_sticky: true
 <br/>
 
 - Continuous Probability Distribution
-  - [Uniform Distribution]({{"/2021/03/29/uniform-distribution" | relative_url}})
-  - [Normal Distribution]({{"/2021/03/30/normal-distribution" | relative_url}})
-  - [Exponential Distribution]({{"/2021/03/31/exponential-distribution" | relative_url}})
-  - [Gamma Distribution]({{"/2021/04/05/gamma-distribution" | relative_url}})
-  - [Chi-square Distribution]({{"/2021/04/06/chi-square-distribution" | relative_url}})
-  - [Beta Distribution]({{"/2021/04/07/beta-distribution" | relative_url}})
-  - [Log-normal Distribution]({{"/2021/04/08/log-normal-distribution" | relative_url}})
-  - [Weibull Distribution (optional)]({{"/2021/04/10/weibull-distribution" | relative_url}})
+  - [Uniform Distribution](/2021/03/29/uniform-distribution)
+  - [Normal Distribution](/2021/03/30/normal-distribution)
+  - [Exponential Distribution](/2021/03/31/exponential-distribution)
+  - [Gamma Distribution](/2021/04/05/gamma-distribution)
+  - [Chi-square Distribution](/2021/04/06/chi-square-distribution)
+  - [Beta Distribution](/2021/04/07/beta-distribution)
+  - [Log-normal Distribution](/2021/04/08/log-normal-distribution)
+  - [Weibull Distribution (optional)](/2021/04/10/weibull-distribution)
 
 <br/>
 

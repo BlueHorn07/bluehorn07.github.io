@@ -13,18 +13,18 @@ categories: ["Probability"]
 
 **시리즈: Continuous Probability Distributions**
 
-1. [Uniform Distribution]({{"/2021/03/29/uniform-distribution" | relative_url}})
-2. [Normal Distribution]({{"/2021/03/30/normal-distribution" | relative_url}})
-3. [Exponential Distribution]({{"/2021/03/31/exponential-distribution" | relative_url}})
-4. [Gamma Distribution]({{"/2021/04/05/gamma-distribution" | relative_url}})
-5. [Chi-square Distribution]({{"/2021/04/06/chi-square-distribution" | relative_url}})
-6. [Beta Distribution]({{"/2021/04/07/beta-distribution" | relative_url}}) 👀
-7. [Log-normal Distribution]({{"/2021/04/08/log-normal-distribution" | relative_url}})
-8. [Weibull Distribution (optional)]({{"/2021/04/10/weibull-distribution" | relative_url}})
+1. [Uniform Distribution](/2021/03/29/uniform-distribution)
+2. [Normal Distribution](/2021/03/30/normal-distribution)
+3. [Exponential Distribution](/2021/03/31/exponential-distribution)
+4. [Gamma Distribution](/2021/04/05/gamma-distribution)
+5. [Chi-square Distribution](/2021/04/06/chi-square-distribution)
+6. [Beta Distribution](/2021/04/07/beta-distribution) 👀
+7. [Log-normal Distribution](/2021/04/08/log-normal-distribution)
+8. [Weibull Distribution (optional)](/2021/04/10/weibull-distribution)
 
 </div>
 
-선행 개념으로 [Gamma Distribution]({{"/2021/04/05/gamma-distribution" | relative_url}})에 대해 알고 있어야 한다.
+선행 개념으로 [Gamma Distribution](/2021/04/05/gamma-distribution)에 대해 알고 있어야 한다.
 
 $$
 f(x; \alpha, \beta)
@@ -201,4 +201,4 @@ $$
 
 이어지는 포스트에서는 \<**Weibull Distribution**\>을 통해 \<결함률; Failure rate\>와 \<신뢰도; Reliability\>을 모델링한다. 이 부분은 정규 수업에서는 소개만 하고 넘어간 부분이기 때문에 관심이 있거나 꼭 필요한게 아니라면 건너 뛰어도 괜찮다.
 
-👉 [Weibull Distribution (Optional)]({{"/2021/04/10/weibull-distribution" | relative_url}})
+👉 [Weibull Distribution (Optional)](/2021/04/10/weibull-distribution)

@@ -12,14 +12,14 @@ categories: ["Probability"]
 
 **시리즈: Continuous Probability Distributions**
 
-1. [Uniform Distribution]({{"/2021/03/29/uniform-distribution" | relative_url}})
-2. [Normal Distribution]({{"/2021/03/30/normal-distribution" | relative_url}}) 👀
-3. [Exponential Distribution]({{"/2021/03/31/exponential-distribution" | relative_url}})
-4. [Gamma Distribution]({{"/2021/04/05/gamma-distribution" | relative_url}})
-5. [Chi-square Distribution]({{"/2021/04/06/chi-square-distribution" | relative_url}})
-6. [Beta Distribution]({{"/2021/04/07/beta-distribution" | relative_url}})
-7. [Log-normal Distribution]({{"/2021/04/08/log-normal-distribution" | relative_url}})
-8. [Weibull Distribution (optional)]({{"/2021/04/10/weibull-distribution" | relative_url}})
+1. [Uniform Distribution](/2021/03/29/uniform-distribution)
+2. [Normal Distribution](/2021/03/30/normal-distribution) 👀
+3. [Exponential Distribution](/2021/03/31/exponential-distribution)
+4. [Gamma Distribution](/2021/04/05/gamma-distribution)
+5. [Chi-square Distribution](/2021/04/06/chi-square-distribution)
+6. [Beta Distribution](/2021/04/07/beta-distribution)
+7. [Log-normal Distribution](/2021/04/08/log-normal-distribution)
+8. [Weibull Distribution (optional)](/2021/04/10/weibull-distribution)
 
 </div>
 
@@ -210,8 +210,8 @@ where $\Phi(x)$ is CDF of normal $N(0, 1)$.
 
 이어지는 포스트에서는 좀더 다양하고, 엄청난 분포들을 만나게 된다.
 
-- [Exponential Distribution]({{"/2021/03/31/exponential-distribution" | relative_url}})
-- [Gamma Distribution]({{"/2021/04/05/gamma-distribution" | relative_url}})
+- [Exponential Distribution](/2021/03/31/exponential-distribution)
+- [Gamma Distribution](/2021/04/05/gamma-distribution)
 - [Chi-square, Beta and Log-normal Distribution]({{"/2021/04/06/chi-and-beta-and-lognormal-distribution" | relative_url}})
 
 

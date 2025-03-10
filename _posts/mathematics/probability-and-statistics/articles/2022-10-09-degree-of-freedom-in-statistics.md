@@ -67,7 +67,7 @@ $$
 
 자유도를 인자로 받는 확률 분포를 살펴보자.
 
-- [Chi-square distribution $\chi^2(n)$]({{"/2021/04/06/chi-square-distribution" | relative_url}})
+- [Chi-square distribution $\chi^2(n)$](/2021/04/06/chi-square-distribution)
 
 $$
 \chi^2(n) = \text{Gamma}\left(\frac{n}{2}, 2\right)
