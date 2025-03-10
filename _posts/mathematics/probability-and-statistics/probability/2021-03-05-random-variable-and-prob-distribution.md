@@ -1,5 +1,5 @@
 ---
-title: "Random Variables and Probability Distributionss"
+title: "Random Variables and Probability Distributions"
 toc: true
 author: bluehorn_math
 toc_sticky: true

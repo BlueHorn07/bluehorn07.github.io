@@ -21,11 +21,11 @@ toc_sticky: true
 - [Bayes' Rule](2021/03/02/Bayes-Rule)
   - Law of Total Probability
   - Meaning of Bayes Rule
-- [Monti Hall Problem](2021/03/02/Monti-Hall-Problem" | relative_u)
+- [Monti Hall Problem](2021/03/02/Monti-Hall-Problem)[^1]
 
 <br/>
 
-- [Random Variables and Probability Distributionss](2021/03/05/random-variable-and-prob-distribution)
+- [Random Variables and Probability Distributions](2021/03/05/random-variable-and-prob-distribution)
   - Random Variable $X$
   - Probability Distributions
     - PMF $f(x)$ & CDF $F(x)$ for Discrete RV
@@ -57,6 +57,8 @@ toc_sticky: true
   - [Uniform Distribution](/2021/03/29/uniform-distribution)
   - [Normal Distribution](/2021/03/30/normal-distribution)
   - [Exponential Distribution](/2021/03/31/exponential-distribution)
+    - [Duality: Exponential Distribution and Poisson Process](/2021/04/01/exponential-distribution-duality-with-poisson-process)
+    - [Duality: Exponential Distribution and Geometric Distribution](/2021/04/02/exponential-distribution-duality-with-geometric-distribution)
   - [Gamma Distribution](/2021/04/05/gamma-distribution)
   - [Chi-square Distribution](/2021/04/06/chi-square-distribution)
   - [Beta Distribution](/2021/04/07/beta-distribution)
