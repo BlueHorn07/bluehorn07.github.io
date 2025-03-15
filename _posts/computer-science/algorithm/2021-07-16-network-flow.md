@@ -7,7 +7,7 @@ categories: ["Algorithm"]
 
 
 
-2020-1학기, 대학에서 '알고리즘' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
+2020-1학기, 대학에서 '알고리즘' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :) 전체 포스트는 [Algorithm](/categories/algorithm) 포스트에서 확인하실 수 있습니다.
 
 이번 포스트에서는 Network Flow 문제에 대한 개요와 Network Flow 문제의 핵심이 되는 정리인 "Max-Flow Min-Cut Theorem"에 대해 다룹니다. 실제 예제와 코드는 이어지는 포스트 [Ford-Fulkerson & Edmons-Karp Algorithm]({{"/2021/10/03/ford-fulkerson-algorithm-and-edmons-karp-algorithm" | relative_url}})를 참고해주세요! 😉
 

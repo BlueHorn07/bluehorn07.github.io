@@ -7,7 +7,7 @@ categories: ["Algorithm"]
 
 
 
-2020-1학기, 대학에서 '알고리즘' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
+2020-1학기, 대학에서 '알고리즘' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :) 전체 포스트는 [Algorithm](/categories/algorithm) 포스트에서 확인하실 수 있습니다.
 
 \<Amortized Analysis\>에 대해 살펴보기 전에 간단한 Introduction인 \<Array Doubling\>에 대해 살펴보고 오길 바란다. 'Zedd0202'님의 포스트를 추천한다!
 

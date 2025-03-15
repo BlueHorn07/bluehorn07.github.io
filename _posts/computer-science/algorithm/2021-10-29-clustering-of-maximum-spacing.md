@@ -7,7 +7,7 @@ categories: ["Algorithm"]
 
 
 
-2020-1학기, 대학에서 '알고리즘' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
+2020-1학기, 대학에서 '알고리즘' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :) 전체 포스트는 [Algorithm](/categories/algorithm) 포스트에서 확인하실 수 있습니다.
 
 [Kruskal's Algorithm & Prim's Algorithm]({{"/2021/04/19/kruskal-and-prim-algorithm" | relative_url}})에서 이어지는 포스트입니다.
 

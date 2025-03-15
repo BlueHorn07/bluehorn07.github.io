@@ -7,7 +7,7 @@ categories: ["Algorithm"]
 
 
 
-2020-1학기, 대학에서 '알고리즘' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
+2020-1학기, 대학에서 '알고리즘' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :) 전체 포스트는 [Algorithm](/categories/algorithm) 포스트에서 확인하실 수 있습니다.
 
 이번 포스트는 [Network Flow]({{"/2021/07/16/network-flow" | relative_url}}) 포스트의 후속 포스트입니다. Network Flow 문제의 핵심이 되는 정리인 \<Max-Flow Min-Cut Theorem\>에 대해 궁금하다면 이전 포스트를 참고해주세요! 😉
 

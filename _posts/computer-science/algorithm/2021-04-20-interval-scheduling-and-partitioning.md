@@ -6,9 +6,9 @@ categories: ["Algorithm"]
 ---
 
 
-2020-1학기, 대학에서 '알고리즘' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :)
+2020-1학기, 대학에서 '알고리즘' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :) 전체 포스트는 [Algorithm](/categories/algorithm) 포스트에서 확인하실 수 있습니다.
 
-## Interval Scheduling
+# Interval Scheduling
 
 각 Job $j$는 $[s_j, f_j]$의 start time, finish time을 가진다고 가자. 이때, 두 Job이 *compatible* 하다는 것은 두 Job이 서로 중첩되지 않는다는 말이다. \<Interval Scheduling\>은 전체 Job의 집합의 부분집합 중 포함된 모든 Job이 서로 compatible하면서 그 부분집합의 크기가 최대가 되는 집합을 찾는 것을 목표로 한다.
 
@@ -50,10 +50,7 @@ So in the optimal solution, we can replace job $j_{r+1}$ with job $i_{r+1}$. The
 
 </div>
 
-<br/>
-<hr/>
-
-## Interval Partitioning
+# Interval Partitioning
 
 $n$개의 수업이 주어졌고, 각 수업 $j$는 $[s_j, f_j]$의 start/finish time을 갖는다고 하자. 이때, 어떤 두 수업도 겹치지 않도록 스케쥴링 하면서, 강의실의 갯수는 최소가 되는 방법을 생각해보자!
 
@@ -80,11 +77,19 @@ $d=0$
 
 </div>
 
-이때, 각 classroom $k$는 현재 lecture의 finish time $f_j$를 담고 있어야 한다. 그래서, 이것을 classroom을 **Priorirty Queue**로 관리하여, 만약 새로운 lecture가 front node의 finish time보다 빠른 start time을 가진다면, $d = d+1$ 한 후에 Priority Queue에 새롭게 insertion 하면 된다!
+이때, 각 classroom $k$는 현재 lecture의 finish time $f_j$를 담고 있어야 한다. 그래서, 이것을 classroom을 **Priority Queue**로 관리하여, 만약 새로운 lecture가 front node의 finish time보다 빠른 start time을 가진다면, $d = d+1$ 한 후에 Priority Queue에 새롭게 insertion 하면 된다!
 
-<hr/>
+# 맺음말
 
-#### 추천 문제
+"**Interval Scheduling**"은 하나의 큐와 전체 일정이 주어진 상태에서 가장 많은 일정을 소화할 수 있도록 배치하는 문제입니다.
+
+그리고 "**Interval Partitioning**"은 가장 적은 큐를 사용해 모든 일정이 소화 가능하도록 일정들을 분할하는 문제입니다.
+
+둘다 Greedy 접근으로 해결할 수 있습니다!
+
+이것의 변형된 문제로 "[Weighted Interval Scheduling](/2021/07/12/weighted-interval-scheduling/)" 문제가 있습니다. 이 문제는 하나의 큐에 일정들의 Weight가 최대가 되도록 일정을 담아야 합니다. 그리고 Greedy가 아니라 DP로 접근해 해결할 수 있습니다. 어떻게 보면 Knapsack 문제랑 비슷한 맥락의 문제라고 볼 수 있습니다.
+
+## 추천 문제
 
 - [회의실 배정](https://www.acmicpc.net/problem/1931)
 - [멀티탭 스케줄링](https://www.acmicpc.net/problem/1700)
