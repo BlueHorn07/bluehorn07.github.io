@@ -83,7 +83,9 @@ $$
 
 <div class="notice" markdown="1">
 
-Suppose that a function $f$ is continuous on the closed interval $[0, 1]$ and that $0 \leq f(x) \leq 1 $ for every $x$ in $[0, 1]$. Show that there must exist a number $c$ in $[0, 1]$ s.t. $f(c) = c$ ($c$ is called a fixed point of $f$).
+Suppose that a function $f$ is continuous on the closed interval $[0, 1]$ and that $0 \leq f(x) \leq 1 $ for every $x$ in $[0, 1]$.
+
+Show that there must exist a number $c$ in $[0, 1]$ s.t. $f(c) = c$ ($c$ is called a fixed point of $f$).
 
 </div>
 
@@ -91,7 +93,7 @@ Suppose that a function $f$ is continuous on the closed interval $[0, 1]$ and th
 
 만약 $g(0) = 0$이거나 $g(1) = 0$이면 $f(0) = 0$, $f(1) = 1$이기 때문에 위의 명제를 만족한다.
 
-만약, $g(0) \neq 0$이고 $g(1) \neq 0$라면 $0 <g(0)$이고, $g(1) < 0$이 되는데, 중간값 정리(Intermediate Value Theorem)을 사용하면 $(0, 1)$ 범위 사이에 어떤 상수 $c$가 있어 $g(c) = 0$을 만족하는 $c$가 존재함을 보장할 수 있다. 그런데 $g(c) = 0$은 곧 $f(c) = c$가 됨을 의미하므로, 위의 명제가 성립한다. $\blacksquare$
+만약, $g(0) \neq 0$이고 $g(1) \neq 0$라면 $0 <g(0)$이고, $g(1) < 0$이 되는데, **중간값 정리(Intermediate Value Theorem)**을 사용하면 $(0, 1)$ 범위 사이에 어떤 상수 $c$가 있어 $g(c) = 0$을 만족하는 $c$가 존재함을 보장할 수 있다. $g(c) = 0$은 곧 $f(c) = c$가 됨을 의미하므로, 위의 명제가 성립한다. $\blacksquare$
 
 <hr/>
 
