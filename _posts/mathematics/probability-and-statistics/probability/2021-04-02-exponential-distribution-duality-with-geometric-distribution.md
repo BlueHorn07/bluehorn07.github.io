@@ -59,7 +59,7 @@ $$
 
 ## Relationship with Geometric Distribution
 
-우리는 어떤 사건이 처음으로 발생하는 시행 횟수 $X$를 모델링한 **[Geometric Distribution](/2021/03/24/discrete-probability-distributions-2/#geometric-distribution)**을 살펴본 적이 있습니다.
+우리는 어떤 사건이 처음으로 발생하는 시행 횟수 $X$를 모델링한 **[Geometric Distribution](/2021/03/24/geometric-distribution)**을 살펴본 적이 있습니다.
 
 기하 분포 역시 Memoryless Property를 만족합니다. 즉, 이미 몇 번의 시행이 진행되었든 상관없이, 앞으로 사건이 처음 발생하기까지 걸리는 시행 횟수의 확률은 항상 동일합니다. 놀랍게도, 기하 분포에서 지수 분포의 Memoryless 성질을 유도할 수도 있습니다!
 

@@ -36,23 +36,19 @@ toc_sticky: true
 
 <br/>
 
-- [Discrete Probability Distribution - 1](/2021/03/17/discrete-probability-distributions-1)
+- Discrete Distribution
   - (Discrete) Uniform Distribution
-  - Bernoulli Distribution
-  - Binomial Distribution
-    - Multinomial Distribution
-- [Discrete Probability Distribution - 2](/2021/03/24/discrete-probability-distributions-2)
-  - HyperGeometric Distribution
+  - [Bernoulli Distribution](/2021/03/18/bernoulli-distribution)
+  - [Binomial Distribution](/2021/03/18/binomial-distribution)
+  - [Multinomial Distribution](/2021/03/18/multinomial-distribution)
+  - [HyperGeometric Distribution](/2021/03/24/hypergeometric-distribution)
     - Multivariate HyperGeometric Distribution
-  - Geometric Distribution
+  - [Geometric Distribution](/2021/03/24/geometric-distribution)
     - Negative Binomial Distribution
       - [Negative Binomial Theorem](/2022/10/30/negative-binomial-theorem)
-- [Poisson Distribution](/2021/03/25/poisson-distribution)
-  - Law of Rare Events
-  - Bernoulli Process & Poisson Process
-
-<br/>
-
+  - [Poisson Distribution](/2021/03/25/poisson-distribution)
+    - Law of Rare Events
+    - Bernoulli Process & Poisson Process
 - Continuous Probability Distribution
   - [Uniform Distribution](/2021/03/29/uniform-distribution)
   - [Normal Distribution](/2021/03/30/normal-distribution)

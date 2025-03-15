@@ -162,17 +162,13 @@ $$
 (1 + x)^{-n} = \sum^{\infty}_{k = 0} \binom{-n}{k} x^k = \sum^{\infty}_{k = 0} \binom{n + k - 1}{k} (-1)^k x^k
 $$
 
-<hr/>
 
 # 맺음말
 
 사실 \<Negative Binomial Theorem\>은 정리(Theorem) 수준의 대단한 녀석은 아니다. 그러나 본인은 처음 이 녀석을 봤을 때, \<Combination\>에 음수 $n$이 들어갈 수 있다는 사실을 받아들이는데 애를 먹었다 😥
 
-이 정리는 \<Negative Binomial Distribution\>의 성질을 증명할 때, 다시 등장한다.
+이 정리는 [Geometric Distribution](/2021/03/24/geometric-distribution)을 확장한 "Negative Binomial Distribution"의 성질을 증명할 때, 다시 등장한다.
 
-👉 [Discrete Probability Distribution (2): Negative Binomial Distribution]({{"/2021/03/24/discrete-probability-distributions-2" | relative_url}})
-
-<hr/>
 
 # References
 

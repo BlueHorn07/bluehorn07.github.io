@@ -11,7 +11,7 @@ categories: ["Probability"]
 
 # Poisson Distribution
 
-\<푸아송 분포 Poisson Distribution\>는 [이항 분포]({{"/2021/03/17/discrete-probability-distributions-1#binomial-distribution" | relaitve_url}}) $\text{BIN}(n, p)$의 특수한 경우이다. $\text{BIN}(n, p)$에서 $n$이 무한대로 커지고, $p$가 아주아주 작아질 때, 분포는 푸아송 분포를 만족하게 된다!
+\<푸아송 분포 Poisson Distribution\>는 [이항 분포](/2021/03/18/binomial-distribution) $\text{BIN}(n, p)$의 특수한 경우이다. $\text{BIN}(n, p)$에서 $n$이 무한대로 커지고, $p$가 아주아주 작아질 때, 분포는 푸아송 분포를 만족하게 된다!
 
 그렇다면 본래 BIN이던걸 왜 푸아송 분포로 해석하는 걸까? 이 질문에 대한 답은 아래의 유튜브 영상에서 정말 잘 설명하고 있다. 한번 보고 오자.
 
@@ -94,7 +94,7 @@ $n$이 무한히 커지게 되면, 자연스럽게 확률 $p=\dfrac{\lambda}{n}$
 
 위의 명제에 대한 증명은 평균과 분산의 정의에 입각해 식을 전개하면 된다. 증명은 추후에 기술하겠다.
 
-<hr/>
+
 
 # Bernoulli Process & Poisson Process
 
@@ -126,7 +126,7 @@ $$
 - 매일 코스피 지수의 상승/하락에 대한 binary sequence
 - 주어진 time interval에 신호가 수신되는지 아닌지에 대한 binary seq.
 
-<hr/>
+
 
 ## Poisson Process
 
@@ -244,7 +244,7 @@ $$
 N(t) \sim \text{POI}(\lambda t)
 $$
 
-<hr/>
+
 
 <div class="example" markdown="1">
 
@@ -272,7 +272,7 @@ $$
 
 뒤에서 다루겠지만, 위와 같은 pdf를 가지는 continuous distribution을 [**\<Exponential Distribution\>**](/2021/03/31/exponential-distribution)이라고 한다.
 
-<hr/>
+
 
 이번 포스트에서 다룬 \<Poisson Distribution\>을 끝으로 교재에서 다루는 모든 이산 확률 분포를 살펴보았다. 다음 포스트부터는 연속 RV가 갖는 \<연속 확률 분포; Continuous Distribution\>에 살펴보겠다.
 

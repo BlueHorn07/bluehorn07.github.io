@@ -311,12 +311,8 @@ A3. & A4. Q3는 이미 위에서 증명을 했다. 그러나 다른 방식으로
 
 그리고 Discrete RV에서의 기본적인 Probability Distribution을 살펴본다.
 
-- Bernoulli Distribution
-- Binomial Distributions
-- Multinomial Distribution
+- [Bernoulli Distribution](/2021/03/18/bernoulli-distribution)
+- [Binomial Distributions](/2021/03/18/binomial-distribution)
+- [Multinomial Distribution](/2021/03/18/multinomial-distribution)
 - Hypergeometric Distributions
 - etc...
-
-👉 [Discrete Probability Distributions - 1](/2021/03/17/discrete-probability-distributions-1)
-
-👉 [Discrete Probability Distributions - 2](/2021/03/24/discrete-probability-distributions-2)

@@ -25,7 +25,7 @@ categories: ["Statistics"]
 
 확통 수업을 듣는 전체 학생을 대상으로, 확통 수업을 선호하는 학생의 비율을 구하고자 한다. 그런데, 확통 수업을 듣는 학생 수가 너무 많아서 전체를 조사할 순 없고, 전체 중 $n$명 학생을 대상으로 설문조사를 시행한다고 하자.
 
-$X$가 "$n$명의 학생 중에 확통 수업을 선호한다고 응답한 학생 수"라는 RV라면, $X$는 [HyperGeometric 분포](/2021/03/24/discrete-probability-distributions-2#hypergeometric-distribution)를 따를 것이다. 만약 전체 학생 수가 충~분히 크다면, HyperGeometric 분포를 Binomial 분포로 근사할 수도 있을 것이다.
+$X$가 "$n$명의 학생 중에 확통 수업을 선호한다고 응답한 학생 수"라는 RV라면, $X$는 [HyperGeometric Distribution](/2021/03/24/hypergeometric-distribution)를 따를 것이다. 만약 전체 학생 수가 충~분히 크다면, HyperGeometric 분포를 Binomial 분포로 근사할 수도 있을 것이다.
 
 각 학생 $i$의 선호를 RV $X_i$는 Binary 값을 가진다.
 
