@@ -5,7 +5,6 @@ toc_sticky: true
 categories: ["Algorithm"]
 ---
 
-
 2020-1학기, 대학에서 '알고리즘' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :) 전체 포스트는 [Algorithm](/categories/algorithm) 포스트에서 확인하실 수 있습니다.
 
 <hr/>
@@ -35,13 +34,17 @@ DP 테크닉의 중심은 \<Memoization\>이라고 할 수 있다. subproblem의
 
 이번 챕터에서 다루는 문제들은 아래와 같다.
 
-- [LIS; Longest Incresaing Subsequences]({{"/2021/04/20/longest-increasing-subsequences" | relative_url}})
-- [Edit Distance]({{"/2021/04/20/edit-distanace" | relative_url}})
-- Knapsack
-- Chain Matrix Multiplication
-- Shortest Reliable Paths
-- All Pairs Shortest Paths
-- TSP; Traveling Salesman Problem
-- Weighted Interval Scheduling
+- [LIS; Longest Increasing Subsequences](/2021/04/20/longest-increasing-subsequences)
+- [Edit Distance](/2021/04/20/edit-distanace)
+- [Knapsack](/2021/04/30/kanpsack)
+- [Chain Matrix Multiplication](/2021/05/02/chain-matrix-multiplication)
+- [Shortest Reliable Paths](/2021/06/13/shortest-reliable-paths)
+- [All Pairs Shortest Paths; Floyd-Warshall](/2021/06/13/all-pairs-shortest-paths)
+- [TSP; Traveling Salesman Problem](/2021/06/13/traveling-salesman-problem)
+  - 완전탐색
+  - DP
+- [Independent Sets in Tree](/2021/07/10/independent-sets-in-tree)
+- [Weighted Interval Scheduling](/2021/07/12/weighted-interval-scheduling)
+- [Segmented Least Squares](/2021/07/12/segmented-least-squares)
 
 (상당히 많은 문제가 DP의 테크닉을 사용한다. 그만큼 DP가 중요하다는 말!)

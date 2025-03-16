@@ -10,12 +10,13 @@ categories: ["Algorithm"]
 
 <hr>
 
+# Greedy Algorithm
+
 \<Greedy Algorithm; 탐욕 알고리즘\>의 아이디어는 간단하다.
 
 <div class="statement" markdown="1" style="text-align:center; font-size: large;">
 
-
-thinking ahead sv. choosing immediate advantage
+thinking ahead vs. choosing immediate advantage
 
 목적을 달성하기 위해 지금 명확하고 즉각적인 <span style="color: red">눈앞의 이득</span>을 취한다.
 
@@ -27,16 +28,14 @@ thinking ahead sv. choosing immediate advantage
 
 때로는 Greedy와 DP를 함께 써야 하는 경우도 있다. 두 알고리즘이 배타적인 것이 아니라, 문제해결의 도구일 뿐이기 때문에 둘의 아이디어를 함께 사용해 문제를 해결할 수도 있다 😁
 
-<hr/>
+## Problems
 
 이번 챕터에서 다루는 문제들은 아래와 같다.
 
 - MST; Minimum Spanning Tree
-  - [Kruskal's Algorithm]({{"/2021/04/19/kruskal-and-prim-algorithm#kruskals-algorithm" | relative_url}})
-  - [Prim's Algorithm]({{"2021/04/19/kruskal-and-prim-algorithm#prims-algorithm" | relative_url}})
-  - Disjoint Set
-    - Path Compression
-- [Intervel Scheduling & Partitioning]({{"/2021/04/20/interval-scheduling-and-partitioning" | relative_url}})
-- [Huffman Encoding]({{"/2021/10/08/Huffman-encoding" | relative_url}})
+  - [Kruskal's Algorithm](/2021/04/19/kruskal-and-prim-algorithm#kruskals-algorithm)
+  - [Prim's Algorithm](2021/04/19/kruskal-and-prim-algorithm#prims-algorithm)
+  - [Disjoint Set & Path Compression](/2021/10/26/disjoint-set-and-path-compression/)
+- [Interval Scheduling & Partitioning](/2021/04/20/interval-scheduling-and-partitioning)
+- [Huffman Encoding](/2021/10/08/Huffman-encoding)
 - Clustering of Maximum Spacing
-

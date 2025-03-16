@@ -5,7 +5,9 @@ toc_sticky: true
 categories: ["Algorithm"]
 ---
 
-<br/>
+2020-1학기, 대학에서 '알고리즘' 수업을 듣고 공부한 바를 정리한 글입니다. 지적은 언제나 환영입니다 :) 전체 포스트는 [Algorithm](/categories/algorithm) 포스트에서 확인하실 수 있습니다.
+
+<hr/>
 
 세그먼트 트리는 배열 위에서 빠르게 "구간 연산" 또는 "갱신 연산"을 수행해야 할 때 유용하다. 본 포스트는 세그먼트 트리에 대한 자세한 이론 보다는 코드 레벨와 함께 세그먼트 트리를 이해하고 기록하고자 작성했다. 세그먼트 트리에 대한 이론은 유튜브 영상 "[[알고리즘 강의] 세그먼트 트리](https://youtu.be/XaodfglnhVs)"를 참고하자.
 
@@ -161,7 +163,7 @@ void update(vector<llong> &tree, int node, int start, int end, int index, llong 
 시간이 날 때 Multiset의 세그먼트 트리 구현과, Lazy Segment Tree에 대해 공부하고 포스트를 작성해보겠다 😉
 
 
-# 관련 문제
+## 관련 문제
 
 - [백준 2042번: 구간 합 구하기](https://www.acmicpc.net/problem/2042)
 

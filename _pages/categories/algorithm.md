@@ -55,7 +55,7 @@ PS에 대한 아티클은 ["Problem Solving" 페이지](/category/problem-solvin
   - [Kruskal's Algorithm](/2021/04/19/kruskal-and-prim-algorithm#kruskals-algorithm)
   - [Prim's Algorithm](2021/04/19/kruskal-and-prim-algorithm#prims-algorithm)
   - [Disjoint Set & Path Compression](/2021/10/26/disjoint-set-and-path-compression)
-- [Intervel Scheduling & Partitioning](/2021/04/20/interval-scheduling-and-partitioning)
+- [Interval Scheduling & Partitioning](/2021/04/20/interval-scheduling-and-partitioning)
 - [Huffman Encoding](/2021/10/08/Huffman-encoding)
 - [Clustering of Maximum Spacing](/2021/10/29/clustering-of-maximum-spacing)
 
