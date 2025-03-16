@@ -1,5 +1,5 @@
 ---
-title: "Sampling Distribution of Mean, and CLT"
+title: "Sampling Distribution of Sample Mean, and CLT"
 toc: true
 author: bluehorn_math
 toc_sticky: true
@@ -12,16 +12,16 @@ categories: ["Statistics"]
 
 **시리즈: Sampling Distributions**
 
-1. [Sampling Distribution]({{"/2021/04/25/sampling-distribution" | relative_url}})
-2. [Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt" | relative_url}}) 👀
-3. [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance" | relative_url}})
-4. [Student's t-distribution]({{"/2021/04/27/student-t-distribution" | relative_url}})
-5. [F-distribution]({{"/2021/05/04/F-distribution" | relative_url}})
-6. [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile" | relative_url}})
+1. [Sampling Distribution](/2021/04/25/sampling-distribution)
+2. [Sampling Distribution of Sample Mean](/2021/04/26/sampling-distribution-of-mean-and-clt) 👀
+3. [Sampling Distribution of Sample Variance](/2021/04/27/sampling-distribution-of-variance)
+4. [Student's t-distribution](/2021/04/27/student-t-distribution)
+5. [F-distribution](/2021/05/04/F-distribution)
+6. [EDF and Quantile](/2021/05/04/EDF-and-Quantile)
 
 </div>
 
-# Sampling Distribution of Mean
+# Sampling Distribution of Sample Mean
 
 Let $X_1, \dots, X_n$ be a random sample with $E[X_i] = \mu$ and $\text{Var}(X_i) = \sigma^2$.
 
@@ -30,13 +30,13 @@ Then,
 - $E[\overline{X}] = \mu$
 - $\text{Var}(\overline{X}) = E\left[\left(\overline{X} - E[\overline{X}]\right)^2 \right] = \dfrac{\sigma^2}{n}$
 
-\<LLN; Law of Large Numbers\>에 따르면, $n$이 무한으로 갈때, 분산 $\text{Var}(\overline{X}) = \sigma^2/n$가 0으로 수렴한다. 따라서 $\overline{X} \rightarrow \mu$가 된다!
+\<LLN; Law of Large Numbers\>는 $n$이 무한으로 갈때, 분산 $\text{Var}(\overline{X}) = \sigma^2/n$가 0으로 수렴함을 말한다. 즉, $\overline{X} \rightarrow \mu$가 된다!
 
-<hr/>
+
 
 # Weak Law of Large Numbers
 
-<div class="notice" markdown="1">
+<div class="theorem" markdown="1">
 
 <span class="statement-title">Theorem.</span> WLLN<br>
 
@@ -69,21 +69,26 @@ $\blacksquare$
 
 </div>
 
-<big>"WLLN says that as the sample size $n$ gets larger, then the sample mean is close to the true mean in probability!"</big>
+> WLLN says that as the sample size $n$ gets larger,<br/>
+> then the sample mean is close to the true mean in probability!
 
-이때, WLLN과 같은 형태의 수렴을 <span class="half_HL">"the convergence in probability"</span>라고 한다.
+WLLN에 의한 수렴을 "**The Convergence in Probability**"라고 한다.
 
-cf) 참고로 \<Strong Law of Large Numbers\>도 존재한다. 그러나 이 정리를 증명하려면, 측도(measure)에 대한 개념이 필요하기 때문에 소개만 하고 넘어가겠다.
+cc. \<Strong Law of Large Numbers\>도 존재한다고 합니다. 그러나 이 정리를 증명하려면, 측도(measure)에 대한 개념이 필요하다고 합니다. 강한 큰수의 법칙을 식으로 기술하면 아래와 같습니다.
+
+<div class="theorem" markdown="1">
+
+Strong Law of LArge Numbers
 
 $$
 P\left(\lim_{n\rightarrow\infty} \overline{X} = \mu \right) = 1
 $$
 
-<hr/>
+</div>
 
-# CLT; Central Limit Theorem
+# Central Limit Theorem
 
-<div class="example" markdown="1">
+<div class="problem" markdown="1">
 
 <span class="statement-title">Example.</span><br>
 
@@ -114,13 +119,13 @@ $$
 
 </div>
 
-그런데, 지금의 경우는 $\overline{X}$가 BIN 분포였기 때문에 \<Normal Approximation\>에 의해 자연스럽게 유도된 것이었다. 과연 $\overline{X}$ 또는 $X_i$가 다른 분포를 가져도 위와 같은 방식을 풀 수 있을까? 이 의문에 대한 답을 제시하는 것이 바로 \<CLT; Central Limit Theorem\>이다 🤩
+그런데, 지금의 경우는 $\overline{X}$가 BIN 분포였기 때문에 \<Normal Approximation\>에 의해 자연스럽게 유도된 것이었다. 과연 $\overline{X}$ 또는 $X_i$가 다른 분포를 가져도 위와 같은 방식을 풀 수 있을까? 이 의문에 대한 답을 제시하는 것이 바로 \<Central Limit Theorem\>이다 🤩
 
 <br/>
 
 <div class="theorem" markdown="1">
 
-<span class="statement-title">Theorem.</span> CLT; Central Limit Theorem<br>
+<span class="statement-title">Theorem.</span>Central Limit Theorem<br>
 
 Let $X_1, \dots, X_n$ be a random sample with $E[X_i] = \mu$ and $\text{Var}(X_i) = \sigma^2$.
 
@@ -138,13 +143,15 @@ where $Z \sim N(0, 1)$.
 
 </div>
 
-즉, <span class="half_HL">모집단에서 추출한 표본 $n$이 충분히 크다면, "표본평균" $\bar{X}$의 분포는 정규 분포에 근사한다!</span>
+즉, 모집단에서 추출한 표본 $n$이 충분히 크다면, "표본평균" $\bar{X}$의 분포는 정규 분포에 근사한다!
 
-<span class="statement-title">Remark.</span><br>
+## Remarks
 
-1\. As long as iid, RVs have finite second moment[^1], then we have CLT.
+1\. As long as iid, RVs have finite second moment, then we have CLT.
 
-이것이 의미하는 바는 아주 강력하다💥 $X_i$가 어떤 분포를 따르는 상관없이 CLT를 적용할 수 있다는 말이기 때문이다!! 이런 점 때문에 CLT를 <span class="half_HL">"universal result"</span>라고 한다!
+이것이 의미하는 바는 아주 강력하다💥 $X_i$가 어떤 분포를 따르는 상관없이 CLT를 적용할 수 있다는 말이기 때문이다!!
+
+이런 점 때문에 CLT를 "universal theorem"라고 한다!
 
 <br/>
 
@@ -154,7 +161,7 @@ where $Z \sim N(0, 1)$.
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/The_Normal_Distribution.svg" height="400px">
 </div>
 
-## Proof of CLT
+## Proof
 
 <div class="notice" markdown="1">
 
@@ -263,7 +270,7 @@ $\blacksquare$
 
 </div>
 
-<hr/>
+
 
 ### Sampling Distribution of the difference btw two mean
 
@@ -290,17 +297,17 @@ $$
 
 위의 사실을 이용해서, "두 샘플 평균의 차"에 대한 추론도 쉽게 수행할 수 있다 😉
 
-<hr/>
+
 
 # 맺음말
 
-이번 포스트에서는 표본평균 $\bar{X}$에 대한 분포인 "Sampling Distribution of Mean"을 보았다. 또, 표본평균 $\bar{X}$의 분포를 파악하고, 활용하는데 필요한 \<WLLN\>과 \<CLT\>를 살펴보았다.
+이번 포스트에서는 표본평균 $\bar{X}$에 대한 분포인 "Sampling Distribution of Sample Mean"을 보았다. 또, 표본평균 $\bar{X}$의 분포를 파악하고, 활용하는데 필요한 \<WLLN\>과 \<CLT\>를 살펴보았다.
 
 이어지는 포스트에서는 "평균"과 함께, 확률 분포의 특성을 결정하는 parameter인 **"분산(Variance)"**이 Random Sample에서 어떻게 유도되는지 살펴볼 예정이다.
 
-👉 [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance" | relative_url}})
+👉 [Sampling Distribution of Sample Variance](/2021/04/27/sampling-distribution-of-variance)
 
-<hr/>
+
 
 # references
 

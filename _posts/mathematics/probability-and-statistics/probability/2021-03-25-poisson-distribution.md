@@ -281,6 +281,8 @@ $$
   - [Normal Distribution](/2021/03/30/normal-distribution)
   - [Exponential Distribution](/2021/03/31/exponential-distribution)
   - [Gamma Distribution](/2021/04/05/gamma-distribution)
-  - [Chi-square, Beta and Log-normal Distribution]({{"/2021/04/06/chi-and-beta-and-lognormal-distribution" | relative_url}})
+  - [Chi-square Distribution](/2021/04/06/chi-square-distribution)
+  - [Beta Distribution](/2021/04/07/beta-distribution)
+  - [Log-normal Distribution](/2021/04/08/log-normal-distribution)
   - [Weibull Distribution (optional)](/2021/04/10/weibull-distribution)
 

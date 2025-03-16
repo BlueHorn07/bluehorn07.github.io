@@ -12,19 +12,19 @@ categories: ["Statistics"]
 
 **시리즈: Sampling Distributions**
 
-1. [Sampling Distribution]({{"/2021/04/25/sampling-distribution" | relative_url}})
-2. [Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt" | relative_url}})
-3. [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance" | relative_url}})
-4. [Student's t-distribution]({{"/2021/04/27/student-t-distribution" | relative_url}}) 👀
-5. [F-distribution]({{"/2021/05/04/F-distribution" | relative_url}})
-6. [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile" | relative_url}})
+1. [Sampling Distribution](/2021/04/25/sampling-distribution)
+2. [Sampling Distribution of Sample Mean](/2021/04/26/sampling-distribution-of-mean-and-clt)
+3. [Sampling Distribution of Sample Variance](/2021/04/27/sampling-distribution-of-variance)
+4. [Student's t-distribution](/2021/04/27/student-t-distribution) 👀
+5. [F-distribution](/2021/05/04/F-distribution)
+6. [EDF and Quantile](/2021/05/04/EDF-and-Quantile)
 
 </div>
 
 [toc]
 
 - Student's t-distribution
-- Sampling Distribution of Mean (unknown $\sigma^2$)
+- Sampling Distribution of Sample Mean (unknown $\sigma^2$)
 
 <hr/>
 
@@ -205,9 +205,9 @@ $$
 
 <hr/>
 
-# Sampling Distribution of Mean (unknown $\sigma^2$)
+# Sampling Distribution of Sample Mean (unknown $\sigma^2$)
 
-Sample Mean $\bar{X}$에 대한 분포를 계속 살펴보자. 이전의 "[Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt" | relative_url}})" 포스트에선 population variance $\sigma^2$에 대한 값을 정확히 알고 있었다.
+Sample Mean $\bar{X}$에 대한 분포를 계속 살펴보자. 이전의 "[Sampling Distribution of Sample Mean](/2021/04/26/sampling-distribution-of-mean-and-clt)" 포스트에선 population variance $\sigma^2$에 대한 값을 정확히 알고 있었다.
 
 $$
 Z = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}} \sim N(0, 1)
@@ -300,7 +300,7 @@ $$
 F := \frac{S_1^2 / \sigma_1^2}{S_2^2 / \sigma_2^2} = F(n_1 - 1, n_2 -1)
 $$
 
-👉 [F-distribution]({{"/2021/05/04/F-distribution" | relative_url}})
+👉 [F-distribution](/2021/05/04/F-distribution)
 
 <br/>
 

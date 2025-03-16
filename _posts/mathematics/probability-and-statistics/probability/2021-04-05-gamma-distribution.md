@@ -285,15 +285,15 @@ $$
 
 </div>
 
-<hr/>
+# 맺음말
 
 이어지는 포스트에서는 감마 분포의 특수한 경우로 꼽히는 \<Chi-square distribution\>, \<Beta distribution\>과 \<Log-normal distribution\>에 대해 다룬다 🤩
 
-👉 [Chi-square, Beta and Log-normal Distribution]({{"/2021/04/06/chi-and-beta-and-lognormal-distribution" | relative_url}})
+- [Chi-square Distribution](/2021/04/06/chi-square-distribution)
+- [Beta Distribution](/2021/04/07/beta-distribution)
+- [Log-normal Distribution](/2021/04/08/log-normal-distribution)
 
-<hr/>
-
-### references
+# references
 
 - [전파 거북이님의 포스트](https://ghebook.blogspot.com/2011/12/gamma-function)
 

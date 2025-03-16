@@ -1,5 +1,5 @@
 ---
-title: "Sampling Distribution of Variance"
+title: "Sampling Distribution of Sample Variance"
 toc: true
 author: bluehorn_math
 toc_sticky: true
@@ -12,16 +12,16 @@ categories: ["Statistics"]
 
 **시리즈: Sampling Distributions**
 
-1. [Sampling Distribution]({{"/2021/04/25/sampling-distribution" | relative_url}})
-2. [Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt" | relative_url}})
-3. [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance" | relative_url}}) 👀
-4. [Student's t-distribution]({{"/2021/04/27/student-t-distribution" | relative_url}})
-5. [F-distribution]({{"/2021/05/04/F-distribution" | relative_url}})
-6. [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile" | relative_url}})
+1. [Sampling Distribution](/2021/04/25/sampling-distribution)
+2. [Sampling Distribution of Sample Mean](/2021/04/26/sampling-distribution-of-mean-and-clt)
+3. [Sampling Distribution of Sample Variance](/2021/04/27/sampling-distribution-of-variance) 👀
+4. [Student's t-distribution](/2021/04/27/student-t-distribution)
+5. [F-distribution](/2021/05/04/F-distribution)
+6. [EDF and Quantile](/2021/05/04/EDF-and-Quantile)
 
 </div>
 
-### Sampling Distribution of $S^2$
+# Sampling Distribution of Sample Variance
 
 Let $X_1, \dots, X_n$ be a random sample with $\text{Var}(X_i) = \sigma^2$. We already know that $E[S^2] = \sigma^2$. How about the distribution of $\displaystyle S^2 = \dfrac{1}{n-1} \sum^n_{i=1} (X_i - \bar{X})^2$?
 
@@ -61,7 +61,7 @@ $$
 
 </div>
 
-와우! Sample Variance $S^2$과 Population Variance $\sigma^2$의 비율이 [Chi-square Distribution]({{"/2021/04/06/chi-and-beta-and-lognormal-distribution#chi-square-distribution" | relative_url}})을 따른다니!
+와우! Sample Variance $S^2$과 Population Variance $\sigma^2$의 비율이 [Chi-square Distribution](/2021/04/06/chi-square-distribution)을 따른다니!
 
 <div class="proof" markdown="1">
 
@@ -135,7 +135,7 @@ $\blacksquare$
 
 </div>
 
-<hr/>
+# 맺음말
 
 이번 포스트에서는 Sample Variance $S^2$과 Population Variance $\sigma^2$의 비율에 대한 분포를 구했다.
 
@@ -151,7 +151,7 @@ $$
 T := \dfrac{\overline{X} - \mu}{S / \sqrt{n}} = t(n-1)
 $$
 
-👉 [Student's t-distribution]({{"/2021/04/27/student-t-distribution" | relative_url}})
+👉 [Student's t-distribution](/2021/04/27/student-t-distribution)
 
 <br/>
 
@@ -161,6 +161,6 @@ $$
 F := \frac{S_1^2 / \sigma_1^2}{S_2^2 / \sigma_2^2} = F(n_1 - 1, n_2 -1)
 $$
 
-👉 [F-distribution]({{"/2021/05/04/F-distribution" | relative_url}})
+👉 [F-distribution](/2021/05/04/F-distribution)
 
 

@@ -80,7 +80,7 @@ toc_sticky: true
     - sample distribution
 - [Sampling Distribution of Mean](/2021/04/26/sampling-distribution-of-mean-and-clt)
   - WLLN; Weak Law of Large Numbers
-  - CLT; Central Limit Theorem
+  - Central Limit Theorem
     - *proof*
 - [Sampling Distribution of Variance](/2021/04/27/sampling-distribution-of-variance)
 - [Student's t-distribution](/2021/04/27/student-t-distribution)

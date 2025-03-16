@@ -285,4 +285,4 @@ $$
 
 <hr/>
 
-[^1]: \<statistic; 통계량\>은 random samples $X_1, ..., X_n$의 함수 $f(X_1, ..., X_n)$을 말한다. [Sampling Distribution]({{"/2021/04/25/sampling-distribution" | relative_url}}) 포스트 참고
+[^1]: \<statistic; 통계량\>은 random samples $X_1, ..., X_n$의 함수 $f(X_1, ..., X_n)$을 말한다. [Sampling Distribution](/2021/04/25/sampling-distribution) 포스트 참고

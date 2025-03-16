@@ -13,8 +13,8 @@ categories: ["Statistics"]
 **시리즈: Sampling Distributions**
 
 1. [Sampling Distribution](/2021/04/25/sampling-distribution") 👀
-2. [Sampling Distribution of Mean](/2021/04/26/sampling-distribution-of-mean-and-clt")
-3. [Sampling Distribution of Variance](/2021/04/27/sampling-distribution-of-variance")
+2. [Sampling Distribution of Sample Mean](/2021/04/26/sampling-distribution-of-mean-and-clt")
+3. [Sampling Distribution of Sample Variance](/2021/04/27/sampling-distribution-of-variance")
 4. [Student's t-distribution](/2021/04/27/student-t-distribution")
 5. [F-distribution](/2021/05/04/F-distribution")
 6. [EDF and Quantile](/2021/05/04/EDF-and-Quantile")
@@ -277,8 +277,8 @@ ex) distribution of sample mean, distribution of sample variance, ...
 
 이때, 표본 통계량(sample Statistics)는 sample mean, sample variance와 같이 표본의 특성을 나타내는 대표값이다. 자세한 내용은 아래의 두 포스트를 참고하자!
 
-- [Sampling Distribution of Mean, and CLT](/2021/04/26/sampling-distribution-of-mean-and-clt")
-- [Sampling Distribution of Variance](/2021/04/27/sampling-distribution-of-variance")
+- [Sampling Distribution of Sample Mean, and CLT](/2021/04/26/sampling-distribution-of-mean-and-clt")
+- [Sampling Distribution of Sample Variance](/2021/04/27/sampling-distribution-of-variance")
 
 
 진행했던 프로젝트 두 가지에 대하여 활용 기술, 본인의 역할, 진행 방식, 결과를 포함하여 구체적으로 설명해 주세요.

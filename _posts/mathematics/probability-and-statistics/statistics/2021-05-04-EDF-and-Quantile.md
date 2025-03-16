@@ -12,12 +12,12 @@ categories: ["Statistics"]
 
 **시리즈: Sampling Distributions**
 
-1. [Sampling Distribution]({{"/2021/04/25/sampling-distribution" | relative_url}})
-2. [Sampling Distribution of Mean]({{"/2021/04/26/sampling-distribution-of-mean-and-clt" | relative_url}})
-3. [Sampling Distribution of Variance]({{"/2021/04/27/sampling-distribution-of-variance" | relative_url}})
-4. [Student's t-distribution]({{"/2021/04/27/student-t-distribution" | relative_url}})
-5. [F-distribution]({{"/2021/05/04/F-distribution" | relative_url}})
-6. [EDF and Quantile]({{"/2021/05/04/EDF-and-Quantile" | relative_url}}) 👀
+1. [Sampling Distribution](/2021/04/25/sampling-distribution)
+2. [Sampling Distribution of Sample Mean](/2021/04/26/sampling-distribution-of-mean-and-clt)
+3. [Sampling Distribution of Sample Variance](/2021/04/27/sampling-distribution-of-variance)
+4. [Student's t-distribution](/2021/04/27/student-t-distribution)
+5. [F-distribution](/2021/05/04/F-distribution)
+6. [EDF and Quantile](/2021/05/04/EDF-and-Quantile) 👀
 
 </div>
 

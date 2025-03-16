@@ -219,7 +219,7 @@ $$
 \frac{\bar{X} - \mu}{S / \sqrt{n}}
 $$
 
-어라! 이 식은 [student's t-distribution]({{"/2021/04/27/student-t-distribution" | relative_url}})에서 이미 살펴보았다.
+어라! 이 식은 [Student's t-distribution](/2021/04/27/student-t-distribution)에서 이미 살펴보았다.
 
 $$
 \frac{\bar{X} - \mu}{S / \sqrt{n}} \; \overset{D}{\sim} \; t(n-1)

@@ -212,6 +212,6 @@ where $\Phi(x)$ is CDF of normal $N(0, 1)$.
 
 - [Exponential Distribution](/2021/03/31/exponential-distribution)
 - [Gamma Distribution](/2021/04/05/gamma-distribution)
-- [Chi-square, Beta and Log-normal Distribution]({{"/2021/04/06/chi-and-beta-and-lognormal-distribution" | relative_url}})
-
-
+- [Chi-square Distribution](/2021/04/06/chi-square-distribution)
+- [Beta Distribution](/2021/04/07/beta-distribution)
+- [Log-normal Distribution](/2021/04/08/log-normal-distribution)
