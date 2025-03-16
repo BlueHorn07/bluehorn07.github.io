@@ -38,6 +38,7 @@ PS에 대한 아티클은 ["Problem Solving" 페이지](/category/problem-solvin
   - [Skyline Problem](/2021/09/25/skyline-problem) 🎈
 - [Matrix Multiplication: Strassen Algorithm](/2021/10/19/matrix-multiplication-strassen-algorithm)
 - [Quick Selection](/2021/10/21/quick-selection)
+- [Segment Tree](/2022/07/17/segment-tree/) 🎈
 - [Closest pair of points](/2021/10/22/closest-pair-of-points)
 
 ## Graph Algorithm
@@ -61,7 +62,7 @@ PS에 대한 아티클은 ["Problem Solving" 페이지](/category/problem-solvin
 
 ## [Dynamic Programming](/2021/04/20/dynamic-programming)
 
-- [LIS; Longest Incresaing Subsequences](/2021/04/20/longest-increasing-subsequences)
+- [LIS; Longest Increasing Subsequences](/2021/04/20/longest-increasing-subsequences)
 - [Edit Distance](/2021/04/20/edit-distanace)
   - [Dameraus-Levenshtein Distance](/2021/04/24/Damerau-Levenshtein-distance) 🎈
 - [Knapsack](/2021/04/30/kanpsack)
