@@ -57,7 +57,7 @@ kn service create hello \
     --env TARGET=World
 ```
 
-종종 `kn`을 사용해서 Knative 리소스를 제어하는게 편리할 때가 있다. 예를 들어, Knative의 Service는 K8s Service와 이름이 똑같아서 `kubectl`로 리소스롤 확인할 때 `k get service`로 하면 안 되고, `k get services.serving.knative.dev`로 풀네임을 적어줘야 한다. `kn`을 사용하면 `kn service list`만 하면 되니 훨씬 간결해진다!!
+종종 `kn`을 사용해서 Knative 리소스를 제어하는게 편리할 때가 있다. 예를 들어, Knative의 Service는 K8s Service와 이름이 똑같아서 `kubectl`로 리소스롤 확인할 때 `k get service`로 하면 안 되고, `k get services.serving.knative.dev`로 풀네임을 적어줘야 한다. (최근에 알게 된 건데, `k get ksvc`를 해도 됩니다!) `kn`을 사용하면 `kn service list`만 하면 되니 훨씬 간결해진다!!
 
 본인은 `IngressNotConfigured`에 `Ingress has not yet been reconciled.` 라는 메시지로 Knative Service가 생성되다가 말았다... 🤔 요 에러는 Knative Service가 사용할 Ingress가 제대로 구성되지 않았을 때 발생한다. 이때의 Ingress는 [K8s의 Ingress](https://kubernetes.io/ko/docs/concepts/services-networking/ingress/) 리소스가 아니라 Istio의 Ingress Gateway와 같이 라우팅 타깃을 동적으로 제어할 수 있는 Ingress 컴포넌트를 말한다. 자세한 내용은 별도의 포스트에서 정리해보겠다. 일단은 마음 불편하게 하는 에러 메시지를 해결하기 위해 아래의 단계를 수행하자.
 
