@@ -188,6 +188,6 @@ Then,
 
 이어지는 포스트에서는 RV의 momentum인 $E[X]$, $E[X^2]$를 생성하는 함수인 \<MGF; Momemtum Generating Function\>에 대해 다룬다. 🤩
 
-👉 [Momemtum Generating Function]({{"/2021/04/13/momemtum-generating-function" | relative_url}})
+👉 [Momemtum Generating Function]({{"/2021/04/13/momentum-generating-function" | relative_url}})
 
 

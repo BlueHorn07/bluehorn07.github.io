@@ -65,8 +65,7 @@ toc_sticky: true
 
 - [Transformations of Random Variable - 1](/2021/04/11/transformations-of-random-variable-1)
 - [Transformations of Random Variable - 2](/2021/04/12/transformations-of-random-variable-2)
-- [Momemtum Generating Function](/2021/04/13/momemtum-generating-function)
-
+- [Momentum Generating Function](/2021/04/13/momentum-generating-function)
 <hr/>
 
 # Statistics
