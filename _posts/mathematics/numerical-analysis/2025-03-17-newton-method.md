@@ -118,7 +118,7 @@ $$
 
 <br/>
 
-Fixed-point Theorem의 조건을 모두 만족하므로, newton's method로 생성한 sequence $\left{ p_n \right}_{n=1}^{\infty}$는 국소적으로 수렴하는 성질을 가집니다.
+Fixed-point Theorem의 조건을 모두 만족하므로, newton's method로 생성한 sequence $\left\\{ p_n \right\\}_{n=1}^{\infty}$는 국소적으로 수렴하는 성질을 가집니다.
 
 </div>
 
@@ -169,3 +169,20 @@ $$
 
 이것 역시 이차 수렴의 성질로, 초기 오차가 너무 크면 이차 수렴이 보장 되지 않습니다. 뉴턴 수렴이 국소 수렴을 하는 이유도 이차 수렴 성질을 갖기 떄문이라고 볼 수 있을 것 같습니다. (닭이냐 달걀이냐)
 
+# Secant Method
+
+뉴턴 방법은 계산을 위해서 함수 $f(x)$은 도함수 $f'(x)$를 반드시 구해야 합니다. 일반적인 상황에서는 괜찮지만, 미분 계산이 어려운 경우에는 사용하기 힘듭니다.
+
+그래서 등장한 것이 "Secant Method(할선법)" 입니다. 이 방법은 $f'(x)$를 아래와 같이 근사 하여 뉴턴 방법을 수행 합니다.
+
+$$
+f'(x) \approx \frac{f(x_n) - f(x_{n-1})}{x_n - x_{n-1}}
+$$
+
+그래서 공식을 다시 작성하면 아래와 같습니다.
+
+$$
+x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} \approx x_n - f(x_n) \cdot \frac{x_n - x_{n-1}}{f(x_n) - f(x_{n-1})}
+$$
+
+자세한 내용은 "[Secant Method](/2025/03/18/secant-method/)" 포스트에 작성하였습니다!
