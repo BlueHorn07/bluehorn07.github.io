@@ -129,11 +129,62 @@ TODO
 
 # vs. Langrage Interpolation
 
-TODO
+새로운 데이터 노드가 추가될 때, 두 방법의 대응 방식이 다릅니다.
+
+- 라그랑주 보간법
+  - 각 점마다 새로운 다항식 항이 생깁니다.
+  - 그래서 새로운 데이터 노드가 추가되면, **보간식을 처음부터 다시 계산해야 합니다.**
+  - 따라서, 점이 추가되는 상황에서는 아주 비효율적입니다.
+- 분할 차분 보간법
+  - 이전에 계산된 값들을 그대로 활용할 수 있습니다.
+  - 새로운 데이터 노드가 들어오면, 새로운 항 하나만 계산하면 됩니다.
+  - 그래서 보간 함수의 "실시간 업데이트"가 가능 합니다.
 
 # Property
 
+## No matter the data points orders
 
+<div class="theorem" markdown="1">
+
+For any permutation $\sigma$ on $\left\\{ 1, \dots, n \right\\}$,
+
+$$
+f[x_1, \dots, x_n] = f[x_{\sigma(1)}, \dots, x_{\sigma(n)}]
+$$
+
+</div>
+
+즉, 분할 차분 방법은 입력된 $x$들의 순서에 전혀 영향을 받지 않는다는 성질 입니다. 그래서 분할 차분을 계산하거나 표현할 때, 데이터의 순서에서 자유롭습니다.
+
+## Connection between Divided Difference and Function's Differential
+
+<div class="theorem" markdown="1">
+
+Given divided difference $f[x_1, \dots, x_n]$, it can be derived from the $n-1$-th derivatives like
+
+$$
+[x_1, \dots, x_n] = \frac{f^{(n-1)}(\xi)}{(n-1)!}
+$$
+
+where $\xi \in \left(\min(\left\\{ x_i \right\\}), \max(\left\\{ x_i \right\\})\right)$
+
+</div>
+
+이것의 직관적인 예제는 1차 분할 차분 $f[x_1, x_2]$ 입니다. 이것은
+
+$$
+f[x_1, x_2] = \frac{f(x_2) - f(x_1)}{x_2 - x_1}
+$$
+
+를 만족하는데, 이때, "평균값 정리"에 의해
+
+$$
+f[x_1, x_2] = \frac{f(x_2) - f(x_1)}{x_2 - x_1} = f'(\xi)
+$$
+
+를 만족하는 $\xi$가 $\xi \in (x_1, x_2)$ 범위 내에 존재하게 됩니다. 그래서 이 성질을 "**고차 평균값 정리(Generalized Mean Value Theorem)**"이라고도 합니다.
+
+Proof: TODO
 
 # 참고자료
 
