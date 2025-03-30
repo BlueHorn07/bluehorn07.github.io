@@ -14,5 +14,7 @@ toc_sticky: true
   - [Secant Method](/2025/03/18/secant-method/)
 - Interpolation and Polynomial Approximation
   - [Lagrange Interpolation](/2025/03/19/lagrange-interpolation/)
-  - [Newton’s Divided Differences](/2025/03/30/newton-divided-differences/)
+  - [Newton’s Divided Differences](/2025/03/27/newton-divided-differences/)
+  - [Interpolation Error](/2025/03/29/interpolation-error/)
+  - [Interpolation for Uniformly Spaced Nodes, Runge Phenomenon](/2025/03/30/interpolation-error-for-uniformly-spaced-nodes/)
 
