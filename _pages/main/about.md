@@ -27,13 +27,13 @@ permalink: /about/
 
 since. 2019.06.
 
-# Certificatiions
+# Certifications
 
 실력은 시험과 과제와 장애상황(?)에서 얻어진다고 생각합니다. 회사를 다니면서 스택들을 접하고, 또 그걸 정말 제대로 공부하기 위해서 자격증 시험에 응시 했습니다. 돌이켜 보면 자격증을 딴 이후부터 그 스택을 정말 잘 활용하기 시작한 것 같습니다. 🧑‍🎓
 
 <div>
 
- 
+
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="42910ec1-f7d2-4988-afd4-baf9262f2fd9" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="923f7132-c96a-47aa-93c4-548b13bb1b46" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>

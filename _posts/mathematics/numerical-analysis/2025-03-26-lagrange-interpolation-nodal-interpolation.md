@@ -1,0 +1,63 @@
+---
+title: "Lagrange Interpolation - Nodal Polynomial"
+toc: true
+author: bluehorn_math
+toc_sticky: true
+categories: ["Numerical Analysis"]
+excerpt: ""
+---
+
+수학과 복수전공을 위해 졸업 마지막 학기에 "수치해석개론" 수업을 듣게 되었습니다. 수학과 졸업시험도 겸사겸사 준비할 겸 화이팅 해봅시다!! 전체 포스트는 "[Numerical Analysis](/categories/numerical-analysis)"에서 확인할 수 있습니다.
+{: .notice }
+
+"[라그랑주 보간법](/2025/03/19/lagrange-interpolation/)"의 응용에 대해 다루는 포스트 입니다.
+
+# Nodal Polynomial
+
+주어진 $n$개의 데이터 노드에 대해 아래와 같은 $n$차 다항식을 정의합니다.
+
+$$
+\omega_n(x) = \prod_{j=1}^n (x - x_j)
+$$
+
+이것을 "Nodal Polynomial"이라고 합니다. 이 다항식은 모든 $x_j$를 근으로 갖습니다.
+
+<br/>
+
+그리고 이 다항식을 미분하면 아래와 같습니다.
+
+$$
+\omega_n'(x)
+= \sum_{k=1}^{n} \left[
+\prod_{j=1, j \ne k} (x - x_j)
+\right]
+$$
+
+사실 단순히 "곱의 미분법"을 적용한 결과입니다. 이 도함수에 $x_j$를 대입하면
+
+$$
+\omega_n'(x_j) = \prod_{i=1, i \ne j} (x_j - x_i)
+$$
+
+이렇게 $x_j$를 제외하고 만든 Nodal Polynomial을 얻을 수 있습니다.
+
+# Lagrange Polynomial
+
+신기하게도 "[라그랑주 보간법](/2025/03/19/lagrange-interpolation/)"를 구성하는 라그랑주 다항식 $L_i(x)$을 Nodal Polynomial로 표현할 수 있습니다!
+
+$$
+L_i(x) = \frac{\omega_n(x)}{(x-x_i) \cdot \omega_n'(x_i)}
+$$
+
+이 표현이 좋은 이유는 모든 $L_i(x)$에 대해서 $\omega_n(x)$ 부분이 공통이기 때문입니다! 그래서 분자 파트에 대한 반복 계산을 줄일 수 있습니다.
+
+그리고 $\omega_n'(x_i)$는 상수 입니다! 그래서 처음 구성할 때 한번만 계산하면 됩니다!
+
+정규화 상수의 의미는 뭔가?
+
+![alt text](image-3.png)
+
+![alt text](image-4.png)
+
+뉴턴 방법에서도 이 방식이 언급 됨.
+

@@ -17,4 +17,4 @@ toc_sticky: true
   - [Newton’s Divided Differences](/2025/03/27/newton-divided-differences/)
   - [Interpolation Error](/2025/03/29/interpolation-error/)
   - [Interpolation for Uniformly Spaced Nodes, Runge Phenomenon](/2025/03/30/interpolation-error-for-uniformly-spaced-nodes/)
-
+  - [Hermite Interpolation]
