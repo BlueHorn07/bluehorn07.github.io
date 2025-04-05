@@ -82,7 +82,7 @@ toc_sticky: true
   - Divergence $\nabla \cdot \mathbf{F}$
   - Curl $\nabla \times \mathbf{F}$
   - Laplace Operator $\nabla^2$
-  - Vector form of Green Theorem
+  - [Vector form of Green Theorem](/2024/07/25/vector-form-of-green-theorem/)
     - Tangential Form
     - Normal Form
 - [Parametric Surface, and Surface Integral](/2024/08/10/paramteric-surface/)
