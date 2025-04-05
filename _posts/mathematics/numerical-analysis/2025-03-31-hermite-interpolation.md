@@ -226,7 +226,7 @@ Since $R(x_i) = 0$, then $R$ has $n$ distinct zeros.
 
 </div>
 
-.... TODO!
+.... TODO! 중간고사의 나에게 맡긴다.. ㅋㅋ
 
 
 </div>

@@ -53,11 +53,48 @@ $$
 
 그리고 $\omega_n'(x_i)$는 상수 입니다! 그래서 처음 구성할 때 한번만 계산하면 됩니다!
 
-정규화 상수의 의미는 뭔가?
+$$
+\omega_n(x) = (x - x_i) \cdot \prod_{i \ne j} (x - x_j)
+$$
 
-![alt text](image-3.png)
+를 만족하기 때문에 $L_i(x)$는 여전히 $\delta_{ij}$ 성질을 만족 합니다.
 
-![alt text](image-4.png)
+$$
+L_i(x)
+\begin{cases}
+ \frac{\omega_n(x_i)}{(x_i-x_i) \cdot \omega_n'(x_i)}
+ = \cancelto{1}{\frac{(x_i-x_i)}{(x_i-x_i)}} \cdot \cancelto{1}{\frac{\prod_{i \ne j} (x_i - x_j)}{\omega_n'(x_i)}} & x = x_i \\
+\frac{\omega_n(x_j)}{(x_j-x_i) \cdot \omega_n'(x_i)} = \frac{0}{...} = 0 & x \ne x_i
+\end{cases}
+$$
 
-뉴턴 방법에서도 이 방식이 언급 됨.
+그래서 이걸 종합해 보간 함수 $I_n f(x)$를 적어보겠습니다.
 
+$$
+\begin{aligned}
+I_n f(x)
+&= \sum_i L_i(x) \cdot f(x_i) \\
+&= \sum_i \frac{\omega_n(x)}{(x-x_i)\omega_n'(x_i)} \cdot f(x_i)
+\end{aligned}
+$$
+
+# Newton's Divided Difference
+
+"[뉴턴의 나눗셈 차분](/2025/03/27/newton-divided-differences/)"도 Nodal Polynomial을 통해 표현할 수 있습니다.
+
+$$
+P_n(x) = f[x_0] + \sum_{k=1}^n \left[ f[x_0, x_1, \dots, x_k] \cdot \prod_{j=1}^{k-1} (x - x_j) \right]
+$$
+
+이때, 라그랑지 보간법의 결과와 뉴턴 보간법의 최고차항의 계수를 비교해보면
+
+- 뉴턴 보간법
+  - $f[x_1, \dots, x_n]$
+- 라그랑지 보간법
+  - $\sum_i \frac{f(x_i)}{\omega_n'(x_i)}$
+
+가 됩니다. 따라서 아래의 식이 성립 합니다.
+
+$$
+f[x_1, \dots, x_n] = \sum_i \frac{f(x_i)}{\omega_n'(x_i)}
+$$
