@@ -15,6 +15,7 @@ toc_sticky: true
 - Interpolation and Polynomial Approximation
   - [Lagrange Interpolation](/2025/03/19/lagrange-interpolation/)
     - [Lagrange Interpolation - Nodal Polynomial](/2025/03/26/lagrange-interpolation-nodal-interpolation/)
+    - [Lagrange Interpolation - Vandermonde Matrix](/2025/03/26/lagrange-interpolation-vandermonde-matrix/)
   - [Newton’s Divided Differences](/2025/03/27/newton-divided-differences/)
   - [Interpolation Error](/2025/03/29/interpolation-error/)
   - [Interpolation for Uniformly Spaced Nodes, Runge Phenomenon](/2025/03/30/interpolation-error-for-uniformly-spaced-nodes/)
