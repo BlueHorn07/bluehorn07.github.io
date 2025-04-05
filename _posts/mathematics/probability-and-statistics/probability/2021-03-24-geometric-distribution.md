@@ -86,9 +86,7 @@ Let $X \sim \text{Geo}(p)$, then
 <details class="proof" markdown="1">
 <summary>펼쳐보기</summary>
 
-<span class="statement-title">*Proof*.</span><br>
-
-1\. $E[X]$
+<span class="statement-title">*Proof*. $E[X]$</span><br>
 
 $$
 \begin{aligned}
@@ -122,9 +120,12 @@ $$
 
 따라서, $\displaystyle E[X] = p S = p \frac{1}{(1-q)^2} = \frac{p}{p^2} = \frac{1}{p}$
 
+</details>
 
+<details class="proof" markdown="1">
+<summary>펼쳐보기</summary>
 
-2\. $\text{Var}(X)$
+<span class="statement-title">*Proof*. $\text{Var}(X)$</span><br>
 
 $\text{Var}(X)$를 구하기 위해 $E[X^2]$를 구해야 한다. 이때, 계산의 편의를 위해 $E[X^2]$ 대신 $E[X(X-1)]$를 구하는 테크닉을 사용하자.
 

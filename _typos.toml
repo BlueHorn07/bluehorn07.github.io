@@ -28,3 +28,4 @@ extend-exclude = [
 "FO" = "FO"
 "astroid" = "astroid"
 "circulaire" = "circulaire"
+"strang" = "strang"

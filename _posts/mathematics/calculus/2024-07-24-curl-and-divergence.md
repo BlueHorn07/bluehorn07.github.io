@@ -73,7 +73,7 @@ $$
 [Gilbert Strang - Calculus Vol 3.](https://open.umn.edu/opentextbooks/textbooks/calculus-volume-3): Zero Divergence
 {: .align-caption .text-center .small .gray }
 
-반면에 압축을 전혀 받지 않는 벡터장도 있다. $\mathbf{F}(x, y) = \left<-x, y\right>$인 벡터장은 div를 계산해보면 $0$이 된다. 따라서 모든 점에서 압촉을 받지 않는다.
+반면에 압축을 전혀 받지 않는 벡터장도 있다. $\mathbf{F}(x, y) = \left<-x, y\right>$인 벡터장은 div를 계산해보면 $0$이 된다. 따라서 모든 점에서 압축을 받지 않는다.
 
 <br/>
 
