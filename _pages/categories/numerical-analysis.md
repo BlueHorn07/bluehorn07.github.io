@@ -10,7 +10,7 @@ toc_sticky: true
 - Error Analysis
   - Truncation Error
   - Round-off Error
-- Solutions of Equations in One Variable
+- Root-finding
   - [Bisection Method](/2025/03/12/bisection-method/)
   - [Fixed-point Method](/2025/03/12/fixed-point-method/)
   - [Newton’s Method](/2025/03/17/newton-method/)

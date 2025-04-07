@@ -163,7 +163,7 @@ $$
 Given divided difference $f[x_1, \dots, x_n]$, it can be derived from the $n-1$-th derivatives like
 
 $$
-[x_1, \dots, x_n] = \frac{f^{(n-1)}(\xi)}{(n-1)!}
+f[x_1, \dots, x_n] = \frac{f^{(n-1)}(\xi)}{(n-1)!}
 $$
 
 where $\xi \in \left(\min(\left\\{ x_i \right\\}), \max(\left\\{ x_i \right\\})\right)$

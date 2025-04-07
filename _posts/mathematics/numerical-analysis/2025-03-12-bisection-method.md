@@ -12,7 +12,7 @@ excerpt: ""
 
 # Bisection Method
 
-![](/images/mathematics/numerical-analysis/bisectino-method.png){: .fill .align-center style="width: 400px" }
+![](/images/mathematics/numerical-analysis/bisection-method.png){: .fill .align-center style="width: 400px" }
 
 비선형 방정식 $f(x) = 0$의 근을 찾기 위한 수치적 방법 입니다. 특정 구간에서 함수 부호 변화를 이용해 근이 존재 가능한 범위를 점진적으로 좁혀나갑니다.
 

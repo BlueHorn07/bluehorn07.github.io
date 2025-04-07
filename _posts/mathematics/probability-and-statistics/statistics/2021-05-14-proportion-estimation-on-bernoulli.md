@@ -53,6 +53,9 @@ $$
 
 [Solution 1] solve the inequality for $p$.
 
+"['이상준' 교수의 수업 내용(회원전용)](https://youtu.be/Pk_ro-EvhLc?si=eXns00YcewPVlVpP)"을 참고.
+
+
 [Solution 2] replace $p$ by $\hat{p}$ <small>// if $n$ is large, $\hat{p} \rightarrow p$ by LLN</small>
 
 Therefore, we the $n$ is large,
