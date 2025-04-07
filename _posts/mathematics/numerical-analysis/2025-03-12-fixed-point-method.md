@@ -4,7 +4,7 @@ toc: true
 author: bluehorn_math
 toc_sticky: true
 categories: ["Numerical Analysis"]
-excerpt: ""
+excerpt: "자기 사상(self-mapping)하는 함수에서 고정점(fixed-point)을 찾기 위한 재귀적 방법에 대해"
 ---
 
 수학과 복수전공을 위해 졸업 마지막 학기에 "수치해석개론" 수업을 듣게 되었습니다. 수학과 졸업시험도 겸사겸사 준비할 겸 화이팅 해봅시다!! 전체 포스트는 "[Numerical Analysis](/categories/numerical-analysis)"에서 확인할 수 있습니다.
@@ -140,3 +140,6 @@ TODO: 증명
 
 TODO
 
+# 맺음말
+
+먼저 살펴본 "/2025/03/12/bisection-method/"는 이분 탐색의 컨셉으로 근을 찾는 방식 입니다. "Fixed-point Iteration"은 **고정점(fixed-point)을 찾기 위한 재귀적인 방법**이라고 할 수 있습니다. 이때, 재귀적인 방법이 발산하지 않고 수렴하기 위해서는 함수가 자기 사상(self-mapping)라는 성질이 필요한 것이구요!
