@@ -263,3 +263,21 @@ $$
 # 맺음말
 
 뭔가 [응용복소함수론(MATH210)](/categories/complex-variable) 수업에서 이런 적분을 많이 했던 기억이 있다. 그때도 닫힌 영역에 대해서 커브의 모양에 상관 없이 적분값이 같은 그런 적분들을 많이 만났던 기억이 난다. 미적2 들을 때, 열심히 들었으면 응복함이 좀더 쉬웠으려냐 ㅠㅠ
+
+이어지는 내용은 미적2의 꽃이라고 할 수 있는 "[발산(divergence)와 회전(curl)](/2024/07/24/curl-and-divergence)" 입니다! 그리고 이걸 잘 익히고 나면, 그린 정리를 이 두 연산자를 활용해 기술한 "[Vector Form of Green Theorem](/2024/07/25/vector-form-of-green-theorem/)"을 살펴볼 수 있습니다. 벡터 폼에서는 아래와 같이 2가지 폼이 있습니다.
+
+[Tangential Form]
+
+$$
+\oint_C \mathbf{F}\cdot d\mathbf{r}
+= \iint_D \nabla \times \mathbf{F} \, dA
+= \iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) \, dA
+$$
+
+[Normal Form]
+
+$$
+\oint_C \mathbf{F}\cdot \mathbf{N} \, ds
+= \iint_D \nabla \cdot \mathbf{F} \, dA
+= \iint_D \left( \frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} \right) \, dA
+$$

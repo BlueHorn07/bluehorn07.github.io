@@ -24,4 +24,4 @@ toc_sticky: true
   - [Interpolation for Uniformly Spaced Nodes, Runge Phenomenon](/2025/03/30/interpolation-error-for-uniformly-spaced-nodes/)
   - [Hermite Interpolation](/2025/03/31/hermite-interpolation/)
     - Hermite Interpolation using Divided Differences
-  - Spline
+  - [Spline Method](/2025/04/02/spline-method/)
