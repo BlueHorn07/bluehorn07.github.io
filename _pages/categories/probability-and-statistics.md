@@ -48,7 +48,8 @@ toc_sticky: true
       - [Negative Binomial Theorem](/2022/10/30/negative-binomial-theorem)
   - [Poisson Distribution](/2021/03/25/poisson-distribution)
     - Law of Rare Events
-    - Bernoulli Process & Poisson Process
+  - [Bernoulli Process](/2021/03/26/bernoulli-process/)
+  - [Poisson Process](/2021/03/26/poisson-process/)
 - Continuous Probability Distribution
   - [Uniform Distribution](/2021/03/29/uniform-distribution)
   - [Normal Distribution](/2021/03/30/normal-distribution)
