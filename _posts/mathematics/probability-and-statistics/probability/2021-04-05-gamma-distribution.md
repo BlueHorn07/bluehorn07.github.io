@@ -91,8 +91,6 @@ $$
 \end{aligned}
 $$
 
-<hr/>
-
 # Standard Gamma Distribution
 
 신기하게도 Gamma 함수 $\Gamma(\alpha)$로부터 아래와 같은 확률 분포를 정의할 수 있다.
@@ -177,8 +175,6 @@ In fact, $X$ can be written as $X = X_1 + \cdots + X_n$ where $X_i$'s are indepe
 
 예를 들어, 사건이 $3$번 일어나기까지 걸린 시간에 대한 분포는 $\text{Gamma}(3, \beta)$를 따른다는 말이다! 그래서 \<Exponential Distribution\>에 대한 일반화라고 볼 수도 있다.
 
-<hr/>
-
 <div class="theorem" markdown="1">
 
 <span class="statement-title">Theorem.</span><br/>
@@ -213,8 +209,6 @@ $$
 \end{aligned}
 $$
 
-<hr/>
-
 분산에 대한 증명에서는 $E[X^2]$를 구해야 한다.
 
 $$
@@ -240,50 +234,13 @@ $$
 
 </div>
 
-<hr/>
-
 ## Relation to Poisson Process
 
 Let $N(t)$ be a \<Poisson process\> with rate $\lambda$. Let $X$ be the time to the $n$-th event in the \<Poisson process\>.
 
 Claim: $X \sim \text{Gamma}(n, \beta)$ where $\beta = 1/\lambda$
 
-<div class="proof" markdown="1">
 
-$$
-\begin{aligned}
-P(X > t) = P(N(t) < n)
-\end{aligned}
-$$
-
-이때, $N(t) \sim \text{POI}(\lambda t)$이므로,
-
-$$
-\begin{aligned}
-P(N(t) < n) &= \sum^{n-1}_{k=0} P(N(t) = k) \\
-            &= \sum^{n-1}_{k=0} e^{-\lambda t} \frac{(\lambda t)^k}{k!}
-\end{aligned}
-$$
-
-위의 식을 통해 $X$의 cdf를 알고 있으니, 이것을 미분해 $X$의 pdf를 유도해보자.
-
-$$
-\begin{aligned}
-\frac{d}{dt} P(X \le t) &= - \frac{d}{dt} P(X > t) \\
-        &= - \left( \sum^{n-1}_{k=0} (-\lambda) e^{-\lambda t} \frac{(\lambda t)^k}{k!} + \sum^{n-1}_{k=1} \lambda e^{-\lambda t} \frac{(\lambda t)^{(k-1)}}{(k-1)!}\right) \\
-        &= \lambda e^{-\lambda t} \cdot \left( \sum^{n-1}_{k=0} \frac{(\lambda t)^k}{k!} - \sum^{n-1}_{k=1} \frac{(\lambda t)^{(k-1)}}{(k-1)!} \right) \\
-        &= \lambda e^{-\lambda t} \frac{(\lambda t)^{(n-1)}}{(n-1)!} \\
-        &= \frac{\lambda^n}{(n-1)!} \cdot t^{n-1} e^{-\lambda t} \\
-        &= \frac{\lambda^n}{\Gamma(n)} \cdot t^{n-1} e^{-\lambda t} \\
-        &= \frac{1}{\Gamma(n) \beta^n} \cdot t^{n-1} e^{-t/\beta} \\
-        &= C_{n, \beta} \cdot t^{n-1} e^{-t/\beta} \\
-        &= f(x; n, \beta)
-\end{aligned}
-$$
-
-즉, $X$는 $X \sim \text{Gamma}(n, \beta)$이다. $\blacksquare$
-
-</div>
 
 # 맺음말
 

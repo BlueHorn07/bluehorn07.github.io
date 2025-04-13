@@ -367,6 +367,10 @@ $$
 
 결국 $4(n-1)$를 구하는 문제는 $c_1, .., c_n$개 변수로 구성된 문제로 환원 되었으며, Natural Boundary 조건 $c_1 = c_n = 0$이 있다면, 최종적으로 $(n-2)$의 자유도를 갖는 선형 시스템으로 환원 됩니다.
 
+# Clamped Cubic Spline
+
+참고로 Spline의 유일성은 Clamped Spline에서도 성립 합니다.
+
 
 # 맺음말
 

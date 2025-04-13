@@ -9,7 +9,7 @@ categories: ["Probability"]
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
 {: .notice--info}
 
-## Moment Generating Function
+# Moment Generating Function
 
 <div class="definition" markdown="1">
 
@@ -79,11 +79,9 @@ $$
 \left. \frac{d^k}{dt^k} M_X(t) \right|_{t=0} = \left. E \left[ X^k e^{tX}\right] \right|_{t=0} = E[X^k]
 $$
 
-<hr/>
+# Examples
 
-### MGF Examples
-
-<span class="statement-title">Example.</span><br>
+## Binomial
 
 Let $X \sim \text{BIN}(n, p)$, then find its MGF.
 
@@ -103,9 +101,8 @@ $$
 \left. \frac{d}{dt} M_X(t) \right|_{t=0} = \left. n \cdot p \cdot \left( p \cdot e^t + q \right)^{n-1} \right|_{t=0} = np
 $$
 
-<br/>
 
-<span class="statement-title">Example.</span><br>
+## Poisson
 
 Let $X \sim \text{Poi}(\lambda)$, find its MGF.
 
@@ -129,7 +126,8 @@ $$
 \end{aligned}
 $$
 
-<span class="statement-title">Example.</span><br>
+
+## Negative Binomial
 
 Let $X \sim \text{NegBIN}(k, p)$, find its MGF.
 
@@ -174,7 +172,8 @@ $$
 M_X (t) = \frac{p \cdot e^t}{1 - q\cdot e^t} \qquad \text{for} \quad 1 - q \cdot e^{t} > 0
 $$
 
-<span class="statement-title">Example.</span><br>
+
+## Gamma
 
 Let $X \sim \text{Gamma}(\alpha, \beta)$, find its MGF.
 
@@ -214,7 +213,9 @@ $$
 M_X(t) = \frac{1}{1-\beta t} \qquad \text{for} \quad \beta t < 1 \quad (=t < \lambda)
 $$
 
-<span class="statement-title">Example.</span><br>
+
+
+## Normal
 
 Let $Z \sim N(0, 1)$, then find its MGF.
 
@@ -240,9 +241,7 @@ M_X(t) &= E[e^{tX}] = E[e^{\sigma t z + \mu t}] \\
 \end{aligned}
 $$
 
-<hr/>
-
-<span class="statement-title">Remark.</span><br>
+## Linearity
 
 If $X$ has the mgf $M_X(t)$, then $Y = aX + b$ has the mgf
 
@@ -252,7 +251,7 @@ $$
 
 <hr/>
 
-### Uniqueness Theorem for MGF
+# Uniqueness Theorem for MGF
 
 mgf는 미분만 하면 momentum을 쉽게 구할 수 있다는 장점도 있지만, \<Uniqueness Theorem\>이라는 아래의 정리에 의해 두 RV이 동일한 분포를 가지는 것을 보장하는 조건이 되기도 한다.
 
@@ -315,7 +314,7 @@ $$
 
 <hr/>
 
-### MGF with Independence
+# MGF with Independence
 
 If $X \perp Y$, then
 

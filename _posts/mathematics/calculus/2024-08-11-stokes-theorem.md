@@ -37,7 +37,9 @@ $$
 
 </div>
 
-이때, 곡선 $C$를 경계 곡선으로 갖는 곡면/평면은 여러 개가 있을 수 있는데, 스토스크 정리에 따라 그들의 curl 적분값 모두 같은 값을 가지게 된다.
+이때, $d\mathbf{S}$는 "미소 면적 벡터"입니다. 면적의 Normal 벡터이고, 풀어서 쓰면 $\mathbf{n} \, dS$라고 씁니다.
+
+곡선 $C$를 경계 곡선으로 갖는 곡면/평면은 여러 개가 있을 수 있는데, 스토스크 정리에 따라 그들의 curl 적분값 모두 같은 값을 가지게 된다.
 
 <div class="definition" markdown="1">
 
@@ -99,3 +101,4 @@ $$
 
 이때, [$\nabla \cdot (\nabla \times \mathbf{F}) = 0$라는 항등식](/2024/07/24/curl-and-divergence/#curl-and-div)에 의해 부피 적분의 값이 0이 되고, 덩달아 curl 벡터의 면적분 값도 0이 된다.
 
+이건 맛보기 였고, 바로 "[발산 정리(Divergence Theorem)](/2024/08/14/divergence-theorem/)"까지 살펴보자!

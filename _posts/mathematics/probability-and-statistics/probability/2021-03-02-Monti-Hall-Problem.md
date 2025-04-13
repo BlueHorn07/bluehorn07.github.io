@@ -5,6 +5,7 @@ author: bluehorn_math
 toc_sticky: true
 categories: ["Probability"]
 ---
+
 “확률과 통계(MATH230)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Probability and Statistics](/categories/probability-and-statistics)에서 확인하실 수 있습니다 🎲
 {: .notice--info}
 
@@ -105,11 +106,11 @@ categories: ["Probability"]
 따라서
 
 $$
-P(C_{\textsf{A}} \mid G_{\textsf{B}}) = \frac{P(G_{\textsf{B}} \mid C_{\textsf{A}})}{P(G_{\textsf{B}} \mid C_{\textsf{A}}) + P(G_{\textsf{B}} \mid C_{\textsf{B}}) + P(G_{\textsf{B}} \mid C_{\textsf{C}})} = \frac{0.5}{0.5 + 1 + 0} = \frac{1}{3}
+P(C_{\textsf{A}} \mid G_{\textsf{B}}) = \frac{P(G_{\textsf{B}} \mid C_{\textsf{A}})}{P(G_{\textsf{B}} \mid C_{\textsf{A}}) + P(G_{\textsf{B}} \mid C_{\textsf{B}}) + P(G_{\textsf{B}} \mid C_{\textsf{C}})} = \frac{0.5}{0.5 + 0 + 1} = \frac{1}{3}
 $$
 
 $$
-P(C_{\textsf{C}} \mid G_{\textsf{B}}) = \frac{P(G_{\textsf{B}} \mid C_{\textsf{B}})}{P(G_{\textsf{B}} \mid C_{\textsf{A}}) + P(G_{\textsf{B}} \mid C_{\textsf{B}}) + P(G_{\textsf{B}} \mid C_{\textsf{C}})} = \frac{1}{0.5 + 1 + 0} = \frac{2}{3}
+P(C_{\textsf{C}} \mid G_{\textsf{B}}) = \frac{P(G_{\textsf{B}} \mid C_{\textsf{C}})}{P(G_{\textsf{B}} \mid C_{\textsf{A}}) + P(G_{\textsf{B}} \mid C_{\textsf{B}}) + P(G_{\textsf{B}} \mid C_{\textsf{C}})} = \frac{1}{0.5 + 0 + 1} = \frac{2}{3}
 $$
 
 $P(C_{\textsf{C}} \mid G_{\textsf{B}})$의 확률이 더 높다는 것은, 문 $\textsf{B}$에서 염소를 봤다면, 처음 선택한 문 $\textsf{A}$가 아닌 다른 문 $\textsf{C}$에 자동차가 있을 확률이 크다는 것이다!
@@ -120,6 +121,4 @@ $P(C_{\textsf{C}} \mid G_{\textsf{B}})$의 확률이 더 높다는 것은, 문 $
 
 # 여담
 
-수업에서 이 문제를 본 후에, "21"라는 이름의 블랙잭 게임에 대한 카지노 영화에서 이 문제를 한번더 만났다. 영화에서는 깊은 설명 없이 잠깐 등장한다. 그래도 나름 반가웠달까 ㅋㅋ
-
-
+수업에서 이 문제를 본 후에, "21"라는 이름의 블랙잭 게임에 대한 카지노 영화에서 이 문제를 한번더 만났다. 영화에서는 깊은 설명 없이 잠깐 등장한다. 나름 반가웠달까 ㅋㅋ

@@ -13,7 +13,7 @@ categories: ["Probability"]
 
 이번에는 <span class="half_HL">BP에서 극한을 취해 time interval의 간격을 아주아주 줄인, 그래서 결국 continuous한 시간축 위에서 시행되는 \<Poisson Process\></span>에 대해 살펴보자. 아래에 기술되는 내용은 아래의 유튜브 영상을 기준으로 작성하였다.
 
-👉 [YouTube - Definition of the Possion Process](https://youtu.be/D_EGYzqmapc)
+👉 [YouTube - Definition of the Poisson Process](https://youtu.be/D_EGYzqmapc)
 
 <br/>
 
@@ -119,7 +119,7 @@ $$
 $$
 
 
-정리하면, $N(t)$를 모은 sequence $\\{ N(t) : t \ge 0\\}$는 \<Possion Process\>다. 그리고 개별 $N(t)$는 \<Poission Distribution\>을 따른다. 🤩
+정리하면, $N(t)$를 모은 sequence $\\{ N(t) : t \ge 0\\}$는 \<Poisson Process\>다. 그리고 개별 $N(t)$는 \<Poission Distribution\>을 따른다. 🤩
 
 $$
 N(t) \sim \text{POI}(\lambda t)
