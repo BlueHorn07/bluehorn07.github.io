@@ -5,13 +5,21 @@ toc_sticky: true
 categories: ["Macro Economics"]
 ---
 
+졸업을 위해 마지막 학기에 "미시경제학" 수업을 듣게 되었습니다.
+경제학원론 수업을 재밌게 들어서 경제 쪽이랑 궁합이 좋은 줄 알고 신청 했는데, 웬걸... 이 과목은 사실상 수학과 과목 이었습니다.. ㅋㅋ
+그래도 어영부영 수학과 복수전공을 하고 있으니, 이 수업도 힘내서 잘 들어봅시다!
+전체 포스트는 "[미시경제학](/categories/micro-economics)" 카테고리에서 확인하실 수 있습니다.
+{: .notice }
+
 # Lotteries
 
-확률적인 결과를 포함하는 선택지 입니다. 사람이 선택을 하면, 보상이 확률적으로 결정 됩니다.
+지금까지 살펴본 선호(Preference), 효용 함수(Utility Functions), 선택 함수(Choice Functions) 모두 선택과 결과가 고정적으로 정해지는 상황이었습니다.
 
-어떤 보상의 집합을 $Z$라고 할 때,
+복권(Lotteries)는 확률적인 결과를 포함하는 선택지 입니다. 사람이 선택을 하면, 보상이 확률적으로 결정 됩니다.
 
-Lottery $p$는 $z \in Z$에 확률 $p(z)$를 할당 합니다.
+<div class="definition" markdown="1">
+
+어떤 보상의 집합을 $Z$라고 할 때, Lottery $p$는 $z \in Z$에 확률 $p(z)$를 할당 합니다.
 
 로터리에서 확률이 0보다 큰 보상의 집합을 support $\text{supp}(p)$라고 합니다.
 
@@ -25,17 +33,23 @@ $$
   - the lottery that yields the prize $z$ with probability 1
   - Deterministic Lottery, Unity Lottery
 
-그리고 Lottery에 대한 표기는 아래와 같이 할 수 있습니다.
+</div>
+
+그리고 복권 "Lottery"에 대한 표기는 아래와 같이 할 수 있습니다.
+
+<div class="definition" markdown="1">
 
 each $\alpha_k = p(z_k)$
 
 $$
-\alpha_1 \cdot z_1
+p = \alpha_1 \cdot z_1
 \oplus
 \cdots
 \oplus
 \alpha_n \cdot z_n
 $$
+
+</div>
 
 ## Visualize set of lotteries
 
@@ -120,16 +134,17 @@ $$
 $$
 
 
-"선호 관계가 복권에 대해 연속성을 갖는다"고 말할 수 있습니다.
+"선호 관계가 복권에 대해 **연속성**을 갖는다"고 말합니다.
 
 </div>
 
-비관주의자가 갖는 선호는 연속성을 갖지 못합니다. 왜냐하면, 비관주의자는 $a$와 $c$를 섞은 복권이 있으면 항상 $c$를 기준으로 판단하기 때문입니다.
+비관주의자가 갖는 선호는 연속성을 갖지 못합니다. 왜냐하면, 비관주의자는 $a$와 $c$를 섞은 복권이 있으면 항상 안 좋은 선택지 $c$를 기준으로 판단하기 때문입니다.
 
 "Good and Bad" 선호는 vacuously 연속이라고 합니다. 그 이유는 좋은 결과가 나올 확률의 총합 $G(p)$만 보고 판단하기 때문에 보상에 대한 조합이 의미가 없기 때문입니다. 이 선호에서는 연속성을 테스트할 상황 자체가 없다고 합니다.
 
 "Minimizing Options"도 vacuously 연속이라고 합니다. 왜냐하면, $[a] \succ [b] \succ [c]$와 같은 보상 간의 선호가 아예 정의되지 않기 때문입니다. 그래서 애초에 연속성에 대한 전재가 성립하지 않고, 연속성이 vacuously 만족한다고 봅니다.
 
+\* "vacuously 연속한다"는 것은 공허하게 연속이다라는 건데, 조건을 만족해야 할 상황 자체가 아예 존재하지 않기 떄문에 조건을 자동으로 만족한다는 것을 말합니다.
 
 
 # Compound Lottery
@@ -171,7 +186,7 @@ $$
 [z_k] \succeq \beta a \oplus (1-\beta) b
 $$
 
-그러면, 아래의 선호도 성립 한다면, 그 선호가 복권에 대해 독립성을 갖습니다.
+선호가 복권에 대해 독립성을 갖는다면, 아래의 선호에 대한 부등식도 성립 합니다.
 
 $$
 \alpha_1 z_1 \oplus \cdots \oplus \alpha_k z_k \oplus \cdots \oplus a_n z_n
@@ -184,4 +199,6 @@ $$
 그리고 이 명제에 대한 역도 성립 합니다.
 
 </div>
+
+# Monotonicity
 
