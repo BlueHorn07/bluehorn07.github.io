@@ -1,8 +1,9 @@
 ---
-title: "Preference of Bundle Preference"
+title: "Bundle Preference: Convexity"
 toc: true
 toc_sticky: true
 categories: ["Macro Economics"]
+excerpt: ""
 ---
 
 졸업을 위해 마지막 학기에 "미시경제학" 수업을 듣게 되었습니다.
@@ -11,11 +12,4 @@ categories: ["Macro Economics"]
 전체 포스트는 "[미시경제학](/categories/micro-economics)" 카테고리에서 확인하실 수 있습니다.
 {: .notice }
 
-이전 포스트에서는 번들의 정의와 번들 위에서 정의한 선호의 사례들을 살펴보았습니다.
-
-- Constant Tradeoff
-- Only Preference
-- Stepwise Preference
-- Complementary Goods
-- Ideal Bundle
-- Lexicographic Preference
+# 들어가며

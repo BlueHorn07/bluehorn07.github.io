@@ -3,6 +3,7 @@ title: "Expected Utility"
 toc: true
 toc_sticky: true
 categories: ["Macro Economics"]
+excerpt: ""
 ---
 
 졸업을 위해 마지막 학기에 "미시경제학" 수업을 듣게 되었습니다.
