@@ -20,12 +20,12 @@ excerpt: "경제학에서 개인의 선호를 모델링 하는 방법에 대해"
 
 경제학에서는 개인의 선호를 "이항 관계(binary relation)"으로 표현함.
 
-- $x \succeq y$ := prefer $x$ than $y$
+- $x \succcurlyeq y$ := prefer $x$ than $y$
 - $x \sim y$ := prefer $x$ and $y$ equally
 
-$x \sim y$는 풀어서 작성하면, $x \succeq y$ and $x \preceq y$인 상황임. 이걸 두 대상이 "indifference"하다고 함.
+$x \sim y$는 풀어서 작성하면, $x \succcurlyeq y$ and $x \preceq y$인 상황임. 이걸 두 대상이 "indifference"하다고 함.
 
-$x \succ y$는 $x \succeq y$ but not $x \preceq y$인 상황임. 이 상황은 "strict preference"라고 함.
+$x \succ y$는 $x \succcurlyeq y$ but not $x \preceq y$인 상황임. 이 상황은 "strict preference"라고 함.
 
 
 ## Binary Relation
@@ -48,12 +48,12 @@ Binary Relation이 $x R y$ and $y R z$ 일 때, $x R z$를 만족하면, "**tran
 
 # Value Function
 
-개인이 대상에 가치를 매기는 함수 $v$를 말함. 그래서 $x \succeq y$ 선호 관계가 성립한다면, $v(x) \ge v(y)$가 성립함.
+개인이 대상에 가치를 매기는 함수 $v$를 말함. 그래서 $x \succcurlyeq y$ 선호 관계가 성립한다면, $v(x) \ge v(y)$가 성립함.
 
 만약 회사에서 집을 구하려는데, 사람들은 통근 시간을 줄이기 위해 회사와 가까울수록 그 집을 더 선호한다고 합니다. 이 경우, $d(x)$라는 거리 함수를 정의할 수 있고, 사람들의 선호는 아래와 같이 모델링 됩니다.
 
 $$
-x \succeq y \iff d(x) \le d(y)
+x \succcurlyeq y \iff d(x) \le d(y)
 $$
 
 이 경우, value function $v(x)$는 $v(x) = - d(x)$가 됩니다.
@@ -66,10 +66,10 @@ $$
 
 이걸 수식으로 적어본다면...
 
-2가지 complete and transitive 이항 관계 $\succeq_1$과 $\succeq_2$가 있다고 합시다. 이때, 대상에 대한 선호 $\succeq$는 아래와 같이 결정 됩니다.
+2가지 complete and transitive 이항 관계 $\succcurlyeq_1$과 $\succcurlyeq_2$가 있다고 합시다. 이때, 대상에 대한 선호 $\succcurlyeq$는 아래와 같이 결정 됩니다.
 
-- $x \succeq y$, if $x \succeq_1 y$
-- $x \succeq y$, if $x \sim_1 y$ and $x \succeq_2 y$
+- $x \succcurlyeq y$, if $x \succcurlyeq_1 y$
+- $x \succcurlyeq y$, if $x \sim_1 y$ and $x \succcurlyeq_2 y$
 
 complete하고 transitive한 2가지 이항 관게를 활용해 새로운 이항 관계를 만들었습니다. 이 이항 관계도 complete와 transitive를 만족할까요?
 
@@ -80,7 +80,7 @@ complete하고 transitive한 2가지 이항 관게를 활용해 새로운 이항
 아이디어는 $n$개의 고려 요소에 대해 모든 요소에 대해 $x$가 $y$보다 선호되거나 적어도 동등하다면, $x$가 $y$보다 낫다고 판단합니다.
 
 $$
-x \succeq y \quad \text{if} \quad x \succeq_i y \quad \text{for all } i = 1, 2, …, n.
+x \succcurlyeq y \quad \text{if} \quad x \succcurlyeq_i y \quad \text{for all } i = 1, 2, …, n.
 $$
 
 이 관계는 Transitivity를 만족하지만, Completeness는 보장하지 않습니다. 일부 쌍에 대해서는 만장일치 선호가 발생하지 않을 수 있습니다.
@@ -100,4 +100,4 @@ $n$가지 기준이 있을 때, 절반 이상의 조건에 대해 선호가 성�
 
 # 맺음말
 
-이어지는 포스트에서는 선호를 정의하는데 사용할 수 있는 "[효옹 함수(Utility Function)](/2025/03/10/utility-functions/)"에 대해 살펴보도록 하겠습니다.
+이어지는 포스트에서는 선호를 정의하는데 사용할 수 있는 "[효용 함수(Utility Function)](/2025/03/10/utility-functions/)"에 대해 살펴보도록 하겠습니다.

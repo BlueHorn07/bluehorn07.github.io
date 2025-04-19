@@ -17,6 +17,6 @@ toc_sticky: true
 - [Choice Functions](/2025/03/12/choice-functions/)
 - [Property $\alpha$](/2025/03/17/property-alpha/)
 - [Lotteries](/2025/03/19/lotteries/)
-- [Expected Utility]()
+- [Expected Utility](/2025/04/18/expected-utility/)
 - [Bundles of Goods]()
 - [Consumer Preferences]()

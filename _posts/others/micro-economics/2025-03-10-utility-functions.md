@@ -23,27 +23,27 @@ excerpt: "사람의 선호와 가치 함수에 대해"
 
 ## Definition
 
-For any set $X$ and preference relation $\succeq$ on $X$,
+For any set $X$ and preference relation $\succcurlyeq$ on $X$,
 
-the function $u: X \rightarrow \mathbb{R}$ represents $\succeq$ iff $u(x) \ge u(y)$.
+the function $u: X \rightarrow \mathbb{R}$ represents $\succcurlyeq$ iff $u(x) \ge u(y)$.
 
 # Alternative
 
 ## Minimal Alternative
 
-어떤 대안 $x \in X$가 "minimal alternative"라고 한다면, $x$는 다른 모든 $y \in X$에 대해서 $y \succeq x$ 관계를 만족합니다.
+어떤 대안 $x \in X$가 "minimal alternative"라고 한다면, $x$는 다른 모든 $y \in X$에 대해서 $y \succcurlyeq x$ 관계를 만족합니다.
 
 ## Maximal Alternative
 
-어떤 대안 $x \in X$가 "maximal alternative"라고 한다면, $x$는 다른 모든 $y \in X$에 대해서 $x \succeq y$ 관계를 만족합니다.
+어떤 대안 $x \in X$가 "maximal alternative"라고 한다면, $x$는 다른 모든 $y \in X$에 대해서 $x \succcurlyeq y$ 관계를 만족합니다.
 
 ## Existence of minimal/maximal alternatives
 
 <div class="theorem" markdown="1">
 
-Let $X$ be a nonempty-finite set and let $\succeq$ be a preference relation on $X$.
+Let $X$ be a nonempty-finite set and let $\succcurlyeq$ be a preference relation on $X$.
 
-At least one member of $X$ is minimal w.r.t $\succeq$ in $X$<br/>
+At least one member of $X$ is minimal w.r.t $\succcurlyeq$ in $X$<br/>
 and at least one member is maximal.
 
 </div>
@@ -64,9 +64,9 @@ Every preference relation on a finite set can be represented by a utility functi
 
 <div class="proof" markdown="1">
 
-유한 집합 $X$ 위에서 정의된 선호 관계 $\succeq$가 있습니다.
+유한 집합 $X$ 위에서 정의된 선호 관계 $\succcurlyeq$가 있습니다.
 
-집합 $X$의 원소 중, 선호 관계 $\succeq$에 따라 최소인 원소들의 집합 $M_1$을 정의합니다. minimal alternative인 원소는 하나 이상 존재할 수 있기 때문에 집합으로 표현 합니다.
+집합 $X$의 원소 중, 선호 관계 $\succcurlyeq$에 따라 최소인 원소들의 집합 $M_1$을 정의합니다. minimal alternative인 원소는 하나 이상 존재할 수 있기 때문에 집합으로 표현 합니다.
 
 이 집합 $M_1$은 공집합 $\emptyset$이 아니며, 이 원소들에 대한 효용 함수의 값을 $u(x) = 1$로 정의합니다.
 
@@ -99,7 +99,7 @@ TODO: proof
 
 Left $f$ is a real-valued increasing function.
 
-If $u$ represents the preference relation $\succeq$ on $X$,
+If $u$ represents the preference relation $\succcurlyeq$ on $X$,
 
 then so does the function $w$ defined by $w(x) = f(u(x))$ for all $x \in X$.
 
@@ -111,6 +111,6 @@ then so does the function $w$ defined by $w(x) = f(u(x))$ for all $x \in X$.
 # 맺음말
 
 효용 함수를 사용해 개인의 선호를 정의하는 방법을 살펴보았습니다.
-지금까지는 개인의 선호가 이항관계 $\succeq$로 명확히 제시되거나, 효용 함수를 통해 수치적으로 계산하였습니다.
+지금까지는 개인의 선호가 이항관계 $\succcurlyeq$로 명확히 제시되거나, 효용 함수를 통해 수치적으로 계산하였습니다.
 
 이어지는 포스트에서는 개인의 선호가 "[선택 함수(Choice Function)](/2025/03/12/choice-functions/)"의 형태로 표현 됩니다.

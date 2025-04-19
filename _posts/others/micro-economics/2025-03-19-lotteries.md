@@ -145,7 +145,7 @@ $$
 
 "Minimizing Options"도 vacuously 연속이라고 합니다. 왜냐하면, $[a] \succ [b] \succ [c]$와 같은 보상 간의 선호가 아예 정의되지 않기 때문입니다. 그래서 애초에 연속성에 대한 전재가 성립하지 않고, 연속성이 vacuously 만족한다고 봅니다.
 
-\* "vacuously 연속한다"는 것은 공허하게 연속이다라는 건데, 조건을 만족해야 할 상황 자체가 아예 존재하지 않기 떄문에 조건을 자동으로 만족한다는 것을 말합니다.
+\* "vacuously 연속한다"는 것은 공허하게 연속이라고 표현하는데, 조건을 만족해야 할 상황 자체가 아예 존재하지 않기 떄문에 조건을 자동으로 만족한다는 것을 말합니다.
 
 
 # Compound Lottery
@@ -173,7 +173,7 @@ $$
 
 # Independence
 
-복권의 부분에 대한 일관성이 복권 전체에 대한 일관성과 일치해야 한다는 성질 입니다.
+복권의 부분에 대한 일관성이 복권 전체에 대한 일관성과 일치한다는 성질 입니다.
 
 복권 내의 특정 항목을 다른 걸로 바꿨을 때, 복권 전체에 대한 선호도 그에 맞게 일관되게 바뀌어야 한다는 성질 입니다.
 
@@ -184,7 +184,7 @@ $$
 두 복권 사이에 아래와 같은 선호가 성립 합니다.
 
 $$
-[z_k] \succeq \beta a \oplus (1-\beta) b
+[z_k] \succcurlyeq \beta a \oplus (1-\beta) b
 $$
 
 선호가 복권에 대해 독립성을 갖는다면, 아래의 선호에 대한 부등식도 성립 합니다.
@@ -192,7 +192,7 @@ $$
 $$
 \alpha_1 z_1 \oplus \cdots \oplus \alpha_k z_k \oplus \cdots \oplus a_n z_n
 
-\succeq
+\succcurlyeq
 
 \alpha_1 z_1 \oplus \cdots \oplus \alpha_k (\beta a \oplus (1-\beta) b) \oplus \cdots \oplus a_n z_n
 $$
@@ -212,4 +212,80 @@ $$
 
 ## Independence implies Monotonicity
 
-TODO
+<div class="theorem" markdown="1">
+
+Let $Z$ be a set of prizes.
+
+Assume that $\succcurlyeq$, a preference relation over $L(Z)$, satisfies the independence property.
+
+Let $a$ and $b$ be two prizes with $[a] \succ [b]$, and let $\alpha$ and $\beta$ be two probabilities. Then
+
+$$
+\begin{aligned}
+\alpha &\succ \beta \\
+&\iff \\
+\alpha \cdot a \oplus (1 - \alpha) b
+&\succ
+\beta \cdot a \oplus (1 - \beta) b
+\end{aligned}
+$$
+
+</div>
+
+<div class="proof" markdown="1">
+
+복권 $p_{\alpha}$를
+
+$$
+p_{\alpha} = \alpha \cdot a \oplus (1 - \alpha) b
+$$
+
+라고 합시다. 복권에 대한 선호 관계가 독립성을 만족하므로 아래의 선호가 성립 합니다.
+
+$$
+p_{\alpha} \succ \alpha \cdot b \oplus (1 - \alpha) \cdot b
+$$
+
+위의 선호 관계는 사실 아래의 같습니다.
+
+$$
+p_{\alpha} \succ [b]
+$$
+
+이 선호 관계에서 선호의 독립성을 사용해 다시 이런 선호 관계를 얻을 수 있습니다.
+
+$$
+\begin{aligned}
+p_{\alpha}
+&= (\beta/\alpha) \cdot p_{\alpha} \oplus (1 - \beta/\alpha) \cdot p_{\alpha} \\
+&\succ (\beta/\alpha) \cdot p_{\alpha} \oplus (1 - \beta/\alpha) \cdot b
+\end{aligned}
+$$
+
+이제 위의 선호에 대한 식을 잘 정리하면,
+
+$$
+\begin{aligned}
+p_{\alpha}
+&\succ (\beta/\alpha) \cdot p_{\alpha} \oplus (1 - \beta/\alpha) \cdot b \\
+&= \beta \cdot a \oplus (1 - \beta) \cdot b
+\end{aligned}
+$$
+
+따라서,
+
+$$
+\alpha \cdot a \oplus (1 - \alpha) \cdot b
+\succ
+\beta \cdot a \oplus (1 - \beta) \cdot b
+$$
+
+$\blacksquare$
+
+</div>
+
+# 맺음말
+
+이어지는 포스트에서는 "[기대 효용(Expected Utility)](/2025/04/18/expected-utility/)"에 대해 살펴봅니다.
+
+경제학적 선택을 할 때, 많은 것들이 불확실성을 가지고 있습니다. 이번에 살펴본 복권(Lotteries)는 이 불확실을 모델링한 것 입니다. 기대 효용은 불확실함이 있을 때, 사람들의 선택의 기준이 됩니다. 그리고 사람들이 기대 효용에 따라 행동한다는 것을 전제로 경제학 이론이 발전하게 됩니다.
