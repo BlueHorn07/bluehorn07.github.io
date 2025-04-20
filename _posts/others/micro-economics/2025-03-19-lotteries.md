@@ -222,13 +222,13 @@ Assume that $\succcurlyeq$, a preference relation over $L(Z)$, satisfies the ind
 Let $a$ and $b$ be two prizes with $[a] \succ [b]$, and let $\alpha$ and $\beta$ be two probabilities. Then
 
 $$
-\begin{aligned}
-\alpha &\succ \beta \\
-&\iff \\
+\begin{gather*}
+\alpha \succ \beta \\
+\iff \\
 \alpha \cdot a \oplus (1 - \alpha) b
-&\succ
+\succ
 \beta \cdot a \oplus (1 - \beta) b
-\end{aligned}
+\end{gather*}
 $$
 
 </div>
@@ -238,10 +238,11 @@ $$
 복권 $p_{\alpha}$를
 
 $$
-p_{\alpha} = \alpha \cdot a \oplus (1 - \alpha) b
+p_{\alpha} = \alpha \cdot a \oplus (1 - \alpha) \cdot b
 $$
 
-라고 합시다. 복권에 대한 선호 관계가 독립성을 만족하므로 아래의 선호가 성립 합니다.
+라고 합시다. 복권에 대한 선호 관계가 독립성을 만족하므로,
+복권 $p_{\alpha}$에서 $a$를 $b$로 대체한 복권에 대해서 아래의 선호가 성립 합니다.
 
 $$
 p_{\alpha} \succ \alpha \cdot b \oplus (1 - \alpha) \cdot b
