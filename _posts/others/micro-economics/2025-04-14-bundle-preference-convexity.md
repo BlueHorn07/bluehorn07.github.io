@@ -45,7 +45,7 @@ $$
 
 그러나, $B \succ E$는 추론할 수 있습니다. 그 이유는 후보 $E$는 후보 $B$보다도 $A$에게 멀리 떨어져 있기 때문입니다.
 
-이것은 $A \succ B$라는 선호가 주어졌을 때, $A$에게 가까워지는 방향인지(후보 $C$), 아니면 $A$에게 멀어지는 방향인지(후보 $D$)를 기준으로만 선호를 추론할 수 있음을 말합니다.
+이것은 $A \succ B$라는 선호가 주어졌을 때, $A$에게 **가까워지는** 방향인지(후보 $C$), 아니면 $A$에게 **멀어지는** 방향인지(후보 $D$)를 기준으로만 선호를 추론할 수 있음을 말합니다.
 
 후보 $D$의 경우도, $A \succ D$도 가능할 수 있는게, $A$가 선호 중심 $\mathbf{x}^\ast$라고 한다면, $A$가 항상 선호되는 후보이기 때문입니다.
 
@@ -53,17 +53,147 @@ $$
 
 <div class="definition" markdown="1">
 
+The bundle preference is "convex" if for $a \succcurlyeq b$, then
 
+$$
+\lambda a + (1 - \lambda) b \succcurlyeq b
+$$
+
+for all $\lambda \in (0, 1)$,
+
+and is "strictly convex" if for $a \succcurlyeq b$ and $a \ne b$, then
+
+$$
+\lambda a + (1 - \lambda) b \succ b
+$$
+
+for all $\lambda \in (0, 1)$.
 
 </div>
 
+$a$가 $b$보다 선호된다면, $a$와 $b$ 사이의 어떤 "중간 지점"도 $b$보다 선호된다는 성질 입니다.
 
+$\lambda \in (0, 1)$로 $a$와 $b$ 사이의 선형 결합을 하는데, 이는 2차원 번들 평면 상에서 $a$와 $b$를 연결하는 선분의 임의의 점을 의미합니다. (기하학적 해석)
 
 ![](/images/others/micro-economics/bundle-convexity.png){: .fill .align-center style="width: 300px" }
 
-## vs. Continuity
+그래프에서 왼쪽은 "볼록한 선호"를 표현하고, 오른쪽은 "엄밀히 볼록한 선호"를 표현합니다.
 
-
+// 이 그래프를 해석하는건 뭔가 아직 이해가 잘 안 되네요...;; 조금더 조사를 해보고 보충해보겠습니다.
 
 
 # Lexicographic preference
+
+> Lexicographic preferences are convex.
+
+<div class="proof" markdown="1">
+
+Assume $(a_1, a_2) \succ (b_1, b_2)$.
+
+If $a_1 > b_1$, then for every $\lambda \in (0, 1)$, we have $\lambda a_1 + (1 - \lambda) b_1 > b_1$, and thus
+
+$$
+\lambda a + (1 - \lambda) b \succ b
+$$
+
+<hr/>
+
+If $a_1 = b_1$, then $\lambda a_1 + (1 - \lambda) b_1 = b_1 = a_1$. In this case, we can do same thing on $a_2$ and $b_2$.
+
+If $a_2 \ge b_2$, and hence $\lambda _2 + (1 - \lambda) b_2 \ge b_2$, so that $\lambda a + (1 - \lambda) b \succcurlyeq b$.
+
+</div>
+
+# Properties
+
+## Upper Contour Set is Convex
+
+어떤 소비 묶음 $x^\ast$가 주어졌을 때, 이것보다 선호되거나 무차별한 소비 묶음의 집합을 생각할 수 있습니다. 이것을 "상위선호 집합(Upper Contour Set)"라고 합니다.
+
+$$
+\left\{x \in X: x\succcurlyeq x^\ast\right\}
+$$
+
+<div class="proof" markdown="1">
+
+The bundle preference is "convex" if and only if
+
+for all $x^\ast \in X$, its "upper contour set" is convex.
+
+</div>
+
+상위선호 집합이 "볼록"하다는 것은 무슨 의미일까요? 이것은 집합의 볼록성에서 유래한 것인데,
+
+> 그 집합 안에서 임의의 두 소비 묶음을 고르면, 그 둘 사이의 선형결합도 반드시 그 집합 안에 포함된다
+
+라는 성질 입니다.
+
+이것을 좀더 풀어서 얘기하면, 소비자가 $a$와 $b$ 상품 둘다 더 좋은 묶음이라고 판단했다면, 그 둘을 섞은 소비 묶음도 더 좋은 것이라고 판단다는 성질 입니다.
+
+<div class="proof" markdown="1">
+
+TODO... 일단은 스킵...
+
+</div>
+
+## Utility Function is concave
+
+효용 함수 $u(x)$가 오목(concave, convex가 아닙니다!)하다는 것은 "접선이 함수 위에 있는" 경우 입니다.
+
+이것은 임의의 $a, b \in \mathbb{R}$에 대해 아래 부등식이 성립함을 말합니다.
+
+$$
+u(\lambda a + (1 - \lambda)b)
+\ge
+\lambda u(a) + (1 - \lambda) u(b)
+$$
+
+![](/images/others/micro-economics/bundle-convexity-concave-utility.png){: .fill .align-center style="width: 400px" }
+
+이것은 중간점의 함수값이, 함수의 기댓값보다 크다는 것을 말합니다. 즉, 이 둘을 섞은 선택이 (가중) 평균보다 더 좋거나 같다는 것을 말합니다.
+
+<div class="proof" markdown="1">
+
+Let $\succcurlyeq$ be a preference relation that is represented by a concave function $u(x)$.
+
+Assume that $a \succcurlyeq b$, so that $u(a) \ge u(b)$.
+
+By the concavity of $u(x)$,
+
+$$
+u(\lambda a + (1-\lambda) b) \ge \lambda u(a) + (1-\lambda) u(b)
+$$
+
+For right-side, due to $u(a) \ge u(b)$,
+
+$$
+\lambda u(a) + (1-\lambda) u(b)
+= u(b) + \lambda (u(a) - u(b)) \ge u(b)
+$$
+
+So,
+
+$$
+u(\lambda a + (1-\lambda) b) \ge \lambda u(a) + (1-\lambda) u(b) \ge u(b)
+$$
+
+Thus, $\lambda a + (1 - \lambda) b \succcurlyeq b$, so that $\succcurlyeq$ is convex.
+
+</div>
+
+<br/>
+
+그러나 이것의 역은 성립하지 않습니다! 왜냐하면, Convex preference 이지만, utility function이 non-concave인 경우가 있기 때문 입니다!
+
+> (ex) the convex preference represented by the concave function $\min(x_1, x_2)$
+> Also, by the function $(\min(x_1, x_2))^2$ is non-concave, but the preference is convex.
+
+## Convexity, strong monotonicity, and decreasing MRS
+
+> 강한 단조성과 convexity를 가진 번들 선호는 감소하는 MRS 특성을 갖는다.
+
+TODO... 증명이랑 예시도 있는데 와닿지 x...
+
+# 맺음말
+
+이어지는 포스트에서는 번들 선호의 "[미분가능성(Differentiability)](/2025/04/14/bundle-preference-differentiability/)"에 대해서 살펴봅니다! (이게 마지막!)
