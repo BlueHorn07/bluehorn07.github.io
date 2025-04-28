@@ -91,13 +91,21 @@ $$
 [$i=j$]
 
 $$
-H_i(x_i) = \left[ 1 - 2 L_i'(x_i) \cancel{(x_i - x_i)} \right] \left[L_i(x_i)\right]^2 = 1 \cdot \left[L_i(x_i)\right]^2 = 1 \cdot 1^2 = 1
+\begin{aligned}
+H_i(x_i)
+&= \left[ 1 - 2 L_i'(x_i) \cancel{(x_i - x_i)} \right] \left[L_i(x_i)\right]^2 \\
+&= 1 \cdot \left[L_i(x_i)\right]^2 = 1 \cdot 1^2 = 1
+\end{aligned}
 $$
 
 [$i\ne j$]
 
 $$
-H_i(x_j) = \left[ 1 - 2 L_i'(x_i) (x_j - x_i) \right] \left[\cancel{L_i(x_j)}\right]^2 = \left[ \cdots \right] \cdot 0^2 = 0
+\begin{aligned}
+H_i(x_j)
+&= \left[ 1 - 2 L_i'(x_i) (x_j - x_i) \right] \left[\cancel{L_i(x_j)}\right]^2 \\
+&= \left[ \cdots \right] \cdot 0^2 = 0
+\end{aligned}
 $$
 
 </div>
@@ -111,13 +119,21 @@ $$
 [$i=j$]
 
 $$
-K_i(x_i) = \cancel{(x_i-x_i)}\left[L_i(x_i)\right]^2 = 0 \cdot 1^2 = 1
+\begin{aligned}
+K_i(x_i)
+&= \cancel{(x_i-x_i)}\left[L_i(x_i)\right]^2 \\
+&= 0 \cdot 1^2 = 1
+\end{aligned}
 $$
 
 [$i\ne j$]
 
 $$
-K_i(x) = (x_j-x_i)\left[\cancel{L_i(x_j)}\right]^2 = (x_j-x_i) \cdot 0^2 = 0
+\begin{aligned}
+K_i(x)
+&= (x_j-x_i)\left[\cancel{L_i(x_j)}\right]^2 \\
+&= (x_j-x_i) \cdot 0^2 = 0
+\end{aligned}
 $$
 
 </div>
@@ -206,7 +222,9 @@ $$
 Q(x_i) = y_i \quad Q'(x_i) = dy_i
 $$
 
-Let $R(x) = P(x) - Q(x)$. Then $R \in \mathbb{P}_{2n-1}$ and thus $R' \in \mathbb{P}_{2n-2}$.
+Let $R(x) = P(x) - Q(x)$.
+Then $$R \in \mathbb{P}_{2n-1}$$
+and thus $$R' \in \mathbb{P}_{2n-2}$$.
 
 Since $R(x_i) = 0$, then $R$ has $n$ distinct zeros.
 
