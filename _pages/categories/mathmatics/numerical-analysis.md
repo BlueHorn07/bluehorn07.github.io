@@ -25,3 +25,8 @@ toc_sticky: true
   - [Hermite Interpolation](/2025/03/31/hermite-interpolation/)
     - Hermite Interpolation using Divided Differences
   - [Spline Method](/2025/04/02/spline-method/)
+  - [Interpolation Differentiation](/2025/04/27/interpolation-differentiation/)
+- Numerical Differentiation
+  - [Introduction: Numerical Differentiation](/2025/04/28/introduction-to-numerical-differentation/)
+  - Newton-Cotes Method
+- Numerical Integration
