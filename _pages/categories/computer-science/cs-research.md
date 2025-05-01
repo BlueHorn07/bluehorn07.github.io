@@ -19,4 +19,4 @@ toc_sticky: true
   - Symbi (2021)
     - [Setup DCS](/2025/03/07/SymBi-setup-DCS/)
     - [Update DCS](/2025/03/07/SymBi-update-DCS/)
-    - [BackTracking](/2025/03/08/SymBi-backtracking/)
+    - [Find Matching](/2025/03/08/SymBi-find-matching/)

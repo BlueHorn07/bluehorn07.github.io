@@ -282,6 +282,5 @@ D2[u][v] = (num_child == num_D2_child) and D1[u][v]
 
 이어지는 포스트에서는 이렇게 업데이트한 DCS 자료구조를 바탕으로 Subgraph Matching을 찾는 "Backtracking" 방법에 대해 살펴보겠습니다.
 
-➡️ [Symbi, Backtracking](/2025/03/08/SymBi-backtracking/)
+➡️ [Symbi, Find Matching](/2025/03/08/SymBi-find-matching/)
 
-<!-- Dynamic Matching Order 쪽 이번에 제대로 이해하고 싶음. -->
