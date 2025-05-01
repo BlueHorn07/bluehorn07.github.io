@@ -178,8 +178,66 @@ then there no embedding of $q$ in $g$.
 단, Embedding이 되지 못하는 이유를 Path Tree에 대해 embedding이 존재하기 때문이라고 생각하면 안 되고,
 쿼리 DAG와 Path Tree의 형상이 서로 다르면 이렇게 Weak Embedding에 대한 역이 성립하지 않는 경우가 발생할 수 있다고 받아들여야 합니다.
 
+
+# Backtracking
+
+재귀적으로 모든 경우의 수를 탐색하는 기법 입니다.
+이때, 유망하지 않은 경로는 조기에 포기(Pruning)하여 탐색 성능을 높일 수 있습니다.
+그래서 완전 탐색(Brute-force)보다 효율적으로 원하는 조건을 탐색할 수 있습니다.
+
+1. 가능한 해(Partial Solution)을 구성하고
+2. 유효성을 검사함
+   1. 이때, 조건을 만족하지 않으면, 포기하고 돌아감 = backtrack
+   2. 조건을 만족하면, 계속 진행
+
+백트래킹은 주로 아래의 문제들에 사용 합니다.
+
+- 제약 충족 문제(Constraint Satisfaction Problems)
+  - N-queen 문제
+  - 스도쿠
+  - 그래프 색칠 문제(Graph Coloring)
+- 조합 및 순열 문제
+  - 부분집합의 합 문제(Subset Sum)
+  - 여행자 문제(TSP)
+- 그래프 탐색
+  - 미로 찾기(Maze Solver)
+
+학부 알고리즘 수업과 인공지능 수업 때, 많이 배웠던 개념 입니다 ㅎㅎ
+
+## Ullmann's backtracking
+
+부분 그래프의 동형(subgraph isomorphism) 문제를 해결하기 위해 1976 Ullmann이 제시한 백트래킹 기반 알고리즘 입니다.
+
+두 개의 그래프 $G$와 $H$가 있을 때, $H$가 $G$의 부분 그래프인지 판별하는 알고리즘 입니다.
+
+<div class="proof" markdown="1">
+
+1. 후보 행렬 생성
+   1. $G$ 노드와 $H$ 노드 간의 매칭 후보를 찾아 기록합니다.
+   2. 노드 레이블이 다르면 매핑이 전혀 안 되는 노드 쌍이니, 심플하게는 각 노드의 레이블이 같다면, 후보로 분류 합니다.
+2. 재귀적으로 탐색
+   1. 각 노드에 대해 가능한 매핑을 백트래킹 하며 탐색 합니다.
+3. Pruning
+   1. 유효하지 않은 매핑은 미리 제거하여 탐색 속도를 높입니다.
+4. 매핑 검증
+   1. 완성된 매핑이 그래프 구조를 유지하는지 확인 합니다.
+
+</div>
+
+# Related Works
+
+Symbi 논문에서 제시되었던 관련 논문들을 기준으로 나열 하였습니다.
+
+- Turbo Isomorphic (2013)
+- CFL-Matching (2016)
+- DAF (2019)
+
+이중에서 Turbo-iso 논문은 현재 졸업 연구 중인 연구실에서 게시한 논문 입니다!
+추후에 읽고 내용을 정리하겠습니다.
+
+
 # 맺음말
 
 지금까지 "Subgraph Matching"에 대한 용어와 개념들을 살펴보았습니다. 이제는 본격적으로 졸업 연구에서 다루는 "Continuous Subgraph Matching" 문제에 대해서 살펴보겠습니다.
 
-➡️ [Continuous Subgraph Matching](/2025/03/06/continuous-subgraph-matching-proble/)
+➡️ [Continuous Subgraph Matching](/2025/03/06/continuous-subgraph-matching-problem/)
