@@ -16,7 +16,7 @@ toc_sticky: true
   - TurboIso
 - Continuous Subgraph Matching
   - TurboFlux (2018)
-  - Symbi
+  - Symbi (2021)
     - [Setup DCS](/2025/03/07/SymBi-setup-DCS/)
     - [Update DCS](/2025/03/07/SymBi-update-DCS/)
-
+    - [BackTracking](/2025/03/08/SymBi-backtracking/)
