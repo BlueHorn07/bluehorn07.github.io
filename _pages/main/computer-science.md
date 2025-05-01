@@ -24,3 +24,5 @@ permalink: /topic/computer-science
   - 2021-1학기 POSTECH 김원화 교수님의 “데이터 마이닝(CSED526)” 수업 내용을 아주 조금 정리 했습니다. 후반 내용이 재밌고 어려운데 언젠가 정리를 하겠죠? 🌝
 - [Time Series Analysis](/categories/time-series-analysis)
   - 회사에서 시계열 데이터를 분석하고 ML/DL 모델을 만들고 있습니다. 시계열 데이터 분석과 관련해 공부한 내용을 정리하고 있습니다 ⏰
+- [CS Research](/categories/cs-research)
+  - 학부 졸업을 위해 과제연구 1&2를 수강하고 그때 읽은 논문과 개념을 정리한 뭉치 입니다.
