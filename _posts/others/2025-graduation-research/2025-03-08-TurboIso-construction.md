@@ -101,7 +101,7 @@ $$
 
 </div>
 
-참고로 집합 등호인 $SP(u_s, u_i) = SP(u_s, u_j)$로 표현하지 않는 이유는 Shortest Path에서 나머지는 모두 같으나 마지막에 방문하는 노드가 $u_i \ne u_j$로 서로 다르기 때문입니다. 그 전까지는 모두 같은 Shortest Path를 갖습니다.
+참고로 집합 등호인 $SP(u_s, u_i) = SP(u_s, u_j)$로 표현하지 않는 이유는 Shortest Path에서 마지막에 방문하는 노드가 $u_i \ne u_j$로 서로 다르기 때문입니다. 그 직전까지는 모두 같은 Shortest Path를 갖습니다.
 
 학부 알고리즘 수업에서 $u_s$에서 시작해 $u_i$에 도달하기 위한 최단 경로를 찾고자 한다면, BFS 검색을 사용해야 했습니다. (Weighted Graph 였다면, 다익스트라를 사용합니다.)
 
@@ -115,7 +115,7 @@ NEC 트리는 쿼리 그래프를 계층적으로 분해한 구조이기 때문�
 
 <br/>
 
-그리고 표기를 하나더 추가하면, 어떤 NEC 트리의 노드 $u'$에 대해, 이 NEC를 이루는 본래 쿼리 노드 목록은 아래와 같이 표기 합니다.
+그리고 어떤 NEC 트리의 노드 $u'$에 대해, 이 NEC를 이루는 본래 쿼리 노드의 목록은 아래와 같이 표기 합니다.
 
 $$
 u'.NEC = \left\{
@@ -230,26 +230,154 @@ $v_2$로 Subregion에 포함 됩니다!
 $v^\ast_s$가 없고, $v_s$가 어떤 다른 부모 노드와 연결된 상황이었다면 $v_s \rightarrow v$의 경로를 엄밀히 정의하기 어려웠을 것 입니다.
 
 
-## Data Structure
+# Explore Candidate Region
+
+## Degree-based filtering
+
+NEC 노드 $u'$과 데이터 노드 $v$가 주어졌을 때, $CR(u', v)$에 속하는 $v'$를 빠르게 구하기 위해 degree 기반으로 필터링을 먼저 한다고 합니다.
+
+만약, $(v, v') \in E(g)$인 $v'$ 중에서 $\deg (v') < \deg (u'.NEC[1])$ 였다면, 해당 데이터 노드 $v'$는 $CR(u', v)$에 포함될 수 없습니다.
+
+논문에서는 아래와 같이 예시를 제공 합니다.
+
+<div class="definition" markdown="1">
+
+- $\deg (u_1) = 3$
+- $\deg (u'_1) = 2$
+
+인데, $\deg (v_1) = 4$이므로 $v_1$은 $u'_1.NEC$가 될 가능성이 있습니다.
+
+$$
+\deg (u_1) = \deg (u'_1.NEC[1]) \le \deg (v_1)
+\quad \rightarrow \quad
+\text{possible to belong CR!}
+$$
+
+</div>
+
+## Neighborhood Label Frequency (NLF) Filtering
+
+TurboIso는 NLF Filter를 적용해 $CR(u', v)$에 포함될 수 있는 $v'$를 필터링 합니다.
+
+NLF Filter는 [TreeSpan(2012)](https://dl.acm.org/doi/10.1145/2213836.2213896) 논문에서 "Neighborhood Aggregates"라는 이름으로 제시된 필터링 방식입니다. 이름이 무서워서 그렇지 아이디어는 정말 간단합니다 ㅋㅋ
+
+![](/images/others/2025-graduation-research/TurboIso/NLF-filter.png){: .fill .align-center style="min-width: 260px; width: 70%" }
+
+Neighborhood Aggregates $N(v, g)$는 노드 $v$와 인접한 노드들의 Label의 빈도수를 센 값입니다. 예시를 들어서 살펴보면,
+
+<div class="definition" markdown="1">
+
+Let $(L_1, L_2, L_3, L_4) = (A, B, C, D)$,
+
+$$
+N(u, q) = (2, 1, 0, 2)
+$$
+
+$$
+N(v, G) = (1, 2, 2, 0)
+$$
+
+</div>
+
+쿼리 노드 $u$와 데이터 노드 $v$ 두 노드가 매칭되기 위해서는 아래의 조건이 만족 되어야 합니다.
+
+둘의 Neighborhood Aggregates $N(u, q) = (x_1, \dots, x_n)$, $N(v, G) = (y_1, \dots, y_n)$에 대해서
+
+$$
+\forall i, x_i \le y_i
+$$
+
+를 만족한다면, 두 노드는 매칭될 가능성이 있습니다. 만약 어느 한 레이블이라도 $x_i > y_i$인, 즉 특정 레이블을 가진 노드와 덜 연결되어 있다면, 쿼리 노드 $u$아 데이터 노드 $v$는 매칭될 수 없습니다.
+
+논문에는 이렇게 쓰진 않지만, 저만의 표현으로 적어보자면
+
+$$
+N(u, q) \le N(v, G)
+$$
+
+조건을 만족해야, 매칭이 가능 합니다.
+
+TurboIso 논문에서는 아래와 같이 기술합니다.
+
+<div class="definition" markdown="1">
+
+**[NLF Filter (TurboIso ver)]**
+
+For every distinct label $l$ of adjacent vertices of $u$, check if
+
+$$
+\left\vert
+adj(u, l)
+\right\vert
+\le
+\left\vert
+adj(v, l)
+\right\vert
+$$
+
+</div>
+
+<br/>
+
+TurboIso는 Candidate Subregion을 계산하기 위해 NLF Filter를 적용합니다.
+
+데이터 노드 $v'$를 $CR(u', v)$에 포함시키기 위해선 서브 트리 순회를 해야 하는데, 그걸 진행하기 전에 $N(u', q) \le N(v', g)$인지 먼저 체크 합니다.
+
+<br/>
+
+논문의 Algo3에 이 부분이 코드로 나와 있습니다.
+
+![](/images/others/2025-graduation-research/TurboIso/algo-3-explore-cr-1.png){: .fill .align-center style="min-width: 260px; width: 70%" }
+
+## DFS Traversal
+
+$u'$와 $v'$가 Degree 조건과 NLF Filter 조건을 만족한다면, 이제 서브그래프에 대해 구조적으로 매칭 되는지를 확인해야 합니다.
+
+쿼리 노드 $u'$의 자식 노드 $u'_c$들을 순회하면서 재귀적으로 Candidate Region 탐색을 진행합니다.
+
+이때, 자식 노드 $u'_c$를 순회하는 순서는 $\left\vert adj(v', L(u'_c)) \right\vert$가 작은 순서부터 큰 순서로 순회 합니다. 이것은 $v'$와 인접한 노드 중에서 가장 적은 빈도를 가진 레이블과 일치하는 자식 노드부터 순회하게 됩니다.
+
+![](/images/others/2025-graduation-research/TurboIso/algo-3-child-visit.png){: .fill .align-center style="min-width: 260px; width: 70%" }
+
+만약, 자식 노드에 대해서 `ExploreCR()` 한 결과가 실패 였다면, $v'$ 노드는 $u'$의 Candidate Region이 될 수 없습니다.
+
+이때는 `ExploreCR()` 과정에서 찾은 $u'_c$와 $v'$ 사이에 Candidate Region을 구축할 수도 있습니다. 즉, $CR(u'_c, v') \ne \emptyset$라는 것이죠. 하지만, $v'$는 $u'$와 매칭 되지 않을 수 있습니다!
+
+이런 경우는 $v'$에 대해서 찾은 결과가 모두 무의미 해집니다.
+그래서 $CR(u'_c, v')$ 초기화 해야 합니다. 이것을 수행하는 것이 `ClearCR()` 함수 입니다.
+
+매칭이 실패했으니 `matched` 변수로 `false`로 설정하고 순회를 종료 합니다.
+
+
+![](/images/others/2025-graduation-research/TurboIso/algo-3-append-cr.png){: .fill .align-center style="min-width: 260px; width: 70%" }
+
+만약 매칭이 가능 했다면(`matched = true`), 데이터 노드 $v'$를 Candidate Subregion $CR(u', v)$에 추가합니다.
+
+
+![](/images/others/2025-graduation-research/TurboIso/algo-3-compre-cr-and-nec.png){: .fill .align-center style="min-width: 260px; width: 70%" }
+
+마지막으로, 완성된 $CR(u', v)$ 집합과 $u'.NEC$ 집합을 비교 합니다.
+
+이때, $CR(u', v)$로 매핑되는 데이터 노드가 존재하기는 하는데, $u'.NEC$ 집합의 크기보다 적은 상황이라면, $u'.NEC$에 속하는 노드 중 일부는 매핑되지 않는다는 말입니다.
+
+그래서 마지막 $\left\vert CR(u', v) \right\vert \le \left\vert u'.NEC \right\vert$를 확인하고, 매핑 가능한 노드 수가 부족한다면, (기껏만든) $CR(u', v)$ 집합을 `ClearCR()` 처리 합니다.
+
+<br/>
+
+Candidate Region을 구성하는 전체 흐름을 살펴보면, 요렇습니다!
+
+![](/images/others/2025-graduation-research/TurboIso/algo-3-explore-cr-final.png){: .fill .align-center style="min-width: 260px; width: 70%" }
+
+
+
+# Candidate Region Data Structure
+
+<!-- 이 부분은 나중에 다시 보자... 이게 이해해야 매칭 오더를 이해할 수 있네... -->
 
 ![](/images/others/2025-graduation-research/TurboIso/fig-5-CR-data-structure.png){: .fill .align-center style="min-width: 260px; width: 80%" }
 
 
 
-## How to compute Candidate Subregion
-
-### Degree-based filtering
-
-가장 먼저,
 
 
 
-<div class="theorem" markdown="1">
-
-
-</div>
-
-
-<!-- NEC를 제대로 이해하는 것이 목표다. -->
-
-<!-- NLF도 나오네? -->

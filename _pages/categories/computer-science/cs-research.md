@@ -13,7 +13,9 @@ toc_sticky: true
 - [Subgraph Matching Problem](/2025/03/05/subgraph-matching-problem/)
 - [Continuous Subgraph Matching Problem](/2025/03/06/continuous-subgraph-matching-problem/)
 - Subgraph Matching
-  - [TurboIso (2013)](/2025/03/08/TurboIso/)
+  - TurboIso (2013)
+    - [Construction](/2025/03/08/TurboIso-construction/)
+    - [Matching Order](/2025/03/08/TurboIso-matching-order/)
 - Continuous Subgraph Matching
   - TurboFlux (2018)
   - Symbi (2021)
