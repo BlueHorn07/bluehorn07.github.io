@@ -228,11 +228,11 @@ then there no embedding of $q$ in $g$.
 
 Symbi 논문에서 제시되었던 관련 논문들을 기준으로 나열 하였습니다.
 
-- Turbo Isomorphic (2013)
+- TurboIso (2013) [[1]](/2025/03/08/TurboIso-construction/)
 - CFL-Matching (2016)
 - DAF (2019)
 
-이중에서 Turbo-iso 논문은 현재 졸업 연구 중인 연구실에서 게시한 논문 입니다!
+이중에서 TurboIso 논문은 현재 졸업 연구 중인 연구실에서 게시한 논문 입니다!
 추후에 읽고 내용을 정리하겠습니다.
 
 

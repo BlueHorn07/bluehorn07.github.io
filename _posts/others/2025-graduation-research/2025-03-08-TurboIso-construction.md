@@ -1,5 +1,5 @@
 ---
-title: "Paper Reading: TurboIso"
+title: "Paper Reading: TurboIso, Construction"
 toc: true
 toc_sticky: true
 categories: ["Graduation Research"]
@@ -11,14 +11,10 @@ excerpt: ""
 
 > Wook-Shin Han, Jinsoo Lee, and Jeong-Hoon Lee. 2013. TurboISO: Towards UltraFast and Robust Subgraph Isomorphism Search in Large Graph Databases
 
+# 들어가며
 
-1. Finds all the embeddings of a spanning tree $q_T$ of $q$ in the data graph.
-   1. 쿼리 그래프의 모든 연결성을 고려하면서 매칭을 찾는 것은 어려우니, Spanning Tree $q_T$를 바탕으로 탐색 영역을 줄이는 접근
-2. Based on the result, extracts candidate regions from the data graph that may have embeddings of the query graph.
-3. Decides an effective matching order for each candidate region by the "path-ordering" technique.
-4. Furthermore, uses a technique called "neighborhood equivalence class(NEC)" which compresses equivalent vertices in the query graph.
-
-
+SymBi 논문([[1]](/2025/03/07/SymBi-setup-DCS/), [[2]](/2025/03/07/SymBi-update-DCS/), [[3]](/2025/03/08/SymBi-find-matching/))에 이어 이 논문도 지금 졸업 연구를 하고 있는 연구실에서 작성한 논문 입니다!
+졸업 연구를 하면서 이 논문의 구현도 살펴볼 일이 있어서 논문 리딩을 진행하게 되었습니다!
 
 # Matching Order is Important
 
@@ -372,12 +368,48 @@ Candidate Region을 구성하는 전체 흐름을 살펴보면, 요렇습니다!
 
 # Candidate Region Data Structure
 
-<!-- 이 부분은 나중에 다시 보자... 이게 이해해야 매칭 오더를 이해할 수 있네... -->
+이제 Candidate Region을 효율적으로 저장하고, 관리하는 자료구조 구현에 대해 살펴봅시다...! ~~아직도 남은거냐...~~
 
-![](/images/others/2025-graduation-research/TurboIso/fig-5-CR-data-structure.png){: .fill .align-center style="min-width: 260px; width: 80%" }
+![](/images/others/2025-graduation-research/TurboIso/fig-5-CR-data-structure-1.png){: .fill .align-center style="min-width: 280px; width: 90%" }
 
+처음에는 이런 표와 같은 형태로 $CR$을 정리 했습니다. 이제 이걸 NEC 트리 $q'$와 같이 그래프 형태로 표현해보면 오른쪽과 같이 표현할 수 있습니다.
+$CR(u', v)$가 노드가 되고, 그 안에 $v' \in CR(u', v)$의 원소들이 존재 합니다.
 
+$CR(u', -)$는 "NEC 노드 $u'$와 데이터 노드 $v$에 대한 모든 Subregion을 모은 배열" 입니다. 그래서 $CR(u'_7, -)$를 보면, $CR(u'_7, v_y) \cup CR(u'_7, v_8)$로 이뤄진걸 볼 수 있습니다. 왜냐하면, $u'_7$의 경우 가능한 Candidate Subgraph이 2개 있기 때문입니다. 나머지 노드들은 Candidate Subregion이 하나만 있습니다.
 
+![](/images/others/2025-graduation-research/TurboIso/fig-5-CR-data-structure.png){: .fill .align-center style="min-width: 260px; width: 70%" }
 
+이때, $CR(u', -)$ 배열 안에서는 어떤 $v$에서 온 것인지 구분 없이 저장합니다. $CR(u', -)$ 배열에는 $(v', L)$가 저장 되는데, 매칭 되는 데이터 노드인 $v'$이고, $L$은 "list of ranges $[s, e]$"라고 합니다. 이때, 배열 표현은 inclusive 입니다.
 
+예를 들어, 하나의 $CR(u', -)$을 코드로 적어보면,
 
+```py
+CR_u2_arr = [
+   (v2, [[1, 1], [1, 2], [1, 1]]),
+]
+CR_u7_arr = [
+   (v14, []),
+   (v15, []),
+   (v16, []),
+   (v17, []),
+]
+```
+
+이때, $L$의 크기는 $u'$의 NEC 자식 노드의 갯수만큼 가집니다. 그래서 자식이 없는 NEC 노드는 `L = []`로 empty list가 됩니다.
+
+만약 자식이 3개인 NEC 노드($u'_2$)라면, 배열 $L$는 `L = [l_1, l_2, l_3]`이 됩니다. 이때, $l_i$에는 $[s, e]$로 시작과 끝 값이 저장 되는데, 이것은 하위 NEC 노드에서 이 $v'$과 연결되는 것의 (연결된) 자식이 무엇인지 구분하는 녀석 입니다.
+
+예를 들어, $CR(u'_5, -)$에 있는
+
+- $(v_7, [[1, 1]])$
+  - $v_7$의 자식은 $CR(u^\prime_7, -)$의 $v_14$ 입니다.
+- $(v_8, [[2, 4]])$
+  - $v_8$의 자식은 $CR(u^\prime_7, -)$의 $v_{15}$, $v_{16}$, $v_{17}$ 입니다.
+
+참... 어렵다... 그죠...? ૮(˶ㅠ︿ㅠ)ა
+
+# 맺음말
+
+내용이 길어져서 포스트를 분리합니다! "Matching Order"에 대한 내용부터는 아래의 포스트로 고고!
+
+➡️ [TurboIso - Matching Order](/2025/03/08/TurboIso-matching-order/)

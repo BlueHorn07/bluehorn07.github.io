@@ -48,7 +48,7 @@ $$
 - GraphFlow (2017)
 - SJ-Tree (2015)
 - TurboFlux (2018)
-- SymBi (This!)
+- SymBi (2021) ([[1]](/2025/03/07/SymBi-setup-DCS/), [[2]](/2025/03/07/SymBi-update-DCS/), [[3]](/2025/03/08/SymBi-find-matching/))
 
 이 중에서 TurboFlux와 SymBi가 제가 졸업 연구로 참영한 연구실에서 게시한 논문 입니다.
 추후에 이 둘도 읽고 내용을 정리하겠습니다.
