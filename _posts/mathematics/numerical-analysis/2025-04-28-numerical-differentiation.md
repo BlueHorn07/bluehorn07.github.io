@@ -1,10 +1,10 @@
 ---
-title: "Introduction: Numerical Differentiation"
+title: "Numerical Differentiation"
 toc: true
 author: bluehorn_math
 toc_sticky: true
 categories: ["Numerical Analysis"]
-excerpt: ""
+excerpt: "미정계수법으로 도함수의 근사를 구하는 방법에 대해."
 ---
 
 수학과 복수전공을 위해 졸업 마지막 학기에 "수치해석개론" 수업을 듣게 되었습니다. 수학과 졸업시험도 겸사겸사 준비할 겸 화이팅 해봅시다!! 전체 포스트는 "[Numerical Analysis](/categories/numerical-analysis)"에서 확인할 수 있습니다.
@@ -137,7 +137,126 @@ $$
 
 수치 미분은 $h$ 값에 따라 오차가 작아집니다. 그러나 단순히 $h$를 무조건 작게 만든다고 좋은 것은 아닙니다!
 
-$h$가 너무 작아지면, "반올림 오차(round-off error)"가 커져서 오히려 결과가 나빠질 수도 있습니다.
+$h$가 너무 작아지면, "반올림 오차(round-off error)"가 커져서 오히려 결과가 나빠질 수도 있습니다. 이것의 컴퓨터의 부동소수점 연산의 정밀도 제한 되어 있어서 발생하는 현상 입니다.
+
+함수 $f(x) = e^x$의 수치적 미분을 할 때의 오차 시뮬레이션 결과 입니다.
+
+$$
+\begin{aligned}
+D_+ f(0) &= \frac{f(0+h) - f(0)}{h} = \frac{e^h - 1}{h}\\
+D_0 f(0) &= \frac{f(0+h) - f(0-h)}{2h} = \frac{e^h - e^{-h}}{2h}\\
+\end{aligned}
+$$
+
+![](/images/mathematics/numerical-analysis/differentiation-rounding-error.png){: .fill .align-center style="width: 400px" }
+
+보면, $10^{-6}$까지는 오차가 감소하지만, 그 이후부터는 오차가 오히려 증가합니다!
+
+이것은 두개의 거의 같은 수를 빼는 연산 $e^h - 1$에서 $h$ 값이 아주아주 작아지면서 의미있는 숫자가 소실되어 버리기 때문입니다. 이 현상을 "loss of significance"라고 합니다.
+
+<br/>
+
+이것은 이론과 실제 계산에서 차이가 발생하는 부분으로 "Truncation Error"는 이론적으로 $h$가 작을수록 작아지지만, 실제 컴퓨터에서는 "Rounding Error"로 인해 $h$가 너무 작으면 반대로 오차가 증가할 수 있습니다.
+
+따라서, $h$는 너무 크지도, 너무 작지도 않은 적절한 수준에서 균형을 맞춰야 합니다.
+
+## Deep insight for machine error
+
+(스킵...!, 왠지 수학과 졸시에는 안 나올 것 같아서...)
+
+# Method of Undermined Coefficients
+
+함수를 테일러 전개한 후, 미정계수법을 이용해 도함수 $f'(x)$를 근사할 수도 있습니다.
+
+예를 들어, $f'(x)$를 $f(x)$, $f(x-h)$, $f(x-2h)$ 세 점을 가지고 근사한다고 해보겠습니다. 우리가 얻고자 하는, 근사의 형태는 아래와 같습니다.
+
+$$
+f'(x) \approx a f(x) + b f(x-h) + cf(x-2h)
+$$
+
+이때, $a, b, c$가 그 과정에서 구해야 하는 미정계수들 입니다.
+
+각 함수값 $f(x)$, $f(x-h)$, $f(x-2h)$를 테일러 전개 합니다.
+
+$$
+\begin{aligned}
+f(x) &= f(x) \\ 
+f(x-h) &= f(x) - h f'(x) + \frac{h^2}{2} f''(x) - \cdots \\
+f(x-2h) &= f(x) - 2h f'(x) + \frac{4h^2}{2}f''(x) - \cdots \\
+\end{aligned}
+$$
+
+이제 이것을 도함수를 근사하는 식에 대입합니다.
+
+$$
+\begin{aligned}
+f(x)' 
+&= a f(x) + bf(x-h) + cf(x-2h) \\
+&= (a + b + c) f(x) 
++ ( - bh - 2ch) f'(x) 
++ (\frac{bh^2}{2} + \frac{4ch^2}{2}) f''(x) + \cdots
+\end{aligned}
+$$
+
+이제 미정계수법을 수행합니다. 아래의 선형 시스템을 풀어서, $a, b, c$의 값을 구합니다.
+
+$$
+\begin{aligned}
+a + b + c &= 0 \\ 
+-bh - 2ch &= 1 \\
+bh^2 + 4ch^2 = 0
+\end{aligned}
+$$
+
+선형 시스템을 풀어줍니다. 마지막 방정식을 이용해 $b = - 4c$라는 것을 알 수 있고, 이를 두번째 방정식에 대입 합니다.
+
+$$
+4ch - 2ch = 2ch = 1
+$$
+
+따라서, $c = 1 / (2h)$이고, 마찬가지로 $b = - 2 / h$ 입니다. 마지막으로 $a$를 구하면, $a = - b - c = 3/(2h)$가 됩니다.
+
+결과를 처음의 도함수 근사식에 대입 합니다.
+
+$$
+\begin{aligned}
+f'(x) 
+&= a f(x) + bf(x-h) + cf(x-2h)  \\
+&= \frac{3}{2h} f(x) - \frac{2}{h} f(x-h) + \frac{1}{2h} f(x-2h) \\
+&= \frac{3f(x) - 4f(x-h) + f(x-2h)}{2h}
+\end{aligned} \\
+$$
+
+# Second-order approximation
+
+(뭔가 쭉... 적기는 했는데, 뭔가 흐름이 이상하네... GPT한테 물어보고 다시 이해해야 할 듯)
+
+미정계수법는 단순히 테일러 전개와 이를 통해 선형 시스템을 잘 세워서 푸는 것이기 때문에, 쉬운 접근 방법 입니다.
+
+그래서 같은 접근법으로 2차 도함수에 대한 근사식도 유도할 수 있습니다. 실제로 $f(x-h)$, $f(x)$, $f(x+h)$ 세 점을 가지고 중앙에서 근사한 2차 도함수는 아래와 같이 계산 됩니다.
+
+$$
+D^2 f(x) = \frac{D_{+}f(x) + D_{-}f(x)}{2}
+$$
+
+이때, $D_{+}f(x)$는 테일러 전개를 적절히 수행하면, 아래와 같음을 알 수 있습니다.
+
+$$
+D_{+}f(x) = \frac{f(x+h) - f(x)}{h}
+= f'(x) + \frac{1}{2} h f''(x) + \frac{1}{6}h^2 f^{\prime\prime\prime} (x) + O(h^3)
+$$
+
+이제 이것을 계산해보면,
+
+$$
+D^2 f(x) 
+= \frac{(f(x-h) - f(x)) / h + (f(x+h) - f(x)) / h}{2}
+= \frac{
+f'(x) + \cancel{\frac{1}{2} h f''(x)} + \frac{1}{6}h^2 f^{\prime\prime\prime} (x) + \cancel{O(h^3)}
++ f'(x) - \cancel{\frac{1}{2} h f''(x)} + \frac{1}{6}h^2 f^{\prime\prime\prime} (x) - \cancel{O(h^3)}
+}{2}
+= f
+$$
 
 
 

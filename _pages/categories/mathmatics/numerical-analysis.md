@@ -20,13 +20,16 @@ toc_sticky: true
     - [Lagrange Interpolation - Nodal Polynomial](/2025/03/26/lagrange-interpolation-nodal-interpolation/)
     - [Lagrange Interpolation - Vandermonde Matrix](/2025/03/26/lagrange-interpolation-vandermonde-matrix/)
   - [Newton’s Divided Differences](/2025/03/27/newton-divided-differences/)
-  - [Interpolation Error](/2025/03/29/interpolation-error/)
+  - [Interpolation Error Theorem](/2025/03/29/interpolation-error-theorem/)
   - [Interpolation for Uniformly Spaced Nodes, Runge Phenomenon](/2025/03/30/interpolation-error-for-uniformly-spaced-nodes/)
   - [Hermite Interpolation](/2025/03/31/hermite-interpolation/)
-    - Hermite Interpolation using Divided Differences
-  - [Spline Method](/2025/04/02/spline-method/)
+    - [Hermite Interpolation using Divided Differences](/2025/04/02/hermite-interpolation-using-divided-differences/)
+  - [Spline Interpolation](/2025/04/02/spline-interpolation/)
+    - Cubic Spline
+    - Natrual Cubic Spline
   - [Interpolation Differentiation](/2025/04/27/interpolation-differentiation/)
-- Numerical Differentiation
-  - [Introduction: Numerical Differentiation](/2025/04/28/introduction-to-numerical-differentation/)
+- [Numerical Differentiation](/2025/04/28/numerical-differentation/)
+- [Numerical Integration](/2025/05/04/numerical-integration/)
+  - Trapzoid Rule
+  - Simpson's Rule
   - Newton-Cotes Method
-- Numerical Integration

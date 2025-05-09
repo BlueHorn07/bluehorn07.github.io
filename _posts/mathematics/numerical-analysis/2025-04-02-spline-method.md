@@ -1,10 +1,10 @@
 ---
-title: "Cubic Spline"
+title: "Spline Interpolation"
 toc: true
 author: bluehorn_math
 toc_sticky: true
 categories: ["Numerical Analysis"]
-excerpt: ""
+excerpt: "Piecewise Interpolation으로 Runge Effect를 해결하는 보간법.  Cubic Spline이 왜 중요한지, 그리고 Spline의 유일성이 보장되는 이유에 대해."
 ---
 
 수학과 복수전공을 위해 졸업 마지막 학기에 "수치해석개론" 수업을 듣게 되었습니다. 수학과 졸업시험도 겸사겸사 준비할 겸 화이팅 해봅시다!! 전체 포스트는 "[Numerical Analysis](/categories/numerical-analysis)"에서 확인할 수 있습니다.

@@ -4,7 +4,7 @@ toc: true
 author: bluehorn_math
 toc_sticky: true
 categories: ["Numerical Analysis"]
-excerpt: ""
+excerpt: "균등하게 배치된 데이터 포인트에서 우리가 기대할 수 있는 것에 대해. 그리고 데이터의 양 끝 점에서 보간값이 튀는 현상에 대해."
 ---
 
 수학과 복수전공을 위해 졸업 마지막 학기에 "수치해석개론" 수업을 듣게 되었습니다. 수학과 졸업시험도 겸사겸사 준비할 겸 화이팅 해봅시다!! 전체 포스트는 "[Numerical Analysis](/categories/numerical-analysis)"에서 확인할 수 있습니다.
@@ -12,13 +12,14 @@ excerpt: ""
 
 # 들어가며
 
+지금까지는 주어진 데이터가 균등하게 분포되어 있다면 어떤 좋은 일이 있을까요? 이번 포스트에선 데이터 샘플을 뽑을 때, 균등 샘플링을 했을 때 우리가 무엇을 기대할 수 있는지에 대한 탐구를 다룹니다.
 
 
 # Uniformly Spaced Nodes Interpolation
 
-이번에는 데이터 노드가 특수하게 배치된 경우를 살펴봅시다.
+데이터 노드가 특수하게 배치된 경우를 살펴봅시다.
 
-모든 데이터 노드가 $[a, b]$ 공간 위에 동일한 거리만큼 분산 되어 있다고 합시다. 각 점이 분산된 거리를 $h$라고 한다면, 각 점은 아래와 같이 배치될 것 입니다.
+모든 데이터 노드가 $[a, b]$ 공간 위에 "**동일**"한 거리만큼 분산 되어 있다고 합시다. 각 점이 떨어진 거리를 $h$라고 한다면, 각 점은 아래와 같이 배치됩니다.
 
 $$
 x_i = a + i h \quad \text{where} \quad h = \frac{b-a}{n}
@@ -32,7 +33,7 @@ $$
 
 ## Estimate for nodal polynomial error bound
 
-데이터 노드가 균등하게 분대 되어 있다면, nodal polynomial $\omega_n(x)$의 상한을 정확하게 유도할 수 있습니다.
+데이터 노드가 균등하게 분배 되어 있다면, nodal polynomial $\omega_n(x)$의 상한을 정확하게 유도할 수 있습니다.
 
 쉽게 진행하기 위해 한점 $x$를 $x = a + hs$로 변수 치환을 합니다. $x$는 데이터 노드 $x_i$가 아니라 임의의 한점인 것에 유의합니다. 그러면 $\omega_n(x)$는 아래와 같이 다시 작성 됩니다.
 
@@ -149,3 +150,6 @@ $$
 
 ![](/images/mathematics/numerical-analysis/runge-phenomenon.png){: .fill .align-center style="width: 300px" }
 
+이 현상을 해결하기 위해 등장한 것이 Piecewise Interpolation 방식인 "Spline" 입니다! 다음 포스트에선 이 Spline 보간법에 대해 살펴보겠습니다.
+
+➡️ [Spline Interpolation](/2025/04/02/spline-interpolation/)

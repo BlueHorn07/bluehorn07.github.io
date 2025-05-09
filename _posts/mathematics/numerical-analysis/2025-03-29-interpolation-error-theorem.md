@@ -1,10 +1,10 @@
 ---
-title: "Interpolation Error"
+title: "Interpolation Error Theorem"
 toc: true
 author: bluehorn_math
 toc_sticky: true
 categories: ["Numerical Analysis"]
-excerpt: ""
+excerpt: "보간 함수의 오차에 대한 정리. 이걸 바탕으로 보간법의 로컬 오차와 글로벌 오차의 상한을 구할 수 있습니다."
 ---
 
 수학과 복수전공을 위해 졸업 마지막 학기에 "수치해석개론" 수업을 듣게 되었습니다. 수학과 졸업시험도 겸사겸사 준비할 겸 화이팅 해봅시다!! 전체 포스트는 "[Numerical Analysis](/categories/numerical-analysis)"에서 확인할 수 있습니다.
@@ -36,7 +36,7 @@ where $\omega_n(x)$ is a "nodal polynomial" s.t. $\omega_n(x) = (x-x_1)(x-x_2)\c
 
 - 오차는 고차 도함수 $f^{(n)}(\xi)$에 비례한다
   - 함수가 많이 휘어질수록 오차가 커집니다.
-- 오차는 노들들과의 거리 곱 $\omega_n(x)$에 비례한다
+- 오차는 노드들과의 거리 곱 $\omega_n(x)$에 비례한다
   - $x$가 노드들과 멀리 떨어질수록 오차가 커짐
 - 위의 오차식은 등호가 있는 "정확한" 오차 표현식 입니다.
   - 뭔한다면, 부등호가 있는 오차 상한선(error bound)의 형태로도 쓸 수 있습니다.
