@@ -3,7 +3,7 @@ title: "Bundle Preference"
 toc: true
 toc_sticky: true
 categories: ["Macro Economics"]
-excerpt: ""
+excerpt: "번들 상품에 대해 개인이 갖는 선호에 대해."
 ---
 
 졸업을 위해 마지막 학기에 "미시경제학" 수업을 듣게 되었습니다.

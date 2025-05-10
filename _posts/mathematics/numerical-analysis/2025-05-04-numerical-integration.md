@@ -4,7 +4,7 @@ toc: true
 author: bluehorn_math
 toc_sticky: true
 categories: ["Numerical Analysis"]
-excerpt: ""
+excerpt: "등간격으로 나누어진 데이터 포인트로 함수의 적분을 수치적으로 구하는 방법. Trapezoid Rule, Simpson's Rule, 그리고 이것을 일반화한 뉴턴-코츠 공식에 대해"
 ---
 
 수학과 복수전공을 위해 졸업 마지막 학기에 "수치해석개론" 수업을 듣게 되었습니다. 수학과 졸업시험도 겸사겸사 준비할 겸 화이팅 해봅시다!! 전체 포스트는 "[Numerical Analysis](/categories/numerical-analysis)"에서 확인할 수 있습니다.
@@ -170,9 +170,18 @@ $$
 
 공식에 대한 유도는 3-point에서 했던 것처럼 함수를 평행이동 한 후에 수행해주면 된다고 합니다.
 
+# Newton-Cotes Formula
+
+지금까지 살펴본 Trapezoid Rule, Simpson's Rule 모두 등간격 데이터 포인트에서의 적분 근사를 하는 방법이었습니다.
+
+이것을 일반화 하여 $n$개 등간격 포인트에서 수행하는 것을 "**뉴턴-코츠 공식**"이라고 합니다.
+
+또, 이 뉴턴-코츠 공식은 구간의 양 끝점을 포함하는지, 포함하지 않는지에 대해서 "닫힌 공식"과 "열린 공식"으로 나뉩니다. 이번 포스트에서 살펴본 적분 근사에 대한 공식들은 모두 "**닫힌 뉴턴-코츠 공식**" 입니다.
+
 
 # Error Analysis
 
-## Trapezoie Rule
+## Trapezoid Rule
 
 ## Simpson's Rule
+

@@ -3,7 +3,7 @@ title: "Lotteries"
 toc: true
 toc_sticky: true
 categories: ["Macro Economics"]
-excerpt: ""
+excerpt: "불확실성이 포함된 상품에 대해 개인이 갖는 선호에 대해. 연속성, 독립성, 단조성을 갖춘 복권들에 대해서."
 ---
 
 졸업을 위해 마지막 학기에 "미시경제학" 수업을 듣게 되었습니다.
@@ -16,7 +16,7 @@ excerpt: ""
 
 지금까지 살펴본 선호(Preference), 효용 함수(Utility Functions), 선택 함수(Choice Functions) 모두 선택과 결과가 고정적으로 정해지는 상황이었습니다.
 
-복권(Lotteries)는 확률적인 결과를 포함하는 선택지 입니다. 사람이 선택을 하면, 보상이 확률적으로 결정 됩니다.
+"복권(Lotteries)"는 확률적인 결과를 포함하는 상품 입니다. 사람이 선택을 하면, 보상이 확률적으로 결정 됩니다.
 
 <div class="definition" markdown="1">
 

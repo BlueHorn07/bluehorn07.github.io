@@ -3,7 +3,7 @@ title: "Expected Utility"
 toc: true
 toc_sticky: true
 categories: ["Macro Economics"]
-excerpt: ""
+excerpt: "불확실성을 가지는 복권에 어떤 효용값을 할당하는 방식에 대해서"
 ---
 
 졸업을 위해 마지막 학기에 "미시경제학" 수업을 듣게 되었습니다.

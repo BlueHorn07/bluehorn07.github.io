@@ -3,7 +3,7 @@ title: "Bundle Preference: Differentiability"
 toc: true
 toc_sticky: true
 categories: ["Macro Economics"]
-excerpt: ""
+excerpt: "번들 상품에 대한 선호가 갖는 특별한 성질"
 ---
 
 졸업을 위해 마지막 학기에 "미시경제학" 수업을 듣게 되었습니다.
