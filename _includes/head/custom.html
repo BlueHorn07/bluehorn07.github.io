@@ -12,18 +12,26 @@
 
 <!-- end custom head snippets -->
 
-<!-- Mathjax Support -->
+<!-- START: Mathjax Support -->
 <script>
   MathJax = {
     tex: {
       inlineMath: [['$', '$'], ['\\(','\\)']],
-      displayMath: [ ['$$', '$$'], ['\\[','\\]'] ], // ok to remove
-      processEscapes: true, // make distinguishable with $ and \$.
-      tags: 'ams', // equation numbering
+      displayMath: [ ['$$', '$$'], ['\\[','\\]'] ],
+      processEscapes: true,
+      tags: 'ams',
+    },
+    svg: {
+      fontCache: 'global'
     }
   };
 </script>
 
+<!-- 
+I can use the CDN version of Mathjax, but it's not working on local offline environment.
+So, I download the latest version of Mathjax and put it in the assets/js/mathjax folder.
+-->
 <script type="text/javascript" id="MathJax-script" async
-src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+src="/assets/js/mathjax/tex-mml-chtml.js">
 </script>
+<!-- END: Mathjax Support -->
