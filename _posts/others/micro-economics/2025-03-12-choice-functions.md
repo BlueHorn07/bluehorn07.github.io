@@ -74,13 +74,13 @@ s.t. for every choice problem the alternative specified by the choice function i
 
 합리적인 선택 함수는 그 결과가 일정한 기준(ex: 선호 관계)에 따라 항상 "**일관된**" 방식으로 선택을 수행 합니다. 이때는 선택 함수의 어떤 선택 결과가 다른 선택의 결과와 모순되지 않습니다. 선택 함수가 일관성을 갖는다면 아래 조건을 만족해야 합니다.
 
+- **Completeness**
+  - 어떤 두 개의 대안 $a$, $b$가 주어지면 둘 중 하나를 반드시 선택해야 합니다.
 - **Transitivity**
   - If $c(\left\\{a, b\right\\}) = a$ and $c(\left\\{b, c\right\\}) = c$,
   - then $c(\left\\{a, c\right\\}) = a$가 되어야 한다.
-- **Completeness**
-  - 어떤 두 개의 대안 $a$, $b$가 주어지면 둘 중 하나를 반드시 선택해야 합니다.
 - **Consistency** in Choice
-  - 만약 value(or distance) 큰 것을 선택한다고 한다는 규칙이 있으면, 이것이 **모든 부분집합에 대해 일관되게 적용** 되어야 합니다.
+  - 만약 value(or distance)가 큰 것을 선택한다고 한다는 규칙이 있으면, 이것이 **모든 부분집합에 대해 일관되게 적용** 되어야 합니다.
 
 # In Reality
 

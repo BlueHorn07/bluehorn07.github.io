@@ -1,9 +1,9 @@
 ---
-title: "Lotteries"
+title: "Lotteries & Lottery Preference"
 toc: true
 toc_sticky: true
 categories: ["Macro Economics"]
-excerpt: "불확실성이 포함된 상품에 대해 개인이 갖는 선호에 대해. 연속성, 독립성, 단조성을 갖춘 복권들에 대해서."
+excerpt: "불확실성이 포함된 상품인 복권과 그 복권에서 나타나는 사람들의 선호에 대해. 그리고 복권 선호에서 정의할 수 있는 연속성, 독립성, 단조성 성질들에 대해..."
 ---
 
 졸업을 위해 마지막 학기에 "미시경제학" 수업을 듣게 되었습니다.
@@ -14,9 +14,9 @@ excerpt: "불확실성이 포함된 상품에 대해 개인이 갖는 선호에 
 
 # Lotteries
 
-지금까지 살펴본 선호(Preference), 효용 함수(Utility Functions), 선택 함수(Choice Functions) 모두 선택과 결과가 고정적으로 정해지는 상황이었습니다.
+지금까지 살펴본 [선호(Preference)](/2025/03/05/preferences/), [효용 함수(Utility Functions)](/2025/03/10/utility-functions/), [선택 함수(Choice Functions)](/2025/03/12/choice-functions/) 모두 선택과 결과가 고정적으로 정해지는 상황이었습니다.
 
-"복권(Lotteries)"는 확률적인 결과를 포함하는 상품 입니다. 사람이 선택을 하면, 보상이 확률적으로 결정 됩니다.
+"복권(Lotteries)"는 확률적인 결과를 포함하는 상품 입니다. 선택을 하면, 보상이 확률적으로 결정 됩니다.
 
 <div class="definition" markdown="1">
 
@@ -56,7 +56,7 @@ $$
 
 ![](/images/others/micro-economics/lottery-1.png){: .fill .align-center style="width: 300px" }
 
-만약 $Z$가 두 개의 상품 $z_1, z_2$로 구성 되어 있다고 한다고, 각 상품에 대한 확률 $p_1, p_2$가 할당 된다고 하자.
+$Z$가 두 개의 상품 $z_1, z_2$로 구성 되어 있고, 각 상품에 대한 확률이 $p_1, p_2$라고 합시다.
 
 확률의 합은 항상 1이어야 하기 때문에 $p_1 + p_2 = 1$을 만족하고, 이는 위의 그림처럼 평면 위에 표현할 수 있습니다.
 
@@ -64,10 +64,12 @@ $$
 
 만약, $Z$가 3개의 상품으로 구성 되어 있었다면, 비슷하게 3차원의 공간 뒤에 그릴 수 있습니다.
 
+2차원의 직선과, 3차원의 면은 모두 2개 상품, 3개 상품에서 만들 수 있는 모든 복권의 집합을 표현한 것 입니다.
 
-# Preference over lotteries
 
-어떤 사람 앞에 여러 종류의 복권이 있습니다. 사람마다 선호하는 복권이 다를 테죠. 아래에서는 사람들의 복권에 대한 선호에 대해 얘기해봅니다.
+# Preference over Lotteries
+
+어떤 사람 앞에 여러 종류의 복권이 있습니다. 사람마다 선호하는 복권이 다를 테죠. 사람들이 어떤 복권을 선호 하는지에 대해 얘기해봅니다.
 
 ## Pessimist
 
@@ -114,6 +116,8 @@ $$
 앞으로는 이런 복권 선호들 중에서 "좋은 성질"을 만족하는 특별한 복권 선호들만 골라서 좀더 살펴보고자 합니다.
 
 # Properties
+
+"복권 선호"에서 정의할 수 있는 여러 성질들에 대해 살펴봅니다.
 
 ## Continuity
 
@@ -174,28 +178,48 @@ $$
 
 # Independence
 
-복권의 부분에 대한 일관성이 복권 전체에 대한 일관성과 일치한다는 성질 입니다.
-
-복권 내의 특정 항목을 다른 걸로 바꿨을 때, 복권 전체에 대한 선호도 그에 맞게 일관되게 바뀌어야 한다는 성질 입니다.
+복권에서 특정 항목을 더 선호되는 다른 걸(상품 or 복권)로 바꾼다면, 이전 복권과 신규 복권 사이의 복권 선호는 대체한 상품 사이의 선호 관계를 그대로 따른다. 즉, 대체된 상품만 보면 되고, 대체되지 않은 다른 상품들은 신경 쓰지 않아도 된디. 각 상품들은 서로 영향을 주지 않는 "독립성"을 갖는다.
 
 수식으로 이해하는게 좀더 편합니다.
 
 <div class="definition" markdown="1">
 
-두 복권 사이에 아래와 같은 선호가 성립 합니다.
+두 "상품" 사이에 아래와 같은 선호가 성립 합니다.
 
 $$
-[z_k] \succcurlyeq \beta a \oplus (1-\beta) b
+[a] \succcurlyeq [z_k]
 $$
 
-선호가 복권에 대해 독립성을 갖는다면, 아래의 선호에 대한 부등식도 성립 합니다.
+복권 선호가 독립성을 갖는다면, 신규 복권과 기존 복권은 대체된 상품이 갖는 선호를 그대로 따릅니다.
 
 $$
-\alpha_1 z_1 \oplus \cdots \oplus \alpha_k z_k \oplus \cdots \oplus a_n z_n
+\begin{gather*}
+\cdots \oplus \alpha_k \cdot {\color{red} a} \oplus \cdots \\
+\succcurlyeq \\
+\cdots \oplus \alpha_k \cdot {\color{red} z_k} \oplus \cdots
+\end{gather*}
+$$
 
-\succcurlyeq
+그리고 이 명제에 대한 역도 성립 합니다.
 
-\alpha_1 z_1 \oplus \cdots \oplus \alpha_k (\beta a \oplus (1-\beta) b) \oplus \cdots \oplus a_n z_n
+</div>
+
+<div class="definition" markdown="1">
+
+두 "복권" 사이에 아래와 같은 선호가 성립 합니다.
+
+$$
+\beta \cdot a \oplus (1-\beta) \cdot b \succcurlyeq [z_k]
+$$
+
+복권 선호가 독립성을 갖는다면, 신규 복권과 기존 복권은 대체된 복권이 갖는 선호를 그대로 따릅니다.
+
+$$
+\begin{gather*}
+\cdots \oplus \alpha_k \cdot {\color{red} (\beta \cdot a \oplus (1-\beta) \cdot b)} \oplus \cdots \\
+\succcurlyeq \\
+\cdots \oplus \alpha_k \cdot {\color{red} z_k} \oplus \cdots
+\end{gather*}
 $$
 
 그리고 이 명제에 대한 역도 성립 합니다.
@@ -223,11 +247,11 @@ Let $a$ and $b$ be two prizes with $[a] \succ [b]$, and let $\alpha$ and $\beta$
 
 $$
 \begin{gather*}
-\alpha \succ \beta \\
+\alpha > \beta \\
 \iff \\
-\alpha \cdot a \oplus (1 - \alpha) b
+{\color{red} \alpha} \cdot a \oplus (1 - \alpha) \cdot b
 \succ
-\beta \cdot a \oplus (1 - \beta) b
+{\color{red} \beta} \cdot a \oplus (1 - \beta) \cdot b
 \end{gather*}
 $$
 
@@ -242,7 +266,7 @@ p_{\alpha} = \alpha \cdot a \oplus (1 - \alpha) \cdot b
 $$
 
 라고 합시다. 복권에 대한 선호 관계가 독립성을 만족하므로,
-복권 $p_{\alpha}$에서 $a$를 $b$로 대체한 복권에 대해서 아래의 선호가 성립 합니다.
+복권 $p_{\alpha}$에서 $a$를 $b$로 대체한 복권에 대해 아래의 선호가 성립 합니다.
 
 $$
 p_{\alpha} \succ \alpha \cdot b \oplus (1 - \alpha) \cdot b
@@ -254,22 +278,30 @@ $$
 p_{\alpha} \succ [b]
 $$
 
-이 선호 관계에서 선호의 독립성을 사용해 다시 이런 선호 관계를 얻을 수 있습니다.
+여기에서 잠깐 $p_{\alpha}$를 아래와 같이 바꿔서 표현 합니다.
+
+$$
+p_{\alpha}
+= (\beta/\alpha) \cdot p_{\alpha} \oplus (1 - \beta/\alpha) \cdot p_{\alpha}
+$$
+
+위의 표현은 깊게 생각할 건 없고, 단순히 $p_{\alpha}$를 $\beta / \alpha$의 확률로 분할한 것 입니다. 일종의 수식 전개의 트릭이라고 생각합시다!
+
+다시 선호의 독립성을 사용해 이런 선호 관계를 얻을 수 있습니다.
 
 $$
 \begin{aligned}
 p_{\alpha}
-&= (\beta/\alpha) \cdot p_{\alpha} \oplus (1 - \beta/\alpha) \cdot p_{\alpha} \\
-&\succ (\beta/\alpha) \cdot p_{\alpha} \oplus (1 - \beta/\alpha) \cdot b
+&= (\beta/\alpha) \cdot p_{\alpha} \oplus (1 - \beta/\alpha) \cdot {\color{red} p_{\alpha}} \\
+&\succ (\beta/\alpha) \cdot p_{\alpha} \oplus (1 - \beta/\alpha) \cdot {\color{red} b}
 \end{aligned}
 $$
 
-이제 위의 선호에 대한 식을 잘 정리하면,
+이제 마지막에 얻은 복권에 대한 식을 잘 정리하면
 
 $$
 \begin{aligned}
-p_{\alpha}
-&\succ (\beta/\alpha) \cdot p_{\alpha} \oplus (1 - \beta/\alpha) \cdot b \\
+&(\beta/\alpha) \cdot p_{\alpha} \oplus (1 - \beta/\alpha) \cdot b \\
 &= \beta \cdot a \oplus (1 - \beta) \cdot b
 \end{aligned}
 $$
@@ -277,9 +309,9 @@ $$
 따라서,
 
 $$
-\alpha \cdot a \oplus (1 - \alpha) \cdot b
+{\color{red} \alpha} \cdot a \oplus (1 - \alpha) \cdot b
 \succ
-\beta \cdot a \oplus (1 - \beta) \cdot b
+{\color{red} \beta} \cdot a \oplus (1 - \beta) \cdot b
 $$
 
 $\blacksquare$
@@ -288,6 +320,6 @@ $\blacksquare$
 
 # 맺음말
 
-이어지는 포스트에서는 "[기대 효용(Expected Utility)](/2025/04/18/expected-utility/)"에 대해 살펴봅니다.
+이어지는 포스트에서는 "[기대 효용(Expected Utility)](/2025/04/10/expected-utility/)"에 대해 살펴봅니다.
 
 경제학적 선택을 할 때, 많은 것들이 불확실성을 가지고 있습니다. 이번에 살펴본 복권(Lotteries)는 이 불확실을 모델링한 것 입니다. 기대 효용은 불확실함이 있을 때, 사람들의 선택의 기준이 됩니다. 그리고 사람들이 기대 효용에 따라 행동한다는 것을 전제로 경제학 이론이 발전하게 됩니다.

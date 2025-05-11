@@ -15,15 +15,25 @@ toc_sticky: true
 
 참고로 Openbook Publisher에 등록 되어 있어, "무료"로 사용하실 수 있습니다.
 
+> [미시경제학, 서울시립대 2020-가을, 지창구](https://www.youtube.com/playlist?list=PLhsqVA2TJf4eJ9dcClZ80Ihgh0mCe6Ewv)
+
+학교 수업과 교재도 다르고, 순서도 다르지만 미시경제학을 여러 방면에서 이해하고 다시 보는데 많은 도움이 되었습니다!
+
+
 # Chaptors
 
 - [Preference](/2025/03/05/preferences/)
   - [Utility Functions](/2025/03/10/utility-functions/)
   - [Choice Functions](/2025/03/12/choice-functions/)
   - [Property $\alpha$](/2025/03/17/property-alpha/)
-- [Lotteries](/2025/03/19/lotteries/)
-  - [Expected Utility](/2025/04/18/expected-utility/)
-- [Bundles of Goods](/2025/04/12/bundles-of-goods/)
-  - [Bundle Preference](/2025/04/13/bundle-preference/)
-  - [Bundle Preference: Convexity](/2025/04/14/bundle-preference-convexity/)
-  - [Bundle Preference: Differentiability](/2025/04/14/bundle-preference-differentiability/)
+- [Lotteries & Lottery Preference](/2025/03/19/lotteries/)
+  - [Expected Utility](/2025/04/10/expected-utility/)
+- [Bundles & Bundle Preference](/2025/04/12/bundles-of-goods/)
+  - [Monotonicity](/2025/04/13/bundle-preference-monotonicity/)
+  - [Continuity](/2025/04/14/bundle-preference-continuity/)
+  - [Convexity](/2025/04/14/bundle-preference-convexity/)
+  - [Differentiability](/2025/04/14/bundle-preference-differentiability/)
+
+# Thoughts
+
+어떻게 보면 응용 수학의 한 갈레를 이 수업을 통해 맛보게 된 것 같습니다.

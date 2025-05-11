@@ -85,15 +85,20 @@ Every preference relation on a finite set can be represented by a utility functi
 </div>
 
 
-## Preference relation not represented by a utility function
+## Lexicographic Preference Do Not Have Utility Function
 
 <div class="theorem" markdown="1">
 
-The (lexicographic) preference relation is not represented by any utility function
+The lexicographic preference relation is not represented by any utility function
 
 </div>
 
 TODO: proof
+
+참고로 사전식 선호에 대한 이 성질은 나중에 "번들(Bundle) 선호"에 대해 다룰 때 한번더 등장합니다! [[link](/2025/04/12/bundles-of-goods/#lexicographic-preference)]
+{: .notice }
+
+
 
 ## Positive Linear Transformation of Utility Function
 

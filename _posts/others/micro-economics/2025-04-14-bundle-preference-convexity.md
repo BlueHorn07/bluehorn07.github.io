@@ -3,7 +3,7 @@ title: "Bundle Preference: Convexity"
 toc: true
 toc_sticky: true
 categories: ["Macro Economics"]
-excerpt: ""
+excerpt: "번들 상품에 대한 선호가 갖는 특별한 성질"
 ---
 
 졸업을 위해 마지막 학기에 "미시경제학" 수업을 듣게 되었습니다.
@@ -16,10 +16,11 @@ excerpt: ""
 
 [이전 포스트](/2025/04/13/bundle-preference/)부터 번들에 대한 선호의 종류에 대해서 살펴보고 있습니다.
 
-- Monotonicity
-- Continuity
-- **Convexity**
-- Differentiability
+- [Monotonicity](/2025/04/13/bundle-preference-monotonicity/)
+- [Continuity](/2025/04/14/bundle-preference-continuity/)
+- **[Convexity](/2025/04/14/bundle-preference-convexity/)**
+- [Differentiability](/2025/04/14/bundle-preference-differentiability/)
+
 
 이번 포스트에선 번들 선호의 오목성(Convexity)에 대해서 살펴봅니다.
 
@@ -196,4 +197,9 @@ TODO... 증명이랑 예시도 있는데 와닿지 x...
 
 # 맺음말
 
-이어지는 포스트에서는 번들 선호의 "[미분가능성(Differentiability)](/2025/04/14/bundle-preference-differentiability/)"에 대해서 살펴봅니다! (이게 마지막!)
+이제 나머지 번들 선호의 성질들도 살펴봅시다!
+
+- [Monotonicity](/2025/04/13/bundle-preference-monotonicity/)
+- [Continuity](/2025/04/14/bundle-preference-continuity/)
+- [Convexity](/2025/04/14/bundle-preference-convexity/)
+- [Differentiability](/2025/04/14/bundle-preference-differentiability/)
