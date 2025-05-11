@@ -1,5 +1,5 @@
 ---
-title: "Numerial Integration"
+title: "Numerical Integration"
 toc: true
 author: bluehorn_math
 toc_sticky: true
@@ -29,7 +29,7 @@ $$
 
 "Trapezoid"는 사다리꼴이라는 뜻 입니다. 이 방식은 데이터 포인트를 단 2개만 사용합니다.
 
-그래서 
+그래서
 
 - $x_0 = a$
 - $x_1 = b$
@@ -45,8 +45,8 @@ $$
 
 $$
 \int_a^b f(x) \, dx
-= \int_{x_0 = a}^{x_1 = b} 
-\left[ 
+= \int_{x_0 = a}^{x_1 = b}
+\left[
 \frac{(x-x_1)}{(x_0 - x_1)} f(x_0) + \frac{(x-x_0)}{(x_1 - x_0)} f(x_1)
 \right] \, dx + \text{Err Term}
 $$
@@ -56,7 +56,7 @@ $$
 $$
 \begin{aligned}
 \int_a^b f(x) \, dx \approx
-&= \left[ 
+&= \left[
 \frac{(x-x_1)^2}{2(x_0 - x_1)} f(x_0) + \frac{(x-x_0)^2}{2(x_1 - x_0)} f(x_1)
 \right]_{x_0}^{x_1} \\
 &= \frac{x_1 - x_0}{2} [f(x_0) + f(x_1)] \\
@@ -80,7 +80,7 @@ $$
 마찬가지로 라그랑주 근사를 합니다.
 
 $$
-P_2(x) = 
+P_2(x) =
 \frac{(x-x_1)(x-x_2)}{(x_0-x_1)(x_0-x_2)}f(x_0)
 + \frac{(x-x_0)(x-x_2)}{(x_1-x_0)(x_1-x_2)}f(x_1)
 + \frac{(x-x_0)(x-x_1)}{(x_2-x_0)(x_2-x_1)}f(x_2)
@@ -103,7 +103,7 @@ $$
 $P_2(x)$는 아래와 같이 다시 작성 됩니다.
 
 $$
-P_2(x) = 
+P_2(x) =
 \frac{(x)(x-h)}{(-h)(-2h)}f(x_0)
 + \frac{(x+h)(x-h)}{(+h)(-h)}f(x_1)
 + \frac{(x+h)(x)}{(2h)(h)}f(x_2)
@@ -112,7 +112,7 @@ $$
 
 $$
 \begin{aligned}
-\int_{-h}^{h} f(x) \, dx 
+\int_{-h}^{h} f(x) \, dx
 &\approx \int_{-h}^{h} P_2(x) \, dx \\
 &= \int_{-h}^{h} \frac{1}{2h^2} \left[
 x(x-h)f(x_0) - 2 (x^2 - h^2) f(x_1) + x(x+h) f(x_2)
@@ -127,7 +127,7 @@ $$
 
 $$
 \begin{aligned}
-\int_{-h}^{h} f(x) \, dx 
+\int_{-h}^{h} f(x) \, dx
 &\approx \int_{-h}^{h} P_2(x) \, dx \\
 &= \int_{-h}^{h} \frac{1}{2h^2} \left[
 x^2 f(x_0) - 2x^2 f(x_1) + 2h^2 f(x_1) + x^2 f(x_2)
@@ -139,7 +139,7 @@ $$
 
 $$
 \begin{aligned}
-\int_{-h}^{h} f(x) \, dx 
+\int_{-h}^{h} f(x) \, dx
 &\approx \int_{-h}^{h} P_2(x) \, dx \\
 &= \frac{1}{2h^2} \left[
 \frac{2}{3}h^3 f(x_0) - \frac{4}{3}h^3 f(x_1)
@@ -170,18 +170,77 @@ $$
 
 공식에 대한 유도는 3-point에서 했던 것처럼 함수를 평행이동 한 후에 수행해주면 된다고 합니다.
 
-# Newton-Cotes Formula
+# (Closed) Newton-Cotes Formula
 
 지금까지 살펴본 Trapezoid Rule, Simpson's Rule 모두 등간격 데이터 포인트에서의 적분 근사를 하는 방법이었습니다.
 
 이것을 일반화 하여 $n$개 등간격 포인트에서 수행하는 것을 "**뉴턴-코츠 공식**"이라고 합니다.
 
+![](/images/mathematics/numerical-analysis/closed-newton-cotes-formula.png){: .fill .align-center style="width: 400px" }
+
 또, 이 뉴턴-코츠 공식은 구간의 양 끝점을 포함하는지, 포함하지 않는지에 대해서 "닫힌 공식"과 "열린 공식"으로 나뉩니다. 이번 포스트에서 살펴본 적분 근사에 대한 공식들은 모두 "**닫힌 뉴턴-코츠 공식**" 입니다.
 
+## Degree of Precision
+
+수치적분으로 정확히 적분이 가능한 다항식의 최고 차수를 말합니다.
+
+예를 들어, 사다리꼴 법칙은 $k=1$로 1차 다항식까지는 정확하게 수치 적분을 하지만, 2차 다항식에서는 오차가 발생 합니다. 심프슨 법칙은 $k=2$로 2차 다항식까지는 정확하게 수치 적분을 제공 합니다.
 
 # Error Analysis
+
+일단 스킵!
 
 ## Trapezoid Rule
 
 ## Simpson's Rule
+
+## Closed Newton-Cotes formula
+
+
+# Open Newton-Cotes Formula
+
+이번에는 구간 $[a, b]$의 양 끝점을 포함하지 않는 방식으로 수치 적분을 수행 합니다.
+
+![](/images/mathematics/numerical-analysis/open-newton-cotes-formula.png){: .fill .align-center style="width: 400px" }
+
+이때, 데이터 노드는 등간격으로 분포하지만, $[a, b]$ 양 끝점을 포함하지는 않습니다.
+
+수업에서는 아래와 같이 데이터 노드는 레이블링 합니다.
+
+- interval start $a = x_{-1}$
+- interval end $b = x_{n+1}$
+- start node $x_0 = a + h$
+- end node $x_n = b - h$
+- space $h = (b-a)/(n+2)$
+
+그리고 열린 뉴턴-코츠의 식은 아래와 같이 작성 됩니다.
+
+$$
+\int_{a}^{b} f(x) \, dx
+\approx \sum_{i=0}^n a_i f(x_i)
+$$
+
+## Closed Form vs. Open Form
+
+Closed Form은 함수가 양 끝점을 모두 포함하는, 경계를 포함하는 방법 입니다. 반면에 Open Form은 함수의 양 끝점을 포함하지 않는데요. 이것은 $a, b$에서 불연속이 발생하거나 정의되지 않는 "특이점"일 때 Open Form을 사용해 수치 적분을 수행하게 됩니다.
+
+반면에 둘의 공통점도 존재합니다! 둘다 데이터 노드의 갯수가 짝수 일 때, 홀수 일때보다 더 좋은 기대치를 제공합니다. 즉, $2n$일 때가 $2n-1$보다 더 좋은 Degree of Precision $k$를 제공하고, $2n$은 $2n+1$보다 같은 Deg of Precession $k$를 가집니다.
+
+이 부분도 추후에 좀더 분석해보겠습니다.
+
+# Composite Newton-Cotes Formula
+
+기존 접근은 구간을 $[a, b]$ 하나만 정의하고, 여기 위에서 수치 적분을 수행 했습니다. 하지만 이것은 복잡한 함수를 수치적분 하거나 긴 구간에 대해서는 정확도가 떨어지거나 오차가 커지는 문제가 있었습니다.
+
+그래서 "합성 수치적분" 방법이 등장했습니다! 합성 수치적분은 단일 구간이 아니라 적분하려는 구간 $[a, b]$를 작은 하위 구간으로 나누고, 각 하위 구간에 기존 적분 공식을 독립적으로 적용 합니다!
+
+![](/images/mathematics/numerical-analysis/composite-newton-cotes-formula.png){: .fill .align-center style="width: 100%" }
+
+## Composite Trapezoidal Rule
+
+## Composite Simpson Rule
+
+# 맺음말
+
+합성 뉴턴-코츠 방법은 이전에 살펴본 "스플라인"과 접근이 비슷한 것 같습니다. 전체 구간에 대해 함수 근사를 하는게 아니라 하위 구간으로 나누어 지역적(locally) 접근하는 접근으로 오차나 진동(runge effect)를 해결하려고 하는 점이 같은 맥락인 것 같습니다.
 
