@@ -26,7 +26,7 @@ toc_sticky: true
     - [Hermite Interpolation using Divided Differences](/2025/04/02/hermite-interpolation-using-divided-differences/)
   - [Spline Interpolation](/2025/04/02/spline-interpolation/)
     - Cubic Spline
-    - Natrual Cubic Spline
+    - Natural Cubic Spline
   - [Interpolation Differentiation](/2025/04/27/interpolation-differentiation/)
 - [Numerical Differentiation](/2025/04/28/numerical-differentation/)
 - [Numerical Integration](/2025/05/04/numerical-integration/)

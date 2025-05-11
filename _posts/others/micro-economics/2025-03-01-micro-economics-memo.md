@@ -43,4 +43,4 @@ disable: true
   - stepwise preference
   - complementary goods
   - Ideal bundle
-  - Lexicographic prefernece
+  - Lexicographic preference

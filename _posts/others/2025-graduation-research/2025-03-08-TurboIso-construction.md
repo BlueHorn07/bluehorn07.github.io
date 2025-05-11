@@ -350,7 +350,7 @@ $u'$와 $v'$가 Degree 조건과 NLF Filter 조건을 만족한다면, 이제 �
 만약 매칭이 가능 했다면(`matched = true`), 데이터 노드 $v'$를 Candidate Subregion $CR(u', v)$에 추가합니다.
 
 
-![](/images/others/2025-graduation-research/TurboIso/algo-3-compre-cr-and-nec.png){: .fill .align-center style="min-width: 260px; width: 70%" }
+![](/images/others/2025-graduation-research/TurboIso/algo-3-compare-cr-and-nec.png){: .fill .align-center style="min-width: 260px; width: 70%" }
 
 마지막으로, 완성된 $CR(u', v)$ 집합과 $u'.NEC$ 집합을 비교 합니다.
 
