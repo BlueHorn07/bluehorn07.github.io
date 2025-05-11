@@ -33,6 +33,7 @@ toc_sticky: true
   - [Continuity](/2025/04/14/bundle-preference-continuity/)
   - [Convexity](/2025/04/14/bundle-preference-convexity/)
   - [Differentiability](/2025/04/14/bundle-preference-differentiability/)
+- [Budget Sets & Demand Function & Consumer's Problem](/2025/04/22/consumer-problem/)
 
 # Thoughts
 
