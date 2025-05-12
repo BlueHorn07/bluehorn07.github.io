@@ -35,4 +35,10 @@ toc_sticky: true
   - Newton-Cotes Method
   - Composite Newton-Cotes Method
   - [Gaussian Quadrature](/2025/05/11/gaussian-quadrature/)
-- Initial Value Problem for ODEs
+- Numerical Methods for ODEs
+  - [One-step Method](/2025/05/12/one-step-method/)
+    - [Forward Euler Method](/2025/05/12/euler-method/)
+    - Backward Euler Method
+    - Trapzoid Method
+  - [Talyor Method](/2025/05/12/taylor-method/)
+  - Runge-Kutta Method
