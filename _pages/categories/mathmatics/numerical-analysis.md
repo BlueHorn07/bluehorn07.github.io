@@ -30,6 +30,9 @@ toc_sticky: true
   - [Interpolation Differentiation](/2025/04/27/interpolation-differentiation/)
 - [Numerical Differentiation](/2025/04/28/numerical-differentation/)
 - [Numerical Integration](/2025/05/04/numerical-integration/)
-  - Trapzoid Rule
+  - Trapezoid Rule
   - Simpson's Rule
   - Newton-Cotes Method
+  - Composite Newton-Cotes Method
+  - [Gaussian Quadrature](/2025/05/11/gaussian-quadrature/)
+- Initial Value Problem for ODEs
