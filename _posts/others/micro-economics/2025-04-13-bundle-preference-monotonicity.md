@@ -14,7 +14,7 @@ excerpt: "번들 상품에 대해 개인이 갖는 선호에 대해."
 
 # 들어가며
 
-[이전 포스트](/2025/04/12/bundles-of-goods/)에서는 번들의 정의와 번들 위에서 정의한 선호의 사례들을 살펴보았습니다.
+[이전 포스트](/2025/04/12/bundles-of-goods/)에서 번들의 정의와 번들 위에서 정의한 선호의 사례들을 살펴보았습니다.
 
 - Constant Tradeoff
 - Only Preference
@@ -133,11 +133,20 @@ $v_1 = 0$이라면 둘이 무차별 하다는 결과가 나옵니다.
 
 나머지 번들 선호에 대한 설명은 스킵 하겠습니다... ㅎㅎ
 
+# Negative Slope
+
+번들 선호의 단조성을 "더 많이 가지면 좋다"라고 표현하였는데요. 저는 "무차별 곡선의 기울기가 항상 음수를 가진다"는 표현이 더 와닿는 것 같습니다!
+
+이것은 무차별 곡선 위의 한 번들을 잡을 때, 그 위에서의 사분면(quadrant)을 잡으면, 1 사분면은 항상 선호되는 번들 집합이 되고, 3사분면은 항상 비선호되는 번들 집합이 됩니다!
+
+![](/images/others/micro-economics/bundle-preference-summary-youtube.png){: .fill .align-center style="width: 100%" }
+[[Youtube] 미시경제학 (Microeconomics) Week 2-1: Indifference Curves and MRS](https://youtu.be/tab5kGEAE5E?si=Zo6vWJVHbSTYN5bi&t=2105)
+{: .small .gray .text-center }
+
+교재 순서대로 살펴본다면 (a3)번 까지 살펴보았습니다! 나머지 성질들도 천천히 살펴봅시다 ㅎㅎ
+
 # 맺음말
 
-이제 나머지 번들 선호의 성질들도 살펴봅시다!
-
-- [Monotonicity](/2025/04/13/bundle-preference-monotonicity/)
 - [Continuity](/2025/04/14/bundle-preference-continuity/)
 - [Convexity](/2025/04/14/bundle-preference-convexity/)
 - [Differentiability](/2025/04/14/bundle-preference-differentiability/)

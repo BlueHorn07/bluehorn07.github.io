@@ -3,7 +3,7 @@ title: "Bundle Preference: Differentiability"
 toc: true
 toc_sticky: true
 categories: ["Macro Economics"]
-excerpt: "번들 상품에 대한 선호가 갖는 특별한 성질"
+excerpt: "한계대체율(MRS)의 정의를 살펴보고, 번들 선호가 미분가능한 경우를 살펴보자."
 ---
 
 졸업을 위해 마지막 학기에 "미시경제학" 수업을 듣게 되었습니다.
@@ -14,7 +14,7 @@ excerpt: "번들 상품에 대한 선호가 갖는 특별한 성질"
 
 # 들어가며
 
-[이전 포스트](/2025/04/13/bundle-preference/)부터 번들에 대한 선호의 종류에 대해서 살펴보고 있습니다.
+[번들과 번들 선호](/2025/04/12/bundles-of-goods/)에 대해 살펴보고, 번들에 대한 선호가 가질 수 있는 특징에 대해서 살펴보고 있습니다.
 
 - [Monotonicity](/2025/04/13/bundle-preference-monotonicity/)
 - [Continuity](/2025/04/14/bundle-preference-continuity/)
@@ -56,41 +56,65 @@ MRS는 "무차별 곡선"의 기울기와도 같습니다. 그러나, 곡선의 
 
 이런 극단적인 경향을 가진 사람은 오히려 한 재화만을 극단적으로 소비하려는 경향이 있습니다. 그래서 $x$ 재화만 전부 갖거나 $y$ 재화만 전부 갖는 상황을 혼합해서 가지고 있는 것보다 더 선호 합니다.
 
-## Local Valuation
+## Marginal Utility
 
 바로 정의로 들어가니까 너무 헷갈리더라구요... 일단 선행 개념을 먼저 다지고 들어가봅시다.
 
 어떤 번들 $z = (z_1, z_2)$에 대해서 효용 함수 $u(z)$와 그 값은 소비자가 그 번들 $z$를 얼마나 좋아하는지 스칼라 값으로 표현한 것 입니다. 이것은 그 번들의 종합 효용 입니다.
 
-이 스칼라 함수 $u(z)$를 $z_1$, $z_2$에 대해 편미분 하면, $z$ 위치에서 각 재화를 조금 늘렸을 때 효용이 얼마나 증가하는지를 알 수 있습니다. 이것을 Local Valuation라고 합니다. 좀더 쉽게 이름 붙이면, "한계 효용"이라고 합니다.
+이 스칼라 함수 $u(z)$를 $z_1$, $z_2$에 대해 편미분 하면, $z$ 위치에서 각 재화를 조금 늘렸을 때 효용이 얼마나 증가하는지를 알 수 있습니다.
+이것을 "Marginal Utility"라고 합니다. 좀더 쉽게 이름 붙이면, "한계 효용"이라고 합니다. (수업 자료에서는 "Local Valuation"라고 표현 합니다만 저는 유튜브 강좌의 표현이 더 와닿는 것 같습니다!)
 
 $$
 \begin{aligned}
-v_1(z) &= \frac{\partial u}{\partial z_1}(z) \\
-v_2(z) &= \frac{\partial u}{\partial z_2}(z)
+MU_1(z) &= \frac{\partial u}{\partial z_1}(z) \\
+MU_2(z) &= \frac{\partial u}{\partial z_2}(z)
 \end{aligned}
 $$
 
 이 편미분 값은 $z$ 근처에서 방향을 조금 바꿨을 때, 그 방향이 효용에 + 영향을 주는지 - 영향을 주는지, 그리고 얼만큼 영향을 주는지에 대해 판단하는 기준이 될 수 있습니다.
 
-만약, 주어진 번들 $z$에 대해서 편미분 값인 $(v_1(z), v_2(z)) = (0, 0)$라고 한다면, 효용이 포화된 지점이라고 할 수 있습니다. 어느 지점으로 이동해도 효용이 변할 수 없는 지점 입니다. 이런 지점은 아주아주 예외적인 경우로 현실적으로 존재할 수 없고, 경제학에서도 예외적인 케이스로 분류합니다. 뒤에 이어지는 내용에서도 이것에 대해서는 제외하고 정의 합니다.
+만약, 주어진 번들 $z$에 대해서 편미분 값인 $(MU_1(z), MU_2(z)) = (0, 0)$라고 한다면, 효용이 포화된 지점이라고 할 수 있습니다. 어느 지점으로 이동해도 효용이 변할 수 없는 지점 입니다. 이런 지점은 아주아주 예외적인 경우로 현실적으로 존재할 수 없고, 경제학에서도 예외적인 케이스로 분류합니다. 뒤에 이어지는 내용에서도 이것에 대해서는 제외하고 정의 합니다.
 
 
-## MRS vs. Local Valuation
+## MRS vs. Marginal Utility
 
 또 헷갈렸던 것은 MRS와 한계효용 입니다. MRS는 두 재화의 교환비 입니다. 반면에, 한계 효용은 다른 재화와 상관 없이 어떤 재화를 아주 조금 늘릴 때의 효용의 변화량 입니다. MRS는 효용을 유지하면서 교환하는 비율이라는 점도 명심 합니다.
 
-그래서 MRS를 한계 효용을 통해 아래와 같이 정의 합니다.
+한계 효용(MU) 하나만 가지고는 이 재화의 가치나 교환비를 알 수 없습니다. 그래서 아무 의미가 없습니다. 한계 효용 값은 같은 지점에서 $MU_1$, $MU_2$를 알고 이것을 나누어 비율을 내야 그제서야 "한계 교환비(MRS)"라는 의미를 갖게 됩니다!!
+
+그래서 한계 효용를 사용해 MRS를 아래와 같이 정의 합니다.
 
 $$
 \text{MRS} = \frac{\partial u(z) / \partial z_1}{\partial u(z) / \partial z_2}
 $$
 
+# Non-differentiable bundle preference: Kinky Preference
+
+아직 정의를 살펴보지도 않았는데 ㅋㅋ 미분불가능한 번들 선호의 사례들부터 먼저 살펴봅시다.
+
+![](/images/others/micro-economics/kinky-preference-youtube.png){: .fill .align-center style="width: 400px" }
+[[Youtube] 미시경제학 (Microeconomics) Week 2-4: Consumer choice](https://youtu.be/kEgg_pAhyLs?si=6vvAxrYhAHw4IDRa&t=1319)
+{: .small .gray .text-center }
+
+그림의 곡선은 아래의 Utility Function을 갖는 번들 선호 입니다.
+
+$$
+u(x_1, x_2) = \min \left\{ 2x_1 + x_2, x_1 + 2 x_2 \right\}
+$$
+
+이 선호는 "non-strictly convex" 입니다. 기울기가 strictly decreasing 하지 않습니다.
+
+또, 이 선호는 미분불가능 번들 선호 입니다. 꺽이는 지점에서 한계 효용(MU)으로 그리는 접선이 하나로 일치하지 않습니다.
+
+<br/>
+
+사실 이것 왜에도 "Perfect Complements"나 "꺽인 점"이 있는, 불연속점이 있는 다른 모든 번들 선호는 모두 미분불가능 성질을 갖습니다.
+
+
 # Differentiable Bundle Preference
 
 좋았어! 이제 정의를 살펴봅시다!
-
-
 
 <div class="definition" markdown="1">
 
@@ -129,7 +153,7 @@ $$
 
 참고로 $z + (\epsilon \delta_1, \epsilon \delta_2)$ 이 표현은 미적분학에서 스칼라 함수 $u(z)$에서 $z$에 접하는 접평면을 정의하는 방법 입니다. 접평면 위의 점이 접점의 효용보다 더 크다면, 당연히 선호되겠죠? 이 접면이 정의되고, 그게 번들 선호로 이어진다는 걸로 미분가능성을 정의하는 흐름인 것 같습니다.
 
-(사실 주저리 주저리 적었지만 아직 확 와닿지는 않네요..;;)
+(주저리 주저리 적었지만 아직 확 와닿지는 않네요..;;)
 
 
 # Lexicographic preferences are not differentiable
@@ -154,3 +178,9 @@ $(0, 1)$ 방향으로 움직인다고 해봅시다. 첫번째 재화는 그대�
 번들 선호의 미분가능성을 어렵게 구할 필요 없이, 번들 선호를 정의하는 효용 함수를 알고 있다면, 그걸로 번들 미분가능성을 유도할 수 있습니다.
 
 증명은 스킵!
+
+# Summary
+
+![](/images/others/micro-economics/bundle-preference-summary-youtube.png){: .fill .align-center style="width: 100%" }
+[[Youtube] 미시경제학 (Microeconomics) Week 2-1: Indifference Curves and MRS](https://youtu.be/tab5kGEAE5E?si=Zo6vWJVHbSTYN5bi&t=2105)
+{: .small .gray .text-center }

@@ -100,7 +100,7 @@ TODO: proof
 
 
 
-## Positive Linear Transformation of Utility Function
+## Monotone Transformation of Utility Function
 
 <div class="theorem" markdown="1">
 
@@ -108,7 +108,7 @@ Let $f$ is a real-valued increasing function.
 
 If $u$ represents the preference relation $\succcurlyeq$ on $X$,
 
-then so does the positive linear transformation $w$ defined by $w(x) = f(u(x))$ for all $x \in X$.
+then so does the monotone transformation $w$ defined by $w(x) = f(u(x))$ for all $x \in X$.
 
 </div>
 

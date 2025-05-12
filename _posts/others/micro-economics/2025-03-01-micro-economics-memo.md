@@ -20,6 +20,10 @@ disable: true
   - reflective
   - symmetric
   - transitive
+  - 여기에서 한번 헷갈리던게, reflective랑 symmetric인데,
+    - reflective는 모든 $x \in X$에 대해서 $x \succcurlyeq x$를 만족한다는 것
+      - 수학적으로는 모든 재화는 거울처럼 자기 자신과 그 관계를 맺을 수 있다는 것임. $x R x$
+    - symmetric은 모든 무차별한 $x \sim y$에 대해서, 양방향으로 성립한다는 것 $y \sim x$
 - 선택 함수에서 정의하는 성질
   - rationalizable
     - completeness
@@ -31,7 +35,9 @@ disable: true
   - independence
   - monotonicity
 - 번들 선호에서 정의하는 성질
+  - Monotone
   - Convexity
+    - 사람들은 재화를 섞는 걸 더 좋아한다.
   - Differentiability
 
 # 종류
@@ -44,3 +50,21 @@ disable: true
   - complementary goods
   - Ideal bundle
   - Lexicographic preference
+  - 번외편 (youtube 강좌에서만 나옴)
+    - Quas-linear preference
+    - Cobb-Douglas preference
+    - Kinky preference
+
+# MRS
+
+- $\succcurlyeq$ is monotone
+  - MRS < 0 everywhere
+- $\succcurlyeq$ is convex
+  - decreasing MRS
+
+# (번외) 예산 집합의 솔루션
+
+Youtube 강좌에서만 나왔습니다. [[youtube](https://youtu.be/kEgg_pAhyLs?si=8tsx1Oyv3c1ih7WJ&t=1471)]
+
+- Interior Solution
+- Corner Solution

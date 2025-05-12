@@ -14,7 +14,7 @@ excerpt: "번들 상품에 대한 선호가 갖는 특별한 성질"
 
 # 들어가며
 
-[이전 포스트](/2025/04/13/bundle-preference/)부터 번들에 대한 선호의 종류에 대해서 살펴보고 있습니다.
+[번들과 번들 선호](/2025/04/12/bundles-of-goods/)에 대해 살펴보고, 번들에 대한 선호가 가질 수 있는 특징에 대해서 살펴보고 있습니다.
 
 - [Monotonicity](/2025/04/13/bundle-preference-monotonicity/)
 - [Continuity](/2025/04/14/bundle-preference-continuity/)
@@ -54,34 +54,43 @@ $$
 
 <div class="definition" markdown="1">
 
-The bundle preference is "convex" if for $a \succcurlyeq b$, then
+For every $a \sim b$ and $a \ne b$, and for every $\lambda \in [0, 1]$,
 
 $$
-\lambda a + (1 - \lambda) b \succcurlyeq b
+\begin{gather*}
+\lambda a + (1 - \lambda) b \, \succcurlyeq \, a \\
+\text{and} \\
+\lambda a + (1 - \lambda) b \, \succcurlyeq \, b
+\end{gather*}
 $$
-
-for all $\lambda \in (0, 1)$,
-
-and is "strictly convex" if for $a \succcurlyeq b$ and $a \ne b$, then
-
-$$
-\lambda a + (1 - \lambda) b \succ b
-$$
-
-for all $\lambda \in (0, 1)$.
 
 </div>
 
-$a$가 $b$보다 선호된다면, $a$와 $b$ 사이의 어떤 "중간 지점"도 $b$보다 선호된다는 성질 입니다.
+같은 무차별 곡선 위에 있는 $a$와 $b$ 사이의 어떤 "중간 지점"도 $a$와 $b$보다 선호된다는 성질 입니다.
 
 $\lambda \in (0, 1)$로 $a$와 $b$ 사이의 선형 결합을 하는데, 이는 2차원 번들 평면 상에서 $a$와 $b$를 연결하는 선분의 임의의 점을 의미합니다. (기하학적 해석)
 
-![](/images/others/micro-economics/bundle-convexity.png){: .fill .align-center style="width: 300px" }
+![](/images/others/micro-economics/bundle-convexity-youtube.png){: .fill .align-center style="width: 100%" }
+[[Youtube] 미시경제학 (Microeconomics) Week 2-1: Indifference Curves and MRS](https://youtu.be/tab5kGEAE5E?si=TNjpPm6twAxKouL8&t=1604)
+{: .small .gray .text-center }
+
+위의 그림은 번들 선호 그래프가 가질 수 있는 3가지 경우 입니다.
+
+## Strictly Convex
+
+![](/images/others/micro-economics/bundle-convexity.png){: .fill .align-center style="width: 100%" }
 
 그래프에서 왼쪽은 "볼록한 선호"를 표현하고, 오른쪽은 "엄밀히 볼록한 선호"를 표현합니다.
 
-// 이 그래프를 해석하는건 뭔가 아직 이해가 잘 안 되네요...;; 조금더 조사를 해보고 보충해보겠습니다.
+차이는 선호 부등식에서 등호의 여부 입니다. "strictly convex"에서는 $\succ$로만 표현 합니다.
 
+$$
+\begin{gather*}
+\lambda a + (1 - \lambda) b \, {\color{red} \succ} \, a \\
+\text{and} \\
+\lambda a + (1 - \lambda) b \, {\color{red} \succ} \, b
+\end{gather*}
+$$
 
 # Lexicographic preference
 
@@ -195,11 +204,18 @@ Thus, $\lambda a + (1 - \lambda) b \succcurlyeq b$, so that $\succcurlyeq$ is co
 
 TODO... 증명이랑 예시도 있는데 와닿지 x...
 
+# Summary
+
+![](/images/others/micro-economics/bundle-preference-summary-youtube.png){: .fill .align-center style="width: 100%" }
+[[Youtube] 미시경제학 (Microeconomics) Week 2-1: Indifference Curves and MRS](https://youtu.be/tab5kGEAE5E?si=Zo6vWJVHbSTYN5bi&t=2105)
+{: .small .gray .text-center }
+
+보조 자료로 같이 보고 있는 유튜브 강좌에서 지금까지의 번들 선호를 이렇게 요약하고 있습니다.
+
 # 맺음말
 
 이제 나머지 번들 선호의 성질들도 살펴봅시다!
 
 - [Monotonicity](/2025/04/13/bundle-preference-monotonicity/)
 - [Continuity](/2025/04/14/bundle-preference-continuity/)
-- [Convexity](/2025/04/14/bundle-preference-convexity/)
 - [Differentiability](/2025/04/14/bundle-preference-differentiability/)

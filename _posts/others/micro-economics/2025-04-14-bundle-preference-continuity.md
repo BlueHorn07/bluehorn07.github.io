@@ -14,7 +14,7 @@ excerpt: "번들 상품에 대해 개인이 갖는 선호에 대해."
 
 # 들어가며
 
-[이전 포스트](/2025/04/12/bundles-of-goods/)에서는 번들의 정의와 번들 위에서 정의한 선호의 사례들을 살펴보았습니다.
+[번들과 번들 선호](/2025/04/12/bundles-of-goods/)에 대해 살펴보고, 번들에 대한 선호가 가질 수 있는 특징에 대해서 살펴보고 있습니다.
 
 - Constant Tradeoff
 - Only Preference
@@ -115,6 +115,5 @@ $$
 이제 나머지 번들 선호의 성질들도 살펴봅시다!
 
 - [Monotonicity](/2025/04/13/bundle-preference-monotonicity/)
-- [Continuity](/2025/04/14/bundle-preference-continuity/)
 - [Convexity](/2025/04/14/bundle-preference-convexity/)
 - [Differentiability](/2025/04/14/bundle-preference-differentiability/)
