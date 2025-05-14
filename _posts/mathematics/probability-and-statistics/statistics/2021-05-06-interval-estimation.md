@@ -211,9 +211,10 @@ $$
 Z = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}}
 $$
 
-그런데! population variance $\sigma$를 모르는 지금 상황에서는 위와 같이 접근할 수 없다!! 😲 <span class="half_HL">$\sigma$를 모르기 때문에 CLT 근사식에서 분모 부분에 $\sigma$를 쓸 수 없기 때문이다!</span>
+그런데! population variance $\sigma$를 모르는 지금 상황에서는 위와 같이 접근할 수 없다!! 😲 <span class="half_HL">$\sigma$를 모르기 때문에 CLT 근사식의 분모 부분에 $\sigma$를 쓸 수 없기 때문이다!</span>
 
-우리가 그나마 $\sigma^2$와 비슷하다고 생각하는 것이 있다. 바로 "sample variance" $S^2$! 이 녀석으로 $\sigma$를 대체해 식을 다시 써보자.
+우리가 그나마 $\sigma^2$와 비슷하다고 생각하는 것이 있다. 바로 "sample variance" $S^2이다!
+이 녀석으로 $\sigma$를 대체해 식을 다시 써보자.
 
 $$
 \frac{\bar{X} - \mu}{S / \sqrt{n}}

@@ -187,6 +187,29 @@ $$
 
 즉, 시간 간격 $k$에 비례하므로 오차의 정확도는 "1차 정확도"를 갖습니다.
 
+### Example
+
+<div class="problem" markdown="1">
+
+$u'' > 0$, $t > 0$일 때, 근사값 $u_{n}$은 왜 실제값 $u(t_n)$보다 under-estimate 되는지 설명하라. (23년도 졸업시험 기출)
+
+</div>
+
+$u(t_{n+1} = t_n + k)$에 대해 테일러 전개하면,
+
+$$
+u(t_{n+1}) = u(t_n) + k u'(t_n) + \frac{k^2}{2} u''(\xi_n)
+$$
+
+이때, 오일러 방식은 뒤의 $\frac{k^2}{2} u''(\xi_n)$ 텀은 사용하지 않습니다. 따라서, 그 부분만큼 오차가 발생합니다. 이때, $u'' > 0$라면, 실제값 $u(t_n)$과 비교해 $u_n$의 값은 더 작아지게 됩니다.
+
+이런 오차는 iteration이 진행되면서 누적되고, 아주 긴 시간이 지나 $t \rightarrow 0$가 되면, 결국 실제값과 근사값의 차이가 커지게 됩니다.
+
+$$
+\lim_{n \rightarrow \infty} (u(t_n) - u_n ) = + \infty
+$$
+
+
 ### Degree of Error (Global)
 
 TODO...

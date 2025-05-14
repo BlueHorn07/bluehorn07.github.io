@@ -61,8 +61,8 @@ pin: true
   - [Application of Derivatives: Problem Solving](/2024/05/20/application-of-derivatives-problem-solving/)
   - [Techniques of Integrals: Problem Solving](/2024/05/30/techniques-of-integrals-problem-solving/)
   - [Taylor Series & Macluarin Series](/2022/10/29/talyor-series-and-maclaurin-series/)
-  - [급수의 극한을 판정하는 법](/2024/06/08/method-of-determining-the-limit-of-a-series/)
-  - [교대 급수의 극한을 판정하는 법](/2024/06/08/method-of-determining-the-limit-of-an-alternating-series/)
+  - [급수의 극한을 판정하는 법](/2024/06/08/determine-the-limit-of-a-series/)
+  - [교대 급수의 극한을 판정하는 법](/2024/06/08/determine-the-limit-of-an-alternating-series/)
   - [Sequence and Series: Problem Solving](/2024/06/08/sequence-and-series-problem-solving/)
 - Calculus 2
   - [Parametric Equations: Problem Solving](/2024/06/16/parametric-equations-problem-solving/)
@@ -87,7 +87,7 @@ pin: true
 
 어느 순간 졸업 시험에 공부할 과목이 5과목이 된다는 게, 마음을 조급 하게 한 것 같다. 마음이 불안정 하니 지식을 받아 들이는 것도 잘 안 되었던 것 같고, 늘어지는 페이스에 슬럼프도 좀 있었다. 그러다가 깨달은게 내게 필요한 건 미적분학과 수학에 대한 이해 100%가 아니라는 사실. 졸업 시험에 통과하기 위해선 80-90% 정도만 이해해도 충분한 시험이다라고 마음 것도 페이스를 조절하는데 큰 도움이 되었다. 위에서도 적었던 "한계를 인정하기" 전략이랑도 일맥상통 하는 것 같다.
 
-그래도 5과목 중 한 과목을 포기 하지 않고, 잘 마무리 한 것이 참 뿌듯하다. 😁 한 과목을 해냈다는 건, 그 다음 과목도 할 수 있다는 거고, 결국 다섯 과목 모두 해낼 수 있다는 것! 
+그래도 5과목 중 한 과목을 포기 하지 않고, 잘 마무리 한 것이 참 뿌듯하다. 😁 한 과목을 해냈다는 건, 그 다음 과목도 할 수 있다는 거고, 결국 다섯 과목 모두 해낼 수 있다는 것!
 
 다음으로 공부할 과목 "미분방정식"을 할 것 같다. 담학기에 복학하면 "상미분방정식"을 들어야 하기 때문... OTL... 암튼 다음 과목도 포기 하지 않고 잘 해보자...! 🏃
 

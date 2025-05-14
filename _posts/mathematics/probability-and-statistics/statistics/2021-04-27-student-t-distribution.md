@@ -21,13 +21,6 @@ categories: ["Statistics"]
 
 </div>
 
-[toc]
-
-- Student's t-distribution
-- Sampling Distribution of Sample Mean (unknown $\sigma^2$)
-
-<hr/>
-
 # Student's t-distribution
 
 <div class="definition" markdown="1">
@@ -46,6 +39,10 @@ Then, the distribution of $T$ is called \<student's t-distribution of $n$ degree
 
 </div>
 
+정의가 조금 복잡하긴 한데, 일단 서로 독립인 표준 정규 분포와 카이 제곱 분포의 조합으로 t-분포가 만들어진다~ 라는 감만 잡고 넘어갑시다.
+
+t-분포 쪽은 이후에 나올 구간 추정에서 sample variance $s^2$를 사용할 줄 아는게 훨씬 더 중요합니다.
+
 <div class="notice" markdown="1">
 
 <span class="statement-title">Remark.</span><br>
@@ -59,9 +56,10 @@ $$
 
 for $x \in \mathbb{R}$.
 
-(걱정하지 마라, 우리가 \<t-distribution\>의 분포를 외워서 적용할 일은 절대 없다!)
-
 </div>
+
+걱정하지 마라, 학부 수준에서 t-분포의 pdf를 외워서 사용할 일은 절대 없다!
+
 
 <div class="notice" markdown="1">
 
@@ -73,10 +71,11 @@ $$
 
 <div class="img-wrapper" style="margin: 10px">
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200525113955/f126.png" height="250">
-<p>$n$이 커질 수록 정규 분포에 가까워진다!</p>
 </div>
 
 </div>
+
+$n$이 커질 수록 정규 분포에 가까워진다!
 
 <div class="notice" markdown="1">
 
@@ -203,7 +202,8 @@ $$
 
 </div>
 
-<hr/>
+3번은 표기에 대한 걸로 이후에 t-분포를 사용해 구간 추정을 할 때, 이 기호를 사용합니다.
+
 
 # Sampling Distribution of Sample Mean (unknown $\sigma^2$)
 
@@ -260,13 +260,10 @@ $Z \sim N(0, 1)$이고 $V \sim \chi^2(n-1)$이다. 그리고 Sample Variance와 
 
 </div>
 
-<hr/>
-
 ## Examples
 
-<div class="img-wrapper">
-<img src= "{{"/images/mathematics/probability-and-statistics/t-distribution-example-1.png" | relative_url }}" width=550>
-</div>
+![](/images/mathematics/probability-and-statistics/t-distribution-example-1.png)
+
 
 <div class="proof" markdown="1">
 
@@ -290,8 +287,6 @@ t-value가 $t_{0.05}$보다 크므로 유의하다. 그래서 population mean $\
 
 </div>
 
-<hr/>
-
 # 맺음말
 
 이어지는 포스트에서는 두 sample variance를 비교할 때 쓰는 \<F-distribution\>를 살펴본다.
@@ -312,7 +307,7 @@ $$
 
 개인적으로 여기가 \<t-value\>, \<z-value\>, \<p-value\>가 헷갈리는 지점이라고 생각한다. 만약, 두 개념이 어떻게 다르고, 또 언제 등장하는지 비교하고 싶다면, 아래의 포스트를 참고하길 바란다.
 
-👉 [Values in Statistics]({{"/2021/06/05/values-in-statistics"}})
+👉 [Values in Statistics](/2021/06/05/values-in-statistics)
 
 # References
 

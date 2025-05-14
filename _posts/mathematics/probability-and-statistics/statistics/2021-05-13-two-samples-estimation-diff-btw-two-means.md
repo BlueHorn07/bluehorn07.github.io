@@ -25,7 +25,7 @@ Supp. that their observed sample means are $\bar{x}$ and $\bar{y}$, and their sa
 
 </div>
 
-<hr/>
+
 
 ## $\sigma_1^2$ and $\sigma_2^2$ are known
 
@@ -48,27 +48,17 @@ $$
 
 💥 또, 이 근사는 $X_i$, $Y_j$가 모두 iid normal이여야 가능하다!
 
-<hr/>
+
 
 ## $\sigma_1^2$ and $\sigma_2^2$ are unknown, but known that $\sigma_1^2 = \sigma_2^2$
 
-앞에서 우리는 CLT를 사용해 $\frac{\bar{X} - \mu}{\sigma / \sqrt{n}}$를 사용했었다. 하지만, 이번에는 정확한 $\sigma^2$의 값을 알지 못하기 때문에 $\sigma^2$ 대신 sample variance $s^2$을 사용한다!!
+앞에서 우리는 CLT를 사용해 $\frac{\bar{X} - \mu}{\sigma / \sqrt{n}}$를 사용했다.
+하지만, 이번에는 정확한 $\sigma^2$의 값을 알지 못한다. 그래서 $\sigma^2$ 대신 sample variance $s^2$을 사용한다!!
 
-[Previous]
-
-$$
-\frac{(\bar{X} - \bar{Y}) - (\mu_1 - \mu_2)}{\sqrt{\dfrac{\color{red}{\sigma_1^2}}{n_1} + \dfrac{\color{red}{\sigma_2^2}}{n_2}}} \;\overset{D}{\sim} \; N(0, 1)
-$$
-
-우리는 $\sigma^2$를 대체하기 위해 \<**pooled sample variance**\>라는 두 샘플의 sample variance를 종합한 녀석을 쓸 것이다.
+이때, 두 표본이 $\sigma^2$를 공유하므로 둘을 종합한 값으로 sample variance를 잡아야 한다.
+이것이 바로 "Pooled Sample Variance $S_p^2$"다.
 
 <div class="notice" markdown="1">
-
-<span class="statement-title">Recall.</span> sample variance and chi-square<br>
-
-$$
-\frac{(n -1) \cdot S^2}{\sigma^2} = \sum^n \left(\frac{X_i - \bar{X}}{\sigma}\right)^2 \; \sim \; \chi^2 (n-1)
-$$
 
 <span class="statement-title">Definition.</span> pooled sample variance<br>
 
@@ -84,22 +74,48 @@ $$
 위의 식을 잘 변형해보면 아래와 같다.
 
 $$
-(n_1 - 1 + n_2 - 1) \cdot S_p^2 = (n_1 - 1) \cdot S_1^2 + (n_2 - 1) \cdot S_2^2
+S_p^2 = \frac{(n_1 - 1) \cdot S_1^2 + (n_2 - 1) \cdot S_2^2}{(n_1 - 1 + n_2 - 1)}
 $$
 
+<br/>
+
+샘플의 분산은 카이제곱 분포를 따르는 것을 기억하는가?
+
+<div class="notice" markdown="1">
+
+<span class="statement-title">Recall.</span> sample variance and chi-square<br>
+
 $$
-\frac{(n_1 - 1 + n_2 - 1) \cdot S_p^2}{\sigma^2} = \frac{(n_1 - 1) \cdot S_1^2 + (n_2 - 1) \cdot S_2^2}{\sigma^2} \; \overset{D}{\sim} \; \chi^2(n_1 + n_2 - 2)
+\frac{(n -1) \cdot S^2}{\sigma^2} = \sum^n \left(\frac{X_i - \bar{X}}{\sigma}\right)^2 \; \sim \; \chi^2 (n-1)
 $$
 
-따라서! pooled sample variance $S_p^2$를 바탕으로 식으로 다시 쓰면,
+</div>
+
+마찬가지로 Pooled Sample Variance로 카이제곱 분포를 따른다.
+
+$$
+\frac{(n_1 - 1 + n_2 - 1) \cdot S_p^2}{\sigma^2} \overset{D}{\sim} \; \chi^2(n_1 + n_2 - 2)
+$$
+
+이것은 갑자기 튀어나온게 아니고, 위의 분포가 카이제곱 분포의 선형 결합이기 때문이다.
+
+$$
+\frac{(n_1 - 1) \cdot S_1^2}{\sigma^2} + \frac{(n_2 - 1) \cdot S_2^2}{\sigma^2} \; \overset{D}{\sim} \; \chi^2(n_1 - 1) + \chi^2(n_2 - 1)
+$$
+
+<br/>
+
+마지막으로 추정을 위해 CLT에 대한 식을 세워야 하는데, $S_p^2$를 바탕으로 식으로 다시 쓰면,
 
 $$
 \frac{(\bar{X} - \bar{Y}) - (\mu_1 - \mu_2)}{S_p \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}} \; \overset{D}{\sim} t (n_1 + n_2 - 2)
 $$
 
-그 다음은 지금까지 해온 것처럼 t-distribution을 바탕으로 interval estimation을 진행하면 된다!
+그 다음은 지금까지 해온 것처럼 t-분포로 구간 추정을 진행하고, CI를 얻으면 된다!
 
-<hr/>
+
+\* 참고로 2024-1학기 수학과 졸업시험에 이 Pooled Sample Variance에 대한 부분이 문제라고 나왔습니다;; [[link]](https://math.postech.ac.kr/bbs/board.php?bo_table=m04_08&sca=Probability+and+Statistics)
+
 
 ## $\sigma_1^2$ and $\sigma_2^2$ are unknown and not equal
 
@@ -129,13 +145,13 @@ $$
 
 이 근사법을 \<**Welch's t-test**\>라고 하며, 이때 dof를 구하기 위해 사용한 식을 \<Welch-Satterthwaite equation\>이라고 한다.
 
-<hr/>
+~~이 경우는 t-분포의 dof를 구하기 위해 공식을 써야 하기 때문에, 왠만하면 시험에 안 나올 것이다 ㅋㅋ~~ 오히려 나온다면, Pooled Sample Variance에 대한 부분이 나올 가능성이 크다.
+
+
 
 # 맺음말
 
-<div class="img-wrapper">
-<img src= "{{"/images/mathematics/probability-and-statistics/sampling-distribution-table-2.png" | relative_url }}" width=750>
-</div>
+![](/images/mathematics/probability-and-statistics/sampling-distribution-table-2.png)
 
 이어지는 포스트에서는 또다른 Two Samples Estimation인 \<Paired Observation\>의 경우를 살펴본다! 😁
 

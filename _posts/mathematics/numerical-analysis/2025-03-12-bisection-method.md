@@ -59,15 +59,13 @@ $$
 
 then we say that $\left\\{ \alpha_n \right\\}_{n=1}^{\infty}$ converges to $\alpha$ with "rate of converge $O(\beta_n)$".
 
-## Note
-
-By Error Bound of Bisection method,
-
 $$
 \| p_n - r \| \le \frac{b-a}{2^n}, \quad n \ge 1
 $$
 
-then $p_n - r = O(1/2^n)$. So, we say the sequence $\left\\{ p_n \right\\}_{n=1}^{\infty}$ converges to $r$ with rate of convergence $O(1/2^n)$.
+이분법에서는 수렴 속도를 $O(1/2^n)$라고 합니다.
+
+참고로 "수렴 차수(order of convergence)"라는 개념도 있습니다! 뒤에 뉴턴법으로 root-finding을 할 때, 살펴볼 건데요! 이때, 이분법은 1차 수렴성을 갖고, 뉴턴법은 2차 수렴성을 갖습니다! (자세한 건 뉴턴법을 정리한 포스트에서... [link](/2025/03/17/newton-method/))
 
 # Correctness
 

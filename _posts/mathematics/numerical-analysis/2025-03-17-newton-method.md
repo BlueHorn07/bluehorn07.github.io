@@ -125,7 +125,9 @@ Fixed-point Theorem의 조건을 모두 만족하므로, newton's method로 생�
 </div>
 
 
-# Quadratically Convergent
+# Order of Convergence
+
+먼저 수렴 속도(order of convergence)를 어떻게 정의하는지부터 살펴봅시다. 사실 개념은 간단한데, 아래의 식을 만족하는 $p$를 수렴 차수라고 합니다.
 
 <div class="definition" markdown="1">
 
@@ -134,16 +136,74 @@ Let $e_n$ denote the error at step $n$ of an iterative method, $e_n = \|p_n - r\
 The iteration is quadratically convergent if
 
 $$
-\lim_{n\rightarrow\infty} \frac{e_{n+1}}{e_n^2} = M < \infty
+\lim_{n\rightarrow\infty} \frac{\vert e_{n+1} \vert}{\vert e_n \vert^p} = C < \infty
 $$
 
 </div>
 
-참고로 Bisection Method이 경우 "Linearly Convergent" 였고, 이때는 에러가 아래의 식을 만족 했다.
+## Linear Convergence
+
+Bisection Method는 "Linearly Convergent"이고, 이때는 에러가 아래의 식을 만족 합니다.
 
 $$
-\lim_{n\rightarrow\infty} \frac{e_{n+1}}{e_n^2} = C, \quad 0 C < 1
+\lim_{n\rightarrow\infty} \frac{\vert e_{n+1} \vert}{\vert e_n \vert}
+= \frac{1}{2}
 $$
+
+## Quadratic Convergence
+
+뉴턴법은 2차 수렴성을 가집니다.
+
+$$
+\lim_{n\rightarrow\infty} \frac{\vert e_{n+1} \vert}{\vert e_n \vert^2}
+= \frac{f''(r)}{2f'(r)} < \infty
+$$
+
+왜 이차 수렴성을 가지는지도 살펴봅시다! (이 부분은 23년도 수학과 졸업시험 문제로도 나왔습니다!)
+
+<div class="proof" markdown="1">
+
+함수 $f(x)$는 $x_n$을 중심으로 테일러 전개 해봅시다.
+
+$$
+f(x) = f(x_n) + f'(x_n) (x - x_n) + \frac{f''(x_n)}{2} (x - x_n)^2 + \cdots
+$$
+
+이제 여기세 솔루션인 $x = r$을 대입합니다.
+
+$$
+\cancel{f(r)} = f(x_n) + f'(x_n) (r - x_n) + \frac{f''(x_n)}{2} (r - x_n)^2 + \cdots
+$$
+
+이때, $f(r) = 0$이 됩니다. 이 식에서 양변을 $f'(x_n)$로 나눠줍니다.
+
+$$
+0 = \frac{f(x_n)}{f'(x_n)} + (r - x_n) + \frac{1}{2} \frac{f''(x_n)}{f'(x_n)} (r - x_n)^2 + \cdots
+$$
+
+이제 위의 식을 뉴턴법의 점화식에 대입합니다!
+
+$$
+\begin{aligned}
+x_{n+1}
+&= x_n - \frac{f(x_n)}{f'(x_n)} \\
+&= x_n + (r - x_n) + \frac{1}{2} \frac{f''(x_n)}{f'(x_n)} (r - x_n)^2 + \cdots
+\end{aligned}
+$$
+
+식을 정리하면,
+
+$$
+\begin{aligned}
+x_{n+1} - r &\le \frac{1}{2} \frac{f''(x_n)}{f'(x_n)} (r - x_n)^2 \\
+\frac{x_{n+1} - r}{(r - x_n)^2} &\le \frac{1}{2} \frac{f''(x_n)}{f'(x_n)}  \\
+\frac{e_{n+1}}{e_n^2} &\le \frac{1}{2} \frac{f''(x_n)}{f'(x_n)}
+\end{aligned}
+$$
+
+따라서, 뉴턴법은 2차 수렴성을 가집니다. $\blacksquare$
+
+</div>
 
 ## vs. Linear Convergent
 
