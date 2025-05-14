@@ -104,6 +104,8 @@ Subgraph-isomorphism은 더 강한 조건으로 쿼리 그래프 $q$가 데이�
 
 반면에 "Subgraph-homomorphism"은 좀더 느슨한 매핑으로 쿼리 그래프 $q$가 데이터 그래프 $g$에 구조적으로 대응 되지만, 일부 노드의 매핑이 겹치는 경우도 있습니다.
 
+Subgraph-Homomorphism은 좀더 느슨한 매핑이기 때문에 Subgraph-Isomorphism보다 더 빠르지만 덜 정확합니다.
+
 앞으로 전개되는 내용에서 그래프 쿼리 매칭을 찾는다는 것은 "subgraph isomorphism"을 만족하는 매칭을 찾겠다는 것을 말합니다!
 
 # How to find subgraph matching efficiently

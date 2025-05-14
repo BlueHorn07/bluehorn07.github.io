@@ -13,7 +13,7 @@ excerpt: ""
 
 # 들어가며
 
-SymBi 논문([[1]](/2025/03/07/SymBi-setup-DCS/), [[2]](/2025/03/07/SymBi-update-DCS/), [[3]](/2025/03/08/SymBi-find-matching/))에 이어 이 논문도 지금 졸업 연구를 하고 있는 연구실에서 작성한 논문 입니다!
+SymBi(2021) 논문([[1]](/2025/03/07/SymBi-setup-DCS/), [[2]](/2025/03/07/SymBi-update-DCS/), [[3]](/2025/03/08/SymBi-find-matching/))에 이어 이 논문도 지금 졸업 연구를 하고 있는 연구실에서 작성한 논문 입니다!
 졸업 연구를 하면서 이 논문의 구현도 살펴볼 일이 있어서 논문 리딩을 진행하게 되었습니다!
 
 # Matching Order is Important
@@ -34,7 +34,7 @@ SymBi 논문([[1]](/2025/03/07/SymBi-setup-DCS/), [[2]](/2025/03/07/SymBi-update
 
 이번에는 $O_2 = (u_1, u_3, u_2) \sim (A, C, B)$의 Matching Order 순서로 서브 그래프 $g_1$에 매칭 시켜 봅시다. 그러면, 매칭이 오른쪽 그림의 순서로 맺어집니다. 그런데, $O_2$에서는 $u_2$를 매칭할 때, $v_4$부터 $v_{1004}$까지 모든 매칭을 검사해야 합니다.
 
-이것은 쿼리 그래프 $q$를 매칭 할 때도 매칭 오더를 어떻게 잡느냐에 따라서 매칭을 검사하는 횟수가 크게 달라질 수 있다는 것을 말합니다.
+이것은 쿼리 그래프를 매칭 할 때, 매칭 오더를 어떻게 잡느냐에 따라서 매칭을 검사하는 횟수가 크게 달라질 수 있다는 것을 말합니다.
 
 ## Useless Enumerations
 
@@ -42,20 +42,22 @@ SymBi 논문([[1]](/2025/03/07/SymBi-setup-DCS/), [[2]](/2025/03/07/SymBi-update
 
 논문에서는 또 다른 예시 쿼리&데이터 그래프로 상황을 설명 합니다. 참고로 여기에서도 쿼리 그래프에 대한 Isomorphism은 존재하지 않습니다!
 
-매칭 오더가 $O = (u_1, u_2, \cdots , u_7)$으로 주어졌다고 했을 때, 데이터 그래프에서 이것에 대한 매칭은 Fig2와 같이 찾게 됩니다.
+매칭 오더가 $O = (u_1, u_2, \cdots , u_7)$일 때, 데이터 그래프에서 매칭은 Fig2와 같이 찾게 됩니다.
 
-재귀 트리 $T_r$의 첫번째 경로에서 매칭이 실패한다는 것을 알았습니다. 그런데, 나머지 가지들도 매칭을 확인해보면 모두 실패합니다. 논문에서는 여기에서 아이디어를 제시 합니다!
+재귀 트리 $T_r$의 첫번째 경로에서 매칭이 실패한다는 것을 알았습니다. 그리고, 나머지 가지들도 매칭을 확인해보면 모두 실패합니다. 논문에서는 여기에서 아이디어를 제시 합니다!
 
-재귀 트리 $T_r$의 경로를 보면, $- (v_3, v_4, v_5) -$ 부분의 순서만 바뀝니다. 그리고 각 정점은 같은 레이블과 같은 형상(topology)를 가지고 있습니다.
+재귀 트리 $T_r$의 경로를 보면, $- (v_3, v_4, v_5) -$에 대ㄴ 순서만 바뀝니다. 그리고 각 정점은 같은 레이블과 같은 형상(topology)를 가지고 있습니다.
 
-논문에서는 이런 경우는 쓸모없이 순회(useless enumeration)를 하는 상황이라고 정의 합니다. 그래서 이것을 효율적으로 제거하기 위해 "**Neighborhood Equivalence Class(NEC)**"라는 개념을 제시합니다. NEC는 비슷한 정점들은 묶어서 처리하고, 불필요한 순열(Permutation)을 미리 제거하여 계산 낭비를 방지하는 것을 목적으로 합니다. 자세한 내용은 뒤에서 더 다루겠습니다.
+논문은 이런 경우를 쓸모없이 순회(useless enumeration)를 하는 상황이라고 정의 합니다.
+그래서 이것을 효율적으로 제거하기 위해 "**Neighborhood Equivalence Class(NEC)**"라는 개념을 제시합니다.
+NEC는 비슷한 정점들은 묶어서 처리하고, 불필요한 순열(Permutation)을 미리 제거하여 계산 낭비를 방지하는 것을 목적으로 합니다. 자세한 내용은 뒤에서 더 다루겠습니다.
 
 
 # Neighborhood Equivalence Class (NEC)
 
 ![](/images/others/2025-graduation-research/TurboIso/NEC-tree.png){: .fill .align-center style="min-width: 300px; width: 80%" }
 
-TurboIso는 "**쿼리 그래프를 NEC 트리로 바꾸는 작업**"을 제일 먼저 수행 합니다. 이 과정은 BFS로 이뤄지며, 그래프 매칭 작업도 쿼리 그래프 $q$가 아니라 NEC Tree $q'$에 대해서 수행됩니다.
+TurboIso는 "**쿼리 그래프를 NEC 트리로 바꾸는 작업**"을 제일 먼저 수행 합니다. 이 과정은 BFS로 이뤄지며, 그래프 매칭 작업도 쿼리 그래프 $q$가 아니라 NEC Tree $q'$에 대해 수행합니다.
 
 이제 NEC 집합에 대해서 엄밀히 정의해보겠습니다.
 
@@ -66,17 +68,18 @@ If for every embedding $m$ that contains $(u_i, v_x)$ and $(u_j, v_y)$, there ex
 $$
 m'
 = m \setminus
-\left\{ (u_i, v_x), (u_j, v_y) \right\} \cup
-\left\{ (u_i, v_y), (u_j, v_x) \right\}
+\left\{ (u_i, {\color{red} v_x}), (u_j, {\color{blue} v_y}) \right\} \cup
+\left\{ (u_i, {\color{blue} v_y}), (u_j, {\color{red} v_x}) \right\}
 $$
 
 then, let $\simeq$ be an "equivalence relation" over all query vertices in $q$, and two query node are $u_i \simeq u_j$.
 
 </div>
 
-즉, 두 쿼리 노드에 대해서 그 둘의 매핑된 데이터 노드 $v_{x,y}$를 서로 맞바꿔도 여전히 임베딩 $m'$이 항상 가능하다면, 그 둘의 동치(Equivalent)라고 하고, 서로 동치인 쿼리 노드를 모은 것이 "NEC" 집합이 됩니다.
+즉, 두 쿼리 노드에 대해서 그 둘의 매핑된 데이터 노드 $v_{x,y}$를 서로 맞바꿔도 여전히 임베딩 $m'$이 항상 가능하다면,
+그 쿼리 노드를 "동치(Equivalent)"라고 하고, 서로 동치인 쿼리 노드를 모은 것이 "NEC" 집합이 됩니다.
 
-앞선 "Useless Enumeration" 예시에서도 봤듯이 NEC 집합 내에서는 그들의 매핑을 서로 맞바꿀 수 있습니다. 그래서 순열(Permutation)의 크기 만큼 방문 순서가 만들어지거나, 매칭 $m$이 만들어집니다.
+앞선 "Useless Enumeration" 예시에서도 봤듯이 NEC 집합 내에서는 그들의 매핑을 서로 맞바꿀 수 있습니다. 그래서 순열(Permutation)의 크기 만큼 방문 순서, 즉, 매칭 $m$이 만들어집니다.
 
 ## Rewrite query graph to NEC Tree
 
@@ -130,9 +133,11 @@ TurboIso는 빠른 쿼리 매칭을 위해 데이터 그래프 위에 Candidate 
 
 이 Candidate Region은 "**Embedding을 가질 것으로 기대되는 데이터 그래프의 영역**"입니다.
 
-존재성이 기대되는 영역이기 때문에, Embedding이 존재하지 않는다면 CR 내에서 Embedding을 찾을 수 없습니다. 그러나 만약 Embedding이 존재한다면, 이 영역 안에서 반드시 존재합니다.
+존재성이 기대되는 영역이기 때문에, 만약 Embedding이 존재한다면, 이 영역 안에서 반드시 존재합니다.
+그리고 Embedding이 존재하지 않는다면 Candidate Region 내에서 Embedding을 찾을 수 없습니다.
 
-Embedding 존재 여부와 상관 없이, CR을 정의해 이 위의 데이터 그래프만 탐색하기 때문에, 데이터 그래프 전체를 탐색할 필요가 없어지고 이것은 검색 공간을 크게 줄여줍니다!
+결국 Embedding 존재 여부와 상관 없이, 정의한 Candidate Region 위의 데이터 그래프만 탐색하기 때문에,
+데이터 그래프 전체를 탐색할 필요가 없어지고 이것은 검색 공간을 크게 줄여줍니다!
 
 표기는 $CR(u)$라고 하고, "쿼리 노드 $u$를 루트 노드로 했을 때, 만들어지는 Candidate Region"라고 합니다.
 
@@ -172,7 +177,7 @@ $CR(u', v)$에서 각 항목의 의미는 아래와 같습니다.
 - $u'$ = NEC 트리에서 한 쿼리 노드
 - $v$ = 데이터 그래프 상의 한 노드
 - $CR(u', v)$는 아래 조건을 만족하는 데이터 노드의 집합 $\left\\{ v' \right\\}$
-  - $v'$는 $v$의 DFS 트리에서의 자식 노드어야 함.
+  - $v'$는 $v$의 DFS 트리에서의 자식 노드여야 함.
   - $u'$까지 가는 경로상의 모든 NEC 노드가, $v'$까지 가는 경로상의 모든 데이터 노드와 매칭이 있어야함.
     - 즉, $u'_s \rightarrow u'$ 트리 경로와 $v_s \rightarrow v'$ 경로가 구조적으로 매칭 되어야 함.
   - $u'$의 서브트리가 Candidate Subregion으로 분류된 $v'$의 서브 트리와 구조적으로 매칭 되어야 함.
@@ -185,7 +190,7 @@ $$
 
 <br/>
 
-TurboIso 논문의 Fig3를 기준으로 Candidate Subregion 중 일부를 구해봅시다.
+TurboIso 논문의 Fig3를 기준으로 Candidate Subregion의 일부를 구해봅시다.
 
 <div class="definition" markdown="1">
 
@@ -208,7 +213,7 @@ $$
 
 $v_3$, $v_4$, $v_5$는 서브트리 구조가 같으니 포함됩니다.
 
-그런데, $v_2$도 Candidate Region으로 포함 됩니다! 왜냐하면, $u'_3$의 서브트리 구조가 존재하기만 하면 되는데, $u'_3$는 서브트리가 없습니다: $\emptyset$. 그런데 emptyset은 모든 집합에 포함되므로
+그런데, $v_2$도 Candidate Region으로 포함 됩니다! 왜냐하면, $u'_3$의 서브트리 구조가 존재하기만 하면 되는데, $u'_3$는 서브트리가 없습니다. 그런데 emptyset($\emptyset$)은 모든 집합에 포함되므로
 
 $$
 \emptyset \subseteq \text{subtree}({v_3})
@@ -223,7 +228,7 @@ $v_2$로 Subregion에 포함 됩니다!
 
 그리고 데이터 그래프에 가상 노드인 $v^\ast_s$를 추가합니다. 이것은 $u'_s$의 매칭 후보인 데이터 정점 $v_s$를 저장하기 위해, 추가한 가상의 노드 입니다.
 
-$v^\ast_s$가 없고, $v_s$가 어떤 다른 부모 노드와 연결된 상황이었다면 $v_s \rightarrow v$의 경로를 엄밀히 정의하기 어려웠을 것 입니다.
+$v^\ast_s$가 없고, $v_s$가 어떤 다른 부모 노드와 연결된 상황이었다면 $v_s \rightarrow v$의 경로를 엄밀히 정의하기 어렵기 때문입니다.
 
 
 # Explore Candidate Region
@@ -232,7 +237,9 @@ $v^\ast_s$가 없고, $v_s$가 어떤 다른 부모 노드와 연결된 상황�
 
 NEC 노드 $u'$과 데이터 노드 $v$가 주어졌을 때, $CR(u', v)$에 속하는 $v'$를 빠르게 구하기 위해 degree 기반으로 필터링을 먼저 한다고 합니다.
 
-만약, $(v, v') \in E(g)$인 $v'$ 중에서 $\deg (v') < \deg (u'.NEC[1])$ 였다면, 해당 데이터 노드 $v'$는 $CR(u', v)$에 포함될 수 없습니다.
+만약, $(v, v') \in E(g)$인 $v'$ 중에서 $\deg (v') < \deg (u'.NEC[1])$인 노드라면,
+해당 데이터 노드 $v'$는 $CR(u', v)$에 포함될 수 없습니다.
+왜냐하면, $u$의 자식 중에 매칭 되지 않는 녀석이 적어도 하나 존재하기 때문입니다.
 
 논문에서는 아래와 같이 예시를 제공 합니다.
 
@@ -316,18 +323,13 @@ $$
 <br/>
 
 TurboIso는 Candidate Subregion을 계산하기 위해 NLF Filter를 적용합니다.
-
-데이터 노드 $v'$를 $CR(u', v)$에 포함시키기 위해선 서브 트리 순회를 해야 하는데, 그걸 진행하기 전에 $N(u', q) \le N(v', g)$인지 먼저 체크 합니다.
-
-<br/>
-
 논문의 Algo3에 이 부분이 코드로 나와 있습니다.
 
 ![](/images/others/2025-graduation-research/TurboIso/algo-3-explore-cr-1.png){: .fill .align-center style="min-width: 260px; width: 70%" }
 
 ## DFS Traversal
 
-$u'$와 $v'$가 Degree 조건과 NLF Filter 조건을 만족한다면, 이제 서브그래프에 대해 구조적으로 매칭 되는지를 확인해야 합니다.
+$u'$와 $v'$가 Degree 조건과 NLF Filter 조건을 만족한다면, 이제 서브그래프에 대해 구조적으로 매칭 되는지를 확인 합니다.
 
 쿼리 노드 $u'$의 자식 노드 $u'_c$들을 순회하면서 재귀적으로 Candidate Region 탐색을 진행합니다.
 
@@ -342,7 +344,7 @@ $u'$와 $v'$가 Degree 조건과 NLF Filter 조건을 만족한다면, 이제 �
 이런 경우는 $v'$에 대해서 찾은 결과가 모두 무의미 해집니다.
 그래서 $CR(u'_c, v')$ 초기화 해야 합니다. 이것을 수행하는 것이 `ClearCR()` 함수 입니다.
 
-매칭이 실패했으니 `matched` 변수로 `false`로 설정하고 순회를 종료 합니다.
+매칭이 실패했으니 `matched = false`로 설정하고 순회를 종료 합니다.
 
 
 ![](/images/others/2025-graduation-research/TurboIso/algo-3-append-cr.png){: .fill .align-center style="min-width: 260px; width: 70%" }
@@ -354,9 +356,11 @@ $u'$와 $v'$가 Degree 조건과 NLF Filter 조건을 만족한다면, 이제 �
 
 마지막으로, 완성된 $CR(u', v)$ 집합과 $u'.NEC$ 집합을 비교 합니다.
 
-이때, $CR(u', v)$로 매핑되는 데이터 노드가 존재하기는 하는데, $u'.NEC$ 집합의 크기보다 적은 상황이라면, $u'.NEC$에 속하는 노드 중 일부는 매핑되지 않는다는 말입니다.
+이때, $CR(u', v)$로 매핑되는 데이터 노드가 존재하기는 하는데, $u'.NEC$ 집합의 크기보다 작다면, 매핑이 성립하지 않습니다.
+왜냐하면, $u'.NEC$에 속하는 노드 중 일부는 매칭 되지 않기 때문입니다.
 
-그래서 마지막 $\left\vert CR(u', v) \right\vert \le \left\vert u'.NEC \right\vert$를 확인하고, 매핑 가능한 노드 수가 부족한다면, (기껏만든) $CR(u', v)$ 집합을 `ClearCR()` 처리 합니다.
+그래서 $\left\vert CR(u', v) \right\vert \le \left\vert u'.NEC \right\vert$를 확인하고,
+매칭 가능한 노드 수가 부족한다면, (기껏만든) $CR(u', v)$ 집합을 `ClearCR()` 처리 합니다.
 
 <br/>
 
@@ -410,6 +414,6 @@ CR_u7_arr = [
 
 # 맺음말
 
-내용이 길어져서 포스트를 분리합니다! "Matching Order"에 대한 내용부터는 아래의 포스트로 고고!
+내용이 길어져서 포스트를 분리합니다! "Matching Order"에 대한 내용부터는 아래 포스트로 고고!
 
 ➡️ [TurboIso - Matching Order](/2025/03/08/TurboIso-matching-order/)

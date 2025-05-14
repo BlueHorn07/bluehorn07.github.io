@@ -38,9 +38,9 @@ If $\sum_{n=1}^{\infty} \| a_n \|$ converges, then $\sum_{n=1}^{\infty} a_n$ con
 
 대응하는 절대 급수 $\sum \| \frac{\sin n}{n^2} \|$가 수렴하는지 확인하면 된다. 이때, 비교를 위한 다른 급수 $\sum \frac{1}{n^2}$와 비교하면, $\| \sin n \| \le 1$이므로 $\sum \| \frac{\sin n}{n^2} \| < \sum \frac{1}{n^2}$가 되는데, 우항의 급수가 수렴하므로 급수 $\sum \frac{1}{n^2}$는 절대 수렴한다.
 
-## 비교 판정법
+## 비율(ratio) 판정법
 
-수열의 증가율을 얼마나 되는지를 판단하기 위한 방법이다. 기하 급수 $\sum ar^n$의 극한 판정에서 $ar^{n+1}/ar^n = r$을 기준으로 극한을 판단하는 것과 비슷한 접근이다.
+수열의 증가율(ratio)을 기준으로 판단하는 방법이다. 기하 급수 $\sum ar^n$의 극한 판정에서 $ar^{n+1}/ar^n = r$을 기준으로 극한을 판단하는 것과 비슷한 접근이다.
 
 <div class="theorem" markdown="1">
 
@@ -76,7 +76,9 @@ $$
 
 주로 수열에 $n$-th power가 있는 경우에 사용하면 효과적이다.
 
-예시. 아래와 같이 정의된 교대 수열의 급수가 수렴하는지 판단하라.
+<div class="example" markdown="1">
+
+아래와 같이 정의된 교대 수열의 급수가 수렴하는지 판단하라.
 
 $$
 a_n = \begin{cases}
@@ -86,6 +88,8 @@ n/2^n, & n \text{ odd} \\
 $$
 
 $n$이 even인 경우는 쉽게 $\rho = 1/2$임을 보일 수 있고, odd인 경우는 $\lim_{n\rightarrow\infty} \sqrt[n]{\left\| n/2^n \right\|} = \lim_{n\rightarrow\infty} \sqrt[n]{\|n\|} / 2 = 1/2$로 두 경우의 $\rho$ 값이 같다!
+
+</div>
 
 # 교대 급수 판정법
 

@@ -193,9 +193,17 @@ then the consumer's problem has at most one solution.
 
 </div>
 
+$$
+\begin{gather*}
+\lambda a + (1 - \lambda) b \, {\color{red} \succ} \, a \\
+\text{and} \\
+\lambda a + (1 - \lambda) b \, {\color{red} \succ} \, b
+\end{gather*}
+$$
+
 번들 선호가 "엄격하게 볼록"하다는 성질은 소비자가 선형 결합으로 만든 "혼합된 번들"을 더 선호한다는 의미 입니다.
 
-번들 선호가 이 성질을 가진다면, Consumer's Problem의 해는 유일하게 하나만 존재한다는 것을 보장 합니다.
+번들 선호가 convexity 성질을 가진다면, Consumer's Problem의 **해가 유일하게 존재**한다는 것을 보장 합니다.
 
 ### Monotone
 
@@ -208,11 +216,12 @@ then any solution of the consumer's problem is on the budget line.
 
 번들 선호가 "단조적"이라는 건, 더 많이 소비할수록 좋다는 것을 말합니다. 다르게 표현하면 재화가 "정상재(normal goods)"라는 것을 말합니다.
 
-이 경우에는 소비자가 모든 예산을 다 써버리는 것이 효용을 가장 높이는 방법이 됩니다! 그래서 최적의 소비는 "Budget Line" 위에 존재합니다.
+이때는 소비자가 모든 예산을 다 써버리는 것이 효용을 가장 높이는 방법이 됩니다!
+그래서 최적의 소비는 "**Budget Line 위에**" 존재합니다.
 
 ## Examples
 
-### complementary Goods
+### Complementary Goods
 
 ### Substitutable Goods
 
