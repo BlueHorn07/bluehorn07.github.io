@@ -36,8 +36,8 @@ toc_sticky: true
 - [Techniques of Integrals: Problem Solving](/2024/05/30/techniques-of-integrals-problem-solving/)
   - Equivalence of the washer and shell methods
 - [Taylor Series & Macluarin Series](/2022/10/29/talyor-series-and-maclaurin-series/)
-- [급수의 극한을 판정하는 법](/2024/06/08/method-of-determining-the-limit-of-a-series/)
-- [교대 급수의 극한을 판정하는 법](/2024/06/08/method-of-determining-the-limit-of-an-alternating-series/)
+- [급수의 극한을 판정하는 법](/2024/06/08/determine-the-limit-of-a-series/)
+- [교대 급수의 극한을 판정하는 법](/2024/06/08/determine-the-limit-of-an-alternating-series/)
   - 절대 수렴과 조건부 수렴
   - 리만 재배열 정리
 - [Sequence and Series: Problem Solving](/2024/06/08/sequence-and-series-problem-solving/)
