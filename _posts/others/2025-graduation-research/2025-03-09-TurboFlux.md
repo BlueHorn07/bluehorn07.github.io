@@ -102,14 +102,24 @@ $$
 
 그리고 Explicit과 Implicit의 차이는
 
-- $u'$의 모든 서브 트리가 $v'$의 서브 트리와 매칭 된다면, Explicit
-- $u'$의 서브 트리 중에 $v'$의 서브 트리와 매칭 되지 않는 것이 있다면, Implicit
+![](/images/others/2025-graduation-research/TurboFlux/explicit-edge.png){: .fill .align-center style="min-width: 300px; width: 80%" }
+논문 저자의 [발표 영상](https://youtu.be/0BAyhMs5ggg?si=vJu4HkiY8yW93hGo)에서 가져와서 화질이 좀 안 좋습니다 ㅠㅠ
+{: .align-caption .text-center .small .gray }
 
-라고 분류 합니다.
+$u'$의 모든 서브 트리가 $v'$의 서브 트리와 매칭 된다면, **Explicit**이라고 분류 하고,
+
+![](/images/others/2025-graduation-research/TurboFlux/implicit-edge.png){: .fill .align-center style="min-width: 300px; width: 80%" }
+논문 저자의 [발표 영상](https://youtu.be/0BAyhMs5ggg?si=vJu4HkiY8yW93hGo)에서 가져와서 화질이 좀 안 좋습니다 ㅠㅠ
+{: .align-caption .text-center .small .gray }
+
+$u'$의 서브 트리 중에 $v'$의 서브 트리와 매칭 되지 않는 것이 있다면, **Implicit**이라고 분류 합니다.
 
 논문의 다이어그램에서는 이를 Edge 색깔로 구분하는데, <span style="color: #8a2be2; font-weight: bold;">Explicit이면 보라색 실선</span>, <span style="color: #9acd32; font-weight: bold; text-decoration: dashed underline;">Implicit이면 연두색 점선</span>으로 그려집니다.
 
 참고로 NULL 엣지는 가상의 상태입니다. 이것은 데이터 노드와 매칭 되는 쿼리 노드가 전혀 없거나 아직 매칭 되는 쿼리 노드를 찾지 못 했음을 표현합니다.
+
+
+
 
 ### Example
 
@@ -124,7 +134,7 @@ Implicit 엣지도 살펴봅시다. $u_0 \rightarrow u_1.u_3$ 경로와 $v_0 \ri
 
 ![](/images/others/2025-graduation-research/TurboFlux/DCG-g2-fig2.png){: .fill .align-center style="min-width: 300px; width: 50%" }
 
-^만약 매칭이 존재하면 어떻게 표현되는지 설명 필요
+위의 그림은 매칭이 존재하는 상황 입니다. Positive 매칭은 데이터 노드의 루트 노드인 $v_s$에 매칭된 $u_0$ 엣지가 "Explicit"이 되면 매칭이 발생합니다!
 
 DCG에서 엣지는 $(v, u', v')$ 형태로 표현 됩니다. 그런데, 데이터 노드의 $v_s$가 쿼리 노드의 $u_s$와 매칭 될 때는 가상의 데이터 노드 $v_s^\ast$가 사용 됩니다. 그래서 시작 노드에 대한 매칭은 $(v_s^\ast, u_s, v_s)$로 표현 합니다. 하지만, $v_s^\ast$는 가상의 노드이기 때문에 DCG 그래프에 해당 노드를 저장하거나 시각화 하지는 않습니다.
 
