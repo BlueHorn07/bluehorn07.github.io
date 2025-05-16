@@ -22,16 +22,22 @@ toc_sticky: true
   - [Orthogonal Diagonalization, and Spectral Theorem](/2025/03/15/orthogonal-diagonalization/)
   - Repeated Eigen Value
   - Jordan Form
-- [Projection](http://localhost:4000/2025/03/15/projection/)
-  - Projection onto a vector
-  - Projection onto a subspace
-  - Projection Matrix
-- Quadratic Form
-  - Hermitian Matrix
-  - Skew-symmetric Matrix
+- [Projection](/2025/03/15/projection/)
+  - Projection onto a vector $\text{proj}_{\mathbf{a}}(\mathbf{b})$
+  - Projection onto a subspace $\text{proj}_{W}(\mathbf{b})$
+  - Projection Matrix $P$
+- [Quadratic Form](/2025/03/15/quadratic-form/)
+  - Diagonalizing the Quadratic Form <small>(Principal Axis Theorem)</small>
   - Positive Definite
+  - Semi-definite, and Indefinite
+  - Geometric Interpretation
+  - [Hermitian Matrix, and Skew-symmetric Matrix](/2025/03/16/hermitian-and-skew-symmetric-matrix/)
 - Linear Transformation
 - More Steps
   - [Generalized Eigen Values](/2024/10/26/generalized-eigen-values/)
     - 상미분방정식 수업을 들으면서 나온 개념을 정리한 포스트 입니다.
     - 2학년 선형대수에서는 조금 딥한 내용이라고 생각합니다. ~~그러나 3/4학년이라면... ㅋㅋ~~
+
+
+
+- 그람-슈미트
