@@ -79,7 +79,57 @@ SQL의 `SELECT` 연산 같은 것
 
 데이터베잉스나 동적 시스템에서 "동시성"을 제어하기 위해서 여러 버전의 데이터를 동시에 유지하는 테크닉 입니다.
 
-TurboFlux 논문에서 CSM 문제를 분산처리 환경에서 다루는 방법에 대해 언급할 때, 잠깐 나왔습니다.
+TurboFlux(2018) 논문에서 CSM 문제를 분산처리 환경에서 다루는 방법에 대해 언급할 때, 잠깐 나왔습니다.
 
 회사에서 Delta-lake 포맷을 사용하고 있는데, 이게 대표적인 MVCC 프레임워크라고 합니다.
 
+
+# Dataset
+
+졸업 프로젝트 실험에 사용한 데이터셋의 목록 입니다.
+
+- LSBench
+  - Undirected, Labeled
+  - Directed, Labeled
+- Livejournal
+  - Undirected, Unlabeled
+- Netflow
+  - Directed, Labeled
+
+## Labeled vs. Unlabeled
+
+Labeled와 Unlabeled의 차이는 Edge에 라벨이 있는지 여부 입니다.
+
+```sh
+@lsbench (labeled)
+v 0 0
+v 1 0
+v 2 0
+v 3 0
+v 4 0
+v 5 0
+e 0 3 33
+e 1 2 42
+e 2 3 42
+e 3 4 41
+e 3 5 32
+```
+
+LSBench는 엣지에 라벨이 부여 되어 있습니다: `e v1, v2 label`
+
+```sh
+@livejournal (unlabeled)
+v 0 26
+v 1 8
+v 2 9
+v 3 26
+v 4 8
+v 5 14
+e 0 2 0
+e 0 3 0
+e 0 5 0
+e 1 3 0
+e 3 4 0
+```
+
+livejournal은 엣지에는 라벨이 없지만, 노드에는 라벨이 존재합니다.
