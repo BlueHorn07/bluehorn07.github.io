@@ -34,6 +34,10 @@ toc_sticky: true
   - [Convexity](/2025/04/14/bundle-preference-convexity/)
   - [Differentiability](/2025/04/14/bundle-preference-differentiability/)
 - [Budget Sets & Demand Function & Consumer's Problem](/2025/04/22/consumer-problem/)
+- [Internal Solution and Boundary Solution](/2025/05/10/internal-and-boundary-solution-copy/)
+- [Rationalizable Demand Function](/2025/05/11/rationalizable-demand-function/)
+- [Rational Demand Function, Types of Goods](/2025/05/11/weak-axiom-of-revealed-preferences/)
+
 
 # Thoughts
 
