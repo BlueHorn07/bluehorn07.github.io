@@ -154,13 +154,13 @@ $$
 
 </div>
 
-즉, 분할 차분 방법은 입력된 $x$들의 순서에 전혀 영향을 받지 않는다는 성질 입니다. 그래서 분할 차분을 계산하거나 표현할 때, 데이터의 순서에서 자유롭습니다.
+분할 차분 방법은 입력된 $x$들의 순서에 전혀 영향을 받지 않는다는 성질 입니다. 그래서 분할 차분을 계산하거나 표현할 때, 데이터의 순서에서 자유롭습니다.
 
 ## Connection between Divided Difference and Function's Differential
 
 <div class="theorem" markdown="1">
 
-Given divided difference $f[x_1, \dots, x_n]$, it can be derived from the $n-1$-th derivatives like
+Given divided difference $f[x_1, \dots, x_n]$, it can be derived from the $(n-1)$-th derivatives like
 
 $$
 f[x_1, \dots, x_n] = \frac{f^{(n-1)}(\xi)}{(n-1)!}
@@ -170,7 +170,7 @@ where $\xi \in \left(\min(\left\\{ x_i \right\\}), \max(\left\\{ x_i \right\\})\
 
 </div>
 
-이것의 직관적인 예제는 1차 분할 차분 $f[x_1, x_2]$ 입니다. 이것은
+가장 간단한 예제는 1차 분할 차분 $f[x_1, x_2]$ 입니다. 이것은
 
 $$
 f[x_1, x_2] = \frac{f(x_2) - f(x_1)}{x_2 - x_1}
@@ -182,9 +182,27 @@ $$
 f[x_1, x_2] = \frac{f(x_2) - f(x_1)}{x_2 - x_1} = f'(\xi)
 $$
 
-를 만족하는 $\xi$가 $\xi \in (x_1, x_2)$ 범위 내에 존재하게 됩니다. 그래서 이 성질을 "**고차 평균값 정리(Generalized Mean Value Theorem)**"이라고도 합니다.
+를 만족하는 $\xi$가 $\xi \in (x_1, x_2)$ 범위 내에 존재합니다.
+그래서 이 성질을 "**고차 평균값 정리(Generalized Mean Value Theorem)**"이라고도 합니다.
 
 Proof: TODO
+
+## Finite Differences
+
+$$
+\Delta f(x) = \frac{f(x+h) - f(x)}{h}
+$$
+
+요건 곁다리 내용인데요! "유한 차분(finite difference)"라는 것도 있습니다. 분할 차분과 유한 차분의 차이는 등간격 여부 입니다!
+유한 차분은 각 데이터 노드의 간격이 일정해야 합니다. 반면, 분할 차분은 데이터 노드의 간격에 대한 제약 조건이 없습니다.
+
+유한 차분도 2차, 3차 차분을 정의할 수 있습니다!
+
+$$
+\Delta^2 f(x) = \Delta (\Delta f(x)) = f(x+2h) - 2f(x+h) + f(x)
+$$
+
+
 
 # 참고자료
 

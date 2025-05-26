@@ -110,9 +110,13 @@ $$
 
 이것을 기호를 통해 간단하게 바꾼 것이 아래의 점화식 입니다.
 
+<div class="theorem" markdown="1">
+
 $$
 u_{n+1} \approx u_n + h f(t_n, u_n)
 $$
+
+</div>
 
 이 방식은 솔루션 함수 $u(t)$의 함숫값을 구하기 때문에, "explicit method"라고 부릅니다. 그리고 시간이 나아감에 따른 솔루션의 함수값 변화를 계산하기 때문에 "time-marching method"라고도 부릅니다.
 
