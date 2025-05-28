@@ -40,5 +40,10 @@ toc_sticky: true
     - [Forward Euler Method](/2025/05/12/euler-method/)
     - Backward Euler Method
     - Trapzoid Method
-  - [Talyor Method](/2025/05/12/taylor-method/)
-  - Runge-Kutta Method
+  - [Taylor Method](/2025/05/12/taylor-method/)
+  - [Runge-Kutta Method](/2025/05/13/runge-kutta-method/)
+  - [Adams-Bashforth Method](/2025/05/14/adams-bashforth-method/)
+  - [Predictor-Corrector Method](/2025/05/15/predictor-corrector-method/)
+- Approximation Theory
+  - [Least Square Method](/2025/05/17/least-square-method/)
+  - [Continuous Least Square Method](/2025/05/18/continuous-least-square-method/)
