@@ -122,7 +122,7 @@ $$
 
 답은 $P(T1)$과 $P(T2)$, 둘 중 하나만 가능한 작게 만들 수 있다는 것이다 😱
 
-<div class="light-margin" align="center">
+<div class="theorem" align="center">
 
 "For a fixed sample size, we can make only one error as small as we want."
 

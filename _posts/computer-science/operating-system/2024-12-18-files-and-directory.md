@@ -49,7 +49,7 @@ excerpt: ""
 
 14p의 그림도 위의 녀석들에 대한 관계를 잘 보여줌!
 
-`fopen()`이 실행될 떄의 접근 순서는
+`fopen()`이 실행될 때의 접근 순서는
 
 1. File Descriptors (Metadata)
    1. 요기에서 파일 이름 기준으로 찾고

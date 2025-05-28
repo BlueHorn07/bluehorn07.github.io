@@ -23,7 +23,7 @@ Supp. we have a p-coin. We want to verify that the coin is really a p-coin.
 
 </div>
 
-<div class="light-margin" markdown="1">
+<div class="theorem" markdown="1">
 
 Q1. Which coin estimator can we use for $p$?
 
@@ -31,7 +31,7 @@ A1. Here, we can use $\hat{p} = \dfrac{\text{# of heads}}{\text{# of toss}} = \d
 
 </div>
 
-<div class="light-margin" markdown="1">
+<div class="theorem" markdown="1">
 
 Q2. How about 95% confidence interval for $p$?
 

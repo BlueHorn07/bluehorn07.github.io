@@ -42,7 +42,7 @@ $$
 \frac{\partial f(a, b)}{\partial a} = 1 \quad, \quad \frac{\partial f(a, b)}{\partial b} = 1
 $$
 
-<div class="light-margin"></div>
+<div class="theorem"></div>
 
 2\. Multiplication $f(a, b) = ab$
 
@@ -52,7 +52,7 @@ $$
 
 $a$, $b$의 순서가 바뀌었다!!
 
-<div class="light-margin"></div>
+<div class="theorem"></div>
 
 3\. max function $f(a, b) = \max(a, b)$
 
@@ -62,7 +62,7 @@ $$
 
 당연히 $a > b$일 때, $f(a, b)$가 $a$에 대한 identity func.이 되므로, 위의 결과는 당연하다!
 
-<div class="light-margin"></div>
+<div class="theorem"></div>
 
 4\. sigmoid function $f(a) = \sigma(a)$
 

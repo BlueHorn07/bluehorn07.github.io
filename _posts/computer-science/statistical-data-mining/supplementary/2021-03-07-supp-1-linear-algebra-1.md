@@ -276,7 +276,7 @@ The \<**rank**\> of $A$ is the dimension of $\mathcal{C}(A)$.
 
 <span class="statement-title">Theorem.</span> Fundamental Theorem of Liniear Algebra<br/>
 
-<div class="light-margin"></div>
+<div class="theorem"></div>
 
 **Part 1**: (Rank-Nullity Theorem; Rank Theorem)
 
@@ -285,7 +285,7 @@ The column and row spaces of an $m \times n$ matrix $A$ both have dimension $r$,
 - the nullspace has dimension $n-r$
 - the left nullspace has dimension $m-r$
 
-<div class="light-margin"></div>
+<div class="theorem"></div>
 
 **Part 2**:
 
@@ -293,7 +293,7 @@ The \<Null space\> and \<Row space\> are \<orthogonal\>.
 
 The \<Left Mull space\> and the \<Column space\> are also \<orthogonal\>.
 
-<div class="light-margin"></div>
+<div class="theorem"></div>
 
 **Part 3**:
 

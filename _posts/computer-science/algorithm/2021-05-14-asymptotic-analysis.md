@@ -9,11 +9,11 @@ categories: ["Algorithm"]
 
 보통 우리는 어떤 알고리즘의 성능을 입력 데이터의 크기 $N$에 대한 함수로 표현한다. 이번 포스트에서는 알고리즘의 성능을 표기하는 여러 기법들에 대해 살펴본다 😎
 
-### $O$ Notaiton
+### $O$ Notation
 
 <div class="notice" markdown="1">
 
-<div class="light-margin" markdown="1">
+<div class="theorem" markdown="1">
 
 For two functions $f(n)$ and $g(n)$, $f(n) = O(g(n))$,
 
@@ -33,11 +33,11 @@ we have $f(n) \le c\cdot g(n)$
 
 
 
-### $\Omega$ Notaiton
+### $\Omega$ Notation
 
 <div class="notice" markdown="1">
 
-<div class="light-margin" markdown="1">
+<div class="theorem" markdown="1">
 
 For two functions $f(n)$ and $g(n)$, $f(n) = \Omega(g(n))$,
 
@@ -55,11 +55,11 @@ we have $f(n) \ge c\cdot g(n)$
 
 </div>
 
-### $\Theta$ Notaiton
+### $\Theta$ Notation
 
 <div class="notice" markdown="1">
 
-<div class="light-margin" markdown="1">
+<div class="theorem" markdown="1">
 
 $f(n)$ is $\Theta(g(n))$ iff $f(n) = \Omega(g(n)) = O(g(n))$.
 
@@ -77,7 +77,7 @@ $f(n)$ is $\Theta(g(n))$ iff $f(n) = \Omega(g(n)) = O(g(n))$.
 
 표기법에 익숙해지기 위해 몇가지 문제를 풀어보자.
 
-<div class="light-margin" markdown="1">
+<div class="theorem" markdown="1">
 
 Q1\. Show that for all positive integer $n$,
 
@@ -89,7 +89,7 @@ A1. 논리에 따라 조금만 끄적이면 금방 풀림.
 
 </div>
 
-<div class="light-margin" markdown="1">
+<div class="theorem" markdown="1">
 
 Q2. (T/F) If $f(n) = \min \\{ n, 10^6 \\}$, then $O(1)$.
 
@@ -97,7 +97,7 @@ A2. E-Z
 
 </div>
 
-<div class="light-margin" markdown="1">
+<div class="theorem" markdown="1">
 
 Q3. (T/F) If $f(n) = O(n)$, then $2^{f(n)} = O(2^n)$.
 
@@ -133,7 +133,7 @@ if $g(n) = o(f(n))$, then $f(n) = \omega(g(n))$.
 
 이해를 돕기 위해 사례를 먼저 살펴보자.
 
-<div class="light-margin" markdown="1">
+<div class="theorem" markdown="1">
 
 [Trivial case]
 
@@ -152,7 +152,7 @@ If $\displaystyle\lim_{n\rightarrow\infty} \frac{f(n)}{g(n)} = 0$, then $f(n) = 
 
 </div>
 
-<div class="light-margin" markdown="1">
+<div class="theorem" markdown="1">
 
 Q4. (T/F) If $f(n) = 2^n$ and $g(n) = n^c$ for $c \in \mathbb{N}$, then $g(n) = o(f(n))$.
 
@@ -160,7 +160,7 @@ A4. E-Z. 앞에서 언급한 극한으로 정의한 little-o notation을 쓰면 
 
 </div>
 
-<div class="light-margin" markdown="1">
+<div class="theorem" markdown="1">
 
 Q5. Show that for any fixed but arbitrarily small real number $c > 0$,
 
@@ -176,7 +176,7 @@ A5. E-Z. 이것도 극한으로 정의한 버전을 쓰면 바로 풀림.
 
 #### Exercises
 
-<div class="light-margin" markdown="1">
+<div class="theorem" markdown="1">
 
 Q. (T/F) $2^n = n^{\omega(1)}$.
 

@@ -34,14 +34,14 @@ $$
 - $H_0$: $\mu=190$ (cm)
 - $H_1$: $\mu=195$ (cm)
 
-<div class="light-margin"></div>
+<div class="theorem"></div>
 
 2\. we want
 
 - $\alpha = 0.05$
 - $1 - \beta \ge 0.9$
 
-<div class="light-margin"></div>
+<div class="theorem"></div>
 
 3\. Evaluate T1 Error
 
@@ -54,7 +54,7 @@ $$
 
 위의 식은 어떤 $n$을 선택하더라도 항상 참인 명제다!
 
-<div class="light-margin"></div>
+<div class="theorem"></div>
 
 4\. Evaluate T2 Error
 

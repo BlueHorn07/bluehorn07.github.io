@@ -58,7 +58,7 @@ where $K_k (x, x_i) = I(x_i \in N_k (x))$.
 
 즉, \<kernel method\>는 equally weighting 하는 KNN과 달리, kernel에 따라 가까이 있는 point에는 더 큰 weight을 부여해주는 역할을 한다.
 
-<div class="light-margin" markdown="1">
+<div class="theorem" markdown="1">
 
 Q. \<kernel method\>를 적용한 그림에서 boundary 쪽을 보면, estimated curve가 약간 올라가 있는 것을 볼 수 있다. 이것은 왜 발생하는 것이며, 이 문제는 dataset에 상관없이 일어나는 \<kernel method\>의 본질적인 문제인가?
 

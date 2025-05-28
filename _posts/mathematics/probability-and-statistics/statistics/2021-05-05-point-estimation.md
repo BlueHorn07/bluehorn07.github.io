@@ -74,7 +74,7 @@ A2. sample variance, $\displaystyle S^2 = \dfrac{1}{n-1} \sum^n_i (X_i - \bar{X}
 
 or $\displaystyle \hat{S}^2 = \dfrac{1}{n} \sum^n_i (X_i - \bar{X})^2$ where $E[\hat{S}^2] = \dfrac{n-1}{n} \sigma^2$.
 
-<div class="light-margin"></div>
+<div class="theorem"></div>
 
 Q3. 두 estimator 중 어떤 것이 더 좋은가?
 
@@ -94,7 +94,7 @@ $$
 
 즉, <span class="half_HL">\<Estimator\>에 평균을 취했을 때, population parameter $\theta$가 유도되는 estimator</span>를 말한다!
 
-<div class="light-margin"></div>
+<div class="theorem"></div>
 
 $E[\hat{\Theta} - \theta]$ is the "**bias**" of $\hat{\Theta}$ related to $\theta$.
 

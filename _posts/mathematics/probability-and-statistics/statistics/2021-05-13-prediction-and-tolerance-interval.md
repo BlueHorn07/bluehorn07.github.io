@@ -49,7 +49,7 @@ Now, our interest is <u>the proportion of the distribution</u> where is the larg
 
 Q. Let $X \sim N(\mu, \sigma^2)$, can you find interval which contains 95% of the population distribution?
 
-<div class="light-margin" markdown="1">
+<div class="theorem" markdown="1">
 
 [$\mu$ and $\sigma^2$ both are known]
 
@@ -61,7 +61,7 @@ $$
 
 </div>
 
-<div class="light-margin" markdown="1">
+<div class="theorem" markdown="1">
 
 [$\mu$ and $\sigma^2$ both are <span style="color:red">unknown</span>]
 

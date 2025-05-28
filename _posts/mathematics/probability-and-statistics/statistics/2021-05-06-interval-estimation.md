@@ -31,16 +31,12 @@ We usually take $\alpha = 0.01, \; 0.05, \; 0.1$.
 
 💥 Note that $(\hat{\theta}_L, \hat{\theta}_U)$ is not unique!! (꼭 대칭일 필요는 없다는 말)
 
-<hr/>
-
 # Interval Estimation
 
 이제 상황에 따른 \<Interval Estimation\> 방법을 살펴보겠다!
 
 - Estimate $\mu$ when $\sigma^2$ is known
 - Estimate $\mu$ when $\sigma^2$ is unknown
-
-<hr/>
 
 ## z-value: Estimate $\mu$ when $\sigma^2$ is known
 
@@ -123,7 +119,7 @@ $\vdots$
 
 </div>
 
-<hr/>
+
 
 ### Error of Interval Estimation
 
@@ -171,7 +167,7 @@ $$
 
 </div>
 
-<hr/>
+
 
 ### One-sided Confidence Bounds
 
@@ -201,7 +197,7 @@ $$
 
 와 같다!
 
-<hr/>
+
 
 ## t-value: Estimate $\mu$ when $\sigma^2$ is unknown
 
@@ -260,7 +256,7 @@ $$
 
 2\. This confidence interval is not an approximation, since we assume sample $X_i$ as iid. normal $\mu$, $\sigma^2$.
 
-<hr/>
+
 
 # Compare Point Estimator and Interval Estimator
 
@@ -268,7 +264,7 @@ Q. Does confidence interval give us more information about $\mu$ than a point es
 
 A. <span class="half_HL">Not really... 🤔</span>
 
-<div class="light-margin" markdown="1">
+<div class="theorem" markdown="1">
 
 [Point Estimator]
 
@@ -280,28 +276,28 @@ And the variance $\text{Var}(\bar{x}) = \sigma^2/n$.
 
 </div>
 
-<div class="light-margin" markdown="1">
+<div class="theorem" markdown="1">
 
 [Interval Estimator]
 
 For an interval estimator $\left(\bar{x} - z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}, \; \bar{x} + z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}} \right)$,
 
-the error is $\left\| \bar{x} - \mu \right\| \le z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}$.
+the error is $\left\vert \bar{x} - \mu \right\vert \le z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}$.
 
 </div>
 
 💥 This means the width of the confidence interval is determined by the standard deviation of the point estimator!! 이것은 둘 중 한 Estimator가 개선되면, 다른 하나의 성능도 개선됨을 말한다.
 
-<hr/>
+# 맺음말
 
 이어지는 포스트들에서는 상황별로 \<Interval Estimation\>을 수행하는 방법을 살펴볼 예정이다! 🤩
 
-- [Prediction & Tolerance Estimation]({{"/2021/05/13/prediction-and-tolerance-interval" | relative_url}})
-- [Two Samples Estimation: Diff Btw Two Means]({{"/2021/05/13/two-samples-estimation-diff-btw-two-means" | relative_url}})
-- [Two Samples Estimation: Paired Observations]({{"/2021/05/13/two-samples-estimation-paired-observations" | relative_url}})
-- [Proportion Estimation]({{"/2021/05/14/proportion-estimation-on-bernoulli" | relative_url}})
+- [Prediction & Tolerance Estimation](/2021/05/13/prediction-and-tolerance-interval)
+- [Two Samples Estimation: Diff Btw Two Means](/2021/05/13/two-samples-estimation-diff-btw-two-means)
+- [Two Samples Estimation: Paired Observations](/2021/05/13/two-samples-estimation-paired-observations)
+- [Proportion Estimation](/2021/05/14/proportion-estimation-on-bernoulli)
   - Single Sample Estimation: Proportion Estimation
   - Two Samples Estimation: Diff btw Two Proportions
-- [Variance Estimation]({{"/2021/05/16/variance-estimation" | relative_url}})
+- [Variance Estimation](/2021/05/16/variance-estimation)
   - Single Sample Estimation: Variance Estimation
   - Two Samples Estimation: The Ratio of Two Variances
