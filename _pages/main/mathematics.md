@@ -39,7 +39,8 @@ permalink: /topic/mathematics
 
 - [Ordinary Differential Equations](/categories/ordinary-differential-equations)
   - 복수전공하고 있는 수학과의 학부 졸업시험에 미분방정식이 있는 줄 알고, 시험 준비도 할 겸 복학할 때 "상미분방정식" 과목을 신청했습니다. 나중에 알고보니 미분방정식은 졸업시험 과목이 아니었습니다... OTL... 그래도 이왕 시작한 것 포기란 없습니다!! 💪 으랏차!!
-- Introduction Probability Theory
+- [Introduction Probability Theory](/categories/introduction-probability-theory)
+  - 더이상 400번 과목은 안 들으려고 했는데, 졸업 요건 때문에 뒤늦게 과목을 신청해서 듣게 되었습니다... ㅋㅋ 뒤늦게 신청 했던 과목이지만, 교수님께서 정말 잘 설명해주시고 재밌는 사례들을 많이 소개 해주셔서 학기 내내 진도를 놓치지 않고 잘 따라갔던 (유일한) 과목입니다 ㅋㅋㅋㅋㅋ
 
 # Others
 
