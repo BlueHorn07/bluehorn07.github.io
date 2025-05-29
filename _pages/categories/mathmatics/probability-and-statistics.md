@@ -170,9 +170,10 @@ toc_sticky: true
 
 <hr/>
 
-# Essays
+# Articles
 
 - [Degree of Freedom in Statistics](/2022/10/09/degree-of-freedom-in-statistics)
+- [Confidence Interval, and Parameter](/2025/05/28/confidence-interval-and-parameter/)
 
 <hr/>
 
