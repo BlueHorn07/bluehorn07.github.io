@@ -4,7 +4,7 @@ toc: true
 author: bluehorn_math
 toc_sticky: true
 categories: ["Probability"]
-excerpt: ""
+excerpt: "선형/비선형 변환을 통해 새로운 확률 변수를 만드는 방법에 대해. Jacobian으로 확률 밀도 함수 보정하기"
 ---
 
 2025년 마지막 학기 수업인 "확률개론(MATH431)” 수업에서 배운 것과 공부한 것을 정리한 포스트입니다. 전체 포스트는 [Introduction to Probability Theory](/categories/introduction-probability-theory)에서 확인하실 수 있습니다 🎲
