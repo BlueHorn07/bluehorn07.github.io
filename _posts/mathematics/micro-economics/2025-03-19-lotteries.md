@@ -54,13 +54,13 @@ $$
 
 ## Visualize set of lotteries
 
-![](/images/others/micro-economics/lottery-1.png){: .fill .align-center style="width: 300px" }
+![](/images/mathematics/micro-economics/lottery-1.png){: .fill .align-center style="width: 300px" }
 
 $Z$가 두 개의 상품 $z_1, z_2$로 구성 되어 있고, 각 상품에 대한 확률이 $p_1, p_2$라고 합시다.
 
 확률의 합은 항상 1이어야 하기 때문에 $p_1 + p_2 = 1$을 만족하고, 이는 위의 그림처럼 평면 위에 표현할 수 있습니다.
 
-![](/images/others/micro-economics/lottery-2.png){: .fill .align-center style="width: 300px" }
+![](/images/mathematics/micro-economics/lottery-2.png){: .fill .align-center style="width: 300px" }
 
 만약, $Z$가 3개의 상품으로 구성 되어 있었다면, 비슷하게 3차원의 공간 뒤에 그릴 수 있습니다.
 

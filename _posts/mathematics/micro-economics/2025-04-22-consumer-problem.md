@@ -17,7 +17,7 @@ excerpt: "예산 집합과 그 안에서 소비자의 최선의 선택을 결정
 
 "예산 집합"은 주어진 예산 $w$와 각 재화에 대한 고정된 가격 $p_1$, $p_2$가 있을 때 각 재화를 구매할 수 있는 가능한 번들을 모두 모은 집합 입니다.
 
-![](/images/others/micro-economics/budget-sets.png){: .fill .align-center style="width: 500px" }
+![](/images/mathematics/micro-economics/budget-sets.png){: .fill .align-center style="width: 500px" }
 
 표기는 아래와 같습니다.
 

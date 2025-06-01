@@ -67,7 +67,7 @@ for every budget set the result of demand function is a solution of the consumer
 - $B((1, 2), 2)$라는 예산에서는 $a = (0, 1)$를 선택 했고,
 - $B((2, 1), 2)$라는 예산에서는 $b = (1, 0)$를 선택 했습니다.
 
-![](/images/others/micro-economics/irrational-demand-function.png){: .fill .align-center style="width: 400px" }
+![](/images/mathematics/micro-economics/irrational-demand-function.png){: .fill .align-center style="width: 400px" }
 
 소비자의 이런 경향은 "단조성"을 위배 합니다.
 

@@ -103,7 +103,7 @@ $$
 
 이 효용 함수의 "무차별 곡선"은 아래와 같이 정의 됩니다.
 
-![](/images/others/micro-economics/bundle-constant-tradeoff.png){: .fill .align-center style="width: 300px" }
+![](/images/mathematics/micro-economics/bundle-constant-tradeoff.png){: .fill .align-center style="width: 300px" }
 
 $$
 \left\{
@@ -119,7 +119,7 @@ $$
 
 소비자가 오직 하나의 재화에만 관심이 있을 수 있습니다. 두번재 재화 $x_2$에만 관심이 있다고 한다면, 번들을 구성할 때, $x_1$의 값은 상관이 없습니다. 그래서 효용 함수는 $u(x) = x_2$로 정의되고, 무차별 곡선이 아래와 같이 정의 됩니다.
 
-![](/images/others/micro-economics/bundle-only-good-2-valued.png){: .fill .align-center style="width: 300px" }
+![](/images/mathematics/micro-economics/bundle-only-good-2-valued.png){: .fill .align-center style="width: 300px" }
 
 $$
 \left\{
@@ -163,7 +163,7 @@ $$
 
 무차별 곡선은 아래와 같이 그려집니다.
 
-![](/images/others/micro-economics/bundle-stepwise-preference.png){: .fill .align-center style="width: 300px" }
+![](/images/mathematics/micro-economics/bundle-stepwise-preference.png){: .fill .align-center style="width: 300px" }
 
 $x_1 \le 10$까지는 곡선이 수직선의 형태로 표현 됩니다. $x_1$의 양만으로 선호가 결정 됩니다.
 
@@ -186,7 +186,7 @@ $$
 
 무차별 곡선은 "꺽쇠" 형태를 띄게 됩니다.
 
-![](/images/others/micro-economics/bundle-complementary-goods.png){: .fill .align-center style="width: 300px" }
+![](/images/mathematics/micro-economics/bundle-complementary-goods.png){: .fill .align-center style="width: 300px" }
 
 번들 $(2, 5)$와 $(2, 2)$는 동일한 효용을 줍니다. 그 이유는 둘다 최소 재화의 갯수가 2이기 때문입니다.
 
@@ -227,7 +227,7 @@ $$
 
 이것은 이상적인 점에서 멀어질수록 효용이 낮아지는 것을 표현 합니다.
 
-![](/images/others/micro-economics/bundle-ideal.png){: .fill .align-center style="width: 300px" }
+![](/images/mathematics/micro-economics/bundle-ideal.png){: .fill .align-center style="width: 300px" }
 
 무차별 곡선으로 표현하면 위와 같습니다. 중앙의 점 $\mathbf{x}^\ast$는 이상적인 번들을 나타냅니다. 주변에 그려진 파란색 마름모는 무차별 곡선으로 "같은 거리"를 가진 번들의 집합 입니다.
 

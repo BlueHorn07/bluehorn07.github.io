@@ -70,7 +70,7 @@ $$
 
 $\lambda \in (0, 1)$로 $a$와 $b$ 사이의 선형 결합을 하는데, 이는 2차원 번들 평면 상에서 $a$와 $b$를 연결하는 선분의 임의의 점을 의미합니다. (기하학적 해석)
 
-![](/images/others/micro-economics/bundle-convexity-youtube.png){: .fill .align-center style="width: 100%" }
+![](/images/mathematics/micro-economics/bundle-convexity-youtube.png){: .fill .align-center style="width: 100%" }
 [[Youtube] 미시경제학 (Microeconomics) Week 2-1: Indifference Curves and MRS](https://youtu.be/tab5kGEAE5E?si=TNjpPm6twAxKouL8&t=1604)
 {: .small .gray .text-center }
 
@@ -78,7 +78,7 @@ $\lambda \in (0, 1)$로 $a$와 $b$ 사이의 선형 결합을 하는데, 이는 
 
 ## Strictly Convex
 
-![](/images/others/micro-economics/bundle-convexity.png){: .fill .align-center style="width: 100%" }
+![](/images/mathematics/micro-economics/bundle-convexity.png){: .fill .align-center style="width: 100%" }
 
 그래프에서 왼쪽은 "볼록한 선호"를 표현하고, 오른쪽은 "엄밀히 볼록한 선호"를 표현합니다.
 
@@ -158,7 +158,7 @@ u(\lambda a + (1 - \lambda)b)
 \lambda u(a) + (1 - \lambda) u(b)
 $$
 
-![](/images/others/micro-economics/bundle-convexity-concave-utility.png){: .fill .align-center style="width: 400px" }
+![](/images/mathematics/micro-economics/bundle-convexity-concave-utility.png){: .fill .align-center style="width: 400px" }
 
 이것은 중간점의 함수값이, 함수의 기댓값보다 크다는 것을 말합니다. 즉, 이 둘을 섞은 선택이 (가중) 평균보다 더 좋거나 같다는 것을 말합니다.
 
@@ -206,7 +206,7 @@ TODO... 증명이랑 예시도 있는데 와닿지 x...
 
 # Summary
 
-![](/images/others/micro-economics/bundle-preference-summary-youtube.png){: .fill .align-center style="width: 100%" }
+![](/images/mathematics/micro-economics/bundle-preference-summary-youtube.png){: .fill .align-center style="width: 100%" }
 [[Youtube] 미시경제학 (Microeconomics) Week 2-1: Indifference Curves and MRS](https://youtu.be/tab5kGEAE5E?si=Zo6vWJVHbSTYN5bi&t=2105)
 {: .small .gray .text-center }
 

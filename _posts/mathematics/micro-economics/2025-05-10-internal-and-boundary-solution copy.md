@@ -36,13 +36,13 @@ $$
 \text{MRS}(x^{\ast}) = p_1 / p_2
 $$
 
-![](/images/others/micro-economics/internal-solution.png){: .fill .align-center style="width: 400px" }
+![](/images/mathematics/micro-economics/internal-solution.png){: .fill .align-center style="width: 400px" }
 
 이것은 버짓 라인과 접하는 무차별 곡선 위에서 최적해가 발생한다고 해석할 수 있습니다.
 
 ## Boundary Solution
 
-![](/images/others/micro-economics/boundary-solution.png){: .fill .align-center style="width: 400px" }
+![](/images/mathematics/micro-economics/boundary-solution.png){: .fill .align-center style="width: 400px" }
 
 반면에 최적해가 경계인 $x_1^{\ast} = 0$ 또는 $x_2^{\ast} = 0$ 위에서 발생할 수 있습니다.
 

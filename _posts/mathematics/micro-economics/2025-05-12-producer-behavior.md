@@ -153,7 +153,7 @@ $$
 
 이때, 생산량을 최대로 늘리지만 $p f(a) \ge wa$를 만족하도록 하여 손해는 보지 않도록 해야 합니다.
 
-![](/images/others/micro-economics/output-maximizing-producer.png){: .fill .align-center style="width: 80%" }
+![](/images/mathematics/micro-economics/output-maximizing-producer.png){: .fill .align-center style="width: 80%" }
 
 왼쪽 그림을 먼저 봅시다. 생산 함수는 오목하기 때문에, 이익이 양수가 되는 지점도 있고, 음수가 되는 지점도 있습니다. 이때, $p f(a) = wa$가 되는 $a^{\ast}$는 제약 조건을 만족하는 최소한의 선택 입니다.
 
@@ -171,7 +171,7 @@ $$
 \max_a pf(a) - wa
 $$
 
-![](/images/others/micro-economics/profit-maximizing-producer.png){: .fill .align-center style="width: 80%" }
+![](/images/mathematics/micro-economics/profit-maximizing-producer.png){: .fill .align-center style="width: 80%" }
 
 이 생산자는 이윤 $\pi(a)$를 극대화 해야 하기 때문에, 아래의 경우를 만족하는 $a$를 찾아야 합니다.
 

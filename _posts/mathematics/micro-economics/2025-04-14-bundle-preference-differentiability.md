@@ -26,7 +26,7 @@ excerpt: "한계대체율(MRS)의 정의를 살펴보고, 번들 선호가 미�
 
 # Smooth Indifference Curve
 
-![](/images/others/micro-economics/bundle-differentiability.png){: .fill .align-center style="width: 500px" }
+![](/images/mathematics/micro-economics/bundle-differentiability.png){: .fill .align-center style="width: 500px" }
 
 왼쪽 그래프는 Smooth 무차별 곡선 입니다. 점 $z$를 기준으로 뾰족한 부분 없이 부드럽게 연결 되어 있고, 점 $z$를 기준으로 접선을 그릴 수도 있습니다.
 
@@ -93,7 +93,7 @@ $$
 
 아직 정의를 살펴보지도 않았는데 ㅋㅋ 미분불가능한 번들 선호의 사례들부터 먼저 살펴봅시다.
 
-![](/images/others/micro-economics/kinky-preference-youtube.png){: .fill .align-center style="width: 400px" }
+![](/images/mathematics/micro-economics/kinky-preference-youtube.png){: .fill .align-center style="width: 400px" }
 [[Youtube] 미시경제학 (Microeconomics) Week 2-4: Consumer choice](https://youtu.be/kEgg_pAhyLs?si=6vvAxrYhAHw4IDRa&t=1319)
 {: .small .gray .text-center }
 
@@ -181,6 +181,6 @@ $(0, 1)$ 방향으로 움직인다고 해봅시다. 첫번째 재화는 그대�
 
 # Summary
 
-![](/images/others/micro-economics/bundle-preference-summary-youtube.png){: .fill .align-center style="width: 100%" }
+![](/images/mathematics/micro-economics/bundle-preference-summary-youtube.png){: .fill .align-center style="width: 100%" }
 [[Youtube] 미시경제학 (Microeconomics) Week 2-1: Indifference Curves and MRS](https://youtu.be/tab5kGEAE5E?si=Zo6vWJVHbSTYN5bi&t=2105)
 {: .small .gray .text-center }

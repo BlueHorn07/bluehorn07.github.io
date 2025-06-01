@@ -139,7 +139,7 @@ $v_1 = 0$이라면 둘이 무차별 하다는 결과가 나옵니다.
 
 이것은 무차별 곡선 위의 한 번들을 잡을 때, 그 위에서의 사분면(quadrant)을 잡으면, 1 사분면은 항상 선호되는 번들 집합이 되고, 3사분면은 항상 비선호되는 번들 집합이 됩니다!
 
-![](/images/others/micro-economics/bundle-preference-summary-youtube.png){: .fill .align-center style="width: 100%" }
+![](/images/mathematics/micro-economics/bundle-preference-summary-youtube.png){: .fill .align-center style="width: 100%" }
 [[Youtube] 미시경제학 (Microeconomics) Week 2-1: Indifference Curves and MRS](https://youtu.be/tab5kGEAE5E?si=Zo6vWJVHbSTYN5bi&t=2105)
 {: .small .gray .text-center }
 
