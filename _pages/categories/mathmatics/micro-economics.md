@@ -35,9 +35,13 @@ toc_sticky: true
   - [Differentiability](/2025/04/14/bundle-preference-differentiability/)
 - [Demand Function](/2025/04/21/demand-function/)
 - [Consumer's Problem](/2025/04/22/consumer-problem/)
-- [Internal/Boundary Solution](/2025/05/10/internal-and-boundary-solution/)
+- [Internal·Boundary Solution](/2025/05/10/internal-and-boundary-solution/)
 - [Rationalizable Demand Function](/2025/05/10/rationalizable-demand-function/)
 - [Kind of Goods](/2025/05/11/kind-of-goods/)
+  - Derived Functions
+    - Regular Demand Function
+    - Cross Demand Function
+    - Engel Function
   - Normal Goods
   - Regular Goods
   - Inferior Goods
@@ -55,7 +59,7 @@ toc_sticky: true
 
 <hr/>
 
-- [Producer Behavior](/2025/05/13/producer-behavior/)
+- [Producer's Behavior](/2025/05/13/producer-behavior/)
 - [Cost Function](/2025/05/14/cost-function/)
 - [Exchange Economy](/2025/05/14/exchange-economy/)
 - [Equilibrium and Pareto Stability](/2025/05/15/equilibrium-and-pareto-stability/)

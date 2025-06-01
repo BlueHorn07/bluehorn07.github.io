@@ -14,7 +14,7 @@ excerpt: ""
 
 # 들어가며
 
-이전 포스트에서 합리적인 소비 함수란 무엇인지 살펴보았습니다.
+[이전 포스트](/2025/05/10/rationalizable-demand-function/)에서 "**합리적인 소비 함수**"란 무엇인지 살펴보았습니다.
 그리고 가격과 재화에 따라 소비자의 소비량이 어떻게 변화하는지 살펴보았습니다!
 
 이번 포스트에선 이전 내용을 종합하고, 또 이를 바탕으로 하는 경제학적 현상과 성질을 살펴봅니다.
@@ -39,7 +39,11 @@ Strong Axiom 에서는 $a \succ b \succ c$라면, $a \succ c$가 만족해야만
 
 ## Rational Demand Function and WARP
 
+<div class="theorem" markdown="1">
+
 수요함수가 합리성을 가진다면, 그 소비자의 선호는 WARP를 만족한다.
+
+</div>
 
 (증명은 스킵!)
 

@@ -1,5 +1,5 @@
 ---
-title: "Internal/Boundary Solution"
+title: "Internal·Boundary Solution"
 toc: true
 toc_sticky: true
 categories: ["Macro Economics"]
