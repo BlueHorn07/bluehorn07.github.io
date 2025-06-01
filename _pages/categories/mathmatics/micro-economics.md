@@ -33,10 +33,32 @@ toc_sticky: true
   - [Continuity](/2025/04/14/bundle-preference-continuity/)
   - [Convexity](/2025/04/14/bundle-preference-convexity/)
   - [Differentiability](/2025/04/14/bundle-preference-differentiability/)
-- [Budget Sets & Demand Function & Consumer's Problem](/2025/04/22/consumer-problem/)
-- [Internal Solution and Boundary Solution](/2025/05/10/internal-and-boundary-solution-copy/)
-- [Rationalizable Demand Function](/2025/05/11/rationalizable-demand-function/)
-- [Rational Demand Function, Types of Goods](/2025/05/11/weak-axiom-of-revealed-preferences/)
+- [Demand Function](/2025/04/21/demand-function/)
+- [Consumer's Problem](/2025/04/22/consumer-problem/)
+- [Internal/Boundary Solution](/2025/05/10/internal-and-boundary-solution/)
+- [Rationalizable Demand Function](/2025/05/10/rationalizable-demand-function/)
+- [Kind of Goods](/2025/05/11/kind-of-goods/)
+  - Normal Goods
+  - Regular Goods
+  - Inferior Goods
+  - Giffen Goods
+- [Weak Axiom of Revealed Preference](/2025/05/11/weak-axiom-of-revealed-preferences/)
+- [Slutsky Preference](/2025/05/12/slutsky-preference/)
+
+<hr/>
+
+<div style="text-align: center">
+
+중간고사
+
+</div>
+
+<hr/>
+
+- [Producer Behavior](/2025/05/13/producer-behavior/)
+- [Cost Function](/2025/05/14/cost-function/)
+- [Exchange Economy](/2025/05/14/exchange-economy/)
+- [Equilibrium and Pareto Stability](/2025/05/15/equilibrium-and-pareto-stability/)
 
 
 # Thoughts
