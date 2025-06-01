@@ -37,8 +37,8 @@ $$
 u(t+k) = u(t) + \frac{k}{1!} u'(t) + \frac{k^2}{2!} u''(t) + \cdots
 $$
 
-오일러 방식이 테일러 전개에서 1차 미분값까지 사용한 것이라면,
-테일러 방식은 2차 미분값까지 사용합니다!
+오일러 방식이 테일러 전개의 1차 미분항까지만 사용한 1차 근사법이고,
+테일러 방식은 "2차 미분항"까지 사용하는 2차 근사법 입니다.
 
 # Taylor Method
 
@@ -107,7 +107,7 @@ $$
 \begin{aligned}
 u_{n+1}
 &= u_n + k \cdot u'(t_n, u_n) + \frac{k^2}{2} u''(t_n, u_n) \\
-&= u_n + k \cdot \left(t^2 \sin u_n\right) + \frac{k^2}{2} \cdot ? \\
+&= u_n + k \cdot \left(t^2 \sin u_n\right) + \frac{k^2}{2} \cdot (\cdots) \\
 &= u_n + k \cdot \left(t^2 \sin u_n\right) + \frac{k^2}{2} \cdot \left( 2t \sin u_n + t^4 \cos u_n \sin u_n \right)
 \end{aligned}
 $$
@@ -117,7 +117,7 @@ $$
 
 ## Total Difference
 
-2차 미분값을 얻기 위해서는 $f(t, u)$를 미분해야 합니다. 그런데, 이 함수는 $t$와 $u$, 두 변수에 의존하는 2변수 함수 입니다! 그래서 $f'(t, u)$는 두 편미분을 더한 **전미분(total difference)**을 해야 합니다!
+2차 미분값 $u''$을 얻기 위해서는 $f(t, u)$를 미분해야 합니다. 그런데, 이 함수는 $t$와 $u$, 두 변수에 의존하는 2변수 함수 입니다! 그래서 $f'(t, u)$는 두 편미분을 더한 **전미분(total difference)**을 해야 합니다!
 
 $$
 \begin{aligned}
@@ -126,6 +126,7 @@ f'(t, u)
 &= f_t(t, u) + f_u(t, u) \cdot f(t, u)
 \end{aligned}
 $$
+
 
 # 맺음말
 

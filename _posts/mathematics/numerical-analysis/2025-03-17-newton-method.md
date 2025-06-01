@@ -10,7 +10,7 @@ excerpt: "비선형 함수의 해를 찾기 위해 접선을 기반으로 선형
 수학과 복수전공을 위해 졸업 마지막 학기에 "수치해석개론" 수업을 듣게 되었습니다. 수학과 졸업시험도 겸사겸사 준비할 겸 화이팅 해봅시다!! 전체 포스트는 "[Numerical Analysis](/categories/numerical-analysis)"에서 확인할 수 있습니다.
 {: .notice }
 
-# Neton's Method
+# Newton's Method
 
 비선형 방정식 $f(x) = 0$의 근을 찾기 위한 수치적 방법 입니다.
 

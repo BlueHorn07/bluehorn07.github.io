@@ -30,7 +30,7 @@ $$
 
 그리고 두 기울기 값의 평균을 구하고, 이를 사용해 다음 스텝으로 나아갑니다!
 
-이 방식을 "개선된 오일러 방식" 또는 "Heun's Method"라고 합니다. 이 방식은 One-step Method를 2번 수행합니다.
+이 방식을 "개선된 오일러 방식" 또는 "**Heun's Method**"라고 합니다. 이 방식은 One-step Method를 2번 수행합니다.
 이렇게 여러번의 One-step Method의 결과를 모아서 사용한다는 아이디어에서 출발한게 Runge-Kutta 방식 입니다!
 
 # Runge-Kutta Method
@@ -45,7 +45,7 @@ u_{n+1} &= u_n + h \cdot k_2
 \end{aligned}
 $$
 
-이것을 오일러 방식의 절반만 가서 기울기 $k_2$를 얻고 그걸로 전체 업데이트를 수행 합니다. 이것을 2차 RK 방식 또는 RK2 방식이라고 합니다. 참고로 앞에서 살펴본 "Heun's Method"와 살짝 다릅니다!
+이것을 오일러 방식의 절반만 가서 기울기 $k_2$를 얻고 그걸로 전체 업데이트를 수행 합니다. 이것을 "2차 RK 방식" 또는 "RK2 방식"이라고 합니다. 앞에서 살펴본 "Heun's Method"의 $k_2$에서 $h/2$가 사용된다는게 다릅니다!
 
 <br/>
 
@@ -58,7 +58,7 @@ u_{n+1} &= u_n + \frac{h}{6} \left( k_1 + 4 k_2 + k_3 \right)
 \end{aligned}
 $$
 
-이번에는 3번의 기울기를 계산하고 이를 종합해 사용합니다. 이를 RK3라고 합니다.
+KR3는 3번의 기울기를 계산하고 이를 종합해 사용합니다.
 
 <br/>
 
@@ -76,5 +76,10 @@ $$
 
 # 맺음말
 
-이어지는 포스트에선 $u_{n+1}$를 구하기 위해 $u_{n}$ 그리고 그 이전의 $u_{n-1}$, $u_{n-2}$를 사용해 미분방정식을 근사하는 "Multi-step Method"에 대해서 살펴봅니다!
+이어지는 포스트에선 $u_{n+1}$를 구하기 위해 $u_{n}$
+그리고 그 이전의 $u_{n-1}$, $u_{n-2}$를 사용해
+미분방정식을 근사하는 "**Multi-step Method**"에 대해서 살펴봅니다!
 
+그리고 Multi-step Method의 대표적인 기법인 "**Adams-Bashforth Method**"와 "**Adams-Moulton Method**"에 대해 살펴봅니다!
+
+➡️ [Adams-Bashforth Method](/2025/05/14/adams-bashforth-method/)

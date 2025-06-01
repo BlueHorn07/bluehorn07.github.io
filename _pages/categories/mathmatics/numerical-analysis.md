@@ -28,6 +28,17 @@ toc_sticky: true
     - Cubic Spline
     - Natural Cubic Spline
   - [Interpolation Differentiation](/2025/04/27/interpolation-differentiation/)
+
+<hr/>
+
+<div style="text-align: center">
+
+중간고사
+
+</div>
+
+<hr/>
+
 - [Numerical Differentiation](/2025/04/28/numerical-differentation/)
 - [Numerical Integration](/2025/05/04/numerical-integration/)
   - Trapezoid Rule
@@ -43,7 +54,14 @@ toc_sticky: true
   - [Taylor Method](/2025/05/12/taylor-method/)
   - [Runge-Kutta Method](/2025/05/13/runge-kutta-method/)
   - [Adams-Bashforth Method](/2025/05/14/adams-bashforth-method/)
+  - [Adams-Moulton Method](/2025/05/14/adams-moulton-method/)
   - [Predictor-Corrector Method](/2025/05/15/predictor-corrector-method/)
 - Approximation Theory
   - [Least Square Method](/2025/05/17/least-square-method/)
   - [Continuous Least Square Method](/2025/05/18/continuous-least-square-method/)
+
+
+# Problem Solving
+
+- [Before Midterm](/2025/05/01/before-midterm/)
+- [Before Final](/2025/05/26/before-midterm/)

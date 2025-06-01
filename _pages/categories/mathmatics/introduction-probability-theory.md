@@ -14,11 +14,8 @@ toc_sticky: true
 - [Bonferroni Inequality](/2025/03/02/Bonferroni-inequality/)
 - [Laplace Sunrise Problem](/2025/03/03/Laplace-sunrise-problem/)
 
--
-
 - [Transform of Random Variables](/2025/04/25/transform-of-random-variable/)
 - [Box-Muller Transform](/2025/05/01/Box-Muller-transform/)
-
 
 
 # Study Materials
