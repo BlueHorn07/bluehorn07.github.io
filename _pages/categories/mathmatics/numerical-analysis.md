@@ -59,7 +59,12 @@ toc_sticky: true
 - Approximation Theory
   - [Least Square Method](/2025/05/17/least-square-method/)
   - [Continuous Least Square Method](/2025/05/18/continuous-least-square-method/)
+- Zero-Stability
+  - Characteristic Equation
+- A-stable
 
+
+# A-stability
 
 # Problem Solving
 
