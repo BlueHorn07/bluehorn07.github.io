@@ -12,7 +12,7 @@ excerpt: "미정계수법으로 도함수의 근사를 구하는 방법에 대�
 
 # 들어가며
 
-지금까지 함수 $f(x)$를 매끄러운 함수로 보간하는 방법에 대해 다뤘고, 이렇게 보간한 함수로 도함수 $f'(x)$를 근사하는 것도 살펴보았습니다.
+지금까지 함수 $f(x)$를 매끄러운 함수로 보간하는 방법에 대해 다뤘고, 이렇게 보간한 함수로 도함수 $f'(x)$를 근사하는 것도 살펴보았습니다. ([Interpolation Differentiation](/2025/04/27/interpolation-differentiation/))
 
 이번 포스트부터 보간 기반이 아닌 다른 방식으로 접근하게 됩니다! 그리고 도함수 $f'(x)$에 대한 다른 근사 방법인 "뉴턴-코츠 방식"에 대해 살펴봅니다.
 
@@ -30,15 +30,15 @@ $$
 D_+ f(x) = \frac{f(x+h) - f(x)}{h}
 $$
 
-그리고 이것을 "전방 차분(Forward Difference)"라고 부릅니다. 반대로 이전 값을 사용할 수도 있습니다.
+그리고 이것을 "**전방 차분(Forward Difference)**"라고 부릅니다. 반대로 이전 값을 사용할 수도 있습니다.
 
 $$
 D_{-} f(x) = \frac{f(x) - f(x-h)}{h}
 $$
 
-이것을 "후방 차분(Backward Difference)"라고 부릅니다. 전방 차분과 후방 차분은 한쪽에 대한 근사 입니다: one-sided approximation of $f'(x)$.
+이것을 "**후방 차분(Backward Difference)**"라고 부릅니다. 전방 차분과 후방 차분은 한쪽에 대한 근사 입니다(One-sided Approximation of $f'(x)$).
 
-## 1st order Accuracy
+## 1st Order Accuracy
 
 $D_{+}f(x)$와 $D_{-}f(x)$ 모두 "1차 정확도"를 가지는 근사법 입니다. 이것은 실제 미분값과 전방/후방 차분으로 근사한 값의 오차가 $h$에 비례하는 $O(h)$로 정의된다는 것을 말합니다.
 
@@ -53,12 +53,22 @@ $D_{+}f(x)$와 $D_{-}f(x)$ 모두 "1차 정확도"를 가지는 근사법 입니
 $$
 D_0 f(x)
 = \frac{f(x+h) - f(x-h)}{2h}
-= \frac{D_{+}f(x) - D_{-}f(x)}{2}
+= \frac{D_{+}f(x) + D_{-}f(x)}{2}
 $$
 
 위 그림에서 볼 수 있듯이 중앙 차분 $D_0 f(x)$가 한쪽만 보는 차분보다는 더 좋은 근사를 보여주는 걸 알 수 있습니다.
 
 그리고 중앙 차분은 "2차 정확도"를 제공 합니다. 이것은 실제값과의 오차가 $h^2$에 비례한다는 것으로 $O(h^2)$라고 표현 합니다.
+
+정리하면,
+
+$$
+\begin{aligned}
+D_+ f(x) &= \frac{f(x+h) - f(x)}{h} + O(h) \\
+D_{-} f(x) &= \frac{f(x) - f(x-h)}{h} + O(h) \\
+D_0 f(x) &= \frac{f(x+h) - f(x-h)}{2h} + O(h^2)
+\end{aligned}
+$$
 
 ## Higher-order Accuracy
 
@@ -180,7 +190,7 @@ $$
 
 $$
 \begin{aligned}
-f(x) &= f(x) \\ 
+f(x) &= f(x) \\
 f(x-h) &= f(x) - h f'(x) + \frac{h^2}{2} f''(x) - \cdots \\
 f(x-2h) &= f(x) - 2h f'(x) + \frac{4h^2}{2}f''(x) - \cdots \\
 \end{aligned}
@@ -190,11 +200,11 @@ $$
 
 $$
 \begin{aligned}
-f(x)' 
+f(x)'
 &= a f(x) + bf(x-h) + cf(x-2h) \\
-&= (a + b + c) f(x) 
-+ ( - bh - 2ch) f'(x) 
-+ (\frac{bh^2}{2} + \frac{4ch^2}{2}) f''(x) + \cdots
+&= (a + b + c) f(x)
++ ( - bh - 2ch) f'(x)
++ \left(\frac{bh^2}{2} + \frac{4ch^2}{2}\right) f''(x) + \cdots
 \end{aligned}
 $$
 
@@ -202,7 +212,7 @@ $$
 
 $$
 \begin{aligned}
-a + b + c &= 0 \\ 
+a + b + c &= 0 \\
 -bh - 2ch &= 1 \\
 bh^2 + 4ch^2 = 0
 \end{aligned}
@@ -220,10 +230,12 @@ $$
 
 $$
 \begin{aligned}
-f'(x) 
+f'(x)
 &= a f(x) + bf(x-h) + cf(x-2h)  \\
 &= \frac{3}{2h} f(x) - \frac{2}{h} f(x-h) + \frac{1}{2h} f(x-2h) \\
-&= \frac{3f(x) - 4f(x-h) + f(x-2h)}{2h}
+&= \frac{1}{2h} \left(
+3 f(x) - 4 f(x-h) + f(x-2h)
+\right)
 \end{aligned} \\
 $$
 
@@ -249,13 +261,15 @@ $$
 이제 이것을 계산해보면,
 
 $$
-D^2 f(x) 
-= \frac{(f(x-h) - f(x)) / h + (f(x+h) - f(x)) / h}{2}
-= \frac{
-f'(x) + \cancel{\frac{1}{2} h f''(x)} + \frac{1}{6}h^2 f^{\prime\prime\prime} (x) + \cancel{O(h^3)}
+\begin{aligned}
+D^2 f(x)
+&= \frac{(f(x-h) - f(x)) / h + (f(x+h) - f(x)) / h}{2} \\
+&= \frac{
+  f'(x) + \cancel{\frac{1}{2} h f''(x)} + \frac{1}{6}h^2 f^{\prime\prime\prime} (x) + \cancel{O(h^3)}
 + f'(x) - \cancel{\frac{1}{2} h f''(x)} + \frac{1}{6}h^2 f^{\prime\prime\prime} (x) - \cancel{O(h^3)}
-}{2}
-= f
+}{2} \\
+&= f
+\end{aligned}
 $$
 
 
