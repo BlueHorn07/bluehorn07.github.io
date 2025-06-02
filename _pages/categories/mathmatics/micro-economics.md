@@ -76,6 +76,7 @@ toc_sticky: true
     - Contract Curve & Core
   - [Fundamental Theorem of Welfare Economics](/2025/05/17/fundamental-theorem-of-welfare-economics/)
 - Variants of Exchange Economy
+  - [Indivisible Goods and Money](/2025/05/18/indivisible-goods-and-money/)
 - Market
 
 # Thoughts
