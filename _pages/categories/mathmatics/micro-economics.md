@@ -22,32 +22,37 @@ toc_sticky: true
 
 # Chaptors
 
-- [Preference](/2025/03/05/preferences/)
+- Preference and Utility
+  - [Introduction]((/2025/03/05/preferences/))
   - [Utility Functions](/2025/03/10/utility-functions/)
+- Choice
   - [Choice Functions](/2025/03/12/choice-functions/)
   - [Property $\alpha$](/2025/03/17/property-alpha/)
-- [Lotteries & Lottery Preference](/2025/03/19/lotteries/)
+- Preference under Uncertainty
+  - [Lotteries & Lottery Preference](/2025/03/19/lotteries/)
   - [Expected Utility](/2025/04/10/expected-utility/)
-- [Bundles & Bundle Preference](/2025/04/12/bundles-of-goods/)
+- Consumer's Preferences
+  - [Bundles & Bundle Preference](/2025/04/12/bundles-of-goods/)
   - [Monotonicity](/2025/04/13/bundle-preference-monotonicity/)
   - [Continuity](/2025/04/14/bundle-preference-continuity/)
   - [Convexity](/2025/04/14/bundle-preference-convexity/)
   - [Differentiability](/2025/04/14/bundle-preference-differentiability/)
-- [Demand Function](/2025/04/21/demand-function/)
-- [Consumer's Problem](/2025/04/22/consumer-problem/)
-- [Internal·Boundary Solution](/2025/05/10/internal-and-boundary-solution/)
-- [Rationalizable Demand Function](/2025/05/10/rationalizable-demand-function/)
-- [Kind of Goods](/2025/05/11/kind-of-goods/)
-  - Derived Functions
-    - Regular Demand Function
-    - Cross Demand Function
-    - Engel Function
-  - Normal Goods
-  - Regular Goods
-  - Inferior Goods
-  - Giffen Goods
-- [Weak Axiom of Revealed Preference](/2025/05/11/weak-axiom-of-revealed-preferences/)
-- [Slutsky Preference](/2025/05/12/slutsky-preference/)
+- Consumer's Problem
+  - [Demand Function](/2025/04/21/demand-function/)
+  - [Consumer's Problem](/2025/04/22/consumer-problem/)
+  - [Internal·Boundary Solution](/2025/05/10/internal-and-boundary-solution/)
+  - [Rationalizable Demand Function](/2025/05/10/rationalizable-demand-function/)
+  - [Kind of Goods](/2025/05/11/kind-of-goods/)
+    - Derived Functions
+      - Regular Demand Function
+      - Cross Demand Function
+      - Engel Function
+    - Normal Goods
+    - Regular Goods
+    - Inferior Goods
+    - Giffen Goods
+  - [Weak Axiom of Revealed Preference](/2025/05/11/weak-axiom-of-revealed-preferences/)
+  - [Slutsky Property](/2025/05/12/slutsky-property/)
 
 <hr/>
 
@@ -59,11 +64,19 @@ toc_sticky: true
 
 <hr/>
 
-- [Producer's Behavior](/2025/05/13/producer-behavior/)
-- [Cost Function](/2025/05/14/cost-function/)
-- [Exchange Economy](/2025/05/14/exchange-economy/)
-- [Equilibrium and Pareto Stability](/2025/05/15/equilibrium-and-pareto-stability/)
-
+- Producer's Behavior
+  - [Production Function](/2025/05/13/production-function/)
+  - [Cost Function](/2025/05/14/cost-function/)
+- Exchange Economy
+  - [Introduction](/2025/05/14/exchange-economy/)
+  - [Competitive Equilibrium](/2025/05/15/competitive-equilibrium/)
+    - Walras's Law
+  - [Pareto Stability](/2025/05/15/pareto-stability/)
+    - Edgeworth Box
+    - Contract Curve & Core
+  - [Fundamental Theorem of Welfare Economics](/2025/05/17/fundamental-theorem-of-welfare-economics/)
+- Variants of Exchange Economy
+- Market
 
 # Thoughts
 

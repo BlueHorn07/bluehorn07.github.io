@@ -1,5 +1,5 @@
 ---
-title: "Pareto Stability"
+title: "Fundamental Theorem of Welfare Economics"
 toc: true
 toc_sticky: true
 categories: ["Macro Economics"]
@@ -14,21 +14,31 @@ excerpt: ""
 
 # 들어가며
 
-파레토 최적에 대해
+- 1st Theorem
+  - 시장이 완전 경쟁이고, 소비자와 생산자가 모두 자신의 이익을 극대화 하며 외부성이 없다면,
+  - 그때 이뤄진 경쟁 균형은 파레토 안정점이다.
+- 2nd Theorem
+  - 적절한 초기 자원 분배를 한 뒤, 시장에 맡겨둔다면
+  - 또다시 파레토 안정점에 수렴한다.
 
-# Pareto Stability of Competitive Equilibrium Allocation
+# 1st Theorem
 
-경쟁 균형에서의 할당 상태는 "파레토 안정(Pareto Stable)"합니다.
+<div class="definition" markdown="1">
+
+경쟁 균형에서의 할당 상태는 "**파레토 안정(Pareto Stable)**"합니다.
+Pareto Stability of Competitive Equilibrium Allocation
+
+</div>
 
 이것은 후생경제학(welfare economics)의 제1정리가 됩니다.
 
-파레토 안정/효율에 도달하게 되면, 다른 누구의 효용을 줄이지 않고서는 그 누구의 효용도 더 늘릴 수 없는 균형 상태가 됩니다.
+파레토 안정/효율에 도달하게 되면, **다른 누구의 효용을 줄이지 않고서는 그 누구의 효용도 더 늘릴 수 없는 균형 상태**가 됩니다.
 
 이 정리는 "시장에서 자유롭게 경쟁을 통해 만들어진 결과는 낭비가 없는 상태다"라는 것을 말합니다. 그래서 시장 매커니즘만으로 자원을 낭비 없이 배분할 수 있음을 말합니다.
 
-# No Externality
+## No Externality
 
-"외부 효과(externality)"가 없다는 것은 제1정리가 성립하게 위한 전제 조건 입니다.
+"**외부 효과(externality)가 없다**"는 것은 제1정리가 성립하게 위한 전제 조건 입니다.
 
 이것은 개인이 자기의 소비만 중요하게 여기고, 남이 뭘 소비하는지는 효용을 결정하는데 영향을 주지 않는다는 것을 말합니다.
 
@@ -41,12 +51,4 @@ $$
 이것은 개인1은 개인2가 재화2를 가지는 것이 불만족을 느낀다는 것을 말합니다. 이 경우는 "외부 효과"가 존재하는 경우 입니다.
 
 # 2nd Theorem
-
-
-
-# Core
-
-
-
-# Edgeworth Box
 

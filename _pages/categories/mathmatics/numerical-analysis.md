@@ -39,7 +39,7 @@ toc_sticky: true
 
 <hr/>
 
-- [Numerical Differentiation](/2025/04/28/numerical-differentation/)
+- [Numerical Differentiation](/2025/04/28/numerical-differentiation/)
 - [Numerical Integration](/2025/05/04/numerical-integration/)
   - Trapezoid Rule
   - Simpson's Rule
