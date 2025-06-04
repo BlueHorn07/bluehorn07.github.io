@@ -73,6 +73,8 @@ toc_sticky: true
   - [Fundamental Theorem of Welfare Economics](/2025/05/17/fundamental-theorem-of-welfare-economics/)
 - Variants of Exchange Economy
   - [Indivisible Goods and Money](/2025/05/18/indivisible-goods-and-money/)
+  - [Competitive Equilibrium of Indivisible Exchange Economy](/2025/05/19/competitive-equilibrium-of-indivisible-exchange-economy/)
+  - Exchange Economy with Uncertainty
 - Market
 
 # Thoughts
