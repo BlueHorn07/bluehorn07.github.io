@@ -15,12 +15,8 @@ toc_sticky: true
 
 참고로 Openbook Publisher에 등록 되어 있어, "무료"로 사용하실 수 있습니다.
 
-> [미시경제학, 서울시립대 2020-가을, 지창구](https://www.youtube.com/playlist?list=PLhsqVA2TJf4eJ9dcClZ80Ihgh0mCe6Ewv)
 
-학교 수업과 교재도 다르고, 순서도 다르지만 미시경제학을 여러 방면에서 이해하고 다시 보는데 많은 도움이 되었습니다!
-
-
-# Chaptors
+# Chapters
 
 - Preference and Utility
   - [Introduction](/2025/03/05/preferences/)
@@ -82,3 +78,9 @@ toc_sticky: true
 # Thoughts
 
 어떻게 보면 응용 수학의 한 갈레를 이 수업을 통해 맛보게 된 것 같습니다.
+
+# Reference
+
+> [미시경제학, 서울시립대 2020-가을, 지창구](https://www.youtube.com/playlist?list=PLhsqVA2TJf4eJ9dcClZ80Ihgh0mCe6Ewv)
+
+학교 수업과 교재도 다르고, 순서도 다르지만 미시경제학을 여러 방면에서 이해하고 다시 보는데 많은 도움이 되었습니다!
