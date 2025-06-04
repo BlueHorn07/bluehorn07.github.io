@@ -23,7 +23,7 @@ toc_sticky: true
 # Chaptors
 
 - Preference and Utility
-  - [Introduction]((/2025/03/05/preferences/))
+  - [Introduction](/2025/03/05/preferences/)
   - [Utility Functions](/2025/03/10/utility-functions/)
 - Choice
   - [Choice Functions](/2025/03/12/choice-functions/)
