@@ -74,7 +74,7 @@ toc_sticky: true
 - Variants of Exchange Economy
   - [Indivisible Goods and Money](/2025/05/18/indivisible-goods-and-money/)
   - [Competitive Equilibrium of Indivisible Exchange Economy](/2025/05/19/competitive-equilibrium-of-indivisible-exchange-economy/)
-  - Exchange Economy with Uncertainty
+  - [Exchange Economy with Uncertainty](/2025/05/20/exchange-economy-with-uncertainty/)
 - Market
 
 # Thoughts

@@ -247,3 +247,12 @@ v_i \ge \left(p = a_1(j)\right) \ge v_j
 $$
 
 라고 보면 될 것 같습니다!
+
+# Core and Competitive Equilibrium
+
+<div class="theorem" markdown="1">
+
+Every allocation $a$ in the core of a indivisible exchange economy, there is a number $p$ s.t. $(p, a)$ which is a competitive equilibrium of the economy.
+
+</div>
+
