@@ -67,3 +67,42 @@ Youtube 강좌에서만 나왔습니다. [[youtube](https://youtu.be/kEgg_pAhyLs
 
 - Interior Solution
 - Corner Solution
+
+
+# (번외) 수요의 소득탄력성
+
+아주 작은 변화에 대해 수요량이 얼마나 민감하게 반응하는지에 대한 수치.
+
+"**탄력성**"이라는 지표는 항상 아래와 같이 계산 됩니다.
+
+$$
+\text{Elasticity} = \frac{\text{\% change in A}}{\text{\% change in B}}
+$$
+
+그래서 수요의 소득 탄력성은 아래와 같이 표현 됩니다.
+
+$$
+\mathcal{E} = \frac{\text{\% change in Demand}}{\text{\% change in Income}}
+$$
+
+그리고 이걸 변수와 함께 표현하면,
+
+$$
+\mathcal{E} = \frac{\Delta x / x}{\Delta w / w}
+= \frac{\Delta x}{\Delta w} \cdot \frac{w}{x}
+$$
+
+수요의 소득 탄력성에 따라 재화를 구분할 수 있습니다.
+
+- $\mathcal{E}_w > 0$
+  - 정상재 입니다.
+- $\mathcal{E}_w < 0$
+  - 열등재 입니다.
+
+그리고 정상재는 탄력성의 값 범위에 따라 2가지로 또 분류 하는데,
+
+- 필수재
+  - $0 < \mathcal{E}_w < 1$
+  - 예를 들어, 음식과 전기는 소득이 늘어나면 수요가 늘긴 하지만 급격히 오르는 것은 아닙니다.
+- 사치재
+  - $\mathcal{E}_w > 1$
