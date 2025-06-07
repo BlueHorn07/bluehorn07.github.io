@@ -142,7 +142,7 @@ $$
 
 ## Feasible
 
-아래 소식을 만족하는 상태를 말합니다.
+아래 수식을 만족하는 상태를 말합니다.
 
 $$
 \sum_{i \in I} x(i) = \sum_{j \in J} y(j)
@@ -154,6 +154,96 @@ $$
 
 # Consumption-Production Plan
 
+생산 경제(Production Economy)가 경제의 각 객체와 구조를 정의한 것이라면,
+
+"소비-생산 계획"은 그 구조 안에서 실행 가능한 소비와 생산을 결정한 것 입니다. 이것은 생산 경제의 실행 결과(outcome) 또는 솔루션(allocation)에 대응되는 개념 입니다.
+
+엄밀히 정의하면, 주어진 생산 경제 $<I, J, (\succcurlyeq^i), (T(j)), \alpha>$에 대해 아래 조건을 만족하는 $(x, y) $쌍들의 집합 입니다.
+
+$$
+\left\{
+(x, y)
+\; : \;
+x = x(i), y = y(j) \text{ where }
+y(j) \in T(j) \text{ and } \sum_i x(i) = \sum_j y(j)
+\right\}
+$$
+
+단, 이 솔루션이 최적의 솔루션은 아닐 수 있습니다. 누군가는 불만이 있을 수도 있고, 아님 모두의 효용을 증가하는 더 좋은 쌍이 존재할 수 있습니다.
+
+그런 솔루션 중에서 나이스한 솔루션이 "경쟁 균형" 상태 입니다.
+
 # Competitive Equilibrium of Production Economy
 
+생산 경제에서 경쟁 균형이 성립하기 위해서는 그 솔루션이 아래의 조건을 만족해야 합니다.
 
+- 가격 체계 $p^{\ast} = (p_1, p_2)$
+  - 가 있어야 합니다.
+  - 이 가격 체계는 시장에서 거래되는 모든 재화에 대한 가격을 의미 합니다.
+- 소비자들의 소비 결정 $x^{\ast}(i)$
+  - 는 소비자가 가격 $p^{\ast}$와 자신의 소득(=자신이 소유한 생산자의 이윤 몫)을 바탕으로 자신의 선호에 따라 가장 만족스러운 번들 $x^{\ast}(i)$를 선택합니다.
+- 생산자들의 소비 결정 $y^{\ast}(j)$
+  - 는 시장 가격 $p^{\ast}$를 고려해, 자신의 기술 $T(j)$ 범위 내에서 이윤을 최대화 하는 생산 번들 $y^{\ast}(j)$를 선택 합니다.
+- 총량 조건
+  - 생산자들이 생산한 재화 총량은 소비자들이 소비한 재화 총량이 같습니다.
+  - $\sum_i x^{\ast}(i) = \sum_j y^{\ast}(j)$
+
+<div class="definition" markdown="1">
+
+[Optimality of Consumer's Choice]
+
+$$
+\left\{
+x \in \mathbb{R}^2_{+} \, : \,
+p \cdot x
+=
+\sum_{j \in J} \alpha(i, j) \pi(j)
+\right\}
+$$
+
+이때, 이윤 $\pi(j)$는 생산량에 따라 결정됩니다: $\pi(j) = p y(j)$.
+
+[Optimality of Producer's Choice]
+
+생산자가 생산 가능한 생산량 $y(j) \in T(j)$ 중에 이윤을 극대화 하는 것을 선택 합니다.
+
+$$
+\underset{y(j) \in T(j)}{\text{argmax}} \;\; p \cdot y(j)
+$$
+
+[Feasibility]
+
+(자주 봤죠??) 아래의 식을 만족하는 생산-소비 상황 입니다.
+
+$$
+\sum_i x^{\ast}(i) = \sum_j y^{\ast}(j)
+$$
+
+</div>
+
+## Pareto Dominance
+
+주어진 소비-생산 계획 $(x', y')$이 다른 계획 $(x, y)$ 보다 더 나이스한 상태라면, 그 계획이 "파레토 지배한다(Pareto dominates)"라고 합니다. 이때, 나이스 여부는
+
+- 모든 소비자에게 손해가 없음
+  - $x'(i) \succcurlyeq^i x(i)$
+  - 즉, 모든 사람이 파레토 지배 계획을 선호함
+- 적어도 한 명에게는 더 나은 선택
+  - $x'(i) \succ^i x(i)$
+  - 누군가 한 명은 분명 더 행복해집니다.
+
+소비-생산 계획이 "파레토 안정"이라는 것은 이 계획보다 모두에게 손해가 없고, 누군가에게는 너 선호되는 다른 계획이 존재하지 않음을 말합니다. 즉, 계획이 파레토 안정적이라면 개선의 여지 없는 상태라는 것을 말합니다.
+
+## Competitive Equilibrium is Pareto Stable
+
+생산 경제에서는 어떤 경쟁 균형이든, 그때의 소비-생산 계획은 항상 파레토 안정적 입니다.
+
+증명은 스킵!
+
+(TODO: 뭔가 중요한 내용이 있어 보여서 나중에 읽어볼 것!)
+
+# 맺음말
+
+이것으로 생산 경제에 대한 모델링과 그때의 균형 상태에 대해 살펴보았습니다. 다음 포스트도 얼른 살펴봅시다! 화이팅!!
+
+➡️ [Economy with Capital and Labor](/2025/05/22/economy-with-capital-and-labor/)

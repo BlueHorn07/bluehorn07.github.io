@@ -43,3 +43,9 @@ excerpt: ""
 - What is the meaning of the bundle preference is convex?
 - What is the meaning of the bundle preference is monotone?
 - Can you give an example of non-monotone bundle preference?
+
+# Competitive Equilibrium
+
+- If Competitive Equilibrium occurs, then it is also Pareto stable. (O / X)
+  - If yes, give an example.
+  - If no, give a counter-example.

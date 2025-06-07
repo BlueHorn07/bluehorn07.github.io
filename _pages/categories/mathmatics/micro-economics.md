@@ -77,11 +77,12 @@ toc_sticky: true
   - [Variation of Economy with Uncertainty](/2025/05/20/variation-of-economy-with-uncertainty/)
 - Market
   - [Production Economy](/2025/05/21/production-economy/)
+  - [Economy with Capital and Labor](2025/05/22/economy-with-capital-and-labor)
 
 <hr/>
 
 - [미시경제학 메모](/2025/03/01/micro-economics-memo/)
-- [미시경제학 연습문제]()
+- [미시경제학 연습문제](/2025/06/01/micro-economics-exercise/)
 
 # Thoughts
 
