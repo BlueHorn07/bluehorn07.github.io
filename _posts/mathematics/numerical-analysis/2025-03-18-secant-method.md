@@ -40,6 +40,8 @@ $$
 
 이차 수렴의 속도를 갖는 뉴턴 방법 보다는 수렴 속도가 느려집니다.
 
-# Method of False Position
+# 맺음말
 
-TODO
+이어서 할선법과 이분법을 결합한 방법인 "Method of False Position"에 대해 살펴봅니다!
+
+➡️ [Method of False Position](/2025/03/18/method-of-false-position/)

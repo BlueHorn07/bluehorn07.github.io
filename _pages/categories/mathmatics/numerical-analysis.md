@@ -15,6 +15,7 @@ toc_sticky: true
   - [Fixed-point Method](/2025/03/12/fixed-point-method/)
   - [Newton’s Method](/2025/03/17/newton-method/)
   - [Secant Method](/2025/03/18/secant-method/)
+  - [Method of False Position](/2025/03/18/method-of-false-position/)
 - Interpolation and Polynomial Approximation
   - [Lagrange Interpolation](/2025/03/19/lagrange-interpolation/)
     - [Lagrange Interpolation - Nodal Polynomial](/2025/03/26/lagrange-interpolation-nodal-interpolation/)
