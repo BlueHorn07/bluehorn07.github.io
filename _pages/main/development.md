@@ -55,6 +55,17 @@ toc_sticky: true
 - [Istio Virtual Machine Architecture](/2024/03/23/istio-virtual-machine-architecture/)
 - [istioctl 디버그 도구들](/2024/03/24/istioctl-debug-tool/)
 
+## Knative
+
+- [Install Knative Serving](/2024/06/22/install-knative-serving/)
+- [Knative Components](/2025/03/10/knative-components/)
+
+- TODO
+  - Traffic Splitting
+  - Advanced Deployment
+  - Autoscale
+  - Knative Routing
+
 
 ## Apache Spark
 
@@ -102,6 +113,10 @@ Databricks Certification 취득을 목표로 Apache Spark를 “제대로” 공
 - [Index CRUD](/2023/05/15/ElasticSearch-Index-CRUD/)
 
 <hr/>
+
+## Linux
+
+Data Engineer로서 개발을 계속하면서, Linux 시스템에 대한 더 깊은 이해가 필요하다는 걸 깨달았습니다. 종종 Linux 관련 정리할 내용이 생기면 요기에 적어보겠습니다 ㅎㅎ 전체 포스트는 "[Linux](/categories/linux/)"에서 확인하실 수 있습니다.
 
 ## Authentication
 
