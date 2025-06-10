@@ -4,10 +4,11 @@ toc: true
 toc_sticky: true
 categories: ["Kubernetes", "Istio"]
 excerpt: 우당탕탕! Istio 설치 수난기. `istioctl`과 Operator 패턴.
+last_modified_at: 2025-06-10
 ---
 
-이 글을 작성하는 24년 2월엔 Istio [`1.20.2`](https://github.com/istio/istio/releases/tag/1.20.2) 버전이 최신 버전입니다.
-Apple M3 맥북(Sonoma 14.5)에서 Rancher Desktop 통해 Local Kubernetes Cluster 구성하여 진행하였습니다. K8s 버전은 `1.27`입니다.
+24년 2월에 작성 후, 최신 istio 버전으로 과정을 업데이트 했습니다. 지금 25년 6월 기준으로 Istio [`1.26.1`](https://github.com/istio/istio/releases/tag/1.26.1) 버전이 최신 버전입니다.
+Apple M3 맥북(Sequoia 15.5)에서 Rancher Desktop 통해 Local Kubernetes Cluster 구성하여 진행하였습니다. K8s 버전은 `1.31`입니다.
 {: .notice }
 
 ![](/images/meme/i-must-study.jpeg){: .align-center style="max-width: 300px" }
@@ -70,20 +71,20 @@ releases:
   - name: istio-base
     namespace: istio-system
     chart: istio/base
-    version: 1.20.2
+    version: 1.26.1
     values: []
 
   - name: istio-istiod
     namespace: istio-system
     chart: istio/istiod
-    version: 1.20.2
+    version: 1.26.1
     needs: [istio-system/istio-base]
     values: []
 
   - name: istio-gateway
     namespace: istio-system
     chart: istio/gateway
-    version: 1.20.2
+    version: 1.26.1
     needs: [istio-system/istio-istiod]
     values: []
 ```
@@ -98,19 +99,28 @@ istio helm chart에서 제공하는 value 파일도 읽어봤는데, 딱히 커�
 
 이렇게 해놓고 다 쓰면 `helmfile destroy`로 깔끔하게 날렸다 ㅎㅎ
 
-https://istio.io/latest/docs/setup/install/helm/
+Istio 공식 문서에서도 helm으로 배포하는 방법을 잘 설명하고 있으니 필요하다면 참고하자!
+
+➡️ [Istio: Install with Helm](https://istio.io/latest/docs/setup/install/helm/)
+
 
 ## Istio Operator로 설치하기
 
 요건 K8s의 Operator 패턴으로 Istio를 관리하는 방법이다. 일단 Operator 패턴이 뭔지 잘 모른다면 패스하는 걸 추천한다...
 
-일단 Istio Operator를 띄워야 하는데, `istioctl`과 helm chart로 띄우는 방법이 있다.
+25.06에 확인해보니, 1.26.1 버전에서는 `istioctl`와 helm chart로 설치하는 방법 모두 Deprecate 되었습니다... 아래는 문단은 아카이브를 위해 남겨둡니다!
+
+<details markdown="1">
+
+일단 Istio Operator를 띄워야 하는데, `istioctl`과 helm chart로 띄우는 방법이 있다. (`istioctl` 방식은 25.06 기준 Deprecation 되었습니다...)
 
 ```bash
+# Deprecated: 25.06 Checked
 istioctl operator init
 ```
 
 ```bash
+# https://github.com/istio/istio/tree/1.20.7/manifests/charts/istio-operator
 helm install istio-operator \
     manifests/charts/istio-operator \
     -n istio-operator
@@ -134,6 +144,8 @@ EOF
 
 보면, `istio-system` ns에 `istiod`가 하나 뜬 걸 볼 수 있다!!
 
+</details>
+
 <hr/>
 
 # Addon 설치: Prometheus & Kiali
@@ -147,10 +159,10 @@ EOF
 Istio에선 너무나도 고맙게도 Istio Addon을 띄우기 위한 yaml 파일을 Github에 올려뒀다!! [source <i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/istio/istio/tree/master/samples/addons) 그래서 요기에 있는 addon 파일을 그냥 `k apply -f` 하면 된다.
 
 ```bash
-export PROMETHEUS_ADDON=https://raw.githubusercontent.com/istio/istio/release-1.20/samples/addons/prometheus.yaml
+export PROMETHEUS_ADDON=https://raw.githubusercontent.com/istio/istio/refs/tags/1.26.1/samples/addons/prometheus.yaml
 kubectl apply -f $PROMETHEUS_ADDON -n istio-system
 
-export KIALI_ADDON=https://raw.githubusercontent.com/istio/istio/1.20.2/samples/addons/kiali.yaml
+export KIALI_ADDON=https://raw.githubusercontent.com/istio/istio/refs/tags/1.26.1/samples/addons/kiali.yaml
 kubectl apply -f $KIALI_ADDON -n istio-system
 ```
 
@@ -185,6 +197,7 @@ kubectl create ns kiali-operator
 그리고 아래와 같이 `helmfile.yaml`을 구성한다.
 
 ```yaml
+# @helmfile-kiali.yaml
 repositories:
   - name: kiali
     url: https://kiali.org/helm-charts
@@ -193,19 +206,30 @@ releases:
   - name: kiali-operator
     namespace: kiali-operator
     chart: kiali/kiali-operator
-    version: 1.79.0
+    version: 2.8.0
     values: []
 ```
+`helmfile apply -f helmfile-kiali.yaml`로 디플로이 한다.
 
-이때, 아래의 value 값을 주면, Kiali Operator와 함께 Kiali CR도 함께 생성된다.
+![](/images/development/istio/kiali-operator.png){: .fill }
+
+만약, `values` 항목을 아래와 같이 세팅하면, Kiali Operator와 함께 Kiali CR도 함께 생성된다.
 
 ```yaml
-cr:
-  create: true
-  namespace: istio-system
+# @helmfile-kiali.yaml
+...
+releases:
+  - name: kiali-operator
+    namespace: kiali-operator
+    chart: kiali/kiali-operator
+    version: 2.8.0
+    values:
+      cr:
+        create: true
+        namespace: istio-system
 ```
 
-이제 `Kiali` CR을 아래 명령어로 띄워보자!!
+아니면 `Kiali` 리소스를 아래 명령어로 직접 띄우는 것도 가능하다!
 
 ```bash
 kubectl apply -f - <<EOF
@@ -225,10 +249,9 @@ EOF
 확인해보면, `istio-system` ns에 `kiali` 리소스가 뜬 걸 확인할 수 있다!
 
 
-
 ## 꿀팁!!
 
-놀랍게도 귀찮게 매번 `kubectl port-forward` 할 필요 없이 `istioctl dashboard` 명령어로 포트 포워딩 할 수 있다!! ㅎㅎ
+귀찮게 매번 `kubectl port-forward` 할 필요 없이 `istioctl dashboard` 명령어로 포트 포워딩 할 수 있다!! ㅎㅎ
 
 ```bash
 $ istioctl dashboard kiali
