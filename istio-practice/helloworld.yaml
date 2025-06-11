@@ -1,0 +1,49 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: helloworld-gateway
+spec:
+  # The selector matches the ingress gateway pod labels.
+  selector:
+    istio: ingressgateway # use istio default controller
+  servers:
+  - port:
+      number: 8080 # 요 포트 번호에 대한 설명은 뒤에서 한다!
+      name: http
+      protocol: HTTP
+    hosts:
+    - "*"
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: helloworld-gw
+spec:
+  hosts:
+  - "myhelloworld.com"
+  gateways: # 요기에 적어준다!
+  - helloworld-gateway
+  http:
+  - route:
+    - destination:
+        host: helloworld.default.svc.cluster.local
+---
+apiVersion: networking.istio.io/v1
+kind: VirtualService
+metadata:
+  name: helloworld-vs
+spec:
+  hosts:
+  - "helloworld.default.svc.cluster.local"
+  http:
+  - route:
+    - destination:
+        host: helloworld.default.svc.cluster.local
+---
+
+# while true; do curl "http://helloworld.default.svc.cluster.local:5000/hello"; sleep 1; done
+
+# kubectl port-forward -n istio-system svc/istio-ingressgateway 8080:80
+# while true; do curl --header "Host:myhelloworld.com" 'http://localhost:8080/hello'; sleep 1; done
+
+# bash -c 'while true; do curl --header "Host:myhelloworld.com" http://localhost:8080/hello; sleep 1; done'

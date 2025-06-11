@@ -35,7 +35,7 @@ Hello version: v1, instance: helloworld-v1-867747c89-n6sl2
 우선 요 어플리케이션을 배포해보자!
 
 ```bash
-$ kubectl apply -n default -f https://raw.githubusercontent.com/istio/istio/1.20.2/samples/helloworld/helloworld.yaml
+$ kubectl apply -n default -f https://raw.githubusercontent.com/istio/istio/1.26.1/samples/helloworld/helloworld.yaml
 service/helloworld created
 deployment.apps/helloworld-v1 created
 deployment.apps/helloworld-v2 created
@@ -48,8 +48,8 @@ deployment.apps/helloworld-v2 created
 테스트를 위해 아래 명령어로 임시 Pod을 띄워서 트래픽 라우팅이 어떻게 되는지 확인해보자. (이때, k port-forward한 걸로 접속하면 안 된다. 그 이유는 [요 깃헙 이슈](https://github.com/kubernetes/kubectl/issues/881)를 참고)
 
 ```bash
-$ k run nginx --image=nginx
-$ k exec -it nginx -- sh
+$ kubectl run nginx --image=nginx
+$ kubectl exec -it nginx -- sh
 # <on some pod>
 while true; do curl "http://helloworld.default:5000/hello"; done
 ```
@@ -100,11 +100,12 @@ spec:
 EOF
 ```
 
-그리고 아래와 같이 Virtual Service를 구성해서, `v1`에는 10% 트래픽이, `v2`에는 90%의 트래픽이 흐를 수 있도록 구성해보자.
+그리고 아래와 같이 Virtual Service를 구성해서, `v1`에는 20% 트래픽이, `v2`에는 80%의 트래픽이 흐를 수 있도록 구성해보자.
 
 ```yaml
 # simple-virtual-service
-apiVersion: networking.istio.io/v1alpha3
+kubectl apply -f - <<EOF
+apiVersion: networking.istio.io/v1
 kind: VirtualService
 metadata:
   name: helloworld-vs
@@ -119,15 +120,16 @@ spec:
     - destination:
         host: helloworld-v2.default.svc.cluster.local
       weight: 80 # 80% 트래픽
+EOF
 ```
 
 위의 Virtual Service를 생성한 후에 다시 `nginx` Pod에 접속해서 다시 트래픽을 흘려보자.
 
 ```bash
-$ kubectl apply -f simple-virtual-service.yaml
-$ kubectl exec -it nginx -- sh
+$ kubectl get vs
+$ kubectl run nginx --image=nginx -it --rm -- sh
 # <on nginx pod>
-while true; do curl "http://helloworld.default:5000/hello"; done
+while true; do curl "http://helloworld.default:5000/hello"; sleep 1; done
 ```
 
 ![](/images/development/istio/helloworld-simple-virtual-service.png){: .fill }
@@ -140,11 +142,11 @@ istio에서 제공하는 예제에서는 [`helloworld-gateway.yaml`](https://git
 
 이번에는 IngressGateway와 함께 VirtualService를 구성해보자.
 
-일단 IngressGateway부터 이렇게 정의하자.
+일단 Gateway 이렇게 정의하자.
 
 ```yaml
-# helloworld-gateway.yaml
-apiVersion: networking.istio.io/v1alpha3
+kubectl apply -f - <<EOF
+apiVersion: networking.istio.io/v1
 kind: Gateway
 metadata:
   name: helloworld-gateway
@@ -158,16 +160,17 @@ spec:
       protocol: HTTP
     hosts:
     - "*"
+EOF
 ```
 
 그리고 VirtualService는 이렇게 구성한다. 이번에는 구분을 위해서 v1:v2를 70:30으로 구성하자. 이번에는 v1 트래픽이 더 많다!
 
 ```yaml
 # hellworld-vs-with-gateway.yaml
-apiVersion: networking.istio.io/v1alpha3
+apiVersion: networking.istio.io/v1
 kind: VirtualService
 metadata:
-  name: helloworld-vs-w-gateway
+  name: helloworld-gateway-vs
 spec:
   hosts:
   - "*"
@@ -213,7 +216,7 @@ Kiali에서 트래픽을 확인해보면,
 여기서 잠깐! IngressGateway와 함께 쓰면서, VirtualService에서 바뀐 부분은 `hosts`와 `gateways` 부분이다.
 
 ```yaml
-apiVersion: networking.istio.io/v1alpha3
+apiVersion: networking.istio.io/v1
 kind: VirtualService
 metadata:
   name: helloworld-vs-w-gateway
@@ -239,7 +242,7 @@ for virtual services bound to the **mesh gateway**
 그런데, `hosts`에 wildcard host `*`를 쓰는 부분은 또 있다. 바로 istio Gateway 리소스의 요 부분이다.
 
 ```yaml
-apiVersion: networking.istio.io/v1alpha3
+apiVersion: networking.istio.io/v1
 kind: Gateway
 metadata:
   name: helloworld-gateway
@@ -278,7 +281,7 @@ kubectl delete svc helloworld-v1 helloworld-v2
 
 ```yaml
 # helloworld-dr.yaml
-apiVersion: networking.istio.io/v1alpha3
+apiVersion: networking.istio.io/v1
 kind: DestinationRule
 metadata:
   name: helloworld-dr
@@ -297,7 +300,7 @@ spec:
 
 ```yaml
 # helloworld-vs-w-dr.yaml
-apiVersion: networking.istio.io/v1alpha3
+apiVersion: networking.istio.io/v1
 kind: VirtualService
 metadata:
   name: helloworld-vs-w-dr

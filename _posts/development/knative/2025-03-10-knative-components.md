@@ -12,13 +12,14 @@ excerpt: ""
 
 ![](https://knative.dev/docs/serving/images/serving-architecture.png)
 
-Knative는 여러 컴포넌트들이 각자의 역할을 맡아 동작하는 Serverless 프레임워크이다. 그래서 각 컴포넌트가 어떤 역할을 하는지 알아두면 장애가 발생 했을 때, 쉽게 디버그 할 수 있을 것이다.
+Knative는 여러 컴포넌트들이 각자의 역할을 맡아 동작한다.
+그래서 각 컴포넌트가 어떤 역할을 하는지 알아두면 장애가 발생 했을 때, 쉽게 디버그 할 수 있을 것이다.
 
 # Activator
 
 Knative는 서버리스의 컨셉을 제대로 지원하기 위해 "scale-to-zero"를 지원 합니다. 이것은 트래픽이나 리소스 사용량이 없을 때는 워크로드를 "zero" 수준까지 꺼두는 것을 말합니다.
 
-이렇게 scale-to-zero가 된 상태에서 첫 트래픽이 들어오면, 그 트래픽은 서비스로 전달되는 것이 아니라 Activator에게 전달 됩니다. 그러면, Activator는 해당 트래픽을 Autoscaler(뒤에 나옴)에게 전달하고, Autoscaler가 트래픽을 처리하려고 했던 Knative의 타깃 Service를 scale-up 하게 됩니다.
+이렇게 scale-to-zero가 된 상태에서 첫 트래픽이 들어오면, 그 트래픽은 서비스로 전달되는 것이 아니라 Activator에게 전달 됩니다. 그러면, Activator는 해당 트래픽을 Autoscaler(뒤에 나옴)에게 전달하고, Autoscaler가 트래픽을 처리하려고 했던 Knative의 타깃 Service를 scale-up 해줍니다.
 
 ## 요청이 드랍 되는건 아닐까?
 
@@ -30,7 +31,7 @@ Knative의 Activator는 내부적으로 "큐(Queue)"를 가지고 있어서 0-to
 
 ## 트래픽 버스트 상황에 대응
 
-그리고 이런 요청 버퍼링은 트래픽이 급격히 증가하는 **트래픽 버스트(traffic burst)** 상황에서도 이뤄진다고 합니다. 현재 scale로 감당하기 어려운 큰 트래픽이 순간적으로 발생하게 되면, 요청을 즉시 처리하지 못하게 될 수 있는데, 이때 해당 요청을 Activator가 버퍼링 하고, 이후 pod이 처리할 수 있도록 부하 분산을 수행한다고 합니다.
+요청 버퍼링은 트래픽이 급격히 증가하는 **트래픽 버스트(traffic burst)** 상황에서도 이뤄집니다. 현재 scale로 감당하기 어려운 큰 트래픽이 순간적으로 발생하게 되면, 요청을 즉시 처리하지 못하게 될 수 있는데, 이때 해당 요청을 Activator가 버퍼링 하고, 이후 pod이 처리할 수 있도록 부하 분산을 수행한다고 합니다.
 
 그리고 Activator는 단순한 요청 큐 역할 뿐만 아니라 추가적인 Pod이 필요하다고 판단되면, 자동으로 새로운 Pod을 생성하도록 트리거 하는 역할도 수행합니다. 그리고 이 과정에서 Knative의 Autoscaler와 협력해 scale-up을 수행 합니다.
 

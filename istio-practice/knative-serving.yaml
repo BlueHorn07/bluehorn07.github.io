@@ -1,0 +1,11 @@
+# https://bluehorn07.github.io/2024/06/22/install-knative-serving/
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: knative-serving
+---
+apiVersion: operator.knative.dev/v1beta1
+kind: KnativeServing
+metadata:
+  name: knative-serving
+  namespace: knative-serving

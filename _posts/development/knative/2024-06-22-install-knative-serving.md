@@ -4,10 +4,11 @@ toc: true
 toc_sticky: true
 categories: ["Kubernetes", "knative"]
 excerpt: "좌충우돌! Knative 설치 수난기. Istio를 네트워킹 백엔드로 사용하는 Knative ⛵️"
+last_modified_at: 2025-06-10
 ---
 
-이 글을 작성하는 24년 6월엔 Knative [`v1.14.1`](https://github.com/knative/serving/releases/knative-v1.14.1) 버전이 최신 버전입니다.
-Apple M3 맥북(Sonoma 14.5)에서 Rancher Desktop(`1.14.1`) 통해 Local Kubernetes Cluster 구성하여 진행하였습니다. K8s 버전은 `1.28.9`입니다.
+이 글을 작성하는 25년 6월엔 Knative [`v1.18.0`](https://github.com/knative/serving/releases/knative-v1.18.0) 버전이 최신 버전입니다.
+Apple M3 맥북(Sequoia 15.5)에서 Rancher Desktop(`1.18.2`) 통해 Local Kubernetes Cluster 구성하여 진행하였습니다. K8s 버전은 `v1.31.0`입니다.
 {: .notice }
 
 # Check Knative Compatibility
@@ -17,20 +18,20 @@ Apple M3 맥북(Sonoma 14.5)에서 Rancher Desktop(`1.14.1`) 통해 Local Kubern
 
 Knative를 설치하거나 버전 업그레이드 할 때는 K8s와의 호환성을 고려해야 한다. Knative의 [Release Support](https://github.com/knative/community/blob/main/mechanics/RELEASE-SCHEDULE.md) 문서를 보면, 호환되는 minimum k8s version이 명시되어 있다.
 
-이번 글에서 사용하는 Knative 버전은 `1.14.1` 버전이다. 요 버전은 최소 K8s `1.28` 버전을 요구한다. 아마, K8s 버전이 올라가면서 K8s API 규격이나 기능들이 추가되거나 변경 되는데, Knative에서 사용하는 로직에서 해당 버전 이상부터 지원하는 것들이 있는가보다.
+이번 글에서 사용하는 Knative 버전은 `1.18.0` 버전이다. 요 버전은 최소 K8s `1.31` 버전을 요구한다. 아마, K8s 버전이 올라가면서 K8s API 규격이나 기능들이 추가되거나 변경 되는데, Knative 버전마다 해당 K8s API 버전부터 지원하는 것들이 있는가보다.
 
 # Using YAMLs
 
 ## Install knative CRDs
 
 ```bash
-kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.14.1/serving-crds.yaml
+kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.18.0/serving-crds.yaml
 ```
 
 ## Install Serving Core
 
 ```bash
-kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.14.1/serving-core.yaml
+kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.18.0/serving-core.yaml
 ```
 
 위의 명령어를 통해 Knative의 serving core 컴포넌트를 설치한다. core 컴포넌트는 `knative-serving` 네임스페이스에 디플로이 된다.
@@ -57,7 +58,11 @@ kn service create hello \
     --env TARGET=World
 ```
 
-종종 `kn`을 사용해서 Knative 리소스를 제어하는게 편리할 때가 있다. 예를 들어, Knative의 Service는 K8s Service와 이름이 똑같아서 `kubectl`로 리소스롤 확인할 때 `k get service`로 하면 안 되고, `k get services.serving.knative.dev`로 풀네임을 적어줘야 한다. (최근에 알게 된 건데, `k get ksvc`를 해도 됩니다!) `kn`을 사용하면 `kn service list`만 하면 되니 훨씬 간결해진다!!
+`kn` CLI로 Knative 리소스를 제어하는게 편리할 때가 있다.
+
+예를 들어, Knative의 Service는 K8s Service와 이름이 똑같아서 `kubectl`로 리소스롤 확인할 때 `k get service`로 하면 안 되고, `k get services.serving.knative.dev`로 풀네임을 적어줘야 한다. <small>(최근에 알게 된 건데, `k get ksvc`를 해도 됩니다!)</small>
+
+`kn`을 사용하면 `kn service list`만 하면 되니 훨씬 간결하다!
 
 본인은 `IngressNotConfigured`에 `Ingress has not yet been reconciled.` 라는 메시지로 Knative Service가 생성되다가 말았다... 🤔 요 에러는 Knative Service가 사용할 Ingress가 제대로 구성되지 않았을 때 발생한다. 이때의 Ingress는 [K8s의 Ingress](https://kubernetes.io/ko/docs/concepts/services-networking/ingress/) 리소스가 아니라 Istio의 Ingress Gateway와 같이 라우팅 타깃을 동적으로 제어할 수 있는 Ingress 컴포넌트를 말한다. 자세한 내용은 별도의 포스트에서 정리해보겠다. 일단은 마음 불편하게 하는 에러 메시지를 해결하기 위해 아래의 단계를 수행하자.
 
@@ -70,6 +75,7 @@ istioctl install -y
 ```
 
 위의 명령어로 istio를 설치한다. `istio-system` 네임스페이스에 `istiod`와 `istio-ingressgateway`가 하나 설치된 걸 확인한다.
+참고로 저는 `istioctl==1.26.1` 버전을 사용하고 있어서, istio도 `1.26.1` 버전으로 설치 되었습니다!
 
 ## Install net-istio
 
@@ -80,7 +86,7 @@ Istio를 설치 했다고 끝나는게 아니라, Knative에서 Istio의 리소�
 암튼 `net-istio`에 대한 내용은 별도 포스트에서 좀더 다뤄보도록 하고 일단 `net-istio`를 아래 커맨드로 설치하자.
 
 ```bash
-kubectl apply -f https://github.com/knative/net-istio/releases/download/knative-v1.14.1/net-istio.yaml
+kubectl apply -f https://github.com/knative/net-istio/releases/download/knative-v1.18.0/net-istio.yaml
 ```
 
 `knative-serving` 네임스페이스에 기존 Knative의 컨트롤 컴포넌트외에 `net-istio`의 컨트롤 컴포넌트들이 디플로이 된다.
@@ -104,7 +110,6 @@ kn service create hello \
     --image ghcr.io/knative/helloworld-go:latest \
     --port 8080 \
     --env TARGET=World
-    ---
 ---
   ...
   0.014s The Route is still working to reflect the latest desired specification.
@@ -129,34 +134,36 @@ http://hello.default.svc.cluster.local
 kn service delete hello
 
 # destroy net-istio
-kubectl delete -f https://github.com/knative/net-istio/releases/download/knative-v1.14.1/net-istio.yaml
+kubectl delete -f https://github.com/knative/net-istio/releases/download/knative-v1.18.0/net-istio.yaml
 
-# destroy istio
+# destroy istio (optional)
 istioctl uninstall --purge
 
 # destroy knative core components
-kubectl delete -f https://github.com/knative/serving/releases/download/knative-v1.14.1/serving-core.yaml
+kubectl delete -f https://github.com/knative/serving/releases/download/knative-v1.18.0/serving-core.yaml
 
 # remove knative CRDs
-kubectl delete -f https://github.com/knative/serving/releases/download/knative-v1.14.1/serving-crds.yaml
+kubectl delete -f https://github.com/knative/serving/releases/download/knative-v1.18.0/serving-crds.yaml
 ```
 
 
 # Using Knative Operator
 
-Knative는 Operator 패턴으로 디플로이할 수도 있다.
+Knative를 Operator 패턴으로 디플로이할 수도 있다. Knative 공식 문서에서도 해당 내용을 확인할 수 있습니다!
+
+➡️ [Knative: Install by using the Knative Operator](https://knative.dev/docs/install/operator/knative-with-operators/)
 
 ## Install Knative Operator
 
 일단 Knative Operator를 먼저 디플로이 하자.
 
 ```bash
-kubectl apply -f https://github.com/knative/operator/releases/download/knative-v1.14.3/operator.yaml
+kubectl apply -f https://github.com/knative/operator/releases/download/knative-v1.18.1/operator.yaml
 ```
 
 `knative-operator`라는 네임스페이스에 knative operator의 리소스가 생성된다.
 
-```
+```bash
 NAME                                READY   STATUS    RESTARTS   AGE
 operator-webhook-7cc7b89bdf-b5z76   1/1     Running   0          47s
 knative-operator-fdbbd86d4-rqnvg    1/1     Running   0          47s
@@ -185,7 +192,7 @@ metadata:
 kubectl get knativeservings -A
 ---
 NAMESPACE         NAME              VERSION   READY   REASON
-knative-serving   knative-serving   1.14.1    True
+knative-serving   knative-serving   1.18.0    True
 ```
 
 그리고 `knative-serivng` 네임스페이스를 확인해보면 아래와 같이 K8s Pod들이 떠있다.
@@ -201,7 +208,7 @@ net-istio-controller-67c556df5f-5h4cl                    1/1     Running     0  
 activator-5d7f9fc58d-t9jpp                               1/1     Running     0          96s
 net-istio-webhook-7dcd9cd55d-xwgwk                       1/1     Running     0          92s
 autoscaler-hpa-54586c6544-gkm2t                          1/1     Running     0          94s
-storage-version-migration-serving-serving-1.14.1-lpbwj   0/1     Completed   0          93s
+storage-version-migration-serving-serving-1.18.0-lpbwj   0/1     Completed   0          93s
 ```
 
 따로 명시하지 않았는데도 Networking Layer인 `net-istio` 컴포넌트가 설치되었다!! 😲
@@ -258,6 +265,11 @@ Knative는 Istio를 Default Networking Layer로 사용하고 있고, 그외에�
 
 이 글을 적으며 Knative 공부의 첫걸음을 땠다. 요즘엔 수학과 졸업시험 준비한다고 공부에 쓸 수 있는 리소스가 자꾸만 분산되고 있다. 그래도 오랜만에 K8s에 새로운 워크로드들을 올려보고 튜닝 하면서 재밌었다 ㅎㅎ 역시 수학과 문제 푸는 것보단 이런 쪽이 잘 맞는 것 같다. ~~그러니까 컴공과를 갔겠지..?~~
 
+<br/>
+
+후속 포스트로 Knative Component에 대해 정리해보았습니다 🙏
+
+➡️ [Knative Components](/2025/03/10/knative-components/)
 
 # References
 

@@ -37,8 +37,7 @@ Istio는 클러스터 외부에서 들어오는 모든 요청을 요 Ingress Gat
 
 ## Ingress Gateway는 어떻게 쓰나요?
 
-요 ingress gateway라는 리소스를 사용하려면, istio의 [`Gateway`](https://istio.io/latest/docs/reference/config/networking/gateway/
-)라는 리소스를 정의 하는데
+요 ingress gateway라는 리소스를 사용하려면, istio의 [`Gateway`](https://istio.io/latest/docs/reference/config/networking/gateway/)라는 리소스를 정의 하는데
 
 ```yaml
 apiVersion: networking.istio.io/v1alpha3
@@ -350,7 +349,7 @@ HTTP/1.1 404 Not Found
 
 로컬 맥북이라 Internal IP가 붙어서 Host가 없기 때문에 `Host` 헤더가 값을 넣어서 우회하는 방법을 썼다.
 
-### 하나의 Ingress가 여러 Host로 들어오는 트래픽 받기
+### 하나의 Ingress Gateway로 여러 Host로 들어오는 트래픽 받기
 
 `Gateway`에 host를 지정할 수 있다는 사실은 하나의 Ingress로 여러 서비스를 노출할 수 있다는 걸 말하기도 한다!! 방금 `mybookinfo.com`을 위해 만들었던 `Gateway`, `VirtualService`는 그대로 두고, helloworld 워크로드를 노출하기 위한 리소스를 추가로 만들어 띄워보자.
 
