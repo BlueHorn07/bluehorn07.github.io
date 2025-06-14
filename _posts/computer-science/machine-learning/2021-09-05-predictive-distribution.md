@@ -57,7 +57,7 @@ p(\theta \mid X)
 \end{aligned}
 $$
 
-이때, likelihood의 $p(x^{(i)} \mid \theta)$는 $\theta$로 parametized된 확률 변수 $X$에 대한 확률 분포로 이항 분포, 정규 분포, 포아송 분포 등등이 가능하다. likelihood는 데이터가 parameter $\theta$에 의해 어떻게 parameterized 되어 있을 것이라고 **가정**하는 것이기 때문에 갱신하는 대상이 아니다! 🙌
+이때, likelihood의 $p(x^{(i)} \mid \theta)$는 $\theta$로 parameterized된 확률 변수 $X$에 대한 확률 분포로 이항 분포, 정규 분포, 포아송 분포 등등이 가능하다. likelihood는 데이터가 parameter $\theta$에 의해 어떻게 parameterized 되어 있을 것이라고 **가정**하는 것이기 때문에 갱신하는 대상이 아니다! 🙌
 
 **<u>이항분포</u>**
 

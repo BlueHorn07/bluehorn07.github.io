@@ -164,7 +164,7 @@ Corr보다 Partial Corr일 때, **상관성의 크기가 더 작아진 것**을 
 
 방법은 Linear Regression의 잔차(Residual)를 활용하는 것이다!
 
-먼저 RV $X$, $Y$에 대해 $Z$를 Partialling Out한 Partiall Correlation $\rho_{XY \cdot Z}$를 구해보자.
+먼저 RV $X$, $Y$에 대해 $Z$를 Partialling Out한 Partial Correlation $\rho_{XY \cdot Z}$를 구해보자.
 
 먼저 $Z$를 $X$, $Y$에 대해 Linear Regression Fitting을 한다.
 
@@ -258,4 +258,4 @@ Partialling Out, Regression Fitting을 통해 다른 RV의 영향력을 없애�
 # References
 
 - [Statistics 101: Model Building, A Visual Guide to Partial Correlation](https://youtu.be/UyyWsctkXaw)
-- [Wikipedia: Partiall Correlation](https://en.wikipedia.org/wiki/Partial_correlation)
+- [Wikipedia: Partial Correlation](https://en.wikipedia.org/wiki/Partial_correlation)

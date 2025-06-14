@@ -88,7 +88,7 @@ time-reversal에 대한 설명은 성공했는데, 오히려 "시간의 방향�
 
 그래서, 우리는 전자기장이 *geometric* object이고, 전자기장의 값은 우리가 쓰는 space-time coordinate에 의존하는 값이라고 주장하자. 그리고 전자기장의 값이 velocity 처럼 space-time transformation 상황에서 변하는 값이라고 주장해야 한다.<br>
 
-그리고 이런 *geometric object*에 대해 기술하는 `Differential Goemetry`라는 학문이 있다. 그러니까 이런 학문을 이용해 time-reversal transformation에서 전자기장의 값과 velocity를 변화를 기술할 수 있고, 나아가 `intrinsic velocity`도 허용할 수 있다.<br><br>
+그리고 이런 *geometric object*에 대해 기술하는 `Differential Geometry`라는 학문이 있다. 그러니까 이런 학문을 이용해 time-reversal transformation에서 전자기장의 값과 velocity를 변화를 기술할 수 있고, 나아가 `intrinsic velocity`도 허용할 수 있다.<br><br>
 
 결론적으로 time-reversibility로는 `"impetus" theory`를 부정할 수 없게 되었다!! (해피 엔딩)<br>
 

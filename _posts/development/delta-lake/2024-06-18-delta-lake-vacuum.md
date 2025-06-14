@@ -27,7 +27,7 @@ SET TBLPROPERTIES ('delta.deletedFileRetentionDuration' = 'interval 14 days')
 
 ## (번외) Spark CalendarInterval
 
-참고로 Retention Duration은 `internval ...`의 형식으로 적는데, 이때 Spark의 `CalendarInterval`라는 포맷을 따라야 한다고 Delta Lake 문서에 적혀있다. [[문서]](https://docs.delta.io/latest/table-properties.html)
+참고로 Retention Duration은 `interval ...`의 형식으로 적는데, 이때 Spark의 `CalendarInterval`라는 포맷을 따라야 한다고 Delta Lake 문서에 적혀있다. [[문서]](https://docs.delta.io/latest/table-properties.html)
 
 해당하는 Spark 명세서([[링크]](https://spark.apache.org/docs/latest/api/java/org/apache/spark/unsafe/types/CalendarInterval.html))를 찾아보면, 이 `CalendarInterval`은 `days`, `months`, `microseconds` 필드를 가지고 있다.
 

@@ -16,7 +16,7 @@ categories: ["Algorithm"]
 
 하지만, 만약 $\max w_i$의 값이 10,000일 정도로 정말 큰 값이라면, 우리는 dummy node를 생성하는 데에 너무 많은 overhead를 쓰게 된다.
 
-### Dijsktra's Algorithm
+### Dijkstra's Algorithm
 
 BFS의 이런 문제를 해결하기 위해 \<alarm clock algorithm\>을 도입할 수 있다.
 

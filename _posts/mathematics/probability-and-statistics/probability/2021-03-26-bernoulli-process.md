@@ -56,7 +56,7 @@ $$
 
 <big>2. Time until the first success</big>
 
-Let's derive a randome variable $T_1 = \min \\{ i \in \mathbb{N} : X_i = 1\\}$ from the Bernoulli Process.
+Let's derive a random variable $T_1 = \min \\{ i \in \mathbb{N} : X_i = 1\\}$ from the Bernoulli Process.
 
 Then, $T_1$ follows the \<**Geometric Distribution**\>!
 
@@ -72,7 +72,7 @@ $$
 
 \<Geometric Random Variable\>인 $T_1$을 확장한 개념이다.
 
-Let's derive a randome variable $T_k = \min \\{ i \in \mathbb{N} : \| \\{ X_i : X_i = 1 \\} \| = k\\}$ from the Bernoulli Process.
+Let's derive a random variable $T_k = \min \\{ i \in \mathbb{N} : \| \\{ X_i : X_i = 1 \\} \| = k\\}$ from the Bernoulli Process.
 
 Then, $T_n$ follows the \<**Negative Binomial Distribution**\>!
 

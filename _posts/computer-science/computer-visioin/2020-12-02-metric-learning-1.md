@@ -145,7 +145,7 @@ $$
 $$
 \begin{aligned}
   S^{+} &= \textrm{The set of similar pairs} \\
-  S^{-} &= \textrm{The set of disimilar pairs}
+  S^{-} &= \textrm{The set of dissimilar pairs}
 \end{aligned}
 $$
 

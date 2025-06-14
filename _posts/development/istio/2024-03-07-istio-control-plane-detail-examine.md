@@ -159,9 +159,9 @@ Pilot이랑 다루는 리소스가 겹쳐서 좀 헷갈리긴 하는데, 일단 
 
 > Collect Telemetry, and Access Control
 
-이 녀석도 이해 하는게 만만치 않았다. 일단 Mixer는 두가지 기능을 수행한다: "Telemtry"와 "Policy Check"다.
+이 녀석도 이해 하는게 만만치 않았다. 일단 Mixer는 두가지 기능을 수행한다: "Telemetry"와 "Policy Check"다.
 
-Telemtry 역할은 Envoy가 보고하는 metric과 log 정보를 모아서 처리한다. 이는 Istio의 Tracing & Audit과 관련 있다. 또한, Mixer가 모은 지표는 Prometheus나 Datadog과 같은 외부 백엔드로 보낼 수도 있다. 또, 다수의 외부 백엔드를 두는 것도 가능하다. (여러 외부 백엔드를 지원하기 위해 "Adaptor Pattern"을 채택 한 것!)
+Telemetry 역할은 Envoy가 보고하는 metric과 log 정보를 모아서 처리한다. 이는 Istio의 Tracing & Audit과 관련 있다. 또한, Mixer가 모은 지표는 Prometheus나 Datadog과 같은 외부 백엔드로 보낼 수도 있다. 또, 다수의 외부 백엔드를 두는 것도 가능하다. (여러 외부 백엔드를 지원하기 위해 "Adaptor Pattern"을 채택 한 것!)
 
 Access Control 역할은 `AuthorizationPolicy`를 평가해 두 워크로드가 통신 가능한지 여부를 Envoy에 리턴 해주는 것을 말한다.
 

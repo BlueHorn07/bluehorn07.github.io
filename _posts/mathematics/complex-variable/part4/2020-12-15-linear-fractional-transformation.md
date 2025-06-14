@@ -67,7 +67,7 @@ $w = \dfrac{0z + 1}{1z + 0} = \dfrac{1}{z}$; Inversion Transformation
 <br>
 <hr>
 
-##### Inverse of Linear Frational Transformation
+##### Inverse of Linear Fractional Transformation
 
 $$
 \begin{aligned}
@@ -270,4 +270,3 @@ $$
   \frac{z-w_1}{z-w_3} \cdot \frac{z_2-w_3}{z_2-w_1} &= \frac{w-w_1}{w-w_3} \cdot \frac{w_2-w_3}{w_2-w_1}
 \end{aligned}
 $$
-

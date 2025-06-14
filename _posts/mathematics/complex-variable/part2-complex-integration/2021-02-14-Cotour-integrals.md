@@ -124,7 +124,7 @@ $$
 
 $f(z) = f(x+iy) = u(x,y) + i v(x,y)$
 
-$z(t): [a, b] \rightarrow \mathbb{C}$ is a parametized curve $C$.
+$z(t): [a, b] \rightarrow \mathbb{C}$ is a parameterized curve $C$.
 
 Then
 
@@ -139,6 +139,3 @@ $$
 이때, $ux' - vy'$ 그리고 $uy' + vw'$가 continuous function이기 때문에 실수에서의 적분에 대한 유일성에 의해 Contour Integral on Complex Plane의 적분도 존재한다! $\blacksquare$
 
 </div>
-
-
-

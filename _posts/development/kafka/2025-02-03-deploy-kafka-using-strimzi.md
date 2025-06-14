@@ -21,7 +21,7 @@ Kafka를 깊이있게 공부하면서 관련된 eco-system도 살펴보고 있�
 아래와 같이 `Kafka` 리소스를 정의합니다. 3개의 주키퍼와 3개의 브로커로 구성된 클러스터 입니다.
 
 ```yaml
-# @kafka-zookeper-cluster.yaml
+# @kafka-zookeeper-cluster.yaml
 apiVersion: kafka.strimzi.io/v1beta2
 kind: Kafka
 metadata:

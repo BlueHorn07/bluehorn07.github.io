@@ -96,6 +96,6 @@ $ kubectl config set-context CONTEXT_NAME \
 
 <hr/>
 
-# Referecnes
+# References
 
 - [[kubernetes] 다중 클러스터 접근 구성](https://kubernetes.io/ko/docs/tasks/access-application-cluster/configure-access-multiple-clusters/)

@@ -42,7 +42,7 @@ toc_sticky: true
   - 리만 재배열 정리
 - [Sequence and Series: Problem Solving](/2024/06/08/sequence-and-series-problem-solving/)
   - The zipper theorem
-  - A recurive definition of $\pi/2$
+  - A recursive definition of $\pi/2$
   - The Cantor Set
   - The Cauchy condensation test
 

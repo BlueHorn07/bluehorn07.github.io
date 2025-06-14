@@ -147,7 +147,7 @@ $$
 
 <div class="notice" markdown="1">
 
-1. If $c$ is natural number, then $z^n$ is sinle-valued.
+1. If $c$ is natural number, then $z^n$ is single-valued.
 2. If $c = 1/n$, then $z^n$ is $n$-th valued.
 3. If $c$ is irrational or not real, then $z^c$ is infinitely many-valued.
 

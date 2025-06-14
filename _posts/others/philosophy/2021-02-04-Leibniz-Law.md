@@ -42,9 +42,9 @@ Leibniz's Law는 아래와 같이 기술된다.
 
 <br/>
 
-### Indiscernibility of Identicals
+### Indiscernibility of Identical
 
-앞에서 살펴본 "Identity of Indiscernibles"의 역을 기술한 것이 "Indiscernibility of Identicals"이다.
+앞에서 살펴본 "Identity of Indiscernibles"의 역을 기술한 것이 "Indiscernibility of Identical"이다.
 
 <div class="statement" style="text-align: center">
 

@@ -34,7 +34,7 @@ $ istioctl uninstall --revision=canary
 
 ![](https://istio.io/latest/docs/setup/upgrade/canary/revision-tags-before.svg)
 
-`test-ns`라는 네임스페이스에 `istio-inejction=enabled`라는 레이블이 붙어있어서 해당 네임스페이스에 뜬 Pod들은 sidecar가 붙은 상태로 세팅해보자.
+`test-ns`라는 네임스페이스에 `istio-injection=enabled`라는 레이블이 붙어있어서 해당 네임스페이스에 뜬 Pod들은 sidecar가 붙은 상태로 세팅해보자.
 
 ```bash
 $ kubectl create ns test-ns

@@ -92,7 +92,7 @@ $$\theta^{(t+1)} := \theta^{(t)} - H^{-1} \nabla_{\theta}l(\theta)$$
 
 이때, $H$는 **Hessian**이다. vector function의 Derivate를 의미한다.
 
-분명 Newton's Method는 적은 step으로 최적의 $\theta$를 찾아낸다. 하지만, Newton's Method의 공식을 살펴보면 n-by-n 행렬의 역행렬인 $H^{-1}$를 구하는 과정이 있다! n이 작다면 역행렬을 구하는 비용이 크지 않겠지만, n이 커진다면 역행렬을 구하는 비용은 아주아주 커진다... 그래서 Netwon's Method는 $\theta$가 갖는 feacture가 적을 때만 사용할 수 있다는 제약을 가진다.
+분명 Newton's Method는 적은 step으로 최적의 $\theta$를 찾아낸다. 하지만, Newton's Method의 공식을 살펴보면 n-by-n 행렬의 역행렬인 $H^{-1}$를 구하는 과정이 있다! n이 작다면 역행렬을 구하는 비용이 크지 않겠지만, n이 커진다면 역행렬을 구하는 비용은 아주아주 커진다... 그래서 Newton's Method는 $\theta$가 갖는 feacture가 적을 때만 사용할 수 있다는 제약을 가진다.
 
 <hr>
 

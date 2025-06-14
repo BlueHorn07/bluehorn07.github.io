@@ -65,7 +65,7 @@ Every body preseverse in its state either of rest or of uniform motion in a stra
     우리는 Topology를 통해 `continuity`를 보장할 수 있는데,<br>
     펜을 한번도 떼지 않고, 유클리드 도형을 그려낼 수 있다는 말이다. 그리고 이것을 통해 공간 상에 존재하는 선<small>*line*</small>과 그것과 끊어진 선을 구분할 수 있게 된다.<br>
 
-    Topology를 *rubber-sheet goemetry*라고 부를 수도 있는데, <br>
+    Topology를 *rubber-sheet geometry*라고 부를 수도 있는데, <br>
     찢어지거나 덮이지 않는 고무판 위에 그린 도형을 생각해봤을 때, 우리가 아무리 구부리거나 펴도 도형이 가지는 변하지 않는 성질이 있다는 말이다.<br>
     예를 들어 변형<small>*deformation*</small>을 가하기 전에 intersect하는 선은 변형을 하고 난 후에도 여전히 intersect하고 있다.<br>
 

@@ -72,7 +72,7 @@ toc_sticky: true
 
 - [Non-parametric Linear Regression]({{"/2021/04/18/regression-spline" | relative_url}})
   - Polynomial Regression
-    - Local Polynomical Regression
+    - Local Polynomial Regression
   - [Regression Spline]({{"/2021/04/18/regression-spline#regression-spine" | relative_url}}) 🔥
   - Natural Cubic Spline
     - power basis function
@@ -115,5 +115,3 @@ toc_sticky: true
 <hr/>
 
 [^1]: 수업의 일부 토픽에서 CS229에서 배운 부분이 종종 등장했습니다. CS229에서 통계적 접근을 통해 고전적인 머신 러닝을 다루기 때문에 두 과목을 공부하는 데에 양방향으로 도움을 많이 받았습니다 😊
-
-

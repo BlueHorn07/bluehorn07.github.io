@@ -35,7 +35,7 @@ $$
 
 <br>
 
-일반적으로 Domain $D$에서 singular point가 유한개라면, 모두 **isoloated** 이다.
+일반적으로 Domain $D$에서 singular point가 유한개라면, 모두 **isolated** 이다.
 
 **<u>Property.</u>**<br>
 IF $f(z)=\frac{P(z)}{Q(z)}$, $P$, $Q$: polynomials, THEN all singular points are isolated.
@@ -246,5 +246,3 @@ $$
 <hr>
 
 [^1]: Talyer 정리에 의하면, analytic 함수는 양의 차수를 가진 다항식으로 전개할 수 있으므로 $b_1=0$이다. 그래서 residue thm은 singular point 여부와 상관없이 기술할 수도 있다.
-
-

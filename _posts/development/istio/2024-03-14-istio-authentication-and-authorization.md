@@ -79,7 +79,7 @@ EOF
 
 이때 "issuer"는 토큰을 발급한 주체(인증서버), "subject"는 토큰을 발급받은 주체(사용자, 서비스계정)을 표현한다.
 
-## JWT 실어서 요청 보내기 
+## JWT 실어서 요청 보내기
 
 `RequestAuthentication`과 `AuthorizationPolicy` 리소스를 추가하고 난 뒤에 요청을 보내면, 아래와 같이 요청이 거부 된다.
 
@@ -177,7 +177,7 @@ kind: AuthorizationPolicy
   rules:
   - from:
     - source:
-       requestPrincipals: ["testing@secure.istio.io/testing@secure.istio.io"]    
+       requestPrincipals: ["testing@secure.istio.io/testing@secure.istio.io"]
 ```
 
 위와 같이 `requestPrincipals`에 어떤 값을 정의하기만 하면, JWT 토큰이 없는 경우가 거부 된다.
@@ -244,7 +244,7 @@ Hello version: v2, instance: helloworld-v2-7bd9f44595-bhbpd
 
 ### forwardOriginalToken 속성
 
-만약 Envoy로 들어오는 JWT 토큰이 Envoy 단에서 검증된(validated) 후에 본래의 워크로드 컨테이너로 까지 포워딩 되길 원한다면, `RequestAuthentcation` 리소스에 `forwardOriginalToken` 속성을 `true`로 설정해줘야 한다.
+만약 Envoy로 들어오는 JWT 토큰이 Envoy 단에서 검증된(validated) 후에 본래의 워크로드 컨테이너로 까지 포워딩 되길 원한다면, `RequestAuthentication` 리소스에 `forwardOriginalToken` 속성을 `true`로 설정해줘야 한다.
 
 ```yaml
 apiVersion: security.istio.io/v1beta1

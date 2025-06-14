@@ -251,7 +251,7 @@ Istio의 Envoy Proxy들은 그들의 metric을 프로메테우스 metric 형식�
 
 그런데 어떤 Pod들은 isito proxy를 도입하기 이전부터 자체적으로 Prometheus 메트릭을 노출하고 있었을 수도 있음. 그렇게 되면, istio proxy의 메트릭도 노출되고 App이 원래 노출하던 메트릭도 같이 있게 됨. (이렇게 되면 뭔가 간섭이 있나봄??)
 
-그래서 istio는 친절하게도(?) 기존 App이 노출하는 프로메테우스 메트릭이 있다면 그걸 병합(merge)해서 "merged prometheus telemtry"의 포트인 `15020`에 쏴준다고 함.
+그래서 istio는 친절하게도(?) 기존 App이 노출하는 프로메테우스 메트릭이 있다면 그걸 병합(merge)해서 "merged prometheus telemetry"의 포트인 `15020`에 쏴준다고 함.
 
 이렇게 두 프메 메트릭을 병합하는 옵션은 IstioOp를 설치할 때 `meshConfig.enablePrometheusMerge` 옵션에 의해 설정되는데, 기본값이 `true`라서 Istio proxsy가 주입되었다면 기존 App 메트릭이 병합되게 될 것임. 그리고 위의 옵션에 따라 istio proxy가 주입된 Pod은 프메 Scrape을 위한 `prometheus.io/xxx` annot이 이것저것 붙게 된다고 함. 만약, 기존에 이미 `prometheus.io/xxx` annot이 있었다면 overwrite 됨.... ㅋㅋ
 
@@ -309,9 +309,9 @@ https://istio.io/latest/docs/ops/deployment/requirements/
 - `15001`: Envoy outbound
 - `15006`: Envoy inbound
 - `15021`: Health checks
-- `15020`: Merged Prometheus telemetry from Istio agent, Envoy, and application	
+- `15020`: Merged Prometheus telemetry from Istio agent, Envoy, and application
   - 왜 프메 메트릭을 병합(?)한 포트가 있는지는 요 포스트의 위쪽에 문단에 적어둠!
-- `15090`: Envoy Prometheus telemetry	
+- `15090`: Envoy Prometheus telemetry
 
 ## Istiod
 

@@ -31,7 +31,7 @@ $$
 
 (3) $A = B^T B$ for some $B$.
 
-(4) $A$ is **variance-covariance matrix** of some randome variable.
+(4) $A$ is **variance-covariance matrix** of some random variable.
 
 <br/>
 

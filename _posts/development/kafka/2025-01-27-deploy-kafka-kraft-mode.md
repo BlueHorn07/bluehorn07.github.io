@@ -12,7 +12,7 @@ excerpt: "주키퍼 의존성을 제거한 카프카 클러스터! 강건한 분
 
 # 주키퍼
 
-![](/images/development/kafka/zookeper-mode.png)
+![](/images/development/kafka/zookeeper-mode.png)
 [Confluent: The Apache Kafka Control Plane](https://developer.confluent.io/courses/architecture/control-plane/)
 {: .gray .small .text-center }
 

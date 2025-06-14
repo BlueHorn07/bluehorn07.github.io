@@ -74,7 +74,7 @@ The **<u>content</u>** of (polynomial with integer coeffi-.) = $\gcd$ of it coef
 
 The **<u>primitive part</u>** of polynomial = quotient of polynomial by its content.
 
-따라서 (polynomial) = (cotent) x (primitive part)
+따라서 (polynomial) = (content) x (primitive part)
 
 </div>
 

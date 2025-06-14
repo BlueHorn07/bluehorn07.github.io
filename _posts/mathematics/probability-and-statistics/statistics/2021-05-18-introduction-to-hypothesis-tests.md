@@ -54,7 +54,7 @@ Then, we can use $X$ as a \<Test Statistic\>!
 
 위의 $H_0: p=0.5$, $H_1: p=0.7$의 경우에서 생각해보자. 만약 $X$가 large enough, 즉 "$X \ge C$ for some $C$"라면, $H_0$를 reject 하는게 합리적이다.
 
-우리는 이 $H_0$를 reject하는 기준이 되는 범위 $X \ge C$를 \<**rejection region**\> 또는 \<**critical region**\>이라고 하며, 이 범위를 잡을 때 쓰는 값 $C$를 \<**critial value**\>라고 한다!
+우리는 이 $H_0$를 reject하는 기준이 되는 범위 $X \ge C$를 \<**rejection region**\> 또는 \<**critical region**\>이라고 하며, 이 범위를 잡을 때 쓰는 값 $C$를 \<**critical value**\>라고 한다!
 
 <hr/>
 
