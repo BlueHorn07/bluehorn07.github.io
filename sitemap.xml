@@ -6,6 +6,7 @@ layout: null
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     {% for post in site.posts %}
+    {% unless post.sitemap == false %}
     <url>
         <loc>{{ site.url }}{{ post.url }}</loc>
         {% if post.last_modified_at == null %}
@@ -24,5 +25,6 @@ layout: null
         <priority>{{ post.sitemap.priority }}</priority>
         {% endif %}
     </url>
+    {% endunless %}
     {% endfor %}
 </urlset>
