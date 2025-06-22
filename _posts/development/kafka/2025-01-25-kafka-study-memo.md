@@ -1,5 +1,5 @@
 ---
-title: "Kafka 공부하면서 이것저것 메모"
+title: "Kafka 이것저것 메모"
 toc: true
 toc_sticky: true
 categories: ["Kafka"]
@@ -310,7 +310,7 @@ transactional.id=my-transaction
 # Kafka 활용 사례
 
 - Kakao
-  - [카프카, 대규모 클러스터 운영 후기 / if(kakao)2022](https://youtu.be/kGYdLiPzTOI?si=HzV086w2Gou1y7Kj)
+  - [카프카, 대규모 클러스터 운영 후기 / if(kakao) 2022](https://youtu.be/kGYdLiPzTOI?si=HzV086w2Gou1y7Kj)
     - 온프레미스에서 Kafka 클러스터를 운영하는 노하우가 잔뜩 소개 되어 있음.
     - RAID와 같이 디스크 프로토콜에 대해서도 다루고, SSD가 좋은지 HDD가 좋은지 같은 low-level 내용도 흥미로웠음.
     - Disk 쪽 장애가 많아서 장애 복구를 자동화 했다는 것도 흥미로움.
@@ -318,7 +318,7 @@ transactional.id=my-transaction
     - Kafka는 Page Cache를 최대한 활용하기 때문에, Heap 공간은 6GB로 (비교적) 작게 할당한다고 함
     - Kafka Parameter를 기본값이 아니라 커스텀 값 사용한 것들도 이유와 노하우를 친절히 알려주심
     - 본래 `log.dir`은 `/tmp` 경로에 로그 데이터를 적재하는데, 요게 OS 환경에 따라 자동 삭제 될 수 있기 때문에 경로는 바꿔줘야 한다고 함.
-  - [카프카, Kraft를 만나다: 주키퍼 없이 운영하는 카프카의 실전 운영 노하우 / if(kakaoAI)2024](https://youtu.be/VIGkd2U_8Ro?si=yipxHTJbCebZqo0w)
+  - [카프카, Kraft를 만나다: 주키퍼 없이 운영하는 카프카의 실전 운영 노하우 / if(kakaoAI) 2024](https://youtu.be/VIGkd2U_8Ro?si=yipxHTJbCebZqo0w)
     - 컨슈머 그룹 관리에 대한 메타 정보를 예전에는 Zookeeper에서 관리 했는데, 나중엔 System Topic인 `__consumer_offsets`으로 옮겼다는 얘기를 처음 알게 됨!
       - 즉, 예전부터 Kafka는 주키퍼에 대한 의존성이 점점 줄이고 있었다.
     - `__cluster_metadata`라는 System Topic으로 클러스터 메타 정보를 관리함.
@@ -328,3 +328,21 @@ transactional.id=my-transaction
       - [trogdor](https://github.com/a0x8o/kafka/blob/master/TROGDOR.md): Trogdor is a test framework for Apache Kafka.
       - 데이터 센터에 직접 방문해서 물리적인 장애를 직접 만들어볼 정도라니!
     - 브로커와 프로듀서의 압축 방식이 다르면, 압축을 풀고 다시 압축 하는 과정이 들기 때문에, 왠만하면 브로커와 프로듀서의 압축 방식을 동일하게 맞춰주는게 좋다고 함.
+  - [카프카 산전수전 노하우 / if(kakao) dev 2018](https://tv.kakao.com/channel/3150758/cliplink/391419257)
+    - 초창기 카카오의 카프카 운영 경험 (귀하다 귀해)
+    - 하나의 주키퍼 클러스터에 여러 브로커 클러스터를 운영할 수 있음.
+      - 이전에는 하나의 주키퍼 클러스터가 하나의 브로커 클러스터만을 관리하는 줄 알았음...;;
+    - Shrinking ISR
+      - Kafka 초기 버전에 있던 버그.
+      - ISR 집합이 축소되면서, 한 브로커가 파티션 리더를 꽉 잡게 되고 이로 인해서 Replication이 제대로 되지 않는 상황임.
+      - 카카오는 버전 업그레이드로 해결
+    - 브로커 클러스터 다운 후 복구할 때, 메시지 손실 사례에 대해서.
+      - 클러스터 다운 직전에 리더 파티션을 **마지막으로** 가지고 있던 브로커를 먼저 복구시켜야 메시지 손실이 없음.
+      - 그런데, 클러스터 재시작 과정에서 마지막 리더 파티션을 가진 브로커를 찾기 쉽지 않을 것 같음.
+      - 빠른 운영 회복성이 필요하다면 복구 과정에서 메시지 손실은 불가피 (이건 선택의 영역)
+    - Lag 모니터링
+      - "[Burrow](https://github.com/linkedin/Burrow)"라는 툴을 사용하라고 추천.
+      - 이것 어떻게 할지 좀더 살펴봐야 할 것 같음.
+    - 모니터링을 위해 `Info` 로그도 잘 살펴보자.
+    - 브로커 클러스터에서 `Warning` 로그나 `Error` 로그가 발생하는 경우, 알람을 받도록 구성하자.
+      - 이건 브로커 클러스터가 아니라 어떤 App을 운영하더라도 필요한 항목!

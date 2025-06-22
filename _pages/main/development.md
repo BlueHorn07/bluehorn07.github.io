@@ -99,7 +99,7 @@ Databricks Certification 취득을 목표로 Apache Spark를 “제대로” 공
 - [Kafka Shell Script 둘러보기](/2025/01/12/kafka-shell-scripts/)
   - [`kafka-topics.sh`](/2025/01/11/kafka-shell-kafka-topics-sh/)
   - [Console Produce/Consume](/2025/01/12/kafka-shell-console-produce-and-consume/)
-- [Kafka 공부하면서 이것저것 메모](/2025/01/25/kafka-study-memo/)
+- [Kafka 이것저것 메모](/2025/01/25/kafka-study-memo/)
 - Consumer Group
   - [Coordinator of Consumer Group](/2025/01/27/kafka-group-coordinator/)
   - [Partition Assignors of Consumer Group](/2025/01/29/kafka-consumer-group-partition-assignor/)
