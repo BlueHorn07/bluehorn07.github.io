@@ -1,7 +1,6 @@
 ---
 title: "종만북 리딩 - 1"
-toc: true
-toc_sticky: true
+toc: false
 categories: ["Reading"]
 ---
 
@@ -12,7 +11,6 @@ categories: ["Reading"]
 
 이 포스트에선 종만북에 나왔던 좋은 문구와 생각, 문제들을 짧게 기록해두려고 합니다.
 
-<br>
 <hr>
 
 "잘 알려진 알고리즘들을 베껴 쓰기만 하면 해결할 수 있는 문제만 있는 것이 아니라 알고리즘에 사용된 원칙들을 이해하고 변형해야 풀 수 있는 문제들이 많이 출제되기 때문에 이런 주제들을 깊이 이해하는 데 큰 도움이 됩니다."
@@ -33,4 +31,3 @@ ALGOSPOT에서 `#include<bits/stdc++.h>`는 잘 인식하지만, `#include <bits
 
 - BOGGLE
   - `y`, `x` index가 board 위에 존재하는지 확인하게 위해 `inRange(y, x)` 함수를 만들어서 확인!!
-

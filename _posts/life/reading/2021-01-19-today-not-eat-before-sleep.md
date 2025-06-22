@@ -1,7 +1,6 @@
 ---
 title: "『오늘 밤은 굶고 자야지』 박상영"
-toc: true
-toc_sticky: true
+toc: false
 categories: ["Reading"]
 ---
 

@@ -2,7 +2,6 @@
 title: Development
 permalink: /topic/development
 toc: false
-toc_sticky: false
 ---
 
 “Talk is cheap. Show me the code.” - Linus Torvalds
