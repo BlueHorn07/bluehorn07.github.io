@@ -23,3 +23,4 @@ toc_sticky: true
   - [Partition Assignors of Consumer Group](/2025/01/29/kafka-consumer-group-partition-assignor/)
 - [Kafka `listeners` vs. `advertised.listeners`](/2025/02/20/kafka-listeners-and-advertised-listeners/)
 - [Kafka 시간 기반으로 동작하는 Config 모음](/2025/02/21/kafka-time-based-configurations/)
+- [Why Replace Zookeeper with KRaft](/2025/06/22/why-replace-zookeeper-with-kraft/)
