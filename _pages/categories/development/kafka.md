@@ -9,6 +9,7 @@ toc_sticky: true
 
 - [Deploy Kafka on Kubernetes ☸](/2025/01/05/deploy-kafka-on-k8s/)
   - [Deploy Kafka on Kraft Mode](/2025/01/27/deploy-kafka-kraft-mode/)
+    - [Why Replace Zookeeper with KRaft](/2025/06/22/why-replace-zookeeper-with-kraft/)
   - [Deploy Kafka Cluster using Strimzi](/2025/02/03/deploy-kafka-using-strimzi/)
 - [Hello, Avro!](/2024/11/15/hello-avro/)
 - [Hello, Python Producers!](/2024/12/10/hello-python-producers/)
@@ -17,10 +18,9 @@ toc_sticky: true
 - [Kafka Shell Script 둘러보기](/2025/01/12/kafka-shell-scripts/)
   - [`kafka-topics.sh`](/2025/01/11/kafka-shell-kafka-topics-sh/)
   - [Console Produce/Consume](/2025/01/12/kafka-shell-console-produce-and-consume/)
-- [Kafka 이것저것 메모](/2025/01/25/kafka-study-memo/)
 - Consumer Group
   - [Coordinator of Consumer Group](/2025/01/27/kafka-group-coordinator/)
   - [Partition Assignors of Consumer Group](/2025/01/29/kafka-consumer-group-partition-assignor/)
 - [Kafka `listeners` vs. `advertised.listeners`](/2025/02/20/kafka-listeners-and-advertised-listeners/)
 - [Kafka 시간 기반으로 동작하는 Config 모음](/2025/02/21/kafka-time-based-configurations/)
-- [Why Replace Zookeeper with KRaft](/2025/06/22/why-replace-zookeeper-with-kraft/)
+- [Kafka 이것저것 메모](/2025/01/25/kafka-study-memo/)

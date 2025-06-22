@@ -307,6 +307,22 @@ transactional.id=my-transaction
 
 그러나 `transactional.id`는 왜 필요한지 조금 의문이었는데, 프로듀서가 Transaction 기능이 필요하지 않다면, 필요 없을 수도 있을 것 같다. 하지만 Transaction 기반으로 동작하는 프로듀서라면 이 속성값도 반드시 넣어줘야 할 것 같다.
 
+# Linux System
+
+Q. Kafka를 운영하기 위해 적절한 리눅스 파일시스템은?
+
+정답은 `ext4`와 `xfs` 입니다. (둘다 이번에 처음봄;;)
+
+제가 둘다 제대로 아는 게 아니라서 간단히 요약하면,
+
+- `ext4`
+  - 일반적인 서버 환경이나, 리눅스 PC에서 사용하는 파일 시스템
+- `xfs`
+  - 데이터베이스와 같은 대용량 시스템에서 사용하는 파일 시스템
+
+언젠가 리눅스를 제대로 공부하게 된다면, 다시 방문해보는 걸로... 지금은 다른 것들에 집중하자!
+
+
 # Kafka 활용 사례
 
 - Kakao
@@ -346,3 +362,12 @@ transactional.id=my-transaction
     - 모니터링을 위해 `Info` 로그도 잘 살펴보자.
     - 브로커 클러스터에서 `Warning` 로그나 `Error` 로그가 발생하는 경우, 알람을 받도록 구성하자.
       - 이건 브로커 클러스터가 아니라 어떤 App을 운영하더라도 필요한 항목!
+  - [카카오 개발자들을 위한 공용 Message Streaming Platform - Kafka & RabbitMQ (2021)](https://tech.kakao.com/posts/485)
+    - Grafana로 Kafka 대시보드 만들어서 모니터링
+      - Grafana에서 tsdb 말고, 정적 데이터도 시각화 할 수 있으려나?
+      - 해당 토픽에 produce record가 있는데, consume record가 그만큼을 따라오지 않는 경우가 있는지 꼭 체크해줘야 함.
+    - 공용 MQ 시스템에서의 에러 사례
+      - 클러스터 접근 실패
+      - 보안 요구조건으로 인해 격리가 필요하다면 전용 시스템으로 분리하기도 함.
+    - 다이어그램이 참 이쁘고 마음에 든다 ㅋㅋ
+      - [CloudCraft](https://www.cloudcraft.co/)라고 Datadog에서 인수한 도구로 만든 거임!
