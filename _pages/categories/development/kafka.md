@@ -1,6 +1,6 @@
 ---
 title: "Apache Kafka"
-permalink: /categories/kakfa
+permalink: /categories/kafka
 toc: true
 toc_sticky: true
 ---
@@ -24,3 +24,4 @@ toc_sticky: true
 - [Kafka `listeners` vs. `advertised.listeners`](/2025/02/20/kafka-listeners-and-advertised-listeners/)
 - [Kafka 시간 기반으로 동작하는 Config 모음](/2025/02/21/kafka-time-based-configurations/)
 - [Kafka 이것저것 메모](/2025/01/25/kafka-study-memo/)
+- [CCDAK 시험 준비](/2025/06/23/CCDAK-prepare)
