@@ -50,7 +50,7 @@ Znode에 변화는 (1) 브로커가 클러스터에 join하거나 leave 할 때,
 
 카프카 브로커는 Znode에 변화를 감지(watch)하고, 변화가 있으면 그 이벤트를 확인해 대응 합니다.
 
-# Controller Scalability Limitaiton
+# Controller Scalability Limitation
 
 또, 현재는 하나의 Controller 브로커가 ZK에 접속하도록 하면서, 클러스터 대규모로 확장되면 해당 Controller 브로커가 큰 부하를 받게 됨.
 
@@ -58,7 +58,7 @@ Znode에 변화는 (1) 브로커가 클러스터에 join하거나 leave 할 때,
 
 non-controller 브로커 하나를 내리게 되면, 이 브로커를 내리기 위해서 broker->controller->ZK 일련의 과정이 일어나야 하고, 반대로 ZK->controller->(other) borkers로 전파가 일어아냐 함. 그런데, 이 과정은 꽤 긴 시간이 걸리고 클러스터의 즉각적인 다운을 어렵게 만들었음.
 
-## Controler Failover
+## Controller Failover
 
 컨트롤러 브로커도 셧다운 될 수 있음.
 
@@ -67,7 +67,7 @@ non-controller 브로커 하나를 내리게 되면, 이 브로커를 내리기 
 Controller가 된 브로커가 가장 먼저 하는 일은 ZK에서 메타데이터를 가져오는 것임.
 만약 기존 정보와 불일치 하는 정보가 있다면, 그걸 핸들링 하고(=신규 메타 정보로 overwrite), 신규 정보를 하위 브로커에 전파함.
 
-이 과정에서의 병목은 신규로 임명된 controller가 ZK에서 메타데이터를 fetching 하는 것임. 이 과정은 topic partition이 많을수록 오래걸림. 이런 bootstraping 과정 동안은 컨트롤러 브로커가 어떤 요청도 처리할 수 없기 때문에 클러스터의 일부 기능이 제대로 동작하지 않게 됨.
+이 과정에서의 병목은 신규로 임명된 controller가 ZK에서 메타데이터를 fetching 하는 것임. 이 과정은 topic partition이 많을수록 오래걸림. 이런 bootstrapping 과정 동안은 컨트롤러 브로커가 어떤 요청도 처리할 수 없기 때문에 클러스터의 일부 기능이 제대로 동작하지 않게 됨.
 
 # Why choose KRaft?
 
@@ -83,7 +83,7 @@ ZK에 저장하는 정보가 뭔지 잘 생각해보니, 결국은 메타데이�
 "Primary-backup" replication algorithm
 - single leader replica takes all of the incoming writes
 - and tries to replicate them to other replicas as its followers.
-- after the followers have acks, the leader considers it committed and returns to writing ot its client.
+- after the followers have acks, the leader considers it committed and returns to writing to its client.
 ^the metadata log also takes this procedure also!
 
 "Quorum" replication algorithm
@@ -138,7 +138,7 @@ The quorum controller receives the linveness of all registered brokers with hear
 
 When an existing broker is shutting down, it can piggyback its intention within a heartbeat and the controller can remove it from all of its partitions.
 
-Quorum controlller batch all of the partition movement events when appending them to the metadata log.
+Quorum controller batch all of the partition movement events when appending them to the metadata log.
 
 # 맺음말
 

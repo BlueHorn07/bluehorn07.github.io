@@ -23,5 +23,10 @@ toc_sticky: true
   - [Partition Assignors of Consumer Group](/2025/01/29/kafka-consumer-group-partition-assignor/)
 - [Kafka `listeners` vs. `advertised.listeners`](/2025/02/20/kafka-listeners-and-advertised-listeners/)
 - [Kafka 시간 기반으로 동작하는 Config 모음](/2025/02/21/kafka-time-based-configurations/)
+- [Kafka Internals](/2025/06/29/kafka-internals/)
+  - Page Cache
+  - Zero-copy
+  - RAID 10
+
 - [Kafka 이것저것 메모](/2025/01/25/kafka-study-memo/)
 - [CCDAK 시험 준비](/2025/06/23/CCDAK-prepare)

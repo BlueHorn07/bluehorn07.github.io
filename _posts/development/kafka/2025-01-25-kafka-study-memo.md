@@ -307,7 +307,7 @@ transactional.id=my-transaction
 
 그러나 `transactional.id`는 왜 필요한지 조금 의문이었는데, 프로듀서가 Transaction 기능이 필요하지 않다면, 필요 없을 수도 있을 것 같다. 하지만 Transaction 기반으로 동작하는 프로듀서라면 이 속성값도 반드시 넣어줘야 할 것 같다.
 
-# Linux System
+# Linux File System
 
 Q. Kafka를 운영하기 위해 적절한 리눅스 파일시스템은?
 
@@ -321,6 +321,7 @@ Q. Kafka를 운영하기 위해 적절한 리눅스 파일시스템은?
   - 데이터베이스와 같은 대용량 시스템에서 사용하는 파일 시스템
 
 언젠가 리눅스를 제대로 공부하게 된다면, 다시 방문해보는 걸로... 지금은 다른 것들에 집중하자!
+
 
 
 # Kafka 활용 사례
