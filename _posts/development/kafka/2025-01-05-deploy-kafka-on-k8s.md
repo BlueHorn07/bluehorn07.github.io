@@ -8,7 +8,7 @@ excerpt: "Kubernetes 위에 Kafka Cluster 구축하고, Kafka UI 웹 콘솔로 �
 
 # 들어가며
 
-회사에서 Confluent를 통해 Kafka 클러스터를 잘 사용하고 있었습니다. 그런데, 이 카프카에 대해서 좀더 자세히 알고, 전문성을 갖추고 싶다는 생각이 들어서 2025년 첫 목표로 Confluent의 Kafka 자격증인 [Confluent Certified Developer for Apache Kafka®](https://training.confluent.io/examdetail/confluent-dev) 자격증을 준비하고 있습니다 ✌️
+회사에서 Confluent를 통해 Kafka 클러스터를 잘 사용하고 있었습니다. 그런데, 이 카프카에 대해서 좀더 자세히 알고, 전문성을 갖추고 싶다는 생각이 들어서 2025년 목표로 Confluent의 Kafka 자격증인 [Confluent Certified Developer for Apache Kafka®](https://training.confluent.io/examdetail/confluent-dev) 자격증을 준비하고 있습니다 ✌️ 전체 포스트는 [여기](/categories/kafka)에서 확인할 수 있습니다.
 
 지금까지 Confluent 위에서 Saas로만 Kafka를 운영해본 것 같아서, 시험도 준비해볼겸! Kubernetes에서 Kafka Cluster를 운영해보며 이리저리 맛보고자 합니다 ㅎㅎ
 
