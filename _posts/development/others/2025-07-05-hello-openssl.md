@@ -32,6 +32,12 @@ OoLGksEA5fkakzu8IOeGpl6/
 -----END PRIVATE KEY-----
 ```
 
+`openssl genrsa`로도 개인키를 만들 수 있습니다.
+
+```bash
+$ openssl genrsa -out private.key 2048
+```
+
 ## 공개키 추출
 
 그런데 SSL을 하려면, 개인키에 대응되는 공개키가 필요 했습니다. 위의 명령어를 수행하면, 개인키인 `private.key`만 생성되고, 공개키는 생성되지 않는데요! 어디에 있는 걸까요?
@@ -108,7 +114,19 @@ subject=CN=localhost
 
 이렇게 만든 자체 서명 인증서를 운영 환경에서 사용할 수는 없습니다! 왜냐하면, 브라우저에서 자체 서명한 인증서는 신뢰하지 않기 때문입니다. 그래서 웹서버가 이 자체 서명 인증서를 쓰게 되면 `https://localhost:0000`으로 접근은 되지만, "신뢰할 수 없음" 경고가 뜨게 됩니다.
 
-물론 로컬 개발 환경에서는 이를 무시하고 진행하면 됩니다 ㅎㅎ
+물론 로컬 개발 환경에서는 이를 무시하고 진행하면 됩니다...만! 저는 이게 너무 거슬려서 로컬에서 발급한 인증서를 경고 문구 없이도 사용할 수 있도록 구성하는 방법을 찾아서 사용하고 있습니다! 😊
+
+➡️ [FastAPI with Self-signed SSL Certificate](/2025/07/06/fastapi-with-self-signed-ssl/)
+
+<br/>
+
+그리고 자체 서명 인증서의 경우, 어짜피 자기 자신이 서명할 것이기 때문에 `.csr` 파일을 굳이 만들지 않아도 됩니다 ㅋㅋ 그래서 `openssl req -new`로 인증서 서명 요청을 만들기 않고 `openssl req -x509`로 바로 `.crt` 파일을 만드는 것도 가능 합니다.
+
+```bash
+$ openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 3650 -out rootCA.crt \
+  -subj "/C=KR/ST=Seoul/L=Seoul/O=MyOrg/OU=Dev/CN=MyLocalRootCA"
+```
+
 
 ### 사내 폐쇄 시스템에서 사용
 
@@ -131,14 +149,6 @@ GKgjDe3Hmiwvu+vW
 ```
 
 이렇게 만든 값들을 admin 계정의 비밀번호나 토큰 값으로 사용할 수도 있습니다!
-
-
-# Self-signed Certificate로 루트 CA 구성하기
-
-위에서 잠깐 언급하기도 했지만, SSL로 통신하는 클러스터를 구성할 때 자체 서명 인증서를 루트 CA로 사용하게 됩니다. 이 과정을 좀더 살펴봅시다!
-
-TODO: 자체 서멍 인증서를 브라우저에 등록해서 신뢰할 수 있도록 만들 수 있을까?
-
 
 # OpenSSH와 헷갈리지 말기!
 
