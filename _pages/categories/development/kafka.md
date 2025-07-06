@@ -31,6 +31,7 @@ toc_sticky: true
 - [Running Kafka in Production](/2025/07/02/running-kafka-in-production/)
 - Kafka with SSL
   - [Hello, OpenSSL!](/2025/07/05/hello-openssl/)
+  - [Hello, Java Keyool!](/2025/07/07/hello-java-keytool/)
 
 - [Kafka 이것저것 메모](/2025/01/25/kafka-study-memo/)
 - [CCDAK 시험 준비](/2025/06/23/CCDAK-prepare)
