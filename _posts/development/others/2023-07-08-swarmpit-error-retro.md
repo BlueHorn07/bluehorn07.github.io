@@ -118,7 +118,7 @@ Docker Service의 처음 설정되어 있던 Deploy 옵션은 아래 사진과 �
 
 요 작업을 진행하면서 Docker Swarm의 Update/Rollback 옵션의 의미를 살펴봤는데, 아래와 같다.
 
-- Parallelsim
+- Parallelism
   - Update/Rollback을 진행할 '레플리카' 갯수
   - 많은 수의 레플리카가 있어 한번에 2개 이상의 Update/Rollback이 필요하다가 2 이상의 값을 주면 좋을 것이다.
 - Delay

@@ -3,6 +3,8 @@ title: "Advanced Python"
 toc: true
 toc_sticky: true
 categories: []
+robots: noindex
+sitemap: false
 ---
 
 
@@ -94,6 +96,3 @@ square_fun = lambda x: x*x
 exp_fun = lambda x, y: x**y
 sign = lambda x: (1, -1)[x < 0] # "x < 0"의 값을 tuple의 idx로 사용!
 ```
-
-
-

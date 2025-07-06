@@ -29,6 +29,8 @@ toc_sticky: true
   - RAID 10
 - [Hello, RocksDB!](/2025/07/01/hello-rocksdb/)
 - [Running Kafka in Production](/2025/07/02/running-kafka-in-production/)
+- Kafka with SSL
+  - [Hello, OpenSSL!](/2025/07/06/hello-openssl/)
 
 - [Kafka 이것저것 메모](/2025/01/25/kafka-study-memo/)
 - [CCDAK 시험 준비](/2025/06/23/CCDAK-prepare)

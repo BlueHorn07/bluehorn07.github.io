@@ -27,7 +27,7 @@ sitemap: false
 
 <br/>
 
-주의사항으로 Tiered Stroage나 Self-balancing Cluster를 쓴다면, JBOD(Just a Bundle of Disks)를 쓰지 말라고 합니다.
+주의사항으로 Tiered Storage나 Self-balancing Cluster를 쓴다면, JBOD(Just a Bundle of Disks)를 쓰지 말라고 합니다.
 
 이유는 JBOD는 여러 개의 디스크를 각각 독립적으로 사용하는 운영 방식인데, RAID 시스템과 다르게 디스크를 묶어서 사용하는 것이 아닙니다.
 

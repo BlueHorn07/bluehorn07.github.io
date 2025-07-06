@@ -3,6 +3,8 @@ title: "좋은 REST API"
 toc: true
 toc_sticky: true
 categories: ["Develop"]
+robots: noindex
+sitemap: false
 ---
 
 
@@ -65,7 +67,3 @@ categories: ["Develop"]
 #### Reference
 - [What RESTful actually means](https://codewords.recurse.com/issues/five/what-restful-actually-means)
   - 위의 포스트에서 `REST`에 대해 잘 다루고 있어서 세미나 내용을 글로 다시 이해하는 데에 도움이 많이 됐다 ㅎㅎ
-
-
-
-

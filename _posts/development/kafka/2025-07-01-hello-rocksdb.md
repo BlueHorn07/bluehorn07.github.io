@@ -13,7 +13,7 @@ excerpt: "K-Streams와 Flink에서 중간 결과를 Key-value로 저장하기 �
 
 K-streams와 Flink 관련 자료를 찾아보면서, RocksDB를 상태저장 백엔드로 사용한다는 것을 알게 되었습니다. RocksDB를 제대로 사용해본 적이 없는 것 같아서 한번 친해져보려고, 로컬 환경에서 핸즈온을 진행해보았습니다.
 
-처음에는 Python으로 진행해보려고 했는데, Python은 공식 pip 패키지가 없고 커뮤니티의 Maintanence도 이뤄지지 않아서 최신 python 버전(3.13)과 호환되지 않는 것 같더라구요 ㅠㅠ 그래서 Java(JDK 17) 환경에서 RocksDB를 처음 시작해보았습니다.
+처음에는 Python으로 진행해보려고 했는데, Python은 공식 pip 패키지가 없고 커뮤니티의 Maintenance도 이뤄지지 않아서 최신 python 버전(3.13)과 호환되지 않는 것 같더라구요 ㅠㅠ 그래서 Java(JDK 17) 환경에서 RocksDB를 처음 시작해보았습니다.
 
 # RocksDB란?
 
