@@ -51,11 +51,11 @@ spec:
 $ kubectl apply -f kafka-zookeeper-cluster.yaml
 ```
 
-Strimzi `0.45.0` 버전은 Zookeeper 모드를 지원하는 마지막 Strimzi 버전입니다. 앞으로는 Strimzi에서 Kraft 모드의 카프카 클러스터만 디플로이 할 수 있습니다.
+Strimzi `0.45.0` 버전은 Zookeeper 모드를 지원하는 마지막 Strimzi 버전입니다. 앞으로는 Strimzi에서 KRaft 모드의 카프카 클러스터만 디플로이 할 수 있습니다.
 
-## Kraft Mode
+## KRaft Mode
 
-Strimzi는 Kraft 모드로 카프카 클러스터를 디플로이 하는 것도 가능합니다! 다만, 아까 봤던 주키퍼 기반 클러스터랑은 다르게 `KafkaNodePool` 리소스를 추가로 디플로이 해야 합니다.
+Strimzi는 KRaft 모드로 카프카 클러스터를 디플로이 하는 것도 가능합니다! 다만, 아까 봤던 주키퍼 기반 클러스터랑은 다르게 `KafkaNodePool` 리소스를 추가로 디플로이 해야 합니다.
 
 > To deploy a Kafka cluster in KRaft mode, you must use `Kafka` and `KafkaNodePool` custom resources. The Kafka resource using KRaft mode must also have the annotations `strimzi.io/kraft: enabled` and `strimzi.io/node-pools: enabled`. - [Strimzi](https://strimzi.io/docs/operators/in-development/deploying#assembly-kraft-mode-str)
 
@@ -117,7 +117,7 @@ spec:
     type: ephemeral
 ```
 
-그리고 디플로이 하면, 아래와 같이 Kraft 모드의 클러스터가 디플로이 됩니다!!
+그리고 디플로이 하면, 아래와 같이 KRaft 모드의 클러스터가 디플로이 됩니다!!
 
 ```bash
 NAME                                          READY   STATUS    RESTARTS      AGE

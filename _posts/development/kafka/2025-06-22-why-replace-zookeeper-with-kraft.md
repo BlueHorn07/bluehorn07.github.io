@@ -94,7 +94,7 @@ ZK에 저장하는 정보가 뭔지 잘 생각해보니, 결국은 메타데이�
 
 primary-backup과 비교해서 quorum 방식은 좀더 빠른 availability guaratee를 제공함.
 
-# Kraft
+# KRaft
 
 Kafka Raft Implementation
 

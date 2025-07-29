@@ -8,7 +8,7 @@ toc_sticky: true
 엔지니어로서 견문을 넓혀 나가고 싶어서 2025년의 목표로 [Apache Kafka](https://kafka.apache.org/)를 공부하고, Confluent의 "CCDAK" 자격증을 따는 것을 목표로 잡았습니다 👊 Toss로 이직하고 나서도 Kafka는 여전히 제 업무에서 중요한 역할을 차지하고 있습니다 ㅎㅎ 이 친구와 친해져봅시다!!
 
 - [Deploy Kafka on Kubernetes ☸](/2025/01/05/deploy-kafka-on-k8s/)
-  - [Deploy Kafka on Kraft Mode](/2025/01/27/deploy-kafka-kraft-mode/)
+  - [Deploy Kafka on KRaft Mode](/2025/01/27/deploy-kafka-kraft-mode/)
     - [Why Replace Zookeeper with KRaft](/2025/06/22/why-replace-zookeeper-with-kraft/)
   - [Deploy Kafka Cluster using Strimzi](/2025/02/03/deploy-kafka-using-strimzi/)
 - [Hello, Avro!](/2024/11/15/hello-avro/)

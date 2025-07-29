@@ -31,11 +31,8 @@ releases:
       - ./values.bitnami-kafka.yaml
 ```
 
-`bitnami/kafka` 차트 그대로 디플로이 해도 됩니다만, 그대로 하면 Kraft 모드로 디플로이 됩니다! (제가 Kafka에 입문하던 시절에는 Zookeeper가 메이져 방식이었는데, 이젠 ZK가 저울 때가 되었네요 🌅)
+`bitnami/kafka` 차트 그대로 디플로이 해도 됩니다만, 그대로 하면 KRaft 모드로 디플로이 됩니다! (제가 Kafka에 입문하던 시절에는 Zookeeper가 메이져 방식이었는데, 이젠 ZK가 저울 때가 되었네요 🌅)
 
-
-
-저는 일단 Zookeeper 모드부터 테스트 해보기 위해 커스텀이 필요합니다! 그래서 `values.bitnami-kafka.yaml` 파일을 만들고 아래와 같이 작성합니다.
 
 ```yaml
 # @values.bitnami-kafka.yaml
@@ -45,7 +42,7 @@ zookeeper:
 kraft:
   enabled: true
 
-controller: # Kraft mode
+controller: # KRaft mode
   replicaCount: 3
 
 broker:
@@ -69,14 +66,14 @@ $ helmfile -f helmfile-kafka.yaml apply`
 $ kgp
 NAME                         READY   STATUS    RESTARTS      AGE
 bitnami-kafka-controller-0   1/1     Running   0             100s
+bitnami-kafka-controller-1   1/1     Running   0             100s
 bitnami-kafka-controller-2   1/1     Running   0             100s
-bitnami-kafka-controller-3   1/1     Running   0             100s
 bitnami-kafka-broker-0       1/1     Running   0             100s
+bitnami-kafka-broker-1       1/1     Running   0             100s
 bitnami-kafka-broker-2       1/1     Running   0             100s
-bitnami-kafka-broker-3       1/1     Running   0             100s
 ```
 
-짜잔! contaoller와 broker가 각 3개씩 디플로이 되었습니다!
+짜잔! controller와 broker가 각 3개씩 디플로이 되었습니다!
 
 그리고 뭔가 설명들이 쭉 나오는데요! 디플로이 한 Kafka 클러스터에 접속하는 방법이 적혀 있습니다 ㅎㅎ
 
@@ -207,12 +204,11 @@ yamlApplicationConfig:
 
 ```bash
 $ kubectl get svc -n kafka
-NAME                               TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)                      AGE
-bitnami-kafka-broker-headless      ClusterIP   None            <none>        9094/TCP,9092/TCP            122m
-bitnami-kafka-zookeeper-headless   ClusterIP   None            <none>        2181/TCP,2888/TCP,3888/TCP   122m
-bitnami-kafka-zookeeper            ClusterIP   10.43.190.250   <none>        2181/TCP                     122m
-bitnami-kafka                      ClusterIP   10.43.176.10    <none>        9092/TCP                     122m
-kafka-ui                           ClusterIP   10.43.177.29    <none>        80/TCP                       7s
+NAME                                TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)                      AGE
+bitnami-kafka-broker-headless       ClusterIP   None            <none>        9094/TCP,9092/TCP            122m
+bitnami-kafka-controller-headless   ClusterIP   None            <none>        2181/TCP,2888/TCP,3888/TCP   122m
+bitnami-kafka                       ClusterIP   10.43.176.10    <none>        9092/TCP                     122m
+kafka-ui                            ClusterIP   10.43.177.29    <none>        80/TCP                       7s
 
 $ kubectl port-forward svc/kafka-ui -n kafka 8080:80
 ```
@@ -223,7 +219,7 @@ Kafka UI
 
 ㅎㅎ 요렇게 Kafka 클러스터에 대한 정보를 웹 콘솔로 확인할 수 있습니다!
 
-Kafka UI에 Kafka 브로커 서버 외에도 Zookeeper나 Schema Registry, Ksql도 연결할 수 있는 것 같습니다.
+Kafka UI에 Kafka 브로커 서버 외에도 Kafka Connect, Schema Registry, Ksql도 연결할 수 있는 것 같습니다.
 저도 이번 포스트를 작성하면서 처음 사용해보았는데요! 추후에 Kafka UI를 요리조리 뜯어보고 포스트를 또 하나 작성해보겠습니다 ㅎㅎ
 
 Kafka UI와 Kafka 클러스터에 연결에 대한 더 세부적인 내용이 필요하다면, Kafka UI의 요 문서를 참고하시길 바랍니다 👉 [kafka-ui/Misc configuration properties](https://docs.kafka-ui.provectus.io/configuration/misc-configuration-properties)
@@ -364,17 +360,16 @@ merong
 ```yaml
 # @values.bitnami-kafka.yaml
 zookeeper:
-  enabled: true
-  replicaCount: 1
+  enabled: false
 
 kraft:
-  enabled: false
+  enabled: true
 
 broker:
   replicaCount: 3
 
 controller:
-  replicaCount: 0
+  replicaCount: 3
 
 listeners:
   client:
@@ -396,10 +391,11 @@ listeners:
   - Kafka 쪽에서는 요 Strimzi의 도움을 받아 디플로이 하는 경우가 많이 보였습니다.
   - 이번 기회에 한번 써보면 재밌을 것 같네요 ㅎㅎ
   - ➡️ [Deploy Kafka Cluster using Strimzi](/2025/02/03/deploy-kafka-using-strimzi/)
-- [KRaft](https://developer.confluent.io/learn/kraft/) 모드
-  - 이번에는 Zookeeper 모드로 Kafka 클러스터를 디플로이 하였습니다.
-  - Zookeeper를 쓰지 않고 Kafka 클러스터를 운영하는 KRaft 모드도 한번 실습 해보겠습니다 ㅎㅎ
-  - ➡️ [Deploy Kafka on Kraft Mode](/2025/01/27/deploy-kafka-kraft-mode/)
+- [KRaft](https://developer.confluent.io/learn/kraft/) 모드 더 살펴보기
+  - 25년 1월에 이 포스트를 작성할 때까지만 해도 여전히 ZK 모드가 default 모드 였습니다.
+  - 25년 7월 내용을 개편하여, KRaft 모드 기준으로 내용을 다듬었습니다.
+  - 이전에 별도 포스트로 작성 했던 KRaft 모드 디플로이는 아래 포스트에서 확인할 수 있습니다!
+  - ➡️ [Deploy Kafka on KRaft Mode](/2025/01/27/deploy-kafka-kraft-mode/)
     - [Why Replace Zookeeper with KRaft](/2025/06/22/why-replace-zookeeper-with-kraft/)
 - Kafka UI Deep Dive
   - 요 포스트를 작성하면서, Kafka UI를 처음 사용해보았는데요!
