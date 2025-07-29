@@ -4,6 +4,7 @@ toc: true
 toc_sticky: true
 categories: ["Kafka"]
 excerpt: "25년의 첫 자격증 목표를 달성하며. 한 단계 성장한 Data Engineer로 나아갈 수 있을까요?"
+pin: true
 ---
 
 
@@ -61,7 +62,7 @@ excerpt: "25년의 첫 자격증 목표를 달성하며. 한 단계 성장한 Da
 
 인프런에서 데브원영님의 강의부터 시작 했습니다. 카프카에 대한 전반적인 감각을 익히기에는 이게 제일 좋은 것 같아요! (종종 장원영이랑 헷갈려서 흠칫...)
 
-➡️ [Practice Exams | Confluent Certified Apache Kafka Developer](https://www.udemy.com/course/confluent-certified-apache-kafka-developer-practice-exams/)
+➡️ [Practice Exams: Confluent Certified Apache Kafka Developer](https://www.udemy.com/course/confluent-certified-apache-kafka-developer-practice-exams/)
 
 그리고 유데미에서 모의시험 세트를 구매해 시험을 준비 했습니다. 실무에서 쓰는 것과 시험을 보는건 지향점이 다르니 자격증 시험을 준비할 때는 이런 모의시험이 제게는 큰 도움이 되었어요.
 

@@ -31,22 +31,25 @@ releases:
       - ./values.bitnami-kafka.yaml
 ```
 
-`bitnami/kafka` 차트 그대로 디플로이 해도 됩니다만, 그대로 하니 Kraft 모드로 디플로이 되더라구요! 저는 일단 Zookeeper 모드부터 테스트 해보기 위해 커스텀이 필요합니다! 그래서 `values.bitnami-kafka.yaml` 파일을 만들고 아래와 같이 작성합니다.
+`bitnami/kafka` 차트 그대로 디플로이 해도 됩니다만, 그대로 하면 Kraft 모드로 디플로이 됩니다! (제가 Kafka에 입문하던 시절에는 Zookeeper가 메이져 방식이었는데, 이젠 ZK가 저울 때가 되었네요 🌅)
+
+
+
+저는 일단 Zookeeper 모드부터 테스트 해보기 위해 커스텀이 필요합니다! 그래서 `values.bitnami-kafka.yaml` 파일을 만들고 아래와 같이 작성합니다.
 
 ```yaml
 # @values.bitnami-kafka.yaml
 zookeeper:
-  enabled: true
-  replicaCount: 1
+  enabled: false
 
 kraft:
-  enabled: false
+  enabled: true
+
+controller: # Kraft mode
+  replicaCount: 3
 
 broker:
   replicaCount: 3
-
-controller: # Kraft mode
-  replicaCount: 0
 ```
 
 포스트를 처음 작성할 때는 `broker.replicaCount=1`로 설정 했습니다만... 그렇게 하니 나중에 내부용 토픽인 `__consumer_offsets` 토픽 만들때, `replication.factor=3` 때문에 컨슈머 쪽에 오류가 생기더라구요... 그래서 시행착오를 원치 않으신다면 `broker.replicaCount=3`으로 시작하길 권장합니다!
@@ -59,6 +62,25 @@ $ helmfile -f helmfile-kafka.yaml apply`
 ...
 ** Please be patient while the chart is being deployed **
 
+... (아래에 배치)
+```
+
+```bash
+$ kgp
+NAME                         READY   STATUS    RESTARTS      AGE
+bitnami-kafka-controller-0   1/1     Running   0             100s
+bitnami-kafka-controller-2   1/1     Running   0             100s
+bitnami-kafka-controller-3   1/1     Running   0             100s
+bitnami-kafka-broker-0       1/1     Running   0             100s
+bitnami-kafka-broker-2       1/1     Running   0             100s
+bitnami-kafka-broker-3       1/1     Running   0             100s
+```
+
+짜잔! contaoller와 broker가 각 3개씩 디플로이 되었습니다!
+
+그리고 뭔가 설명들이 쭉 나오는데요! 디플로이 한 Kafka 클러스터에 접속하는 방법이 적혀 있습니다 ㅎㅎ
+
+```bash
 Kafka can be accessed by consumers via port 9092 on the following DNS name from within your cluster:
 
     bitnami-kafka.kafka.svc.cluster.local
@@ -98,21 +120,6 @@ To create a pod that you can use as a Kafka client run the following commands:
             --from-beginning
 ```
 
-```bash
-$ kgp
-NAME                        READY   STATUS    RESTARTS      AGE
-bitnami-kafka-zookeeper-0   1/1     Running   0             100s
-bitnami-kafka-broker-0      1/1     Running   2 (35s ago)   100s
-bitnami-kafka-broker-2      1/1     Running   2 (35s ago)   100s
-bitnami-kafka-broker-3      1/1     Running   2 (35s ago)   100s
-```
-
-짜잔! zookeeper 하나와 broker 하나가 디플로이 되었습니다!
-
-이게 zookeeper랑 broker가 같이 뜨게 되는데, zookeeper가 아직 준비되지 않은 상태에서 broker가 디플로이 되어서 broker가 몇번 `RESTART` 하게 되는데, zookeeper가 디플로이 되면 broker도 곧 `RUNNING` 상태가 됩니다 ㅎㅎ
-
-그리고 뭔가 설명들이 쭉 나오는데요! 디플로이 한 Kafka 클러스터에 접속하는 방법이 적혀 있습니다 ㅎㅎ
-
 ## Let's Access the cluster!
 
 디플로이한 Kafka 클러스터에 접속해봅시다! Kafka 클러스터에 접속하는 방법은 여러 가지가 있지만! 제가 Kafka CLI 대신 편하게 사용하고 있는 [`kcat`](https://github.com/edenhill/kcat)을 통해 한번 접속해보겠습니다.
@@ -150,6 +157,9 @@ Kafka UI
 
 디플로이한 Kafka 클러스터를 좀더 편하고 쉽게 관리하기 위해 [Kafka UI](https://docs.kafka-ui.provectus.io/)를 추가로 디플로이 합니다.
 요건 Apache Kafka의 공식 컴포넌트는 아니지만! Confluent 플랫폼 처럼 Kafka 클러스터를 웹 콘솔에서 관리할 수 있게 도와줍니다! 🫰
+
+25년 최근에는 kafka-ui에도 변경이 있습니다! kafka-ui를 관리하던 그룹이 옮겨와서 [kafbat-ui](https://github.com/kafbat/kafka-ui)라는 새로운 레포로 이전 했습니다!
+{: .notice}
 
 디플로이를 위해 일단 helmfile을 아래와 같이 구성합니다.
 
@@ -357,14 +367,14 @@ zookeeper:
   enabled: true
   replicaCount: 1
 
+kraft:
+  enabled: false
+
 broker:
   replicaCount: 3
 
 controller:
   replicaCount: 0
-
-kraft:
-  enabled: false
 
 listeners:
   client:
@@ -385,9 +395,12 @@ listeners:
 - [Strimzi](https://strimzi.io/)의 Strimzi Operator 방식으로 Kafka on K8s 구현하기
   - Kafka 쪽에서는 요 Strimzi의 도움을 받아 디플로이 하는 경우가 많이 보였습니다.
   - 이번 기회에 한번 써보면 재밌을 것 같네요 ㅎㅎ
+  - ➡️ [Deploy Kafka Cluster using Strimzi](/2025/02/03/deploy-kafka-using-strimzi/)
 - [KRaft](https://developer.confluent.io/learn/kraft/) 모드
   - 이번에는 Zookeeper 모드로 Kafka 클러스터를 디플로이 하였습니다.
   - Zookeeper를 쓰지 않고 Kafka 클러스터를 운영하는 KRaft 모드도 한번 실습 해보겠습니다 ㅎㅎ
+  - ➡️ [Deploy Kafka on Kraft Mode](/2025/01/27/deploy-kafka-kraft-mode/)
+    - [Why Replace Zookeeper with KRaft](/2025/06/22/why-replace-zookeeper-with-kraft/)
 - Kafka UI Deep Dive
   - 요 포스트를 작성하면서, Kafka UI를 처음 사용해보았는데요!
   - 이것저것 만져보면서 Kafka 클러스터 운영에 대한 감을 좀 잡아보고자 합니다 ㅎㅎ

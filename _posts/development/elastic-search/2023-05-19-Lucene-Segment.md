@@ -5,7 +5,6 @@ toc_sticky: true
 teaser: /images/development/lucene-segment.png
 categories: ["Elastic Search"]
 excerpt: "엘라스틱서치 내부 탐험: 루씬 세그먼트로 이해하는 검색 엔진의 섬세한 메커니즘 🔦"
-pin: true
 ---
 
 ElasticSearch에서 샤드(Shard)를 구성하는 루씬(Lucene) Index와 역색인(Inverted Index) 구조와 문서 검색 기능의 구현체인 Lucene Segment에 대해 살펴보자. Lucene Segment를 이해했다면, ElasticSearch 동작의 핵심을 이해한 것이다!
@@ -190,4 +189,3 @@ class LuIndex:
 결국, Segment를 수정하는 작업 자체가 검색 엔진에게는 부담스러운 작업이라는 말이다!
 
 결국 Lucene은 세그먼트 내의 문서에 변경/삭제 작업이 일어나면 일단 가지고 있는 문서를 `"삭제됨"`으로 표시해두고, 새로운 버전의 문서가 담긴 Segment를 생성하게 된 것이다!
-

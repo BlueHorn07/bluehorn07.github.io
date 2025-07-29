@@ -6,6 +6,7 @@ categories: ["Life"]
 excerpt: 수학 별로 안 좋아하는 컴공과가 수학과 복수 전공을 하게 된 이야기.
 robots: noindex
 sitemap: false
+pin: true
 ---
 
 일년 전 쯤에 [미적분학을 다시 공부하며 든 생각들](/2024/08/15/thoughts-I-had-while-studying-calculus-again/)라는 제목으로 대학교 1학년 과목을 다시 공부 했던 후기를 블로그에 남겼는데요 ㅎㅎ 그 이후로 2번의 수학과 졸업시험을 봤구요!! 겨우겨우 통과한 후기이자 과정에 대한 회고를 남겨보고자 합니다.
