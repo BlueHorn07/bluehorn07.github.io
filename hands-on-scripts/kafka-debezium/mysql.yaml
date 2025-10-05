@@ -1,0 +1,35 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mysql
+  labels:
+    app: mysql
+spec:
+  containers:
+  - image: mysql:8
+    name: mysql
+    env:
+    - name: MYSQL_ROOT_PASSWORD
+      value: hello_debezium!
+    - name: MYSQL_USER
+      value: admin
+    - name: MYSQL_PASSWORD
+      value: hello_debezium!
+    ports:
+    - containerPort: 3306
+      name: mysql
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: mysql
+  name: mysql
+spec:
+  ports:
+  - name: mysql
+    port: 3306
+    targetPort: 3306
+  selector:
+    app: mysql
+  type: ClusterIP

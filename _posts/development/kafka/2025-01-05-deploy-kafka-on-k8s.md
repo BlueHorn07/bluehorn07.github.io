@@ -14,7 +14,7 @@ excerpt: "Kubernetes 위에 Kafka Cluster 구축하고, Kafka UI 웹 콘솔로 �
 
 # 일단 디플로이를 해보자!
 
-저는 주로 Helm Chart로 워크로드를 디플로이하기 관리하고 있습니다. 이번에도 Helm Chart를 이용해 Kafka를 디플로이 해보겠습니다! 아래와 같이 `helmfile.bitnami-kafka.yaml`을 준비합니다.
+이번에도 Helm Chart를 이용해 Kafka를 디플로이 해보겠습니다! 아래와 같이 `helmfile.bitnami-kafka.yaml`을 준비합니다. [ArtifactHUB](https://artifacthub.io/packages/helm/bitnami/kafka)
 
 ```yaml
 # @helmfile.bitnami-kafka.yaml

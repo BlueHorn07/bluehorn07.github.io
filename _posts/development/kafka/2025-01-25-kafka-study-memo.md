@@ -366,9 +366,15 @@ Q. Kafka를 운영하기 위해 적절한 리눅스 파일시스템은?
   - [카카오 개발자들을 위한 공용 Message Streaming Platform - Kafka & RabbitMQ (2021)](https://tech.kakao.com/posts/485)
     - Grafana로 Kafka 대시보드 만들어서 모니터링
       - Grafana에서 tsdb 말고, 정적 데이터도 시각화 할 수 있으려나?
+        - OO 가능!! MySQL, REST API도 데이터소스로 사용 가능.
       - 해당 토픽에 produce record가 있는데, consume record가 그만큼을 따라오지 않는 경우가 있는지 꼭 체크해줘야 함.
     - 공용 MQ 시스템에서의 에러 사례
       - 클러스터 접근 실패
       - 보안 요구조건으로 인해 격리가 필요하다면 전용 시스템으로 분리하기도 함.
     - 다이어그램이 참 이쁘고 마음에 든다 ㅋㅋ
       - [CloudCraft](https://www.cloudcraft.co/)라고 Datadog에서 인수한 도구로 만든 거임!
+  - [신뢰성 있는 카프카 애플리케이션을 만드는 3가지 방법 (최원영 Cory)](https://youtu.be/7_VdIFH6M6Q?si=qbAB1JnxkrwmxMmJ)
+    - 컨슈머의 종복 적재 방지에 대해
+      - 유니크 키를 사용해 멱등성 컨슈머로 운영
+      - Upsert를 사용해 멱등성 컨슈머로 운영
+      - Write-ahead log(WAL)로 멱등성 컨슈머 운영

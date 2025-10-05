@@ -1,0 +1,47 @@
+apiVersion: kafka.strimzi.io/v1beta2
+kind: Kafka
+metadata:
+  name: my-cluster
+  namespace: strimzi
+  annotations:
+    strimzi.io/kraft: enabled
+    strimzi.io/node-pools: enabled
+spec:
+  kafka:
+    version: 4.0.0
+    listeners:
+      - name: plain
+        port: 9092
+        type: internal
+        tls: false
+  entityOperator:
+    topicOperator: {}
+    userOperator: {}
+---
+apiVersion: kafka.strimzi.io/v1beta2
+kind: KafkaNodePool
+metadata:
+  name: controller-nodes
+  namespace: strimzi
+  labels:
+    strimzi.io/cluster: my-cluster  # Kafka 클러스터 이름과 일치해야 함
+spec:
+  replicas: 3  # 컨트롤러 개수
+  roles:
+    - controller
+  storage:
+    type: ephemeral
+---
+apiVersion: kafka.strimzi.io/v1beta2
+kind: KafkaNodePool
+metadata:
+  name: broker-nodes
+  namespace: strimzi
+  labels:
+    strimzi.io/cluster: my-cluster  # Kafka 클러스터 이름과 일치해야 함
+spec:
+  replicas: 3  # 브로커 개수
+  roles:
+    - broker
+  storage:
+    type: ephemeral

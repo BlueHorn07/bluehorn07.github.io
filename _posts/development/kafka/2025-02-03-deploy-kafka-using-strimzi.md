@@ -14,6 +14,14 @@ excerpt: "Strimzi Operator로 Kafka 클러스터를 선언형으로 디플로이
 Kafka를 깊이있게 공부하면서 관련된 eco-system도 살펴보고 있습니다! 회사에서 Kafka 관련 작업을 많은 아티클이나 회사들에서 `Strimzi`로 Kafka 클러스터나 Kafka Connect를 디플로이 하는 걸 접했습니다.
 그것들을 보면서 '오오...! 나도 언젠가 한번 써봐야 겠다!'라고 생각했는데요! 이번에 자격증을 준비하면서 핸즈온과 함께 살펴본 이야기를 적어보고자 합니다. 참고로 "*Strimzi*"는 Stream을 체코어로 표현한 거라고 합니다! 🇨🇿
 
+# Deploy Strimzi Operator
+
+[Strimzi 공식 문서](https://strimzi.io/docs/operators/latest/deploying#deploying-cluster-operator-helm-chart-str)
+
+```bash
+helm install strimzi-cluster-operator oci://quay.io/strimzi-helm/strimzi-kafka-operator -n strimzi
+```
+
 # Kafka Cluster
 
 ## Zookeeper Mode
