@@ -1,0 +1,24 @@
+plugins {
+  id 'java'
+  id 'com.gradleup.shadow' version '9.2.0'
+}
+
+group = 'com.example'
+version = '0.1.0'
+
+repositories { mavenCentral() }
+
+dependencies {
+  compileOnly "org.apache.kafka:connect-api:4.0.0"
+  compileOnly "org.slf4j:slf4j-api:1.7.36" // 또는 워커와 같은 버전
+  implementation 'com.google.code.gson:gson:2.11.0'
+}
+
+java {
+  toolchain { languageVersion = JavaLanguageVersion.of(17) } // 11~17 아무거나 OK
+}
+
+// shadowJar 산출물 이름 커스터마이즈 (선택)
+tasks.shadowJar {
+  archiveClassifier.set('all')
+}

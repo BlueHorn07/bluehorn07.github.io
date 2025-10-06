@@ -5,7 +5,7 @@ metadata:
 spec:
   replicas: 1
   bootstrapServers: my-cluster-kafka-bootstrap:9092
-  image: my-kafka-connect-debezium:local
+  image: my-kafka-connect-debezium:echo-transform
   config:
     offset.flush.timeout.ms: 10000
     group.id: connect-cluster

@@ -496,3 +496,51 @@ $ curl -X DELETE http://localhost:8083/connectors/source.debezium-mysql
 
 CDC 데이터가 잘 들어옵니다!
 
+<br/>
+
+작업에 사용한 모든 스크립트는 `hands-on-scripts/kafka-debezium/` 폴더에 아카이브 해뒀습니다!
+
+# (Optional) jq 설치
+
+Kafka Connect의 REST API의 응답값을 파싱해서 확인해야 하는 경우가 많은데요.
+매번 응답을 파싱해서 웹 포매터에 넣어서 확인하기 너무 어렵더라구요.
+그래서 `jq`가 너무 필요했는데, 확인해보니 base 이미지 `quay.io/strimzi/kafka:0.48.0-kafka-4.1.0`에서 `yum`이나 `apt` 전부 사용할 수 없더라구요. `cat /etc/os-release`으로 어떤 OS인지 확인할 수 있는데
+
+```bash
+$ cat /etc/os-release
+NAME="Red Hat Enterprise Linux"
+VERSION="9.6 (Plow)"
+ID="rhel"
+ID_LIKE="fedora"
+VERSION_ID="9.6"
+PLATFORM_ID="platform:el9"
+...
+```
+
+RedHat Linux 더라구요. `yum`이나 `dnf`를 쓰라고 하던데, 이것도 없었습니다...
+
+그래서 `jq` 바이너리를 직접 설치해서 사용해야 했습니다. 다만, 아키텍처를 구분해서 설치 해야 합니다.
+
+
+```dockerfile
+...
+# jq 버전
+ARG JQ_VERSION=1.8.1
+
+# 아키텍처에 따라 바이너리 선택
+RUN ARCH=$(uname -m) && \
+    if [ "$ARCH" = "x86_64" ]; then \
+        JQ_URL="https://github.com/jqlang/jq/releases/download/jq-${JQ_VERSION}/jq-linux-amd64"; \
+    elif [ "$ARCH" = "aarch64" ]; then \
+        JQ_URL="https://github.com/jqlang/jq/releases/download/jq-${JQ_VERSION}/jq-linux-arm64"; \
+    else \
+        echo "Unsupported architecture: $ARCH" && exit 1; \
+    fi && \
+    curl -L $JQ_URL -o /usr/local/bin/jq && \
+    chmod +x /usr/local/bin/jq && \
+    jq --version
+...
+```
+
+단, 작업에 필수적인 과정은 아니라서 작업 하다가 불편하면 추가로 설치해서 사용하길!
+

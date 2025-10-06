@@ -40,3 +40,5 @@ spark-warehouse/
 settings.json
 
 venv/
+.gradle/
+build/
