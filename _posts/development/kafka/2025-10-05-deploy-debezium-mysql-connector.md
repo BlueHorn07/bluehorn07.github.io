@@ -500,6 +500,49 @@ CDC 데이터가 잘 들어옵니다!
 
 작업에 사용한 모든 스크립트는 `hands-on-scripts/kafka-debezium/` 폴더에 아카이브 해뒀습니다!
 
+## JsonConverter
+
+```bash
+$ curl -X POST http://localhost:8083/connectors \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "source.debezium-mysql",
+    "config": {
+      "connector.class": "io.debezium.connector.mysql.MySqlConnector",
+      "tasks.max": "1",
+
+      "database.hostname": "mysql.strimzi.svc.cluster.local",
+      "database.port": "3306",
+      "database.user": "root",
+      "database.password": "hello_debezium!",
+
+      "database.server.id": "20251005",
+      "database.server.name": "my-mysql",
+      "topic.prefix": "my-mysql",
+
+      "database.include.list": "public",
+      "table.include.list": "public.user",
+
+      "schema.history.internal.kafka.bootstrap.servers": "my-cluster-kafka-bootstrap:9092",
+      "schema.history.internal.kafka.topic": "__debezium_mysql_history",
+
+      "include.schema.changes": "false",
+      "snapshot.mode": "initial",
+
+      "key.converter": "org.apache.kafka.connect.json.JsonConverter",
+      "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+      "key.converter.schemas.enable": "false",
+      "value.converter.schemas.enable": "false"
+    }
+  }'
+```
+
+![](/images/development/kafka/debezium-mysql-source-connector-topic-2.png){: .align-center}
+
+
+`"value.converter": "org.apache.kafka.connect.storage.StringConverter"` 했을 때는 `Struct()` 타입으로 데이터가 들어왔는데, `"value.converter": "org.apache.kafka.connect.json.JsonConverter"`를 했을 때는 Json string으로 데이터가 잘 들어옵니다.
+
+
 # (Optional) jq 설치
 
 Kafka Connect의 REST API의 응답값을 파싱해서 확인해야 하는 경우가 많은데요.
