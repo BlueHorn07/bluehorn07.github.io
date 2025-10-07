@@ -35,7 +35,7 @@ Static와 non-static Method의 차이는 그 Method를 호출할 때, `this` 키
 
 `java`와 `javac`에서 어떤 클래스를 호출할 것인지 지시하는 환경 변수 입니다.
 
-Kafka Connector를 띄울 때, 어떤 Connector Plugin을 써야 할지도 요 `CLASSPATH` 환경 변수로 경로를 전달하였습니다. [[ref]](/2024/12/17/kafka-connector-standalone-mode/)
+Kafka Connector를 띄울 때, 어떤 Connector Plugin을 써야 할지도 요 `CLASSPATH` 환경 변수로 경로를 전달하였습니다. [[ref]](/2024/12/17/kafka-connect-standalone-mode/)
 
 만약 CLI 환경에서 사용한다면,
 

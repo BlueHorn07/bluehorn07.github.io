@@ -388,6 +388,14 @@ Transform에서 파라미터로 전달받아 사용하는 것 가능 합니다.
 TBD
 
 
+
+# 맺음말
+
+이어지는 포스트에선 간단한 커스텀 Source Connector를 정의해보겠습니다!
+
+➡️ [Define Custome Kafka Source Connector](/2025/10/07/define-custom-kafka-connector/)
+
+
 # References
 
 - [Create Custom Kafka Connect Single Message Transforms for Confluent Platform](https://docs.confluent.io/platform/current/connect/transforms/custom.html)

@@ -587,3 +587,9 @@ RUN ARCH=$(uname -m) && \
 
 단, 작업에 필수적인 과정은 아니라서 작업 하다가 불편하면 추가로 설치해서 사용하길!
 
+
+# 맺음말
+
+이어지는 포스트에선 커스텀 SMT Transform을 정의해보겠습니다!
+
+➡️ [Define Custome Kafka Connect Transform](/2025/10/06/define-custom-kafka-connect-transform/)

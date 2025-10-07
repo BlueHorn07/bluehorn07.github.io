@@ -13,8 +13,14 @@ toc_sticky: true
   - [Deploy Kafka Cluster using Strimzi](/2025/02/03/deploy-kafka-using-strimzi/)
 - [Hello, Avro!](/2024/11/15/hello-avro/)
 - [Hello, Python Producers!](/2024/12/10/hello-python-producers/)
-- [Kafka Connector on k8s - Standalone Mode](/2024/12/17/kafka-connector-standalone-mode/)
-- [Kafka Connector on k8s - Distributed Mode](/2024/12/18/kafka-connector-distributed-mode/)
+
+- Kafka Connect
+  - [Kafka Connect on k8s - Standalone Mode](/2024/12/17/kafka-connect-standalone-mode/)
+  - [Kafka Connect on k8s - Distributed Mode](/2024/12/18/kafka-connect-distributed-mode/)
+  - [Deploy Debeizum Mysql Connector](/2025/10/05/deploy-debezium-mysql-connector/)
+  - [Define Custome Kafka Connect Transform](/2025/10/06/define-custom-kafka-connect-transform/)
+  - [Define Custome Kafka Source Connector](/2025/10/07/define-custom-kafka-connector/)
+
 - [Kafka Shell Script 둘러보기](/2025/01/12/kafka-shell-scripts/)
   - [`kafka-topics.sh`](/2025/01/11/kafka-shell-kafka-topics-sh/)
   - [Console Produce/Consume](/2025/01/12/kafka-shell-console-produce-and-consume/)
