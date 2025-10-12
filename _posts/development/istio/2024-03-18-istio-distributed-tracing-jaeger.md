@@ -45,7 +45,7 @@ $ sh
 sh-3.2$ for i in $(seq 1 100); do curl -s -o /dev/null "http://192.168.64.2/productpage"; done
 ```
 
-요청을 100번씩 반복해서 보내는 이유는 istio의 Trace Samping Rate 때문이다. istio 클러스터를 띄울 때 따로 설정해주지 않았다면 기본값으로 1%의 트래픽만을 샘플링 하게 된다. 그래서 최소 100번의 요청은 보내야 하는 것!
+요청을 100번씩 반복해서 보내는 이유는 istio의 Trace Sampling Rate 때문이다. istio 클러스터를 띄울 때 따로 설정해주지 않았다면 기본값으로 1%의 트래픽만을 샘플링 하게 된다. 그래서 최소 100번의 요청은 보내야 하는 것!
 
 # Jaeger Addon 띄우기
 

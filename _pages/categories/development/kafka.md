@@ -18,8 +18,8 @@ toc_sticky: true
   - [Kafka Connect on k8s - Standalone Mode](/2024/12/17/kafka-connect-standalone-mode/)
   - [Kafka Connect on k8s - Distributed Mode](/2024/12/18/kafka-connect-distributed-mode/)
   - [Deploy Debeizum Mysql Connector](/2025/10/05/deploy-debezium-mysql-connector/)
-  - [Define Custome Kafka Connect Transform](/2025/10/06/define-custom-kafka-connect-transform/)
-  - [Define Custome Kafka Source Connector](/2025/10/07/define-custom-kafka-connector/)
+  - [Define Custom Kafka Connect Transform](/2025/10/06/define-custom-kafka-connect-transform/)
+  - [Define Custom Kafka Source Connector](/2025/10/07/define-custom-kafka-connector/)
 
 - [Kafka Shell Script 둘러보기](/2025/01/12/kafka-shell-scripts/)
   - [`kafka-topics.sh`](/2025/01/11/kafka-shell-kafka-topics-sh/)

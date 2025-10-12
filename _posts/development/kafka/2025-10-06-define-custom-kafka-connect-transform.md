@@ -1,5 +1,5 @@
 ---
-title: "Define Custome Kafka Connect Transform"
+title: "Define Custom Kafka Connect Transform"
 toc: true
 toc_sticky: true
 categories: ["Kafka"]
@@ -393,7 +393,7 @@ TBD
 
 이어지는 포스트에선 간단한 커스텀 Source Connector를 정의해보겠습니다!
 
-➡️ [Define Custome Kafka Source Connector](/2025/10/07/define-custom-kafka-connector/)
+➡️ [Define Custom Kafka Source Connector](/2025/10/07/define-custom-kafka-connector/)
 
 
 # References

@@ -33,7 +33,7 @@ toc_sticky: true
 ## Second-Order Linear ODEs
 
 - [Vibration of water in a tube](/2024/09/23/vibrating-u-shape-tube/)
-- [2nd order Homogeneous Linear ODE](/2024/09/30/2nd-order-homogeneous-lienar-ode/)
+- [2nd order Homogeneous Linear ODE](/2024/09/30/2nd-order-homogeneous-linear-ode/)
   - with constant coefficient
   - Reduction of Order Method
 - [2nd order Non-homogeneous Linear ODE](/2024/10/01/2nd-order-non-homogeneous-linear-ode/)

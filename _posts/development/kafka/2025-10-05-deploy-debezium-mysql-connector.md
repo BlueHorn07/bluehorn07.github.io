@@ -592,4 +592,4 @@ RUN ARCH=$(uname -m) && \
 
 이어지는 포스트에선 커스텀 SMT Transform을 정의해보겠습니다!
 
-➡️ [Define Custome Kafka Connect Transform](/2025/10/06/define-custom-kafka-connect-transform/)
+➡️ [Define Custom Kafka Connect Transform](/2025/10/06/define-custom-kafka-connect-transform/)

@@ -29,7 +29,7 @@ $$
 
 조화 진동자에서 가장 간단한 상황입니다. 위의 Fig 7.2의 상황으로 물체의 변위 $x$에 따라 작용하는 용수철 힘 $-kx$만 고려하면 됩니다.
 
-미방 수업에서 배우는 [2차 homogeneous ODE를 푸는 방법](/2024/09/30/2nd-order-homogeneous-lienar-ode/)으로 쉽게 풀 수 있습니다.
+미방 수업에서 배우는 [2차 homogeneous ODE를 푸는 방법](/2024/09/30/2nd-order-homogeneous-linear-ode/)으로 쉽게 풀 수 있습니다.
 
 <div class="proof" markdown="1">
 
@@ -54,7 +54,7 @@ $$
 
 표현을 간단히 하기 위해 주기 $\omega$로 표현하겠다: $\omega = \sqrt{k}$.
 
-요걸 실수부만 남겨서 정리하면... ([2차 homo. ODE 정리한 포스트](/2024/09/30/2nd-order-homogeneous-lienar-ode/)에서 많이 대충 넘어가는 중)
+요걸 실수부만 남겨서 정리하면... ([2차 homo. ODE 정리한 포스트](/2024/09/30/2nd-order-homogeneous-linear-ode/)에서 많이 대충 넘어가는 중)
 
 - $x_1(t) = \cos \omega t$
 - $x_2(t) = \sin \omega t$
@@ -215,7 +215,7 @@ $$
 이렇게 하면, general solution은 아래와 같은데
 
 $$
-x(t) = \frac{A}{(\omega_f^2 - \omega)} 
+x(t) = \frac{A}{(\omega_f^2 - \omega)}
 \left( \cos (\omega_f \, t) - \cos (\omega \, t) \right)
 $$
 
@@ -231,7 +231,7 @@ $$
 general solution을 아래와 같은 $\sin$, $\cos$의 곱셈으로 표현할 수 있다.
 
 $$
-x(t) = \frac{A}{(\omega_f^2 - \omega)} 
+x(t) = \frac{A}{(\omega_f^2 - \omega)}
 \cdot
 2 \sin \left( \frac{\omega - \omega_f}{2}\right)
 \sin \left( \frac{\omega + \omega_f}{2}\right)

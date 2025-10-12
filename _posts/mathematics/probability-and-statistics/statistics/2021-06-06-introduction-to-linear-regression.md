@@ -43,7 +43,7 @@ that is a close fit to the given data $\\{ (x_i, y_i) \\}_n$
 
 또, \<Regression Analysis\>에서 관계를 Linear로 가정한다면: $y = \beta_0 + \beta_1 x_1 + \beta_2 x_2$ 또는 $y = \beta_0 + \beta_1 x_1$라면, \<linear regression\>에 대한 분석이다.
 
-우리는 통계의 입문 수업을 듣고 있기에 가장 쉬운 \<simple lienar regression; SLR\>에 대해 공부할 예정이다.
+우리는 통계의 입문 수업을 듣고 있기에 가장 쉬운 \<simple linear regression; SLR\>에 대해 공부할 예정이다.
 
 <hr/>
 

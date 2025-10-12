@@ -1,5 +1,5 @@
 ---
-title: "Define Custome Kafka Source Connector"
+title: "Define Custom Kafka Source Connector"
 toc: true
 toc_sticky: true
 categories: ["Kafka"]

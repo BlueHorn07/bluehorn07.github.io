@@ -21,7 +21,7 @@ excerpt: "2nd order ODE를 Systems of ODE로 표현 했을 때, 중근을 갖는
 
 ## 2nd order homogeneous linear ODE
 
-요 부분은 2학년 수업인 미방 수업에서 경험 했습니다. [#](/2024/09/30/2nd-order-homogeneous-lienar-ode/)
+요 부분은 2학년 수업인 미방 수업에서 경험 했습니다. [#](/2024/09/30/2nd-order-homogeneous-linear-ode/)
 
 <div class="definition" markdown="1">
 
