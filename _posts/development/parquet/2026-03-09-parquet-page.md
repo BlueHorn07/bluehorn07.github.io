@@ -7,7 +7,7 @@ excerpt: "Parquet에서 컬럼 데이터가 저장되는 최소 단위, Page"
 
 데이터 엔지니어로서 일을 한지 벌써 3년이 넘었다...! 그런데 그동안 맨날 써온 `.parquet` 포맷을 내가 제대로 알고 있는게 맞나?라는 생각이 들었다. Parquet도 포맷이 v2까지 나온 꽤 오래되고 유서 깊은 포맷이고, 또 최근에는 Parquet Variant 타입 관련해서도 작업을 하고 있는데, 내가 이 포맷에 대해 자신 있게 얘기할 수 있는지 스스로 돌아보게 되었다. 그래서 이번 기회에 Parquet를 다시 보고 내가 부족했던 부분들은 채워넣어보려고 한다.
 
-지난 포스트에선 Parquet 포매스이 구조를 살펴보았다. 이번 포스트는 Parquet에서 컬럼 데이터가 저장되는 최소 단위인 Page 구조에 대해 살펴본다.
+지난 포스트에선 Parquet 포맷의 구조를 살펴보았다. 이번 포스트는 Parquet에서 컬럼 데이터가 저장되는 최소 단위인 Page 구조에 대해 살펴본다.
 
 
 ![alt text](/images/development/parquet/parquet-row-group.png)
@@ -156,3 +156,13 @@ def/rep level도 각 leaf 컬럼 기준으로 정해진다. 요건 primitive 타
 이렇게 `STRUCT` 타입을 leaf 컬럼으로 분해해서 각각 저장하는 걸 "**Shredding**"이라고 한다. `address` 컬럼 자체는 Column Chunk가 없으며, `STRUCT` 구조 정보는 Parquet 스키마에만 존재한다.
 
 반대로 `STRUCT` 타입의 데이터를 읽는 과정은 **Assembly**라고 한다. 분해된 leaf 컬럼을 원래의 `STRUCT` 구조로 복원하는 것!
+
+# `DATA_PAGE_V2`
+
+Parquet 1.x 후반에 추가된 이 포맷은 Data Page를 저장하고 압축할 때, rep/def level을 압축하지 않는다.
+
+본래 `DATA_PAGE`에선 rep+def+values 전체를 압축해서 저장했다. 그런데, 이렇게 하니 null 값을 찾을 때, Page 전체를 압축 해제해야 그 안의 def level을 보고 null 값 필터링이 가능했다.
+
+`DATA_PAGE_V2`는 오직 values 값만 압축해서 저장한다. rep/def level은 압축하지 않고 그대로 저장한다. 이렇게 하면, null 필터링을 압축해제 없이 빠르게 할 수 있다.
+
+Spark에서는 기본값으로 `DATA_PAGE`(v1)을 사용한다. v2를 쓰려면, `spark.sql.parquet.dataPageVersion=v2`로 명시해줘야 한다.
