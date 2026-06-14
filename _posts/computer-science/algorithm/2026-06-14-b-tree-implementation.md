@@ -3,6 +3,7 @@ title: "BST, B-Tree, B+Tree 구현"
 toc: true
 toc_sticky: true
 categories: ["Algorithm"]
+excerpt: ""
 ---
 
 > xfs는 디렉터리, Extent 관리, free space 관리 등 여러 파일시스템 메타데이터를 B+Tree로 관리한다.
