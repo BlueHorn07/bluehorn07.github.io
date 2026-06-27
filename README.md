@@ -41,4 +41,3 @@ gem cleanup
 ```bash
 $ bundle exec jekyll serve
 ```
-
