@@ -38,9 +38,9 @@ categories: ["Develop"]
 # 비대칭키를 통해 주고 받기
 
 서버는 **개인키(private key)**와 **공개키(public key)**를 만든다.
-통신을 준비할 때, <span class="red">**서버는 유저에게 서버 공개키를 보낸다.**</span> 유저는 서버의 공개키로 암호키를 암호화 해서 보낸다.
+통신을 준비할 때, <span class="red">**서버는 유저에게 서버 공개키를 보낸다.**</span> 유저는 서버의 '공개키'로 암호키를 암호화 해서 보낸다.
 
-비대칭키로 암호화 되었으므로 유저가 서버 공개키로 암호화한 값은 <span class="red">**서버 개인키가 있는 서버 자신만 해독할 수 있다.**</span>
+비대칭키로 암호화 되었으므로 유저가 서버 공개키로 암호화한 값은 <span class="red">**서버 '개인키'가 있는 서버 자신만 해독할 수 있다.**</span>
 
 이제 해독한 암호키로 데이터를 암호화하여 서로 통신 한다.
 
@@ -74,7 +74,7 @@ categories: ["Develop"]
 - 인증서 소유자 이름
   - Common Name(CN)
 - 인증서 소유자의 공개키
-  - 당연히 소유자의 개인키는 노출되지 않는다!
+  - 소유자의 개인키는 당연히 노출되지 않는다!
 - 인증서의 유효기간
 - <span class="red">**CA의 디지털 서명(signature)**</span>
   - 소유자의 공개키를 CA의 비밀키로 암호화
@@ -109,7 +109,7 @@ CA_hash_algorithm = ssl_cert.GetCAHashAlgo() # SHA-256
 hashed_server_pk = do_hashing(server_public_key, CA_hash_algorithm)
 
 if hash_from_CA == hashed_server_pk:
-  print("Truth Certificate!")
+  print("True Certificate!")
 else:
   print("Hacker!!")
 ```
