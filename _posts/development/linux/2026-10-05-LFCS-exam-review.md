@@ -6,7 +6,7 @@ categories: ["Linux"]
 excerpt: "학부 때 네트워크 수업 안 듣고 졸업한 사람이 데이터 인프라 다루기 위해 리눅스 시험에 도전한 이야기"
 ---
 
-![/images/development/linux/LFCS-passed.png]()
+![](/images/development/linux/LFCS-passed.png)
 
 # 나는 왜 LFCS에 도전하게 되었나?
 
